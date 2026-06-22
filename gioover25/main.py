@@ -23,7 +23,7 @@ def main() -> None:
 
     print("\nClassifica GioOver2.5\n")
     for i, row in enumerate(results, start=1):
-        print(f"{i:02d}. {row['match']} - Score {row['score']} - {row['band']}")
+        print(f"{i:02d}. [{row['country']} - {row['league']}] {row['match']} - Score {row['score']} - {row['band']}")
     print(f"\nOutput salvato in: {Path(args.output).resolve()}")
 
 

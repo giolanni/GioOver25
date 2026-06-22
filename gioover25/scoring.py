@@ -1,5 +1,5 @@
 import random
-from .config import WEIGHTS, NORMALIZATION
+from .config import WEIGHTS, NORMALIZATION, MODEL_VERSION
 from .models import MatchInput, TeamStats
 
 
@@ -84,7 +84,9 @@ def calculate_score(match: MatchInput, random_seed: int | None = None) -> dict:
     strong_ga_score = clamp(strong.ga_per_match / NORMALIZATION["useful_ga_per_match_strong"])
     weak_gf_score = clamp(weak.gf_per_match / NORMALIZATION["useful_gf_per_match_weak"])
     last10_score = last10_match_profile(match.home, match.away)
-
+    real_over_index = clamp(
+    (match.home.last10_over_rate + match.away.last10_over_rate) / 2
+    )
     random_score = random.random()
 
     total = (
@@ -95,6 +97,7 @@ def calculate_score(match: MatchInput, random_seed: int | None = None) -> dict:
         + weak_gf_score * WEIGHTS["weak_team_goals_for"]
         + last10_score * WEIGHTS["last10_over_profile"]
         + random_score * WEIGHTS["random_component"]
+        + real_over_index * WEIGHTS["real_over_index"]
     )
 
     if total >= 75:
@@ -113,17 +116,23 @@ def calculate_score(match: MatchInput, random_seed: int | None = None) -> dict:
     reasons.append(f"Profilo ultime 10: {last10_score:.2f}")
 
     return {
-        "home": match.home.name,
-        "away": match.away.name,
-        "match": f"{match.home.name} - {match.away.name}",
-        "score": round(total, 2),
-        "band": band,
-        "ranking_component": round(ranking_score * WEIGHTS["ranking_gap"], 2),
-        "strong_gf_component": round(strong_gf_score * WEIGHTS["strong_team_goals_for"], 2),
-        "weak_ga_component": round(weak_ga_score * WEIGHTS["weak_team_goals_against"], 2),
-        "strong_ga_component": round(strong_ga_score * WEIGHTS["strong_team_goals_against"], 2),
-        "weak_gf_component": round(weak_gf_score * WEIGHTS["weak_team_goals_for"], 2),
-        "last10_component": round(last10_score * WEIGHTS["last10_over_profile"], 2),
-        "random_component": round(random_score * WEIGHTS["random_component"], 2),
-        "reason": " | ".join(reasons),
-    }
+    "model_version": MODEL_VERSION,
+    "country": match.country,
+    "league": match.league,
+    "home": match.home.name,
+    "away": match.away.name,
+    "match": f"{match.home.name} - {match.away.name}",
+    "score": round(total, 2),
+    "band": band,
+    "ranking_component": round(ranking_score * WEIGHTS["ranking_gap"], 2),
+    "strong_gf_component": round(strong_gf_score * WEIGHTS["strong_team_goals_for"], 2),
+    "weak_ga_component": round(weak_ga_score * WEIGHTS["weak_team_goals_against"], 2),
+    "strong_ga_component": round(strong_ga_score * WEIGHTS["strong_team_goals_against"], 2),
+    "weak_gf_component": round(weak_gf_score * WEIGHTS["weak_team_goals_for"], 2),
+    "last10_component": round(last10_score * WEIGHTS["last10_over_profile"], 2),
+    "real_over_index_component": round(real_over_index * WEIGHTS["real_over_index"], 2),
+    "random_component": round(random_score * WEIGHTS["random_component"], 2),
+    "risultato": "",
+    "ESITO": "",
+    "reason": " | ".join(reasons),
+}

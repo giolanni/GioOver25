@@ -1,0 +1,92 @@
+PROGETTO: GioOver2.5
+
+Scopo:
+Classificare partite di calcio in base alla probabilità di Over 2.5.
+
+Input:
+CSV formato:
+
+Home;Away;PosHome;PosAway;PtsHome;PtsAway;GFHome;GSHome;GFAway;GSAway;MatchHome;WinHome;GFH10;GSH10;MatchAway;WinAway;GFA10;GSA10
+
+IMPORTANTE:
+WinHome e WinAway NON rappresentano le vittorie.
+
+WinHome = numero Over 2.5 recenti squadra casa.
+WinAway = numero Over 2.5 recenti squadra ospite.
+
+Modello attuale:
+
+- ranking_gap_score
+- strong_gf_score
+- weak_ga_score
+- strong_ga_score
+- weak_gf_score
+- last10_match_profile
+- real_over_index
+- random_score
+
+La squadra meglio classificata è considerata STRONG.
+L'altra squadra è considerata WEAK.
+
+Output richiesto:
+
+Per ogni partita calcolare:
+
+- ranking_gap_score
+- strong_gf_score
+- weak_ga_score
+- strong_ga_score
+- weak_gf_score
+- last10_match_profile
+- real_over_index
+- score finale
+
+Restituire una tabella ordinata per score decrescente.
+
+Benchmark ufficiale:
+
+Australia Giugno 2026
+
+20 partite analizzate
+2 rinviate
+18 giocate
+12 corrette
+6 errate
+
+Accuratezza 66,7%
+
+Fascia score >75:
+3/3 corrette
+
+Osservazione:
+
+Il modello funziona bene sui mismatch forti e sulle difese vulnerabili.
+
+Area da migliorare:
+
+score 60-75.
+
+csv esempio:
+country,league,home_team;away_team;home_position;away_position;home_points;away_points;home_goal_difference;away_goal_difference;home_goals_for;home_goals_against;away_goals_for;away_goals_against;home_played;away_played;home_last10_matches;home_last10_over25;home_last10_goals_for;home_last10_goals_against;away_last10_matches;away_last10_over25;away_last10_goals_for;away_last10_goals_against
+Norway;3rd Division Group 5;V. Haugesund;Austevoll;1;12;23;10;26;15;22;30;10;7;26;15;10;2;22;30
+
+| Campo     | Descrizione                                      |
+| --------- | ------------------------------------------------ |
+| Home      | Squadra di casa                                  |
+| Away      | Squadra ospite                                   |
+| PosHome   | Posizione in classifica squadra casa             |
+| PosAway   | Posizione in classifica squadra ospite           |
+| PtsHome   | Punti squadra casa                               |
+| PtsAway   | Punti squadra ospite                             |
+| GFHome    | Gol fatti in stagione squadra casa               |
+| GSHome    | Gol subiti in stagione squadra casa              |
+| GFAway    | Gol fatti in stagione squadra ospite             |
+| GSAway    | Gol subiti in stagione squadra ospite            |
+| MatchHome | Partite giocate squadra casa                     |
+| WinHome   | Numero Over 2.5 recenti squadra casa             |
+| GFH10     | Gol fatti nelle ultime N partite squadra casa    |
+| GSH10     | Gol subiti nelle ultime N partite squadra casa   |
+| MatchAway | Partite giocate squadra ospite                   |
+| WinAway   | Numero Over 2.5 recenti squadra ospite           |
+| GFA10     | Gol fatti nelle ultime N partite squadra ospite  |
+| GSA10     | Gol subiti nelle ultime N partite squadra ospite |
