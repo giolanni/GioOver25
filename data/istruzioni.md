@@ -43,7 +43,8 @@ data/output/classifica_21giu2026.csv
 Eseguire:
 
 ```powershell
-python -m gioover25.append_to_storico data/output/classifica_2026-06-22.csv --data 2026-06-22
+python -m gioover25.append_to_storico data/output/classifica_23giu2026_2.csv --data 2026-06-23
+
 ```
 
 Output:
@@ -136,7 +137,7 @@ Classifica CSV
 append_to_storico.py
         │
         ▼
-storico_gioover.csv
+storico_risultati.csv
         │
         ▼
 Inserimento colonna "risultato"
