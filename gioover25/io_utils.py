@@ -43,11 +43,12 @@ def read_matches_from_csv(path: str | Path) -> list[MatchInput]:
             MatchInput(
                 country=row["country"].strip(),
                 league=row["league"].strip(),
+                teams_league=_int(row, "TeamsLeague"),
                 home=home,
                 away=away,
                 )
             )
-
+            
     return matches
 
 

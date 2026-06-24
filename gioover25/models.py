@@ -37,5 +37,6 @@ class TeamStats:
 class MatchInput:
     country: str
     league: str
+    teams_league: int
     home: TeamStats
     away: TeamStats

@@ -27,7 +27,7 @@ python -m gioover25.main data/input/partite<data>.csv --output data/output/class
 Esempio:
 
 ```powershell
-python -m gioover25.main data/input/partite21giugno2026.csv --output data/output/classifica_21giu2026.csv --seed 42
+python -m gioover25.main data/input/partite24giugno2026.csv --output data/output/classifica_24giu2026.csv --seed 42
 ```
 
 Output:

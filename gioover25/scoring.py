@@ -14,7 +14,7 @@ def identify_strong_weak(match: MatchInput) -> tuple[TeamStats, TeamStats]:
     return match.away, match.home
 
 
-def ranking_gap_score(strong: TeamStats, weak: TeamStats) -> float:
+def ranking_gap_score(strong: TeamStats, weak: TeamStats, teams_league: int) -> float:
     """
     Valuta il tipo di distanza in classifica.
 
@@ -25,7 +25,9 @@ def ranking_gap_score(strong: TeamStats, weak: TeamStats) -> float:
     - Squadre vicine a metà classifica: non vengono penalizzate troppo.
     """
     gap = abs(strong.position - weak.position)
-    base = clamp(gap / NORMALIZATION["max_ranking_gap"])
+    max_gap = max(teams_league - 1, 1)
+
+    base = clamp(gap / max_gap)
 
     # Penalità per scontri troppo bloccati in alto o in basso.
     both_top = strong.position <= 3 and weak.position <= 5 and gap <= 3
@@ -78,7 +80,7 @@ def calculate_score(match: MatchInput, random_seed: int | None = None) -> dict:
 
     strong, weak = identify_strong_weak(match)
 
-    ranking_score = ranking_gap_score(strong, weak)
+    ranking_score = ranking_gap_score(strong, weak, match.teams_league)
     strong_gf_score = clamp(strong.gf_per_match / NORMALIZATION["excellent_gf_per_match"])
     weak_ga_score = clamp(weak.ga_per_match / NORMALIZATION["bad_ga_per_match"])
     strong_ga_score = clamp(strong.ga_per_match / NORMALIZATION["useful_ga_per_match_strong"])
