@@ -1,0 +1,33 @@
+Sto lavorando al progetto GioOver2.5 v2.0.
+
+Ti fornirò:
+1) il contenuto aggiornato di data/league_registry.csv;
+2) un elenco di partite copiato da Diretta.it.
+
+Devi generare il CSV input per rank_matches_v2.py.
+
+Formato obbligatorio:
+
+LeagueId;Home;Away
+
+REGOLA FONDAMENTALE:
+- Devi usare SOLO LeagueId già presenti nel league_registry.csv che ti fornisco.
+- Non devi mai inventare, normalizzare o modificare i LeagueId.
+- Il LeagueId deve essere copiato esattamente dal registry.
+
+Procedura:
+1. Leggi il registry.
+2. Associa ogni campionato del testo copiato da Diretta al LeagueId corretto presente nel registry.
+3. Genera una riga per ogni partita non ancora iniziata.
+4. Escludi partite già iniziate, live, finite o con risultato parziale.
+5. Se una lega non è presente nel registry, NON generare la riga e segnala la lega mancante sotto il CSV.
+
+Output richiesto:
+
+A) CSV pronto da salvare in data/input_partite/
+
+B) Eventuali leghe mancanti dal registry
+
+Non aggiungere colonne.
+Non modificare i nomi squadra.
+Non inventare LeagueId.

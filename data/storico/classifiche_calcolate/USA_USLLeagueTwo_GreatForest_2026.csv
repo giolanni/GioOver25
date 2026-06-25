@@ -1,0 +1,144 @@
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+1;1;Pittsburgh Riverhounds 2;1;1;0;0;5;0;5;3;3.0
+1;2;Akron City;1;0;1;0;1;1;0;1;1.0
+1;3;Buffalo;1;0;1;0;1;1;0;1;1.0
+1;4;Cleveland Force;1;0;0;1;0;5;-5;0;0.0
+2;1;Pittsburgh Riverhounds 2;1;1;0;0;5;0;5;3;3.0
+2;2;Cleveland Force;2;1;0;1;4;6;-2;3;1.5
+2;3;Buffalo;1;0;1;0;1;1;0;1;1.0
+2;4;Lorain County Leviathan;1;0;1;0;0;0;0;1;1.0
+2;5;Steel City;1;0;1;0;0;0;0;1;1.0
+2;6;Akron City;2;0;1;1;2;5;-3;1;0.5
+3;1;Pittsburgh Riverhounds 2;2;2;0;0;7;0;7;6;3.0
+3;2;Cleveland Force;2;1;0;1;4;6;-2;3;1.5
+3;3;Buffalo;1;0;1;0;1;1;0;1;1.0
+3;4;Lorain County Leviathan;1;0;1;0;0;0;0;1;1.0
+3;5;Steel City;1;0;1;0;0;0;0;1;1.0
+3;6;Akron City;2;0;1;1;2;5;-3;1;0.5
+3;7;Erie Sports Center;1;0;0;1;0;2;-2;0;0.0
+4;1;Pittsburgh Riverhounds 2;2;2;0;0;7;0;7;6;3.0
+4;2;Buffalo;2;1;1;0;4;2;2;4;2.0
+4;3;Cleveland Force;2;1;0;1;4;6;-2;3;1.5
+4;4;Steel City;1;0;1;0;0;0;0;1;1.0
+4;5;Lorain County Leviathan;2;0;1;1;1;3;-2;1;0.5
+4;6;Akron City;2;0;1;1;2;5;-3;1;0.5
+4;7;Erie Sports Center;1;0;0;1;0;2;-2;0;0.0
+5;1;Buffalo;3;2;1;0;8;2;6;7;2.333
+5;2;Pittsburgh Riverhounds 2;2;2;0;0;7;0;7;6;3.0
+5;3;Cleveland Force;2;1;0;1;4;6;-2;3;1.5
+5;4;Steel City;1;0;1;0;0;0;0;1;1.0
+5;5;Lorain County Leviathan;2;0;1;1;1;3;-2;1;0.5
+5;6;Akron City;2;0;1;1;2;5;-3;1;0.5
+5;7;Erie Sports Center;2;0;0;2;0;6;-6;0;0.0
+6;1;Buffalo;3;2;1;0;8;2;6;7;2.333
+6;2;Pittsburgh Riverhounds 2;3;2;0;1;7;2;5;6;2.0
+6;3;Steel City;2;1;1;0;2;0;2;4;2.0
+6;4;Cleveland Force;2;1;0;1;4;6;-2;3;1.5
+6;5;Lorain County Leviathan;2;0;1;1;1;3;-2;1;0.5
+6;6;Akron City;2;0;1;1;2;5;-3;1;0.5
+6;7;Erie Sports Center;2;0;0;2;0;6;-6;0;0.0
+7;1;Buffalo;3;2;1;0;8;2;6;7;2.333
+7;2;Steel City;3;2;1;0;3;0;3;7;2.333
+7;3;Pittsburgh Riverhounds 2;3;2;0;1;7;2;5;6;2.0
+7;4;Cleveland Force;2;1;0;1;4;6;-2;3;1.5
+7;5;Lorain County Leviathan;2;0;1;1;1;3;-2;1;0.5
+7;6;Akron City;3;0;1;2;2;6;-4;1;0.333
+7;7;Erie Sports Center;2;0;0;2;0;6;-6;0;0.0
+8;1;Pittsburgh Riverhounds 2;4;3;0;1;11;5;6;9;2.25
+8;2;Buffalo;3;2;1;0;8;2;6;7;2.333
+8;3;Steel City;3;2;1;0;3;0;3;7;2.333
+8;4;Lorain County Leviathan;3;1;1;1;4;4;0;4;1.333
+8;5;Cleveland Force;3;1;0;2;7;10;-3;3;1.0
+8;6;Akron City;3;0;1;2;2;6;-4;1;0.333
+8;7;Erie Sports Center;3;0;0;3;1;9;-8;0;0.0
+9;1;Pittsburgh Riverhounds 2;5;3;1;1;11;5;6;10;2.0
+9;2;Buffalo;4;2;2;0;8;2;6;8;2.0
+9;3;Steel City;3;2;1;0;3;0;3;7;2.333
+9;4;Lorain County Leviathan;4;2;1;1;7;5;2;7;1.75
+9;5;Cleveland Force;4;1;0;3;8;13;-5;3;0.75
+9;6;Akron City;3;0;1;2;2;6;-4;1;0.333
+9;7;Erie Sports Center;3;0;0;3;1;9;-8;0;0.0
+10;1;Pittsburgh Riverhounds 2;5;3;1;1;11;5;6;10;2.0
+10;2;Steel City;4;3;1;0;6;0;6;10;2.5
+10;3;Buffalo;5;2;2;1;8;5;3;8;1.6
+10;4;Lorain County Leviathan;4;2;1;1;7;5;2;7;1.75
+10;5;Cleveland Force;5;2;0;3;12;14;-2;6;1.2
+10;6;Akron City;3;0;1;2;2;6;-4;1;0.333
+10;7;Erie Sports Center;4;0;0;4;2;13;-11;0;0.0
+11;1;Steel City;4;3;1;0;6;0;6;10;2.5
+11;2;Pittsburgh Riverhounds 2;6;3;1;2;13;8;5;10;1.667
+11;3;Lorain County Leviathan;5;3;1;1;10;7;3;10;2.0
+11;4;Buffalo;5;2;2;1;8;5;3;8;1.6
+11;5;Cleveland Force;5;2;0;3;12;14;-2;6;1.2
+11;6;Akron City;3;0;1;2;2;6;-4;1;0.333
+11;7;Erie Sports Center;4;0;0;4;2;13;-11;0;0.0
+12;1;Buffalo;6;3;2;1;13;5;8;11;1.833
+12;2;Steel City;4;3;1;0;6;0;6;10;2.5
+12;3;Pittsburgh Riverhounds 2;6;3;1;2;13;8;5;10;1.667
+12;4;Lorain County Leviathan;5;3;1;1;10;7;3;10;2.0
+12;5;Cleveland Force;6;2;0;4;13;17;-4;6;1.0
+12;6;Akron City;4;1;1;2;5;7;-2;4;1.0
+12;7;Erie Sports Center;5;0;0;5;2;18;-16;0;0.0
+13;1;Buffalo;6;3;2;1;13;5;8;11;1.833
+13;2;Steel City;5;3;2;0;6;0;6;11;2.2
+13;3;Pittsburgh Riverhounds 2;7;3;2;2;13;8;5;11;1.571
+13;4;Lorain County Leviathan;5;3;1;1;10;7;3;10;2.0
+13;5;Cleveland Force;6;2;0;4;13;17;-4;6;1.0
+13;6;Akron City;4;1;1;2;5;7;-2;4;1.0
+13;7;Erie Sports Center;5;0;0;5;2;18;-16;0;0.0
+14;1;Buffalo;7;4;2;1;17;7;10;14;2.0
+14;2;Steel City;6;4;2;0;10;0;10;14;2.333
+14;3;Pittsburgh Riverhounds 2;7;3;2;2;13;8;5;11;1.571
+14;4;Lorain County Leviathan;5;3;1;1;10;7;3;10;2.0
+14;5;Cleveland Force;7;2;0;5;15;21;-6;6;0.857
+14;6;Akron City;4;1;1;2;5;7;-2;4;1.0
+14;7;Erie Sports Center;6;0;0;6;2;22;-20;0;0.0
+15;1;Buffalo;7;4;2;1;17;7;10;14;2.0
+15;2;Steel City;6;4;2;0;10;0;10;14;2.333
+15;3;Lorain County Leviathan;6;4;1;1;14;8;6;13;2.167
+15;4;Pittsburgh Riverhounds 2;7;3;2;2;13;8;5;11;1.571
+15;5;Cleveland Force;7;2;0;5;15;21;-6;6;0.857
+15;6;Akron City;5;1;1;3;6;11;-5;4;0.8
+15;7;Erie Sports Center;6;0;0;6;2;22;-20;0;0.0
+16;1;Buffalo;7;4;2;1;17;7;10;14;2.0
+16;2;Steel City;6;4;2;0;10;0;10;14;2.333
+16;3;Lorain County Leviathan;6;4;1;1;14;8;6;13;2.167
+16;4;Pittsburgh Riverhounds 2;7;3;2;2;13;8;5;11;1.571
+16;5;Cleveland Force;8;3;0;5;19;24;-5;9;1.125
+16;6;Akron City;5;1;1;3;6;11;-5;4;0.8
+16;7;Erie Sports Center;7;0;0;7;5;26;-21;0;0.0
+17;1;Buffalo;7;4;2;1;17;7;10;14;2.0
+17;2;Steel City;6;4;2;0;10;0;10;14;2.333
+17;3;Pittsburgh Riverhounds 2;8;4;2;2;16;10;6;14;1.75
+17;4;Lorain County Leviathan;7;4;1;2;16;11;5;13;1.857
+17;5;Cleveland Force;8;3;0;5;19;24;-5;9;1.125
+17;6;Akron City;5;1;1;3;6;11;-5;4;0.8
+17;7;Erie Sports Center;7;0;0;7;5;26;-21;0;0.0
+18;1;Lorain County Leviathan;8;5;1;2;21;11;10;16;2.0
+18;2;Buffalo;7;4;2;1;17;7;10;14;2.0
+18;3;Steel City;6;4;2;0;10;0;10;14;2.333
+18;4;Pittsburgh Riverhounds 2;8;4;2;2;16;10;6;14;1.75
+18;5;Cleveland Force;9;3;0;6;19;29;-10;9;1.0
+18;6;Akron City;5;1;1;3;6;11;-5;4;0.8
+18;7;Erie Sports Center;7;0;0;7;5;26;-21;0;0.0
+19;1;Buffalo;8;5;2;1;20;8;12;17;2.125
+19;2;Steel City;7;5;2;0;11;0;11;17;2.429
+19;3;Lorain County Leviathan;8;5;1;2;21;11;10;16;2.0
+19;4;Pittsburgh Riverhounds 2;9;4;2;3;17;13;4;14;1.556
+19;5;Cleveland Force;9;3;0;6;19;29;-10;9;1.0
+19;6;Akron City;6;1;1;4;6;12;-6;4;0.667
+19;7;Erie Sports Center;7;0;0;7;5;26;-21;0;0.0
+20;1;Buffalo;9;6;2;1;27;9;18;20;2.222
+20;2;Steel City;7;5;2;0;11;0;11;17;2.429
+20;3;Pittsburgh Riverhounds 2;10;5;2;3;19;14;5;17;1.7
+20;4;Lorain County Leviathan;8;5;1;2;21;11;10;16;2.0
+20;5;Cleveland Force;10;3;0;7;20;36;-16;9;0.9
+20;6;Akron City;7;1;1;5;7;14;-7;4;0.571
+20;7;Erie Sports Center;7;0;0;7;5;26;-21;0;0.0
+21;1;Buffalo;9;6;2;1;27;9;18;20;2.222
+21;2;Steel City;8;6;2;0;14;1;13;20;2.5
+21;3;Pittsburgh Riverhounds 2;10;5;2;3;19;14;5;17;1.7
+21;4;Lorain County Leviathan;8;5;1;2;21;11;10;16;2.0
+21;5;Cleveland Force;10;3;0;7;20;36;-16;9;0.9
+21;6;Akron City;7;1;1;5;7;14;-7;4;0.571
+21;7;Erie Sports Center;8;0;0;8;6;29;-23;0;0.0

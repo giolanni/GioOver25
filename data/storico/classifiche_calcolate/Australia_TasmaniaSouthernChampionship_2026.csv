@@ -1,0 +1,111 @@
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+1;1;Hobart Utd.;1;1;0;0;5;0;5;3;3.0
+1;2;Olympia Warriors;1;1;0;0;5;1;4;3;3.0
+1;3;New Town;1;1;0;0;5;2;3;3;3.0
+1;4;Clarence Zebras U21;1;1;0;0;5;4;1;3;3.0
+1;5;Glenorchy Knights U21;1;0;1;0;2;2;0;1;1.0
+1;6;Hobart City;1;0;1;0;2;2;0;1;1.0
+1;7;South Hobart U21;1;0;0;1;4;5;-1;0;0.0
+1;8;Taroona;1;0;0;1;2;5;-3;0;0.0
+1;9;South East Utd. U21;1;0;0;1;1;5;-4;0;0.0
+1;10;University of Tasmania;1;0;0;1;0;5;-5;0;0.0
+2;1;New Town;2;2;0;0;15;2;13;6;3.0
+2;2;Clarence Zebras U21;2;2;0;0;8;6;2;6;3.0
+2;3;Glenorchy Knights U21;2;1;1;0;21;4;17;4;2.0
+2;4;South Hobart U21;2;1;0;1;9;6;3;3;1.5
+2;5;Olympia Warriors;2;1;0;1;6;6;0;3;1.5
+2;6;Taroona;2;1;0;1;5;5;0;3;1.5
+2;7;Hobart Utd.;2;1;0;1;5;10;-5;3;1.5
+2;8;Hobart City;2;0;1;1;2;5;-3;1;0.5
+2;9;University of Tasmania;2;0;0;2;2;8;-6;0;0.0
+2;10;South East Utd. U21;2;0;0;2;3;24;-21;0;0.0
+3;1;Clarence Zebras U21;3;3;0;0;13;7;6;9;3.0
+3;2;New Town;3;2;1;0;16;3;13;7;2.333
+3;3;Taroona;3;2;0;1;11;5;6;6;2.0
+3;4;South Hobart U21;3;2;0;1;13;8;5;6;2.0
+3;5;Olympia Warriors;3;2;0;1;11;9;2;6;2.0
+3;6;Glenorchy Knights U21;3;1;1;1;23;8;15;4;1.333
+3;7;Hobart Utd.;3;1;0;2;6;15;-9;3;1.0
+3;8;Hobart City;3;0;2;1;3;6;-3;2;0.667
+3;9;University of Tasmania;3;0;0;3;5;13;-8;0;0.0
+3;10;South East Utd. U21;3;0;0;3;3;30;-27;0;0.0
+4;1;Clarence Zebras U21;4;4;0;0;17;8;9;12;3.0
+4;2;New Town;4;3;1;0;18;4;14;10;2.5
+4;3;South Hobart U21;4;3;0;1;24;8;16;9;2.25
+4;4;Taroona;4;3;0;1;18;5;13;9;2.25
+4;5;Olympia Warriors;4;2;0;2;12;11;1;6;1.5
+4;6;Hobart City;4;1;2;1;7;9;-2;5;1.25
+4;7;Glenorchy Knights U21;4;1;1;2;24;12;12;4;1.0
+4;8;Hobart Utd.;4;1;0;3;6;22;-16;3;0.75
+4;9;University of Tasmania;4;0;0;4;8;17;-9;0;0.0
+4;10;South East Utd. U21;4;0;0;4;3;41;-38;0;0.0
+5;1;Taroona;5;4;0;1;23;5;18;12;2.4
+5;2;Clarence Zebras U21;5;4;0;1;17;13;4;12;2.4
+5;3;New Town;5;3;2;0;19;5;14;11;2.2
+5;4;South Hobart U21;5;3;1;1;25;9;16;10;2.0
+5;5;Olympia Warriors;5;3;0;2;16;12;4;9;1.8
+5;6;Hobart City;5;2;2;1;12;9;3;8;1.6
+5;7;Glenorchy Knights U21;5;1;1;3;25;16;9;4;0.8
+5;8;University of Tasmania;5;1;0;4;11;17;-6;3;0.6
+5;9;Hobart Utd.;5;1;0;4;6;27;-21;3;0.6
+5;10;South East Utd. U21;5;0;0;5;3;44;-41;0;0.0
+6;1;Clarence Zebras U21;6;5;0;1;20;14;6;15;2.5
+6;2;New Town;6;4;2;0;24;6;18;14;2.333
+6;3;South Hobart U21;6;4;1;1;31;12;19;13;2.167
+6;4;Taroona;6;4;0;2;25;8;17;12;2.0
+6;5;Olympia Warriors;6;4;0;2;19;14;5;12;2.0
+6;6;Hobart City;6;2;2;2;13;12;1;8;1.333
+6;7;Hobart Utd.;6;2;0;4;12;30;-18;6;1.0
+6;8;Glenorchy Knights U21;6;1;1;4;26;21;5;4;0.667
+6;9;University of Tasmania;6;1;0;5;14;23;-9;3;0.5
+6;10;South East Utd. U21;6;0;0;6;6;50;-44;0;0.0
+7;1;New Town;7;5;2;0;30;7;23;17;2.429
+7;2;South Hobart U21;7;5;1;1;34;14;20;16;2.286
+7;3;Olympia Warriors;7;5;0;2;25;14;11;15;2.143
+7;4;Clarence Zebras U21;7;5;0;2;21;20;1;15;2.143
+7;5;Taroona;7;4;0;3;27;11;16;12;1.714
+7;6;Hobart City;6;2;2;2;13;12;1;8;1.333
+7;7;Glenorchy Knights U21;7;2;1;4;28;22;6;7;1.0
+7;8;Hobart Utd.;7;2;0;5;12;36;-24;6;0.857
+7;9;University of Tasmania;7;1;0;6;15;25;-10;3;0.429
+7;10;South East Utd. U21;6;0;0;6;6;50;-44;0;0.0
+8;1;Olympia Warriors;8;6;0;2;27;14;13;18;2.25
+8;2;New Town;7;5;2;0;30;7;23;17;2.429
+8;3;South Hobart U21;8;5;1;2;36;17;19;16;2.0
+8;4;Taroona;8;5;0;3;37;11;26;15;1.875
+8;5;Clarence Zebras U21;8;5;0;3;21;22;-1;15;1.875
+8;6;Hobart City;7;3;2;2;16;14;2;11;1.571
+8;7;Hobart Utd.;8;3;0;5;17;36;-19;9;1.125
+8;8;Glenorchy Knights U21;8;2;1;5;28;27;1;7;0.875
+8;9;University of Tasmania;8;1;0;7;15;35;-20;3;0.375
+8;10;South East Utd. U21;6;0;0;6;6;50;-44;0;0.0
+9;1;South Hobart U21;9;6;1;2;49;17;32;19;2.111
+9;2;New Town;8;5;3;0;31;8;23;18;2.25
+9;3;Olympia Warriors;9;6;0;3;28;17;11;18;2.0
+9;4;Taroona;9;5;1;3;39;13;26;16;1.778
+9;5;Clarence Zebras U21;8;5;0;3;21;22;-1;15;1.875
+9;6;Hobart City;8;4;2;2;19;15;4;14;1.75
+9;7;Hobart Utd.;9;3;0;6;17;49;-32;9;1.0
+9;8;Glenorchy Knights U21;9;2;2;5;30;29;1;8;0.889
+9;9;University of Tasmania;9;1;1;7;16;36;-20;4;0.444
+9;10;South East Utd. U21;6;0;0;6;6;50;-44;0;0.0
+10;1;South Hobart U21;10;7;1;2;52;18;34;22;2.2
+10;2;Taroona;10;6;1;3;40;13;27;19;1.9
+10;3;New Town;9;5;3;1;31;9;22;18;2.0
+10;4;Olympia Warriors;9;6;0;3;28;17;11;18;2.0
+10;5;Hobart City;9;5;2;2;22;16;6;17;1.889
+10;6;Clarence Zebras U21;9;5;0;4;22;25;-3;15;1.667
+10;7;Hobart Utd.;10;3;0;7;19;52;-33;9;0.9
+10;8;Glenorchy Knights U21;10;2;2;6;31;32;-1;8;0.8
+10;9;University of Tasmania;10;2;1;7;19;38;-19;7;0.7
+10;10;South East Utd. U21;6;0;0;6;6;50;-44;0;0.0
+11;1;South Hobart U21;11;7;1;3;53;20;33;22;2.0
+11;2;New Town;10;6;3;1;37;12;25;21;2.1
+11;3;Olympia Warriors;10;7;0;3;30;18;12;21;2.1
+11;4;Taroona;11;6;2;3;42;15;27;20;1.818
+11;5;Hobart City;10;5;3;2;24;18;6;18;1.8
+11;6;Clarence Zebras U21;10;5;0;5;23;29;-6;15;1.5
+11;7;University of Tasmania;11;3;1;7;23;39;-16;10;0.909
+11;8;Hobart Utd.;11;3;0;8;22;58;-36;9;0.818
+11;9;Glenorchy Knights U21;10;2;2;6;31;32;-1;8;0.8
+11;10;South East Utd. U21;6;0;0;6;6;50;-44;0;0.0

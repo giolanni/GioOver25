@@ -1,0 +1,95 @@
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+1;1;Denton Diablos;1;1;0;0;4;0;4;3;3.0
+1;2;Fort Worth Vaqueros;1;0;0;1;0;4;-4;0;0.0
+2;1;Denton Diablos;2;1;0;1;5;2;3;3;1.5
+2;2;McKinney Chupacabras;1;1;0;0;2;1;1;3;3.0
+2;3;Lubbock Matadors;1;1;0;0;1;0;1;3;3.0
+2;4;Fort Worth Vaqueros;2;0;0;2;0;5;-5;0;0.0
+3;1;Texoma;1;1;0;0;7;0;7;3;3.0
+3;2;Denton Diablos;2;1;0;1;5;2;3;3;1.5
+3;3;McKinney Chupacabras;1;1;0;0;2;1;1;3;3.0
+3;4;Lubbock Matadors;1;1;0;0;1;0;1;3;3.0
+3;5;Fort Worth Vaqueros;3;0;0;3;0;12;-12;0;0.0
+4;1;Lubbock Matadors;2;2;0;0;5;0;5;6;3.0
+4;2;Texoma;1;1;0;0;7;0;7;3;3.0
+4;3;Denton Diablos;2;1;0;1;5;2;3;3;1.5
+4;4;McKinney Chupacabras;1;1;0;0;2;1;1;3;3.0
+4;5;Fort Worth Vaqueros;4;0;0;4;0;16;-16;0;0.0
+5;1;Lubbock Matadors;2;2;0;0;5;0;5;6;3.0
+5;2;Denton Diablos;3;2;0;1;6;2;4;6;2.0
+5;3;Texoma;1;1;0;0;7;0;7;3;3.0
+5;4;McKinney Chupacabras;1;1;0;0;2;1;1;3;3.0
+5;5;West Texas;1;0;0;1;0;1;-1;0;0.0
+5;6;Fort Worth Vaqueros;4;0;0;4;0;16;-16;0;0.0
+6;1;Lubbock Matadors;2;2;0;0;5;0;5;6;3.0
+6;2;Denton Diablos;3;2;0;1;6;2;4;6;2.0
+6;3;McKinney Chupacabras;2;2;0;0;4;2;2;6;3.0
+6;4;Texoma;2;1;0;1;8;2;6;3;1.5
+6;5;West Texas;1;0;0;1;0;1;-1;0;0.0
+6;6;Fort Worth Vaqueros;4;0;0;4;0;16;-16;0;0.0
+7;1;McKinney Chupacabras;3;3;0;0;5;2;3;9;3.0
+7;2;Lubbock Matadors;3;2;1;0;5;0;5;7;2.333
+7;3;Texoma;3;2;0;1;10;2;8;6;2.0
+7;4;Denton Diablos;4;2;0;2;6;4;2;6;1.5
+7;5;West Texas;2;0;1;1;0;1;-1;1;0.5
+7;6;Fort Worth Vaqueros;5;0;0;5;0;17;-17;0;0.0
+8;1;Texoma;4;3;0;1;14;3;11;9;2.25
+8;2;McKinney Chupacabras;3;3;0;0;5;2;3;9;3.0
+8;3;Lubbock Matadors;3;2;1;0;5;0;5;7;2.333
+8;4;Denton Diablos;4;2;0;2;6;4;2;6;1.5
+8;5;West Texas;2;0;1;1;0;1;-1;1;0.5
+8;6;Fort Worth Vaqueros;6;0;0;6;1;21;-20;0;0.0
+9;1;Texoma;4;3;0;1;14;3;11;9;2.25
+9;2;Denton Diablos;5;3;0;2;8;5;3;9;1.8
+9;3;McKinney Chupacabras;3;3;0;0;5;2;3;9;3.0
+9;4;Lubbock Matadors;4;2;1;1;6;2;4;7;1.75
+9;5;West Texas;2;0;1;1;0;1;-1;1;0.5
+9;6;Fort Worth Vaqueros;6;0;0;6;1;21;-20;0;0.0
+10;1;Texoma;5;4;0;1;16;4;12;12;2.4
+10;2;Denton Diablos;5;3;0;2;8;5;3;9;1.8
+10;3;McKinney Chupacabras;3;3;0;0;5;2;3;9;3.0
+10;4;Lubbock Matadors;5;2;1;2;7;4;3;7;1.4
+10;5;West Texas;2;0;1;1;0;1;-1;1;0.5
+10;6;Fort Worth Vaqueros;6;0;0;6;1;21;-20;0;0.0
+11;1;Texoma;6;4;0;2;17;6;11;12;2.0
+11;2;McKinney Chupacabras;4;4;0;0;6;2;4;12;3.0
+11;3;Denton Diablos;5;3;0;2;8;5;3;9;1.8
+11;4;Lubbock Matadors;6;2;1;3;7;5;2;7;1.167
+11;5;West Texas;3;1;1;1;2;2;0;4;1.333
+11;6;Fort Worth Vaqueros;6;0;0;6;1;21;-20;0;0.0
+12;1;McKinney Chupacabras;5;4;1;0;8;4;4;13;2.6
+12;2;Texoma;7;4;0;3;18;8;10;12;1.714
+12;3;Denton Diablos;6;4;0;2;10;6;4;12;2.0
+12;4;Lubbock Matadors;7;3;1;3;8;5;3;10;1.429
+12;5;West Texas;4;1;2;1;4;4;0;5;1.25
+12;6;Fort Worth Vaqueros;7;0;0;7;1;22;-21;0;0.0
+13;1;McKinney Chupacabras;6;5;1;0;15;5;10;16;2.667
+13;2;Texoma;7;4;0;3;18;8;10;12;1.714
+13;3;Denton Diablos;6;4;0;2;10;6;4;12;2.0
+13;4;Lubbock Matadors;7;3;1;3;8;5;3;10;1.429
+13;5;West Texas;4;1;2;1;4;4;0;5;1.25
+13;6;Fort Worth Vaqueros;8;0;0;8;2;29;-27;0;0.0
+14;1;McKinney Chupacabras;6;5;1;0;15;5;10;16;2.667
+14;2;Texoma;8;5;0;3;19;8;11;15;1.875
+14;3;Denton Diablos;6;4;0;2;10;6;4;12;2.0
+14;4;Lubbock Matadors;7;3;1;3;8;5;3;10;1.429
+14;5;West Texas;5;1;2;2;4;5;-1;5;1.0
+14;6;Fort Worth Vaqueros;8;0;0;8;2;29;-27;0;0.0
+15;1;McKinney Chupacabras;7;6;1;0;17;6;11;19;2.714
+15;2;Texoma;8;5;0;3;19;8;11;15;1.875
+15;3;Denton Diablos;7;5;0;2;12;7;5;15;2.143
+15;4;Lubbock Matadors;8;3;1;4;9;7;2;10;1.25
+15;5;West Texas;6;1;2;3;5;7;-2;5;0.833
+15;6;Fort Worth Vaqueros;8;0;0;8;2;29;-27;0;0.0
+16;1;McKinney Chupacabras;8;6;1;1;18;9;9;19;2.375
+16;2;Denton Diablos;8;6;0;2;15;8;7;18;2.25
+16;3;Texoma;8;5;0;3;19;8;11;15;1.875
+16;4;Lubbock Matadors;8;3;1;4;9;7;2;10;1.25
+16;5;West Texas;6;1;2;3;5;7;-2;5;0.833
+16;6;Fort Worth Vaqueros;8;0;0;8;2;29;-27;0;0.0
+17;1;McKinney Chupacabras;9;6;2;1;19;10;9;20;2.222
+17;2;Denton Diablos;8;6;0;2;15;8;7;18;2.25
+17;3;Texoma;8;5;0;3;19;8;11;15;1.875
+17;4;Lubbock Matadors;9;3;2;4;10;8;2;11;1.222
+17;5;West Texas;7;2;2;3;7;8;-1;8;1.143
+17;6;Fort Worth Vaqueros;9;0;0;9;3;31;-28;0;0.0

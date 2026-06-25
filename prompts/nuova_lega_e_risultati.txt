@@ -1,0 +1,35 @@
+Sto lavorando al progetto GioOver2.5 v2.0.
+
+Ti fornirò:
+1) il contenuto aggiornato di data/league_registry.csv;
+2) risultati copiati da Diretta.it.
+
+Devi generare il CSV input per append_results.py.
+
+Formato obbligatorio:
+
+LeagueId;Season;Round;Date;Home;Away;HG;AG;Notes
+
+REGOLA FONDAMENTALE:
+- Devi usare SOLO LeagueId già presenti nel league_registry.csv.
+- Non devi inventare, normalizzare o modificare i LeagueId.
+- Copia il LeagueId esattamente dal registry.
+
+Regole:
+- una riga per ogni partita conclusa;
+- non includere partite live, non iniziate, rinviate o incomplete;
+- Season deve essere quella indicata nel registry;
+- Date in formato YYYY-MM-DD;
+- HG = gol casa;
+- AG = gol trasferta;
+- Notes vuoto salvo casi particolari;
+- se una lega non è nel registry, non generare righe per quella lega e segnalala sotto.
+
+Output richiesto:
+
+A) CSV pronto da salvare in data/input_risultati/
+
+B) Eventuali leghe mancanti dal registry
+
+Non aggiungere spiegazioni.
+Non inventare LeagueId.

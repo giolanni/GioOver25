@@ -6,6 +6,7 @@ from pathlib import Path
 from .history import MatchResult, read_results_file, write_results_file
 from .registry import get_league_info
 from .standings import generate_standings_file
+from .ranking_history import update_finished_matches
 
 
 INPUT_REQUIRED_COLUMNS = {
@@ -147,6 +148,7 @@ def append_results(input_file: str | Path) -> None:
     print("Import completato.")
     print(f"Totale partite aggiunte: {total_added}")
     print(f"Totale duplicate ignorate: {total_duplicates}")
+    update_finished_matches()
 
 
 def main() -> None:

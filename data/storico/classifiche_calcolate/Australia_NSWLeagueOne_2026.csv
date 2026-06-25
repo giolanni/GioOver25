@@ -1,0 +1,321 @@
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+1;1;Blacktown Spartans;1;1;0;0;4;1;3;3;3.0
+1;2;Macarthur Rams;1;1;0;0;3;1;2;3;3.0
+1;3;Bulls Academy;1;1;0;0;2;0;2;3;3.0
+1;4;Rydalmere Lions;1;1;0;0;5;4;1;3;3.0
+1;5;Northern Tigers;1;1;0;0;3;2;1;3;3.0
+1;6;Central Coast Mariners U23;1;0;1;0;1;1;0;1;1.0
+1;7;Dulwich Hill;1;0;1;0;1;1;0;1;1.0
+1;8;Hakoah Sydney;1;0;1;0;1;1;0;1;1.0
+1;9;Prospect United;1;0;1;0;1;1;0;1;1.0
+1;10;Hurstville Zagreb;1;0;1;0;0;0;0;1;1.0
+1;11;Newcastle Jets U23;1;0;1;0;0;0;0;1;1.0
+1;12;Bankstown City Lions;1;0;0;1;4;5;-1;0;0.0
+1;13;Canterbury Bankstown;1;0;0;1;2;3;-1;0;0.0
+1;14;Western City Rangers;1;0;0;1;1;3;-2;0;0.0
+1;15;Inter Lions;1;0;0;1;0;2;-2;0;0.0
+1;16;Hills United;1;0;0;1;1;4;-3;0;0.0
+2;1;Northern Tigers;2;2;0;0;6;2;4;6;3.0
+2;2;Blacktown Spartans;2;2;0;0;5;1;4;6;3.0
+2;3;Bulls Academy;2;2;0;0;5;1;4;6;3.0
+2;4;Hakoah Sydney;2;1;1;0;4;2;2;4;2.0
+2;5;Rydalmere Lions;2;1;1;0;6;5;1;4;2.0
+2;6;Central Coast Mariners U23;2;1;1;0;3;2;1;4;2.0
+2;7;Canterbury Bankstown;2;1;0;1;7;5;2;3;1.5
+2;8;Macarthur Rams;2;1;0;1;4;3;1;3;1.5
+2;9;Hills United;2;1;0;1;3;5;-2;3;1.5
+2;10;Hurstville Zagreb;2;0;2;0;1;1;0;2;1.0
+2;11;Dulwich Hill;2;0;1;1;2;3;-1;1;0.5
+2;12;Newcastle Jets U23;2;0;1;1;1;3;-2;1;0.5
+2;13;Prospect United;2;0;1;1;1;4;-3;1;0.5
+2;14;Bankstown City Lions;2;0;0;2;5;8;-3;0;0.0
+2;15;Western City Rangers;2;0;0;2;1;4;-3;0;0.0
+2;16;Inter Lions;2;0;0;2;2;7;-5;0;0.0
+3;1;Northern Tigers;3;3;0;0;7;2;5;9;3.0
+3;2;Blacktown Spartans;3;2;1;0;6;2;4;7;2.333
+3;3;Central Coast Mariners U23;3;2;1;0;5;2;3;7;2.333
+3;4;Bulls Academy;3;2;0;1;6;4;2;6;2.0
+3;5;Hills United;3;2;0;1;6;6;0;6;2.0
+3;6;Hakoah Sydney;3;1;2;0;5;3;2;5;1.667
+3;7;Rydalmere Lions;3;1;2;0;9;8;1;5;1.667
+3;8;Hurstville Zagreb;3;1;2;0;2;1;1;5;1.667
+3;9;Macarthur Rams;3;1;1;1;7;6;1;4;1.333
+3;10;Canterbury Bankstown;3;1;0;2;8;8;0;3;1.0
+3;11;Western City Rangers;3;1;0;2;4;5;-1;3;1.0
+3;12;Newcastle Jets U23;3;0;2;1;2;4;-2;2;0.667
+3;13;Prospect United;3;0;2;1;2;5;-3;2;0.667
+3;14;Dulwich Hill;3;0;1;2;2;5;-3;1;0.333
+3;15;Bankstown City Lions;3;0;0;3;5;9;-4;0;0.0
+3;16;Inter Lions;3;0;0;3;2;8;-6;0;0.0
+4;1;Northern Tigers;4;4;0;0;10;2;8;12;3.0
+4;2;Central Coast Mariners U23;4;2;2;0;7;4;3;8;2.0
+4;3;Rydalmere Lions;4;2;2;0;11;9;2;8;2.0
+4;4;Macarthur Rams;4;2;1;1;9;7;2;7;1.75
+4;5;Blacktown Spartans;4;2;1;1;7;5;2;7;1.75
+4;6;Canterbury Bankstown;4;2;0;2;12;9;3;6;1.5
+4;7;Hakoah Sydney;4;1;3;0;7;5;2;6;1.5
+4;8;Bulls Academy;4;2;0;2;7;6;1;6;1.5
+4;9;Western City Rangers;4;2;0;2;8;8;0;6;1.5
+4;10;Hills United;4;2;0;2;7;8;-1;6;1.5
+4;11;Hurstville Zagreb;4;1;2;1;5;5;0;5;1.25
+4;12;Bankstown City Lions;4;1;0;3;8;10;-2;3;0.75
+4;13;Prospect United;4;0;3;1;4;7;-3;3;0.75
+4;14;Dulwich Hill;4;0;2;2;4;7;-3;2;0.5
+4;15;Newcastle Jets U23;4;0;2;2;3;8;-5;2;0.5
+4;16;Inter Lions;4;0;0;4;2;11;-9;0;0.0
+5;1;Northern Tigers;5;5;0;0;12;2;10;15;3.0
+5;2;Blacktown Spartans;5;3;1;1;9;6;3;10;2.0
+5;3;Bulls Academy;5;3;0;2;11;8;3;9;1.8
+5;4;Rydalmere Lions;5;2;3;0;11;9;2;9;1.8
+5;5;Western City Rangers;5;3;0;2;10;9;1;9;1.8
+5;6;Hills United;5;3;0;2;10;10;0;9;1.8
+5;7;Macarthur Rams;5;2;2;1;10;8;2;8;1.6
+5;8;Central Coast Mariners U23;5;2;2;1;8;8;0;8;1.6
+5;9;Canterbury Bankstown;5;2;1;2;12;9;3;7;1.4
+5;10;Bankstown City Lions;5;2;0;3;12;11;1;6;1.2
+5;11;Hakoah Sydney;5;1;3;1;7;7;0;6;1.2
+5;12;Hurstville Zagreb;5;1;2;2;7;9;-2;5;1.0
+5;13;Prospect United;5;0;3;2;6;10;-4;3;0.6
+5;14;Newcastle Jets U23;5;0;3;2;4;9;-5;3;0.6
+5;15;Dulwich Hill;5;0;2;3;5;9;-4;2;0.4
+5;16;Inter Lions;5;0;0;5;3;13;-10;0;0.0
+6;1;Northern Tigers;6;6;0;0;17;2;15;18;3.0
+6;2;Blacktown Spartans;6;4;1;1;12;8;4;13;2.167
+6;3;Bulls Academy;6;4;0;2;16;8;8;12;2.0
+6;4;Hills United;6;4;0;2;13;12;1;12;2.0
+6;5;Bankstown City Lions;6;3;0;3;14;12;2;9;1.5
+6;6;Macarthur Rams;6;2;3;1;10;8;2;9;1.5
+6;7;Rydalmere Lions;6;2;3;1;13;12;1;9;1.5
+6;8;Western City Rangers;6;3;0;3;11;11;0;9;1.5
+6;9;Central Coast Mariners U23;6;2;3;1;9;9;0;9;1.5
+6;10;Canterbury Bankstown;6;2;2;2;13;10;3;8;1.333
+6;11;Hakoah Sydney;6;1;4;1;7;7;0;7;1.167
+6;12;Newcastle Jets U23;6;1;3;2;9;10;-1;6;1.0
+6;13;Hurstville Zagreb;6;1;2;3;9;12;-3;5;0.833
+6;14;Prospect United;6;0;3;3;6;15;-9;3;0.5
+6;15;Dulwich Hill;6;0;2;4;5;14;-9;2;0.333
+6;16;Inter Lions;6;0;0;6;4;18;-14;0;0.0
+7;1;Northern Tigers;7;6;1;0;18;3;15;19;2.714
+7;2;Bulls Academy;7;5;0;2;17;8;9;15;2.143
+7;3;Blacktown Spartans;7;4;2;1;15;11;4;14;2.0
+7;4;Hills United;7;4;1;2;14;13;1;13;1.857
+7;5;Bankstown City Lions;7;4;0;3;15;12;3;12;1.714
+7;6;Macarthur Rams;7;3;3;1;11;8;3;12;1.714
+7;7;Rydalmere Lions;7;3;3;1;14;12;2;12;1.714
+7;8;Western City Rangers;7;3;0;4;11;12;-1;9;1.286
+7;9;Central Coast Mariners U23;7;2;3;2;9;10;-1;9;1.286
+7;10;Canterbury Bankstown;7;2;2;3;15;14;1;8;1.143
+7;11;Hurstville Zagreb;7;2;2;3;13;14;-1;8;1.143
+7;12;Newcastle Jets U23;7;1;4;2;12;13;-1;7;1.0
+7;13;Hakoah Sydney;7;1;4;2;8;9;-1;7;1.0
+7;14;Prospect United;7;1;3;3;8;16;-8;6;0.857
+7;15;Dulwich Hill;7;0;2;5;5;15;-10;2;0.286
+7;16;Inter Lions;7;0;0;7;4;19;-15;0;0.0
+8;1;Northern Tigers;8;6;2;0;20;5;15;20;2.5
+8;2;Blacktown Spartans;8;5;2;1;19;12;7;17;2.125
+8;3;Bulls Academy;8;5;0;3;17;9;8;15;1.875
+8;4;Bankstown City Lions;8;5;0;3;16;12;4;15;1.875
+8;5;Rydalmere Lions;8;4;3;1;15;12;3;15;1.875
+8;6;Hills United;8;4;2;2;14;13;1;14;1.75
+8;7;Macarthur Rams;8;3;3;2;11;9;2;12;1.5
+8;8;Canterbury Bankstown;8;2;3;3;16;15;1;9;1.125
+8;9;Hurstville Zagreb;8;2;3;3;14;15;-1;9;1.125
+8;10;Western City Rangers;8;3;0;5;11;13;-2;9;1.125
+8;11;Central Coast Mariners U23;8;2;3;3;10;14;-4;9;1.125
+8;12;Newcastle Jets U23;8;1;5;2;14;15;-1;8;1.0
+8;13;Hakoah Sydney;8;1;5;2;9;10;-1;8;1.0
+8;14;Prospect United;8;1;4;3;9;17;-8;7;0.875
+8;15;Dulwich Hill;8;1;2;5;6;15;-9;5;0.625
+8;16;Inter Lions;8;0;1;7;4;19;-15;1;0.125
+9;1;Northern Tigers;9;6;2;1;21;7;14;20;2.222
+9;2;Blacktown Spartans;9;6;2;1;21;13;8;20;2.222
+9;3;Bankstown City Lions;9;6;0;3;18;13;5;18;2.0
+9;4;Rydalmere Lions;9;4;4;1;16;13;3;16;1.778
+9;5;Bulls Academy;9;5;0;4;18;11;7;15;1.667
+9;6;Macarthur Rams;9;4;3;2;14;9;5;15;1.667
+9;7;Hills United;9;4;2;3;14;15;-1;14;1.556
+9;8;Central Coast Mariners U23;9;3;3;3;12;15;-3;12;1.333
+9;9;Hakoah Sydney;9;2;5;2;11;10;1;11;1.222
+9;10;Newcastle Jets U23;9;2;5;2;18;18;0;11;1.222
+9;11;Canterbury Bankstown;9;2;3;4;17;17;0;9;1.0
+9;12;Hurstville Zagreb;9;2;3;4;16;18;-2;9;1.0
+9;13;Western City Rangers;9;3;0;6;14;17;-3;9;1.0
+9;14;Dulwich Hill;9;2;2;5;9;17;-8;8;0.889
+9;15;Prospect United;9;1;4;4;9;20;-11;7;0.778
+9;16;Inter Lions;9;0;2;7;5;20;-15;2;0.222
+10;1;Blacktown Spartans;10;7;2;1;24;15;9;23;2.3
+10;2;Northern Tigers;10;6;2;2;23;10;13;20;2.0
+10;3;Rydalmere Lions;10;5;4;1;19;14;5;19;1.9
+10;4;Bankstown City Lions;10;6;0;4;19;15;4;18;1.8
+10;5;Bulls Academy;10;5;1;4;20;13;7;16;1.6
+10;6;Macarthur Rams;10;4;3;3;14;11;3;15;1.5
+10;7;Newcastle Jets U23;10;3;5;2;20;19;1;14;1.4
+10;8;Hills United;10;4;2;4;15;17;-2;14;1.4
+10;9;Central Coast Mariners U23;10;3;4;3;14;17;-3;13;1.3
+10;10;Canterbury Bankstown;10;3;3;4;19;18;1;12;1.2
+10;11;Hurstville Zagreb;10;3;3;4;18;18;0;12;1.2
+10;12;Hakoah Sydney;10;2;5;3;12;13;-1;11;1.1
+10;13;Dulwich Hill;10;3;2;5;11;18;-7;11;1.1
+10;14;Western City Rangers;10;3;0;7;15;19;-4;9;0.9
+10;15;Prospect United;10;1;5;4;10;21;-11;8;0.8
+10;16;Inter Lions;10;0;3;7;6;21;-15;3;0.3
+11;1;Blacktown Spartans;11;8;2;1;28;15;13;26;2.364
+11;2;Northern Tigers;11;7;2;2;24;10;14;23;2.091
+11;3;Rydalmere Lions;11;6;4;1;21;15;6;22;2.0
+11;4;Bankstown City Lions;11;7;0;4;21;15;6;21;1.909
+11;5;Macarthur Rams;11;5;3;3;15;11;4;18;1.636
+11;6;Bulls Academy;11;5;1;5;20;14;6;16;1.455
+11;7;Central Coast Mariners U23;11;4;4;3;19;18;1;16;1.455
+11;8;Hakoah Sydney;11;3;5;3;17;14;3;14;1.273
+11;9;Newcastle Jets U23;11;3;5;3;21;21;0;14;1.273
+11;10;Hills United;11;4;2;5;15;19;-4;14;1.273
+11;11;Canterbury Bankstown;11;3;4;4;19;18;1;13;1.182
+11;12;Hurstville Zagreb;11;3;3;5;18;19;-1;12;1.091
+11;13;Dulwich Hill;11;3;3;5;11;18;-7;12;1.091
+11;14;Western City Rangers;11;3;0;8;16;24;-8;9;0.818
+11;15;Prospect United;11;1;5;5;10;25;-15;8;0.727
+11;16;Inter Lions;11;0;3;8;7;26;-19;3;0.273
+12;1;Blacktown Spartans;12;9;2;1;30;16;14;29;2.417
+12;2;Northern Tigers;12;7;3;2;24;10;14;24;2.0
+12;3;Bankstown City Lions;12;8;0;4;24;17;7;24;2.0
+12;4;Rydalmere Lions;12;6;5;1;21;15;6;23;1.917
+12;5;Bulls Academy;12;6;1;5;23;16;7;19;1.583
+12;6;Macarthur Rams;12;5;3;4;15;13;2;18;1.5
+12;7;Newcastle Jets U23;12;4;5;3;24;23;1;17;1.417
+12;8;Hills United;12;5;2;5;17;20;-3;17;1.417
+12;9;Central Coast Mariners U23;12;4;4;4;21;21;0;16;1.333
+12;10;Dulwich Hill;12;4;3;5;13;18;-5;15;1.25
+12;11;Hakoah Sydney;12;3;5;4;19;17;2;14;1.167
+12;12;Canterbury Bankstown;12;3;4;5;20;20;0;13;1.083
+12;13;Hurstville Zagreb;12;3;3;6;20;22;-2;12;1.0
+12;14;Western City Rangers;12;3;1;8;16;24;-8;10;0.833
+12;15;Prospect United;12;1;6;5;10;25;-15;9;0.75
+12;16;Inter Lions;12;0;3;9;8;28;-20;3;0.25
+13;1;Blacktown Spartans;13;9;2;2;30;17;13;29;2.231
+13;2;Northern Tigers;13;8;3;2;25;10;15;27;2.077
+13;3;Rydalmere Lions;13;6;6;1;23;17;6;24;1.846
+13;4;Bankstown City Lions;13;8;0;5;24;20;4;24;1.846
+13;5;Macarthur Rams;13;6;3;4;16;13;3;21;1.615
+13;6;Hills United;13;6;2;5;19;21;-2;20;1.538
+13;7;Bulls Academy;13;6;1;6;23;17;6;19;1.462
+13;8;Central Coast Mariners U23;13;5;4;4;23;22;1;19;1.462
+13;9;Newcastle Jets U23;13;4;6;3;25;24;1;18;1.385
+13;10;Canterbury Bankstown;13;4;4;5;25;22;3;16;1.231
+13;11;Dulwich Hill;13;4;4;5;14;19;-5;16;1.231
+13;12;Hakoah Sydney;13;3;5;5;21;22;-1;14;1.077
+13;13;Hurstville Zagreb;13;3;3;7;21;24;-3;12;0.923
+13;14;Western City Rangers;13;3;1;9;17;26;-9;10;0.769
+13;15;Prospect United;13;1;7;5;12;27;-15;10;0.769
+13;16;Inter Lions;13;1;3;9;11;28;-17;6;0.462
+14;1;Blacktown Spartans;14;9;3;2;32;19;13;30;2.143
+14;2;Northern Tigers;14;8;4;2;27;12;15;28;2.0
+14;3;Bankstown City Lions;14;9;0;5;25;20;5;27;1.929
+14;4;Rydalmere Lions;14;6;6;2;24;19;5;24;1.714
+14;5;Hills United;14;7;2;5;21;22;-1;23;1.643
+14;6;Bulls Academy;14;7;1;6;26;18;8;22;1.571
+14;7;Central Coast Mariners U23;14;6;4;4;27;22;5;22;1.571
+14;8;Macarthur Rams;14;6;4;4;18;15;3;22;1.571
+14;9;Newcastle Jets U23;14;4;6;4;28;29;-1;18;1.286
+14;10;Hakoah Sydney;14;4;5;5;26;25;1;17;1.214
+14;11;Canterbury Bankstown;14;4;4;6;26;25;1;16;1.143
+14;12;Dulwich Hill;14;4;4;6;14;21;-7;16;1.143
+14;13;Hurstville Zagreb;14;3;4;7;23;26;-3;13;0.929
+14;14;Western City Rangers;14;3;1;10;17;30;-13;10;0.714
+14;15;Prospect United;14;1;7;6;12;28;-16;10;0.714
+14;16;Inter Lions;14;2;3;9;13;28;-15;9;0.643
+15;1;Blacktown Spartans;15;10;3;2;35;21;14;33;2.2
+15;2;Northern Tigers;15;8;5;2;28;13;15;29;1.933
+15;3;Bankstown City Lions;15;9;0;6;26;23;3;27;1.8
+15;4;Central Coast Mariners U23;15;7;4;4;32;25;7;25;1.667
+15;5;Rydalmere Lions;15;6;6;3;25;21;4;24;1.6
+15;6;Hills United;15;7;2;6;24;27;-3;23;1.533
+15;7;Bulls Academy;15;7;1;7;28;21;7;22;1.467
+15;8;Macarthur Rams;15;6;4;5;18;17;1;22;1.467
+15;9;Newcastle Jets U23;15;5;6;4;31;30;1;21;1.4
+15;10;Canterbury Bankstown;15;5;4;6;28;25;3;19;1.267
+15;11;Dulwich Hill;15;5;4;6;16;22;-6;19;1.267
+15;12;Hakoah Sydney;15;4;5;6;27;28;-1;17;1.133
+15;13;Hurstville Zagreb;15;4;4;7;25;27;-2;16;1.067
+15;14;Inter Lions;15;3;3;9;16;29;-13;12;0.8
+15;15;Western City Rangers;15;3;2;10;18;31;-13;11;0.733
+15;16;Prospect United;15;1;7;7;13;30;-17;10;0.667
+16;1;Blacktown Spartans;16;10;4;2;36;22;14;34;2.125
+16;2;Northern Tigers;16;8;5;3;29;15;14;29;1.812
+16;3;Bankstown City Lions;16;9;1;6;28;25;3;28;1.75
+16;4;Central Coast Mariners U23;16;7;4;5;34;29;5;25;1.562
+16;5;Rydalmere Lions;16;6;7;3;27;23;4;25;1.562
+16;6;Macarthur Rams;16;7;4;5;20;17;3;25;1.562
+16;7;Hills United;16;7;3;6;25;28;-3;24;1.5
+16;8;Bulls Academy;16;7;1;8;29;23;6;22;1.375
+16;9;Canterbury Bankstown;16;6;4;6;30;26;4;22;1.375
+16;10;Newcastle Jets U23;16;5;6;5;31;31;0;21;1.312
+16;11;Hakoah Sydney;16;5;5;6;31;30;1;20;1.25
+16;12;Hurstville Zagreb;16;5;4;7;26;27;-1;19;1.188
+16;13;Dulwich Hill;16;5;4;7;18;26;-8;19;1.188
+16;14;Inter Lions;16;4;3;9;18;30;-12;15;0.938
+16;15;Prospect United;16;2;7;7;17;32;-15;13;0.812
+16;16;Western City Rangers;16;3;2;11;18;33;-15;11;0.688
+17;1;Blacktown Spartans;17;11;4;2;40;23;17;37;2.176
+17;2;Northern Tigers;17;9;5;3;32;15;17;32;1.882
+17;3;Bankstown City Lions;17;10;1;6;30;26;4;31;1.824
+17;4;Macarthur Rams;17;8;4;5;21;17;4;28;1.647
+17;5;Hills United;17;8;3;6;31;28;3;27;1.588
+17;6;Bulls Academy;17;8;1;8;30;23;7;25;1.471
+17;7;Canterbury Bankstown;17;7;4;6;34;28;6;25;1.471
+17;8;Central Coast Mariners U23;17;7;4;6;34;30;4;25;1.471
+17;9;Rydalmere Lions;17;6;7;4;27;24;3;25;1.471
+17;10;Hurstville Zagreb;17;6;4;7;27;27;0;22;1.294
+17;11;Newcastle Jets U23;17;5;6;6;31;32;-1;21;1.235
+17;12;Hakoah Sydney;17;5;5;7;32;32;0;20;1.176
+17;13;Dulwich Hill;17;5;4;8;18;32;-14;19;1.118
+17;14;Inter Lions;17;4;3;10;20;34;-14;15;0.882
+17;15;Prospect United;17;2;7;8;17;35;-18;13;0.765
+17;16;Western City Rangers;17;3;2;12;19;37;-18;11;0.647
+18;1;Blacktown Spartans;18;11;4;3;41;25;16;37;2.056
+18;2;Northern Tigers;18;9;6;3;33;16;17;33;1.833
+18;3;Bankstown City Lions;18;10;2;6;31;27;4;32;1.778
+18;4;Macarthur Rams;18;9;4;5;22;17;5;31;1.722
+18;5;Hills United;18;8;4;6;33;30;3;28;1.556
+18;6;Bulls Academy;18;8;2;8;32;25;7;26;1.444
+18;7;Canterbury Bankstown;18;7;5;6;35;29;6;26;1.444
+18;8;Central Coast Mariners U23;18;7;5;6;35;31;4;26;1.444
+18;9;Rydalmere Lions;18;6;7;5;27;25;2;25;1.389
+18;10;Hakoah Sydney;18;6;5;7;34;33;1;23;1.278
+18;11;Newcastle Jets U23;18;5;7;6;33;34;-1;22;1.222
+18;12;Hurstville Zagreb;18;6;4;8;28;29;-1;22;1.222
+18;13;Dulwich Hill;18;5;5;8;19;33;-14;20;1.111
+18;14;Inter Lions;18;5;3;10;22;35;-13;18;1.0
+18;15;Prospect United;18;2;8;8;19;37;-18;14;0.778
+18;16;Western City Rangers;18;3;3;12;20;38;-18;12;0.667
+19;1;Blacktown Spartans;19;12;4;3;45;26;19;40;2.105
+19;2;Northern Tigers;19;10;6;3;34;16;18;36;1.895
+19;3;Bankstown City Lions;19;10;2;7;32;31;1;32;1.684
+19;4;Hills United;19;9;4;6;36;32;4;31;1.632
+19;5;Macarthur Rams;19;9;4;6;24;20;4;31;1.632
+19;6;Canterbury Bankstown;19;8;5;6;41;34;7;29;1.526
+19;7;Rydalmere Lions;19;7;7;5;28;25;3;28;1.474
+19;8;Central Coast Mariners U23;19;7;6;6;37;33;4;27;1.421
+19;9;Bulls Academy;19;8;2;9;32;26;6;26;1.368
+19;10;Hakoah Sydney;19;6;6;7;36;35;1;24;1.263
+19;11;Hurstville Zagreb;19;6;5;8;29;30;-1;23;1.211
+19;12;Newcastle Jets U23;19;5;7;7;38;40;-2;22;1.158
+19;13;Dulwich Hill;19;5;6;8;19;33;-14;21;1.105
+19;14;Inter Lions;19;5;3;11;22;36;-14;18;0.947
+19;15;Prospect United;19;2;9;8;19;37;-18;15;0.789
+19;16;Western City Rangers;19;3;4;12;21;39;-18;13;0.684
+20;1;Blacktown Spartans;20;12;5;3;46;27;19;41;2.05
+20;2;Northern Tigers;20;10;6;4;34;17;17;36;1.8
+20;3;Bankstown City Lions;20;11;2;7;34;32;2;35;1.75
+20;4;Macarthur Rams;20;10;4;6;25;20;5;34;1.7
+20;5;Canterbury Bankstown;20;9;5;6;46;35;11;32;1.6
+20;6;Hills United;20;9;5;6;36;32;4;32;1.6
+20;7;Bulls Academy;20;9;2;9;36;27;9;29;1.45
+20;8;Rydalmere Lions;20;7;7;6;29;30;-1;28;1.4
+20;9;Central Coast Mariners U23;20;7;6;7;38;35;3;27;1.35
+20;10;Hakoah Sydney;20;7;6;7;37;35;2;27;1.35
+20;11;Hurstville Zagreb;20;6;5;9;30;34;-4;23;1.15
+20;12;Newcastle Jets U23;20;5;7;8;38;41;-3;22;1.1
+20;13;Dulwich Hill;20;5;7;8;20;34;-14;22;1.1
+20;14;Inter Lions;20;6;3;11;23;36;-13;21;1.05
+20;15;Prospect United;20;2;10;8;19;37;-18;16;0.8
+20;16;Western City Rangers;20;3;4;13;21;40;-19;13;0.65

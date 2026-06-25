@@ -1,0 +1,100 @@
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+1;1;Louisville City 2;1;1;0;0;5;1;4;3;3.0
+1;2;Dayton;1;0;0;1;1;5;-4;0;0.0
+2;1;Louisville City 2;1;1;0;0;5;1;4;3;3.0
+2;2;West Virginia;1;1;0;0;2;0;2;3;3.0
+2;3;Kings Hammer Columbus;1;0;0;1;0;2;-2;0;0.0
+2;4;Dayton;1;0;0;1;1;5;-4;0;0.0
+3;1;West Virginia;2;2;0;0;4;0;4;6;3.0
+3;2;Louisville City 2;2;1;0;1;5;3;2;3;1.5
+3;3;Kings Hammer Columbus;1;0;0;1;0;2;-2;0;0.0
+3;4;Dayton;1;0;0;1;1;5;-4;0;0.0
+4;1;West Virginia;3;3;0;0;6;1;5;9;3.0
+4;2;Louisville City 2;2;1;0;1;5;3;2;3;1.5
+4;3;Northern Indiana;1;0;0;1;1;2;-1;0;0.0
+4;4;Kings Hammer Columbus;1;0;0;1;0;2;-2;0;0.0
+4;5;Dayton;1;0;0;1;1;5;-4;0;0.0
+5;1;West Virginia;3;3;0;0;6;1;5;9;3.0
+5;2;Louisville City 2;3;2;0;1;11;3;8;6;2.0
+5;3;Northern Indiana;1;0;0;1;1;2;-1;0;0.0
+5;4;Kings Hammer Columbus;1;0;0;1;0;2;-2;0;0.0
+5;5;Dayton;1;0;0;1;1;5;-4;0;0.0
+5;6;Toledo Villa;1;0;0;1;0;6;-6;0;0.0
+6;1;Louisville City 2;4;3;0;1;14;5;9;9;2.25
+6;2;West Virginia;3;3;0;0;6;1;5;9;3.0
+6;3;Northern Indiana;1;0;0;1;1;2;-1;0;0.0
+6;4;Kings Hammer Columbus;1;0;0;1;0;2;-2;0;0.0
+6;5;Dayton;2;0;0;2;3;8;-5;0;0.0
+6;6;Toledo Villa;1;0;0;1;0;6;-6;0;0.0
+7;1;Louisville City 2;4;3;0;1;14;5;9;9;2.25
+7;2;West Virginia;3;3;0;0;6;1;5;9;3.0
+7;3;Kings Hammer Columbus;2;1;0;1;3;3;0;3;1.5
+7;4;Northern Indiana;2;0;0;2;2;5;-3;0;0.0
+7;5;Dayton;2;0;0;2;3;8;-5;0;0.0
+7;6;Toledo Villa;1;0;0;1;0;6;-6;0;0.0
+8;1;West Virginia;4;4;0;0;9;2;7;12;3.0
+8;2;Louisville City 2;4;3;0;1;14;5;9;9;2.25
+8;3;Kings Hammer Columbus;2;1;0;1;3;3;0;3;1.5
+8;4;Northern Indiana;2;0;0;2;2;5;-3;0;0.0
+8;5;Dayton;2;0;0;2;3;8;-5;0;0.0
+8;6;Toledo Villa;2;0;0;2;1;9;-8;0;0.0
+9;1;West Virginia;4;4;0;0;9;2;7;12;3.0
+9;2;Louisville City 2;5;3;0;2;14;7;7;9;1.8
+9;3;Kings Hammer Columbus;2;1;0;1;3;3;0;3;1.5
+9;4;Northern Indiana;3;1;0;2;4;5;-1;3;1.0
+9;5;Dayton;3;0;1;2;4;9;-5;1;0.333
+9;6;Toledo Villa;3;0;1;2;2;10;-8;1;0.333
+10;1;West Virginia;5;5;0;0;10;2;8;15;3.0
+10;2;Louisville City 2;6;4;0;2;15;7;8;12;2.0
+10;3;Northern Indiana;4;2;0;2;7;5;2;6;1.5
+10;4;Kings Hammer Columbus;3;1;0;2;3;4;-1;3;1.0
+10;5;Dayton;4;0;1;3;4;12;-8;1;0.25
+10;6;Toledo Villa;4;0;1;3;2;11;-9;1;0.25
+11;1;West Virginia;5;5;0;0;10;2;8;15;3.0
+11;2;Louisville City 2;6;4;0;2;15;7;8;12;2.0
+11;3;Northern Indiana;5;3;0;2;10;6;4;9;1.8
+11;4;Dayton;5;1;1;3;5;12;-7;4;0.8
+11;5;Kings Hammer Columbus;4;1;0;3;3;5;-2;3;0.75
+11;6;Toledo Villa;5;0;1;4;3;14;-11;1;0.2
+12;1;West Virginia;6;6;0;0;11;2;9;18;3.0
+12;2;Louisville City 2;6;4;0;2;15;7;8;12;2.0
+12;3;Northern Indiana;6;3;0;3;10;7;3;9;1.5
+12;4;Dayton;5;1;1;3;5;12;-7;4;0.8
+12;5;Kings Hammer Columbus;4;1;0;3;3;5;-2;3;0.75
+12;6;Toledo Villa;5;0;1;4;3;14;-11;1;0.2
+13;1;West Virginia;6;6;0;0;11;2;9;18;3.0
+13;2;Louisville City 2;6;4;0;2;15;7;8;12;2.0
+13;3;Northern Indiana;6;3;0;3;10;7;3;9;1.5
+13;4;Dayton;5;1;1;3;5;12;-7;4;0.8
+13;5;Toledo Villa;6;1;1;4;5;15;-10;4;0.667
+13;6;Kings Hammer Columbus;5;1;0;4;4;7;-3;3;0.6
+14;1;West Virginia;6;6;0;0;11;2;9;18;3.0
+14;2;Louisville City 2;7;5;0;2;16;7;9;15;2.143
+14;3;Northern Indiana;6;3;0;3;10;7;3;9;1.5
+14;4;Kings Hammer Columbus;6;2;0;4;6;8;-2;6;1.0
+14;5;Dayton;6;1;1;4;5;13;-8;4;0.667
+14;6;Toledo Villa;7;1;1;5;6;17;-11;4;0.571
+15;1;West Virginia;6;6;0;0;11;2;9;18;3.0
+15;2;Louisville City 2;8;5;0;3;17;11;6;15;1.875
+15;3;Northern Indiana;6;3;0;3;10;7;3;9;1.5
+15;4;Kings Hammer Columbus;7;3;0;4;10;9;1;9;1.286
+15;5;Dayton;6;1;1;4;5;13;-8;4;0.667
+15;6;Toledo Villa;7;1;1;5;6;17;-11;4;0.571
+16;1;West Virginia;7;7;0;0;15;5;10;21;3.0
+16;2;Louisville City 2;8;5;0;3;17;11;6;15;1.875
+16;3;Northern Indiana;7;3;0;4;12;11;1;9;1.286
+16;4;Kings Hammer Columbus;7;3;0;4;10;9;1;9;1.286
+16;5;Dayton;7;2;1;4;9;15;-6;7;1.0
+16;6;Toledo Villa;8;1;1;6;9;21;-12;4;0.5
+17;1;West Virginia;7;7;0;0;15;5;10;21;3.0
+17;2;Louisville City 2;8;5;0;3;17;11;6;15;1.875
+17;3;Northern Indiana;8;4;0;4;14;12;2;12;1.5
+17;4;Dayton;8;3;1;4;10;15;-5;10;1.25
+17;5;Kings Hammer Columbus;8;3;0;5;11;11;0;9;1.125
+17;6;Toledo Villa;9;1;1;7;9;22;-13;4;0.444
+18;1;West Virginia;8;7;1;0;16;6;10;22;2.75
+18;2;Louisville City 2;9;5;1;3;18;12;6;16;1.778
+18;3;Northern Indiana;8;4;0;4;14;12;2;12;1.5
+18;4;Dayton;8;3;1;4;10;15;-5;10;1.25
+18;5;Kings Hammer Columbus;8;3;0;5;11;11;0;9;1.125
+18;6;Toledo Villa;9;1;1;7;9;22;-13;4;0.444

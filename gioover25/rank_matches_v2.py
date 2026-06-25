@@ -6,12 +6,11 @@ from .history import read_results_file
 from .match_statistics import build_match_statistics
 from .registry import get_league_info
 from .scoring_v2 import calculate_score_v2
+from .ranking_history import append_predictions
 
 
 INPUT_REQUIRED_COLUMNS = {
     "LeagueId",
-    "Round",
-    "Date",
     "Home",
     "Away",
 }
@@ -25,6 +24,11 @@ def _int(value: str) -> int:
     value = (value or "").strip()
     return int(value) if value else 0
 
+def infer_next_round(matches: list) -> int:
+    if not matches:
+        return 1
+
+    return max(match.round for match in matches) + 1
 
 def read_matches_to_rank(path: str | Path) -> list[dict]:
     input_path = Path(path)
@@ -52,14 +56,14 @@ def rank_matches(input_file: str | Path, output_file: str | Path) -> None:
 
     for row in rows:
         league_id = row["LeagueId"].strip()
-        round_number = _int(row["Round"])
+        results_file = RESULTS_DIR / f"{league_id}.csv"
+        matches = read_results_file(results_file)
+
+        round_number = infer_next_round(matches)
         home = row["Home"].strip()
         away = row["Away"].strip()
 
         league_info = get_league_info(league_id)
-
-        results_file = RESULTS_DIR / f"{league_id}.csv"
-        matches = read_results_file(results_file)
 
         match_stats = build_match_statistics(
             matches=matches,
@@ -73,7 +77,6 @@ def rank_matches(input_file: str | Path, output_file: str | Path) -> None:
         results.append(
             {
                 "LeagueId": league_id,
-                "Date": row["Date"].strip(),
                 "Round": round_number,
                 "Home": home,
                 "Away": away,
@@ -96,7 +99,6 @@ def rank_matches(input_file: str | Path, output_file: str | Path) -> None:
 
     fieldnames = [
         "LeagueId",
-        "Date",
         "Round",
         "Home",
         "Away",
@@ -117,6 +119,7 @@ def rank_matches(input_file: str | Path, output_file: str | Path) -> None:
         writer.writerows(results)
 
     print(f"Ranking generato: {output_path.resolve()}")
+    append_predictions(results)
 
 
 def main() -> None:

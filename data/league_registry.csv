@@ -5,4 +5,40 @@ Norway_3rdDivision_Group3_2026;Norway;3rd Division Group 3;2026;14;26;Yes;Round 
 Norway_3rdDivision_Group4_2026;Norway;3rd Division Group 4;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group5_2026;Norway;3rd Division Group 5;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group6_2026;Norway;3rd Division Group 6;2026;14;26;Yes;Round 12 currently partial in supplied data
-Iceland_BestaDeildKarla_2026;Iceland;Besta deild karla;2026;12;22;Yes;
+Iceland_BestaDeildKarla_2026;Iceland;Besta deizld karla;2026;12;22;Yes;
+Sweden_Division2_NorraGotaland_2026;Sweden;Norra Gotaland;2026;14;26;Yes;
+Sweden_Division2_NorraSvealand_2026;Sweden;Norra Svealand;2026;14;26;Yes;
+Sweden_Division2_SodraSvealand_2026;Sweden;Sodra Svealand;2026;14;26;Yes;
+Sweden_Division2_VastraGotaland_2026;Sweden;Vastra Gotaland;2026;14;26;Yes;
+USA_USLLeagueTwo_Northeast_2026;USA;USL League Two - Northeast Division;2026;10;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_Southeast_2026;USA;USL League Two - Southeast Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_Northwest_2026;USA;USL League Two - Northwest Division;2026;8;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_Southwest_2026;USA;USL League Two - Southwest Division;2026;8;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_Mountain_2026;USA;USL League Two - Mountain Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_Metropolitan_2026;USA;USL League Two - Metropolitan Division;2026;10;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_GreatLakes_2026;USA;USL League Two - Great Lakes Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_Heartland_2026;USA;USL League Two - Heartland Division;2026;9;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_MidAtlantic_2026;USA;USL League Two - Mid-Atlantic Division;2026;9;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_MidSouth_2026;USA;USL League Two - Mid South Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_SouthAtlantic_2026;USA;USL League Two - South Atlantic Division;2026;11;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_Valley_2026;USA;USL League Two - Valley Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_Chesapeake_2026;USA;USL League Two - Chesapeake Division;2026;11;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_LoneStar_2026;USA;USL League Two - Lone Star Division;2026;9;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_NorCal_2026;USA;USL League Two - Nor Cal Division;2026;8;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_SouthCentral_2026;USA;USL League Two - South Central Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_SouthFlorida_2026;USA;USL League Two - South Florida Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_GreatForest_2026;USA;USL League Two - Great Forest Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_GreatPlains_2026;USA;USL League Two - Great Plains Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+USA_USLLeagueTwo_Ranger_2026;USA;USL League Two - Ranger Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
+Finland_Ykkonen_2026;Finland;Ykkonen;2026;12;22;Yes;
+Australia_NPLNSW_2026;Australia;NPL NSW;2026;16;30;Yes;
+Australia_NPLSouthAustralia_2026;Australia;NPL South Australia;2026;12;22;Yes;
+Australia_NPLWesternAustralia_2026;Australia;NPL Western Australia;2026;12;22;Yes;
+Australia_NPLQueensland_2026;Australia;NPL Queensland;2026;12;22;Yes;
+Australia_NPLVictoria_2026;Australia;NPL Victoria;2026;14;26;Yes;
+Australia_NSWLeagueOne_2026;Australia;NSW League One;2026;16;30;Yes;
+Australia_QueenslandPremierLeague_2026;Australia;Queensland Premier League;2026;12;22;Yes;
+Australia_SAStateLeague_2026;Australia;SA State League;2026;12;22;Yes;
+Australia_TasmaniaSouthernChampionship_2026;Australia;Tasmania Southern Championship;2026;10;18;Yes;
+Australia_VictoriaPremierLeague2_2026;Australia;Victoria Premier League 2;2026;14;26;Yes;
+Australia_NPL_NSW_U20_2026;Australia;NPL NSW U20;2026;16;30;Yes;Stagione corrente
