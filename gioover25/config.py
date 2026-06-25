@@ -20,4 +20,4 @@ NORMALIZATION = {
     "useful_gf_per_match_weak": 1.2,
 }
 
-MODEL_VERSION = "1.1"
+MODEL_VERSION = "1.3"

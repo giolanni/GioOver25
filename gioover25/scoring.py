@@ -14,34 +14,27 @@ def identify_strong_weak(match: MatchInput) -> tuple[TeamStats, TeamStats]:
     return match.away, match.home
 
 
-def ranking_gap_score(strong: TeamStats, weak: TeamStats, teams_league: int) -> float:
-    """
-    Valuta il tipo di distanza in classifica.
+def ranking_gap_score(strong, weak, teams_count=None):
+    if teams_count is None or teams_count <= 1:
+        teams_count = max(strong.position, weak.position, 20)
 
-    Regole iniziali:
-    - Grande distanza tipo 1 vs ultima: molto positiva.
-    - Scontri diretti altissimi, es. 1 vs 2: cautela.
-    - Scontri diretti bassissimi, es. 19 vs 20: cautela.
-    - Squadre vicine a metà classifica: non vengono penalizzate troppo.
-    """
-    gap = abs(strong.position - weak.position)
-    max_gap = max(teams_league - 1, 1)
+    position_gap = abs(strong.position - weak.position)
+    position_gap_ratio = position_gap / (teams_count - 1)
 
-    base = clamp(gap / max_gap)
+    strong_ppg = strong.points / max(strong.played, 1)
+    weak_ppg = weak.points / max(weak.played, 1)
 
-    # Penalità per scontri troppo bloccati in alto o in basso.
-    both_top = strong.position <= 3 and weak.position <= 5 and gap <= 3
-    both_bottom = strong.position >= 16 and weak.position >= 16 and gap <= 3
+    ppg_gap = abs(strong_ppg - weak_ppg)
 
-    if both_top:
-        base *= 0.45
-    elif both_bottom:
-        base *= 0.35
-    elif gap <= 2 and 6 <= strong.position <= 12 and 6 <= weak.position <= 14:
-        # Squadre vicine ma di metà classifica: partita potenzialmente meno bloccata.
-        base = max(base, 0.45)
+    # 1.50 punti/partita di differenza è già un gap enorme
+    ppg_gap_ratio = min(ppg_gap / 1.50, 1)
 
-    return clamp(base)
+    score = (
+        position_gap_ratio * 0.35 +
+        ppg_gap_ratio * 0.65
+    ) * 20
+
+    return clamp(score, 0, 20)
 
 
 def last10_team_profile(team: TeamStats) -> float:
@@ -80,7 +73,7 @@ def calculate_score(match: MatchInput, random_seed: int | None = None) -> dict:
 
     strong, weak = identify_strong_weak(match)
 
-    ranking_score = ranking_gap_score(strong, weak, match.teams_league)
+    ranking_component = ranking_gap_score(strong, weak, match.teams_count)
     strong_gf_score = clamp(strong.gf_per_match / NORMALIZATION["excellent_gf_per_match"])
     weak_ga_score = clamp(weak.ga_per_match / NORMALIZATION["bad_ga_per_match"])
     strong_ga_score = clamp(strong.ga_per_match / NORMALIZATION["useful_ga_per_match_strong"])
