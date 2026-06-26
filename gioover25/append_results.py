@@ -33,12 +33,44 @@ def _int(value: str) -> int:
 
 def _match_key(match: MatchResult) -> tuple:
     return (
-        match.season,
-        match.round,
-        match.date,
         match.home.strip().lower(),
         match.away.strip().lower(),
     )
+
+def _team_played_count(matches: list[MatchResult], team: str) -> int:
+    team_key = team.strip().lower()
+
+    return sum(
+        1
+        for match in matches
+        if match.home.strip().lower() == team_key
+        or match.away.strip().lower() == team_key
+    )
+
+
+def _resolve_round(
+    row: dict,
+    existing_matches: list[MatchResult],
+) -> int:
+    raw_round = (row.get("Round") or "").strip()
+
+    if raw_round not in {"", "?"}:
+        return _int(raw_round)
+
+    home = row["Home"].strip()
+    away = row["Away"].strip()
+
+    home_played = _team_played_count(existing_matches, home)
+    away_played = _team_played_count(existing_matches, away)
+
+    if home_played != away_played:
+        raise ValueError(
+            "Round automatico impossibile: "
+            f"{home} ha giocato {home_played} partite, "
+            f"{away} ha giocato {away_played} partite."
+        )
+
+    return home_played + 1
 
 
 def read_input_results(path: str | Path) -> dict[str, list[MatchResult]]:
@@ -76,7 +108,7 @@ def read_input_results(path: str | Path) -> dict[str, list[MatchResult]]:
                 country=league_info.country,
                 league=league_info.league,
                 season=season,
-                round=_int(row["Round"]),
+                round=0 if row["Round"].strip() in {"", "?"} else _int(row["Round"]),
                 date=row["Date"].strip(),
                 home=row["Home"].strip(),
                 away=row["Away"].strip(),
@@ -111,6 +143,16 @@ def append_results(input_file: str | Path) -> None:
         duplicates = 0
 
         for match in new_matches:
+            if match.round == 0:
+                fake_row = {
+                    "Round": "?",
+                    "Home": match.home,
+                    "Away": match.away,
+                }
+
+                resolved_round = _resolve_round(fake_row, existing_matches + added)
+                match.round = resolved_round
+
             key = _match_key(match)
 
             if key in existing_keys:

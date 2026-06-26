@@ -1,14 +1,26 @@
 ﻿LeagueId;Country;League;Season;Teams;ExpectedRounds;HomeAway;Notes
+Belarus_VysshayaLiga_2026;Belarus;Vysshaya Liga;2026;16;30;Yes;Round 12 complete in supplied data
+Norway_2ndDivision_Group2_2026;Norway;2nd Division Group 2;2026;14;26;Yes;Round 11 currently partial in supplied data
 Norway_3rdDivision_Group1_2026;Norway;3rd Division Group 1;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group2_2026;Norway;3rd Division Group 2;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group3_2026;Norway;3rd Division Group 3;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group4_2026;Norway;3rd Division Group 4;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group5_2026;Norway;3rd Division Group 5;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group6_2026;Norway;3rd Division Group 6;2026;14;26;Yes;Round 12 currently partial in supplied data
+Estonia_Meistriliiga_2026;Estonia;Meistriliiga;2026;10;36;Yes;Round 17 currently partial in supplied data
+Estonia_Esiliiga_2026;Estonia;Esiliiga;2026;10;36;Yes;Round 17 complete in supplied data
+Estonia_EsiliigaB_2026;Estonia;Esiliiga B;2026;10;36;Yes;Round 17 complete in supplied data
+Finland_Ykkosliiga_2026;Finland;Ykkosliiga;2026;10;0;No;Round not supplied in source data
 Iceland_BestaDeildKarla_2026;Iceland;Besta deizld karla;2026;12;22;Yes;
+Iceland_Division_1_2026;Iceland;Division 1;2026;12;22;TRUE;
+Iceland_Division_2_2026;Islanda;Division 2;2026;12;22;TRUE;
+Sweden_Superettan_2026;Sweden;Superettan;2026;16;30;Yes;Round 13 currently partial in supplied data
+Sweden_Division1_Norra_2026;Sweden;Division 1 Norra;2026;16;30;Yes;Round 14 currently partial in supplied data
+Sweden_Division1_Sodra_2026;Sweden;Division 1 Södra;2026;16;30;Yes;Round 13 complete in supplied data
 Sweden_Division2_NorraGotaland_2026;Sweden;Norra Gotaland;2026;14;26;Yes;
 Sweden_Division2_NorraSvealand_2026;Sweden;Norra Svealand;2026;14;26;Yes;
 Sweden_Division2_SodraSvealand_2026;Sweden;Sodra Svealand;2026;14;26;Yes;
+Sweden_Division2_SodraGotaland_2026;Sweden;Division 2 Södra Götaland;2026;14;26;Yes;Round 14 partial in supplied data
 Sweden_Division2_VastraGotaland_2026;Sweden;Vastra Gotaland;2026;14;26;Yes;
 USA_USLLeagueTwo_Northeast_2026;USA;USL League Two - Northeast Division;2026;10;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
 USA_USLLeagueTwo_Southeast_2026;USA;USL League Two - Southeast Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"

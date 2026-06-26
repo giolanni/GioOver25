@@ -1,22 +1,60 @@
 ﻿PredictionDate;AlgorithmVersion;LeagueId;Round;Home;Away;Match;Score;Band;HG;AG;Goals;Over25;BTTS
-2026-06-26;2.0.0;Australia_TasmaniaSouthernChampionship_2026;12;Olympia Warriors;University of Tasmania;Olympia Warriors - University of Tasmania;81.28;ALTA;;;;;
-2026-06-26;2.0.0;Australia_TasmaniaSouthernChampionship_2026;12;Glenorchy Knights U21;South Hobart U21;Glenorchy Knights U21 - South Hobart U21;78.22;ALTA;;;;;
-2026-06-26;2.0.0;Australia_QueenslandPremierLeague_2026;16;Brisbane Strikers;Ipswich;Brisbane Strikers - Ipswich;62.75;MEDIA-ALTA;;;;;
-2026-06-26;2.0.0;Australia_NPLWesternAustralia_2026;16;Bayswater City;Perth RedStar;Bayswater City - Perth RedStar;62.54;MEDIA-ALTA;;;;;
-2026-06-26;2.0.0;Australia_NSWLeagueOne_2026;21;Blacktown Spartans;Rydalmere Lions;Blacktown Spartans - Rydalmere Lions;61.48;MEDIA-ALTA;;;;;
-2026-06-26;2.0.0;Australia_QueenslandPremierLeague_2026;16;Holland Park Hawks;Redlands;Holland Park Hawks - Redlands;57.64;MEDIA;;;;;
-2026-06-26;2.0.0;Australia_NPLQueensland_2026;16;Rochedale;Gold Coast Knights;Rochedale - Gold Coast Knights;56.04;MEDIA;;;;;
-2026-06-26;2.0.0;Australia_NPL_NSW_U20_2026;21;Sydney FC U20;Sydney Utd U20;Sydney FC U20 - Sydney Utd U20;55.13;MEDIA;;;;;
-2026-06-26;2.0.0;Australia_VictoriaPremierLeague2_2026;19;Keilor Park;Moreland City;Keilor Park - Moreland City;54.75;MEDIA;;;;;
+2026-06-26;2.0.0;Australia_TasmaniaSouthernChampionship_2026;12;Olympia Warriors;University of Tasmania;Olympia Warriors - University of Tasmania;81.28;ALTA;4;2;6;OK;OK
+2026-06-26;2.0.0;Australia_TasmaniaSouthernChampionship_2026;12;Glenorchy Knights U21;South Hobart U21;Glenorchy Knights U21 - South Hobart U21;78.22;ALTA;2;4;6;OK;OK
+2026-06-26;2.0.0;Australia_QueenslandPremierLeague_2026;16;Brisbane Strikers;Ipswich;Brisbane Strikers - Ipswich;62.75;MEDIA-ALTA;1;0;1;KO;KO
+2026-06-26;2.0.0;Australia_NPLWesternAustralia_2026;16;Bayswater City;Perth RedStar;Bayswater City - Perth RedStar;62.54;MEDIA-ALTA;3;0;3;OK;KO
+2026-06-26;2.0.0;Australia_NSWLeagueOne_2026;21;Blacktown Spartans;Rydalmere Lions;Blacktown Spartans - Rydalmere Lions;61.48;MEDIA-ALTA;3;1;4;OK;OK
+2026-06-26;2.0.0;Australia_QueenslandPremierLeague_2026;16;Holland Park Hawks;Redlands;Holland Park Hawks - Redlands;57.64;MEDIA;1;4;5;OK;OK
+2026-06-26;2.0.0;Australia_NPLQueensland_2026;16;Rochedale;Gold Coast Knights;Rochedale - Gold Coast Knights;56.04;MEDIA;4;1;5;OK;OK
+2026-06-26;2.0.0;Australia_NPL_NSW_U20_2026;21;Sydney FC U20;Sydney Utd U20;Sydney FC U20 - Sydney Utd U20;55.13;MEDIA;5;5;10;OK;OK
+2026-06-26;2.0.0;Australia_VictoriaPremierLeague2_2026;19;Keilor Park;Moreland City;Keilor Park - Moreland City;54.75;MEDIA;2;0;2;KO;KO
 2026-06-26;2.0.0;USA_USLLeagueTwo_Northeast_2026;25;Seacoast United Phantoms;Boston Bolts;Seacoast United Phantoms - Boston Bolts;52.53;MEDIA;;;;;
-2026-06-26;2.0.0;Australia_NPLVictoria_2026;18;Heidelberg;Oakleigh;Heidelberg - Oakleigh;50.77;MEDIA;;;;;
-2026-06-26;2.0.0;Australia_NPLVictoria_2026;18;Bentleigh;Altona Magic;Bentleigh - Altona Magic;50.22;MEDIA;;;;;
-2026-06-26;2.0.0;Australia_NPLVictoria_2026;18;Dandenong City;Avondale FC;Dandenong City - Avondale FC;49.71;MEDIA;;;;;
+2026-06-26;2.0.0;Australia_NPLVictoria_2026;18;Heidelberg;Oakleigh;Heidelberg - Oakleigh;50.77;MEDIA;0;1;1;KO;KO
+2026-06-26;2.0.0;Australia_NPLVictoria_2026;18;Bentleigh;Altona Magic;Bentleigh - Altona Magic;50.22;MEDIA;0;1;1;KO;KO
+2026-06-26;2.0.0;Australia_NPLVictoria_2026;18;Dandenong City;Avondale FC;Dandenong City - Avondale FC;49.71;MEDIA;3;1;4;OK;OK
 2026-06-26;2.0.0;USA_USLLeagueTwo_SouthFlorida_2026;16;Brevard SC;Weston FC;Brevard SC - Weston FC;45.38;MEDIA;;;;;
-2026-06-26;2.0.0;Australia_NPLVictoria_2026;18;St Albans;Melbourne City U21;St Albans - Melbourne City U21;43.42;BASSA;;;;;
-2026-06-26;2.0.0;Australia_SAStateLeague_2026;16;Eastern United;Cumberland Utd.;Eastern United - Cumberland Utd.;42.1;BASSA;;;;;
+2026-06-26;2.0.0;Australia_NPLVictoria_2026;18;St Albans;Melbourne City U21;St Albans - Melbourne City U21;43.42;BASSA;0;2;2;KO;KO
+2026-06-26;2.0.0;Australia_SAStateLeague_2026;16;Eastern United;Cumberland Utd.;Eastern United - Cumberland Utd.;42.1;BASSA;0;1;1;KO;KO
 2026-06-26;2.0.0;USA_USLLeagueTwo_MidSouth_2026;17;Hattiesburg FC;Jackson Boom;Hattiesburg FC - Jackson Boom;41.57;BASSA;;;;;
-2026-06-26;2.0.0;Australia_NPLNSW_2026;21;Sydney FC U23;Sydney Utd;Sydney FC U23 - Sydney Utd;40.27;BASSA;;;;;
+2026-06-26;2.0.0;Australia_NPLNSW_2026;21;Sydney FC U23;Sydney Utd;Sydney FC U23 - Sydney Utd;40.27;BASSA;1;0;1;KO;KO
 2026-06-26;2.0.0;USA_USLLeagueTwo_Mountain_2026;23;Flatirons FC;Utah United;Flatirons FC - Utah United;37.4;BASSA;;;;;
 2026-06-26;2.0.0;USA_USLLeagueTwo_SouthCentral_2026;17;Birmingham Legion FC II;Swarm FC;Birmingham Legion FC II - Swarm FC;37.36;BASSA;;;;;
 2026-06-26;2.0.0;USA_USLLeagueTwo_Metropolitan_2026;24;Long Island Rough Riders;Cedar Stars;Long Island Rough Riders - Cedar Stars;0.0;BASSA;;;;;
+2026-06-26;2.0.0;Norway_3rdDivision_Group5_2026;12;Skedsmo;Skjetten;Skedsmo - Skjetten;91.56;ALTA;;;;;
+2026-06-26;2.0.0;Norway_3rdDivision_Group4_2026;13;Flekkeroy;Akra;Flekkeroy - Akra;86.25;ALTA;;;;;
+2026-06-26;2.0.0;USA_USLLeagueTwo_SouthCentral_2026;17;Birmingham 2;Swarm FC;Birmingham 2 - Swarm FC;82.87;ALTA;;;;;
+2026-06-26;2.0.0;Sweden_Division2_NorraGotaland_2026;15;Vanersborgs IF;Stenungsunds;Vanersborgs IF - Stenungsunds;81.78;ALTA;;;;;
+2026-06-26;2.0.0;Sweden_Division1_Sodra_2026;14;Kristianstad;Trelleborg;Kristianstad - Trelleborg;79.17;ALTA;;;;;
+2026-06-26;2.0.0;Iceland_Division_2_2026;21;Throttur Vogar;Fjolnir;Throttur Vogar - Fjolnir;76.97;ALTA;;;;;
+2026-06-26;2.0.0;Sweden_Division2_NorraGotaland_2026;15;Skara;Herrestads AIF;Skara - Herrestads AIF;76.38;ALTA;;;;;
+2026-06-26;2.0.0;Norway_2ndDivision_Group2_2026;12;Eidsvold;Tromsdalen;Eidsvold - Tromsdalen;75.91;ALTA;;;;;
+2026-06-26;2.0.0;Iceland_Division_2_2026;21;Selfoss;Haukar;Selfoss - Haukar;75.46;ALTA;;;;;
+2026-06-26;2.0.0;Sweden_Division2_NorraSvealand_2026;15;Kungsangen;Skiljebo;Kungsangen - Skiljebo;72.86;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;Sweden_Superettan_2026;14;Brage;Falkenberg;Brage - Falkenberg;70.98;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;Iceland_Division_1_2026;16;Fylkir;Kopavogur;Fylkir - Kopavogur;67.89;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;USA_USLLeagueTwo_SouthFlorida_2026;16;Brevard SC;Weston;Brevard SC - Weston;67.41;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;Norway_3rdDivision_Group1_2026;13;Vålerenga 2;Union Carl Berner;Vålerenga 2 - Union Carl Berner;66.31;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;Sweden_Division1_Norra_2026;15;Assyriska FF;Vasalund;Assyriska FF - Vasalund;65.48;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;Iceland_Division_1_2026;16;Leiknir;IR Reykjavik;Leiknir - IR Reykjavik;63.77;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;Sweden_Division2_VastraGotaland_2026;15;Onsala;Landvetter;Onsala - Landvetter;62.41;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;Iceland_Division_1_2026;16;Afturelding;Njardvik;Afturelding - Njardvik;61.31;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;Sweden_Division2_VastraGotaland_2026;15;Dalstorps IF;Lindome;Dalstorps IF - Lindome;59.36;MEDIA;;;;;
+2026-06-26;2.0.0;Sweden_Division1_Norra_2026;15;FBK Karlstad;Hammarby TFF;FBK Karlstad - Hammarby TFF;56.89;MEDIA;;;;;
+2026-06-26;2.0.0;Iceland_Division_1_2026;16;Grindavik;Aegir;Grindavik - Aegir;56.18;MEDIA;;;;;
+2026-06-26;2.0.0;Sweden_Division2_SodraGotaland_2026;15;IFK Berga;Vaxjo Norra;IFK Berga - Vaxjo Norra;54.94;MEDIA;;;;;
+2026-06-26;2.0.0;Sweden_Division1_Sodra_2026;14;Hassleholms IF;Tvaaker;Hassleholms IF - Tvaaker;52.61;MEDIA;;;;;
+2026-06-26;2.0.0;Sweden_Division1_Norra_2026;15;Sollentuna;AFC Eskilstuna;Sollentuna - AFC Eskilstuna;46.58;MEDIA;;;;;
+2026-06-26;2.0.0;Norway_3rdDivision_Group1_2026;12;Gamle Oslo;Lokomotiv Oslo;Gamle Oslo - Lokomotiv Oslo;78.98;ALTA;6;1;7;OK;OK
+2026-06-26;2.0.0;Norway_3rdDivision_Group3_2026;12;Austevoll;Fyllingsdalen;Austevoll - Fyllingsdalen;75.09;ALTA;2;0;2;KO;KO
+2026-06-26;2.0.0;Sweden_Division2_NorraGotaland_2026;15;IFK Skovde;Lidkoping;IFK Skovde - Lidkoping;73.12;MEDIA-ALTA;1;2;3;OK;OK
+2026-06-26;2.0.0;Norway_3rdDivision_Group4_2026;12;Staal Jorpeland;Hinna;Staal Jorpeland - Hinna;70.61;MEDIA-ALTA;1;1;2;KO;OK
+2026-06-26;2.0.0;Norway_3rdDivision_Group2_2026;14;Strindheim;Melhus;Strindheim - Melhus;64.33;MEDIA-ALTA;2;1;3;OK;OK
+2026-06-26;2.0.0;Norway_3rdDivision_Group3_2026;12;Åsane 2;OS;Åsane 2 - OS;60.97;MEDIA-ALTA;3;5;8;OK;OK
+2026-06-26;2.0.0;Sweden_Division2_SodraSvealand_2026;15;Nykopings;Nacka FC;Nykopings - Nacka FC;59.82;MEDIA;4;1;5;OK;OK
+2026-06-26;2.0.0;Iceland_BestaDeildKarla_2026;17;Breidablik;Vikingur Reykjavik;Breidablik - Vikingur Reykjavik;57.08;MEDIA;1;4;5;OK;OK
+2026-06-26;2.0.0;Norway_3rdDivision_Group1_2026;13;Konnerud;Ready;Konnerud - Ready;56.36;MEDIA;0;1;1;KO;KO
+2026-06-26;2.0.0;Sweden_Division2_VastraGotaland_2026;15;Galtabacks BK;Boljan;Galtabacks BK - Boljan;51.18;MEDIA;0;0;0;KO;KO
+2026-06-26;2.0.0;Norway_3rdDivision_Group4_2026;12;Vag;Viking 2;Vag - Viking 2;48.31;MEDIA;3;2;5;OK;OK
+2026-06-26;2.0.0;Norway_3rdDivision_Group6_2026;12;Brumunddal;SK Gjovik-Lyn;Brumunddal - SK Gjovik-Lyn;42.89;BASSA;0;3;3;OK;KO
+2026-06-26;2.0.0;Sweden_Division2_NorraSvealand_2026;15;Helges;Sunnersta AIF;Helges - Sunnersta AIF;38.65;BASSA;0;3;3;OK;KO
+2026-06-26;2.0.0;Estonia_Meistriliiga_2026;18;Parnu JK Vaprus;Kuressaare;Parnu JK Vaprus - Kuressaare;46.69;MEDIA;;;;;
