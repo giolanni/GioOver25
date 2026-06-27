@@ -5,8 +5,8 @@ from pathlib import Path
 from .history import read_results_file
 from .match_statistics import build_match_statistics
 from .registry import get_league_info
-from .scoring_v2 import calculate_score_v2
 from .ranking_history import append_predictions
+from .engines.factory import get_engine
 
 
 INPUT_REQUIRED_COLUMNS = {
@@ -49,7 +49,9 @@ def read_matches_to_rank(path: str | Path) -> list[dict]:
         return list(reader)
 
 
-def rank_matches(input_file: str | Path, output_file: str | Path) -> None:
+def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: str = "v20") -> None:
+    
+    engine = get_engine(engine_name)
     rows = read_matches_to_rank(input_file)
 
     results = []
@@ -72,7 +74,7 @@ def rank_matches(input_file: str | Path, output_file: str | Path) -> None:
             before_round=round_number,
         )
 
-        score = calculate_score_v2(match_stats, league_info)
+        score = engine.calculate_score(match_stats, league_info)
 
         results.append(
             {
@@ -138,9 +140,16 @@ def main() -> None:
         help="CSV output ranking"
     )
 
+    parser.add_argument(
+    "--engine",
+    default="v20",
+    choices=["v13", "v20"],
+    help="Motore di scoring da usare"
+)
+
     args = parser.parse_args()
 
-    rank_matches(args.input_file, args.output)
+    rank_matches(args.input_file, args.output, args.engine)
 
 
 if __name__ == "__main__":

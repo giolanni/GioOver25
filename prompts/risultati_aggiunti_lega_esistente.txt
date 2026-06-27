@@ -1,10 +1,12 @@
 Sto lavorando al progetto GioOver2.5 v2.0.
 
-La lega è già presente nel progetto e possiede già:
+LE leghe sono già presente nel progetto e possiede già:
 
 - league_registry.csv
 - storico risultati
 - classifica
+
+Se così non è fammelo presente.
 
 Ti fornirò i nuovi risultati copiati da Diretta.it.
 
@@ -12,9 +14,10 @@ Il tuo compito è generare ESCLUSIVAMENTE il file di input per il comando:
 
 python -m gioover25.append_results
 
-Formato obbligatorio:
 
+il formato di esempio è:
 LeagueId;Season;Round;Date;Home;Away;HG;AG;Notes
+Norway_2ndDivision_Group2_2026;2026;11;2026-06-21;Grorud;Junkeren;3;0;
 
 Regole:
 
@@ -24,21 +27,22 @@ Regole:
 - non includere partite sospese o rinviate;
 - non modificare i risultati delle giornate precedenti;
 - mantieni il numero di giornata (Round) corretto;
-- Date nel formato YYYY-MM-DD;
+- Date nel formato YYYY-MM-DD(se non fornita indica la data odierna);
 - HG = gol squadra di casa;
 - AG = gol squadra ospite;
 - lascia Notes vuoto, salvo casi particolari (es. Awarded match).
 
 Controlli da effettuare:
 
-- verifica che tutte le partite appartengano alla stessa lega;
 - verifica che non ci siano duplicati;
 - non inventare dati mancanti.
+- se qualcosa non torna fallo presente
 
 Output richiesto:
 
 Restituisci esclusivamente il CSV completo, pronto per essere salvato in:
 
 data/input_risultati/
+
 
 senza spiegazioni aggiuntive e senza testo descrittivo.

@@ -1,0 +1,29 @@
+Import risultati
+python -m gioover25.append_results data/input_risultati/risultati_2026_06_25.csv
+
+Genera ranking v2.0
+python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v20 --output data/output_ranking/ranking_2026_06_26_v20.csv
+
+Genera ranking con motore v1.3
+python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v13 --output data/output_ranking/ranking_2026_06_26_v13.csv
+
+Import vecchi ranking nello storico
+python -m gioover25.import_old_rankings
+
+Aggiorna risultati nello storico ranking
+python -m gioover25.update_ranking_results
+
+
+Test principali
+pytest tests/test_history.py -s
+pytest tests/test_standings.py -s
+pytest tests/test_statistics.py -s
+pytest tests/test_match_statistics.py -s
+pytest tests/test_ranking_gap.py -s
+pytest tests/test_scoring_v2.py -s
+
+Git
+git status
+git add .
+git commit -m "messaggio commit"
+git push
