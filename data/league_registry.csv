@@ -1,5 +1,7 @@
 ﻿LeagueId;Country;League;Season;Teams;ExpectedRounds;HomeAway;Notes
 Belarus_VysshayaLiga_2026;Belarus;Vysshaya Liga;2026;16;30;Yes;Round 12 complete in supplied data
+Norway_OBOSLigaen_2026;Norway;OBOS-ligaen;2026;16;30;Yes;Round 12 complete in supplied data
+Norway_2ndDivision_Group1_2026;Norway;2nd Division Group 1;2026;14;26;Yes;Round 11 complete in supplied data
 Norway_2ndDivision_Group2_2026;Norway;2nd Division Group 2;2026;14;26;Yes;Round 11 currently partial in supplied data
 Norway_3rdDivision_Group1_2026;Norway;3rd Division Group 1;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group2_2026;Norway;3rd Division Group 2;2026;14;26;Yes;Round 12 currently partial in supplied data
@@ -11,6 +13,7 @@ Estonia_Meistriliiga_2026;Estonia;Meistriliiga;2026;10;36;Yes;Round 17 currently
 Estonia_Esiliiga_2026;Estonia;Esiliiga;2026;10;36;Yes;Round 17 complete in supplied data
 Estonia_EsiliigaB_2026;Estonia;Esiliiga B;2026;10;36;Yes;Round 17 complete in supplied data
 Finland_Ykkosliiga_2026;Finland;Ykkosliiga;2026;10;0;No;Round not supplied in source data
+Finland_Veikkausliiga_2026;Finland;Veikkausliiga;2026;12;22;Yes;Regular season
 Iceland_BestaDeildKarla_2026;Iceland;Besta deizld karla;2026;12;22;Yes;
 Iceland_Division_1_2026;Iceland;Division 1;2026;12;22;TRUE;
 Iceland_Division_2_2026;Islanda;Division 2;2026;12;22;TRUE;
