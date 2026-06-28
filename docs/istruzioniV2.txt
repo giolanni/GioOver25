@@ -1,17 +1,35 @@
 Import risultati
 python -m gioover25.append_results data/input_risultati/risultati_2026_06_25.csv
 
-Genera ranking v2.0
-python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v20 --output data/output_ranking/ranking_2026_06_26_v20.csv
+Ranking solo v13:
+python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v13
 
-Genera ranking con motore v1.3
-python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v13 --output data/output_ranking/ranking_2026_06_26_v13.csv
+Ranking solo v20:
+python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v20
+
+Ranking ogni engines:
+python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine all
+
+Aggiorna esiti ranking per tutti gli engines:
+python -m gioover25.update_ranking_results
+
+Aggiorna solo v13:
+python -m gioover25.update_ranking_results --engine v13
+
+Aggiorna solo v20:
+python -m gioover25.update_ranking_results --engine v20
+
+Aggiorna solo v21:
+python -m gioover25.update_ranking_results --engine v21
 
 Import vecchi ranking nello storico
 python -m gioover25.import_old_rankings
 
-Aggiorna risultati nello storico ranking
-python -m gioover25.update_ranking_results
+RICREARE RANKING HISTORY DEL PROGETTO
+python -m gioover25.rebuild_ranking_history --engine all
+python -m gioover25.rebuild_ranking_history --engine v13
+python -m gioover25.rebuild_ranking_history --engine v20
+python -m gioover25.rebuild_ranking_history --engine v21
 
 
 Test principali

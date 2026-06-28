@@ -7,6 +7,8 @@ from .history import MatchResult, read_results_file, write_results_file
 from .registry import get_league_info
 from .standings import generate_standings_file
 from .ranking_history import update_finished_matches
+from gioover25.league_over_map import rebuild_league_over_map
+from gioover25.engines.factory import get_available_engines
 
 
 INPUT_REQUIRED_COLUMNS = {
@@ -48,29 +50,26 @@ def _team_played_count(matches: list[MatchResult], team: str) -> int:
     )
 
 
-def _resolve_round(
-    row: dict,
-    existing_matches: list[MatchResult],
-) -> int:
-    raw_round = (row.get("Round") or "").strip()
+def _resolve_round(row: dict, existing_matches: list[MatchResult]) -> int:
+    raw_round = str(row.get("Round", "")).strip()
 
-    if raw_round not in {"", "?"}:
-        return _int(raw_round)
+    if raw_round and raw_round != "?":
+        return int(raw_round)
 
     home = row["Home"].strip()
     away = row["Away"].strip()
 
-    home_played = _team_played_count(existing_matches, home)
-    away_played = _team_played_count(existing_matches, away)
+    home_last_round = max(
+        [m.round for m in existing_matches if m.home == home or m.away == home],
+        default=0,
+    )
 
-    if home_played != away_played:
-        raise ValueError(
-            "Round automatico impossibile: "
-            f"{home} ha giocato {home_played} partite, "
-            f"{away} ha giocato {away_played} partite."
-        )
+    away_last_round = max(
+        [m.round for m in existing_matches if m.home == away or m.away == away],
+        default=0,
+    )
 
-    return home_played + 1
+    return max(home_last_round, away_last_round) + 1
 
 
 def read_input_results(path: str | Path) -> dict[str, list[MatchResult]]:
@@ -190,7 +189,12 @@ def append_results(input_file: str | Path) -> None:
     print("Import completato.")
     print(f"Totale partite aggiunte: {total_added}")
     print(f"Totale duplicate ignorate: {total_duplicates}")
-    update_finished_matches()
+    generate_standings_file(results_file, standings_file)
+
+    for engine_name in get_available_engines():
+        update_finished_matches(engine_name)
+
+    rebuild_league_over_map()
 
 
 def main() -> None:

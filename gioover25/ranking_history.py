@@ -1,49 +1,50 @@
 import csv
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
 
 from .history import read_results_file
 
 
-RANKING_HISTORY_FILE = Path("data/storico/storico_ranking.csv")
 RESULTS_DIR = Path("data/storico/risultati")
 
 
 FIELDNAMES = [
     "PredictionDate",
     "AlgorithmVersion",
-
     "LeagueId",
     "Round",
-
     "Home",
     "Away",
     "Match",
-
     "Score",
     "Band",
-
     "HG",
     "AG",
     "Goals",
-
     "Over25",
     "BTTS",
 ]
 
 
-def _read_history() -> list[dict]:
-    if not RANKING_HISTORY_FILE.exists():
+def _history_file(engine_name: str) -> Path:
+    return Path("data/storico/ranking") / engine_name / "storico_ranking.csv"
+
+
+def _read_history(engine_name: str) -> list[dict]:
+    path = _history_file(engine_name)
+
+    if not path.exists():
         return []
 
-    with open(RANKING_HISTORY_FILE, newline="", encoding="utf-8-sig") as f:
+    with open(path, newline="", encoding="utf-8-sig") as f:
         return list(csv.DictReader(f, delimiter=";"))
 
 
-def _write_history(rows: list[dict]) -> None:
-    RANKING_HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
+def _write_history(engine_name: str, rows: list[dict]) -> None:
+    path = _history_file(engine_name)
+    path.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(RANKING_HISTORY_FILE, "w", newline="", encoding="utf-8-sig") as f:
+    with open(path, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDNAMES, delimiter=";")
         writer.writeheader()
         writer.writerows(rows)
@@ -57,8 +58,12 @@ def _key(row: dict) -> tuple[str, str, str]:
     )
 
 
-def append_predictions(rows: list[dict], algorithm_version: str = "2.0.0") -> None:
-    history = _read_history()
+def append_predictions(
+    rows: list[dict],
+    engine_name: str,
+    algorithm_version: str
+) -> None:
+    history = _read_history(engine_name)
     existing_keys = {_key(row) for row in history}
 
     added = 0
@@ -67,21 +72,16 @@ def append_predictions(rows: list[dict], algorithm_version: str = "2.0.0") -> No
         new_row = {
             "PredictionDate": datetime.now().strftime("%Y-%m-%d"),
             "AlgorithmVersion": algorithm_version,
-
             "LeagueId": row["LeagueId"],
             "Round": row["Round"],
-
             "Home": row["Home"],
             "Away": row["Away"],
             "Match": row["Match"],
-
             "Score": row["Score"],
             "Band": row["Band"],
-
             "HG": "",
             "AG": "",
             "Goals": "",
-
             "Over25": "",
             "BTTS": "",
         }
@@ -95,15 +95,16 @@ def append_predictions(rows: list[dict], algorithm_version: str = "2.0.0") -> No
         existing_keys.add(key)
         added += 1
 
-    _write_history(history)
+    _write_history(engine_name, history)
 
-    print(f"Storico ranking aggiornato. Nuove previsioni salvate: {added}")
+    print(f"[{engine_name}] Storico ranking aggiornato. Nuove previsioni: {added}")
 
 
-def update_finished_matches() -> None:
-    history = _read_history()
+def update_finished_matches(engine_name: str) -> None:
+    history = _read_history(engine_name)
 
     if not history:
+        print(f"[{engine_name}] Storico ranking vuoto.")
         return
 
     updated = 0
@@ -136,6 +137,6 @@ def update_finished_matches() -> None:
                 updated += 1
                 break
 
-    _write_history(history)
+    _write_history(engine_name, history)
 
-    print(f"Storico ranking completato. Risultati aggiornati: {updated}")
+    print(f"[{engine_name}] Risultati aggiornati nello storico ranking: {updated}")

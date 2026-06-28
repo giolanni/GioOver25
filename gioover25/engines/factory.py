@@ -1,9 +1,9 @@
-from . import v13, v20
-
+from . import v13, v20, v21
 
 ENGINES = {
     "v13": v13,
     "v20": v20,
+    "v21": v21,
 }
 
 
@@ -17,3 +17,7 @@ def get_engine(name: str):
         )
 
     return ENGINES[key]
+
+
+def get_available_engines() -> list[str]:
+    return sorted(ENGINES.keys())

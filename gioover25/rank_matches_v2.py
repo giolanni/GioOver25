@@ -6,7 +6,7 @@ from .history import read_results_file
 from .match_statistics import build_match_statistics
 from .registry import get_league_info
 from .ranking_history import append_predictions
-from .engines.factory import get_engine
+from .engines.factory import get_engine, get_available_engines
 
 
 INPUT_REQUIRED_COLUMNS = {
@@ -50,22 +50,22 @@ def read_matches_to_rank(path: str | Path) -> list[dict]:
 
 
 def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: str = "v20") -> None:
-    
     engine = get_engine(engine_name)
-    rows = read_matches_to_rank(input_file)
 
+    rows = read_matches_to_rank(input_file)
     results = []
 
     for row in rows:
         league_id = row["LeagueId"].strip()
-        results_file = RESULTS_DIR / f"{league_id}.csv"
-        matches = read_results_file(results_file)
-
-        round_number = infer_next_round(matches)
         home = row["Home"].strip()
         away = row["Away"].strip()
 
         league_info = get_league_info(league_id)
+
+        results_file = RESULTS_DIR / f"{league_id}.csv"
+        matches = read_results_file(results_file)
+
+        round_number = infer_next_round(matches)
 
         match_stats = build_match_statistics(
             matches=matches,
@@ -120,9 +120,13 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
         writer.writeheader()
         writer.writerows(results)
 
-    print(f"Ranking generato: {output_path.resolve()}")
-    append_predictions(results)
+    print(f"[{engine_name}] Ranking generato: {output_path.resolve()}")
 
+    append_predictions(
+        results,
+        engine_name=engine_name,
+        algorithm_version=engine.ENGINE_VERSION
+    )
 
 def main() -> None:
     parser = argparse.ArgumentParser(
@@ -135,22 +139,48 @@ def main() -> None:
     )
 
     parser.add_argument(
-        "--output",
-        default="data/output_ranking/ranking_v2.csv",
-        help="CSV output ranking"
+        "--engine",
+        default="v20",
+        choices=get_available_engines() + ["all"],
+        help="Motore di scoring da usare"
     )
 
     parser.add_argument(
-    "--engine",
-    default="v20",
-    choices=["v13", "v20"],
-    help="Motore di scoring da usare"
-)
+        "--output",
+        default=None,
+        help="CSV output ranking"
+    )
 
     args = parser.parse_args()
 
-    rank_matches(args.input_file, args.output, args.engine)
+    input_path = Path(args.input_file)
+    base_name = input_path.stem.replace("partite", "ranking")
 
+    if args.engine == "all":
+        for engine_name in get_available_engines():
+            output_file = (
+                Path("data/output_ranking")
+                / engine_name
+                / f"{base_name}_{engine_name}.csv"
+            )
+
+            rank_matches(
+                args.input_file,
+                output_file,
+                engine_name
+            )
+    else:
+        output_file = (
+            Path(args.output)
+            if args.output
+            else Path("data/output_ranking") / args.engine / f"{base_name}_{args.engine}.csv"
+        )
+
+        rank_matches(
+            args.input_file,
+            output_file,
+            args.engine
+        )
 
 if __name__ == "__main__":
     main()

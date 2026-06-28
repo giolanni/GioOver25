@@ -1,0 +1,165 @@
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+1;1;Queanbeyan City;1;1;0;0;3;0;3;3;3.0
+1;2;Tigers FC;1;1;0;0;3;2;1;3;3.0
+1;3;Canberra Olympic;1;1;0;0;2;1;1;3;3.0
+1;4;Monaro Panthers;1;1;0;0;2;1;1;3;3.0
+1;5;Belconnen Utd.;1;0;1;0;1;1;0;1;1.0
+1;6;Canberra White Eagles;1;0;1;0;1;1;0;1;1.0
+1;7;O'Connor Knights;1;0;0;1;2;3;-1;0;0.0
+1;8;Canberra Juventus;1;0;0;1;1;2;-1;0;0.0
+1;9;Tuggeranong Utd;1;0;0;1;1;2;-1;0;0.0
+1;10;Canberra Croatia;1;0;0;1;0;3;-3;0;0.0
+2;1;Tigers FC;2;2;0;0;10;2;8;6;3.0
+2;2;Monaro Panthers;2;2;0;0;5;1;4;6;3.0
+2;3;Queanbeyan City;2;1;0;1;4;2;2;3;1.5
+2;4;Canberra Croatia;2;1;0;1;5;4;1;3;1.5
+2;5;Canberra Juventus;2;1;0;1;3;3;0;3;1.5
+2;6;Tuggeranong Utd;2;1;0;1;3;3;0;3;1.5
+2;7;Canberra Olympic;2;1;0;1;3;6;-3;3;1.5
+2;8;Belconnen Utd.;2;0;1;1;2;3;-1;1;0.5
+2;9;Canberra White Eagles;2;0;1;1;1;8;-7;1;0.5
+2;10;O'Connor Knights;1;0;0;1;2;3;-1;0;0.0
+2;11;Brindabella;1;0;0;1;0;3;-3;0;0.0
+3;1;Tigers FC;3;2;0;1;12;5;7;6;2.0
+3;2;Canberra Croatia;3;2;0;1;10;4;6;6;2.0
+3;3;Monaro Panthers;2;2;0;0;5;1;4;6;3.0
+3;4;Tuggeranong Utd;3;2;0;1;5;3;2;6;2.0
+3;5;Canberra Juventus;3;2;0;1;6;5;1;6;2.0
+3;6;Belconnen Utd.;3;1;1;1;6;4;2;4;1.333
+3;7;Queanbeyan City;2;1;0;1;4;2;2;3;1.5
+3;8;Canberra Olympic;2;1;0;1;3;6;-3;3;1.5
+3;9;Canberra White Eagles;3;0;1;2;1;13;-12;1;0.333
+3;10;O'Connor Knights;2;0;0;2;2;5;-3;0;0.0
+3;11;Brindabella;2;0;0;2;1;7;-6;0;0.0
+4;1;Tigers FC;4;3;0;1;14;5;9;9;2.25
+4;2;Canberra Croatia;4;3;0;1;12;4;8;9;2.25
+4;3;Canberra Juventus;4;3;0;1;9;5;4;9;2.25
+4;4;Tuggeranong Utd;4;3;0;1;8;4;4;9;2.25
+4;5;Monaro Panthers;2;2;0;0;5;1;4;6;3.0
+4;6;Canberra Olympic;3;2;0;1;9;7;2;6;2.0
+4;7;Belconnen Utd.;4;1;1;2;7;7;0;4;1.0
+4;8;Queanbeyan City;3;1;0;2;4;4;0;3;1.0
+4;9;Canberra White Eagles;4;0;1;3;2;19;-17;1;0.25
+4;10;O'Connor Knights;3;0;0;3;2;8;-6;0;0.0
+4;11;Brindabella;3;0;0;3;1;9;-8;0;0.0
+5;1;Canberra Croatia;5;4;0;1;14;5;9;12;2.4
+5;2;Tuggeranong Utd;5;4;0;1;12;6;6;12;2.4
+5;3;Monaro Panthers;3;3;0;0;11;2;9;9;3.0
+5;4;Tigers FC;5;3;0;2;15;7;8;9;1.8
+5;5;Canberra Juventus;4;3;0;1;9;5;4;9;2.25
+5;6;Queanbeyan City;4;2;0;2;8;5;3;6;1.5
+5;7;Canberra Olympic;4;2;0;2;10;13;-3;6;1.5
+5;8;Belconnen Utd.;5;1;1;3;8;11;-3;4;0.8
+5;9;O'Connor Knights;4;1;0;3;4;9;-5;3;0.75
+5;10;Canberra White Eagles;5;0;1;4;4;23;-19;1;0.2
+5;11;Brindabella;4;0;0;4;2;11;-9;0;0.0
+6;1;Tuggeranong Utd;6;5;0;1;14;7;7;15;2.5
+6;2;Monaro Panthers;4;4;0;0;16;5;11;12;3.0
+6;3;Canberra Croatia;5;4;0;1;14;5;9;12;2.4
+6;4;Tigers FC;6;3;0;3;16;9;7;9;1.5
+6;5;Queanbeyan City;5;3;0;2;9;5;4;9;1.8
+6;6;Canberra Juventus;5;3;0;2;12;10;2;9;1.8
+6;7;Canberra Olympic;5;2;0;3;10;14;-4;6;1.2
+6;8;O'Connor Knights;5;2;0;3;6;10;-4;6;1.2
+6;9;Belconnen Utd.;6;1;1;4;9;13;-4;4;0.667
+6;10;Brindabella;5;1;0;4;4;11;-7;3;0.6
+6;11;Canberra White Eagles;6;0;1;5;4;25;-21;1;0.167
+7;1;Tuggeranong Utd;7;6;0;1;20;11;9;18;2.571
+7;2;Monaro Panthers;5;4;0;1;17;7;10;12;2.4
+7;3;Canberra Croatia;5;4;0;1;14;5;9;12;2.4
+7;4;Tigers FC;7;4;0;3;19;11;8;12;1.714
+7;5;Queanbeyan City;5;3;0;2;9;5;4;9;1.8
+7;6;Canberra Juventus;5;3;0;2;12;10;2;9;1.8
+7;7;O'Connor Knights;6;3;0;3;8;11;-3;9;1.5
+7;8;Canberra Olympic;6;2;0;4;14;20;-6;6;1.0
+7;9;Belconnen Utd.;7;1;1;5;11;16;-5;4;0.571
+7;10;Brindabella;5;1;0;4;4;11;-7;3;0.6
+7;11;Canberra White Eagles;6;0;1;5;4;25;-21;1;0.167
+8;1;Tuggeranong Utd;8;7;0;1;25;12;13;21;2.625
+8;2;Canberra Croatia;6;5;0;1;19;6;13;15;2.5
+8;3;Monaro Panthers;6;5;0;1;20;8;12;15;2.5
+8;4;Tigers FC;8;5;0;3;22;13;9;15;1.875
+8;5;Canberra Juventus;6;4;0;2;16;11;5;12;2.0
+8;6;Queanbeyan City;5;3;0;2;9;5;4;9;1.8
+8;7;O'Connor Knights;7;3;0;4;9;16;-7;9;1.286
+8;8;Canberra Olympic;7;2;0;5;16;23;-7;6;0.857
+8;9;Belconnen Utd.;8;1;1;6;12;19;-7;4;0.5
+8;10;Brindabella;6;1;0;5;5;16;-11;3;0.5
+8;11;Canberra White Eagles;7;0;1;6;5;29;-24;1;0.143
+9;1;Tuggeranong Utd;9;7;0;2;27;15;12;21;2.333
+9;2;Canberra Croatia;7;6;0;1;22;8;14;18;2.571
+9;3;Tigers FC;9;6;0;3;25;14;11;18;2.0
+9;4;Monaro Panthers;7;5;0;2;21;11;10;15;2.143
+9;5;Canberra Juventus;7;5;0;2;17;11;6;15;2.143
+9;6;Queanbeyan City;6;4;0;2;12;5;7;12;2.0
+9;7;Canberra Olympic;8;3;0;5;19;24;-5;9;1.125
+9;8;O'Connor Knights;8;3;0;5;10;19;-9;9;1.125
+9;9;Belconnen Utd.;8;1;1;6;12;19;-7;4;0.5
+9;10;Brindabella;7;1;0;6;5;17;-12;3;0.429
+9;11;Canberra White Eagles;8;0;1;7;5;32;-27;1;0.125
+10;1;Tigers FC;10;7;0;3;32;14;18;21;2.1
+10;2;Canberra Croatia;8;7;0;1;26;9;17;21;2.625
+10;3;Tuggeranong Utd;9;7;0;2;27;15;12;21;2.333
+10;4;Queanbeyan City;7;5;0;2;15;6;9;15;2.143
+10;5;Monaro Panthers;8;5;0;3;22;15;7;15;1.875
+10;6;Canberra Juventus;8;5;0;3;18;14;4;15;1.875
+10;7;O'Connor Knights;9;4;0;5;12;19;-7;12;1.333
+10;8;Canberra Olympic;9;3;1;5;23;28;-5;10;1.111
+10;9;Belconnen Utd.;9;1;2;6;16;23;-7;5;0.556
+10;10;Brindabella;8;1;0;7;5;24;-19;3;0.375
+10;11;Canberra White Eagles;9;0;1;8;5;34;-29;1;0.111
+11;1;Canberra Croatia;9;8;0;1;30;10;20;24;2.667
+11;2;Tigers FC;10;7;0;3;32;14;18;21;2.1
+11;3;Tuggeranong Utd;10;7;0;3;27;20;7;21;2.1
+11;4;Queanbeyan City;8;6;0;2;19;6;13;18;2.25
+11;5;Canberra Juventus;9;6;0;3;23;14;9;18;2.0
+11;6;Monaro Panthers;9;6;0;3;24;16;8;18;2.0
+11;7;Canberra Olympic;10;4;1;5;26;28;-2;13;1.3
+11;8;O'Connor Knights;10;4;0;6;12;23;-11;12;1.2
+11;9;Belconnen Utd.;10;1;2;7;17;27;-10;5;0.5
+11;10;Brindabella;9;1;0;8;5;27;-22;3;0.333
+11;11;Canberra White Eagles;10;0;1;9;6;36;-30;1;0.1
+12;1;Canberra Croatia;10;9;0;1;34;12;22;27;2.7
+12;2;Tigers FC;11;8;0;3;33;14;19;24;2.182
+12;3;Monaro Panthers;10;7;0;3;30;17;13;21;2.1
+12;4;Canberra Juventus;10;7;0;3;26;16;10;21;2.1
+12;5;Tuggeranong Utd;11;7;0;4;28;26;2;21;1.909
+12;6;Queanbeyan City;9;6;0;3;21;10;11;18;2.0
+12;7;Canberra Olympic;11;4;1;6;28;31;-3;13;1.182
+12;8;O'Connor Knights;11;4;0;7;12;24;-12;12;1.091
+12;9;Belconnen Utd.;11;1;2;8;18;29;-11;5;0.455
+12;10;Canberra White Eagles;11;1;1;9;8;37;-29;4;0.364
+12;11;Brindabella;9;1;0;8;5;27;-22;3;0.333
+13;1;Canberra Croatia;11;10;0;1;36;13;23;30;2.727
+13;2;Tigers FC;12;9;0;3;38;15;23;27;2.25
+13;3;Monaro Panthers;11;8;0;3;35;19;16;24;2.182
+13;4;Tuggeranong Utd;12;8;0;4;31;28;3;24;2.0
+13;5;Canberra Juventus;11;7;0;4;27;21;6;21;1.909
+13;6;Queanbeyan City;10;6;0;4;23;15;8;18;1.8
+13;7;Canberra Olympic;11;4;1;6;28;31;-3;13;1.182
+13;8;O'Connor Knights;12;4;0;8;14;27;-13;12;1.0
+13;9;Belconnen Utd.;12;2;2;8;22;30;-8;8;0.667
+13;10;Canberra White Eagles;12;1;1;10;9;39;-30;4;0.333
+13;11;Brindabella;10;1;0;9;6;31;-25;3;0.3
+14;1;Canberra Croatia;12;10;1;1;37;14;23;31;2.583
+14;2;Tigers FC;13;9;1;3;39;16;23;28;2.154
+14;3;Monaro Panthers;12;9;0;3;40;21;19;27;2.25
+14;4;Tuggeranong Utd;12;8;0;4;31;28;3;24;2.0
+14;5;Queanbeyan City;11;7;0;4;25;16;9;21;1.909
+14;6;Canberra Juventus;11;7;0;4;27;21;6;21;1.909
+14;7;Canberra Olympic;12;4;1;7;30;36;-6;13;1.083
+14;8;O'Connor Knights;13;4;0;9;14;28;-14;12;0.923
+14;9;Belconnen Utd.;13;2;2;9;23;32;-9;8;0.615
+14;10;Brindabella;11;2;0;9;7;31;-24;6;0.545
+14;11;Canberra White Eagles;12;1;1;10;9;39;-30;4;0.333
+15;1;Canberra Croatia;13;10;1;2;38;16;22;31;2.385
+15;2;Monaro Panthers;13;10;0;3;42;21;21;30;2.308
+15;3;Tigers FC;14;9;1;4;39;18;21;28;2.0
+15;4;Tuggeranong Utd;13;9;0;4;33;29;4;27;2.077
+15;5;Queanbeyan City;12;8;0;4;27;17;10;24;2.0
+15;6;Canberra Juventus;12;7;1;4;29;23;6;22;1.833
+15;7;O'Connor Knights;14;5;0;9;15;28;-13;15;1.071
+15;8;Canberra Olympic;13;4;1;8;30;37;-7;13;1.0
+15;9;Belconnen Utd.;13;2;2;9;23;32;-9;8;0.615
+15;10;Brindabella;12;2;1;9;9;33;-24;7;0.583
+15;11;Canberra White Eagles;13;1;1;11;10;41;-31;4;0.308
