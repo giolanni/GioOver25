@@ -1,0 +1,216 @@
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+1;1;Philadelphia II;1;1;0;0;2;1;1;3;3.0
+1;2;Atlanta United 2;1;0;1;0;3;3;0;1;1.0
+1;3;Crown Legacy;1;0;1;0;3;3;0;1;1.0
+1;4;Chattanooga;1;0;1;0;2;2;0;1;1.0
+1;5;Chicago Fire II;1;0;1;0;2;2;0;1;1.0
+1;6;Carolina Core;1;0;1;0;0;0;0;1;1.0
+1;7;Inter Miami II;1;0;1;0;0;0;0;1;1.0
+1;8;Orlando City B;1;0;0;1;1;2;-1;0;0.0
+2;1;Chicago Fire II;2;1;1;0;5;3;2;4;2.0
+2;2;Carolina Core;2;1;1;0;2;0;2;4;2.0
+2;3;Philadelphia II;1;1;0;0;2;1;1;3;3.0
+2;4;Orlando City B;2;1;0;1;3;3;0;3;1.5
+2;5;Atlanta United 2;2;0;2;0;7;7;0;2;1.0
+2;6;Chattanooga;2;0;2;0;6;6;0;2;1.0
+2;7;Crown Legacy;2;0;1;1;3;5;-2;1;0.5
+2;8;Inter Miami II;2;0;1;1;1;3;-2;1;0.5
+2;9;Huntsville;1;0;0;1;1;2;-1;0;0.0
+3;1;Orlando City B;3;2;0;1;6;5;1;6;2.0
+3;2;Chattanooga;3;1;2;0;10;6;4;5;1.667
+3;3;Atlanta United 2;3;1;2;0;10;7;3;5;1.667
+3;4;Carolina Core;3;1;1;1;4;3;1;4;1.333
+3;5;Chicago Fire II;3;1;1;1;5;6;-1;4;1.333
+3;6;Crown Legacy;3;1;1;1;4;5;-1;4;1.333
+3;7;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+3;8;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+3;9;Huntsville;2;0;1;1;3;4;-1;1;0.5
+3;10;Inter Miami II;2;0;1;1;1;3;-2;1;0.5
+3;11;New York Red Bulls II;1;0;0;1;0;4;-4;0;0.0
+4;1;Orlando City B;4;3;0;1;11;7;4;9;2.25
+4;2;Chicago Fire II;4;2;1;1;9;6;3;7;1.75
+4;3;Atlanta United 2;3;1;2;0;10;7;3;5;1.667
+4;4;Chattanooga;4;1;2;1;12;11;1;5;1.25
+4;5;Carolina Core;4;1;2;1;5;4;1;5;1.25
+4;6;Crown Legacy;4;1;2;1;6;7;-1;5;1.25
+4;7;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+4;8;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+4;9;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+4;10;Inter Miami II;2;0;1;1;1;3;-2;1;0.5
+4;11;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+4;12;Huntsville;3;0;1;2;3;8;-5;1;0.333
+5;1;Orlando City B;5;4;0;1;15;8;7;12;2.4
+5;2;Atlanta United 2;4;2;2;0;16;9;7;8;2.0
+5;3;Chattanooga;5;2;2;1;13;11;2;8;1.6
+5;4;Chicago Fire II;4;2;1;1;9;6;3;7;1.75
+5;5;Carolina Core;5;1;2;2;5;5;0;5;1.0
+5;6;Crown Legacy;4;1;2;1;6;7;-1;5;1.25
+5;7;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+5;8;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+5;9;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+5;10;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+5;11;Inter Miami II;3;0;1;2;2;7;-5;1;0.333
+5;12;Huntsville;4;0;1;3;5;14;-9;1;0.25
+6;1;Orlando City B;6;5;0;1;17;8;9;15;2.5
+6;2;Atlanta United 2;5;2;2;1;16;11;5;8;1.6
+6;3;Crown Legacy;5;2;2;1;11;8;3;8;1.6
+6;4;Chattanooga;5;2;2;1;13;11;2;8;1.6
+6;5;Carolina Core;6;2;2;2;7;6;1;8;1.333
+6;6;Chicago Fire II;5;2;1;2;10;8;2;7;1.4
+6;7;Huntsville;5;1;1;3;9;14;-5;4;0.8
+6;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+6;9;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+6;10;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+6;11;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+6;12;Inter Miami II;4;0;1;3;3;12;-9;1;0.25
+6;13;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+7;1;Orlando City B;6;5;0;1;17;8;9;15;2.5
+7;2;Chattanooga;6;3;2;1;15;12;3;11;1.833
+7;3;Chicago Fire II;6;3;1;2;13;10;3;10;1.667
+7;4;Atlanta United 2;5;2;2;1;16;11;5;8;1.6
+7;5;Crown Legacy;6;2;2;2;13;11;2;8;1.333
+7;6;Carolina Core;7;2;2;3;7;9;-2;8;1.143
+7;7;Huntsville;6;2;1;3;12;14;-2;7;1.167
+7;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+7;9;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+7;10;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+7;11;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+7;12;Inter Miami II;5;0;1;4;4;14;-10;1;0.2
+7;13;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+8;1;Orlando City B;7;5;1;1;19;10;9;16;2.286
+8;2;Atlanta United 2;6;3;2;1;18;12;6;11;1.833
+8;3;Chattanooga;7;3;2;2;15;14;1;11;1.571
+8;4;Chicago Fire II;6;3;1;2;13;10;3;10;1.667
+8;5;Huntsville;7;3;1;3;14;14;0;10;1.429
+8;6;Crown Legacy;7;2;3;2;15;13;2;9;1.286
+8;7;Carolina Core;8;2;2;4;8;11;-3;8;1.0
+8;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+8;9;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+8;10;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+8;11;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+8;12;Inter Miami II;5;0;1;4;4;14;-10;1;0.2
+8;13;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+9;1;Orlando City B;8;5;2;1;21;12;9;17;2.125
+9;2;Huntsville;8;4;1;3;18;16;2;13;1.625
+9;3;Crown Legacy;8;3;3;2;16;13;3;12;1.5
+9;4;Atlanta United 2;6;3;2;1;18;12;6;11;1.833
+9;5;Chicago Fire II;7;3;2;2;15;12;3;11;1.571
+9;6;Chattanooga;8;3;2;3;15;15;0;11;1.375
+9;7;Carolina Core;8;2;2;4;8;11;-3;8;1.0
+9;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+9;9;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+9;10;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+9;11;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+9;12;Inter Miami II;6;0;1;5;6;18;-12;1;0.167
+9;13;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+10;1;Orlando City B;9;5;2;2;22;15;7;17;1.889
+10;2;Atlanta United 2;7;4;2;1;21;12;9;14;2.0
+10;3;Chattanooga;9;4;2;3;18;16;2;14;1.556
+10;4;Huntsville;8;4;1;3;18;16;2;13;1.625
+10;5;Crown Legacy;8;3;3;2;16;13;3;12;1.5
+10;6;Chicago Fire II;8;3;2;3;15;15;0;11;1.375
+10;7;Carolina Core;8;2;2;4;8;11;-3;8;1.0
+10;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+10;9;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+10;10;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+10;11;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+10;12;Inter Miami II;6;0;1;5;6;18;-12;1;0.167
+10;13;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+11;1;Atlanta United 2;8;5;2;1;23;12;11;17;2.125
+11;2;Orlando City B;9;5;2;2;22;15;7;17;1.889
+11;3;Chattanooga;10;5;2;3;20;16;4;17;1.7
+11;4;Huntsville;9;4;2;3;18;16;2;14;1.556
+11;5;Crown Legacy;8;3;3;2;16;13;3;12;1.5
+11;6;Chicago Fire II;9;3;3;3;15;15;0;12;1.333
+11;7;Carolina Core;8;2;2;4;8;11;-3;8;1.0
+11;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+11;9;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+11;10;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+11;11;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+11;12;Inter Miami II;7;0;1;6;6;20;-14;1;0.143
+11;13;Columbus Crew 2;1;0;0;1;0;2;-2;0;0.0
+11;14;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+12;1;Chattanooga;11;5;3;3;22;18;4;18;1.636
+12;2;Atlanta United 2;9;5;2;2;23;14;9;17;1.889
+12;3;Orlando City B;9;5;2;2;22;15;7;17;1.889
+12;4;Crown Legacy;9;4;3;2;18;13;5;15;1.667
+12;5;Huntsville;10;4;3;3;20;18;2;15;1.5
+12;6;Chicago Fire II;9;3;3;3;15;15;0;12;1.333
+12;7;Carolina Core;9;2;3;4;9;12;-3;9;1.0
+12;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+12;9;Inter Miami II;8;0;2;6;7;21;-14;2;0.25
+12;10;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+12;11;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+12;12;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+12;13;Columbus Crew 2;1;0;0;1;0;2;-2;0;0.0
+12;14;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+13;1;Atlanta United 2;10;6;2;2;27;15;12;20;2.0
+13;2;Crown Legacy;10;5;3;2;21;13;8;18;1.8
+13;3;Chattanooga;11;5;3;3;22;18;4;18;1.636
+13;4;Orlando City B;9;5;2;2;22;15;7;17;1.889
+13;5;Huntsville;11;4;3;4;21;22;-1;15;1.364
+13;6;Chicago Fire II;10;3;4;3;15;15;0;13;1.3
+13;7;Carolina Core;10;2;4;4;9;12;-3;10;1.0
+13;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+13;9;Inter Miami II;9;0;2;7;7;24;-17;2;0.222
+13;10;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+13;11;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+13;12;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+13;13;Columbus Crew 2;1;0;0;1;0;2;-2;0;0.0
+13;14;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+14;1;Crown Legacy;11;6;3;2;28;15;13;21;1.909
+14;2;Atlanta United 2;10;6;2;2;27;15;12;20;2.0
+14;3;Orlando City B;10;6;2;2;25;17;8;20;2.0
+14;4;Chattanooga;12;5;3;4;23;20;3;18;1.5
+14;5;Chicago Fire II;11;4;4;3;17;16;1;16;1.455
+14;6;Huntsville;12;4;3;5;23;29;-6;15;1.25
+14;7;Carolina Core;11;2;4;5;11;15;-4;10;0.909
+14;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+14;9;Inter Miami II;9;0;2;7;7;24;-17;2;0.222
+14;10;Connecticut FC;1;0;1;0;2;2;0;1;1.0
+14;11;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+14;12;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+14;13;Columbus Crew 2;1;0;0;1;0;2;-2;0;0.0
+14;14;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+15;1;Atlanta United 2;11;7;2;2;29;16;13;23;2.091
+15;2;Orlando City B;11;7;2;2;27;18;9;23;2.091
+15;3;Crown Legacy;11;6;3;2;28;15;13;21;1.909
+15;4;Chattanooga;13;6;3;4;27;22;5;21;1.615
+15;5;Chicago Fire II;12;4;4;4;18;18;0;16;1.333
+15;6;Huntsville;12;4;3;5;23;29;-6;15;1.25
+15;7;Carolina Core;12;2;4;6;12;17;-5;10;0.833
+15;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+15;9;Inter Miami II;9;0;2;7;7;24;-17;2;0.222
+15;10;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+15;11;Connecticut FC;2;0;1;1;4;6;-2;1;0.5
+15;12;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+15;13;Columbus Crew 2;1;0;0;1;0;2;-2;0;0.0
+15;14;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+16;1;Crown Legacy;12;7;3;2;32;16;16;24;2.0
+16;2;Atlanta United 2;11;7;2;2;29;16;13;23;2.091
+16;3;Orlando City B;12;7;2;3;28;21;7;23;1.917
+16;4;Chattanooga;14;6;3;5;28;26;2;21;1.5
+16;5;Huntsville;13;5;3;5;26;30;-4;18;1.385
+16;6;Chicago Fire II;13;4;5;4;19;19;0;17;1.308
+16;7;Carolina Core;12;2;4;6;12;17;-5;10;0.833
+16;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+16;9;Inter Miami II;10;0;3;7;8;25;-17;3;0.3
+16;10;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+16;11;Connecticut FC;2;0;1;1;4;6;-2;1;0.5
+16;12;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+16;13;Columbus Crew 2;1;0;0;1;0;2;-2;0;0.0
+16;14;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0
+17;1;Crown Legacy;12;7;3;2;32;16;16;24;2.0
+17;2;Orlando City B;13;7;3;3;30;23;7;24;1.846
+17;3;Atlanta United 2;11;7;2;2;29;16;13;23;2.091
+17;4;Chattanooga;14;6;3;5;28;26;2;21;1.5
+17;5;Huntsville;14;5;3;6;26;31;-5;18;1.286
+17;6;Chicago Fire II;13;4;5;4;19;19;0;17;1.308
+17;7;Carolina Core;13;3;4;6;13;17;-4;13;1.0
+17;8;Philadelphia II;2;1;0;1;2;2;0;3;1.5
+17;9;Inter Miami II;10;0;3;7;8;25;-17;3;0.3
+17;10;New England Revolution II;1;0;1;0;2;2;0;1;1.0
+17;11;Connecticut FC;2;0;1;1;4;6;-2;1;0.5
+17;12;Columbus Crew 2;2;0;1;1;2;4;-2;1;0.5
+17;13;New York Red Bulls II;2;0;1;1;1;5;-4;1;0.5
+17;14;Cincinnati 2;1;0;0;1;0;4;-4;0;0.0

@@ -36,3 +36,4 @@ Non inventare LeagueId.
 
 Se l'Output è eccessivo puoi generare direttamente un file csv con link per scaricarlo.
 se l'output è eccessivo per un solo file generane quanti te ne servono l'importante è dare subito il risultato richiesto senza ulteriori interazioni
+se non puoi generare files scrivimi più messaggi

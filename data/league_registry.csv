@@ -1,6 +1,65 @@
 ﻿LeagueId;Country;League;Season;Teams;ExpectedRounds;HomeAway;Notes
+Australia_NorthernNSWStateLeague_2026;Australia;Northern NSW State League;2026;10;18;Yes;Round 13 currently partial in supplied data
+Australia_NPL_NSW_U20_2026;Australia;NPL NSW U20;2026;16;30;Yes;Stagione corrente
+Australia_NPLACT_2026;Australia;NPL ACT;2026;10;18;Yes;Round 15 currently partial in supplied data
+Australia_NPLNorthernNSW_2026;Australia;NPL Northern NSW;2026;12;22;Yes;Round 17 currently partial in supplied data
+Australia_NPLNSW_2026;Australia;NPL NSW;2026;16;30;Yes;
+Australia_NPLQueensland_2026;Australia;NPL Queensland;2026;12;22;Yes;
+Australia_NPLQueenslandU23_2026;Australia;NPL Queensland U23;2026;12;22;Yes;Round 16 currently partial in supplied data
+Australia_NPLSouthAustralia_2026;Australia;NPL South Australia;2026;12;22;Yes;
+Australia_NPLTasmania_2026;Australia;NPL Tasmania;2026;10;18;Yes;Round 13 currently partial in supplied data
+Australia_NPLVictoria_2026;Australia;NPL Victoria;2026;14;26;Yes;
+Australia_NPLWesternAustralia_2026;Australia;NPL Western Australia;2026;12;22;Yes;
+Australia_NSWLeagueOne_2026;Australia;NSW League One;2026;16;30;Yes;
+Australia_QueenslandPremierLeague_2026;Australia;Queensland Premier League;2026;12;22;Yes;
+Australia_SAStateLeague_2026;Australia;SA State League;2026;12;22;Yes;
+Australia_TasmaniaNorthernChampionship_2026;Australia;Tasmania Northern Championship;2026;8;14;Yes;Round 12 currently partial in supplied data
+Australia_TasmaniaSouthernChampionship_2026;Australia;Tasmania Southern Championship;2026;10;18;Yes;
+Australia_VictoriaPremierLeague2_2026;Australia;Victoria Premier League 2;2026;14;26;Yes;
+Australia_WAStateLeague_2026;Australia;WA State League;2026;12;22;Yes;Round 14 complete in supplied data
+Austria_2Liga_2026;Austria;2. Liga;2026;16;30;Yes;
+Austria_Bundesliga_2026;Austria;Bundesliga;2026;12;32;Yes;Championship/Relegation split after 22 rounds
+Austria_Regionalliga_Central_2026;Austria;Regionalliga Central;2026;16;30;Yes;
+Austria_Regionalliga_East_2026;Austria;Regionalliga East;2026;16;30;Yes;
+Austria_Regionalliga_West_2026;Austria;Regionalliga West;2026;16;30;Yes;
+Belarus_PershayaLiga_2026;Belarus;Pershaya Liga;2026;18;34;Yes;Round 13 currently partial in supplied data
 Belarus_VysshayaLiga_2026;Belarus;Vysshaya Liga;2026;16;30;Yes;Round 12 complete in supplied data
-Norway_OBOSLigaen_2026;Norway;OBOS-ligaen;2026;16;30;Yes;Round 12 complete in supplied data
+Denmark_Superliga_2026;Denmark;Superliga;2026;12;32;Yes;Championship/Relegation split after 22 rounds
+England_Championship_2026;England;Championship;2026;24;46;Yes;
+England_LeagueOne_2026;England;League One;2026;24;46;Yes;
+England_PremierLeague_2026;England;Premier League;2026;20;38;Yes;
+Estonia_Esiliiga_2026;Estonia;Esiliiga;2026;10;36;Yes;Round 17 complete in supplied data
+Estonia_EsiliigaB_2026;Estonia;Esiliiga B;2026;10;36;Yes;Round 17 complete in supplied data
+Estonia_Meistriliiga_2026;Estonia;Meistriliiga;2026;10;36;Yes;Round 17 currently partial in supplied data
+FaroeIslands_PremierLeague_2026;Faroe Islands;Premier League;2026;10;27;Yes;
+FaroeIslands_1Deild_2026;Faroe Islands;1. Deild;2026;10;27;Yes;Round 15 currently partial in supplied data
+Finland_Kakkonen_GroupA_2026;Finland;Kakkonen Group A;2026;10;18;Yes;Round not supplied in source data
+Finland_Kakkonen_GroupB_2026;Finland;Kakkonen Group B;2026;10;18;Yes;Round not supplied in source data
+Finland_Kakkonen_GroupC_2026;Finland;Kakkonen Group C;2026;10;18;Yes;Round not supplied in source data
+Finland_Veikkausliiga_2026;Finland;Veikkausliiga;2026;12;22;Yes;Regular season
+Finland_Ykkonen_2026;Finland;Ykkonen;2026;12;22;Yes;
+Finland_Ykkosliiga_2026;Finland;Ykkosliiga;2026;10;0;No;Round not supplied in source data
+France_Ligue1_2026;France;Ligue 1;2026;18;34;Yes;
+France_Ligue2_2026;France;Ligue 2;2026;18;34;Yes;
+France_National_2026;France;National;2026;18;34;Yes;
+Germany_Bundesliga_2026;Germany;Bundesliga;2026;18;34;Yes;
+Germany_Regionalliga_Nordost_2026;Germany;Regionalliga Nordost;2026;18;34;Yes;
+Iceland_BestaDeildKarla_2026;Iceland;Besta deizld karla;2026;12;22;Yes;
+Iceland_Division_1_2026;Iceland;Division 1;2026;12;22;TRUE;
+Iceland_Division_2_2026;Islanda;Division 2;2026;12;22;TRUE;
+Indonesia_Championship_2026;Indonesia;Championship;2026;20;38;Yes;
+Indonesia_SuperLeague_2026;Indonesia;Super League;2026;18;34;Yes;
+Italy_SerieA_2026;Italy;Serie A;2026;20;38;Yes;
+Italy_SerieB_2026;Italy;Serie B;2026;20;38;Yes;
+Italy_SerieC_GironeA_2026;Italy;Serie C Girone A;2026;20;38;Yes;
+Italy_SerieC_GironeB_2026;Italy;Serie C Girone B;2026;20;38;Yes;
+Italy_SerieC_GironeC_2026;Italy;Serie C Girone C;2026;20;38;Yes;
+Latvia_Virsliga_2026;Latvia;Virsliga;2026;10;36;Yes;
+Latvia_NakotnesLiga_2026;Latvia;Nakotnes liga;2026;14;26;Yes;Round 11 currently partial in supplied data
+Lithuania_ILyga_2026;Lithuania;I Lyga;2026;16;30;Yes;Round 15 currently partial in supplied data
+Lithuania_Toplyga_2026;Lithuania;TOPLYGA;2026;10;36;Yes;
+Netherlands_EersteDivisie_2026;Netherlands;Eerste Divisie;2026;20;38;Yes;
+Netherlands_Eredivisie_2026;Netherlands;Eredivisie;2026;18;34;Yes;
 Norway_2ndDivision_Group1_2026;Norway;2nd Division Group 1;2026;14;26;Yes;Round 11 complete in supplied data
 Norway_2ndDivision_Group2_2026;Norway;2nd Division Group 2;2026;14;26;Yes;Round 11 currently partial in supplied data
 Norway_3rdDivision_Group1_2026;Norway;3rd Division Group 1;2026;14;26;Yes;Round 12 currently partial in supplied data
@@ -9,70 +68,44 @@ Norway_3rdDivision_Group3_2026;Norway;3rd Division Group 3;2026;14;26;Yes;Round 
 Norway_3rdDivision_Group4_2026;Norway;3rd Division Group 4;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group5_2026;Norway;3rd Division Group 5;2026;14;26;Yes;Round 12 currently partial in supplied data
 Norway_3rdDivision_Group6_2026;Norway;3rd Division Group 6;2026;14;26;Yes;Round 12 currently partial in supplied data
-Estonia_Meistriliiga_2026;Estonia;Meistriliiga;2026;10;36;Yes;Round 17 currently partial in supplied data
-Estonia_Esiliiga_2026;Estonia;Esiliiga;2026;10;36;Yes;Round 17 complete in supplied data
-Estonia_EsiliigaB_2026;Estonia;Esiliiga B;2026;10;36;Yes;Round 17 complete in supplied data
-Finland_Ykkosliiga_2026;Finland;Ykkosliiga;2026;10;0;No;Round not supplied in source data
-Finland_Veikkausliiga_2026;Finland;Veikkausliiga;2026;12;22;Yes;Regular season
-Finland_Kakkonen_GroupA_2026;Finland;Kakkonen Group A;2026;10;18;Yes;Round not supplied in source data
-Finland_Kakkonen_GroupB_2026;Finland;Kakkonen Group B;2026;10;18;Yes;Round not supplied in source data
-Finland_Kakkonen_GroupC_2026;Finland;Kakkonen Group C;2026;10;18;Yes;Round not supplied in source data
-Iceland_BestaDeildKarla_2026;Iceland;Besta deizld karla;2026;12;22;Yes;
-Iceland_Division_1_2026;Iceland;Division 1;2026;12;22;TRUE;
-Iceland_Division_2_2026;Islanda;Division 2;2026;12;22;TRUE;
-Sweden_Superettan_2026;Sweden;Superettan;2026;16;30;Yes;Round 13 currently partial in supplied data
+Norway_Eliteserien_2026;Norway;Eliteserien;2026;16;30;Yes;
+Norway_OBOSLigaen_2026;Norway;OBOS-ligaen;2026;16;30;Yes;Round 12 complete in supplied data
+Portugal_LigaPortugal_2026;Portugal;Liga Portugal;2026;18;34;Yes;
+Portugal_LigaPortugal2_2026;Portugal;Liga Portugal 2;2026;18;34;Yes;
+Spain_LaLiga_2026;Spain;La Liga;2026;20;38;Yes;
+Sweden_Allsvenskan_2026;Sweden;Allsvenskan;2026;16;30;Yes;
 Sweden_Division1_Norra_2026;Sweden;Division 1 Norra;2026;16;30;Yes;Round 14 currently partial in supplied data
 Sweden_Division1_Sodra_2026;Sweden;Division 1 Södra;2026;16;30;Yes;Round 13 complete in supplied data
 Sweden_Division2_NorraGotaland_2026;Sweden;Norra Gotaland;2026;14;26;Yes;
 Sweden_Division2_NorraSvealand_2026;Sweden;Norra Svealand;2026;14;26;Yes;
 Sweden_Division2_Norrland_2026;Sweden;Division 2 Norrland;2026;13;26;Yes;Round 14 currently partial in supplied data
-Sweden_Division2_SodraSvealand_2026;Sweden;Sodra Svealand;2026;14;26;Yes;
 Sweden_Division2_SodraGotaland_2026;Sweden;Division 2 Södra Götaland;2026;14;26;Yes;Round 14 partial in supplied data
+Sweden_Division2_SodraSvealand_2026;Sweden;Sodra Svealand;2026;14;26;Yes;
 Sweden_Division2_VastraGotaland_2026;Sweden;Vastra Gotaland;2026;14;26;Yes;
-FaroeIslands_1Deild_2026;Faroe Islands;1. Deild;2026;10;27;Yes;Round 15 currently partial in supplied data
-Latvia_NakotnesLiga_2026;Latvia;Nakotnes liga;2026;14;26;Yes;Round 11 currently partial in supplied data
-Lithuania_ILyga_2026;Lithuania;I Lyga;2026;16;30;Yes;Round 15 currently partial in supplied data
-USA_USLLeagueTwo_Northeast_2026;USA;USL League Two - Northeast Division;2026;10;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_Southeast_2026;USA;USL League Two - Southeast Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_Northwest_2026;USA;USL League Two - Northwest Division;2026;8;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_Southwest_2026;USA;USL League Two - Southwest Division;2026;8;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_Mountain_2026;USA;USL League Two - Mountain Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_Metropolitan_2026;USA;USL League Two - Metropolitan Division;2026;10;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_GreatLakes_2026;USA;USL League Two - Great Lakes Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_Heartland_2026;USA;USL League Two - Heartland Division;2026;9;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_MidAtlantic_2026;USA;USL League Two - Mid-Atlantic Division;2026;9;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_MidSouth_2026;USA;USL League Two - Mid South Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_SouthAtlantic_2026;USA;USL League Two - South Atlantic Division;2026;11;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_Valley_2026;USA;USL League Two - Valley Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_Chesapeake_2026;USA;USL League Two - Chesapeake Division;2026;11;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_LoneStar_2026;USA;USL League Two - Lone Star Division;2026;9;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_NorCal_2026;USA;USL League Two - Nor Cal Division;2026;8;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_SouthCentral_2026;USA;USL League Two - South Central Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_SouthFlorida_2026;USA;USL League Two - South Florida Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_GreatForest_2026;USA;USL League Two - Great Forest Division;2026;7;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_GreatPlains_2026;USA;USL League Two - Great Plains Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_USLLeagueTwo_Ranger_2026;USA;USL League Two - Ranger Division;2026;6;0;No;"Unbalanced schedule; Round in results input is progressive by match date"
-USA_MLSNextPro_EasternConference_NortheastDivision_2026;USA;MLS Next Pro - Eastern Conference - Northeast Division;2026;8;28;Yes;Regular season division complete from supplied data
-USA_MLSNextPro_EasternConference_SoutheastDivision_2026;USA;MLS Next Pro - Eastern Conference - Southeast Division;2026;8;28;Yes;Regular season division complete from supplied data
-USA_MLSNextPro_WesternConference_PacificDivision_2026;USA;MLS Next Pro - Western Conference - Pacific Division;2026;7;28;Yes;Regular season division complete from supplied data
-USA_MLSNextPro_WesternConference_CentralDivision_2026;USA;MLS Next Pro - Western Conference - Central Division;2026;7;28;Yes;Regular season division complete from supplied data
-Finland_Ykkonen_2026;Finland;Ykkonen;2026;12;22;Yes;
-Australia_NPLNSW_2026;Australia;NPL NSW;2026;16;30;Yes;
-Australia_NPLSouthAustralia_2026;Australia;NPL South Australia;2026;12;22;Yes;
-Australia_NPLWesternAustralia_2026;Australia;NPL Western Australia;2026;12;22;Yes;
-Australia_NPLQueensland_2026;Australia;NPL Queensland;2026;12;22;Yes;
-Australia_NPLVictoria_2026;Australia;NPL Victoria;2026;14;26;Yes;
-Australia_NSWLeagueOne_2026;Australia;NSW League One;2026;16;30;Yes;
-Australia_QueenslandPremierLeague_2026;Australia;Queensland Premier League;2026;12;22;Yes;
-Australia_SAStateLeague_2026;Australia;SA State League;2026;12;22;Yes;
-Australia_TasmaniaSouthernChampionship_2026;Australia;Tasmania Southern Championship;2026;10;18;Yes;
-Australia_VictoriaPremierLeague2_2026;Australia;Victoria Premier League 2;2026;14;26;Yes;
-Australia_NPL_NSW_U20_2026;Australia;NPL NSW U20;2026;16;30;Yes;Stagione corrente
-Australia_WAStateLeague_2026;Australia;WA State League;2026;12;22;Yes;Round 14 complete in supplied data
-Australia_NPLQueenslandU23_2026;Australia;NPL Queensland U23;2026;12;22;Yes;Round 16 currently partial in supplied data
-Belarus_PershayaLiga_2026;Belarus;Pershaya Liga;2026;18;34;Yes;Round 13 currently partial in supplied data
-Australia_NPLNorthernNSW_2026;Australia;NPL Northern NSW;2026;12;22;Yes;Round 17 currently partial in supplied data
-Australia_NPLACT_2026;Australia;NPL ACT;2026;10;18;Yes;Round 15 currently partial in supplied data
-Australia_NPLTasmania_2026;Australia;NPL Tasmania;2026;10;18;Yes;Round 13 currently partial in supplied data
-Australia_NorthernNSWStateLeague_2026;Australia;Northern NSW State League;2026;10;18;Yes;Round 13 currently partial in supplied data
-Australia_TasmaniaNorthernChampionship_2026;Australia;Tasmania Northern Championship;2026;8;14;Yes;Round 12 currently partial in supplied data
+Sweden_Superettan_2026;Sweden;Superettan;2026;16;30;Yes;Round 13 currently partial in supplied data
+Turkey_SuperLig_2026;Turkey;Süper Lig;2026;18;34;Yes;
+USA_USLLeagueOne_2026;USA;USL League One;2026;17;0;No;UNBALANCED
+USA_MLSNextPro_EasternConference_NortheastDivision_2026;USA;MLS Next Pro - Eastern Conference - Northeast Division;2026;8;28;Yes;UNBALANCED
+USA_MLSNextPro_EasternConference_SoutheastDivision_2026;USA;MLS Next Pro - Eastern Conference - Southeast Division;2026;8;28;Yes;UNBALANCED
+USA_MLSNextPro_WesternConference_CentralDivision_2026;USA;MLS Next Pro - Western Conference - Central Division;2026;7;28;Yes;UNBALANCED
+USA_MLSNextPro_WesternConference_PacificDivision_2026;USA;MLS Next Pro - Western Conference - Pacific Division;2026;7;28;Yes;UNBALANCED
+USA_USLLeagueTwo_Chesapeake_2026;USA;USL League Two - Chesapeake Division;2026;11;0;No;UNBALANCED
+USA_USLLeagueTwo_GreatForest_2026;USA;USL League Two - Great Forest Division;2026;7;0;No;UNBALANCED
+USA_USLLeagueTwo_GreatLakes_2026;USA;USL League Two - Great Lakes Division;2026;7;0;No;UNBALANCED
+USA_USLLeagueTwo_GreatPlains_2026;USA;USL League Two - Great Plains Division;2026;6;0;No;UNBALANCED
+USA_USLLeagueTwo_Heartland_2026;USA;USL League Two - Heartland Division;2026;9;0;No;UNBALANCED
+USA_USLLeagueTwo_LoneStar_2026;USA;USL League Two - Lone Star Division;2026;9;0;No;UNBALANCED
+USA_USLLeagueTwo_Metropolitan_2026;USA;USL League Two - Metropolitan Division;2026;10;0;No;UNBALANCED
+USA_USLLeagueTwo_MidAtlantic_2026;USA;USL League Two - Mid-Atlantic Division;2026;9;0;No;UNBALANCED
+USA_USLLeagueTwo_MidSouth_2026;USA;USL League Two - Mid South Division;2026;7;0;No;UNBALANCED
+USA_USLLeagueTwo_Mountain_2026;USA;USL League Two - Mountain Division;2026;7;0;No;UNBALANCED
+USA_USLLeagueTwo_NorCal_2026;USA;USL League Two - Nor Cal Division;2026;8;0;No;UNBALANCED
+USA_USLLeagueTwo_Northeast_2026;USA;USL League Two - Northeast Division;2026;10;0;No;UNBALANCED
+USA_USLLeagueTwo_Northwest_2026;USA;USL League Two - Northwest Division;2026;8;0;No;UNBALANCED
+USA_USLLeagueTwo_Ranger_2026;USA;USL League Two - Ranger Division;2026;6;0;No;UNBALANCED
+USA_USLLeagueTwo_SouthAtlantic_2026;USA;USL League Two - South Atlantic Division;2026;11;0;No;UNBALANCED
+USA_USLLeagueTwo_SouthCentral_2026;USA;USL League Two - South Central Division;2026;7;0;No;UNBALANCED
+USA_USLLeagueTwo_Southeast_2026;USA;USL League Two - Southeast Division;2026;6;0;No;UNBALANCED
+USA_USLLeagueTwo_SouthFlorida_2026;USA;USL League Two - South Florida Division;2026;6;0;No;UNBALANCED
+USA_USLLeagueTwo_Southwest_2026;USA;USL League Two - Southwest Division;2026;8;0;No;UNBALANCED
+USA_USLLeagueTwo_Valley_2026;USA;USL League Two - Valley Division;2026;6;0;No;UNBALANCED

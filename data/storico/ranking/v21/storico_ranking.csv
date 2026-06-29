@@ -1,31 +1,60 @@
 ﻿PredictionDate;AlgorithmVersion;LeagueId;Round;Home;Away;Match;Score;Band;HG;AG;Goals;Over25;BTTS
-2026-06-28;v21;Norway_3rdDivision_Group4_2026;13;Brodd;Haugesund 2;Brodd - Haugesund 2;95.53;ALTA;;;;;
-2026-06-28;v21;Norway_3rdDivision_Group5_2026;13;Lillestrom 2;Tromsø 2;Lillestrom 2 - Tromsø 2;92.84;ALTA;;;;;
-2026-06-28;v21;Norway_3rdDivision_Group6_2026;13;Rade;Lyn 2;Rade - Lyn 2;89.23;ALTA;;;;;
-2026-06-28;v21;Norway_3rdDivision_Group4_2026;13;Vindbjart;Stabaek 2;Vindbjart - Stabaek 2;86.5;ALTA;;;;;
-2026-06-28;v21;Iceland_BestaDeildKarla_2026;17;Keflavik;KR Reykjavik;Keflavik - KR Reykjavik;84.84;ALTA;;;;;
-2026-06-28;v21;Iceland_BestaDeildKarla_2026;17;Hafnarfjordur;Vestmannaeyjar;Hafnarfjordur - Vestmannaeyjar;83.86;ALTA;;;;;
-2026-06-28;v21;Sweden_Division2_SodraGotaland_2026;15;Linero IF;IFK Karlshamn;Linero IF - IFK Karlshamn;82.81;ALTA;;;;;
-2026-06-28;v21;Norway_3rdDivision_Group1_2026;13;K. Oslo 2;Heming;K. Oslo 2 - Heming;82.16;ALTA;;;;;
-2026-06-28;v21;Iceland_BestaDeildKarla_2026;17;Stjarnan;Akureyri;Stjarnan - Akureyri;80.68;ALTA;;;;;
-2026-06-28;v21;Norway_2ndDivision_Group2_2026;13;Follo;Levanger;Follo - Levanger;79.94;ALTA;;;;;
-2026-06-28;v21;Norway_3rdDivision_Group4_2026;13;Varhaug;Odd 2;Varhaug - Odd 2;77.8;ALTA;;;;;
-2026-06-28;v21;Finland_Ykkonen_2026;13;OLS Oulu;KuPS Akatemia;OLS Oulu - KuPS Akatemia;77.48;ALTA;;;;;
-2026-06-28;v21;Norway_3rdDivision_Group3_2026;13;Varegg;V. Haugesund;Varegg - V. Haugesund;77.45;ALTA;;;;;
-2026-06-28;v21;Sweden_Division2_SodraSvealand_2026;15;Ragsved;Forward;Ragsved - Forward;75.99;ALTA;;;;;
-2026-06-28;v21;Norway_2ndDivision_Group1_2026;13;Sotra;Jerv;Sotra - Jerv;75.25;ALTA;;;;;
-2026-06-28;v21;Iceland_BestaDeildKarla_2026;17;Thor Akureyri;Valur;Thor Akureyri - Valur;74.75;MEDIA;;;;;
-2026-06-28;v21;Sweden_Superettan_2026;15;Landskrona;Värnamo;Landskrona - Värnamo;74.04;MEDIA;;;;;
-2026-06-28;v21;Norway_2ndDivision_Group2_2026;13;Stjordals Blink;Junkeren;Stjordals Blink - Junkeren;73.7;MEDIA;;;;;
-2026-06-28;v21;Norway_2ndDivision_Group2_2026;13;Skeid;Trygg/Lade;Skeid - Trygg/Lade;73.69;MEDIA;;;;;
-2026-06-28;v21;Sweden_Superettan_2026;15;Sandviken;Helsingborg;Sandviken - Helsingborg;73.29;MEDIA;;;;;
-2026-06-28;v21;Sweden_Division2_SodraSvealand_2026;15;Karlslund;Fittja;Karlslund - Fittja;73.16;MEDIA;;;;;
-2026-06-28;v21;Sweden_Division1_Norra_2026;15;Umeå;Jarfalla;Umeå - Jarfalla;71.57;MEDIA;;;;;
-2026-06-28;v21;Finland_Ykkonen_2026;13;KPV;Keski-Uusimaa;KPV - Keski-Uusimaa;69.93;MEDIA;;;;;
-2026-06-28;v21;Sweden_Division2_SodraSvealand_2026;15;Orebro Syr.;Syrianska;Orebro Syr. - Syrianska;63.3;MEDIA;;;;;
-2026-06-28;v21;Sweden_Superettan_2026;15;Norrkoping;Norrby;Norrkoping - Norrby;59.3;BASSA;;;;;
+2026-06-28;v21;Norway_3rdDivision_Group4_2026;13;Brodd;Haugesund 2;Brodd - Haugesund 2;95.53;ALTA;4;0;4;OK;KO
+2026-06-28;v21;Norway_3rdDivision_Group5_2026;13;Lillestrom 2;Tromsø 2;Lillestrom 2 - Tromsø 2;92.84;ALTA;5;3;8;OK;OK
+2026-06-28;v21;Norway_3rdDivision_Group6_2026;13;Rade;Lyn 2;Rade - Lyn 2;89.23;ALTA;3;5;8;OK;OK
+2026-06-28;v21;Norway_3rdDivision_Group4_2026;13;Vindbjart;Stabaek 2;Vindbjart - Stabaek 2;86.5;ALTA;2;3;5;OK;OK
+2026-06-28;v21;Iceland_BestaDeildKarla_2026;17;Keflavik;KR Reykjavik;Keflavik - KR Reykjavik;84.84;ALTA;3;2;5;OK;OK
+2026-06-28;v21;Iceland_BestaDeildKarla_2026;17;Hafnarfjordur;Vestmannaeyjar;Hafnarfjordur - Vestmannaeyjar;83.86;ALTA;1;1;2;KO;OK
+2026-06-28;v21;Sweden_Division2_SodraGotaland_2026;15;Linero IF;IFK Karlshamn;Linero IF - IFK Karlshamn;82.81;ALTA;3;1;4;OK;OK
+2026-06-28;v21;Norway_3rdDivision_Group1_2026;13;K. Oslo 2;Heming;K. Oslo 2 - Heming;82.16;ALTA;2;2;4;OK;OK
+2026-06-28;v21;Iceland_BestaDeildKarla_2026;17;Stjarnan;Akureyri;Stjarnan - Akureyri;80.68;ALTA;3;1;4;OK;OK
+2026-06-28;v21;Norway_2ndDivision_Group2_2026;13;Follo;Levanger;Follo - Levanger;79.94;ALTA;0;2;2;KO;KO
+2026-06-28;v21;Norway_3rdDivision_Group4_2026;13;Varhaug;Odd 2;Varhaug - Odd 2;77.8;ALTA;2;2;4;OK;OK
+2026-06-28;v21;Finland_Ykkonen_2026;13;OLS Oulu;KuPS Akatemia;OLS Oulu - KuPS Akatemia;77.48;ALTA;2;2;4;OK;OK
+2026-06-28;v21;Norway_3rdDivision_Group3_2026;13;Varegg;V. Haugesund;Varegg - V. Haugesund;77.45;ALTA;1;1;2;KO;OK
+2026-06-28;v21;Sweden_Division2_SodraSvealand_2026;15;Ragsved;Forward;Ragsved - Forward;75.99;ALTA;1;2;3;OK;OK
+2026-06-28;v21;Norway_2ndDivision_Group1_2026;13;Sotra;Jerv;Sotra - Jerv;75.25;ALTA;1;3;4;OK;OK
+2026-06-28;v21;Iceland_BestaDeildKarla_2026;17;Thor Akureyri;Valur;Thor Akureyri - Valur;74.75;MEDIA;2;4;6;OK;OK
+2026-06-28;v21;Sweden_Superettan_2026;15;Landskrona;Värnamo;Landskrona - Värnamo;74.04;MEDIA;1;0;1;KO;KO
+2026-06-28;v21;Norway_2ndDivision_Group2_2026;13;Stjordals Blink;Junkeren;Stjordals Blink - Junkeren;73.7;MEDIA;1;1;2;KO;OK
+2026-06-28;v21;Norway_2ndDivision_Group2_2026;13;Skeid;Trygg/Lade;Skeid - Trygg/Lade;73.69;MEDIA;7;1;8;OK;OK
+2026-06-28;v21;Sweden_Superettan_2026;15;Sandviken;Helsingborg;Sandviken - Helsingborg;73.29;MEDIA;4;2;6;OK;OK
+2026-06-28;v21;Sweden_Division2_SodraSvealand_2026;15;Karlslund;Fittja;Karlslund - Fittja;73.16;MEDIA;2;2;4;OK;OK
+2026-06-28;v21;Sweden_Division1_Norra_2026;15;Umeå;Jarfalla;Umeå - Jarfalla;71.57;MEDIA;1;3;4;OK;OK
+2026-06-28;v21;Finland_Ykkonen_2026;13;KPV;Keski-Uusimaa;KPV - Keski-Uusimaa;69.93;MEDIA;1;3;4;OK;OK
+2026-06-28;v21;Sweden_Division2_SodraSvealand_2026;15;Orebro Syr.;Syrianska;Orebro Syr. - Syrianska;63.3;MEDIA;3;0;3;OK;KO
+2026-06-28;v21;Sweden_Superettan_2026;15;Norrkoping;Norrby;Norrkoping - Norrby;59.3;BASSA;0;1;1;KO;KO
 2026-06-28;v21;Finland_Ykkosliiga_2026;13;KaPa;JaPS;KaPa - JaPS;50.56;BASSA;2;1;3;OK;OK
-2026-06-28;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;20260629;Philadelphia Lone Star;Ocean City;Philadelphia Lone Star - Ocean City;81.52;ALTA;;;;;
-2026-06-28;2.1.0;USA_USLLeagueTwo_GreatForest_2026;20260629;Erie Sports Center;Pittsburgh Riverhounds 2;Erie Sports Center - Pittsburgh Riverhounds 2;77.6;ALTA;;;;;
-2026-06-28;2.1.0;USA_USLLeagueTwo_Northeast_2026;20260629;Seacoast Utd Phantoms;Black Rock;Seacoast Utd Phantoms - Black Rock;77.23;ALTA;;;;;
-2026-06-28;2.1.0;USA_USLLeagueTwo_NorCal_2026;20260629;Glens SC;San Francisco City;Glens SC - San Francisco City;69.47;MEDIA;;;;;
+2026-06-28;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;20260629;Philadelphia Lone Star;Ocean City;Philadelphia Lone Star - Ocean City;81.52;ALTA;0;4;4;OK;KO
+2026-06-28;2.1.0;USA_USLLeagueTwo_GreatForest_2026;20260629;Erie Sports Center;Pittsburgh Riverhounds 2;Erie Sports Center - Pittsburgh Riverhounds 2;77.6;ALTA;0;4;4;OK;KO
+2026-06-28;2.1.0;USA_USLLeagueTwo_Northeast_2026;20260629;Seacoast Utd Phantoms;Black Rock;Seacoast Utd Phantoms - Black Rock;77.23;ALTA;1;3;4;OK;OK
+2026-06-28;2.1.0;USA_USLLeagueTwo_NorCal_2026;20260629;Glens SC;San Francisco City;Glens SC - San Francisco City;69.47;MEDIA;0;2;2;KO;KO
+2026-06-29;2.1.0;USA_USLLeagueTwo_Northeast_2026;20260629;Albany Rush;Boston Bolts;Albany Rush - Boston Bolts;93.08;ALTA;1;0;1;KO;KO
+2026-06-29;2.1.0;USA_USLLeagueTwo_NorCal_2026;20260629;Academica SC;Marin;Academica SC - Marin;92.65;ALTA;3;2;5;OK;OK
+2026-06-29;2.1.0;USA_USLLeagueTwo_Mountain_2026;20260629;Atletico Union;Real Colorado;Atletico Union - Real Colorado;92.42;ALTA;;;;;
+2026-06-29;2.1.0;USA_USLLeagueTwo_Northwest_2026;20260629;Tacoma Stars;West Seattle Junction;Tacoma Stars - West Seattle Junction;85.88;ALTA;1;2;3;OK;OK
+2026-06-29;2.1.0;Iceland_Division_1_2026;17;Afturelding;Aegir;Afturelding - Aegir;85.43;ALTA;8;1;9;OK;OK
+2026-06-29;2.1.0;USA_USLLeagueTwo_Northwest_2026;20260629;Portland Bangers;Bigfoot;Portland Bangers - Bigfoot;85.15;ALTA;2;0;2;KO;KO
+2026-06-29;2.1.0;USA_USLLeagueTwo_SouthFlorida_2026;16;Miami;Brevard SC;Miami - Brevard SC;80.37;ALTA;2;3;5;OK;OK
+2026-06-29;2.1.0;Iceland_BestaDeildKarla_2026;17;Akranes;Fram;Akranes - Fram;80.12;ALTA;0;2;2;KO;KO
+2026-06-29;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;20260629;West Chester Utd;LVU Rush;West Chester Utd - LVU Rush;79.63;ALTA;2;3;5;OK;OK
+2026-06-29;2.1.0;USA_USLLeagueTwo_LoneStar_2026;20260629;Hill Country Lobos;Lonestar SC;Hill Country Lobos - Lonestar SC;74.36;MEDIA;;;;;
+2026-06-29;2.1.0;USA_USLLeagueTwo_Mountain_2026;20260629;Albion Colorado;Colorado Storm;Albion Colorado - Colorado Storm;71.94;MEDIA;0;1;1;KO;KO
+2026-06-29;2.1.0;USA_USLLeagueTwo_SouthFlorida_2026;16;Weston;Lakeland United;Weston - Lakeland United;65.15;MEDIA;2;3;5;OK;OK
+2026-06-29;2.1.0;Finland_Ykkonen_2026;13;VJS;TPV;VJS - TPV;64.81;MEDIA;2;1;3;OK;OK
+2026-06-29;2.1.0;USA_USLLeagueTwo_SouthCentral_2026;18;Swarm FC;Dothan United;Swarm FC - Dothan United;64.38;MEDIA;3;1;4;OK;OK
+2026-06-29;2.1.0;USA_USLLeagueTwo_SouthAtlantic_2026;20260629;Asheville City;Charlotte Independ. 2;Asheville City - Charlotte Independ. 2;54.56;BASSA;;;;;
+2026-06-29;2.1.0;Estonia_Esiliiga_2026;18;Nomme Utd U21;Flora U21;Nomme Utd U21 - Flora U21;98.42;ALTA;;;;;
+2026-06-29;2.1.0;Finland_Kakkonen_GroupC_2026;11;SJK Akatemia 2;Vaajakoski;SJK Akatemia 2 - Vaajakoski;78.98;ALTA;;;;;
+2026-06-29;2.1.0;Australia_QueenslandPremierLeague_2026;17;Logan Lightning;Redlands;Logan Lightning - Redlands;77.4;ALTA;;;;;
+2026-06-29;2.1.0;Latvia_Virsliga_2026;21;FK Liepaja;Ogre United;FK Liepaja - Ogre United;75.67;ALTA;4;1;5;OK;OK
+2026-06-29;2.1.0;Australia_NPL_NSW_U20_2026;22;SD Raiders U20;Sydney FC U20;SD Raiders U20 - Sydney FC U20;74.61;MEDIA;;;;;
+2026-06-29;2.1.0;Latvia_Virsliga_2026;21;RFS;BFC Daugavpils;RFS - BFC Daugavpils;62.34;MEDIA;4;1;5;OK;OK
+2026-06-29;2.1.0;Australia_NPLNSW_2026;22;SD Raiders;Sydney FC U23;SD Raiders - Sydney FC U23;62.09;MEDIA;;;;;
+2026-06-30;2.1.0;Lithuania_Toplyga_2026;23;FA Siauliai;Transinvest;FA Siauliai - Transinvest;75.59;ALTA;;;;;
+2026-06-30;2.1.0;Latvia_Virsliga_2026;21;Auda;Riga FC;Auda - Riga FC;73.12;MEDIA;;;;;
+2026-06-30;2.1.0;FaroeIslands_PremierLeague_2026;16;Vikingur;Runavik;Vikingur - Runavik;66.59;MEDIA;;;;;
+2026-06-30;2.1.0;FaroeIslands_PremierLeague_2026;16;HB Torshavn;Skala Itrottarfelag;HB Torshavn - Skala Itrottarfelag;64.24;MEDIA;;;;;
+2026-06-30;2.1.0;FaroeIslands_PremierLeague_2026;16;Toftir;Argir;Toftir - Argir;63.07;MEDIA;;;;;
+2026-06-30;2.1.0;Lithuania_Toplyga_2026;23;FK Panevezys;Suduva;FK Panevezys - Suduva;62.18;MEDIA;;;;;
+2026-06-30;2.1.0;Latvia_Virsliga_2026;21;Jelgava;Grobina;Jelgava - Grobina;49.24;BASSA;;;;;

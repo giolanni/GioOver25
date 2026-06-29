@@ -127,6 +127,7 @@ def append_results(input_file: str | Path) -> None:
     total_added = 0
     total_duplicates = 0
 
+    
     for league_id, new_matches in grouped_matches.items():
         results_file = RESULTS_DIR / f"{league_id}.csv"
         standings_file = STANDINGS_DIR / f"{league_id}.csv"
@@ -174,7 +175,14 @@ def append_results(input_file: str | Path) -> None:
         )
 
         write_results_file(all_matches, results_file)
-        generate_standings_file(results_file, standings_file)
+        
+        league_info = get_league_info(league_id)
+        notes = str(league_info.notes or "").upper()
+
+        if "UNBALANCED" in notes:
+            print(f"Classifica saltata per lega irregolare: {league_id}")
+        else:
+            generate_standings_file(results_file, standings_file)
 
         total_added += len(added)
         total_duplicates += duplicates
@@ -189,6 +197,8 @@ def append_results(input_file: str | Path) -> None:
     print("Import completato.")
     print(f"Totale partite aggiunte: {total_added}")
     print(f"Totale duplicate ignorate: {total_duplicates}")
+    notes = str(league_info.notes or "").upper()
+
     generate_standings_file(results_file, standings_file)
 
     for engine_name in get_available_engines():

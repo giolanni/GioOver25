@@ -100,6 +100,10 @@ def append_predictions(
     print(f"[{engine_name}] Storico ranking aggiornato. Nuove previsioni: {added}")
 
 
+def _normalize_team_name(value: str) -> str:
+    return " ".join(str(value or "").strip().lower().split())
+
+
 def update_finished_matches(engine_name: str) -> None:
     history = _read_history(engine_name)
 
@@ -107,7 +111,9 @@ def update_finished_matches(engine_name: str) -> None:
         print(f"[{engine_name}] Storico ranking vuoto.")
         return
 
+    results_cache = {}
     updated = 0
+    not_found = 0
 
     for row in history:
         if row.get("HG", "").strip() != "" and row.get("AG", "").strip() != "":
@@ -117,26 +123,49 @@ def update_finished_matches(engine_name: str) -> None:
         results_file = RESULTS_DIR / f"{league_id}.csv"
 
         if not results_file.exists():
+            not_found += 1
+            print(f"[{engine_name}] File risultati mancante: {league_id}")
             continue
 
-        matches = read_results_file(results_file)
+        if league_id not in results_cache:
+            matches = read_results_file(results_file)
+            match_index = {}
 
-        for match in matches:
-            if (
-                match.home.strip().lower() == row["Home"].strip().lower()
-                and match.away.strip().lower() == row["Away"].strip().lower()
-            ):
-                goals = match.home_goals + match.away_goals
+            for match in matches:
+                key = (
+                    _normalize_team_name(match.home),
+                    _normalize_team_name(match.away),
+                )
+                match_index[key] = match
 
-                row["HG"] = match.home_goals
-                row["AG"] = match.away_goals
-                row["Goals"] = goals
-                row["Over25"] = "OK" if goals >= 3 else "KO"
-                row["BTTS"] = "OK" if match.home_goals > 0 and match.away_goals > 0 else "KO"
+            results_cache[league_id] = match_index
 
-                updated += 1
-                break
+        key = (
+            _normalize_team_name(row["Home"]),
+            _normalize_team_name(row["Away"]),
+        )
+
+        match = results_cache[league_id].get(key)
+
+        if match is None:
+            not_found += 1
+            print(
+                f"[{engine_name}] NON TROVATA: "
+                f"{league_id} | {row['Home']} - {row['Away']}"
+            )
+            continue
+
+        goals = match.home_goals + match.away_goals
+
+        row["HG"] = str(match.home_goals)
+        row["AG"] = str(match.away_goals)
+        row["Goals"] = str(goals)
+        row["Over25"] = "OK" if goals >= 3 else "KO"
+        row["BTTS"] = "OK" if match.home_goals > 0 and match.away_goals > 0 else "KO"
+
+        updated += 1
 
     _write_history(engine_name, history)
 
     print(f"[{engine_name}] Risultati aggiornati nello storico ranking: {updated}")
+    print(f"[{engine_name}] Partite non trovate: {not_found}")

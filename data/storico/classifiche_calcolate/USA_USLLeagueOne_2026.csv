@@ -1,0 +1,336 @@
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+1;1;Portland Hearts of Pine;1;1;0;0;5;1;4;3;3.0
+1;2;Forward Madison;1;1;0;0;3;1;2;3;3.0
+1;3;Spokane Velocity;1;1;0;0;2;1;1;3;3.0
+1;4;Boise;1;1;0;0;1;0;1;3;3.0
+1;5;Chattanooga Red Wolves;1;1;0;0;1;0;1;3;3.0
+1;6;AV Alta;1;0;1;0;0;0;0;1;1.0
+1;7;Corpus Christi FC;1;0;1;0;0;0;0;1;1.0
+1;8;Westchester SC;1;0;0;1;1;2;-1;0;0.0
+1;9;FC Naples;1;0;0;1;0;1;-1;0;0.0
+1;10;Union Omaha;1;0;0;1;0;1;-1;0;0.0
+1;11;New York Cosmos;1;0;0;1;1;3;-2;0;0.0
+1;12;Richmond Kickers;1;0;0;1;1;5;-4;0;0.0
+2;1;Corpus Christi FC;2;1;1;0;4;1;3;4;2.0
+2;2;AV Alta;2;1;1;0;2;1;1;4;2.0
+2;3;One Knoxville;1;1;0;0;4;0;4;3;3.0
+2;4;Westchester SC;2;1;0;1;6;3;3;3;1.5
+2;5;Forward Madison;1;1;0;0;3;1;2;3;3.0
+2;6;Fort Wayne;1;1;0;0;2;0;2;3;3.0
+2;7;Charlotte Independ.;1;1;0;0;4;3;1;3;3.0
+2;8;Boise;1;1;0;0;1;0;1;3;3.0
+2;9;Chattanooga Red Wolves;1;1;0;0;1;0;1;3;3.0
+2;10;Portland Hearts of Pine;2;1;0;1;6;6;0;3;1.5
+2;11;Spokane Velocity;2;1;0;1;2;5;-3;3;1.5
+2;12;Greenville;1;0;0;1;1;2;-1;0;0.0
+2;13;Union Omaha;1;0;0;1;0;1;-1;0;0.0
+2;14;FC Naples;2;0;0;2;3;5;-2;0;0.0
+2;15;New York Cosmos;1;0;0;1;1;3;-2;0;0.0
+2;16;Sarasota Paradise;1;0;0;1;1;4;-3;0;0.0
+2;17;Richmond Kickers;2;0;0;2;1;7;-6;0;0.0
+3;1;Corpus Christi FC;3;2;1;0;5;1;4;7;2.333
+3;2;AV Alta;3;2;1;0;3;1;2;7;2.333
+3;3;Westchester SC;3;2;0;1;10;3;7;6;2.0
+3;4;One Knoxville;2;2;0;0;7;1;6;6;3.0
+3;5;Chattanooga Red Wolves;2;2;0;0;3;1;2;6;3.0
+3;6;Forward Madison;2;1;1;0;4;2;2;4;2.0
+3;7;Fort Wayne;2;1;1;0;3;1;2;4;2.0
+3;8;Charlotte Independ.;1;1;0;0;4;3;1;3;3.0
+3;9;Boise;1;1;0;0;1;0;1;3;3.0
+3;10;Portland Hearts of Pine;3;1;0;2;7;8;-1;3;1.0
+3;11;Sarasota Paradise;2;1;0;1;3;4;-1;3;1.5
+3;12;Spokane Velocity;3;1;0;2;2;6;-4;3;1.0
+3;13;FC Naples;2;0;0;2;3;5;-2;0;0.0
+3;14;Union Omaha;2;0;0;2;0;3;-3;0;0.0
+3;15;New York Cosmos;2;0;0;2;2;6;-4;0;0.0
+3;16;Greenville;2;0;0;2;1;6;-5;0;0.0
+3;17;Richmond Kickers;3;0;0;3;1;8;-7;0;0.0
+4;1;Corpus Christi FC;4;3;1;0;8;3;5;10;2.5
+4;2;AV Alta;4;3;1;0;6;2;4;10;2.5
+4;3;Westchester SC;4;2;1;1;11;4;7;7;1.75
+4;4;Forward Madison;3;2;1;0;9;3;6;7;2.333
+4;5;One Knoxville;2;2;0;0;7;1;6;6;3.0
+4;6;Charlotte Independ.;2;2;0;0;6;3;3;6;3.0
+4;7;Chattanooga Red Wolves;2;2;0;0;3;1;2;6;3.0
+4;8;Fort Wayne;3;1;2;0;4;2;2;5;1.667
+4;9;Portland Hearts of Pine;4;1;0;3;9;11;-2;3;0.75
+4;10;Sarasota Paradise;3;1;0;2;4;7;-3;3;1.0
+4;11;Boise;2;1;0;1;2;5;-3;3;1.5
+4;12;Spokane Velocity;3;1;0;2;2;6;-4;3;1.0
+4;13;FC Naples;2;0;0;2;3;5;-2;0;0.0
+4;14;New York Cosmos;2;0;0;2;2;6;-4;0;0.0
+4;15;Greenville;2;0;0;2;1;6;-5;0;0.0
+4;16;Union Omaha;3;0;0;3;0;5;-5;0;0.0
+4;17;Richmond Kickers;3;0;0;3;1;8;-7;0;0.0
+5;1;AV Alta;5;3;2;0;6;2;4;11;2.2
+5;2;Corpus Christi FC;4;3;1;0;8;3;5;10;2.5
+5;3;Charlotte Independ.;3;3;0;0;11;4;7;9;3.0
+5;4;Westchester SC;4;2;1;1;11;4;7;7;1.75
+5;5;Forward Madison;4;2;1;1;9;4;5;7;1.75
+5;6;One Knoxville;2;2;0;0;7;1;6;6;3.0
+5;7;Fort Wayne;4;1;3;0;4;2;2;6;1.5
+5;8;Chattanooga Red Wolves;2;2;0;0;3;1;2;6;3.0
+5;9;Portland Hearts of Pine;5;2;0;3;11;12;-1;6;1.2
+5;10;Sarasota Paradise;4;2;0;2;6;8;-2;6;1.5
+5;11;Boise;3;2;0;1;4;6;-2;6;2.0
+5;12;Greenville;3;1;0;2;2;6;-4;3;1.0
+5;13;Spokane Velocity;4;1;0;3;3;8;-5;3;0.75
+5;14;New York Cosmos;3;0;0;3;3;8;-5;0;0.0
+5;15;Union Omaha;3;0;0;3;0;5;-5;0;0.0
+5;16;FC Naples;3;0;0;3;4;10;-6;0;0.0
+5;17;Richmond Kickers;4;0;0;4;2;10;-8;0;0.0
+6;1;Charlotte Independ.;4;4;0;0;14;6;8;12;3.0
+6;2;AV Alta;5;3;2;0;6;2;4;11;2.2
+6;3;Forward Madison;5;3;1;1;12;4;8;10;2.0
+6;4;Corpus Christi FC;5;3;1;1;8;6;2;10;2.0
+6;5;One Knoxville;3;3;0;0;9;1;8;9;3.0
+6;6;Westchester SC;4;2;1;1;11;4;7;7;1.75
+6;7;Boise;4;2;1;1;6;8;-2;7;1.75
+6;8;Fort Wayne;4;1;3;0;4;2;2;6;1.5
+6;9;Chattanooga Red Wolves;3;2;0;1;5;4;1;6;2.0
+6;10;Portland Hearts of Pine;5;2;0;3;11;12;-1;6;1.2
+6;11;Sarasota Paradise;4;2;0;2;6;8;-2;6;1.5
+6;12;Union Omaha;4;1;0;3;2;6;-4;3;0.75
+6;13;Spokane Velocity;4;1;0;3;3;8;-5;3;0.75
+6;14;Greenville;4;1;0;3;2;8;-6;3;0.75
+6;15;Richmond Kickers;5;0;1;4;4;12;-8;1;0.2
+6;16;New York Cosmos;3;0;0;3;3;8;-5;0;0.0
+6;17;FC Naples;4;0;0;4;5;12;-7;0;0.0
+7;1;Charlotte Independ.;5;5;0;0;17;7;10;15;3.0
+7;2;AV Alta;5;3;2;0;6;2;4;11;2.2
+7;3;Corpus Christi FC;6;3;2;1;10;8;2;11;1.833
+7;4;One Knoxville;4;3;1;0;11;3;8;10;2.5
+7;5;Forward Madison;6;3;1;2;13;7;6;10;1.667
+7;6;Chattanooga Red Wolves;4;3;0;1;10;4;6;9;2.25
+7;7;Sarasota Paradise;5;3;0;2;8;8;0;9;1.8
+7;8;Westchester SC;5;2;1;2;11;5;6;7;1.4
+7;9;Portland Hearts of Pine;6;2;1;3;12;13;-1;7;1.167
+7;10;Boise;5;2;1;2;6;10;-4;7;1.4
+7;11;Fort Wayne;4;1;3;0;4;2;2;6;1.5
+7;12;Union Omaha;5;2;0;3;4;7;-3;6;1.2
+7;13;Greenville;5;1;1;3;3;9;-6;4;0.8
+7;14;Spokane Velocity;4;1;0;3;3;8;-5;3;0.75
+7;15;FC Naples;5;1;0;4;6;12;-6;3;0.6
+7;16;Richmond Kickers;6;0;1;5;4;17;-13;1;0.167
+7;17;New York Cosmos;4;0;0;4;4;10;-6;0;0.0
+8;1;Charlotte Independ.;5;5;0;0;17;7;10;15;3.0
+8;2;AV Alta;6;4;2;0;10;2;8;14;2.333
+8;3;Corpus Christi FC;6;3;2;1;10;8;2;11;1.833
+8;4;One Knoxville;4;3;1;0;11;3;8;10;2.5
+8;5;Forward Madison;6;3;1;2;13;7;6;10;1.667
+8;6;Chattanooga Red Wolves;5;3;0;2;10;6;4;9;1.8
+8;7;Fort Wayne;5;2;3;0;7;3;4;9;1.8
+8;8;Sarasota Paradise;6;3;0;3;8;9;-1;9;1.5
+8;9;Union Omaha;6;3;0;3;6;7;-1;9;1.5
+8;10;Westchester SC;5;2;1;2;11;5;6;7;1.4
+8;11;Portland Hearts of Pine;6;2;1;3;12;13;-1;7;1.167
+8;12;Boise;6;2;1;3;7;13;-6;7;1.167
+8;13;Spokane Velocity;5;2;0;3;4;8;-4;6;1.2
+8;14;Greenville;6;1;1;4;3;12;-9;4;0.667
+8;15;Richmond Kickers;7;1;1;5;7;17;-10;4;0.571
+8;16;FC Naples;5;1;0;4;6;12;-6;3;0.6
+8;17;New York Cosmos;5;0;0;5;4;14;-10;0;0.0
+9;1;AV Alta;7;5;2;0;12;3;9;17;2.429
+9;2;Charlotte Independ.;5;5;0;0;17;7;10;15;3.0
+9;3;Corpus Christi FC;7;3;3;1;11;9;2;12;1.714
+9;4;Union Omaha;7;4;0;3;8;8;0;12;1.714
+9;5;One Knoxville;5;3;1;1;12;5;7;10;2.0
+9;6;Forward Madison;6;3;1;2;13;7;6;10;1.667
+9;7;Fort Wayne;6;2;4;0;8;4;4;10;1.667
+9;8;Boise;7;3;1;3;9;13;-4;10;1.429
+9;9;Chattanooga Red Wolves;5;3;0;2;10;6;4;9;1.8
+9;10;Sarasota Paradise;7;3;0;4;9;11;-2;9;1.286
+9;11;Westchester SC;5;2;1;2;11;5;6;7;1.4
+9;12;Portland Hearts of Pine;6;2;1;3;12;13;-1;7;1.167
+9;13;Spokane Velocity;5;2;0;3;4;8;-4;6;1.2
+9;14;Greenville;6;1;1;4;3;12;-9;4;0.667
+9;15;Richmond Kickers;7;1;1;5;7;17;-10;4;0.571
+9;16;FC Naples;6;1;0;5;6;14;-8;3;0.5
+9;17;New York Cosmos;5;0;0;5;4;14;-10;0;0.0
+10;1;AV Alta;8;6;2;0;14;3;11;20;2.5
+10;2;Charlotte Independ.;6;6;0;0;20;8;12;18;3.0
+10;3;Fort Wayne;7;3;4;0;9;4;5;13;1.857
+10;4;Union Omaha;8;4;1;3;10;10;0;13;1.625
+10;5;Chattanooga Red Wolves;6;4;0;2;14;7;7;12;2.0
+10;6;Corpus Christi FC;8;3;3;2;12;12;0;12;1.5
+10;7;One Knoxville;5;3;1;1;12;5;7;10;2.0
+10;8;Forward Madison;7;3;1;3;13;9;4;10;1.429
+10;9;Boise;7;3;1;3;9;13;-4;10;1.429
+10;10;Spokane Velocity;6;3;0;3;6;9;-3;9;1.5
+10;11;Sarasota Paradise;8;3;0;5;10;15;-5;9;1.125
+10;12;Portland Hearts of Pine;7;2;2;3;14;15;-1;8;1.143
+10;13;Westchester SC;6;2;1;3;11;6;5;7;1.167
+10;14;Greenville;6;1;1;4;3;12;-9;4;0.667
+10;15;Richmond Kickers;7;1;1;5;7;17;-10;4;0.571
+10;16;FC Naples;7;1;0;6;7;16;-9;3;0.429
+10;17;New York Cosmos;5;0;0;5;4;14;-10;0;0.0
+11;1;Charlotte Independ.;7;7;0;0;21;8;13;21;3.0
+11;2;AV Alta;8;6;2;0;14;3;11;20;2.5
+11;3;Fort Wayne;8;4;4;0;12;4;8;16;2.0
+11;4;Union Omaha;9;5;1;3;12;10;2;16;1.778
+11;5;One Knoxville;6;4;1;1;15;5;10;13;2.167
+11;6;Forward Madison;8;4;1;3;16;10;6;13;1.625
+11;7;Corpus Christi FC;9;3;4;2;12;12;0;13;1.444
+11;8;Chattanooga Red Wolves;6;4;0;2;14;7;7;12;2.0
+11;9;Spokane Velocity;7;3;1;3;6;9;-3;10;1.429
+11;10;Boise;8;3;1;4;9;14;-5;10;1.25
+11;11;Sarasota Paradise;9;3;0;6;11;18;-7;9;1.0
+11;12;Portland Hearts of Pine;8;2;2;4;14;18;-4;8;1.0
+11;13;Westchester SC;7;2;1;4;11;7;4;7;1.0
+11;14;Richmond Kickers;8;2;1;5;8;17;-9;7;0.875
+11;15;Greenville;7;1;1;5;3;14;-11;4;0.571
+11;16;FC Naples;8;1;0;7;7;19;-12;3;0.375
+11;17;New York Cosmos;5;0;0;5;4;14;-10;0;0.0
+12;1;Charlotte Independ.;8;7;1;0;23;10;13;22;2.75
+12;2;AV Alta;8;6;2;0;14;3;11;20;2.5
+12;3;Fort Wayne;9;4;5;0;14;6;8;17;1.889
+12;4;Union Omaha;10;5;1;4;13;12;1;16;1.6
+12;5;One Knoxville;6;4;1;1;15;5;10;13;2.167
+12;6;Forward Madison;8;4;1;3;16;10;6;13;1.625
+12;7;Corpus Christi FC;10;3;4;3;13;14;-1;13;1.3
+12;8;Boise;9;4;1;4;11;15;-4;13;1.444
+12;9;Chattanooga Red Wolves;7;4;0;3;15;9;6;12;1.714
+12;10;Sarasota Paradise;10;4;0;6;13;19;-6;12;1.2
+12;11;Portland Hearts of Pine;9;3;2;4;17;19;-2;11;1.222
+12;12;Spokane Velocity;7;3;1;3;6;9;-3;10;1.429
+12;13;Richmond Kickers;9;3;1;5;10;18;-8;10;1.111
+12;14;Westchester SC;7;2;1;4;11;7;4;7;1.0
+12;15;Greenville;7;1;1;5;3;14;-11;4;0.571
+12;16;FC Naples;8;1;0;7;7;19;-12;3;0.375
+12;17;New York Cosmos;6;0;0;6;5;17;-12;0;0.0
+13;1;Charlotte Independ.;9;7;1;1;24;12;12;22;2.444
+13;2;AV Alta;8;6;2;0;14;3;11;20;2.5
+13;3;Fort Wayne;10;5;5;0;15;6;9;20;2.0
+13;4;One Knoxville;7;5;1;1;17;6;11;16;2.286
+13;5;Union Omaha;10;5;1;4;13;12;1;16;1.6
+13;6;Boise;10;5;1;4;15;15;0;16;1.6
+13;7;Forward Madison;9;4;2;3;18;12;6;14;1.556
+13;8;Corpus Christi FC;10;3;4;3;13;14;-1;13;1.3
+13;9;Spokane Velocity;8;4;1;3;9;10;-1;13;1.625
+13;10;Chattanooga Red Wolves;8;4;0;4;15;10;5;12;1.5
+13;11;Portland Hearts of Pine;10;3;3;4;18;20;-2;12;1.2
+13;12;Sarasota Paradise;10;4;0;6;13;19;-6;12;1.2
+13;13;Richmond Kickers;10;3;1;6;11;21;-10;10;1.0
+13;14;Westchester SC;8;2;1;5;11;11;0;7;0.875
+13;15;Greenville;7;1;1;5;3;14;-11;4;0.571
+13;16;FC Naples;9;1;1;7;8;20;-12;4;0.444
+13;17;New York Cosmos;7;0;1;6;7;19;-12;1;0.143
+14;1;Charlotte Independ.;10;7;1;2;26;15;11;22;2.2
+14;2;AV Alta;9;6;3;0;16;5;11;21;2.333
+14;3;Fort Wayne;10;5;5;0;15;6;9;20;2.0
+14;4;Union Omaha;11;6;1;4;14;12;2;19;1.727
+14;5;One Knoxville;8;5;2;1;17;6;11;17;2.125
+14;6;Boise;11;5;2;4;17;17;0;17;1.545
+14;7;Forward Madison;10;4;2;4;18;13;5;14;1.4
+14;8;Corpus Christi FC;10;3;4;3;13;14;-1;13;1.3
+14;9;Spokane Velocity;8;4;1;3;9;10;-1;13;1.625
+14;10;Portland Hearts of Pine;11;3;4;4;18;20;-2;13;1.182
+14;11;Chattanooga Red Wolves;8;4;0;4;15;10;5;12;1.5
+14;12;Sarasota Paradise;11;4;0;7;13;21;-8;12;1.091
+14;13;Richmond Kickers;10;3;1;6;11;21;-10;10;1.0
+14;14;Westchester SC;8;2;1;5;11;11;0;7;0.875
+14;15;FC Naples;10;2;1;7;10;20;-10;7;0.7
+14;16;New York Cosmos;8;1;1;6;10;21;-11;4;0.5
+14;17;Greenville;7;1;1;5;3;14;-11;4;0.571
+15;1;Charlotte Independ.;10;7;1;2;26;15;11;22;2.2
+15;2;AV Alta;10;6;3;1;17;8;9;21;2.1
+15;3;Fort Wayne;11;5;5;1;15;8;7;20;1.818
+15;4;Union Omaha;11;6;1;4;14;12;2;19;1.727
+15;5;One Knoxville;8;5;2;1;17;6;11;17;2.125
+15;6;Boise;11;5;2;4;17;17;0;17;1.545
+15;7;Spokane Velocity;9;5;1;3;12;11;1;16;1.778
+15;8;Forward Madison;10;4;2;4;18;13;5;14;1.4
+15;9;Corpus Christi FC;10;3;4;3;13;14;-1;13;1.3
+15;10;Portland Hearts of Pine;11;3;4;4;18;20;-2;13;1.182
+15;11;Chattanooga Red Wolves;8;4;0;4;15;10;5;12;1.5
+15;12;Sarasota Paradise;12;4;0;8;13;23;-10;12;1.0
+15;13;Westchester SC;9;3;1;5;13;11;2;10;1.111
+15;14;FC Naples;11;3;1;7;11;20;-9;10;0.909
+15;15;Richmond Kickers;10;3;1;6;11;21;-10;10;1.0
+15;16;New York Cosmos;9;2;1;6;12;21;-9;7;0.778
+15;17;Greenville;8;1;1;6;3;15;-12;4;0.5
+16;1;Charlotte Independ.;10;7;1;2;26;15;11;22;2.2
+16;2;Union Omaha;12;7;1;4;17;13;4;22;1.833
+16;3;AV Alta;11;6;3;2;18;11;7;21;1.909
+16;4;One Knoxville;9;6;2;1;19;7;12;20;2.222
+16;5;Fort Wayne;11;5;5;1;15;8;7;20;1.818
+16;6;Boise;12;5;3;4;18;18;0;18;1.5
+16;7;Forward Madison;11;5;2;4;19;13;6;17;1.545
+16;8;Spokane Velocity;10;5;2;3;13;12;1;17;1.7
+16;9;Westchester SC;10;4;1;5;18;12;6;13;1.3
+16;10;Portland Hearts of Pine;11;3;4;4;18;20;-2;13;1.182
+16;11;Corpus Christi FC;11;3;4;4;14;19;-5;13;1.182
+16;12;Chattanooga Red Wolves;8;4;0;4;15;10;5;12;1.5
+16;13;Sarasota Paradise;13;4;0;9;14;25;-11;12;0.923
+16;14;FC Naples;12;3;1;8;11;21;-10;10;0.833
+16;15;Richmond Kickers;10;3;1;6;11;21;-10;10;1.0
+16;16;New York Cosmos;9;2;1;6;12;21;-9;7;0.778
+16;17;Greenville;8;1;1;6;3;15;-12;4;0.5
+17;1;Charlotte Independ.;11;8;1;2;30;15;15;25;2.273
+17;2;Union Omaha;13;8;1;4;19;14;5;25;1.923
+17;3;One Knoxville;10;7;2;1;20;7;13;23;2.3
+17;4;AV Alta;12;6;4;2;20;13;7;22;1.833
+17;5;Fort Wayne;11;5;5;1;15;8;7;20;1.818
+17;6;Boise;12;5;3;4;18;18;0;18;1.5
+17;7;Forward Madison;11;5;2;4;19;13;6;17;1.545
+17;8;Spokane Velocity;11;5;2;4;13;16;-3;17;1.545
+17;9;Sarasota Paradise;14;5;0;9;15;25;-10;15;1.071
+17;10;Chattanooga Red Wolves;9;4;1;4;17;12;5;13;1.444
+17;11;Westchester SC;11;4;1;6;20;16;4;13;1.182
+17;12;Portland Hearts of Pine;12;3;4;5;18;21;-3;13;1.083
+17;13;Corpus Christi FC;12;3;4;5;15;21;-6;13;1.083
+17;14;FC Naples;12;3;1;8;11;21;-10;10;0.833
+17;15;Richmond Kickers;11;3;1;7;11;22;-11;10;0.909
+17;16;New York Cosmos;9;2;1;6;12;21;-9;7;0.778
+17;17;Greenville;9;2;1;6;7;17;-10;7;0.778
+18;1;Union Omaha;14;9;1;4;22;16;6;28;2.0
+18;2;Charlotte Independ.;12;8;2;2;31;16;15;26;2.167
+18;3;One Knoxville;11;7;3;1;20;7;13;24;2.182
+18;4;AV Alta;13;6;5;2;20;13;7;23;1.769
+18;5;Fort Wayne;12;5;6;1;17;10;7;21;1.75
+18;6;Boise;13;5;3;5;20;21;-1;18;1.385
+18;7;Forward Madison;11;5;2;4;19;13;6;17;1.545
+18;8;Spokane Velocity;11;5;2;4;13;16;-3;17;1.545
+18;9;Sarasota Paradise;15;5;1;9;17;27;-10;16;1.067
+18;10;Westchester SC;12;4;2;6;21;17;4;14;1.167
+18;11;Portland Hearts of Pine;13;3;5;5;18;21;-3;14;1.077
+18;12;Corpus Christi FC;13;3;5;5;15;21;-6;14;1.077
+18;13;Chattanooga Red Wolves;9;4;1;4;17;12;5;13;1.444
+18;14;FC Naples;13;4;1;8;12;21;-9;13;1.0
+18;15;Greenville;10;3;1;6;10;19;-9;10;1.0
+18;16;Richmond Kickers;12;3;1;8;11;23;-12;10;0.833
+18;17;New York Cosmos;10;2;1;7;14;24;-10;7;0.7
+19;1;Union Omaha;14;9;1;4;22;16;6;28;2.0
+19;2;Charlotte Independ.;12;8;2;2;31;16;15;26;2.167
+19;3;One Knoxville;12;7;3;2;21;9;12;24;2.0
+19;4;AV Alta;14;6;6;2;21;14;7;24;1.714
+19;5;Fort Wayne;12;5;6;1;17;10;7;21;1.75
+19;6;Boise;14;6;3;5;21;21;0;21;1.5
+19;7;Forward Madison;12;6;2;4;21;14;7;20;1.667
+19;8;Spokane Velocity;12;6;2;4;16;17;-1;20;1.667
+19;9;Chattanooga Red Wolves;10;5;1;4;19;13;6;16;1.6
+19;10;Sarasota Paradise;16;5;1;10;17;28;-11;16;1.0
+19;11;Corpus Christi FC;14;3;6;5;17;23;-6;15;1.071
+19;12;Westchester SC;12;4;2;6;21;17;4;14;1.167
+19;13;Portland Hearts of Pine;13;3;5;5;18;21;-3;14;1.077
+19;14;FC Naples;14;4;2;8;14;23;-9;14;1.0
+19;15;Richmond Kickers;13;3;2;8;12;24;-12;11;0.846
+19;16;Greenville;11;3;1;7;11;21;-10;10;0.909
+19;17;New York Cosmos;11;2;1;8;15;27;-12;7;0.636
+20;1;Union Omaha;15;9;1;5;22;17;5;28;1.867
+20;2;One Knoxville;13;8;3;2;24;11;13;27;2.077
+20;3;Charlotte Independ.;12;8;2;2;31;16;15;26;2.167
+20;4;AV Alta;14;6;6;2;21;14;7;24;1.714
+20;5;Spokane Velocity;13;7;2;4;17;17;0;23;1.769
+20;6;Fort Wayne;13;5;6;2;17;12;5;21;1.615
+20;7;Boise;14;6;3;5;21;21;0;21;1.5
+20;8;Forward Madison;12;6;2;4;21;14;7;20;1.667
+20;9;Portland Hearts of Pine;14;4;5;5;21;22;-1;17;1.214
+20;10;FC Naples;15;5;2;8;16;23;-7;17;1.133
+20;11;Chattanooga Red Wolves;10;5;1;4;19;13;6;16;1.6
+20;12;Sarasota Paradise;16;5;1;10;17;28;-11;16;1.0
+20;13;Corpus Christi FC;14;3;6;5;17;23;-6;15;1.071
+20;14;Westchester SC;13;4;2;7;23;20;3;14;1.077
+20;15;Richmond Kickers;13;3;2;8;12;24;-12;11;0.846
+20;16;Greenville;11;3;1;7;11;21;-10;10;0.909
+20;17;New York Cosmos;12;2;1;9;16;30;-14;7;0.583
