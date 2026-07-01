@@ -143,3 +143,40 @@ def generate_standings_file(
     matches = read_results_file(results_file)
     rows = calculate_all_round_standings(matches)
     write_standings_csv(rows, output_file)
+
+
+def calculate_current_standings(matches: list[MatchResult]) -> list[dict]:
+    if not matches:
+        return []
+
+    max_round = max(match.round for match in matches)
+
+    standings = calculate_standings_after_round(matches, max_round)
+
+    rows = []
+
+    for position, standing in enumerate(standings, start=1):
+        rows.append(
+            {
+                "Round": max_round,
+                "Position": position,
+                "Team": standing.team,
+                "Played": standing.played,
+                "Wins": standing.wins,
+                "Draws": standing.draws,
+                "Losses": standing.losses,
+                "GF": standing.gf,
+                "GA": standing.ga,
+                "GD": standing.gd,
+                "Points": standing.points,
+                "PPG": round(standing.ppg, 3),
+            }
+        )
+
+    return rows
+
+
+def generate_current_standings_file(results_file: Path, output_file: Path) -> None:
+    matches = read_results_file(results_file)
+    rows = calculate_current_standings(matches)
+    write_standings_csv(rows, output_file)

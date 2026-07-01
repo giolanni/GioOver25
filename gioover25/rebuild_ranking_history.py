@@ -11,7 +11,7 @@ STORICO_RANKING_DIR = Path("data/storico/ranking")
 
 
 def clear_history(engine_name: str) -> None:
-    history_file = STORICO_RANKING_DIR / engine_name / "storico_ranking.csv"
+    history_file = STORICO_RANKING_DIR / engine_name / "storico_ranking_{engine_name}.csv"
 
     if history_file.exists():
         history_file.unlink()

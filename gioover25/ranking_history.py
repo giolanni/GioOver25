@@ -27,7 +27,7 @@ FIELDNAMES = [
 
 
 def _history_file(engine_name: str) -> Path:
-    return Path("data/storico/ranking") / engine_name / "storico_ranking.csv"
+    return Path("data/storico/ranking") / engine_name / "storico_ranking_{engine_name}.csv"
 
 
 def _read_history(engine_name: str) -> list[dict]:

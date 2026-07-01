@@ -5,7 +5,7 @@ from pathlib import Path
 
 from .history import MatchResult, read_results_file, write_results_file
 from .registry import get_league_info
-from .standings import generate_standings_file
+from .standings import generate_current_standings_file
 from .ranking_history import update_finished_matches
 from gioover25.league_over_map import rebuild_league_over_map
 from gioover25.engines.factory import get_available_engines
@@ -179,10 +179,7 @@ def append_results(input_file: str | Path) -> None:
         league_info = get_league_info(league_id)
         notes = str(league_info.notes or "").upper()
 
-        if "UNBALANCED" in notes:
-            print(f"Classifica saltata per lega irregolare: {league_id}")
-        else:
-            generate_standings_file(results_file, standings_file)
+        generate_current_standings_file(results_file, standings_file)
 
         total_added += len(added)
         total_duplicates += duplicates
@@ -197,9 +194,6 @@ def append_results(input_file: str | Path) -> None:
     print("Import completato.")
     print(f"Totale partite aggiunte: {total_added}")
     print(f"Totale duplicate ignorate: {total_duplicates}")
-    notes = str(league_info.notes or "").upper()
-
-    generate_standings_file(results_file, standings_file)
 
     for engine_name in get_available_engines():
         update_finished_matches(engine_name)
