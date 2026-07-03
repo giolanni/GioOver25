@@ -35,6 +35,7 @@ def _int(value: str) -> int:
 
 def _match_key(match: MatchResult) -> tuple:
     return (
+        str(match.date).strip(),
         match.home.strip().lower(),
         match.away.strip().lower(),
     )

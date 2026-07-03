@@ -1,12 +1,56 @@
-﻿LeagueId;Home;Away
-Estonia_Meistriliiga_2026;Kuressaare;Flora
-Estonia_Esiliiga_2026;Tartu Welco;Viimsi JK
-Finland_Ykkonen_2026;Jazz Pori;KPV
-Iceland_BestaDeildKarla_2026;Thor Akureyri;KR Reykjavik
-Iceland_BestaDeildKarla_2026;Vikingur Reykjavik;Akureyri
-Norway_OBOSLigaen_2026;Lyn;Åsane
-USA_USLLeagueTwo_SouthCentral_2026;Birmingham 2;Columbus United
-Belarus_VysshayaLiga_2026;BATE;Gomel
-Belarus_VysshayaLiga_2026;FC Minsk;Din. Minsk
-Finland_Kakkonen_GroupA_2026;PPJ;Kiffen
-Finland_Kakkonen_GroupB_2026;EBK;Abo
+﻿LeagueId;Season;Round;Date;Home;Away;HG;AG;Notes
+USA_USLLeagueTwo_Metropolitan_2026;2026;;2026-07-03;Cedar;Long Island;1;1;
+USA_USLLeagueTwo_Metropolitan_2026;2026;;2026-07-03;Hudson Valley;Manhattan;1;1;
+USA_USLLeagueTwo_Heartland_2026;2026;;2026-07-03;Rochester FC;Chicago Dutch Lions;0;4;
+USA_USLLeagueTwo_SouthCentral_2026;2026;;2026-07-03;Apotheos;East Atlanta;0;3;
+USA_USLLeagueTwo_Mountain_2026;2026;;2026-07-03;Flatirons;Colorado Storm;0;3;
+USA_USLLeagueTwo_LoneStar_2026;2026;;2026-07-03;Lonestar SC;Laredo Heat;1;4;
+USA_USLLeagueTwo_Metropolitan_2026;2026;;2026-07-03;Motown 2;Morris Elite;8;0;
+USA_USLLeagueTwo_MidSouth_2026;2026;;2026-07-03;Red River;Little Rock Rangers;1;2;
+USA_USLLeagueTwo_GreatPlains_2026;2026;;2026-07-03;Peoria;St. Louis Ambush;1;4;
+USA_USLLeagueTwo_Southwest_2026;2026;;2026-07-03;Redlands FC;Capo;2;3;
+Belarus_VysshayaLiga_2026;2026;;2026-07-02;BATE;Gomel;0;1;
+Belarus_VysshayaLiga_2026;2026;;2026-07-02;FC Minsk;Din. Minsk;0;3;
+Estonia_Meistriliiga_2026;2026;;2026-07-02;Kuressaare;Flora;0;3;
+Estonia_Esiliiga_2026;2026;;2026-07-02;Tartu Welco;Viimsi JK;2;2;
+Finland_Ykkonen_2026;2026;;2026-07-02;Jazz Pori;KPV;0;1;
+Finland_Kakkonen_GroupA_2026;2026;;2026-07-02;PPJ;Kiffen;1;2;
+Iceland_BestaDeildKarla_2026;2026;;2026-07-02;Thor Akureyri;KR Reykjavik;3;3;
+Iceland_BestaDeildKarla_2026;2026;;2026-07-02;Vikingur Reykjavik;Akureyri;3;2;
+Kazakhstan_PremierLeague_2026;2026;;2026-07-02;Kairat Almaty;Okzhetpes;5;0;
+Kyrgyzstan_PremierLiga_2026;2026;;2026-07-02;Bars;Asia Talas;3;2;
+Kyrgyzstan_PremierLiga_2026;2026;;2026-07-02;Kyrgyzaltyn;Dordoi Bishkek;1;2;
+Lebanon_PremierLeague_2026;2026;;2026-07-02;Jwayya;Al Sahel;0;0;
+Lebanon_PremierLeague_2026;2026;;2026-07-02;Al Riyadi Abbasiyah;Racing;2;0;
+Lithuania_ILyga_2026;2026;;2026-07-02;BFA Vilnius;Ekranas;3;0;
+Lithuania_ILyga_2026;2026;;2026-07-02;Zalgiris 2;Hegelmann Litauen 2;3;1;
+Norway_OBOSLigaen_2026;2026;;2026-07-02;Lyn;Åsane;6;2;
+USA_USLLeagueOne_2026;2026;;2026-07-02;Chattanooga Red Wolves;Westchester SC;2;0;
+USA_USLLeagueOne_2026;2026;;2026-07-02;Spokane Velocity;Forward Madison;0;1;
+USA_USLLeagueOne_2026;2026;;2026-07-02;Union Omaha;AV Alta;3;1;
+USA_USLLeagueTwo_Northeast_2026;2026;;2026-07-02;Connecticut Rush;AC Connecticut;0;2;
+USA_USLLeagueTwo_Valley_2026;2026;;2026-07-02;Kings Hammer Columbus;West Virginia;3;1;
+USA_USLLeagueTwo_Valley_2026;2026;;2026-07-02;Louisville City 2;Northern Indiana;0;1;
+USA_USLLeagueTwo_SouthAtlantic_2026;2026;;2026-07-02;North Carolina FC U23;Tobacco Road;0;0;
+USA_USLLeagueTwo_MidAtlantic_2026;2026;;2026-07-02;RC New Jersey;Delaware;1;1;
+USA_USLLeagueTwo_Metropolitan_2026;2026;;2026-07-02;Staten Island ASC;New Jersey Copa;3;2;
+USA_USLLeagueTwo_GreatForest_2026;2026;;2026-07-02;Steel City;Cleveland Force;3;1;
+USA_USLLeagueTwo_SouthFlorida_2026;2026;;2026-07-02;Weston;Brevard SC;6;1;
+USA_USLLeagueTwo_Heartland_2026;2026;;2026-07-02;Minneapolis City;St. Croix;3;0;
+USA_USLLeagueTwo_SouthAtlantic_2026;2026;;2026-07-02;Port City;Salem City;1;2;
+USA_USLLeagueTwo_SouthFlorida_2026;2026;;2026-07-02;Miami City;Fort Lauderdale;1;1;
+USA_USLLeagueTwo_Chesapeake_2026;2026;;2026-07-02;Virginia Beach;Loudoun 2;1;2;
+USA_USLLeagueTwo_Northeast_2026;2026;;2026-07-02;Boston City;Seacoast Utd Phantoms;2;5;
+USA_USLLeagueTwo_Chesapeake_2026;2026;;2026-07-02;Charlottesville Blues;Bethesda SC;2;3;
+USA_USLLeagueTwo_LoneStar_2026;2026;;2026-07-02;GFI Woodlands;AHFC Royals;1;5;
+USA_USLLeagueTwo_MidSouth_2026;2026;;2026-07-02;Hattiesburg;Louisiana;1;3;
+USA_USLLeagueTwo_MidAtlantic_2026;2026;;2026-07-02;LVU Rush;Ocean City;1;3;
+USA_USLLeagueTwo_SouthCentral_2026;2026;;2026-07-02;Montgomery United;Dothan United;1;2;
+USA_USLLeagueTwo_GreatPlains_2026;2026;;2026-07-02;Santafe Wanderers;Springfield FC;4;5;
+USA_USLLeagueTwo_Heartland_2026;2026;;2026-07-02;Sueno;RKC SC;5;1;
+USA_USLLeagueTwo_Ranger_2026;2026;;2026-07-02;Denton Diablos;West Texas;3;2;
+USA_USLLeagueTwo_NorCal_2026;2026;;2026-07-02;Marin;Almaden;0;1;
+USA_USLLeagueTwo_Mountain_2026;2026;;2026-07-02;Albion Colorado;Atletico Union;1;0;
+USA_USLLeagueTwo_NorCal_2026;2026;;2026-07-02;Davis Legacy;Academica SC;1;4;
+USA_USLLeagueTwo_Northwest_2026;2026;;2026-07-02;West Seattle Junction;Bigfoot;3;3;
+USA_USLLeagueTwo_SouthCentral_2026;2026;;2026-07-02;Birmingham 2;Columbus United;1;1;

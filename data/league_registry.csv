@@ -15,6 +15,7 @@ Australia_QueenslandPremierLeague_2026;Australia;Queensland Premier League;2026;
 Australia_SAStateLeague_2026;Australia;SA State League;2026;12;22;Yes;
 Australia_TasmaniaNorthernChampionship_2026;Australia;Tasmania Northern Championship;2026;8;14;Yes;Round 12 currently partial in supplied data
 Australia_TasmaniaSouthernChampionship_2026;Australia;Tasmania Southern Championship;2026;10;18;Yes;
+Australia_VictoriaPremierLeague_2026;Australia;Victoria Premier League;2026;14;26;Yes;Round 18 currently partial in supplied data
 Australia_VictoriaPremierLeague2_2026;Australia;Victoria Premier League 2;2026;14;26;Yes;
 Australia_WAStateLeague_2026;Australia;WA State League;2026;12;22;Yes;Round 14 complete in supplied data
 Austria_2Liga_2026;Austria;2. Liga;2026;16;30;Yes;
@@ -54,8 +55,11 @@ Italy_SerieB_2026;Italy;Serie B;2026;20;38;Yes;
 Italy_SerieC_GironeA_2026;Italy;Serie C Girone A;2026;20;38;Yes;
 Italy_SerieC_GironeB_2026;Italy;Serie C Girone B;2026;20;38;Yes;
 Italy_SerieC_GironeC_2026;Italy;Serie C Girone C;2026;20;38;Yes;
+Kazakhstan_PremierLeague_2026;Kazakhstan;Premier League;2026;16;30;Yes;Round 17 currently partial in supplied data
+Kyrgyzstan_PremierLiga_2026;Kyrgyzstan;Premier Liga;2026;16;30;Yes;Round 14 currently partial in supplied data
 Latvia_Virsliga_2026;Latvia;Virsliga;2026;10;36;Yes;
 Latvia_NakotnesLiga_2026;Latvia;Nakotnes liga;2026;14;26;Yes;Round 11 currently partial in supplied data
+Lebanon_PremierLeague_2026;Lebanon;Premier League;2026;12;22;Yes;Playoff and placement rounds excluded from supplied import
 Lithuania_ILyga_2026;Lithuania;I Lyga;2026;16;30;Yes;Round 15 currently partial in supplied data
 Lithuania_Toplyga_2026;Lithuania;TOPLYGA;2026;10;36;Yes;
 Netherlands_EersteDivisie_2026;Netherlands;Eerste Divisie;2026;20;38;Yes;
