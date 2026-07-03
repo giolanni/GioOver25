@@ -10,7 +10,7 @@ REPORT_DIR = Path("data/output_reports")
 
 
 def read_history(engine_name: str) -> list[dict]:
-    path = RANKING_DIR / engine_name / "storico_ranking.csv"
+    path = RANKING_DIR / engine_name / f"storico_ranking_{engine_name}.csv"
 
     if not path.exists():
         raise FileNotFoundError(f"Storico ranking non trovato: {path}")
