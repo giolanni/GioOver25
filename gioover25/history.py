@@ -41,6 +41,17 @@ def _int(value: str) -> int:
     value = (value or "").strip()
     return int(value) if value else 0
 
+def _parse_round(value) -> int:
+    raw = str(value or "").strip()
+
+    if raw == "" or raw == "?":
+        return 0
+
+    if raw.isdigit() and len(raw) == 8 and raw.startswith("20"):
+        return 0
+
+    return int(raw)
+
 
 def read_results_file(path: str | Path) -> list[MatchResult]:
     results_path = Path(path)
@@ -79,7 +90,7 @@ def read_results_file(path: str | Path) -> list[MatchResult]:
                     country=row["Country"].strip(),
                     league=row["League"].strip(),
                     season=_int(row["Season"]),
-                    round=_int(row["Round"]),
+                    round=_parse_round(row.get("Round")),
                     date=row["Date"].strip(),
                     home=row["Home"].strip(),
                     away=row["Away"].strip(),

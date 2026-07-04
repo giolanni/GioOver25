@@ -1,9 +1,129 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-20260629;1;Little Rock Rangers;9;8;1;0;17;4;13;25;2.778
-20260629;2;Louisiana;10;6;1;3;23;15;8;19;1.9
-20260629;3;Red River;11;4;3;4;22;17;5;15;1.364
-20260629;4;Mississippi Brilla;9;4;3;2;19;15;4;15;1.667
-20260629;5;Hattiesburg;9;2;3;4;17;20;-3;9;1.0
-20260629;6;Memphis FC;10;2;3;5;14;21;-7;9;0.9
-20260629;7;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
-20260629;8;Jackson Boom;9;0;0;9;2;23;-21;0;0.0
+1;1;Mississippi Brilla;2;2;0;0;7;2;5;6;3.0
+1;2;Little Rock Rangers;2;2;0;0;5;2;3;6;3.0
+1;3;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+1;4;Louisiana;1;1;0;0;1;0;1;3;3.0
+1;5;Hattiesburg;1;0;1;0;2;2;0;1;1.0
+1;6;Red River;3;0;1;2;4;7;-3;1;0.333
+1;7;Memphis FC;2;0;0;2;1;4;-3;0;0.0
+1;8;Jackson Boom;2;0;0;2;1;5;-4;0;0.0
+2;1;Mississippi Brilla;3;3;0;0;10;4;6;9;3.0
+2;2;Little Rock Rangers;2;2;0;0;5;2;3;6;3.0
+2;3;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+2;4;Louisiana;2;1;0;1;3;3;0;3;1.5
+2;5;Hattiesburg;1;0;1;0;2;2;0;1;1.0
+2;6;Red River;3;0;1;2;4;7;-3;1;0.333
+2;7;Memphis FC;2;0;0;2;1;4;-3;0;0.0
+2;8;Jackson Boom;2;0;0;2;1;5;-4;0;0.0
+3;1;Mississippi Brilla;3;3;0;0;10;4;6;9;3.0
+3;2;Little Rock Rangers;2;2;0;0;5;2;3;6;3.0
+3;3;Red River;4;1;1;2;7;8;-1;4;1.0
+3;4;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+3;5;Louisiana;2;1;0;1;3;3;0;3;1.5
+3;6;Hattiesburg;1;0;1;0;2;2;0;1;1.0
+3;7;Memphis FC;2;0;0;2;1;4;-3;0;0.0
+3;8;Jackson Boom;3;0;0;3;2;8;-6;0;0.0
+4;1;Mississippi Brilla;4;3;1;0;10;4;6;10;2.5
+4;2;Little Rock Rangers;3;2;1;0;5;2;3;7;2.333
+4;3;Red River;4;1;1;2;7;8;-1;4;1.0
+4;4;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+4;5;Louisiana;2;1;0;1;3;3;0;3;1.5
+4;6;Hattiesburg;1;0;1;0;2;2;0;1;1.0
+4;7;Memphis FC;2;0;0;2;1;4;-3;0;0.0
+4;8;Jackson Boom;3;0;0;3;2;8;-6;0;0.0
+5;1;Mississippi Brilla;4;3;1;0;10;4;6;10;2.5
+5;2;Little Rock Rangers;3;2;1;0;5;2;3;7;2.333
+5;3;Louisiana;3;2;0;1;4;3;1;6;2.0
+5;4;Red River;4;1;1;2;7;8;-1;4;1.0
+5;5;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+5;6;Hattiesburg;1;0;1;0;2;2;0;1;1.0
+5;7;Memphis FC;2;0;0;2;1;4;-3;0;0.0
+5;8;Jackson Boom;4;0;0;4;2;9;-7;0;0.0
+6;1;Mississippi Brilla;5;3;2;0;12;6;6;11;2.2
+6;2;Little Rock Rangers;3;2;1;0;5;2;3;7;2.333
+6;3;Louisiana;3;2;0;1;4;3;1;6;2.0
+6;4;Red River;4;1;1;2;7;8;-1;4;1.0
+6;5;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+6;6;Hattiesburg;2;0;2;0;4;4;0;2;1.0
+6;7;Memphis FC;2;0;0;2;1;4;-3;0;0.0
+6;8;Jackson Boom;4;0;0;4;2;9;-7;0;0.0
+7;1;Mississippi Brilla;5;3;2;0;12;6;6;11;2.2
+7;2;Louisiana;4;3;0;1;9;5;4;9;2.25
+7;3;Little Rock Rangers;3;2;1;0;5;2;3;7;2.333
+7;4;Red River;4;1;1;2;7;8;-1;4;1.0
+7;5;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+7;6;Hattiesburg;2;0;2;0;4;4;0;2;1.0
+7;7;Memphis FC;3;0;0;3;3;9;-6;0;0.0
+7;8;Jackson Boom;4;0;0;4;2;9;-7;0;0.0
+8;1;Louisiana;5;4;0;1;14;5;9;12;2.4
+8;2;Mississippi Brilla;5;3;2;0;12;6;6;11;2.2
+8;3;Little Rock Rangers;4;3;1;0;7;3;4;10;2.5
+8;4;Red River;5;1;2;2;7;8;-1;5;1.0
+8;5;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+8;6;Hattiesburg;3;0;2;1;5;6;-1;2;0.667
+8;7;Memphis FC;4;0;1;3;3;9;-6;1;0.25
+8;8;Jackson Boom;5;0;0;5;2;14;-12;0;0.0
+9;1;Mississippi Brilla;6;4;2;0;15;8;7;14;2.333
+9;2;Louisiana;5;4;0;1;14;5;9;12;2.4
+9;3;Little Rock Rangers;4;3;1;0;7;3;4;10;2.5
+9;4;Red River;6;1;2;3;9;11;-2;5;0.833
+9;5;Memphis FC;5;1;1;3;4;9;-5;4;0.8
+9;6;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+9;7;Hattiesburg;3;0;2;1;5;6;-1;2;0.667
+9;8;Jackson Boom;6;0;0;6;2;15;-13;0;0.0
+10;1;Mississippi Brilla;6;4;2;0;15;8;7;14;2.333
+10;2;Louisiana;6;4;1;1;15;6;9;13;2.167
+10;3;Little Rock Rangers;5;4;1;0;9;3;6;13;2.6
+10;4;Red River;7;1;3;3;10;12;-2;6;0.857
+10;5;Memphis FC;6;1;2;3;7;12;-5;5;0.833
+10;6;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+10;7;Hattiesburg;4;0;3;1;8;9;-1;3;0.75
+10;8;Jackson Boom;7;0;0;7;2;17;-15;0;0.0
+11;1;Little Rock Rangers;6;5;1;0;12;3;9;16;2.667
+11;2;Mississippi Brilla;6;4;2;0;15;8;7;14;2.333
+11;3;Louisiana;6;4;1;1;15;6;9;13;2.167
+11;4;Hattiesburg;5;1;3;1;11;10;1;6;1.2
+11;5;Red River;8;1;3;4;11;15;-4;6;0.75
+11;6;Memphis FC;6;1;2;3;7;12;-5;5;0.833
+11;7;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+11;8;Jackson Boom;8;0;0;8;2;20;-18;0;0.0
+12;1;Little Rock Rangers;7;6;1;0;15;4;11;19;2.714
+12;2;Mississippi Brilla;7;4;2;1;16;11;5;14;2.0
+12;3;Louisiana;7;4;1;2;16;9;7;13;1.857
+12;4;Hattiesburg;6;2;3;1;14;11;3;9;1.5
+12;5;Red River;9;2;3;4;15;16;-1;9;1.0
+12;6;Memphis FC;7;1;2;4;8;16;-8;5;0.714
+12;7;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+12;8;Jackson Boom;8;0;0;8;2;20;-18;0;0.0
+13;1;Little Rock Rangers;8;7;1;0;16;4;12;22;2.75
+13;2;Mississippi Brilla;7;4;2;1;16;11;5;14;2.0
+13;3;Louisiana;7;4;1;2;16;9;7;13;1.857
+13;4;Red River;10;3;3;4;18;16;2;12;1.2
+13;5;Hattiesburg;6;2;3;1;14;11;3;9;1.5
+13;6;Memphis FC;8;1;2;5;8;17;-9;5;0.625
+13;7;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+13;8;Jackson Boom;9;0;0;9;2;23;-21;0;0.0
+14;1;Little Rock Rangers;9;8;1;0;17;4;13;25;2.778
+14;2;Red River;11;4;3;4;22;17;5;15;1.364
+14;3;Mississippi Brilla;8;4;2;2;16;12;4;14;1.75
+14;4;Louisiana;8;4;1;3;17;13;4;13;1.625
+14;5;Hattiesburg;7;2;3;2;15;14;1;9;1.286
+14;6;Memphis FC;9;2;2;5;11;18;-7;8;0.889
+14;7;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+14;8;Jackson Boom;9;0;0;9;2;23;-21;0;0.0
+15;1;Little Rock Rangers;9;8;1;0;17;4;13;25;2.778
+15;2;Louisiana;9;5;1;3;20;14;6;16;1.778
+15;3;Red River;11;4;3;4;22;17;5;15;1.364
+15;4;Mississippi Brilla;8;4;2;2;16;12;4;14;1.75
+15;5;Hattiesburg;8;2;3;3;16;17;-1;9;1.125
+15;6;Memphis FC;9;2;2;5;11;18;-7;8;0.889
+15;7;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+15;8;Jackson Boom;9;0;0;9;2;23;-21;0;0.0
+16;1;Little Rock Rangers;9;8;1;0;17;4;13;25;2.778
+16;2;Louisiana;10;6;1;3;23;15;8;19;1.9
+16;3;Red River;11;4;3;4;22;17;5;15;1.364
+16;4;Mississippi Brilla;9;4;3;2;19;15;4;15;1.667
+16;5;Hattiesburg;9;2;3;4;17;20;-3;9;1.0
+16;6;Memphis FC;10;2;3;5;14;21;-7;9;0.9
+16;7;Hattiesburg FC;1;1;0;0;1;0;1;3;3.0
+16;8;Jackson Boom;9;0;0;9;2;23;-21;0;0.0

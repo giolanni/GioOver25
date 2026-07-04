@@ -22,6 +22,8 @@ Regole:
 - AG = gol trasferta;
 - Notes vuoto salvo casi particolari;
 - se qualcosa non ti torna (esempio una volta c'era un risultato 111 che non potevi sapere se fosse 11-1 o 1-11) chiedi
+- se tra le due squadre di una partita c'è un numero è sicuramente il numero di espulsioni, chiedi sempre per sicurezza
+
 
 Output richiesto:
 

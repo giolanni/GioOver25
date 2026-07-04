@@ -72,6 +72,17 @@ def _resolve_round(row: dict, existing_matches: list[MatchResult]) -> int:
 
     return max(home_last_round, away_last_round) + 1
 
+def _parse_round(value) -> int:
+    raw = str(value or "").strip()
+
+    if raw == "" or raw == "?":
+        return 0
+
+    # Se sembra una data compatta YYYYMMDD, non è un round valido
+    if raw.isdigit() and len(raw) == 8 and raw.startswith("20"):
+        return 0
+
+    return int(raw)
 
 def read_input_results(path: str | Path) -> dict[str, list[MatchResult]]:
     input_path = Path(path)
@@ -108,7 +119,7 @@ def read_input_results(path: str | Path) -> dict[str, list[MatchResult]]:
                 country=league_info.country,
                 league=league_info.league,
                 season=season,
-                round=0 if row["Round"].strip() in {"", "?"} else _int(row["Round"]),
+                round=_parse_round(row.get("Round")),
                 date=row["Date"].strip(),
                 home=row["Home"].strip(),
                 away=row["Away"].strip(),
