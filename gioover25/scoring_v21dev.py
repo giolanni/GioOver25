@@ -69,31 +69,57 @@ def _build_reason(
     away_venue_over_score,
     btts_profile_score,
 ):
-    parts = []
+    pros = []
+    cons = []
 
     if home_attack_score >= 0.65:
-        parts.append("buon attacco casa")
+        pros.append("attacco casa positivo")
+    else:
+        cons.append("attacco casa non dominante")
+
     if away_attack_score >= 0.65:
-        parts.append("buon attacco trasferta")
+        pros.append("attacco trasferta positivo")
+    else:
+        cons.append("ospite poco prolifico")
+
     if home_defense_weakness_score >= 0.65:
-        parts.append("difesa casa vulnerabile")
+        pros.append("difesa casa vulnerabile")
+
     if away_defense_weakness_score >= 0.65:
-        parts.append("difesa trasferta vulnerabile")
+        pros.append("difesa trasferta vulnerabile")
+
     if home_last10_over_score >= 0.60:
-        parts.append("trend over recente casa")
+        pros.append("trend over recente casa")
+    else:
+        cons.append("trend over casa non forte")
+
     if away_last10_over_score >= 0.60:
-        parts.append("trend over recente trasferta")
+        pros.append("trend over recente trasferta")
+    else:
+        cons.append("trend over trasferta non forte")
+
     if home_venue_over_score >= 0.60:
-        parts.append("profilo over casa positivo")
+        pros.append("profilo over interno positivo")
+    else:
+        cons.append("profilo over interno debole")
+
     if away_venue_over_score >= 0.60:
-        parts.append("profilo over trasferta positivo")
+        pros.append("profilo over esterno positivo")
+    else:
+        cons.append("profilo over esterno debole")
+
     if btts_profile_score >= 0.60:
-        parts.append("alta tendenza BTTS")
+        pros.append("alta tendenza BTTS")
+    else:
+        cons.append("BTTS non elevato")
 
-    if not parts:
-        return "profilo over non particolarmente marcato"
+    if not pros:
+        pros.append("nessun indicatore over forte")
 
-    return ", ".join(parts)
+    if not cons:
+        cons.append("nessun contro rilevante")
+
+    return "PRO: " + " | ".join(pros) + " || CONTRO: " + " | ".join(cons)
 
 
 def calculate_score_v21dev(match_stats, league_info):

@@ -1,4 +1,4 @@
-from . import v13, v20, v21, v21dev, v22
+from . import v13, v20, v21, v21dev, v22, v23, v24
 
 ENGINES = {
     "v13": v13,
@@ -6,8 +6,9 @@ ENGINES = {
     "v21": v21,
     "v21dev": v21dev,
     "v22": v22,
+    "v23": v23,
+    "v24": v24,
 }
-
 
 def get_engine(name: str):
     key = name.strip().lower()

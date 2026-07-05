@@ -10,6 +10,69 @@ from gioover25.scoring_v21dev import (
     _venue_over_score,
 )
 
+def _build_reason_v22(
+    home_attack_score,
+    away_attack_score,
+    home_defense_weakness_score,
+    away_defense_weakness_score,
+    home_last10_over_score,
+    away_last10_over_score,
+    home_venue_over_score,
+    away_venue_over_score,
+    btts_profile_score,
+):
+    pros = []
+    cons = []
+
+    if home_attack_score >= 0.65:
+        pros.append("attacco casa positivo")
+    else:
+        cons.append("attacco casa non dominante")
+
+    if away_attack_score >= 0.65:
+        pros.append("attacco trasferta positivo")
+    else:
+        cons.append("ospite poco prolifico: rischio 1-0 / 2-0")
+
+    if away_defense_weakness_score >= 0.65:
+        pros.append("difesa trasferta vulnerabile")
+        cons.append("v22 monitora possibile sopravvalutazione weak_ga")
+
+    if home_defense_weakness_score >= 0.65:
+        pros.append("difesa casa vulnerabile")
+
+    if home_last10_over_score >= 0.60:
+        pros.append("trend over recente casa")
+    else:
+        cons.append("trend over casa non forte")
+
+    if away_last10_over_score >= 0.60:
+        pros.append("trend over recente trasferta")
+    else:
+        cons.append("trend over trasferta non forte")
+
+    if home_venue_over_score >= 0.60:
+        pros.append("profilo over interno positivo")
+    else:
+        cons.append("profilo over interno debole")
+
+    if away_venue_over_score >= 0.60:
+        pros.append("profilo over esterno positivo")
+    else:
+        cons.append("profilo over esterno debole")
+
+    if btts_profile_score >= 0.60:
+        pros.append("alta tendenza BTTS")
+    else:
+        cons.append("BTTS basso: possibile partita a senso unico")
+
+    if not pros:
+        pros.append("nessun indicatore over forte")
+
+    if not cons:
+        cons.append("nessun contro rilevante")
+
+    return "PRO: " + " | ".join(pros) + " || CONTRO: " + " | ".join(cons)
 
 def calculate_score_v22(match_stats, league_info):
     home = match_stats.home
@@ -48,7 +111,7 @@ def calculate_score_v22(match_stats, league_info):
 
     score = round(total, 2)
 
-    reason = _build_reason(
+    reason = _build_reason_v22(
         home_attack_score,
         away_attack_score,
         home_defense_weakness_score,
