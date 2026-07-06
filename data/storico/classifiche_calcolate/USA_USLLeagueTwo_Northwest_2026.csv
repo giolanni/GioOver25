@@ -1,9 +1,9 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-31;1;Snohomish United;12;10;1;1;34;11;23;31;2.583
-31;2;Ballard;11;9;1;1;27;10;17;28;2.545
-31;3;Portland Bangers;12;8;0;4;20;17;3;24;2.0
-31;4;Tacoma Stars;12;3;4;5;23;22;1;13;1.083
-31;5;Midlakes United;12;4;1;7;19;22;-3;13;1.083
-31;6;FC Olympia;13;3;1;9;16;32;-16;10;0.769
-31;7;West Seattle Junction;11;2;3;6;17;21;-4;9;0.818
-31;8;Bigfoot;11;1;3;7;14;35;-21;6;0.545
+32;1;Ballard;12;10;1;1;34;10;24;31;2.583
+32;2;Snohomish United;12;10;1;1;34;11;23;31;2.583
+32;3;Portland Bangers;12;8;0;4;20;17;3;24;2.0
+32;4;Midlakes United;12;4;1;7;19;22;-3;13;1.083
+32;5;Tacoma Stars;13;3;4;6;23;29;-6;13;1.0
+32;6;West Seattle Junction;12;3;3;6;22;23;-1;12;1.0
+32;7;FC Olympia;14;3;1;10;18;37;-19;10;0.714
+32;8;Bigfoot;11;1;3;7;14;35;-21;6;0.545

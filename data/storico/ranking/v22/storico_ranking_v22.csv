@@ -246,76 +246,112 @@
 2026-07-03;2.2.0;Belarus_VysshayaLiga_2026;15;Vitebsk;Dnepr Mogilev;Vitebsk - Dnepr Mogilev;47.48;BASSA;;;;;;;;;;;;1;0;1;KO;KO
 2026-07-03;2.2.0;Kazakhstan_PremierLeague_2026;26;Altai;Tobol;Altai - Tobol;47.48;BASSA;;;;;;;;;;;;1;0;1;KO;KO
 2026-07-03;2.2.0;Kyrgyzstan_PremierLiga_2026;15;Bishkek City;Toktogul;Bishkek City - Toktogul;47.28;BASSA;;;;;;;;;;;;1;1;2;KO;OK
-2026-07-04;2.2.0;Australia_NPLQueensland_2026;18;Brisbane City;Brisbane Roar U23;Brisbane City - Brisbane Roar U23;92.23;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Estonia_Esiliiga_2026;19;Flora U21;Levadia U21;Flora U21 - Levadia U21;92.13;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPLACT_2026;16;Canberra Croatia;Canberra Olympic;Canberra Croatia - Canberra Olympic;91.07;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Estonia_EsiliigaB_2026;18;Narva U21;Tulevik;Narva U21 - Tulevik;90.56;ALTA;;;;;;;;;;;;;;;;
+2026-07-04;2.2.0;Australia_NPLQueensland_2026;18;Brisbane City;Brisbane Roar U23;Brisbane City - Brisbane Roar U23;92.23;ALTA;;;;;;;;;;;;1;1;2;KO;OK
+2026-07-04;2.2.0;Estonia_Esiliiga_2026;19;Flora U21;Levadia U21;Flora U21 - Levadia U21;92.13;ALTA;;;;;;;;;;;;0;4;4;OK;KO
+2026-07-04;2.2.0;Australia_NPLACT_2026;16;Canberra Croatia;Canberra Olympic;Canberra Croatia - Canberra Olympic;91.07;ALTA;;;;;;;;;;;;3;0;3;OK;KO
+2026-07-04;2.2.0;Estonia_EsiliigaB_2026;18;Narva U21;Tulevik;Narva U21 - Tulevik;90.56;ALTA;;;;;;;;;;;;2;1;3;OK;OK
 2026-07-04;2.2.0;Estonia_EsiliigaB_2026;18;Tabasalu;Parnu JK Vaprus U21;Tabasalu - Parnu JK Vaprus U21;90.55;ALTA;;;;;;;;;;;;1;2;3;OK;OK
-2026-07-04;2.2.0;Australia_NPLQueenslandU23_2026;18;Brisbane City U23;QLD State Team U17;Brisbane City U23 - QLD State Team U17;90.04;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_VictoriaPremierLeague_2026;20;Western Utd. U21;Melbourne Victory U21;Western Utd. U21 - Melbourne Victory U21;89.83;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Finland_Kakkonen_GroupC_2026;12;VPS 2;Huima / Urho;VPS 2 - Huima / Urho;89.63;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPL_NSW_U20_2026;23;Blacktown City U20;Sydney Utd U20;Blacktown City U20 - Sydney Utd U20;88.79;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueTwo_Heartland_2026;20260630;St. Croix;Edgewater Castle;St. Croix - Edgewater Castle;86.36;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPL_NSW_U20_2026;23;Rockdale Ilinden U20;NWS Spirit U20;Rockdale Ilinden U20 - NWS Spirit U20;85.03;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Estonia_EsiliigaB_2026;18;Legion;Tallinna Kalev U21;Legion - Tallinna Kalev U21;82.66;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPLQueenslandU23_2026;18;Gold Coast Blaze U23;Magic United U23;Gold Coast Blaze U23 - Magic United U23;82.07;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Finland_Kakkonen_GroupB_2026;12;Ilves 2;EPS;Ilves 2 - EPS;81.4;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueTwo_LoneStar_2026;20260631;GFI Woodlands;Houston Sur;GFI Woodlands - Houston Sur;81.14;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueTwo_Southwest_2026;20260630;City SC;Redlands FC;City SC - Redlands FC;81.13;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPL_NSW_U20_2026;23;Wollongong Wolves U20;St. George City U20;Wollongong Wolves U20 - St. George City U20;80.94;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Norway_OBOSLigaen_2026;15;Odd;Haugesund;Odd - Haugesund;80.86;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueTwo_NorCal_2026;20260630;Project 51O;Davis Legacy;Project 51O - Davis Legacy;80.11;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Estonia_Esiliiga_2026;19;Nomme Kalju U21;Elva;Nomme Kalju U21 - Elva;79.01;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPL_NSW_U20_2026;23;Marconi S. U20;St George Saints U20;Marconi S. U20 - St George Saints U20;78.63;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueTwo_Northwest_2026;20260629;West Seattle Junction;FC Olympia;West Seattle Junction - FC Olympia;78.11;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueTwo_Chesapeake_2026;20260630;Virginia Marauders;Bethesda SC;Virginia Marauders - Bethesda SC;77.85;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueTwo_Northwest_2026;20260629;Ballard;Tacoma Stars;Ballard - Tacoma Stars;77.76;ALTA;;;;;;;;;;;;;;;;
+2026-07-04;2.2.0;Australia_NPLQueenslandU23_2026;18;Brisbane City U23;QLD State Team U17;Brisbane City U23 - QLD State Team U17;90.04;ALTA;;;;;;;;;;;;0;2;2;KO;KO
+2026-07-04;2.2.0;Australia_VictoriaPremierLeague_2026;20;Western Utd. U21;Melbourne Victory U21;Western Utd. U21 - Melbourne Victory U21;89.83;ALTA;;;;;;;;;;;;3;2;5;OK;OK
+2026-07-04;2.2.0;Finland_Kakkonen_GroupC_2026;12;VPS 2;Huima / Urho;VPS 2 - Huima / Urho;89.63;ALTA;;;;;;;;;;;;3;1;4;OK;OK
+2026-07-04;2.2.0;Australia_NPL_NSW_U20_2026;23;Blacktown City U20;Sydney Utd U20;Blacktown City U20 - Sydney Utd U20;88.79;ALTA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-04;2.2.0;USA_USLLeagueTwo_Heartland_2026;20260630;St. Croix;Edgewater Castle;St. Croix - Edgewater Castle;86.36;ALTA;;;;;;;;;;;;7;1;8;OK;OK
+2026-07-04;2.2.0;Australia_NPL_NSW_U20_2026;23;Rockdale Ilinden U20;NWS Spirit U20;Rockdale Ilinden U20 - NWS Spirit U20;85.03;ALTA;;;;;;;;;;;;1;1;2;KO;OK
+2026-07-04;2.2.0;Estonia_EsiliigaB_2026;18;Legion;Tallinna Kalev U21;Legion - Tallinna Kalev U21;82.66;ALTA;;;;;;;;;;;;2;3;5;OK;OK
+2026-07-04;2.2.0;Australia_NPLQueenslandU23_2026;18;Gold Coast Blaze U23;Magic United U23;Gold Coast Blaze U23 - Magic United U23;82.07;ALTA;;;;;;;;;;;;2;0;2;KO;KO
+2026-07-04;2.2.0;Finland_Kakkonen_GroupB_2026;12;Ilves 2;EPS;Ilves 2 - EPS;81.4;ALTA;;;;;;;;;;;;4;2;6;OK;OK
+2026-07-04;2.2.0;USA_USLLeagueTwo_LoneStar_2026;20260631;GFI Woodlands;Houston Sur;GFI Woodlands - Houston Sur;81.14;ALTA;;;;;;;;;;;;4;0;4;OK;KO
+2026-07-04;2.2.0;USA_USLLeagueTwo_Southwest_2026;20260630;City SC;Redlands FC;City SC - Redlands FC;81.13;ALTA;;;;;;;;;;;;0;3;3;OK;KO
+2026-07-04;2.2.0;Australia_NPL_NSW_U20_2026;23;Wollongong Wolves U20;St. George City U20;Wollongong Wolves U20 - St. George City U20;80.94;ALTA;;;;;;;;;;;;5;1;6;OK;OK
+2026-07-04;2.2.0;Norway_OBOSLigaen_2026;15;Odd;Haugesund;Odd - Haugesund;80.86;ALTA;;;;;;;;;;;;1;3;4;OK;OK
+2026-07-04;2.2.0;USA_USLLeagueTwo_NorCal_2026;20260630;Project 51O;Davis Legacy;Project 51O - Davis Legacy;80.11;ALTA;;;;;;;;;;;;6;1;7;OK;OK
+2026-07-04;2.2.0;Estonia_Esiliiga_2026;19;Nomme Kalju U21;Elva;Nomme Kalju U21 - Elva;79.01;ALTA;;;;;;;;;;;;2;2;4;OK;OK
+2026-07-04;2.2.0;Australia_NPL_NSW_U20_2026;23;Marconi S. U20;St George Saints U20;Marconi S. U20 - St George Saints U20;78.63;ALTA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-04;2.2.0;USA_USLLeagueTwo_Northwest_2026;20260629;West Seattle Junction;FC Olympia;West Seattle Junction - FC Olympia;78.11;ALTA;;;;;;;;;;;;5;2;7;OK;OK
+2026-07-04;2.2.0;USA_USLLeagueTwo_Chesapeake_2026;20260630;Virginia Marauders;Bethesda SC;Virginia Marauders - Bethesda SC;77.85;ALTA;;;;;;;;;;;;0;4;4;OK;KO
+2026-07-04;2.2.0;USA_USLLeagueTwo_Northwest_2026;20260629;Ballard;Tacoma Stars;Ballard - Tacoma Stars;77.76;ALTA;;;;;;;;;;;;7;0;7;OK;KO
 2026-07-04;2.2.0;USA_USLLeagueTwo_MidAtlantic_2026;20260630;Eagle FC;West Chester Utd;Eagle FC - West Chester Utd;77.18;ALTA;;;;;;;;;;;;;;;;
 2026-07-04;2.2.0;USA_USLLeagueTwo_Ranger_2026;20260630;McKinney Chupacabras;Texoma;McKinney Chupacabras - Texoma;76.26;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NorthernNSWStateLeague_2026;14;Wallsend Red Devils;Singleton Strikers;Wallsend Red Devils - Singleton Strikers;75.73;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Finland_Ykkonen_2026;15;TPV;JJK Jyvaskyla;TPV - JJK Jyvaskyla;75.26;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPLTasmania_2026;14;South East Utd.;South Hobart;South East Utd. - South Hobart;75.07;ALTA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Belarus_PershayaLiga_2026;15;Lida;Uni X Labs;Lida - Uni X Labs;74.06;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;18;Chattanooga;Inter Miami II;Chattanooga - Inter Miami II;73.79;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPLVictoria_2026;20;South Melbourne;Dandenong Thunder;South Melbourne - Dandenong Thunder;73.62;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueTwo_LoneStar_2026;20260631;Twin City Toucans;Laredo Heat;Twin City Toucans - Laredo Heat;73.0;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NSWLeagueOne_2026;23;Central Coast Mariners U23;Rydalmere Lions;Central Coast Mariners U23 - Rydalmere Lions;72.65;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Belarus_PershayaLiga_2026;15;Osipovichi;Molodechno;Osipovichi - Molodechno;71.39;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLChampionship_2026;21;Las Vegas Lights;El Paso;Las Vegas Lights - El Paso;70.37;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueTwo_MidSouth_2026;20260630;Jackson Boom;Mississippi Brilla;Jackson Boom - Mississippi Brilla;70.36;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPLQueensland_2026;18;Gold Coast;Magic United;Gold Coast - Magic United;69.1;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueOne_2026;22;Corpus Christi FC;Chattanooga Red Wolves;Corpus Christi FC - Chattanooga Red Wolves;66.69;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLChampionship_2026;21;Rhode Island;Orange County SC;Rhode Island - Orange County SC;66.5;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Belarus_PershayaLiga_2026;15;Smorgon;Volna Pinsk;Smorgon - Volna Pinsk;66.37;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_MLSNextPro_WesternConference_CentralDivision_2026;18;North Texas;St. Louis City 2;North Texas - St. Louis City 2;66.34;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueOne_2026;22;New York Cosmos;Greenville;New York Cosmos - Greenville;65.37;MEDIA;;;;;;;;;;;;;;;;
+2026-07-04;2.2.0;Australia_NorthernNSWStateLeague_2026;14;Wallsend Red Devils;Singleton Strikers;Wallsend Red Devils - Singleton Strikers;75.73;ALTA;;;;;;;;;;;;4;1;5;OK;OK
+2026-07-04;2.2.0;Finland_Ykkonen_2026;15;TPV;JJK Jyvaskyla;TPV - JJK Jyvaskyla;75.26;ALTA;;;;;;;;;;;;1;0;1;KO;KO
+2026-07-04;2.2.0;Australia_NPLTasmania_2026;14;South East Utd.;South Hobart;South East Utd. - South Hobart;75.07;ALTA;;;;;;;;;;;;1;0;1;KO;KO
+2026-07-04;2.2.0;Belarus_PershayaLiga_2026;15;Lida;Uni X Labs;Lida - Uni X Labs;74.06;MEDIA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-04;2.2.0;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;18;Chattanooga;Inter Miami II;Chattanooga - Inter Miami II;73.79;MEDIA;;;;;;;;;;;;1;0;1;KO;KO
+2026-07-04;2.2.0;Australia_NPLVictoria_2026;20;South Melbourne;Dandenong Thunder;South Melbourne - Dandenong Thunder;73.62;MEDIA;;;;;;;;;;;;1;0;1;KO;KO
+2026-07-04;2.2.0;USA_USLLeagueTwo_LoneStar_2026;20260631;Twin City Toucans;Laredo Heat;Twin City Toucans - Laredo Heat;73.0;MEDIA;;;;;;;;;;;;1;2;3;OK;OK
+2026-07-04;2.2.0;Australia_NSWLeagueOne_2026;23;Central Coast Mariners U23;Rydalmere Lions;Central Coast Mariners U23 - Rydalmere Lions;72.65;MEDIA;;;;;;;;;;;;1;2;3;OK;OK
+2026-07-04;2.2.0;Belarus_PershayaLiga_2026;15;Osipovichi;Molodechno;Osipovichi - Molodechno;71.39;MEDIA;;;;;;;;;;;;1;5;6;OK;OK
+2026-07-04;2.2.0;USA_USLChampionship_2026;21;Las Vegas Lights;El Paso;Las Vegas Lights - El Paso;70.37;MEDIA;;;;;;;;;;;;1;2;3;OK;OK
+2026-07-04;2.2.0;USA_USLLeagueTwo_MidSouth_2026;20260630;Jackson Boom;Mississippi Brilla;Jackson Boom - Mississippi Brilla;70.36;MEDIA;;;;;;;;;;;;0;5;5;OK;KO
+2026-07-04;2.2.0;Australia_NPLQueensland_2026;18;Gold Coast;Magic United;Gold Coast - Magic United;69.1;MEDIA;;;;;;;;;;;;1;3;4;OK;OK
+2026-07-04;2.2.0;USA_USLLeagueOne_2026;22;Corpus Christi FC;Chattanooga Red Wolves;Corpus Christi FC - Chattanooga Red Wolves;66.69;MEDIA;;;;;;;;;;;;2;1;3;OK;OK
+2026-07-04;2.2.0;USA_USLChampionship_2026;21;Rhode Island;Orange County SC;Rhode Island - Orange County SC;66.5;MEDIA;;;;;;;;;;;;1;1;2;KO;OK
+2026-07-04;2.2.0;Belarus_PershayaLiga_2026;15;Smorgon;Volna Pinsk;Smorgon - Volna Pinsk;66.37;MEDIA;;;;;;;;;;;;1;3;4;OK;OK
+2026-07-04;2.2.0;USA_MLSNextPro_WesternConference_CentralDivision_2026;18;North Texas;St. Louis City 2;North Texas - St. Louis City 2;66.34;MEDIA;;;;;;;;;;;;3;0;3;OK;KO
+2026-07-04;2.2.0;USA_USLLeagueOne_2026;22;New York Cosmos;Greenville;New York Cosmos - Greenville;65.37;MEDIA;;;;;;;;;;;;0;3;3;OK;KO
 2026-07-04;2.2.0;Latvia_Virsliga_2026;22;Grobina;Tukums 2000;Grobina - Tukums 2000;65.21;MEDIA;;;;;;;;;;;;3;3;6;OK;OK
-2026-07-04;2.2.0;Finland_Ykkonen_2026;15;Rovaniemi;Keski-Uusimaa;Rovaniemi - Keski-Uusimaa;63.68;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLChampionship_2026;21;Colorado Springs;Phoenix Rising;Colorado Springs - Phoenix Rising;60.76;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPLNSW_2026;23;Blacktown City;Sydney Utd;Blacktown City - Sydney Utd;60.03;MEDIA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLChampionship_2026;21;New Mexico;Oakland Roots;New Mexico - Oakland Roots;59.97;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Sweden_Allsvenskan_2026;17;Göteborg;AIK Stockholm;Göteborg - AIK Stockholm;59.95;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLChampionship_2026;21;Pittsburgh;Brooklyn;Pittsburgh - Brooklyn;59.87;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLChampionship_2026;21;San Antonio;Monterey Bay;San Antonio - Monterey Bay;59.28;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Bhutan_PremierLeague_2026;8;RTC;Ugyen Academy;RTC - Ugyen Academy;59.14;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLChampionship_2026;21;Tampa Bay;Lexington;Tampa Bay - Lexington;59.12;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_MLSNextPro_EasternConference_NortheastDivision_2026;19;New England Revolution II;Philadelphia II;New England Revolution II - Philadelphia II;58.82;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;FaroeIslands_PremierLeague_2026;17;07 Vestur Sorvagur;HB Torshavn;07 Vestur Sorvagur - HB Torshavn;57.63;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPLNSW_2026;23;Marconi;St George Saints;Marconi - St George Saints;57.17;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Belarus_VysshayaLiga_2026;15;Belshina;Baranovici;Belshina - Baranovici;56.59;BASSA;;;;;;;;;;;;;;;;
+2026-07-04;2.2.0;Finland_Ykkonen_2026;15;Rovaniemi;Keski-Uusimaa;Rovaniemi - Keski-Uusimaa;63.68;MEDIA;;;;;;;;;;;;4;3;7;OK;OK
+2026-07-04;2.2.0;USA_USLChampionship_2026;21;Colorado Springs;Phoenix Rising;Colorado Springs - Phoenix Rising;60.76;MEDIA;;;;;;;;;;;;3;1;4;OK;OK
+2026-07-04;2.2.0;Australia_NPLNSW_2026;23;Blacktown City;Sydney Utd;Blacktown City - Sydney Utd;60.03;MEDIA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-04;2.2.0;USA_USLChampionship_2026;21;New Mexico;Oakland Roots;New Mexico - Oakland Roots;59.97;BASSA;;;;;;;;;;;;2;1;3;OK;OK
+2026-07-04;2.2.0;Sweden_Allsvenskan_2026;17;Göteborg;AIK Stockholm;Göteborg - AIK Stockholm;59.95;BASSA;;;;;;;;;;;;1;2;3;OK;OK
+2026-07-04;2.2.0;USA_USLChampionship_2026;21;Pittsburgh;Brooklyn;Pittsburgh - Brooklyn;59.87;BASSA;;;;;;;;;;;;0;2;2;KO;KO
+2026-07-04;2.2.0;USA_USLChampionship_2026;21;San Antonio;Monterey Bay;San Antonio - Monterey Bay;59.28;BASSA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-04;2.2.0;Bhutan_PremierLeague_2026;8;RTC;Ugyen Academy;RTC - Ugyen Academy;59.14;BASSA;;;;;;;;;;;;1;0;1;KO;KO
+2026-07-04;2.2.0;USA_USLChampionship_2026;21;Tampa Bay;Lexington;Tampa Bay - Lexington;59.12;BASSA;;;;;;;;;;;;1;4;5;OK;OK
+2026-07-04;2.2.0;USA_MLSNextPro_EasternConference_NortheastDivision_2026;19;New England Revolution II;Philadelphia II;New England Revolution II - Philadelphia II;58.82;BASSA;;;;;;;;;;;;0;4;4;OK;KO
+2026-07-04;2.2.0;FaroeIslands_PremierLeague_2026;17;07 Vestur Sorvagur;HB Torshavn;07 Vestur Sorvagur - HB Torshavn;57.63;BASSA;;;;;;;;;;;;1;4;5;OK;OK
+2026-07-04;2.2.0;Australia_NPLNSW_2026;23;Marconi;St George Saints;Marconi - St George Saints;57.17;BASSA;;;;;;;;;;;;2;0;2;KO;KO
+2026-07-04;2.2.0;Belarus_VysshayaLiga_2026;15;Belshina;Baranovici;Belshina - Baranovici;56.59;BASSA;;;;;;;;;;;;1;1;2;KO;OK
 2026-07-04;2.2.0;Lithuania_Toplyga_2026;23;FA Siauliai;Zalgiris;FA Siauliai - Zalgiris;56.04;BASSA;;;;;;;;;;;;0;2;2;KO;KO
-2026-07-04;2.2.0;Sweden_Allsvenskan_2026;17;Kalmar;Orgryte;Kalmar - Orgryte;55.66;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Estonia_Meistriliiga_2026;19;Tammeka;Harju JK Laagri;Tammeka - Harju JK Laagri;55.6;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPLNSW_2026;23;Rockdale Ilinden;NWS Spirit;Rockdale Ilinden - NWS Spirit;54.18;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Sweden_Allsvenskan_2026;17;Elfsborg;Hammarby;Elfsborg - Hammarby;53.0;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Kazakhstan_PremierLeague_2026;26;Aktobe;Zhetysu;Aktobe - Zhetysu;51.86;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Kazakhstan_PremierLeague_2026;26;Kaisar;Ertis Pavlodar;Kaisar - Ertis Pavlodar;49.91;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Kazakhstan_PremierLeague_2026;26;Ordabasy;Ulytau;Ordabasy - Ulytau;49.87;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Belarus_VysshayaLiga_2026;15;Zhodino;Isloch;Zhodino - Isloch;49.8;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLLeagueOne_2026;22;Fort Wayne;Spokane Velocity;Fort Wayne - Spokane Velocity;49.05;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_USLChampionship_2026;21;Louisville City;Hartford Athletic;Louisville City - Hartford Athletic;48.01;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;Australia_NPLNSW_2026;23;Wollongong Wolves;St. George City;Wollongong Wolves - St. George City;45.11;BASSA;;;;;;;;;;;;;;;;
-2026-07-04;2.2.0;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;18;Atlanta United 2;Toronto FC II;Atlanta United 2 - Toronto FC II;44.3;BASSA;;;;;;;;;;;;;;;;
+2026-07-04;2.2.0;Sweden_Allsvenskan_2026;17;Kalmar;Orgryte;Kalmar - Orgryte;55.66;BASSA;;;;;;;;;;;;3;0;3;OK;KO
+2026-07-04;2.2.0;Estonia_Meistriliiga_2026;19;Tammeka;Harju JK Laagri;Tammeka - Harju JK Laagri;55.6;BASSA;;;;;;;;;;;;2;1;3;OK;OK
+2026-07-04;2.2.0;Australia_NPLNSW_2026;23;Rockdale Ilinden;NWS Spirit;Rockdale Ilinden - NWS Spirit;54.18;BASSA;;;;;;;;;;;;1;1;2;KO;OK
+2026-07-04;2.2.0;Sweden_Allsvenskan_2026;17;Elfsborg;Hammarby;Elfsborg - Hammarby;53.0;BASSA;;;;;;;;;;;;1;2;3;OK;OK
+2026-07-04;2.2.0;Kazakhstan_PremierLeague_2026;26;Aktobe;Zhetysu;Aktobe - Zhetysu;51.86;BASSA;;;;;;;;;;;;2;1;3;OK;OK
+2026-07-04;2.2.0;Kazakhstan_PremierLeague_2026;26;Kaisar;Ertis Pavlodar;Kaisar - Ertis Pavlodar;49.91;BASSA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-04;2.2.0;Kazakhstan_PremierLeague_2026;26;Ordabasy;Ulytau;Ordabasy - Ulytau;49.87;BASSA;;;;;;;;;;;;1;0;1;KO;KO
+2026-07-04;2.2.0;Belarus_VysshayaLiga_2026;15;Zhodino;Isloch;Zhodino - Isloch;49.8;BASSA;;;;;;;;;;;;0;2;2;KO;KO
+2026-07-04;2.2.0;USA_USLLeagueOne_2026;22;Fort Wayne;Spokane Velocity;Fort Wayne - Spokane Velocity;49.05;BASSA;;;;;;;;;;;;3;0;3;OK;KO
+2026-07-04;2.2.0;USA_USLChampionship_2026;21;Louisville City;Hartford Athletic;Louisville City - Hartford Athletic;48.01;BASSA;;;;;;;;;;;;1;0;1;KO;KO
+2026-07-04;2.2.0;Australia_NPLNSW_2026;23;Wollongong Wolves;St. George City;Wollongong Wolves - St. George City;45.11;BASSA;;;;;;;;;;;;3;3;6;OK;OK
+2026-07-04;2.2.0;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;18;Atlanta United 2;Toronto FC II;Atlanta United 2 - Toronto FC II;44.3;BASSA;;;;;;;;;;;;1;0;1;KO;KO
 2026-07-04;2.2.0;USA_USLChampionship_2026;21;FC Tulsa;Sacramento Republic;FC Tulsa - Sacramento Republic;43.87;BASSA;;;;;;;;;;;;;;;;
 2026-07-04;2.2.0;Finland_Ykkosliiga_2026;14;Mikkeli;Haka;Mikkeli - Haka;42.5;BASSA;;;;;;;;;;;;1;0;1;KO;KO
-2026-07-04;2.2.0;Kazakhstan_PremierLeague_2026;26;Atyrau;Kaspij Aktau;Atyrau - Kaspij Aktau;32.12;BASSA;;;;;;;;;;;;;;;;
+2026-07-04;2.2.0;Kazakhstan_PremierLeague_2026;26;Atyrau;Kaspij Aktau;Atyrau - Kaspij Aktau;32.12;BASSA;;;;;;;;;;;;1;2;3;OK;OK
+2026-07-06;2.2.0;USA_USLLeagueTwo_Chesapeake_2026;26;Christos;Loudoun 2;Christos - Loudoun 2;87.93;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_NorCal_2026;27;San Francisco City;Academica SC;San Francisco City - Academica SC;81.72;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_GreatLakes_2026;22;Lansing City;Flint City;Lansing City - Flint City;81.65;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Sweden_Allsvenskan_2026;17;Hacken;Djurgarden;Hacken - Djurgarden;79.82;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;18;Crown Legacy;Orlando City B;Crown Legacy - Orlando City B;79.79;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_Metropolitan_2026;25;Ironbound SC;Staten Island ASC;Ironbound SC - Staten Island ASC;79.72;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_MLSNextPro_WesternConference_PacificDivision_2026;19;Los Angeles FC 2;Real Monarchs;Los Angeles FC 2 - Real Monarchs;77.03;ALTA;;;;;;;;;;;;3;1;4;OK;OK
+2026-07-06;2.2.0;Iceland_BestaDeildKarla_2026;19;Keflavik;Fram;Keflavik - Fram;74.76;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_Northwest_2026;32;Bigfoot;Portland Bangers;Bigfoot - Portland Bangers;74.71;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_NorCal_2026;27;Marin;Glens SC;Marin - Glens SC;73.39;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_SouthCentral_2026;20;East Atlanta;Birmingham 2;East Atlanta - Birmingham 2;72.15;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueOne_2026;22;AV Alta;Charlotte Independ.;AV Alta - Charlotte Independ.;71.25;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_MidSouth_2026;17;Little Rock Rangers;Louisiana;Little Rock Rangers - Louisiana;70.53;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_Chesapeake_2026;26;Northern Virginia;Patuxent;Northern Virginia - Patuxent;67.46;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Sweden_Allsvenskan_2026;17;Brommapojkarna;GAIS;Brommapojkarna - GAIS;66.62;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Latvia_Virsliga_2026;22;Super Nova;Ogre United;Super Nova - Ogre United;66.29;MEDIA;;;;;;;;;;;;3;1;4;OK;OK
+2026-07-06;2.2.0;USA_MLSNextPro_WesternConference_CentralDivision_2026;18;Austin FC II;Colorado Rapids 2;Austin FC II - Colorado Rapids 2;65.6;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Lithuania_Toplyga_2026;24;Suduva;Transinvest;Suduva - Transinvest;65.5;MEDIA;;;;;;;;;;;;2;0;2;KO;KO
+2026-07-06;2.2.0;USA_USLLeagueTwo_SouthAtlantic_2026;36;North Carolina FC U23;Asheville City;North Carolina FC U23 - Asheville City;63.73;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_MLSNextPro_WesternConference_PacificDivision_2026;19;Tacoma Defiance;Portland Timbers 2;Tacoma Defiance - Portland Timbers 2;47.49;BASSA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_MLSNextPro_WesternConference_CentralDivision_2026;18;Huntsville;Chicago Fire II;Huntsville - Chicago Fire II;0.0;BASSA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Australia_NPLACT_2026;17;Monaro Panthers;Queanbeyan City;Monaro Panthers - Queanbeyan City;87.51;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_GreatForest_2026;24;Lorain County Leviathan;Erie Sports Center;Lorain County Leviathan - Erie Sports Center;84.4;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Finland_Kakkonen_GroupC_2026;13;JBK;Narpes Kraft;JBK - Narpes Kraft;83.49;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_Northeast_2026;28;Black Rock;Seacoast Utd Phantoms;Black Rock - Seacoast Utd Phantoms;82.03;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Australia_NPLNorthernNSW_2026;19;Charlestown Azzurri;Weston Bears;Charlestown Azzurri - Weston Bears;81.97;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Australia_NPLQueensland_2026;18;Gold Coast Knights;Queensland Lions;Gold Coast Knights - Queensland Lions;81.31;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_LoneStar_2026;25;Lonestar SC;Hill Country Lobos;Lonestar SC - Hill Country Lobos;79.22;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Kyrgyzstan_PremierLiga_2026;15;Asia Talas;Abdysh-Ata;Asia Talas - Abdysh-Ata;77.83;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_Heartland_2026;23;Rochester FC;Minneapolis City;Rochester FC - Minneapolis City;76.36;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_Valley_2026;23;Kings Hammer Columbus;Dayton;Kings Hammer Columbus - Dayton;66.17;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;USA_USLLeagueTwo_Southwest_2026;27;Stars FC;Tucson;Stars FC - Tucson;64.72;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Australia_SAStateLeague_2026;18;Cove FC;Modbury;Cove FC - Modbury;60.84;MEDIA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Kyrgyzstan_PremierLiga_2026;15;Kyrgyzaltyn;Talant;Kyrgyzaltyn - Talant;57.39;BASSA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Kyrgyzstan_PremierLiga_2026;15;Neftchi Kochkor-Ata;Aldier;Neftchi Kochkor-Ata - Aldier;56.84;BASSA;;;;;;;;;;;;;;;;
+2026-07-06;2.2.0;Bhutan_PremierLeague_2026;9;Drukpa;Thimphu FC;Drukpa - Thimphu FC;46.44;BASSA;;;;;;;;;;;;;;;;
