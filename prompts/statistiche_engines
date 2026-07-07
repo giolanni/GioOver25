@@ -1,0 +1,15 @@
+onfronta gli storici allegati utilizzando queste regole:
+
+considera solo le partite con esito (OK o KO), escludendo tutte quelle ancora senza risultato;
+utilizza come riferimento l'intersezione delle partite presenti in tutti gli storici, salvo diversa richiesta;
+produci le statistiche separate per FASCIA ALTA e FASCIA MEDIA;
+per ogni fascia indica:
+numero di OK;
+numero di KO;
+totale partite concluse (OK + KO);
+percentuale di successo = OK / (OK + KO);
+ripeti le stesse statistiche:
+con tutte le leghe;
+escludendo tutte le leghe australiane (LeagueId che inizia con Australia_);
+evidenzia quale versione ottiene la percentuale migliore in ogni categoria;
+se rilevi differenze significative tra le versioni, commentale brevemente.
