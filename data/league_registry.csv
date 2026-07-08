@@ -26,6 +26,7 @@ Austria_Regionalliga_West_2026;Austria;Regionalliga West;2026;16;30;Yes;
 Belarus_PershayaLiga_2026;Belarus;Pershaya Liga;2026;18;34;Yes;Round 13 currently partial in supplied data
 Belarus_VysshayaLiga_2026;Belarus;Vysshaya Liga;2026;16;30;Yes;Round 12 complete in supplied data
 Bhutan_PremierLeague_2026;Bhutan;Premier League;2026;10;18;Yes;
+Bolivia_DivisionProfesional_2026;Bolivia;Division Profesional;2026;16;30;Yes;
 Denmark_Superliga_2026;Denmark;Superliga;2026;12;32;Yes;Championship/Relegation split after 22 rounds
 England_Championship_2026;England;Championship;2026;24;46;Yes;
 England_LeagueOne_2026;England;League One;2026;24;46;Yes;
@@ -57,6 +58,7 @@ Italy_SerieC_GironeA_2026;Italy;Serie C Girone A;2026;20;38;Yes;
 Italy_SerieC_GironeB_2026;Italy;Serie C Girone B;2026;20;38;Yes;
 Italy_SerieC_GironeC_2026;Italy;Serie C Girone C;2026;20;38;Yes;
 Kazakhstan_PremierLeague_2026;Kazakhstan;Premier League;2026;16;30;Yes;Round 17 currently partial in supplied data
+Kazakhstan_FirstLeague_2026;Kazakhstan;First League;2026;14;26;Yes;Round 21 appears between rounds 10 and 9 in supplied data
 Kyrgyzstan_PremierLiga_2026;Kyrgyzstan;Premier Liga;2026;16;30;Yes;Round 14 currently partial in supplied data
 Latvia_Virsliga_2026;Latvia;Virsliga;2026;10;36;Yes;
 Latvia_NakotnesLiga_2026;Latvia;Nakotnes liga;2026;14;26;Yes;Round 11 currently partial in supplied data
@@ -77,6 +79,7 @@ Norway_Eliteserien_2026;Norway;Eliteserien;2026;16;30;Yes;
 Norway_OBOSLigaen_2026;Norway;OBOS-ligaen;2026;16;30;Yes;Round 12 complete in supplied data
 Portugal_LigaPortugal_2026;Portugal;Liga Portugal;2026;18;34;Yes;
 Portugal_LigaPortugal2_2026;Portugal;Liga Portugal 2;2026;18;34;Yes;
+Somalia_NationalLeague_2026;Somalia;National League;2026;12;22;Yes;Season 2025/2026
 Spain_LaLiga_2026;Spain;La Liga;2026;20;38;Yes;
 Sweden_Allsvenskan_2026;Sweden;Allsvenskan;2026;16;30;Yes;
 Sweden_Division1_Norra_2026;Sweden;Division 1 Norra;2026;16;30;Yes;Round 14 currently partial in supplied data
