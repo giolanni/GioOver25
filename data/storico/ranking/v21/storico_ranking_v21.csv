@@ -367,7 +367,7 @@
 2026-07-04;2.1.0;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;18;Atlanta United 2;Toronto FC II;Atlanta United 2 - Toronto FC II;45.95;BASSA;;;;;;;;;;;;1;0;1;KO;KO
 2026-07-04;2.1.0;Finland_Ykkosliiga_2026;14;Mikkeli;Haka;Mikkeli - Haka;45.39;BASSA;;;;;;;;;;;;1;0;1;KO;KO
 2026-07-04;2.1.0;Kazakhstan_PremierLeague_2026;26;Atyrau;Kaspij Aktau;Atyrau - Kaspij Aktau;35.44;BASSA;;;;;;;;;;;;1;2;3;OK;OK
-2026-07-06;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Christos;Loudoun 2;Christos - Loudoun 2;91.33;ALTA;;;;;;;;;;;;;;;;
+2026-07-06;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Christos;Loudoun 2;Christos - Loudoun 2;91.33;ALTA;;;;;;;;;;;;3;4;7;OK;OK
 2026-07-06;2.1.0;USA_USLLeagueTwo_NorCal_2026;27;San Francisco City;Academica SC;San Francisco City - Academica SC;85.48;ALTA;;;;;;;;;;;;;;;;
 2026-07-06;2.1.0;USA_USLLeagueTwo_GreatLakes_2026;22;Lansing City;Flint City;Lansing City - Flint City;84.26;ALTA;;;;;;;;;;;;;;;;
 2026-07-06;2.1.0;USA_USLLeagueTwo_Metropolitan_2026;25;Ironbound SC;Staten Island ASC;Ironbound SC - Staten Island ASC;83.56;ALTA;;;;;;;;;;;;;;;;
@@ -403,79 +403,79 @@
 2026-07-06;2.1.0;Kyrgyzstan_PremierLiga_2026;15;Neftchi Kochkor-Ata;Aldier;Neftchi Kochkor-Ata - Aldier;60.3;MEDIA;;;;;;;;;;;;0;2;2;KO;KO
 2026-07-06;2.1.0;Kyrgyzstan_PremierLiga_2026;15;Kyrgyzaltyn;Talant;Kyrgyzaltyn - Talant;60.04;MEDIA;;;;;;;;;;;;0;0;0;KO;KO
 2026-07-06;2.1.0;Bhutan_PremierLeague_2026;9;Drukpa;Thimphu FC;Drukpa - Thimphu FC;48.44;BASSA;;;;;;;;;;;;1;2;3;OK;OK
-2026-07-07;2.1.0;USA_USLLeagueTwo_GreatLakes_2026;22;Union FC Macomb;Ann Arbor;Union FC Macomb - Ann Arbor;96.07;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_Northeast_2026;28;NEFC;Boston City;NEFC - Boston City;95.28;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;Finland_Kakkonen_GroupC_2026;13;Jaro 2;SJK Akatemia 2;Jaro 2 - SJK Akatemia 2;88.0;ALTA;;;;;;;;;;;;;;;;
+2026-07-07;2.1.0;USA_USLLeagueTwo_GreatLakes_2026;22;Union FC Macomb;Ann Arbor;Union FC Macomb - Ann Arbor;96.07;ALTA;;;;;;;;;;;;2;2;4;OK;OK
+2026-07-07;2.1.0;USA_USLLeagueTwo_Northeast_2026;28;NEFC;Boston City;NEFC - Boston City;95.28;ALTA;;;;;;;;;;;;4;2;6;OK;OK
+2026-07-07;2.1.0;Finland_Kakkonen_GroupC_2026;13;Jaro 2;SJK Akatemia 2;Jaro 2 - SJK Akatemia 2;88.0;ALTA;;;;;;;;;;;;2;3;5;OK;OK
 2026-07-07;2.1.0;Australia_NPLNorthernNSW_2026;19;Kahibah;Maitland;Kahibah - Maitland;87.07;ALTA;;;;;;;;;;;;;;;;
 2026-07-07;2.1.0;USA_MLSNextPro_WesternConference_PacificDivision_2026;19;San Jose Earthquakes II;Sporting Kansas City II;San Jose Earthquakes II - Sporting Kansas City II;87.03;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_Mountain_2026;24;Real Colorado;Albion Colorado;Real Colorado - Albion Colorado;85.4;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_Northwest_2026;33;Tacoma Stars;Midlakes United;Tacoma Stars - Midlakes United;84.2;ALTA;;;;;;;;;;;;;;;;
+2026-07-07;2.1.0;USA_USLLeagueTwo_Mountain_2026;24;Real Colorado;Albion Colorado;Real Colorado - Albion Colorado;85.4;ALTA;;;;;;;;;;;;2;3;5;OK;OK
+2026-07-07;2.1.0;USA_USLLeagueTwo_Northwest_2026;33;Tacoma Stars;Midlakes United;Tacoma Stars - Midlakes United;84.2;ALTA;;;;;;;;;;;;2;1;3;OK;OK
 2026-07-07;2.1.0;USA_USLLeagueTwo_Ranger_2026;21;Texoma;Denton Diablos;Texoma - Denton Diablos;81.62;ALTA;;;;;;;;;;;;2;0;2;KO;KO
-2026-07-07;2.1.0;USA_USLLeagueTwo_Metropolitan_2026;25;Hudson Valley;Motown 2;Hudson Valley - Motown 2;81.21;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;28;Delaware;Eagle FC;Delaware - Eagle FC;79.98;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_Southwest_2026;27;Capo;Southern California;Capo - Southern California;79.61;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_Northeast_2026;28;Vermont Green;Connecticut Rush;Vermont Green - Connecticut Rush;78.18;ALTA;;;;;;;;;;;;;;;;
+2026-07-07;2.1.0;USA_USLLeagueTwo_Metropolitan_2026;25;Hudson Valley;Motown 2;Hudson Valley - Motown 2;81.21;ALTA;;;;;;;;;;;;0;5;5;OK;KO
+2026-07-07;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;28;Delaware;Eagle FC;Delaware - Eagle FC;79.98;ALTA;;;;;;;;;;;;4;1;5;OK;OK
+2026-07-07;2.1.0;USA_USLLeagueTwo_Southwest_2026;27;Capo;Southern California;Capo - Southern California;79.61;ALTA;;;;;;;;;;;;5;4;9;OK;OK
+2026-07-07;2.1.0;USA_USLLeagueTwo_Northeast_2026;28;Vermont Green;Connecticut Rush;Vermont Green - Connecticut Rush;78.18;ALTA;;;;;;;;;;;;6;2;8;OK;OK
 2026-07-07;2.1.0;USA_USLLeagueTwo_GreatPlains_2026;19;Sunflower State;Peoria;Sunflower State - Peoria;77.98;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_Mountain_2026;24;Colorado Storm;Atletico Union;Colorado Storm - Atletico Union;77.6;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_Northeast_2026;28;AC Connecticut;Western Mass Pioneers;AC Connecticut - Western Mass Pioneers;77.42;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_GreatForest_2026;24;Akron City;Pittsburgh Riverhounds 2;Akron City - Pittsburgh Riverhounds 2;75.48;ALTA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_MLSNextPro_WesternConference_PacificDivision_2026;19;Vancouver 2;Ventura County;Vancouver 2 - Ventura County;72.27;MEDIA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;Kyrgyzstan_PremierLiga_2026;15;Alga;Dordoi Bishkek;Alga - Dordoi Bishkek;70.0;MEDIA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_GreatPlains_2026;19;Springfield FC;Menace;Springfield FC - Menace;69.13;MEDIA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;Bhutan_PremierLeague_2026;9;Paro;Tensung;Paro - Tensung;62.59;MEDIA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_NorCal_2026;27;Glens SC;Almaden;Glens SC - Almaden;60.18;MEDIA;;;;;;;;;;;;;;;;
-2026-07-07;2.1.0;USA_USLLeagueTwo_Valley_2026;23;West Virginia;Louisville City 2;West Virginia - Louisville City 2;59.02;BASSA;;;;;;;;;;;;;;;;
+2026-07-07;2.1.0;USA_USLLeagueTwo_Mountain_2026;24;Colorado Storm;Atletico Union;Colorado Storm - Atletico Union;77.6;ALTA;;;;;;;;;;;;2;0;2;KO;KO
+2026-07-07;2.1.0;USA_USLLeagueTwo_Northeast_2026;28;AC Connecticut;Western Mass Pioneers;AC Connecticut - Western Mass Pioneers;77.42;ALTA;;;;;;;;;;;;0;2;2;KO;KO
+2026-07-07;2.1.0;USA_USLLeagueTwo_GreatForest_2026;24;Akron City;Pittsburgh Riverhounds 2;Akron City - Pittsburgh Riverhounds 2;75.48;ALTA;;;;;;;;;;;;4;0;4;OK;KO
+2026-07-07;2.1.0;USA_MLSNextPro_WesternConference_PacificDivision_2026;19;Vancouver 2;Ventura County;Vancouver 2 - Ventura County;72.27;MEDIA;;;;;;;;;;;;3;2;5;OK;OK
+2026-07-07;2.1.0;Kyrgyzstan_PremierLiga_2026;15;Alga;Dordoi Bishkek;Alga - Dordoi Bishkek;70.0;MEDIA;;;;;;;;;;;;1;1;2;KO;OK
+2026-07-07;2.1.0;USA_USLLeagueTwo_GreatPlains_2026;19;Springfield FC;Menace;Springfield FC - Menace;69.13;MEDIA;;;;;;;;;;;;2;4;6;OK;OK
+2026-07-07;2.1.0;Bhutan_PremierLeague_2026;9;Paro;Tensung;Paro - Tensung;62.59;MEDIA;;;;;;;;;;;;4;0;4;OK;KO
+2026-07-07;2.1.0;USA_USLLeagueTwo_NorCal_2026;27;Glens SC;Almaden;Glens SC - Almaden;60.18;MEDIA;;;;;;;;;;;;0;2;2;KO;KO
+2026-07-07;2.1.0;USA_USLLeagueTwo_Valley_2026;23;West Virginia;Louisville City 2;West Virginia - Louisville City 2;59.02;BASSA;;;;;;;;;;;;3;1;4;OK;OK
 2026-07-07;2.1.0;Kyrgyzstan_PremierLiga_2026;15;Alay Osh;Toktogul;Alay Osh - Toktogul;53.19;BASSA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;Bolivia_DivisionProfesional_2026;11;Real Oruro;Universitario de Vinto;Real Oruro - Universitario de Vinto;81.6;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;Bolivia_DivisionProfesional_2026;11;Real Potosi;Academia del Balompie;Real Potosi - Academia del Balompie;69.2;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_NorCal_2026;27;Project 51O;Marin;Project 51O - Marin;92.9;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Metropolitan_2026;25;Manhattan;New Jersey Copa;Manhattan - New Jersey Copa;89.36;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_LoneStar_2026;25;Houston FC;Houston Sur;Houston FC - Houston Sur;87.73;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_NorCal_2026;27;Academica SC;San Juan;Academica SC - San Juan;87.56;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Southwest_2026;27;City SC;AMSG FC;City SC - AMSG FC;87.51;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_LoneStar_2026;25;San Antonio FC 2;Twin City Toucans;San Antonio FC 2 - Twin City Toucans;87.3;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_SouthAtlantic_2026;36;Salem City;Tobacco Road;Salem City - Tobacco Road;87.09;ALTA;;;;;;;;;;;;;;;;
+2026-07-08;2.1.0;Bolivia_DivisionProfesional_2026;11;Real Oruro;Universitario de Vinto;Real Oruro - Universitario de Vinto;81.6;ALTA;;;;;;;;;;;;4;1;5;OK;OK
+2026-07-08;2.1.0;Bolivia_DivisionProfesional_2026;11;Real Potosi;Academia del Balompie;Real Potosi - Academia del Balompie;69.2;MEDIA;;;;;;;;;;;;2;3;5;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_NorCal_2026;27;Project 51O;Marin;Project 51O - Marin;92.9;ALTA;;;;;;;;;;;;5;1;6;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_Metropolitan_2026;25;Manhattan;New Jersey Copa;Manhattan - New Jersey Copa;89.36;ALTA;;;;;;;;;;;;6;0;6;OK;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_LoneStar_2026;25;Houston FC;Houston Sur;Houston FC - Houston Sur;87.73;ALTA;;;;;;;;;;;;3;0;3;OK;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_NorCal_2026;27;Academica SC;San Juan;Academica SC - San Juan;87.56;ALTA;;;;;;;;;;;;2;4;6;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_Southwest_2026;27;City SC;AMSG FC;City SC - AMSG FC;87.51;ALTA;;;;;;;;;;;;4;0;4;OK;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_LoneStar_2026;25;San Antonio FC 2;Twin City Toucans;San Antonio FC 2 - Twin City Toucans;87.3;ALTA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_SouthAtlantic_2026;36;Salem City;Tobacco Road;Salem City - Tobacco Road;87.09;ALTA;;;;;;;;;;;;1;3;4;OK;OK
 2026-07-08;2.1.0;Estonia_Esiliiga_2026;20;Maardu;Flora U21;Maardu - Flora U21;86.95;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_NorCal_2026;27;Davis Legacy;San Francisco City;Davis Legacy - San Francisco City;86.77;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Heartland_2026;23;River Light;Rockford Raptors;River Light - Rockford Raptors;85.32;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;28;Reading;Philadelphia Lone Star;Reading - Philadelphia Lone Star;84.98;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Bethesda SC;Virginia Marauders;Bethesda SC - Virginia Marauders;84.8;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_MidSouth_2026;18;Mississippi Brilla;Louisiana;Mississippi Brilla - Louisiana;84.5;ALTA;;;;;;;;;;;;;;;;
+2026-07-08;2.1.0;USA_USLLeagueTwo_NorCal_2026;27;Davis Legacy;San Francisco City;Davis Legacy - San Francisco City;86.77;ALTA;;;;;;;;;;;;2;3;5;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_Heartland_2026;23;River Light;Rockford Raptors;River Light - Rockford Raptors;85.32;ALTA;;;;;;;;;;;;0;2;2;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;28;Reading;Philadelphia Lone Star;Reading - Philadelphia Lone Star;84.98;ALTA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Bethesda SC;Virginia Marauders;Bethesda SC - Virginia Marauders;84.8;ALTA;;;;;;;;;;;;3;2;5;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_MidSouth_2026;18;Mississippi Brilla;Louisiana;Mississippi Brilla - Louisiana;84.5;ALTA;;;;;;;;;;;;3;4;7;OK;OK
 2026-07-08;2.1.0;USA_USLLeagueTwo_Heartland_2026;23;Rochester FC;St. Croix;Rochester FC - St. Croix;84.2;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Northern Virginia;Lionsbridge;Northern Virginia - Lionsbridge;83.59;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_SouthFlorida_2026;18;Lakeland United;Miami City;Lakeland United - Miami City;83.55;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_SouthCentral_2026;20;Swarm FC;East Atlanta;Swarm FC - East Atlanta;83.47;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_GreatLakes_2026;22;Kalamazoo FC;Lansing City;Kalamazoo FC - Lansing City;83.27;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_MidSouth_2026;18;Jackson Boom;Hattiesburg;Jackson Boom - Hattiesburg;81.14;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Virginia Beach;Annapolis Blues;Virginia Beach - Annapolis Blues;80.11;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Northeast_2026;29;Black Rock;Boston Bolts;Black Rock - Boston Bolts;79.65;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Northwest_2026;33;Bigfoot;Ballard;Bigfoot - Ballard;79.14;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Patuxent;Christos;Patuxent - Christos;79.07;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_SouthAtlantic_2026;36;Wake FC;Port City;Wake FC - Port City;79.03;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;28;Ocean City;LVU Rush;Ocean City - LVU Rush;77.48;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;28;RC New Jersey;West Chester Utd;RC New Jersey - West Chester Utd;76.99;ALTA;;;;;;;;;;;;;;;;
+2026-07-08;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Northern Virginia;Lionsbridge;Northern Virginia - Lionsbridge;83.59;ALTA;;;;;;;;;;;;2;4;6;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_SouthFlorida_2026;18;Lakeland United;Miami City;Lakeland United - Miami City;83.55;ALTA;;;;;;;;;;;;2;3;5;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_SouthCentral_2026;20;Swarm FC;East Atlanta;Swarm FC - East Atlanta;83.47;ALTA;;;;;;;;;;;;5;4;9;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_GreatLakes_2026;22;Kalamazoo FC;Lansing City;Kalamazoo FC - Lansing City;83.27;ALTA;;;;;;;;;;;;3;0;3;OK;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_MidSouth_2026;18;Jackson Boom;Hattiesburg;Jackson Boom - Hattiesburg;81.14;ALTA;;;;;;;;;;;;0;6;6;OK;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Virginia Beach;Annapolis Blues;Virginia Beach - Annapolis Blues;80.11;ALTA;;;;;;;;;;;;1;1;2;KO;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_Northeast_2026;29;Black Rock;Boston Bolts;Black Rock - Boston Bolts;79.65;ALTA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_Northwest_2026;33;Bigfoot;Ballard;Bigfoot - Ballard;79.14;ALTA;;;;;;;;;;;;0;4;4;OK;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_Chesapeake_2026;26;Patuxent;Christos;Patuxent - Christos;79.07;ALTA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_SouthAtlantic_2026;36;Wake FC;Port City;Wake FC - Port City;79.03;ALTA;;;;;;;;;;;;3;1;4;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;28;Ocean City;LVU Rush;Ocean City - LVU Rush;77.48;ALTA;;;;;;;;;;;;2;2;4;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_MidAtlantic_2026;28;RC New Jersey;West Chester Utd;RC New Jersey - West Chester Utd;76.99;ALTA;;;;;;;;;;;;0;2;2;KO;KO
 2026-07-08;2.1.0;Somalia_NationalLeague_2026;18;Jeenyo;Gantaalaha Afgooye;Jeenyo - Gantaalaha Afgooye;75.48;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Valley_2026;23;Toledo Villa;Northern Indiana;Toledo Villa - Northern Indiana;75.05;ALTA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Southeast_2026;25;Brave SC;Inter Gainesville;Brave SC - Inter Gainesville;74.0;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_SouthCentral_2026;20;Montgomery United;Columbus United;Montgomery United - Columbus United;74.0;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Heartland_2026;23;RKC SC;Chicago Dutch Lions;RKC SC - Chicago Dutch Lions;73.25;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_GreatForest_2026;25;Cleveland Force;Steel City;Cleveland Force - Steel City;72.67;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueOne_2026;23;New York Cosmos;FC Naples;New York Cosmos - FC Naples;72.1;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Metropolitan_2026;25;Morris Elite;Westchester Flames;Morris Elite - Westchester Flames;71.49;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_LoneStar_2026;25;Laredo Heat;GFI Woodlands;Laredo Heat - GFI Woodlands;71.06;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_MidSouth_2026;18;Little Rock Rangers;Memphis FC;Little Rock Rangers - Memphis FC;70.42;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_SouthCentral_2026;20;Apotheos;Dothan United;Apotheos - Dothan United;69.03;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Southwest_2026;27;Ventura;Stars FC;Ventura - Stars FC;68.36;MEDIA;;;;;;;;;;;;;;;;
+2026-07-08;2.1.0;USA_USLLeagueTwo_Valley_2026;23;Toledo Villa;Northern Indiana;Toledo Villa - Northern Indiana;75.05;ALTA;;;;;;;;;;;;2;3;5;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_Southeast_2026;25;Brave SC;Inter Gainesville;Brave SC - Inter Gainesville;74.0;MEDIA;;;;;;;;;;;;4;2;6;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_SouthCentral_2026;20;Montgomery United;Columbus United;Montgomery United - Columbus United;74.0;MEDIA;;;;;;;;;;;;0;2;2;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_Heartland_2026;23;RKC SC;Chicago Dutch Lions;RKC SC - Chicago Dutch Lions;73.25;MEDIA;;;;;;;;;;;;4;2;6;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_GreatForest_2026;25;Cleveland Force;Steel City;Cleveland Force - Steel City;72.67;MEDIA;;;;;;;;;;;;0;1;1;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueOne_2026;23;New York Cosmos;FC Naples;New York Cosmos - FC Naples;72.1;MEDIA;;;;;;;;;;;;1;0;1;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_Metropolitan_2026;25;Morris Elite;Westchester Flames;Morris Elite - Westchester Flames;71.49;MEDIA;;;;;;;;;;;;1;1;2;KO;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_LoneStar_2026;25;Laredo Heat;GFI Woodlands;Laredo Heat - GFI Woodlands;71.06;MEDIA;;;;;;;;;;;;3;0;3;OK;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_MidSouth_2026;18;Little Rock Rangers;Memphis FC;Little Rock Rangers - Memphis FC;70.42;MEDIA;;;;;;;;;;;;1;0;1;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_SouthCentral_2026;20;Apotheos;Dothan United;Apotheos - Dothan United;69.03;MEDIA;;;;;;;;;;;;0;2;2;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueTwo_Southwest_2026;27;Ventura;Stars FC;Ventura - Stars FC;68.36;MEDIA;;;;;;;;;;;;0;0;0;KO;KO
 2026-07-08;2.1.0;Bhutan_PremierLeague_2026;9;Transport United;BFF Academy U19;Transport United - BFF Academy U19;68.18;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_SouthAtlantic_2026;36;SC United Bantams;Charlotte Independ. 2;SC United Bantams - Charlotte Independ. 2;68.04;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_SouthFlorida_2026;18;Fort Lauderdale;Weston;Fort Lauderdale - Weston;66.94;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_SouthAtlantic_2026;36;North Carolina FC U23;Charlotte Eagles;North Carolina FC U23 - Charlotte Eagles;64.6;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Metropolitan_2026;25;Cedar;Ironbound SC;Cedar - Ironbound SC;64.35;MEDIA;;;;;;;;;;;;;;;;
+2026-07-08;2.1.0;USA_USLLeagueTwo_SouthAtlantic_2026;36;SC United Bantams;Charlotte Independ. 2;SC United Bantams - Charlotte Independ. 2;68.04;MEDIA;;;;;;;;;;;;1;4;5;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_SouthFlorida_2026;18;Fort Lauderdale;Weston;Fort Lauderdale - Weston;66.94;MEDIA;;;;;;;;;;;;3;1;4;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_SouthAtlantic_2026;36;North Carolina FC U23;Charlotte Eagles;North Carolina FC U23 - Charlotte Eagles;64.6;MEDIA;;;;;;;;;;;;3;5;8;OK;OK
+2026-07-08;2.1.0;USA_USLLeagueTwo_Metropolitan_2026;25;Cedar;Ironbound SC;Cedar - Ironbound SC;64.35;MEDIA;;;;;;;;;;;;2;2;4;OK;OK
 2026-07-08;2.1.0;Finland_Kakkonen_GroupB_2026;12;MuSa;GrIFK;MuSa - GrIFK;63.38;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueTwo_Ranger_2026;21;West Texas;Lubbock Matadors;West Texas - Lubbock Matadors;62.34;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLLeagueOne_2026;23;Greenville;Sarasota Paradise;Greenville - Sarasota Paradise;60.78;MEDIA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLChampionship_2026;22;Sacramento Republic;Rhode Island;Sacramento Republic - Rhode Island;57.98;BASSA;;;;;;;;;;;;;;;;
-2026-07-08;2.1.0;USA_USLChampionship_2026;22;Hartford Athletic;Orange County SC;Hartford Athletic - Orange County SC;50.9;BASSA;;;;;;;;;;;;;;;;
+2026-07-08;2.1.0;USA_USLLeagueTwo_Ranger_2026;21;West Texas;Lubbock Matadors;West Texas - Lubbock Matadors;62.34;MEDIA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-08;2.1.0;USA_USLLeagueOne_2026;23;Greenville;Sarasota Paradise;Greenville - Sarasota Paradise;60.78;MEDIA;;;;;;;;;;;;0;0;0;KO;KO
+2026-07-08;2.1.0;USA_USLChampionship_2026;22;Sacramento Republic;Rhode Island;Sacramento Republic - Rhode Island;57.98;BASSA;;;;;;;;;;;;2;1;3;OK;OK
+2026-07-08;2.1.0;USA_USLChampionship_2026;22;Hartford Athletic;Orange County SC;Hartford Athletic - Orange County SC;50.9;BASSA;;;;;;;;;;;;2;2;4;OK;OK
 2026-07-08;2.1.0;Kazakhstan_FirstLeague_2026;22;Aktobe 2;Khan Tengri;Aktobe 2 - Khan Tengri;77.49;ALTA;;;;;;;;;;;;;;;;
 2026-07-08;2.1.0;Kazakhstan_FirstLeague_2026;22;Jaiyq;Tobol 2;Jaiyq - Tobol 2;73.37;MEDIA;;;;;;;;;;;;;;;;
 2026-07-08;2.1.0;Kazakhstan_FirstLeague_2026;22;Akademiya Ontustik;Arys;Akademiya Ontustik - Arys;73.19;MEDIA;;;;;;;;;;;;;;;;
