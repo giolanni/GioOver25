@@ -10,14 +10,17 @@ RESULTS_DIR = Path("data/storico/risultati")
 
 FIELDNAMES = [
     "PredictionDate",
-    "AlgorithmVersion",
     "LeagueId",
     "Round",
     "Home",
     "Away",
-    "Match",
     "Score",
     "Band",
+    "HG",
+    "AG",
+    "Goals",
+    "Over25",
+    "BTTS",
     "Reason",
     "RankingGapScore",
     "HomeAttackScore",
@@ -29,11 +32,7 @@ FIELDNAMES = [
     "HomeVenueOverScore",
     "AwayVenueOverScore",
     "BTTSProfileScore",
-    "HG",
-    "AG",
-    "Goals",
-    "Over25",
-    "BTTS",
+    "AlgorithmVersion",
 ]
 
 
@@ -87,7 +86,6 @@ def append_predictions(
             "Round": row["Round"],
             "Home": row["Home"],
             "Away": row["Away"],
-            "Match": row["Match"],
             "Score": row["Score"],
             "Band": row["Band"],
             "HG": "",

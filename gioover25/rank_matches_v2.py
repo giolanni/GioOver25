@@ -22,14 +22,17 @@ OUTPUT_DIR = Path("data/output_ranking")
 
 FIELDNAMES = [
     "PredictionDate",
-    "AlgorithmVersion",
     "LeagueId",
     "Round",
     "Home",
     "Away",
-    "Match",
     "Score",
     "Band",
+    "HG",
+    "AG",
+    "Goals",
+    "Over25",
+    "BTTS",
     "Reason",
     "RankingGapScore",
     "HomeAttackScore",
@@ -41,11 +44,7 @@ FIELDNAMES = [
     "HomeVenueOverScore",
     "AwayVenueOverScore",
     "BTTSProfileScore",
-    "HG",
-    "AG",
-    "Goals",
-    "Over25",
-    "BTTS",
+    "AlgorithmVersion",
 ]
 
 
@@ -93,14 +92,17 @@ def build_output_row(
 ) -> dict:
     return {
         "PredictionDate": prediction_date,
-        "AlgorithmVersion": algorithm_version,
         "LeagueId": league_id,
         "Round": round_number,
         "Home": home,
         "Away": away,
-        "Match": f"{home} - {away}",
         "Score": score_value(score, "score"),
         "Band": score_value(score, "band"),
+        "HG": "",
+        "AG": "",
+        "Goals": "",
+        "Over25": "",
+        "BTTS": "",
         "Reason": score_value(score, "reason"),
         "RankingGapScore": score_value(score, "ranking_gap_score"),
         "HomeAttackScore": score_value(score, "home_attack_score"),
@@ -112,11 +114,7 @@ def build_output_row(
         "HomeVenueOverScore": score_value(score, "home_venue_over_score"),
         "AwayVenueOverScore": score_value(score, "away_venue_over_score"),
         "BTTSProfileScore": score_value(score, "btts_profile_score"),
-        "HG": "",
-        "AG": "",
-        "Goals": "",
-        "Over25": "",
-        "BTTS": "",
+        "AlgorithmVersion": algorithm_version,
     }
 
 

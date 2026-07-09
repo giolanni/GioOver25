@@ -1,6 +1,13 @@
 ﻿LeagueId;Season;Round;Date;Home;Away;HG;AG;Notes
+Bhutan_PremierLeague_2026;2026;;2026-07-09;Transport United;BFF Academy U19;4;2;
 Bolivia_DivisionProfesional_2026;2026;;2026-07-09;Real Oruro;Universitario de Vinto;4;1;
 Bolivia_DivisionProfesional_2026;2026;;2026-07-09;Real Potosi;Academia del Balompie;2;3;
+Estonia_Esiliiga_2026;2026;;2026-07-09;Maardu;Flora U21;3;2;
+Finland_Kakkonen_GroupB_2026;2026;;2026-07-09;MuSa;GrIFK;3;1;
+Kazakhstan_FirstLeague_2026;2026;;2026-07-09;Akademiya Ontustik;Arys;1;2;
+Kazakhstan_FirstLeague_2026;2026;;2026-07-09;Aktobe 2;Khan Tengri;5;2;
+Kazakhstan_FirstLeague_2026;2026;;2026-07-09;Jaiyq;Tobol 2;1;0;
+Somalia_NationalLeague_2026;2026;;2026-07-09;Jeenyo;Gantaalaha Afgooye;3;2;
 USA_USLChampionship_2026;2026;;2026-07-09;Hartford Athletic;Orange County SC;2;2;
 USA_USLChampionship_2026;2026;;2026-07-09;Sacramento Republic;Rhode Island;2;1;
 USA_USLLeagueOne_2026;2026;;2026-07-09;Greenville;Sarasota Paradise;0;0;
@@ -15,7 +22,7 @@ USA_USLLeagueTwo_SouthFlorida_2026;2026;;2026-07-09;Fort Lauderdale;Weston;1;0;
 USA_USLLeagueTwo_GreatLakes_2026;2026;;2026-07-09;Kalamazoo FC;Lansing City;3;0;
 USA_USLLeagueTwo_SouthFlorida_2026;2026;;2026-07-09;Lakeland United;Miami City;1;0;
 USA_USLLeagueTwo_MidAtlantic_2026;2026;;2026-07-09;Ocean City;LVU Rush;2;2;
-USA_USLLeagueTwo_Chesapeake_2026;2026;;2026-07-09;Patuxent;Christos;0;0;
+USA_USLLeagueTwo_Chesapeake_2026;2026;;2026-07-09;Patuxent;Christos;1;2;
 USA_USLLeagueTwo_MidAtlantic_2026;2026;;2026-07-09;RC New Jersey;West Chester Utd;0;2;
 USA_USLLeagueTwo_MidAtlantic_2026;2026;;2026-07-09;Reading;Philadelphia Lone Star;0;0;
 USA_USLLeagueTwo_SouthAtlantic_2026;2026;;2026-07-09;Salem City;Tobacco Road;1;3;
