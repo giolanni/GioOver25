@@ -8,7 +8,7 @@ Ranking solo v20:
 python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v20
 
 Ranking ogni engines:
-python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine all
+python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_07_11.csv --engine all
 
 Aggiorna esiti ranking per tutti gli engines:
 python -m gioover25.update_ranking_results

@@ -79,28 +79,41 @@ def append_predictions(
     added = 0
 
     for row in rows:
-        new_row = {
-            "PredictionDate": datetime.now().strftime("%Y-%m-%d"),
-            "AlgorithmVersion": algorithm_version,
-            "LeagueId": row["LeagueId"],
-            "Round": row["Round"],
-            "Home": row["Home"],
-            "Away": row["Away"],
-            "Score": row["Score"],
-            "Band": row["Band"],
+        history_row = {
+            "PredictionDate": row.get("PredictionDate", ""),
+            "LeagueId": row.get("LeagueId", ""),
+            "Round": row.get("Round", ""),
+            "Home": row.get("Home", ""),
+            "Away": row.get("Away", ""),
+            "Score": row.get("Score", ""),
+            "Band": row.get("Band", ""),
+
             "HG": "",
             "AG": "",
             "Goals": "",
             "Over25": "",
             "BTTS": "",
+
+            "Reason": row.get("Reason", ""),
+            "RankingGapScore": row.get("RankingGapScore", ""),
+            "HomeAttackScore": row.get("HomeAttackScore", ""),
+            "AwayAttackScore": row.get("AwayAttackScore", ""),
+            "HomeDefenseWeaknessScore": row.get("HomeDefenseWeaknessScore", ""),
+            "AwayDefenseWeaknessScore": row.get("AwayDefenseWeaknessScore", ""),
+            "HomeLast10OverScore": row.get("HomeLast10OverScore", ""),
+            "AwayLast10OverScore": row.get("AwayLast10OverScore", ""),
+            "HomeVenueOverScore": row.get("HomeVenueOverScore", ""),
+            "AwayVenueOverScore": row.get("AwayVenueOverScore", ""),
+            "BTTSProfileScore": row.get("BTTSProfileScore", ""),
+            "AlgorithmVersion": row.get("AlgorithmVersion", ""),
         }
 
-        key = _key(new_row)
+        key = _key(history_row)
 
         if key in existing_keys:
             continue
 
-        history.append(new_row)
+        history.append(history_row)
         existing_keys.add(key)
         added += 1
 
