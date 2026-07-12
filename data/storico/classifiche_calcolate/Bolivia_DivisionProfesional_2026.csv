@@ -1,15 +1,15 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 11;1;Always Ready;8;5;2;1;14;5;9;17;2.125
 11;2;The Strongest;7;5;2;0;12;6;6;17;2.429
-11;3;Aurora;8;4;4;0;14;7;7;16;2.0
+11;3;Aurora;9;4;4;1;14;9;5;16;1.778
 11;4;Bolivar;8;4;2;2;19;9;10;14;1.75
 11;5;Blooming;8;3;3;2;14;10;4;12;1.5
 11;6;Independiente;7;3;3;1;11;10;1;12;1.714
 11;7;Academia del Balompie;8;4;0;4;15;19;-4;12;1.5
-11;8;Guabira;9;3;2;4;14;20;-6;11;1.222
-11;9;Universitario de Vinto;9;3;1;5;15;16;-1;10;1.111
-11;10;Oriente Petrolero;8;3;1;4;10;11;-1;10;1.25
-11;11;Nacional Potosi;7;2;2;3;9;9;0;8;1.143
+11;8;Nacional Potosi;8;3;2;3;11;9;2;11;1.375
+11;9;Guabira;9;3;2;4;14;20;-6;11;1.222
+11;10;Universitario de Vinto;9;3;1;5;15;16;-1;10;1.111
+11;11;Oriente Petrolero;8;3;1;4;10;11;-1;10;1.25
 11;12;Real Oruro;7;2;2;3;14;15;-1;8;1.143
 11;13;GV San Jose;8;2;2;4;11;15;-4;8;1.0
 11;14;SA Bulo Bulo;8;2;1;5;10;14;-4;7;0.875

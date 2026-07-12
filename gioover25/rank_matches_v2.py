@@ -12,6 +12,7 @@ from .engines.factory import get_engine, get_available_engines
 
 INPUT_REQUIRED_COLUMNS = {
     "LeagueId",
+    "MatchDate",
     "Home",
     "Away",
 }
@@ -22,6 +23,7 @@ OUTPUT_DIR = Path("data/output_ranking")
 
 FIELDNAMES = [
     "PredictionDate",
+    "MatchDate",
     "LeagueId",
     "Round",
     "Home",
@@ -78,6 +80,7 @@ def read_matches_to_rank(path: str | Path) -> list[dict]:
 def build_output_row(
     *,
     prediction_date: str,
+    match_date: str,
     algorithm_version: str,
     league_id: str,
     round_number: int,
@@ -87,6 +90,7 @@ def build_output_row(
 ) -> dict:
     return {
         "PredictionDate": prediction_date,
+        "MatchDate": match_date,
         "LeagueId": league_id,
         "Round": round_number,
         "Home": home,
@@ -129,6 +133,7 @@ def rank_matches(
 
     for row in rows:
         league_id = row["LeagueId"].strip()
+        match_date = row["MatchDate"].strip()
         home = row["Home"].strip()
         away = row["Away"].strip()
 
@@ -153,6 +158,7 @@ def rank_matches(
         results.append(
             build_output_row(
                 prediction_date=prediction_date,
+                match_date=match_date,
                 algorithm_version=algorithm_version,
                 league_id=league_id,
                 round_number=round_number,

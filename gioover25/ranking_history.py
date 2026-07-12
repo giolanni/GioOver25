@@ -1,5 +1,5 @@
 import csv
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from .history import read_results_file
@@ -10,6 +10,7 @@ RESULTS_DIR = Path("data/storico/risultati")
 
 FIELDNAMES = [
     "PredictionDate",
+    "MatchDate",
     "LeagueId",
     "Round",
     "Home",
@@ -60,11 +61,49 @@ def _write_history(engine_name: str, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
-def _key(row: dict) -> tuple[str, str, str]:
+def _normalize_team_name(value: str) -> str:
+    return " ".join(str(value or "").strip().lower().split())
+
+def _key(
+    row: dict,
+) -> tuple[str, str, str, str, str]:
+    league_id = str(
+        row.get("LeagueId", "")
+    ).strip()
+
+    match_date = str(
+        row.get("MatchDate", "")
+    ).strip()
+
+    prediction_date = str(
+        row.get("PredictionDate", "")
+    ).strip()
+
+    home = _normalize_team_name(
+        row.get("Home", "")
+    )
+
+    away = _normalize_team_name(
+        row.get("Away", "")
+    )
+
+    if match_date:
+        return (
+            "MATCH_DATE",
+            league_id,
+            match_date,
+            home,
+            away,
+        )
+
+    # Compatibilità con le vecchie righe dello storico,
+    # create prima dell'introduzione di MatchDate.
     return (
-        row["LeagueId"].strip(),
-        row["Home"].strip().lower(),
-        row["Away"].strip().lower(),
+        "PREDICTION_DATE",
+        league_id,
+        prediction_date,
+        home,
+        away,
     )
 
 
@@ -81,6 +120,7 @@ def append_predictions(
     for row in rows:
         history_row = {
             "PredictionDate": row.get("PredictionDate", ""),
+            "MatchDate": row.get("MatchDate", ""),
             "LeagueId": row.get("LeagueId", ""),
             "Round": row.get("Round", ""),
             "Home": row.get("Home", ""),
@@ -122,72 +162,173 @@ def append_predictions(
     print(f"[{engine_name}] Storico ranking aggiornato. Nuove previsioni: {added}")
 
 
-def _normalize_team_name(value: str) -> str:
-    return " ".join(str(value or "").strip().lower().split())
+def _parse_date(value: str) -> date | None:
+    raw = str(value or "").strip()
+
+    if not raw:
+        return None
+
+    try:
+        return date.fromisoformat(raw)
+    except ValueError:
+        return None
 
 
-def update_finished_matches(engine_name: str) -> None:
+def update_finished_matches(
+    engine_name: str,
+    legacy_max_days: int = 3,
+) -> None:
     history = _read_history(engine_name)
 
     if not history:
-        print(f"[{engine_name}] Storico ranking vuoto.")
+        print(
+            f"[{engine_name}] Storico ranking vuoto."
+        )
         return
 
-    results_cache = {}
+    results_cache: dict[str, list] = {}
+
     updated = 0
     not_found = 0
+    ambiguous = 0
 
     for row in history:
-        if row.get("HG", "").strip() != "" and row.get("AG", "").strip() != "":
+        if (
+            str(row.get("HG", "")).strip() != ""
+            and str(row.get("AG", "")).strip() != ""
+        ):
             continue
 
-        league_id = row["LeagueId"].strip()
-        results_file = RESULTS_DIR / f"{league_id}.csv"
+        league_id = str(
+            row.get("LeagueId", "")
+        ).strip()
+
+        results_file = (
+            RESULTS_DIR
+            / f"{league_id}.csv"
+        )
 
         if not results_file.exists():
             not_found += 1
-            print(f"[{engine_name}] File risultati mancante: {league_id}")
             continue
 
         if league_id not in results_cache:
-            matches = read_results_file(results_file)
-            match_index = {}
+            results_cache[league_id] = (
+                read_results_file(results_file)
+            )
 
-            for match in matches:
-                key = (
-                    _normalize_team_name(match.home),
-                    _normalize_team_name(match.away),
-                )
-                match_index[key] = match
-
-            results_cache[league_id] = match_index
-
-        key = (
-            _normalize_team_name(row["Home"]),
-            _normalize_team_name(row["Away"]),
+        home = _normalize_team_name(
+            row.get("Home", "")
         )
 
-        match = results_cache[league_id].get(key)
+        away = _normalize_team_name(
+            row.get("Away", "")
+        )
 
-        if match is None:
-            not_found += 1
-            print(
-                f"[{engine_name}] NON TROVATA: "
-                f"{league_id} | {row['Home']} - {row['Away']}"
+        match_date = _parse_date(
+            row.get("MatchDate", "")
+        )
+
+        candidates = []
+
+        for match in results_cache[league_id]:
+            if (
+                _normalize_team_name(match.home)
+                != home
+            ):
+                continue
+
+            if (
+                _normalize_team_name(match.away)
+                != away
+            ):
+                continue
+
+            result_date = _parse_date(
+                str(match.date)
             )
+
+            if result_date is None:
+                continue
+
+            if match_date is not None:
+                # Nuovi ranking: data esatta della partita.
+                if result_date != match_date:
+                    continue
+
+            else:
+                # Vecchi ranking: compatibilità temporanea.
+                prediction_date = _parse_date(
+                    row.get("PredictionDate", "")
+                )
+
+                if prediction_date is None:
+                    continue
+
+                last_valid_date = (
+                    prediction_date
+                    + timedelta(
+                        days=legacy_max_days
+                    )
+                )
+
+                if result_date < prediction_date:
+                    continue
+
+                if result_date > last_valid_date:
+                    continue
+
+            candidates.append(match)
+
+        if len(candidates) == 0:
+            not_found += 1
             continue
 
-        goals = match.home_goals + match.away_goals
+        if len(candidates) > 1:
+            ambiguous += 1
+            continue
+
+        match = candidates[0]
+        goals = (
+            match.home_goals
+            + match.away_goals
+        )
 
         row["HG"] = str(match.home_goals)
         row["AG"] = str(match.away_goals)
         row["Goals"] = str(goals)
-        row["Over25"] = "OK" if goals >= 3 else "KO"
-        row["BTTS"] = "OK" if match.home_goals > 0 and match.away_goals > 0 else "KO"
+
+        row["Over25"] = (
+            "OK"
+            if goals >= 3
+            else "KO"
+        )
+
+        row["BTTS"] = (
+            "OK"
+            if (
+                match.home_goals > 0
+                and match.away_goals > 0
+            )
+            else "KO"
+        )
 
         updated += 1
 
-    _write_history(engine_name, history)
+    _write_history(
+        engine_name,
+        history,
+    )
 
-    print(f"[{engine_name}] Risultati aggiornati nello storico ranking: {updated}")
-    print(f"[{engine_name}] Partite non trovate: {not_found}")
+    print(
+        f"[{engine_name}] "
+        f"Risultati aggiornati: {updated}"
+    )
+    print(
+        f"[{engine_name}] "
+        f"Partite non trovate: {not_found}"
+    )
+    print(
+        f"[{engine_name}] "
+        f"Partite ambigue: {ambiguous}"
+    )

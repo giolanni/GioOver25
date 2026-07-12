@@ -1,15 +1,15 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-19;1;Northcote City;19;12;3;4;34;19;15;39;2.053
-19;2;Melbourne Knights;19;12;2;5;34;16;18;38;2.0
-19;3;Brunswick Juventus;19;12;0;7;35;26;9;36;1.895
-19;4;Bulleen;19;8;5;6;32;26;6;29;1.526
-19;5;Melbourne Srbija;18;9;2;7;24;21;3;29;1.611
-19;6;Eltham Redbacks;19;8;4;7;45;34;11;28;1.474
-19;7;North Geelong;18;9;1;8;32;34;-2;28;1.556
-19;8;Melbourne Victory U21;19;8;3;8;43;35;8;27;1.421
-19;9;Brunswick City;19;8;2;9;38;39;-1;26;1.368
-19;10;Manningham United Blues;19;8;2;9;33;38;-5;26;1.368
-19;11;Western Utd. U21;19;8;1;10;38;45;-7;25;1.316
-19;12;Langwarrin;19;6;4;9;33;42;-9;22;1.158
-19;13;North Sunshine Eagles;19;4;3;12;23;36;-13;15;0.789
-19;14;Port Melbourne Sharks;19;2;4;13;10;43;-33;10;0.526
+20;1;Melbourne Knights;20;13;2;5;35;16;19;41;2.05
+20;2;Northcote City;20;12;3;5;34;20;14;39;1.95
+20;3;Brunswick Juventus;20;13;0;7;40;30;10;39;1.95
+20;4;Bulleen;19;8;5;6;32;26;6;29;1.526
+20;5;Melbourne Srbija;18;9;2;7;24;21;3;29;1.611
+20;6;Eltham Redbacks;19;8;4;7;45;34;11;28;1.474
+20;7;Melbourne Victory U21;20;8;4;8;46;38;8;28;1.4
+20;8;North Geelong;18;9;1;8;32;34;-2;28;1.556
+20;9;Brunswick City;19;8;2;9;38;39;-1;26;1.368
+20;10;Manningham United Blues;19;8;2;9;33;38;-5;26;1.368
+20;11;Western Utd. U21;20;8;1;11;42;50;-8;25;1.25
+20;12;Langwarrin;20;6;5;9;36;45;-9;23;1.15
+20;13;North Sunshine Eagles;19;4;3;12;23;36;-13;15;0.789
+20;14;Port Melbourne Sharks;19;2;4;13;10;43;-33;10;0.526
