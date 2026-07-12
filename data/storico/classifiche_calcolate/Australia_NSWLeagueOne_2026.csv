@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 23;1;Blacktown Spartans;22;14;5;3;56;30;26;47;2.136
-23;2;Northern Tigers;22;12;6;4;39;19;20;42;1.909
-23;3;Bankstown City Lions;23;12;4;7;40;37;3;40;1.739
-23;4;Macarthur Rams;23;11;6;6;30;24;6;39;1.696
-23;5;Canterbury Bankstown;22;11;5;6;54;36;18;38;1.727
-23;6;Hills United;22;9;5;8;38;36;2;32;1.455
-23;7;Rydalmere Lions;22;8;7;7;32;34;-2;31;1.409
-23;8;Bulls Academy;22;9;3;10;39;31;8;30;1.364
-23;9;Hakoah Sydney;22;7;8;7;39;37;2;29;1.318
+23;2;Northern Tigers;23;12;7;4;41;21;20;43;1.87
+23;3;Canterbury Bankstown;23;12;5;6;56;37;19;41;1.783
+23;4;Bankstown City Lions;23;12;4;7;40;37;3;40;1.739
+23;5;Macarthur Rams;23;11;6;6;30;24;6;39;1.696
+23;6;Rydalmere Lions;23;9;7;7;33;34;-1;34;1.478
+23;7;Bulls Academy;23;10;3;10;44;34;10;33;1.435
+23;8;Hills United;23;9;6;8;40;38;2;33;1.435
+23;9;Hakoah Sydney;23;7;9;7;40;38;2;30;1.304
 23;10;Central Coast Mariners U23;22;7;6;9;39;43;-4;27;1.227
-23;11;Hurstville Zagreb;22;7;5;10;33;37;-4;26;1.182
-23;12;Inter Lions;22;7;3;12;27;40;-13;24;1.091
-23;13;Dulwich Hill;22;5;8;9;23;39;-16;23;1.045
-23;14;Newcastle Jets U23;22;5;7;10;41;50;-9;22;1.0
-23;15;Prospect United;22;2;12;8;21;39;-18;18;0.818
-23;16;Western City Rangers;22;4;4;14;26;45;-19;16;0.727
+23;11;Hurstville Zagreb;23;7;6;10;34;38;-4;27;1.174
+23;12;Inter Lions;23;7;4;12;29;42;-13;25;1.087
+23;13;Newcastle Jets U23;23;5;8;10;43;52;-9;23;1.0
+23;14;Dulwich Hill;23;5;8;10;26;44;-18;23;1.0
+23;15;Prospect United;23;2;12;9;22;41;-19;18;0.783
+23;16;Western City Rangers;23;4;4;15;26;46;-20;16;0.696

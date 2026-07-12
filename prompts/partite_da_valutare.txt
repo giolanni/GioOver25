@@ -8,7 +8,7 @@ Devi generare il CSV input per rank_matches_v2.py.
 
 Formato obbligatorio:
 
-LeagueId;Home;Away
+LeagueId;MatchDate;Home;Away
 
 REGOLA FONDAMENTALE:
 - Devi usare SOLO LeagueId già presenti nel league_registry.csv che ti fornisco.
