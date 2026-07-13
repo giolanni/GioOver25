@@ -1,5 +1,6 @@
 ﻿Country;League;Season;Round;Date;Home;Away;HG;AG;Notes
 USA;USL League Two - Ranger Division;2026;1;2026-05-10;Fort Worth Vaqueros;Denton Diablos;0;4;
+USA;USL League Two - Ranger Division;2026;1;2026-06-30;Hill Country Lobos;Lonestar;3;5;
 USA;USL League Two - Ranger Division;2026;2;2026-05-17;Fort Worth Vaqueros;Lubbock Matadors;0;1;
 USA;USL League Two - Ranger Division;2026;2;2026-05-17;McKinney Chupacabras;Denton Diablos;2;1;
 USA;USL League Two - Ranger Division;2026;3;2026-05-20;Fort Worth Vaqueros;Texoma;0;7;
@@ -27,3 +28,9 @@ USA;USL League Two - Ranger Division;2026;17;2026-06-25;West Texas;Fort Worth Va
 USA;USL League Two - Ranger Division;2026;18;2026-06-28;Lubbock Matadors;Texoma;1;2;
 USA;USL League Two - Ranger Division;2026;19;2026-06-28;West Texas;Denton Diablos;5;5;
 USA;USL League Two - Ranger Division;2026;20;2026-07-02;Denton Diablos;West Texas;3;2;
+USA;USL League Two - Ranger Division;2026;21;2026-07-04;Fort Worth Vaqueros;West Texas;0;6;
+USA;USL League Two - Ranger Division;2026;21;2026-07-08;Texoma;Denton Diablos;3;2;
+USA;USL League Two - Ranger Division;2026;21;2026-07-09;West Texas;Lubbock Matadors;1;0;
+USA;USL League Two - Ranger Division;2026;22;2026-07-12;Denton Diablos;Fort Worth Vaqueros;1;0;
+USA;USL League Two - Ranger Division;2026;22;2026-07-12;Lubbock Matadors;West Texas;0;2;
+USA;USL League Two - Ranger Division;2026;22;2026-07-12;McKinney Chupacabras;Texoma;1;2;

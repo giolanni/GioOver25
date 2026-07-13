@@ -1,5 +1,7 @@
 ﻿Country;League;Season;Round;Date;Home;Away;HG;AG;Notes
 USA;USL League Two - Southeast Division;2026;1;2026-05-16;Brooke House;Nona;1;1;
+USA;USL League Two - Southeast Division;2026;1;2026-07-12;Columbus United;East Atlanta;4;1;
+USA;USL League Two - Southeast Division;2026;1;2026-07-12;Dothan United;Apotheos;3;0;
 USA;USL League Two - Southeast Division;2026;2;2026-05-17;Shark Coast;Sporting Jax 2;1;1;
 USA;USL League Two - Southeast Division;2026;3;2026-05-21;Nona;Shark Coast;5;1;
 USA;USL League Two - Southeast Division;2026;4;2026-05-22;Brooke House;Sporting Jax 2;0;1;
@@ -29,3 +31,6 @@ USA;USL League Two - Southeast Division;2026;22;2026-06-25;Brave SC;Inter Gaines
 USA;USL League Two - Southeast Division;2026;23;2026-06-28;Brave SC;Brooke House;4;1;
 USA;USL League Two - Southeast Division;2026;24;2026-07-01;Inter Gainesville;Brooke House;3;1;
 USA;USL League Two - Southeast Division;2026;24;2026-07-05;Sporting Jax 2;Brave SC;1;0;
+USA;USL League Two - Southeast Division;2026;25;2026-07-04;Inter Gainesville;Nona;3;0;
+USA;USL League Two - Southeast Division;2026;25;2026-07-09;Brave SC;Inter Gainesville;2;1;
+USA;USL League Two - Southeast Division;2026;26;2026-07-12;Nona;Inter Gainesville;2;2;

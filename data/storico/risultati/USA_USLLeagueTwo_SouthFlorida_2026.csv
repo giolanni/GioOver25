@@ -1,6 +1,7 @@
 ﻿Country;League;Season;Round;Date;Home;Away;HG;AG;Notes
 USA;USL League Two - South Florida Division;2026;1;2026-05-14;Brevard SC;Lakeland United;2;3;
 USA;USL League Two - South Florida Division;2026;1;2026-05-14;Weston;Miami;0;0;
+USA;USL League Two - South Florida Division;2026;1;2026-06-29;Miami AC;Brevard;3;2;
 USA;USL League Two - South Florida Division;2026;1;2026-07-05;Inter Gainesville;Nona;2;0;
 USA;USL League Two - South Florida Division;2026;2;2026-05-17;Weston;Fort Lauderdale;0;2;
 USA;USL League Two - South Florida Division;2026;2;2026-07-09;Brave SC;Inter Gainesville;2;1;
@@ -33,3 +34,4 @@ USA;USL League Two - South Florida Division;2026;17;2026-07-02;Weston;Brevard SC
 USA;USL League Two - South Florida Division;2026;17;2026-07-09;Lakeland United;Miami City;1;0;
 USA;USL League Two - South Florida Division;2026;18;2026-07-09;Fort Lauderdale;Weston;1;0;
 USA;USL League Two - South Florida Division;2026;18;2026-07-11;Miami City;Lakeland United;0;2;
+USA;USL League Two - South Florida Division;2026;19;2026-07-06;Miami City;Miami;0;2;

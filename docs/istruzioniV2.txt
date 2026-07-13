@@ -31,6 +31,24 @@ python -m gioover25.rebuild_ranking_history --engine v13
 python -m gioover25.rebuild_ranking_history --engine v20
 python -m gioover25.rebuild_ranking_history --engine v21
 
+#TROVARE RISULTATI MANCANTI
+python -m gioover25.missing_results
+python -m gioover25.missing_results --csv "data\output_ranking\risultati_mancanti.csv"
+
+# Solo fascia ALTA
+python -m gioover25.missing_results --band ALTA
+
+# Solo fascia MEDIA
+python -m gioover25.missing_results --band MEDIA
+
+# Escludendo le leghe australiane
+python -m gioover25.missing_results --exclude-australia
+
+# Fascia ALTA senza Australia
+python -m gioover25.missing_results --band ALTA --exclude-australia
+
+#VERIFICARE LA PRESENZA DI PARTITE DUPLICATE IN STORICO RISULTATI
+python -m gioover25.find_duplicate_results_different_dates
 
 Test principali
 pytest tests/test_history.py -s

@@ -1,12 +1,16 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-18;1;Canberra Croatia;15;12;1;2;43;16;27;37;2.467
-18;2;Monaro Panthers;15;12;0;3;53;22;31;36;2.4
-18;3;Tigers FC;16;10;2;4;43;20;23;32;2.0
-18;4;Tuggeranong Utd;14;10;0;4;34;29;5;30;2.143
-18;5;Canberra Juventus;14;9;1;4;32;23;9;28;2.0
-18;6;Queanbeyan City;14;8;1;5;30;21;9;25;1.786
-18;7;Canberra Olympic;15;5;1;9;32;41;-9;16;1.067
-18;8;O'Connor Knights;15;5;0;10;15;30;-15;15;1.0
-18;9;Belconnen Utd.;15;2;2;11;23;34;-11;8;0.533
-18;10;Brindabella;14;2;1;11;9;44;-35;7;0.5
-18;11;Canberra White Eagles;15;1;1;13;11;45;-34;4;0.267
+19;1;Monaro Panthers;17;14;0;3;71;22;49;42;2.471
+19;2;Canberra Croatia;16;13;1;2;46;16;30;40;2.5
+19;3;Tigers FC;18;12;2;4;47;20;27;38;2.111
+19;4;Canberra Juventus;16;11;1;4;34;23;11;34;2.125
+19;5;Tuggeranong Utd;14;10;0;4;34;29;5;30;2.143
+19;6;Queanbeyan City;14;8;1;5;30;21;9;25;1.786
+19;7;Canberra Olympic;17;5;1;11;32;47;-15;16;0.941
+19;8;O'Connor Knights;15;5;0;10;15;30;-15;15;1.0
+19;9;Belconnen Utd.;16;2;2;12;23;35;-12;8;0.5
+19;10;Brindabella;15;2;1;12;9;53;-44;7;0.467
+19;11;Canberra White Eagles;16;1;1;14;11;47;-36;4;0.25
+19;12;Canberra Croatia FC;1;1;0;0;3;0;3;3;3.0
+19;13;Belconnen United;1;0;0;1;0;1;-1;0;0.0
+19;14;Canberra White Eagles FC;1;0;0;1;0;2;-2;0;0.0
+19;15;Brindabella Blues FC;1;0;0;1;0;9;-9;0;0.0

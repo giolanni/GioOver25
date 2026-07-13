@@ -1,17 +1,25 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-23;1;Blacktown Spartans;22;14;5;3;56;30;26;47;2.136
-23;2;Northern Tigers;23;12;7;4;41;21;20;43;1.87
-23;3;Canterbury Bankstown;23;12;5;6;56;37;19;41;1.783
-23;4;Bankstown City Lions;23;12;4;7;40;37;3;40;1.739
-23;5;Macarthur Rams;23;11;6;6;30;24;6;39;1.696
-23;6;Rydalmere Lions;23;9;7;7;33;34;-1;34;1.478
-23;7;Bulls Academy;23;10;3;10;44;34;10;33;1.435
-23;8;Hills United;23;9;6;8;40;38;2;33;1.435
-23;9;Hakoah Sydney;23;7;9;7;40;38;2;30;1.304
-23;10;Central Coast Mariners U23;22;7;6;9;39;43;-4;27;1.227
-23;11;Hurstville Zagreb;23;7;6;10;34;38;-4;27;1.174
-23;12;Inter Lions;23;7;4;12;29;42;-13;25;1.087
-23;13;Newcastle Jets U23;23;5;8;10;43;52;-9;23;1.0
-23;14;Dulwich Hill;23;5;8;10;26;44;-18;23;1.0
-23;15;Prospect United;23;2;12;9;22;41;-19;18;0.783
-23;16;Western City Rangers;23;4;4;15;26;46;-20;16;0.696
+25;1;Blacktown Spartans;25;17;5;3;68;33;35;56;2.24
+25;2;Northern Tigers;24;13;7;4;43;22;21;46;1.917
+25;3;Macarthur Rams;24;12;6;6;33;26;7;42;1.75
+25;4;Canterbury Bankstown;23;12;5;6;56;37;19;41;1.783
+25;5;Bankstown City Lions;24;12;5;7;42;39;3;41;1.708
+25;6;Rydalmere Lions;23;9;7;7;33;34;-1;34;1.478
+25;7;Bulls Academy;23;10;3;10;44;34;10;33;1.435
+25;8;Hills United;23;9;6;8;40;38;2;33;1.435
+25;9;Hakoah Sydney;23;7;9;7;40;38;2;30;1.304
+25;10;Hurstville Zagreb;23;7;6;10;34;38;-4;27;1.174
+25;11;Central Coast Mariners U23;23;7;6;10;39;45;-6;27;1.174
+25;12;Inter Lions;23;7;4;12;29;42;-13;25;1.087
+25;13;Newcastle Jets U23;23;5;8;10;43;52;-9;23;1.0
+25;14;Dulwich Hill;23;5;8;10;26;44;-18;23;1.0
+25;15;Prospect United;23;2;12;9;22;41;-19;18;0.783
+25;16;Western City Rangers;23;4;4;15;26;46;-20;16;0.696
+25;17;Mt Druitt Town Rangers;1;1;0;0;3;2;1;3;3.0
+25;18;Rydalmere;2;1;0;1;3;4;-1;3;1.5
+25;19;Dulwich Hill FC;1;0;1;0;2;2;0;1;1.0
+25;20;Inter Lions FC;1;0;0;1;2;3;-1;0;0.0
+25;21;Northbridge FC Bulls;1;0;0;1;2;3;-1;0;0.0
+25;22;Central Coast Mariners Youth;1;0;0;1;1;2;-1;0;0.0
+25;23;Hills United FC;1;0;0;1;1;2;-1;0;0.0
+25;24;Newcastle Jets Youth;1;0;0;1;2;7;-5;0;0.0
