@@ -1,0 +1,161 @@
+﻿RowId;LeagueId;MatchDate;Home;Away;Band;Outcome;SourceFile;Reason
+0;Iceland_BestaDeildKarla_2026;;Keflavik;Fram;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+1;Latvia_Virsliga_2026;;Super Nova;Ogre United;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+2;Lithuania_Toplyga_2026;;Suduva;Transinvest;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+3;Sweden_Allsvenskan_2026;;Brommapojkarna;GAIS;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+4;Sweden_Allsvenskan_2026;;Hacken;Djurgarden;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+5;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;;Crown Legacy;Orlando City B;ALTA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+6;USA_MLSNextPro_WesternConference_CentralDivision_2026;;Austin FC II;Colorado Rapids 2;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+7;USA_MLSNextPro_WesternConference_CentralDivision_2026;;Huntsville;Chicago Fire II;BASSA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+8;USA_MLSNextPro_WesternConference_PacificDivision_2026;;Los Angeles FC 2;Real Monarchs;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+9;USA_MLSNextPro_WesternConference_PacificDivision_2026;;Tacoma Defiance;Portland Timbers 2;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+10;USA_USLLeagueOne_2026;;AV Alta;Charlotte Independ.;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+11;USA_USLLeagueTwo_Chesapeake_2026;;Christos;Loudoun 2;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+12;USA_USLLeagueTwo_Chesapeake_2026;;Northern Virginia;Patuxent;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+13;USA_USLLeagueTwo_GreatLakes_2026;;Lansing City;Flint City;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+14;USA_USLLeagueTwo_Metropolitan_2026;;Ironbound SC;Staten Island ASC;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+15;USA_USLLeagueTwo_MidSouth_2026;;Little Rock Rangers;Louisiana;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+16;USA_USLLeagueTwo_NorCal_2026;;Marin;Glens SC;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+17;USA_USLLeagueTwo_NorCal_2026;;San Francisco City;Academica SC;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+18;USA_USLLeagueTwo_Northwest_2026;;Bigfoot;Portland Bangers;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+19;USA_USLLeagueTwo_SouthAtlantic_2026;;North Carolina FC U23;Asheville City;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+20;USA_USLLeagueTwo_SouthCentral_2026;;East Atlanta;Birmingham 2;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+21;Australia_NPLACT_2026;;Monaro Panthers;Queanbeyan City;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+22;Australia_NPLNorthernNSW_2026;;Charlestown Azzurri;Weston Bears;ALTA;;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+23;Australia_NPLQueensland_2026;;Gold Coast Knights;Queensland Lions;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+24;Australia_SAStateLeague_2026;;Cove FC;Modbury;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+25;Bhutan_PremierLeague_2026;;Drukpa;Thimphu FC;BASSA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+26;Finland_Kakkonen_GroupC_2026;;JBK;Narpes Kraft;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+27;Kyrgyzstan_PremierLiga_2026;;Asia Talas;Abdysh-Ata;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+28;Kyrgyzstan_PremierLiga_2026;;Kyrgyzaltyn;Talant;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+29;Kyrgyzstan_PremierLiga_2026;;Neftchi Kochkor-Ata;Aldier;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+30;USA_USLLeagueTwo_GreatForest_2026;;Lorain County Leviathan;Erie Sports Center;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+31;USA_USLLeagueTwo_Heartland_2026;;Rochester FC;Minneapolis City;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+32;USA_USLLeagueTwo_LoneStar_2026;;Lonestar SC;Hill Country Lobos;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+33;USA_USLLeagueTwo_Northeast_2026;;Black Rock;Seacoast Utd Phantoms;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+34;USA_USLLeagueTwo_Southwest_2026;;Stars FC;Tucson;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+35;USA_USLLeagueTwo_Valley_2026;;Kings Hammer Columbus;Dayton;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+36;Australia_NPLNorthernNSW_2026;;Kahibah;Maitland;ALTA;;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+37;Bhutan_PremierLeague_2026;;Paro;Tensung;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+38;Bolivia_DivisionProfesional_2026;;Real Oruro;Universitario de Vinto;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+39;Bolivia_DivisionProfesional_2026;;Real Potosi;Academia del Balompie;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+40;Finland_Kakkonen_GroupC_2026;;Jaro 2;SJK Akatemia 2;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+41;Kyrgyzstan_PremierLiga_2026;;Alay Osh;Toktogul;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+42;Kyrgyzstan_PremierLiga_2026;;Alga;Dordoi Bishkek;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+43;USA_MLSNextPro_WesternConference_PacificDivision_2026;;San Jose Earthquakes II;Sporting Kansas City II;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+44;USA_MLSNextPro_WesternConference_PacificDivision_2026;;Vancouver 2;Ventura County;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+45;USA_USLLeagueTwo_Chesapeake_2026;;Christos;Loudoun 2;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+46;USA_USLLeagueTwo_GreatForest_2026;;Akron City;Pittsburgh Riverhounds 2;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+47;USA_USLLeagueTwo_GreatLakes_2026;;Union FC Macomb;Ann Arbor;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+48;USA_USLLeagueTwo_GreatPlains_2026;;Springfield FC;Menace;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+49;USA_USLLeagueTwo_GreatPlains_2026;;Sunflower State;Peoria;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+50;USA_USLLeagueTwo_Metropolitan_2026;;Hudson Valley;Motown 2;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+51;USA_USLLeagueTwo_MidAtlantic_2026;;Delaware;Eagle FC;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+52;USA_USLLeagueTwo_Mountain_2026;;Colorado Storm;Atletico Union;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+53;USA_USLLeagueTwo_Mountain_2026;;Real Colorado;Albion Colorado;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+54;USA_USLLeagueTwo_NorCal_2026;;Glens SC;Almaden;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+55;USA_USLLeagueTwo_Northeast_2026;;AC Connecticut;Western Mass Pioneers;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+56;USA_USLLeagueTwo_Northeast_2026;;NEFC;Boston City;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+57;USA_USLLeagueTwo_Northeast_2026;;Vermont Green;Connecticut Rush;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+58;USA_USLLeagueTwo_Northwest_2026;;Tacoma Stars;Midlakes United;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+59;USA_USLLeagueTwo_Ranger_2026;;Texoma;Denton Diablos;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+60;USA_USLLeagueTwo_Southwest_2026;;Capo;Southern California;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+61;USA_USLLeagueTwo_Valley_2026;;West Virginia;Louisville City 2;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+62;Bhutan_PremierLeague_2026;;Transport United;BFF Academy U19;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+63;Bolivia_DivisionProfesional_2026;;Real Oruro;Universitario de Vinto;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+64;Bolivia_DivisionProfesional_2026;;Real Potosi;Academia del Balompie;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+65;Estonia_Esiliiga_2026;;Maardu;Flora U21;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+66;Finland_Kakkonen_GroupB_2026;;MuSa;GrIFK;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+67;Kazakhstan_FirstLeague_2026;;Akademiya Ontustik;Arys;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+68;Kazakhstan_FirstLeague_2026;;Aktobe 2;Khan Tengri;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+69;Kazakhstan_FirstLeague_2026;;Jaiyq;Tobol 2;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+70;Somalia_NationalLeague_2026;;Jeenyo;Gantaalaha Afgooye;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+71;USA_USLChampionship_2026;;Hartford Athletic;Orange County SC;BASSA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+72;USA_USLChampionship_2026;;Sacramento Republic;Rhode Island;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+73;USA_USLLeagueOne_2026;;Greenville;Sarasota Paradise;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+74;USA_USLLeagueOne_2026;;New York Cosmos;FC Naples;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+75;USA_USLLeagueTwo_Chesapeake_2026;;Bethesda SC;Virginia Marauders;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+76;USA_USLLeagueTwo_Chesapeake_2026;;Northern Virginia;Lionsbridge;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+77;USA_USLLeagueTwo_Chesapeake_2026;;Patuxent;Christos;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+78;USA_USLLeagueTwo_Chesapeake_2026;;Virginia Beach;Annapolis Blues;ALTA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+79;USA_USLLeagueTwo_GreatForest_2026;;Cleveland Force;Steel City;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+80;USA_USLLeagueTwo_GreatLakes_2026;;Kalamazoo FC;Lansing City;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+81;USA_USLLeagueTwo_Heartland_2026;;River Light;Rockford Raptors;ALTA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+82;USA_USLLeagueTwo_Heartland_2026;;RKC SC;Chicago Dutch Lions;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+83;USA_USLLeagueTwo_Heartland_2026;;Rochester FC;St. Croix;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+84;USA_USLLeagueTwo_LoneStar_2026;;Houston FC;Houston Sur;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+85;USA_USLLeagueTwo_LoneStar_2026;;Laredo Heat;GFI Woodlands;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+86;USA_USLLeagueTwo_LoneStar_2026;;San Antonio FC 2;Twin City Toucans;ALTA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+87;USA_USLLeagueTwo_Metropolitan_2026;;Cedar;Ironbound SC;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+88;USA_USLLeagueTwo_Metropolitan_2026;;Manhattan;New Jersey Copa;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+89;USA_USLLeagueTwo_Metropolitan_2026;;Morris Elite;Westchester Flames;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+90;USA_USLLeagueTwo_MidAtlantic_2026;;Ocean City;LVU Rush;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+91;USA_USLLeagueTwo_MidAtlantic_2026;;RC New Jersey;West Chester Utd;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+92;USA_USLLeagueTwo_MidAtlantic_2026;;Reading;Philadelphia Lone Star;ALTA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+93;USA_USLLeagueTwo_MidSouth_2026;;Jackson Boom;Hattiesburg;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+94;USA_USLLeagueTwo_MidSouth_2026;;Little Rock Rangers;Memphis FC;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+95;USA_USLLeagueTwo_MidSouth_2026;;Mississippi Brilla;Louisiana;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+96;USA_USLLeagueTwo_NorCal_2026;;Academica SC;San Juan;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+97;USA_USLLeagueTwo_NorCal_2026;;Davis Legacy;San Francisco City;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+98;USA_USLLeagueTwo_NorCal_2026;;Project 51O;Marin;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+99;USA_USLLeagueTwo_Northeast_2026;;Black Rock;Boston Bolts;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+100;USA_USLLeagueTwo_Northwest_2026;;Bigfoot;Ballard;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+101;USA_USLLeagueTwo_Ranger_2026;;West Texas;Lubbock Matadors;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+102;USA_USLLeagueTwo_SouthAtlantic_2026;;North Carolina FC U23;Charlotte Eagles;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+103;USA_USLLeagueTwo_SouthAtlantic_2026;;Salem City;Tobacco Road;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+104;USA_USLLeagueTwo_SouthAtlantic_2026;;SC United Bantams;Charlotte Independ. 2;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+105;USA_USLLeagueTwo_SouthAtlantic_2026;;Wake FC;Port City;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+106;USA_USLLeagueTwo_SouthCentral_2026;;Apotheos;Dothan United;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+107;USA_USLLeagueTwo_SouthCentral_2026;;Montgomery United;Columbus United;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+108;USA_USLLeagueTwo_SouthCentral_2026;;Swarm FC;East Atlanta;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+109;USA_USLLeagueTwo_SouthFlorida_2026;;Fort Lauderdale;Weston;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+110;USA_USLLeagueTwo_SouthFlorida_2026;;Lakeland United;Miami City;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+111;USA_USLLeagueTwo_Southeast_2026;;Brave SC;Inter Gainesville;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+112;USA_USLLeagueTwo_Southwest_2026;;City SC;AMSG FC;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+113;USA_USLLeagueTwo_Southwest_2026;;Ventura;Stars FC;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+114;USA_USLLeagueTwo_Valley_2026;;Toledo Villa;Northern Indiana;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+115;Australia_NPLQueensland_2026;;Brisbane Roar U23;Rochedale;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+116;Australia_NPLQueensland_2026;;Peninsula;Wynnum Wolves;ALTA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+117;Australia_NPLTasmania_2026;;Glenorchy Knights;Kingborough Lions;ALTA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+118;Australia_NPLTasmania_2026;;Launceston United;Riverside Olympic;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+119;Australia_NPLVictoria_2026;;Dandenong City;South Melbourne;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+120;Australia_NPLVictoria_2026;;Green Gully;Altona Magic;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+121;Australia_NPLVictoria_2026;;Oakleigh;Avondale FC;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+122;Australia_NPLVictoria_2026;;Preston Lions;Hume City;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+123;Australia_NSWLeagueOne_2026;;Macarthur Rams;Bankstown City Lions;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+124;Australia_QueenslandPremierLeague_2026;;Holland Park Hawks;North Star;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+125;Australia_VictoriaPremierLeague2_2026;;Eastern Lions;Werribee City;BASSA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+126;Australia_VictoriaPremierLeague2_2026;;Essendon Royals SC;Box Hill;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+127;Australia_VictoriaPremierLeague2_2026;;Whittlesea United;Kingston City;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+128;Australia_VictoriaPremierLeague_2026;;Brunswick Juventus;Western Utd. U21;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+129;Australia_VictoriaPremierLeague_2026;;Langwarrin;Melbourne Victory U21;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+130;Australia_VictoriaPremierLeague_2026;;Northcote City;Melbourne Knights;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+131;Belarus_PershayaLiga_2026;;FC Slonim;Niva Dolbizno;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+132;Belarus_PershayaLiga_2026;;Ostrovets;SKA-1938;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+133;Belarus_VysshayaLiga_2026;;Dnepr Mogilev;FC Minsk;BASSA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+134;Bolivia_DivisionProfesional_2026;;Nacional Potosi;Aurora;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+135;Estonia_Meistriliiga_2026;;Harju JK Laagri;Narva;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+136;Finland_Kakkonen_GroupB_2026;;Abo;Ilves 2;ALTA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+137;Finland_Kakkonen_GroupC_2026;;GBK Kokkola;JBK;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+138;Finland_Veikkausliiga_2026;;VPS;SJK;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+139;Finland_Ykkonen_2026;;Inter Turku 2;Rovaniemi;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+140;Finland_Ykkonen_2026;;Tampere Utd;SalPa;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+141;Finland_Ykkosliiga_2026;;KTP;JaPS;BASSA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+142;Finland_Ykkosliiga_2026;;PK-35;KaPa;BASSA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+143;Iceland_Division_1_2026;;Aegir;Kopavogur;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+144;Iceland_Division_1_2026;;IR Reykjavik;Throttur;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+145;Iceland_Division_1_2026;;Leiknir;Grotta;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+146;Iceland_Division_1_2026;;Njardvik;Grindavik;BASSA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+147;Kazakhstan_FirstLeague_2026;;FC Batyr;Kairat Almaty 2;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+148;Kazakhstan_FirstLeague_2026;;Kaspij Aktau 2;Taraz;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+149;Kazakhstan_FirstLeague_2026;;Shakhter K.;Turan;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+150;Kazakhstan_FirstLeague_2026;;Yelimay Semey 2;FC Astana 2;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+151;Kyrgyzstan_PremierLiga_2026;;Alay Osh;Toktogul;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+152;Kyrgyzstan_PremierLiga_2026;;Asiagoal Bishkek;Bars;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+153;Kyrgyzstan_PremierLiga_2026;;Bishkek City;Muras United;BASSA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+154;Kyrgyzstan_PremierLiga_2026;;Ilbirs;Ozgon;BASSA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+155;Somalia_NationalLeague_2026;;Badbaado;Jazeera;MEDIA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+156;USA_USLLeagueTwo_GreatLakes_2026;;Midwest United;Union FC Macomb;ALTA;;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+157;USA_USLLeagueTwo_Mountain_2026;;Real Colorado;Flatirons;ALTA;OK;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+158;USA_USLLeagueTwo_Northeast_2026;;NEFC;Albany Rush;ALTA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
+159;USA_USLLeagueTwo_Valley_2026;;Dayton;West Virginia;MEDIA;KO;data\storico\ranking\v25\storico_ranking_v25.csv;Nessun ranking originale trovato con la chiave esatta
