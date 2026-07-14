@@ -3,299 +3,236 @@
 GioOver2.5 - analysis/laboratory/candidate_rules.py
 ===============================================================================
 
-SCOPO
------
-Genera automaticamente tutte le regole semplici del tipo
+Genera tutte le regole semplici del tipo
 
-Driver >= soglia
+    Driver <= soglia
+    Driver >= soglia
 
-Driver <= soglia
+utilizzando il dataset del laboratorio.
 
-e ne misura l'efficacia.
+Input:
+    analysis/laboratory/data/02_drivers.csv
 
-INPUT
-
-analysis/laboratory/data/02_drivers.csv
-
-OUTPUT
-
-analysis/laboratory/data/05_candidate_rules.csv
-
+Output:
+    analysis/laboratory/data/05_candidate_rules.csv
 ===============================================================================
 """
 
 from collections import defaultdict
-import csv
 from pathlib import Path
+import csv
 
 
 INPUT = Path("analysis/laboratory/data/02_drivers.csv")
-
 OUTPUT = Path("analysis/laboratory/data/05_candidate_rules.csv")
 
 
-# ------------------------------------------------------------------
-
-
-def to_float(v):
-
+def to_float(value):
     try:
-
-        return float(str(v).replace(",", "."))
-
-    except:
-
+        return float(str(value).replace(",", "."))
+    except Exception:
         return None
 
 
-# ------------------------------------------------------------------
+def generate_candidate_rules():
 
+    rows = []
 
-rows = []
+    with open(INPUT, encoding="utf-8-sig") as f:
 
-with open(INPUT, encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f, delimiter=";")
 
-    reader = csv.DictReader(f, delimiter=";")
+        for r in reader:
 
-    for r in reader:
+            value = to_float(r["Value"])
 
-        value = to_float(r["Value"])
+            if value is None:
+                continue
 
-        if value is None:
-            continue
+            rows.append(
+                {
+                    "MatchId": r["MatchId"],
+                    "Driver": r["Driver"],
+                    "Value": value,
+                    "Band": r["Band"],
+                    "Outcome": r["Outcome"],
+                }
+            )
 
-        rows.append({
+    driver_values = defaultdict(list)
 
-            "MatchId": r["MatchId"],
+    for r in rows:
+        driver_values[r["Driver"]].append(r["Value"])
 
-            "Driver": r["Driver"],
+    rules = []
 
-            "Value": value,
+    for driver, values in driver_values.items():
 
-            "Band": r["Band"],
+        thresholds = sorted(set(values))
 
-            "Outcome": r["Outcome"],
+        data = [x for x in rows if x["Driver"] == driver]
 
-        })
+        for threshold in thresholds:
 
+            #
+            # <=
+            #
 
-# ------------------------------------------------------------------
+            counters = {
 
+                "ALTA_OK": 0,
+                "ALTA_KO": 0,
 
-driver_values = defaultdict(list)
+                "MEDIA_OK": 0,
+                "MEDIA_KO": 0,
 
-for r in rows:
+            }
 
-    driver_values[r["Driver"]].append(r["Value"])
+            occ = 0
 
+            for r in data:
 
-# ------------------------------------------------------------------
+                if r["Value"] <= threshold:
 
+                    occ += 1
 
-rules = []
+                    key = f'{r["Band"]}_{r["Outcome"]}'
 
+                    if key in counters:
+                        counters[key] += 1
 
-for driver, values in driver_values.items():
+            if occ:
 
-    thresholds = sorted(set(values))
+                alta = counters["ALTA_OK"] + counters["ALTA_KO"]
+                media = counters["MEDIA_OK"] + counters["MEDIA_KO"]
 
-    data = [x for x in rows if x["Driver"] == driver]
+                rules.append({
 
-    for threshold in thresholds:
+                    "Driver": driver,
+                    "Operator": "<=",
+                    "Threshold": threshold,
+                    "Occurrences": occ,
 
-        #
-        # <=
-        #
+                    **counters,
 
-        counters = {
+                    "AltaHit":
+                        round(counters["ALTA_OK"] / alta, 4)
+                        if alta else "",
 
-            "ALTA_OK": 0,
-            "ALTA_KO": 0,
+                    "MediaHit":
+                        round(counters["MEDIA_OK"] / media, 4)
+                        if media else "",
 
-            "MEDIA_OK": 0,
-            "MEDIA_KO": 0,
+                })
 
-        }
+            #
+            # >=
+            #
 
-        occ = 0
+            counters = {
 
-        for r in data:
+                "ALTA_OK": 0,
+                "ALTA_KO": 0,
 
-            if r["Value"] <= threshold:
+                "MEDIA_OK": 0,
+                "MEDIA_KO": 0,
 
-                occ += 1
+            }
 
-                key = f'{r["Band"]}_{r["Outcome"]}'
+            occ = 0
 
-                if key in counters:
+            for r in data:
 
-                    counters[key] += 1
+                if r["Value"] >= threshold:
 
-        if occ:
+                    occ += 1
 
-            alta = counters["ALTA_OK"] + counters["ALTA_KO"]
+                    key = f'{r["Band"]}_{r["Outcome"]}'
 
-            media = counters["MEDIA_OK"] + counters["MEDIA_KO"]
+                    if key in counters:
+                        counters[key] += 1
 
-            rules.append({
+            if occ:
 
-                "Driver": driver,
+                alta = counters["ALTA_OK"] + counters["ALTA_KO"]
+                media = counters["MEDIA_OK"] + counters["MEDIA_KO"]
 
-                "Operator": "<=",
+                rules.append({
 
-                "Threshold": threshold,
+                    "Driver": driver,
+                    "Operator": ">=",
+                    "Threshold": threshold,
+                    "Occurrences": occ,
 
-                "Occurrences": occ,
+                    **counters,
 
-                **counters,
+                    "AltaHit":
+                        round(counters["ALTA_OK"] / alta, 4)
+                        if alta else "",
 
-                "AltaHit":
+                    "MediaHit":
+                        round(counters["MEDIA_OK"] / media, 4)
+                        if media else "",
 
-                    round(
-                        counters["ALTA_OK"] / alta,
-                        4
-                    ) if alta else "",
+                })
 
-                "MediaHit":
-
-                    round(
-                        counters["MEDIA_OK"] / media,
-                        4
-                    ) if media else "",
-
-            })
-
-        #
-        # >=
-        #
-
-        counters = {
-
-            "ALTA_OK": 0,
-            "ALTA_KO": 0,
-
-            "MEDIA_OK": 0,
-            "MEDIA_KO": 0,
-
-        }
-
-        occ = 0
-
-        for r in data:
-
-            if r["Value"] >= threshold:
-
-                occ += 1
-
-                key = f'{r["Band"]}_{r["Outcome"]}'
-
-                if key in counters:
-
-                    counters[key] += 1
-
-        if occ:
-
-            alta = counters["ALTA_OK"] + counters["ALTA_KO"]
-
-            media = counters["MEDIA_OK"] + counters["MEDIA_KO"]
-
-            rules.append({
-
-                "Driver": driver,
-
-                "Operator": ">=",
-
-                "Threshold": threshold,
-
-                "Occurrences": occ,
-
-                **counters,
-
-                "AltaHit":
-
-                    round(
-                        counters["ALTA_OK"] / alta,
-                        4
-                    ) if alta else "",
-
-                "MediaHit":
-
-                    round(
-                        counters["MEDIA_OK"] / media,
-                        4
-                    ) if media else "",
-
-            })
-
-
-# ------------------------------------------------------------------
-
-
-rules.sort(
-
-    key=lambda x: (
-
-        x["Driver"],
-
-        x["Operator"],
-
-        x["Threshold"],
-
+    rules.sort(
+        key=lambda x: (
+            x["Driver"],
+            x["Operator"],
+            x["Threshold"],
+        )
     )
 
-)
+    with open(
+        OUTPUT,
+        "w",
+        newline="",
+        encoding="utf-8-sig",
+    ) as f:
+
+        writer = csv.DictWriter(
+
+            f,
+
+            fieldnames=[
+
+                "Driver",
+
+                "Operator",
+
+                "Threshold",
+
+                "Occurrences",
+
+                "ALTA_OK",
+
+                "ALTA_KO",
+
+                "MEDIA_OK",
+
+                "MEDIA_KO",
+
+                "AltaHit",
+
+                "MediaHit",
+
+            ],
+
+            delimiter=";",
+
+        )
+
+        writer.writeheader()
+        writer.writerows(rules)
+
+    print(f"{len(rules)} candidate rules generated")
 
 
-# ------------------------------------------------------------------
+def main() -> int:
+    generate_candidate_rules()
+    return 0
 
 
-with open(
-
-    OUTPUT,
-
-    "w",
-
-    newline="",
-
-    encoding="utf-8-sig"
-
-) as f:
-
-    writer = csv.DictWriter(
-
-        f,
-
-        fieldnames=[
-
-            "Driver",
-
-            "Operator",
-
-            "Threshold",
-
-            "Occurrences",
-
-            "ALTA_OK",
-
-            "ALTA_KO",
-
-            "MEDIA_OK",
-
-            "MEDIA_KO",
-
-            "AltaHit",
-
-            "MediaHit",
-
-        ],
-
-        delimiter=";"
-
-    )
-
-    writer.writeheader()
-
-    writer.writerows(rules)
-
-
-print(len(rules), "candidate rules generated")
+if __name__ == "__main__":
+    raise SystemExit(main())

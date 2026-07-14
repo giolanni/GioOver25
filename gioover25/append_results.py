@@ -149,6 +149,8 @@ import shutil
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
+import subprocess
+import sys
 
 from .history import MatchResult, read_results_file, write_results_file
 from .registry import get_league_info
@@ -156,6 +158,7 @@ from .standings import generate_current_standings_file
 from .ranking_history import update_finished_matches
 from gioover25.league_over_map import rebuild_league_over_map
 from gioover25.engines.factory import get_available_engines
+
 
 
 INPUT_REQUIRED_COLUMNS = {
@@ -1238,6 +1241,40 @@ def append_results(
         f"{archive_file}"
     )
 
+def _run_post_update_tasks() -> None:
+    commands = [
+        (
+            "aggiornamento storico ranking",
+            [sys.executable, "-m", "gioover25.update_ranking_results"],
+        ),
+        (
+            "aggiornamento laboratory",
+            [sys.executable, "-m", "analysis.laboratory.run_all"],
+        ),
+        (
+            "aggiornamento candidate rules",
+            [sys.executable, "-m", "analysis.laboratory.candidate_rules"],
+        ),
+        (
+            "aggiornamento metrics",
+            [sys.executable, "-m", "analysis.metrics.analyze_metrics"],
+        ),
+    ]
+
+    for description, command in commands:
+        print(f"\nAvvio {description}...")
+
+        result = subprocess.run(
+            command,
+            check=False,
+        )
+
+        if result.returncode != 0:
+            print(
+                f"[WARN] {description} non completato "
+                f"(codice {result.returncode})."
+            )
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(
@@ -1263,7 +1300,7 @@ def main() -> None:
     append_results(
         args.input_file
     )
-
+    _run_post_update_tasks() #aggiorna metriche e laboratory
 
 if __name__ == "__main__":
     main()

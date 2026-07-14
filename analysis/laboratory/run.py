@@ -1,23 +1,29 @@
 """
-===============================================================================
-GioOver2.5 - analysis/laboratory/run.py
-===============================================================================
-
-Punto di ingresso del laboratorio.
+Esegue l'intero laboratorio.
 
 Uso:
-
-    python -m analysis.laboratory.run
-
-oppure
-
-    python analysis/laboratory/run.py
-
-===============================================================================
+    python -m analysis.laboratory.run_all
 """
 
-from .build_laboratory import main
+from .build_laboratory import main as build_laboratory
+from .distributions import main as build_distributions
+from .candidate_rules import main as build_candidate_rules
+
+
+def main() -> int:
+    print("=== BUILD LABORATORY ===")
+    build_laboratory()
+
+    print("\n=== DISTRIBUTIONS ===")
+    build_distributions()
+
+    print("\n=== CANDIDATE RULES ===")
+    build_candidate_rules()
+
+    print("\nLaboratorio aggiornato.")
+
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

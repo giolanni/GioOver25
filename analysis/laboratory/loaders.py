@@ -110,8 +110,18 @@ def load_csv(path):
             current = {}
 
             for k, v in row.items():
+                field = normalize(k)
+                value = v.strip() if isinstance(v, str) else v
 
-                current[normalize(k)] = v.strip() if isinstance(v, str) else v
+                # Non sovrascrive un valore già presente con un campo vuoto.
+                if field in current:
+                    existing = str(current.get(field, "") or "").strip()
+                    incoming = str(value or "").strip()
+
+                    if existing and not incoming:
+                        continue
+
+                current[field] = value
 
             current["SourceFile"] = str(path)
 
