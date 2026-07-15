@@ -102,23 +102,93 @@ def _base_key(row: dict) -> tuple[str, str, str]:
     )
 
 
-def _row_date(row: dict) -> tuple[date | None, str]:
-    match_date = _parse_date(
-        row.get("MatchDate")
+def _candidate_date_score(
+    history_row: dict,
+    ranking_row: dict,
+) -> tuple[int, int, str] | None:
+    history_match_date = _parse_date(
+        history_row.get("MatchDate")
+    )
+    history_prediction_date = _parse_date(
+        history_row.get("PredictionDate")
     )
 
-    if match_date is not None:
-        return match_date, "MATCH_DATE"
-
-    prediction_date = _parse_date(
-        row.get("PredictionDate")
+    ranking_match_date = _parse_date(
+        ranking_row.get("MatchDate")
+    )
+    ranking_prediction_date = _parse_date(
+        ranking_row.get("PredictionDate")
     )
 
-    if prediction_date is not None:
-        return prediction_date, "PREDICTION_DATE"
+    comparisons = []
 
-    return None, ""
+    if history_match_date is not None:
+        if ranking_match_date is not None:
+            comparisons.append((
+                0,
+                abs(
+                    (
+                        history_match_date
+                        - ranking_match_date
+                    ).days
+                ),
+                "MATCH_DATE_TO_MATCH_DATE",
+            ))
 
+        elif ranking_prediction_date is not None:
+            comparisons.append((
+                2,
+                abs(
+                    (
+                        history_match_date
+                        - ranking_prediction_date
+                    ).days
+                ),
+                "MATCH_DATE_TO_PREDICTION_DATE",
+            ))
+
+    elif history_prediction_date is not None:
+        if ranking_prediction_date is not None:
+            comparisons.append((
+                0,
+                abs(
+                    (
+                        history_prediction_date
+                        - ranking_prediction_date
+                    ).days
+                ),
+                "PREDICTION_DATE_TO_PREDICTION_DATE",
+            ))
+
+        elif ranking_match_date is not None:
+            comparisons.append((
+                2,
+                abs(
+                    (
+                        history_prediction_date
+                        - ranking_match_date
+                    ).days
+                ),
+                "PREDICTION_DATE_TO_MATCH_DATE",
+            ))
+
+    valid = [
+        comparison
+        for comparison in comparisons
+        if comparison[1] <= MAX_DATE_DIFFERENCE_DAYS
+    ]
+
+    if not valid:
+        return None
+
+    valid.sort(
+        key=lambda item: (
+            item[0],
+            item[1],
+        )
+    )
+
+    return valid[0]
 
 def build_index(
     rankings: list[dict],
@@ -152,15 +222,6 @@ def _find_ranking(
     str,
     int,
 ]:
-    """
-    Restituisce:
-
-        ranking trovato
-        modalità matching
-        differenza giorni
-        motivo diagnostico
-        numero candidati base
-    """
     candidates = ranking_index.get(
         _base_key(history_row),
         [],
@@ -175,87 +236,65 @@ def _find_ranking(
             0,
         )
 
-    history_date, history_date_type = (
-        _row_date(history_row)
-    )
-
-    if history_date is None:
-        if len(candidates) == 1:
-            return (
-                candidates[0],
-                "TEAM_ONLY",
-                None,
-                "",
-                1,
-            )
-
-        return (
-            None,
-            "",
-            None,
-            "HISTORY_DATE_MISSING_MULTIPLE_CANDIDATES",
-            len(candidates),
-        )
-
-    dated_candidates = []
+    scored_candidates = []
 
     for ranking in candidates:
-        ranking_date, ranking_date_type = (
-            _row_date(ranking)
+        score = _candidate_date_score(
+            history_row,
+            ranking,
         )
 
-        if ranking_date is None:
+        if score is None:
             continue
 
-        distance = abs(
-            (
-                history_date
-                - ranking_date
-            ).days
-        )
+        priority, distance, mode = score
 
-        if distance > MAX_DATE_DIFFERENCE_DAYS:
-            continue
+        scored_candidates.append((
+            priority,
+            distance,
+            ranking,
+            mode,
+        ))
 
-        date_priority = (
-            0
-            if ranking_date_type == "MATCH_DATE"
-            else 1
-        )
-
-        dated_candidates.append(
-            (
-                distance,
-                date_priority,
-                ranking,
-                ranking_date_type,
-            )
-        )
-
-    if dated_candidates:
-        dated_candidates.sort(
+    if scored_candidates:
+        scored_candidates.sort(
             key=lambda item: (
                 item[0],
                 item[1],
             )
         )
 
-        (
-            distance,
-            _priority,
-            ranking,
-            ranking_date_type,
-        ) = dated_candidates[0]
+        best_priority = scored_candidates[0][0]
+        best_distance = scored_candidates[0][1]
 
-        match_mode = (
-            f"{history_date_type}"
-            f"_TO_"
-            f"{ranking_date_type}"
-        )
+        best_candidates = [
+            item
+            for item in scored_candidates
+            if (
+                item[0] == best_priority
+                and item[1] == best_distance
+            )
+        ]
+
+        if len(best_candidates) > 1:
+            return (
+                None,
+                "",
+                None,
+                "AMBIGUOUS_SAME_DATE_PRIORITY",
+                len(candidates),
+            )
+
+        (
+            _priority,
+            distance,
+            ranking,
+            mode,
+        ) = best_candidates[0]
 
         return (
             ranking,
-            match_mode,
+            mode,
             distance,
             "",
             len(candidates),
@@ -277,7 +316,6 @@ def _find_ranking(
         "NO_DATE_CANDIDATE_WITHIN_WINDOW",
         len(candidates),
     )
-
 
 def _write_unmatched(
     rows: list[dict],

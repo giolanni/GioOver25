@@ -457,7 +457,14 @@ def update_finished_matches(
                 continue
 
             if match_date is not None:
-                if result_date != match_date:
+                # Tolleranza per partite spostate di pochi giorni.
+                first_valid_date = match_date - timedelta(days=2)
+                last_valid_date = match_date + timedelta(days=2)
+
+                if result_date < first_valid_date:
+                    continue
+
+                if result_date > last_valid_date:
                     continue
 
             else:
