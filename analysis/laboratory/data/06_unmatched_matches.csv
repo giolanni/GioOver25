@@ -1,0 +1,8 @@
+﻿LeagueId;PredictionDate;MatchDate;Home;Away;Band;Outcome;HG;AG;Reason;BaseCandidates;HistorySource
+USA_USLLeagueTwo_Chesapeake_2026;2026-07-06;;Christos;Loudoun 2;ALTA;OK;3;4;NO_DATE_CANDIDATE_WITHIN_WINDOW;2;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW_2026;2026-07-07;;Charlestown Azzurri;Weston Bears;ALTA;;;;NO_DATE_CANDIDATE_WITHIN_WINDOW;2;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW_2026;2026-07-08;;Kahibah;Maitland;ALTA;;;;NO_DATE_CANDIDATE_WITHIN_WINDOW;2;data\storico\ranking\v25\storico_ranking_v25.csv
+Bolivia_DivisionProfesional_2026;2026-07-08;;Real Oruro;Universitario de Vinto;ALTA;OK;4;1;NO_DATE_CANDIDATE_WITHIN_WINDOW;2;data\storico\ranking\v25\storico_ranking_v25.csv
+Bolivia_DivisionProfesional_2026;2026-07-08;;Real Potosi;Academia del Balompie;ALTA;OK;2;3;NO_DATE_CANDIDATE_WITHIN_WINDOW;2;data\storico\ranking\v25\storico_ranking_v25.csv
+Kyrgyzstan_PremierLiga_2026;2026-07-08;;Alay Osh;Toktogul;BASSA;KO;1;0;NO_DATE_CANDIDATE_WITHIN_WINDOW;2;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake_2026;2026-07-08;;Christos;Loudoun 2;ALTA;OK;3;4;NO_DATE_CANDIDATE_WITHIN_WINDOW;2;data\storico\ranking\v25\storico_ranking_v25.csv

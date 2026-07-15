@@ -3,35 +3,71 @@
 GioOver2.5 - analysis/laboratory/merger.py
 ===============================================================================
 
-Unisce lo storico ranking con i ranking originali.
+SCOPO
+-----
+Unire lo storico ranking v25 con i ranking originali e produrre il dataset
+principale del laboratorio.
 
 MATCHING
 --------
-1. LeagueId + Home + Away.
-2. Confronto temporale:
+1. stessa LeagueId;
+2. stessa Home;
+3. stessa Away;
+4. confronto temporale:
    - usa MatchDate quando disponibile;
    - altrimenti usa PredictionDate;
-   - accetta una differenza massima di 2 giorni.
-3. Se esistono più candidati, sceglie quello con la distanza temporale minore.
+   - tolleranza massima configurata a ±2 giorni;
+5. se esistono più candidati, sceglie quello con distanza temporale minore.
 
-Lo storico prevale per:
-- fascia;
-- risultato reale;
-- HG;
-- AG;
-- Goals;
-- BTTS;
-- date.
+PRIORITÀ DEI DATI
+-----------------
+La riga del ranking originale fornisce i driver ex ante.
 
+La riga dello storico prevale per:
+
+    PredictionDate
+    MatchDate
+    LeagueId
+    Round
+    Home
+    Away
+    Score
+    Band
+    Outcome
+    HG
+    AG
+    Goals
+    BTTS
+    Reason
+    AlgorithmVersion
+
+FILE SCRITTI
+-------------
+Oltre a restituire le righe abbinate, produce:
+
+    analysis/laboratory/data/06_unmatched_matches.csv
+
+Il file contiene tutte le righe dello storico escluse dal laboratorio.
+
+LIMITAZIONI
+-----------
+Il matching dipende dalla coerenza di LeagueId e nomi squadra. Non vengono
+applicate normalizzazioni aggressive per evitare associazioni errate.
 ===============================================================================
 """
 
 from copy import deepcopy
 from datetime import date
+from pathlib import Path
 from typing import Any
+import csv
 
 
 MAX_DATE_DIFFERENCE_DAYS = 2
+
+UNMATCHED_FILE = Path(
+    "analysis/laboratory/data/06_unmatched_matches.csv"
+)
 
 
 def _text(value: Any) -> str:
@@ -109,18 +145,57 @@ def _find_ranking(
         tuple[str, str, str],
         list[dict]
     ],
-) -> tuple[dict | None, str, int | None]:
+) -> tuple[
+    dict | None,
+    str,
+    int | None,
+    str,
+    int,
+]:
+    """
+    Restituisce:
+
+        ranking trovato
+        modalità matching
+        differenza giorni
+        motivo diagnostico
+        numero candidati base
+    """
     candidates = ranking_index.get(
         _base_key(history_row),
         [],
     )
 
     if not candidates:
-        return None, "", None
+        return (
+            None,
+            "",
+            None,
+            "NO_TEAM_LEAGUE_CANDIDATE",
+            0,
+        )
 
     history_date, history_date_type = (
         _row_date(history_row)
     )
+
+    if history_date is None:
+        if len(candidates) == 1:
+            return (
+                candidates[0],
+                "TEAM_ONLY",
+                None,
+                "",
+                1,
+            )
+
+        return (
+            None,
+            "",
+            None,
+            "HISTORY_DATE_MISSING_MULTIPLE_CANDIDATES",
+            len(candidates),
+        )
 
     dated_candidates = []
 
@@ -129,10 +204,7 @@ def _find_ranking(
             _row_date(ranking)
         )
 
-        if (
-            history_date is None
-            or ranking_date is None
-        ):
+        if ranking_date is None:
             continue
 
         distance = abs(
@@ -145,10 +217,6 @@ def _find_ranking(
         if distance > MAX_DATE_DIFFERENCE_DAYS:
             continue
 
-        # Priorità:
-        # 1. distanza minore;
-        # 2. ranking con MatchDate;
-        # 3. ordine originale.
         date_priority = (
             0
             if ranking_date_type == "MATCH_DATE"
@@ -189,19 +257,65 @@ def _find_ranking(
             ranking,
             match_mode,
             distance,
+            "",
+            len(candidates),
         )
 
-    # Compatibilità estrema:
-    # se esiste un solo ranking con stessa lega e squadre,
-    # lo usa anche quando le date non sono disponibili.
     if len(candidates) == 1:
         return (
             candidates[0],
-            "TEAM_ONLY",
+            "TEAM_ONLY_OUTSIDE_DATE_WINDOW",
             None,
+            "",
+            1,
         )
 
-    return None, "", None
+    return (
+        None,
+        "",
+        None,
+        "NO_DATE_CANDIDATE_WITHIN_WINDOW",
+        len(candidates),
+    )
+
+
+def _write_unmatched(
+    rows: list[dict],
+) -> None:
+    fieldnames = [
+        "LeagueId",
+        "PredictionDate",
+        "MatchDate",
+        "Home",
+        "Away",
+        "Band",
+        "Outcome",
+        "HG",
+        "AG",
+        "Reason",
+        "BaseCandidates",
+        "HistorySource",
+    ]
+
+    UNMATCHED_FILE.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    with UNMATCHED_FILE.open(
+        "w",
+        newline="",
+        encoding="utf-8-sig",
+    ) as file_handle:
+        writer = csv.DictWriter(
+            file_handle,
+            fieldnames=fieldnames,
+            delimiter=";",
+            extrasaction="ignore",
+        )
+
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def merge_matches(
@@ -213,9 +327,12 @@ def merge_matches(
     )
 
     merged = []
+    unmatched_rows = []
 
     matched = 0
-    unmatched = 0
+    match_date_matches = 0
+    prediction_date_matches = 0
+    team_only_matches = 0
     match_id = 1
 
     for history_row in history:
@@ -223,18 +340,38 @@ def merge_matches(
             ranking,
             match_mode,
             date_distance,
+            unmatched_reason,
+            base_candidates,
         ) = _find_ranking(
             history_row,
             ranking_index,
         )
 
         if ranking is None:
-            unmatched += 1
+            unmatched_rows.append({
+                "LeagueId": history_row.get("LeagueId", ""),
+                "PredictionDate": history_row.get(
+                    "PredictionDate",
+                    "",
+                ),
+                "MatchDate": history_row.get("MatchDate", ""),
+                "Home": history_row.get("Home", ""),
+                "Away": history_row.get("Away", ""),
+                "Band": history_row.get("Band", ""),
+                "Outcome": history_row.get("Outcome", ""),
+                "HG": history_row.get("HG", ""),
+                "AG": history_row.get("AG", ""),
+                "Reason": unmatched_reason,
+                "BaseCandidates": base_candidates,
+                "HistorySource": history_row.get(
+                    "SourceFile",
+                    "",
+                ),
+            })
             continue
 
         row = deepcopy(ranking)
 
-        # I dati dello storico devono prevalere.
         for field in (
             "PredictionDate",
             "MatchDate",
@@ -289,12 +426,27 @@ def merge_matches(
         match_id += 1
         matched += 1
 
-    print(
-        f"Laboratory matchati: {matched}"
+        if match_mode.startswith("MATCH_DATE"):
+            match_date_matches += 1
+        elif match_mode.startswith("PREDICTION_DATE"):
+            prediction_date_matches += 1
+        else:
+            team_only_matches += 1
+
+    _write_unmatched(
+        unmatched_rows
     )
 
-    print(
-        f"Laboratory non matchati: {unmatched}"
-    )
+    print()
+    print("===== LABORATORY MERGE =====")
+    print(f"Storico caricato:          {len(history)}")
+    print(f"Ranking caricati:          {len(rankings)}")
+    print(f"Righe abbinate:            {matched}")
+    print(f"Match tramite MatchDate:   {match_date_matches}")
+    print(f"Match tramite Prediction:  {prediction_date_matches}")
+    print(f"Match solo lega/squadre:   {team_only_matches}")
+    print(f"Righe non abbinate:        {len(unmatched_rows)}")
+    print(f"Diagnostica:               {UNMATCHED_FILE}")
+    print()
 
     return merged
