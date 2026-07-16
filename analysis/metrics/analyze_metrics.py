@@ -1,51 +1,39 @@
 """
 ===============================================================================
-GioOver2.5 - Analizzatore principale delle metriche con doppia fonte
+GioOver2.5 - Analizzatore metriche basato sul Laboratory
 ===============================================================================
 
 SCOPO
 -----
-Eseguire l'analisi utilizzando:
-- storico ranking v25 per fascia ed esito reale;
-- ranking originali v25 per statistiche ex ante.
+Analizzare le metriche usando come unica fonte dati:
 
-FILE LETTI
+    analysis/laboratory/data/01_matches.csv
+
+Il file contiene già:
+- prediction;
+- driver ex ante;
+- fascia;
+- esito reale;
+- MatchStatus;
+- dati finali;
+- informazioni di matching validate dal Laboratory.
+
+FILE LETTO
 ----------
-Default storico:
-    data/storico/ranking/v25/storico_ranking_v25.csv
-
-Default ranking:
-    data/output_ranking/v25/
-
-MATCHING
---------
-Se MatchDate è presente: LeagueId + MatchDate + Home + Away.
-Altrimenti: LeagueId + PredictionDate + Home + Away.
+    analysis/laboratory/data/01_matches.csv
 
 FILE SCRITTI
 -------------
-Default:
     data/debug/metrics/v25/
-
-Oltre ai report statistici vengono prodotti:
-- unmatched_history.csv
-- unmatched_rankings.csv
 
 MODALITÀ D'USO
 --------------
     python -m analysis.metrics.analyze_metrics
 
-Oppure:
-
-    python -m analysis.metrics.analyze_metrics ^
-      --history data/storico/ranking/v25/storico_ranking_v25.csv ^
-      --rankings data/output_ranking/v25 ^
-      --output data/debug/metrics/v25
-
 LIMITAZIONI
 -----------
-Le righe storiche prive di MatchDate non possono essere abbinate con la nuova
-chiave. Restano visibili in unmatched_history.csv.
+Le righe senza esito OK/KO vengono caricate ma saranno escluse dai report
+secondo le regole già applicate dai moduli evaluator/report_writer.
 ===============================================================================
 """
 
@@ -54,7 +42,7 @@ from pathlib import Path
 from dataclasses import replace
 
 from .config import AnalysisConfig
-from .loaders import load_csv_records, merge_history_with_rankings
+from .loaders import load_csv_records
 from .feature_builder import enrich_records
 from .metric_catalog import build_metric_catalog
 from .evaluator import evaluate_metrics, build_pair_metrics
@@ -69,29 +57,54 @@ from .report_writer import (
 )
 
 
+DEFAULT_INPUT = Path(
+    "analysis/laboratory/data/01_matches.csv"
+)
+
+DEFAULT_OUTPUT = Path(
+    "data/debug/metrics/v25"
+)
+
+
 def build_parser() -> ArgumentParser:
-    parser = ArgumentParser(description="Analizza pattern ALTA/KO e MEDIA/OK.")
-    parser.add_argument(
-        "--history",
-        type=Path,
-        default=Path("data/storico/ranking/v25/storico_ranking_v25.csv"),
-        help="Storico ranking con Band e Over25=OK/KO.",
+    parser = ArgumentParser(
+        description=(
+            "Analizza pattern ALTA/KO e MEDIA/OK "
+            "usando il dataset validato del Laboratory."
+        )
     )
+
     parser.add_argument(
-        "--rankings",
+        "--input",
         type=Path,
-        default=Path("data/output_ranking/v25"),
-        help="File o cartella dei ranking originali con dati ex ante.",
+        default=DEFAULT_INPUT,
+        help="Dataset 01_matches.csv prodotto dal Laboratory.",
     )
+
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("data/debug/metrics/v25"),
+        default=DEFAULT_OUTPUT,
         help="Cartella di output dei report.",
     )
-    parser.add_argument("--min-occurrences", type=int, default=None)
-    parser.add_argument("--media-ok-threshold", type=float, default=None)
-    parser.add_argument("--no-pairs", action="store_true")
+
+    parser.add_argument(
+        "--min-occurrences",
+        type=int,
+        default=None,
+    )
+
+    parser.add_argument(
+        "--media-ok-threshold",
+        type=float,
+        default=None,
+    )
+
+    parser.add_argument(
+        "--no-pairs",
+        action="store_true",
+    )
+
     return parser
 
 
@@ -99,52 +112,176 @@ def main() -> int:
     args = build_parser().parse_args()
     config = AnalysisConfig()
 
+    if not args.input.exists():
+        raise FileNotFoundError(
+            "Dataset Laboratory non trovato: "
+            f"{args.input}. "
+            "Eseguire prima "
+            "'python -m analysis.laboratory.run_all'."
+        )
+
     if args.min_occurrences is not None:
         config = replace(
             config,
             min_occurrences_simple=args.min_occurrences,
-            min_occurrences_pair=max(args.min_occurrences, config.min_occurrences_pair),
+            min_occurrences_pair=max(
+                args.min_occurrences,
+                config.min_occurrences_pair,
+            ),
         )
+
     if args.media_ok_threshold is not None:
-        config = replace(config, min_media_ok_precision=args.media_ok_threshold)
+        config = replace(
+            config,
+            min_media_ok_precision=(
+                args.media_ok_threshold
+            ),
+        )
 
-    history_rows = load_csv_records(args.history)
-    ranking_rows = load_csv_records(args.rankings)
-
-    merged_rows, unmatched_history, unmatched_rankings = merge_history_with_rankings(
-        history_rows,
-        ranking_rows,
+    laboratory_rows = load_csv_records(
+        args.input
     )
-    rows = enrich_records(merged_rows)
 
-    simple_metrics = build_metric_catalog(config)
-    simple_eval, _ = evaluate_metrics(rows, simple_metrics, config)
+    rows = enrich_records(
+        laboratory_rows
+    )
 
-    all_metrics = list(simple_metrics)
-    all_eval = list(simple_eval)
+    simple_metrics = build_metric_catalog(
+        config
+    )
+
+    simple_eval, _ = evaluate_metrics(
+        rows,
+        simple_metrics,
+        config,
+    )
+
+    all_metrics = list(
+        simple_metrics
+    )
+
+    all_eval = list(
+        simple_eval
+    )
 
     if not args.no_pairs:
-        pair_metrics = build_pair_metrics(simple_metrics, simple_eval, config)
-        pair_eval, _ = evaluate_metrics(rows, pair_metrics, config)
-        all_metrics.extend(pair_metrics)
-        all_eval.extend(pair_eval)
+        pair_metrics = build_pair_metrics(
+            simple_metrics,
+            simple_eval,
+            config,
+        )
 
-    args.output.mkdir(parents=True, exist_ok=True)
-    write_population_summary(rows, config, args.output)
-    write_metric_catalog(all_eval, args.output)
-    write_ranked_reports(all_eval, args.output, config)
-    write_occurrences(rows, all_metrics, config, args.output)
-    write_monthly_stability(rows, all_metrics, config, args.output)
-    write_skipped_rows(rows, config, args.output)
-    write_unmatched_rows(unmatched_history, unmatched_rankings, args.output)
+        pair_eval, _ = evaluate_metrics(
+            rows,
+            pair_metrics,
+            config,
+        )
 
-    print(f"Righe storico caricate: {len(history_rows)}")
-    print(f"Righe ranking caricate: {len(ranking_rows)}")
-    print(f"Righe abbinate: {len(rows)}")
-    print(f"Storico non abbinato: {len(unmatched_history)}")
-    print(f"Ranking non abbinati: {len(unmatched_rankings)}")
-    print(f"Metriche totali valutate: {len(all_eval)}")
-    print(f"Report prodotti in: {args.output}")
+        all_metrics.extend(
+            pair_metrics
+        )
+
+        all_eval.extend(
+            pair_eval
+        )
+
+    args.output.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    write_population_summary(
+        rows,
+        config,
+        args.output,
+    )
+
+    write_metric_catalog(
+        all_eval,
+        args.output,
+    )
+
+    write_ranked_reports(
+        all_eval,
+        args.output,
+        config,
+    )
+
+    write_occurrences(
+        rows,
+        all_metrics,
+        config,
+        args.output,
+    )
+
+    write_monthly_stability(
+        rows,
+        all_metrics,
+        config,
+        args.output,
+    )
+
+    write_skipped_rows(
+        rows,
+        config,
+        args.output,
+    )
+
+    # Il matching è già stato validato dal Laboratory.
+    write_unmatched_rows(
+        [],
+        [],
+        args.output,
+    )
+
+    completed_rows = [
+        row
+        for row in rows
+        if str(
+            row.get("Outcome", "")
+        ).strip().upper()
+        in {"OK", "KO"}
+    ]
+
+    postponed_rows = [
+        row
+        for row in rows
+        if str(
+            row.get("MatchStatus", "")
+        ).strip().upper()
+        == "POSTPONED"
+    ]
+
+    print(
+        f"Righe Laboratory caricate: "
+        f"{len(laboratory_rows)}"
+    )
+
+    print(
+        f"Righe con esito OK/KO: "
+        f"{len(completed_rows)}"
+    )
+
+    print(
+        f"Righe POSTPONED: "
+        f"{len(postponed_rows)}"
+    )
+
+    print(
+        "Righe non abbinate: 0 "
+        "(matching gestito dal Laboratory)"
+    )
+
+    print(
+        f"Metriche totali valutate: "
+        f"{len(all_eval)}"
+    )
+
+    print(
+        f"Report prodotti in: "
+        f"{args.output}"
+    )
+
     return 0
 
 

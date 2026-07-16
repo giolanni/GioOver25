@@ -146,6 +146,7 @@ def load_history(path):
 def load_rankings(folder):
 
     rows = []
+    seen = set()
 
     files = sorted(folder.rglob("*.csv"))
 
@@ -153,6 +154,26 @@ def load_rankings(folder):
 
     for file in files:
 
-        rows.extend(load_csv(file))
+        for row in load_csv(file):
+
+            fingerprint = (
+                row.get("PredictionDate", ""),
+                row.get("MatchDate", ""),
+                row.get("LeagueId", ""),
+                row.get("Round", ""),
+                row.get("Home", ""),
+                row.get("Away", ""),
+                row.get("Score", ""),
+                row.get("Band", ""),
+                row.get("AlgorithmVersion", ""),
+            )
+
+            if fingerprint in seen:
+                continue
+
+            seen.add(fingerprint)
+            rows.append(row)
+
+    print(f"Ranking unici : {len(rows)}")
 
     return rows

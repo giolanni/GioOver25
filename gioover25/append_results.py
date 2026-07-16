@@ -7,7 +7,7 @@ SCOPO
 -----
 Questo script importa i risultati contenuti in un file CSV, aggiorna gli
 storici cumulativi delle singole leghe, rigenera le classifiche correnti,
-aggiorna i risultati negli storici ranking e ricostruisce la mappa statistica
+aggiorna MatchStatus e risultati negli storici ranking e ricostruisce la mappa statistica
 Over 2.5 delle leghe.
 
 Lo script gestisce inoltre:
@@ -155,7 +155,10 @@ import sys
 from .history import MatchResult, read_results_file, write_results_file
 from .registry import get_league_info
 from .standings import generate_current_standings_file
-from .ranking_history import update_finished_matches
+from .ranking_history import (
+    sync_postponed_statuses_all_engines,
+    update_finished_matches,
+)
 from gioover25.league_over_map import rebuild_league_over_map
 from gioover25.engines.factory import get_available_engines
 
@@ -1225,10 +1228,16 @@ def append_results(
             f"{SUSPECT_DUPLICATES_FILE}"
         )
 
+    # Prima assegna i risultati finali alla prediction più recente
+    # e compatibile; poi sincronizza le eventuali rinviate ancora aperte.
     for engine_name in get_available_engines():
         update_finished_matches(
             engine_name
         )
+
+    sync_postponed_statuses_all_engines(
+        get_available_engines()
+    )
 
     rebuild_league_over_map()
 
@@ -1244,16 +1253,8 @@ def append_results(
 def _run_post_update_tasks() -> None:
     commands = [
         (
-            "aggiornamento storico ranking",
-            [sys.executable, "-m", "gioover25.update_ranking_results"],
-        ),
-        (
             "aggiornamento laboratory",
             [sys.executable, "-m", "analysis.laboratory.run_all"],
-        ),
-        (
-            "aggiornamento candidate rules",
-            [sys.executable, "-m", "analysis.laboratory.candidate_rules"],
         ),
         (
             "aggiornamento metrics",

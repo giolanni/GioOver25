@@ -5,72 +5,29 @@ GioOver2.5 - ranking_history.py
 
 SCOPO
 -----
-Gestire lo storico dei ranking prodotti dagli engine GioOver2.5.
+Gestire gli storici ranking e il ciclo MatchStatus:
 
-Il modulo svolge due operazioni principali:
+    SCHEDULED -> POSTPONED -> FINAL
 
-1. append_predictions
-   Salva nello storico le nuove prediction prodotte da un engine.
-
-2. update_finished_matches
-   Cerca i risultati reali nello storico risultati e aggiorna:
-   - HG
-   - AG
-   - Goals
-   - Over25
-   - BTTS
+PRINCIPI
+--------
+- ogni nuova prediction nasce SCHEDULED;
+- una prediction presente nel registro rinviate diventa POSTPONED;
+- quando arriva il risultato finale, la prediction più recente e compatibile
+  viene aggiornata a FINAL;
+- le prediction precedenti della stessa gara restano POSTPONED;
+- MatchDate viene aggiornata alla data reale del recupero;
+- Round resta quello originario della gara rinviata quando disponibile.
 
 FILE LETTI
 ----------
-Storico ranking:
-
-    data/storico/ranking/<engine_name>/storico_ranking_<engine_name>.csv
-
-Storico risultati:
-
+    data/storico/ranking/<engine>/storico_ranking_<engine>.csv
     data/storico/risultati/<LeagueId>.csv
+    data/storico/partite_posticipate.csv
 
 FILE SCRITTI
 -------------
-Storico ranking:
-
-    data/storico/ranking/<engine_name>/storico_ranking_<engine_name>.csv
-
-LOGICA DI SALVATAGGIO
----------------------
-Ogni nuova prediction viene salvata copiando integralmente la riga prodotta
-dal ranking.
-
-In questo modo vengono conservati automaticamente:
-
-- driver dell'engine;
-- statistiche ex ante;
-- score;
-- fascia;
-- motivazioni;
-- eventuali nuove colonne aggiunte in futuro.
-
-I campi relativi al risultato reale vengono inizializzati vuoti e popolati
-successivamente da update_finished_matches.
-
-LOGICA DI MATCHING RISULTATI
-----------------------------
-Nuovi ranking:
-
-    LeagueId + MatchDate + Home + Away
-
-Vecchi ranking privi di MatchDate:
-
-    LeagueId + Home + Away
-
-con risultato compreso tra PredictionDate e:
-
-    PredictionDate + legacy_max_days
-
-LIMITAZIONI
------------
-La compatibilità tramite PredictionDate è temporanea e potrà essere eliminata
-quando tutti i ranking storici saranno stati migrati a MatchDate.
+    data/storico/ranking/<engine>/storico_ranking_<engine>.csv
 ===============================================================================
 """
 
@@ -82,6 +39,9 @@ from .history import read_results_file
 
 
 RESULTS_DIR = Path("data/storico/risultati")
+POSTPONED_FILE = Path(
+    "data/storico/partite_posticipate.csv"
+)
 
 
 BASE_FIELDNAMES = [
@@ -93,6 +53,7 @@ BASE_FIELDNAMES = [
     "Away",
     "Score",
     "Band",
+    "MatchStatus",
     "HG",
     "AG",
     "Goals",
@@ -122,10 +83,9 @@ RESULT_FIELDS = [
 ]
 
 
-def _history_file(engine_name: str) -> Path:
-    """
-    Restituisce il percorso dello storico ranking dell'engine indicato.
-    """
+def _history_file(
+    engine_name: str,
+) -> Path:
     return (
         Path("data/storico/ranking")
         / engine_name
@@ -133,19 +93,17 @@ def _history_file(engine_name: str) -> Path:
     )
 
 
-def _read_history(engine_name: str) -> list[dict]:
-    """
-    Legge lo storico ranking dell'engine.
-
-    Se il file non esiste restituisce una lista vuota.
-    """
-    path = _history_file(engine_name)
+def _read_history(
+    engine_name: str,
+) -> list[dict]:
+    path = _history_file(
+        engine_name
+    )
 
     if not path.exists():
         return []
 
-    with open(
-        path,
+    with path.open(
         newline="",
         encoding="utf-8-sig",
     ) as file_handle:
@@ -157,21 +115,19 @@ def _read_history(engine_name: str) -> list[dict]:
         )
 
 
-def _collect_fieldnames(rows: list[dict]) -> list[str]:
-    """
-    Costruisce l'header dello storico.
-
-    Le colonne standard vengono mantenute all'inizio.
-
-    Tutte le ulteriori colonne presenti nelle righe vengono aggiunte
-    automaticamente, preservando il loro ordine di prima apparizione.
-    """
-    fieldnames = list(BASE_FIELDNAMES)
+def _collect_fieldnames(
+    rows: list[dict],
+) -> list[str]:
+    fieldnames = list(
+        BASE_FIELDNAMES
+    )
 
     for row in rows:
         for field_name in row:
             if field_name not in fieldnames:
-                fieldnames.append(field_name)
+                fieldnames.append(
+                    field_name
+                )
 
     return fieldnames
 
@@ -180,38 +136,38 @@ def _write_history(
     engine_name: str,
     rows: list[dict],
 ) -> None:
-    """
-    Scrive lo storico ranking conservando tutte le colonne disponibili.
-    """
-    path = _history_file(engine_name)
+    path = _history_file(
+        engine_name
+    )
+
     path.parent.mkdir(
         parents=True,
         exist_ok=True,
     )
 
-    fieldnames = _collect_fieldnames(rows)
-
-    with open(
-        path,
+    with path.open(
         "w",
         newline="",
         encoding="utf-8-sig",
     ) as file_handle:
         writer = csv.DictWriter(
             file_handle,
-            fieldnames=fieldnames,
+            fieldnames=_collect_fieldnames(
+                rows
+            ),
             delimiter=";",
             extrasaction="ignore",
         )
 
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows(
+            rows
+        )
 
 
-def _normalize_team_name(value: str) -> str:
-    """
-    Normalizza il nome di una squadra per il matching.
-    """
+def _normalize_team_name(
+    value: str,
+) -> str:
     return " ".join(
         str(value or "")
         .strip()
@@ -220,31 +176,34 @@ def _normalize_team_name(value: str) -> str:
     )
 
 
+def _text(
+    value,
+) -> str:
+    return str(
+        value or ""
+    ).strip()
+
+
 def _key(
     row: dict,
-) -> tuple[str, str, str, str, str]:
-    """
-    Costruisce la chiave univoca della prediction.
+) -> tuple[
+    str,
+    str,
+    str,
+    str,
+    str,
+]:
+    league_id = _text(
+        row.get("LeagueId")
+    )
 
-    Se MatchDate è presente usa:
+    match_date = _text(
+        row.get("MatchDate")
+    )
 
-        MATCH_DATE + LeagueId + MatchDate + Home + Away
-
-    Altrimenti usa la modalità legacy:
-
-        PREDICTION_DATE + LeagueId + PredictionDate + Home + Away
-    """
-    league_id = str(
-        row.get("LeagueId", "")
-    ).strip()
-
-    match_date = str(
-        row.get("MatchDate", "")
-    ).strip()
-
-    prediction_date = str(
-        row.get("PredictionDate", "")
-    ).strip()
+    prediction_date = _text(
+        row.get("PredictionDate")
+    )
 
     home = _normalize_team_name(
         row.get("Home", "")
@@ -277,15 +236,10 @@ def append_predictions(
     engine_name: str,
     algorithm_version: str,
 ) -> None:
-    """
-    Aggiunge allo storico le nuove prediction.
+    history = _read_history(
+        engine_name
+    )
 
-    La riga viene copiata integralmente dal ranking in modo da conservare
-    tutte le statistiche ex ante disponibili.
-
-    I campi del risultato reale vengono sempre inizializzati vuoti.
-    """
-    history = _read_history(engine_name)
     existing_keys = {
         _key(row)
         for row in history
@@ -294,15 +248,34 @@ def append_predictions(
     added = 0
 
     for row in rows:
-        history_row = dict(row)
+        history_row = dict(
+            row
+        )
 
-        history_row["AlgorithmVersion"] = (
-            row.get("AlgorithmVersion")
+        history_row[
+            "AlgorithmVersion"
+        ] = (
+            row.get(
+                "AlgorithmVersion"
+            )
             or algorithm_version
         )
 
+        history_row[
+            "MatchStatus"
+        ] = (
+            _text(
+                row.get(
+                    "MatchStatus"
+                )
+            ).upper()
+            or "SCHEDULED"
+        )
+
         for result_field in RESULT_FIELDS:
-            history_row[result_field] = ""
+            history_row[
+                result_field
+            ] = ""
 
         for field_name in BASE_FIELDNAMES:
             history_row.setdefault(
@@ -310,13 +283,21 @@ def append_predictions(
                 "",
             )
 
-        key = _key(history_row)
+        key = _key(
+            history_row
+        )
 
         if key in existing_keys:
             continue
 
-        history.append(history_row)
-        existing_keys.add(key)
+        history.append(
+            history_row
+        )
+
+        existing_keys.add(
+            key
+        )
+
         added += 1
 
     _write_history(
@@ -334,72 +315,381 @@ def append_predictions(
 def _parse_date(
     value: str,
 ) -> date | None:
-    """
-    Converte una data ISO YYYY-MM-DD in datetime.date.
-
-    Se il valore è vuoto o non valido restituisce None.
-    """
-    raw = str(
-        value or ""
-    ).strip()
+    raw = _text(
+        value
+    )
 
     if not raw:
         return None
 
     try:
-        return date.fromisoformat(raw)
+        return date.fromisoformat(
+            raw
+        )
     except ValueError:
         return None
+
+
+def _read_postponed_rows() -> list[dict]:
+    if not POSTPONED_FILE.exists():
+        return []
+
+    with POSTPONED_FILE.open(
+        "r",
+        newline="",
+        encoding="utf-8-sig",
+    ) as file_handle:
+        return list(
+            csv.DictReader(
+                file_handle,
+                delimiter=";",
+            )
+        )
+
+
+def sync_postponed_statuses(
+    engine_name: str,
+) -> int:
+    history = _read_history(
+        engine_name
+    )
+
+    postponed_rows = (
+        _read_postponed_rows()
+    )
+
+    if not history:
+        return 0
+
+    postponed_index = {}
+
+    for postponed in postponed_rows:
+        key = (
+            _text(
+                postponed.get(
+                    "LeagueId"
+                )
+            ),
+            _normalize_team_name(
+                postponed.get(
+                    "Home",
+                    "",
+                )
+            ),
+            _normalize_team_name(
+                postponed.get(
+                    "Away",
+                    "",
+                )
+            ),
+        )
+
+        postponed_index.setdefault(
+            key,
+            [],
+        ).append(
+            postponed
+        )
+
+    updated = 0
+
+    for row in history:
+        if (
+            _text(row.get("HG"))
+            and _text(row.get("AG"))
+        ):
+            if (
+                _text(
+                    row.get(
+                        "MatchStatus"
+                    )
+                ).upper()
+                != "FINAL"
+            ):
+                row[
+                    "MatchStatus"
+                ] = "FINAL"
+                updated += 1
+            continue
+
+        key = (
+            _text(
+                row.get(
+                    "LeagueId"
+                )
+            ),
+            _normalize_team_name(
+                row.get(
+                    "Home",
+                    "",
+                )
+            ),
+            _normalize_team_name(
+                row.get(
+                    "Away",
+                    "",
+                )
+            ),
+        )
+
+        candidates = (
+            postponed_index.get(
+                key,
+                [],
+            )
+        )
+
+        if candidates:
+            row_round = _text(
+                row.get("Round")
+            )
+
+            compatible = [
+                postponed
+                for postponed
+                in candidates
+                if (
+                    not row_round
+                    or not _text(
+                        postponed.get(
+                            "Round"
+                        )
+                    )
+                    or row_round
+                    == _text(
+                        postponed.get(
+                            "Round"
+                        )
+                    )
+                )
+            ]
+
+            if compatible:
+                if (
+                    _text(
+                        row.get(
+                            "MatchStatus"
+                        )
+                    ).upper()
+                    != "POSTPONED"
+                ):
+                    row[
+                        "MatchStatus"
+                    ] = "POSTPONED"
+                    updated += 1
+                continue
+
+        # Una prediction non più presente nel registro rinviate
+        # e ancora priva di esito torna SCHEDULED.
+        if (
+            _text(
+                row.get(
+                    "MatchStatus"
+                )
+            ).upper()
+            == "POSTPONED"
+        ):
+            row[
+                "MatchStatus"
+            ] = "SCHEDULED"
+            updated += 1
+
+    if updated:
+        _write_history(
+            engine_name,
+            history,
+        )
+
+    return updated
+
+
+def sync_postponed_statuses_all_engines(
+    engine_names: list[str],
+) -> int:
+    total = 0
+
+    for engine_name in engine_names:
+        updated = (
+            sync_postponed_statuses(
+                engine_name
+            )
+        )
+
+        total += updated
+
+        if updated:
+            print(
+                f"[{engine_name}] "
+                f"MatchStatus sincronizzati: "
+                f"{updated}"
+            )
+
+    return total
+
+
+def _candidate_score(
+    row: dict,
+    match,
+    result_date: date,
+) -> tuple:
+    """
+    Minore è il punteggio, migliore è il candidato.
+
+    Preferenze:
+    1. MatchDate esatta;
+    2. Round uguale;
+    3. PredictionDate più recente ma non successiva al risultato;
+    4. distanza temporale minima.
+    """
+    row_match_date = _parse_date(
+        row.get("MatchDate", "")
+    )
+
+    prediction_date = _parse_date(
+        row.get("PredictionDate", "")
+    )
+
+    match_date_penalty = (
+        0
+        if row_match_date == result_date
+        else 1
+    )
+
+    row_round = _text(
+        row.get("Round")
+    )
+
+    match_round = _text(
+        getattr(
+            match,
+            "round",
+            "",
+        )
+    )
+
+    round_penalty = (
+        0
+        if (
+            row_round
+            and match_round
+            and row_round
+            == match_round
+        )
+        else 1
+    )
+
+    prediction_after_result = (
+        1
+        if (
+            prediction_date is not None
+            and prediction_date
+            > result_date
+        )
+        else 0
+    )
+
+    prediction_distance = (
+        abs(
+            (
+                result_date
+                - prediction_date
+            ).days
+        )
+        if prediction_date is not None
+        else 999999
+    )
+
+    # Preferisce la prediction più recente tra quelle precedenti al match.
+    prediction_recency = (
+        -prediction_date.toordinal()
+        if (
+            prediction_date is not None
+            and prediction_date
+            <= result_date
+        )
+        else 0
+    )
+
+    return (
+        match_date_penalty,
+        round_penalty,
+        prediction_after_result,
+        prediction_distance,
+        prediction_recency,
+    )
 
 
 def update_finished_matches(
     engine_name: str,
     legacy_max_days: int = 3,
+    match_date_tolerance_days: int = 2,
 ) -> None:
-    """
-    Aggiorna lo storico ranking con i risultati reali.
-
-    Per i ranking con MatchDate viene richiesto il match esatto.
-
-    Per i ranking legacy privi di MatchDate viene accettato un risultato
-    compreso tra PredictionDate e PredictionDate + legacy_max_days.
-    """
-    history = _read_history(engine_name)
+    history = _read_history(
+        engine_name
+    )
 
     if not history:
         print(
             f"[{engine_name}] "
-            f"Storico ranking vuoto."
+            "Storico ranking vuoto."
         )
         return
 
-    results_cache: dict[str, list] = {}
+    results_cache: dict[
+        str,
+        list,
+    ] = {}
 
     updated = 0
     not_found = 0
     ambiguous = 0
 
-    for row in history:
-        home_goals_value = str(
-            row.get("HG", "")
-        ).strip()
+    unresolved_rows = [
+        row
+        for row in history
+        if not (
+            _text(row.get("HG"))
+            and _text(row.get("AG"))
+        )
+    ]
 
-        away_goals_value = str(
-            row.get("AG", "")
-        ).strip()
+    grouped_rows = {}
 
-        if (
-            home_goals_value != ""
-            and away_goals_value != ""
-        ):
-            continue
+    for row in unresolved_rows:
+        key = (
+            _text(
+                row.get("LeagueId")
+            ),
+            _normalize_team_name(
+                row.get(
+                    "Home",
+                    "",
+                )
+            ),
+            _normalize_team_name(
+                row.get(
+                    "Away",
+                    "",
+                )
+            ),
+        )
 
-        league_id = str(
-            row.get("LeagueId", "")
-        ).strip()
+        grouped_rows.setdefault(
+            key,
+            [],
+        ).append(
+            row
+        )
 
+    for (
+        league_id,
+        home,
+        away,
+    ), rows in grouped_rows.items():
         if not league_id:
-            not_found += 1
+            not_found += len(
+                rows
+            )
             continue
 
         results_file = (
@@ -408,31 +698,23 @@ def update_finished_matches(
         )
 
         if not results_file.exists():
-            not_found += 1
+            not_found += len(
+                rows
+            )
             continue
 
         if league_id not in results_cache:
-            results_cache[league_id] = (
-                read_results_file(
-                    results_file
-                )
+            results_cache[
+                league_id
+            ] = read_results_file(
+                results_file
             )
 
-        home = _normalize_team_name(
-            row.get("Home", "")
-        )
+        result_candidates = []
 
-        away = _normalize_team_name(
-            row.get("Away", "")
-        )
-
-        match_date = _parse_date(
-            row.get("MatchDate", "")
-        )
-
-        candidates = []
-
-        for match in results_cache[league_id]:
+        for match in results_cache[
+            league_id
+        ]:
             if (
                 _normalize_team_name(
                     match.home
@@ -456,86 +738,224 @@ def update_finished_matches(
             if result_date is None:
                 continue
 
-            if match_date is not None:
-                # Tolleranza per partite spostate di pochi giorni.
-                first_valid_date = match_date - timedelta(days=2)
-                last_valid_date = match_date + timedelta(days=2)
+            compatible_rows = []
 
-                if result_date < first_valid_date:
-                    continue
-
-                if result_date > last_valid_date:
-                    continue
-
-            else:
-                prediction_date = _parse_date(
-                    row.get(
-                        "PredictionDate",
-                        "",
+            for row in rows:
+                row_match_date = (
+                    _parse_date(
+                        row.get(
+                            "MatchDate",
+                            "",
+                        )
                     )
                 )
 
-                if prediction_date is None:
-                    continue
-
-                last_valid_date = (
-                    prediction_date
-                    + timedelta(
-                        days=legacy_max_days
+                prediction_date = (
+                    _parse_date(
+                        row.get(
+                            "PredictionDate",
+                            "",
+                        )
                     )
                 )
 
-                if result_date < prediction_date:
+                if row_match_date is not None:
+                    first_valid = (
+                        row_match_date
+                        - timedelta(
+                            days=(
+                                match_date_tolerance_days
+                            )
+                        )
+                    )
+
+                    last_valid = (
+                        row_match_date
+                        + timedelta(
+                            days=(
+                                match_date_tolerance_days
+                            )
+                        )
+                    )
+
+                    if not (
+                        first_valid
+                        <= result_date
+                        <= last_valid
+                    ):
+                        continue
+
+                elif prediction_date is not None:
+                    if (
+                        result_date
+                        < prediction_date
+                    ):
+                        continue
+
+                    if (
+                        result_date
+                        > prediction_date
+                        + timedelta(
+                            days=legacy_max_days
+                        )
+                    ):
+                        continue
+
+                else:
                     continue
 
-                if result_date > last_valid_date:
-                    continue
+                compatible_rows.append(
+                    row
+                )
 
-            candidates.append(match)
+            if compatible_rows:
+                result_candidates.append(
+                    (
+                        match,
+                        result_date,
+                        compatible_rows,
+                    )
+                )
 
-        if len(candidates) == 0:
-            not_found += 1
-            continue
-
-        if len(candidates) > 1:
-            ambiguous += 1
-            continue
-
-        match = candidates[0]
-
-        goals = (
-            match.home_goals
-            + match.away_goals
-        )
-
-        row["HG"] = str(
-            match.home_goals
-        )
-
-        row["AG"] = str(
-            match.away_goals
-        )
-
-        row["Goals"] = str(
-            goals
-        )
-
-        row["Over25"] = (
-            "OK"
-            if goals >= 3
-            else "KO"
-        )
-
-        row["BTTS"] = (
-            "OK"
-            if (
-                match.home_goals > 0
-                and match.away_goals > 0
+        if not result_candidates:
+            not_found += len(
+                rows
             )
-            else "KO"
-        )
+            continue
 
-        updated += 1
+        # Per ogni risultato sceglie una sola prediction:
+        # la più recente e temporalmente coerente.
+        for (
+            match,
+            result_date,
+            compatible_rows,
+        ) in result_candidates:
+            scored = sorted(
+                (
+                    _candidate_score(
+                        row,
+                        match,
+                        result_date,
+                    ),
+                    row,
+                )
+                for row in compatible_rows
+            )
+
+            best_score = scored[
+                0
+            ][0]
+
+            best_rows = [
+                row
+                for score, row in scored
+                if score == best_score
+            ]
+
+            if len(best_rows) != 1:
+                ambiguous += 1
+                continue
+
+            row = best_rows[0]
+
+            goals = (
+                match.home_goals
+                + match.away_goals
+            )
+
+            row["MatchDate"] = (
+                result_date.isoformat()
+            )
+
+            # Mantiene il Round originario della prediction.
+            # Lo valorizza dal risultato solo se nello storico è vuoto.
+            if (
+                not _text(
+                    row.get("Round")
+                )
+                and getattr(
+                    match,
+                    "round",
+                    0,
+                )
+            ):
+                row["Round"] = str(
+                    match.round
+                )
+
+            row["HG"] = str(
+                match.home_goals
+            )
+
+            row["AG"] = str(
+                match.away_goals
+            )
+
+            row["Goals"] = str(
+                goals
+            )
+
+            row["Over25"] = (
+                "OK"
+                if goals >= 3
+                else "KO"
+            )
+
+            row["BTTS"] = (
+                "OK"
+                if (
+                    match.home_goals > 0
+                    and match.away_goals > 0
+                )
+                else "KO"
+            )
+
+            row["MatchStatus"] = (
+                "FINAL"
+            )
+
+            updated += 1
+
+            # Le prediction precedenti della stessa gara restano POSTPONED.
+            for other_row in rows:
+                if other_row is row:
+                    continue
+
+                other_prediction_date = (
+                    _parse_date(
+                        other_row.get(
+                            "PredictionDate",
+                            "",
+                        )
+                    )
+                )
+
+                selected_prediction_date = (
+                    _parse_date(
+                        row.get(
+                            "PredictionDate",
+                            "",
+                        )
+                    )
+                )
+
+                if (
+                    other_prediction_date
+                    is not None
+                    and selected_prediction_date
+                    is not None
+                    and other_prediction_date
+                    < selected_prediction_date
+                    and not _text(
+                        other_row.get("HG")
+                    )
+                    and not _text(
+                        other_row.get("AG")
+                    )
+                ):
+                    other_row[
+                        "MatchStatus"
+                    ] = "POSTPONED"
 
     _write_history(
         engine_name,
@@ -544,15 +964,18 @@ def update_finished_matches(
 
     print(
         f"[{engine_name}] "
-        f"Risultati aggiornati: {updated}"
+        f"Risultati aggiornati: "
+        f"{updated}"
     )
 
     print(
         f"[{engine_name}] "
-        f"Partite non trovate: {not_found}"
+        f"Partite non trovate: "
+        f"{not_found}"
     )
 
     print(
         f"[{engine_name}] "
-        f"Partite ambigue: {ambiguous}"
+        f"Partite ambigue: "
+        f"{ambiguous}"
     )

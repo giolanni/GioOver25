@@ -5,54 +5,48 @@ GioOver2.5 - analysis/laboratory/merger.py
 
 SCOPO
 -----
-Unire lo storico ranking v25 con i ranking originali e produrre il dataset
-principale del laboratorio.
+Unire lo storico ranking v25 con i ranking originali e costruire il dataset
+principale del laboratorio senza perdere prediction valide.
 
-MATCHING
+PRINCIPI
 --------
-1. stessa LeagueId;
-2. stessa Home;
-3. stessa Away;
-4. confronto temporale:
-   - usa MatchDate quando disponibile;
-   - altrimenti usa PredictionDate;
-   - tolleranza massima configurata a ±2 giorni;
-5. se esistono più candidati, sceglie quello con distanza temporale minore.
+- La riga dello storico fornisce esito e stato reale.
+- La riga del ranking originale fornisce i driver ex ante.
+- Le prediction POSTPONED restano nello storico ma non devono essere scambiate
+  con prediction FINAL della stessa partita.
+- In presenza di più candidati viene applicato un ordinamento deterministico.
 
-PRIORITÀ DEI DATI
+CRITERI DI MATCHING
+-------------------
+Candidati di base:
+- stessa LeagueId;
+- stessa Home;
+- stessa Away.
+
+Criteri di scelta, in ordine:
+1. MatchStatus coerente:
+   - storico FINAL preferisce ranking non POSTPONED;
+   - storico POSTPONED preferisce ranking POSTPONED;
+2. stesso Round;
+3. stessa PredictionDate;
+4. stessa MatchDate;
+5. stessa Score;
+6. stessa Band;
+7. stessa AlgorithmVersion;
+8. distanza temporale minima.
+
+Solo se due candidati restano identici su tutti i criteri la riga viene
+considerata ambigua.
+
+GESTIONE RINVIATE
 -----------------
-La riga del ranking originale fornisce i driver ex ante.
-
-La riga dello storico prevale per:
-
-    PredictionDate
-    MatchDate
-    LeagueId
-    Round
-    Home
-    Away
-    Score
-    Band
-    Outcome
-    HG
-    AG
-    Goals
-    BTTS
-    Reason
-    AlgorithmVersion
+Una prediction POSTPONED senza esito viene comunque abbinata al proprio ranking
+originale per conservare i driver ex ante, ma resta esclusa automaticamente
+dalle statistiche perché Outcome è vuoto.
 
 FILE SCRITTI
 -------------
-Oltre a restituire le righe abbinate, produce:
-
-    analysis/laboratory/data/06_unmatched_matches.csv
-
-Il file contiene tutte le righe dello storico escluse dal laboratorio.
-
-LIMITAZIONI
------------
-Il matching dipende dalla coerenza di LeagueId e nomi squadra. Non vengono
-applicate normalizzazioni aggressive per evitare associazioni errate.
+analysis/laboratory/data/06_unmatched_matches.csv
 ===============================================================================
 """
 
@@ -62,8 +56,6 @@ from pathlib import Path
 from typing import Any
 import csv
 
-
-MAX_DATE_DIFFERENCE_DAYS = 2
 
 UNMATCHED_FILE = Path(
     "analysis/laboratory/data/06_unmatched_matches.csv"
@@ -102,118 +94,214 @@ def _base_key(row: dict) -> tuple[str, str, str]:
     )
 
 
-def _candidate_date_score(
-    history_row: dict,
-    ranking_row: dict,
-) -> tuple[int, int, str] | None:
-    history_match_date = _parse_date(
-        history_row.get("MatchDate")
-    )
-    history_prediction_date = _parse_date(
-        history_row.get("PredictionDate")
-    )
+def _status(row: dict) -> str:
+    return _text(
+        row.get("MatchStatus")
+    ).upper()
 
-    ranking_match_date = _parse_date(
-        ranking_row.get("MatchDate")
-    )
-    ranking_prediction_date = _parse_date(
-        ranking_row.get("PredictionDate")
+
+def _has_result(row: dict) -> bool:
+    return (
+        _text(row.get("HG")) != ""
+        and _text(row.get("AG")) != ""
     )
 
-    comparisons = []
 
-    if history_match_date is not None:
-        if ranking_match_date is not None:
-            comparisons.append((
-                0,
-                abs(
-                    (
-                        history_match_date
-                        - ranking_match_date
-                    ).days
-                ),
-                "MATCH_DATE_TO_MATCH_DATE",
-            ))
-
-        elif ranking_prediction_date is not None:
-            comparisons.append((
-                2,
-                abs(
-                    (
-                        history_match_date
-                        - ranking_prediction_date
-                    ).days
-                ),
-                "MATCH_DATE_TO_PREDICTION_DATE",
-            ))
-
-    elif history_prediction_date is not None:
-        if ranking_prediction_date is not None:
-            comparisons.append((
-                0,
-                abs(
-                    (
-                        history_prediction_date
-                        - ranking_prediction_date
-                    ).days
-                ),
-                "PREDICTION_DATE_TO_PREDICTION_DATE",
-            ))
-
-        elif ranking_match_date is not None:
-            comparisons.append((
-                2,
-                abs(
-                    (
-                        history_prediction_date
-                        - ranking_match_date
-                    ).days
-                ),
-                "PREDICTION_DATE_TO_MATCH_DATE",
-            ))
-
-    valid = [
-        comparison
-        for comparison in comparisons
-        if comparison[1] <= MAX_DATE_DIFFERENCE_DAYS
-    ]
-
-    if not valid:
-        return None
-
-    valid.sort(
-        key=lambda item: (
-            item[0],
-            item[1],
-        )
+def _reference_date(row: dict) -> date | None:
+    return (
+        _parse_date(row.get("MatchDate"))
+        or _parse_date(row.get("PredictionDate"))
     )
 
-    return valid[0]
 
 def build_index(
     rankings: list[dict],
-) -> dict[tuple[str, str, str], list[dict]]:
+) -> dict[
+    tuple[str, str, str],
+    list[dict],
+]:
     index: dict[
         tuple[str, str, str],
-        list[dict]
+        list[dict],
     ] = {}
 
     for ranking in rankings:
-        key = _base_key(ranking)
-
         index.setdefault(
-            key,
+            _base_key(ranking),
             [],
         ).append(ranking)
 
     return index
 
 
+def _date_distance_days(
+    history_row: dict,
+    ranking_row: dict,
+) -> int:
+    history_date = _reference_date(
+        history_row
+    )
+    ranking_date = _reference_date(
+        ranking_row
+    )
+
+    if (
+        history_date is None
+        or ranking_date is None
+    ):
+        return 999999
+
+    return abs(
+        (
+            history_date
+            - ranking_date
+        ).days
+    )
+
+
+def _match_score(
+    history_row: dict,
+    ranking_row: dict,
+) -> tuple:
+    history_status = _status(
+        history_row
+    )
+    ranking_status = _status(
+        ranking_row
+    )
+
+    history_final = (
+        history_status == "FINAL"
+        or _has_result(history_row)
+    )
+
+    history_postponed = (
+        history_status == "POSTPONED"
+    )
+
+    ranking_postponed = (
+        ranking_status == "POSTPONED"
+    )
+
+    if history_final:
+        status_penalty = (
+            1
+            if ranking_postponed
+            else 0
+        )
+    elif history_postponed:
+        status_penalty = (
+            0
+            if ranking_postponed
+            else 1
+        )
+    else:
+        status_penalty = 0
+
+    same_round = int(
+        not (
+            _text(history_row.get("Round"))
+            and _text(ranking_row.get("Round"))
+            and _text(history_row.get("Round"))
+            == _text(ranking_row.get("Round"))
+        )
+    )
+
+    same_prediction_date = int(
+        not (
+            _text(history_row.get("PredictionDate"))
+            and _text(ranking_row.get("PredictionDate"))
+            and _text(history_row.get("PredictionDate"))
+            == _text(ranking_row.get("PredictionDate"))
+        )
+    )
+
+    same_match_date = int(
+        not (
+            _text(history_row.get("MatchDate"))
+            and _text(ranking_row.get("MatchDate"))
+            and _text(history_row.get("MatchDate"))
+            == _text(ranking_row.get("MatchDate"))
+        )
+    )
+
+    same_score = int(
+        not (
+            _text(history_row.get("Score"))
+            and _text(ranking_row.get("Score"))
+            and _text(history_row.get("Score"))
+            == _text(ranking_row.get("Score"))
+        )
+    )
+
+    same_band = int(
+        not (
+            _text(history_row.get("Band"))
+            and _text(ranking_row.get("Band"))
+            and _text(history_row.get("Band"))
+            == _text(ranking_row.get("Band"))
+        )
+    )
+
+    same_algorithm = int(
+        not (
+            _text(history_row.get("AlgorithmVersion"))
+            and _text(ranking_row.get("AlgorithmVersion"))
+            and _text(history_row.get("AlgorithmVersion"))
+            == _text(ranking_row.get("AlgorithmVersion"))
+        )
+    )
+
+    distance = _date_distance_days(
+        history_row,
+        ranking_row,
+    )
+
+    return (
+        status_penalty,
+        same_round,
+        same_prediction_date,
+        same_match_date,
+        same_score,
+        same_band,
+        same_algorithm,
+        distance,
+    )
+
+
+def _match_mode(
+    history_row: dict,
+    ranking_row: dict,
+) -> str:
+    if (
+        _text(history_row.get("PredictionDate"))
+        and _text(history_row.get("PredictionDate"))
+        == _text(ranking_row.get("PredictionDate"))
+    ):
+        return "PREDICTION_DATE"
+
+    if (
+        _text(history_row.get("MatchDate"))
+        and _text(history_row.get("MatchDate"))
+        == _text(ranking_row.get("MatchDate"))
+    ):
+        return "MATCH_DATE"
+
+    if (
+        _text(history_row.get("Round"))
+        and _text(history_row.get("Round"))
+        == _text(ranking_row.get("Round"))
+    ):
+        return "ROUND"
+
+    return "DETERMINISTIC_TIEBREAK"
+
+
 def _find_ranking(
     history_row: dict,
     ranking_index: dict[
         tuple[str, str, str],
-        list[dict]
+        list[dict],
     ],
 ) -> tuple[
     dict | None,
@@ -236,86 +324,60 @@ def _find_ranking(
             0,
         )
 
-    scored_candidates = []
-
-    for ranking in candidates:
-        score = _candidate_date_score(
-            history_row,
-            ranking,
-        )
-
-        if score is None:
-            continue
-
-        priority, distance, mode = score
-
-        scored_candidates.append((
-            priority,
-            distance,
-            ranking,
-            mode,
-        ))
-
-    if scored_candidates:
-        scored_candidates.sort(
-            key=lambda item: (
-                item[0],
-                item[1],
-            )
-        )
-
-        best_priority = scored_candidates[0][0]
-        best_distance = scored_candidates[0][1]
-
-        best_candidates = [
-            item
-            for item in scored_candidates
-            if (
-                item[0] == best_priority
-                and item[1] == best_distance
-            )
-        ]
-
-        if len(best_candidates) > 1:
-            return (
-                None,
-                "",
-                None,
-                "AMBIGUOUS_SAME_DATE_PRIORITY",
-                len(candidates),
-            )
-
+    scored = [
         (
-            _priority,
-            distance,
+            _match_score(
+                history_row,
+                ranking,
+            ),
             ranking,
-            mode,
-        ) = best_candidates[0]
+        )
+        for ranking in candidates
+    ]
 
+    scored.sort(
+        key=lambda item: item[0]
+    )
+
+    best_score = scored[0][0]
+
+    best = [
+        ranking
+        for score, ranking in scored
+        if score == best_score
+    ]
+
+    if len(best) > 1:
         return (
-            ranking,
-            mode,
-            distance,
+            None,
             "",
+            None,
+            "AMBIGUOUS_AFTER_ALL_TIEBREAKS",
             len(candidates),
         )
 
-    if len(candidates) == 1:
-        return (
-            candidates[0],
-            "TEAM_ONLY_OUTSIDE_DATE_WINDOW",
-            None,
-            "",
-            1,
-        )
+    ranking = best[0]
+
+    distance = _date_distance_days(
+        history_row,
+        ranking,
+    )
 
     return (
-        None,
+        ranking,
+        _match_mode(
+            history_row,
+            ranking,
+        ),
+        (
+            None
+            if distance == 999999
+            else distance
+        ),
         "",
-        None,
-        "NO_DATE_CANDIDATE_WITHIN_WINDOW",
         len(candidates),
     )
+
 
 def _write_unmatched(
     rows: list[dict],
@@ -324,12 +386,14 @@ def _write_unmatched(
         "LeagueId",
         "PredictionDate",
         "MatchDate",
+        "Round",
         "Home",
         "Away",
         "Band",
         "Outcome",
         "HG",
         "AG",
+        "MatchStatus",
         "Reason",
         "BaseCandidates",
         "HistorySource",
@@ -368,9 +432,10 @@ def merge_matches(
     unmatched_rows = []
 
     matched = 0
+    prediction_matches = 0
     match_date_matches = 0
-    prediction_date_matches = 0
-    team_only_matches = 0
+    round_matches = 0
+    deterministic_matches = 0
     match_id = 1
 
     for history_row in history:
@@ -387,18 +452,50 @@ def merge_matches(
 
         if ranking is None:
             unmatched_rows.append({
-                "LeagueId": history_row.get("LeagueId", ""),
+                "LeagueId": history_row.get(
+                    "LeagueId",
+                    "",
+                ),
                 "PredictionDate": history_row.get(
                     "PredictionDate",
                     "",
                 ),
-                "MatchDate": history_row.get("MatchDate", ""),
-                "Home": history_row.get("Home", ""),
-                "Away": history_row.get("Away", ""),
-                "Band": history_row.get("Band", ""),
-                "Outcome": history_row.get("Outcome", ""),
-                "HG": history_row.get("HG", ""),
-                "AG": history_row.get("AG", ""),
+                "MatchDate": history_row.get(
+                    "MatchDate",
+                    "",
+                ),
+                "Round": history_row.get(
+                    "Round",
+                    "",
+                ),
+                "Home": history_row.get(
+                    "Home",
+                    "",
+                ),
+                "Away": history_row.get(
+                    "Away",
+                    "",
+                ),
+                "Band": history_row.get(
+                    "Band",
+                    "",
+                ),
+                "Outcome": history_row.get(
+                    "Outcome",
+                    "",
+                ),
+                "HG": history_row.get(
+                    "HG",
+                    "",
+                ),
+                "AG": history_row.get(
+                    "AG",
+                    "",
+                ),
+                "MatchStatus": history_row.get(
+                    "MatchStatus",
+                    "",
+                ),
                 "Reason": unmatched_reason,
                 "BaseCandidates": base_candidates,
                 "HistorySource": history_row.get(
@@ -408,7 +505,9 @@ def merge_matches(
             })
             continue
 
-        row = deepcopy(ranking)
+        row = deepcopy(
+            ranking
+        )
 
         for field in (
             "PredictionDate",
@@ -426,6 +525,10 @@ def merge_matches(
             "BTTS",
             "Reason",
             "AlgorithmVersion",
+            "MatchStatus",
+            "CompetitionGroup",
+            "HomeSourceLeagueId",
+            "AwaySourceLeagueId",
         ):
             history_value = history_row.get(
                 field,
@@ -459,17 +562,21 @@ def merge_matches(
 
         row["MatchId"] = match_id
 
-        merged.append(row)
+        merged.append(
+            row
+        )
 
         match_id += 1
         matched += 1
 
-        if match_mode.startswith("MATCH_DATE"):
+        if match_mode == "PREDICTION_DATE":
+            prediction_matches += 1
+        elif match_mode == "MATCH_DATE":
             match_date_matches += 1
-        elif match_mode.startswith("PREDICTION_DATE"):
-            prediction_date_matches += 1
+        elif match_mode == "ROUND":
+            round_matches += 1
         else:
-            team_only_matches += 1
+            deterministic_matches += 1
 
     _write_unmatched(
         unmatched_rows
@@ -480,9 +587,10 @@ def merge_matches(
     print(f"Storico caricato:          {len(history)}")
     print(f"Ranking caricati:          {len(rankings)}")
     print(f"Righe abbinate:            {matched}")
-    print(f"Match tramite MatchDate:   {match_date_matches}")
-    print(f"Match tramite Prediction:  {prediction_date_matches}")
-    print(f"Match solo lega/squadre:   {team_only_matches}")
+    print(f"Match PredictionDate:      {prediction_matches}")
+    print(f"Match MatchDate:           {match_date_matches}")
+    print(f"Match Round:               {round_matches}")
+    print(f"Match tie-break:           {deterministic_matches}")
     print(f"Righe non abbinate:        {len(unmatched_rows)}")
     print(f"Diagnostica:               {UNMATCHED_FILE}")
     print()
