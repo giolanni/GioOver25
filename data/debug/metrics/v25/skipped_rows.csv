@@ -1,103 +1,144 @@
 ﻿RowId;LeagueId;MatchDate;Home;Away;Band;Outcome;Reason;SourceFile
-6;Australia_NPLNSW_2026;;Manly Utd;Sutherland;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-7;Australia_NPLNSW_2026;;NWS Spirit;St George Saints;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-9;Australia_NPLNSW_2026;;St. George City;UNSW;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-10;Australia_NPLNSW_2026;;Sydney Olympic;Wollongong Wolves;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-12;Australia_NPLNorthernNSW_2026;;Edgeworth E.;Belmont Swansea Utd.;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-39;Australia_NorthernNSWStateLeague_2026;;Singleton Strikers;South Cardiff;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-43;Australia_QueenslandPremierLeague_2026;;St. George Willawong;Robina City;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-48;Australia_TasmaniaSouthernChampionship_2026;;Clarence Zebras U21;Taroona;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-58;Australia_VictoriaPremierLeague_2026;;Port Melbourne Sharks;North Sunshine Eagles;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-61;Australia_WAStateLeague_2026;;Gwelup Croatia;Inglewood;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-70;Belarus_VysshayaLiga_2026;;Baranovici;Zhodino;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-71;Belarus_VysshayaLiga_2026;;Dynamo Brest;Slavia Mozyr;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-72;Belarus_VysshayaLiga_2026;;Gomel;Neman;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-73;Bhutan_PremierLeague_2026;;Tsirang;RTC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-80;Estonia_Meistriliiga_2026;;Parnu JK Vaprus;Tammeka;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-84;Finland_Veikkausliiga_2026;;Gnistan;Mariehamn;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-85;Finland_Veikkausliiga_2026;;Lahti;HJK;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-86;Finland_Veikkausliiga_2026;;TPS Turku;Oulu;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-92;Finland_Ykkosliiga_2026;;Klubi 04;Jippo;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-93;Finland_Ykkosliiga_2026;;SJK Akatemia;Mikkeli;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-96;Kazakhstan_PremierLeague_2026;;Ertis Pavlodar;Zhenis;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-97;Kazakhstan_PremierLeague_2026;;Kaspij Aktau;Ordabasy;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-98;Kazakhstan_PremierLeague_2026;;Ulytau;Kaisar;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-99;Kazakhstan_PremierLeague_2026;;Zhetysu;Altai;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-103;Norway_Eliteserien_2026;;Tromsø;Vålerenga;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-104;Somalia_NationalLeague_2026;;Elman;Horseed;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-106;Sweden_Allsvenskan_2026;;Mjallby;AIK Stockholm;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-110;USA_USLLeagueTwo_GreatPlains_2026;;Santafe Wanderers;Sunflower State;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-127;USA_USLLeagueTwo_GreatLakes_2026;2026-07-12;Flint City;Union FC Macomb;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-129;USA_USLLeagueTwo_LoneStar_2026;2026-07-12;AHFC Royals;Houston FC;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-141;USA_USLLeagueTwo_GreatLakes_2026;2026-07-12;Ann Arbor;Kalamazoo FC;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-149;USA_USLLeagueTwo_LoneStar_2026;2026-07-12;Houston Sur;San Antonio FC 2;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-153;USA_USLLeagueTwo_MidAtlantic_2026;2026-07-12;Reading;LVU Rush;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-162;USA_USLLeagueTwo_Chesapeake_2026;2026-07-12;Hill City;Virginia Marauders;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-170;Australia_NorthernNSWStateLeague_2026;2026-07-12;West Wallsend;New Lambton;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-177;USA_USLLeagueTwo_MidAtlantic_2026;2026-07-12;Ocean City;Eagle FC;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-183;USA_USLLeagueTwo_MidAtlantic_2026;2026-07-12;PA Classics;West Chester Utd;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-189;USA_USLLeagueTwo_SouthCentral_2026;2026-07-12;Columbus United;East Atlanta;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-196;USA_USLLeagueTwo_Chesapeake_2026;2026-07-12;Lionsbridge;Charlottesville Blues;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-201;USA_USLLeagueTwo_GreatForest_2026;2026-07-12;Lorain County Leviathan;Steel City;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-208;USA_USLLeagueTwo_SouthCentral_2026;2026-07-12;Dothan United;Apotheos;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-216;USA_USLLeagueTwo_GreatPlains_2026;2026-07-12;Menace;St. Louis Ambush;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-217;Bolivia_DivisionProfesional_2026;2026-07-12;Real Potosi;Nacional Potosi;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-218;Australia_NPLVictoria_2026;2026-07-12;St Albans;George Cross;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-219;USA_MLSNextPro_WesternConference_CentralDivision_2026;2026-07-12;Colorado Rapids 2;North Texas;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-220;USA_USLLeagueTwo_MidSouth_2026;2026-07-12;Memphis FC;Jackson Boom;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-221;Norway_Eliteserien_2026;2026-07-12;Sandefjord;HamKam;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-222;Sweden_Allsvenskan_2026;2026-07-12;GAIS;Elfsborg;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-223;Lithuania_Toplyga_2026;2026-07-12;Transinvest;Banga;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-224;Australia_NPLNSW_2026;2026-07-12;Sydney Utd;Rockdale Ilinden;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-225;Norway_Eliteserien_2026;2026-07-12;Rosenborg;Kristiansund;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-226;Kazakhstan_PremierLeague_2026;2026-07-12;Atyrau;Yelimay Semey;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-227;Belarus_VysshayaLiga_2026;2026-07-12;Arsenal Dzerzhinsk;Vitebsk;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-228;Kazakhstan_PremierLeague_2026;2026-07-12;FC Astana;Aktobe;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-229;Kazakhstan_PremierLeague_2026;2026-07-12;Ulytau;Kaisar;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-230;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;2026-07-12;Crown Legacy;New York City II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-237;USA_USLLeagueTwo_Heartland_2026;2026-07-13;RKC SC;River Light;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-239;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;2026-07-13;Cincinnati 2;Orlando City B;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-251;Australia_SAStateLeague_2026;2026-07-13;Blue Eagles;Modbury;BASSA;OK;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-252;USA_USLLeagueTwo_SouthFlorida_2026;2026-07-13;Lakeland United;Fort Lauderdale;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-253;USA_MLSNextPro_WesternConference_PacificDivision_2026;2026-07-13;San Jose Earthquakes II;Tacoma Defiance;BASSA;KO;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-254;Australia_NPLQueenslandU23_2026;2026-07-14;Moreton City Excelsior U23;QLD State Team U17;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-255;Iceland_Division_1_2026;2026-07-14;Kopavogur;IR Reykjavik;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-256;Finland_Kakkonen_GroupB_2026;2026-07-14;Ilves 2;GrIFK;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-257;Somalia_NationalLeague_2026;2026-07-14;Mogadishu City;Badbaado;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-258;Iceland_Division_1_2026;2026-07-14;Grotta;Grindavik;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-259;Bhutan_PremierLeague_2026;2026-07-14;BFF Academy U19;Drukpa;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-260;Kyrgyzstan_PremierLiga_2026;2026-07-14;Muras United;Bars;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-261;Australia_NPLNorthernNSW_2026;2026-07-14;Kahibah;Maitland;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-262;Finland_Kakkonen_GroupC_2026;2026-07-14;GBK Kokkola;Narpes Kraft;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-263;Australia_NPLNorthernNSW_2026;2026-07-14;Charlestown Azzurri;Weston Bears;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-264;Bolivia_DivisionProfesional_2026;2026-07-14;Real Oruro;Always Ready;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-265;Bolivia_DivisionProfesional_2026;2026-07-14;Blooming;GV San Jose;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-266;Bhutan_PremierLeague_2026;2026-07-14;Tensung;Thimphu City;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-267;USA_USLLeagueTwo_PlayIn_2026;2026-07-15;LVU Rush;Appalachian;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-268;USA_USLLeagueTwo_PlayIn_2026;2026-07-15;NEFC;Ironbound SC;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-269;Finland_Ykkosliiga_2026;2026-07-14;Jippo;Mikkeli;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-270;USA_USLLeagueTwo_PlayIn_2026;2026-07-15;Asheville City;Virginia Beach;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-271;Bolivia_DivisionProfesional_2026;2026-07-16;Academia del Balompie;Independiente;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-272;Kazakhstan_FirstLeague_2026;2026-07-16;Taraz;Aktobe 2;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-273;Finland_Kakkonen_GroupA_2026;2026-07-16;HIFK;PPJ;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-274;Somalia_NationalLeague_2026;2026-07-16;Raadsan;Jubba;ALTA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-275;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Minneapolis City;West Virginia;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-276;Australia_SAStateLeague_2026;2026-07-16;Fulham Utd.;Cumberland Utd.;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-277;Kazakhstan_FirstLeague_2026;2026-07-16;Arys;Turan;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-278;Estonia_Esiliiga_2026;2026-07-16;Viimsi JK;Elva;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-279;Somalia_NationalLeague_2026;2026-07-16;Jeenyo;Heegan;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-280;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Fort Lauderdale;Swarm FC;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-281;USA_MLSNextPro_EasternConference_NortheastDivision_2026;2026-07-16;New England Revolution II;Columbus Crew 2;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-282;Iceland_Division_1_2026;2026-07-16;Afturelding;Leiknir;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-283;Kazakhstan_FirstLeague_2026;2026-07-16;Khan Tengri;Yelimay Semey 2;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-284;USA_USLLeagueOne_2026;2026-07-16;Forward Madison;Richmond Kickers;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-285;USA_USLLeagueOne_2026;2026-07-16;Chattanooga Red Wolves;AV Alta;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-286;USA_USLChampionship_2026;2026-07-16;Sporting Jax;Pittsburgh;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-287;Norway_Eliteserien_2026;2026-07-16;Vålerenga;Aalesund;MEDIA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-288;USA_USLChampionship_2026;2026-07-16;Miami FC;Indy Eleven;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-289;Bolivia_DivisionProfesional_2026;2026-07-16;The Strongest;Oriente Petrolero;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-290;Bolivia_DivisionProfesional_2026;2026-07-16;Real Potosi;SA Bulo Bulo;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-291;Bhutan_PremierLeague_2026;2026-07-16;Thimphu FC;Paro;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-292;USA_USLChampionship_2026;2026-07-16;Lexington;New Mexico;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-293;USA_USLLeagueOne_2026;2026-07-16;One Knoxville;Fort Wayne;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
-294;Kazakhstan_FirstLeague_2026;2026-07-16;FC Batyr;Shakhter K.;BASSA;;Band o Outcome non riconosciuti/mancanti;data\storico\ranking\v25\storico_ranking_v25.csv
+2;Lithuania_Toplyga_2026;;Suduva;Transinvest;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7;USA_MLSNextPro_WesternConference_CentralDivision_2026;;Huntsville;Chicago Fire II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+9;USA_MLSNextPro_WesternConference_PacificDivision_2026;;Tacoma Defiance;Portland Timbers 2;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+21;Australia_NPLNorthernNSW_2026;;Charlestown Azzurri;Weston Bears;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+23;Australia_SAStateLeague_2026;;Cove FC;Modbury;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+24;Bhutan_PremierLeague_2026;;Drukpa;Thimphu FC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+27;Kyrgyzstan_PremierLiga_2026;;Kyrgyzaltyn;Talant;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+28;Kyrgyzstan_PremierLiga_2026;;Neftchi Kochkor-Ata;Aldier;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+33;USA_USLLeagueTwo_Southwest_2026;;Stars FC;Tucson;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+35;Australia_NPLNorthernNSW_2026;;Kahibah;Maitland;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+50;USA_USLLeagueTwo_NorCal_2026;;Glens SC;Almaden;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+67;USA_USLChampionship_2026;;Hartford Athletic;Orange County SC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+69;USA_USLLeagueOne_2026;;Greenville;Sarasota Paradise;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+105;USA_USLLeagueTwo_SouthFlorida_2026;;Fort Lauderdale;Weston;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+119;Australia_NSWLeagueOne_2026;;Macarthur Rams;Bankstown City Lions;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+121;Australia_VictoriaPremierLeague2_2026;;Eastern Lions;Werribee City;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+126;Australia_VictoriaPremierLeague_2026;;Northcote City;Melbourne Knights;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+129;Belarus_VysshayaLiga_2026;;Dnepr Mogilev;FC Minsk;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+130;Bolivia_DivisionProfesional_2026;;Nacional Potosi;Aurora;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+134;Finland_Veikkausliiga_2026;;VPS;SJK;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+137;Finland_Ykkosliiga_2026;;KTP;JaPS;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+138;Finland_Ykkosliiga_2026;;PK-35;KaPa;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+142;Iceland_Division_1_2026;;Njardvik;Grindavik;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+144;Kazakhstan_FirstLeague_2026;;Kaspij Aktau 2;Taraz;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+145;Kazakhstan_FirstLeague_2026;;Shakhter K.;Turan;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+147;Kyrgyzstan_PremierLiga_2026;;Alay Osh;Toktogul;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+149;Kyrgyzstan_PremierLiga_2026;;Bishkek City;Muras United;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+150;Kyrgyzstan_PremierLiga_2026;;Ilbirs;Ozgon;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+152;USA_USLLeagueTwo_GreatLakes_2026;;Midwest United;Union FC Macomb;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+162;Australia_NPLNSW_2026;;Manly Utd;Sutherland;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+163;Australia_NPLNSW_2026;;NWS Spirit;St George Saints;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+165;Australia_NPLNSW_2026;;St. George City;UNSW;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+166;Australia_NPLNSW_2026;;Sydney Olympic;Wollongong Wolves;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+168;Australia_NPLNorthernNSW_2026;;Edgeworth E.;Belmont Swansea Utd.;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+195;Australia_NorthernNSWStateLeague_2026;;Singleton Strikers;South Cardiff;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+199;Australia_QueenslandPremierLeague_2026;;St. George Willawong;Robina City;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+204;Australia_TasmaniaSouthernChampionship_2026;;Clarence Zebras U21;Taroona;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+214;Australia_VictoriaPremierLeague_2026;;Port Melbourne Sharks;North Sunshine Eagles;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+217;Australia_WAStateLeague_2026;;Gwelup Croatia;Inglewood;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+226;Belarus_VysshayaLiga_2026;;Baranovici;Zhodino;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+227;Belarus_VysshayaLiga_2026;;Dynamo Brest;Slavia Mozyr;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+228;Belarus_VysshayaLiga_2026;;Gomel;Neman;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+229;Bhutan_PremierLeague_2026;;Tsirang;RTC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+236;Estonia_Meistriliiga_2026;;Parnu JK Vaprus;Tammeka;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+240;Finland_Veikkausliiga_2026;;Gnistan;Mariehamn;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+241;Finland_Veikkausliiga_2026;;Lahti;HJK;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+242;Finland_Veikkausliiga_2026;;TPS Turku;Oulu;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+248;Finland_Ykkosliiga_2026;;Klubi 04;Jippo;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+249;Finland_Ykkosliiga_2026;;SJK Akatemia;Mikkeli;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+252;Kazakhstan_PremierLeague_2026;;Ertis Pavlodar;Zhenis;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+253;Kazakhstan_PremierLeague_2026;;Kaspij Aktau;Ordabasy;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+254;Kazakhstan_PremierLeague_2026;;Zhetysu;Altai;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+258;Norway_Eliteserien_2026;;Tromsø;Vålerenga;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+259;Somalia_NationalLeague_2026;;Elman;Horseed;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+260;Sweden_Allsvenskan_2026;;Mjallby;AIK Stockholm;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+264;USA_USLLeagueTwo_GreatPlains_2026;;Santafe Wanderers;Sunflower State;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+281;USA_USLLeagueTwo_GreatLakes_2026;2026-07-12;Flint City;Union FC Macomb;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+283;USA_USLLeagueTwo_LoneStar_2026;2026-07-12;AHFC Royals;Houston FC;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+295;USA_USLLeagueTwo_GreatLakes_2026;2026-07-12;Ann Arbor;Kalamazoo FC;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+303;USA_USLLeagueTwo_LoneStar_2026;2026-07-12;Houston Sur;San Antonio FC 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+307;USA_USLLeagueTwo_MidAtlantic_2026;2026-07-12;Reading;LVU Rush;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+316;USA_USLLeagueTwo_Chesapeake_2026;2026-07-12;Hill City;Virginia Marauders;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+324;Australia_NorthernNSWStateLeague_2026;2026-07-12;West Wallsend;New Lambton;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+331;USA_USLLeagueTwo_MidAtlantic_2026;2026-07-12;Ocean City;Eagle FC;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+337;USA_USLLeagueTwo_MidAtlantic_2026;2026-07-12;PA Classics;West Chester Utd;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+343;USA_USLLeagueTwo_SouthCentral_2026;2026-07-12;Columbus United;East Atlanta;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+350;USA_USLLeagueTwo_Chesapeake_2026;2026-07-12;Lionsbridge;Charlottesville Blues;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+355;USA_USLLeagueTwo_GreatForest_2026;2026-07-12;Lorain County Leviathan;Steel City;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+362;USA_USLLeagueTwo_SouthCentral_2026;2026-07-12;Dothan United;Apotheos;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+370;USA_USLLeagueTwo_GreatPlains_2026;2026-07-12;Menace;St. Louis Ambush;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+371;Bolivia_DivisionProfesional_2026;2026-07-12;Real Potosi;Nacional Potosi;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+372;Australia_NPLVictoria_2026;2026-07-12;St Albans;George Cross;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+373;USA_MLSNextPro_WesternConference_CentralDivision_2026;2026-07-12;Colorado Rapids 2;North Texas;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+374;USA_USLLeagueTwo_MidSouth_2026;2026-07-12;Memphis FC;Jackson Boom;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+375;Norway_Eliteserien_2026;2026-07-12;Sandefjord;HamKam;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+376;Sweden_Allsvenskan_2026;2026-07-12;GAIS;Elfsborg;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+377;Lithuania_Toplyga_2026;2026-07-12;Transinvest;Banga;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+378;Australia_NPLNSW_2026;2026-07-12;Sydney Utd;Rockdale Ilinden;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+379;Norway_Eliteserien_2026;2026-07-12;Rosenborg;Kristiansund;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+380;Kazakhstan_PremierLeague_2026;2026-07-12;Atyrau;Yelimay Semey;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+381;Belarus_VysshayaLiga_2026;2026-07-12;Arsenal Dzerzhinsk;Vitebsk;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+382;Kazakhstan_PremierLeague_2026;2026-07-12;FC Astana;Aktobe;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+383;Kazakhstan_PremierLeague_2026;2026-07-12;Ulytau;Kaisar;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+384;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;2026-07-12;Crown Legacy;New York City II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+391;USA_USLLeagueTwo_Heartland_2026;2026-07-13;RKC SC;River Light;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+393;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;2026-07-13;Cincinnati 2;Orlando City B;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+405;Australia_SAStateLeague_2026;2026-07-13;Blue Eagles;Modbury;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+406;USA_USLLeagueTwo_SouthFlorida_2026;2026-07-13;Lakeland United;Fort Lauderdale;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+407;USA_MLSNextPro_WesternConference_PacificDivision_2026;2026-07-13;San Jose Earthquakes II;Tacoma Defiance;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+415;Australia_NPLNorthernNSW_2026;2026-07-14;Kahibah;Maitland;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+420;Bhutan_PremierLeague_2026;2026-07-14;Tensung;Thimphu City;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+421;USA_USLLeagueTwo_PlayIn_2026;2026-07-15;LVU Rush;Appalachian;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+422;USA_USLLeagueTwo_PlayIn_2026;2026-07-15;NEFC;Ironbound SC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+423;Finland_Ykkosliiga_2026;2026-07-14;Jippo;Mikkeli;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+424;USA_USLLeagueTwo_PlayIn_2026;2026-07-15;Asheville City;Virginia Beach;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+442;USA_USLChampionship_2026;2026-07-16;Miami FC;Indy Eleven;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+443;Bolivia_DivisionProfesional_2026;2026-07-16;The Strongest;Oriente Petrolero;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+444;Bolivia_DivisionProfesional_2026;2026-07-16;Real Potosi;SA Bulo Bulo;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+445;Bhutan_PremierLeague_2026;2026-07-16;Thimphu FC;Paro;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+446;USA_USLChampionship_2026;2026-07-16;Lexington;New Mexico;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+447;USA_USLLeagueOne_2026;2026-07-16;One Knoxville;Fort Wayne;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+448;Kazakhstan_FirstLeague_2026;2026-07-16;FC Batyr;Shakhter K.;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+449;Estonia_Meistriliiga_2026;2026-07-16;Flora;Nomme Utd;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+450;Iceland_Division_2_2026;2026-07-16;KFG Gardabaer;Kari;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+451;Finland_Kakkonen_GroupC_2026;2026-07-16;Vaajakoski;Huima / Urho;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+452;Iceland_Division_2_2026;2026-07-16;Haukar;Throttur Vogar;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+453;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Peoria;Sueno;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+454;Australia_NPLWesternAustralia_2026;2026-07-16;Perth Azzurri;Western Knights;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+455;Kazakhstan_FirstLeague_2026;2026-07-16;Tobol 2;Akademiya Ontustik;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+456;Australia_NPL_NSW_U20_2026;2026-07-16;Sydney FC U20;Manly Utd U20;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+457;Australia_NPLSouthAustralia_2026;2026-07-16;West Torrens;Para;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+458;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Laredo Heat;Texoma;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+459;Somalia_NationalLeague_2026;2026-07-16;Badbaado;Dekedaha;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+460;Australia_VictoriaPremierLeague_2026;2026-07-16;Melbourne Knights;Brunswick City;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+461;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Colorado Storm;Snohomish United;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+462;Norway_Eliteserien_2026;2026-07-16;Bodo/Glimt;Fredrikstad;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+463;Kazakhstan_FirstLeague_2026;2026-07-16;Kairat Almaty 2;Kaspij Aktau 2;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+464;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Ocean City;Motown 2;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+465;Australia_VictoriaPremierLeague_2026;2026-07-16;Northcote City;Manningham United Blues;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+466;Sweden_Allsvenskan_2026;2026-07-16;Mjallby;Västerås SK;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+467;Sweden_Allsvenskan_2026;2026-07-16;Göteborg;Brommapojkarna;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+468;Australia_NPLSouthAustralia_2026;2026-07-16;Campbelltown City;Adelaide Comets;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+469;Finland_Kakkonen_GroupB_2026;2026-07-16;GrIFK;Abo;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+470;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Little Rock Rangers;GFI Woodlands;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+471;Australia_VictoriaPremierLeague2_2026;2026-07-16;Eastern Lions;Bayside Argonauts;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+472;Australia_NSWLeagueOne_2026;2026-07-16;Hurstville Zagreb;Dulwich Hill;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+473;Kazakhstan_FirstLeague_2026;2026-07-16;FC Astana 2;Jaiyq;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+474;Australia_VictoriaPremierLeague2_2026;2026-07-16;Whittlesea United;Essendon Royals SC;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+475;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Dothan United;Brave SC;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+476;Iceland_Division_2_2026;2026-07-16;Hviti;Olafsvik;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+477;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Charlotte Independ. 2;Appalachian;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+478;USA_USLLeagueTwo_PlayOff_2026;2026-07-16;Steel City;Northern Indiana;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+479;Australia_NPLVictoria_2026;2026-07-16;Green Gully;Dandenong Thunder;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+480;Iceland_Division_1_2026;2026-07-16;Fylkir;Njardvik;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+481;Australia_NPLVictoria_2026;2026-07-16;Bentleigh;Dandenong City;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+482;Somalia_NationalLeague_2026;2026-07-16;Elman;Gaadiidka;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+483;Australia_VictoriaPremierLeague2_2026;2026-07-16;Box Hill;Altona City;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+484;Australia_VictoriaPremierLeague2_2026;2026-07-16;Springvale;Nunawading City;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+485;Australia_NSWLeagueOne_2026;2026-07-16;Prospect United;Macarthur Rams;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+486;Australia_NPLNSW_2026;2026-07-16;Sydney FC U23;Manly Utd;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+487;Finland_Ykkosliiga_2026;2026-07-16;KaPa;SJK Akatemia;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+488;Finland_Ykkosliiga_2026;2026-07-16;Klubi 04;Haka;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+489;Lebanon_PremierLeague_2026;2026-07-16;Tadamon;Al Riyadi Abbasiyah;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv

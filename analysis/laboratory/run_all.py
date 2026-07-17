@@ -8,6 +8,7 @@ Uso:
 from .build_laboratory import main as build_laboratory
 from .distributions import main as build_distributions
 from .candidate_rules import main as build_candidate_rules
+from .driver_analysis import main as build_driver_analysis
 
 
 def main() -> int:
@@ -19,6 +20,9 @@ def main() -> int:
 
     print("\n=== CANDIDATE RULES ===")
     build_candidate_rules()
+
+    print("\n=== DRIVER ANALYSIS ===")
+    build_driver_analysis()
 
     print("\nLaboratorio aggiornato.")
 

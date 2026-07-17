@@ -1,4 +1,4 @@
-$source = "C:\Users\GioAsus\repos\GioOver25\data\storico\ranking"
+$source = Join-Path $PSScriptRoot '..\data\storico'
 $dest = "C:\Temp\StoriciRanking"
 
 New-Item -ItemType Directory -Force -Path $dest | Out-Null

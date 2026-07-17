@@ -479,21 +479,6 @@ def sync_postponed_statuses(
                     updated += 1
                 continue
 
-        # Una prediction non più presente nel registro rinviate
-        # e ancora priva di esito torna SCHEDULED.
-        if (
-            _text(
-                row.get(
-                    "MatchStatus"
-                )
-            ).upper()
-            == "POSTPONED"
-        ):
-            row[
-                "MatchStatus"
-            ] = "SCHEDULED"
-            updated += 1
-
     if updated:
         _write_history(
             engine_name,
