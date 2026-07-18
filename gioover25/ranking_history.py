@@ -45,21 +45,32 @@ POSTPONED_FILE = Path(
 
 
 BASE_FIELDNAMES = [
-    "PredictionDate",
+    # ===== Colonne operative =====
     "MatchDate",
     "LeagueId",
-    "Round",
     "Home",
     "Away",
     "Score",
     "Band",
+    "Round",
+
+    # ===== Stato =====
     "MatchStatus",
+
+    # ===== Risultato =====
     "HG",
     "AG",
     "Goals",
     "Over25",
     "BTTS",
+
+    # ===== Metadati =====
+    "PredictionDate",
+
+    # ===== Spiegazione =====
     "Reason",
+
+    # ===== Driver =====
     "RankingGapScore",
     "HomeAttackScore",
     "AwayAttackScore",
@@ -70,6 +81,8 @@ BASE_FIELDNAMES = [
     "HomeVenueOverScore",
     "AwayVenueOverScore",
     "BTTSProfileScore",
+
+    # ===== Versione =====
     "AlgorithmVersion",
 ]
 

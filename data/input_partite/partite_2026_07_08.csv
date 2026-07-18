@@ -1,27 +1,27 @@
-LeagueId;Home;Away
-Australia_NPLNorthernNSW_2026;Kahibah;Maitland
-Bhutan_PremierLeague_2026;Paro;Tensung
-Finland_Kakkonen_GroupC_2026;Jaro 2;SJK Akatemia 2
-Kyrgyzstan_PremierLiga_2026;Alay Osh;Toktogul
-Kyrgyzstan_PremierLiga_2026;Alga;Dordoi Bishkek
-USA_MLSNextPro_WesternConference_PacificDivision_2026;Vancouver 2;Ventura County
-USA_MLSNextPro_WesternConference_PacificDivision_2026;San Jose Earthquakes II;Sporting Kansas City II
-USA_USLLeagueTwo_Valley_2026;West Virginia;Louisville City 2
-USA_USLLeagueTwo_Northeast_2026;AC Connecticut;Western Mass Pioneers
-USA_USLLeagueTwo_GreatForest_2026;Akron City;Pittsburgh Riverhounds 2
-USA_USLLeagueTwo_Chesapeake_2026;Christos;Loudoun 2
-USA_USLLeagueTwo_NorCal_2026;Glens SC;Almaden
-USA_USLLeagueTwo_Northeast_2026;NEFC;Boston City
-USA_USLLeagueTwo_GreatLakes_2026;Union FC Macomb;Ann Arbor
-USA_USLLeagueTwo_Northeast_2026;Vermont Green;Connecticut Rush
-USA_USLLeagueTwo_Metropolitan_2026;Hudson Valley;Motown 2
-USA_USLLeagueTwo_GreatPlains_2026;Springfield FC;Menace
-USA_USLLeagueTwo_GreatPlains_2026;Sunflower State;Peoria
-USA_USLLeagueTwo_Ranger_2026;Texoma;Denton Diablos
-USA_USLLeagueTwo_Mountain_2026;Real Colorado;Albion Colorado
-USA_USLLeagueTwo_Mountain_2026;Colorado Storm;Atletico Union
-USA_USLLeagueTwo_Northwest_2026;Tacoma Stars;Midlakes United
-USA_USLLeagueTwo_Southwest_2026;Capo;Southern California
-USA_USLLeagueTwo_MidAtlantic_2026;Delaware;Eagle FC
-Bolivia_DivisionProfesional_2026;Real Oruro;Universitario de Vinto
-Bolivia_DivisionProfesional_2026;Real Potosi;Academia del Balompie
+﻿LeagueId;Home;Away
+Australia_NPLNorthernNSW;Kahibah;Maitland
+Bhutan_PremierLeague;Paro;Tensung
+Finland_Kakkonen_GroupC;Jaro 2;SJK Akatemia 2
+Kyrgyzstan_PremierLiga;Alay Osh;Toktogul
+Kyrgyzstan_PremierLiga;Alga;Dordoi Bishkek
+USA_MLSNextPro_WesternConference_PacificDivision;Vancouver 2;Ventura County
+USA_MLSNextPro_WesternConference_PacificDivision;San Jose Earthquakes II;Sporting Kansas City II
+USA_USLLeagueTwo_Valley;West Virginia;Louisville City 2
+USA_USLLeagueTwo_Northeast;AC Connecticut;Western Mass Pioneers
+USA_USLLeagueTwo_GreatForest;Akron City;Pittsburgh Riverhounds 2
+USA_USLLeagueTwo_Chesapeake;Christos;Loudoun 2
+USA_USLLeagueTwo_NorCal;Glens SC;Almaden
+USA_USLLeagueTwo_Northeast;NEFC;Boston City
+USA_USLLeagueTwo_GreatLakes;Union FC Macomb;Ann Arbor
+USA_USLLeagueTwo_Northeast;Vermont Green;Connecticut Rush
+USA_USLLeagueTwo_Metropolitan;Hudson Valley;Motown 2
+USA_USLLeagueTwo_GreatPlains;Springfield FC;Menace
+USA_USLLeagueTwo_GreatPlains;Sunflower State;Peoria
+USA_USLLeagueTwo_Ranger;Texoma;Denton Diablos
+USA_USLLeagueTwo_Mountain;Real Colorado;Albion Colorado
+USA_USLLeagueTwo_Mountain;Colorado Storm;Atletico Union
+USA_USLLeagueTwo_Northwest;Tacoma Stars;Midlakes United
+USA_USLLeagueTwo_Southwest;Capo;Southern California
+USA_USLLeagueTwo_MidAtlantic;Delaware;Eagle FC
+Bolivia_DivisionProfesional;Real Oruro;Universitario de Vinto
+Bolivia_DivisionProfesional;Real Potosi;Academia del Balompie

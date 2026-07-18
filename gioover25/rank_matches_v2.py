@@ -60,13 +60,34 @@ OUTPUT_DIR = Path("data/output_ranking")
 REGISTRY_FILE = Path("data/league_registry.csv")
 
 FIELDNAMES = [
-    "PredictionDate", "MatchDate", "LeagueId", "Round", "Home", "Away",
-    "HomeSourceLeagueId", "AwaySourceLeagueId", "CompetitionGroup",
-    "Score", "Band", "Reason", "RankingGapScore", "HomeAttackScore",
-    "AwayAttackScore", "HomeDefenseWeaknessScore",
-    "AwayDefenseWeaknessScore", "HomeLast10OverScore",
-    "AwayLast10OverScore", "HomeVenueOverScore", "AwayVenueOverScore",
-    "BTTSProfileScore", "AlgorithmVersion",
+    "MatchDate",
+    "LeagueId",
+    "Home",
+    "Away",
+    "Score",
+    "Band",
+    "Round",
+
+    "PredictionDate",
+
+    "HomeSourceLeagueId",
+    "AwaySourceLeagueId",
+    "CompetitionGroup",
+
+    "Reason",
+
+    "RankingGapScore",
+    "HomeAttackScore",
+    "AwayAttackScore",
+    "HomeDefenseWeaknessScore",
+    "AwayDefenseWeaknessScore",
+    "HomeLast10OverScore",
+    "AwayLast10OverScore",
+    "HomeVenueOverScore",
+    "AwayVenueOverScore",
+    "BTTSProfileScore",
+
+    "AlgorithmVersion",
 ]
 
 
@@ -190,30 +211,35 @@ def build_output_row(
     competition_group: str, score,
 ) -> dict:
     return {
-        "PredictionDate": prediction_date,
-        "MatchDate": match_date,
-        "LeagueId": league_id,
-        "Round": round_number,
-        "Home": home,
-        "Away": away,
-        "HomeSourceLeagueId": home_source_league_id,
-        "AwaySourceLeagueId": away_source_league_id,
-        "CompetitionGroup": competition_group,
-        "Score": score_value(score, "score"),
-        "Band": score_value(score, "band"),
-        "Reason": score_value(score, "reason"),
-        "RankingGapScore": score_value(score, "ranking_gap_score"),
-        "HomeAttackScore": score_value(score, "home_attack_score"),
-        "AwayAttackScore": score_value(score, "away_attack_score"),
-        "HomeDefenseWeaknessScore": score_value(score, "home_defense_weakness_score"),
-        "AwayDefenseWeaknessScore": score_value(score, "away_defense_weakness_score"),
-        "HomeLast10OverScore": score_value(score, "home_last10_over_score"),
-        "AwayLast10OverScore": score_value(score, "away_last10_over_score"),
-        "HomeVenueOverScore": score_value(score, "home_venue_over_score"),
-        "AwayVenueOverScore": score_value(score, "away_venue_over_score"),
-        "BTTSProfileScore": score_value(score, "btts_profile_score"),
-        "AlgorithmVersion": algorithm_version,
-    }
+    "MatchDate": match_date,
+    "LeagueId": league_id,
+    "Home": home,
+    "Away": away,
+    "Score": score_value(score, "score"),
+    "Band": score_value(score, "band"),
+    "Round": round_number,
+
+    "PredictionDate": prediction_date,
+
+    "HomeSourceLeagueId": home_source_league_id,
+    "AwaySourceLeagueId": away_source_league_id,
+    "CompetitionGroup": competition_group,
+
+    "Reason": score_value(score, "reason"),
+
+    "RankingGapScore": score_value(score, "ranking_gap_score"),
+    "HomeAttackScore": score_value(score, "home_attack_score"),
+    "AwayAttackScore": score_value(score, "away_attack_score"),
+    "HomeDefenseWeaknessScore": score_value(score, "home_defense_weakness_score"),
+    "AwayDefenseWeaknessScore": score_value(score, "away_defense_weakness_score"),
+    "HomeLast10OverScore": score_value(score, "home_last10_over_score"),
+    "AwayLast10OverScore": score_value(score, "away_last10_over_score"),
+    "HomeVenueOverScore": score_value(score, "home_venue_over_score"),
+    "AwayVenueOverScore": score_value(score, "away_venue_over_score"),
+    "BTTSProfileScore": score_value(score, "btts_profile_score"),
+
+    "AlgorithmVersion": algorithm_version,
+}
 
 
 def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: str = "v20") -> None:

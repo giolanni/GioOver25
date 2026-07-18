@@ -8,7 +8,6 @@ class LeagueInfo:
     league_id: str
     country: str
     league: str
-    season: int
     teams: int
     expected_rounds: int
     home_away: bool
@@ -27,14 +26,13 @@ def load_league_registry(path: str | Path = "data/league_registry.csv") -> dict[
 
     leagues: dict[str, LeagueInfo] = {}
 
-    with open(registry_path, newline="", encoding="utf-8-sig") as f:
+    with registry_path.open(newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f, delimiter=";")
 
         required_columns = {
             "LeagueId",
             "Country",
             "League",
-            "Season",
             "Teams",
             "ExpectedRounds",
             "HomeAway",
@@ -49,16 +47,24 @@ def load_league_registry(path: str | Path = "data/league_registry.csv") -> dict[
             )
 
         for row in reader:
+            league_id = str(row.get("LeagueId", "")).strip()
+            if not league_id:
+                continue
+
             league = LeagueInfo(
-                league_id=row["LeagueId"].strip(),
-                country=row["Country"].strip(),
-                league=row["League"].strip(),
-                season=int(row["Season"]),
+                league_id=league_id,
+                country=str(row.get("Country", "")).strip(),
+                league=str(row.get("League", "")).strip(),
                 teams=int(row["Teams"]),
                 expected_rounds=int(row["ExpectedRounds"]),
                 home_away=_bool(row["HomeAway"]),
-                notes=row.get("Notes", "").strip(),
+                notes=str(row.get("Notes", "")).strip(),
             )
+
+            if league.league_id in leagues:
+                raise ValueError(
+                    f"LeagueId duplicato nel league_registry.csv: {league.league_id}"
+                )
 
             leagues[league.league_id] = league
 
@@ -67,7 +73,7 @@ def load_league_registry(path: str | Path = "data/league_registry.csv") -> dict[
 
 def get_league_info(
     league_id: str,
-    path: str | Path = "data/league_registry.csv"
+    path: str | Path = "data/league_registry.csv",
 ) -> LeagueInfo:
     registry = load_league_registry(path)
 

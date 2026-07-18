@@ -1,0 +1,8 @@
+﻿DetectedAt;LeagueId;ExistingDate;NewDate;DaysDifference;Home;Away;HG;AG;ExistingRound;NewRound;ExistingNotes;NewNotes;SourceInputFile;Status
+2026-07-13T17:26:37;Iceland_Division_1_2026;2026-07-01;2026-06-26;5;Afturelding;Njardvik;2;0;17;20;;;data/input_risultati/risultati.csv;DA_VERIFICARE
+2026-07-13T17:26:37;Iceland_Division_1_2026;2026-07-01;2026-06-26;5;Grindavik;Aegir;0;0;17;20;;;data/input_risultati/risultati.csv;DA_VERIFICARE
+2026-07-13T17:26:37;Norway_3rdDivision_Group5_2026;2026-07-01;2026-06-26;5;Skedsmo;Skjetten;0;1;12;13;;;data/input_risultati/risultati.csv;DA_VERIFICARE
+2026-07-13T17:26:37;Sweden_Division1_Norra_2026;2026-07-01;2026-06-26;5;FBK Karlstad;Hammarby TFF;0;7;14;15;;;data/input_risultati/risultati.csv;DA_VERIFICARE
+2026-07-13T17:26:37;USA_USLLeagueTwo_Northeast_2026;2026-07-01;2026-06-26;5;Seacoast United Phantoms;Boston Bolts;2;0;25;30;;;data/input_risultati/risultati.csv;DA_VERIFICARE
+2026-07-13T18:12:11;Estonia_EsiliigaB_2026;2026-05-24;2026-07-12;49;Tammeka U21;Narva U21;2;1;12;19;;;data/input_risultati/risultati.csv;DA_VERIFICARE
+2026-07-18T01:05:58;Finland_Ykkosliiga_2026;2026-04-10;2026-07-17;98;KaPa;SJK Akatemia;2;2;2;16;;;data/input_risultati/risultati.csv;DA_VERIFICARE

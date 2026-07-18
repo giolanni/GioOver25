@@ -1,8 +1,8 @@
-LeagueId;MatchDate;Home;Away
-Australia_NPLQueenslandU23_2026;2026-07-14;Moreton City Excelsior U23;QLD State Team U17
-Bhutan_PremierLeague_2026;2026-07-14;BFF Academy U19;Drukpa
-Finland_Kakkonen_GroupB_2026;2026-07-14;Ilves 2;GrIFK
-Iceland_Division_1_2026;2026-07-14;Kopavogur;IR Reykjavik
-Iceland_Division_1_2026;2026-07-14;Grotta;Grindavik
-Kyrgyzstan_PremierLiga_2026;2026-07-14;Muras United;Bars
-Somalia_NationalLeague_2026;2026-07-14;Mogadishu City;Badbaado
+﻿LeagueId;MatchDate;Home;Away
+Australia_NPLQueenslandU23;2026-07-14;Moreton City Excelsior U23;QLD State Team U17
+Bhutan_PremierLeague;2026-07-14;BFF Academy U19;Drukpa
+Finland_Kakkonen_GroupB;2026-07-14;Ilves 2;GrIFK
+Iceland_Division_1;2026-07-14;Kopavogur;IR Reykjavik
+Iceland_Division_1;2026-07-14;Grotta;Grindavik
+Kyrgyzstan_PremierLiga;2026-07-14;Muras United;Bars
+Somalia_NationalLeague;2026-07-14;Mogadishu City;Badbaado

@@ -1,50 +1,50 @@
-LeagueId;Home;Away
-Australia_NPLNorthernNSW_2026;Cooks Hill United;Valentine
-Australia_NPLNorthernNSW_2026;Edgeworth E.;Kahibah
-Australia_NPLQueensland_2026;Wynnum Wolves;Rochedale
-Australia_NPLSouthAustralia_2026;Adelaide Comets;Croydon
-Australia_NPLVictoria_2026;Green Gully;Bentleigh
-Australia_NPLVictoria_2026;Heidelberg;St Albans
-Australia_NSWLeagueOne_2026;Hurstville Zagreb;Canterbury Bankstown
-Australia_NSWLeagueOne_2026;Prospect United;Hakoah Sydney
-Australia_QueenslandPremierLeague_2026;Caboolture;Sunshine Coast Wanderers
-Australia_QueenslandPremierLeague_2026;Ipswich;Holland Park Hawks
-Australia_SAStateLeague_2026;Adelaide Olympic;Salisbury Utd.
-Australia_SAStateLeague_2026;Eastern United;Modbury
-Australia_TasmaniaSouthernChampionship_2026;Glenorchy Knights U21;Clarence Zebras U21
-Australia_VictoriaPremierLeague_2026;Brunswick Juventus;Brunswick City
-Australia_VictoriaPremierLeague_2026;Melbourne Knights;Bulleen
-Australia_VictoriaPremierLeague_2026;Northcote City;Melbourne Srbija
-Australia_VictoriaPremierLeague2_2026;Box Hill;Whittlesea United
-Australia_VictoriaPremierLeague2_2026;Kingston City;Nunawading City
-Australia_VictoriaPremierLeague2_2026;Springvale;Keilor Park
-Belarus_VysshayaLiga_2026;Naftan;Dynamo Brest
-Belarus_PershayaLiga_2026;Minsk 2;Gomel 2
-Estonia_Meistriliiga_2026;Nomme Utd;Kalju
-Estonia_Esiliiga_2026;Tallinna Kalev;Maardu
-Finland_Ykkosliiga_2026;JaPS;SJK Akatemia
-Finland_Ykkosliiga_2026;KTP;Jippo
-Finland_Kakkonen_GroupB_2026;GrIFK;NJS
-Iceland_BestaDeildKarla_2026;Hafnarfjordur;Stjarnan
-Iceland_Division_1_2026;Aegir;Fylkir
-Iceland_Division_1_2026;Grotta;Kopavogur
-Iceland_Division_1_2026;IR Reykjavik;Afturelding
-Iceland_Division_1_2026;Njardvik;Throttur
-Iceland_Division_2_2026;Hviti;Dalvik/Reynir
-Iceland_Division_2_2026;KFG Gardabaer;Selfoss
-FaroeIslands_PremierLeague_2026;Runavik;Klaksvik
-FaroeIslands_1Deild_2026;B36 Torshavn 2;Hoyvik
-Kazakhstan_PremierLeague_2026;FC Astana;Zhenis
-Kyrgyzstan_PremierLiga_2026;Abdysh-Ata;Alga
-Kyrgyzstan_PremierLiga_2026;Muras United;Asiagoal Bishkek
-Kyrgyzstan_PremierLiga_2026;Talant;Neftchi Kochkor-Ata
-Latvia_Virsliga_2026;Riga FC;Jelgava
-Lebanon_PremierLeague_2026;Tadamon;Al Ansar
-Lebanon_PremierLeague_2026;Safa;Al-Mabarrah
-Lebanon_PremierLeague_2026;Al Hikma;Nejmeh SC
-Lithuania_Toplyga_2026;Dziugas Telsiai;Kauno Zalgiris
-Norway_OBOSLigaen_2026;Kongsvinger;Sogndal
-Norway_OBOSLigaen_2026;Raufoss;Strømmen
-Norway_OBOSLigaen_2026;Ranheim;Stabaek
-Sweden_Allsvenskan_2026;Sirius;Mjallby
-USA_USLLeagueTwo_GreatForest_2026;Akron City;Erie Sports Center
+﻿LeagueId;Home;Away
+Australia_NPLNorthernNSW;Cooks Hill United;Valentine
+Australia_NPLNorthernNSW;Edgeworth E.;Kahibah
+Australia_NPLQueensland;Wynnum Wolves;Rochedale
+Australia_NPLSouthAustralia;Adelaide Comets;Croydon
+Australia_NPLVictoria;Green Gully;Bentleigh
+Australia_NPLVictoria;Heidelberg;St Albans
+Australia_NSWLeagueOne;Hurstville Zagreb;Canterbury Bankstown
+Australia_NSWLeagueOne;Prospect United;Hakoah Sydney
+Australia_QueenslandPremierLeague;Caboolture;Sunshine Coast Wanderers
+Australia_QueenslandPremierLeague;Ipswich;Holland Park Hawks
+Australia_SAStateLeague;Adelaide Olympic;Salisbury Utd.
+Australia_SAStateLeague;Eastern United;Modbury
+Australia_TasmaniaSouthernChampionship;Glenorchy Knights U21;Clarence Zebras U21
+Australia_VictoriaPremierLeague;Brunswick Juventus;Brunswick City
+Australia_VictoriaPremierLeague;Melbourne Knights;Bulleen
+Australia_VictoriaPremierLeague;Northcote City;Melbourne Srbija
+Australia_VictoriaPremierLeague2;Box Hill;Whittlesea United
+Australia_VictoriaPremierLeague2;Kingston City;Nunawading City
+Australia_VictoriaPremierLeague2;Springvale;Keilor Park
+Belarus_VysshayaLiga;Naftan;Dynamo Brest
+Belarus_PershayaLiga;Minsk 2;Gomel 2
+Estonia_Meistriliiga;Nomme Utd;Kalju
+Estonia_Esiliiga;Tallinna Kalev;Maardu
+Finland_Ykkosliiga;JaPS;SJK Akatemia
+Finland_Ykkosliiga;KTP;Jippo
+Finland_Kakkonen_GroupB;GrIFK;NJS
+Iceland_BestaDeildKarla;Hafnarfjordur;Stjarnan
+Iceland_Division_1;Aegir;Fylkir
+Iceland_Division_1;Grotta;Kopavogur
+Iceland_Division_1;IR Reykjavik;Afturelding
+Iceland_Division_1;Njardvik;Throttur
+Iceland_Division_2;Hviti;Dalvik/Reynir
+Iceland_Division_2;KFG Gardabaer;Selfoss
+FaroeIslands_PremierLeague;Runavik;Klaksvik
+FaroeIslands_1Deild;B36 Torshavn 2;Hoyvik
+Kazakhstan_PremierLeague;FC Astana;Zhenis
+Kyrgyzstan_PremierLiga;Abdysh-Ata;Alga
+Kyrgyzstan_PremierLiga;Muras United;Asiagoal Bishkek
+Kyrgyzstan_PremierLiga;Talant;Neftchi Kochkor-Ata
+Latvia_Virsliga;Riga FC;Jelgava
+Lebanon_PremierLeague;Tadamon;Al Ansar
+Lebanon_PremierLeague;Safa;Al-Mabarrah
+Lebanon_PremierLeague;Al Hikma;Nejmeh SC
+Lithuania_Toplyga;Dziugas Telsiai;Kauno Zalgiris
+Norway_OBOSLigaen;Kongsvinger;Sogndal
+Norway_OBOSLigaen;Raufoss;Strømmen
+Norway_OBOSLigaen;Ranheim;Stabaek
+Sweden_Allsvenskan;Sirius;Mjallby
+USA_USLLeagueTwo_GreatForest;Akron City;Erie Sports Center

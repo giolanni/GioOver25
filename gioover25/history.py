@@ -7,7 +7,6 @@ from pathlib import Path
 class MatchResult:
     country: str
     league: str
-    season: int
     round: int
     date: str
     home: str
@@ -15,6 +14,9 @@ class MatchResult:
     home_goals: int
     away_goals: int
     notes: str = ""
+    # Compatibilità temporanea con codice non ancora bonificato.
+    # Non viene più letto né scritto nei file risultati.
+    season: int = 0
 
     @property
     def result(self) -> str:
@@ -41,6 +43,7 @@ def _int(value: str) -> int:
     value = (value or "").strip()
     return int(value) if value else 0
 
+
 def _parse_round(value) -> int:
     raw = str(value or "").strip()
 
@@ -61,15 +64,13 @@ def read_results_file(path: str | Path) -> list[MatchResult]:
 
     matches: list[MatchResult] = []
 
-    with open(results_path, newline="", encoding="utf-8-sig") as f:
+    with results_path.open(newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f, delimiter=";")
 
         required_columns = {
             "Country",
             "League",
-            "Season",
             "Round",
-            "Date",
             "Home",
             "Away",
             "HG",
@@ -77,21 +78,26 @@ def read_results_file(path: str | Path) -> list[MatchResult]:
             "Notes",
         }
 
-        missing = required_columns - set(reader.fieldnames or [])
+        fieldnames = set(reader.fieldnames or [])
+        if "MatchDate" not in fieldnames and "Date" not in fieldnames:
+            required_columns.add("MatchDate")
+
+        missing = required_columns - fieldnames
         if missing:
             raise ValueError(
                 "File risultati non valido. Mancano le colonne: "
                 + ", ".join(sorted(missing))
             )
 
+        date_column = "MatchDate" if "MatchDate" in fieldnames else "Date"
+
         for row in reader:
             matches.append(
                 MatchResult(
                     country=row["Country"].strip(),
                     league=row["League"].strip(),
-                    season=_int(row["Season"]),
                     round=_parse_round(row.get("Round")),
-                    date=row["Date"].strip(),
+                    date=row[date_column].strip(),
                     home=row["Home"].strip(),
                     away=row["Away"].strip(),
                     home_goals=_int(row["HG"]),
@@ -110,9 +116,8 @@ def write_results_file(matches: list[MatchResult], path: str | Path) -> None:
     fieldnames = [
         "Country",
         "League",
-        "Season",
         "Round",
-        "Date",
+        "MatchDate",
         "Home",
         "Away",
         "HG",
@@ -120,7 +125,7 @@ def write_results_file(matches: list[MatchResult], path: str | Path) -> None:
         "Notes",
     ]
 
-    with open(results_path, "w", newline="", encoding="utf-8-sig") as f:
+    with results_path.open("w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=";")
         writer.writeheader()
 
@@ -129,9 +134,8 @@ def write_results_file(matches: list[MatchResult], path: str | Path) -> None:
                 {
                     "Country": match.country,
                     "League": match.league,
-                    "Season": match.season,
                     "Round": match.round,
-                    "Date": match.date,
+                    "MatchDate": match.date,
                     "Home": match.home,
                     "Away": match.away,
                     "HG": match.home_goals,

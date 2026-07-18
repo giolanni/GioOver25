@@ -1,0 +1,367 @@
+﻿RowId;LeagueId;Home;Away;HistoryDate;RankingDate;DistanceDays;RankingSource;CopiedFields
+63;Bhutan_PremierLeague_2026;Transport United;BFF Academy U19;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+66;Estonia_Esiliiga_2026;Maardu;Flora U21;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+67;Finland_Kakkonen_GroupB_2026;MuSa;GrIFK;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+68;Kazakhstan_FirstLeague_2026;Akademiya Ontustik;Arys;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+69;Kazakhstan_FirstLeague_2026;Aktobe 2;Khan Tengri;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+70;Kazakhstan_FirstLeague_2026;Jaiyq;Tobol 2;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+71;Somalia_NationalLeague_2026;Jeenyo;Gantaalaha Afgooye;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+72;USA_USLChampionship_2026;Hartford Athletic;Orange County SC;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+73;USA_USLChampionship_2026;Sacramento Republic;Rhode Island;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+74;USA_USLLeagueOne_2026;Greenville;Sarasota Paradise;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+75;USA_USLLeagueOne_2026;New York Cosmos;FC Naples;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+76;USA_USLLeagueTwo_Chesapeake_2026;Bethesda SC;Virginia Marauders;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+77;USA_USLLeagueTwo_Chesapeake_2026;Northern Virginia;Lionsbridge;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+78;USA_USLLeagueTwo_Chesapeake_2026;Patuxent;Christos;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+79;USA_USLLeagueTwo_Chesapeake_2026;Virginia Beach;Annapolis Blues;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+80;USA_USLLeagueTwo_GreatForest_2026;Cleveland Force;Steel City;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+81;USA_USLLeagueTwo_GreatLakes_2026;Kalamazoo FC;Lansing City;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+82;USA_USLLeagueTwo_Heartland_2026;River Light;Rockford Raptors;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+83;USA_USLLeagueTwo_Heartland_2026;RKC SC;Chicago Dutch Lions;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+84;USA_USLLeagueTwo_Heartland_2026;Rochester FC;St. Croix;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+85;USA_USLLeagueTwo_LoneStar_2026;Houston FC;Houston Sur;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+86;USA_USLLeagueTwo_LoneStar_2026;Laredo Heat;GFI Woodlands;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+87;USA_USLLeagueTwo_LoneStar_2026;San Antonio FC 2;Twin City Toucans;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+88;USA_USLLeagueTwo_Metropolitan_2026;Cedar;Ironbound SC;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+89;USA_USLLeagueTwo_Metropolitan_2026;Manhattan;New Jersey Copa;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+90;USA_USLLeagueTwo_Metropolitan_2026;Morris Elite;Westchester Flames;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+91;USA_USLLeagueTwo_MidAtlantic_2026;Ocean City;LVU Rush;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+92;USA_USLLeagueTwo_MidAtlantic_2026;RC New Jersey;West Chester Utd;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+93;USA_USLLeagueTwo_MidAtlantic_2026;Reading;Philadelphia Lone Star;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+94;USA_USLLeagueTwo_MidSouth_2026;Jackson Boom;Hattiesburg;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+95;USA_USLLeagueTwo_MidSouth_2026;Little Rock Rangers;Memphis FC;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+96;USA_USLLeagueTwo_MidSouth_2026;Mississippi Brilla;Louisiana;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+97;USA_USLLeagueTwo_NorCal_2026;Academica SC;San Juan;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+98;USA_USLLeagueTwo_NorCal_2026;Davis Legacy;San Francisco City;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+99;USA_USLLeagueTwo_NorCal_2026;Project 51O;Marin;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+100;USA_USLLeagueTwo_Northeast_2026;Black Rock;Boston Bolts;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+101;USA_USLLeagueTwo_Northwest_2026;Bigfoot;Ballard;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+102;USA_USLLeagueTwo_Ranger_2026;West Texas;Lubbock Matadors;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+103;USA_USLLeagueTwo_SouthAtlantic_2026;North Carolina FC U23;Charlotte Eagles;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+104;USA_USLLeagueTwo_SouthAtlantic_2026;Salem City;Tobacco Road;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+105;USA_USLLeagueTwo_SouthAtlantic_2026;SC United Bantams;Charlotte Independ. 2;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+106;USA_USLLeagueTwo_SouthAtlantic_2026;Wake FC;Port City;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+107;USA_USLLeagueTwo_SouthCentral_2026;Apotheos;Dothan United;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+108;USA_USLLeagueTwo_SouthCentral_2026;Montgomery United;Columbus United;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+109;USA_USLLeagueTwo_SouthCentral_2026;Swarm FC;East Atlanta;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+110;USA_USLLeagueTwo_SouthFlorida_2026;Fort Lauderdale;Weston;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+111;USA_USLLeagueTwo_SouthFlorida_2026;Lakeland United;Miami City;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+112;USA_USLLeagueTwo_Southeast_2026;Brave SC;Inter Gainesville;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+113;USA_USLLeagueTwo_Southwest_2026;City SC;AMSG FC;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+114;USA_USLLeagueTwo_Southwest_2026;Ventura;Stars FC;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+115;USA_USLLeagueTwo_Valley_2026;Toledo Villa;Northern Indiana;2026-07-09;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv;0
+116;Australia_NPLQueensland_2026;Brisbane Roar U23;Rochedale;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+117;Australia_NPLQueensland_2026;Peninsula;Wynnum Wolves;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+118;Australia_NPLTasmania_2026;Glenorchy Knights;Kingborough Lions;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+119;Australia_NPLTasmania_2026;Launceston United;Riverside Olympic;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+120;Australia_NPLVictoria_2026;Dandenong City;South Melbourne;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+121;Australia_NPLVictoria_2026;Green Gully;Altona Magic;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+122;Australia_NPLVictoria_2026;Oakleigh;Avondale FC;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+123;Australia_NPLVictoria_2026;Preston Lions;Hume City;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+124;Australia_NSWLeagueOne_2026;Macarthur Rams;Bankstown City Lions;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+125;Australia_QueenslandPremierLeague_2026;Holland Park Hawks;North Star;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+126;Australia_VictoriaPremierLeague2_2026;Eastern Lions;Werribee City;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+127;Australia_VictoriaPremierLeague2_2026;Essendon Royals SC;Box Hill;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+128;Australia_VictoriaPremierLeague2_2026;Whittlesea United;Kingston City;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+129;Australia_VictoriaPremierLeague_2026;Brunswick Juventus;Western Utd. U21;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+130;Australia_VictoriaPremierLeague_2026;Langwarrin;Melbourne Victory U21;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+131;Australia_VictoriaPremierLeague_2026;Northcote City;Melbourne Knights;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+132;Belarus_PershayaLiga_2026;FC Slonim;Niva Dolbizno;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+133;Belarus_PershayaLiga_2026;Ostrovets;SKA-1938;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+134;Belarus_VysshayaLiga_2026;Dnepr Mogilev;FC Minsk;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+135;Bolivia_DivisionProfesional_2026;Nacional Potosi;Aurora;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+136;Estonia_Meistriliiga_2026;Harju JK Laagri;Narva;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+137;Finland_Kakkonen_GroupB_2026;Abo;Ilves 2;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+138;Finland_Kakkonen_GroupC_2026;GBK Kokkola;JBK;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+139;Finland_Veikkausliiga_2026;VPS;SJK;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+140;Finland_Ykkonen_2026;Inter Turku 2;Rovaniemi;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+141;Finland_Ykkonen_2026;Tampere Utd;SalPa;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+142;Finland_Ykkosliiga_2026;KTP;JaPS;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+143;Finland_Ykkosliiga_2026;PK-35;KaPa;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+144;Iceland_Division_1_2026;Aegir;Kopavogur;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+145;Iceland_Division_1_2026;IR Reykjavik;Throttur;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+146;Iceland_Division_1_2026;Leiknir;Grotta;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+147;Iceland_Division_1_2026;Njardvik;Grindavik;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+148;Kazakhstan_FirstLeague_2026;FC Batyr;Kairat Almaty 2;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+149;Kazakhstan_FirstLeague_2026;Kaspij Aktau 2;Taraz;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+150;Kazakhstan_FirstLeague_2026;Shakhter K.;Turan;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+151;Kazakhstan_FirstLeague_2026;Yelimay Semey 2;FC Astana 2;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+153;Kyrgyzstan_PremierLiga_2026;Asiagoal Bishkek;Bars;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+154;Kyrgyzstan_PremierLiga_2026;Bishkek City;Muras United;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+155;Kyrgyzstan_PremierLiga_2026;Ilbirs;Ozgon;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+156;Somalia_NationalLeague_2026;Badbaado;Jazeera;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+157;USA_USLLeagueTwo_GreatLakes_2026;Midwest United;Union FC Macomb;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+158;USA_USLLeagueTwo_Mountain_2026;Real Colorado;Flatirons;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+159;USA_USLLeagueTwo_Northeast_2026;NEFC;Albany Rush;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+160;USA_USLLeagueTwo_Valley_2026;Dayton;West Virginia;2026-07-10;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv;0
+161;Australia_NPLACT_2026;Canberra Croatia;Brindabella;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+162;Australia_NPLACT_2026;Canberra Juventus;O'Connor Knights;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+163;Australia_NPLACT_2026;Canberra Olympic;Canberra White Eagles;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+164;Australia_NPLACT_2026;Tigers FC;Queanbeyan City;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+165;Australia_NPLACT_2026;Tuggeranong Utd;Belconnen Utd.;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+166;Australia_NPLNSW_2026;APIA Leichhardt;Sydney FC U23;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+167;Australia_NPLNSW_2026;Manly Utd;Sutherland;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+168;Australia_NPLNSW_2026;NWS Spirit;St George Saints;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+169;Australia_NPLNSW_2026;SD Raiders;Blacktown City;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+170;Australia_NPLNSW_2026;St. George City;UNSW;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+171;Australia_NPLNSW_2026;Sydney Olympic;Wollongong Wolves;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+172;Australia_NPLNorthernNSW_2026;Cooks Hill United;Charlestown Azzurri;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+173;Australia_NPLNorthernNSW_2026;Edgeworth E.;Belmont Swansea Utd.;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+174;Australia_NPLNorthernNSW_2026;Maitland;Adamstown Rosebud;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+175;Australia_NPLNorthernNSW_2026;Weston Bears;Lambton J.;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+176;Australia_NPLQueenslandU23_2026;Moreton City Excelsior U23;Magic United U23;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+177;Australia_NPLQueenslandU23_2026;Peninsula U23;Wynnum Wolves U23;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+178;Australia_NPLQueensland_2026;Moreton City Excelsior;Magic United;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+179;Australia_NPLTasmania_2026;Clarence Zebras;Launceston;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+180;Australia_NPLTasmania_2026;Devonport;South East Utd.;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+181;Australia_NPLTasmania_2026;South Hobart;Ulverstone;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+182;Australia_NPLVictoria_2026;Dandenong Thunder;Bentleigh;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+183;Australia_NPLVictoria_2026;Melbourne City U21;Heidelberg;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+184;Australia_NPLWesternAustralia_2026;Olympic Kingsway;Perth RedStar;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+185;Australia_NPLWesternAustralia_2026;Sorrento;Fremantle City;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+186;Australia_NPL_NSW_U20_2026;APIA Leichhardt U20;Sydney FC U20;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+187;Australia_NPL_NSW_U20_2026;Manly Utd U20;Sutherland U20;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+188;Australia_NPL_NSW_U20_2026;NWS Spirit U20;St George Saints U20;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+189;Australia_NPL_NSW_U20_2026;SD Raiders U20;Blacktown City U20;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+190;Australia_NPL_NSW_U20_2026;St. George City U20;UNSW U20;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+191;Australia_NPL_NSW_U20_2026;Sydney Olympic U20;Wollongong Wolves U20;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+192;Australia_NSWLeagueOne_2026;Canterbury Bankstown;Prospect United;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+193;Australia_NSWLeagueOne_2026;Dulwich Hill;Bulls Academy;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+194;Australia_NSWLeagueOne_2026;Hakoah Sydney;Hurstville Zagreb;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+195;Australia_NSWLeagueOne_2026;Inter Lions;Hills United;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+196;Australia_NSWLeagueOne_2026;Northern Tigers;Newcastle Jets U23;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+197;Australia_NSWLeagueOne_2026;Rydalmere Lions;Western City Rangers;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+198;Australia_NorthernNSWStateLeague_2026;Cessnock City Hornets;Dudley Redhead United;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+199;Australia_NorthernNSWStateLeague_2026;Newcastle Croatia;Lake Macquarie;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+200;Australia_NorthernNSWStateLeague_2026;Singleton Strikers;South Cardiff;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+201;Australia_QueenslandPremierLeague_2026;Broadbeach Utd.;Caboolture;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+202;Australia_QueenslandPremierLeague_2026;Logan Lightning;Ipswich;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+203;Australia_QueenslandPremierLeague_2026;Redlands;Capalaba;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+204;Australia_QueenslandPremierLeague_2026;St. George Willawong;Robina City;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+205;Australia_TasmaniaNorthernChampionship_2026;Devonport U21;Ulverstone U21;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+206;Australia_TasmaniaNorthernChampionship_2026;Launceston United U21;Burnie Utd.;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+207;Australia_TasmaniaNorthernChampionship_2026;Northern Rangers;Launceston U21;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+208;Australia_TasmaniaNorthernChampionship_2026;Somerset;Riverside Olympic U21;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+209;Australia_TasmaniaSouthernChampionship_2026;Clarence Zebras U21;Taroona;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+210;Australia_TasmaniaSouthernChampionship_2026;Glenorchy Knights U21;Olympia Warriors;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+211;Australia_TasmaniaSouthernChampionship_2026;Hobart Utd.;Hobart City;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+212;Australia_TasmaniaSouthernChampionship_2026;New Town;South Hobart U21;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+213;Australia_VictoriaPremierLeague2_2026;Bayside Argonauts;Altona City;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+214;Australia_VictoriaPremierLeague2_2026;Keilor Park;Malvern;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+215;Australia_VictoriaPremierLeague2_2026;Moreland City;Springvale;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+216;Australia_VictoriaPremierLeague2_2026;Nunawading City;Goulburn Valley Suns;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+217;Australia_VictoriaPremierLeague_2026;Eltham Redbacks;North Geelong;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+218;Australia_VictoriaPremierLeague_2026;Melbourne Srbija;Manningham United Blues;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+219;Australia_VictoriaPremierLeague_2026;Port Melbourne Sharks;North Sunshine Eagles;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+220;Australia_WAStateLeague_2026;Cockburn City;Kingsley Westside;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+221;Australia_WAStateLeague_2026;Curtin Univ;Floreat Athena;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+222;Australia_WAStateLeague_2026;Gwelup Croatia;Inglewood;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+223;Australia_WAStateLeague_2026;Joondalup;Mandurah City;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+224;Australia_WAStateLeague_2026;Quinns;Nedlands;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+225;Australia_WAStateLeague_2026;Subiaco;Murdoch Melville;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+226;Belarus_PershayaLiga_2026;BATE 2;Lida;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+227;Belarus_PershayaLiga_2026;Din. Minsk 2;Slutsk;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+228;Belarus_PershayaLiga_2026;Molodechno;Minsk 2;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+229;Belarus_PershayaLiga_2026;Orsha;Smorgon;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+230;Belarus_PershayaLiga_2026;Uni X Labs;Osipovichi;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+231;Belarus_VysshayaLiga_2026;Baranovici;Zhodino;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+232;Belarus_VysshayaLiga_2026;Dynamo Brest;Slavia Mozyr;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+233;Belarus_VysshayaLiga_2026;Gomel;Neman;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+234;Bhutan_PremierLeague_2026;Tsirang;RTC;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+235;Bolivia_DivisionProfesional_2026;Real Oruro;GV San Jose;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+236;Estonia_EsiliigaB_2026;Tabasalu;Tulevik;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+237;Estonia_Esiliiga_2026;FC Tallinn;Elva;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+238;Estonia_Esiliiga_2026;Levadia U21;Tallinna Kalev;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+239;Estonia_Esiliiga_2026;Viimsi JK;Nomme Kalju U21;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+240;Estonia_Meistriliiga_2026;Nomme Utd;Kuressaare;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+241;Estonia_Meistriliiga_2026;Parnu JK Vaprus;Tammeka;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+242;Finland_Kakkonen_GroupB_2026;EPS;P-Iirot Rauma;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+243;Finland_Kakkonen_GroupB_2026;NJS;EBK;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+244;Finland_Kakkonen_GroupC_2026;Huima / Urho;Hercules;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+245;Finland_Veikkausliiga_2026;Gnistan;Mariehamn;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+246;Finland_Veikkausliiga_2026;Lahti;HJK;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+247;Finland_Veikkausliiga_2026;TPS Turku;Oulu;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+248;Finland_Ykkonen_2026;JJK Jyvaskyla;KuPS Akatemia;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+249;Finland_Ykkonen_2026;Keski-Uusimaa;Jazz Pori;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+250;Finland_Ykkonen_2026;KPV;TPV;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+251;Finland_Ykkonen_2026;VJS;OLS Oulu;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+252;Finland_Ykkosliiga_2026;Haka;Ekenas;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+253;Finland_Ykkosliiga_2026;Klubi 04;Jippo;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+254;Finland_Ykkosliiga_2026;SJK Akatemia;Mikkeli;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+255;Iceland_Division_1_2026;Volsungur;Afturelding;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+256;Iceland_Division_2_2026;Selfoss;Hviti;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+257;Kazakhstan_PremierLeague_2026;Ertis Pavlodar;Zhenis;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+258;Kazakhstan_PremierLeague_2026;Kaspij Aktau;Ordabasy;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+259;Kazakhstan_PremierLeague_2026;Ulytau;Kaisar;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+260;Kazakhstan_PremierLeague_2026;Zhetysu;Altai;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+261;Lithuania_Toplyga_2026;Kauno Zalgiris;FK Panevezys;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+262;Norway_Eliteserien_2026;Aalesund;Molde;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+263;Norway_Eliteserien_2026;Fredrikstad;Lilleström;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+264;Norway_Eliteserien_2026;Tromsø;Vålerenga;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+265;Somalia_NationalLeague_2026;Elman;Horseed;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+266;Somalia_NationalLeague_2026;Raadsan;Heegan;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+267;Sweden_Allsvenskan_2026;Mjallby;AIK Stockholm;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+268;Sweden_Allsvenskan_2026;Orgryte;Hacken;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+269;USA_USLLeagueTwo_GreatForest_2026;Buffalo;Akron City;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+270;USA_USLLeagueTwo_GreatLakes_2026;Oakland County;Midwest United;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+271;USA_USLLeagueTwo_GreatPlains_2026;Santafe Wanderers;Sunflower State;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+272;USA_USLLeagueTwo_Heartland_2026;Sueno;Chicago Dutch Lions;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+273;USA_USLLeagueTwo_Metropolitan_2026;Motown 2;Long Island;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+274;USA_USLLeagueTwo_Metropolitan_2026;New Jersey Copa;Westchester Flames;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+275;USA_USLLeagueTwo_MidAtlantic_2026;Philadelphia Lone Star;RC New Jersey;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+276;USA_USLLeagueTwo_MidSouth_2026;Hattiesburg;Little Rock Rangers;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+277;USA_USLLeagueTwo_NorCal_2026;San Francisco City;Project 51O;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+278;USA_USLLeagueTwo_Northeast_2026;Seacoast Utd Phantoms;AC Connecticut;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+279;USA_USLLeagueTwo_Northeast_2026;Western Mass Pioneers;Vermont Green;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+280;USA_USLLeagueTwo_Northwest_2026;West Seattle Junction;Snohomish United;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+281;USA_USLLeagueTwo_SouthCentral_2026;Birmingham 2;Montgomery United;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+282;USA_USLLeagueTwo_SouthFlorida_2026;Miami City;Lakeland United;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+283;USA_USLLeagueTwo_Southwest_2026;Tucson;Capo;2026-07-11;2026-07-11;0;data\output_ranking\v25\ranking_2026_07_11_v25.csv;0
+284;Estonia_Esiliiga_2026;Nomme Utd U21;Flora U21;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+285;Estonia_EsiliigaB_2026;Johvi Phoenix;Parnu JK Vaprus U21;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+286;Finland_Kakkonen_GroupC_2026;Narpes Kraft;VPS 2;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+287;USA_USLLeagueTwo_Chesapeake_2026;Loudoun 2;Northern Virginia;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+288;USA_USLLeagueTwo_GreatLakes_2026;Flint City;Union FC Macomb;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+289;Finland_Kakkonen_GroupC_2026;Vaajakoski;Jaro 2;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+290;USA_USLLeagueTwo_LoneStar_2026;AHFC Royals;Houston FC;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+291;Australia_NPLQueensland_2026;Gold Coast Knights;Brisbane City;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+292;Estonia_EsiliigaB_2026;Levadia U19;Tallinna Kalev U21;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+293;Iceland_BestaDeildKarla_2026;KR Reykjavik;Vestmannaeyjar;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+294;Australia_NPLQueenslandU23_2026;Gold Coast Knights U23;Brisbane City U23;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+295;USA_USLLeagueTwo_Heartland_2026;Edgewater Castle;Minneapolis City;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+296;Australia_NPLQueenslandU23_2026;QLD State Team U17;Rochedale U23;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+297;USA_USLLeagueTwo_MidSouth_2026;Red River;Mississippi Brilla;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+298;Estonia_EsiliigaB_2026;Tammeka U21;Narva U21;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+299;USA_USLLeagueTwo_Chesapeake_2026;Annapolis Blues;Bethesda SC;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+300;Iceland_Division_2_2026;Kari;KFA;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+301;USA_USLLeagueTwo_SouthAtlantic_2026;Salem City;Wake FC;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+302;USA_USLLeagueTwo_GreatLakes_2026;Ann Arbor;Kalamazoo FC;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+303;Australia_NPLQueenslandU23_2026;Queensland Lions U23;Eastern Suburbs U23;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+304;USA_USLLeagueTwo_GreatPlains_2026;Peoria;Springfield FC;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+305;USA_USLLeagueTwo_Metropolitan_2026;Ironbound SC;Manhattan;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+306;Iceland_BestaDeildKarla_2026;Fram;Thor Akureyri;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+307;Australia_NSWLeagueOne_2026;Central Coast Mariners U23;Blacktown Spartans;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+308;Australia_NPLQueenslandU23_2026;Gold Coast Blaze U23;Olympic FC U23;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+309;Estonia_EsiliigaB_2026;Tartu Kalev;Legion;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+310;USA_USLLeagueTwo_LoneStar_2026;Houston Sur;San Antonio FC 2;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+311;Iceland_Division_2_2026;Dalvik/Reynir;Fjolnir;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+312;Iceland_Division_2_2026;Magni;Haukar;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+313;Finland_Kakkonen_GroupC_2026;SJK Akatemia 2;TP-47;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+314;USA_USLLeagueTwo_MidAtlantic_2026;Reading;LVU Rush;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+315;Australia_NorthernNSWStateLeague_2026;Toronto Awaba Stags;Wallsend Red Devils;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+316;Sweden_Allsvenskan_2026;Brommapojkarna;Sirius;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+317;USA_USLLeagueTwo_Northeast_2026;Black Rock;Boston City;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+318;Iceland_Division_2_2026;Kormakur/Hvot;Olafsvik;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+319;USA_USLLeagueTwo_Heartland_2026;St. Croix;Rockford Raptors;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+320;USA_USLLeagueTwo_Northwest_2026;West Seattle Junction;Portland Bangers;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+321;USA_USLLeagueTwo_NorCal_2026;Almaden;Davis Legacy;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+322;Australia_NPLNorthernNSW_2026;Broadmeadow;Newcastle Olympic;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+323;USA_USLLeagueTwo_Chesapeake_2026;Hill City;Virginia Marauders;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+324;USA_MLSNextPro_EasternConference_NortheastDivision_2026;Chicago Fire II;New York Red Bulls II;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+325;Australia_NPLQueensland_2026;Gold Coast;Olympic FC;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+326;USA_USLLeagueTwo_Mountain_2026;Atletico Union;Flatirons;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+327;Australia_NPL_NSW_U20_2026;Sydney Utd U20;Rockdale Ilinden U20;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+328;Norway_Eliteserien_2026;Brann;Start;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+329;Finland_Kakkonen_GroupA_2026;Lahden Reipas;HIFK;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+330;USA_USLLeagueTwo_SouthAtlantic_2026;Tobacco Road;Port City;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+331;Australia_NorthernNSWStateLeague_2026;West Wallsend;New Lambton;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+332;Australia_NPLQueensland_2026;Queensland Lions;Eastern Suburbs;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+333;USA_MLSNextPro_EasternConference_NortheastDivision_2026;Philadelphia II;Huntsville;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+334;USA_USLLeagueTwo_SouthAtlantic_2026;Charlotte Independ. 2;North Carolina FC U23;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+335;USA_USLLeagueTwo_Ranger_2026;McKinney Chupacabras;Texoma;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+336;Sweden_Allsvenskan_2026;Malmo FF;Göteborg;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+337;Somalia_NationalLeague_2026;Raadsan;Heegan;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+338;USA_USLLeagueTwo_MidAtlantic_2026;Ocean City;Eagle FC;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+339;Iceland_Division_2_2026;Throttur Vogar;KFG Gardabaer;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+340;USA_USLLeagueTwo_Ranger_2026;Denton Diablos;Fort Worth Vaqueros;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+341;Belarus_PershayaLiga_2026;Volna Pinsk;Soligorsk;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+342;Iceland_BestaDeildKarla_2026;Hafnarfjordur;Valur;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+343;USA_USLLeagueTwo_Metropolitan_2026;Hudson Valley;Cedar;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+344;USA_USLLeagueTwo_MidAtlantic_2026;PA Classics;West Chester Utd;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+345;USA_USLLeagueTwo_Southwest_2026;Redlands FC;Ventura;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+346;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;Atlanta United 2;Inter Miami II;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+347;USA_USLLeagueTwo_Southwest_2026;AMSG FC;Southern California;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+348;USA_USLLeagueTwo_Valley_2026;Kings Hammer Columbus;Toledo Villa;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+349;Australia_NPLNorthernNSW_2026;Valentine;Kahibah;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+350;USA_USLLeagueTwo_SouthCentral_2026;Columbus United;East Atlanta;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+351;Australia_NPL_NSW_U20_2026;Marconi S. U20;WS Wanderers U20;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+352;USA_USLLeagueTwo_Southwest_2026;Stars FC;Capo;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+353;USA_USLLeagueTwo_SouthAtlantic_2026;Hickory;Asheville City;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+354;Iceland_BestaDeildKarla_2026;Akureyri;Akranes;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+355;Sweden_Allsvenskan_2026;Hammarby;Kalmar;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+356;USA_MLSNextPro_WesternConference_PacificDivision_2026;Real Monarchs;Vancouver 2;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+357;USA_USLLeagueTwo_Chesapeake_2026;Lionsbridge;Charlottesville Blues;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+358;USA_USLLeagueTwo_Mountain_2026;Colorado Storm;Albion Colorado;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+359;Belarus_PershayaLiga_2026;Gomel 2;BumProm Gomel;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+360;Australia_QueenslandPremierLeague_2026;Sunshine Coast Wanderers;Brisbane Strikers;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+361;Sweden_Allsvenskan_2026;Västerås SK;Degerfors;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+362;USA_USLLeagueTwo_GreatForest_2026;Lorain County Leviathan;Steel City;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+363;USA_MLSNextPro_WesternConference_CentralDivision_2026;Houston Dynamo 2;St. Louis City 2;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+364;Norway_Eliteserien_2026;Sarpsborg 08;Viking;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+365;USA_USLLeagueTwo_Valley_2026;Northern Indiana;Dayton;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+366;USA_USLLeagueTwo_Southeast_2026;Nona;Inter Gainesville;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+367;Bolivia_DivisionProfesional_2026;The Strongest;Bolivar;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+368;USA_MLSNextPro_WesternConference_PacificDivision_2026;Los Angeles FC 2;Portland Timbers 2;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+369;USA_USLLeagueTwo_SouthCentral_2026;Dothan United;Apotheos;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+370;USA_USLLeagueTwo_Chesapeake_2026;Patuxent;Virginia Beach;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+371;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;Carolina Core;Chattanooga;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+372;Norway_Eliteserien_2026;KFUM Oslo;Bodo/Glimt;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+373;Somalia_NationalLeague_2026;Jubba;Dekedaha;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+374;Australia_NPLNSW_2026;Marconi;WS Wanderers U21;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+375;USA_USLLeagueTwo_Ranger_2026;Lubbock Matadors;West Texas;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+376;Kazakhstan_PremierLeague_2026;Tobol;Okzhetpes;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+377;USA_USLLeagueTwo_GreatPlains_2026;Menace;St. Louis Ambush;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+378;Bolivia_DivisionProfesional_2026;Real Potosi;Nacional Potosi;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+379;Australia_NPLVictoria_2026;St Albans;George Cross;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+380;USA_MLSNextPro_WesternConference_CentralDivision_2026;Colorado Rapids 2;North Texas;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+381;USA_USLLeagueTwo_MidSouth_2026;Memphis FC;Jackson Boom;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+382;Norway_Eliteserien_2026;Sandefjord;HamKam;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+383;Sweden_Allsvenskan_2026;GAIS;Elfsborg;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+384;Lithuania_Toplyga_2026;Transinvest;Banga;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+385;Australia_NPLNSW_2026;Sydney Utd;Rockdale Ilinden;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+386;Norway_Eliteserien_2026;Rosenborg;Kristiansund;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+387;Kazakhstan_PremierLeague_2026;Atyrau;Yelimay Semey;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+388;Belarus_VysshayaLiga_2026;Arsenal Dzerzhinsk;Vitebsk;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+389;Kazakhstan_PremierLeague_2026;FC Astana;Aktobe;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+390;Kazakhstan_PremierLeague_2026;Ulytau;Kaisar;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+391;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;Crown Legacy;New York City II;2026-07-12;2026-07-12;0;data\output_ranking\v25\ranking_2026_07_12_v25.csv;0
+392;USA_USLLeagueTwo_NorCal_2026;San Juan;Marin;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+393;Iceland_BestaDeildKarla_2026;Breidablik;Keflavik;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+394;USA_USLLeagueTwo_SouthAtlantic_2026;Appalachian;SC United Bantams;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+395;USA_USLLeagueTwo_Northwest_2026;Bigfoot;Midlakes United;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+396;USA_MLSNextPro_EasternConference_NortheastDivision_2026;Connecticut FC;Toronto FC II;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+397;Australia_VictoriaPremierLeague_2026;Bulleen;Brunswick City;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+398;USA_USLLeagueTwo_Heartland_2026;RKC SC;River Light;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+399;Estonia_Esiliiga_2026;Maardu;Tartu Welco;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+400;USA_MLSNextPro_EasternConference_SoutheastDivision_2026;Cincinnati 2;Orlando City B;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+401;USA_MLSNextPro_WesternConference_CentralDivision_2026;Austin FC II;Minnesota 2;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+402;USA_USLLeagueTwo_NorCal_2026;Academica SC;Glens SC;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+403;Bhutan_PremierLeague_2026;Ugyen Academy;Transport United;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+404;Finland_Kakkonen_GroupB_2026;Honka;HJS;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+405;USA_USLLeagueTwo_Northwest_2026;Ballard;Snohomish United;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+406;USA_USLLeagueTwo_Southeast_2026;Brave SC;Shark Coast;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+407;Somalia_NationalLeague_2026;Gaadiidka;Jeenyo;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+408;Bolivia_DivisionProfesional_2026;Tomayapo;Independiente;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+409;Sweden_Allsvenskan_2026;Djurgarden;Halmstad;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+410;Iceland_Division_1_2026;Vestri;Fylkir;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+411;USA_USLLeagueTwo_SouthFlorida_2026;Weston;Miami;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+412;Australia_SAStateLeague_2026;Blue Eagles;Modbury;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+413;USA_USLLeagueTwo_SouthFlorida_2026;Lakeland United;Fort Lauderdale;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+414;USA_MLSNextPro_WesternConference_PacificDivision_2026;San Jose Earthquakes II;Tacoma Defiance;2026-07-13;2026-07-13;0;data\output_ranking\v25\ranking_2026_07_13_v25.csv;0
+415;Australia_NPLQueenslandU23_2026;Moreton City Excelsior U23;QLD State Team U17;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_14_v25.csv;0
+416;Iceland_Division_1_2026;Kopavogur;IR Reykjavik;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_14_v25.csv;0
+417;Finland_Kakkonen_GroupB_2026;Ilves 2;GrIFK;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_14_v25.csv;0
+418;Somalia_NationalLeague_2026;Mogadishu City;Badbaado;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_14_v25.csv;0
+419;Iceland_Division_1_2026;Grotta;Grindavik;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_14_v25.csv;0
+420;Bhutan_PremierLeague_2026;BFF Academy U19;Drukpa;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_14_v25.csv;0
+421;Kyrgyzstan_PremierLiga_2026;Muras United;Bars;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_14_v25.csv;0
+422;Australia_NPLNorthernNSW_2026;Kahibah;Maitland;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0
+423;Finland_Kakkonen_GroupC_2026;GBK Kokkola;Narpes Kraft;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0
+424;Australia_NPLNorthernNSW_2026;Charlestown Azzurri;Weston Bears;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0
+425;Bolivia_DivisionProfesional_2026;Real Oruro;Always Ready;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0
+426;Bolivia_DivisionProfesional_2026;Blooming;GV San Jose;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0
+427;Bhutan_PremierLeague_2026;Tensung;Thimphu City;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0
+428;USA_USLLeagueTwo_MidAtlantic_2026;LVU Rush;Appalachian;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0
+429;USA_USLLeagueTwo_Northeast_2026;NEFC;Ironbound SC;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0
+430;Finland_Ykkosliiga_2026;Jippo;Mikkeli;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0
+431;USA_USLLeagueTwo_SouthAtlantic_2026;Asheville City;Virginia Beach;2026-07-14;2026-07-14;0;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0

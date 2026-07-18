@@ -1,11 +1,11 @@
-LeagueId;MatchDate;Home;Away
-Australia_NPLNorthernNSW_2026;2026-07-14;Charlestown Azzurri;Weston Bears
-Australia_NPLNorthernNSW_2026;2026-07-14;Kahibah;Maitland
-Bhutan_PremierLeague_2026;2026-07-14;Tensung;Thimphu City
-Bolivia_DivisionProfesional_2026;2026-07-14;Real Oruro;Always Ready
-Bolivia_DivisionProfesional_2026;2026-07-14;Blooming;GV San Jose
-Finland_Ykkosliiga_2026;2026-07-14;Jippo;Mikkeli
-Finland_Kakkonen_GroupC_2026;2026-07-14;GBK Kokkola;Narpes Kraft
-USA_USLLeagueTwo_SouthAtlantic_2026;2026-07-14;Asheville City;Virginia Beach
-USA_USLLeagueTwo_MidAtlantic_2026;2026-07-14;LVU Rush;Appalachian
-USA_USLLeagueTwo_Northeast_2026;2026-07-14;NEFC;Ironbound SC
+﻿LeagueId;MatchDate;Home;Away
+Australia_NPLNorthernNSW;2026-07-14;Charlestown Azzurri;Weston Bears
+Australia_NPLNorthernNSW;2026-07-14;Kahibah;Maitland
+Bhutan_PremierLeague;2026-07-14;Tensung;Thimphu City
+Bolivia_DivisionProfesional;2026-07-14;Real Oruro;Always Ready
+Bolivia_DivisionProfesional;2026-07-14;Blooming;GV San Jose
+Finland_Ykkosliiga;2026-07-14;Jippo;Mikkeli
+Finland_Kakkonen_GroupC;2026-07-14;GBK Kokkola;Narpes Kraft
+USA_USLLeagueTwo_SouthAtlantic;2026-07-14;Asheville City;Virginia Beach
+USA_USLLeagueTwo_MidAtlantic;2026-07-14;LVU Rush;Appalachian
+USA_USLLeagueTwo_Northeast;2026-07-14;NEFC;Ironbound SC

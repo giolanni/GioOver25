@@ -1,5 +1,5 @@
-﻿LeagueId;Season;Round;MatchDate;Home;Away;HG;AG;Notes
-Sweden_Division2_NorraGotaland_2026;2026;?;2026-06-25;IFK Skoevde FK;Lidkoepings FK;1;2;
-Sweden_Division2_NorraSvealand_2026;2026;?;2026-06-25;Helges IF;Sunnersta AIF;0;3;
-Sweden_Division2_SodraSvealand_2026;2026;?;2026-06-25;Nykoepings BIS;FC Nacka Iliria;4;1;
-Sweden_Division2_VastraGotaland_2026;2026;?;2026-06-25;Galtabaecks BK;IF Boelan;0;0;
+﻿LeagueId;Round;MatchDate;Home;Away;HG;AG;Notes
+Sweden_Division2_NorraGotaland;?;2026-06-25;IFK Skoevde FK;Lidkoepings FK;1;2;
+Sweden_Division2_NorraSvealand;?;2026-06-25;Helges IF;Sunnersta AIF;0;3;
+Sweden_Division2_SodraSvealand;?;2026-06-25;Nykoepings BIS;FC Nacka Iliria;4;1;
+Sweden_Division2_VastraGotaland;?;2026-06-25;Galtabaecks BK;IF Boelan;0;0;

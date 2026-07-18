@@ -1,0 +1,7 @@
+﻿RowId;LeagueId;Home;Away;CandidateDate;DistanceDays;RankingSource
+64;Bolivia_DivisionProfesional_2026;Real Oruro;Universitario de Vinto;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_08_v25.csv
+64;Bolivia_DivisionProfesional_2026;Real Oruro;Universitario de Vinto;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv
+65;Bolivia_DivisionProfesional_2026;Real Potosi;Academia del Balompie;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_08_v25.csv
+65;Bolivia_DivisionProfesional_2026;Real Potosi;Academia del Balompie;2026-07-11;2;data\output_ranking\v25\ranking_2026_07_09_v25.csv
+152;Kyrgyzstan_PremierLiga_2026;Alay Osh;Toktogul;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_08_v25.csv
+152;Kyrgyzstan_PremierLiga_2026;Alay Osh;Toktogul;2026-07-11;1;data\output_ranking\v25\ranking_2026_07_10_v25.csv

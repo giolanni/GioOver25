@@ -1,9 +1,9 @@
-﻿LeagueId;Season;Round;MatchDate;Home;Away;HG;AG;Notes
-Australia_NPLQueenslandU23_2026;2026;?;2026-07-14;Moreton City Excelsior U23;QLD State Team U17;1;0;
-Bhutan_PremierLeague_2026;2026;?;2026-07-14;BFF Academy U19;Drukpa;2;2;
-Finland_Kakkonen_GroupB_2026;2026;?;2026-07-14;Ilves 2;GrIFK;6;2;
-Iceland_Division_1_2026;2026;?;2026-07-14;Kopavogur;IR Reykjavik;5;1;
-Iceland_Division_1_2026;2026;?;2026-07-14;Grotta;Grindavik;1;2;
-Kyrgyzstan_PremierLiga_2026;2026;?;2026-07-14;Muras United;Bars;3;2;
-Somalia_NationalLeague_2026;2026;?;2026-07-14;Gantaalaha Afgooye;Elman;0;2;
-Somalia_NationalLeague_2026;2026;?;2026-07-14;Horseed;Jazeera;2;2;
+﻿LeagueId;Round;MatchDate;Home;Away;HG;AG;Notes
+Australia_NPLQueenslandU23;?;2026-07-14;Moreton City Excelsior U23;QLD State Team U17;1;0;
+Bhutan_PremierLeague;?;2026-07-14;BFF Academy U19;Drukpa;2;2;
+Finland_Kakkonen_GroupB;?;2026-07-14;Ilves 2;GrIFK;6;2;
+Iceland_Division_1;?;2026-07-14;Kopavogur;IR Reykjavik;5;1;
+Iceland_Division_1;?;2026-07-14;Grotta;Grindavik;1;2;
+Kyrgyzstan_PremierLiga;?;2026-07-14;Muras United;Bars;3;2;
+Somalia_NationalLeague;?;2026-07-14;Gantaalaha Afgooye;Elman;0;2;
+Somalia_NationalLeague;?;2026-07-14;Horseed;Jazeera;2;2;
