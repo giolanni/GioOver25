@@ -21,6 +21,7 @@ from .loaders import (
 )
 
 from .merger import merge_matches
+from .recent_form_drivers import enrich_matches_with_recent_form
 from .writer import (
     write_matches,
     write_drivers,
@@ -46,6 +47,9 @@ def main():
 
     print("Merging...")
     matches = merge_matches(history, rankings)
+
+    print("Calculating recent-form candidate drivers...")
+    matches = enrich_matches_with_recent_form(matches)
 
     OUTPUT.mkdir(parents=True, exist_ok=True)
 

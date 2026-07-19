@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Iceland;Besta deild karla;1;2026-04-10;Vikingur Reykjavik;Breidablik;1;1;
 Iceland;Besta deild karla;1;2026-04-12;Akureyri;Stjarnan;2;3;
 Iceland;Besta deild karla;1;2026-04-12;Fram;Akranes;3;3;
@@ -84,3 +84,5 @@ Iceland;Besta deizld karla;19;2026-07-12;Fram;Thor Akureyri;6;1;
 Iceland;Besta deizld karla;19;2026-07-12;Hafnarfjordur;Valur;2;0;
 Iceland;Besta deizld karla;19;2026-07-12;KR Reykjavik;Vestmannaeyjar;5;2;
 Iceland;Besta deizld karla;19;2026-07-13;Breidablik;Keflavik;2;1;
+Iceland;Besta deizld karla;20;2026-07-18;Thor Akureyri;Vikingur Reykjavik;2;1;
+Iceland;Besta deizld karla;20;2026-07-18;Valur;Fram;2;3;

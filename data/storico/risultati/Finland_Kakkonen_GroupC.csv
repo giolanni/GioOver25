@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Finland;Kakkonen Group C;1;2026-06-27;GBK Kokkola;Hercules;7;0;
 Finland;Kakkonen Group C;1;2026-06-27;Huima / Urho;JBK;3;2;
 Finland;Kakkonen Group C;1;2026-06-27;TP-47;VPS 2;0;3;
@@ -61,3 +61,5 @@ Finland;Kakkonen Group C;13;2026-07-12;SJK Akatemia 2;TP-47;0;0;
 Finland;Kakkonen Group C;13;2026-07-12;Vaajakoski;Jaro 2;5;2;
 Finland;Kakkonen Group C;14;2026-07-15;GBK Kokkola;Narpes Kraft;6;2;
 Finland;Kakkonen Group C;14;2026-07-17;Vaajakoski;Huima / Urho;0;1;
+Finland;Kakkonen Group C;14;2026-07-18;Hercules;JBK;5;3;
+Finland;Kakkonen Group C;14;2026-07-18;Jaro 2;TP-47;2;0;

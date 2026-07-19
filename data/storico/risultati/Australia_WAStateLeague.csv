@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Australia;WA State League;1;2026-03-20;Floreat Athena;Nedlands;3;1;
 Australia;WA State League;1;2026-03-20;Mandurah City;Subiaco;5;1;
 Australia;WA State League;1;2026-03-21;Cockburn City;Murdoch Melville;2;2;
@@ -95,3 +95,9 @@ Australia;WA State League;16;2026-07-11;Gwelup Croatia;Inglewood;2;1;
 Australia;WA State League;16;2026-07-11;Joondalup;Mandurah City;1;2;
 Australia;WA State League;16;2026-07-11;Quinns;Nedlands;2;1;
 Australia;WA State League;16;2026-07-11;Subiaco;Murdoch Melville;1;1;
+Australia;WA State League;17;2026-07-18;Cockburn City;Gwelup Croatia;0;2;
+Australia;WA State League;17;2026-07-18;Curtin Univ;Mandurah City;3;4;
+Australia;WA State League;17;2026-07-18;Floreat Athena;Quinns;2;1;
+Australia;WA State League;17;2026-07-18;Inglewood;Nedlands;3;1;
+Australia;WA State League;17;2026-07-18;Joondalup;Murdoch Melville;3;2;
+Australia;WA State League;17;2026-07-18;Subiaco;Kingsley Westside;2;1;

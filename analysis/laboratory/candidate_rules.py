@@ -3,233 +3,418 @@
 GioOver2.5 - analysis/laboratory/candidate_rules.py
 ===============================================================================
 
-Genera tutte le regole semplici del tipo
+SCOPO
+-----
+Generare il report 05 del Laboratory con due categorie di regole candidate:
 
-    Driver <= soglia
-    Driver >= soglia
+1. REGOLE SEMPLICI
 
-utilizzando il dataset del laboratorio.
+       Driver <= soglia
+       Driver >= soglia
 
-Input:
+2. REGOLA COMPOSTA SULLA FORMA RECENTE
+
+       HomePPGLast5 <= soglia
+       AND
+       AwayPPGLast5 <= soglia
+
+La seconda regola rappresenta esattamente l'ipotesi da verificare:
+quando entrambe le squadre hanno raccolto pochi punti nelle ultime cinque
+partite, la gara potrebbe avere una probabilità maggiore di terminare KO
+rispetto all'Over 2.5.
+
+IMPORTANTE
+----------
+Questo script non modifica alcun engine e non applica penalità.
+Si limita a misurare il comportamento delle quattro popolazioni ufficiali:
+
+    ALTA_OK
+    ALTA_KO
+    MEDIA_OK
+    MEDIA_KO
+
+INPUT
+-----
     analysis/laboratory/data/02_drivers.csv
 
-Output:
+OUTPUT
+------
     analysis/laboratory/data/05_candidate_rules.csv
+
+COMPATIBILITÀ
+-------------
+Le regole semplici conservano il formato già utilizzato dal Laboratory.
+Le nuove colonne descrittive vengono aggiunte in coda e non modificano i dati
+esistenti.
 ===============================================================================
 """
 
+# `defaultdict` consente di raggruppare facilmente i valori per driver.
 from collections import defaultdict
+
+# `Path` gestisce i percorsi in modo compatibile con Windows e Linux.
 from pathlib import Path
+
+# `csv` serve per leggere e scrivere i file separati da punto e virgola.
 import csv
 
 
+# File prodotto dal report 02 del Laboratory.
 INPUT = Path("analysis/laboratory/data/02_drivers.csv")
+
+# File di destinazione del report 05.
 OUTPUT = Path("analysis/laboratory/data/05_candidate_rules.csv")
+
+# Nome dei due driver coinvolti nell'ipotesi specifica da verificare.
+HOME_RECENT_PPG_DRIVER = "HomePPGLast5"
+AWAY_RECENT_PPG_DRIVER = "AwayPPGLast5"
+
+
+# Intestazione unica del file di output.
+# Le prime colonne mantengono il vecchio formato; quelle finali descrivono
+# esplicitamente le regole composte.
+OUTPUT_FIELDNAMES = [
+    "RuleType",
+    "Driver",
+    "Operator",
+    "Threshold",
+    "SecondDriver",
+    "SecondOperator",
+    "SecondThreshold",
+    "RuleDescription",
+    "Occurrences",
+    "ALTA_OK",
+    "ALTA_KO",
+    "MEDIA_OK",
+    "MEDIA_KO",
+    "AltaHit",
+    "MediaHit",
+]
 
 
 def to_float(value):
+    """
+    Converte un valore CSV in numero decimale.
+
+    Viene accettata sia la virgola sia il punto come separatore decimale.
+    Se il valore non è numerico viene restituito `None`, così la singola riga
+    sporca non interrompe l'intera elaborazione.
+    """
     try:
         return float(str(value).replace(",", "."))
-    except Exception:
+    except (TypeError, ValueError):
         return None
 
 
-def generate_candidate_rules():
+def empty_counters():
+    """Crea i contatori delle quattro popolazioni ufficiali del Laboratory."""
+    return {
+        "ALTA_OK": 0,
+        "ALTA_KO": 0,
+        "MEDIA_OK": 0,
+        "MEDIA_KO": 0,
+    }
 
+
+def group_key(row):
+    """Costruisce una chiave come `ALTA_OK` partendo da Band e Outcome."""
+    return f'{row["Band"]}_{row["Outcome"]}'
+
+
+def build_rule_result(
+    *,
+    rule_type,
+    driver,
+    operator,
+    threshold,
+    counters,
+    occurrences,
+    second_driver="",
+    second_operator="",
+    second_threshold="",
+    description="",
+):
+    """
+    Costruisce una riga uniforme del report 05.
+
+    Oltre ai conteggi calcola:
+
+    - `AltaHit`: ALTA_OK / (ALTA_OK + ALTA_KO)
+    - `MediaHit`: MEDIA_OK / (MEDIA_OK + MEDIA_KO)
+
+    Se una fascia non contiene partite, la relativa precisione resta vuota.
+    """
+    alta_total = counters["ALTA_OK"] + counters["ALTA_KO"]
+    media_total = counters["MEDIA_OK"] + counters["MEDIA_KO"]
+
+    return {
+        "RuleType": rule_type,
+        "Driver": driver,
+        "Operator": operator,
+        "Threshold": threshold,
+        "SecondDriver": second_driver,
+        "SecondOperator": second_operator,
+        "SecondThreshold": second_threshold,
+        "RuleDescription": description,
+        "Occurrences": occurrences,
+        **counters,
+        "AltaHit": (
+            round(counters["ALTA_OK"] / alta_total, 4)
+            if alta_total
+            else ""
+        ),
+        "MediaHit": (
+            round(counters["MEDIA_OK"] / media_total, 4)
+            if media_total
+            else ""
+        ),
+    }
+
+
+def read_driver_rows():
+    """
+    Legge `02_drivers.csv` e restituisce solo le righe con valore numerico.
+
+    Ogni riga conserva MatchId, Driver, Value, Band e Outcome. `MatchId` è
+    fondamentale per ricostruire sulla stessa partita HomePPGLast5 e
+    AwayPPGLast5.
+    """
     rows = []
 
-    with open(INPUT, encoding="utf-8-sig") as f:
+    with INPUT.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle, delimiter=";")
 
-        reader = csv.DictReader(f, delimiter=";")
+        required = {"MatchId", "Driver", "Value", "Band", "Outcome"}
+        missing = required.difference(reader.fieldnames or [])
 
-        for r in reader:
+        if missing:
+            raise ValueError(
+                "02_drivers.csv non valido. Mancano le colonne: "
+                + ", ".join(sorted(missing))
+            )
 
-            value = to_float(r["Value"])
+        for raw_row in reader:
+            value = to_float(raw_row.get("Value"))
 
             if value is None:
                 continue
 
-            rows.append(
-                {
-                    "MatchId": r["MatchId"],
-                    "Driver": r["Driver"],
-                    "Value": value,
-                    "Band": r["Band"],
-                    "Outcome": r["Outcome"],
-                }
-            )
+            rows.append({
+                "MatchId": str(raw_row.get("MatchId", "")).strip(),
+                "Driver": str(raw_row.get("Driver", "")).strip(),
+                "Value": value,
+                "Band": str(raw_row.get("Band", "")).strip().upper(),
+                "Outcome": str(raw_row.get("Outcome", "")).strip().upper(),
+            })
 
+    return rows
+
+
+def generate_simple_rules(rows):
+    """
+    Genera le regole semplici già presenti nel Laboratory.
+
+    Per ogni driver vengono provate tutte le soglie osservate e, per ciascuna,
+    entrambe le direzioni `<=` e `>=`.
+    """
     driver_values = defaultdict(list)
 
-    for r in rows:
-        driver_values[r["Driver"]].append(r["Value"])
+    for row in rows:
+        driver_values[row["Driver"]].append(row["Value"])
 
     rules = []
 
     for driver, values in driver_values.items():
-
         thresholds = sorted(set(values))
-
-        data = [x for x in rows if x["Driver"] == driver]
+        driver_rows = [row for row in rows if row["Driver"] == driver]
 
         for threshold in thresholds:
+            for operator in ("<=", ">="):
+                counters = empty_counters()
+                occurrences = 0
 
-            #
-            # <=
-            #
+                for row in driver_rows:
+                    matches = (
+                        row["Value"] <= threshold
+                        if operator == "<="
+                        else row["Value"] >= threshold
+                    )
 
-            counters = {
+                    if not matches:
+                        continue
 
-                "ALTA_OK": 0,
-                "ALTA_KO": 0,
-
-                "MEDIA_OK": 0,
-                "MEDIA_KO": 0,
-
-            }
-
-            occ = 0
-
-            for r in data:
-
-                if r["Value"] <= threshold:
-
-                    occ += 1
-
-                    key = f'{r["Band"]}_{r["Outcome"]}'
+                    occurrences += 1
+                    key = group_key(row)
 
                     if key in counters:
                         counters[key] += 1
 
-            if occ:
+                if not occurrences:
+                    continue
 
-                alta = counters["ALTA_OK"] + counters["ALTA_KO"]
-                media = counters["MEDIA_OK"] + counters["MEDIA_KO"]
+                rules.append(build_rule_result(
+                    rule_type="SINGLE",
+                    driver=driver,
+                    operator=operator,
+                    threshold=threshold,
+                    counters=counters,
+                    occurrences=occurrences,
+                    description=f"{driver} {operator} {threshold}",
+                ))
 
-                rules.append({
+    return rules
 
-                    "Driver": driver,
-                    "Operator": "<=",
-                    "Threshold": threshold,
-                    "Occurrences": occ,
 
-                    **counters,
+def build_match_driver_index(rows):
+    """
+    Ricostruisce una sola riga logica per ogni partita.
 
-                    "AltaHit":
-                        round(counters["ALTA_OK"] / alta, 4)
-                        if alta else "",
+    `02_drivers.csv` è in formato lungo: ogni MatchId compare una volta per
+    ciascun driver. Questa funzione trasforma quel formato in un indice simile:
 
-                    "MediaHit":
-                        round(counters["MEDIA_OK"] / media, 4)
-                        if media else "",
+        indice[MatchId]["HomePPGLast5"] = 0.40
+        indice[MatchId]["AwayPPGLast5"] = 0.60
 
-                })
+    Band e Outcome vengono conservati una sola volta per partita.
+    """
+    match_index = {}
 
-            #
-            # >=
-            #
+    for row in rows:
+        match_id = row["MatchId"]
 
-            counters = {
-
-                "ALTA_OK": 0,
-                "ALTA_KO": 0,
-
-                "MEDIA_OK": 0,
-                "MEDIA_KO": 0,
-
+        if match_id not in match_index:
+            match_index[match_id] = {
+                "Band": row["Band"],
+                "Outcome": row["Outcome"],
+                "Drivers": {},
             }
 
-            occ = 0
+        match_index[match_id]["Drivers"][row["Driver"]] = row["Value"]
 
-            for r in data:
+    return match_index
 
-                if r["Value"] >= threshold:
 
-                    occ += 1
+def generate_both_teams_low_ppg_rules(rows):
+    """
+    Genera le regole che verificano la vera ipotesi dell'esperimento.
 
-                    key = f'{r["Band"]}_{r["Outcome"]}'
+    Una partita viene inclusa quando entrambe le condizioni sono vere:
 
-                    if key in counters:
-                        counters[key] += 1
+        HomePPGLast5 <= soglia
+        AwayPPGLast5 <= soglia
 
-            if occ:
+    Le soglie provate sono tutti i valori osservati nei due driver. In questo
+    modo il Laboratory può trovare il punto esatto in cui la precisione cambia,
+    senza imporre in anticipo soglie arbitrarie come 0.60 o 0.80.
+    """
+    match_index = build_match_driver_index(rows)
 
-                alta = counters["ALTA_OK"] + counters["ALTA_KO"]
-                media = counters["MEDIA_OK"] + counters["MEDIA_KO"]
+    eligible_matches = []
+    observed_values = set()
 
-                rules.append({
+    for match_id, match_data in match_index.items():
+        drivers = match_data["Drivers"]
 
-                    "Driver": driver,
-                    "Operator": ">=",
-                    "Threshold": threshold,
-                    "Occurrences": occ,
+        home_ppg = drivers.get(HOME_RECENT_PPG_DRIVER)
+        away_ppg = drivers.get(AWAY_RECENT_PPG_DRIVER)
 
-                    **counters,
+        # La partita è confrontabile solo quando entrambi i valori esistono.
+        if home_ppg is None or away_ppg is None:
+            continue
 
-                    "AltaHit":
-                        round(counters["ALTA_OK"] / alta, 4)
-                        if alta else "",
+        eligible_matches.append({
+            "MatchId": match_id,
+            "Band": match_data["Band"],
+            "Outcome": match_data["Outcome"],
+            "HomePPGLast5": home_ppg,
+            "AwayPPGLast5": away_ppg,
+        })
 
-                    "MediaHit":
-                        round(counters["MEDIA_OK"] / media, 4)
-                        if media else "",
+        observed_values.add(home_ppg)
+        observed_values.add(away_ppg)
 
-                })
+    rules = []
 
-    rules.sort(
-        key=lambda x: (
-            x["Driver"],
-            x["Operator"],
-            x["Threshold"],
-        )
-    )
+    for threshold in sorted(observed_values):
+        counters = empty_counters()
+        occurrences = 0
 
-    with open(
-        OUTPUT,
-        "w",
-        newline="",
-        encoding="utf-8-sig",
-    ) as f:
+        for match in eligible_matches:
+            if not (
+                match["HomePPGLast5"] <= threshold
+                and match["AwayPPGLast5"] <= threshold
+            ):
+                continue
 
+            occurrences += 1
+            key = f'{match["Band"]}_{match["Outcome"]}'
+
+            if key in counters:
+                counters[key] += 1
+
+        if not occurrences:
+            continue
+
+        rules.append(build_rule_result(
+            rule_type="COMPOUND_AND",
+            driver=HOME_RECENT_PPG_DRIVER,
+            operator="<=",
+            threshold=threshold,
+            second_driver=AWAY_RECENT_PPG_DRIVER,
+            second_operator="<=",
+            second_threshold=threshold,
+            counters=counters,
+            occurrences=occurrences,
+            description=(
+                f"{HOME_RECENT_PPG_DRIVER} <= {threshold} AND "
+                f"{AWAY_RECENT_PPG_DRIVER} <= {threshold}"
+            ),
+        ))
+
+    return rules
+
+
+def generate_candidate_rules():
+    """Coordina lettura, generazione delle regole e scrittura del report 05."""
+    if not INPUT.exists():
+        raise FileNotFoundError(f"File Laboratory non trovato: {INPUT}")
+
+    rows = read_driver_rows()
+
+    simple_rules = generate_simple_rules(rows)
+    compound_rules = generate_both_teams_low_ppg_rules(rows)
+    rules = simple_rules + compound_rules
+
+    # Ordinamento deterministico: prima le regole semplici, poi quelle composte.
+    rules.sort(key=lambda item: (
+        item["RuleType"],
+        item["Driver"],
+        item["SecondDriver"],
+        item["Operator"],
+        float(item["Threshold"]),
+    ))
+
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+
+    with OUTPUT.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
-
-            f,
-
-            fieldnames=[
-
-                "Driver",
-
-                "Operator",
-
-                "Threshold",
-
-                "Occurrences",
-
-                "ALTA_OK",
-
-                "ALTA_KO",
-
-                "MEDIA_OK",
-
-                "MEDIA_KO",
-
-                "AltaHit",
-
-                "MediaHit",
-
-            ],
-
+            handle,
+            fieldnames=OUTPUT_FIELDNAMES,
             delimiter=";",
-
+            extrasaction="ignore",
         )
 
         writer.writeheader()
         writer.writerows(rules)
 
-    print(f"{len(rules)} candidate rules generated")
+    print(f"{len(simple_rules)} regole semplici generate")
+    print(f"{len(compound_rules)} regole PPG composte generate")
+    print(f"{len(rules)} regole candidate totali")
+    print(f"Report scritto: {OUTPUT.resolve()}")
 
 
-def main() -> int:
+def main():
+    """Punto di ingresso usato da `python -m analysis.laboratory.run_all`."""
     generate_candidate_rules()
     return 0
 

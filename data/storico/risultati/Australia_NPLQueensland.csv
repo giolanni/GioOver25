@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Australia;NPL Queensland;1;2026-02-20;Moreton City Excelsior;Gold Coast Knights;4;1;
 Australia;NPL Queensland;1;2026-02-21;Magic United;Gold Coast;3;1;
 Australia;NPL Queensland;1;2026-02-21;Olympic FC;Queensland Lions;2;1;
@@ -111,4 +111,9 @@ Australia;NPL Queensland;19;2026-07-04;Gold Coast Knights;Moreton City Excelsior
 Australia;NPL Queensland;19;2026-07-12;Gold Coast;Olympic FC;3;0;
 Australia;NPL Queensland;19;2026-07-12;Queensland Lions;Eastern Suburbs;1;0;
 Australia;NPL Queensland;20;2026-06-26;Rochedale Rovers;Gold Coast Knights;4;1;
+Australia;NPL Queensland;20;2026-07-18;Eastern Suburbs;Magic United;1;4;
+Australia;NPL Queensland;20;2026-07-18;Gold Coast;Queensland Lions;0;1;
+Australia;NPL Queensland;20;2026-07-18;Moreton City Excelsior;Peninsula;2;2;
 Australia;NPL Queensland;21;2026-07-12;Gold Coast Knights;Brisbane City;0;0;
+Australia;NPL Queensland;22;2026-07-18;Gold Coast Knights;Wynnum Wolves;1;2;
+Australia;NPL Queensland;22;2026-07-18;Rochedale;Brisbane City;2;3;

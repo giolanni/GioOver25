@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;MLS Next Pro - Eastern Conference - Southeast Division;1;2026-06-20;Inter Miami II;Carolina Core;0;0;
 USA;MLS Next Pro - Eastern Conference - Southeast Division;1;2026-06-22;Orlando City B;Philadelphia II;1;2;
 USA;MLS Next Pro - Eastern Conference - Southeast Division;1;2026-06-28;Atlanta United 2;Crown Legacy;3;3;
@@ -61,3 +61,4 @@ USA;MLS Next Pro - Eastern Conference - Southeast Division;18;2026-07-06;Huntsvi
 USA;MLS Next Pro - Eastern Conference - Southeast Division;18;2026-07-12;Atlanta United 2;Inter Miami II;4;1;
 USA;MLS Next Pro - Eastern Conference - Southeast Division;18;2026-07-12;Carolina Core;Chattanooga;1;1;
 USA;MLS Next Pro - Eastern Conference - Southeast Division;19;2026-07-12;Crown Legacy;New York City II;0;3;
+USA;MLS Next Pro - Eastern Conference - Southeast Division;20;2026-07-18;Crown Legacy;Chicago Fire II;3;2;

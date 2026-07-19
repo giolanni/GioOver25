@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Bolivia;Division Profesional;1;2026-04-03;Bolivar;Real Oruro;5;2;
 Bolivia;Division Profesional;1;2026-04-03;Independiente;Nacional Potosi;0;3;
 Bolivia;Division Profesional;1;2026-04-04;Always Ready;Tomayapo;4;0;
@@ -65,9 +65,11 @@ Bolivia;Division Profesional;11;2026-07-09;Real Oruro;Universitario de Vinto;4;1
 Bolivia;Division Profesional;11;2026-07-09;Real Potosi;Academia del Balompie;2;3;
 Bolivia;Division Profesional;11;2026-07-11;Nacional Potosi;Aurora;2;0;
 Bolivia;Division Profesional;11;2026-07-16;The Strongest;Oriente Petrolero;2;1;
+Bolivia;Division Profesional;11;2026-07-18;Bolivar;Guabira;4;0;
 Bolivia;Division Profesional;12;2026-07-11;Real Oruro;GV San Jose;3;1;
 Bolivia;Division Profesional;12;2026-07-12;Real Potosi;Nacional Potosi;1;1;
 Bolivia;Division Profesional;12;2026-07-16;Academia del Balompie;Independiente;3;1;
 Bolivia;Division Profesional;13;2026-07-15;Blooming;GV San Jose;1;1;
 Bolivia;Division Profesional;13;2026-07-15;Real Oruro;Always Ready;0;6;
 Bolivia;Division Profesional;13;2026-07-16;Real Potosi;SA Bulo Bulo;5;0;
+Bolivia;Division Profesional;14;2026-07-18;Always Ready;Universitario de Vinto;4;0;

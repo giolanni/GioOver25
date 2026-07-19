@@ -28,15 +28,15 @@ Il file normalmente utilizzato è:
 
 Header previsto:
 
-    LeagueId;Season;Round;MatchDate;Home;Away;HG;AG;Status;Notes
+    LeagueId;Round;MatchDate;Home;Away;HG;AG;Status;Notes
 
 Esempio di partita conclusa:
 
-    Finland_Ykkonen_2026;2026;15;2026-07-12;KPV;TPV;2;1;FINALE;
+    Finland_Ykkonen;15;2026-07-12;KPV;TPV;2;1;FINALE;
 
 Esempio di partita rinviata:
 
-    Australia_NPLACT_2026;2026;18;2026-07-12;Canberra Olympic;Tigers FC;;;RINVIATA;
+    Australia_NPLACT;18;2026-07-12;Canberra Olympic;Tigers FC;;;RINVIATA;
 
 STATUS SUPPORTATI
 -----------------
@@ -166,7 +166,6 @@ from gioover25.engines.factory import get_available_engines
 
 INPUT_REQUIRED_COLUMNS = {
     "LeagueId",
-    "Season",
     "Round",
     "MatchDate",
     "Home",
@@ -195,7 +194,6 @@ SUSPECT_DUPLICATES_FILE = (
 
 POSTPONED_FIELDNAMES = [
     "LeagueId",
-    "Season",
     "Round",
     "MatchDate",
     "Home",
@@ -228,11 +226,6 @@ POSTPONED_STATUSES = {
 }
 
 CLOSE_DUPLICATE_MAX_DAYS = 4
-
-
-def _int(value: str) -> int:
-    raw = str(value or "").strip()
-    return int(raw) if raw else 0
 
 
 def _optional_int(value: str) -> int | None:
@@ -626,10 +619,6 @@ def _register_postponed(
         if existing_key != key:
             continue
 
-        existing["Season"] = row.get(
-            "Season",
-            "",
-        )
         existing["Round"] = row.get(
             "Round",
             "",
@@ -653,10 +642,6 @@ def _register_postponed(
         {
             "LeagueId": row.get(
                 "LeagueId",
-                "",
-            ),
-            "Season": row.get(
-                "Season",
                 "",
             ),
             "Round": row.get(
@@ -687,7 +672,6 @@ def _register_postponed(
     )
 
     return True
-
 
 def _remove_postponed_if_present(
     postponed_rows: list[dict],
@@ -839,18 +823,6 @@ def read_input_results(
                 league_id
             )
 
-            season = _int(
-                row["Season"]
-            )
-
-            if season != league_info.season:
-                raise ValueError(
-                    f"Season incoerente per "
-                    f"{league_id}: "
-                    f"input={season}, "
-                    f"registry={league_info.season}"
-                )
-
             status = str(
                 row.get(
                     "Status",
@@ -937,7 +909,6 @@ def read_input_results(
             match = MatchResult(
                 country=league_info.country,
                 league=league_info.league,
-                season=season,
                 round=_parse_round(
                     row.get(
                         "Round"
@@ -1151,7 +1122,6 @@ def append_results(
 
         all_matches.sort(
             key=lambda match: (
-                match.season,
                 match.round,
                 match.date,
                 match.home,

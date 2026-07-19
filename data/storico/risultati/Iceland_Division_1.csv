@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Iceland;Division 1;1;2026-04-24;Afturelding;IR Reykjavik;4;7;
 Iceland;Division 1;1;2026-04-24;Fylkir;Aegir;3;0;
 Iceland;Division 1;1;2026-04-25;Kopavogur;Grotta;4;1;
@@ -81,7 +81,10 @@ Iceland;Division 1;20;2026-06-26;Afturelding;Njardvik;2;0;
 Iceland;Division 1;20;2026-06-26;Grindavik;Aegir;0;0;
 Iceland;Division 1;20;2026-06-26;Leiknir Reykjavik;IR Reykjavik;2;1;
 Iceland;Division 1;20;2026-07-13;Vestri;Fylkir;2;5;
+Iceland;Division 1;20;2026-07-18;Throttur;Volsungur;1;0;
 Iceland;Division 1;21;2026-07-14;Grotta;Grindavik;1;2;
 Iceland;Division 1;21;2026-07-14;Kopavogur;IR Reykjavik;5;1;
 Iceland;Division 1;21;2026-07-16;Afturelding;Leiknir;3;2;
 Iceland;Division 1;21;2026-07-17;Fylkir;Njardvik;4;1;
+Iceland;Division 1;22;2026-07-18;Grindavik;IR Reykjavik;0;0;
+Iceland;Division 1;22;2026-07-18;Grotta;Aegir;6;1;

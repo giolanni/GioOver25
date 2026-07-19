@@ -45,32 +45,21 @@ POSTPONED_FILE = Path(
 
 
 BASE_FIELDNAMES = [
-    # ===== Colonne operative =====
+    "PredictionDate",
     "MatchDate",
     "LeagueId",
+    "Round",
     "Home",
     "Away",
     "Score",
     "Band",
-    "Round",
-
-    # ===== Stato =====
     "MatchStatus",
-
-    # ===== Risultato =====
     "HG",
     "AG",
     "Goals",
     "Over25",
     "BTTS",
-
-    # ===== Metadati =====
-    "PredictionDate",
-
-    # ===== Spiegazione =====
     "Reason",
-
-    # ===== Driver =====
     "RankingGapScore",
     "HomeAttackScore",
     "AwayAttackScore",
@@ -81,8 +70,6 @@ BASE_FIELDNAMES = [
     "HomeVenueOverScore",
     "AwayVenueOverScore",
     "BTTSProfileScore",
-
-    # ===== Versione =====
     "AlgorithmVersion",
 ]
 
@@ -457,25 +444,42 @@ def sync_postponed_statuses(
                 row.get("Round")
             )
 
-            compatible = [
+            row_match_date = _text(
+                row.get("MatchDate")
+            )
+
+            # Il matching principale usa LeagueId + Home + Away.
+            # MatchDate e Round servono soltanto a disambiguare eventuali
+            # confronti ripetuti tra le stesse squadre: il Round calcolato
+            # dal ranking può infatti non coincidere con quello ufficiale.
+            exact_date = [
                 postponed
-                for postponed
-                in candidates
+                for postponed in candidates
                 if (
-                    not row_round
-                    or not _text(
-                        postponed.get(
-                            "Round"
-                        )
-                    )
-                    or row_round
-                    == _text(
-                        postponed.get(
-                            "Round"
-                        )
-                    )
+                    row_match_date
+                    and _text(postponed.get("MatchDate"))
+                    == row_match_date
                 )
             ]
+
+            exact_round = [
+                postponed
+                for postponed in candidates
+                if (
+                    row_round
+                    and _text(postponed.get("Round"))
+                    == row_round
+                )
+            ]
+
+            if exact_date:
+                compatible = exact_date
+            elif exact_round:
+                compatible = exact_round
+            elif len(candidates) == 1:
+                compatible = candidates
+            else:
+                compatible = []
 
             if compatible:
                 if (

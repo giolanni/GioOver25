@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL Championship;1;2026-06-21;Brooklyn;Tampa Bay;0;2;
 USA;USL Championship;1;2026-06-21;Hartford Athletic;Pittsburgh;0;0;
 USA;USL Championship;1;2026-06-21;Monterey Bay;El Paso;1;0;
@@ -179,3 +179,4 @@ USA;USL Championship;22;2026-07-09;Hartford Athletic;Orange County SC;2;2;
 USA;USL Championship;22;2026-07-16;Lexington;New Mexico;1;4;
 USA;USL Championship;22;2026-07-16;Miami FC;Indy Eleven;2;0;
 USA;USL Championship;22;2026-07-16;Sporting Jax;Pittsburgh;2;1;
+USA;USL Championship;23;2026-07-18;Pittsburgh;Louisville City;3;1;

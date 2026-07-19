@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Kazakhstan;Premier League;1;2026-03-07;Aktobe;Tobol;4;1;
 Kazakhstan;Premier League;1;2026-03-07;Altai;Kairat Almaty;0;1;
 Kazakhstan;Premier League;1;2026-03-07;Okzhetpes;Yelimay Semey;1;1;
@@ -128,10 +128,15 @@ Kazakhstan;Premier League;17;2026-07-11;Zhetysu;Altai;0;1;
 Kazakhstan;Premier League;17;2026-07-12;FC Astana;Aktobe;3;2;
 Kazakhstan;Premier League;17;2026-07-12;Tobol;Okzhetpes;3;1;
 Kazakhstan;Premier League;18;2026-07-05;Kyzylzhar;Yelimay Semey;0;1;
+Kazakhstan;Premier League;18;2026-07-18;Okzhetpes;Zhetysu;2;0;
+Kazakhstan;Premier League;19;2026-07-18;Kyzylzhar;Tobol;1;1;
 Kazakhstan;Premier League;20;2026-05-06;Kaisar;Kairat Almaty;1;2;
 Kazakhstan;Premier League;21;2026-07-06;Kaisar;Ertis Pavlodar;0;0;
 Kazakhstan;Premier League;22;2026-07-11;Ertis Pavlodar;Zhenis;0;1;
 Kazakhstan;Premier League;22;2026-07-12;Ulytau;Kaisar;1;0;
+Kazakhstan;Premier League;23;2026-07-18;Zhenis;Ulytau;1;1;
 Kazakhstan;Premier League;25;2026-04-18;Kairat Almaty;Kaspij Aktau;2;0;
 Kazakhstan;Premier League;26;2026-07-06;Atyrau;Kaspij Aktau;1;2;
 Kazakhstan;Premier League;27;2026-07-11;Kaspij Aktau;Ordabasy;3;2;
+Kazakhstan;Premier League;27;2026-07-18;Atyrau;Kairat Almaty;1;3;
+Kazakhstan;Premier League;28;2026-07-18;Kaisar;Kaspij Aktau;1;1;

@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Finland;Ykkosliiga;1;2026-04-03;PK-35;Ekenas;4;2;
 Finland;Ykkosliiga;1;2026-04-06;Jippo;JaPS;0;0;
 Finland;Ykkosliiga;1;2026-04-06;Klubi 04;KaPa;1;2;
@@ -66,5 +66,7 @@ Finland;Ykkosliiga;14;2026-07-11;PK-35;KaPa;3;1;
 Finland;Ykkosliiga;14;2026-07-11;SJK Akatemia;Mikkeli;1;1;
 Finland;Ykkosliiga;15;2026-06-26;Klubi 04;SJK Akatemia;2;0;
 Finland;Ykkosliiga;15;2026-07-15;Jippo;Mikkeli;3;1;
+Finland;Ykkosliiga;15;2026-07-18;Ekenas;JaPS;0;1;
+Finland;Ykkosliiga;15;2026-07-18;KTP;PK-35;0;1;
 Finland;Ykkosliiga;16;2026-07-17;KaPa;SJK Akatemia;2;2;
 Finland;Ykkosliiga;16;2026-07-17;Klubi 04;Haka;2;2;

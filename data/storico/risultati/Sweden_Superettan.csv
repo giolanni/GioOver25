@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Sweden;Superettan;1;2026-04-04;Norrkoping;Värnamo;6;0;
 Sweden;Superettan;1;2026-04-05;Norrby;Brage;0;1;
 Sweden;Superettan;1;2026-04-06;Falkenberg;Ljungskile;1;1;
@@ -111,3 +111,6 @@ Sweden;Superettan;14;2026-06-30;Landskrona;Värnamo;1;0;
 Sweden;Superettan;14;2026-06-30;Norrkoping;Norrby;0;1;
 Sweden;Superettan;14;2026-06-30;Sandviken;Helsingborg;4;2;
 Sweden;Superettan;14;2026-07-01;Brage;Falkenberg;2;4;
+Sweden;Superettan;15;2026-07-18;Oddevold;Varberg;2;4;
+Sweden;Superettan;15;2026-07-18;Öster;Brage;3;2;
+Sweden;Superettan;15;2026-07-18;Östersund;Landskrona;2;0;

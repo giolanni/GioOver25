@@ -42,6 +42,8 @@ in DRIVERS.
 
 import csv
 
+from .recent_form_drivers import RECENT_FORM_DRIVERS
+
 
 DRIVERS = [
     "RankingGapScore",
@@ -54,6 +56,7 @@ DRIVERS = [
     "HomeVenueOverScore",
     "AwayVenueOverScore",
     "BTTSProfileScore",
+    *RECENT_FORM_DRIVERS,
 ]
 
 
@@ -83,6 +86,7 @@ PREFERRED_MATCH_FIELDS = [
     "HomeVenueOverScore",
     "AwayVenueOverScore",
     "BTTSProfileScore",
+    *RECENT_FORM_DRIVERS,
     "AlgorithmVersion",
     "CompetitionGroup",
     "HomeSourceLeagueId",

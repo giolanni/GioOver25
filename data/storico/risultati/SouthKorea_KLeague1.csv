@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 South Korea;K League 1;1;2026-02-28;Gimcheon Sangmu;Pohang;1;1;
 South Korea;K League 1;1;2026-02-28;Incheon;Seoul;1;2;
 South Korea;K League 1;1;2026-02-28;Ulsan HD;Gangwon;3;1;
@@ -101,3 +101,7 @@ South Korea;K League 1;17;2026-07-11;Ulsan HD;Jeonbuk;1;3;
 South Korea;K League 1;17;2026-07-12;Incheon;Anyang;0;1;
 South Korea;K League 1;17;2026-07-12;Jeju SK;Daejeon;0;0;
 South Korea;K League 1;17;2026-07-12;Seoul;Gangwon;0;0;
+South Korea;K League 1;18;2026-07-18;Daejeon;Ulsan HD;2;2;
+South Korea;K League 1;18;2026-07-18;Gangwon;Gimcheon Sangmu;2;0;
+South Korea;K League 1;18;2026-07-18;Incheon;Jeonbuk;1;0;
+South Korea;K League 1;18;2026-07-18;Jeju SK;Pohang;2;1;

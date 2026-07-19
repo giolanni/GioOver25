@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL League One;1;2026-06-21;Boise;Union Omaha;1;0;
 USA;USL League One;1;2026-06-21;Chattanooga Red Wolves;FC Naples;1;0;
 USA;USL League One;1;2026-06-21;Forward Madison;New York Cosmos;3;1;
@@ -128,3 +128,4 @@ USA;USL League One;22;2026-07-09;New York Cosmos;FC Naples;1;0;
 USA;USL League One;22;2026-07-16;Forward Madison;Richmond Kickers;4;0;
 USA;USL League One;23;2026-07-16;Chattanooga Red Wolves;AV Alta;1;0;
 USA;USL League One;23;2026-07-16;One Knoxville;Fort Wayne;2;1;
+USA;USL League One;23;2026-07-18;Boise;Portland Hearts of Pine;2;1;

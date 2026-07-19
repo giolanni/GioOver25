@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Estonia;Esiliiga B;1;2026-03-07;Tallinna Kalev U21;Legion;5;1;
 Estonia;Esiliiga B;1;2026-03-08;Parnu JK Vaprus U21;Tartu Kalev;5;1;
 Estonia;Esiliiga B;1;2026-03-10;Tammeka U21;Levadia U19;2;1;
@@ -88,3 +88,4 @@ Estonia;Esiliiga B;19;2026-07-12;Johvi Phoenix;Parnu JK Vaprus U21;4;2;
 Estonia;Esiliiga B;19;2026-07-12;Levadia U19;Tallinna Kalev U21;4;1;
 Estonia;Esiliiga B;19;2026-07-12;Tammeka U21;Narva U21;2;1;
 Estonia;Esiliiga B;19;2026-07-12;Tartu Kalev;Legion;10;2;
+Estonia;Esiliiga B;20;2026-07-18;Legion;Tabasalu;2;0;

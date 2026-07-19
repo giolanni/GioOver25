@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Australia;NSW League One;1;2026-02-06;Blacktown Spartans;Hills United;4;1;
 Australia;NSW League One;1;2026-02-06;Hurstville Zagreb;Newcastle Jets U23;0;0;
 Australia;NSW League One;1;2026-02-06;Prospect United;Central Coast Mariners U23;1;1;
@@ -190,5 +190,10 @@ Australia;NSW League One;24;2026-07-04;Bankstown City Lions;Dulwich Hill FC;2;2;
 Australia;NSW League One;24;2026-07-04;Hills United FC;Northern Tigers;1;2;
 Australia;NSW League One;24;2026-07-04;Macarthur Rams;Inter Lions FC;3;2;
 Australia;NSW League One;24;2026-07-17;Hurstville Zagreb;Dulwich Hill;3;1;
+Australia;NSW League One;24;2026-07-18;Hills United;Hakoah Sydney;2;1;
+Australia;NSW League One;24;2026-07-18;Inter Lions;Rydalmere Lions;0;4;
+Australia;NSW League One;24;2026-07-18;Western City Rangers;Newcastle Jets U23;3;2;
 Australia;NSW League One;25;2026-07-12;Central Coast Mariners U23;Blacktown Spartans;0;2;
 Australia;NSW League One;25;2026-07-17;Prospect United;Macarthur Rams;1;2;
+Australia;NSW League One;25;2026-07-18;Bulls Academy;Bankstown City Lions;0;5;
+Australia;NSW League One;26;2026-07-18;Canterbury Bankstown;Blacktown Spartans;1;2;

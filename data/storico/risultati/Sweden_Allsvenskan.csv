@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Sweden;Allsvenskan;1;2026-04-04;Degerfors;Sirius;0;3;
 Sweden;Allsvenskan;1;2026-04-04;Hammarby;Mjallby;3;0;
 Sweden;Allsvenskan;1;2026-04-05;AIK Stockholm;Halmstad;2;1;
@@ -98,3 +98,4 @@ Sweden;Allsvenskan;17;2026-07-12;GAIS;Elfsborg;1;0;
 Sweden;Allsvenskan;17;2026-07-12;Hammarby;Kalmar;2;0;
 Sweden;Allsvenskan;18;2026-07-17;Göteborg;Brommapojkarna;2;1;
 Sweden;Allsvenskan;18;2026-07-17;Mjallby;Västerås SK;0;0;
+Sweden;Allsvenskan;18;2026-07-18;AIK Stockholm;GAIS;2;0;

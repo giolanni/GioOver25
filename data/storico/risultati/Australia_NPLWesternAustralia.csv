@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Australia;NPL Western Australia;1;2026-02-27;Bayswater City;Balcatta;7;0;
 Australia;NPL Western Australia;1;2026-02-27;Perth Azzurri;Olympic Kingsway;1;2;
 Australia;NPL Western Australia;1;2026-02-28;Armadale;Western Knights;1;4;
@@ -107,4 +107,8 @@ Australia;NPL Western Australia;18;2026-07-11;Sorrento;Fremantle City;0;2;
 Australia;NPL Western Australia;19;2026-06-26;Bayswater City;Perth Redstar FC;3;0;
 Australia;NPL Western Australia;19;2026-07-04;Armadale;Olympic Kingsway;1;6;
 Australia;NPL Western Australia;19;2026-07-04;Western Knights;Sorrento;2;0;
+Australia;NPL Western Australia;19;2026-07-18;Balcatta;Stirling Macedonia;2;0;
+Australia;NPL Western Australia;19;2026-07-18;Perth RedStar;Fremantle City;0;3;
 Australia;NPL Western Australia;20;2026-07-17;Perth Azzurri;Western Knights;3;3;
+Australia;NPL Western Australia;20;2026-07-18;Dianella White Eagle;Olympic Kingsway;0;3;
+Australia;NPL Western Australia;20;2026-07-18;Perth Glory U23;Armadale;2;2;

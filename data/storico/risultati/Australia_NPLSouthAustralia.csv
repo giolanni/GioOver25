@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Australia;NPL South Australia;1;2026-02-27;Croydon;Para;3;2;
 Australia;NPL South Australia;1;2026-02-28;Adelaide City;West Adelaide;2;1;
 Australia;NPL South Australia;1;2026-02-28;Adelaide Comets;West Torrens;0;3;
@@ -107,6 +107,9 @@ Australia;NPL South Australia;18;2026-07-04;Adelaide United Youth;Campbelltown C
 Australia;NPL South Australia;18;2026-07-04;FK Beograd;West Adelaide;1;0;
 Australia;NPL South Australia;18;2026-07-04;Sturt Lions;Playford City Patriots;1;0;
 Australia;NPL South Australia;18;2026-07-17;West Torrens;Para;11;0;
+Australia;NPL South Australia;18;2026-07-18;Playford Patriots;NE Metrostars;1;0;
 Australia;NPL South Australia;19;2026-06-26;Croydon Kings;Adelaide United Youth;3;0;
 Australia;NPL South Australia;19;2026-06-26;West Torrens Birkalla;Sturt Lions;4;1;
 Australia;NPL South Australia;19;2026-07-17;Campbelltown City;Adelaide Comets;1;0;
+Australia;NPL South Australia;19;2026-07-18;Adelaide City;Croydon;2;2;
+Australia;NPL South Australia;20;2026-07-18;West Adelaide;Sturt Lions;0;0;

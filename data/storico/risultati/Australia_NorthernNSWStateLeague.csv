@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Australia;Northern NSW State League;1;2026-03-13;West Wallsend;Lake Macquarie;2;9;
 Australia;Northern NSW State League;1;2026-03-14;New Lambton;Wallsend Red Devils;1;2;
 Australia;Northern NSW State League;1;2026-03-14;Newcastle Croatia;South Cardiff;2;1;
@@ -68,3 +68,4 @@ Australia;Northern NSW State League;14;2026-07-11;Cessnock City Hornets;Dudley R
 Australia;Northern NSW State League;14;2026-07-11;Newcastle Croatia;Lake Macquarie;1;2;
 Australia;Northern NSW State League;14;2026-07-11;Singleton Strikers;South Cardiff;1;0;
 Australia;Northern NSW State League;14;2026-07-12;Toronto Awaba Stags;Wallsend Red Devils;2;2;
+Australia;Northern NSW State League;15;2026-07-18;Cessnock City Hornets;West Wallsend;3;2;

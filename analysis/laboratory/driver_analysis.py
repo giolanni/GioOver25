@@ -76,6 +76,8 @@ from typing import Any, Callable
 import csv
 import math
 
+from .recent_form_drivers import RECENT_FORM_DRIVERS
+
 
 INPUT_FILE = Path("analysis/laboratory/data/01_matches.csv")
 OUTPUT_DIR = Path("analysis/laboratory/data")
@@ -91,6 +93,7 @@ DRIVERS = [
     "HomeVenueOverScore",
     "AwayVenueOverScore",
     "BTTSProfileScore",
+    *RECENT_FORM_DRIVERS,
 ]
 
 GROUPS = [

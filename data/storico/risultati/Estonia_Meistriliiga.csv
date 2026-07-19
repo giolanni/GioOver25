@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Estonia;Meistriliiga;1;2026-03-07;Flora;Nomme Utd;3;0;
 Estonia;Meistriliiga;1;2026-03-07;Narva;Harju JK Laagri;1;2;
 Estonia;Meistriliiga;1;2026-03-07;Parnu JK Vaprus;Paide;3;2;
@@ -92,3 +92,4 @@ Estonia;Meistriliiga;19;2026-07-11;Nomme Utd;Kuressaare;3;2;
 Estonia;Meistriliiga;19;2026-07-11;Parnu JK Vaprus;Tammeka;5;1;
 Estonia;Meistriliiga;20;2026-06-26;Parnu JK Vaprus;FC Kuressaare;1;0;
 Estonia;Meistriliiga;20;2026-07-17;Flora;Nomme Utd;1;2;
+Estonia;Meistriliiga;21;2026-07-18;Narva;Parnu JK Vaprus;3;1;

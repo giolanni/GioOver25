@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Latvia;Virsliga;1;2026-03-07;FK Liepaja;Riga FC;2;1;
 Latvia;Virsliga;1;2026-03-08;Auda;Super Nova;2;1;
 Latvia;Virsliga;2;2026-03-14;Riga FC;BFC Daugavpils;4;2;
@@ -90,5 +90,6 @@ Latvia;Virsliga;21;2026-07-06;Grobina;Tukums 2000;3;1;
 Latvia;Virsliga;21;2026-07-06;Super Nova;Ogre United;1;2;
 Latvia;Virsliga;22;2026-06-26;Ogre United;FK Tukums 2000;3;2;
 Latvia;Virsliga;22;2026-06-30;RFS;BFC Daugavpils;3;1;
+Latvia;Virsliga;22;2026-07-18;Riga FC;Tukums 2000;3;1;
 Latvia;Virsliga;23;2026-06-30;FK Liepaja;Ogre United;4;0;
 Latvia;Virsliga;23;2026-07-01;FK Tukums 2000;SK Super Nova;1;2;

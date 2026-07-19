@@ -50,6 +50,9 @@ python -m gioover25.missing_results --band ALTA --exclude-australia
 #VERIFICARE LA PRESENZA DI PARTITE DUPLICATE IN STORICO RISULTATI
 python -m gioover25.find_duplicate_results_different_dates
 
+STATISTICHE
+& "gioover25\raccogli_storici.ps1"  
+
 Test principali
 pytest tests/test_history.py -s
 pytest tests/test_standings.py -s

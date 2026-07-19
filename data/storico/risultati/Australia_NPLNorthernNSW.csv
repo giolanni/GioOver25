@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Australia;NPL Northern NSW;1;2026-02-19;Kahibah;Lambton J.;0;5;
 Australia;NPL Northern NSW;1;2026-02-20;Edgeworth E.;Broadmeadow;1;0;
 Australia;NPL Northern NSW;1;2026-02-21;Valentine;Belmont Swansea Utd.;1;2;
@@ -105,3 +105,5 @@ Australia;NPL Northern NSW;19;2026-07-11;Cooks Hill United;Charlestown Azzurri;4
 Australia;NPL Northern NSW;19;2026-07-12;Broadmeadow;Newcastle Olympic;2;1;
 Australia;NPL Northern NSW;19;2026-07-12;Valentine;Kahibah;3;2;
 Australia;NPL Northern NSW;19;2026-07-15;Charlestown Azzurri;Weston Bears;0;5;
+Australia;NPL Northern NSW;19;2026-07-18;Lambton J.;Maitland;0;1;
+Australia;NPL Northern NSW;20;2026-07-18;Weston Bears;Kahibah;5;2;

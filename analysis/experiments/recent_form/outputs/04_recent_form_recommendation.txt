@@ -1,0 +1,21 @@
+GioOver2.5 - Raccomandazione esperimento Recent Form
+====================================================
+
+Partite escluse o non risolte: 20
+
+ESITO: SOGLIA CANDIDATA INDIVIDUATA
+
+WorstPPGLast5 minimo: 0.25
+Partite ALTA originali: 140
+Partite eliminate: 24
+OK eliminati: 16
+KO eliminati: 8
+Saldo netto KO-OK: -8
+Precisione originale: 78.57%
+Precisione dopo il filtro: 81.03%
+Incremento precisione: 2.46 punti percentuali
+Copertura residua: 82.86%
+
+Questa soglia è soltanto una candidata statistica.
+Prima di creare v26 va verificata su un campione più ampio
+e confrontata anche per lega e periodo temporale.
