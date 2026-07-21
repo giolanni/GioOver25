@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-06-25;Los Angeles FC 2;Minnesota 2;1;0;
 USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-06-27;Portland Timbers 2;San Jose Earthquakes II;2;3;
 USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-06-28;Ventura County;Real Monarchs;3;1;
@@ -57,3 +57,6 @@ USA;MLS Next Pro - Western Conference - Pacific Division;20;2026-07-08;San Jose 
 USA;MLS Next Pro - Western Conference - Pacific Division;20;2026-07-12;Los Angeles FC 2;Portland Timbers 2;0;0;
 USA;MLS Next Pro - Western Conference - Pacific Division;20;2026-07-12;Real Monarchs;Vancouver 2;2;1;
 USA;MLS Next Pro - Western Conference - Pacific Division;21;2026-07-13;San Jose Earthquakes II;Tacoma Defiance;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;21;2026-07-19;Ventura County;Los Angeles FC 2;2;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;22;2026-07-19;San Jose Earthquakes II;North Texas;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;22;2026-07-20;Real Monarchs;Tacoma Defiance;2;4;

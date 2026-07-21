@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;MLS Next Pro - Western Conference - Central Division;1;2026-06-20;Minnesota 2;St. Louis City 2;5;2;
 USA;MLS Next Pro - Western Conference - Central Division;1;2026-06-22;Austin FC II;Sporting Kansas City II;2;1;
 USA;MLS Next Pro - Western Conference - Central Division;1;2026-06-28;Colorado Rapids 2;Vancouver 2;1;0;
@@ -56,3 +56,6 @@ USA;MLS Next Pro - Western Conference - Central Division;19;2026-07-06;Huntsvill
 USA;MLS Next Pro - Western Conference - Central Division;19;2026-07-12;Colorado Rapids 2;North Texas;1;0;
 USA;MLS Next Pro - Western Conference - Central Division;19;2026-07-12;Houston Dynamo 2;St. Louis City 2;2;1;
 USA;MLS Next Pro - Western Conference - Central Division;19;2026-07-13;Austin FC II;Minnesota 2;2;3;
+USA;MLS Next Pro - Western Conference - Central Division;20;2026-07-19;Houston Dynamo 2;Colorado Rapids 2;2;1;
+USA;MLS Next Pro - Western Conference - Central Division;20;2026-07-19;St. Louis City 2;Portland Timbers 2;1;2;
+USA;MLS Next Pro - Western Conference - Central Division;20;2026-07-20;Sporting Kansas City II;Minnesota 2;1;0;

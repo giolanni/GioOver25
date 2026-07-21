@@ -1,4 +1,0 @@
-﻿PhaseLeagueId;MatchDate;Home;Away;OldLeagueId;HomeSourceLeagueId;AwaySourceLeagueId;HistoryRow;OutputFiles;HG;AG
-USA_USLLeagueTwo_PlayIn_2026;2026-07-15;Asheville City;Virginia Beach;USA_USLLeagueTwo_SouthAtlantic_2026;USA_USLLeagueTwo_SouthAtlantic_2026;USA_USLLeagueTwo_Chesapeake_2026;432;data\output_ranking\v25\ranking_2026_07_15_v25.csv;1;0
-USA_USLLeagueTwo_PlayIn_2026;2026-07-15;LVU Rush;Appalachian;USA_USLLeagueTwo_MidAtlantic_2026;USA_USLLeagueTwo_MidAtlantic_2026;USA_USLLeagueTwo_SouthAtlantic_2026;429;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0;1
-USA_USLLeagueTwo_PlayIn_2026;2026-07-15;NEFC;Ironbound SC;USA_USLLeagueTwo_Northeast_2026;USA_USLLeagueTwo_Northeast_2026;USA_USLLeagueTwo_Metropolitan_2026;430;data\output_ranking\v25\ranking_2026_07_15_v25.csv;0;3

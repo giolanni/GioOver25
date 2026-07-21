@@ -151,32 +151,60 @@ def find_team_source_league(
     team: str,
     histories: dict[str, list],
     match_date: date | None,
+    fallback_league_id: str | None = None,
 ) -> str:
+    """
+    Individua lo storico di provenienza di una squadra.
+
+    Se la squadra non ha ancora disputato partite e appartiene a una lega
+    ordinaria, restituisce il LeagueId della partita tramite fallback.
+
+    Nei CompetitionGroup il fallback non viene passato, perché una squadra
+    deve essere associata alla propria divisione di origine.
+    """
+
     normalized = _normalize_team(team)
     candidates = []
+
     for league_id, matches in histories.items():
         team_dates = []
+
         for match in matches:
-            if normalized not in {
+            teams = {
                 _normalize_team(getattr(match, "home", "")),
                 _normalize_team(getattr(match, "away", "")),
-            }:
+            }
+
+            if normalized not in teams:
                 continue
+
             current_date = _match_date(match)
+
             if current_date is None:
                 continue
+
             if match_date is not None and current_date >= match_date:
                 continue
+
             team_dates.append(current_date)
+
         if team_dates:
             candidates.append((max(team_dates), league_id))
-    if not candidates:
-        raise ValueError(
-            f"Squadra non trovata negli storici del CompetitionGroup: {team}"
-        )
-    candidates.sort(reverse=True)
-    return candidates[0][1]
 
+    if candidates:
+        candidates.sort(reverse=True)
+        return candidates[0][1]
+
+    if fallback_league_id:
+        print(
+            f"[WARN] {team}: nessuna partita storica precedente. "
+            f"Utilizzo {fallback_league_id} come lega di appartenenza."
+        )
+        return fallback_league_id
+
+    raise ValueError(
+        f"Squadra non trovata negli storici del CompetitionGroup: {team}"
+    )
 
 def infer_next_round(matches: list) -> int:
     if not matches:
@@ -268,9 +296,25 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
                 f"Nessuno storico risultati disponibile per {league_id}"
             )
 
-        home_source = find_team_source_league(home, histories, match_date_value)
-        away_source = find_team_source_league(away, histories, match_date_value)
+        fallback_league_id = (
+            league_id
+            if not competition_group
+            else None
+        )
 
+        home_source = find_team_source_league(
+            home,
+            histories,
+            match_date_value,
+            fallback_league_id=fallback_league_id,
+        )
+
+        away_source = find_team_source_league(
+            away,
+            histories,
+            match_date_value,
+            fallback_league_id=fallback_league_id,
+        )
         # L'unione è sicura perché build_match_statistics filtra per squadra.
         statistics_matches = [
             match

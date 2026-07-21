@@ -101,10 +101,15 @@ Norway_3rdDivision_Group4;Norway;3rd Division Group 4;14;26;Yes;Round 12 current
 Norway_3rdDivision_Group5;Norway;3rd Division Group 5;14;26;Yes;Round 12 currently partial in supplied data;
 Norway_3rdDivision_Group6;Norway;3rd Division Group 6;14;26;Yes;Round 12 currently partial in supplied data;
 Norway_OBOSLigaen;Norway;OBOS-ligaen;16;30;Yes;Round 12 complete in supplied data;
+Peru_Liga1_Apertura;Peru;Liga 1 - Apertura;18;17;No;Apertura regular season;
+Peru_Liga1_Clausura;Peru;Liga 1 - Clausura;18;17;No;Clausura regular season;
+Peru_Liga2_GroupA;Peru;Liga 2 - Group A;9;16;Yes;
+Peru_Liga2_GroupB;Peru;Liga 2 - Group B;9;16;Yes;
 Portugal_LigaPortugal;Portugal;Liga Portugal;18;34;Yes;;
 Portugal_LigaPortugal2;Portugal;Liga Portugal 2;18;34;Yes;;
 Romania_Superliga;Romania;Superliga;16;30;Yes;;
 Romania_Liga2;Romania;Liga 2;22;21;Yes;Regular season only;
+Russia_FNL;Russia;FNL;18;34;Yes;;
 Serbia_SuperLiga;Serbia;Super Liga;16;30;Yes;;
 Serbia_PrvaLiga;Serbia;Prva Liga;16;30;Yes;;
 Slovenia_PrvaLiga;Slovenia;Prva Liga;10;36;Yes;;
