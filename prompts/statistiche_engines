@@ -15,71 +15,66 @@ evidenzia quale versione ottiene la percentuale migliore in ogni categoria;
 se rilevi differenze significative tra le versioni, commentale brevemente.
 
 
-Confronta gli storici allegati considerando esclusivamente l'intersezione delle partite presenti in tutti gli engine.
+Confronta gli storici ranking allegati utilizzando esclusivamente il set comune di partite presenti in tutti gli engine.
 
-Regole:
+Regole metodologiche:
 
-considera solo le partite concluse (Over25 = OK oppure KO);
-usa MatchDate come riferimento temporale (mai PredictionDate);
-analizza separatamente FASCIA ALTA e FASCIA MEDIA;
-per ogni engine calcola due classifiche sull'intero periodo.
-1. Classifica Sicurezza (criterio principale)
+* identifica una partita tramite `LeagueId + MatchDate + Home + Away`;
+* usa sempre `MatchDate` come riferimento temporale, mai `PredictionDate`;
+* escludi le partite senza esito;
+* considera validi soltanto gli esiti `OK` e `KO`;
+* limita l’analisi all’intersezione delle partite concluse presenti in tutti gli engine;
+* produci analisi separate per FASCIA ALTA e FASCIA MEDIA;
+* ripeti tutto con tutte le leghe e senza i `LeagueId` che iniziano con `Australia_`.
 
-Per ogni MatchDate determina se la giornata è:
+Produci due classifiche.
 
-🟢 Perfetta: almeno una partita nella fascia considerata e 0 KO;
-🟡 1 KO;
-🟠 2 KO;
-🔴 3 o più KO.
+1. CLASSIFICA SICUREZZA GIORNALIERA
 
-Successivamente ordina gli engine con i seguenti criteri:
+Per ogni engine raggruppa i risultati per `MatchDate` e classifica ogni giornata:
 
-maggior numero di giornate 🟢;
-minor numero totale di KO;
-maggior numero totale di OK;
-migliore percentuale di successo.
+* perfetta: almeno una selezione nella fascia e zero KO;
+* giornata con 1 KO;
+* giornata con 2 KO;
+* giornata negativa: 3 o più KO;
+* non valutabile: nessuna partita conclusa nella fascia.
 
-Riporta per ogni engine:
+Per ogni engine indica:
 
-giornate perfette;
-giornate con 1 KO;
-giornate con 2 KO;
-giornate con ≥3 KO;
-OK totali;
-KO totali;
-percentuale complessiva.
-2. Classifica Prestazioni
+* giornate attive;
+* giornate perfette;
+* percentuale di giornate perfette;
+* OK ottenuti nelle giornate perfette;
+* giornate con 1 KO;
+* giornate con 2 KO;
+* giornate con almeno 3 KO;
+* OK totali;
+* KO totali;
+* precisione complessiva.
 
-Ordina invece gli engine con il criterio classico:
+Ordina la Classifica Sicurezza secondo questi criteri:
 
-percentuale di successo;
-numero di OK;
-numero di KO.
+1. maggior numero di giornate perfette;
 
-Per entrambe le classifiche:
+2. maggior numero di OK nelle giornate perfette;
 
-usa lo stesso set di partite per tutti gli engine (intersezione);
-ripeti l'analisi con tutte le leghe e senza le leghe australiane;
-commenta brevemente le differenze.
-Una piccola modifica che ti suggerisco
+3. minor numero complessivo di KO;
 
-Cambierei leggermente la Classifica Sicurezza.
+4. migliore precisione complessiva.
 
-Non userei solo il numero di giornate perfette, ma anche quante partite hai fatto vincere in quelle giornate.
+5. CLASSIFICA PRESTAZIONI
 
-Esempio:
+Per ogni engine indica:
 
-Engine	Giornate 🟢	OK nelle 🟢
-A	8	41
-B	8	23
+* OK;
+* KO;
+* totale;
+* percentuale di successo, calcolata come `OK / (OK + KO)`.
 
-Entrambi hanno 8 giornate perfette, ma A ha fornito quasi il doppio delle giocate vincenti.
+Ordina secondo:
 
-Io ordinerei così:
+1. maggiore percentuale di successo;
+2. maggior numero di OK;
+3. minor numero di KO.
 
-giornate 🟢;
-OK realizzati nelle giornate 🟢;
-KO complessivi;
-percentuale.
-
-Secondo me rappresenta molto meglio il valore reale di un engine.
+Evidenzia il migliore di ogni classifica e commenta eventuali differenze tra sicurezza giornaliera e precisione statistica complessiva.
