@@ -1,13 +1,16 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Cham;1;1;0;0;3;0;3;3;3.0
-1;2;Gebenbach;1;1;0;0;2;0;2;3;3.0
-1;3;Neudrossenfeld;1;1;0;0;1;0;1;3;3.0
-1;4;Ingolstadt II;1;0;1;0;4;4;0;1;1.0
-1;5;Stadeln;1;0;1;0;4;4;0;1;1.0
-1;6;Regensburg II;1;0;1;0;3;3;0;1;1.0
-1;7;Wurzburger FV;1;0;1;0;3;3;0;1;1.0
-1;8;DJK Bamberg;1;0;1;0;2;2;0;1;1.0
-1;9;Kornburg;1;0;1;0;2;2;0;1;1.0
-1;10;Fortuna Regensburg;1;0;0;1;0;1;-1;0;0.0
-1;11;Nordlingen;1;0;0;1;0;2;-2;0;0.0
-1;12;Bayern Hof;1;0;0;1;0;3;-3;0;0.0
+2;1;Wurzburger FV;2;1;1;0;5;3;2;4;2.0
+2;2;Bamberg;1;1;0;0;4;1;3;3;3.0
+2;3;Cham;1;1;0;0;3;0;3;3;3.0
+2;4;Gebenbach;1;1;0;0;2;0;2;3;3.0
+2;5;Neudrossenfeld;1;1;0;0;1;0;1;3;3.0
+2;6;Ingolstadt II;1;0;1;0;4;4;0;1;1.0
+2;7;Stadeln;1;0;1;0;4;4;0;1;1.0
+2;8;Regensburg II;1;0;1;0;3;3;0;1;1.0
+2;9;DJK Bamberg;1;0;1;0;2;2;0;1;1.0
+2;10;Kornburg;1;0;1;0;2;2;0;1;1.0
+2;11;Fortuna Regensburg;1;0;0;1;0;1;-1;0;0.0
+2;12;Grossbardorf;1;0;0;1;0;2;-2;0;0.0
+2;13;Nordlingen;1;0;0;1;0;2;-2;0;0.0
+2;14;Weiden;1;0;0;1;1;4;-3;0;0.0
+2;15;Bayern Hof;1;0;0;1;0;3;-3;0;0.0

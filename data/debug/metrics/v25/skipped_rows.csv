@@ -140,7 +140,6 @@
 635;Australia_NPLNorthernNSW;2026-07-19;Charlestown Azzurri;Edgeworth E.;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 638;Australia_NPLNorthernNSW;2026-07-19;Newcastle Olympic;Belmont Swansea Utd.;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 643;Australia_NorthernNSWStateLeague;2026-07-19;Dudley Redhead United;Newcastle Croatia;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-646;Australia_NorthernNSWStateLeague;2026-07-19;New Lambton;Toronto Awaba Stags;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 656;Australia_NorthernNSWStateLeague;2026-07-19;South Cardiff;Wallsend Red Devils;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 680;Bhutan_PremierLeague;2026-07-19;Thimphu City;Thimphu FC;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 681;Sweden_Superettan;2026-07-19;Nordic United;Örebro;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -175,6 +174,19 @@
 731;SouthKorea_KLeague1;2026-07-21;Jeonbuk;Daejeon;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 732;SouthKorea_KLeague1;2026-07-21;Ulsan HD;Incheon;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 733;Finland_Ykkosliiga;2026-07-21;KaPa;Klubi 04;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-734;Germany_Oberliga_Bayern_Nord;2026-07-21;Grossbardorf;Wurzburger FV;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+734;Germany_Oberliga_Bayern_Nord;2026-07-21;Grossbardorf;Wurzburger FV;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 735;SouthKorea_KLeague1;2026-07-21;Jeju SK;Gangwon;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 736;Lebanon_PremierLeague;2026-07-21;Tadamon;Racing;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+737;Finland_Kakkonen_GroupC;2026-07-22;Jaro 2;GBK Kokkola;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+738;Australia_NPLNorthernNSW;2026-07-22;Newcastle Olympic;Belmont Swansea Utd.;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+739;Australia_NPLACT;2026-07-22;Tuggeranong Utd;Canberra White Eagles;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+740;Australia_NPLTasmania;2026-07-22;Launceston;Launceston United;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+741;Norway_Eliteserien;2026-07-22;Bodo/Glimt;HamKam;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+742;Somalia_NationalLeague;2026-07-22;Jazeera;Gaadiidka;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+743;Finland_Ykkonen;2026-07-22;Keski-Uusimaa;VJS;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+744;Somalia_NationalLeague;2026-07-22;Gantaalaha Afgooye;Mogadishu City;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+745;Norway_Eliteserien;2026-07-22;Lilleström;Viking;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+746;Bolivia_DivisionProfesional;2026-07-22;Independiente;Real Potosi;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+747;SouthKorea_KLeague1;2026-07-22;Seoul;Pohang;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+748;SouthKorea_KLeague1;2026-07-22;Gwangju;Gimcheon Sangmu;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+749;SouthKorea_KLeague1;2026-07-22;Bucheon;Anyang;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
