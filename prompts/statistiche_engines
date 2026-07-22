@@ -13,3 +13,73 @@ con tutte le leghe;
 escludendo tutte le leghe australiane (LeagueId che inizia con Australia_);
 evidenzia quale versione ottiene la percentuale migliore in ogni categoria;
 se rilevi differenze significative tra le versioni, commentale brevemente.
+
+
+Confronta gli storici allegati considerando esclusivamente l'intersezione delle partite presenti in tutti gli engine.
+
+Regole:
+
+considera solo le partite concluse (Over25 = OK oppure KO);
+usa MatchDate come riferimento temporale (mai PredictionDate);
+analizza separatamente FASCIA ALTA e FASCIA MEDIA;
+per ogni engine calcola due classifiche sull'intero periodo.
+1. Classifica Sicurezza (criterio principale)
+
+Per ogni MatchDate determina se la giornata è:
+
+🟢 Perfetta: almeno una partita nella fascia considerata e 0 KO;
+🟡 1 KO;
+🟠 2 KO;
+🔴 3 o più KO.
+
+Successivamente ordina gli engine con i seguenti criteri:
+
+maggior numero di giornate 🟢;
+minor numero totale di KO;
+maggior numero totale di OK;
+migliore percentuale di successo.
+
+Riporta per ogni engine:
+
+giornate perfette;
+giornate con 1 KO;
+giornate con 2 KO;
+giornate con ≥3 KO;
+OK totali;
+KO totali;
+percentuale complessiva.
+2. Classifica Prestazioni
+
+Ordina invece gli engine con il criterio classico:
+
+percentuale di successo;
+numero di OK;
+numero di KO.
+
+Per entrambe le classifiche:
+
+usa lo stesso set di partite per tutti gli engine (intersezione);
+ripeti l'analisi con tutte le leghe e senza le leghe australiane;
+commenta brevemente le differenze.
+Una piccola modifica che ti suggerisco
+
+Cambierei leggermente la Classifica Sicurezza.
+
+Non userei solo il numero di giornate perfette, ma anche quante partite hai fatto vincere in quelle giornate.
+
+Esempio:
+
+Engine	Giornate 🟢	OK nelle 🟢
+A	8	41
+B	8	23
+
+Entrambi hanno 8 giornate perfette, ma A ha fornito quasi il doppio delle giocate vincenti.
+
+Io ordinerei così:
+
+giornate 🟢;
+OK realizzati nelle giornate 🟢;
+KO complessivi;
+percentuale.
+
+Secondo me rappresenta molto meglio il valore reale di un engine.

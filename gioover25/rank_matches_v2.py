@@ -291,10 +291,20 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
             league_id, competition_group, registry_rows
         )
         histories = load_group_histories(group_league_ids)
+        histories = load_group_histories(group_league_ids)
+
+        # Se non esiste ancora alcun file storico, la competizione è appena iniziata
+        # oppure non sono stati ancora acquisiti risultati.
+        #
+        # In questa situazione la lega equivale ad avere zero partite concluse:
+        # non deve interrompere l'elaborazione degli altri campionati, ma deve essere
+        # semplicemente esclusa dal ranking fino al raggiungimento della soglia minima.
         if not histories:
-            raise FileNotFoundError(
-                f"Nessuno storico risultati disponibile per {league_id}"
+            print(
+                f"[SKIP] {league_id}: nessuno storico risultati disponibile "
+                f"(0 partite concluse, minimo richiesto: 5)."
             )
+            continue
 
         fallback_league_id = (
             league_id
