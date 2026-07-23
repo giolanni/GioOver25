@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Kazakhstan;First League;1;2026-04-02;Arys;Jaiyq;0;1;
 Kazakhstan;First League;1;2026-04-02;Khan Tengri;Kaspij Aktau 2;2;2;
 Kazakhstan;First League;1;2026-04-02;Tobol 2;Yelimay Semey 2;1;1;
@@ -90,6 +90,8 @@ Kazakhstan;First League;13;2026-07-11;Yelimay Semey 2;FC Astana 2;2;1;
 Kazakhstan;First League;14;2026-07-16;Khan Tengri;Yelimay Semey 2;0;1;
 Kazakhstan;First League;14;2026-07-17;FC Astana 2;Jaiyq;1;0;
 Kazakhstan;First League;14;2026-07-17;Tobol 2;Akademiya Ontustik;2;3;
+Kazakhstan;First League;15;2026-07-23;Akademiya Ontustik;FC Astana 2;2;1;
+Kazakhstan;First League;15;2026-07-23;Jaiyq;Khan Tengri;2;0;
 Kazakhstan;First League;21;2026-06-12;Turan;Kaspij Aktau 2;3;0;
 Kazakhstan;First League;22;2026-07-11;Kaspij Aktau 2;Taraz;1;0;
 Kazakhstan;First League;22;2026-07-11;Shakhter K.;Turan;1;0;
@@ -97,3 +99,4 @@ Kazakhstan;First League;23;2026-07-16;Arys;Turan;0;4;
 Kazakhstan;First League;23;2026-07-16;FC Batyr;Shakhter K.;0;2;
 Kazakhstan;First League;23;2026-07-16;Taraz;Aktobe 2;1;1;
 Kazakhstan;First League;23;2026-07-17;Kairat Almaty 2;Kaspij Aktau 2;6;0;
+Kazakhstan;First League;24;2026-07-23;Kaspij Aktau 2;FC Batyr;3;0;
