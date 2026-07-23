@@ -29,6 +29,8 @@ Bhutan_PremierLeague;Bhutan;Premier League;10;18;Yes;;
 Bolivia_DivisionProfesional;Bolivia;Division Profesional;16;30;Yes;;
 Bulgaria_ParvaLiga;Bulgaria;Parva Liga;14;26;Yes;;
 Bulgaria_VtoraLiga;Bulgaria;Vtora Liga;18;34;Yes;;
+CzechRepublic_ChNL;Czech Republic;ChNL;16;30;Yes;;
+Denmark_1stDivision;Denmark;1st Division;12;32;Yes;Championship/Relegation split after 22 rounds;
 Denmark_Superliga;Denmark;Superliga;12;32;Yes;Championship/Relegation split after 22 rounds;
 England_Championship;England;Championship;24;46;Yes;;
 England_LeagueOne;England;League One;24;46;Yes;;
@@ -36,8 +38,8 @@ England_PremierLeague;England;Premier League;20;38;Yes;;
 Estonia_Esiliiga;Estonia;Esiliiga;10;36;Yes;Round 17 complete in supplied data;
 Estonia_EsiliigaB;Estonia;Esiliiga B;10;36;Yes;Round 17 complete in supplied data;
 Estonia_Meistriliiga;Estonia;Meistriliiga;10;36;Yes;Round 17 currently partial in supplied data;
-FaroeIslands_PremierLeague;Faroe Islands;Premier League;10;27;Yes;;
 FaroeIslands_1Deild;Faroe Islands;1. Deild;10;27;Yes;Round 15 currently partial in supplied data;
+FaroeIslands_PremierLeague;Faroe Islands;Premier League;10;27;Yes;;
 Finland_Kakkonen_GroupA;Finland;Kakkonen Group A;10;18;Yes;Round not supplied in source data;
 Finland_Kakkonen_GroupB;Finland;Kakkonen Group B;10;18;Yes;Round not supplied in source data;
 Finland_Kakkonen_GroupC;Finland;Kakkonen Group C;10;18;Yes;Round not supplied in source data;
@@ -47,30 +49,31 @@ Finland_Ykkosliiga;Finland;Ykkosliiga;10;0;No;Round not supplied in source data;
 France_Ligue1;France;Ligue 1;18;34;Yes;;
 France_Ligue2;France;Ligue 2;18;34;Yes;;
 France_National;France;National;18;34;Yes;;
-Germany_Bundesliga;Germany;Bundesliga;18;34;Yes;;
 Germany_2Bundesliga;Germany;2. Bundesliga;18;34;Yes;;
 Germany_3Liga;Germany;3. Liga;20;38;Yes;;
-Germany_Regionalliga_Nord;Germany;Regionalliga Nord;18;34;Yes;;
-Germany_Regionalliga_Nordost;Germany;Regionalliga Nordost;18;34;Yes;;
-Germany_Regionalliga_West;Germany;Regionalliga West;18;34;Yes;;
-Germany_Regionalliga_Sudwest;Germany;Regionalliga Sudwest;18;34;Yes;;
-Germany_Regionalliga_Bayern;Germany;Regionalliga Bayern;18;34;Yes;;
-Germany_Regionalliga_PlayOff;Germany;Regionalliga Play Off;4;2;No;;
-Germany_Oberliga_NOFV_Nord;Germany;Oberliga NOFV-Nord;16;30;Yes;;
-Germany_Oberliga_NOFV_Sud;Germany;Oberliga NOFV-Sud;16;30;Yes;;
-Germany_Oberliga_NOFV_Relegation;Germany;Oberliga NOFV Relegation;4;2;No;;
-Germany_Oberliga_SchleswigHolstein;Germany;Oberliga Schleswig-Holstein;16;30;Yes;;
-Germany_Oberliga_Hamburg;Germany;Oberliga Hamburg;18;34;Yes;;
-Germany_Oberliga_Bremen;Germany;Oberliga Bremen;16;30;Yes;;
-Germany_Oberliga_Niedersachsen;Germany;Oberliga Niedersachsen;18;34;Yes;;
-Germany_Oberliga_Westfalen;Germany;Oberliga Westfalen;18;34;Yes;;
-Germany_Oberliga_Hessen;Germany;Oberliga Hessen;18;34;Yes;;
-Germany_Oberliga_RheinlandPfalzSaar;Germany;Oberliga Rheinland-Pfalz/Saar;18;34;Yes;;
+Germany_Bundesliga;Germany;Bundesliga;18;34;Yes;;
+Germany_Oberliga_BadenWurttemberg;Germany;Oberliga Baden-Württemberg;18;34;Yes;;
 Germany_Oberliga_Bayern_Nord;Germany;Oberliga Bayern Nord;18;34;Yes;;
 Germany_Oberliga_Bayern_Sud;Germany;Oberliga Bayern Sud;18;34;Yes;;
-Germany_Oberliga_BadenWurttemberg;Germany;Oberliga Baden-Württemberg;18;34;Yes;;
+Germany_Oberliga_Bremen;Germany;Oberliga Bremen;16;30;Yes;;
+Germany_Oberliga_Hamburg;Germany;Oberliga Hamburg;18;34;Yes;;
+Germany_Oberliga_Hessen;Germany;Oberliga Hessen;18;34;Yes;;
 Germany_Oberliga_Mittelrhein;Germany;Oberliga Mittelrhein;16;30;Yes;;
 Germany_Oberliga_Niederrhein;Germany;Oberliga Niederrhein;18;34;Yes;;
+Germany_Oberliga_Niedersachsen;Germany;Oberliga Niedersachsen;18;34;Yes;;
+Germany_Oberliga_NOFV_Nord;Germany;Oberliga NOFV-Nord;16;30;Yes;;
+Germany_Oberliga_NOFV_Relegation;Germany;Oberliga NOFV Relegation;4;2;No;;
+Germany_Oberliga_NOFV_Sud;Germany;Oberliga NOFV-Sud;16;30;Yes;;
+Germany_Oberliga_RheinlandPfalzSaar;Germany;Oberliga Rheinland-Pfalz/Saar;18;34;Yes;;
+Germany_Oberliga_SchleswigHolstein;Germany;Oberliga Schleswig-Holstein;16;30;Yes;;
+Germany_Oberliga_Westfalen;Germany;Oberliga Westfalen;18;34;Yes;;
+Germany_Regionalliga_Bayern;Germany;Regionalliga Bayern;18;34;Yes;;
+Germany_Regionalliga_Nord;Germany;Regionalliga Nord;18;34;Yes;;
+Germany_Regionalliga_Nordost;Germany;Regionalliga Nordost;18;34;Yes;;
+Germany_Regionalliga_PlayOff;Germany;Regionalliga Play Off;4;2;No;;
+Germany_Regionalliga_Sudwest;Germany;Regionalliga Sudwest;18;34;Yes;;
+Germany_Regionalliga_West;Germany;Regionalliga West;18;34;Yes;;
+Hungary_NBI;Hungary;NB I.;12;33;Yes;;
 Iceland_BestaDeildKarla;Iceland;Besta deizld karla;12;22;Yes;;
 Iceland_Division_1;Iceland;Division 1;12;22;TRUE;;
 Iceland_Division_2;Islanda;Division 2;12;22;TRUE;;
@@ -81,18 +84,17 @@ Italy_SerieB;Italy;Serie B;20;38;Yes;;
 Italy_SerieC_GironeA;Italy;Serie C Girone A;20;38;Yes;;
 Italy_SerieC_GironeB;Italy;Serie C Girone B;20;38;Yes;;
 Italy_SerieC_GironeC;Italy;Serie C Girone C;20;38;Yes;;
-Kazakhstan_PremierLeague;Kazakhstan;Premier League;16;30;Yes;Round 17 currently partial in supplied data;
 Kazakhstan_FirstLeague;Kazakhstan;First League;14;26;Yes;Round 21 appears between rounds 10 and 9 in supplied data;
+Kazakhstan_PremierLeague;Kazakhstan;Premier League;16;30;Yes;Round 17 currently partial in supplied data;
 Kyrgyzstan_PremierLiga;Kyrgyzstan;Premier Liga;16;30;Yes;Round 14 currently partial in supplied data;
-Latvia_Virsliga;Latvia;Virsliga;10;36;Yes;;
 Latvia_NakotnesLiga;Latvia;Nakotnes liga;14;26;Yes;Round 11 currently partial in supplied data;
+Latvia_Virsliga;Latvia;Virsliga;10;36;Yes;;
 Lebanon_PremierLeague;Lebanon;Premier League;12;22;Yes;Playoff and placement rounds excluded from supplied import;
 Lithuania_ILyga;Lithuania;I Lyga;16;30;Yes;Round 15 currently partial in supplied data;
 Lithuania_Toplyga;Lithuania;TOPLYGA;10;36;Yes;;
 Mexico_LigaMX_Apertura;Mexico;Liga MX - Apertura;18;17;No;Apertura regular season;
 Netherlands_EersteDivisie;Netherlands;Eerste Divisie;20;38;Yes;;
 Netherlands_Eredivisie;Netherlands;Eredivisie;18;34;Yes;;
-Norway_Eliteserien;Norway;Eliteserien;16;30;Yes;;
 Norway_2ndDivision_Group1;Norway;2nd Division Group 1;14;26;Yes;Round 11 complete in supplied data;
 Norway_2ndDivision_Group2;Norway;2nd Division Group 2;14;26;Yes;Round 11 currently partial in supplied data;
 Norway_3rdDivision_Group1;Norway;3rd Division Group 1;14;26;Yes;Round 12 currently partial in supplied data;
@@ -101,18 +103,23 @@ Norway_3rdDivision_Group3;Norway;3rd Division Group 3;14;26;Yes;Round 12 current
 Norway_3rdDivision_Group4;Norway;3rd Division Group 4;14;26;Yes;Round 12 currently partial in supplied data;
 Norway_3rdDivision_Group5;Norway;3rd Division Group 5;14;26;Yes;Round 12 currently partial in supplied data;
 Norway_3rdDivision_Group6;Norway;3rd Division Group 6;14;26;Yes;Round 12 currently partial in supplied data;
+Norway_Eliteserien;Norway;Eliteserien;16;30;Yes;;
 Norway_OBOSLigaen;Norway;OBOS-ligaen;16;30;Yes;Round 12 complete in supplied data;
 Peru_Liga1_Apertura;Peru;Liga 1 - Apertura;18;17;No;Apertura regular season;
 Peru_Liga1_Clausura;Peru;Liga 1 - Clausura;18;17;No;Clausura regular season;
-Peru_Liga2_GroupA;Peru;Liga 2 - Group A;9;16;Yes;
-Peru_Liga2_GroupB;Peru;Liga 2 - Group B;9;16;Yes;
+Peru_Liga2_GroupA;Peru;Liga 2 - Group A;9;16;Yes;;
+Peru_Liga2_GroupB;Peru;Liga 2 - Group B;9;16;Yes;;
+Poland_Division1;Poland;Division 1;18;34;Yes;;
+Poland_Division2;Poland;Division 2;18;34;Yes;;
+Poland_Ekstraklasa;Poland;Ekstraklasa;18;34;Yes;;
 Portugal_LigaPortugal;Portugal;Liga Portugal;18;34;Yes;;
 Portugal_LigaPortugal2;Portugal;Liga Portugal 2;18;34;Yes;;
-Romania_Superliga;Romania;Superliga;16;30;Yes;;
 Romania_Liga2;Romania;Liga 2;22;21;Yes;Regular season only;
+Romania_Superliga;Romania;Superliga;16;30;Yes;;
 Russia_FNL;Russia;FNL;18;34;Yes;;
-Serbia_SuperLiga;Serbia;Super Liga;16;30;Yes;;
+Russia_PremierLeague;Russia;Premier League;16;30;Yes;;
 Serbia_PrvaLiga;Serbia;Prva Liga;16;30;Yes;;
+Serbia_SuperLiga;Serbia;Super Liga;16;30;Yes;;
 Slovenia_PrvaLiga;Slovenia;Prva Liga;10;36;Yes;;
 Somalia_NationalLeague;Somalia;National League;12;22;Yes;Season 2025/2026;
 SouthKorea_KLeague1;South Korea;K League 1;12;33;No;Regular season;
@@ -128,14 +135,16 @@ Sweden_Division2_SodraGotaland;Sweden;Division 2 Södra Götaland;14;26;Yes;Roun
 Sweden_Division2_SodraSvealand;Sweden;Sodra Svealand;14;26;Yes;;
 Sweden_Division2_VastraGotaland;Sweden;Vastra Gotaland;14;26;Yes;;
 Sweden_Superettan;Sweden;Superettan;16;30;Yes;Round 13 currently partial in supplied data;
+Switzerland_ChallengeLeague;Switzerland;Challenge League;10;36;Yes;;
 Turkey_SuperLig;Turkey;Süper Lig;18;34;Yes;;
+Ukraine_PershaLiga;Ukraine;Persha Liga;16;30;Yes;;
 USA_MLS;USA;MLS;30;58;Yes;;
-USA_USLChampionship;USA;USL Championship;24;46;Yes;UNBALANCED;
-USA_USLLeagueOne;USA;USL League One;17;0;No;UNBALANCED;
 USA_MLSNextPro_EasternConference_NortheastDivision;USA;MLS Next Pro - Eastern Conference - Northeast Division;8;28;Yes;UNBALANCED;
 USA_MLSNextPro_EasternConference_SoutheastDivision;USA;MLS Next Pro - Eastern Conference - Southeast Division;8;28;Yes;UNBALANCED;
 USA_MLSNextPro_WesternConference_CentralDivision;USA;MLS Next Pro - Western Conference - Central Division;7;28;Yes;UNBALANCED;
 USA_MLSNextPro_WesternConference_PacificDivision;USA;MLS Next Pro - Western Conference - Pacific Division;7;28;Yes;UNBALANCED;
+USA_USLChampionship;USA;USL Championship;24;46;Yes;UNBALANCED;
+USA_USLLeagueOne;USA;USL League One;17;0;No;UNBALANCED;
 USA_USLLeagueTwo_Chesapeake;USA;USL League Two - Chesapeake Division;11;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_GreatForest;USA;USL League Two - Great Forest Division;7;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_GreatLakes;USA;USL League Two - Great Lakes Division;7;0;No;UNBALANCED;USA_USLLeagueTwo
@@ -149,6 +158,8 @@ USA_USLLeagueTwo_Mountain;USA;USL League Two - Mountain Division;7;0;No;UNBALANC
 USA_USLLeagueTwo_NorCal;USA;USL League Two - Nor Cal Division;8;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Northeast;USA;USL League Two - Northeast Division;10;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Northwest;USA;USL League Two - Northwest Division;8;0;No;UNBALANCED;USA_USLLeagueTwo
+USA_USLLeagueTwo_PlayIn;USA;USL League Two - Play-in;48;1;No;;USA_USLLeagueTwo
+USA_USLLeagueTwo_PlayOff;USA;USL League Two - Play-in;48;1;No;;USA_USLLeagueTwo
 USA_USLLeagueTwo_Ranger;USA;USL League Two - Ranger Division;6;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_SouthAtlantic;USA;USL League Two - South Atlantic Division;11;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_SouthCentral;USA;USL League Two - South Central Division;7;0;No;UNBALANCED;USA_USLLeagueTwo
@@ -156,5 +167,3 @@ USA_USLLeagueTwo_Southeast;USA;USL League Two - Southeast Division;6;0;No;UNBALA
 USA_USLLeagueTwo_SouthFlorida;USA;USL League Two - South Florida Division;6;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Southwest;USA;USL League Two - Southwest Division;8;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Valley;USA;USL League Two - Valley Division;6;0;No;UNBALANCED;USA_USLLeagueTwo
-USA_USLLeagueTwo_PlayIn;USA;USL League Two - Play-in;48;1;No;;USA_USLLeagueTwo
-USA_USLLeagueTwo_PlayOff;USA;USL League Two - Play-in;48;1;No;;USA_USLLeagueTwo

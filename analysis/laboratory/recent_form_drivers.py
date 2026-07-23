@@ -56,6 +56,39 @@ con data precedente alla partita/prediction analizzata:
     BothTeamsLowPPGLowGF
         Vale 1 se entrambe le squadre rispettano la condizione precedente.
 
+DRIVER RIPRESA DOPO UNA PAUSA LUNGA
+-----------------------------------
+Per ciascuna squadra viene cercata l'ultima interruzione di almeno 21 giorni,
+ma soltanto quando la squadra aveva già disputato almeno cinque partite prima
+della pausa. In questo modo l'inizio naturale della stagione non viene
+confuso con una ripresa.
+
+    HomeLongBreakDetected / AwayLongBreakDetected
+        Vale 1 se è stata rilevata una pausa lunga valida.
+
+    HomeLongBreakDays / AwayLongBreakDays
+        Numero di giorni tra l'ultima partita prima della pausa e la prima
+        partita successiva.
+
+    HomeMatchesSinceRestart / AwayMatchesSinceRestart
+        Partite disputate dalla squadra dopo la pausa e prima della prediction.
+
+    HomeGFAvgSinceRestart / AwayGFAvgSinceRestart
+        Gol segnati medi dalla ripresa.
+
+    HomeOverRateSinceRestart / AwayOverRateSinceRestart
+        Quota di partite Over 2.5 giocate dalla ripresa, compresa tra 0 e 1.
+
+    HomeRestartReady / AwayRestartReady
+        Vale 1 quando la squadra ha già disputato almeno tre partite dalla
+        ripresa oppure mostra segnali offensivi confortanti in anticipo.
+
+    HomeRestartNotReady / AwayRestartNotReady
+        Vale 1 quando la squadra è ancora nella fase di ripresa incerta.
+
+    BothTeamsRestartNotReady
+        Vale 1 quando entrambe le squadre sono ancora in ripresa incerta.
+
 PRINCIPIO ANTI-LOOKAHEAD
 ------------------------
 Per evitare contaminazioni, vengono usate soltanto gare con MatchDate/Date
@@ -104,6 +137,26 @@ RECENT_MATCH_COUNT = 5
 LOW_PPG_THRESHOLD = 0.60
 LOW_GF_AVG_THRESHOLD = 1.20
 
+# Una pausa di almeno 21 giorni viene considerata una possibile interruzione
+# significativa del ritmo agonistico. È una soglia sperimentale: il Laboratory
+# dovrà stabilire se possiede davvero potere discriminante.
+LONG_BREAK_DAYS = 21
+
+# La pausa viene considerata soltanto se la squadra aveva già costruito una
+# storia sufficiente prima dell'interruzione. Così l'inizio stagione non viene
+# classificato erroneamente come ripresa.
+MIN_MATCHES_BEFORE_LONG_BREAK = 5
+
+# Dopo tre partite la squadra viene considerata normalmente riattivata.
+MIN_MATCHES_TO_BE_RESTART_READY = 3
+
+# Uscita anticipata dalla fase incerta: almeno due partite, entrambe Over 2.5.
+EARLY_READY_MIN_MATCHES = 2
+
+# Ulteriore segnale offensivo forte: media di almeno due gol segnati a partita
+# nelle gare già disputate dopo la pausa.
+EARLY_READY_GF_AVG = 2.0
+
 # Elenco centralizzato delle colonne aggiunte al dataset del Laboratory.
 RECENT_FORM_DRIVERS = [
     "HomePPGLast5",
@@ -123,6 +176,24 @@ RECENT_FORM_DRIVERS = [
     "HomeLowPPGLowGF",
     "AwayLowPPGLowGF",
     "BothTeamsLowPPGLowGF",
+
+    # Driver candidati relativi alla ripresa dopo una pausa lunga.
+    "HomeLongBreakDetected",
+    "AwayLongBreakDetected",
+    "HomeLongBreakDays",
+    "AwayLongBreakDays",
+    "HomeMatchesSinceRestart",
+    "AwayMatchesSinceRestart",
+    "HomeGFAvgSinceRestart",
+    "AwayGFAvgSinceRestart",
+    "HomeOverRateSinceRestart",
+    "AwayOverRateSinceRestart",
+    "HomeRestartReady",
+    "AwayRestartReady",
+    "HomeRestartNotReady",
+    "AwayRestartNotReady",
+    "BothTeamsRestartNotReady",
+    "AtLeastOneTeamRestartNotReady",
 ]
 
 
@@ -261,6 +332,134 @@ def _team_recent_matches(
     return previous[-RECENT_MATCH_COUNT:]
 
 
+
+def _team_previous_matches(
+    matches: list[dict],
+    team: str,
+    before_date: date,
+) -> list[dict]:
+    """
+    Restituisce tutte le partite precedenti della squadra in ordine cronologico.
+
+    Questa funzione è distinta da `_team_recent_matches()` perché l'analisi
+    della ripresa deve osservare l'intera sequenza storica e cercare intervalli
+    lunghi tra due gare consecutive, non soltanto le ultime cinque.
+    """
+    normalized_team = _normalize_team(team)
+
+    return [
+        match
+        for match in matches
+        if match["date"] < before_date
+        and normalized_team in {match["home"], match["away"]}
+    ]
+
+
+def _team_goals_for(match: dict, normalized_team: str) -> int:
+    """Restituisce i gol segnati dalla squadra nella partita ricevuta."""
+    return match["hg"] if match["home"] == normalized_team else match["ag"]
+
+
+def _restart_status(previous_matches: list[dict], team: str) -> dict | None:
+    """
+    Calcola lo stato di ripresa della singola squadra.
+
+    LOGICA
+    ------
+    1. Cerca l'ultima coppia di partite consecutive separata da almeno
+       `LONG_BREAK_DAYS`.
+    2. Accetta quella pausa soltanto se prima dell'interruzione risultano già
+       almeno `MIN_MATCHES_BEFORE_LONG_BREAK` partite.
+    3. Considera come gare post-ripresa tutte quelle dalla prima partita dopo
+       la pausa fino alla data della prediction, esclusa.
+    4. La squadra è pronta dopo almeno tre gare, oppure prima quando:
+       - ha disputato almeno due gare ed entrambe sono Over 2.5; oppure
+       - segna mediamente almeno due gol a partita dalla ripresa.
+
+    Restituisce None se non esiste alcuna pausa lunga valida. In questo modo i
+    campionati senza interruzioni non vengono mescolati artificialmente con i
+    casi di ripresa.
+    """
+    if len(previous_matches) <= MIN_MATCHES_BEFORE_LONG_BREAK:
+        return None
+
+    break_index: int | None = None
+    break_days = 0
+
+    # Si percorrono tutte le coppie consecutive e si conserva l'ultima pausa
+    # valida, cioè quella temporalmente più vicina alla prediction.
+    for current_index in range(1, len(previous_matches)):
+        matches_before_break = current_index
+        gap_days = (
+            previous_matches[current_index]["date"]
+            - previous_matches[current_index - 1]["date"]
+        ).days
+
+        if (
+            matches_before_break >= MIN_MATCHES_BEFORE_LONG_BREAK
+            and gap_days >= LONG_BREAK_DAYS
+        ):
+            break_index = current_index
+            break_days = gap_days
+
+    if break_index is None:
+        return None
+
+    since_restart = previous_matches[break_index:]
+    matches_since_restart = len(since_restart)
+    normalized_team = _normalize_team(team)
+
+    goals_for = sum(
+        _team_goals_for(match, normalized_team)
+        for match in since_restart
+    )
+
+    over_count = sum(
+        1
+        for match in since_restart
+        if match["hg"] + match["ag"] >= 3
+    )
+
+    gf_avg = (
+        goals_for / matches_since_restart
+        if matches_since_restart
+        else 0.0
+    )
+    over_rate = (
+        over_count / matches_since_restart
+        if matches_since_restart
+        else 0.0
+    )
+
+    enough_matches = (
+        matches_since_restart >= MIN_MATCHES_TO_BE_RESTART_READY
+    )
+    early_all_over = (
+        matches_since_restart >= EARLY_READY_MIN_MATCHES
+        and over_count == matches_since_restart
+    )
+    early_strong_scoring = (
+        matches_since_restart >= 1
+        and gf_avg >= EARLY_READY_GF_AVG
+    )
+
+    ready = int(
+        enough_matches
+        or early_all_over
+        or early_strong_scoring
+    )
+
+    return {
+        "detected": 1,
+        "break_days": break_days,
+        "matches_since_restart": matches_since_restart,
+        "gf_avg_since_restart": round(gf_avg, 3),
+        "over_rate_since_restart": round(over_rate, 3),
+        "ready": ready,
+        "not_ready": int(ready == 0),
+    }
+
+
 def _team_form(matches: list[dict], team: str) -> dict | None:
     """
     Calcola PPG, vittorie, gol fatti e subiti sulle cinque gare ricevute.
@@ -336,22 +535,70 @@ def enrich_matches_with_recent_form(
                     results_dir / f"{league_id}.csv"
                 )
 
-        home_recent = _team_recent_matches(
+        home_history = _team_previous_matches(
             cache.get(home_league_id, []),
             row.get("Home", ""),
             reference_date,
         )
-        away_recent = _team_recent_matches(
+        away_history = _team_previous_matches(
             cache.get(away_league_id, []),
             row.get("Away", ""),
             reference_date,
         )
 
+        # Le ultime cinque gare vengono ricavate dalla storia già filtrata.
+        home_recent = home_history[-RECENT_MATCH_COUNT:]
+        away_recent = away_history[-RECENT_MATCH_COUNT:]
+
         home_form = _team_form(home_recent, row.get("Home", ""))
         away_form = _team_form(away_recent, row.get("Away", ""))
 
+        # Lo stato di ripresa viene calcolato indipendentemente dalla presenza
+        # delle cinque gare recenti: una pausa può essere diagnosticata anche
+        # quando una delle metriche Last5 non è disponibile.
+        home_restart = _restart_status(home_history, row.get("Home", ""))
+        away_restart = _restart_status(away_history, row.get("Away", ""))
+
+        driver_values = _empty_driver_values()
+
+        if home_restart is not None:
+            driver_values.update({
+                "HomeLongBreakDetected": home_restart["detected"],
+                "HomeLongBreakDays": home_restart["break_days"],
+                "HomeMatchesSinceRestart": home_restart["matches_since_restart"],
+                "HomeGFAvgSinceRestart": home_restart["gf_avg_since_restart"],
+                "HomeOverRateSinceRestart": home_restart["over_rate_since_restart"],
+                "HomeRestartReady": home_restart["ready"],
+                "HomeRestartNotReady": home_restart["not_ready"],
+            })
+
+        if away_restart is not None:
+            driver_values.update({
+                "AwayLongBreakDetected": away_restart["detected"],
+                "AwayLongBreakDays": away_restart["break_days"],
+                "AwayMatchesSinceRestart": away_restart["matches_since_restart"],
+                "AwayGFAvgSinceRestart": away_restart["gf_avg_since_restart"],
+                "AwayOverRateSinceRestart": away_restart["over_rate_since_restart"],
+                "AwayRestartReady": away_restart["ready"],
+                "AwayRestartNotReady": away_restart["not_ready"],
+            })
+
+        home_not_ready = int(
+            home_restart is not None and home_restart["not_ready"] == 1
+        )
+        away_not_ready = int(
+            away_restart is not None and away_restart["not_ready"] == 1
+        )
+
+        driver_values["BothTeamsRestartNotReady"] = int(
+            home_not_ready == 1 and away_not_ready == 1
+        )
+        driver_values["AtLeastOneTeamRestartNotReady"] = int(
+            home_not_ready == 1 or away_not_ready == 1
+        )
+
         if home_form is None or away_form is None:
-            row.update(_empty_driver_values())
+            row.update(driver_values)
             enriched_rows.append(row)
             continue
 
@@ -364,7 +611,7 @@ def enrich_matches_with_recent_form(
             and away_form["gf_avg"] < LOW_GF_AVG_THRESHOLD
         )
 
-        row.update({
+        driver_values.update({
             "HomePPGLast5": home_form["ppg"],
             "AwayPPGLast5": away_form["ppg"],
             "WorstPPGLast5": min(home_form["ppg"], away_form["ppg"]),
@@ -398,6 +645,7 @@ def enrich_matches_with_recent_form(
             ),
         })
 
+        row.update(driver_values)
         enriched_rows.append(row)
 
     return enriched_rows
