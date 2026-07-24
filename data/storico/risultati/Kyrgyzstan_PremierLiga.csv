@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Kyrgyzstan;Premier Liga;1;2026-03-01;Ilbirs;Alay Osh;1;1;
 Kyrgyzstan;Premier Liga;1;2026-03-01;Neftchi Kochkor-Ata;Ozgon;1;2;
 Kyrgyzstan;Premier Liga;1;2026-03-02;Asiagoal Bishkek;Abdysh-Ata;2;1;
@@ -118,4 +118,5 @@ Kyrgyzstan;Premier Liga;15;2026-07-11;Asiagoal Bishkek;Bars;3;7;
 Kyrgyzstan;Premier Liga;15;2026-07-11;Bishkek City;Muras United;1;5;
 Kyrgyzstan;Premier Liga;15;2026-07-11;Ilbirs;Ozgon;0;1;
 Kyrgyzstan;Premier Liga;16;2026-07-06;Bars;Ilbirs;4;1;
+Kyrgyzstan;Premier Liga;16;2026-07-23;Toktogul;Alay Osh;2;4;
 Kyrgyzstan;Premier Liga;17;2026-07-14;Muras United;Bars;3;2;
