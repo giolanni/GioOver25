@@ -46,6 +46,16 @@ Finland_Kakkonen_GroupC;Finland;Kakkonen Group C;10;18;Yes;Round not supplied in
 Finland_Veikkausliiga;Finland;Veikkausliiga;12;22;Yes;Regular season;
 Finland_Ykkonen;Finland;Ykkonen;12;22;Yes;;
 Finland_Ykkosliiga;Finland;Ykkosliiga;10;0;No;Round not supplied in source data;
+Finland_Kolmonen_North;Finland;Kolmonen North;10;18;Yes;2026 regional group
+Finland_Kolmonen_Southern_Group1;Finland;Kolmonen Southern Group 1;12;22;Yes;2026 regional group
+Finland_Kolmonen_Southern_Group2;Finland;Kolmonen Southern Group 2;12;22;Yes;2026 regional group
+Finland_Kolmonen_Southern_Group3;Finland;Kolmonen Southern Group 3;11;20;Yes;2026 regional group
+Finland_Kolmonen_Western_Group1;Finland;Kolmonen Western Group 1;12;22;Yes;2026 regional group
+Finland_Kolmonen_Western_Group2;Finland;Kolmonen Western Group 2;12;22;Yes;2026 regional group
+Finland_Kolmonen_Western_Group3;Finland;Kolmonen Western Group 3;12;22;Yes;2026 regional group
+Finland_Kolmonen_Eastern_Group1;Finland;Kolmonen Eastern Group 1;8;14;Yes;2026 regional group
+Finland_Kolmonen_Eastern_Group2;Finland;Kolmonen Eastern Group 2;8;14;Yes;2026 regional group
+Finland_Kolmonen_Eastern_Group3;Finland;Kolmonen Eastern Group 3;12;22;Yes;2026 regional group
 France_Ligue1;France;Ligue 1;18;34;Yes;;
 France_Ligue2;France;Ligue 2;18;34;Yes;;
 France_National;France;National;18;34;Yes;;
