@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL League Two - Mid-Atlantic Division;0;2026-06-28;Delaware;RC New Jersey;5;1;
 USA;USL League Two - Mid-Atlantic Division;0;2026-06-28;Reading;PA Classics;8;2;
 USA;USL League Two - Mid-Atlantic Division;0;2026-07-01;Reading;Eagle FC;1;1;
@@ -54,7 +54,7 @@ USA;USL League Two - Mid-Atlantic Division;27;2026-07-02;LVU Rush;Ocean City;1;3
 USA;USL League Two - Mid-Atlantic Division;27;2026-07-05;West Chester Utd;Delaware;0;0;
 USA;USL League Two - Mid-Atlantic Division;27;2026-07-09;Reading;Philadelphia Lone Star;0;0;
 USA;USL League Two - Mid-Atlantic Division;28;2026-07-06;PA Classics;Reading;2;3;
-USA;USL League Two - Mid-Atlantic Division;28;2026-07-09;Delaware;Eagle FC;4;1;
 USA;USL League Two - Mid-Atlantic Division;28;2026-07-09;Ocean City;LVU Rush;2;2;
 USA;USL League Two - Mid-Atlantic Division;28;2026-07-09;RC New Jersey;West Chester Utd;0;2;
+USA;USL League Two - Mid-Atlantic Division;29;2026-07-08;Delaware;Eagle FC;4;1;
 USA;USL League Two - Mid-Atlantic Division;29;2026-07-11;Philadelphia Lone Star;RC New Jersey;0;1;

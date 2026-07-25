@@ -1,15 +1,19 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Monaco 1860 II;1;1;0;0;5;1;4;3;3.0
-1;2;Deisenhofen;1;1;0;0;2;0;2;3;3.0
-1;3;Pipinsried;1;1;0;0;3;2;1;3;3.0
-1;4;Landshut;1;1;0;0;2;1;1;3;3.0
-1;5;Kottern-St. Mang;1;1;0;0;1;0;1;3;3.0
-1;6;Rosenheim;1;0;1;0;2;2;0;1;1.0
-1;7;Schalding;1;0;1;0;2;2;0;1;1.0
-1;8;Ismaning;1;0;1;0;0;0;0;1;1.0
-1;9;Pfaffenhofen;1;0;1;0;0;0;0;1;1.0
-1;10;Heimstetten;1;0;0;1;2;3;-1;0;0.0
-1;11;Kirchanschoring;1;0;0;1;1;2;-1;0;0.0
-1;12;Schwabmunchen;1;0;0;1;0;1;-1;0;0.0
-1;13;Gundelfingen;1;0;0;1;0;2;-2;0;0.0
-1;14;Geretsried;1;0;0;1;1;5;-4;0;0.0
+2;1;Landshut;2;2;0;0;3;1;2;6;3.0
+2;2;Monaco 1860 II;1;1;0;0;5;1;4;3;3.0
+2;3;Deisenhofen;1;1;0;0;2;0;2;3;3.0
+2;4;Hankofen-Hailing;1;1;0;0;2;0;2;3;3.0
+2;5;Pipinsried;1;1;0;0;3;2;1;3;3.0
+2;6;FC Schwaig;1;1;0;0;2;1;1;3;3.0
+2;7;Kottern-St. Mang;1;1;0;0;1;0;1;3;3.0
+2;8;Gundelfingen;2;1;0;1;3;3;0;3;1.5
+2;9;Rosenheim;1;0;1;0;2;2;0;1;1.0
+2;10;Schalding;1;0;1;0;2;2;0;1;1.0
+2;11;Pfaffenhofen;1;0;1;0;0;0;0;1;1.0
+2;12;Ismaning;2;0;1;1;0;2;-2;1;0.5
+2;13;Kirchanschoring;1;0;0;1;1;2;-1;0;0.0
+2;14;Erlbach;1;0;0;1;0;1;-1;0;0.0
+2;15;Schwabmunchen;1;0;0;1;0;1;-1;0;0.0
+2;16;Heimstetten;2;0;0;2;3;5;-2;0;0.0
+2;17;TSV 1880 Wasserburg;1;0;0;1;1;3;-2;0;0.0
+2;18;Geretsried;1;0;0;1;1;5;-4;0;0.0

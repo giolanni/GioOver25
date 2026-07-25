@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL League Two - Lone Star Division;0;2026-06-28;Hill Country Lobos;Houston Sur;4;0;
 USA;USL League Two - Lone Star Division;0;2026-06-28;Laredo Heat;AHFC Royals;1;0;
 USA;USL League Two - Lone Star Division;0;2026-06-28;Lonestar SC;Houston FC;2;1;
@@ -51,7 +51,7 @@ USA;USL League Two - Lone Star Division;23;2026-06-25;Lonestar SC;San Antonio FC
 USA;USL League Two - Lone Star Division;23;2026-07-05;Houston FC;Hill Country Lobos;4;3;
 USA;USL League Two - Lone Star Division;24;2026-07-06;GFI Woodlands;Houston Sur;4;0;
 USA;USL League Two - Lone Star Division;24;2026-07-06;Twin City Toucans;Laredo Heat;1;2;
-USA;USL League Two - Lone Star Division;24;2026-07-08;Lonestar SC;Hill Country Lobos;4;4;
 USA;USL League Two - Lone Star Division;25;2026-07-09;Houston FC;Houston Sur;3;0;
 USA;USL League Two - Lone Star Division;25;2026-07-09;Laredo Heat;GFI Woodlands;3;0;
 USA;USL League Two - Lone Star Division;25;2026-07-09;San Antonio FC 2;Twin City Toucans;0;0;
+USA;USL League Two - Lone Star Division;26;2026-07-07;Lonestar SC;Hill Country Lobos;4;4;

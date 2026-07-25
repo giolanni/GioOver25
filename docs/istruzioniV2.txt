@@ -53,6 +53,10 @@ python -m gioover25.find_duplicate_results_different_dates
 STATISTICHE
 & "gioover25\raccogli_storici.ps1"  
 
+compara v25 e v251
+python -m analysis.metrics.compare_v25_v251
+python -m analysis.metrics.compare_v25_v251 --exclude-australia
+
 Test principali
 pytest tests/test_history.py -s
 pytest tests/test_standings.py -s

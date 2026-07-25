@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL League Two - Great Forest Division;0;2026-06-28;Akron City;Lorain County Leviathan;4;0;
 USA;USL League Two - Great Forest Division;0;2026-07-01;Erie Sports Center;Akron City;1;6;
 USA;USL League Two - Great Forest Division;0;2026-07-03;Akron City;Erie Sports Center;4;0;
@@ -37,7 +37,7 @@ USA;USL League Two - Great Forest Division;22;2026-06-27;Buffalo;Steel City;1;1;
 USA;USL League Two - Great Forest Division;22;2026-06-30;Erie Sports Center;Pittsburgh Riverhounds 2;0;4;
 USA;USL League Two - Great Forest Division;23;2026-07-02;Steel City;Cleveland Force;3;1;
 USA;USL League Two - Great Forest Division;23;2026-07-05;Buffalo;Lorain County Leviathan;4;1;
-USA;USL League Two - Great Forest Division;23;2026-07-09;Akron City;Pittsburgh Riverhounds 2;4;0;
-USA;USL League Two - Great Forest Division;24;2026-07-08;Lorain County Leviathan;Erie Sports Center;5;0;
 USA;USL League Two - Great Forest Division;24;2026-07-09;Cleveland Force;Steel City;0;1;
 USA;USL League Two - Great Forest Division;24;2026-07-11;Buffalo;Akron City;2;3;
+USA;USL League Two - Great Forest Division;25;2026-07-07;Lorain County Leviathan;Erie Sports Center;5;0;
+USA;USL League Two - Great Forest Division;25;2026-07-08;Akron City;Pittsburgh Riverhounds 2;4;0;

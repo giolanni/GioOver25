@@ -1,804 +1,724 @@
-﻿LeagueId;Round;Date;Home;Away;HG;AG;Notes
-Finland_Ykkosliiga;13;28/06/2026;KaPa;JaPS;3;1;
-Australia_NPLACT;16;04/07/2026;Queanbeyan City;Tuggeranong Utd;;;RINVIATA
-Australia_NPLTasmania;14;04/07/2026;Launceston;Launceston United;;;RINVIATA
-Australia_TasmaniaNorthernChampionship;13;04/07/2026;Launceston U21;Somerset;;;RINVIATA
-Australia_VictoriaPremierLeague2;19;04/07/2026;Malvern;Eastern Lions;;;RINVIATA
-USA_USLLeagueTwo_Ranger;20260630;04/07/2026;Fort Worth Vaqueros;West Texas;0;6;
-USA_USLLeagueTwo_Southeast;20260630;04/07/2026;Inter Gainesville;Nona;3;0;
-Iceland_BestaDeildKarla;19;06/07/2026;Keflavik;Fram;;;
-Latvia_Virsliga;22;06/07/2026;Super Nova;Ogre United;;;
-Lithuania_Toplyga;24;06/07/2026;Suduva;Transinvest;;;
-Sweden_Allsvenskan;17;06/07/2026;Brommapojkarna;GAIS;;;
-Sweden_Allsvenskan;17;06/07/2026;Hacken;Djurgarden;;;
-USA_MLSNextPro_EasternConference_SoutheastDivision;18;06/07/2026;Crown Legacy;Orlando City B;;;
-USA_MLSNextPro_WesternConference_CentralDivision;19;06/07/2026;Austin FC II;Colorado Rapids 2;;;
-USA_MLSNextPro_WesternConference_CentralDivision;19;06/07/2026;Huntsville;Chicago Fire II;;;
-USA_MLSNextPro_WesternConference_PacificDivision;20;06/07/2026;Los Angeles FC 2;Real Monarchs;;;
-USA_MLSNextPro_WesternConference_PacificDivision;20;06/07/2026;Tacoma Defiance;Portland Timbers 2;;;
-USA_USLLeagueOne;23;06/07/2026;AV Alta;Charlotte Independ.;;;
-USA_USLLeagueTwo_Chesapeake;27;06/07/2026;Northern Virginia;Patuxent;;;
-USA_USLLeagueTwo_GreatLakes;23;06/07/2026;Lansing City;Flint City;;;
-USA_USLLeagueTwo_Metropolitan;26;06/07/2026;Ironbound SC;Staten Island ASC;;;
-USA_USLLeagueTwo_MidSouth;19;06/07/2026;Little Rock Rangers;Louisiana;;;
-USA_USLLeagueTwo_NorCal;28;06/07/2026;Marin;Glens SC;;;
-USA_USLLeagueTwo_NorCal;28;06/07/2026;San Francisco City;Academica SC;;;
-USA_USLLeagueTwo_Northwest;34;06/07/2026;Bigfoot;Portland Bangers;;;
-USA_USLLeagueTwo_SouthAtlantic;37;06/07/2026;North Carolina FC U23;Asheville City;;;
-USA_USLLeagueTwo_SouthCentral;21;06/07/2026;East Atlanta;Birmingham 2;;;
-Australia_NPLNorthernNSW;19;07/07/2026;Charlestown Azzurri;Weston Bears;;;
-USA_USLLeagueTwo_Heartland;24;07/07/2026;Rochester FC;Minneapolis City;0;4;
-USA_USLLeagueTwo_Valley;25;07/07/2026;Kings Hammer Columbus;Dayton;2;1;
-Australia_NPLNorthernNSW;19;08/07/2026;Kahibah;Maitland;;;RINVIATA
-USA_MLSNextPro_WesternConference_PacificDivision;20;08/07/2026;San Jose Earthquakes II;Sporting Kansas City II;6;1;
-USA_USLLeagueTwo_GreatPlains;20;08/07/2026;Sunflower State;Peoria;1;3;
-USA_USLLeagueTwo_Ranger;21;08/07/2026;Texoma;Denton Diablos;3;2;
-Australia_NPLACT;16;09/07/2026;Belconnen Utd.;Canberra Juventus;;;
-Australia_NPLACT;17;09/07/2026;Canberra Croatia;Canberra Olympic;;;
-Australia_NPLACT;16;09/07/2026;Canberra White Eagles;Tigers FC;;;
-Australia_NPLACT;16;09/07/2026;Monaro Panthers;Brindabella;;;
-Australia_NPLACT;17;09/07/2026;Monaro Panthers;Queanbeyan City;;;
-Australia_NPLNSW;24;09/07/2026;Blacktown City;Sydney Utd;;;
-Australia_NPLNSW;23;09/07/2026;Manly Utd;SD Raiders;;;
-Australia_NPLNSW;24;09/07/2026;Marconi;St George Saints;;;
-Australia_NPLNSW;24;09/07/2026;Rockdale Ilinden;NWS Spirit;;;
-Australia_NPLNSW;22;09/07/2026;SD Raiders;Sydney FC U23;;;
-Australia_NPLNSW;23;09/07/2026;Sutherland;APIA Leichhardt;;;
-Australia_NPLNSW;22;09/07/2026;Sydney FC U23;Sydney Utd;;;
-Australia_NPLNSW;23;09/07/2026;UNSW;Sydney FC U23;;;
-Australia_NPLNSW;23;09/07/2026;WS Wanderers U21;Sydney Olympic;;;
-Australia_NPLNSW;24;09/07/2026;Wollongong Wolves;St. George City;;;
-Australia_NPLNorthernNSW;19;09/07/2026;Cooks Hill United;Valentine;;;
-Australia_NPLNorthernNSW;19;09/07/2026;Edgeworth E.;Kahibah;;;
-Australia_NPLNorthernNSW;18;09/07/2026;Newcastle Olympic;Charlestown Azzurri;;;
-Australia_NPLQueenslandU23;19;09/07/2026;Brisbane City U23;QLD State Team U17;;;
-Australia_NPLQueenslandU23;19;09/07/2026;Gold Coast Blaze U23;Magic United U23;;;
-Australia_NPLQueenslandU23;17;09/07/2026;QLD State Team U17;Peninsula U23;;;
-Australia_NPLQueenslandU23;17;09/07/2026;Rochedale U23;Moreton City Excelsior U23;;;
-Australia_NPLQueensland;18;09/07/2026;Brisbane City;Brisbane Roar U23;;;
-Australia_NPLQueensland;17;09/07/2026;Eastern Suburbs;Peninsula;;;
-Australia_NPLQueensland;18;09/07/2026;Gold Coast;Magic United;;;
-Australia_NPLQueensland;17;09/07/2026;Gold Coast Knights;Moreton City Excelsior;;;
-Australia_NPLQueensland;18;09/07/2026;Gold Coast Knights;Queensland Lions;;;
-Australia_NPLQueensland;17;09/07/2026;Queensland Lions;Olympic FC;;;
-Australia_NPLQueensland;17;09/07/2026;Rochedale;Gold Coast Knights;;;
-Australia_NPLQueensland;17;09/07/2026;Wynnum Wolves;Rochedale;;;
-Australia_NPLSouthAustralia;17;09/07/2026;Adelaide City;Para;;;
-Australia_NPLSouthAustralia;17;09/07/2026;Adelaide Comets;Croydon;;;
-Australia_NPLSouthAustralia;17;09/07/2026;Adelaide United U23;Campbelltown City;;;
-Australia_NPLSouthAustralia;17;09/07/2026;FK Beograd;West Adelaide;;;
-Australia_NPLSouthAustralia;17;09/07/2026;NE Metrostars;West Torrens;;;
-Australia_NPLSouthAustralia;17;09/07/2026;Sturt Lions;Playford Patriots;;;
-Australia_NPLTasmania;14;09/07/2026;Devonport;Riverside Olympic;;;
-Australia_NPLTasmania;14;09/07/2026;Glenorchy Knights;Clarence Zebras;;;
-Australia_NPLTasmania;15;09/07/2026;South East Utd.;South Hobart;;;
-Australia_NPLTasmania;14;09/07/2026;Ulverstone;Kingborough Lions;;;
-Australia_NPLVictoria;19;09/07/2026;Altona Magic;Melbourne City U21;;;
-Australia_NPLVictoria;19;09/07/2026;Avondale FC;Preston Lions;;;
-Australia_NPLVictoria;19;09/07/2026;Bentleigh;Altona Magic;;;
-Australia_NPLVictoria;19;09/07/2026;Dandenong City;Avondale FC;;;
-Australia_NPLVictoria;19;09/07/2026;George Cross;Oakleigh;;;
-Australia_NPLVictoria;19;09/07/2026;Green Gully;Bentleigh;;;
-Australia_NPLVictoria;19;09/07/2026;Heidelberg;Oakleigh;;;
-Australia_NPLVictoria;19;09/07/2026;Heidelberg;St Albans;;;
-Australia_NPLVictoria;19;09/07/2026;Hume City;Dandenong City;;;
-Australia_NPLVictoria;20;09/07/2026;South Melbourne;Dandenong Thunder;;;
-Australia_NPLVictoria;19;09/07/2026;St Albans;Melbourne City U21;;;
-Australia_NPLWesternAustralia;17;09/07/2026;Armadale;Olympic Kingsway;;;
-Australia_NPLWesternAustralia;17;09/07/2026;Bayswater City;Perth RedStar;;;
-Australia_NPLWesternAustralia;17;09/07/2026;Dianella White Eagle;Perth Azzurri;;;
-Australia_NPLWesternAustralia;17;09/07/2026;Fremantle City;Bayswater City;;;
-Australia_NPLWesternAustralia;17;09/07/2026;Perth Glory U23;Balcatta;;;
-Australia_NPLWesternAustralia;17;09/07/2026;Stirling Macedonia;Perth RedStar;;;
-Australia_NPLWesternAustralia;17;09/07/2026;Western Knights;Sorrento;;;
-Australia_NPL_NSW_U20;24;09/07/2026;Blacktown City U20;Sydney Utd U20;;;
-Australia_NPL_NSW_U20;23;09/07/2026;Manly Utd U20;SD Raiders U20;;;
-Australia_NPL_NSW_U20;24;09/07/2026;Marconi S. U20;St George Saints U20;;;
-Australia_NPL_NSW_U20;24;09/07/2026;Rockdale Ilinden U20;NWS Spirit U20;;;
-Australia_NPL_NSW_U20;22;09/07/2026;SD Raiders U20;Sydney FC U20;;;
-Australia_NPL_NSW_U20;23;09/07/2026;Sutherland U20;APIA Leichhardt U20;;;
-Australia_NPL_NSW_U20;22;09/07/2026;Sydney FC U20;Sydney Utd U20;;;
-Australia_NPL_NSW_U20;23;09/07/2026;UNSW U20;Sydney FC U20;;;
-Australia_NPL_NSW_U20;23;09/07/2026;WS Wanderers U20;Sydney Olympic U20;;;
-Australia_NPL_NSW_U20;24;09/07/2026;Wollongong Wolves U20;St. George City U20;;;
-Australia_NSWLeagueOne;22;09/07/2026;Bankstown City Lions;Dulwich Hill;;;
-Australia_NSWLeagueOne;22;09/07/2026;Blacktown Spartans;Newcastle Jets U23;;;
-Australia_NSWLeagueOne;22;09/07/2026;Blacktown Spartans;Rydalmere Lions;;;
-Australia_NSWLeagueOne;22;09/07/2026;Bulls Academy;Western City Rangers;;;
-Australia_NSWLeagueOne;23;09/07/2026;Central Coast Mariners U23;Rydalmere Lions;;;
-Australia_NSWLeagueOne;22;09/07/2026;Hills United;Northern Tigers;;;
-Australia_NSWLeagueOne;22;09/07/2026;Hurstville Zagreb;Canterbury Bankstown;;;
-Australia_NSWLeagueOne;22;09/07/2026;Macarthur Rams;Inter Lions;;;
-Australia_NSWLeagueOne;22;09/07/2026;Prospect United;Hakoah Sydney;;;
-Australia_NorthernNSWStateLeague;14;09/07/2026;South Cardiff;New Lambton;;;
-Australia_NorthernNSWStateLeague;14;09/07/2026;Wallsend Red Devils;Singleton Strikers;;;
-Australia_QueenslandPremierLeague;17;09/07/2026;Brisbane Strikers;Ipswich;;;
-Australia_QueenslandPremierLeague;18;09/07/2026;Brisbane Strikers;Logan Lightning;;;
-Australia_QueenslandPremierLeague;18;09/07/2026;Caboolture;Sunshine Coast Wanderers;;;
-Australia_QueenslandPremierLeague;18;09/07/2026;Capalaba;St. George Willawong;;;
-Australia_QueenslandPremierLeague;17;09/07/2026;Holland Park Hawks;Redlands;;;
-Australia_QueenslandPremierLeague;18;09/07/2026;Ipswich;Holland Park Hawks;;;
-Australia_QueenslandPremierLeague;17;09/07/2026;Logan Lightning;Redlands;;;
-Australia_QueenslandPremierLeague;18;09/07/2026;North Star;Redlands;;;
-Australia_QueenslandPremierLeague;18;09/07/2026;Robina City;Broadbeach Utd.;;;
-Australia_SAStateLeague;17;09/07/2026;Adelaide Cobras;Fulham Utd.;;;
-Australia_SAStateLeague;17;09/07/2026;Adelaide Olympic;Salisbury Utd.;;;
-Australia_SAStateLeague;17;09/07/2026;Blue Eagles;South Adelaide;;;
-Australia_SAStateLeague;17;09/07/2026;Cove FC;Adelaide Atletico;;;
-Australia_SAStateLeague;18;09/07/2026;Cove FC;Modbury;;;
-Australia_SAStateLeague;17;09/07/2026;Cumberland Utd.;Adelaide Croatia Raiders;;;
-Australia_SAStateLeague;17;09/07/2026;Eastern United;Cumberland Utd.;;;
-Australia_SAStateLeague;17;09/07/2026;Eastern United;Modbury;;;
-Australia_TasmaniaNorthernChampionship;13;09/07/2026;Burnie Utd.;Riverside Olympic U21;;;
-Australia_TasmaniaNorthernChampionship;13;09/07/2026;Devonport U21;Launceston United U21;;;
-Australia_TasmaniaNorthernChampionship;13;09/07/2026;Ulverstone U21;Northern Rangers;;;
-Australia_TasmaniaSouthernChampionship;13;09/07/2026;Glenorchy Knights U21;Clarence Zebras U21;;;
-Australia_TasmaniaSouthernChampionship;13;09/07/2026;Glenorchy Knights U21;South Hobart U21;;;
-Australia_TasmaniaSouthernChampionship;13;09/07/2026;Hobart City;University of Tasmania;;;
-Australia_TasmaniaSouthernChampionship;13;09/07/2026;New Town;Olympia Warriors;;;
-Australia_TasmaniaSouthernChampionship;13;09/07/2026;Olympia Warriors;University of Tasmania;;;
-Australia_TasmaniaSouthernChampionship;13;09/07/2026;Taroona;Hobart Utd.;;;
-Australia_VictoriaPremierLeague2;19;09/07/2026;Bayside Argonauts;Essendon Royals SC;;;
-Australia_VictoriaPremierLeague2;19;09/07/2026;Box Hill;Whittlesea United;;;
-Australia_VictoriaPremierLeague2;19;09/07/2026;Goulburn Valley Suns;Moreland City;;;
-Australia_VictoriaPremierLeague2;19;09/07/2026;Keilor Park;Moreland City;;;
-Australia_VictoriaPremierLeague2;19;09/07/2026;Kingston City;Nunawading City;;;
-Australia_VictoriaPremierLeague2;19;09/07/2026;Springvale;Keilor Park;;;
-Australia_VictoriaPremierLeague2;19;09/07/2026;Werribee City;Altona City;;;
-Australia_VictoriaPremierLeague;19;09/07/2026;Brunswick Juventus;Brunswick City;;;
-Australia_VictoriaPremierLeague;19;09/07/2026;Langwarrin;Eltham Redbacks;;;
-Australia_VictoriaPremierLeague;19;09/07/2026;Melbourne Knights;Bulleen;;;
-Australia_VictoriaPremierLeague;19;09/07/2026;North Geelong;Port Melbourne Sharks;;;
-Australia_VictoriaPremierLeague;19;09/07/2026;North Sunshine Eagles;Manningham United Blues;;;
-Australia_VictoriaPremierLeague;19;09/07/2026;Northcote City;Melbourne Srbija;;;
-Australia_VictoriaPremierLeague;20;09/07/2026;Western Utd. U21;Melbourne Victory U21;;;
-Australia_WAStateLeague;15;09/07/2026;Curtin Univ;Cockburn City;;;
-Australia_WAStateLeague;15;09/07/2026;Inglewood;Subiaco;;;
-Australia_WAStateLeague;15;09/07/2026;Joondalup;Quinns;;;
-Australia_WAStateLeague;15;09/07/2026;Kingsley Westside;Nedlands;;;
-Australia_WAStateLeague;15;09/07/2026;Mandurah City;Gwelup Croatia;;;
-Australia_WAStateLeague;15;09/07/2026;Murdoch Melville;Floreat Athena;;;
-Belarus_PershayaLiga;14;09/07/2026;BumProm Gomel;Orsha;;;
-Belarus_PershayaLiga;15;09/07/2026;Lida;Uni X Labs;;;
-Belarus_PershayaLiga;14;09/07/2026;Minsk 2;Gomel 2;;;
-Belarus_PershayaLiga;14;09/07/2026;Niva Dolbizno;BATE 2;;;
-Belarus_PershayaLiga;15;09/07/2026;Osipovichi;Molodechno;;;
-Belarus_PershayaLiga;14;09/07/2026;SKA-1938;FC Slonim;;;
-Belarus_PershayaLiga;14;09/07/2026;Slutsk;Ostrovets;;;
-Belarus_PershayaLiga;15;09/07/2026;Smorgon;Volna Pinsk;;;
-Belarus_PershayaLiga;14;09/07/2026;Soligorsk;Din. Minsk 2;;;
-Belarus_VysshayaLiga;15;09/07/2026;BATE;Gomel;;;
-Belarus_VysshayaLiga;15;09/07/2026;Belshina;Baranovici;;;
-Belarus_VysshayaLiga;15;09/07/2026;FC Minsk;Din. Minsk;;;
-Belarus_VysshayaLiga;15;09/07/2026;Naftan;Dynamo Brest;;;
-Belarus_VysshayaLiga;15;09/07/2026;Neman;Arsenal Dzerzhinsk;;;
-Belarus_VysshayaLiga;15;09/07/2026;Vitebsk;Dnepr Mogilev;;;
-Belarus_VysshayaLiga;15;09/07/2026;Zhodino;Isloch;;;
-Bhutan_PremierLeague;9;09/07/2026;Drukpa;Thimphu FC;;;
-Bhutan_PremierLeague;9;09/07/2026;RTC;Ugyen Academy;;;
-Estonia_EsiliigaB;19;09/07/2026;Legion;Tallinna Kalev U21;;;
-Estonia_EsiliigaB;19;09/07/2026;Narva U21;Tulevik;;;
-Estonia_EsiliigaB;19;09/07/2026;Tabasalu;Parnu JK Vaprus U21;;;
-Estonia_Esiliiga;19;09/07/2026;FC Tallinn;Nomme Utd U21;;;
-Estonia_Esiliiga;20;09/07/2026;Flora U21;Levadia U21;;;
-Estonia_Esiliiga;20;09/07/2026;Nomme Kalju U21;Elva;;;
-Estonia_Esiliiga;19;09/07/2026;Tallinna Kalev;Maardu;;;
-Estonia_Esiliiga;19;09/07/2026;Tartu Welco;Viimsi JK;;;
-Estonia_Meistriliiga;18;09/07/2026;Kuressaare;Flora;;;
-Estonia_Meistriliiga;19;09/07/2026;Narva;Levadia;;;
-Estonia_Meistriliiga;19;09/07/2026;Nomme Utd;Kalju;;;
-Estonia_Meistriliiga;19;09/07/2026;Paide;Parnu JK Vaprus;;;
-Estonia_Meistriliiga;18;09/07/2026;Parnu JK Vaprus;Kuressaare;;;
-Estonia_Meistriliiga;19;09/07/2026;Tammeka;Harju JK Laagri;;;
-FaroeIslands_1Deild;16;09/07/2026;B36 Torshavn 2;Hoyvik;;;
-FaroeIslands_1Deild;16;09/07/2026;Fuglafjordur;Vikingur 2;;;
-FaroeIslands_1Deild;16;09/07/2026;Runavik 2;FC Suduroy;;;
-FaroeIslands_1Deild;16;09/07/2026;Sandur;HB Torshavn 2;;;
-FaroeIslands_1Deild;16;09/07/2026;TB Tvoroyri;Streymur 2;;;
-FaroeIslands_PremierLeague;17;09/07/2026;07 Vestur Sorvagur;HB Torshavn;;;
-FaroeIslands_PremierLeague;16;09/07/2026;Argir;Streymur;;;
-FaroeIslands_PremierLeague;16;09/07/2026;B36 Torshavn;Vikingur;;;
-FaroeIslands_PremierLeague;16;09/07/2026;HB Torshavn;Skala Itrottarfelag;;;
-FaroeIslands_PremierLeague;16;09/07/2026;Runavik;Klaksvik;;;
-FaroeIslands_PremierLeague;16;09/07/2026;Skala Itrottarfelag;Toftir;;;
-FaroeIslands_PremierLeague;16;09/07/2026;Toftir;Argir;;;
-FaroeIslands_PremierLeague;16;09/07/2026;Vikingur;Runavik;;;
-Finland_Kakkonen_GroupA;11;09/07/2026;PPJ;Kiffen;;;
-Finland_Kakkonen_GroupB;11;09/07/2026;EBK;Abo;;;
-Finland_Kakkonen_GroupB;12;09/07/2026;GrIFK;NJS;;;
-Finland_Kakkonen_GroupB;12;09/07/2026;Honka;MuSa;;;
-Finland_Kakkonen_GroupB;12;09/07/2026;Ilves 2;EPS;;;
-Finland_Kakkonen_GroupB;12;09/07/2026;P-Iirot Rauma;HJS;;;
-Finland_Kakkonen_GroupC;12;09/07/2026;Hercules;Vaajakoski;;;
-Finland_Kakkonen_GroupC;13;09/07/2026;JBK;Narpes Kraft;;;
-Finland_Kakkonen_GroupC;12;09/07/2026;Narpes Kraft;Jaro 2;;;
-Finland_Kakkonen_GroupC;11;09/07/2026;SJK Akatemia 2;Vaajakoski;;;
-Finland_Kakkonen_GroupC;12;09/07/2026;TP-47;GBK Kokkola;;;
-Finland_Kakkonen_GroupC;13;09/07/2026;VPS 2;Huima / Urho;;;
-Finland_Veikkausliiga;16;09/07/2026;Gnistan;VPS;;;
-Finland_Veikkausliiga;16;09/07/2026;HJK;KuPS;;;
-Finland_Veikkausliiga;16;09/07/2026;Ilves;SJK;;;
-Finland_Veikkausliiga;16;09/07/2026;Jaro;Ilves;;;
-Finland_Veikkausliiga;16;09/07/2026;Lahti;Gnistan;;;
-Finland_Veikkausliiga;16;09/07/2026;Mariehamn;Inter Turku;;;
-Finland_Veikkausliiga;16;09/07/2026;Oulu;Lahti;;;
-Finland_Veikkausliiga;16;09/07/2026;SJK;TPS Turku;;;
-Finland_Veikkausliiga;16;09/07/2026;TPS Turku;Jaro;;;
-Finland_Veikkausliiga;16;09/07/2026;VPS;Mariehamn;;;
-Finland_Ykkonen;14;09/07/2026;Jazz Pori;KPV;;;
-Finland_Ykkonen;14;09/07/2026;KPV;Keski-Uusimaa;;;
-Finland_Ykkonen;15;09/07/2026;KuPS Akatemia;Tampere Utd;;;
-Finland_Ykkonen;15;09/07/2026;OLS Oulu;Inter Turku 2;;;
-Finland_Ykkonen;14;09/07/2026;OLS Oulu;KuPS Akatemia;;;
-Finland_Ykkonen;15;09/07/2026;Rovaniemi;Keski-Uusimaa;;;
-Finland_Ykkonen;15;09/07/2026;SalPa;VJS;;;
-Finland_Ykkonen;15;09/07/2026;TPV;JJK Jyvaskyla;;;
-Finland_Ykkonen;13;09/07/2026;VJS;TPV;;;
-Finland_Ykkosliiga;13;09/07/2026;Ekenas;PK-35;;;
-Finland_Ykkosliiga;13;09/07/2026;JaPS;SJK Akatemia;;;
-Finland_Ykkosliiga;13;09/07/2026;KTP;Jippo;;;
-Finland_Ykkosliiga;14;09/07/2026;Mikkeli;Haka;;;
-Iceland_BestaDeildKarla;19;09/07/2026;Akranes;Breidablik;;;
-Iceland_BestaDeildKarla;17;09/07/2026;Akranes;Fram;;;
-Iceland_BestaDeildKarla;17;09/07/2026;Breidablik;Vikingur Reykjavik;;;
-Iceland_BestaDeildKarla;19;09/07/2026;Hafnarfjordur;Stjarnan;;;
-Iceland_BestaDeildKarla;18;09/07/2026;Hafnarfjordur;Vestmannaeyjar;;;
-Iceland_BestaDeildKarla;18;09/07/2026;Keflavik;KR Reykjavik;;;
-Iceland_BestaDeildKarla;18;09/07/2026;Stjarnan;Akureyri;;;
-Iceland_BestaDeildKarla;18;09/07/2026;Thor Akureyri;KR Reykjavik;;;
-Iceland_BestaDeildKarla;18;09/07/2026;Thor Akureyri;Valur;;;
-Iceland_BestaDeildKarla;19;09/07/2026;Vestmannaeyjar;Valur;;;
-Iceland_BestaDeildKarla;18;09/07/2026;Vikingur Reykjavik;Akureyri;;;
-Iceland_Division_1;18;09/07/2026;Aegir;Fylkir;;;
-Iceland_Division_1;17;09/07/2026;Afturelding;Aegir;;;
-Iceland_Division_1;16;09/07/2026;Afturelding;Njardvik;;;
-Iceland_Division_1;16;09/07/2026;Fylkir;Kopavogur;;;
-Iceland_Division_1;16;09/07/2026;Grindavik;Aegir;;;
-Iceland_Division_1;18;09/07/2026;Grindavik;Vestri;;;
-Iceland_Division_1;18;09/07/2026;Grotta;Kopavogur;;;
-Iceland_Division_1;18;09/07/2026;IR Reykjavik;Afturelding;;;
-Iceland_Division_1;16;09/07/2026;Leiknir;IR Reykjavik;;;
-Iceland_Division_1;18;09/07/2026;Leiknir;Volsungur;;;
-Iceland_Division_1;18;09/07/2026;Njardvik;Throttur;;;
-Iceland_Division_1;16;09/07/2026;Throttur;Vestri;;;
-Iceland_Division_1;16;09/07/2026;Volsungur;Grotta;;;
-Iceland_Division_2;21;09/07/2026;Dalvik/Reynir;KFA;;;
-Iceland_Division_2;22;09/07/2026;Fjolnir;Kormakur/Hvot;;;
-Iceland_Division_2;22;09/07/2026;Haukar;Kari;;;
-Iceland_Division_2;22;09/07/2026;Hviti;Dalvik/Reynir;;;
-Iceland_Division_2;22;09/07/2026;KFA;Olafsvik;;;
-Iceland_Division_2;22;09/07/2026;KFG Gardabaer;Selfoss;;;
-Iceland_Division_2;21;09/07/2026;Kari;Magni;;;
-Iceland_Division_2;21;09/07/2026;Kormakur/Hvot;Hviti;;;
-Iceland_Division_2;22;09/07/2026;Magni;Throttur Vogar;;;
-Iceland_Division_2;21;09/07/2026;Olafsvik;KFG Gardabaer;;;
-Iceland_Division_2;21;09/07/2026;Selfoss;Haukar;;;
-Iceland_Division_2;21;09/07/2026;Throttur Vogar;Fjolnir;;;
-Kazakhstan_PremierLeague;26;09/07/2026;Aktobe;Zhetysu;;;
-Kazakhstan_PremierLeague;26;09/07/2026;Altai;Tobol;;;
-Kazakhstan_PremierLeague;26;09/07/2026;Atyrau;Kaspij Aktau;;;
-Kazakhstan_PremierLeague;26;09/07/2026;FC Astana;Zhenis;;;
-Kazakhstan_PremierLeague;26;09/07/2026;Kaisar;Ertis Pavlodar;;;
-Kazakhstan_PremierLeague;26;09/07/2026;Kyzylzhar;Yelimay Semey;;;
-Kazakhstan_PremierLeague;26;09/07/2026;Ordabasy;Ulytau;;;
-Kyrgyzstan_PremierLiga;15;09/07/2026;Abdysh-Ata;Alga;;;
-Kyrgyzstan_PremierLiga;15;09/07/2026;Asia Talas;Abdysh-Ata;;;
-Kyrgyzstan_PremierLiga;15;09/07/2026;Bishkek City;Toktogul;;;
-Kyrgyzstan_PremierLiga;15;09/07/2026;Kyrgyzaltyn;Talant;;;
-Kyrgyzstan_PremierLiga;15;09/07/2026;Muras United;Asiagoal Bishkek;;;
-Kyrgyzstan_PremierLiga;15;09/07/2026;Neftchi Kochkor-Ata;Aldier;;;
-Kyrgyzstan_PremierLiga;15;09/07/2026;Ozgon;Alay Osh;;;
-Kyrgyzstan_PremierLiga;15;09/07/2026;Talant;Neftchi Kochkor-Ata;;;
-Latvia_Virsliga;21;09/07/2026;Auda;Riga FC;;;
-Latvia_Virsliga;21;09/07/2026;BFC Daugavpils;FK Liepaja;;;
-Latvia_Virsliga;21;09/07/2026;FK Liepaja;Ogre United;;;
-Latvia_Virsliga;22;09/07/2026;Grobina;Tukums 2000;;;
-Latvia_Virsliga;21;09/07/2026;Jelgava;Grobina;;;
-Latvia_Virsliga;21;09/07/2026;RFS;Auda;;;
-Latvia_Virsliga;21;09/07/2026;RFS;BFC Daugavpils;;;
-Latvia_Virsliga;21;09/07/2026;Riga FC;Jelgava;;;
-Latvia_Virsliga;21;09/07/2026;Tukums 2000;Super Nova;;;
-Lebanon_PremierLeague;23;09/07/2026;Al Hikma;Nejmeh SC;;;
-Lebanon_PremierLeague;23;09/07/2026;Safa;Al-Mabarrah;;;
-Lebanon_PremierLeague;23;09/07/2026;Tadamon;Al Ansar;;;
-Lithuania_ILyga;16;09/07/2026;Atmosfera;BE1 NFA;;;
-Lithuania_ILyga;17;09/07/2026;BFA Vilnius;Ekranas;;;
-Lithuania_ILyga;16;09/07/2026;Siauliai 2;Tauras;;;
-Lithuania_ILyga;17;09/07/2026;Zalgiris 2;Hegelmann Litauen 2;;;
-Lithuania_Toplyga;23;09/07/2026;Dziugas Telsiai;Kauno Zalgiris;;;
-Lithuania_Toplyga;23;09/07/2026;FA Siauliai;Transinvest;;;
-Lithuania_Toplyga;24;09/07/2026;FA Siauliai;Zalgiris;;;
-Lithuania_Toplyga;23;09/07/2026;FK Panevezys;Hegelmann;;;
-Lithuania_Toplyga;23;09/07/2026;FK Panevezys;Suduva;;;
-Norway_2ndDivision_Group1;12;09/07/2026;Lysekloster;Brattvag;;;
-Norway_2ndDivision_Group1;12;09/07/2026;Mjondalen;Bjarg;;;
-Norway_2ndDivision_Group1;12;09/07/2026;Pors;Arendal;;;
-Norway_2ndDivision_Group1;12;09/07/2026;Sandviken;Notodden;;;
-Norway_2ndDivision_Group1;13;09/07/2026;Sotra;Jerv;;;
-Norway_2ndDivision_Group1;12;09/07/2026;Traeff;Eik-Tonsberg;;;
-Norway_2ndDivision_Group1;12;09/07/2026;Vidar;Halden;;;
-Norway_2ndDivision_Group2;12;09/07/2026;Eidsvold;Tromsdalen;;;
-Norway_2ndDivision_Group2;13;09/07/2026;Follo;Levanger;;;
-Norway_2ndDivision_Group2;12;09/07/2026;Kjelsås;Honefoss;;;
-Norway_2ndDivision_Group2;12;09/07/2026;Lørenskog;Grorud;;;
-Norway_2ndDivision_Group2;13;09/07/2026;Skeid;Trygg/Lade;;;
-Norway_2ndDivision_Group2;13;09/07/2026;Stjordals Blink;Junkeren;;;
-Norway_2ndDivision_Group2;12;09/07/2026;Ull/Kisa;Rana FK;;;
-Norway_3rdDivision_Group1;13;09/07/2026;Asker;Ullern;;;
-Norway_3rdDivision_Group1;13;09/07/2026;Frigg;Baerum Sportsklubb;;;
-Norway_3rdDivision_Group1;13;09/07/2026;Grei;Nordstrand;;;
-Norway_3rdDivision_Group1;13;09/07/2026;K. Oslo 2;Heming;;;
-Norway_3rdDivision_Group1;13;09/07/2026;Konnerud;Ready;;;
-Norway_3rdDivision_Group1;13;09/07/2026;Vålerenga 2;Union Carl Berner;;;
-Norway_3rdDivision_Group2;14;09/07/2026;Byåsen;Aalesund 2;;;
-Norway_3rdDivision_Group2;14;09/07/2026;FK Kvik;Volda TI;;;
-Norway_3rdDivision_Group2;14;09/07/2026;Herd;Ntnui;;;
-Norway_3rdDivision_Group2;14;09/07/2026;Orkla;Molde 2;;;
-Norway_3rdDivision_Group2;14;09/07/2026;Ranheim 2;Nardo;;;
-Norway_3rdDivision_Group2;14;09/07/2026;Rosenborg 2;Spjelkavik;;;
-Norway_3rdDivision_Group2;14;09/07/2026;Strindheim;Melhus;;;
-Norway_3rdDivision_Group3;13;09/07/2026;Askoy;Forde;;;
-Norway_3rdDivision_Group3;13;09/07/2026;Austevoll;Fyllingsdalen;;;
-Norway_3rdDivision_Group3;13;09/07/2026;Brann 2;Fana;;;
-Norway_3rdDivision_Group3;13;09/07/2026;Djerv 1919;Gneist;;;
-Norway_3rdDivision_Group3;13;09/07/2026;Sogndal 2;Stord;;;
-Norway_3rdDivision_Group3;13;09/07/2026;Varegg;V. Haugesund;;;
-Norway_3rdDivision_Group3;13;09/07/2026;Åsane 2;OS;;;
-Norway_3rdDivision_Group4;13;09/07/2026;Brodd;Haugesund 2;;;
-Norway_3rdDivision_Group4;13;09/07/2026;Flekkeroy;Akra;;;
-Norway_3rdDivision_Group4;13;09/07/2026;Madla IL;Mandalskameratene;;;
-Norway_3rdDivision_Group4;13;09/07/2026;Staal Jorpeland;Hinna;;;
-Norway_3rdDivision_Group4;13;09/07/2026;Vag;Viking 2;;;
-Norway_3rdDivision_Group4;13;09/07/2026;Varhaug;Odd 2;;;
-Norway_3rdDivision_Group4;13;09/07/2026;Vindbjart;Stabaek 2;;;
-Norway_3rdDivision_Group5;12;09/07/2026;Bossekop;Kongsvinger 2;;;
-Norway_3rdDivision_Group5;12;09/07/2026;Fauske Sprint;Floya;;;
-Norway_3rdDivision_Group5;13;09/07/2026;Lillestrom 2;Tromsø 2;;;
-Norway_3rdDivision_Group5;12;09/07/2026;Skedsmo;Skjetten;;;
-Norway_3rdDivision_Group5;12;09/07/2026;Ulfstind;Harstad;;;
-Norway_3rdDivision_Group6;13;09/07/2026;Brumunddal;SK Gjovik-Lyn;;;
-Norway_3rdDivision_Group6;13;09/07/2026;Fram;Drobak-Frogn;;;
-Norway_3rdDivision_Group6;13;09/07/2026;Lillehammer;Elverum;;;
-Norway_3rdDivision_Group6;13;09/07/2026;Oppsal;Raelingen;;;
-Norway_3rdDivision_Group6;13;09/07/2026;Orn;Sandefjord 2;;;
-Norway_3rdDivision_Group6;13;09/07/2026;Rade;Lyn 2;;;
-Norway_OBOSLigaen;15;09/07/2026;Bryne;Sandnes;;;
-Norway_OBOSLigaen;15;09/07/2026;Egersund;Moss;;;
-Norway_OBOSLigaen;13;09/07/2026;Haugesund;Kongsvinger;;;
-Norway_OBOSLigaen;15;09/07/2026;Hodd;Strömsgodset;;;
-Norway_OBOSLigaen;15;09/07/2026;Kongsvinger;Sogndal;;;
-Norway_OBOSLigaen;13;09/07/2026;Lyn;Hodd;;;
-Norway_OBOSLigaen;14;09/07/2026;Lyn;Åsane;;;
-Norway_OBOSLigaen;15;09/07/2026;Odd;Haugesund;;;
-Norway_OBOSLigaen;15;09/07/2026;Ranheim;Stabaek;;;
-Norway_OBOSLigaen;15;09/07/2026;Raufoss;Strømmen;;;
-Norway_OBOSLigaen;13;09/07/2026;Sandnes;Raufoss;;;
-Norway_OBOSLigaen;13;09/07/2026;Sogndal;Egersund;;;
-Norway_OBOSLigaen;13;09/07/2026;Stabaek;Bryne;;;
-Norway_OBOSLigaen;13;09/07/2026;Strömsgodset;Odd;;;
-Norway_OBOSLigaen;13;09/07/2026;Strømmen;Moss;;;
-Norway_OBOSLigaen;13;09/07/2026;Åsane;Ranheim;;;
-Sweden_Allsvenskan;16;09/07/2026;Degerfors;Malmo FF;;;
-Sweden_Allsvenskan;17;09/07/2026;Elfsborg;Hammarby;;;
-Sweden_Allsvenskan;17;09/07/2026;Göteborg;AIK Stockholm;;;
-Sweden_Allsvenskan;16;09/07/2026;Halmstad;Västerås SK;;;
-Sweden_Allsvenskan;17;09/07/2026;Kalmar;Orgryte;;;
-Sweden_Allsvenskan;16;09/07/2026;Sirius;Mjallby;;;
-Sweden_Division1_Norra;15;09/07/2026;Arlanda;Karlstad;;;
-Sweden_Division1_Norra;15;09/07/2026;Assyriska FF;Vasalund;;;
-Sweden_Division1_Norra;15;09/07/2026;FBK Karlstad;Hammarby TFF;;;
-Sweden_Division1_Norra;15;09/07/2026;Gefle;Stocksund;;;
-Sweden_Division1_Norra;15;09/07/2026;Sollentuna;AFC Eskilstuna;;;
-Sweden_Division1_Norra;15;09/07/2026;Stockholm Internazionale;Enkoping SK;;;
-Sweden_Division1_Norra;15;09/07/2026;Umeå;Jarfalla;;;
-Sweden_Division1_Sodra;14;09/07/2026;AFC Malmo;Jonkoping;;;
-Sweden_Division1_Sodra;14;09/07/2026;Atvidaberg;Rosengard;;;
-Sweden_Division1_Sodra;15;09/07/2026;Eskilsminne;Kristianstad;;;
-Sweden_Division1_Sodra;14;09/07/2026;Hassleholms IF;Tvaaker;;;
-Sweden_Division1_Sodra;14;09/07/2026;Kristianstad;Trelleborg;;;
-Sweden_Division1_Sodra;14;09/07/2026;Laholms;Utsikten;;;
-Sweden_Division1_Sodra;14;09/07/2026;Lunds;Skövde;;;
-Sweden_Division1_Sodra;14;09/07/2026;Trollhättan;Angelholm;;;
-Sweden_Division2_NorraGotaland;15;09/07/2026;Ahlafors IF;Tord;;;
-Sweden_Division2_NorraGotaland;15;09/07/2026;Husqvarna;Karlstad II;;;
-Sweden_Division2_NorraGotaland;15;09/07/2026;Husqvarna;Lidkoping;;;
-Sweden_Division2_NorraGotaland;15;09/07/2026;IFK Skovde;Lidkoping;;;
-Sweden_Division2_NorraGotaland;15;09/07/2026;Motala;Vanersborgs FK;;;
-Sweden_Division2_NorraGotaland;15;09/07/2026;Skara;Herrestads AIF;;;
-Sweden_Division2_NorraGotaland;15;09/07/2026;Vanersborgs IF;Stenungsunds;;;
-Sweden_Division2_NorraSvealand;15;09/07/2026;Bollstanas;Korsnas;;;
-Sweden_Division2_NorraSvealand;15;09/07/2026;Falu;Lidingo IFK;;;
-Sweden_Division2_NorraSvealand;15;09/07/2026;Helges;Sunnersta AIF;;;
-Sweden_Division2_NorraSvealand;15;09/07/2026;IK Franke;Viggbyholms;;;
-Sweden_Division2_NorraSvealand;15;09/07/2026;Kungsangen;Skiljebo;;;
-Sweden_Division2_NorraSvealand;15;09/07/2026;Taby;Gute;;;
-Sweden_Division2_SodraGotaland;15;09/07/2026;IFK Berga;Vaxjo Norra;;;
-Sweden_Division2_SodraGotaland;15;09/07/2026;Linero IF;IFK Karlshamn;;;
-Sweden_Division2_SodraGotaland;15;09/07/2026;Nosaby;IFK Trelleborg;;;
-Sweden_Division2_SodraGotaland;15;09/07/2026;Osterlen;Karlskrona;;;
-Sweden_Division2_SodraGotaland;15;09/07/2026;Rappe GOIF;Staffanstorp United;;;
-Sweden_Division2_SodraGotaland;15;09/07/2026;Solvesborgs;Oskarshamn;;;
-Sweden_Division2_SodraSvealand;15;09/07/2026;Eker Orebro;Farsta;;;
-Sweden_Division2_SodraSvealand;15;09/07/2026;Haninge;Sleipner;;;
-Sweden_Division2_SodraSvealand;15;09/07/2026;Karlslund;Fittja;;;
-Sweden_Division2_SodraSvealand;15;09/07/2026;Nykopings;Nacka FC;;;
-Sweden_Division2_SodraSvealand;15;09/07/2026;Orebro Syr.;Syrianska;;;
-Sweden_Division2_SodraSvealand;15;09/07/2026;Ragsved;Forward;;;
-Sweden_Division2_VastraGotaland;15;09/07/2026;Astorps;Torslanda;;;
-Sweden_Division2_VastraGotaland;15;09/07/2026;Astrio;Hestrafors;;;
-Sweden_Division2_VastraGotaland;15;09/07/2026;Dalstorps IF;Lindome;;;
-Sweden_Division2_VastraGotaland;15;09/07/2026;Galtabacks BK;Boljan;;;
-Sweden_Division2_VastraGotaland;15;09/07/2026;Onsala;Landvetter;;;
-Sweden_Superettan;14;09/07/2026;Brage;Falkenberg;;;
-Sweden_Superettan;15;09/07/2026;Landskrona;Värnamo;;;
-Sweden_Superettan;14;09/07/2026;Ljungskile;Örebro;;;
-Sweden_Superettan;14;09/07/2026;Nordic United;Oddevold;;;
-Sweden_Superettan;15;09/07/2026;Norrkoping;Norrby;;;
-Sweden_Superettan;15;09/07/2026;Sandviken;Helsingborg;;;
-Sweden_Superettan;14;09/07/2026;Sundsvall;Östersund;;;
-Sweden_Superettan;14;09/07/2026;Varberg;Öster;;;
-USA_MLSNextPro_EasternConference_NortheastDivision;19;09/07/2026;New England Revolution II;Philadelphia II;;;
-USA_MLSNextPro_EasternConference_SoutheastDivision;18;09/07/2026;Atlanta United 2;Toronto FC II;;;
-USA_MLSNextPro_EasternConference_SoutheastDivision;18;09/07/2026;Chattanooga;Inter Miami II;;;
-USA_MLSNextPro_WesternConference_CentralDivision;18;09/07/2026;North Texas;St. Louis City 2;;;
-USA_USLChampionship;22;09/07/2026;Colorado Springs;Phoenix Rising;;;
-USA_USLChampionship;22;09/07/2026;FC Tulsa;Sacramento Republic;;;
-USA_USLChampionship;21;09/07/2026;Indy Eleven;Charleston;;;
-USA_USLChampionship;22;09/07/2026;Las Vegas Lights;El Paso;;;
-USA_USLChampionship;21;09/07/2026;Loudoun;Sporting Jax;;;
-USA_USLChampionship;22;09/07/2026;Louisville City;Hartford Athletic;;;
-USA_USLChampionship;22;09/07/2026;New Mexico;Oakland Roots;;;
-USA_USLChampionship;22;09/07/2026;Pittsburgh;Brooklyn;;;
-USA_USLChampionship;22;09/07/2026;Rhode Island;Orange County SC;;;
-USA_USLChampionship;22;09/07/2026;San Antonio;Monterey Bay;;;
-USA_USLChampionship;22;09/07/2026;Tampa Bay;Lexington;;;
-USA_USLLeagueOne;21;09/07/2026;Charlotte Independ.;Corpus Christi FC;;;
-USA_USLLeagueOne;22;09/07/2026;Corpus Christi FC;Chattanooga Red Wolves;;;
-USA_USLLeagueOne;22;09/07/2026;FC Naples;Portland Hearts of Pine;;;
-USA_USLLeagueOne;22;09/07/2026;Fort Wayne;Spokane Velocity;;;
-USA_USLLeagueOne;22;09/07/2026;New York Cosmos;Greenville;;;
-USA_USLLeagueOne;22;09/07/2026;Richmond Kickers;Sarasota Paradise;;;
-USA_USLLeagueTwo_Chesapeake;20260630;09/07/2026;Lionsbridge;Hill City;;;
-USA_USLLeagueTwo_Chesapeake;20260629;09/07/2026;Patuxent;Hill City;;;
-USA_USLLeagueTwo_Chesapeake;20260629;09/07/2026;Virginia Marauders;Annapolis Blues;;;
-USA_USLLeagueTwo_Chesapeake;26;09/07/2026;Virginia Marauders;Bethesda SC;;;
-USA_USLLeagueTwo_GreatForest;20260630;09/07/2026;Akron City;Erie Sports Center;;;
-USA_USLLeagueTwo_GreatForest;20260630;09/07/2026;Buffalo;Lorain County Leviathan;;;
-USA_USLLeagueTwo_GreatForest;22;09/07/2026;Buffalo;Steel City;;;
-USA_USLLeagueTwo_GreatForest;20260629;09/07/2026;Erie Sports Center;Akron City;;;
-USA_USLLeagueTwo_GreatForest;20260630;09/07/2026;Erie Sports Center;Pittsburgh Riverhounds 2;;;
-USA_USLLeagueTwo_GreatForest;24;09/07/2026;Lorain County Leviathan;Erie Sports Center;;;
-USA_USLLeagueTwo_GreatLakes;20260630;09/07/2026;Ann Arbor;Oakland County;;;
-USA_USLLeagueTwo_GreatLakes;20260630;09/07/2026;Kalamazoo FC;Flint City;;;
-USA_USLLeagueTwo_GreatLakes;20260629;09/07/2026;Kalamazoo FC;Oakland County;;;
-USA_USLLeagueTwo_GreatLakes;20260629;09/07/2026;Midwest United;Flint City;;;
-USA_USLLeagueTwo_GreatPlains;20260630;09/07/2026;Menace;Santafe Wanderers;;;
-USA_USLLeagueTwo_GreatPlains;20260630;09/07/2026;Peoria;St. Louis Ambush;;;
-USA_USLLeagueTwo_GreatPlains;20260629;09/07/2026;Sunflower State;Menace;;;
-USA_USLLeagueTwo_Heartland;21;09/07/2026;Edgewater Castle;Chicago Dutch Lions;;;
-USA_USLLeagueTwo_Heartland;21;09/07/2026;Rochester FC;Rockford Raptors;;;
-USA_USLLeagueTwo_Heartland;24;09/07/2026;Rochester FC;St. Croix;;;
-USA_USLLeagueTwo_Heartland;23;09/07/2026;St. Croix;Edgewater Castle;;;
-USA_USLLeagueTwo_LoneStar;24;09/07/2026;GFI Woodlands;Houston Sur;;;
-USA_USLLeagueTwo_LoneStar;20260629;09/07/2026;Hill Country Lobos;Lonestar SC;;;
-USA_USLLeagueTwo_LoneStar;20260631;09/07/2026;Houston FC;Hill Country Lobos;;;
-USA_USLLeagueTwo_LoneStar;20260630;09/07/2026;Houston FC;Twin City Toucans;;;
-USA_USLLeagueTwo_LoneStar;25;09/07/2026;Lonestar SC;Hill Country Lobos;;;
-USA_USLLeagueTwo_LoneStar;20260630;09/07/2026;Lonestar SC;Laredo Heat;;;
-USA_USLLeagueTwo_LoneStar;24;09/07/2026;Twin City Toucans;Laredo Heat;;;
-USA_USLLeagueTwo_Metropolitan;24;09/07/2026;Long Island Rough Riders;Cedar Stars;;;
-USA_USLLeagueTwo_Metropolitan;20260630;09/07/2026;Motown 2;Morris Elite;;;
-USA_USLLeagueTwo_Metropolitan;24;09/07/2026;New Jersey Copa;Ironbound SC;;;
-USA_USLLeagueTwo_MidAtlantic;28;09/07/2026;Eagle FC;West Chester Utd;;;
-USA_USLLeagueTwo_MidAtlantic;20260630;09/07/2026;Philadelphia Lone Star;Ocean City;;;
-USA_USLLeagueTwo_MidAtlantic;20260629;09/07/2026;Reading;Eagle FC;;;
-USA_USLLeagueTwo_MidAtlantic;20260630;09/07/2026;West Chester Utd;Delaware;;;
-USA_USLLeagueTwo_MidAtlantic;20260629;09/07/2026;West Chester Utd;LVU Rush;;;
-USA_USLLeagueTwo_MidSouth;17;09/07/2026;Hattiesburg FC;Jackson Boom;;;
-USA_USLLeagueTwo_MidSouth;17;09/07/2026;Jackson Boom;Mississippi Brilla;;;
-USA_USLLeagueTwo_MidSouth;20260629;09/07/2026;Memphis FC;Mississippi Brilla;;;
-USA_USLLeagueTwo_MidSouth;20260630;09/07/2026;Red River;Little Rock Rangers;;;
-USA_USLLeagueTwo_Mountain;20260629;09/07/2026;Albion Colorado;Colorado Storm;;;
-USA_USLLeagueTwo_Mountain;20260629;09/07/2026;Atletico Union;Real Colorado;;;
-USA_USLLeagueTwo_Mountain;20260630;09/07/2026;Colorado Storm;CISA;;;
-USA_USLLeagueTwo_Mountain;20260631;09/07/2026;Flatirons;Colorado Storm;;;
-USA_USLLeagueTwo_Mountain;23;09/07/2026;Flatirons FC;Utah United;;;
-USA_USLLeagueTwo_NorCal;20260629;09/07/2026;Academica SC;Marin;;;
-USA_USLLeagueTwo_NorCal;20260629;09/07/2026;Glens SC;San Francisco City;;;
-USA_USLLeagueTwo_NorCal;20260629;09/07/2026;Glens SC;San Juan;;;
-USA_USLLeagueTwo_NorCal;27;09/07/2026;Project 51O;Davis Legacy;;;
-USA_USLLeagueTwo_NorCal;20260629;09/07/2026;Project 51O;San Francisco City;;;
-USA_USLLeagueTwo_Northeast;20260629;09/07/2026;Albany Rush;Boston Bolts;;;
-USA_USLLeagueTwo_Northeast;28;09/07/2026;Black Rock;Seacoast Utd Phantoms;;;
-USA_USLLeagueTwo_Northeast;20260629;09/07/2026;Boston Bolts;Western Mass Pioneers;;;
-USA_USLLeagueTwo_Northeast;20260629;09/07/2026;NEFC;Vermont Green;;;
-USA_USLLeagueTwo_Northeast;25;09/07/2026;Seacoast United Phantoms;Boston Bolts;;;
-USA_USLLeagueTwo_Northeast;20260629;09/07/2026;Seacoast Utd Phantoms;Black Rock;;;
-USA_USLLeagueTwo_Northeast;20260630;09/07/2026;Western Mass Pioneers;Black Rock;;;
-USA_USLLeagueTwo_Northwest;32;09/07/2026;Ballard;Tacoma Stars;;;
-USA_USLLeagueTwo_Northwest;20260629;09/07/2026;Midlakes United;Portland Bangers;;;
-USA_USLLeagueTwo_Northwest;20260629;09/07/2026;Portland Bangers;Bigfoot;;;
-USA_USLLeagueTwo_Northwest;20260629;09/07/2026;Portland Bangers;FC Olympia;;;
-USA_USLLeagueTwo_Northwest;20260629;09/07/2026;Snohomish United;Tacoma Stars;;;
-USA_USLLeagueTwo_Northwest;20260629;09/07/2026;Tacoma Stars;Snohomish United;;;
-USA_USLLeagueTwo_Northwest;20260629;09/07/2026;Tacoma Stars;West Seattle Junction;;;
-USA_USLLeagueTwo_Northwest;32;09/07/2026;West Seattle Junction;FC Olympia;;;
-USA_USLLeagueTwo_Ranger;20260629;09/07/2026;Fort Worth Vaqueros;McKinney Chupacabras;;;
-USA_USLLeagueTwo_Ranger;21;09/07/2026;West Texas;Lubbock Matadors;;;
-USA_USLLeagueTwo_SouthAtlantic;20260629;09/07/2026;Asheville City;Charlotte Independ. 2;;;
-USA_USLLeagueTwo_SouthAtlantic;20260630;09/07/2026;Asheville City;SC United Bantams;;;
-USA_USLLeagueTwo_SouthAtlantic;20260630;09/07/2026;Charlotte Eagles;Hickory;;;
-USA_USLLeagueTwo_SouthAtlantic;20260631;09/07/2026;Hickory;Appalachian;;;
-USA_USLLeagueTwo_SouthCentral;19;09/07/2026;Birmingham 2;Columbus United;;;
-USA_USLLeagueTwo_SouthCentral;17;09/07/2026;Birmingham 2;Swarm FC;;;
-USA_USLLeagueTwo_SouthCentral;17;09/07/2026;Birmingham Legion FC II;Swarm FC;;;
-USA_USLLeagueTwo_SouthCentral;18;09/07/2026;Swarm FC;Dothan United;;;
-USA_USLLeagueTwo_SouthFlorida;16;09/07/2026;Brevard SC;Weston;;;
-USA_USLLeagueTwo_SouthFlorida;16;09/07/2026;Brevard SC;Weston FC;;;
-USA_USLLeagueTwo_SouthFlorida;16;09/07/2026;Miami;Brevard SC;;;
-USA_USLLeagueTwo_SouthFlorida;16;09/07/2026;Weston;Lakeland United;;;
-USA_USLLeagueTwo_Southeast;25;09/07/2026;Brave SC;Inter Gainesville;;;
-USA_USLLeagueTwo_Southeast;20260629;09/07/2026;Inter Gainesville;Brooke House;;;
-USA_USLLeagueTwo_Southeast;20260630;09/07/2026;Sporting Jax 2;Brave SC;;;
-USA_USLLeagueTwo_Southwest;26;09/07/2026;City SC;Redlands FC;;;
-USA_USLLeagueTwo_Southwest;20260629;09/07/2026;Redlands FC;Capo;;;
-USA_USLLeagueTwo_Southwest;27;09/07/2026;Stars FC;Tucson;;;
-USA_USLLeagueTwo_Southwest;20260630;09/07/2026;Tucson;Stars FC;;;
-USA_USLLeagueTwo_Southwest;20260630;09/07/2026;Ventura;AMSG FC;;;
-USA_USLLeagueTwo_Southwest;20260629;09/07/2026;Ventura;Tucson;;;
-USA_USLLeagueTwo_Valley;19;09/07/2026;Louisville City 2;Kings Hammer Columbus;;;
-USA_USLLeagueTwo_Valley;25;09/07/2026;Toledo Villa;Northern Indiana;;;
-USA_USLLeagueTwo_Valley;19;09/07/2026;West Virginia;Dayton;;;
-Australia_NPLACT;18;10/07/2026;Canberra Croatia;Brindabella;;;
-Australia_NPLACT;18;10/07/2026;Canberra Juventus;O'Connor Knights;;;
-Australia_NPLACT;18;10/07/2026;Canberra Olympic;Canberra White Eagles;;;
-Australia_NPLACT;18;10/07/2026;Tigers FC;Queanbeyan City;;;
-Australia_NPLACT;18;10/07/2026;Tuggeranong Utd;Belconnen Utd.;;;
-Australia_NPLNSW;24;10/07/2026;APIA Leichhardt;Sydney FC U23;;;
-Australia_NPLNSW;24;10/07/2026;Manly Utd;Sutherland;;;
-Australia_NPLNSW;24;10/07/2026;NWS Spirit;St George Saints;;;
-Australia_NPLNSW;24;10/07/2026;SD Raiders;Blacktown City;;;
-Australia_NPLNSW;24;10/07/2026;St. George City;UNSW;;;
-Australia_NPLNSW;24;10/07/2026;Sydney Olympic;Wollongong Wolves;;;
-Australia_NPLNorthernNSW;19;10/07/2026;Cooks Hill United;Charlestown Azzurri;;;
-Australia_NPLNorthernNSW;19;10/07/2026;Maitland;Adamstown Rosebud;;;
-Australia_NPLNorthernNSW;19;10/07/2026;Weston Bears;Lambton J.;;;
-Australia_NPLQueenslandU23;19;10/07/2026;Moreton City Excelsior U23;Magic United U23;;;
-Australia_NPLQueenslandU23;19;10/07/2026;Peninsula U23;Wynnum Wolves U23;;;
-Australia_NPLQueensland;19;10/07/2026;Moreton City Excelsior;Magic United;;;
-Australia_NPLTasmania;15;10/07/2026;Clarence Zebras;Launceston;;;
-Australia_NPLTasmania;15;10/07/2026;Devonport;South East Utd.;;;
-Australia_NPLTasmania;15;10/07/2026;South Hobart;Ulverstone;;;
-Australia_NPLVictoria;20;10/07/2026;Dandenong Thunder;Bentleigh;;;
-Australia_NPLVictoria;20;10/07/2026;Melbourne City U21;Heidelberg;;;
-Australia_NPLWesternAustralia;18;10/07/2026;Olympic Kingsway;Perth RedStar;;;
-Australia_NPLWesternAustralia;18;10/07/2026;Sorrento;Fremantle City;;;
-Australia_NPL_NSW_U20;24;10/07/2026;APIA Leichhardt U20;Sydney FC U20;;;
-Australia_NPL_NSW_U20;24;10/07/2026;Manly Utd U20;Sutherland U20;;;
-Australia_NPL_NSW_U20;24;10/07/2026;NWS Spirit U20;St George Saints U20;;;
-Australia_NPL_NSW_U20;24;10/07/2026;SD Raiders U20;Blacktown City U20;;;
-Australia_NPL_NSW_U20;24;10/07/2026;St. George City U20;UNSW U20;;;
-Australia_NPL_NSW_U20;24;10/07/2026;Sydney Olympic U20;Wollongong Wolves U20;;;
-Australia_NSWLeagueOne;23;10/07/2026;Canterbury Bankstown;Prospect United;;;
-Australia_NSWLeagueOne;23;10/07/2026;Dulwich Hill;Bulls Academy;;;
-Australia_NSWLeagueOne;23;10/07/2026;Hakoah Sydney;Hurstville Zagreb;;;
-Australia_NSWLeagueOne;23;10/07/2026;Inter Lions;Hills United;;;
-Australia_NSWLeagueOne;23;10/07/2026;Northern Tigers;Newcastle Jets U23;;;
-Australia_NSWLeagueOne;23;10/07/2026;Rydalmere Lions;Western City Rangers;;;
-Australia_NorthernNSWStateLeague;14;10/07/2026;Cessnock City Hornets;Dudley Redhead United;;;
-Australia_NorthernNSWStateLeague;14;10/07/2026;Newcastle Croatia;Lake Macquarie;;;
-Australia_NorthernNSWStateLeague;14;10/07/2026;Singleton Strikers;South Cardiff;;;
-Australia_QueenslandPremierLeague;19;10/07/2026;Broadbeach Utd.;Caboolture;;;
-Australia_QueenslandPremierLeague;19;10/07/2026;Logan Lightning;Ipswich;;;
-Australia_QueenslandPremierLeague;19;10/07/2026;Redlands;Capalaba;;;
-Australia_QueenslandPremierLeague;19;10/07/2026;St. George Willawong;Robina City;;;
-Australia_TasmaniaNorthernChampionship;14;10/07/2026;Devonport U21;Ulverstone U21;;;
-Australia_TasmaniaNorthernChampionship;14;10/07/2026;Launceston United U21;Burnie Utd.;;;
-Australia_TasmaniaNorthernChampionship;14;10/07/2026;Northern Rangers;Launceston U21;;;
-Australia_TasmaniaNorthernChampionship;14;10/07/2026;Somerset;Riverside Olympic U21;;;
-Australia_TasmaniaSouthernChampionship;14;10/07/2026;Glenorchy Knights U21;Olympia Warriors;;;
-Australia_TasmaniaSouthernChampionship;14;10/07/2026;Hobart Utd.;Hobart City;;;
-Australia_TasmaniaSouthernChampionship;14;10/07/2026;New Town;South Hobart U21;;;
-Australia_VictoriaPremierLeague2;20;10/07/2026;Bayside Argonauts;Altona City;;;
-Australia_VictoriaPremierLeague2;20;10/07/2026;Keilor Park;Malvern;;;
-Australia_VictoriaPremierLeague2;20;10/07/2026;Moreland City;Springvale;;;
-Australia_VictoriaPremierLeague2;20;10/07/2026;Nunawading City;Goulburn Valley Suns;;;
-Australia_VictoriaPremierLeague;20;10/07/2026;Eltham Redbacks;North Geelong;;;
-Australia_VictoriaPremierLeague;20;10/07/2026;Melbourne Srbija;Manningham United Blues;;;
-Australia_VictoriaPremierLeague;20;10/07/2026;Port Melbourne Sharks;North Sunshine Eagles;;;
-Australia_WAStateLeague;16;10/07/2026;Cockburn City;Kingsley Westside;;;
-Australia_WAStateLeague;16;10/07/2026;Curtin Univ;Floreat Athena;;;
-Australia_WAStateLeague;16;10/07/2026;Gwelup Croatia;Inglewood;;;
-Australia_WAStateLeague;16;10/07/2026;Joondalup;Mandurah City;;;
-Australia_WAStateLeague;16;10/07/2026;Quinns;Nedlands;;;
-Australia_WAStateLeague;16;10/07/2026;Subiaco;Murdoch Melville;;;
-Belarus_PershayaLiga;15;10/07/2026;BATE 2;Lida;;;
-Belarus_PershayaLiga;15;10/07/2026;Din. Minsk 2;Slutsk;;;
-Belarus_PershayaLiga;15;10/07/2026;Molodechno;Minsk 2;;;
-Belarus_PershayaLiga;15;10/07/2026;Orsha;Smorgon;;;
-Belarus_PershayaLiga;15;10/07/2026;Uni X Labs;Osipovichi;;;
-Belarus_VysshayaLiga;15;10/07/2026;Baranovici;Zhodino;;;
-Belarus_VysshayaLiga;15;10/07/2026;Dynamo Brest;Slavia Mozyr;;;
-Belarus_VysshayaLiga;15;10/07/2026;Gomel;Neman;;;
-Bhutan_PremierLeague;9;10/07/2026;Tsirang;RTC;;;
-Bolivia_DivisionProfesional;12;10/07/2026;Real Oruro;GV San Jose;;;
-Estonia_EsiliigaB;19;10/07/2026;Tabasalu;Tulevik;;;
-Estonia_Esiliiga;21;10/07/2026;FC Tallinn;Elva;;;
-Estonia_Esiliiga;21;10/07/2026;Levadia U21;Tallinna Kalev;;;
-Estonia_Esiliiga;21;10/07/2026;Viimsi JK;Nomme Kalju U21;;;
-Estonia_Meistriliiga;19;10/07/2026;Nomme Utd;Kuressaare;;;
-Estonia_Meistriliiga;19;10/07/2026;Parnu JK Vaprus;Tammeka;;;
-Finland_Kakkonen_GroupB;13;10/07/2026;EPS;P-Iirot Rauma;;;
-Finland_Kakkonen_GroupB;13;10/07/2026;NJS;EBK;;;
-Finland_Kakkonen_GroupC;13;10/07/2026;Huima / Urho;Hercules;;;
-Finland_Veikkausliiga;17;10/07/2026;Gnistan;Mariehamn;;;
-Finland_Veikkausliiga;17;10/07/2026;Lahti;HJK;;;
-Finland_Veikkausliiga;17;10/07/2026;TPS Turku;Oulu;;;
-Finland_Ykkonen;15;10/07/2026;JJK Jyvaskyla;KuPS Akatemia;;;
-Finland_Ykkonen;15;10/07/2026;KPV;TPV;;;
-Finland_Ykkonen;15;10/07/2026;Keski-Uusimaa;Jazz Pori;;;
-Finland_Ykkonen;15;10/07/2026;VJS;OLS Oulu;;;
-Finland_Ykkosliiga;14;10/07/2026;Haka;Ekenas;;;
-Finland_Ykkosliiga;14;10/07/2026;Klubi 04;Jippo;;;
-Finland_Ykkosliiga;14;10/07/2026;SJK Akatemia;Mikkeli;;;
-Iceland_Division_1;19;10/07/2026;Volsungur;Afturelding;;;
-Iceland_Division_2;23;10/07/2026;Selfoss;Hviti;;;
-Kazakhstan_PremierLeague;27;10/07/2026;Ertis Pavlodar;Zhenis;;;
-Kazakhstan_PremierLeague;27;10/07/2026;Kaspij Aktau;Ordabasy;;;
-Kazakhstan_PremierLeague;27;10/07/2026;Zhetysu;Altai;;;
-Lithuania_Toplyga;24;10/07/2026;Kauno Zalgiris;FK Panevezys;;;
-Norway_Eliteserien;19;10/07/2026;Aalesund;Molde;;;
-Norway_Eliteserien;19;10/07/2026;Fredrikstad;Lilleström;;;
-Norway_Eliteserien;19;10/07/2026;Tromsø;Vålerenga;;;
-Somalia_NationalLeague;19;10/07/2026;Elman;Horseed;;;
-Sweden_Allsvenskan;17;10/07/2026;Mjallby;AIK Stockholm;;;
-Sweden_Allsvenskan;17;10/07/2026;Orgryte;Hacken;;;
-USA_USLLeagueTwo_GreatForest;25;10/07/2026;Buffalo;Akron City;;;
-USA_USLLeagueTwo_GreatLakes;23;10/07/2026;Midwest United;Union FC Macomb;;;
-USA_USLLeagueTwo_GreatLakes;23;10/07/2026;Oakland County;Midwest United;;;
-USA_USLLeagueTwo_Heartland;24;10/07/2026;Sueno;Chicago Dutch Lions;;;
-USA_USLLeagueTwo_Metropolitan;26;10/07/2026;Motown 2;Long Island;;;
-USA_USLLeagueTwo_Metropolitan;26;10/07/2026;New Jersey Copa;Westchester Flames;;;
-USA_USLLeagueTwo_MidAtlantic;29;10/07/2026;Philadelphia Lone Star;RC New Jersey;;;
-USA_USLLeagueTwo_MidSouth;19;10/07/2026;Hattiesburg;Little Rock Rangers;;;
-USA_USLLeagueTwo_NorCal;28;10/07/2026;San Francisco City;Project 51O;;;
-USA_USLLeagueTwo_Northeast;30;10/07/2026;Seacoast Utd Phantoms;AC Connecticut;;;
-USA_USLLeagueTwo_Northeast;30;10/07/2026;Western Mass Pioneers;Vermont Green;;;
-USA_USLLeagueTwo_Northwest;34;10/07/2026;West Seattle Junction;Snohomish United;;;
-USA_USLLeagueTwo_SouthCentral;21;10/07/2026;Birmingham 2;Montgomery United;;;
-USA_USLLeagueTwo_SouthFlorida;19;10/07/2026;Miami City;Lakeland United;;;
-USA_USLLeagueTwo_Southwest;28;10/07/2026;Tucson;Capo;;;
-Australia_NPLNorthernNSW;19;11/07/2026;Edgeworth E.;Belmont Swansea Utd.;;;
-Australia_TasmaniaSouthernChampionship;14;11/07/2026;Clarence Zebras U21;Taroona;;;
-USA_USLLeagueTwo_GreatPlains;20;11/07/2026;Santafe Wanderers;Sunflower State;;;
-Australia_NPLNSW;24;12/07/2026;Marconi;WS Wanderers U21;;;
-Australia_NPLNSW;24;12/07/2026;Sydney Utd;Rockdale Ilinden;;;
-Australia_NPLNorthernNSW;19;12/07/2026;Broadmeadow;Newcastle Olympic;;;
-Australia_NPLNorthernNSW;19;12/07/2026;Valentine;Kahibah;;;
-Australia_NPLQueenslandU23;19;12/07/2026;Gold Coast Blaze U23;Olympic FC U23;;;
-Australia_NPLQueenslandU23;19;12/07/2026;Gold Coast Knights U23;Brisbane City U23;;;
-Australia_NPLQueenslandU23;19;12/07/2026;QLD State Team U17;Rochedale U23;;;
-Australia_NPLQueenslandU23;19;12/07/2026;Queensland Lions U23;Eastern Suburbs U23;;;
-Australia_NPLQueensland;19;12/07/2026;Gold Coast;Olympic FC;;;
-Australia_NPLQueensland;19;12/07/2026;Gold Coast Knights;Brisbane City;;;
-Australia_NPLQueensland;19;12/07/2026;Queensland Lions;Eastern Suburbs;;;
-Australia_NPLVictoria;21;12/07/2026;St Albans;George Cross;;;
-Australia_NPL_NSW_U20;24;12/07/2026;Marconi S. U20;WS Wanderers U20;;;
-Australia_NPL_NSW_U20;24;12/07/2026;Sydney Utd U20;Rockdale Ilinden U20;;;
-Australia_NSWLeagueOne;24;12/07/2026;Central Coast Mariners U23;Blacktown Spartans;;;
-Australia_NorthernNSWStateLeague;14;12/07/2026;Toronto Awaba Stags;Wallsend Red Devils;;;
-Australia_NorthernNSWStateLeague;14;12/07/2026;West Wallsend;New Lambton;;;
-Australia_QueenslandPremierLeague;20;12/07/2026;Sunshine Coast Wanderers;Brisbane Strikers;;;
-Belarus_PershayaLiga;16;12/07/2026;Gomel 2;BumProm Gomel;;;
-Belarus_PershayaLiga;16;12/07/2026;Volna Pinsk;Soligorsk;;;
-Belarus_VysshayaLiga;16;12/07/2026;Arsenal Dzerzhinsk;Vitebsk;;;
-Bolivia_DivisionProfesional;12;12/07/2026;Real Potosi;Nacional Potosi;;;
-Bolivia_DivisionProfesional;12;12/07/2026;The Strongest;Bolivar;;;
-Estonia_EsiliigaB;19;12/07/2026;Johvi Phoenix;Parnu JK Vaprus U21;;;
-Estonia_EsiliigaB;19;12/07/2026;Levadia U19;Tallinna Kalev U21;;;
-Estonia_EsiliigaB;19;12/07/2026;Tammeka U21;Narva U21;;;
-Estonia_EsiliigaB;19;12/07/2026;Tartu Kalev;Legion;;;
-Estonia_Esiliiga;21;12/07/2026;Nomme Utd U21;Flora U21;;;
-Finland_Kakkonen_GroupA;13;12/07/2026;Lahden Reipas;HIFK;;;
-Finland_Kakkonen_GroupC;14;12/07/2026;Narpes Kraft;VPS 2;;;
-Finland_Kakkonen_GroupC;14;12/07/2026;SJK Akatemia 2;TP-47;;;
-Finland_Kakkonen_GroupC;14;12/07/2026;Vaajakoski;Jaro 2;;;
-Iceland_BestaDeildKarla;19;12/07/2026;Akureyri;Akranes;;;
-Iceland_BestaDeildKarla;19;12/07/2026;Fram;Thor Akureyri;;;
-Iceland_BestaDeildKarla;19;12/07/2026;Hafnarfjordur;Valur;;;
-Iceland_BestaDeildKarla;19;12/07/2026;KR Reykjavik;Vestmannaeyjar;;;
-Iceland_Division_2;23;12/07/2026;Dalvik/Reynir;Fjolnir;;;
-Iceland_Division_2;23;12/07/2026;Kari;KFA;;;
-Iceland_Division_2;23;12/07/2026;Kormakur/Hvot;Olafsvik;;;
-Iceland_Division_2;23;12/07/2026;Magni;Haukar;;;
-Iceland_Division_2;23;12/07/2026;Throttur Vogar;KFG Gardabaer;;;
-Kazakhstan_PremierLeague;27;12/07/2026;Atyrau;Yelimay Semey;;;
-Kazakhstan_PremierLeague;27;12/07/2026;FC Astana;Aktobe;;;
-Kazakhstan_PremierLeague;27;12/07/2026;Tobol;Okzhetpes;;;
-Kazakhstan_PremierLeague;27;12/07/2026;Ulytau;Kaisar;;;
-Lithuania_Toplyga;24;12/07/2026;Transinvest;Banga;;;
-Norway_Eliteserien;19;12/07/2026;Brann;Start;;;
-Norway_Eliteserien;19;12/07/2026;KFUM Oslo;Bodo/Glimt;;;
-Norway_Eliteserien;19;12/07/2026;Rosenborg;Kristiansund;;;
-Norway_Eliteserien;19;12/07/2026;Sandefjord;HamKam;;;
-Norway_Eliteserien;19;12/07/2026;Sarpsborg 08;Viking;;;
-Somalia_NationalLeague;19;12/07/2026;Jubba;Dekedaha;;;
-Somalia_NationalLeague;19;12/07/2026;Raadsan;Heegan;;;
-Sweden_Allsvenskan;17;12/07/2026;Brommapojkarna;Sirius;;;
-Sweden_Allsvenskan;17;12/07/2026;GAIS;Elfsborg;;;
-Sweden_Allsvenskan;17;12/07/2026;Hammarby;Kalmar;;;
-Sweden_Allsvenskan;17;12/07/2026;Malmo FF;Göteborg;;;
-Sweden_Allsvenskan;17;12/07/2026;Västerås SK;Degerfors;;;
-USA_MLSNextPro_EasternConference_NortheastDivision;19;12/07/2026;Chicago Fire II;New York Red Bulls II;;;
-USA_MLSNextPro_EasternConference_NortheastDivision;19;12/07/2026;Philadelphia II;Huntsville;;;
-USA_MLSNextPro_EasternConference_SoutheastDivision;18;12/07/2026;Atlanta United 2;Inter Miami II;;;
-USA_MLSNextPro_EasternConference_SoutheastDivision;18;12/07/2026;Carolina Core;Chattanooga;;;
-USA_MLSNextPro_EasternConference_SoutheastDivision;18;12/07/2026;Crown Legacy;New York City II;;;
-USA_MLSNextPro_WesternConference_CentralDivision;19;12/07/2026;Colorado Rapids 2;North Texas;;;
-USA_MLSNextPro_WesternConference_CentralDivision;19;12/07/2026;Houston Dynamo 2;St. Louis City 2;;;
-USA_MLSNextPro_WesternConference_PacificDivision;20;12/07/2026;Los Angeles FC 2;Portland Timbers 2;;;
-USA_MLSNextPro_WesternConference_PacificDivision;20;12/07/2026;Real Monarchs;Vancouver 2;;;
-USA_USLLeagueTwo_Chesapeake;27;12/07/2026;Annapolis Blues;Bethesda SC;;;
-USA_USLLeagueTwo_Chesapeake;27;12/07/2026;Hill City;Virginia Marauders;;;
-USA_USLLeagueTwo_Chesapeake;27;12/07/2026;Lionsbridge;Charlottesville Blues;;;
-USA_USLLeagueTwo_Chesapeake;27;12/07/2026;Loudoun 2;Northern Virginia;;;
-USA_USLLeagueTwo_Chesapeake;27;12/07/2026;Patuxent;Virginia Beach;;;
-USA_USLLeagueTwo_GreatForest;25;12/07/2026;Lorain County Leviathan;Steel City;;;
-USA_USLLeagueTwo_GreatLakes;23;12/07/2026;Ann Arbor;Kalamazoo FC;;;
-USA_USLLeagueTwo_GreatLakes;23;12/07/2026;Flint City;Union FC Macomb;;;
-USA_USLLeagueTwo_GreatPlains;20;12/07/2026;Menace;St. Louis Ambush;;;
-USA_USLLeagueTwo_GreatPlains;20;12/07/2026;Peoria;Springfield FC;;;
-USA_USLLeagueTwo_Heartland;24;12/07/2026;Edgewater Castle;Minneapolis City;;;
-USA_USLLeagueTwo_Heartland;24;12/07/2026;St. Croix;Rockford Raptors;;;
-USA_USLLeagueTwo_LoneStar;26;12/07/2026;AHFC Royals;Houston FC;;;
-USA_USLLeagueTwo_LoneStar;26;12/07/2026;Houston Sur;San Antonio FC 2;;;
-USA_USLLeagueTwo_Metropolitan;26;12/07/2026;Hudson Valley;Cedar;;;
-USA_USLLeagueTwo_Metropolitan;26;12/07/2026;Ironbound SC;Manhattan;;;
-USA_USLLeagueTwo_MidAtlantic;29;12/07/2026;Ocean City;Eagle FC;;;
-USA_USLLeagueTwo_MidAtlantic;29;12/07/2026;PA Classics;West Chester Utd;;;
-USA_USLLeagueTwo_MidAtlantic;29;12/07/2026;Reading;LVU Rush;;;
-USA_USLLeagueTwo_MidSouth;19;12/07/2026;Memphis FC;Jackson Boom;;;
-USA_USLLeagueTwo_MidSouth;19;12/07/2026;Red River;Mississippi Brilla;;;
-USA_USLLeagueTwo_Mountain;26;12/07/2026;Atletico Union;Flatirons;;;
-USA_USLLeagueTwo_Mountain;26;12/07/2026;Colorado Storm;Albion Colorado;;;
-USA_USLLeagueTwo_NorCal;28;12/07/2026;Almaden;Davis Legacy;;;
-USA_USLLeagueTwo_Northeast;30;12/07/2026;Black Rock;Boston City;;;
-USA_USLLeagueTwo_Northwest;34;12/07/2026;West Seattle Junction;Portland Bangers;;;
-USA_USLLeagueTwo_Ranger;21;12/07/2026;Denton Diablos;Fort Worth Vaqueros;;;
-USA_USLLeagueTwo_Ranger;21;12/07/2026;Lubbock Matadors;West Texas;;;
-USA_USLLeagueTwo_Ranger;21;12/07/2026;McKinney Chupacabras;Texoma;;;
-USA_USLLeagueTwo_SouthAtlantic;37;12/07/2026;Charlotte Independ. 2;North Carolina FC U23;;;
-USA_USLLeagueTwo_SouthAtlantic;37;12/07/2026;Hickory;Asheville City;;;
-USA_USLLeagueTwo_SouthAtlantic;37;12/07/2026;Salem City;Wake FC;;;
-USA_USLLeagueTwo_SouthAtlantic;37;12/07/2026;Tobacco Road;Port City;;;
-USA_USLLeagueTwo_SouthCentral;21;12/07/2026;Columbus United;East Atlanta;;;
-USA_USLLeagueTwo_SouthCentral;21;12/07/2026;Dothan United;Apotheos;;;
-USA_USLLeagueTwo_Southeast;25;12/07/2026;Nona;Inter Gainesville;;;
-USA_USLLeagueTwo_Southwest;28;12/07/2026;AMSG FC;Southern California;;;
-USA_USLLeagueTwo_Southwest;28;12/07/2026;Redlands FC;Ventura;;;
-USA_USLLeagueTwo_Southwest;28;12/07/2026;Stars FC;Capo;;;
-USA_USLLeagueTwo_Valley;25;12/07/2026;Kings Hammer Columbus;Toledo Villa;;;
-USA_USLLeagueTwo_Valley;25;12/07/2026;Northern Indiana;Dayton;;;
-Australia_SAStateLeague;19;13/07/2026;Blue Eagles;Modbury;;;
-Australia_VictoriaPremierLeague;21;13/07/2026;Bulleen;Brunswick City;;;
-Bhutan_PremierLeague;10;13/07/2026;Ugyen Academy;Transport United;;;
-Bolivia_DivisionProfesional;13;13/07/2026;Tomayapo;Independiente;;;
-Estonia_Esiliiga;21;13/07/2026;Maardu;Tartu Welco;;;
-Finland_Kakkonen_GroupB;13;13/07/2026;Honka;HJS;;;
-Iceland_BestaDeildKarla;19;13/07/2026;Breidablik;Keflavik;;;
-Iceland_Division_1;20;13/07/2026;Vestri;Fylkir;;;
-Somalia_NationalLeague;19;13/07/2026;Gaadiidka;Jeenyo;;;
-Sweden_Allsvenskan;18;13/07/2026;Djurgarden;Halmstad;;;
-USA_MLSNextPro_EasternConference_NortheastDivision;19;13/07/2026;Connecticut FC;Toronto FC II;;;
-USA_MLSNextPro_EasternConference_SoutheastDivision;18;13/07/2026;Cincinnati 2;Orlando City B;;;
-USA_MLSNextPro_WesternConference_CentralDivision;19;13/07/2026;Austin FC II;Minnesota 2;;;
-USA_MLSNextPro_WesternConference_PacificDivision;20;13/07/2026;San Jose Earthquakes II;Tacoma Defiance;;;
-USA_USLLeagueTwo_Heartland;25;13/07/2026;RKC SC;River Light;;;
-USA_USLLeagueTwo_NorCal;29;13/07/2026;Academica SC;Glens SC;;;
-USA_USLLeagueTwo_NorCal;29;13/07/2026;San Juan;Marin;;;
-USA_USLLeagueTwo_Northwest;34;13/07/2026;Ballard;Snohomish United;;;
-USA_USLLeagueTwo_Northwest;34;13/07/2026;Bigfoot;Midlakes United;;;
-USA_USLLeagueTwo_SouthAtlantic;37;13/07/2026;Appalachian;SC United Bantams;;;
-USA_USLLeagueTwo_SouthFlorida;19;13/07/2026;Lakeland United;Fort Lauderdale;;;
-USA_USLLeagueTwo_SouthFlorida;19;13/07/2026;Weston;Miami;;;
-USA_USLLeagueTwo_Southeast;25;13/07/2026;Brave SC;Shark Coast;;;
+﻿LeagueId;Season;Round;MatchDate;PredictionDate;Home;Away;Band;SourceFile
+Australia_TasmaniaSouthernChampionship;;13;;2026-06-26;Glenorchy Knights U21;South Hobart U21;ALTA;data\storico\ranking\v20\storico_ranking_v20.csv
+Iceland_Division_1;;16;;2026-06-26;Fylkir;Kopavogur;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+Iceland_Division_1;;16;;2026-06-26;Leiknir;IR Reykjavik;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+Iceland_Division_2;;21;;2026-06-26;Throttur Vogar;Fjolnir;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+Norway_2ndDivision_Group2;;12;;2026-06-26;Eidsvold;Tromsdalen;MEDIA-ALTA;data\storico\ranking\v20\storico_ranking_v20.csv
+Norway_3rdDivision_Group1;;13;;2026-06-26;Vålerenga 2;Union Carl Berner;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+Norway_3rdDivision_Group4;;13;;2026-06-26;Flekkeroy;Akra;MEDIA-ALTA;data\storico\ranking\v20\storico_ranking_v20.csv
+Sweden_Division1_Norra;;15;;2026-06-26;Assyriska FF;Vasalund;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+Sweden_Division1_Sodra;;14;;2026-06-26;Hassleholms IF;Tvaaker;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+Sweden_Division1_Sodra;;14;;2026-06-26;Kristianstad;Trelleborg;BASSA;data\storico\ranking\v20\storico_ranking_v20.csv
+Sweden_Division2_NorraGotaland;;15;;2026-06-26;Skara;Herrestads AIF;MEDIA-ALTA;data\storico\ranking\v20\storico_ranking_v20.csv
+Sweden_Division2_NorraGotaland;;15;;2026-06-26;Vanersborgs IF;Stenungsunds;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+Sweden_Division2_NorraSvealand;;15;;2026-06-26;Kungsangen;Skiljebo;BASSA;data\storico\ranking\v20\storico_ranking_v20.csv
+Sweden_Division2_SodraGotaland;;15;;2026-06-26;IFK Berga;Vaxjo Norra;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+Sweden_Division2_VastraGotaland;;15;;2026-06-26;Dalstorps IF;Lindome;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+Sweden_Division2_VastraGotaland;;15;;2026-06-26;Onsala;Landvetter;BASSA;data\storico\ranking\v20\storico_ranking_v20.csv
+USA_USLLeagueTwo_Metropolitan;;24;;2026-06-26;Long Island Rough Riders;Cedar Stars;BASSA;data\storico\ranking\v20\storico_ranking_v20.csv
+USA_USLLeagueTwo_SouthCentral;;17;;2026-06-26;Birmingham 2;Swarm FC;MEDIA;data\storico\ranking\v20\storico_ranking_v20.csv
+USA_USLLeagueTwo_SouthCentral;;17;;2026-06-26;Birmingham 2;Swarm FC;BASSA;data\storico\ranking\v20\storico_ranking_v20.csv
+USA_USLLeagueTwo_SouthFlorida;;16;;2026-06-26;Brevard SC;Weston FC;MEDIA-ALTA;data\storico\ranking\v20\storico_ranking_v20.csv
+USA_USLLeagueTwo_SouthFlorida;;16;;2026-06-29;Miami;Brevard SC;ALTA;data\storico\ranking\v21\storico_ranking_v21.csv
+FaroeIslands_PremierLeague;;16;;2026-06-30;HB Torshavn;Skala Itrottarfelag;MEDIA;data\storico\ranking\v21\storico_ranking_v21.csv
+FaroeIslands_PremierLeague;;16;;2026-06-30;Toftir;Argir;MEDIA;data\storico\ranking\v21\storico_ranking_v21.csv
+FaroeIslands_PremierLeague;;16;;2026-06-30;Vikingur;Runavik;MEDIA;data\storico\ranking\v21\storico_ranking_v21.csv
+Latvia_Virsliga;;21;;2026-06-30;Auda;Riga FC;MEDIA;data\storico\ranking\v21\storico_ranking_v21.csv
+Latvia_Virsliga;;21;;2026-06-30;Jelgava;Grobina;BASSA;data\storico\ranking\v21\storico_ranking_v21.csv
+Lithuania_Toplyga;;23;;2026-06-30;FA Siauliai;Transinvest;ALTA;data\storico\ranking\v21\storico_ranking_v21.csv
+Lithuania_Toplyga;;23;;2026-06-30;FK Panevezys;Suduva;MEDIA;data\storico\ranking\v21\storico_ranking_v21.csv
+USA_USLLeagueTwo_GreatPlains;;20260629;;2026-06-30;Sunflower State;Menace;MEDIA;data\storico\ranking\v21\storico_ranking_v21.csv
+USA_USLLeagueTwo_Ranger;;20260629;;2026-06-30;Fort Worth Vaqueros;McKinney Chupacabras;MEDIA;data\storico\ranking\v21\storico_ranking_v21.csv
+Latvia_Virsliga;;21;;2026-07-01;Tukums 2000;Super Nova;MEDIA;data\storico\ranking\v21\storico_ranking_v21.csv
+Australia_NPLACT;;16;;2026-07-04;Queanbeyan City;Tuggeranong Utd;ALTA;data\storico\ranking\v22\storico_ranking_v22.csv
+Australia_NPLTasmania;;14;;2026-07-04;Launceston;Launceston United;MEDIA;data\storico\ranking\v22\storico_ranking_v22.csv
+Australia_TasmaniaNorthernChampionship;;13;;2026-07-04;Launceston U21;Somerset;ALTA;data\storico\ranking\v22\storico_ranking_v22.csv
+Australia_VictoriaPremierLeague2;;19;;2026-07-04;Malvern;Eastern Lions;MEDIA;data\storico\ranking\v22\storico_ranking_v22.csv
+USA_USLChampionship;;22;;2026-07-05;FC Tulsa;Sacramento Republic;BASSA;data\storico\ranking\v24\storico_ranking_v24.csv
+USA_USLLeagueTwo_MidAtlantic;;28;;2026-07-05;Eagle FC;West Chester Utd;ALTA;data\storico\ranking\v24\storico_ranking_v24.csv
+Iceland_BestaDeildKarla;;19;;2026-07-06;Keflavik;Fram;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Latvia_Virsliga;;22;;2026-07-06;Super Nova;Ogre United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Lithuania_Toplyga;;24;;2026-07-06;Suduva;Transinvest;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;17;;2026-07-06;Brommapojkarna;GAIS;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;17;;2026-07-06;Hacken;Djurgarden;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_SoutheastDivision;;18;;2026-07-06;Crown Legacy;Orlando City B;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_CentralDivision;;19;;2026-07-06;Austin FC II;Colorado Rapids 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_CentralDivision;;19;;2026-07-06;Huntsville;Chicago Fire II;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_PacificDivision;;20;;2026-07-06;Los Angeles FC 2;Real Monarchs;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_PacificDivision;;20;;2026-07-06;Tacoma Defiance;Portland Timbers 2;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueOne;;23;;2026-07-06;AV Alta;Charlotte Independ.;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;;2026-07-06;Northern Virginia;Patuxent;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatLakes;;23;;2026-07-06;Lansing City;Flint City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Metropolitan;;26;;2026-07-06;Ironbound SC;Staten Island ASC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidSouth;;19;;2026-07-06;Little Rock Rangers;Louisiana;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_NorCal;;28;;2026-07-06;Marin;Glens SC;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_NorCal;;28;;2026-07-06;San Francisco City;Academica SC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northwest;;34;;2026-07-06;Bigfoot;Portland Bangers;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;;2026-07-06;North Carolina FC U23;Asheville City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthCentral;;21;;2026-07-06;East Atlanta;Birmingham 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLACT;;18;;2026-07-07;Monaro Panthers;Queanbeyan City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;19;;2026-07-07;Charlestown Azzurri;Weston Bears;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueensland;;19;;2026-07-07;Gold Coast Knights;Queensland Lions;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_SAStateLeague;;19;;2026-07-07;Cove FC;Modbury;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bhutan_PremierLeague;;9;;2026-07-07;Drukpa;Thimphu FC;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupC;;14;;2026-07-07;JBK;Narpes Kraft;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kyrgyzstan_PremierLiga;;16;;2026-07-07;Asia Talas;Abdysh-Ata;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kyrgyzstan_PremierLiga;;16;;2026-07-07;Kyrgyzaltyn;Talant;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kyrgyzstan_PremierLiga;;16;;2026-07-07;Neftchi Kochkor-Ata;Aldier;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatForest;;25;;2026-07-07;Lorain County Leviathan;Erie Sports Center;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Heartland;;24;;2026-07-07;Rochester FC;Minneapolis City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_LoneStar;;26;;2026-07-07;Lonestar SC;Hill Country Lobos;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northeast;;30;;2026-07-07;Black Rock;Seacoast Utd Phantoms;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southwest;;28;;2026-07-07;Stars FC;Tucson;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Valley;;25;;2026-07-07;Kings Hammer Columbus;Dayton;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bhutan_PremierLeague;;9;;2026-07-08;Paro;Tensung;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupC;;14;;2026-07-08;Jaro 2;SJK Akatemia 2;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kyrgyzstan_PremierLiga;;16;;2026-07-08;Alga;Dordoi Bishkek;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_PacificDivision;;20;;2026-07-08;San Jose Earthquakes II;Sporting Kansas City II;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_PacificDivision;;20;;2026-07-08;Vancouver 2;Ventura County;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;;2026-07-08;Christos;Loudoun 2;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatForest;;25;;2026-07-08;Akron City;Pittsburgh Riverhounds 2;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatLakes;;23;;2026-07-08;Union FC Macomb;Ann Arbor;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatPlains;;20;;2026-07-08;Springfield FC;Menace;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatPlains;;20;;2026-07-08;Sunflower State;Peoria;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Metropolitan;;26;;2026-07-08;Hudson Valley;Motown 2;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidAtlantic;;29;;2026-07-08;Delaware;Eagle FC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Mountain;;26;;2026-07-08;Colorado Storm;Atletico Union;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Mountain;;26;;2026-07-08;Real Colorado;Albion Colorado;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_NorCal;;28;;2026-07-08;Glens SC;Almaden;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northeast;;30;;2026-07-08;AC Connecticut;Western Mass Pioneers;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northeast;;30;;2026-07-08;NEFC;Boston City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northeast;;30;;2026-07-08;Vermont Green;Connecticut Rush;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northwest;;34;;2026-07-08;Tacoma Stars;Midlakes United;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Ranger;;21;;2026-07-08;Texoma;Denton Diablos;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southwest;;28;;2026-07-08;Capo;Southern California;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Valley;;25;;2026-07-08;West Virginia;Louisville City 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bhutan_PremierLeague;;9;;2026-07-09;Transport United;BFF Academy U19;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bolivia_DivisionProfesional;;12;;2026-07-09;Real Oruro;Universitario de Vinto;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bolivia_DivisionProfesional;;12;;2026-07-09;Real Potosi;Academia del Balompie;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_Esiliiga;;21;;2026-07-09;Maardu;Flora U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupB;;13;;2026-07-09;MuSa;GrIFK;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_FirstLeague;;23;;2026-07-09;Akademiya Ontustik;Arys;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_FirstLeague;;23;;2026-07-09;Aktobe 2;Khan Tengri;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_FirstLeague;;23;;2026-07-09;Jaiyq;Tobol 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Somalia_NationalLeague;;19;;2026-07-09;Jeenyo;Gantaalaha Afgooye;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLChampionship;;23;;2026-07-09;Hartford Athletic;Orange County SC;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLChampionship;;23;;2026-07-09;Sacramento Republic;Rhode Island;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueOne;;23;;2026-07-09;Greenville;Sarasota Paradise;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueOne;;23;;2026-07-09;New York Cosmos;FC Naples;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;;2026-07-09;Bethesda SC;Virginia Marauders;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;;2026-07-09;Northern Virginia;Lionsbridge;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;;2026-07-09;Patuxent;Christos;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;;2026-07-09;Virginia Beach;Annapolis Blues;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatForest;;25;;2026-07-09;Cleveland Force;Steel City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatLakes;;23;;2026-07-09;Kalamazoo FC;Lansing City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Heartland;;24;;2026-07-09;RKC SC;Chicago Dutch Lions;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Heartland;;24;;2026-07-09;River Light;Rockford Raptors;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Heartland;;24;;2026-07-09;Rochester FC;St. Croix;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_LoneStar;;26;;2026-07-09;Houston FC;Houston Sur;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_LoneStar;;26;;2026-07-09;Laredo Heat;GFI Woodlands;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_LoneStar;;26;;2026-07-09;San Antonio FC 2;Twin City Toucans;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Metropolitan;;26;;2026-07-09;Cedar;Ironbound SC;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Metropolitan;;26;;2026-07-09;Manhattan;New Jersey Copa;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Metropolitan;;26;;2026-07-09;Morris Elite;Westchester Flames;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidAtlantic;;29;;2026-07-09;Ocean City;LVU Rush;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidAtlantic;;29;;2026-07-09;RC New Jersey;West Chester Utd;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidAtlantic;;29;;2026-07-09;Reading;Philadelphia Lone Star;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidSouth;;19;;2026-07-09;Jackson Boom;Hattiesburg;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidSouth;;19;;2026-07-09;Little Rock Rangers;Memphis FC;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidSouth;;19;;2026-07-09;Mississippi Brilla;Louisiana;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_NorCal;;28;;2026-07-09;Academica SC;San Juan;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_NorCal;;28;;2026-07-09;Davis Legacy;San Francisco City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_NorCal;;28;;2026-07-09;Project 51O;Marin;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northeast;;30;;2026-07-09;Black Rock;Boston Bolts;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northwest;;34;;2026-07-09;Bigfoot;Ballard;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Ranger;;21;;2026-07-09;West Texas;Lubbock Matadors;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;;2026-07-09;North Carolina FC U23;Charlotte Eagles;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;;2026-07-09;SC United Bantams;Charlotte Independ. 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;;2026-07-09;Salem City;Tobacco Road;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;;2026-07-09;Wake FC;Port City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthCentral;;21;;2026-07-09;Apotheos;Dothan United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthCentral;;21;;2026-07-09;Montgomery United;Columbus United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthCentral;;21;;2026-07-09;Swarm FC;East Atlanta;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthFlorida;;19;;2026-07-09;Fort Lauderdale;Weston;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthFlorida;;19;;2026-07-09;Lakeland United;Miami City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southeast;;25;;2026-07-09;Brave SC;Inter Gainesville;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southwest;;28;;2026-07-09;City SC;AMSG FC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southwest;;28;;2026-07-09;Ventura;Stars FC;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Valley;;25;;2026-07-09;Toledo Villa;Northern Indiana;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueensland;;19;;2026-07-10;Brisbane Roar U23;Rochedale;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueensland;;19;;2026-07-10;Peninsula;Wynnum Wolves;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLTasmania;;16;;2026-07-10;Glenorchy Knights;Kingborough Lions;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLTasmania;;16;;2026-07-10;Launceston United;Riverside Olympic;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLVictoria;;21;;2026-07-10;Dandenong City;South Melbourne;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLVictoria;;21;;2026-07-10;Green Gully;Altona Magic;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLVictoria;;21;;2026-07-10;Oakleigh;Avondale FC;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLVictoria;;21;;2026-07-10;Preston Lions;Hume City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NSWLeagueOne;;24;;2026-07-10;Macarthur Rams;Bankstown City Lions;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_QueenslandPremierLeague;;20;;2026-07-10;Holland Park Hawks;North Star;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague;;21;;2026-07-10;Brunswick Juventus;Western Utd. U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague;;21;;2026-07-10;Langwarrin;Melbourne Victory U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague;;21;;2026-07-10;Northcote City;Melbourne Knights;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague2;;21;;2026-07-10;Eastern Lions;Werribee City;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague2;;21;;2026-07-10;Essendon Royals SC;Box Hill;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague2;;21;;2026-07-10;Whittlesea United;Kingston City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_PershayaLiga;;16;;2026-07-10;FC Slonim;Niva Dolbizno;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_PershayaLiga;;16;;2026-07-10;Ostrovets;SKA-1938;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_VysshayaLiga;;16;;2026-07-10;Dnepr Mogilev;FC Minsk;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bolivia_DivisionProfesional;;12;;2026-07-10;Nacional Potosi;Aurora;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_Meistriliiga;;20;;2026-07-10;Harju JK Laagri;Narva;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupB;;13;;2026-07-10;Abo;Ilves 2;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupC;;14;;2026-07-10;GBK Kokkola;JBK;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Veikkausliiga;;17;;2026-07-10;VPS;SJK;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkonen;;16;;2026-07-10;Inter Turku 2;Rovaniemi;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkonen;;16;;2026-07-10;Tampere Utd;SalPa;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkosliiga;;15;;2026-07-10;KTP;JaPS;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkosliiga;;15;;2026-07-10;PK-35;KaPa;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_1;;20;;2026-07-10;Aegir;Kopavogur;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_1;;20;;2026-07-10;IR Reykjavik;Throttur;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_1;;20;;2026-07-10;Leiknir;Grotta;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_1;;20;;2026-07-10;Njardvik;Grindavik;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_FirstLeague;;23;;2026-07-10;FC Batyr;Kairat Almaty 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_FirstLeague;;23;;2026-07-10;Kaspij Aktau 2;Taraz;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_FirstLeague;;23;;2026-07-10;Shakhter K.;Turan;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_FirstLeague;;23;;2026-07-10;Yelimay Semey 2;FC Astana 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kyrgyzstan_PremierLiga;;16;;2026-07-10;Alay Osh;Toktogul;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kyrgyzstan_PremierLiga;;16;;2026-07-10;Asiagoal Bishkek;Bars;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kyrgyzstan_PremierLiga;;16;;2026-07-10;Bishkek City;Muras United;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kyrgyzstan_PremierLiga;;16;;2026-07-10;Ilbirs;Ozgon;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Somalia_NationalLeague;;19;;2026-07-10;Badbaado;Jazeera;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatLakes;;23;;2026-07-10;Midwest United;Union FC Macomb;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatLakes_2026;;23;;2026-07-10;Midwest United;Union FC Macomb;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_Mountain;;26;;2026-07-10;Real Colorado;Flatirons;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northeast;;30;;2026-07-10;NEFC;Albany Rush;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Valley;;25;;2026-07-10;Dayton;West Virginia;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLACT;;18;;2026-07-11;Canberra Croatia;Brindabella;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLACT;;18;;2026-07-11;Canberra Juventus;O'Connor Knights;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLACT;;18;;2026-07-11;Canberra Olympic;Canberra White Eagles;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLACT;;18;;2026-07-11;Tigers FC;Queanbeyan City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLACT;;18;;2026-07-11;Tuggeranong Utd;Belconnen Utd.;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNSW;;24;;2026-07-11;APIA Leichhardt;Sydney FC U23;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNSW;;24;;2026-07-11;Manly Utd;Sutherland;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNSW;;24;;2026-07-11;NWS Spirit;St George Saints;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNSW;;24;;2026-07-11;SD Raiders;Blacktown City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNSW;;24;;2026-07-11;St. George City;UNSW;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNSW;;24;;2026-07-11;Sydney Olympic;Wollongong Wolves;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;19;;2026-07-11;Cooks Hill United;Charlestown Azzurri;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;19;;2026-07-11;Edgeworth E.;Belmont Swansea Utd.;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;19;;2026-07-11;Maitland;Adamstown Rosebud;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;19;;2026-07-11;Weston Bears;Lambton J.;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW_2026;;19;;2026-07-11;Edgeworth E.;Belmont Swansea Utd.;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Australia_NPLQueensland;;19;;2026-07-11;Moreton City Excelsior;Magic United;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueenslandU23;;19;;2026-07-11;Moreton City Excelsior U23;Magic United U23;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueenslandU23;;19;;2026-07-11;Peninsula U23;Wynnum Wolves U23;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLTasmania;;16;;2026-07-11;Clarence Zebras;Launceston;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLTasmania;;16;;2026-07-11;Devonport;South East Utd.;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLTasmania;;16;;2026-07-11;South Hobart;Ulverstone;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLVictoria;;21;;2026-07-11;Dandenong Thunder;Bentleigh;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLVictoria;;21;;2026-07-11;Melbourne City U21;Heidelberg;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLWesternAustralia;;18;;2026-07-11;Olympic Kingsway;Perth RedStar;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLWesternAustralia;;18;;2026-07-11;Sorrento;Fremantle City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPL_NSW_U20;;24;;2026-07-11;APIA Leichhardt U20;Sydney FC U20;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPL_NSW_U20;;24;;2026-07-11;Manly Utd U20;Sutherland U20;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPL_NSW_U20;;24;;2026-07-11;NWS Spirit U20;St George Saints U20;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPL_NSW_U20;;24;;2026-07-11;SD Raiders U20;Blacktown City U20;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPL_NSW_U20;;24;;2026-07-11;St. George City U20;UNSW U20;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPL_NSW_U20;;24;;2026-07-11;Sydney Olympic U20;Wollongong Wolves U20;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NSWLeagueOne;;24;;2026-07-11;Canterbury Bankstown;Prospect United;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NSWLeagueOne;;24;;2026-07-11;Dulwich Hill;Bulls Academy;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NSWLeagueOne;;24;;2026-07-11;Hakoah Sydney;Hurstville Zagreb;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NSWLeagueOne;;24;;2026-07-11;Inter Lions;Hills United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NSWLeagueOne;;24;;2026-07-11;Northern Tigers;Newcastle Jets U23;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NSWLeagueOne;;24;;2026-07-11;Rydalmere Lions;Western City Rangers;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NorthernNSWStateLeague;;14;;2026-07-11;Cessnock City Hornets;Dudley Redhead United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NorthernNSWStateLeague;;14;;2026-07-11;Newcastle Croatia;Lake Macquarie;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NorthernNSWStateLeague;;14;;2026-07-11;Singleton Strikers;South Cardiff;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_QueenslandPremierLeague;;20;;2026-07-11;Broadbeach Utd.;Caboolture;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_QueenslandPremierLeague;;20;;2026-07-11;Logan Lightning;Ipswich;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_QueenslandPremierLeague;;20;;2026-07-11;Redlands;Capalaba;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_QueenslandPremierLeague;;20;;2026-07-11;St. George Willawong;Robina City;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_TasmaniaNorthernChampionship;;14;;2026-07-11;Devonport U21;Ulverstone U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_TasmaniaNorthernChampionship;;14;;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_TasmaniaNorthernChampionship;;14;;2026-07-11;Northern Rangers;Launceston U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_TasmaniaNorthernChampionship;;14;;2026-07-11;Somerset;Riverside Olympic U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_TasmaniaSouthernChampionship;;14;;2026-07-11;Clarence Zebras U21;Taroona;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_TasmaniaSouthernChampionship;;14;;2026-07-11;Glenorchy Knights U21;Olympia Warriors;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_TasmaniaSouthernChampionship;;14;;2026-07-11;Hobart Utd.;Hobart City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_TasmaniaSouthernChampionship;;14;;2026-07-11;New Town;South Hobart U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_TasmaniaSouthernChampionship_2026;;14;;2026-07-11;Clarence Zebras U21;Taroona;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Australia_VictoriaPremierLeague;;21;;2026-07-11;Eltham Redbacks;North Geelong;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague;;21;;2026-07-11;Melbourne Srbija;Manningham United Blues;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague;;21;;2026-07-11;Port Melbourne Sharks;North Sunshine Eagles;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague2;;21;;2026-07-11;Bayside Argonauts;Altona City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague2;;21;;2026-07-11;Keilor Park;Malvern;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague2;;21;;2026-07-11;Moreland City;Springvale;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague2;;21;;2026-07-11;Nunawading City;Goulburn Valley Suns;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_WAStateLeague;;16;;2026-07-11;Cockburn City;Kingsley Westside;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_WAStateLeague;;16;;2026-07-11;Curtin Univ;Floreat Athena;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_WAStateLeague;;16;;2026-07-11;Gwelup Croatia;Inglewood;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_WAStateLeague;;16;;2026-07-11;Joondalup;Mandurah City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_WAStateLeague;;16;;2026-07-11;Quinns;Nedlands;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_WAStateLeague;;16;;2026-07-11;Subiaco;Murdoch Melville;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_PershayaLiga;;16;;2026-07-11;BATE 2;Lida;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_PershayaLiga;;16;;2026-07-11;Din. Minsk 2;Slutsk;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_PershayaLiga;;16;;2026-07-11;Molodechno;Minsk 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_PershayaLiga;;16;;2026-07-11;Orsha;Smorgon;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_PershayaLiga;;16;;2026-07-11;Uni X Labs;Osipovichi;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_VysshayaLiga;;16;;2026-07-11;Baranovici;Zhodino;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_VysshayaLiga;;16;;2026-07-11;Dynamo Brest;Slavia Mozyr;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_VysshayaLiga;;16;;2026-07-11;Gomel;Neman;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bhutan_PremierLeague;;9;;2026-07-11;Tsirang;RTC;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bolivia_DivisionProfesional;;12;;2026-07-11;Real Oruro;GV San Jose;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_Esiliiga;;21;;2026-07-11;FC Tallinn;Elva;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_Esiliiga;;21;;2026-07-11;Levadia U21;Tallinna Kalev;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_Esiliiga;;21;;2026-07-11;Viimsi JK;Nomme Kalju U21;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_EsiliigaB;;19;;2026-07-11;Tabasalu;Tulevik;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_Meistriliiga;;20;;2026-07-11;Nomme Utd;Kuressaare;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_Meistriliiga;;20;;2026-07-11;Parnu JK Vaprus;Tammeka;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupB;;13;;2026-07-11;EPS;P-Iirot Rauma;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupB;;13;;2026-07-11;NJS;EBK;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupC;;14;;2026-07-11;Huima / Urho;Hercules;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Veikkausliiga;;17;;2026-07-11;Gnistan;Mariehamn;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Veikkausliiga;;17;;2026-07-11;Lahti;HJK;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Veikkausliiga;;17;;2026-07-11;TPS Turku;Oulu;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkonen;;16;;2026-07-11;JJK Jyvaskyla;KuPS Akatemia;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkonen;;16;;2026-07-11;KPV;TPV;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkonen;;16;;2026-07-11;Keski-Uusimaa;Jazz Pori;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkonen;;16;;2026-07-11;VJS;OLS Oulu;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkosliiga;;15;;2026-07-11;Haka;Ekenas;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkosliiga;;15;;2026-07-11;Klubi 04;Jippo;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Ykkosliiga;;15;;2026-07-11;SJK Akatemia;Mikkeli;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_1;;20;;2026-07-11;Volsungur;Afturelding;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_2;;23;;2026-07-11;Selfoss;Hviti;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_PremierLeague;;27;;2026-07-11;Ertis Pavlodar;Zhenis;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_PremierLeague;;27;;2026-07-11;Kaspij Aktau;Ordabasy;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_PremierLeague;;27;;2026-07-11;Zhetysu;Altai;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Lithuania_Toplyga;;24;;2026-07-11;Kauno Zalgiris;FK Panevezys;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Norway_Eliteserien;;19;;2026-07-11;Aalesund;Molde;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Norway_Eliteserien;;19;;2026-07-11;Fredrikstad;Lilleström;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Norway_Eliteserien;;19;;2026-07-11;Tromsø;Vålerenga;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Somalia_NationalLeague;;19;;2026-07-11;Elman;Horseed;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;17;;2026-07-11;Mjallby;AIK Stockholm;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;17;;2026-07-11;Orgryte;Hacken;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatForest;;25;;2026-07-11;Buffalo;Akron City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatLakes;;23;;2026-07-11;Oakland County;Midwest United;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatPlains;;20;;2026-07-11;Santafe Wanderers;Sunflower State;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatPlains_2026;;20;;2026-07-11;Santafe Wanderers;Sunflower State;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_Heartland;;24;;2026-07-11;Sueno;Chicago Dutch Lions;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Metropolitan;;26;;2026-07-11;Motown 2;Long Island;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Metropolitan;;26;;2026-07-11;New Jersey Copa;Westchester Flames;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidAtlantic;;29;;2026-07-11;Philadelphia Lone Star;RC New Jersey;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidSouth;;19;;2026-07-11;Hattiesburg;Little Rock Rangers;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_NorCal;;28;;2026-07-11;San Francisco City;Project 51O;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northeast;;30;;2026-07-11;Seacoast Utd Phantoms;AC Connecticut;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northeast;;30;;2026-07-11;Western Mass Pioneers;Vermont Green;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northwest;;34;;2026-07-11;West Seattle Junction;Snohomish United;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthCentral;;21;;2026-07-11;Birmingham 2;Montgomery United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthFlorida;;19;;2026-07-11;Miami City;Lakeland United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southwest;;28;;2026-07-11;Tucson;Capo;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNSW;;24;2026-07-12;2026-07-12;Marconi;WS Wanderers U21;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNSW;;24;2026-07-12;2026-07-12;Sydney Utd;Rockdale Ilinden;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;19;2026-07-12;2026-07-12;Broadmeadow;Newcastle Olympic;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;19;2026-07-12;2026-07-12;Valentine;Kahibah;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueensland;;19;2026-07-12;2026-07-12;Gold Coast;Olympic FC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueensland;;19;2026-07-12;2026-07-12;Gold Coast Knights;Brisbane City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueensland;;19;2026-07-12;2026-07-12;Queensland Lions;Eastern Suburbs;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueenslandU23;;19;2026-07-12;2026-07-12;Gold Coast Blaze U23;Olympic FC U23;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueenslandU23;;19;2026-07-12;2026-07-12;Gold Coast Knights U23;Brisbane City U23;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueenslandU23;;19;2026-07-12;2026-07-12;QLD State Team U17;Rochedale U23;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLQueenslandU23;;19;2026-07-12;2026-07-12;Queensland Lions U23;Eastern Suburbs U23;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLVictoria;;21;2026-07-12;2026-07-12;St Albans;George Cross;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPL_NSW_U20;;24;2026-07-12;2026-07-12;Marconi S. U20;WS Wanderers U20;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPL_NSW_U20;;24;2026-07-12;2026-07-12;Sydney Utd U20;Rockdale Ilinden U20;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NSWLeagueOne;;24;2026-07-12;2026-07-12;Central Coast Mariners U23;Blacktown Spartans;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NorthernNSWStateLeague;;14;2026-07-12;2026-07-12;Toronto Awaba Stags;Wallsend Red Devils;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NorthernNSWStateLeague;;14;2026-07-12;2026-07-12;West Wallsend;New Lambton;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NorthernNSWStateLeague_2026;;14;2026-07-12;2026-07-12;West Wallsend;New Lambton;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Australia_QueenslandPremierLeague;;20;2026-07-12;2026-07-12;Sunshine Coast Wanderers;Brisbane Strikers;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_PershayaLiga;;16;2026-07-12;2026-07-12;Gomel 2;BumProm Gomel;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_PershayaLiga;;16;2026-07-12;2026-07-12;Volna Pinsk;Soligorsk;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Belarus_VysshayaLiga;;16;2026-07-12;2026-07-12;Arsenal Dzerzhinsk;Vitebsk;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bolivia_DivisionProfesional;;12;2026-07-12;2026-07-12;Real Potosi;Nacional Potosi;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bolivia_DivisionProfesional;;12;2026-07-12;2026-07-12;The Strongest;Bolivar;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_Esiliiga;;21;2026-07-12;2026-07-12;Nomme Utd U21;Flora U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_EsiliigaB;;19;2026-07-12;2026-07-12;Johvi Phoenix;Parnu JK Vaprus U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_EsiliigaB;;19;2026-07-12;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_EsiliigaB;;19;2026-07-12;2026-07-12;Tammeka U21;Narva U21;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_EsiliigaB;;19;2026-07-12;2026-07-12;Tartu Kalev;Legion;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupA;;13;2026-07-12;2026-07-12;Lahden Reipas;HIFK;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupC;;14;2026-07-12;2026-07-12;Narpes Kraft;VPS 2;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupC;;14;2026-07-12;2026-07-12;SJK Akatemia 2;TP-47;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupC;;14;2026-07-12;2026-07-12;Vaajakoski;Jaro 2;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_BestaDeildKarla;;19;2026-07-12;2026-07-12;Akureyri;Akranes;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_BestaDeildKarla;;19;2026-07-12;2026-07-12;Fram;Thor Akureyri;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_BestaDeildKarla;;19;2026-07-12;2026-07-12;Hafnarfjordur;Valur;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_BestaDeildKarla;;19;2026-07-12;2026-07-12;KR Reykjavik;Vestmannaeyjar;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_2;;23;2026-07-12;2026-07-12;Dalvik/Reynir;Fjolnir;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_2;;23;2026-07-12;2026-07-12;Kari;KFA;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_2;;23;2026-07-12;2026-07-12;Kormakur/Hvot;Olafsvik;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_2;;23;2026-07-12;2026-07-12;Magni;Haukar;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_2;;23;2026-07-12;2026-07-12;Throttur Vogar;KFG Gardabaer;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_PremierLeague;;27;2026-07-12;2026-07-12;Atyrau;Yelimay Semey;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_PremierLeague;;27;2026-07-12;2026-07-12;FC Astana;Aktobe;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_PremierLeague;;27;2026-07-12;2026-07-12;Tobol;Okzhetpes;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_PremierLeague;;27;2026-07-12;2026-07-12;Ulytau;Kaisar;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Kazakhstan_PremierLeague_2026;;27;2026-07-12;2026-07-12;Atyrau;Yelimay Semey;BASSA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Lithuania_Toplyga;;24;2026-07-12;2026-07-12;Transinvest;Banga;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Norway_Eliteserien;;19;2026-07-12;2026-07-12;Brann;Start;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Norway_Eliteserien;;19;2026-07-12;2026-07-12;KFUM Oslo;Bodo/Glimt;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Norway_Eliteserien;;19;2026-07-12;2026-07-12;Rosenborg;Kristiansund;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Norway_Eliteserien;;19;2026-07-12;2026-07-12;Sandefjord;HamKam;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Norway_Eliteserien;;19;2026-07-12;2026-07-12;Sarpsborg 08;Viking;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Somalia_NationalLeague;;19;2026-07-12;2026-07-12;Jubba;Dekedaha;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Somalia_NationalLeague;;19;2026-07-12;2026-07-12;Raadsan;Heegan;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;17;2026-07-12;2026-07-12;Brommapojkarna;Sirius;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;17;2026-07-12;2026-07-12;GAIS;Elfsborg;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;17;2026-07-12;2026-07-12;Hammarby;Kalmar;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;17;2026-07-12;2026-07-12;Malmo FF;Göteborg;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;17;2026-07-12;2026-07-12;Västerås SK;Degerfors;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_NortheastDivision;;19;2026-07-12;2026-07-12;Chicago Fire II;New York Red Bulls II;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_NortheastDivision;;19;2026-07-12;2026-07-12;Philadelphia II;Huntsville;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_SoutheastDivision;;18;2026-07-12;2026-07-12;Atlanta United 2;Inter Miami II;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_SoutheastDivision;;18;2026-07-12;2026-07-12;Carolina Core;Chattanooga;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_SoutheastDivision;;18;2026-07-12;2026-07-12;Crown Legacy;New York City II;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_CentralDivision;;19;2026-07-12;2026-07-12;Colorado Rapids 2;North Texas;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_CentralDivision;;19;2026-07-12;2026-07-12;Houston Dynamo 2;St. Louis City 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_PacificDivision;;20;2026-07-12;2026-07-12;Los Angeles FC 2;Portland Timbers 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_PacificDivision;;20;2026-07-12;2026-07-12;Real Monarchs;Vancouver 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;2026-07-12;2026-07-12;Annapolis Blues;Bethesda SC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;2026-07-12;2026-07-12;Hill City;Virginia Marauders;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;2026-07-12;2026-07-12;Lionsbridge;Charlottesville Blues;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;2026-07-12;2026-07-12;Loudoun 2;Northern Virginia;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake;;27;2026-07-12;2026-07-12;Patuxent;Virginia Beach;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Chesapeake_2026;;27;2026-07-12;2026-07-12;Hill City;Virginia Marauders;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_Chesapeake_2026;;27;2026-07-12;2026-07-12;Lionsbridge;Charlottesville Blues;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_GreatForest;;25;2026-07-12;2026-07-12;Lorain County Leviathan;Steel City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatForest_2026;;25;2026-07-12;2026-07-12;Lorain County Leviathan;Steel City;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_GreatLakes;;23;2026-07-12;2026-07-12;Ann Arbor;Kalamazoo FC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatLakes;;23;2026-07-12;2026-07-12;Flint City;Union FC Macomb;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatLakes_2026;;23;2026-07-12;2026-07-12;Ann Arbor;Kalamazoo FC;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_GreatLakes_2026;;23;2026-07-12;2026-07-12;Flint City;Union FC Macomb;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_GreatPlains;;20;2026-07-12;2026-07-12;Menace;St. Louis Ambush;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_GreatPlains;;20;2026-07-12;2026-07-12;Peoria;Springfield FC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Heartland;;24;2026-07-12;2026-07-12;Edgewater Castle;Minneapolis City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Heartland;;24;2026-07-12;2026-07-12;St. Croix;Rockford Raptors;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_LoneStar;;26;2026-07-12;2026-07-12;AHFC Royals;Houston FC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_LoneStar;;26;2026-07-12;2026-07-12;Houston Sur;San Antonio FC 2;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_LoneStar_2026;;26;2026-07-12;2026-07-12;AHFC Royals;Houston FC;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_LoneStar_2026;;26;2026-07-12;2026-07-12;Houston Sur;San Antonio FC 2;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_Metropolitan;;26;2026-07-12;2026-07-12;Hudson Valley;Cedar;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Metropolitan;;26;2026-07-12;2026-07-12;Ironbound SC;Manhattan;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidAtlantic;;29;2026-07-12;2026-07-12;Ocean City;Eagle FC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidAtlantic;;29;2026-07-12;2026-07-12;PA Classics;West Chester Utd;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidAtlantic;;29;2026-07-12;2026-07-12;Reading;LVU Rush;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidAtlantic_2026;;29;2026-07-12;2026-07-12;Ocean City;Eagle FC;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_MidAtlantic_2026;;29;2026-07-12;2026-07-12;PA Classics;West Chester Utd;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_MidAtlantic_2026;;29;2026-07-12;2026-07-12;Reading;LVU Rush;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_MidSouth;;19;2026-07-12;2026-07-12;Memphis FC;Jackson Boom;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_MidSouth;;19;2026-07-12;2026-07-12;Red River;Mississippi Brilla;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Mountain;;26;2026-07-12;2026-07-12;Atletico Union;Flatirons;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Mountain;;26;2026-07-12;2026-07-12;Colorado Storm;Albion Colorado;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_NorCal;;28;2026-07-12;2026-07-12;Almaden;Davis Legacy;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northeast;;30;2026-07-12;2026-07-12;Black Rock;Boston City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northwest;;34;2026-07-12;2026-07-12;West Seattle Junction;Portland Bangers;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Ranger;;21;2026-07-12;2026-07-12;Denton Diablos;Fort Worth Vaqueros;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Ranger;;21;2026-07-12;2026-07-12;Lubbock Matadors;West Texas;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Ranger;;21;2026-07-12;2026-07-12;McKinney Chupacabras;Texoma;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;2026-07-12;2026-07-12;Charlotte Independ. 2;North Carolina FC U23;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;2026-07-12;2026-07-12;Hickory;Asheville City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;2026-07-12;2026-07-12;Salem City;Wake FC;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;2026-07-12;2026-07-12;Tobacco Road;Port City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthCentral;;21;2026-07-12;2026-07-12;Columbus United;East Atlanta;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthCentral;;21;2026-07-12;2026-07-12;Dothan United;Apotheos;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthCentral_2026;;21;2026-07-12;2026-07-12;Columbus United;East Atlanta;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_SouthCentral_2026;;21;2026-07-12;2026-07-12;Dothan United;Apotheos;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_Southeast;;25;2026-07-12;2026-07-12;Nona;Inter Gainesville;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southwest;;28;2026-07-12;2026-07-12;AMSG FC;Southern California;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southwest;;28;2026-07-12;2026-07-12;Redlands FC;Ventura;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southwest;;28;2026-07-12;2026-07-12;Stars FC;Capo;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Valley;;25;2026-07-12;2026-07-12;Kings Hammer Columbus;Toledo Villa;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Valley;;25;2026-07-12;2026-07-12;Northern Indiana;Dayton;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_SAStateLeague;;19;2026-07-13;2026-07-12;Blue Eagles;Modbury;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_VictoriaPremierLeague;;21;2026-07-13;2026-07-12;Bulleen;Brunswick City;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bhutan_PremierLeague;;10;2026-07-13;2026-07-12;Ugyen Academy;Transport United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Bolivia_DivisionProfesional;;13;2026-07-13;2026-07-12;Tomayapo;Independiente;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Estonia_Esiliiga;;21;2026-07-13;2026-07-12;Maardu;Tartu Welco;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kakkonen_GroupB;;13;2026-07-13;2026-07-12;Honka;HJS;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_BestaDeildKarla;;19;2026-07-13;2026-07-12;Breidablik;Keflavik;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Iceland_Division_1;;20;2026-07-13;2026-07-12;Vestri;Fylkir;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Somalia_NationalLeague;;19;2026-07-13;2026-07-12;Gaadiidka;Jeenyo;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Sweden_Allsvenskan;;18;2026-07-13;2026-07-12;Djurgarden;Halmstad;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_NortheastDivision;;19;2026-07-13;2026-07-12;Connecticut FC;Toronto FC II;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_SoutheastDivision;;18;2026-07-13;2026-07-12;Cincinnati 2;Orlando City B;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_SoutheastDivision_2026;;18;2026-07-13;2026-07-12;Cincinnati 2;Orlando City B;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_MLSNextPro_WesternConference_CentralDivision;;19;2026-07-13;2026-07-12;Austin FC II;Minnesota 2;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_WesternConference_PacificDivision;;20;2026-07-13;2026-07-12;San Jose Earthquakes II;Tacoma Defiance;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Heartland;;25;2026-07-13;2026-07-12;RKC SC;River Light;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Heartland_2026;;25;2026-07-13;2026-07-12;RKC SC;River Light;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_NorCal;;29;2026-07-13;2026-07-12;Academica SC;Glens SC;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_NorCal;;29;2026-07-13;2026-07-12;San Juan;Marin;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northwest;;34;2026-07-13;2026-07-12;Ballard;Snohomish United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Northwest;;34;2026-07-13;2026-07-12;Bigfoot;Midlakes United;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthAtlantic;;37;2026-07-13;2026-07-12;Appalachian;SC United Bantams;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthFlorida;;19;2026-07-13;2026-07-12;Lakeland United;Fort Lauderdale;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_SouthFlorida;;19;2026-07-13;2026-07-12;Weston;Miami;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_USLLeagueTwo_Southeast;;25;2026-07-13;2026-07-12;Brave SC;Shark Coast;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;19;2026-07-14;2026-07-14;Kahibah;Maitland;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW_2026;;20;2026-07-14;2026-07-14;Charlestown Azzurri;Weston Bears;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Australia_NPLNorthernNSW_2026;;20;2026-07-14;2026-07-14;Kahibah;Maitland;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Australia_NPLQueenslandU23_2026;;20;2026-07-14;2026-07-13;Moreton City Excelsior U23;QLD State Team U17;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Bhutan_PremierLeague_2026;;10;2026-07-14;2026-07-13;BFF Academy U19;Drukpa;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Bhutan_PremierLeague_2026;;10;2026-07-14;2026-07-14;Tensung;Thimphu City;BASSA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Bolivia_DivisionProfesional_2026;;13;2026-07-14;2026-07-14;Blooming;GV San Jose;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Bolivia_DivisionProfesional_2026;;13;2026-07-14;2026-07-14;Real Oruro;Always Ready;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Finland_Kakkonen_GroupB_2026;;13;2026-07-14;2026-07-13;Ilves 2;GrIFK;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Finland_Kakkonen_GroupC_2026;;14;2026-07-14;2026-07-14;GBK Kokkola;Narpes Kraft;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Finland_Ykkosliiga_2026;;16;2026-07-14;2026-07-14;Jippo;Mikkeli;BASSA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Iceland_Division_1_2026;;21;2026-07-14;2026-07-13;Grotta;Grindavik;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Iceland_Division_1_2026;;21;2026-07-14;2026-07-13;Kopavogur;IR Reykjavik;ALTA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Kyrgyzstan_PremierLiga_2026;;17;2026-07-14;2026-07-13;Muras United;Bars;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+Somalia_NationalLeague_2026;;20;2026-07-14;2026-07-13;Mogadishu City;Badbaado;MEDIA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_MidAtlantic;;30;2026-07-14;2026-07-14;LVU Rush;Appalachian;BASSA;data\storico\ranking\v24\storico_ranking_v24.csv
+USA_USLLeagueTwo_MidAtlantic_2026;;30;2026-07-14;2026-07-14;LVU Rush;Appalachian;BASSA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_Northeast;;32;2026-07-14;2026-07-14;NEFC;Ironbound SC;BASSA;data\storico\ranking\v24\storico_ranking_v24.csv
+USA_USLLeagueTwo_Northeast_2026;;32;2026-07-14;2026-07-14;NEFC;Ironbound SC;BASSA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_SouthAtlantic;;38;2026-07-14;2026-07-14;Asheville City;Virginia Beach;BASSA;data\storico\ranking\v24\storico_ranking_v24.csv
+USA_USLLeagueTwo_SouthAtlantic_2026;;38;2026-07-14;2026-07-14;Asheville City;Virginia Beach;BASSA;data\storico\ranking\v25\backup\storico_ranking_v25_20260714_180211.csv
+USA_USLLeagueTwo_PlayOff;;1;2026-07-16;2026-07-16;Colorado Storm;Snohomish United;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;20;2026-07-18;2026-07-18;Cooks Hill United;Broadmeadow;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NorthernNSWStateLeague;;15;2026-07-18;2026-07-18;Lake Macquarie;Singleton Strikers;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+USA_MLSNextPro_EasternConference_SoutheastDivision;;20;2026-07-18;2026-07-18;Toronto FC II;Cincinnati 2;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;20;2026-07-19;2026-07-18;Charlestown Azzurri;Edgeworth E.;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLNorthernNSW;;20;2026-07-19;2026-07-18;Newcastle Olympic;Belmont Swansea Utd.;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NorthernNSWStateLeague;;15;2026-07-19;2026-07-18;Dudley Redhead United;Newcastle Croatia;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NorthernNSWStateLeague;;15;2026-07-19;2026-07-18;South Cardiff;Wallsend Red Devils;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Lebanon_PremierLeague;;25;2026-07-20;2026-07-20;Al Ansar;Nejmeh SC;MEDIA;data\storico\ranking\v24\storico_ranking_v24.csv
+Lebanon_PremierLeague;;25;2026-07-20;2026-07-20;Jwayya;Al Ahed;BASSA;data\storico\ranking\v24\storico_ranking_v24.csv
+Lebanon_PremierLeague;;25;2026-07-21;2026-07-21;Tadamon;Racing;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Somalia_NationalLeague;;25;2026-07-22;2026-07-21;Gantaalaha Afgooye;Mogadishu City;MEDIA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kolmonen_Eastern_Group1;;11;2026-07-24;2026-07-24;JJK/2;SAPA;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kolmonen_Eastern_Group2;;6;2026-07-24;2026-07-24;Kings;Zulimanit;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kolmonen_Southern_Group2;;14;2026-07-24;2026-07-24;LPS Helsinki;VJS Vantaa B;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kolmonen_Western_Group2;;14;2026-07-24;2026-07-24;LeKi Futis;Saaksjarven Loiske;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kolmonen_Western_Group2;;14;2026-07-24;2026-07-24;NOPS;FC Haka Juniors;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Somalia_NationalLeague;;25;2026-07-24;2026-07-23;Badbaado;Raadsan;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Somalia_NationalLeague;;25;2026-07-24;2026-07-23;Elman;Jeenyo;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Australia_NPLACT;;20;2026-07-25;2026-07-25;Belconnen Utd.;O'Connor Knights;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLACT;;20;2026-07-25;2026-07-25;Brindabella;Canberra White Eagles;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLACT;;20;2026-07-25;2026-07-25;Canberra Olympic;Queanbeyan City;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLACT;;20;2026-07-25;2026-07-25;Tigers FC;Tuggeranong Utd;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLNSW;;27;2026-07-25;2026-07-25;APIA Leichhardt;UNSW;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLNSW;;27;2026-07-25;2026-07-25;NWS Spirit;WS Wanderers U21;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLNSW;;27;2026-07-25;2026-07-25;SD Raiders;Marconi;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLNSW;;27;2026-07-25;2026-07-25;St George Saints;Sydney FC U23;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLNSW;;27;2026-07-25;2026-07-25;St. George City;Sydney Utd;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLNorthernNSW;;21;2026-07-25;2026-07-25;Cooks Hill United;Lambton J.;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLNorthernNSW;;21;2026-07-25;2026-07-25;Maitland;Broadmeadow;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLNorthernNSW;;21;2026-07-25;2026-07-25;Valentine;Charlestown Azzurri;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLQueensland;;23;2026-07-25;2026-07-25;Gold Coast Knights;Gold Coast;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLQueenslandU23;;22;2026-07-25;2026-07-25;Gold Coast Knights U23;Gold Coast Blaze U23;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLSouthAustralia;;21;2026-07-25;2026-07-25;Adelaide City;West Torrens;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLSouthAustralia;;21;2026-07-25;2026-07-25;Adelaide Comets;FK Beograd;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLSouthAustralia;;21;2026-07-25;2026-07-25;Adelaide United U23;Sturt Lions;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLSouthAustralia;;21;2026-07-25;2026-07-25;Croydon;Campbelltown City;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLSouthAustralia;;21;2026-07-25;2026-07-25;NE Metrostars;West Adelaide;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLSouthAustralia;;21;2026-07-25;2026-07-25;Para;Playford Patriots;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLTasmania;;19;2026-07-25;2026-07-25;Launceston United;Devonport;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLTasmania;;19;2026-07-25;2026-07-25;Riverside Olympic;Launceston;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLVictoria;;25;2026-07-25;2026-07-25;Dandenong Thunder;Altona Magic;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLVictoria;;25;2026-07-25;2026-07-25;Melbourne City U21;Avondale FC;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLWesternAustralia;;21;2026-07-25;2026-07-25;Perth Azzurri;Bayswater City;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLWesternAustralia;;21;2026-07-25;2026-07-25;Perth Glory U23;Dianella White Eagle;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLWesternAustralia;;21;2026-07-25;2026-07-25;Perth RedStar;Balcatta;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLWesternAustralia;;21;2026-07-25;2026-07-25;Stirling Macedonia;Armadale;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPLWesternAustralia;;21;2026-07-25;2026-07-25;Western Knights;Olympic Kingsway;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPL_NSW_U20;;27;2026-07-25;2026-07-25;APIA Leichhardt U20;UNSW U20;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPL_NSW_U20;;27;2026-07-25;2026-07-25;NWS Spirit U20;WS Wanderers U20;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPL_NSW_U20;;27;2026-07-25;2026-07-25;SD Raiders U20;Marconi S. U20;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPL_NSW_U20;;27;2026-07-25;2026-07-25;St George Saints U20;Sydney FC U20;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NPL_NSW_U20;;27;2026-07-25;2026-07-25;St. George City U20;Sydney Utd U20;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NSWLeagueOne;;27;2026-07-25;2026-07-25;Bankstown City Lions;Canterbury Bankstown;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NSWLeagueOne;;27;2026-07-25;2026-07-25;Dulwich Hill;Western City Rangers;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NSWLeagueOne;;27;2026-07-25;2026-07-25;Hakoah Sydney;Rydalmere Lions;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NSWLeagueOne;;27;2026-07-25;2026-07-25;Inter Lions;Prospect United;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NSWLeagueOne;;27;2026-07-25;2026-07-25;Macarthur Rams;Hurstville Zagreb;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NSWLeagueOne;;27;2026-07-25;2026-07-25;Newcastle Jets U23;Hills United;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NSWLeagueOne;;27;2026-07-25;2026-07-25;Northern Tigers;Blacktown Spartans;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NorthernNSWStateLeague;;16;2026-07-25;2026-07-25;New Lambton;Lake Macquarie;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_NorthernNSWStateLeague;;16;2026-07-25;2026-07-25;Newcastle Croatia;Singleton Strikers;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_SAStateLeague;;22;2026-07-25;2026-07-25;Adelaide Croatia Raiders;Fulham Utd.;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_SAStateLeague;;22;2026-07-25;2026-07-25;Cove FC;Adelaide Cobras;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_SAStateLeague;;22;2026-07-25;2026-07-25;Cumberland Utd.;Blue Eagles;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_SAStateLeague;;22;2026-07-25;2026-07-25;Modbury;Adelaide Atletico;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_TasmaniaNorthernChampionship;;16;2026-07-25;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_TasmaniaNorthernChampionship;;16;2026-07-25;2026-07-25;Launceston U21;Northern Rangers;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_TasmaniaNorthernChampionship;;16;2026-07-25;2026-07-25;Riverside Olympic U21;Somerset;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_TasmaniaNorthernChampionship;;16;2026-07-25;2026-07-25;Ulverstone U21;Devonport U21;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_VictoriaPremierLeague;;24;2026-07-25;2026-07-25;Brunswick Juventus;North Geelong;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_VictoriaPremierLeague;;24;2026-07-25;2026-07-25;Manningham United Blues;Melbourne Knights;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_VictoriaPremierLeague;;24;2026-07-25;2026-07-25;Port Melbourne Sharks;Northcote City;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_VictoriaPremierLeague2;;23;2026-07-25;2026-07-25;Altona City;Whittlesea United;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_VictoriaPremierLeague2;;23;2026-07-25;2026-07-25;Goulburn Valley Suns;Springvale;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_VictoriaPremierLeague2;;23;2026-07-25;2026-07-25;Moreland City;Werribee City;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_WAStateLeague;;18;2026-07-25;2026-07-25;Kingsley Westside;Joondalup;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_WAStateLeague;;18;2026-07-25;2026-07-25;Mandurah City;Inglewood;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_WAStateLeague;;18;2026-07-25;2026-07-25;Murdoch Melville;Gwelup Croatia;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_WAStateLeague;;18;2026-07-25;2026-07-25;Nedlands;Curtin Univ;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_WAStateLeague;;18;2026-07-25;2026-07-25;Quinns;Cockburn City;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Australia_WAStateLeague;;18;2026-07-25;2026-07-25;Subiaco;Floreat Athena;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Belarus_PershayaLiga;;17;2026-07-25;2026-07-25;Niva Dolbizno;Ostrovets;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Belarus_PershayaLiga;;17;2026-07-25;2026-07-25;Smorgon;Gomel 2;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Belarus_PershayaLiga;;17;2026-07-25;2026-07-25;Soligorsk;Slutsk;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Belarus_PershayaLiga;;17;2026-07-25;2026-07-25;Volna Pinsk;Orsha;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Bolivia_DivisionProfesional;;15;2026-07-25;2026-07-25;Always Ready;SA Bulo Bulo;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Bolivia_DivisionProfesional;;15;2026-07-25;2026-07-25;Aurora;Academia del Balompie;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Bolivia_DivisionProfesional;;15;2026-07-25;2026-07-25;Guabira;Real Oruro;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Bulgaria_ParvaLiga;;3;2026-07-25;2026-07-25;CSKA 1948 Sofia;Botev Vratsa;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Bulgaria_ParvaLiga;;3;2026-07-25;2026-07-25;Lok. Sofia;Levski;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Denmark_1stDivision;;2;2026-07-25;2026-07-25;Esbjerg;Kolding;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Denmark_1stDivision;;2;2026-07-25;2026-07-25;Fredericia;Koge;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Denmark_1stDivision;;2;2026-07-25;2026-07-25;Hvidovre IF;Vendsyssel;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Denmark_Superliga;;2;2026-07-25;2026-07-25;Aarhus;Brondby;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Estonia_Esiliiga;;23;2026-07-25;2026-07-25;Nomme Kalju U21;Flora U21;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Estonia_EsiliigaB;;21;2026-07-25;2026-07-25;Tulevik;Johvi Phoenix;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Kakkonen_GroupA;;15;2026-07-25;2026-07-25;Atlantis;HPS;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Kakkonen_GroupA;;15;2026-07-25;2026-07-25;Kiffen;HIFK;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Kakkonen_GroupA;;15;2026-07-25;2026-07-25;Lahden Reipas;MyPa;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Kakkonen_GroupB;;16;2026-07-25;2026-07-25;Honka;GrIFK;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Kakkonen_GroupB;;16;2026-07-25;2026-07-25;MuSa;EPS;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Kakkonen_GroupC;;16;2026-07-25;2026-07-25;Huima / Urho;SJK Akatemia 2;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Kakkonen_GroupC;;16;2026-07-25;2026-07-25;JBK;VPS 2;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Kolmonen_Western_Group1;;14;2026-07-25;2026-07-25;Peimari United;SalPa II;BASSA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kolmonen_Western_Group2;;14;2026-07-25;2026-07-25;TP-49;Ylojarvi United;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Kolmonen_Western_Group2;;14;2026-07-25;2026-07-25;Tampere Utd II;Lasten;ALTA;data\storico\ranking\v25\storico_ranking_v25.csv
+Finland_Veikkausliiga;;19;2026-07-25;2026-07-25;KuPS;VPS;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Veikkausliiga;;19;2026-07-25;2026-07-25;Mariehamn;Oulu;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Ykkonen;;18;2026-07-25;2026-07-25;Rovaniemi;JJK Jyvaskyla;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Ykkonen;;18;2026-07-25;2026-07-25;SalPa;Keski-Uusimaa;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Ykkosliiga;;18;2026-07-25;2026-07-25;Haka;KaPa;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Ykkosliiga;;18;2026-07-25;2026-07-25;JaPS;Klubi 04;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Ykkosliiga;;18;2026-07-25;2026-07-25;Mikkeli;KTP;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Ykkosliiga;;18;2026-07-25;2026-07-25;PK-35;Jippo;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Finland_Ykkosliiga;;18;2026-07-25;2026-07-25;SJK Akatemia;Ekenas;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Bayern_Nord;;3;2026-07-25;2026-07-25;Bayern Hof;DJK Bamberg;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Bayern_Nord;;3;2026-07-25;2026-07-25;Fortuna Regensburg;Bamberg;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Bayern_Nord;;3;2026-07-25;2026-07-25;Neumarkt;Grossbardorf;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Bayern_Nord;;3;2026-07-25;2026-07-25;Regensburg II;Nordlingen;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Bayern_Nord;;3;2026-07-25;2026-07-25;Stadeln;Neudrossenfeld;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Bayern_Sud;;3;2026-07-25;2026-07-25;Deisenhofen;Kirchanschoring;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Bayern_Sud;;3;2026-07-25;2026-07-25;Geretsried;Pipinsried;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Bayern_Sud;;3;2026-07-25;2026-07-25;Pfaffenhofen;Rosenheim;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Bayern_Sud;;3;2026-07-25;2026-07-25;Schalding;Kottern-St. Mang;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Hamburg;;2;2026-07-25;2026-07-25;Dassendorf;ETSV Hamburg;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Hamburg;;2;2026-07-25;2026-07-25;Suderelbe;Altona;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Hamburg;;2;2026-07-25;2026-07-25;Teutonia Ottensen;Wandsbeker Concordia;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Oberliga_Hamburg;;2;2026-07-25;2026-07-25;Victoria Hamburg;Norderstedt II;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Regionalliga_Bayern;;2;2026-07-25;2026-07-25;Unterhaching;Furth II;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Regionalliga_Nordost;;2;2026-07-25;2026-07-25;Aue;Altglienicke;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Regionalliga_Nordost;;2;2026-07-25;2026-07-25;BFC Preussen;RSV Eintracht;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Regionalliga_Nordost;;2;2026-07-25;2026-07-25;Hertha II;Chemnitzer;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Germany_Regionalliga_Nordost;;2;2026-07-25;2026-07-25;Magdeburg II;Tasmania Berlin;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Hungary_NBI;;2;2026-07-25;2026-07-25;Kisvarda;Honved;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Iceland_Division_1;;24;2026-07-25;2026-07-25;IR Reykjavik;Fylkir;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Iceland_Division_2;;26;2026-07-25;2026-07-25;Dalvik/Reynir;Olafsvik;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Iceland_Division_2;;26;2026-07-25;2026-07-25;KFA;Throttur Vogar;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Iceland_Division_2;;26;2026-07-25;2026-07-25;Kormakur/Hvot;Selfoss;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Iceland_Division_2;;26;2026-07-25;2026-07-25;Magni;KFG Gardabaer;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Kazakhstan_PremierLeague;;29;2026-07-25;2026-07-25;Aktobe;Okzhetpes;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Kazakhstan_PremierLeague;;29;2026-07-25;2026-07-25;Ulytau;Ertis Pavlodar;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Kazakhstan_PremierLeague;;29;2026-07-25;2026-07-25;Zhetysu;Kyzylzhar;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Kyrgyzstan_PremierLiga;;19;2026-07-25;2026-07-25;Ozgon;Ilbirs;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Kyrgyzstan_PremierLiga;;19;2026-07-25;2026-07-25;Talant;Kyrgyzaltyn;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Latvia_NakotnesLiga;;14;2026-07-25;2026-07-25;Alberts JDFS;Super Nova 2;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Latvia_NakotnesLiga;;14;2026-07-25;2026-07-25;FK Smiltene;RFS 2;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Latvia_NakotnesLiga;;14;2026-07-25;2026-07-25;Leevon PPK;Skanste;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Latvia_NakotnesLiga;;14;2026-07-25;2026-07-25;Rezekne;Marupe;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Latvia_NakotnesLiga;;14;2026-07-25;2026-07-25;Riga Mariners;JFK Ventspils;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Lithuania_ILyga;;19;2026-07-25;2026-07-25;Atmosfera;Hegelmann Litauen 2;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Lithuania_ILyga;;19;2026-07-25;2026-07-25;Babrungas;Ekranas;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Lithuania_ILyga;;19;2026-07-25;2026-07-25;Jonava;Garliava;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Lithuania_ILyga;;19;2026-07-25;2026-07-25;Neptunas;Siauliai 2;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Mexico_LigaMX_Apertura;;3;2026-07-25;2026-07-25;Atlante;Club America;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Mexico_LigaMX_Apertura;;3;2026-07-25;2026-07-25;Tijuana;Leon;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group1;;13;2026-07-25;2026-07-25;Arendal;Vidar;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group1;;13;2026-07-25;2026-07-25;Bjarg;Pors;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group1;;13;2026-07-25;2026-07-25;Brattvag;Mjondalen;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group1;;13;2026-07-25;2026-07-25;Eik-Tonsberg;Sandviken;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group1;;13;2026-07-25;2026-07-25;Notodden;Sotra;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group2;;14;2026-07-25;2026-07-25;Grorud;Stjordals Blink;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group2;;14;2026-07-25;2026-07-25;Honefoss;Skeid;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group2;;14;2026-07-25;2026-07-25;Junkeren;Lørenskog;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group2;;14;2026-07-25;2026-07-25;Levanger;Ull/Kisa;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_2ndDivision_Group2;;14;2026-07-25;2026-07-25;Tromsdalen;Follo;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group1;;14;2026-07-25;2026-07-25;Baerum Sportsklubb;Vålerenga 2;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group1;;14;2026-07-25;2026-07-25;Grei;Konnerud;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group1;;14;2026-07-25;2026-07-25;Nordstrand;Gamle Oslo;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group1;;14;2026-07-25;2026-07-25;Ullern;Heming;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group2;;15;2026-07-25;2026-07-25;Aalesund 2;Orkla;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group2;;15;2026-07-25;2026-07-25;Melhus;Herd;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group2;;15;2026-07-25;2026-07-25;Molde 2;Byåsen;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group2;;15;2026-07-25;2026-07-25;Spjelkavik;Nardo;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group3;;13;2026-07-25;2026-07-25;Fana;Djerv 1919;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group3;;13;2026-07-25;2026-07-25;Forde;Austevoll;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group3;;13;2026-07-25;2026-07-25;Stord;Askoy;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group4;;13;2026-07-25;2026-07-25;Hinna;Vindbjart;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group4;;13;2026-07-25;2026-07-25;Madla IL;Flekkeroy;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group4;;13;2026-07-25;2026-07-25;Mandalskameratene;Staal Jorpeland;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group4;;13;2026-07-25;2026-07-25;Stabaek 2;Viking 2;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group5;;14;2026-07-25;2026-07-25;Finnsnes;Strømsgodset 2;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group5;;14;2026-07-25;2026-07-25;Floya;Lillestrom 2;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group5;;14;2026-07-25;2026-07-25;Harstad;Fauske Sprint;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group5;;14;2026-07-25;2026-07-25;Skjervoy;Alta;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group5;;14;2026-07-25;2026-07-25;Tromsø 2;Ulfstind;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group6;;13;2026-07-25;2026-07-25;Bjorkelangen;Fram;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group6;;13;2026-07-25;2026-07-25;Drobak-Frogn;Brumunddal;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group6;;13;2026-07-25;2026-07-25;Elverum;Sandefjord 2;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group6;;13;2026-07-25;2026-07-25;Raelingen;Lillehammer;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_3rdDivision_Group6;;13;2026-07-25;2026-07-25;SK Gjovik-Lyn;Rade;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_Eliteserien;;22;2026-07-25;2026-07-25;Kristiansund;Start;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_OBOSLigaen;;15;2026-07-25;2026-07-25;Haugesund;Bryne;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Norway_OBOSLigaen;;15;2026-07-25;2026-07-25;Strömsgodset;Lyn;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Division1;;2;2026-07-25;2026-07-25;Lechia;Grodzisk M.;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Division1;;2;2026-07-25;2026-07-25;Pogon Siedlce;LKS Lodz;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Division1;;2;2026-07-25;2026-07-25;S. Rzeszow;Chrobry Glogow;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Division2;;2;2026-07-25;2026-07-25;Legia II;S. Wola;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Division2;;2;2026-07-25;2026-07-25;Podhale Nowy Targ;Slask II;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Division2;;2;2026-07-25;2026-07-25;Sandecja;Hutnik Krakow;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Division2;;2;2026-07-25;2026-07-25;Swit Szczecin;Leczna;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Division2;;2;2026-07-25;2026-07-25;Z. Gora;Bielsko-Biala;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Division2;;2;2026-07-25;2026-07-25;Zawisza;Kleczew;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Ekstraklasa;;2;2026-07-25;2026-07-25;Gornik Zabrze;Slask;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Ekstraklasa;;2;2026-07-25;2026-07-25;Jagiellonia;Korona;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Poland_Ekstraklasa;;2;2026-07-25;2026-07-25;Lech;Cracovia;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Romania_Superliga;;3;2026-07-25;2026-07-25;Din. Bucuresti;Univ. Craiova;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Romania_Superliga;;3;2026-07-25;2026-07-25;Farul Constanta;Corvinul;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Russia_PremierLeague;;2;2026-07-25;2026-07-25;Akron Togliatti;Zenit;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Russia_PremierLeague;;2;2026-07-25;2026-07-25;Din. Mosca;Samara;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Russia_PremierLeague;;2;2026-07-25;2026-07-25;F. Voronezh;Dynamo Makhachkala;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Russia_PremierLeague;;2;2026-07-25;2026-07-25;Sp. Mosca;Rodina Moscow;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Serbia_SuperLiga;;2;2026-07-25;2026-07-25;IMT Novi Beograd;Zemun;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Serbia_SuperLiga;;2;2026-07-25;2026-07-25;OFK Belgrado;Radnik;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Serbia_SuperLiga;;2;2026-07-25;2026-07-25;Radnicki Nis;Cukaricki;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Slovenia_PrvaLiga;;2;2026-07-25;2026-07-25;Aluminij;Celje;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Slovenia_PrvaLiga;;2;2026-07-25;2026-07-25;Maribor;Grosuplje;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Slovenia_PrvaLiga;;2;2026-07-25;2026-07-25;Mura;O. Ljubljana;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Somalia_NationalLeague;;25;2026-07-25;2026-07-25;Heegan;Jazeera;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+Somalia_NationalLeague;;25;2026-07-25;2026-07-25;Horseed;Jubba;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+SouthKorea_KLeague1;;20;2026-07-25;2026-07-25;Gimcheon Sangmu;Daejeon;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+SouthKorea_KLeague1;;20;2026-07-25;2026-07-25;Pohang;Jeonbuk;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+SouthKorea_KLeague2;;20;2026-07-25;2026-07-25;Busan;Suwon Bluewings;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+SouthKorea_KLeague2;;20;2026-07-25;2026-07-25;Daegu;Suwon FC;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+SouthKorea_KLeague2;;20;2026-07-25;2026-07-25;Hwaseong;Asan;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+SouthKorea_KLeague2;;20;2026-07-25;2026-07-25;Jeonnam;Gyeongnam;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Sweden_Allsvenskan;;20;2026-07-25;2026-07-25;Degerfors;Djurgarden;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Sweden_Allsvenskan;;20;2026-07-25;2026-07-25;Kalmar;Mjallby;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Sweden_Superettan;;16;2026-07-25;2026-07-25;Värnamo;Brage;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+USA_MLSNextPro_EasternConference_NortheastDivision;;22;2026-07-25;2026-07-25;New York Red Bulls II;Crown Legacy;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+USA_MLSNextPro_EasternConference_SoutheastDivision;;21;2026-07-25;2026-07-25;Inter Miami II;Toronto FC II;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+USA_USLChampionship;;24;2026-07-25;2026-07-25;Birmingham;New Mexico;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+USA_USLLeagueTwo_PlayOff;;4;2026-07-25;2026-07-25;Flint City;Peoria;ALTA;data\storico\ranking\v251\storico_ranking_v251.csv
+USA_USLLeagueTwo_PlayOff;;4;2026-07-25;2026-07-25;Laredo Heat;Fort Lauderdale;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+USA_USLLeagueTwo_PlayOff;;4;2026-07-25;2026-07-25;Vermont Green;Asheville City;MEDIA;data\storico\ranking\v251\storico_ranking_v251.csv
+Ukraine_PershaLiga;;2;2026-07-25;2026-07-25;Ahrobiznes Volochysk;SC Poltava;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Ukraine_PershaLiga;;2;2026-07-25;2026-07-25;Lokomotyv Kyiv;FC Chernihiv;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv
+Ukraine_PershaLiga;;2;2026-07-25;2026-07-25;Zhytomyr 2;UCSA;BASSA;data\storico\ranking\v251\storico_ranking_v251.csv

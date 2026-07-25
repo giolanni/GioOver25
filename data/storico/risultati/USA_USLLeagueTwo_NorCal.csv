@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL League Two - Nor Cal Division;0;2026-06-28;Almaden;Project 51O;2;1;
 USA;USL League Two - Nor Cal Division;0;2026-06-28;Davis Legacy;San Juan;2;2;
 USA;USL League Two - Nor Cal Division;0;2026-07-02;Davis Legacy;Academica SC;1;4;
@@ -47,9 +47,9 @@ USA;USL League Two - Nor Cal Division;26;2026-06-30;Glens SC;San Francisco City;
 USA;USL League Two - Nor Cal Division;26;2026-07-06;Project 51O;Davis Legacy;6;1;
 USA;USL League Two - Nor Cal Division;27;2026-07-09;Academica SC;San Juan;2;4;
 USA;USL League Two - Nor Cal Division;27;2026-07-09;Davis Legacy;San Francisco City;2;3;
-USA;USL League Two - Nor Cal Division;27;2026-07-09;Glens SC;Almaden;0;2;
 USA;USL League Two - Nor Cal Division;27;2026-07-09;Project 51O;Marin;5;1;
 USA;USL League Two - Nor Cal Division;28;2026-07-06;Marin;Glens SC;1;1;
+USA;USL League Two - Nor Cal Division;28;2026-07-08;Glens SC;Almaden;0;2;
 USA;USL League Two - Nor Cal Division;28;2026-07-11;San Francisco City;Project 51O;1;0;
 USA;USL League Two - Nor Cal Division;28;2026-07-12;Almaden;Davis Legacy;6;0;
 USA;USL League Two - Nor Cal Division;29;2026-07-06;San Francisco City;Academica SC;5;1;

@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL League Two - Northeast Division;0;2026-06-28;Boston City;Connecticut Rush;1;1;
 USA;USL League Two - Northeast Division;0;2026-07-02;Boston City;Seacoast Utd Phantoms;2;5;
 USA;USL League Two - Northeast Division;0;2026-07-02;Connecticut Rush;AC Connecticut;0;2;
@@ -58,15 +58,15 @@ USA;USL League Two - Northeast Division;25;2026-06-30;Seacoast Utd Phantoms;Blac
 USA;USL League Two - Northeast Division;25;2026-07-01;Seacoast United Phantoms;Boston Bolts;2;0;
 USA;USL League Two - Northeast Division;25;2026-07-02;NEFC;Vermont Green;0;4;
 USA;USL League Two - Northeast Division;26;2026-07-01;Boston Bolts;Western Mass Pioneers;1;2;
-USA;USL League Two - Northeast Division;26;2026-07-09;NEFC;Boston City;4;2;
-USA;USL League Two - Northeast Division;26;2026-07-09;Vermont Green;Connecticut Rush;6;2;
 USA;USL League Two - Northeast Division;27;2026-07-05;Western Mass Pioneers;Black Rock;1;1;
-USA;USL League Two - Northeast Division;27;2026-07-11;NEFC;Albany Rush;1;0;
-USA;USL League Two - Northeast Division;28;2026-07-08;Black Rock;Seacoast Utd Phantoms;3;3;
-USA;USL League Two - Northeast Division;28;2026-07-09;AC Connecticut;Western Mass Pioneers;0;2;
 USA;USL League Two - Northeast Division;29;2026-07-09;Black Rock;Boston Bolts;0;0;
 USA;USL League Two - Northeast Division;29;2026-07-11;Seacoast Utd Phantoms;AC Connecticut;0;1;
 USA;USL League Two - Northeast Division;29;2026-07-11;Western Mass Pioneers;Vermont Green;2;4;
 USA;USL League Two - Northeast Division;30;2026-06-26;Seacoast United Phantoms;Boston Bolts;2;0;
+USA;USL League Two - Northeast Division;30;2026-07-07;Black Rock;Seacoast Utd Phantoms;3;3;
+USA;USL League Two - Northeast Division;30;2026-07-08;AC Connecticut;Western Mass Pioneers;0;2;
+USA;USL League Two - Northeast Division;30;2026-07-08;NEFC;Boston City;4;2;
+USA;USL League Two - Northeast Division;30;2026-07-08;Vermont Green;Connecticut Rush;6;2;
+USA;USL League Two - Northeast Division;30;2026-07-10;NEFC;Albany Rush;1;0;
 USA;USL League Two - Northeast Division;30;2026-07-12;Black Rock;Boston City;1;1;
 USA;USL League Two - Northeast Division;31;2026-07-12;Boston Bolts;Albany Rush;2;1;

@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Belarus;Vysshaya Liga;1;2026-03-20;FC Minsk;Arsenal Dzerzhinsk;1;1;
 Belarus;Vysshaya Liga;1;2026-03-20;Vitebsk;Gomel;1;1;
 Belarus;Vysshaya Liga;1;2026-03-21;Neman;BATE;0;0;
@@ -110,9 +110,9 @@ Belarus;Vysshaya Liga;14;2026-07-05;Vitebsk;Dnepr Mogilev;1;0;
 Belarus;Vysshaya Liga;14;2026-07-06;Belshina;Baranovici;1;1;
 Belarus;Vysshaya Liga;14;2026-07-06;Zhodino;Isloch;0;2;
 Belarus;Vysshaya Liga;15;2026-07-11;Baranovici;Zhodino;1;0;
-Belarus;Vysshaya Liga;15;2026-07-11;Dnepr Mogilev;FC Minsk;1;2;
 Belarus;Vysshaya Liga;15;2026-07-11;Dynamo Brest;Slavia Mozyr;4;1;
 Belarus;Vysshaya Liga;15;2026-07-11;Gomel;Neman;1;1;
 Belarus;Vysshaya Liga;16;2026-06-26;Arsenal Dzerzhinsk;Gomel;1;1;
 Belarus;Vysshaya Liga;16;2026-06-26;FC Baranovichi;Slavia Mozyr;1;1;
+Belarus;Vysshaya Liga;16;2026-07-10;Dnepr Mogilev;FC Minsk;1;2;
 Belarus;Vysshaya Liga;17;2026-07-12;Arsenal Dzerzhinsk;Vitebsk;0;3;

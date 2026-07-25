@@ -177,3 +177,7 @@ USA_USLLeagueTwo_Southeast;USA;USL League Two - Southeast Division;6;0;No;UNBALA
 USA_USLLeagueTwo_SouthFlorida;USA;USL League Two - South Florida Division;6;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Southwest;USA;USL League Two - Southwest Division;8;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Valley;USA;USL League Two - Valley Division;6;0;No;UNBALANCED;USA_USLLeagueTwo
+CzechRepublic_1Liga;Czech Republic;1. Liga;16;30;Yes;Regular season before championship/relegation phases;
+Slovakia_NikeLiga;Slovakia;Nike liga;12;32;Yes;Championship/Relegation split after 22 rounds;
+Switzerland_SuperLeague;Switzerland;Super League;12;38;Yes;Regular season followed by championship/relegation groups;
+Hungary_NBII;Hungary;NB II.;16;30;Yes;;

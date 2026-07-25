@@ -64,7 +64,7 @@ Swarm FC;USA_USLLeagueTwo_SouthCentral_2026
 Columbus United;USA_USLLeagueTwo_SouthCentral_2026
 Apotheos FC;USA_USLLeagueTwo_SouthCentral_2026
 Montgomery United FC;USA_USLLeagueTwo_SouthCentral_2026
-Birmingham Legion FC II;USA_USLLeagueTwo_SouthCentral_2026
+Birmingham 2;USA_USLLeagueTwo_SouthCentral_2026
 East Atlanta FC;USA_USLLeagueTwo_SouthCentral_2026
 Charlotte Independence 2;USA_USLLeagueTwo_SouthAtlantic_2026
 Hickory FC;USA_USLLeagueTwo_SouthAtlantic_2026

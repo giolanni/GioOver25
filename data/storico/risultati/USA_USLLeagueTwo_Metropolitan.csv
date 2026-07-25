@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL League Two - Metropolitan Division;0;2026-06-28;Hudson Valley;Morris Elite;4;3;
 USA;USL League Two - Metropolitan Division;0;2026-06-28;Staten Island ASC;Long Island;0;6;
 USA;USL League Two - Metropolitan Division;0;2026-06-28;Westchester Flames;Cedar;0;1;
@@ -15,6 +15,7 @@ USA;USL League Two - Metropolitan Division;2;2026-05-20;New Jersey Copa;Long Isl
 USA;USL League Two - Metropolitan Division;2;2026-06-26;Long Island Rough Riders;Cedar Stars Rush;4;1;
 USA;USL League Two - Metropolitan Division;3;2026-05-21;Cedar;Manhattan;2;1;
 USA;USL League Two - Metropolitan Division;3;2026-05-21;Morris Elite;Ironbound SC;0;2;
+USA;USL League Two - Metropolitan Division;3;2026-06-26;Long Island Rough Riders;Cedar Stars;4;1;
 USA;USL League Two - Metropolitan Division;4;2026-05-22;Motown 2;Westchester Flames;6;0;
 USA;USL League Two - Metropolitan Division;5;2026-05-24;Morris Elite;Hudson Valley;2;1;
 USA;USL League Two - Metropolitan Division;6;2026-05-25;Staten Island ASC;Motown 2;1;3;
@@ -53,12 +54,12 @@ USA;USL League Two - Metropolitan Division;23;2026-06-25;Ironbound SC;Motown 2;1
 USA;USL League Two - Metropolitan Division;23;2026-06-25;Morris Elite;New Jersey Copa;2;0;
 USA;USL League Two - Metropolitan Division;23;2026-06-25;Westchester Flames;Hudson Valley;0;3;
 USA;USL League Two - Metropolitan Division;24;2026-06-27;New Jersey Copa;Ironbound SC;1;2;
-USA;USL League Two - Metropolitan Division;24;2026-07-09;Hudson Valley;Motown 2;0;5;
 USA;USL League Two - Metropolitan Division;24;2026-07-09;Morris Elite;Westchester Flames;1;1;
 USA;USL League Two - Metropolitan Division;25;2026-07-09;Cedar;Ironbound SC;2;2;
 USA;USL League Two - Metropolitan Division;25;2026-07-09;Manhattan;New Jersey Copa;6;0;
 USA;USL League Two - Metropolitan Division;25;2026-07-11;Motown 2;Long Island;4;2;
 USA;USL League Two - Metropolitan Division;26;2026-07-06;Ironbound SC;Staten Island ASC;3;0;
+USA;USL League Two - Metropolitan Division;26;2026-07-08;Hudson Valley;Motown 2;0;5;
 USA;USL League Two - Metropolitan Division;26;2026-07-11;New Jersey Copa;Westchester Flames;2;1;
 USA;USL League Two - Metropolitan Division;26;2026-07-12;Hudson Valley;Cedar;2;2;
 USA;USL League Two - Metropolitan Division;27;2026-07-12;Ironbound SC;Manhattan;1;1;

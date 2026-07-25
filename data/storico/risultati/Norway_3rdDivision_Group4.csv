@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Norway;3rd Division Group 4;1;2026-04-01;Varhaug;Akra;2;0;
 Norway;3rd Division Group 4;1;2026-04-06;Brodd;Madla IL;3;4;
 Norway;3rd Division Group 4;1;2026-04-06;Mandalskameratene;Hinna;1;2;
@@ -84,3 +84,5 @@ Norway;3rd Division Group 4;12;2026-06-30;Brodd;Haugesund 2;4;0;
 Norway;3rd Division Group 4;12;2026-06-30;Varhaug;Odd 2;2;2;
 Norway;3rd Division Group 4;12;2026-06-30;Vindbjart;Stabaek 2;2;3;
 Norway;3rd Division Group 4;12;2026-07-01;Flekkeroy;Akra;3;1;
+Norway;3rd Division Group 4;13;2026-06-26;Flekkeroy;Aakra;3;1;
+Norway;3rd Division Group 4;14;2026-06-26;Flekkeroy;Akra;3;1;

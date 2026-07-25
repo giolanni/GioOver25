@@ -1,4 +1,5 @@
-onfronta gli storici allegati utilizzando queste regole:
+Prima parte
+Confronta gli storici allegati utilizzando queste regole:
 
 considera solo le partite con esito (OK o KO), escludendo tutte quelle ancora senza risultato;
 utilizza come riferimento l'intersezione delle partite presenti in tutti gli storici, salvo diversa richiesta;
@@ -14,7 +15,10 @@ escludendo tutte le leghe australiane (LeagueId che inizia con Australia_);
 evidenzia quale versione ottiene la percentuale migliore in ogni categoria;
 se rilevi differenze significative tra le versioni, commentale brevemente.
 
+Seconda parte
+fammi la classifica di quale engine è andato meglio nella giornata con MatchDate relativo a "ieri"
 
+Terza parte
 Confronta gli storici ranking allegati utilizzando esclusivamente il set comune di partite presenti in tutti gli engine.
 
 Regole metodologiche:

@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL League Two - Southwest Division;1;2026-05-17;City SC;Capo;0;2;
 USA;USL League Two - Southwest Division;1;2026-05-17;Southern California;AMSG FC;3;1;
 USA;USL League Two - Southwest Division;2;2026-05-20;Southern California;City SC;2;1;
@@ -39,11 +39,11 @@ USA;USL League Two - Southwest Division;24;2026-07-05;Ventura;AMSG FC;6;0;
 USA;USL League Two - Southwest Division;25;2026-07-03;Redlands FC;Capo;2;3;
 USA;USL League Two - Southwest Division;25;2026-07-05;Tucson;Stars FC;4;1;
 USA;USL League Two - Southwest Division;26;2026-07-06;City SC;Redlands FC;0;3;
-USA;USL League Two - Southwest Division;26;2026-07-08;Stars FC;Tucson;0;1;
-USA;USL League Two - Southwest Division;26;2026-07-09;Capo;Southern California;5;4;
 USA;USL League Two - Southwest Division;27;2026-07-09;City SC;AMSG FC;4;0;
 USA;USL League Two - Southwest Division;27;2026-07-09;Ventura;Stars FC;0;0;
 USA;USL League Two - Southwest Division;27;2026-07-11;Tucson;Capo;2;1;
+USA;USL League Two - Southwest Division;28;2026-07-07;Stars FC;Tucson;0;1;
+USA;USL League Two - Southwest Division;28;2026-07-08;Capo;Southern California;5;4;
 USA;USL League Two - Southwest Division;28;2026-07-12;AMSG FC;Southern California;1;2;
 USA;USL League Two - Southwest Division;28;2026-07-12;Redlands FC;Ventura;1;1;
 USA;USL League Two - Southwest Division;28;2026-07-12;Stars FC;Capo;3;3;

@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Sweden;Division 1 Norra;1;2026-04-03;Arlanda;Vasalund;2;1;
 Sweden;Division 1 Norra;1;2026-04-03;FBK Karlstad;Gefle;2;1;
 Sweden;Division 1 Norra;1;2026-04-04;AFC Eskilstuna;Jarfalla;1;1;
@@ -114,3 +114,5 @@ Sweden;Division 1 Norra;14;2026-07-01;Sollentuna;AFC Eskilstuna;1;4;
 Sweden;Division 1 Norra;15;2026-06-26;Assyriska FF;Vasalunds;3;1;
 Sweden;Division 1 Norra;15;2026-06-26;FBK Karlstad;Hammarby TFF;0;7;
 Sweden;Division 1 Norra;15;2026-06-26;Sollentuna FK;AFC Eskilstuna;1;4;
+Sweden;Division 1 Norra;16;2026-06-26;Assyriska FF;Vasalund;3;1;
+Sweden;Division 1 Norra;16;2026-06-26;Sollentuna;AFC Eskilstuna;1;4;

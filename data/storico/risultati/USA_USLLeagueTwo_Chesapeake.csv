@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 USA;USL League Two - Chesapeake Division;0;2026-06-28;Annapolis Blues;Christos;6;2;
 USA;USL League Two - Chesapeake Division;0;2026-06-28;Bethesda SC;Patuxent;1;0;
 USA;USL League Two - Chesapeake Division;0;2026-06-28;Hill City;Virginia Beach;1;2;
@@ -65,12 +65,12 @@ USA;USL League Two - Chesapeake Division;24;2026-06-25;Northern Virginia;Hill Ci
 USA;USL League Two - Chesapeake Division;24;2026-06-25;Patuxent;Loudoun 2;1;7;
 USA;USL League Two - Chesapeake Division;25;2026-07-05;Lionsbridge;Hill City;4;0;
 USA;USL League Two - Chesapeake Division;25;2026-07-06;Virginia Marauders;Bethesda SC;0;4;
-USA;USL League Two - Chesapeake Division;25;2026-07-09;Christos;Loudoun 2;3;4;
 USA;USL League Two - Chesapeake Division;25;2026-07-09;Virginia Beach;Annapolis Blues;1;1;
 USA;USL League Two - Chesapeake Division;26;2026-07-09;Bethesda SC;Virginia Marauders;3;2;
 USA;USL League Two - Chesapeake Division;26;2026-07-09;Northern Virginia;Lionsbridge;2;4;
 USA;USL League Two - Chesapeake Division;26;2026-07-09;Patuxent;Christos;0;0;
 USA;USL League Two - Chesapeake Division;27;2026-07-06;Northern Virginia;Patuxent;8;0;
+USA;USL League Two - Chesapeake Division;27;2026-07-08;Christos;Loudoun 2;3;4;
 USA;USL League Two - Chesapeake Division;27;2026-07-12;Annapolis Blues;Bethesda SC;4;1;
 USA;USL League Two - Chesapeake Division;28;2026-07-12;Loudoun 2;Northern Virginia;2;1;
 USA;USL League Two - Chesapeake Division;28;2026-07-12;Patuxent;Virginia Beach;0;4;

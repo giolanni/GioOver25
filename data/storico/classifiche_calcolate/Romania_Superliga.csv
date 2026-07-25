@@ -1,13 +1,15 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Corvinul;1;1;0;0;3;0;3;3;3.0
-1;2;FCSB;1;1;0;0;2;0;2;3;3.0
-1;3;U. Cluj;1;1;0;0;2;1;1;3;3.0
-1;4;Petrolul;1;1;0;0;1;0;1;3;3.0
-1;5;Rapid Bucarest;1;1;0;0;1;0;1;3;3.0
-1;6;Botosani;1;0;1;0;2;2;0;1;1.0
-1;7;FC Voluntari;1;0;1;0;2;2;0;1;1.0
-1;8;Farul Constanta;1;0;0;1;1;2;-1;0;0.0
-1;9;Din. Bucuresti;1;0;0;1;0;1;-1;0;0.0
-1;10;Sepsi Sf. Gheorghe;1;0;0;1;0;1;-1;0;0.0
-1;11;FC Arges;1;0;0;1;0;2;-2;0;0.0
-1;12;Csikszereda M. Ciuc;1;0;0;1;0;3;-3;0;0.0
+2;1;Corvinul;1;1;0;0;3;0;3;3;3.0
+2;2;FCSB;1;1;0;0;2;0;2;3;3.0
+2;3;U. Cluj;1;1;0;0;2;1;1;3;3.0
+2;4;Rapid Bucarest;1;1;0;0;1;0;1;3;3.0
+2;5;Petrolul;2;1;0;1;1;1;0;3;1.5
+2;6;FC Arges;2;1;0;1;1;2;-1;3;1.5
+2;7;Botosani;1;0;1;0;2;2;0;1;1.0
+2;8;FC Voluntari;1;0;1;0;2;2;0;1;1.0
+2;9;Otelul;1;0;1;0;2;2;0;1;1.0
+2;10;UTA Arad;1;0;1;0;2;2;0;1;1.0
+2;11;Farul Constanta;1;0;0;1;1;2;-1;0;0.0
+2;12;Din. Bucuresti;1;0;0;1;0;1;-1;0;0.0
+2;13;Sepsi Sf. Gheorghe;1;0;0;1;0;1;-1;0;0.0
+2;14;Csikszereda M. Ciuc;1;0;0;1;0;3;-3;0;0.0

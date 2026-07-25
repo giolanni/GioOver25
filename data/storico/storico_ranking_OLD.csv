@@ -12,13 +12,12 @@
 2026-06-26;2.0.0;Australia_NPLVictoria;18;Heidelberg;Oakleigh;Heidelberg - Oakleigh;50.77;MEDIA;0;1;1;KO;KO
 2026-06-26;2.0.0;Australia_NPLVictoria;18;Bentleigh;Altona Magic;Bentleigh - Altona Magic;50.22;MEDIA;0;1;1;KO;KO
 2026-06-26;2.0.0;Australia_NPLVictoria;18;Dandenong City;Avondale FC;Dandenong City - Avondale FC;49.71;MEDIA;3;1;4;OK;OK
-2026-06-26;2.0.0;USA_USLLeagueTwo_SouthFlorida;16;Brevard SC;Weston FC;Brevard SC - Weston FC;45.38;MEDIA;;;;;
 2026-06-26;2.0.0;Australia_NPLVictoria;18;St Albans;Melbourne City U21;St Albans - Melbourne City U21;43.42;BASSA;0;2;2;KO;KO
 2026-06-26;2.0.0;Australia_SAStateLeague;16;Eastern United;Cumberland Utd.;Eastern United - Cumberland Utd.;42.1;BASSA;0;1;1;KO;KO
 2026-06-26;2.0.0;USA_USLLeagueTwo_MidSouth;17;Hattiesburg FC;Jackson Boom;Hattiesburg FC - Jackson Boom;41.57;BASSA;;;;;
 2026-06-26;2.0.0;Australia_NPLNSW;21;Sydney FC U23;Sydney Utd;Sydney FC U23 - Sydney Utd;40.27;BASSA;1;0;1;KO;KO
 2026-06-26;2.0.0;USA_USLLeagueTwo_Mountain;23;Flatirons FC;Utah United;Flatirons FC - Utah United;37.4;BASSA;;;;;
-2026-06-26;2.0.0;USA_USLLeagueTwo_SouthCentral;17;Birmingham Legion FC II;Swarm FC;Birmingham Legion FC II - Swarm FC;37.36;BASSA;;;;;
+2026-06-26;2.0.0;USA_USLLeagueTwo_SouthCentral;17;Birmingham 2;Swarm FC;Birmingham 2 - Swarm FC;37.36;BASSA;;;;;
 2026-06-26;2.0.0;USA_USLLeagueTwo_Metropolitan;24;Long Island Rough Riders;Cedar Stars;Long Island Rough Riders - Cedar Stars;0.0;BASSA;;;;;
 2026-06-26;2.0.0;Norway_3rdDivision_Group5;12;Skedsmo;Skjetten;Skedsmo - Skjetten;91.56;ALTA;;;;;
 2026-06-26;2.0.0;Norway_3rdDivision_Group4;13;Flekkeroy;Akra;Flekkeroy - Akra;86.25;ALTA;;;;;
@@ -32,7 +31,7 @@
 2026-06-26;2.0.0;Sweden_Division2_NorraSvealand;15;Kungsangen;Skiljebo;Kungsangen - Skiljebo;72.86;MEDIA-ALTA;;;;;
 2026-06-26;2.0.0;Sweden_Superettan;14;Brage;Falkenberg;Brage - Falkenberg;70.98;MEDIA-ALTA;;;;;
 2026-06-26;2.0.0;Iceland_Division_1;16;Fylkir;Kopavogur;Fylkir - Kopavogur;67.89;MEDIA-ALTA;;;;;
-2026-06-26;2.0.0;USA_USLLeagueTwo_SouthFlorida;16;Brevard SC;Weston;Brevard SC - Weston;67.41;MEDIA-ALTA;;;;;
+2026-06-26;2.0.0;USA_USLLeagueTwo_SouthFlorida;16;Brevard SC;Weston FC;Brevard SC - Weston;67.41;MEDIA-ALTA;;;;;
 2026-06-26;2.0.0;Norway_3rdDivision_Group1;13;Vålerenga 2;Union Carl Berner;Vålerenga 2 - Union Carl Berner;66.31;MEDIA-ALTA;;;;;
 2026-06-26;2.0.0;Sweden_Division1_Norra;15;Assyriska FF;Vasalund;Assyriska FF - Vasalund;65.48;MEDIA-ALTA;;;;;
 2026-06-26;2.0.0;Iceland_Division_1;16;Leiknir;IR Reykjavik;Leiknir - IR Reykjavik;63.77;MEDIA-ALTA;;;;;

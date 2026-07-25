@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Sweden;Vastra Gotaland;1;2026-03-27;Kongahalla;Boljan;0;2;
 Sweden;Vastra Gotaland;1;2026-03-27;Landvetter;Lindome;2;1;
 Sweden;Vastra Gotaland;1;2026-03-28;Astorps;Astrio;2;1;
@@ -101,3 +101,5 @@ Sweden;Vastra Gotaland;14;2026-06-30;Jonsereds;Kongahalla;1;0;
 Sweden;Vastra Gotaland;14;2026-07-01;Dalstorps IF;Lindome;2;2;
 Sweden;Vastra Gotaland;14;2026-07-01;Onsala;Landvetter;2;4;
 Sweden;Vastra Gotaland;15;2026-06-26;Dalstorps IF;Lindome GIF;2;2;
+Sweden;Vastra Gotaland;15;2026-06-26;Onsala;Landvetter;2;4;
+Sweden;Vastra Gotaland;16;2026-06-26;Dalstorps IF;Lindome;2;2;

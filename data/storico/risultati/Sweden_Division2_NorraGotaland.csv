@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Sweden;Norra Gotaland;1;2026-03-27;IFK Skovde;Vanersborgs FK;1;0;
 Sweden;Norra Gotaland;1;2026-03-28;Ahlafors IF;Lidkoping;2;2;
 Sweden;Norra Gotaland;1;2026-03-28;Grebbestad;Karlstad II;1;1;
@@ -101,4 +101,7 @@ Sweden;Norra Gotaland;14;2026-06-27;Motala;Vanersborgs FK;0;1;
 Sweden;Norra Gotaland;14;2026-07-01;Skara;Herrestads AIF;2;0;
 Sweden;Norra Gotaland;14;2026-07-01;Vanersborgs IF;Stenungsunds;1;0;
 Sweden;Norra Gotaland;15;2026-06-26;Skara FC;Herrestads AIF;2;0;
+Sweden;Norra Gotaland;15;2026-06-26;Vanersborgs IF;Stenungsunds IF;1;0;
 Sweden;Norra Gotaland;15;2026-07-02;Husqvarna;Lidkoping;0;0;
+Sweden;Norra Gotaland;16;2026-06-26;Skara;Herrestads AIF;2;0;
+Sweden;Norra Gotaland;16;2026-06-26;Vanersborgs IF;Stenungsunds;1;0;
