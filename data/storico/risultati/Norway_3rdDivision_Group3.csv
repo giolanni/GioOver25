@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Norway;3rd Division Group 3;1;2026-04-02;Gneist;Fana;2;1;
 Norway;3rd Division Group 3;1;2026-04-06;Askoy;V. Haugesund;1;1;
 Norway;3rd Division Group 3;1;2026-04-06;Djerv 1919;Stord;1;1;
@@ -82,3 +82,6 @@ Norway;3rd Division Group 3;12;2026-06-27;Brann 2;Fana;3;2;
 Norway;3rd Division Group 3;12;2026-06-27;Djerv 1919;Gneist;6;2;
 Norway;3rd Division Group 3;12;2026-06-27;Sogndal 2;Stord;0;2;
 Norway;3rd Division Group 3;12;2026-06-30;Varegg;V. Haugesund;1;1;
+Norway;3rd Division Group 3;13;2026-07-25;Fana;Djerv 1919;4;3;
+Norway;3rd Division Group 3;13;2026-07-25;Forde;Austevoll;1;1;
+Norway;3rd Division Group 3;13;2026-07-25;Stord;Askoy;0;4;

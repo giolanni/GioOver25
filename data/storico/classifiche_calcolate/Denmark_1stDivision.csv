@@ -1,5 +1,11 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Aalborg;1;1;0;0;1;0;1;3;3.0
-1;2;AB Copenhagen;1;0;1;0;2;2;0;1;1.0
-1;3;Vejle;1;0;1;0;2;2;0;1;1.0
-1;4;Hillerod;1;0;0;1;0;1;-1;0;0.0
+1;1;Fredericia;1;1;0;0;3;0;3;3;3.0
+1;2;Aalborg;1;1;0;0;1;0;1;3;3.0
+1;3;AB Copenhagen;1;0;1;0;2;2;0;1;1.0
+1;4;Hvidovre IF;1;0;1;0;2;2;0;1;1.0
+1;5;Vejle;1;0;1;0;2;2;0;1;1.0
+1;6;Vendsyssel;1;0;1;0;2;2;0;1;1.0
+1;7;Esbjerg;1;0;1;0;1;1;0;1;1.0
+1;8;Kolding;1;0;1;0;1;1;0;1;1.0
+1;9;Hillerod;1;0;0;1;0;1;-1;0;0.0
+1;10;Koge;1;0;0;1;0;3;-3;0;0.0

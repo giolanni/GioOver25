@@ -1,5 +1,11 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Viktoria;1;1;0;0;1;0;1;3;3.0
-1;2;Nyva Ternopil;1;0;1;0;1;1;0;1;1.0
-1;3;Oleksandriya;1;0;1;0;1;1;0;1;1.0
-1;4;Fenix Mariupol;1;0;0;1;0;1;-1;0;0.0
+1;1;SC Poltava;1;1;0;0;3;0;3;3;3.0
+1;2;Viktoria;1;1;0;0;1;0;1;3;3.0
+1;3;UCSA;1;0;1;0;2;2;0;1;1.0
+1;4;Zhytomyr 2;1;0;1;0;2;2;0;1;1.0
+1;5;FC Chernihiv;1;0;1;0;1;1;0;1;1.0
+1;6;Lokomotyv Kyiv;1;0;1;0;1;1;0;1;1.0
+1;7;Nyva Ternopil;1;0;1;0;1;1;0;1;1.0
+1;8;Oleksandriya;1;0;1;0;1;1;0;1;1.0
+1;9;Fenix Mariupol;1;0;0;1;0;1;-1;0;0.0
+1;10;Ahrobiznes Volochysk;1;0;0;1;0;3;-3;0;0.0

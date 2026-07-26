@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Norway;2nd Division Group 1;1;2026-04-05;Sotra;Lysekloster;2;2;
 Norway;2nd Division Group 1;1;2026-04-06;Bjarg;Sandviken;3;1;
 Norway;2nd Division Group 1;1;2026-04-06;Eik-Tonsberg;Notodden;0;1;
@@ -83,3 +83,8 @@ Norway;2nd Division Group 1;12;2026-06-27;Sandviken;Notodden;0;4;
 Norway;2nd Division Group 1;12;2026-06-27;Traeff;Eik-Tonsberg;3;1;
 Norway;2nd Division Group 1;12;2026-06-27;Vidar;Halden;2;4;
 Norway;2nd Division Group 1;12;2026-06-30;Sotra;Jerv;1;3;
+Norway;2nd Division Group 1;13;2026-07-25;Arendal;Vidar;4;0;
+Norway;2nd Division Group 1;13;2026-07-25;Bjarg;Pors;0;1;
+Norway;2nd Division Group 1;13;2026-07-25;Brattvag;Mjondalen;3;5;
+Norway;2nd Division Group 1;13;2026-07-25;Eik-Tonsberg;Sandviken;5;6;
+Norway;2nd Division Group 1;13;2026-07-25;Notodden;Sotra;1;0;

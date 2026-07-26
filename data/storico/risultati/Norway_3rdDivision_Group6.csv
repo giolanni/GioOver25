@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Norway;3rd Division Group 6;1;2026-04-06;Brumunddal;Rade;2;1;
 Norway;3rd Division Group 6;1;2026-04-06;Fram;SK Gjovik-Lyn;0;2;
 Norway;3rd Division Group 6;1;2026-04-06;Oppsal;Lillehammer;0;2;
@@ -83,3 +83,8 @@ Norway;3rd Division Group 6;12;2026-06-27;Lillehammer;Elverum;2;2;
 Norway;3rd Division Group 6;12;2026-06-27;Oppsal;Raelingen;3;1;
 Norway;3rd Division Group 6;12;2026-06-27;Orn;Sandefjord 2;4;3;
 Norway;3rd Division Group 6;12;2026-06-30;Rade;Lyn 2;3;5;
+Norway;3rd Division Group 6;13;2026-07-25;Bjorkelangen;Fram;0;2;
+Norway;3rd Division Group 6;13;2026-07-25;Drobak-Frogn;Brumunddal;7;1;
+Norway;3rd Division Group 6;13;2026-07-25;Elverum;Sandefjord 2;5;3;
+Norway;3rd Division Group 6;13;2026-07-25;Raelingen;Lillehammer;2;4;
+Norway;3rd Division Group 6;13;2026-07-25;SK Gjovik-Lyn;Rade;0;3;

@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Norway;3rd Division Group 2;1;2026-04-06;FK Kvik;Nardo;2;1;
 Norway;3rd Division Group 2;1;2026-04-06;Ntnui;Spjelkavik;0;0;
 Norway;3rd Division Group 2;1;2026-04-06;Orkla;Strindheim;2;1;
@@ -82,5 +82,9 @@ Norway;3rd Division Group 2;12;2026-06-27;Orkla;Molde 2;3;5;
 Norway;3rd Division Group 2;12;2026-06-27;Ranheim 2;Nardo;5;3;
 Norway;3rd Division Group 2;12;2026-06-27;Rosenborg 2;Spjelkavik;2;1;
 Norway;3rd Division Group 2;13;2026-06-03;Ntnui;FK Kvik;4;3;
+Norway;3rd Division Group 2;13;2026-07-25;Aalesund 2;Orkla;4;2;
+Norway;3rd Division Group 2;13;2026-07-25;Molde 2;Byåsen;6;6;
+Norway;3rd Division Group 2;13;2026-07-25;Spjelkavik;Nardo;4;2;
 Norway;3rd Division Group 2;14;2026-06-27;FK Kvik;Volda TI;0;2;
 Norway;3rd Division Group 2;14;2026-06-27;Herd;Ntnui;2;2;
+Norway;3rd Division Group 2;15;2026-07-25;Melhus;Herd;2;0;
