@@ -1,0 +1,2 @@
+﻿ConfigurationId;StrongDefenseWeight;RecentFormWeight;RestartWeight;MaxTotalPenalty;StrongAttackBonusWeight;RecentFormBonusWeight;RestartBonusWeight;BaselineAltaOK;BaselineAltaKO;BaselineAltaTotal;BaselineAltaPrecision;SimulatedAltaOK;SimulatedAltaKO;SimulatedAltaTotal;SimulatedAltaPrecision;AltaCoverage;AltaKOAvoided;AltaOKLost;ProtectiveBalance;AltaOKPromoted;AltaKOPromoted;PromotionBalance;ObjectiveScore
+51;0.0;1.0;0.0;2.0;0.0;0.0;0.0;48;23;71;67.6056;48;22;70;68.5714;98.5915;1;0;1;0;0;0;1784.3058

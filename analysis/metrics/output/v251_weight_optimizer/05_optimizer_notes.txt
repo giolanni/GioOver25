@@ -1,0 +1,27 @@
+GioOver2.5 - v251 Weight Optimizer
+============================================
+
+Partite concluse analizzate: 177
+Configurazioni provate: 625
+Australia esclusa: NO
+
+Migliore configurazione trovata:
+  StrongDefenseWeight = 0.0
+  RecentFormWeight = 1.0
+  RestartWeight = 0.0
+  MaxTotalPenalty = 2.0
+
+Risultato fascia ALTA:
+  Precisione baseline = 67.6056%
+  Precisione simulata = 68.5714%
+  KO evitati = 1
+  OK persi = 0
+  ProtectiveBalance = 1
+  Copertura residua = 98.5915%
+
+AVVERTENZA:
+La configurazione migliore sullo storico non deve essere adottata automaticamente.
+Va verificata su un periodo successivo non usato durante l'ottimizzazione, per ridurre il rischio di overfitting.
+
+BONUS:
+L'architettura è predisposta, ma i bonus rimangono inattivi finché il Laboratory non definisce segnali positivi espliciti.
