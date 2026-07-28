@@ -1,1 +1,2 @@
 ﻿metric_name;family;description;occurrences;alta_ok;alta_ko;media_ok;media_ko;other;over_total;under_total;over_precision;coverage;alta_ko_capture;alta_ok_capture;media_ok_capture;media_ko_capture;alta_ko_lift;media_ok_precision;media_ok_lift;exclusion_efficiency;promotion_efficiency
+attack_min_le_4;attacco;attack_min <= 4;138;9;1;16;4;108;25;5;0.8333333333333334;0.15880322209436135;0.008849557522123894;0.030201342281879196;0.05776173285198556;0.022099447513812154;0.3637168141592921;0.8;1.3227436823104692;0.1;0.8

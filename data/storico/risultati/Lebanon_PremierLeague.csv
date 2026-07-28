@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Lebanon;Premier League;1;2025-09-19;Al Sahel;Al-Mabarrah;0;0;
 Lebanon;Premier League;1;2025-09-19;Bourj FC;Jwayya;0;3;
 Lebanon;Premier League;1;2025-09-20;Al Hikma;Racing;2;0;
@@ -122,3 +122,6 @@ Lebanon;Premier League;22;2026-07-03;Safa;Al-Mabarrah;4;0;
 Lebanon;Premier League;22;2026-07-03;Tadamon;Al Ansar;0;3;
 Lebanon;Premier League;23;2026-07-13;Al Riyadi Abbasiyah;Racing;4;0;
 Lebanon;Premier League;24;2026-07-17;Tadamon;Al Riyadi Abbasiyah;0;0;
+Lebanon;Premier League;25;2026-07-20;Al Ansar;Nejmeh SC;1;1;
+Lebanon;Premier League;25;2026-07-20;Jwayya;Al Ahed;2;0;
+Lebanon;Premier League;25;2026-07-21;Tadamon;Racing;1;0;

@@ -1,0 +1,16 @@
+﻿StrongDefenseThreshold;LowRecentPPGThreshold;VulnerableDefenseThreshold;HighRecentPPGThreshold;StrongDefenseWeight;RecentFormWeight;RestartWeight;VulnerableDefensesBonusWeight;StrongRecentFormBonusWeight;RestartReadyBonusWeight;MaxTotalPenalty;MaxTotalBonus;BaselineAltaOK;BaselineAltaKO;BaselineAltaTotal;BaselineAltaPrecision;SimulatedAltaOK;SimulatedAltaKO;SimulatedAltaTotal;SimulatedAltaPrecision;AltaCoverage;AltaKOAvoided;AltaOKLost;ProtectiveBalance;AltaOKPromoted;AltaKOPromoted;PromotionBalance;NetGain;Stage;Accepted
+6.0;0.6;7.5;2.0;0.5;0.0;0.0;1.0;1.0;0.0;4.0;2.0;195;70;265;73.5849;195;65;260;75.0;98.1132;5;5;0;5;0;5;5;strong_recent_form_bonus;YES
+6.0;0.6;7.5;1.2;0.5;0.0;0.0;1.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;194;65;259;74.9035;97.7358;5;5;0;4;0;4;4;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.4;0.5;0.0;0.0;1.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;194;65;259;74.9035;97.7358;5;5;0;4;0;4;4;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.6;0.5;0.0;0.0;1.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;194;65;259;74.9035;97.7358;5;5;0;4;0;4;4;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.8;0.5;0.0;0.0;1.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;194;65;259;74.9035;97.7358;5;5;0;4;0;4;4;strong_recent_form_bonus;NO
+6.0;0.6;7.5;2.0;0.5;0.0;0.0;1.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;194;65;259;74.9035;97.7358;5;5;0;4;0;4;4;strong_recent_form_bonus;NO
+6.0;0.6;7.5;2.0;0.5;0.0;0.0;1.0;0.5;0.0;4.0;2.0;195;70;265;73.5849;194;65;259;74.9035;97.7358;5;5;0;4;0;4;4;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.6;0.5;0.0;0.0;1.0;1.0;0.0;4.0;2.0;195;70;265;73.5849;195;66;261;74.7126;98.4906;4;5;-1;5;0;5;4;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.8;0.5;0.0;0.0;1.0;1.0;0.0;4.0;2.0;195;70;265;73.5849;195;66;261;74.7126;98.4906;4;5;-1;5;0;5;4;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.6;0.5;0.0;0.0;1.0;0.5;0.0;4.0;2.0;195;70;265;73.5849;194;66;260;74.6154;98.1132;4;5;-1;4;0;4;3;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.8;0.5;0.0;0.0;1.0;0.5;0.0;4.0;2.0;195;70;265;73.5849;194;66;260;74.6154;98.1132;4;5;-1;4;0;4;3;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.4;0.5;0.0;0.0;1.0;1.0;0.0;4.0;2.0;195;70;265;73.5849;195;68;263;74.1445;99.2453;3;5;-2;5;1;4;2;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.2;0.5;0.0;0.0;1.0;0.5;0.0;4.0;2.0;195;70;265;73.5849;196;69;265;73.9623;100.0;2;4;-2;5;1;4;2;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.2;0.5;0.0;0.0;1.0;1.0;0.0;4.0;2.0;195;70;265;73.5849;197;70;267;73.7828;100.7547;2;4;-2;6;2;4;2;strong_recent_form_bonus;NO
+6.0;0.6;7.5;1.4;0.5;0.0;0.0;1.0;0.5;0.0;4.0;2.0;195;70;265;73.5849;194;68;262;74.0458;98.8679;3;5;-2;4;1;3;1;strong_recent_form_bonus;NO

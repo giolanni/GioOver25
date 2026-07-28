@@ -1,0 +1,15 @@
+GioOver2.5 Parameter Optimizer - v25
+
+Dataset: 986
+TRAIN: 690
+VALIDATION: 296
+
+Fasi accettate: strong_defense, vulnerable_defenses_bonus, strong_recent_form_bonus
+Fasi respinte: recent_form, restart, max_penalty, max_bonus
+
+VALIDATION
+NetGain: -3
+Precisione ALTA: 71.2766% -> 69.8925%
+Copertura ALTA: 98.9362%
+
+Una configurazione positiva solo sul TRAIN non va adottata.

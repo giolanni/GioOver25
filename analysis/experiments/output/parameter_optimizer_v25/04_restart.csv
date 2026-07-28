@@ -1,0 +1,6 @@
+﻿StrongDefenseThreshold;LowRecentPPGThreshold;VulnerableDefenseThreshold;HighRecentPPGThreshold;StrongDefenseWeight;RecentFormWeight;RestartWeight;VulnerableDefensesBonusWeight;StrongRecentFormBonusWeight;RestartReadyBonusWeight;MaxTotalPenalty;MaxTotalBonus;BaselineAltaOK;BaselineAltaKO;BaselineAltaTotal;BaselineAltaPrecision;SimulatedAltaOK;SimulatedAltaKO;SimulatedAltaTotal;SimulatedAltaPrecision;AltaCoverage;AltaKOAvoided;AltaOKLost;ProtectiveBalance;AltaOKPromoted;AltaKOPromoted;PromotionBalance;NetGain;Stage;Accepted
+6.0;0.6;8.0;1.4;0.5;0.0;0.0;0.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;190;65;255;74.5098;96.2264;5;5;0;0;0;0;0;restart;NO
+6.0;0.6;8.0;1.4;0.5;0.0;0.5;0.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;189;65;254;74.4094;95.8491;5;6;-1;0;0;0;-1;restart;NO
+6.0;0.6;8.0;1.4;0.5;0.0;1.0;0.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;188;65;253;74.3083;95.4717;5;7;-2;0;0;0;-2;restart;NO
+6.0;0.6;8.0;1.4;0.5;0.0;1.5;0.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;188;65;253;74.3083;95.4717;5;7;-2;0;0;0;-2;restart;NO
+6.0;0.6;8.0;1.4;0.5;0.0;2.0;0.0;0.0;0.0;4.0;2.0;195;70;265;73.5849;188;65;253;74.3083;95.4717;5;7;-2;0;0;0;-2;restart;NO

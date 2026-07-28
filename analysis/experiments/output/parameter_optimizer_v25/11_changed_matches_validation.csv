@@ -1,0 +1,41 @@
+﻿EffectiveDate;MatchDate;PredictionDate;LeagueId;Home;Away;BaseScore;BaseBand;Outcome;HomeDefenseWeaknessScore;AwayDefenseWeaknessScore;HomePPGLast5;AwayPPGLast5;HomeLongBreakDetected;AwayLongBreakDetected;HomeRestartReady;AwayRestartReady;HomeRestartNotReady;AwayRestartNotReady;StrongDefenseSignal;RecentFormSignal;RestartSignal;VulnerableDefensesBonusSignal;StrongRecentFormBonusSignal;RestartReadyBonusSignal;TotalPenalty;TotalBonus;SimulatedScore;SimulatedBand
+2026-07-21;2026-07-21;2026-07-21;Somalia_NationalLeague;Dekedaha;Horseed;64.01;MEDIA;OK;4.18;4.07;2.6;1.4;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;63.51;BASSA
+2026-07-21;2026-07-21;2026-07-21;Somalia_NationalLeague;Heegan;Elman;60.07;MEDIA;OK;2.87;3.11;1.4;2.0;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;59.57;BASSA
+2026-07-22;2026-07-22;2026-07-21;Norway_Eliteserien;Lilleström;Viking;63.59;MEDIA;OK;3.36;4.55;1.8;2.4;1;1;1;0;0;1;1.0;0.0;1.0;0.0;0.0;0.0;0.5;0.0;63.09;BASSA
+2026-07-23;2026-07-23;2026-07-23;Bhutan_PremierLeague;Tensung;Paro;60.02;MEDIA;OK;7.68;4.04;0.2;3.0;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;59.52;BASSA
+2026-07-23;2026-07-23;2026-07-23;Iceland_Division_1;Leiknir;Throttur;61.89;MEDIA;OK;4.94;4.55;1.4;1.6;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;61.39;BASSA
+2026-07-23;2026-07-23;2026-07-23;USA_MLS;Charlotte;Atlanta Utd;61.47;MEDIA;OK;5.58;7.47;1.4;1.4;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;60.97;BASSA
+2026-07-23;2026-07-23;2026-07-23;USA_MLSNextPro_EasternConference_NortheastDivision;New England Revolution II;New York City II;64.41;MEDIA;OK;3.88;6.97;1.4;2.0;1;0;1;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;63.91;BASSA
+2026-07-23;2026-07-23;2026-07-23;USA_USLChampionship;Colorado Springs;Miami FC;62.47;MEDIA;KO;5.71;6.82;1.8;1.0;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;61.97;BASSA
+2026-07-24;2026-07-24;2026-07-23;Australia_NPLVictoria;Oakleigh;South Melbourne;60.56;MEDIA;OK;3.12;6.61;2.6;2.0;0;0;0;0;0;0;1.0;0.0;0.0;0.0;1.0;0.0;0.5;1.0;61.06;BASSA
+2026-07-24;2026-07-24;2026-07-23;Australia_SAStateLeague;Eastern United;Salisbury Utd.;60.39;MEDIA;OK;7.27;10.0;0.4;0.2;0;0;0;0;0;0;0.0;1.0;0.0;0.0;0.0;0.0;0.0;0.0;60.39;BASSA
+2026-07-24;2026-07-24;2026-07-23;Australia_VictoriaPremierLeague2;Eastern Lions;Box Hill;62.64;MEDIA;KO;4.91;5.91;1.6;1.2;1;0;0;0;1;0;1.0;0.0;1.0;0.0;0.0;0.0;0.5;0.0;62.14;BASSA
+2026-07-24;2026-07-24;2026-07-23;Bhutan_PremierLeague;RTC;BFF Academy U19;63.92;MEDIA;KO;4.44;9.6;1.6;0.2;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;63.42;BASSA
+2026-07-24;2026-07-24;2026-07-23;Finland_Kakkonen_GroupB;P-Iirot Rauma;Ilves 2;75.43;ALTA;OK;5.31;7.58;1.0;2.2;0;1;0;1;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;74.93;MEDIA
+2026-07-24;2026-07-24;2026-07-23;Finland_Veikkausliiga;Jaro;SJK;60.28;MEDIA;OK;7.27;7.1;1.0;1.0;0;0;0;0;0;0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;60.28;BASSA
+2026-07-24;2026-07-24;2026-07-23;Finland_Ykkonen;Jazz Pori;TPV;63.93;MEDIA;OK;5.58;7.58;0.8;2.0;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;63.43;BASSA
+2026-07-24;2026-07-24;2026-07-23;Germany_Oberliga_Bayern_Nord;Weiden;Cham;60.79;MEDIA;KO;8.0;0.0;;;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;60.29;BASSA
+2026-07-24;2026-07-24;2026-07-23;Iceland_Division_1;Volsungur;Grindavik;60.89;MEDIA;KO;8.0;5.45;0.6;1.2;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;60.39;BASSA
+2026-07-24;2026-07-24;2026-07-23;Kazakhstan_FirstLeague;Yelimay Semey 2;Taraz;60.94;MEDIA;KO;7.01;6.49;1.4;0.2;0;0;0;0;0;0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;60.94;BASSA
+2026-07-24;2026-07-24;2026-07-23;Kyrgyzstan_PremierLiga;Aldier;Neftchi Kochkor-Ata;61.69;MEDIA;OK;5.09;7.58;1.8;0.4;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;61.19;BASSA
+2026-07-24;2026-07-24;2026-07-23;SouthKorea_KLeague2;Gimhae;Cheongju Jikji;62.01;MEDIA;KO;7.5;7.22;1.4;1.4;1;1;0;1;1;0;0.0;0.0;1.0;0.0;0.0;0.0;0.0;0.0;62.01;BASSA
+2026-07-25;2026-07-25;2026-07-25;Australia_NPLACT;Brindabella;Canberra White Eagles;63.71;MEDIA;OK;8.0;10.0;0.8;0.0;0;0;0;0;0;0;0.0;0.0;0.0;1.0;0.0;0.0;0.0;1.0;64.71;BASSA
+2026-07-25;2026-07-25;2026-07-25;Australia_NPLNSW;NWS Spirit;WS Wanderers U21;64.91;MEDIA;OK;4.51;7.27;1.6;1.4;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;64.41;BASSA
+2026-07-25;2026-07-25;2026-07-25;Australia_NPLNSW;St George Saints;Sydney FC U23;61.14;MEDIA;KO;6.84;6.73;0.0;0.8;0;0;0;0;0;0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;61.14;BASSA
+2026-07-25;2026-07-25;2026-07-25;Australia_NPLSouthAustralia;Adelaide Comets;FK Beograd;63.7;MEDIA;KO;7.07;5.02;0.8;2.4;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;63.2;BASSA
+2026-07-25;2026-07-25;2026-07-25;Australia_NPLSouthAustralia;NE Metrostars;West Adelaide;75.39;ALTA;OK;3.84;8.37;1.8;0.6;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;74.89;MEDIA
+2026-07-25;2026-07-25;2026-07-25;Australia_NPLVictoria;Dandenong Thunder;Altona Magic;63.74;MEDIA;KO;7.97;7.71;0.6;1.4;0;0;0;0;0;0;0.0;0.0;0.0;1.0;0.0;0.0;0.0;1.0;64.74;BASSA
+2026-07-25;2026-07-25;2026-07-25;Australia_NSWLeagueOne;Dulwich Hill;Western City Rangers;63.02;MEDIA;OK;7.12;9.09;0.4;1.2;0;0;0;0;0;0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;63.02;BASSA
+2026-07-25;2026-07-25;2026-07-25;Australia_NSWLeagueOne;Macarthur Rams;Hurstville Zagreb;61.88;MEDIA;OK;3.93;7.39;2.2;1.4;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;61.38;BASSA
+2026-07-25;2026-07-25;2026-07-25;Australia_VictoriaPremierLeague;Port Melbourne Sharks;Northcote City;60.99;MEDIA;OK;8.0;4.98;1.0;0.8;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;60.49;BASSA
+2026-07-25;2026-07-25;2026-07-25;Australia_VictoriaPremierLeague2;Moreland City;Werribee City;62.93;MEDIA;OK;8.0;8.01;0.0;0.2;0;0;0;0;0;0;0.0;1.0;0.0;1.0;0.0;0.0;0.0;1.0;63.93;BASSA
+2026-07-25;2026-07-25;2026-07-25;Belarus_PershayaLiga;Smorgon;Gomel 2;61.61;MEDIA;KO;5.82;6.36;1.4;1.4;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;61.11;BASSA
+2026-07-25;2026-07-25;2026-07-25;Germany_Oberliga_Bayern_Nord;Bayern Hof;DJK Bamberg;61.03;MEDIA;KO;8.0;9.09;;;0;0;0;0;0;0;0.0;0.0;0.0;1.0;0.0;0.0;0.0;1.0;62.03;BASSA
+2026-07-25;2026-07-25;2026-07-25;Lithuania_ILyga;Babrungas;Ekranas;60.53;MEDIA;KO;0.91;9.37;2.6;0.0;1;0;1;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;60.03;BASSA
+2026-07-25;2026-07-25;2026-07-25;Norway_2ndDivision_Group1;Arendal;Vidar;61.43;MEDIA;OK;6.06;10.0;1.8;0.4;0;0;0;0;0;0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;61.43;BASSA
+2026-07-25;2026-07-25;2026-07-25;Norway_2ndDivision_Group1;Brattvag;Mjondalen;61.92;MEDIA;OK;2.73;4.92;1.4;2.0;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;61.42;BASSA
+2026-07-25;2026-07-25;2026-07-25;Norway_3rdDivision_Group6;Bjorkelangen;Fram;74.27;MEDIA;KO;8.0;10.0;0.6;0.8;0;0;0;0;0;0;0.0;0.0;0.0;1.0;0.0;0.0;0.0;1.0;75.27;ALTA
+2026-07-25;2026-07-25;2026-07-25;Norway_3rdDivision_Group6;Drobak-Frogn;Brumunddal;75.4;ALTA;OK;4.55;10.0;1.6;0.4;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;74.9;MEDIA
+2026-07-25;2026-07-25;2026-07-25;Norway_3rdDivision_Group6;SK Gjovik-Lyn;Rade;64.38;MEDIA;OK;1.52;9.47;2.2;1.8;0;0;0;0;0;0;1.0;0.0;0.0;0.0;0.0;0.0;0.5;0.0;63.88;BASSA
+2026-07-25;2026-07-25;2026-07-25;Norway_OBOSLigaen;Haugesund;Bryne;74.11;MEDIA;OK;6.75;7.47;2.4;2.0;0;0;0;0;0;0;0.0;0.0;0.0;0.0;1.0;0.0;0.0;1.0;75.11;ALTA
+2026-07-25;2026-07-25;2026-07-25;SouthKorea_KLeague2;Busan;Suwon Bluewings;60.8;MEDIA;OK;4.49;3.74;1.6;1.4;1;1;1;1;0;0;1.0;0.0;0.0;0.0;0.0;1.0;0.5;0.0;60.3;BASSA

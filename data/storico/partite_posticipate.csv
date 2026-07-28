@@ -1,15 +1,15 @@
 ﻿LeagueId;Round;MatchDate;Home;Away;Status;Notes
-Australia_NPLNorthernNSW;?;2026-07-18;Cooks Hill United;Broadmeadow;POSTICIPATA;POSTICIPATA
-Australia_NorthernNSWStateLeague;?;2026-07-18;Lake Macquarie;Singleton Strikers;POSTICIPATA;POSTICIPATA
+Australia_NPLNorthernNSW;20;2026-07-18;Cooks Hill United;Broadmeadow;POSTICIPATA;
+Australia_NorthernNSWStateLeague;15;2026-07-18;Lake Macquarie;Singleton Strikers;POSTICIPATA;
 Kazakhstan_PremierLeague;?;2026-07-19;Ertis Pavlodar;FC Astana;POSTICIPATA;Postponed
-Australia_NPLNorthernNSW;?;2026-07-19;Charlestown Azzurri;Edgeworth E.;POSTICIPATA;Postponed
-Australia_NorthernNSWStateLeague;?;2026-07-19;South Cardiff;Wallsend Red Devils;POSTICIPATA;Postponed
-Australia_NorthernNSWStateLeague;?;2026-07-19;Dudley Redhead United;Newcastle Croatia;POSTICIPATA;Postponed
-Somalia_NationalLeague;?;2026-07-22;Gantaalaha Afgooye;Mogadishu City;POSTICIPATA;Postponed
+Australia_NPLNorthernNSW;20;2026-07-19;Charlestown Azzurri;Edgeworth E.;POSTICIPATA;
+Australia_NorthernNSWStateLeague;15;2026-07-19;South Cardiff;Wallsend Red Devils;POSTICIPATA;
+Australia_NorthernNSWStateLeague;15;2026-07-19;Dudley Redhead United;Newcastle Croatia;POSTICIPATA;
+Somalia_NationalLeague;25;2026-07-22;Gantaalaha Afgooye;Mogadishu City;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;?;2026-07-04;Sibbo-Vargarna;JäPS/47;RINVIATA;Postponed
 Finland_Kolmonen_Western_Group3;?;2026-06-28;Sporting Kristina;Saaripotku;RINVIATA;Postponed
-Somalia_NationalLeague;?;2026-07-24;Badbaado;Raadsan;POSTICIPATA;Postponed
-Somalia_NationalLeague;?;2026-07-24;Elman;Jeenyo;POSTICIPATA;Postponed
+Somalia_NationalLeague;25;2026-07-24;Badbaado;Raadsan;POSTICIPATA;
+Somalia_NationalLeague;25;2026-07-24;Elman;Jeenyo;POSTICIPATA;
 Finland_Kolmonen_North;7;2026-06-28;Villan Pojat;RoPo;POSTICIPATA;Postponed
 Finland_Kolmonen_North;8;2026-07-04;Ajax Sarkkiranta;Santa Claus;POSTICIPATA;Postponed
 Finland_Kolmonen_Southern_Group1;10;2026-06-25;MPS;Pöxyt;POSTICIPATA;Postponed
@@ -26,3 +26,12 @@ Bhutan_PremierLeague;9;2026-07-07;Drukpa;Thimphu FC;POSTICIPATA;
 Kyrgyzstan_PremierLiga;16;2026-07-07;Asia Talas;Abdysh-Ata;POSTICIPATA;
 Bhutan_PremierLeague;9;2026-07-08;Paro;Tensung;POSTICIPATA;
 Kyrgyzstan_PremierLiga;16;2026-07-08;Alga;Dordoi Bishkek;POSTICIPATA;
+Serbia_SuperLiga;?;2026-07-26;Radnicki 1923;Zeleznicar Pancevo;POSTICIPATA;
+Somalia_NationalLeague;?;2026-07-26;Dekedaha;Gantaalaha Afgooye;POSTICIPATA;
+Somalia_NationalLeague;?;2026-07-26;Gaadiidka;Mogadishu City;POSTICIPATA;
+USA_USLChampionship;?;2026-07-26;Birmingham;New Mexico;POSTICIPATA;
+Kazakhstan_PremierLeague;27;2026-07-12;Atyrau;Yelimay Semey;POSTICIPATA;
+Australia_NorthernNSWStateLeague;14;2026-07-12;West Wallsend;New Lambton;POSTICIPATA;
+Australia_NPLNorthernNSW;19;2026-07-14;Kahibah;Maitland;POSTICIPATA;
+Somalia_NationalLeague;20;2026-07-28;Horseed;Badbaado;POSTICIPATA;
+Somalia_NationalLeague;20;2026-07-28;Raadsan;Elman;POSTICIPATA;

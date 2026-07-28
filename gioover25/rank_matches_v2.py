@@ -44,7 +44,8 @@ LIMITAZIONI
 
 import argparse
 import csv
-from datetime import date
+import shutil
+from datetime import date, datetime
 from pathlib import Path
 
 from .history import read_results_file
@@ -57,6 +58,8 @@ from .engines.factory import get_engine, get_available_engines
 INPUT_REQUIRED_COLUMNS = {"LeagueId", "MatchDate", "Home", "Away"}
 RESULTS_DIR = Path("data/storico/risultati")
 OUTPUT_DIR = Path("data/output_ranking")
+INPUT_ARCHIVE_DIR = Path("data/input_partite/oldmatches")
+OUTPUT_ARCHIVE_NAME = "old_ranking"
 REGISTRY_FILE = Path("data/league_registry.csv")
 
 FIELDNAMES = [
@@ -270,6 +273,89 @@ def build_output_row(
 }
 
 
+
+def _collision_safe_destination(destination: Path) -> Path:
+    """
+    Restituisce una destinazione libera senza sovrascrivere file esistenti.
+
+    Se il nome è già presente, aggiunge data e ora; in caso di una seconda
+    collisione nello stesso secondo, aggiunge anche un contatore progressivo.
+    """
+
+    if not destination.exists():
+        return destination
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    candidate = destination.with_name(
+        f"{destination.stem}_{timestamp}{destination.suffix}"
+    )
+
+    counter = 1
+    while candidate.exists():
+        candidate = destination.with_name(
+            f"{destination.stem}_{timestamp}_{counter}{destination.suffix}"
+        )
+        counter += 1
+
+    return candidate
+
+
+def archive_output_rankings(engine_name: str) -> int:
+    """
+    Sposta i ranking CSV precedenti dell'engine nella sua old_ranking.
+
+    Struttura:
+        data/output_ranking/<engine>/*.csv
+            -> data/output_ranking/<engine>/old_ranking/
+
+    La funzione analizza soltanto i CSV presenti direttamente nella cartella
+    dell'engine e non entra ricorsivamente nella cartella di archivio.
+    """
+
+    engine_output_dir = OUTPUT_DIR / engine_name
+    archive_dir = engine_output_dir / OUTPUT_ARCHIVE_NAME
+
+    engine_output_dir.mkdir(parents=True, exist_ok=True)
+    archive_dir.mkdir(parents=True, exist_ok=True)
+
+    archived = 0
+
+    for csv_file in sorted(engine_output_dir.glob("*.csv")):
+        destination = _collision_safe_destination(
+            archive_dir / csv_file.name
+        )
+        shutil.move(str(csv_file), str(destination))
+        print(f"[ARCHIVE] {csv_file} -> {destination}")
+        archived += 1
+
+    print(f"[ARCHIVE] {engine_name}: {archived} ranking archiviati.")
+    return archived
+
+
+def archive_input_file(input_path: Path) -> Path:
+    """
+    Sposta il file di input in data/input_partite/oldmatches.
+
+    Questa funzione deve essere chiamata soltanto dopo che tutti gli engine
+    richiesti hanno completato correttamente l'elaborazione.
+    """
+
+    if not input_path.exists():
+        raise FileNotFoundError(
+            f"File input non più disponibile per l'archiviazione: {input_path}"
+        )
+
+    INPUT_ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+
+    destination = _collision_safe_destination(
+        INPUT_ARCHIVE_DIR / input_path.name
+    )
+
+    shutil.move(str(input_path), str(destination))
+    print(f"[ARCHIVE] Input: {input_path} -> {destination}")
+
+    return destination
+
 def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: str = "v20") -> None:
     engine = get_engine(engine_name)
     prediction_date = date.today().isoformat()
@@ -384,16 +470,31 @@ def main() -> None:
     base_name = input_path.stem.replace("partite", "ranking")
 
     if args.engine == "all":
-        for engine_name in get_available_engines():
+        engine_names = get_available_engines()
+
+        # Prima di generare i nuovi ranking, archivia gli output precedenti
+        # nella cartella old_ranking specifica di ciascun engine.
+        for engine_name in engine_names:
+            archive_output_rankings(engine_name)
+
+        # Se uno degli engine solleva un errore, l'esecuzione si interrompe e
+        # il file di input non viene archiviato.
+        for engine_name in engine_names:
             output_file = OUTPUT_DIR / engine_name / f"{base_name}_{engine_name}.csv"
             rank_matches(args.input_file, output_file, engine_name)
     else:
+        archive_output_rankings(args.engine)
+
         output_file = (
             Path(args.output)
             if args.output
             else OUTPUT_DIR / args.engine / f"{base_name}_{args.engine}.csv"
         )
         rank_matches(args.input_file, output_file, args.engine)
+
+    # Questo punto viene raggiunto soltanto se tutti gli engine richiesti
+    # hanno completato correttamente la generazione del ranking.
+    archive_input_file(input_path)
 
 
 if __name__ == "__main__":

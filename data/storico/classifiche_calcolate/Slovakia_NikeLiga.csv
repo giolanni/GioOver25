@@ -1,7 +1,13 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Podbrezova;1;1;0;0;2;0;2;3;3.0
-1;2;Komarno;1;0;1;0;1;1;0;1;1.0
-1;3;Skalica;1;0;1;0;1;1;0;1;1.0
-1;4;Trencin;1;0;1;0;1;1;0;1;1.0
-1;5;Trnava;1;0;1;0;1;1;0;1;1.0
-1;6;Michalovce;1;0;0;1;0;2;-2;0;0.0
+1;1;Slovan Bratislava;1;1;0;0;4;0;4;3;3.0
+1;2;Podbrezova;1;1;0;0;2;0;2;3;3.0
+1;3;Kosice;1;0;1;0;4;4;0;1;1.0
+1;4;Zilina;1;0;1;0;4;4;0;1;1.0
+1;5;Dun. Streda;1;0;1;0;1;1;0;1;1.0
+1;6;Komarno;1;0;1;0;1;1;0;1;1.0
+1;7;Ruzomberok;1;0;1;0;1;1;0;1;1.0
+1;8;Skalica;1;0;1;0;1;1;0;1;1.0
+1;9;Trencin;1;0;1;0;1;1;0;1;1.0
+1;10;Trnava;1;0;1;0;1;1;0;1;1.0
+1;11;Michalovce;1;0;0;1;0;2;-2;0;0.0
+1;12;Banska Bystrica;1;0;0;1;0;4;-4;0;0.0
