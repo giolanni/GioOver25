@@ -29,6 +29,7 @@ Bhutan_PremierLeague;Bhutan;Premier League;10;18;Yes;;
 Bolivia_DivisionProfesional;Bolivia;Division Profesional;16;30;Yes;;
 Bulgaria_ParvaLiga;Bulgaria;Parva Liga;14;26;Yes;;
 Bulgaria_VtoraLiga;Bulgaria;Vtora Liga;18;34;Yes;;
+CzechRepublic_1Liga;Czech Republic;1. Liga;16;30;Yes;Regular season before championship/relegation phases;
 CzechRepublic_ChNL;Czech Republic;ChNL;16;30;Yes;;
 Denmark_1stDivision;Denmark;1st Division;12;32;Yes;Championship/Relegation split after 22 rounds;
 Denmark_Superliga;Denmark;Superliga;12;32;Yes;Championship/Relegation split after 22 rounds;
@@ -43,19 +44,19 @@ FaroeIslands_PremierLeague;Faroe Islands;Premier League;10;27;Yes;;
 Finland_Kakkonen_GroupA;Finland;Kakkonen Group A;10;18;Yes;Round not supplied in source data;
 Finland_Kakkonen_GroupB;Finland;Kakkonen Group B;10;18;Yes;Round not supplied in source data;
 Finland_Kakkonen_GroupC;Finland;Kakkonen Group C;10;18;Yes;Round not supplied in source data;
+Finland_Kolmonen_Eastern_Group1;Finland;Kolmonen Eastern Group 1;8;14;Yes;2026 regional group;
+Finland_Kolmonen_Eastern_Group2;Finland;Kolmonen Eastern Group 2;8;14;Yes;2026 regional group;
+Finland_Kolmonen_Eastern_Group3;Finland;Kolmonen Eastern Group 3;12;22;Yes;2026 regional group;
+Finland_Kolmonen_North;Finland;Kolmonen North;10;18;Yes;2026 regional group;
+Finland_Kolmonen_Southern_Group1;Finland;Kolmonen Southern Group 1;12;22;Yes;2026 regional group;
+Finland_Kolmonen_Southern_Group2;Finland;Kolmonen Southern Group 2;12;22;Yes;2026 regional group;
+Finland_Kolmonen_Southern_Group3;Finland;Kolmonen Southern Group 3;11;20;Yes;2026 regional group;
+Finland_Kolmonen_Western_Group1;Finland;Kolmonen Western Group 1;12;22;Yes;2026 regional group;
+Finland_Kolmonen_Western_Group2;Finland;Kolmonen Western Group 2;12;22;Yes;2026 regional group;
+Finland_Kolmonen_Western_Group3;Finland;Kolmonen Western Group 3;12;22;Yes;2026 regional group;
 Finland_Veikkausliiga;Finland;Veikkausliiga;12;22;Yes;Regular season;
 Finland_Ykkonen;Finland;Ykkonen;12;22;Yes;;
 Finland_Ykkosliiga;Finland;Ykkosliiga;10;0;No;Round not supplied in source data;
-Finland_Kolmonen_North;Finland;Kolmonen North;10;18;Yes;2026 regional group
-Finland_Kolmonen_Southern_Group1;Finland;Kolmonen Southern Group 1;12;22;Yes;2026 regional group
-Finland_Kolmonen_Southern_Group2;Finland;Kolmonen Southern Group 2;12;22;Yes;2026 regional group
-Finland_Kolmonen_Southern_Group3;Finland;Kolmonen Southern Group 3;11;20;Yes;2026 regional group
-Finland_Kolmonen_Western_Group1;Finland;Kolmonen Western Group 1;12;22;Yes;2026 regional group
-Finland_Kolmonen_Western_Group2;Finland;Kolmonen Western Group 2;12;22;Yes;2026 regional group
-Finland_Kolmonen_Western_Group3;Finland;Kolmonen Western Group 3;12;22;Yes;2026 regional group
-Finland_Kolmonen_Eastern_Group1;Finland;Kolmonen Eastern Group 1;8;14;Yes;2026 regional group
-Finland_Kolmonen_Eastern_Group2;Finland;Kolmonen Eastern Group 2;8;14;Yes;2026 regional group
-Finland_Kolmonen_Eastern_Group3;Finland;Kolmonen Eastern Group 3;12;22;Yes;2026 regional group
 France_Ligue1;France;Ligue 1;18;34;Yes;;
 France_Ligue2;France;Ligue 2;18;34;Yes;;
 France_National;France;National;18;34;Yes;;
@@ -83,7 +84,8 @@ Germany_Regionalliga_Nordost;Germany;Regionalliga Nordost;18;34;Yes;;
 Germany_Regionalliga_PlayOff;Germany;Regionalliga Play Off;4;2;No;;
 Germany_Regionalliga_Sudwest;Germany;Regionalliga Sudwest;18;34;Yes;;
 Germany_Regionalliga_West;Germany;Regionalliga West;18;34;Yes;;
-Hungary_NBI;Hungary;NB I.;12;33;Yes;;
+Hungary_NBI;Hungary;NB I;12;33;No;Each team plays every opponent three times;
+Hungary_NBII;Hungary;NB II.;16;30;Yes;;
 Iceland_BestaDeildKarla;Iceland;Besta deizld karla;12;22;Yes;;
 Iceland_Division_1;Iceland;Division 1;12;22;TRUE;;
 Iceland_Division_2;Islanda;Division 2;12;22;TRUE;;
@@ -131,6 +133,7 @@ Russia_PremierLeague;Russia;Premier League;16;30;Yes;;
 Serbia_PrvaLiga;Serbia;Prva Liga;16;30;Yes;;
 Serbia_SuperLiga;Serbia;Super Liga;16;30;Yes;;
 Slovakia_2Liga;Slovakia;2. Liga;16;30;Yes;;
+Slovakia_NikeLiga;Slovakia;Nike liga;12;32;Yes;Championship/Relegation split after 22 rounds;
 Slovenia_PrvaLiga;Slovenia;Prva Liga;10;36;Yes;;
 Somalia_NationalLeague;Somalia;National League;12;22;Yes;Season 2025/2026;
 SouthKorea_KLeague1;South Korea;K League 1;12;33;No;Regular season;
@@ -147,6 +150,7 @@ Sweden_Division2_SodraSvealand;Sweden;Sodra Svealand;14;26;Yes;;
 Sweden_Division2_VastraGotaland;Sweden;Vastra Gotaland;14;26;Yes;;
 Sweden_Superettan;Sweden;Superettan;16;30;Yes;Round 13 currently partial in supplied data;
 Switzerland_ChallengeLeague;Switzerland;Challenge League;10;36;Yes;;
+Switzerland_SuperLeague;Switzerland;Super League;12;38;Yes;Regular season followed by championship/relegation groups;
 Turkey_SuperLig;Turkey;Süper Lig;18;34;Yes;;
 Ukraine_PershaLiga;Ukraine;Persha Liga;16;30;Yes;;
 USA_MLS;USA;MLS;30;58;Yes;;
@@ -178,7 +182,3 @@ USA_USLLeagueTwo_Southeast;USA;USL League Two - Southeast Division;6;0;No;UNBALA
 USA_USLLeagueTwo_SouthFlorida;USA;USL League Two - South Florida Division;6;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Southwest;USA;USL League Two - Southwest Division;8;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Valley;USA;USL League Two - Valley Division;6;0;No;UNBALANCED;USA_USLLeagueTwo
-CzechRepublic_1Liga;Czech Republic;1. Liga;16;30;Yes;Regular season before championship/relegation phases;
-Slovakia_NikeLiga;Slovakia;Nike liga;12;32;Yes;Championship/Relegation split after 22 rounds;
-Switzerland_SuperLeague;Switzerland;Super League;12;38;Yes;Regular season followed by championship/relegation groups;
-Hungary_NBII;Hungary;NB II.;16;30;Yes;;
