@@ -3,13 +3,15 @@ from __future__ import annotations
 import argparse
 import csv
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 
 
 EMPTY_VALUES = {"", "nan", "none", "null", "n/a", "na", "-"}
 VALID_RESULTS = {"OK", "KO"}
+POSTPONED_STATUSES = {"posticipata", "postponed", "rinviata", "delayed"}
+DEFAULT_RESULTS_ROOT = Path("data/storico/risultati")
 
 COLUMN_ALIASES = {
     "league_id": ("LeagueId", "league_id", "League", "league"),
@@ -23,6 +25,8 @@ COLUMN_ALIASES = {
     "result": ("Over25", "over25", "Result", "result", "Esito", "esito"),
     "home_goals": ("HG", "home_goals", "HomeGoals", "home_score"),
     "away_goals": ("AG", "away_goals", "AwayGoals", "away_score"),
+    "status": ("Status", "status", "MatchStatus", "match_status"),
+    "notes": ("Notes", "notes", "Note", "note"),
 }
 
 
@@ -37,12 +41,14 @@ class MissingMatch:
     away: str
     band: str
     source_file: str
+    historical_status: str = ""
+    postponed: str = "NO"
 
     @property
     def identity(self) -> Tuple[str, str, str, str]:
         return (
             self.league_id.strip().casefold(),
-            self.season.strip().casefold(),
+            self.match_date.strip().casefold(),
             self.home.strip().casefold(),
             self.away.strip().casefold(),
         )
@@ -133,6 +139,125 @@ def read_missing_from_file(path: Path) -> List[MissingMatch]:
         return rows
 
 
+def normalize_team(value: object) -> str:
+    return " ".join(normalize(value).casefold().split())
+
+
+def is_postponed_status(status: str, notes: str = "") -> bool:
+    combined = f"{normalize(status)} {normalize(notes)}".casefold()
+    return any(token in combined for token in POSTPONED_STATUSES)
+
+
+def load_results_index(results_root: Path) -> Dict[Tuple[str, str, str, str], Tuple[str, str]]:
+    """Indicizza gli storici risultati per lega, data, casa e trasferta.
+
+    Il valore associato contiene Status e Notes. I file senza colonne minime
+    vengono ignorati senza interrompere l'analisi degli storici ranking.
+    """
+
+    index: Dict[Tuple[str, str, str, str], Tuple[str, str]] = {}
+
+    if not results_root.exists():
+        return index
+
+    for path in sorted(results_root.rglob("*.csv")):
+        delimiter = detect_delimiter(path)
+
+        with path.open("r", encoding="utf-8-sig", newline="") as handle:
+            reader = csv.DictReader(handle, delimiter=delimiter)
+            if not reader.fieldnames:
+                continue
+
+            columns = {
+                key: resolve_column(reader.fieldnames, key)
+                for key in COLUMN_ALIASES
+            }
+
+            if not columns["home"] or not columns["away"]:
+                continue
+
+            fallback_league_id = path.stem
+
+            for row in reader:
+                league_id = normalize(
+                    row.get(columns["league_id"] or "", "")
+                ) or fallback_league_id
+                match_date = normalize(
+                    row.get(columns["match_date"] or "", "")
+                )
+                home = normalize(row.get(columns["home"] or "", ""))
+                away = normalize(row.get(columns["away"] or "", ""))
+
+                if not home or not away:
+                    continue
+
+                status = normalize(row.get(columns["status"] or "", ""))
+                notes = normalize(row.get(columns["notes"] or "", ""))
+
+                key = (
+                    league_id.casefold(),
+                    match_date.casefold(),
+                    normalize_team(home),
+                    normalize_team(away),
+                )
+                index[key] = (status, notes)
+
+    return index
+
+
+def annotate_postponed(
+    matches: Iterable[MissingMatch],
+    results_index: Dict[Tuple[str, str, str, str], Tuple[str, str]],
+) -> List[MissingMatch]:
+    """Aggiunge lo stato storico e l'indicazione Posticipata SI/NO.
+
+    Prima prova l'abbinamento completo con la data. Se non lo trova, usa
+    lega+casa+trasferta soltanto quando esiste un'unica candidata: questo aiuta
+    nei casi in cui la data originaria sia stata cambiata dopo il rinvio.
+    """
+
+    by_teams: Dict[Tuple[str, str, str], List[Tuple[str, str]]] = {}
+    for (league, _date, home, away), value in results_index.items():
+        by_teams.setdefault((league, home, away), []).append(value)
+
+    output: List[MissingMatch] = []
+
+    for match in matches:
+        exact_key = (
+            match.league_id.casefold(),
+            match.match_date.casefold(),
+            normalize_team(match.home),
+            normalize_team(match.away),
+        )
+
+        value = results_index.get(exact_key)
+
+        if value is None:
+            candidates = by_teams.get(
+                (
+                    match.league_id.casefold(),
+                    normalize_team(match.home),
+                    normalize_team(match.away),
+                ),
+                [],
+            )
+            if len(candidates) == 1:
+                value = candidates[0]
+
+        status, notes = value if value is not None else ("", "")
+        postponed = "SI" if is_postponed_status(status, notes) else "NO"
+
+        output.append(
+            replace(
+                match,
+                historical_status=status or notes,
+                postponed=postponed,
+            )
+        )
+
+    return output
+
+
 def find_csv_files(root: Path, pattern: str) -> List[Path]:
     if root.is_file():
         return [root] if root.suffix.lower() == ".csv" else []
@@ -196,6 +321,8 @@ def print_table(matches: Sequence[MissingMatch]) -> None:
         "Home",
         "Away",
         "Band",
+        "HistoricalStatus",
+        "Postponed",
     )
 
     rows = [
@@ -207,6 +334,8 @@ def print_table(matches: Sequence[MissingMatch]) -> None:
             match.home,
             match.away,
             match.band,
+            match.historical_status,
+            match.postponed,
         )
         for match in matches
     ]
@@ -241,13 +370,14 @@ def export_csv(matches: Sequence[MissingMatch], output_path: Path) -> None:
         writer.writerow(
             [
                 "LeagueId",
-                "Season",
                 "Round",
                 "MatchDate",
                 "PredictionDate",
                 "Home",
                 "Away",
                 "Band",
+                "HistoricalStatus",
+                "Postponed",
                 "SourceFile",
             ]
         )
@@ -255,13 +385,14 @@ def export_csv(matches: Sequence[MissingMatch], output_path: Path) -> None:
             writer.writerow(
                 [
                     match.league_id,
-                    match.season,
                     match.round,
                     match.match_date,
                     match.prediction_date,
                     match.home,
                     match.away,
                     match.band,
+                    match.historical_status,
+                    match.postponed,
                     match.source_file,
                 ]
             )
@@ -309,6 +440,14 @@ def build_parser() -> argparse.ArgumentParser:
         dest="csv_output",
         help="Esporta l'elenco in un file CSV separato da punto e virgola.",
     )
+    parser.add_argument(
+        "--results-root",
+        default=str(DEFAULT_RESULTS_ROOT),
+        help=(
+            "Cartella degli storici risultati usata per riconoscere le "
+            "partite posticipate. Default: data/storico/risultati"
+        ),
+    )
     return parser
 
 
@@ -343,6 +482,9 @@ def main() -> int:
         band=args.band,
         exclude_australia=args.exclude_australia,
     )
+
+    results_index = load_results_index(Path(args.results_root))
+    matches = annotate_postponed(matches, results_index)
 
     print_table(matches)
 

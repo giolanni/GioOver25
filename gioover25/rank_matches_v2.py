@@ -60,6 +60,7 @@ RESULTS_DIR = Path("data/storico/risultati")
 OUTPUT_DIR = Path("data/output_ranking")
 INPUT_ARCHIVE_DIR = Path("data/input_partite/oldmatches")
 OUTPUT_ARCHIVE_NAME = "old_ranking"
+MIN_COMPLETED_ROUNDS_PER_LEAGUE = 5
 REGISTRY_FILE = Path("data/league_registry.csv")
 
 FIELDNAMES = [
@@ -208,6 +209,64 @@ def find_team_source_league(
     raise ValueError(
         f"Squadra non trovata negli storici del CompetitionGroup: {team}"
     )
+
+def _match_has_final_score(match) -> bool:
+    """Restituisce True quando lo storico contiene un risultato concluso."""
+
+    goal_pairs = (
+        ("hg", "ag"),
+        ("home_goals", "away_goals"),
+        ("home_score", "away_score"),
+    )
+
+    for home_field, away_field in goal_pairs:
+        home_value = getattr(match, home_field, None)
+        away_value = getattr(match, away_field, None)
+
+        if home_value not in (None, "") and away_value not in (None, ""):
+            return True
+
+    status = str(getattr(match, "status", "") or "").strip().casefold()
+    return status in {
+        "finale",
+        "final",
+        "dopo supplementari",
+        "rigori",
+    }
+
+
+def count_completed_rounds_before(
+    matches: list,
+    match_date: date | None,
+) -> int:
+    """Conta i turni distinti conclusi prima della partita da analizzare.
+
+    La soglia riguarda i turni realmente disponibili nello storico, non il
+    semplice numero di righe. Una lega con molte gare del primo turno resta
+    quindi non predicibile finché non possiede almeno cinque turni conclusi.
+    """
+
+    completed_rounds = set()
+
+    for match in matches:
+        current_date = _match_date(match)
+
+        if current_date is None:
+            continue
+
+        if match_date is not None and current_date >= match_date:
+            continue
+
+        if not _match_has_final_score(match):
+            continue
+
+        round_value = str(getattr(match, "round", "") or "").strip()
+
+        if round_value:
+            completed_rounds.add(round_value)
+
+    return len(completed_rounds)
+
 
 def infer_next_round(matches: list) -> int:
     if not matches:
@@ -377,7 +436,6 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
             league_id, competition_group, registry_rows
         )
         histories = load_group_histories(group_league_ids)
-        histories = load_group_histories(group_league_ids)
 
         # Se non esiste ancora alcun file storico, la competizione è appena iniziata
         # oppure non sono stati ancora acquisiti risultati.
@@ -389,6 +447,32 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
             print(
                 f"[SKIP] {league_id}: nessuno storico risultati disponibile "
                 f"(0 partite concluse, minimo richiesto: 5)."
+            )
+            continue
+
+        # Per le leghe ordinarie il controllo usa lo storico della singola lega.
+        # Per play-in/playoff e CompetitionGroup usa gli storici divisionali
+        # disponibili, perché la fase dedicata può non avere ancora un file proprio.
+        readiness_matches = (
+            [
+                match
+                for source_matches in histories.values()
+                for match in source_matches
+            ]
+            if competition_group
+            else histories.get(league_id, [])
+        )
+
+        completed_rounds = count_completed_rounds_before(
+            readiness_matches,
+            match_date_value,
+        )
+
+        if completed_rounds < MIN_COMPLETED_ROUNDS_PER_LEAGUE:
+            print(
+                f"[SKIP] {league_id}: solo {completed_rounds} turni conclusi "
+                f"prima del {match_date_text}; minimo richiesto: "
+                f"{MIN_COMPLETED_ROUNDS_PER_LEAGUE}."
             )
             continue
 

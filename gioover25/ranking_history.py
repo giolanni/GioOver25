@@ -788,6 +788,26 @@ def update_finished_matches(
                         continue
 
                 elif prediction_date is not None:
+                    first_valid = (
+                        prediction_date
+                        - timedelta(
+                            days=legacy_max_days
+                        )
+                    )
+
+                    last_valid = (
+                        prediction_date
+                        + timedelta(
+                            days=legacy_max_days
+                        )
+                    )
+
+                    if not (
+                        first_valid
+                        <= result_date
+                        <= last_valid
+                    ):
+                        continue
                     if (
                         result_date
                         < prediction_date
@@ -834,14 +854,17 @@ def update_finished_matches(
         ) in result_candidates:
             scored = sorted(
                 (
-                    _candidate_score(
+                    (
+                        _candidate_score(
+                            row,
+                            match,
+                            result_date,
+                        ),
                         row,
-                        match,
-                        result_date,
-                    ),
-                    row,
-                )
-                for row in compatible_rows
+                    )
+                    for row in compatible_rows
+                ),
+                key=lambda x: x[0],
             )
 
             best_score = scored[
