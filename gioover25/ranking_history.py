@@ -637,6 +637,58 @@ def update_finished_matches(
         )
         return
 
+    # Elimina le prediction duplicate della stessa partita nello stesso engine.
+    # L'identità è la stessa già usata da append_predictions():
+    # LeagueId + Home + Away + MatchDate, oppure PredictionDate se MatchDate è vuota.
+    #
+    # Se tra due duplicati uno contiene già il risultato finale, viene mantenuto
+    # quello completo; altrimenti viene mantenuta l'ultima riga letta.
+    unique_by_key = {}
+    duplicate_predictions_removed = 0
+
+    for history_row in history:
+        history_key = _key(
+            history_row
+        )
+
+        current = unique_by_key.get(
+            history_key
+        )
+
+        if current is None:
+            unique_by_key[
+                history_key
+            ] = history_row
+            continue
+
+        duplicate_predictions_removed += 1
+
+        current_is_final = (
+            _text(current.get("HG"))
+            and _text(current.get("AG"))
+        )
+
+        new_is_final = (
+            _text(history_row.get("HG"))
+            and _text(history_row.get("AG"))
+        )
+
+        if new_is_final or not current_is_final:
+            unique_by_key[
+                history_key
+            ] = history_row
+
+    history = list(
+        unique_by_key.values()
+    )
+
+    if duplicate_predictions_removed:
+        print(
+            f"[{engine_name}] "
+            f"Prediction duplicate rimosse dallo storico: "
+            f"{duplicate_predictions_removed}"
+        )
+
     results_cache: dict[
         str,
         list,
@@ -788,32 +840,6 @@ def update_finished_matches(
                         continue
 
                 elif prediction_date is not None:
-                    first_valid = (
-                        prediction_date
-                        - timedelta(
-                            days=legacy_max_days
-                        )
-                    )
-
-                    last_valid = (
-                        prediction_date
-                        + timedelta(
-                            days=legacy_max_days
-                        )
-                    )
-
-                    if not (
-                        first_valid
-                        <= result_date
-                        <= last_valid
-                    ):
-                        continue
-                    if (
-                        result_date
-                        < prediction_date
-                    ):
-                        continue
-
                     if (
                         result_date
                         > prediction_date

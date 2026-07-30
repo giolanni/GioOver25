@@ -133,6 +133,19 @@ def read_missing_from_file(path: Path) -> List[MissingMatch]:
                     away=away,
                     band=normalize(row.get(columns["band"] or "", "")),
                     source_file=str(path),
+                    historical_status=normalize(
+                        row.get(columns["status"] or "", "")
+                    ) or normalize(
+                        row.get(columns["notes"] or "", "")
+                    ),
+                    postponed=(
+                        "SI"
+                        if is_postponed_status(
+                            normalize(row.get(columns["status"] or "", "")),
+                            normalize(row.get(columns["notes"] or "", "")),
+                        )
+                        else "NO"
+                    ),
                 )
             )
 
@@ -245,12 +258,24 @@ def annotate_postponed(
                 value = candidates[0]
 
         status, notes = value if value is not None else ("", "")
-        postponed = "SI" if is_postponed_status(status, notes) else "NO"
+
+        ranking_status = match.historical_status
+        combined_status = status or notes or ranking_status
+
+        postponed = (
+            "SI"
+            if (
+                match.postponed == "SI"
+                or is_postponed_status(status, notes)
+                or is_postponed_status(ranking_status)
+            )
+            else "NO"
+        )
 
         output.append(
             replace(
                 match,
-                historical_status=status or notes,
+                historical_status=combined_status,
                 postponed=postponed,
             )
         )

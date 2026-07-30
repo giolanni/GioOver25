@@ -1198,6 +1198,10 @@ def append_results(
             f"{SUSPECT_DUPLICATES_FILE}"
         )
 
+    print(
+    "Engine aggiornati:",
+    get_available_engines(),
+    )   
     # Prima assegna i risultati finali alla prediction più recente
     # e compatibile; poi sincronizza le eventuali rinviate ancora aperte.
     for engine_name in get_available_engines():
