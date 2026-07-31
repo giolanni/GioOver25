@@ -161,6 +161,7 @@ from .ranking_history import (
 )
 from gioover25.league_over_map import rebuild_league_over_map
 from gioover25.engines.factory import get_available_engines
+from .team_names import normalize_team_name
 
 
 
@@ -190,6 +191,10 @@ DEBUG_DIR = Path("data/debug")
 SUSPECT_DUPLICATES_FILE = (
     DEBUG_DIR
     / "duplicati_risultati_suspect.csv"
+)
+
+RANKING_HISTORY_DIR = Path(
+    "data/storico/ranking"
 )
 
 POSTPONED_FIELDNAMES = [
@@ -228,6 +233,37 @@ POSTPONED_STATUSES = {
 CLOSE_DUPLICATE_MAX_DAYS = 4
 
 
+def _get_ranking_history_engines() -> list[str]:
+    """
+    Restituisce tutti gli engine che possiedono uno storico ranking.
+
+    Include anche engine storici non più restituiti da get_available_engines(),
+    così i relativi CSV continuano a ricevere i risultati finali.
+    """
+    engine_names = set(
+        get_available_engines()
+    )
+
+    if RANKING_HISTORY_DIR.exists():
+        for engine_dir in RANKING_HISTORY_DIR.iterdir():
+            if not engine_dir.is_dir():
+                continue
+
+            history_file = (
+                engine_dir
+                / f"storico_ranking_{engine_dir.name}.csv"
+            )
+
+            if history_file.exists():
+                engine_names.add(
+                    engine_dir.name
+                )
+
+    return sorted(
+        engine_names
+    )
+
+
 def _optional_int(value: str) -> int | None:
     raw = str(value or "").strip()
 
@@ -235,15 +271,6 @@ def _optional_int(value: str) -> int | None:
         return None
 
     return int(raw)
-
-
-def _normalize(value: str) -> str:
-    return " ".join(
-        str(value or "")
-        .strip()
-        .lower()
-        .split()
-    )
 
 
 def _parse_match_date(value) -> date | None:
@@ -259,12 +286,13 @@ def _parse_match_date(value) -> date | None:
 
 
 def _match_key(
+    league_id: str,
     match: MatchResult,
 ) -> tuple[str, str, str]:
     return (
         str(match.date).strip(),
-        _normalize(match.home),
-        _normalize(match.away),
+        normalize_team_name(league_id, match.home),
+        normalize_team_name(league_id, match.away),
     )
 
 
@@ -275,20 +303,21 @@ def _postponed_key(
 ) -> tuple[str, str, str]:
     return (
         league_id.strip(),
-        _normalize(home),
-        _normalize(away),
+        normalize_team_name(league_id, home),
+        normalize_team_name(league_id, away),
     )
 
 
 def _same_teams_and_result(
+    league_id: str,
     first: MatchResult,
     second: MatchResult,
 ) -> bool:
     return (
-        _normalize(first.home)
-        == _normalize(second.home)
-        and _normalize(first.away)
-        == _normalize(second.away)
+        normalize_team_name(league_id, first.home)
+        == normalize_team_name(league_id, second.home)
+        and normalize_team_name(league_id, first.away)
+        == normalize_team_name(league_id, second.away)
         and first.home_goals
         == second.home_goals
         and first.away_goals
@@ -297,6 +326,7 @@ def _same_teams_and_result(
 
 
 def _find_same_result_matches(
+    league_id: str,
     new_match: MatchResult,
     existing_matches: list[MatchResult],
 ) -> list[tuple[MatchResult, int]]:
@@ -311,6 +341,7 @@ def _find_same_result_matches(
 
     for existing in existing_matches:
         if not _same_teams_and_result(
+            league_id,
             existing,
             new_match,
         ):
@@ -400,11 +431,13 @@ def _suspect_key(
         str(
             row.get("LeagueId", "")
         ).strip(),
-        _normalize(
-            row.get("Home", "")
+        normalize_team_name(
+            str(row.get("LeagueId", "")).strip(),
+            row.get("Home", ""),
         ),
-        _normalize(
-            row.get("Away", "")
+        normalize_team_name(
+            str(row.get("LeagueId", "")).strip(),
+            row.get("Away", ""),
         ),
         str(
             row.get("HG", "")
@@ -485,6 +518,7 @@ def _append_suspect_rows(
 
 
 def _resolve_round(
+    league_id: str,
     row: dict,
     existing_matches: list[MatchResult],
 ) -> int:
@@ -495,12 +529,14 @@ def _resolve_round(
     if raw_round and raw_round != "?":
         return int(raw_round)
 
-    home = _normalize(
-        row.get("Home", "")
+    home = normalize_team_name(
+        league_id,
+        row.get("Home", ""),
     )
 
-    away = _normalize(
-        row.get("Away", "")
+    away = normalize_team_name(
+        league_id,
+        row.get("Away", ""),
     )
 
     home_last_round = max(
@@ -508,8 +544,8 @@ def _resolve_round(
             match.round
             for match in existing_matches
             if (
-                _normalize(match.home) == home
-                or _normalize(match.away) == home
+                normalize_team_name(league_id, match.home) == home
+                or normalize_team_name(league_id, match.away) == home
             )
         ],
         default=0,
@@ -520,8 +556,8 @@ def _resolve_round(
             match.round
             for match in existing_matches
             if (
-                _normalize(match.home) == away
-                or _normalize(match.away) == away
+                normalize_team_name(league_id, match.home) == away
+                or normalize_team_name(league_id, match.away) == away
             )
         ],
         default=0,
@@ -978,7 +1014,7 @@ def append_results(
             existing_matches = []
 
         existing_keys = {
-            _match_key(match)
+            _match_key(league_id, match)
             for match in existing_matches
         }
 
@@ -995,11 +1031,12 @@ def append_results(
                 }
 
                 match.round = _resolve_round(
+                    league_id,
                     fake_row,
                     existing_matches + added,
                 )
 
-            key = _match_key(match)
+            key = _match_key(league_id, match)
 
             if key in existing_keys:
                 duplicates += 1
@@ -1007,6 +1044,7 @@ def append_results(
 
             same_result_matches = (
                 _find_same_result_matches(
+                    league_id=league_id,
                     new_match=match,
                     existing_matches=(
                         existing_matches
@@ -1039,6 +1077,7 @@ def append_results(
                 ).strip()
 
                 old_key = _match_key(
+                    league_id,
                     existing_match
                 )
 
@@ -1059,6 +1098,7 @@ def append_results(
                     )
 
                 new_key = _match_key(
+                    league_id,
                     existing_match
                 )
 
@@ -1198,19 +1238,31 @@ def append_results(
             f"{SUSPECT_DUPLICATES_FILE}"
         )
 
+    # Aggiorna anche gli storici degli engine non più attivi ma ancora
+    # presenti in data/storico/ranking.
+    ranking_history_engines = (
+        _get_ranking_history_engines()
+    )
+
+    finished_matches = [
+        (league_id, match)
+        for league_id, matches in grouped_matches.items()
+        for match in matches
+    ]
+
     print(
-    "Engine aggiornati:",
-    get_available_engines(),
-    )   
-    # Prima assegna i risultati finali alla prediction più recente
-    # e compatibile; poi sincronizza le eventuali rinviate ancora aperte.
-    for engine_name in get_available_engines():
+        "Aggiornamento ranking con risultati input: "
+        f"{len(finished_matches)}"
+    )
+
+    for engine_name in ranking_history_engines:
         update_finished_matches(
-            engine_name
+            engine_name,
+            finished_matches,
         )
 
     sync_postponed_statuses_all_engines(
-        get_available_engines()
+        ranking_history_engines
     )
 
     rebuild_league_over_map()

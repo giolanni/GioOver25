@@ -7,6 +7,8 @@ from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 
+from .team_names import normalize_team_name
+
 
 EMPTY_VALUES = {"", "nan", "none", "null", "n/a", "na", "-"}
 VALID_RESULTS = {"OK", "KO"}
@@ -49,8 +51,8 @@ class MissingMatch:
         return (
             self.league_id.strip().casefold(),
             self.match_date.strip().casefold(),
-            self.home.strip().casefold(),
-            self.away.strip().casefold(),
+            normalize_team_name(self.league_id, self.home),
+            normalize_team_name(self.league_id, self.away),
         )
 
 
@@ -152,10 +154,6 @@ def read_missing_from_file(path: Path) -> List[MissingMatch]:
         return rows
 
 
-def normalize_team(value: object) -> str:
-    return " ".join(normalize(value).casefold().split())
-
-
 def is_postponed_status(status: str, notes: str = "") -> bool:
     combined = f"{normalize(status)} {normalize(notes)}".casefold()
     return any(token in combined for token in POSTPONED_STATUSES)
@@ -210,8 +208,8 @@ def load_results_index(results_root: Path) -> Dict[Tuple[str, str, str, str], Tu
                 key = (
                     league_id.casefold(),
                     match_date.casefold(),
-                    normalize_team(home),
-                    normalize_team(away),
+                    normalize_team_name(league_id, home),
+                    normalize_team_name(league_id, away),
                 )
                 index[key] = (status, notes)
 
@@ -239,8 +237,8 @@ def annotate_postponed(
         exact_key = (
             match.league_id.casefold(),
             match.match_date.casefold(),
-            normalize_team(match.home),
-            normalize_team(match.away),
+            normalize_team_name(match.league_id, match.home),
+            normalize_team_name(match.league_id, match.away),
         )
 
         value = results_index.get(exact_key)
@@ -249,8 +247,8 @@ def annotate_postponed(
             candidates = by_teams.get(
                 (
                     match.league_id.casefold(),
-                    normalize_team(match.home),
-                    normalize_team(match.away),
+                    normalize_team_name(match.league_id, match.home),
+                    normalize_team_name(match.league_id, match.away),
                 ),
                 [],
             )

@@ -22,7 +22,6 @@ PRINCIPI
 FILE LETTI
 ----------
     data/storico/ranking/<engine>/storico_ranking_<engine>.csv
-    data/storico/risultati/<LeagueId>.csv
     data/storico/partite_posticipate.csv
 
 FILE SCRITTI
@@ -35,12 +34,16 @@ import csv
 from datetime import date, timedelta
 from pathlib import Path
 
-from .history import read_results_file
+from .history import MatchResult
+from .team_names import normalize_team_name
 
 
-RESULTS_DIR = Path("data/storico/risultati")
 POSTPONED_FILE = Path(
     "data/storico/partite_posticipate.csv"
+)
+
+DEBUG_DIR = Path(
+    "data/debug/ranking_not_found"
 )
 
 
@@ -165,23 +168,10 @@ def _write_history(
         )
 
 
-def _normalize_team_name(
-    value: str,
-) -> str:
-    return " ".join(
-        str(value or "")
-        .strip()
-        .lower()
-        .split()
-    )
 
-
-def _text(
-    value,
-) -> str:
-    return str(
-        value or ""
-    ).strip()
+def _text(value) -> str:
+    """Restituisce una rappresentazione testuale pulita del valore."""
+    return str(value or "").strip()
 
 
 def _key(
@@ -205,12 +195,14 @@ def _key(
         row.get("PredictionDate")
     )
 
-    home = _normalize_team_name(
-        row.get("Home", "")
+    home = normalize_team_name(
+        row["LeagueId"],
+        row["Home"],
     )
 
-    away = _normalize_team_name(
-        row.get("Away", "")
+    away = normalize_team_name(
+        league_id,
+        row.get("Away", ""),
     )
 
     if match_date:
@@ -370,17 +362,19 @@ def sync_postponed_statuses(
                     "LeagueId"
                 )
             ),
-            _normalize_team_name(
+            normalize_team_name(
+                _text(postponed.get("LeagueId")),
                 postponed.get(
                     "Home",
                     "",
-                )
+                ),
             ),
-            _normalize_team_name(
+            normalize_team_name(
+                _text(postponed.get("LeagueId")),
                 postponed.get(
                     "Away",
                     "",
-                )
+                ),
             ),
         )
 
@@ -418,17 +412,19 @@ def sync_postponed_statuses(
                     "LeagueId"
                 )
             ),
-            _normalize_team_name(
+            normalize_team_name(
+                _text(row.get("LeagueId")),
                 row.get(
                     "Home",
                     "",
-                )
+                ),
             ),
-            _normalize_team_name(
+            normalize_team_name(
+                _text(row.get("LeagueId")),
                 row.get(
                     "Away",
                     "",
-                )
+                ),
             ),
         )
 
@@ -623,9 +619,23 @@ def _candidate_score(
 
 def update_finished_matches(
     engine_name: str,
+    finished_matches: list[tuple[str, MatchResult]],
     legacy_max_days: int = 3,
     match_date_tolerance_days: int = 2,
 ) -> None:
+    """
+    Aggiorna lo storico ranking usando esclusivamente i risultati finali
+    ricevuti dall'importazione corrente.
+
+    Ogni elemento di ``finished_matches`` contiene:
+
+        (LeagueId, MatchResult)
+
+    La funzione non rilegge più tutti gli storici risultati delle leghe. In
+    questo modo il conteggio degli aggiornamenti riguarda soltanto le partite
+    presenti nel file di input appena elaborato, comprese le duplicate esatte
+    che potrebbero dover completare uno storico ranking rimasto irrisolto.
+    """
     history = _read_history(
         engine_name
     )
@@ -637,12 +647,10 @@ def update_finished_matches(
         )
         return
 
-    # Elimina le prediction duplicate della stessa partita nello stesso engine.
-    # L'identità è la stessa già usata da append_predictions():
-    # LeagueId + Home + Away + MatchDate, oppure PredictionDate se MatchDate è vuota.
-    #
-    # Se tra due duplicati uno contiene già il risultato finale, viene mantenuto
-    # quello completo; altrimenti viene mantenuta l'ultima riga letta.
+    # Elimina eventuali prediction duplicate già presenti nello stesso engine.
+    # La chiave coincide con quella usata da append_predictions(). Se una delle
+    # copie contiene già il risultato finale, viene conservata quella completa;
+    # altrimenti viene mantenuta l'ultima riga letta.
     unique_by_key = {}
     duplicate_predictions_removed = 0
 
@@ -685,328 +693,352 @@ def update_finished_matches(
     if duplicate_predictions_removed:
         print(
             f"[{engine_name}] "
-            f"Prediction duplicate rimosse dallo storico: "
+            "Prediction duplicate rimosse dallo storico: "
             f"{duplicate_predictions_removed}"
         )
 
-    results_cache: dict[
-        str,
-        list,
-    ] = {}
+    # Deduplica anche i risultati ricevuti dall'input. Una stessa partita può
+    # comparire più volte nel file senza dover essere elaborata due volte.
+    unique_finished_matches = []
+    seen_finished_keys = set()
+
+    for league_id, match in finished_matches:
+        result_key = (
+            _text(league_id),
+            _text(match.date),
+            normalize_team_name(
+                _text(league_id),
+                match.home,
+            ),
+            normalize_team_name(
+                _text(league_id),
+                match.away,
+            ),
+            int(match.home_goals),
+            int(match.away_goals),
+        )
+
+        if result_key in seen_finished_keys:
+            continue
+
+        seen_finished_keys.add(
+            result_key
+        )
+        unique_finished_matches.append(
+            (league_id, match)
+        )
 
     updated = 0
+    already_final = 0
     not_found = 0
     ambiguous = 0
+    not_found_rows = []
 
-    unresolved_rows = [
-        row
-        for row in history
-        if not (
-            _text(row.get("HG"))
-            and _text(row.get("AG"))
-        )
-    ]
-
-    grouped_rows = {}
-
-    for row in unresolved_rows:
-        key = (
-            _text(
-                row.get("LeagueId")
-            ),
-            _normalize_team_name(
-                row.get(
-                    "Home",
-                    "",
-                )
-            ),
-            _normalize_team_name(
-                row.get(
-                    "Away",
-                    "",
-                )
-            ),
-        )
-
-        grouped_rows.setdefault(
-            key,
-            [],
-        ).append(
-            row
-        )
-
-    for (
-        league_id,
-        home,
-        away,
-    ), rows in grouped_rows.items():
-        if not league_id:
-            not_found += len(
-                rows
-            )
-            continue
-
-        results_file = (
-            RESULTS_DIR
-            / f"{league_id}.csv"
-        )
-
-        if not results_file.exists():
-            not_found += len(
-                rows
-            )
-            continue
-
-        if league_id not in results_cache:
-            results_cache[
-                league_id
-            ] = read_results_file(
-                results_file
-            )
-
-        result_candidates = []
-
-        for match in results_cache[
+    for league_id, match in unique_finished_matches:
+        normalized_league_id = _text(
             league_id
-        ]:
-            if (
-                _normalize_team_name(
-                    match.home
-                )
-                != home
-            ):
-                continue
+        )
+        normalized_home = normalize_team_name(
+            normalized_league_id,
+            match.home,
+        )
+        normalized_away = normalize_team_name(
+            normalized_league_id,
+            match.away,
+        )
+        result_date = _parse_date(
+            str(match.date)
+        )
 
-            if (
-                _normalize_team_name(
-                    match.away
-                )
-                != away
-            ):
-                continue
-
-            result_date = _parse_date(
-                str(match.date)
-            )
-
-            if result_date is None:
-                continue
-
-            compatible_rows = []
-
-            for row in rows:
-                row_match_date = (
-                    _parse_date(
-                        row.get(
-                            "MatchDate",
-                            "",
-                        )
-                    )
-                )
-
-                prediction_date = (
-                    _parse_date(
-                        row.get(
-                            "PredictionDate",
-                            "",
-                        )
-                    )
-                )
-
-                if row_match_date is not None:
-                    first_valid = (
-                        row_match_date
-                        - timedelta(
-                            days=(
-                                match_date_tolerance_days
-                            )
-                        )
-                    )
-
-                    last_valid = (
-                        row_match_date
-                        + timedelta(
-                            days=(
-                                match_date_tolerance_days
-                            )
-                        )
-                    )
-
-                    if not (
-                        first_valid
-                        <= result_date
-                        <= last_valid
-                    ):
-                        continue
-
-                elif prediction_date is not None:
-                    if (
-                        result_date
-                        > prediction_date
-                        + timedelta(
-                            days=legacy_max_days
-                        )
-                    ):
-                        continue
-
-                else:
-                    continue
-
-                compatible_rows.append(
-                    row
-                )
-
-            if compatible_rows:
-                result_candidates.append(
-                    (
-                        match,
-                        result_date,
-                        compatible_rows,
-                    )
-                )
-
-        if not result_candidates:
-            not_found += len(
-                rows
+        if not normalized_league_id or result_date is None:
+            not_found += 1
+            not_found_rows.append(
+                {
+                    "LeagueId": normalized_league_id,
+                    "MatchDate": str(match.date),
+                    "Home": match.home,
+                    "Away": match.away,
+                    "HG": str(match.home_goals),
+                    "AG": str(match.away_goals),
+                    "Reason": "LeagueId o MatchDate non valida",
+                }
             )
             continue
 
-        # Per ogni risultato sceglie una sola prediction:
-        # la più recente e temporalmente coerente.
-        for (
-            match,
-            result_date,
-            compatible_rows,
-        ) in result_candidates:
-            scored = sorted(
-                (
-                    (
-                        _candidate_score(
-                            row,
-                            match,
-                            result_date,
-                        ),
-                        row,
-                    )
-                    for row in compatible_rows
-                ),
-                key=lambda x: x[0],
+        same_fixture_rows = [
+            row
+            for row in history
+            if (
+                _text(row.get("LeagueId"))
+                == normalized_league_id
+                and normalize_team_name(
+                    normalized_league_id,
+                    row.get("Home", ""),
+                )
+                == normalized_home
+                and normalize_team_name(
+                    normalized_league_id,
+                    row.get("Away", ""),
+                )
+                == normalized_away
             )
+        ]
 
-            best_score = scored[
-                0
-            ][0]
+        # Se la gara è già FINAL con lo stesso risultato, non è un errore e non
+        # deve essere conteggiata come non trovata. Questo consente di ripassare
+        # in input risultati già importati senza alterare lo storico.
+        exact_final_rows = [
+            row
+            for row in same_fixture_rows
+            if (
+                _text(row.get("MatchStatus")).upper()
+                == "FINAL"
+                and _text(row.get("MatchDate"))
+                == result_date.isoformat()
+                and _text(row.get("HG"))
+                == str(match.home_goals)
+                and _text(row.get("AG"))
+                == str(match.away_goals)
+            )
+        ]
 
-            best_rows = [
-                row
-                for score, row in scored
-                if score == best_score
-            ]
+        if exact_final_rows:
+            already_final += 1
+            continue
 
-            if len(best_rows) != 1:
-                ambiguous += 1
+        compatible_rows = []
+
+        for row in same_fixture_rows:
+            # Una prediction già conclusa non può essere riutilizzata per un
+            # altro risultato della stessa coppia di squadre.
+            if (
+                _text(row.get("HG"))
+                or _text(row.get("AG"))
+            ):
                 continue
 
-            row = best_rows[0]
-
-            goals = (
-                match.home_goals
-                + match.away_goals
+            row_match_date = _parse_date(
+                row.get("MatchDate", "")
             )
-
-            row["MatchDate"] = (
-                result_date.isoformat()
+            prediction_date = _parse_date(
+                row.get("PredictionDate", "")
             )
+            match_status = _text(
+                row.get("MatchStatus")
+            ).upper()
 
-            # Mantiene il Round originario della prediction.
-            # Lo valorizza dal risultato solo se nello storico è vuoto.
-            if (
-                not _text(
-                    row.get("Round")
+            if row_match_date is not None:
+                first_valid = (
+                    row_match_date
+                    - timedelta(
+                        days=match_date_tolerance_days
+                    )
                 )
-                and getattr(
-                    match,
-                    "round",
-                    0,
-                )
-            ):
-                row["Round"] = str(
-                    match.round
+                last_valid = (
+                    row_match_date
+                    + timedelta(
+                        days=match_date_tolerance_days
+                    )
                 )
 
-            row["HG"] = str(
-                match.home_goals
-            )
-
-            row["AG"] = str(
-                match.away_goals
-            )
-
-            row["Goals"] = str(
-                goals
-            )
-
-            row["Over25"] = (
-                "OK"
-                if goals >= 3
-                else "KO"
-            )
-
-            row["BTTS"] = (
-                "OK"
-                if (
-                    match.home_goals > 0
-                    and match.away_goals > 0
-                )
-                else "KO"
-            )
-
-            row["MatchStatus"] = (
-                "FINAL"
-            )
-
-            updated += 1
-
-            # Le prediction precedenti della stessa gara restano POSTPONED.
-            for other_row in rows:
-                if other_row is row:
+                # Una riga già POSTPONED può essere recuperata anche molto dopo
+                # la data originaria. Per le righe ordinarie resta invece valida
+                # la tolleranza temporale configurata.
+                if not (
+                    first_valid
+                    <= result_date
+                    <= last_valid
+                ) and match_status != "POSTPONED":
                     continue
 
-                other_prediction_date = (
-                    _parse_date(
-                        other_row.get(
-                            "PredictionDate",
-                            "",
-                        )
-                    )
-                )
-
-                selected_prediction_date = (
-                    _parse_date(
-                        row.get(
-                            "PredictionDate",
-                            "",
-                        )
-                    )
-                )
-
+            elif prediction_date is not None:
                 if (
-                    other_prediction_date
-                    is not None
-                    and selected_prediction_date
-                    is not None
-                    and other_prediction_date
-                    < selected_prediction_date
-                    and not _text(
-                        other_row.get("HG")
-                    )
-                    and not _text(
-                        other_row.get("AG")
+                    result_date
+                    > prediction_date
+                    + timedelta(
+                        days=legacy_max_days
                     )
                 ):
-                    other_row[
-                        "MatchStatus"
-                    ] = "POSTPONED"
+                    continue
+
+            else:
+                continue
+
+            compatible_rows.append(
+                row
+            )
+
+        if not compatible_rows:
+            not_found += 1
+
+            reason = (
+                "Nessuna prediction con stessi nomi canonici"
+                if not same_fixture_rows
+                else "Prediction trovata ma data/status non compatibili"
+            )
+
+            not_found_rows.append(
+                {
+                    "LeagueId": normalized_league_id,
+                    "MatchDate": result_date.isoformat(),
+                    "Home": match.home,
+                    "Away": match.away,
+                    "HG": str(match.home_goals),
+                    "AG": str(match.away_goals),
+                    "Reason": reason,
+                }
+            )
+            continue
+
+        scored = sorted(
+            (
+                (
+                    _candidate_score(
+                        row,
+                        match,
+                        result_date,
+                    ),
+                    row,
+                )
+                for row in compatible_rows
+            ),
+            key=lambda item: item[0],
+        )
+
+        best_score = scored[0][0]
+        best_rows = [
+            row
+            for score, row in scored
+            if score == best_score
+        ]
+
+        if len(best_rows) != 1:
+            ambiguous += 1
+            continue
+
+        selected_row = best_rows[0]
+        goals = (
+            match.home_goals
+            + match.away_goals
+        )
+
+        selected_row["MatchDate"] = (
+            result_date.isoformat()
+        )
+
+        # Mantiene il Round originario della prediction. Lo recupera dal
+        # risultato soltanto quando nello storico ranking è assente.
+        if (
+            not _text(
+                selected_row.get("Round")
+            )
+            and getattr(
+                match,
+                "round",
+                0,
+            )
+        ):
+            selected_row["Round"] = str(
+                match.round
+            )
+
+        selected_row["HG"] = str(
+            match.home_goals
+        )
+        selected_row["AG"] = str(
+            match.away_goals
+        )
+        selected_row["Goals"] = str(
+            goals
+        )
+        selected_row["Over25"] = (
+            "OK"
+            if goals >= 3
+            else "KO"
+        )
+        selected_row["BTTS"] = (
+            "OK"
+            if (
+                match.home_goals > 0
+                and match.away_goals > 0
+            )
+            else "KO"
+        )
+        selected_row["MatchStatus"] = (
+            "FINAL"
+        )
+
+        updated += 1
+
+        # Le prediction precedenti della stessa gara restano POSTPONED. Le righe
+        # successive non vengono toccate perché potrebbero rappresentare un vero
+        # nuovo confronto tra le stesse squadre.
+        selected_prediction_date = _parse_date(
+            selected_row.get(
+                "PredictionDate",
+                "",
+            )
+        )
+
+        for other_row in same_fixture_rows:
+            if other_row is selected_row:
+                continue
+
+            if (
+                _text(other_row.get("HG"))
+                or _text(other_row.get("AG"))
+            ):
+                continue
+
+            other_prediction_date = _parse_date(
+                other_row.get(
+                    "PredictionDate",
+                    "",
+                )
+            )
+
+            if (
+                other_prediction_date is not None
+                and selected_prediction_date is not None
+                and other_prediction_date
+                < selected_prediction_date
+            ):
+                other_row["MatchStatus"] = (
+                    "POSTPONED"
+                )
+
+    DEBUG_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    debug_file = (
+        DEBUG_DIR
+        / f"not_found_{engine_name}.csv"
+    )
+
+    with debug_file.open(
+        "w",
+        newline="",
+        encoding="utf-8-sig",
+    ) as file_handle:
+        writer = csv.DictWriter(
+            file_handle,
+            fieldnames=[
+                "LeagueId",
+                "MatchDate",
+                "Home",
+                "Away",
+                "HG",
+                "AG",
+                "Reason",
+            ],
+            delimiter=";",
+        )
+        writer.writeheader()
+        writer.writerows(
+            not_found_rows
+        )
 
     _write_history(
         engine_name,
@@ -1015,18 +1047,27 @@ def update_finished_matches(
 
     print(
         f"[{engine_name}] "
-        f"Risultati aggiornati: "
+        "Risultati ricevuti dall'input: "
+        f"{len(unique_finished_matches)}"
+    )
+    print(
+        f"[{engine_name}] "
+        "Risultati aggiornati: "
         f"{updated}"
     )
-
     print(
         f"[{engine_name}] "
-        f"Partite non trovate: "
+        "Risultati già FINAL: "
+        f"{already_final}"
+    )
+    print(
+        f"[{engine_name}] "
+        "Partite non trovate: "
         f"{not_found}"
     )
-
     print(
         f"[{engine_name}] "
-        f"Partite ambigue: "
+        "Partite ambigue: "
         f"{ambiguous}"
     )
+

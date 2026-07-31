@@ -256,7 +256,6 @@
 1031;Finland_Kolmonen_Southern_Group2;2026-07-26;PPJ/Lauttasaari;HPS/2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1034;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1038;Finland_Kolmonen_Southern_Group3;2026-07-26;Futura;RiPS;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1045;Finland_Kolmonen_Eastern_Group3;2026-07-26;Mikkelin Palloilijat II;Edustus IPS;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1117;USA_USLChampionship;2026-07-26;Indy Eleven;Loudoun;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1118;USA_MLS;2026-07-26;Philadelphia Union;Seattle Sounders;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1119;Lithuania_Toplyga;2026-07-26;Transinvest;Dziugas Telsiai;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -347,11 +346,6 @@
 1243;Finland_Kolmonen_Western_Group1;2026-07-28;SalPa II;VG-62;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1246;Sweden_Superettan;2026-07-28;Landskrona;Norrkoping;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1247;Finland_Kolmonen_Eastern_Group3;2026-07-28;HaPK;KoPa;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1248;Finland_Kolmonen_Southern_Group2;2026-07-29;TiPS;Valtti;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1249;Finland_Kolmonen_Eastern_Group3;2026-07-29;LAUTP;Mikkelin Palloilijat II;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1250;Finland_Kolmonen_Western_Group3;2026-07-29;KPV/Akatemia;Virkia;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1252;Finland_Kolmonen_Eastern_Group1;2026-07-29;SAPA;FC Jyvaskyla Blackbird;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1258;Finland_Kolmonen_Eastern_Group3;2026-07-29;Edustus IPS;KJP;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1260;Somalia_NationalLeague;2026-07-29;Jubba;Gantaalaha Afgooye;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1261;Somalia_NationalLeague;2026-07-29;Jeenyo;Jazeera;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1265;Bhutan_PremierLeague;2026-07-29;Thimphu City;Tensung;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -431,3 +425,8 @@
 1339;Bolivia_DivisionProfesional;2026-07-31;The Strongest;Aurora;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1340;Finland_Ykkosliiga;2026-07-31;Ekenas;Klubi 04;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1341;Finland_Ykkosliiga;2026-07-31;PK-35;Haka;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1342;Finland_Kolmonen_Southern_Group3;2026-07-31;RiPS;Ponnistus;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1343;Finland_Kolmonen_Western_Group2;2026-07-31;ACE;TP-49;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1344;Finland_Kolmonen_Southern_Group1;2026-07-31;LoPa;EPS Reservi;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1345;Finland_Kolmonen_Western_Group2;2026-07-31;Sääksjärven Loiske;NoPS;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1346;Finland_Kolmonen_Southern_Group1;2026-07-31;NuPS;HooGee;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
