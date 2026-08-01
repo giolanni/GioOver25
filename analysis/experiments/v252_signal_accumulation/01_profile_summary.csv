@@ -1,0 +1,10 @@
+﻿Profile;Description;MinimumSignals;TotalMatches;ALTA_OK;ALTA_KO;ALTA_Total;ALTA_Hit;MEDIA_OK;MEDIA_KO;MEDIA_Total;MEDIA_Hit;BASSA_OK;BASSA_KO;BASSA_Total;BASSA_Hit;AltaKOAvoided;AltaOKLost;OKPromotedToAlta;KOPromotedToAlta;BandChanges;Utility
+ACCUMULATION_LIGHT;Penalità leggere solo da due segnali in poi;2;1324;316;127;443;71.3318;324;196;520;62.3077;193;168;361;53.4626;9;18;0;0;50;0
+BASELINE;Score originale senza penalità cumulative;0;1324;334;136;470;71.0638;317;199;516;61.4341;182;156;338;53.8462;0;0;0;0;0;0
+FOUR_SIGNALS_MEDIUM;Penalità solo quando si accumulano almeno quattro segnali;4;1324;321;132;453;70.8609;324;199;523;61.9503;188;160;348;54.023;4;13;0;0;27;-5
+THREE_SIGNALS_LIGHT;"Nessuna penalità fino a due segnali; penalità leggere da tre segnali";3;1324;318;131;449;70.8241;322;194;516;62.4031;193;166;359;53.7604;5;16;0;0;42;-6
+ACCUMULATION_MEDIUM;Penalità medie da due segnali in poi;2;1324;295;120;415;71.0843;336;194;530;63.3962;202;177;379;53.2982;16;39;0;0;96;-7
+FOUR_SIGNALS_STRONG;Penalità forti solo da quattro segnali in poi;4;1324;315;131;446;70.6278;327;193;520;62.8846;191;167;358;53.352;5;19;0;0;43;-9
+ACCUMULATION_STRONG;Penalità forti da due segnali in poi;2;1324;279;114;393;70.9924;341;184;525;64.9524;213;193;406;52.4631;22;55;0;0;145;-11
+THREE_SIGNALS_MEDIUM;"Nessuna penalità fino a due segnali; penalità medie da tre segnali";3;1324;300;126;426;70.4225;331;189;520;63.6538;202;176;378;53.4392;10;34;0;0;84;-14
+THREE_SIGNALS_STRONG;"Nessuna penalità fino a due segnali; penalità forti da tre segnali";3;1324;289;121;410;70.4878;333;182;515;64.6602;211;188;399;52.8822;15;45;0;0;120;-15

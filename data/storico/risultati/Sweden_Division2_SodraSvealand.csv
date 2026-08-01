@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Sweden;Sodra Svealand;1;2026-03-27;Ragsved;Nacka FC;1;0;
 Sweden;Sodra Svealand;1;2026-03-28;Eker Orebro;Smedby;2;6;
 Sweden;Sodra Svealand;1;2026-03-28;Fittja;Syrianska;0;0;
@@ -99,3 +99,4 @@ Sweden;Sodra Svealand;14;2026-06-27;Haninge;Sleipner;6;1;
 Sweden;Sodra Svealand;14;2026-06-30;Karlslund;Fittja;2;2;
 Sweden;Sodra Svealand;14;2026-06-30;Orebro Syr.;Syrianska;3;0;
 Sweden;Sodra Svealand;14;2026-06-30;Ragsved;Forward;1;2;
+Sweden;Sodra Svealand;15;2026-07-31;Farsta;Ragsved;1;1;

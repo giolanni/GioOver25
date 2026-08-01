@@ -1,0 +1,31 @@
+﻿row_number;league_id;home;away;reference_date;old_match_date;selected_match_date;confidence_score;status;source_url;reasons
+1;LeagueId;Home;Away;PredictionDate;MatchDate;MatchDate;0;UNCHANGED_ALREADY_FILLED;;MatchDate già presente
+2;Iceland_BestaDeildKarla;Keflavik;Fram;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+3;Latvia_Virsliga;Super Nova;Ogre United;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+4;Lithuania_Toplyga;Suduva;Transinvest;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+5;Sweden_Allsvenskan;Brommapojkarna;GAIS;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+6;Sweden_Allsvenskan;Hacken;Djurgarden;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+7;USA_MLSNextPro_EasternConference_SoutheastDivision;Crown Legacy;Orlando City B;2026-07-06;;2026-07-05;17;FILLED;https://www.futbol24.com/match/2026/07/05/national/United-States/MLS-Next-Pro/2026/Crown-Legacy/vs/Orlando-City-B;squadra casa=3 | squadra trasferta=3 | risultato finale presente | sito risultati riconosciuto | indizio fonte ufficiale/club/lega | distanza 1 giorni | testo pagina verificato | confermata da almeno due domini
+8;USA_MLSNextPro_WesternConference_CentralDivision;Austin FC II;Colorado Rapids 2;2026-07-06;;2026-07-06;16;FILLED;https://onefootball.com/en/match/2665655;squadra casa=3 | squadra trasferta=3 | risultato finale presente | indizio fonte ufficiale/club/lega | coincide con data di riferimento | testo pagina verificato | confermata da almeno due domini
+9;USA_MLSNextPro_WesternConference_CentralDivision;Huntsville;Chicago Fire II;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+10;USA_MLSNextPro_WesternConference_PacificDivision;Los Angeles FC 2;Real Monarchs;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+11;USA_MLSNextPro_WesternConference_PacificDivision;Tacoma Defiance;Portland Timbers 2;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+12;USA_USLLeagueOne;AV Alta;Charlotte Independ.;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+13;USA_USLLeagueTwo_Chesapeake;Northern Virginia;Patuxent;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+14;USA_USLLeagueTwo_GreatLakes;Lansing City;Flint City;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+15;USA_USLLeagueTwo_Metropolitan;Ironbound SC;Staten Island ASC;2026-07-06;;2026-07-05;17;FILLED;https://www.soccerway.com/match/ironbound-sc-KpPkmjtH/staten-island-asc-K0eZ3D1P/;squadra casa=3 | squadra trasferta=3 | risultato finale presente | sito risultati riconosciuto | indizio fonte ufficiale/club/lega | distanza 1 giorni | testo pagina verificato | confermata da almeno due domini
+16;USA_USLLeagueTwo_MidSouth;Little Rock Rangers;Louisiana;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+17;USA_USLLeagueTwo_NorCal;Marin;Glens SC;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+18;USA_USLLeagueTwo_NorCal;San Francisco City;Academica SC;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+19;USA_USLLeagueTwo_Northwest;Bigfoot;Portland Bangers;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+20;USA_USLLeagueTwo_SouthAtlantic;North Carolina FC U23;Asheville City;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+21;USA_USLLeagueTwo_SouthCentral;East Atlanta;Birmingham 2;2026-07-06;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+22;Australia_NPLACT;Monaro Panthers;Queanbeyan City;2026-07-07;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+23;Australia_NPLNorthernNSW;Charlestown Azzurri;Weston Bears;2026-07-07;;2026-07-07;15;FILLED;https://www.instagram.com/charlestownazzurri/;squadra casa=3 | squadra trasferta=3 | social pubblico | indizio fonte ufficiale/club/lega | coincide con data di riferimento | testo pagina verificato | confermata da almeno due domini
+24;Australia_NPLQueensland;Gold Coast Knights;Queensland Lions;2026-07-07;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+25;Australia_SAStateLeague;Cove FC;Modbury;2026-07-07;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+26;Bhutan_PremierLeague;Drukpa;Thimphu FC;2026-07-07;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+27;Finland_Kakkonen_GroupC;JBK;Narpes Kraft;2026-07-07;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+28;Kyrgyzstan_PremierLiga;Asia Talas;Abdysh-Ata;2026-07-07;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+29;Kyrgyzstan_PremierLiga;Kyrgyzaltyn;Talant;2026-07-07;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti
+30;Kyrgyzstan_PremierLiga;Neftchi Kochkor-Ata;Aldier;2026-07-07;;;0;NOT_FOUND_OR_AMBIGUOUS;;Nessuna evidenza ha superato la soglia o date discordanti

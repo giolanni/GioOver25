@@ -1,0 +1,11 @@
+﻿Profile;Description;TotalMatches;ALTA_OK;ALTA_KO;ALTA_Total;ALTA_Hit;MEDIA_OK;MEDIA_KO;MEDIA_Total;MEDIA_Hit;BASSA_OK;BASSA_KO;BASSA_Total;BASSA_Hit;AltaKOAvoided;AltaOKLost;OKPromotedToAlta;KOPromotedToAlta;BandChanges;Utility
+GRID_G3_P1_R2;Griglia automatica: gap=-3.0, ppg=-1.0, restart=-2.0;1324;302;118;420;71.9048;331;201;532;62.218;200;172;372;53.7634;18;32;0;0;84;4
+GRID_G3_P1_R4;Griglia automatica: gap=-3.0, ppg=-1.0, restart=-4.0;1324;302;118;420;71.9048;330;201;531;62.1469;201;172;373;53.8874;18;32;0;0;85;4
+GRID_G3_P1_R6;Griglia automatica: gap=-3.0, ppg=-1.0, restart=-6.0;1324;302;118;420;71.9048;330;201;531;62.1469;201;172;373;53.8874;18;32;0;0;85;4
+GRID_G2_P1_R2;Griglia automatica: gap=-2.0, ppg=-1.0, restart=-2.0;1324;307;121;428;71.729;331;199;530;62.4528;195;171;366;53.2787;15;27;0;0;70;3
+GRID_G2_P1_R4;Griglia automatica: gap=-2.0, ppg=-1.0, restart=-4.0;1324;307;121;428;71.729;330;199;529;62.3819;196;171;367;53.406;15;27;0;0;71;3
+GRID_G2_P1_R6;Griglia automatica: gap=-2.0, ppg=-1.0, restart=-6.0;1324;307;121;428;71.729;330;199;529;62.3819;196;171;367;53.406;15;27;0;0;71;3
+GRID_G2_P2_R2;Griglia automatica: gap=-2.0, ppg=-2.0, restart=-2.0;1324;290;113;403;71.9603;333;201;534;62.3596;210;177;387;54.2636;23;44;0;0;116;2
+GRID_G2_P2_R4;Griglia automatica: gap=-2.0, ppg=-2.0, restart=-4.0;1324;290;113;403;71.9603;333;201;534;62.3596;210;177;387;54.2636;23;44;0;0;116;2
+GRID_G2_P2_R6;Griglia automatica: gap=-2.0, ppg=-2.0, restart=-6.0;1324;290;113;403;71.9603;333;201;534;62.3596;210;177;387;54.2636;23;44;0;0;116;2
+GRID_G1_P1_R2;Griglia automatica: gap=-1.0, ppg=-1.0, restart=-2.0;1324;312;124;436;71.5596;327;198;525;62.2857;194;169;363;53.4435;12;22;0;0;59;2

@@ -33,7 +33,7 @@ python -m gioover25.rebuild_ranking_history --engine v21
 
 #TROVARE RISULTATI MANCANTI
 python -m gioover25.missing_results
-python -m gioover25.missing_results --csv "data\output_ranking\risultati_mancanti.csv"
+python -m gioover25.missing_results --csv "data\debug\risultati\risultati_mancanti.csv"
 
 # Solo fascia ALTA
 python -m gioover25.missing_results --band ALTA
