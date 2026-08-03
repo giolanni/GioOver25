@@ -1,4 +1,4 @@
-﻿Country;League;Round;Date;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Sweden;Division 2 Norrland;1;2026-04-11;Boden;IFK Umea;2;0;
 Sweden;Division 2 Norrland;1;2026-04-11;IFK Lulea;Taftea IK;4;0;
 Sweden;Division 2 Norrland;1;2026-04-11;Umea FC Akademi;Storfors;2;1;
@@ -83,3 +83,7 @@ Sweden;Division 2 Norrland;14;2026-06-27;IFK Umea;Storfors;2;1;
 Sweden;Division 2 Norrland;14;2026-06-27;Taftea IK;Boden;1;1;
 Sweden;Division 2 Norrland;14;2026-06-27;Umea FF;Friska Viljor;3;3;
 Sweden;Division 2 Norrland;14;2026-06-30;Lucksta;Gottne;3;0;
+Sweden;Division 2 Norrland;15;2026-08-01;IFK Lulea;IFK Ostersund;4;3;
+Sweden;Division 2 Norrland;15;2026-08-01;Kubikenborgs IF;Skelleftea;1;2;
+Sweden;Division 2 Norrland;15;2026-08-01;Lucksta;Boden;3;0;
+Sweden;Division 2 Norrland;15;2026-08-01;Taftea IK;Gottne;3;1;

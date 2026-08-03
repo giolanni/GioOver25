@@ -1,0 +1,225 @@
+﻿CombinationType;Signals;Signal1;Signal2;Signal3;Scope;Support;OK;KO;HitRate;KORate;BaselineHitRate;LiftVsBaseline
+PAIR;RankingGapHigh + HomePPGLow;RankingGapHigh;HomePPGLow;;ALL;83;52;31;62.6506;37.3494;62.7426;-0.092
+PAIR;RankingGapHigh + HomePPGLow;RankingGapHigh;HomePPGLow;;ALTA;35;25;10;71.4286;28.5714;71.9858;-0.5572
+PAIR;RankingGapHigh + HomePPGLow;RankingGapHigh;HomePPGLow;;BASSA;12;5;7;41.6667;58.3333;54.2929;-12.6262
+PAIR;RankingGapHigh + HomePPGLow;RankingGapHigh;HomePPGLow;;MEDIA;36;22;14;61.1111;38.8889;59.8116;1.2995
+PAIR;RankingGapHigh + WorstPPGLow;RankingGapHigh;WorstPPGLow;;ALL;123;84;39;68.2927;31.7073;62.7426;5.5501
+PAIR;RankingGapHigh + WorstPPGLow;RankingGapHigh;WorstPPGLow;;ALTA;59;45;14;76.2712;23.7288;71.9858;4.2854
+PAIR;RankingGapHigh + WorstPPGLow;RankingGapHigh;WorstPPGLow;;BASSA;17;9;8;52.9412;47.0588;54.2929;-1.3517
+PAIR;RankingGapHigh + WorstPPGLow;RankingGapHigh;WorstPPGLow;;MEDIA;47;30;17;63.8298;36.1702;59.8116;4.0182
+PAIR;RankingGapHigh + HomeWinsLow;RankingGapHigh;HomeWinsLow;;ALL;99;58;41;58.5859;41.4141;62.7426;-4.1567
+PAIR;RankingGapHigh + HomeWinsLow;RankingGapHigh;HomeWinsLow;;ALTA;41;27;14;65.8537;34.1463;71.9858;-6.1321
+PAIR;RankingGapHigh + HomeWinsLow;RankingGapHigh;HomeWinsLow;;BASSA;15;6;9;40.0;60.0;54.2929;-14.2929
+PAIR;RankingGapHigh + HomeWinsLow;RankingGapHigh;HomeWinsLow;;MEDIA;43;25;18;58.1395;41.8605;59.8116;-1.6721
+PAIR;RankingGapHigh + HomeRestartGFLow;RankingGapHigh;HomeRestartGFLow;;ALL;28;22;6;78.5714;21.4286;62.7426;15.8288
+PAIR;RankingGapHigh + HomeRestartGFLow;RankingGapHigh;HomeRestartGFLow;;ALTA;13;10;3;76.9231;23.0769;71.9858;4.9373
+PAIR;RankingGapHigh + HomeRestartGFLow;RankingGapHigh;HomeRestartGFLow;;BASSA;4;3;1;75.0;25.0;54.2929;20.7071
+PAIR;RankingGapHigh + HomeRestartGFLow;RankingGapHigh;HomeRestartGFLow;;MEDIA;11;9;2;81.8182;18.1818;59.8116;22.0066
+PAIR;RankingGapHigh + HomeRestartNotReady;RankingGapHigh;HomeRestartNotReady;;ALL;19;17;2;89.4737;10.5263;62.7426;26.7311
+PAIR;RankingGapHigh + HomeRestartNotReady;RankingGapHigh;HomeRestartNotReady;;ALTA;11;9;2;81.8182;18.1818;71.9858;9.8324
+PAIR;RankingGapHigh + HomeRestartNotReady;RankingGapHigh;HomeRestartNotReady;;BASSA;2;2;0;100.0;0.0;54.2929;45.7071
+PAIR;RankingGapHigh + HomeRestartNotReady;RankingGapHigh;HomeRestartNotReady;;MEDIA;6;6;0;100.0;0.0;59.8116;40.1884
+PAIR;RankingGapHigh + BothTeamsRestartNotReady;RankingGapHigh;BothTeamsRestartNotReady;;ALL;3;2;1;66.6667;33.3333;62.7426;3.9241
+PAIR;RankingGapHigh + BothTeamsRestartNotReady;RankingGapHigh;BothTeamsRestartNotReady;;ALTA;1;0;1;0.0;100.0;71.9858;-71.9858
+PAIR;RankingGapHigh + BothTeamsRestartNotReady;RankingGapHigh;BothTeamsRestartNotReady;;BASSA;1;1;0;100.0;0.0;54.2929;45.7071
+PAIR;RankingGapHigh + BothTeamsRestartNotReady;RankingGapHigh;BothTeamsRestartNotReady;;MEDIA;1;1;0;100.0;0.0;59.8116;40.1884
+PAIR;HomePPGLow + WorstPPGLow;HomePPGLow;WorstPPGLow;;ALL;273;167;106;61.1722;38.8278;62.7426;-1.5704
+PAIR;HomePPGLow + WorstPPGLow;HomePPGLow;WorstPPGLow;;ALTA;88;65;23;73.8636;26.1364;71.9858;1.8778
+PAIR;HomePPGLow + WorstPPGLow;HomePPGLow;WorstPPGLow;;BASSA;65;36;29;55.3846;44.6154;54.2929;1.0917
+PAIR;HomePPGLow + WorstPPGLow;HomePPGLow;WorstPPGLow;;MEDIA;120;66;54;55.0;45.0;59.8116;-4.8116
+PAIR;HomePPGLow + HomeWinsLow;HomePPGLow;HomeWinsLow;;ALL;398;247;151;62.0603;37.9397;62.7426;-0.6823
+PAIR;HomePPGLow + HomeWinsLow;HomePPGLow;HomeWinsLow;;ALTA;130;94;36;72.3077;27.6923;71.9858;0.3219
+PAIR;HomePPGLow + HomeWinsLow;HomePPGLow;HomeWinsLow;;BASSA;93;50;43;53.7634;46.2366;54.2929;-0.5295
+PAIR;HomePPGLow + HomeWinsLow;HomePPGLow;HomeWinsLow;;MEDIA;175;103;72;58.8571;41.1429;59.8116;-0.9545
+PAIR;HomePPGLow + HomeRestartGFLow;HomePPGLow;HomeRestartGFLow;;ALL;56;31;25;55.3571;44.6429;62.7426;-7.3855
+PAIR;HomePPGLow + HomeRestartGFLow;HomePPGLow;HomeRestartGFLow;;ALTA;12;8;4;66.6667;33.3333;71.9858;-5.3191
+PAIR;HomePPGLow + HomeRestartGFLow;HomePPGLow;HomeRestartGFLow;;BASSA;21;11;10;52.381;47.619;54.2929;-1.9119
+PAIR;HomePPGLow + HomeRestartGFLow;HomePPGLow;HomeRestartGFLow;;MEDIA;23;12;11;52.1739;47.8261;59.8116;-7.6377
+PAIR;HomePPGLow + HomeRestartNotReady;HomePPGLow;HomeRestartNotReady;;ALL;23;15;8;65.2174;34.7826;62.7426;2.4748
+PAIR;HomePPGLow + HomeRestartNotReady;HomePPGLow;HomeRestartNotReady;;ALTA;7;5;2;71.4286;28.5714;71.9858;-0.5572
+PAIR;HomePPGLow + HomeRestartNotReady;HomePPGLow;HomeRestartNotReady;;BASSA;8;5;3;62.5;37.5;54.2929;8.2071
+PAIR;HomePPGLow + HomeRestartNotReady;HomePPGLow;HomeRestartNotReady;;MEDIA;8;5;3;62.5;37.5;59.8116;2.6884
+PAIR;HomePPGLow + BothTeamsRestartNotReady;HomePPGLow;BothTeamsRestartNotReady;;ALL;6;3;3;50.0;50.0;62.7426;-12.7426
+PAIR;HomePPGLow + BothTeamsRestartNotReady;HomePPGLow;BothTeamsRestartNotReady;;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+PAIR;HomePPGLow + BothTeamsRestartNotReady;HomePPGLow;BothTeamsRestartNotReady;;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+PAIR;HomePPGLow + BothTeamsRestartNotReady;HomePPGLow;BothTeamsRestartNotReady;;MEDIA;2;2;0;100.0;0.0;59.8116;40.1884
+PAIR;WorstPPGLow + HomeWinsLow;WorstPPGLow;HomeWinsLow;;ALL;296;182;114;61.4865;38.5135;62.7426;-1.2561
+PAIR;WorstPPGLow + HomeWinsLow;WorstPPGLow;HomeWinsLow;;ALTA;94;69;25;73.4043;26.5957;71.9858;1.4185
+PAIR;WorstPPGLow + HomeWinsLow;WorstPPGLow;HomeWinsLow;;BASSA;71;39;32;54.9296;45.0704;54.2929;0.6367
+PAIR;WorstPPGLow + HomeWinsLow;WorstPPGLow;HomeWinsLow;;MEDIA;131;74;57;56.4885;43.5115;59.8116;-3.3231
+PAIR;WorstPPGLow + HomeRestartGFLow;WorstPPGLow;HomeRestartGFLow;;ALL;52;28;24;53.8462;46.1538;62.7426;-8.8964
+PAIR;WorstPPGLow + HomeRestartGFLow;WorstPPGLow;HomeRestartGFLow;;ALTA;12;9;3;75.0;25.0;71.9858;3.0142
+PAIR;WorstPPGLow + HomeRestartGFLow;WorstPPGLow;HomeRestartGFLow;;BASSA;21;11;10;52.381;47.619;54.2929;-1.9119
+PAIR;WorstPPGLow + HomeRestartGFLow;WorstPPGLow;HomeRestartGFLow;;MEDIA;19;8;11;42.1053;57.8947;59.8116;-17.7063
+PAIR;WorstPPGLow + HomeRestartNotReady;WorstPPGLow;HomeRestartNotReady;;ALL;21;13;8;61.9048;38.0952;62.7426;-0.8378
+PAIR;WorstPPGLow + HomeRestartNotReady;WorstPPGLow;HomeRestartNotReady;;ALTA;7;5;2;71.4286;28.5714;71.9858;-0.5572
+PAIR;WorstPPGLow + HomeRestartNotReady;WorstPPGLow;HomeRestartNotReady;;BASSA;8;5;3;62.5;37.5;54.2929;8.2071
+PAIR;WorstPPGLow + HomeRestartNotReady;WorstPPGLow;HomeRestartNotReady;;MEDIA;6;3;3;50.0;50.0;59.8116;-9.8116
+PAIR;WorstPPGLow + BothTeamsRestartNotReady;WorstPPGLow;BothTeamsRestartNotReady;;ALL;5;2;3;40.0;60.0;62.7426;-22.7426
+PAIR;WorstPPGLow + BothTeamsRestartNotReady;WorstPPGLow;BothTeamsRestartNotReady;;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+PAIR;WorstPPGLow + BothTeamsRestartNotReady;WorstPPGLow;BothTeamsRestartNotReady;;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+PAIR;WorstPPGLow + BothTeamsRestartNotReady;WorstPPGLow;BothTeamsRestartNotReady;;MEDIA;1;1;0;100.0;0.0;59.8116;40.1884
+PAIR;HomeWinsLow + HomeRestartGFLow;HomeWinsLow;HomeRestartGFLow;;ALL;70;37;33;52.8571;47.1429;62.7426;-9.8855
+PAIR;HomeWinsLow + HomeRestartGFLow;HomeWinsLow;HomeRestartGFLow;;ALTA;15;9;6;60.0;40.0;71.9858;-11.9858
+PAIR;HomeWinsLow + HomeRestartGFLow;HomeWinsLow;HomeRestartGFLow;;BASSA;28;15;13;53.5714;46.4286;54.2929;-0.7215
+PAIR;HomeWinsLow + HomeRestartGFLow;HomeWinsLow;HomeRestartGFLow;;MEDIA;27;13;14;48.1481;51.8519;59.8116;-11.6635
+PAIR;HomeWinsLow + HomeRestartNotReady;HomeWinsLow;HomeRestartNotReady;;ALL;31;19;12;61.2903;38.7097;62.7426;-1.4523
+PAIR;HomeWinsLow + HomeRestartNotReady;HomeWinsLow;HomeRestartNotReady;;ALTA;9;6;3;66.6667;33.3333;71.9858;-5.3191
+PAIR;HomeWinsLow + HomeRestartNotReady;HomeWinsLow;HomeRestartNotReady;;BASSA;10;6;4;60.0;40.0;54.2929;5.7071
+PAIR;HomeWinsLow + HomeRestartNotReady;HomeWinsLow;HomeRestartNotReady;;MEDIA;12;7;5;58.3333;41.6667;59.8116;-1.4783
+PAIR;HomeWinsLow + BothTeamsRestartNotReady;HomeWinsLow;BothTeamsRestartNotReady;;ALL;8;4;4;50.0;50.0;62.7426;-12.7426
+PAIR;HomeWinsLow + BothTeamsRestartNotReady;HomeWinsLow;BothTeamsRestartNotReady;;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+PAIR;HomeWinsLow + BothTeamsRestartNotReady;HomeWinsLow;BothTeamsRestartNotReady;;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+PAIR;HomeWinsLow + BothTeamsRestartNotReady;HomeWinsLow;BothTeamsRestartNotReady;;MEDIA;4;3;1;75.0;25.0;59.8116;15.1884
+PAIR;HomeRestartGFLow + HomeRestartNotReady;HomeRestartGFLow;HomeRestartNotReady;;ALL;69;43;26;62.3188;37.6812;62.7426;-0.4238
+PAIR;HomeRestartGFLow + HomeRestartNotReady;HomeRestartGFLow;HomeRestartNotReady;;ALTA;27;21;6;77.7778;22.2222;71.9858;5.792
+PAIR;HomeRestartGFLow + HomeRestartNotReady;HomeRestartGFLow;HomeRestartNotReady;;BASSA;18;9;9;50.0;50.0;54.2929;-4.2929
+PAIR;HomeRestartGFLow + HomeRestartNotReady;HomeRestartGFLow;HomeRestartNotReady;;MEDIA;24;13;11;54.1667;45.8333;59.8116;-5.6449
+PAIR;HomeRestartGFLow + BothTeamsRestartNotReady;HomeRestartGFLow;BothTeamsRestartNotReady;;ALL;14;6;8;42.8571;57.1429;62.7426;-19.8855
+PAIR;HomeRestartGFLow + BothTeamsRestartNotReady;HomeRestartGFLow;BothTeamsRestartNotReady;;ALTA;5;2;3;40.0;60.0;71.9858;-31.9858
+PAIR;HomeRestartGFLow + BothTeamsRestartNotReady;HomeRestartGFLow;BothTeamsRestartNotReady;;BASSA;4;1;3;25.0;75.0;54.2929;-29.2929
+PAIR;HomeRestartGFLow + BothTeamsRestartNotReady;HomeRestartGFLow;BothTeamsRestartNotReady;;MEDIA;5;3;2;60.0;40.0;59.8116;0.1884
+PAIR;HomeRestartNotReady + BothTeamsRestartNotReady;HomeRestartNotReady;BothTeamsRestartNotReady;;ALL;15;7;8;46.6667;53.3333;62.7426;-16.0759
+PAIR;HomeRestartNotReady + BothTeamsRestartNotReady;HomeRestartNotReady;BothTeamsRestartNotReady;;ALTA;5;2;3;40.0;60.0;71.9858;-31.9858
+PAIR;HomeRestartNotReady + BothTeamsRestartNotReady;HomeRestartNotReady;BothTeamsRestartNotReady;;BASSA;4;1;3;25.0;75.0;54.2929;-29.2929
+PAIR;HomeRestartNotReady + BothTeamsRestartNotReady;HomeRestartNotReady;BothTeamsRestartNotReady;;MEDIA;6;4;2;66.6667;33.3333;59.8116;6.8551
+TRIPLE;RankingGapHigh + HomePPGLow + WorstPPGLow;RankingGapHigh;HomePPGLow;WorstPPGLow;ALL;63;39;24;61.9048;38.0952;62.7426;-0.8378
+TRIPLE;RankingGapHigh + HomePPGLow + WorstPPGLow;RankingGapHigh;HomePPGLow;WorstPPGLow;ALTA;27;20;7;74.0741;25.9259;71.9858;2.0883
+TRIPLE;RankingGapHigh + HomePPGLow + WorstPPGLow;RankingGapHigh;HomePPGLow;WorstPPGLow;BASSA;11;4;7;36.3636;63.6364;54.2929;-17.9293
+TRIPLE;RankingGapHigh + HomePPGLow + WorstPPGLow;RankingGapHigh;HomePPGLow;WorstPPGLow;MEDIA;25;15;10;60.0;40.0;59.8116;0.1884
+TRIPLE;RankingGapHigh + HomePPGLow + HomeWinsLow;RankingGapHigh;HomePPGLow;HomeWinsLow;ALL;83;52;31;62.6506;37.3494;62.7426;-0.092
+TRIPLE;RankingGapHigh + HomePPGLow + HomeWinsLow;RankingGapHigh;HomePPGLow;HomeWinsLow;ALTA;35;25;10;71.4286;28.5714;71.9858;-0.5572
+TRIPLE;RankingGapHigh + HomePPGLow + HomeWinsLow;RankingGapHigh;HomePPGLow;HomeWinsLow;BASSA;12;5;7;41.6667;58.3333;54.2929;-12.6262
+TRIPLE;RankingGapHigh + HomePPGLow + HomeWinsLow;RankingGapHigh;HomePPGLow;HomeWinsLow;MEDIA;36;22;14;61.1111;38.8889;59.8116;1.2995
+TRIPLE;RankingGapHigh + HomePPGLow + HomeRestartGFLow;RankingGapHigh;HomePPGLow;HomeRestartGFLow;ALL;14;9;5;64.2857;35.7143;62.7426;1.5431
+TRIPLE;RankingGapHigh + HomePPGLow + HomeRestartGFLow;RankingGapHigh;HomePPGLow;HomeRestartGFLow;ALTA;6;4;2;66.6667;33.3333;71.9858;-5.3191
+TRIPLE;RankingGapHigh + HomePPGLow + HomeRestartGFLow;RankingGapHigh;HomePPGLow;HomeRestartGFLow;BASSA;2;1;1;50.0;50.0;54.2929;-4.2929
+TRIPLE;RankingGapHigh + HomePPGLow + HomeRestartGFLow;RankingGapHigh;HomePPGLow;HomeRestartGFLow;MEDIA;6;4;2;66.6667;33.3333;59.8116;6.8551
+TRIPLE;RankingGapHigh + HomePPGLow + HomeRestartNotReady;RankingGapHigh;HomePPGLow;HomeRestartNotReady;ALL;6;5;1;83.3333;16.6667;62.7426;20.5907
+TRIPLE;RankingGapHigh + HomePPGLow + HomeRestartNotReady;RankingGapHigh;HomePPGLow;HomeRestartNotReady;ALTA;4;3;1;75.0;25.0;71.9858;3.0142
+TRIPLE;RankingGapHigh + HomePPGLow + HomeRestartNotReady;RankingGapHigh;HomePPGLow;HomeRestartNotReady;BASSA;0;0;0;0.0;0.0;54.2929;-54.2929
+TRIPLE;RankingGapHigh + HomePPGLow + HomeRestartNotReady;RankingGapHigh;HomePPGLow;HomeRestartNotReady;MEDIA;2;2;0;100.0;0.0;59.8116;40.1884
+TRIPLE;RankingGapHigh + HomePPGLow + BothTeamsRestartNotReady;RankingGapHigh;HomePPGLow;BothTeamsRestartNotReady;ALL;0;0;0;0.0;0.0;62.7426;-62.7426
+TRIPLE;RankingGapHigh + HomePPGLow + BothTeamsRestartNotReady;RankingGapHigh;HomePPGLow;BothTeamsRestartNotReady;ALTA;0;0;0;0.0;0.0;71.9858;-71.9858
+TRIPLE;RankingGapHigh + HomePPGLow + BothTeamsRestartNotReady;RankingGapHigh;HomePPGLow;BothTeamsRestartNotReady;BASSA;0;0;0;0.0;0.0;54.2929;-54.2929
+TRIPLE;RankingGapHigh + HomePPGLow + BothTeamsRestartNotReady;RankingGapHigh;HomePPGLow;BothTeamsRestartNotReady;MEDIA;0;0;0;0.0;0.0;59.8116;-59.8116
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeWinsLow;RankingGapHigh;WorstPPGLow;HomeWinsLow;ALL;65;40;25;61.5385;38.4615;62.7426;-1.2041
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeWinsLow;RankingGapHigh;WorstPPGLow;HomeWinsLow;ALTA;28;20;8;71.4286;28.5714;71.9858;-0.5572
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeWinsLow;RankingGapHigh;WorstPPGLow;HomeWinsLow;BASSA;12;5;7;41.6667;58.3333;54.2929;-12.6262
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeWinsLow;RankingGapHigh;WorstPPGLow;HomeWinsLow;MEDIA;25;15;10;60.0;40.0;59.8116;0.1884
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeRestartGFLow;RankingGapHigh;WorstPPGLow;HomeRestartGFLow;ALL;11;8;3;72.7273;27.2727;62.7426;9.9847
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeRestartGFLow;RankingGapHigh;WorstPPGLow;HomeRestartGFLow;ALTA;6;5;1;83.3333;16.6667;71.9858;11.3475
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeRestartGFLow;RankingGapHigh;WorstPPGLow;HomeRestartGFLow;BASSA;2;1;1;50.0;50.0;54.2929;-4.2929
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeRestartGFLow;RankingGapHigh;WorstPPGLow;HomeRestartGFLow;MEDIA;3;2;1;66.6667;33.3333;59.8116;6.8551
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeRestartNotReady;RankingGapHigh;WorstPPGLow;HomeRestartNotReady;ALL;6;5;1;83.3333;16.6667;62.7426;20.5907
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeRestartNotReady;RankingGapHigh;WorstPPGLow;HomeRestartNotReady;ALTA;5;4;1;80.0;20.0;71.9858;8.0142
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeRestartNotReady;RankingGapHigh;WorstPPGLow;HomeRestartNotReady;BASSA;0;0;0;0.0;0.0;54.2929;-54.2929
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeRestartNotReady;RankingGapHigh;WorstPPGLow;HomeRestartNotReady;MEDIA;1;1;0;100.0;0.0;59.8116;40.1884
+TRIPLE;RankingGapHigh + WorstPPGLow + BothTeamsRestartNotReady;RankingGapHigh;WorstPPGLow;BothTeamsRestartNotReady;ALL;0;0;0;0.0;0.0;62.7426;-62.7426
+TRIPLE;RankingGapHigh + WorstPPGLow + BothTeamsRestartNotReady;RankingGapHigh;WorstPPGLow;BothTeamsRestartNotReady;ALTA;0;0;0;0.0;0.0;71.9858;-71.9858
+TRIPLE;RankingGapHigh + WorstPPGLow + BothTeamsRestartNotReady;RankingGapHigh;WorstPPGLow;BothTeamsRestartNotReady;BASSA;0;0;0;0.0;0.0;54.2929;-54.2929
+TRIPLE;RankingGapHigh + WorstPPGLow + BothTeamsRestartNotReady;RankingGapHigh;WorstPPGLow;BothTeamsRestartNotReady;MEDIA;0;0;0;0.0;0.0;59.8116;-59.8116
+TRIPLE;RankingGapHigh + HomeWinsLow + HomeRestartGFLow;RankingGapHigh;HomeWinsLow;HomeRestartGFLow;ALL;14;9;5;64.2857;35.7143;62.7426;1.5431
+TRIPLE;RankingGapHigh + HomeWinsLow + HomeRestartGFLow;RankingGapHigh;HomeWinsLow;HomeRestartGFLow;ALTA;6;4;2;66.6667;33.3333;71.9858;-5.3191
+TRIPLE;RankingGapHigh + HomeWinsLow + HomeRestartGFLow;RankingGapHigh;HomeWinsLow;HomeRestartGFLow;BASSA;2;1;1;50.0;50.0;54.2929;-4.2929
+TRIPLE;RankingGapHigh + HomeWinsLow + HomeRestartGFLow;RankingGapHigh;HomeWinsLow;HomeRestartGFLow;MEDIA;6;4;2;66.6667;33.3333;59.8116;6.8551
+TRIPLE;RankingGapHigh + HomeWinsLow + HomeRestartNotReady;RankingGapHigh;HomeWinsLow;HomeRestartNotReady;ALL;6;5;1;83.3333;16.6667;62.7426;20.5907
+TRIPLE;RankingGapHigh + HomeWinsLow + HomeRestartNotReady;RankingGapHigh;HomeWinsLow;HomeRestartNotReady;ALTA;4;3;1;75.0;25.0;71.9858;3.0142
+TRIPLE;RankingGapHigh + HomeWinsLow + HomeRestartNotReady;RankingGapHigh;HomeWinsLow;HomeRestartNotReady;BASSA;0;0;0;0.0;0.0;54.2929;-54.2929
+TRIPLE;RankingGapHigh + HomeWinsLow + HomeRestartNotReady;RankingGapHigh;HomeWinsLow;HomeRestartNotReady;MEDIA;2;2;0;100.0;0.0;59.8116;40.1884
+TRIPLE;RankingGapHigh + HomeWinsLow + BothTeamsRestartNotReady;RankingGapHigh;HomeWinsLow;BothTeamsRestartNotReady;ALL;0;0;0;0.0;0.0;62.7426;-62.7426
+TRIPLE;RankingGapHigh + HomeWinsLow + BothTeamsRestartNotReady;RankingGapHigh;HomeWinsLow;BothTeamsRestartNotReady;ALTA;0;0;0;0.0;0.0;71.9858;-71.9858
+TRIPLE;RankingGapHigh + HomeWinsLow + BothTeamsRestartNotReady;RankingGapHigh;HomeWinsLow;BothTeamsRestartNotReady;BASSA;0;0;0;0.0;0.0;54.2929;-54.2929
+TRIPLE;RankingGapHigh + HomeWinsLow + BothTeamsRestartNotReady;RankingGapHigh;HomeWinsLow;BothTeamsRestartNotReady;MEDIA;0;0;0;0.0;0.0;59.8116;-59.8116
+TRIPLE;RankingGapHigh + HomeRestartGFLow + HomeRestartNotReady;RankingGapHigh;HomeRestartGFLow;HomeRestartNotReady;ALL;18;16;2;88.8889;11.1111;62.7426;26.1463
+TRIPLE;RankingGapHigh + HomeRestartGFLow + HomeRestartNotReady;RankingGapHigh;HomeRestartGFLow;HomeRestartNotReady;ALTA;11;9;2;81.8182;18.1818;71.9858;9.8324
+TRIPLE;RankingGapHigh + HomeRestartGFLow + HomeRestartNotReady;RankingGapHigh;HomeRestartGFLow;HomeRestartNotReady;BASSA;2;2;0;100.0;0.0;54.2929;45.7071
+TRIPLE;RankingGapHigh + HomeRestartGFLow + HomeRestartNotReady;RankingGapHigh;HomeRestartGFLow;HomeRestartNotReady;MEDIA;5;5;0;100.0;0.0;59.8116;40.1884
+TRIPLE;RankingGapHigh + HomeRestartGFLow + BothTeamsRestartNotReady;RankingGapHigh;HomeRestartGFLow;BothTeamsRestartNotReady;ALL;3;2;1;66.6667;33.3333;62.7426;3.9241
+TRIPLE;RankingGapHigh + HomeRestartGFLow + BothTeamsRestartNotReady;RankingGapHigh;HomeRestartGFLow;BothTeamsRestartNotReady;ALTA;1;0;1;0.0;100.0;71.9858;-71.9858
+TRIPLE;RankingGapHigh + HomeRestartGFLow + BothTeamsRestartNotReady;RankingGapHigh;HomeRestartGFLow;BothTeamsRestartNotReady;BASSA;1;1;0;100.0;0.0;54.2929;45.7071
+TRIPLE;RankingGapHigh + HomeRestartGFLow + BothTeamsRestartNotReady;RankingGapHigh;HomeRestartGFLow;BothTeamsRestartNotReady;MEDIA;1;1;0;100.0;0.0;59.8116;40.1884
+TRIPLE;RankingGapHigh + HomeRestartNotReady + BothTeamsRestartNotReady;RankingGapHigh;HomeRestartNotReady;BothTeamsRestartNotReady;ALL;3;2;1;66.6667;33.3333;62.7426;3.9241
+TRIPLE;RankingGapHigh + HomeRestartNotReady + BothTeamsRestartNotReady;RankingGapHigh;HomeRestartNotReady;BothTeamsRestartNotReady;ALTA;1;0;1;0.0;100.0;71.9858;-71.9858
+TRIPLE;RankingGapHigh + HomeRestartNotReady + BothTeamsRestartNotReady;RankingGapHigh;HomeRestartNotReady;BothTeamsRestartNotReady;BASSA;1;1;0;100.0;0.0;54.2929;45.7071
+TRIPLE;RankingGapHigh + HomeRestartNotReady + BothTeamsRestartNotReady;RankingGapHigh;HomeRestartNotReady;BothTeamsRestartNotReady;MEDIA;1;1;0;100.0;0.0;59.8116;40.1884
+TRIPLE;HomePPGLow + WorstPPGLow + HomeWinsLow;HomePPGLow;WorstPPGLow;HomeWinsLow;ALL;273;167;106;61.1722;38.8278;62.7426;-1.5704
+TRIPLE;HomePPGLow + WorstPPGLow + HomeWinsLow;HomePPGLow;WorstPPGLow;HomeWinsLow;ALTA;88;65;23;73.8636;26.1364;71.9858;1.8778
+TRIPLE;HomePPGLow + WorstPPGLow + HomeWinsLow;HomePPGLow;WorstPPGLow;HomeWinsLow;BASSA;65;36;29;55.3846;44.6154;54.2929;1.0917
+TRIPLE;HomePPGLow + WorstPPGLow + HomeWinsLow;HomePPGLow;WorstPPGLow;HomeWinsLow;MEDIA;120;66;54;55.0;45.0;59.8116;-4.8116
+TRIPLE;HomePPGLow + WorstPPGLow + HomeRestartGFLow;HomePPGLow;WorstPPGLow;HomeRestartGFLow;ALL;43;24;19;55.814;44.186;62.7426;-6.9286
+TRIPLE;HomePPGLow + WorstPPGLow + HomeRestartGFLow;HomePPGLow;WorstPPGLow;HomeRestartGFLow;ALTA;9;7;2;77.7778;22.2222;71.9858;5.792
+TRIPLE;HomePPGLow + WorstPPGLow + HomeRestartGFLow;HomePPGLow;WorstPPGLow;HomeRestartGFLow;BASSA;17;9;8;52.9412;47.0588;54.2929;-1.3517
+TRIPLE;HomePPGLow + WorstPPGLow + HomeRestartGFLow;HomePPGLow;WorstPPGLow;HomeRestartGFLow;MEDIA;17;8;9;47.0588;52.9412;59.8116;-12.7528
+TRIPLE;HomePPGLow + WorstPPGLow + HomeRestartNotReady;HomePPGLow;WorstPPGLow;HomeRestartNotReady;ALL;17;11;6;64.7059;35.2941;62.7426;1.9633
+TRIPLE;HomePPGLow + WorstPPGLow + HomeRestartNotReady;HomePPGLow;WorstPPGLow;HomeRestartNotReady;ALTA;5;4;1;80.0;20.0;71.9858;8.0142
+TRIPLE;HomePPGLow + WorstPPGLow + HomeRestartNotReady;HomePPGLow;WorstPPGLow;HomeRestartNotReady;BASSA;7;4;3;57.1429;42.8571;54.2929;2.85
+TRIPLE;HomePPGLow + WorstPPGLow + HomeRestartNotReady;HomePPGLow;WorstPPGLow;HomeRestartNotReady;MEDIA;5;3;2;60.0;40.0;59.8116;0.1884
+TRIPLE;HomePPGLow + WorstPPGLow + BothTeamsRestartNotReady;HomePPGLow;WorstPPGLow;BothTeamsRestartNotReady;ALL;4;2;2;50.0;50.0;62.7426;-12.7426
+TRIPLE;HomePPGLow + WorstPPGLow + BothTeamsRestartNotReady;HomePPGLow;WorstPPGLow;BothTeamsRestartNotReady;ALTA;1;1;0;100.0;0.0;71.9858;28.0142
+TRIPLE;HomePPGLow + WorstPPGLow + BothTeamsRestartNotReady;HomePPGLow;WorstPPGLow;BothTeamsRestartNotReady;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+TRIPLE;HomePPGLow + WorstPPGLow + BothTeamsRestartNotReady;HomePPGLow;WorstPPGLow;BothTeamsRestartNotReady;MEDIA;1;1;0;100.0;0.0;59.8116;40.1884
+TRIPLE;HomePPGLow + HomeWinsLow + HomeRestartGFLow;HomePPGLow;HomeWinsLow;HomeRestartGFLow;ALL;56;31;25;55.3571;44.6429;62.7426;-7.3855
+TRIPLE;HomePPGLow + HomeWinsLow + HomeRestartGFLow;HomePPGLow;HomeWinsLow;HomeRestartGFLow;ALTA;12;8;4;66.6667;33.3333;71.9858;-5.3191
+TRIPLE;HomePPGLow + HomeWinsLow + HomeRestartGFLow;HomePPGLow;HomeWinsLow;HomeRestartGFLow;BASSA;21;11;10;52.381;47.619;54.2929;-1.9119
+TRIPLE;HomePPGLow + HomeWinsLow + HomeRestartGFLow;HomePPGLow;HomeWinsLow;HomeRestartGFLow;MEDIA;23;12;11;52.1739;47.8261;59.8116;-7.6377
+TRIPLE;HomePPGLow + HomeWinsLow + HomeRestartNotReady;HomePPGLow;HomeWinsLow;HomeRestartNotReady;ALL;23;15;8;65.2174;34.7826;62.7426;2.4748
+TRIPLE;HomePPGLow + HomeWinsLow + HomeRestartNotReady;HomePPGLow;HomeWinsLow;HomeRestartNotReady;ALTA;7;5;2;71.4286;28.5714;71.9858;-0.5572
+TRIPLE;HomePPGLow + HomeWinsLow + HomeRestartNotReady;HomePPGLow;HomeWinsLow;HomeRestartNotReady;BASSA;8;5;3;62.5;37.5;54.2929;8.2071
+TRIPLE;HomePPGLow + HomeWinsLow + HomeRestartNotReady;HomePPGLow;HomeWinsLow;HomeRestartNotReady;MEDIA;8;5;3;62.5;37.5;59.8116;2.6884
+TRIPLE;HomePPGLow + HomeWinsLow + BothTeamsRestartNotReady;HomePPGLow;HomeWinsLow;BothTeamsRestartNotReady;ALL;6;3;3;50.0;50.0;62.7426;-12.7426
+TRIPLE;HomePPGLow + HomeWinsLow + BothTeamsRestartNotReady;HomePPGLow;HomeWinsLow;BothTeamsRestartNotReady;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+TRIPLE;HomePPGLow + HomeWinsLow + BothTeamsRestartNotReady;HomePPGLow;HomeWinsLow;BothTeamsRestartNotReady;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+TRIPLE;HomePPGLow + HomeWinsLow + BothTeamsRestartNotReady;HomePPGLow;HomeWinsLow;BothTeamsRestartNotReady;MEDIA;2;2;0;100.0;0.0;59.8116;40.1884
+TRIPLE;HomePPGLow + HomeRestartGFLow + HomeRestartNotReady;HomePPGLow;HomeRestartGFLow;HomeRestartNotReady;ALL;22;14;8;63.6364;36.3636;62.7426;0.8938
+TRIPLE;HomePPGLow + HomeRestartGFLow + HomeRestartNotReady;HomePPGLow;HomeRestartGFLow;HomeRestartNotReady;ALTA;7;5;2;71.4286;28.5714;71.9858;-0.5572
+TRIPLE;HomePPGLow + HomeRestartGFLow + HomeRestartNotReady;HomePPGLow;HomeRestartGFLow;HomeRestartNotReady;BASSA;7;4;3;57.1429;42.8571;54.2929;2.85
+TRIPLE;HomePPGLow + HomeRestartGFLow + HomeRestartNotReady;HomePPGLow;HomeRestartGFLow;HomeRestartNotReady;MEDIA;8;5;3;62.5;37.5;59.8116;2.6884
+TRIPLE;HomePPGLow + HomeRestartGFLow + BothTeamsRestartNotReady;HomePPGLow;HomeRestartGFLow;BothTeamsRestartNotReady;ALL;6;3;3;50.0;50.0;62.7426;-12.7426
+TRIPLE;HomePPGLow + HomeRestartGFLow + BothTeamsRestartNotReady;HomePPGLow;HomeRestartGFLow;BothTeamsRestartNotReady;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+TRIPLE;HomePPGLow + HomeRestartGFLow + BothTeamsRestartNotReady;HomePPGLow;HomeRestartGFLow;BothTeamsRestartNotReady;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+TRIPLE;HomePPGLow + HomeRestartGFLow + BothTeamsRestartNotReady;HomePPGLow;HomeRestartGFLow;BothTeamsRestartNotReady;MEDIA;2;2;0;100.0;0.0;59.8116;40.1884
+TRIPLE;HomePPGLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomePPGLow;HomeRestartNotReady;BothTeamsRestartNotReady;ALL;6;3;3;50.0;50.0;62.7426;-12.7426
+TRIPLE;HomePPGLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomePPGLow;HomeRestartNotReady;BothTeamsRestartNotReady;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+TRIPLE;HomePPGLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomePPGLow;HomeRestartNotReady;BothTeamsRestartNotReady;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+TRIPLE;HomePPGLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomePPGLow;HomeRestartNotReady;BothTeamsRestartNotReady;MEDIA;2;2;0;100.0;0.0;59.8116;40.1884
+TRIPLE;WorstPPGLow + HomeWinsLow + HomeRestartGFLow;WorstPPGLow;HomeWinsLow;HomeRestartGFLow;ALL;44;25;19;56.8182;43.1818;62.7426;-5.9244
+TRIPLE;WorstPPGLow + HomeWinsLow + HomeRestartGFLow;WorstPPGLow;HomeWinsLow;HomeRestartGFLow;ALTA;9;7;2;77.7778;22.2222;71.9858;5.792
+TRIPLE;WorstPPGLow + HomeWinsLow + HomeRestartGFLow;WorstPPGLow;HomeWinsLow;HomeRestartGFLow;BASSA;18;10;8;55.5556;44.4444;54.2929;1.2627
+TRIPLE;WorstPPGLow + HomeWinsLow + HomeRestartGFLow;WorstPPGLow;HomeWinsLow;HomeRestartGFLow;MEDIA;17;8;9;47.0588;52.9412;59.8116;-12.7528
+TRIPLE;WorstPPGLow + HomeWinsLow + HomeRestartNotReady;WorstPPGLow;HomeWinsLow;HomeRestartNotReady;ALL;17;11;6;64.7059;35.2941;62.7426;1.9633
+TRIPLE;WorstPPGLow + HomeWinsLow + HomeRestartNotReady;WorstPPGLow;HomeWinsLow;HomeRestartNotReady;ALTA;5;4;1;80.0;20.0;71.9858;8.0142
+TRIPLE;WorstPPGLow + HomeWinsLow + HomeRestartNotReady;WorstPPGLow;HomeWinsLow;HomeRestartNotReady;BASSA;7;4;3;57.1429;42.8571;54.2929;2.85
+TRIPLE;WorstPPGLow + HomeWinsLow + HomeRestartNotReady;WorstPPGLow;HomeWinsLow;HomeRestartNotReady;MEDIA;5;3;2;60.0;40.0;59.8116;0.1884
+TRIPLE;WorstPPGLow + HomeWinsLow + BothTeamsRestartNotReady;WorstPPGLow;HomeWinsLow;BothTeamsRestartNotReady;ALL;4;2;2;50.0;50.0;62.7426;-12.7426
+TRIPLE;WorstPPGLow + HomeWinsLow + BothTeamsRestartNotReady;WorstPPGLow;HomeWinsLow;BothTeamsRestartNotReady;ALTA;1;1;0;100.0;0.0;71.9858;28.0142
+TRIPLE;WorstPPGLow + HomeWinsLow + BothTeamsRestartNotReady;WorstPPGLow;HomeWinsLow;BothTeamsRestartNotReady;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+TRIPLE;WorstPPGLow + HomeWinsLow + BothTeamsRestartNotReady;WorstPPGLow;HomeWinsLow;BothTeamsRestartNotReady;MEDIA;1;1;0;100.0;0.0;59.8116;40.1884
+TRIPLE;WorstPPGLow + HomeRestartGFLow + HomeRestartNotReady;WorstPPGLow;HomeRestartGFLow;HomeRestartNotReady;ALL;20;12;8;60.0;40.0;62.7426;-2.7426
+TRIPLE;WorstPPGLow + HomeRestartGFLow + HomeRestartNotReady;WorstPPGLow;HomeRestartGFLow;HomeRestartNotReady;ALTA;7;5;2;71.4286;28.5714;71.9858;-0.5572
+TRIPLE;WorstPPGLow + HomeRestartGFLow + HomeRestartNotReady;WorstPPGLow;HomeRestartGFLow;HomeRestartNotReady;BASSA;7;4;3;57.1429;42.8571;54.2929;2.85
+TRIPLE;WorstPPGLow + HomeRestartGFLow + HomeRestartNotReady;WorstPPGLow;HomeRestartGFLow;HomeRestartNotReady;MEDIA;6;3;3;50.0;50.0;59.8116;-9.8116
+TRIPLE;WorstPPGLow + HomeRestartGFLow + BothTeamsRestartNotReady;WorstPPGLow;HomeRestartGFLow;BothTeamsRestartNotReady;ALL;5;2;3;40.0;60.0;62.7426;-22.7426
+TRIPLE;WorstPPGLow + HomeRestartGFLow + BothTeamsRestartNotReady;WorstPPGLow;HomeRestartGFLow;BothTeamsRestartNotReady;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+TRIPLE;WorstPPGLow + HomeRestartGFLow + BothTeamsRestartNotReady;WorstPPGLow;HomeRestartGFLow;BothTeamsRestartNotReady;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+TRIPLE;WorstPPGLow + HomeRestartGFLow + BothTeamsRestartNotReady;WorstPPGLow;HomeRestartGFLow;BothTeamsRestartNotReady;MEDIA;1;1;0;100.0;0.0;59.8116;40.1884
+TRIPLE;WorstPPGLow + HomeRestartNotReady + BothTeamsRestartNotReady;WorstPPGLow;HomeRestartNotReady;BothTeamsRestartNotReady;ALL;5;2;3;40.0;60.0;62.7426;-22.7426
+TRIPLE;WorstPPGLow + HomeRestartNotReady + BothTeamsRestartNotReady;WorstPPGLow;HomeRestartNotReady;BothTeamsRestartNotReady;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+TRIPLE;WorstPPGLow + HomeRestartNotReady + BothTeamsRestartNotReady;WorstPPGLow;HomeRestartNotReady;BothTeamsRestartNotReady;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+TRIPLE;WorstPPGLow + HomeRestartNotReady + BothTeamsRestartNotReady;WorstPPGLow;HomeRestartNotReady;BothTeamsRestartNotReady;MEDIA;1;1;0;100.0;0.0;59.8116;40.1884
+TRIPLE;HomeWinsLow + HomeRestartGFLow + HomeRestartNotReady;HomeWinsLow;HomeRestartGFLow;HomeRestartNotReady;ALL;28;16;12;57.1429;42.8571;62.7426;-5.5997
+TRIPLE;HomeWinsLow + HomeRestartGFLow + HomeRestartNotReady;HomeWinsLow;HomeRestartGFLow;HomeRestartNotReady;ALTA;9;6;3;66.6667;33.3333;71.9858;-5.3191
+TRIPLE;HomeWinsLow + HomeRestartGFLow + HomeRestartNotReady;HomeWinsLow;HomeRestartGFLow;HomeRestartNotReady;BASSA;9;5;4;55.5556;44.4444;54.2929;1.2627
+TRIPLE;HomeWinsLow + HomeRestartGFLow + HomeRestartNotReady;HomeWinsLow;HomeRestartGFLow;HomeRestartNotReady;MEDIA;10;5;5;50.0;50.0;59.8116;-9.8116
+TRIPLE;HomeWinsLow + HomeRestartGFLow + BothTeamsRestartNotReady;HomeWinsLow;HomeRestartGFLow;BothTeamsRestartNotReady;ALL;7;3;4;42.8571;57.1429;62.7426;-19.8855
+TRIPLE;HomeWinsLow + HomeRestartGFLow + BothTeamsRestartNotReady;HomeWinsLow;HomeRestartGFLow;BothTeamsRestartNotReady;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+TRIPLE;HomeWinsLow + HomeRestartGFLow + BothTeamsRestartNotReady;HomeWinsLow;HomeRestartGFLow;BothTeamsRestartNotReady;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+TRIPLE;HomeWinsLow + HomeRestartGFLow + BothTeamsRestartNotReady;HomeWinsLow;HomeRestartGFLow;BothTeamsRestartNotReady;MEDIA;3;2;1;66.6667;33.3333;59.8116;6.8551
+TRIPLE;HomeWinsLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomeWinsLow;HomeRestartNotReady;BothTeamsRestartNotReady;ALL;8;4;4;50.0;50.0;62.7426;-12.7426
+TRIPLE;HomeWinsLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomeWinsLow;HomeRestartNotReady;BothTeamsRestartNotReady;ALTA;2;1;1;50.0;50.0;71.9858;-21.9858
+TRIPLE;HomeWinsLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomeWinsLow;HomeRestartNotReady;BothTeamsRestartNotReady;BASSA;2;0;2;0.0;100.0;54.2929;-54.2929
+TRIPLE;HomeWinsLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomeWinsLow;HomeRestartNotReady;BothTeamsRestartNotReady;MEDIA;4;3;1;75.0;25.0;59.8116;15.1884
+TRIPLE;HomeRestartGFLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomeRestartGFLow;HomeRestartNotReady;BothTeamsRestartNotReady;ALL;14;6;8;42.8571;57.1429;62.7426;-19.8855
+TRIPLE;HomeRestartGFLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomeRestartGFLow;HomeRestartNotReady;BothTeamsRestartNotReady;ALTA;5;2;3;40.0;60.0;71.9858;-31.9858
+TRIPLE;HomeRestartGFLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomeRestartGFLow;HomeRestartNotReady;BothTeamsRestartNotReady;BASSA;4;1;3;25.0;75.0;54.2929;-29.2929
+TRIPLE;HomeRestartGFLow + HomeRestartNotReady + BothTeamsRestartNotReady;HomeRestartGFLow;HomeRestartNotReady;BothTeamsRestartNotReady;MEDIA;5;3;2;60.0;40.0;59.8116;0.1884

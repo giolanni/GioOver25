@@ -1,15 +1,11 @@
 ﻿LeagueId;Round;MatchDate;Home;Away;Status;Notes
-Australia_NorthernNSWStateLeague;15;2026-07-18;Lake Macquarie;Singleton Strikers;POSTICIPATA;
 Kazakhstan_PremierLeague;?;2026-07-19;Ertis Pavlodar;FC Astana;POSTICIPATA;Postponed
 Australia_NPLNorthernNSW;20;2026-07-19;Charlestown Azzurri;Edgeworth E.;POSTICIPATA;
-Australia_NorthernNSWStateLeague;15;2026-07-19;South Cardiff;Wallsend Red Devils;POSTICIPATA;
-Australia_NorthernNSWStateLeague;15;2026-07-19;Dudley Redhead United;Newcastle Croatia;POSTICIPATA;
 Somalia_NationalLeague;25;2026-07-22;Gantaalaha Afgooye;Mogadishu City;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;?;2026-07-04;Sibbo-Vargarna;JäPS/47;RINVIATA;Postponed
 Finland_Kolmonen_Western_Group3;?;2026-06-28;Sporting Kristina;Saaripotku;RINVIATA;Postponed
 Somalia_NationalLeague;25;2026-07-24;Badbaado;Raadsan;POSTICIPATA;
 Somalia_NationalLeague;25;2026-07-24;Elman;Jeenyo;POSTICIPATA;
-Finland_Kolmonen_North;7;2026-06-28;Villan Pojat;RoPo;POSTICIPATA;Postponed
 Finland_Kolmonen_North;8;2026-07-04;Ajax Sarkkiranta;Santa Claus;POSTICIPATA;Postponed
 Finland_Kolmonen_Southern_Group1;10;2026-06-25;MPS;Pöxyt;POSTICIPATA;Postponed
 Finland_Kolmonen_Southern_Group3;9;2026-06-12;RiPS;MK-United;POSTICIPATA;Postponed
@@ -30,15 +26,28 @@ Somalia_NationalLeague;?;2026-07-26;Dekedaha;Gantaalaha Afgooye;POSTICIPATA;
 Somalia_NationalLeague;?;2026-07-26;Gaadiidka;Mogadishu City;POSTICIPATA;
 USA_USLChampionship;?;2026-07-26;Birmingham;New Mexico;POSTICIPATA;
 Kazakhstan_PremierLeague;27;2026-07-12;Atyrau;Yelimay Semey;POSTICIPATA;
-Australia_NorthernNSWStateLeague;14;2026-07-12;West Wallsend;New Lambton;POSTICIPATA;
 Australia_NPLNorthernNSW;19;2026-07-14;Kahibah;Maitland;POSTICIPATA;
 Somalia_NationalLeague;20;2026-07-28;Horseed;Badbaado;POSTICIPATA;
 Somalia_NationalLeague;20;2026-07-28;Raadsan;Elman;POSTICIPATA;
 Somalia_NationalLeague;?;2026-07-29;Jeenyo;Jazeera;POSTICIPATA;
 Somalia_NationalLeague;?;2026-07-29;Jubba;Gantaalaha Afgooye;POSTICIPATA;
-Australia_NPLNorthernNSW;19;2026-07-11;Edgeworth E.;Belmont Swansea Utd.;POSTICIPATA;
 Somalia_NationalLeague;?;2026-07-30;Gaadiidka;Dekedaha;POSTICIPATA;
 Somalia_NationalLeague;?;2026-07-30;Mogadishu City;Heegan;POSTICIPATA;
 Somalia_NationalLeague;25;2026-07-25;Heegan;Jazeera;POSTICIPATA;
 Somalia_NationalLeague;25;2026-07-25;Horseed;Jubba;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;?;2026-07-31;MK-United;JäPS/47;POSTICIPATA;
+Belarus_VysshayaLiga;?;2026-08-01;BATE;Neman;POSTICIPATA;
+Belarus_VysshayaLiga;?;2026-08-01;Din. Minsk;Slavia Mozyr;POSTICIPATA;
+Belarus_VysshayaLiga;?;2026-08-01;ML Vitebsk;Zhodino;POSTICIPATA;
+Germany_Regionalliga_Nordost;?;2026-08-01;Altglienicke;Hertha II;POSTICIPATA;
+Poland_Ekstraklasa;?;2026-08-01;Korona;Gornik Zabrze;POSTICIPATA;
+Serbia_SuperLiga;?;2026-08-01;Radnik;Stella Rossa;POSTICIPATA;
+Hungary_NBII;?;2026-08-01;DVTK;Szentlorinc;POSTICIPATA;
+Hungary_NBII;?;2026-08-01;Mezokovesd;Ajka;POSTICIPATA;
+Hungary_NBII;?;2026-08-01;Szeged;BVSC-Zuglo;POSTICIPATA;
+USA_MLSNextPro_EasternConference_NortheastDivision;?;2026-08-01;Toronto FC II;Columbus Crew 2;POSTICIPATA;
+Austria_Tirol;?;2026-08-02;Telfs;Haiming;POSTICIPATA;
+Peru_Liga2;?;2026-08-02;Estudiantil CNI;Binacional;POSTICIPATA;Fonte: SRF
+USA_USLLeagueOne;?;2026-08-02;Chattanooga Red Wolves;Spokane Velocity;POSTICIPATA;Fonte: Abbandonata
+USA_USLLeagueOne;?;2026-08-02;Sarasota Paradise;FC Naples;POSTICIPATA;
+Australia_NPLSouthAustralia;?;2026-08-01;Sturt Lions;Adelaide Comets;POSTICIPATA;Fonte: partita abbandonata sullo 0-0

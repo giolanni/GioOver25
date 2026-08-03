@@ -1,0 +1,22 @@
+﻿CombinationType;Signals;Signal1;Signal2;Signal3;Scope;Support;OK;KO;HitRate;KORate;BaselineHitRate;LiftVsBaseline
+PAIR;HomeWinsLow + HomeRestartGFLow;HomeWinsLow;HomeRestartGFLow;;ALTA;15;9;6;60.0;40.0;71.9858;-11.9858
+PAIR;RankingGapHigh + HomeWinsLow;RankingGapHigh;HomeWinsLow;;ALTA;41;27;14;65.8537;34.1463;71.9858;-6.1321
+PAIR;HomePPGLow + HomeRestartGFLow;HomePPGLow;HomeRestartGFLow;;ALTA;12;8;4;66.6667;33.3333;71.9858;-5.3191
+TRIPLE;HomePPGLow + HomeWinsLow + HomeRestartGFLow;HomePPGLow;HomeWinsLow;HomeRestartGFLow;ALTA;12;8;4;66.6667;33.3333;71.9858;-5.3191
+TRIPLE;HomeWinsLow + HomeRestartGFLow + HomeRestartNotReady;HomeWinsLow;HomeRestartGFLow;HomeRestartNotReady;ALTA;9;6;3;66.6667;33.3333;71.9858;-5.3191
+PAIR;RankingGapHigh + HomePPGLow;RankingGapHigh;HomePPGLow;;ALTA;35;25;10;71.4286;28.5714;71.9858;-0.5572
+TRIPLE;RankingGapHigh + HomePPGLow + HomeWinsLow;RankingGapHigh;HomePPGLow;HomeWinsLow;ALTA;35;25;10;71.4286;28.5714;71.9858;-0.5572
+TRIPLE;RankingGapHigh + WorstPPGLow + HomeWinsLow;RankingGapHigh;WorstPPGLow;HomeWinsLow;ALTA;28;20;8;71.4286;28.5714;71.9858;-0.5572
+PAIR;HomePPGLow + HomeWinsLow;HomePPGLow;HomeWinsLow;;ALTA;130;94;36;72.3077;27.6923;71.9858;0.3219
+PAIR;WorstPPGLow + HomeWinsLow;WorstPPGLow;HomeWinsLow;;ALTA;94;69;25;73.4043;26.5957;71.9858;1.4185
+PAIR;HomePPGLow + WorstPPGLow;HomePPGLow;WorstPPGLow;;ALTA;88;65;23;73.8636;26.1364;71.9858;1.8778
+TRIPLE;HomePPGLow + WorstPPGLow + HomeWinsLow;HomePPGLow;WorstPPGLow;HomeWinsLow;ALTA;88;65;23;73.8636;26.1364;71.9858;1.8778
+TRIPLE;RankingGapHigh + HomePPGLow + WorstPPGLow;RankingGapHigh;HomePPGLow;WorstPPGLow;ALTA;27;20;7;74.0741;25.9259;71.9858;2.0883
+PAIR;WorstPPGLow + HomeRestartGFLow;WorstPPGLow;HomeRestartGFLow;;ALTA;12;9;3;75.0;25.0;71.9858;3.0142
+PAIR;RankingGapHigh + WorstPPGLow;RankingGapHigh;WorstPPGLow;;ALTA;59;45;14;76.2712;23.7288;71.9858;4.2854
+PAIR;RankingGapHigh + HomeRestartGFLow;RankingGapHigh;HomeRestartGFLow;;ALTA;13;10;3;76.9231;23.0769;71.9858;4.9373
+PAIR;HomeRestartGFLow + HomeRestartNotReady;HomeRestartGFLow;HomeRestartNotReady;;ALTA;27;21;6;77.7778;22.2222;71.9858;5.792
+TRIPLE;HomePPGLow + WorstPPGLow + HomeRestartGFLow;HomePPGLow;WorstPPGLow;HomeRestartGFLow;ALTA;9;7;2;77.7778;22.2222;71.9858;5.792
+TRIPLE;WorstPPGLow + HomeWinsLow + HomeRestartGFLow;WorstPPGLow;HomeWinsLow;HomeRestartGFLow;ALTA;9;7;2;77.7778;22.2222;71.9858;5.792
+PAIR;RankingGapHigh + HomeRestartNotReady;RankingGapHigh;HomeRestartNotReady;;ALTA;11;9;2;81.8182;18.1818;71.9858;9.8324
+TRIPLE;RankingGapHigh + HomeRestartGFLow + HomeRestartNotReady;RankingGapHigh;HomeRestartGFLow;HomeRestartNotReady;ALTA;11;9;2;81.8182;18.1818;71.9858;9.8324

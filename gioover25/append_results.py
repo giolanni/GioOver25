@@ -427,18 +427,14 @@ def _build_suspect_row(
 def _suspect_key(
     row: dict,
 ) -> tuple[str, str, str, str, str, str, str]:
+    league_id = str(
+        row.get("LeagueId", "")
+    ).strip()
+
     return (
-        str(
-            row.get("LeagueId", "")
-        ).strip(),
-        normalize_team_name(
-            str(row.get("LeagueId", "")).strip(),
-            row.get("Home", ""),
-        ),
-        normalize_team_name(
-            str(row.get("LeagueId", "")).strip(),
-            row.get("Away", ""),
-        ),
+        league_id,
+        normalize_team_name(league_id, row.get("Home", "")),
+        normalize_team_name(league_id, row.get("Away", "")),
         str(
             row.get("HG", "")
         ).strip(),
@@ -1078,7 +1074,7 @@ def append_results(
 
                 old_key = _match_key(
                     league_id,
-                    existing_match
+                    existing_match,
                 )
 
                 existing_match.date = (
@@ -1099,7 +1095,7 @@ def append_results(
 
                 new_key = _match_key(
                     league_id,
-                    existing_match
+                    existing_match,
                 )
 
                 existing_keys.discard(
@@ -1255,7 +1251,7 @@ def append_results(
         f"{len(finished_matches)}"
     )
 
-    for engine_name in ranking_history_engines:
+    for engine_name in get_available_engines():
         update_finished_matches(
             engine_name,
             finished_matches,
@@ -1285,6 +1281,14 @@ def _run_post_update_tasks() -> None:
         (
             "aggiornamento metrics",
             [sys.executable, "-m", "analysis.metrics.analyze_metrics"],
+        ),
+        (
+            "classifica leghe fascia alta per engine",
+            [
+                sys.executable,
+                "-m",
+                "analysis.metrics.build_engine_league_high_rankings",
+            ],
         ),
     ]
 
