@@ -53,6 +53,7 @@ from .match_statistics import build_match_statistics
 from .registry import get_league_info
 from .ranking_history import append_predictions
 from .engines.factory import get_engine, get_available_engines
+from .team_names import normalize_team_name
 
 
 INPUT_REQUIRED_COLUMNS = {"LeagueId", "MatchDate", "Home", "Away"}
@@ -235,6 +236,148 @@ def _match_has_final_score(match) -> bool:
     }
 
 
+
+
+def _match_goals(match) -> tuple[int, int] | None:
+    """
+    Recupera il punteggio finale da MatchResult senza assumere un solo
+    schema di attributi.
+    """
+
+    goal_pairs = (
+        ("home_goals", "away_goals"),
+        ("hg", "ag"),
+        ("home_score", "away_score"),
+    )
+
+    for home_field, away_field in goal_pairs:
+        home_value = getattr(
+            match,
+            home_field,
+            None,
+        )
+        away_value = getattr(
+            match,
+            away_field,
+            None,
+        )
+
+        if (
+            home_value in (None, "")
+            or away_value in (None, "")
+        ):
+            continue
+
+        try:
+            return (
+                int(home_value),
+                int(away_value),
+            )
+        except (TypeError, ValueError):
+            continue
+
+    return None
+
+
+def calculate_team_ppg_before_match(
+    *,
+    team: str,
+    source_league_id: str,
+    histories: dict[str, list],
+    match_date: date | None,
+) -> tuple[int, int, float]:
+    """
+    Calcola partite giocate, punti e PPG della squadra PRIMA della partita.
+
+    Per i CompetitionGroup usa esclusivamente lo storico della divisione
+    d'origine individuata da find_team_source_league. In questo modo il PPG
+    rappresenta il rendimento nel campionato di appartenenza e non miscela
+    classifiche di divisioni differenti.
+    """
+
+    matches = histories.get(
+        source_league_id,
+        [],
+    )
+
+    canonical_team = normalize_team_name(
+        source_league_id,
+        team,
+    )
+
+    played = 0
+    points = 0
+
+    for match in matches:
+        current_date = _match_date(
+            match
+        )
+
+        if current_date is None:
+            continue
+
+        if (
+            match_date is not None
+            and current_date >= match_date
+        ):
+            continue
+
+        goals = _match_goals(
+            match
+        )
+
+        if goals is None:
+            continue
+
+        home_goals, away_goals = goals
+
+        historical_home = normalize_team_name(
+            source_league_id,
+            getattr(
+                match,
+                "home",
+                "",
+            ),
+        )
+
+        historical_away = normalize_team_name(
+            source_league_id,
+            getattr(
+                match,
+                "away",
+                "",
+            ),
+        )
+
+        if canonical_team == historical_home:
+            played += 1
+
+            if home_goals > away_goals:
+                points += 3
+            elif home_goals == away_goals:
+                points += 1
+
+        elif canonical_team == historical_away:
+            played += 1
+
+            if away_goals > home_goals:
+                points += 3
+            elif away_goals == home_goals:
+                points += 1
+
+    ppg = (
+        points / played
+        if played > 0
+        else 0.0
+    )
+
+    return (
+        played,
+        points,
+        ppg,
+    )
+
+
 def count_completed_rounds_before(
     matches: list,
     match_date: date | None,
@@ -299,6 +442,7 @@ def build_output_row(
     league_id: str, round_number: int, home: str, away: str,
     home_source_league_id: str, away_source_league_id: str,
     competition_group: str, score,
+    band_override: str | None = None,
 ) -> dict:
     return {
     "MatchDate": match_date,
@@ -306,7 +450,11 @@ def build_output_row(
     "Home": home,
     "Away": away,
     "Score": score_value(score, "score"),
-    "Band": score_value(score, "band"),
+    "Band": (
+        band_override
+        if band_override is not None
+        else score_value(score, "band")
+    ),
     "Round": round_number,
 
     "PredictionDate": prediction_date,
@@ -515,6 +663,71 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
         )
         score = engine.calculate_score(match_stats, league_info)
 
+        # ------------------------------------------------------------------
+        # Driver contestuali opzionali dell'engine
+        # ------------------------------------------------------------------
+        # Gli engine precedenti non espongono apply_contextual_band e quindi
+        # continuano a funzionare esattamente come prima.
+        #
+        # v26 usa invece il PPG delle due squadre prima della partita:
+        #   - almeno 10 gare per entrambe;
+        #   - gap PPG <= 0.30;
+        #   - ALTA  -> PROX-ALTA
+        #   - MEDIA -> PROX-MEDIA
+        contextual_band = None
+
+        apply_contextual_band = getattr(
+            engine,
+            "apply_contextual_band",
+            None,
+        )
+
+        if callable(apply_contextual_band):
+            (
+                home_played,
+                home_points,
+                home_ppg,
+            ) = calculate_team_ppg_before_match(
+                team=home,
+                source_league_id=home_source,
+                histories=histories,
+                match_date=match_date_value,
+            )
+
+            (
+                away_played,
+                away_points,
+                away_ppg,
+            ) = calculate_team_ppg_before_match(
+                team=away,
+                source_league_id=away_source,
+                histories=histories,
+                match_date=match_date_value,
+            )
+
+            base_band = score_value(
+                score,
+                "band",
+            )
+
+            contextual_band = apply_contextual_band(
+                base_band,
+                home_played=home_played,
+                away_played=away_played,
+                home_ppg=home_ppg,
+                away_ppg=away_ppg,
+            )
+
+            if contextual_band != base_band:
+                print(
+                    f"[{engine_name}][PROX] "
+                    f"{home} - {away}: "
+                    f"{base_band} -> {contextual_band} | "
+                    f"GP={home_played}/{away_played} | "
+                    f"PPG={home_ppg:.3f}/{away_ppg:.3f} | "
+                    f"gap={abs(home_ppg - away_ppg):.3f}"
+                )
+
         results.append(build_output_row(
             prediction_date=prediction_date,
             match_date=match_date_text,
@@ -527,6 +740,7 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
             away_source_league_id=away_source,
             competition_group=competition_group,
             score=score,
+            band_override=contextual_band,
         ))
 
     results.sort(key=lambda x: float(x["Score"] or 0), reverse=True)

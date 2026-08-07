@@ -5,11 +5,11 @@ GioOver2.5 - engines/factory.py
 
 Registro centralizzato degli engine disponibili.
 
-Questa versione aggiunge `v251` lasciando invariati tutti gli altri motori.
+Registro degli engine disponibili, incluso il nuovo `v26`.
 ===============================================================================
 """
 
-from . import v13, v20, v21, v21dev, v22, v23, v24, v25, v251
+from . import v13, v20, v21, v21dev, v22, v23, v24, v25, v251, v26
 
 
 ENGINES = {
@@ -22,6 +22,7 @@ ENGINES = {
     "v24": v24,
     "v25": v25,
     "v251": v251,
+    "v26": v26,
 }
 
 
