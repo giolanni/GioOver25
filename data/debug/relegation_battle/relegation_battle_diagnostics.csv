@@ -1,0 +1,76 @@
+﻿Engine;SourceFile;StandingsSource;MatchDate;LeagueId;Home;Away;TeamsCount;RelegationStartPosition;HomePosition;AwayPosition;HomePlayed;AwayPlayed;HomePoints;AwayPoints;PointsGap;OriginalBand;FinalBand;Decision
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_TasmaniaSouthernChampionship;Olympia Warriors;Clarence Zebras U21;10;7;2;6;15;15;31;22;9;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Southern_Group2;PPS;Laajasalon Palloseura;16;13;15;6;13;11;3;19;16;ALTA;ALTA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_TasmaniaSouthernChampionship;Glenorchy Knights U21;Hobart Utd.;10;7;7;8;15;15;14;11;3;ALTA;PROX-RELEGATION;FLAGGED
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kakkonen_GroupA;Atlantis;Lahden Reipas;10;7;6;4;14;14;20;23;3;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Western_Group2;TPV/2;FC Haka j.;17;14;2;7;12;13;28;16;12;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Bolivia_DivisionProfesional;Academia del Balompie;Guabira;16;13;5;11;13;13;19;15;4;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Western_Group2;FC LeKi;ACE;17;14;6;11;12;13;17;7;10;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Southern_Group2;Kontu;MPS;16;13;11;2;12;13;10;28;18;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Ykkonen;KuPS Akatemia;Inter Turku 2;12;9;12;9;18;18;11;20;9;ALTA;PROX-RELEGATION;FLAGGED
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Eastern_Group3;Kumu;PeKa;12;9;11;1;13;13;8;32;24;ALTA;ALTA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Somalia_NationalLeague;Badbaado;Raadsan;12;9;7;10;19;20;20;14;6;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Kyrgyzstan_PremierLiga;Bars;Alga;16;13;5;2;17;17;34;39;5;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Sweden_Division2_VastraGotaland;Galtabacks BK;Qviding;19;16;13;8;16;15;10;21;11;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Southern_Group3;RiPS;Gnistan/Ogeli;12;9;4;8;12;13;22;13;9;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Southern_Group3;ToTe/Tapio;Futura;12;9;12;1;12;13;6;34;28;ALTA;ALTA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_NSWLeagueOne;Blacktown Spartans;Inter Lions;24;21;1;11;28;26;65;29;36;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_NPLQueensland;Queensland Lions;Brisbane Roar U23;18;15;1;9;20;20;47;19;28;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Norway_3rdDivision_Group4;Akra;Varhaug;16;13;12;6;15;14;14;20;6;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Kazakhstan_FirstLeague;Arys;Tobol 2;14;11;13;14;16;16;10;7;3;ALTA;PROX-RELEGATION;FLAGGED
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Southern_Group3;Lahti/69;JäPS/47;12;9;5;3;12;12;21;23;2;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kakkonen_GroupC;Jaro 2;JBK;10;7;3;6;15;15;25;22;3;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_NPLSouthAustralia;West Torrens;West Adelaide;18;15;2;9;20;21;39;25;14;ALTA;ALTA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kakkonen_GroupA;PPJ;HPS;10;7;7;5;15;14;19;21;2;MEDIA;MEDIA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Eastern_Group1;Komeetat;KeuPa;11;8;6;5;11;11;10;16;6;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Norway_3rdDivision_Group1;Union Carl Berner;Konnerud;15;12;8;14;17;14;21;9;12;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Eastern_Group3;KoPa;Edustus IPS;12;9;5;3;13;13;20;30;10;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Western_Group2;NoPS;Ylöjärvi Utd.;17;14;13;5;1;12;3;20;17;MEDIA;MEDIA;UNDER_MIN_MATCHES
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Sweden_Division2_SodraGotaland;Rappe GOIF;IFK Berga;16;13;13;1;15;18;13;33;20;MEDIA;MEDIA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Sweden_Division2_VastraGotaland;Astorps;Lindome;19;16;11;7;15;16;14;23;9;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Western_Group1;VG-62;MaPS;13;10;5;7;13;13;21;17;4;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;SouthKorea_KLeague2;Hwaseong;Seoul E-Land;17;14;4;2;19;19;34;36;2;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Bhutan_PremierLeague;Tsirang;Thimphu City;10;7;8;2;11;11;11;26;15;MEDIA;MEDIA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;SouthKorea_KLeague2;Yongin;Busan;17;14;13;3;19;19;19;36;17;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;SouthKorea_KLeague2;Gyeongnam;Daegu;17;14;9;6;19;19;25;32;7;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_SAStateLeague;Adelaide Croatia Raiders;Cove FC;19;16;1;8;20;20;41;24;17;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kakkonen_GroupA;PEPO;MyPa;10;7;2;9;14;14;28;12;16;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kakkonen_GroupA;Kiffen;Union Plaani;10;7;1;10;15;14;30;5;25;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_NPLSouthAustralia;Adelaide Comets;NE Metrostars;18;15;11;3;19;20;16;38;22;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_NPLSouthAustralia;Adelaide City;Playford Patriots;18;15;1;5;21;20;45;32;13;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Kazakhstan_FirstLeague;Turan;FC Astana 2;14;11;3;5;16;16;34;26;8;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Sweden_Division2_SodraGotaland;Osterlen;Solvesborgs;16;13;7;12;15;14;21;16;5;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Sweden_Division2_NorraGotaland;Skara;Vanersborgs FK;19;16;1;10;16;15;37;16;21;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Sweden_Division1_Norra;Enkoping SK;Karlbergs;18;15;6;9;15;15;25;21;4;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Southern_Group1;Etelä-Espoon Pallo;NuPS;12;9;2;4;13;13;31;22;9;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Kyrgyzstan_PremierLiga;Toktogul;Ozgon;16;13;14;3;16;17;13;36;23;MEDIA;MEDIA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Iceland_Division_1;Leiknir;Fylkir;15;12;7;3;17;19;22;33;11;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;SouthKorea_KLeague2;Asan;Ansan Greeners;17;14;7;15;19;19;27;18;9;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_NPLSouthAustralia;Campbelltown City;FK Beograd;18;15;10;4;21;21;24;36;12;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Iceland_Division_1;Afturelding;Grindavik;15;12;1;10;16;17;34;18;16;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Sweden_Superettan;Östersund;Sundsvall;20;17;4;16;17;17;29;9;20;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Sweden_Division2_NorraSvealand;Kungsangen;Lidingo IFK;18;15;12;11;16;15;10;11;1;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_VictoriaPremierLeague2;Bayside Argonauts;Box Hill;14;11;4;7;22;23;41;30;11;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;SouthKorea_KLeague2;Suwon Bluewings;Gimhae;17;14;1;17;19;18;37;11;26;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Sweden_Division1_Sodra;Kristianstad;Angelholm;20;17;14;11;16;15;15;17;2;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Australia_NSWLeagueOne;Prospect United;Western City Rangers;24;21;15;16;26;26;19;19;0;MEDIA;MEDIA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Kyrgyzstan_PremierLiga;Dordoi Bishkek;Neftchi Kochkor-Ata;16;13;8;9;17;17;21;20;1;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Estonia_Meistriliiga;Kuressaare;Harju JK Laagri;11;8;9;7;22;21;18;25;7;BASSA;BASSA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Lithuania_ILyga;Jonava;Ekranas;16;13;10;16;18;18;23;8;15;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Norway_Eliteserien;Sandefjord;KFUM Oslo;16;13;12;13;15;15;15;15;0;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Veikkausliiga;SJK;Gnistan;12;9;10;5;18;18;17;28;11;BASSA;BASSA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;FaroeIslands_PremierLeague;07 Vestur Sorvagur;Streymur;10;7;9;7;17;17;13;17;4;BASSA;PROX-RELEGATION;FLAGGED
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Bolivia_DivisionProfesional;Blooming;Always Ready;16;13;7;1;12;12;17;29;12;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Belarus_VysshayaLiga;Naftan;Arsenal Dzerzhinsk;17;14;16;10;15;16;7;21;14;BASSA;BASSA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Lithuania_ILyga;Hegelmann Litauen 2;Garliava;16;13;13;11;18;17;13;22;9;BASSA;BASSA;AWAY_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Kyrgyzstan_PremierLiga;Talant;Ilbirs;16;13;10;13;17;17;19;16;3;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;SouthKorea_KLeague2;Gimpo FC;Cheongju Jikji;17;14;8;14;19;19;27;19;8;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Western_Group1;LTU U20;ÅCF;13;10;9;12;12;13;11;8;3;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Somalia_NationalLeague;Elman;Jeenyo;12;9;5;9;20;20;36;20;16;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Belarus_VysshayaLiga;Slavia Mozyr;Dnepr Mogilev;17;14;11;13;15;16;15;12;3;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Ykkosliiga;Haka;Jippo;12;9;3;2;15;17;28;31;3;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Kazakhstan_FirstLeague;Jaiyq;Taraz;14;11;7;6;16;16;23;23;0;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Ykkosliiga;JaPS;Mikkeli;12;9;5;6;15;16;22;21;1;BASSA;BASSA;HOME_NOT_LAST_N
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Eastern_Group1;SaPa;FC Metso;11;8;9;2;2;11;4;23;19;BASSA;BASSA;UNDER_MIN_MATCHES
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Western_Group3;VIFK;Sundom IF;13;;;;;;;;;BASSA;BASSA;AWAY_NOT_FOUND
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Kolmonen_Western_Group3;Kiisto;SJK-j;13;;;;;;;;;BASSA;BASSA;HOME_NOT_FOUND

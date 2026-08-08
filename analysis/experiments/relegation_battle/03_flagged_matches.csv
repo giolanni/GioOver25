@@ -1,0 +1,807 @@
+﻿Engine;LeagueId;MatchDate;Home;Away;Band;Outcome;TeamsCount;HomePlayed;AwayPlayed;HomePoints;AwayPoints;PointsGap;HomePosition;AwayPosition;IsRelegationBattle;TestMaxPointsGap
+v13;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;ANY
+v13;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;ANY
+v13;Estonia_EsiliigaB;2026-07-12;Tartu Kalev;Legion;ALTA;OK;10;18;16;22;7;15;8;10;True;ANY
+v13;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;ANY
+v13;Estonia_EsiliigaB;2026-07-18;Legion;Tabasalu;ALTA;KO;10;17;17;7;27;20;10;7;True;ANY
+v13;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;ANY
+v13;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;ANY
+v13;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;3
+v13;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;3
+v13;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;6
+v13;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;6
+v13;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;6
+v13;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;9
+v13;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;9
+v13;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;9
+v13;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;12
+v13;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;12
+v13;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;12
+v13;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;12
+v13;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;12
+v20;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;ANY
+v20;Estonia_EsiliigaB;2026-07-12;Tartu Kalev;Legion;ALTA;OK;10;18;16;22;7;15;8;10;True;ANY
+v20;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;ANY
+v20;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;ANY
+v20;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;3
+v20;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;6
+v20;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;6
+v20;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;9
+v20;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;9
+v20;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;9
+v20;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;12
+v20;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;12
+v20;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;12
+v21;Iceland_BestaDeildKarla;2026-06-28;Hafnarfjordur;Vestmannaeyjar;ALTA;KO;12;11;11;6;11;5;12;9;True;ANY
+v21;Australia_NPLNorthernNSW;2026-06-30;Newcastle Olympic;Charlestown Azzurri;ALTA;OK;12;16;15;15;14;1;10;11;True;ANY
+v21;Australia_NPLQueenslandU23;2026-06-30;QLD State Team U17;Peninsula U23;ALTA;OK;12;13;14;13;16;3;11;10;True;ANY
+v21;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;ANY
+v21;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;ANY
+v21;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;ANY
+v21;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;ANY
+v21;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;ANY
+v21;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;ANY
+v21;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;ANY
+v21;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;ANY
+v21;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;ANY
+v21;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;ANY
+v21;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;ANY
+v21;Estonia_EsiliigaB;2026-07-12;Tartu Kalev;Legion;ALTA;OK;10;18;16;22;7;15;8;10;True;ANY
+v21;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;ANY
+v21;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;ANY
+v21;Somalia_NationalLeague;2026-07-15;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;ANY
+v21;Estonia_EsiliigaB;2026-07-18;Legion;Tabasalu;ALTA;KO;10;17;17;7;27;20;10;7;True;ANY
+v21;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;ANY
+v21;Australia_NPL_NSW_U20;2026-07-18;St George Saints U20;Rockdale Ilinden U20;ALTA;OK;16;23;23;9;26;17;15;14;True;ANY
+v21;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;ANY
+v21;Somalia_NationalLeague;2026-07-18;Jazeera;Gantaalaha Afgooye;ALTA;OK;12;17;16;17;4;13;9;12;True;ANY
+v21;Finland_Kakkonen_GroupB;2026-07-18;EPS;NJS;ALTA;OK;10;12;12;14;1;13;7;10;True;ANY
+v21;Somalia_NationalLeague;2026-07-20;Jubba;Badbaado;ALTA;OK;12;19;18;6;17;11;11;9;True;ANY
+v21;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;ANY
+v21;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;ANY
+v21;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;ANY
+v21;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;ANY
+v21;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;ANY
+v21;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;ANY
+v21;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;ANY
+v21;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;ANY
+v21;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;ANY
+v21;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;ANY
+v21;Norway_3rdDivision_Group5;2026-07-29;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;ANY
+v21;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;ANY
+v21;Estonia_Meistriliiga;2026-07-30;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;ANY
+v21;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;ANY
+v21;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;ANY
+v21;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;ANY
+v21;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;ANY
+v21;Australia_NPLNorthernNSW;2026-06-30;Newcastle Olympic;Charlestown Azzurri;ALTA;OK;12;16;15;15;14;1;10;11;True;3
+v21;Australia_NPLQueenslandU23;2026-06-30;QLD State Team U17;Peninsula U23;ALTA;OK;12;13;14;13;16;3;11;10;True;3
+v21;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;3
+v21;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;3
+v21;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;3
+v21;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;3
+v21;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;3
+v21;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;3
+v21;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;3
+v21;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;3
+v21;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;3
+v21;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;3
+v21;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;3
+v21;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;3
+v21;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;3
+v21;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;3
+v21;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;3
+v21;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;3
+v21;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;3
+v21;Iceland_BestaDeildKarla;2026-06-28;Hafnarfjordur;Vestmannaeyjar;ALTA;KO;12;11;11;6;11;5;12;9;True;6
+v21;Australia_NPLNorthernNSW;2026-06-30;Newcastle Olympic;Charlestown Azzurri;ALTA;OK;12;16;15;15;14;1;10;11;True;6
+v21;Australia_NPLQueenslandU23;2026-06-30;QLD State Team U17;Peninsula U23;ALTA;OK;12;13;14;13;16;3;11;10;True;6
+v21;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;6
+v21;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;6
+v21;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;6
+v21;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;6
+v21;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;6
+v21;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;6
+v21;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;6
+v21;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;6
+v21;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;6
+v21;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;6
+v21;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;6
+v21;Somalia_NationalLeague;2026-07-15;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;6
+v21;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;6
+v21;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;6
+v21;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;6
+v21;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;6
+v21;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;6
+v21;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;6
+v21;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;6
+v21;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;6
+v21;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;6
+v21;Norway_3rdDivision_Group5;2026-07-29;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;6
+v21;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;6
+v21;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;6
+v21;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;6
+v21;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;6
+v21;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;6
+v21;Iceland_BestaDeildKarla;2026-06-28;Hafnarfjordur;Vestmannaeyjar;ALTA;KO;12;11;11;6;11;5;12;9;True;9
+v21;Australia_NPLNorthernNSW;2026-06-30;Newcastle Olympic;Charlestown Azzurri;ALTA;OK;12;16;15;15;14;1;10;11;True;9
+v21;Australia_NPLQueenslandU23;2026-06-30;QLD State Team U17;Peninsula U23;ALTA;OK;12;13;14;13;16;3;11;10;True;9
+v21;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;9
+v21;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;9
+v21;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;9
+v21;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;9
+v21;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;9
+v21;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;9
+v21;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;9
+v21;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;9
+v21;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;9
+v21;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;9
+v21;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;9
+v21;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;9
+v21;Somalia_NationalLeague;2026-07-15;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;9
+v21;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;9
+v21;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;9
+v21;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;9
+v21;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;9
+v21;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;9
+v21;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;9
+v21;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;9
+v21;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;9
+v21;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;9
+v21;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;9
+v21;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;9
+v21;Norway_3rdDivision_Group5;2026-07-29;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;9
+v21;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;9
+v21;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;9
+v21;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;9
+v21;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;9
+v21;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;9
+v21;Iceland_BestaDeildKarla;2026-06-28;Hafnarfjordur;Vestmannaeyjar;ALTA;KO;12;11;11;6;11;5;12;9;True;12
+v21;Australia_NPLNorthernNSW;2026-06-30;Newcastle Olympic;Charlestown Azzurri;ALTA;OK;12;16;15;15;14;1;10;11;True;12
+v21;Australia_NPLQueenslandU23;2026-06-30;QLD State Team U17;Peninsula U23;ALTA;OK;12;13;14;13;16;3;11;10;True;12
+v21;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;12
+v21;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;12
+v21;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;12
+v21;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;12
+v21;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;12
+v21;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;12
+v21;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;12
+v21;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;12
+v21;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;12
+v21;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;12
+v21;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;12
+v21;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;12
+v21;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;12
+v21;Somalia_NationalLeague;2026-07-15;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;12
+v21;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;12
+v21;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;12
+v21;Somalia_NationalLeague;2026-07-20;Jubba;Badbaado;ALTA;OK;12;19;18;6;17;11;11;9;True;12
+v21;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;12
+v21;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;12
+v21;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;12
+v21;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;12
+v21;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;12
+v21;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;12
+v21;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;12
+v21;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;12
+v21;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;12
+v21;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;12
+v21;Norway_3rdDivision_Group5;2026-07-29;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;12
+v21;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;12
+v21;Estonia_Meistriliiga;2026-07-30;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;12
+v21;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;12
+v21;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;12
+v21;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;12
+v21;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;12
+v21dev;Iceland_BestaDeildKarla;2026-06-28;Hafnarfjordur;Vestmannaeyjar;ALTA;KO;12;11;11;6;11;5;12;9;True;ANY
+v21dev;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;ANY
+v21dev;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;ANY
+v21dev;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;ANY
+v21dev;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;ANY
+v21dev;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;ANY
+v21dev;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;ANY
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;ANY
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;ANY
+v21dev;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;ANY
+v21dev;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;ANY
+v21dev;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;ANY
+v21dev;Estonia_EsiliigaB;2026-07-12;Tartu Kalev;Legion;ALTA;OK;10;18;16;22;7;15;8;10;True;ANY
+v21dev;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;ANY
+v21dev;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;ANY
+v21dev;Somalia_NationalLeague;2026-07-15;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;ANY
+v21dev;Estonia_EsiliigaB;2026-07-18;Legion;Tabasalu;ALTA;KO;10;17;17;7;27;20;10;7;True;ANY
+v21dev;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;ANY
+v21dev;Australia_NPL_NSW_U20;2026-07-18;St George Saints U20;Rockdale Ilinden U20;ALTA;OK;16;23;23;9;26;17;15;14;True;ANY
+v21dev;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;ANY
+v21dev;Somalia_NationalLeague;2026-07-18;Jazeera;Gantaalaha Afgooye;ALTA;OK;12;17;16;17;4;13;9;12;True;ANY
+v21dev;Finland_Kakkonen_GroupB;2026-07-18;EPS;NJS;ALTA;OK;10;12;12;14;1;13;7;10;True;ANY
+v21dev;Somalia_NationalLeague;2026-07-20;Jubba;Badbaado;ALTA;OK;12;19;18;6;17;11;11;9;True;ANY
+v21dev;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;ANY
+v21dev;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;ANY
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;ANY
+v21dev;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;ANY
+v21dev;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;ANY
+v21dev;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;ANY
+v21dev;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;ANY
+v21dev;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;ANY
+v21dev;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;ANY
+v21dev;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;ANY
+v21dev;Norway_3rdDivision_Group5;2026-07-29;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;ANY
+v21dev;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;ANY
+v21dev;Estonia_Meistriliiga;2026-07-30;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;ANY
+v21dev;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;ANY
+v21dev;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;ANY
+v21dev;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;ANY
+v21dev;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;ANY
+v21dev;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;3
+v21dev;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;3
+v21dev;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;3
+v21dev;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;3
+v21dev;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;3
+v21dev;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;3
+v21dev;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;3
+v21dev;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;3
+v21dev;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;3
+v21dev;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;3
+v21dev;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;3
+v21dev;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;3
+v21dev;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;3
+v21dev;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;3
+v21dev;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;3
+v21dev;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;3
+v21dev;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;3
+v21dev;Iceland_BestaDeildKarla;2026-06-28;Hafnarfjordur;Vestmannaeyjar;ALTA;KO;12;11;11;6;11;5;12;9;True;6
+v21dev;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;6
+v21dev;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;6
+v21dev;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;6
+v21dev;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;6
+v21dev;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;6
+v21dev;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;6
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;6
+v21dev;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;6
+v21dev;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;6
+v21dev;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;6
+v21dev;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;6
+v21dev;Somalia_NationalLeague;2026-07-15;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;6
+v21dev;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;6
+v21dev;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;6
+v21dev;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;6
+v21dev;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;6
+v21dev;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;6
+v21dev;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;6
+v21dev;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;6
+v21dev;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;6
+v21dev;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;6
+v21dev;Norway_3rdDivision_Group5;2026-07-29;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;6
+v21dev;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;6
+v21dev;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;6
+v21dev;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;6
+v21dev;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;6
+v21dev;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;6
+v21dev;Iceland_BestaDeildKarla;2026-06-28;Hafnarfjordur;Vestmannaeyjar;ALTA;KO;12;11;11;6;11;5;12;9;True;9
+v21dev;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;9
+v21dev;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;9
+v21dev;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;9
+v21dev;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;9
+v21dev;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;9
+v21dev;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;9
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;9
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;9
+v21dev;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;9
+v21dev;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;9
+v21dev;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;9
+v21dev;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;9
+v21dev;Somalia_NationalLeague;2026-07-15;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;9
+v21dev;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;9
+v21dev;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;9
+v21dev;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;9
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;9
+v21dev;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;9
+v21dev;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;9
+v21dev;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;9
+v21dev;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;9
+v21dev;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;9
+v21dev;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;9
+v21dev;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;9
+v21dev;Norway_3rdDivision_Group5;2026-07-29;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;9
+v21dev;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;9
+v21dev;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;9
+v21dev;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;9
+v21dev;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;9
+v21dev;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;9
+v21dev;Iceland_BestaDeildKarla;2026-06-28;Hafnarfjordur;Vestmannaeyjar;ALTA;KO;12;11;11;6;11;5;12;9;True;12
+v21dev;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;12
+v21dev;Norway_OBOSLigaen;2026-07-03;Raufoss;Strømmen;ALTA;KO;16;13;13;10;11;1;16;15;True;12
+v21dev;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;12
+v21dev;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;12
+v21dev;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;12
+v21dev;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;12
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;12
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;12
+v21dev;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;12
+v21dev;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;12
+v21dev;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;12
+v21dev;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;12
+v21dev;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;12
+v21dev;Somalia_NationalLeague;2026-07-15;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;12
+v21dev;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;12
+v21dev;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;12
+v21dev;Somalia_NationalLeague;2026-07-20;Jubba;Badbaado;ALTA;OK;12;19;18;6;17;11;11;9;True;12
+v21dev;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;12
+v21dev;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;12
+v21dev;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;12
+v21dev;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;12
+v21dev;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;12
+v21dev;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;12
+v21dev;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;12
+v21dev;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;12
+v21dev;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;12
+v21dev;Iceland_BestaDeildKarla;2026-07-26;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;12
+v21dev;Norway_3rdDivision_Group5;2026-07-29;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;12
+v21dev;Australia_TasmaniaSouthernChampionship;2026-07-30;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;12
+v21dev;Estonia_Meistriliiga;2026-07-30;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;12
+v21dev;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;12
+v21dev;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;12
+v21dev;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;12
+v21dev;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;12
+v22;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;ANY
+v22;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;ANY
+v22;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;ANY
+v22;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;ANY
+v22;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;ANY
+v22;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;ANY
+v22;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;ANY
+v22;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;ANY
+v22;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;ANY
+v22;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;ANY
+v22;Estonia_EsiliigaB;2026-07-12;Tartu Kalev;Legion;ALTA;OK;10;18;16;22;7;15;8;10;True;ANY
+v22;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;ANY
+v22;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;ANY
+v22;Estonia_EsiliigaB;2026-07-18;Legion;Tabasalu;ALTA;KO;10;17;17;7;27;20;10;7;True;ANY
+v22;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;ANY
+v22;Australia_NPL_NSW_U20;2026-07-18;St George Saints U20;Rockdale Ilinden U20;ALTA;OK;16;23;23;9;26;17;15;14;True;ANY
+v22;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;ANY
+v22;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;ANY
+v22;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;ANY
+v22;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;ANY
+v22;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;ANY
+v22;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;ANY
+v22;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;ANY
+v22;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;ANY
+v22;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;ANY
+v22;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;ANY
+v22;Estonia_Meistriliiga;2026-07-31;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;ANY
+v22;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;ANY
+v22;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;ANY
+v22;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;ANY
+v22;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;3
+v22;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;3
+v22;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;3
+v22;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;3
+v22;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;3
+v22;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;3
+v22;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;3
+v22;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;3
+v22;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;3
+v22;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;3
+v22;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;3
+v22;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;3
+v22;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;3
+v22;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;3
+v22;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;6
+v22;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;6
+v22;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;6
+v22;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;6
+v22;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;6
+v22;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;6
+v22;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;6
+v22;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;6
+v22;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;6
+v22;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;6
+v22;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;6
+v22;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;6
+v22;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;6
+v22;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;6
+v22;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;6
+v22;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;6
+v22;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;6
+v22;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;6
+v22;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;6
+v22;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;6
+v22;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;6
+v22;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;9
+v22;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;9
+v22;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;9
+v22;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;9
+v22;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;9
+v22;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;9
+v22;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;9
+v22;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;9
+v22;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;9
+v22;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;9
+v22;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;9
+v22;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;9
+v22;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;9
+v22;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;9
+v22;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;9
+v22;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;9
+v22;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;9
+v22;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;9
+v22;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;9
+v22;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;9
+v22;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;9
+v22;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;9
+v22;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;9
+v22;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;9
+v22;FaroeIslands_1Deild;2026-07-03;B36 Torshavn 2;Hoyvik;ALTA;OK;10;11;12;11;10;1;8;9;True;12
+v22;Australia_NPLWesternAustralia;2026-07-04;Perth Glory U23;Balcatta;ALTA;OK;13;16;16;13;8;5;11;12;True;12
+v22;Finland_Kakkonen_GroupC;2026-07-04;Hercules;Vaajakoski;ALTA;OK;10;10;10;9;10;1;10;9;True;12
+v22;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;12
+v22;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;12
+v22;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;12
+v22;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;12
+v22;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;12
+v22;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;12
+v22;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;12
+v22;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;12
+v22;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;12
+v22;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;12
+v22;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;12
+v22;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;12
+v22;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;12
+v22;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;12
+v22;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;12
+v22;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;12
+v22;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;12
+v22;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;12
+v22;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;12
+v22;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;12
+v22;Estonia_Meistriliiga;2026-07-31;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;12
+v22;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;12
+v22;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;12
+v22;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;12
+v23;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;ANY
+v23;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;ANY
+v23;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;ANY
+v23;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;ANY
+v23;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;ANY
+v23;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;ANY
+v23;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;ANY
+v23;Estonia_EsiliigaB;2026-07-12;Tartu Kalev;Legion;ALTA;OK;10;18;16;22;7;15;8;10;True;ANY
+v23;Estonia_EsiliigaB;2026-07-18;Legion;Tabasalu;ALTA;KO;10;17;17;7;27;20;10;7;True;ANY
+v23;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;ANY
+v23;Australia_NPL_NSW_U20;2026-07-18;St George Saints U20;Rockdale Ilinden U20;ALTA;OK;16;23;23;9;26;17;15;14;True;ANY
+v23;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;ANY
+v23;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;ANY
+v23;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;ANY
+v23;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;ANY
+v23;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;ANY
+v23;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;ANY
+v23;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;ANY
+v23;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;ANY
+v23;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;ANY
+v23;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;ANY
+v23;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;ANY
+v23;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;ANY
+v23;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;ANY
+v23;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;3
+v23;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;3
+v23;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;3
+v23;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;3
+v23;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;3
+v23;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;3
+v23;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;3
+v23;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;3
+v23;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;3
+v23;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;3
+v23;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;3
+v23;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;6
+v23;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;6
+v23;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;6
+v23;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;6
+v23;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;6
+v23;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;6
+v23;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;6
+v23;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;6
+v23;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;6
+v23;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;6
+v23;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;6
+v23;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;6
+v23;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;6
+v23;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;6
+v23;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;6
+v23;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;6
+v23;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;9
+v23;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;9
+v23;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;9
+v23;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;9
+v23;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;9
+v23;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;9
+v23;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;9
+v23;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;9
+v23;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;9
+v23;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;9
+v23;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;9
+v23;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;9
+v23;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;9
+v23;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;9
+v23;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;9
+v23;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;9
+v23;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;9
+v23;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;9
+v23;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;9
+v23;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;12
+v23;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;12
+v23;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;12
+v23;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;12
+v23;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;12
+v23;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;12
+v23;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;12
+v23;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;12
+v23;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;12
+v23;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;12
+v23;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;12
+v23;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;12
+v23;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;12
+v23;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;12
+v23;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;12
+v23;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;12
+v23;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;12
+v23;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;12
+v23;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;12
+v23;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;12
+v23;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;12
+v24;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;ANY
+v24;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;ANY
+v24;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;ANY
+v24;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;ANY
+v24;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;ANY
+v24;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;ANY
+v24;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;ANY
+v24;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;ANY
+v24;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;ANY
+v24;Iceland_BestaDeildKarla;2026-07-12;Akureyri;Akranes;ALTA;OK;12;13;13;10;15;5;10;9;True;ANY
+v24;Estonia_EsiliigaB;2026-07-12;Tartu Kalev;Legion;ALTA;OK;10;18;16;22;7;15;8;10;True;ANY
+v24;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;ANY
+v24;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;ANY
+v24;Australia_NPL_NSW_U20;2026-07-18;St George Saints U20;Rockdale Ilinden U20;ALTA;OK;16;23;23;9;26;17;15;14;True;ANY
+v24;Estonia_EsiliigaB;2026-07-18;Legion;Tabasalu;ALTA;KO;10;17;17;7;27;20;10;7;True;ANY
+v24;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;ANY
+v24;Somalia_NationalLeague;2026-07-18;Jazeera;Gantaalaha Afgooye;ALTA;OK;12;17;16;17;4;13;9;12;True;ANY
+v24;Finland_Kakkonen_GroupB;2026-07-18;EPS;NJS;ALTA;OK;10;12;12;14;1;13;7;10;True;ANY
+v24;USA_USLChampionship;2026-07-19;Sporting Jax;Brooklyn;ALTA;OK;25;16;14;7;12;5;25;23;True;ANY
+v24;Latvia_NakotnesLiga;2026-07-20;Tukums 2000 2;RFS 2;ALTA;KO;14;12;12;8;9;1;12;11;True;ANY
+v24;Somalia_NationalLeague;2026-07-20;Jubba;Badbaado;ALTA;OK;12;19;18;6;17;11;11;9;True;ANY
+v24;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;ANY
+v24;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;ANY
+v24;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;ANY
+v24;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;ANY
+v24;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;ANY
+v24;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;ANY
+v24;Australia_VictoriaPremierLeague2;2026-07-25;Moreland City;Werribee City;ALTA;OK;14;19;21;11;20;9;14;11;True;ANY
+v24;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;ANY
+v24;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;ANY
+v24;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;ANY
+v24;Bolivia_DivisionProfesional;2026-07-28;GV San Jose;Universitario de Vinto;ALTA;OK;16;10;10;7;10;3;16;13;True;ANY
+v24;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;ANY
+v24;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;ANY
+v24;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;ANY
+v24;Estonia_Meistriliiga;2026-07-31;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;ANY
+v24;Finland_Kakkonen_GroupB;2026-07-31;GrIFK;EBK;ALTA;OK;10;14;13;15;12;3;7;8;True;ANY
+v24;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;ANY
+v24;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;ANY
+v24;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;ANY
+v24;Australia_WAStateLeague;2026-08-01;Murdoch Melville;Curtin Univ;ALTA;OK;12;18;18;19;9;10;9;12;True;ANY
+v24;Bolivia_DivisionProfesional;2026-08-05;GV San Jose;SA Bulo Bulo;ALTA;KO;16;12;12;11;13;2;15;13;True;ANY
+v24;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;ANY
+v24;Finland_Kolmonen_Southern_Group3;2026-08-06;TiPS/2 U21;Ponnistus;ALTA;OK;12;13;12;8;8;0;11;10;True;ANY
+v24;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;3
+v24;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;3
+v24;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;3
+v24;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;3
+v24;Latvia_NakotnesLiga;2026-07-20;Tukums 2000 2;RFS 2;ALTA;KO;14;12;12;8;9;1;12;11;True;3
+v24;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;3
+v24;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;3
+v24;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;3
+v24;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;3
+v24;Bolivia_DivisionProfesional;2026-07-28;GV San Jose;Universitario de Vinto;ALTA;OK;16;10;10;7;10;3;16;13;True;3
+v24;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;3
+v24;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;3
+v24;Finland_Kakkonen_GroupB;2026-07-31;GrIFK;EBK;ALTA;OK;10;14;13;15;12;3;7;8;True;3
+v24;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;3
+v24;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;3
+v24;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;3
+v24;Bolivia_DivisionProfesional;2026-08-05;GV San Jose;SA Bulo Bulo;ALTA;KO;16;12;12;11;13;2;15;13;True;3
+v24;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;3
+v24;Finland_Kolmonen_Southern_Group3;2026-08-06;TiPS/2 U21;Ponnistus;ALTA;OK;12;13;12;8;8;0;11;10;True;3
+v24;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;6
+v24;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;6
+v24;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;6
+v24;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;6
+v24;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;6
+v24;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;6
+v24;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;6
+v24;Iceland_BestaDeildKarla;2026-07-12;Akureyri;Akranes;ALTA;OK;12;13;13;10;15;5;10;9;True;6
+v24;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;6
+v24;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;6
+v24;USA_USLChampionship;2026-07-19;Sporting Jax;Brooklyn;ALTA;OK;25;16;14;7;12;5;25;23;True;6
+v24;Latvia_NakotnesLiga;2026-07-20;Tukums 2000 2;RFS 2;ALTA;KO;14;12;12;8;9;1;12;11;True;6
+v24;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;6
+v24;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;6
+v24;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;6
+v24;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;6
+v24;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;6
+v24;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;6
+v24;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;6
+v24;Bolivia_DivisionProfesional;2026-07-28;GV San Jose;Universitario de Vinto;ALTA;OK;16;10;10;7;10;3;16;13;True;6
+v24;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;6
+v24;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;6
+v24;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;6
+v24;Finland_Kakkonen_GroupB;2026-07-31;GrIFK;EBK;ALTA;OK;10;14;13;15;12;3;7;8;True;6
+v24;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;6
+v24;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;6
+v24;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;6
+v24;Bolivia_DivisionProfesional;2026-08-05;GV San Jose;SA Bulo Bulo;ALTA;KO;16;12;12;11;13;2;15;13;True;6
+v24;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;6
+v24;Finland_Kolmonen_Southern_Group3;2026-08-06;TiPS/2 U21;Ponnistus;ALTA;OK;12;13;12;8;8;0;11;10;True;6
+v24;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;9
+v24;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;9
+v24;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;9
+v24;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;9
+v24;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;9
+v24;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;9
+v24;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;9
+v24;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;9
+v24;Iceland_BestaDeildKarla;2026-07-12;Akureyri;Akranes;ALTA;OK;12;13;13;10;15;5;10;9;True;9
+v24;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;9
+v24;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;9
+v24;USA_USLChampionship;2026-07-19;Sporting Jax;Brooklyn;ALTA;OK;25;16;14;7;12;5;25;23;True;9
+v24;Latvia_NakotnesLiga;2026-07-20;Tukums 2000 2;RFS 2;ALTA;KO;14;12;12;8;9;1;12;11;True;9
+v24;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;9
+v24;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;9
+v24;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;9
+v24;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;9
+v24;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;9
+v24;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;9
+v24;Australia_VictoriaPremierLeague2;2026-07-25;Moreland City;Werribee City;ALTA;OK;14;19;21;11;20;9;14;11;True;9
+v24;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;9
+v24;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;9
+v24;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;9
+v24;Bolivia_DivisionProfesional;2026-07-28;GV San Jose;Universitario de Vinto;ALTA;OK;16;10;10;7;10;3;16;13;True;9
+v24;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;9
+v24;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;9
+v24;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;9
+v24;Finland_Kakkonen_GroupB;2026-07-31;GrIFK;EBK;ALTA;OK;10;14;13;15;12;3;7;8;True;9
+v24;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;9
+v24;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;9
+v24;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;9
+v24;Bolivia_DivisionProfesional;2026-08-05;GV San Jose;SA Bulo Bulo;ALTA;KO;16;12;12;11;13;2;15;13;True;9
+v24;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;9
+v24;Finland_Kolmonen_Southern_Group3;2026-08-06;TiPS/2 U21;Ponnistus;ALTA;OK;12;13;12;8;8;0;11;10;True;9
+v24;Australia_NPLQueenslandU23;2026-07-05;Brisbane City U23;QLD State Team U17;ALTA;KO;12;16;15;18;16;2;9;11;True;12
+v24;Estonia_EsiliigaB;2026-07-05;Legion;Tallinna Kalev U21;ALTA;OK;10;15;16;7;11;4;10;9;True;12
+v24;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;12
+v24;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;12
+v24;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;12
+v24;Estonia_Meistriliiga;2026-07-11;Nomme Utd;Kuressaare;ALTA;OK;11;18;19;19;17;2;8;9;True;12
+v24;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;12
+v24;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;12
+v24;Australia_NPLNorthernNSW;2026-07-12;Valentine;Kahibah;ALTA;OK;12;17;16;16;14;2;10;11;True;12
+v24;Iceland_BestaDeildKarla;2026-07-12;Akureyri;Akranes;ALTA;OK;12;13;13;10;15;5;10;9;True;12
+v24;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;12
+v24;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;12
+v24;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;12
+v24;USA_USLChampionship;2026-07-19;Sporting Jax;Brooklyn;ALTA;OK;25;16;14;7;12;5;25;23;True;12
+v24;Latvia_NakotnesLiga;2026-07-20;Tukums 2000 2;RFS 2;ALTA;KO;14;12;12;8;9;1;12;11;True;12
+v24;Somalia_NationalLeague;2026-07-20;Jubba;Badbaado;ALTA;OK;12;19;18;6;17;11;11;9;True;12
+v24;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;12
+v24;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;12
+v24;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;12
+v24;Australia_NPLNorthernNSW;2026-07-25;Valentine;Charlestown Azzurri;ALTA;KO;12;18;18;19;14;5;9;12;True;12
+v24;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;12
+v24;Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram;ALTA;KO;14;12;12;3;9;6;14;12;True;12
+v24;Australia_VictoriaPremierLeague2;2026-07-25;Moreland City;Werribee City;ALTA;OK;14;19;21;11;20;9;14;11;True;12
+v24;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;12
+v24;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;12
+v24;Norway_3rdDivision_Group3;2026-07-26;Fyllingsdalen;Åsane 2;ALTA;OK;14;12;12;6;10;4;14;11;True;12
+v24;Bolivia_DivisionProfesional;2026-07-28;GV San Jose;Universitario de Vinto;ALTA;OK;16;10;10;7;10;3;16;13;True;12
+v24;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;12
+v24;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;12
+v24;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;12
+v24;Estonia_Meistriliiga;2026-07-31;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;12
+v24;Finland_Kakkonen_GroupB;2026-07-31;GrIFK;EBK;ALTA;OK;10;14;13;15;12;3;7;8;True;12
+v24;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;12
+v24;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;12
+v24;Australia_TasmaniaNorthernChampionship;2026-08-01;Riverside Olympic U21;Launceston U21;ALTA;KO;8;13;15;12;15;3;7;6;True;12
+v24;Australia_WAStateLeague;2026-08-01;Murdoch Melville;Curtin Univ;ALTA;OK;12;18;18;19;9;10;9;12;True;12
+v24;Bolivia_DivisionProfesional;2026-08-05;GV San Jose;SA Bulo Bulo;ALTA;KO;16;12;12;11;13;2;15;13;True;12
+v24;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;12
+v24;Finland_Kolmonen_Southern_Group3;2026-08-06;TiPS/2 U21;Ponnistus;ALTA;OK;12;13;12;8;8;0;11;10;True;12
+v25;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;ANY
+v25;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;ANY
+v25;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;ANY
+v25;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;ANY
+v25;Estonia_EsiliigaB;2026-07-12;Tartu Kalev;Legion;ALTA;OK;10;18;16;22;7;15;8;10;True;ANY
+v25;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;ANY
+v25;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;ANY
+v25;Estonia_EsiliigaB;2026-07-18;Legion;Tabasalu;ALTA;KO;10;17;17;7;27;20;10;7;True;ANY
+v25;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;ANY
+v25;Australia_NPL_NSW_U20;2026-07-18;St George Saints U20;Rockdale Ilinden U20;ALTA;OK;16;23;23;9;26;17;15;14;True;ANY
+v25;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;ANY
+v25;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;ANY
+v25;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;ANY
+v25;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;ANY
+v25;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;ANY
+v25;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;ANY
+v25;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;ANY
+v25;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;ANY
+v25;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;ANY
+v25;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;ANY
+v25;Estonia_Meistriliiga;2026-07-31;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;ANY
+v25;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;ANY
+v25;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;ANY
+v25;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;ANY
+v25;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;3
+v25;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;3
+v25;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;3
+v25;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;3
+v25;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;3
+v25;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;3
+v25;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;3
+v25;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;3
+v25;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;3
+v25;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;3
+v25;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;6
+v25;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;6
+v25;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;6
+v25;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;6
+v25;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;6
+v25;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;6
+v25;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;6
+v25;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;6
+v25;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;6
+v25;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;6
+v25;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;6
+v25;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;6
+v25;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;6
+v25;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;6
+v25;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;6
+v25;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;9
+v25;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;9
+v25;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;9
+v25;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;9
+v25;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;9
+v25;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;9
+v25;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;9
+v25;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;9
+v25;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;9
+v25;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;9
+v25;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;9
+v25;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;9
+v25;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;9
+v25;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;9
+v25;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;9
+v25;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;9
+v25;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;9
+v25;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;9
+v25;Australia_TasmaniaNorthernChampionship;2026-07-11;Launceston United U21;Burnie Utd.;ALTA;OK;8;12;12;3;12;9;8;6;True;12
+v25;Australia_TasmaniaNorthernChampionship;2026-07-11;Somerset;Riverside Olympic U21;ALTA;KO;8;12;10;14;9;5;5;7;True;12
+v25;Australia_WAStateLeague;2026-07-11;Subiaco;Murdoch Melville;ALTA;KO;12;15;15;9;15;6;12;9;True;12
+v25;Estonia_EsiliigaB;2026-07-12;Levadia U19;Tallinna Kalev U21;ALTA;OK;10;17;17;26;14;12;7;9;True;12
+v25;Finland_Kakkonen_GroupC;2026-07-12;SJK Akatemia 2;TP-47;ALTA;KO;10;11;11;16;16;0;8;7;True;12
+v25;Somalia_NationalLeague;2026-07-16;Raadsan;Jubba;ALTA;OK;12;18;18;10;6;4;10;11;True;12
+v25;Finland_Kakkonen_GroupA;2026-07-18;Union Plaani;Atlantis;ALTA;OK;10;11;11;2;13;11;10;7;True;12
+v25;Finland_Kakkonen_GroupC;2026-07-18;Hercules;JBK;ALTA;OK;10;12;12;11;16;5;10;8;True;12
+v25;Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud;ALTA;OK;15;12;12;7;9;2;13;12;True;12
+v25;Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind;ALTA;OK;14;12;12;7;8;1;14;12;True;12
+v25;Australia_TasmaniaNorthernChampionship;2026-07-25;Burnie Utd.;Launceston United U21;ALTA;OK;8;14;14;13;4;9;6;8;True;12
+v25;Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo;ALTA;OK;14;12;12;13;11;2;12;13;True;12
+v25;Finland_Kolmonen_Southern_Group1;2026-07-26;GrIFK/Akatemia U23;EPS Reservi;ALTA;KO;12;11;11;11;9;2;10;12;True;12
+v25;Australia_NorthernNSWStateLeague;2026-07-26;West Wallsend;Toronto Awaba Stags;ALTA;KO;10;14;15;18;10;8;7;10;True;12
+v25;Iceland_BestaDeildKarla;2026-07-28;Akureyri;Thor Akureyri;ALTA;KO;12;15;15;14;11;3;10;12;True;12
+v25;Norway_3rdDivision_Group5;2026-07-30;Ulfstind;Skjervoy;ALTA;OK;14;13;13;11;17;6;12;11;True;12
+v25;Australia_TasmaniaSouthernChampionship;2026-07-31;Glenorchy Knights U21;University of Tasmania;ALTA;OK;10;14;14;11;10;1;7;9;True;12
+v25;Estonia_Meistriliiga;2026-07-31;Nomme Utd;Narva;ALTA;OK;11;20;20;25;13;12;8;10;True;12
+v25;Estonia_EsiliigaB;2026-08-01;Tartu Kalev;Tabasalu;ALTA;OK;10;20;18;28;27;1;7;8;True;12
+v25;Australia_NPLQueenslandU23;2026-08-01;Wynnum Wolves U23;Brisbane City U23;ALTA;OK;12;19;19;20;18;2;10;11;True;12
+v25;Finland_Kolmonen_Southern_Group1;2026-08-06;PPJ/Ruoholahti;HooGee;ALTA;OK;12;13;13;12;10;2;9;12;True;12

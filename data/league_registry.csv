@@ -198,3 +198,38 @@ Switzerland_PromotionLeague;Switzerland;Promotion League;0;0;Yes;Da completare;
 Ukraine_PremierLeague;Ukraine;Premier League;0;0;Yes;Da completare;
 Montenegro_PrvaCrnogorskaLiga;Montenegro;Prva Crnogorska Liga;10;36;
 Peru_Liga2;Peru;Liga 2;15;30;
+Austria_Burgenland;Austria;Burgenlandliga;16;30;Yes;"Fourth-tier state league; 2026/27 has 16 clubs";
+Austria_Niederosterreich;Austria;1. Landesliga Niederösterreich;16;30;Yes;"Fourth-tier state league; standard home/away format";
+Austria_Oberosterreich;Austria;OÖ-Liga;16;30;Yes;"Fourth-tier state league; 16 clubs in 2026/27";
+Austria_Salzburg;Austria;Salzburger Liga;16;30;Yes;"Fourth-tier state league; standard home/away format";
+Belgium_JupilerProLeague;Belgium;Jupiler Pro League;18;34;Yes;"2026/27 classic double round robin; no playoffs";
+Denmark_2ndDivision;Denmark;2nd Division;12;32;No;"Third tier; 22-match regular phase followed by top/bottom-six split";
+Wales_CymruNorth;Wales;Cymru North;16;30;Yes;"Tier 2; one of two regional divisions";Wales_CymruTier2
+Wales_CymruSouth;Wales;Cymru South;16;30;Yes;"Tier 2; one of two regional divisions";Wales_CymruTier2
+Georgia_ErovnuliLiga;Georgia;Erovnuli Liga;10;36;No;"Top tier; four meetings against each opponent";
+Japan_J1League;Japan;J1 League;20;38;Yes;"Top tier; 2026/27 home-and-away double round robin";
+NorthernIreland_NIFLPremiership;Northern Ireland;NIFL Premiership;12;38;No;"Top tier; 33 rounds then split into top/bottom six for 5 more";
+NorthernIreland_NIFLChampionship;Northern Ireland;NIFL Championship;16;37;No;"Second tier; 30 rounds then split into two groups of 8 for 7 more";
+NorthMacedonia_1MFL;North Macedonia;1. MFL;12;33;No;"Top tier; triple round-robin format";
+Moldova_Liga1_GroupA;Moldova;Liga 1 Group A;6;15;No;"Second tier 2026/27 first phase; one of two six-team groups";Moldova_Liga1
+Moldova_Liga1_GroupB;Moldova;Liga 1 Group B;6;15;No;"Second tier 2026/27 first phase; one of two six-team groups";Moldova_Liga1
+Paraguay_DivisionIntermedia;Paraguay;Division Intermedia;16;30;Yes;"Second tier; two rounds of 15 matchdays";
+Poland_IIILiga_Group4;Poland;III Liga - Group IV;18;34;Yes;"Fourth tier; one of four regional groups";
+Portugal_Liga3_SerieA;Portugal;Liga 3 - Serie A;10;18;Yes;"Third tier 2026/27 first phase; one of two 10-team series";Portugal_Liga3
+CzechRepublic_3CFL_GroupA;Czech Republic;3. CFL - Group A;16;30;Yes;Third tier regional group;CzechRepublic_3rdTier
+CzechRepublic_3CFL_GroupB;Czech Republic;3. CFL - Group B;16;30;Yes;Third tier regional group;CzechRepublic_3rdTier
+CzechRepublic_4Liga_GroupA;Czech Republic;4. liga - Group A;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
+CzechRepublic_4Liga_GroupB;Czech Republic;4. liga - Group B;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
+CzechRepublic_4Liga_GroupD;Czech Republic;4. liga - Group D;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
+CzechRepublic_4Liga_GroupF;Czech Republic;4. liga - Group F;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
+CzechRepublic_JihoceskyKP;Czech Republic;Jihocesky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
+CzechRepublic_JihomoravskyKP;Czech Republic;Jihomoravsky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
+CzechRepublic_LibereckyKP;Czech Republic;Liberecky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
+CzechRepublic_PlzenskyKP;Czech Republic;Plzensky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
+CzechRepublic_StredoceskyKP;Czech Republic;Stredocesky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
+CzechRepublic_VysocinaKP;Czech Republic;Vysocina KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
+Slovakia_3Liga_West;Slovakia;3. Liga - West;16;30;Yes;"Third tier; western regional group";
+Slovenia_2SNL;Slovenia;2. SNL;16;30;Yes;"Second tier; home-and-away double round robin";
+Turkey_1Lig;Turkey;1. Lig;20;38;Yes;"Second tier; home-and-away double round robin";
+Mexico_LigaExpansionMX_Apertura;Mexico;Liga de Expansión MX - Apertura;15;15;No;"Second tier; Apertura regular phase with 15 clubs over 15 matchdays, single round-robin with one bye per club; playoff/Liguilla to use dedicated LeagueId";
+SriLanka_SuperLeague;Sri Lanka;Super League;10;9;No;"Top tier; 10 clubs, single round-robin over 9 matchdays/weeks";
