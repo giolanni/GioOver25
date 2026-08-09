@@ -1,0 +1,4 @@
+﻿Engine;HistoryFile;EvaluableRows;CommonRows;UnmatchedApprox;MergeKey
+v20;data\storico\ranking\v20\storico_ranking_v20.csv;2145;1388;757;LeagueId + MatchDate + Home + Away + _Occurrence
+v22;data\storico\ranking\v22\storico_ranking_v22.csv;2068;1388;680;LeagueId + MatchDate + Home + Away + _Occurrence
+v25;data\storico\ranking\v25\storico_ranking_v25.csv;1796;1388;408;LeagueId + MatchDate + Home + Away + _Occurrence

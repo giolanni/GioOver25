@@ -1,4 +1,5 @@
 ﻿LeagueId;Country;League;Teams;ExpectedRounds;HomeAway;Notes;CompetitionGroup
+Armenia_PremierLeague;Armenia;Premier League;0;0;Yes;Da completare;
 Australia_NorthernNSWStateLeague;Australia;Northern NSW State League;10;18;Yes;Round 13 currently partial in supplied data;
 Australia_NPL_NSW_U20;Australia;NPL NSW U20;16;30;Yes;Stagione corrente;
 Australia_NPLACT;Australia;NPL ACT;10;18;Yes;Round 15 currently partial in supplied data;
@@ -20,18 +21,38 @@ Australia_VictoriaPremierLeague2;Australia;Victoria Premier League 2;14;26;Yes;;
 Australia_WAStateLeague;Australia;WA State League;12;22;Yes;Round 14 complete in supplied data;
 Austria_2Liga;Austria;2. Liga;16;30;Yes;;
 Austria_Bundesliga;Austria;Bundesliga;12;32;Yes;Championship/Relegation split after 22 rounds;
+Austria_Burgenland;Austria;Burgenlandliga;16;30;Yes;"Fourth-tier state league; 2026/27 has 16 clubs";
+Austria_Karnten;Austria;Karnten;0;0;Yes;Da completare;
+Austria_Niederosterreich;Austria;1. Landesliga Niederösterreich;16;30;Yes;"Fourth-tier state league; standard home/away format";
+Austria_Oberosterreich;Austria;OÖ-Liga;16;30;Yes;"Fourth-tier state league; 16 clubs in 2026/27";
 Austria_Regionalliga_Central;Austria;Regionalliga Central;16;30;Yes;;
 Austria_Regionalliga_East;Austria;Regionalliga East;16;30;Yes;;
+Austria_Regionalliga_North;Austria;Regionalliga North;0;0;Yes;Da completare;
+Austria_Regionalliga_South;Austria;Regionalliga South;0;0;Yes;Da completare;
 Austria_Regionalliga_West;Austria;Regionalliga West;16;30;Yes;;
+Austria_Salzburg;Austria;Salzburger Liga;16;30;Yes;"Fourth-tier state league; standard home/away format";
+Austria_Tirol;Austria;Tirol;0;0;Yes;Da completare;
 Belarus_PershayaLiga;Belarus;Pershaya Liga;18;34;Yes;Round 13 currently partial in supplied data;
 Belarus_VysshayaLiga;Belarus;Vysshaya Liga;16;30;Yes;Round 12 complete in supplied data;
+Belgium_JupilerProLeague;Belgium;Jupiler Pro League;18;34;Yes;"2026/27 classic double round robin; no playoffs";
 Bhutan_PremierLeague;Bhutan;Premier League;10;18;Yes;;
 Bolivia_DivisionProfesional;Bolivia;Division Profesional;16;30;Yes;;
 Bulgaria_ParvaLiga;Bulgaria;Parva Liga;14;26;Yes;;
 Bulgaria_VtoraLiga;Bulgaria;Vtora Liga;18;34;Yes;;
 CzechRepublic_1Liga;Czech Republic;1. Liga;16;30;Yes;Regular season before championship/relegation phases;
+CzechRepublic_3CFL_GroupA;Czech Republic;3. CFL - Group A;16;30;Yes;Third tier regional group;CzechRepublic_3rdTier
+CzechRepublic_3CFL_GroupB;Czech Republic;3. CFL - Group B;16;30;Yes;Third tier regional group;CzechRepublic_3rdTier
+CzechRepublic_3MSFL;Czech Republic;3. MSFL;0;0;Yes;Da completare;
+CzechRepublic_4Liga_GroupA;Czech Republic;4. liga - Group A;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
+CzechRepublic_4Liga_GroupB;Czech Republic;4. liga - Group B;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
+CzechRepublic_4Liga_GroupC;Czech Republic;4. liga - Group C;16;30;Yes;"Fourth tier regional group; 2026/27";CzechRepublic_4Liga
+CzechRepublic_4Liga_GroupD;Czech Republic;4. liga - Group D;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
+CzechRepublic_4Liga_GroupE;Czech Republic;4. liga - Group E;16;30;Yes;"Fourth tier regional group; 2026/27";CzechRepublic_4Liga
+CzechRepublic_4Liga_GroupF;Czech Republic;4. liga - Group F;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
 CzechRepublic_ChNL;Czech Republic;ChNL;16;30;Yes;;
 Denmark_1stDivision;Denmark;1st Division;12;32;Yes;Championship/Relegation split after 22 rounds;
+Denmark_2ndDivision;Denmark;2nd Division;12;32;No;"Third tier; 22-match regular phase followed by top/bottom-six split";
+Denmark_3rdDivision;Denmark;3rd Division;0;0;Yes;Da completare;
 Denmark_Superliga;Denmark;Superliga;12;32;Yes;Championship/Relegation split after 22 rounds;
 England_Championship;England;Championship;24;46;Yes;;
 England_LeagueOne;England;League One;24;46;Yes;;
@@ -60,6 +81,7 @@ Finland_Ykkosliiga;Finland;Ykkosliiga;10;0;No;Round not supplied in source data;
 France_Ligue1;France;Ligue 1;18;34;Yes;;
 France_Ligue2;France;Ligue 2;18;34;Yes;;
 France_National;France;National;18;34;Yes;;
+Georgia_ErovnuliLiga;Georgia;Erovnuli Liga;10;36;No;"Top tier; four meetings against each opponent";
 Germany_2Bundesliga;Germany;2. Bundesliga;18;34;Yes;;
 Germany_3Liga;Germany;3. Liga;20;38;Yes;;
 Germany_Bundesliga;Germany;Bundesliga;18;34;Yes;;
@@ -96,6 +118,7 @@ Italy_SerieB;Italy;Serie B;20;38;Yes;;
 Italy_SerieC_GironeA;Italy;Serie C Girone A;20;38;Yes;;
 Italy_SerieC_GironeB;Italy;Serie C Girone B;20;38;Yes;;
 Italy_SerieC_GironeC;Italy;Serie C Girone C;20;38;Yes;;
+Japan_J1League;Japan;J1 League;20;38;Yes;"Top tier; 2026/27 home-and-away double round robin";
 Kazakhstan_FirstLeague;Kazakhstan;First League;14;26;Yes;Round 21 appears between rounds 10 and 9 in supplied data;
 Kazakhstan_PremierLeague;Kazakhstan;Premier League;16;30;Yes;Round 17 currently partial in supplied data;
 Kyrgyzstan_PremierLiga;Kyrgyzstan;Premier Liga;16;30;Yes;Round 14 currently partial in supplied data;
@@ -104,9 +127,17 @@ Latvia_Virsliga;Latvia;Virsliga;10;36;Yes;;
 Lebanon_PremierLeague;Lebanon;Premier League;12;22;Yes;Playoff and placement rounds excluded from supplied import;
 Lithuania_ILyga;Lithuania;I Lyga;16;30;Yes;Round 15 currently partial in supplied data;
 Lithuania_Toplyga;Lithuania;TOPLYGA;10;36;Yes;;
+Mexico_LigaExpansionMX_Apertura;Mexico;Liga de Expansión MX - Apertura;15;15;No;"Second tier; Apertura regular phase with 15 clubs over 15 matchdays, single round-robin with one bye per club; playoff/Liguilla to use dedicated LeagueId";
 Mexico_LigaMX_Apertura;Mexico;Liga MX - Apertura;18;17;No;Apertura regular season;
+Moldova_Liga1_GroupA;Moldova;Liga 1 Group A;6;15;No;"Second tier 2026/27 first phase; one of two six-team groups";Moldova_Liga1
+Moldova_Liga1_GroupB;Moldova;Liga 1 Group B;6;15;No;"Second tier 2026/27 first phase; one of two six-team groups";Moldova_Liga1
+Moldova_SuperLiga;Moldova;Super Liga;8;7;No;2026/27 first phase: 8 teams, 28 total matches / 7 rounds;
+Montenegro_PrvaCrnogorskaLiga;Montenegro;Prva Crnogorska Liga;10;36;;;
 Netherlands_EersteDivisie;Netherlands;Eerste Divisie;20;38;Yes;;
 Netherlands_Eredivisie;Netherlands;Eredivisie;18;34;Yes;;
+NorthernIreland_NIFLChampionship;Northern Ireland;NIFL Championship;16;37;No;"Second tier; 30 rounds then split into two groups of 8 for 7 more";
+NorthernIreland_NIFLPremiership;Northern Ireland;NIFL Premiership;12;38;No;"Top tier; 33 rounds then split into top/bottom six for 5 more";
+NorthMacedonia_1MFL;North Macedonia;1. MFL;12;33;No;"Top tier; triple round-robin format";
 Norway_2ndDivision_Group1;Norway;2nd Division Group 1;14;26;Yes;Round 11 complete in supplied data;
 Norway_2ndDivision_Group2;Norway;2nd Division Group 2;14;26;Yes;Round 11 currently partial in supplied data;
 Norway_3rdDivision_Group1;Norway;3rd Division Group 1;14;26;Yes;Round 12 currently partial in supplied data;
@@ -117,28 +148,39 @@ Norway_3rdDivision_Group5;Norway;3rd Division Group 5;14;26;Yes;Round 12 current
 Norway_3rdDivision_Group6;Norway;3rd Division Group 6;14;26;Yes;Round 12 currently partial in supplied data;
 Norway_Eliteserien;Norway;Eliteserien;16;30;Yes;;
 Norway_OBOSLigaen;Norway;OBOS-ligaen;16;30;Yes;Round 12 complete in supplied data;
+Paraguay_DivisionIntermedia;Paraguay;Division Intermedia;16;30;Yes;"Second tier; two rounds of 15 matchdays";
 Peru_Liga1_Apertura;Peru;Liga 1 - Apertura;18;17;No;Apertura regular season;
 Peru_Liga1_Clausura;Peru;Liga 1 - Clausura;18;17;No;Clausura regular season;
+Peru_Liga2;Peru;Liga 2;15;30;;;
 Peru_Liga2_GroupA;Peru;Liga 2 - Group A;9;16;Yes;;
 Peru_Liga2_GroupB;Peru;Liga 2 - Group B;9;16;Yes;;
 Poland_Division1;Poland;Division 1;18;34;Yes;;
 Poland_Division2;Poland;Division 2;18;34;Yes;;
 Poland_Ekstraklasa;Poland;Ekstraklasa;18;34;Yes;;
+Poland_IIILiga_Group1;Poland;III Liga - Group I;0;0;Yes;Da completare;
+Poland_IIILiga_Group2;Poland;III Liga - Group II;0;0;Yes;Da completare;
+Poland_IIILiga_Group3;Poland;III Liga - Group III;0;0;Yes;Da completare;
+Poland_IIILiga_Group4;Poland;III Liga - Group IV;18;34;Yes;"Fourth tier; one of four regional groups";
+Portugal_Liga3_SerieA;Portugal;Liga 3 - Serie A;10;18;Yes;"Third tier 2026/27 first phase; one of two 10-team series";Portugal_Liga3
 Portugal_LigaPortugal;Portugal;Liga Portugal;18;34;Yes;;
 Portugal_LigaPortugal2;Portugal;Liga Portugal 2;18;34;Yes;;
 Romania_Liga2;Romania;Liga 2;22;21;Yes;Regular season only;
 Romania_Superliga;Romania;Superliga;16;30;Yes;;
 Russia_FNL;Russia;FNL;18;34;Yes;;
 Russia_PremierLeague;Russia;Premier League;16;30;Yes;;
+Scotland_Premiership;Scotland;Premiership;0;0;Yes;Da completare;
 Serbia_PrvaLiga;Serbia;Prva Liga;16;30;Yes;;
 Serbia_SuperLiga;Serbia;Super Liga;16;30;Yes;;
 Slovakia_2Liga;Slovakia;2. Liga;16;30;Yes;;
+Slovakia_3Liga_West;Slovakia;3. Liga - West;16;30;Yes;"Third tier; western regional group";
 Slovakia_NikeLiga;Slovakia;Nike liga;12;32;Yes;Championship/Relegation split after 22 rounds;
+Slovenia_2SNL;Slovenia;2. SNL;16;30;Yes;"Second tier; home-and-away double round robin";
 Slovenia_PrvaLiga;Slovenia;Prva Liga;10;36;Yes;;
 Somalia_NationalLeague;Somalia;National League;12;22;Yes;Season 2025/2026;
 SouthKorea_KLeague1;South Korea;K League 1;12;33;No;Regular season;
 SouthKorea_KLeague2;South Korea;K League 2;16;30;Yes;;
 Spain_LaLiga;Spain;La Liga;20;38;Yes;;
+SriLanka_SuperLeague;Sri Lanka;Super League;10;9;No;"Top tier; 10 clubs, single round-robin over 9 matchdays/weeks";
 Sweden_Allsvenskan;Sweden;Allsvenskan;16;30;Yes;;
 Sweden_Division1_Norra;Sweden;Division 1 Norra;16;30;Yes;Round 14 currently partial in supplied data;
 Sweden_Division1_Sodra;Sweden;Division 1 Södra;16;30;Yes;Round 13 complete in supplied data;
@@ -150,9 +192,12 @@ Sweden_Division2_SodraSvealand;Sweden;Sodra Svealand;14;26;Yes;;
 Sweden_Division2_VastraGotaland;Sweden;Vastra Gotaland;14;26;Yes;;
 Sweden_Superettan;Sweden;Superettan;16;30;Yes;Round 13 currently partial in supplied data;
 Switzerland_ChallengeLeague;Switzerland;Challenge League;10;36;Yes;;
+Switzerland_PromotionLeague;Switzerland;Promotion League;0;0;Yes;Da completare;
 Switzerland_SuperLeague;Switzerland;Super League;12;38;Yes;Regular season followed by championship/relegation groups;
+Turkey_1Lig;Turkey;1. Lig;20;38;Yes;"Second tier; home-and-away double round robin";
 Turkey_SuperLig;Turkey;Süper Lig;18;34;Yes;;
 Ukraine_PershaLiga;Ukraine;Persha Liga;16;30;Yes;;
+Ukraine_PremierLeague;Ukraine;Premier League;0;0;Yes;Da completare;
 USA_MLS;USA;MLS;30;58;Yes;;
 USA_MLSNextPro_EasternConference_NortheastDivision;USA;MLS Next Pro - Eastern Conference - Northeast Division;8;28;Yes;UNBALANCED;
 USA_MLSNextPro_EasternConference_SoutheastDivision;USA;MLS Next Pro - Eastern Conference - Southeast Division;8;28;Yes;UNBALANCED;
@@ -182,54 +227,6 @@ USA_USLLeagueTwo_Southeast;USA;USL League Two - Southeast Division;6;0;No;UNBALA
 USA_USLLeagueTwo_SouthFlorida;USA;USL League Two - South Florida Division;6;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Southwest;USA;USL League Two - Southwest Division;8;0;No;UNBALANCED;USA_USLLeagueTwo
 USA_USLLeagueTwo_Valley;USA;USL League Two - Valley Division;6;0;No;UNBALANCED;USA_USLLeagueTwo
-Armenia_PremierLeague;Armenia;Premier League;0;0;Yes;Da completare;
-Austria_Regionalliga_South;Austria;Regionalliga South;0;0;Yes;Da completare;
-Austria_Regionalliga_North;Austria;Regionalliga North;0;0;Yes;Da completare;
-Austria_Karnten;Austria;Karnten;0;0;Yes;Da completare;
-Austria_Tirol;Austria;Tirol;0;0;Yes;Da completare;
-Denmark_3rdDivision;Denmark;3rd Division;0;0;Yes;Da completare;
-Wales_CymruPremier;Wales;Cymru Premier;0;0;Yes;Da completare;
-Poland_IIILiga_Group1;Poland;III Liga - Group I;0;0;Yes;Da completare;
-Poland_IIILiga_Group2;Poland;III Liga - Group II;0;0;Yes;Da completare;
-Poland_IIILiga_Group3;Poland;III Liga - Group III;0;0;Yes;Da completare;
-CzechRepublic_3MSFL;Czech Republic;3. MSFL;0;0;Yes;Da completare;
-Scotland_Premiership;Scotland;Premiership;0;0;Yes;Da completare;
-Switzerland_PromotionLeague;Switzerland;Promotion League;0;0;Yes;Da completare;
-Ukraine_PremierLeague;Ukraine;Premier League;0;0;Yes;Da completare;
-Montenegro_PrvaCrnogorskaLiga;Montenegro;Prva Crnogorska Liga;10;36;
-Peru_Liga2;Peru;Liga 2;15;30;
-Austria_Burgenland;Austria;Burgenlandliga;16;30;Yes;"Fourth-tier state league; 2026/27 has 16 clubs";
-Austria_Niederosterreich;Austria;1. Landesliga Niederösterreich;16;30;Yes;"Fourth-tier state league; standard home/away format";
-Austria_Oberosterreich;Austria;OÖ-Liga;16;30;Yes;"Fourth-tier state league; 16 clubs in 2026/27";
-Austria_Salzburg;Austria;Salzburger Liga;16;30;Yes;"Fourth-tier state league; standard home/away format";
-Belgium_JupilerProLeague;Belgium;Jupiler Pro League;18;34;Yes;"2026/27 classic double round robin; no playoffs";
-Denmark_2ndDivision;Denmark;2nd Division;12;32;No;"Third tier; 22-match regular phase followed by top/bottom-six split";
 Wales_CymruNorth;Wales;Cymru North;16;30;Yes;"Tier 2; one of two regional divisions";Wales_CymruTier2
+Wales_CymruPremier;Wales;Cymru Premier;0;0;Yes;Da completare;
 Wales_CymruSouth;Wales;Cymru South;16;30;Yes;"Tier 2; one of two regional divisions";Wales_CymruTier2
-Georgia_ErovnuliLiga;Georgia;Erovnuli Liga;10;36;No;"Top tier; four meetings against each opponent";
-Japan_J1League;Japan;J1 League;20;38;Yes;"Top tier; 2026/27 home-and-away double round robin";
-NorthernIreland_NIFLPremiership;Northern Ireland;NIFL Premiership;12;38;No;"Top tier; 33 rounds then split into top/bottom six for 5 more";
-NorthernIreland_NIFLChampionship;Northern Ireland;NIFL Championship;16;37;No;"Second tier; 30 rounds then split into two groups of 8 for 7 more";
-NorthMacedonia_1MFL;North Macedonia;1. MFL;12;33;No;"Top tier; triple round-robin format";
-Moldova_Liga1_GroupA;Moldova;Liga 1 Group A;6;15;No;"Second tier 2026/27 first phase; one of two six-team groups";Moldova_Liga1
-Moldova_Liga1_GroupB;Moldova;Liga 1 Group B;6;15;No;"Second tier 2026/27 first phase; one of two six-team groups";Moldova_Liga1
-Paraguay_DivisionIntermedia;Paraguay;Division Intermedia;16;30;Yes;"Second tier; two rounds of 15 matchdays";
-Poland_IIILiga_Group4;Poland;III Liga - Group IV;18;34;Yes;"Fourth tier; one of four regional groups";
-Portugal_Liga3_SerieA;Portugal;Liga 3 - Serie A;10;18;Yes;"Third tier 2026/27 first phase; one of two 10-team series";Portugal_Liga3
-CzechRepublic_3CFL_GroupA;Czech Republic;3. CFL - Group A;16;30;Yes;Third tier regional group;CzechRepublic_3rdTier
-CzechRepublic_3CFL_GroupB;Czech Republic;3. CFL - Group B;16;30;Yes;Third tier regional group;CzechRepublic_3rdTier
-CzechRepublic_4Liga_GroupA;Czech Republic;4. liga - Group A;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
-CzechRepublic_4Liga_GroupB;Czech Republic;4. liga - Group B;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
-CzechRepublic_4Liga_GroupD;Czech Republic;4. liga - Group D;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
-CzechRepublic_4Liga_GroupF;Czech Republic;4. liga - Group F;16;30;Yes;Fourth tier regional group;CzechRepublic_4Liga
-CzechRepublic_JihoceskyKP;Czech Republic;Jihocesky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
-CzechRepublic_JihomoravskyKP;Czech Republic;Jihomoravsky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
-CzechRepublic_LibereckyKP;Czech Republic;Liberecky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
-CzechRepublic_PlzenskyKP;Czech Republic;Plzensky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
-CzechRepublic_StredoceskyKP;Czech Republic;Stredocesky KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
-CzechRepublic_VysocinaKP;Czech Republic;Vysocina KP;16;30;Yes;"Regional krajsky prebor; fifth tier";
-Slovakia_3Liga_West;Slovakia;3. Liga - West;16;30;Yes;"Third tier; western regional group";
-Slovenia_2SNL;Slovenia;2. SNL;16;30;Yes;"Second tier; home-and-away double round robin";
-Turkey_1Lig;Turkey;1. Lig;20;38;Yes;"Second tier; home-and-away double round robin";
-Mexico_LigaExpansionMX_Apertura;Mexico;Liga de Expansión MX - Apertura;15;15;No;"Second tier; Apertura regular phase with 15 clubs over 15 matchdays, single round-robin with one bye per club; playoff/Liguilla to use dedicated LeagueId";
-SriLanka_SuperLeague;Sri Lanka;Super League;10;9;No;"Top tier; 10 clubs, single round-robin over 9 matchdays/weeks";

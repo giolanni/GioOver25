@@ -1,16 +1,16 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-23;1;Brisbane Strikers;20;16;3;1;47;15;32;51;2.55
-23;2;Broadbeach Utd.;19;14;4;1;48;18;30;46;2.421
-23;3;Ipswich;19;9;4;6;32;29;3;31;1.632
-23;4;Sunshine Coast Wanderers;19;8;6;5;38;26;12;30;1.579
-23;5;Robina City;20;8;6;6;31;21;10;30;1.5
-23;6;Redlands;19;8;5;6;38;31;7;29;1.526
-23;7;Logan Lightning;20;8;3;9;40;38;2;27;1.35
-23;8;Caboolture;19;7;3;9;33;34;-1;24;1.263
-23;9;Holland Park Hawks;20;6;4;10;30;41;-11;22;1.1
-23;10;St. George Willawong;19;4;1;14;11;41;-30;13;0.684
-23;11;North Star;19;3;3;13;18;40;-22;12;0.632
-23;12;Capalaba;20;3;3;14;21;53;-32;12;0.6
+23;1;Brisbane Strikers;22;18;3;1;51;15;36;57;2.591
+23;2;Broadbeach Utd.;21;15;4;2;50;20;30;49;2.333
+23;3;Ipswich;21;10;5;6;35;29;6;35;1.667
+23;4;Sunshine Coast Wanderers;21;9;7;5;40;27;13;34;1.619
+23;5;Robina City;22;8;6;8;34;28;6;30;1.364
+23;6;Logan Lightning;22;9;3;10;44;40;4;30;1.364
+23;7;Redlands;21;8;6;7;40;36;4;30;1.429
+23;8;Caboolture;21;8;4;9;42;38;4;28;1.333
+23;9;Holland Park Hawks;22;7;4;11;38;51;-13;25;1.136
+23;10;North Star;21;5;3;13;20;40;-20;18;0.857
+23;11;St. George Willawong;21;4;1;16;12;46;-34;13;0.619
+23;12;Capalaba;22;3;3;16;21;57;-36;12;0.545
 23;13;Redlands United;3;2;0;1;7;7;0;6;2.0
 23;14;St George Willawong FC;1;1;0;0;2;0;2;3;3.0
 23;15;Broadbeach United;1;0;1;0;0;0;0;1;1.0
