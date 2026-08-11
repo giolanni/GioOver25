@@ -1,5 +1,9 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Rustavi;1;1;0;0;1;0;1;3;3.0
-1;2;Dinamo Batumi;1;0;1;0;2;2;0;1;1.0
-1;3;Gagra;1;0;1;0;2;2;0;1;1.0
-1;4;Torpedo Kutaisi;1;0;0;1;0;1;-1;0;0.0
+1;1;Din. Tbilisi;1;1;0;0;2;1;1;3;3.0
+1;2;Samgurali;1;1;0;0;2;1;1;3;3.0
+1;3;Rustavi;1;1;0;0;1;0;1;3;3.0
+1;4;Dinamo Batumi;1;0;1;0;2;2;0;1;1.0
+1;5;Gagra;1;0;1;0;2;2;0;1;1.0
+1;6;Meshakhte Tkibuli;1;0;0;1;1;2;-1;0;0.0
+1;7;Spaeri;1;0;0;1;1;2;-1;0;0.0
+1;8;Torpedo Kutaisi;1;0;0;1;0;1;-1;0;0.0

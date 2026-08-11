@@ -1,9 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Hemelingen;1;1;0;0;4;0;4;3;3.0
-1;2;OSC Bremerhaven;1;1;0;0;4;2;2;3;3.0
-1;3;Woltmershausen;1;1;0;0;3;1;2;3;3.0
-1;4;Grohn;1;1;0;0;1;0;1;3;3.0
-1;5;Aumund-Vegesack;1;0;0;1;0;1;-1;0;0.0
-1;6;BTS Neustadt;1;0;0;1;2;4;-2;0;0.0
-1;7;Oberneuland;1;0;0;1;1;3;-2;0;0.0
-1;8;Brinkumer;1;0;0;1;0;4;-4;0;0.0
+1;1;Blumenthaler;1;1;0;0;7;1;6;3;3.0
+1;2;Hemelingen;1;1;0;0;4;0;4;3;3.0
+1;3;Union 60 Bremen;1;1;0;0;4;0;4;3;3.0
+1;4;Vatan Bremen;1;1;0;0;5;3;2;3;3.0
+1;5;OSC Bremerhaven;1;1;0;0;4;2;2;3;3.0
+1;6;Woltmershausen;1;1;0;0;3;1;2;3;3.0
+1;7;Eiche Horn;1;1;0;0;1;0;1;3;3.0
+1;8;Grohn;1;1;0;0;1;0;1;3;3.0
+1;9;Aumund-Vegesack;1;0;0;1;0;1;-1;0;0.0
+1;10;Leher;1;0;0;1;0;1;-1;0;0.0
+1;11;Bremen III;1;0;0;1;3;5;-2;0;0.0
+1;12;BTS Neustadt;1;0;0;1;2;4;-2;0;0.0
+1;13;Oberneuland;1;0;0;1;1;3;-2;0;0.0
+1;14;Brinkumer;1;0;0;1;0;4;-4;0;0.0
+1;15;Schwachhausen;1;0;0;1;0;4;-4;0;0.0
+1;16;Geestemunde;1;0;0;1;1;7;-6;0;0.0
