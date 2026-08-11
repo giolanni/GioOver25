@@ -1,0 +1,9 @@
+﻿Scope;Engine;Filter;Base_OK;Base_KO;Base_Total;Base_HitRate;Filtered_OK;Filtered_KO;Filtered_Total;Filtered_HitRate;DeltaHitRate;OK_Removed;KO_Removed;CoveragePct
+COMMON_SET;v25;HomeAttackScore>=11.5 AND AwayDefenseWeaknessScore>=8.0;387;154;541;71.5342;145;46;191;75.9162;4.382;242;108;35.305
+COMMON_SET;v22;HomeAttackScore>=11.5 AND AwayDefenseWeaknessScore>=8.0;384;158;542;70.8487;141;46;187;75.4011;4.5524;243;112;34.5018
+COMMON_SET;v23;HomeAttackScore>=11.5 AND AwayDefenseWeaknessScore>=8.0;366;151;517;70.793;131;44;175;74.8571;4.0641;235;107;33.8491
+COMMON_SET;v20;HomeAttackScore>=11.5 AND AwayDefenseWeaknessScore>=8.0;69;24;93;74.1935;69;24;93;74.1935;0.0;0;0;100.0
+COMMON_SET;v24;HomeAttackScore>=11.5 AND AwayDefenseWeaknessScore>=8.0;613;310;923;66.4139;157;57;214;73.3645;6.9506;456;253;23.1853
+COMMON_SET;v21;HomeAttackScore>=11.5 AND AwayDefenseWeaknessScore>=8.0;453;202;655;69.1603;209;87;296;70.6081;1.4478;244;115;45.1908
+COMMON_SET;v21dev;HomeAttackScore>=11.5 AND AwayDefenseWeaknessScore>=8.0;452;203;655;69.0076;209;88;297;70.3704;1.3628;243;115;45.3435
+COMMON_SET;v13;HomeAttackScore>=11.5 AND AwayDefenseWeaknessScore>=8.0;261;126;387;67.4419;259;126;385;67.2727;-0.1692;2;0;99.4832

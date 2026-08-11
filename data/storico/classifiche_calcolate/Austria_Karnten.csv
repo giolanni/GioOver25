@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Seeboden;1;1;0;0;5;3;2;3;3.0
-1;2;Matrei;1;1;0;0;2;0;2;3;3.0
-1;3;TSV Grafenstein;1;1;0;0;2;0;2;3;3.0
-1;4;KAC 1909;1;1;0;0;3;2;1;3;3.0
-1;5;Launsdorf;1;1;0;0;2;1;1;3;3.0
-1;6;Atus Ferlach;1;1;0;0;1;0;1;3;3.0
-1;7;SC Landskron;1;1;0;0;1;0;1;3;3.0
-1;8;SAK Klagenfurt;1;0;1;0;3;3;0;1;1.0
-1;9;SC St. Veit;1;0;1;0;3;3;0;1;1.0
-1;10;Lendorf;1;0;0;1;2;3;-1;0;0.0
-1;11;Saint Michael Lavanttal;1;0;0;1;1;2;-1;0;0.0
-1;12;Dellach/Gail;1;0;0;1;0;1;-1;0;0.0
-1;13;SV Spittal;1;0;0;1;0;1;-1;0;0.0
-1;14;Nussdorf;1;0;0;1;3;5;-2;0;0.0
-1;15;Kottmannsdorf;1;0;0;1;0;2;-2;0;0.0
-1;16;SGA Sirnitz;1;0;0;1;0;2;-2;0;0.0
+2;1;KAC 1909;2;2;0;0;5;2;3;6;3.0
+2;2;Atus Ferlach;2;2;0;0;3;0;3;6;3.0
+2;3;SC St. Veit;2;1;1;0;6;3;3;4;2.0
+2;4;Seeboden;2;1;1;0;7;5;2;4;2.0
+2;5;TSV Grafenstein;2;1;0;1;3;2;1;3;1.5
+2;6;Launsdorf;1;1;0;0;2;1;1;3;3.0
+2;7;SC Landskron;1;1;0;0;1;0;1;3;3.0
+2;8;Lendorf;2;1;0;1;4;4;0;3;1.5
+2;9;Matrei;2;1;0;1;2;2;0;3;1.5
+2;10;SGA Sirnitz;2;1;0;1;2;3;-1;3;1.5
+2;11;Saint Michael Lavanttal;2;0;1;1;3;4;-1;1;0.5
+2;12;SAK Klagenfurt;2;0;1;1;3;5;-2;1;0.5
+2;13;Dellach/Gail;1;0;0;1;0;1;-1;0;0.0
+2;14;SV Spittal;2;0;0;2;1;3;-2;0;0.0
+2;15;Kottmannsdorf;1;0;0;1;0;2;-2;0;0.0
+2;16;Nussdorf;2;0;0;2;3;8;-5;0;0.0

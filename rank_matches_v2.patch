@@ -1,0 +1,14 @@
+--- a/gioover25/rank_matches_v2.py
++++ b/gioover25/rank_matches_v2.py
+@@
+-from .engines.factory import get_engine, get_available_engines
++from .engines.factory import (
++    get_engine,
++    get_available_engines,
++    get_official_engines,
++)
+@@
+     if args.engine == "all":
+-        engine_names = get_available_engines()
++        # Gli engine sperimentali vengono lanciati solo esplicitamente.
++        engine_names = get_official_engines()

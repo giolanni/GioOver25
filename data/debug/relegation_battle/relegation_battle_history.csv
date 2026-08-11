@@ -1,0 +1,5 @@
+﻿Engine;SourceFile;StandingsSource;MatchDate;LeagueId;Home;Away;TeamsCount;RelegationStartPosition;HomePosition;AwayPosition;HomePlayed;AwayPlayed;HomePoints;AwayPoints;PointsGap;OriginalBand;FinalBand
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;;2026-08-07;Australia_TasmaniaSouthernChampionship;Glenorchy Knights U21;Hobart Utd.;10;7;7;8;15;15;14;11;3;ALTA;PROX-RELEGATION
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;;2026-08-07;Kazakhstan_FirstLeague;Arys;Tobol 2;14;11;13;14;16;16;10;7;3;ALTA;PROX-RELEGATION
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;;2026-08-07;FaroeIslands_PremierLeague;07 Vestur Sorvagur;Streymur;10;7;9;7;17;17;13;17;4;BASSA;PROX-RELEGATION
+v25;data\output_ranking\v25\ranking_2026_08_07_v25.csv;CALCULATED_STANDINGS;2026-08-07;Finland_Ykkonen;KuPS Akatemia;Inter Turku 2;12;9;12;9;18;18;11;20;9;ALTA;PROX-RELEGATION

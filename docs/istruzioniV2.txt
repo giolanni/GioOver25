@@ -50,6 +50,25 @@ python -m gioover25.missing_results --band ALTA --exclude-australia
 #VERIFICARE LA PRESENZA DI PARTITE DUPLICATE IN STORICO RISULTATI
 python -m gioover25.find_duplicate_results_different_dates
 
+############# RESET DATA #####################
+Singola lega
+    python -m gioover25.reset_data --league Finland_Ykkonen
+Gruppo di leghe per prefisso
+    python -m gioover25.reset_data --group Finland_Kolmonen
+
+    oppure:
+
+    python -m gioover25.reset_data --group USA_USLLeagueTwo
+
+    Questo seleziona automaticamente tutte le LeagueId che iniziano con quel prefisso.
+
+Intera nazione
+    python -m gioover25.reset_data --country Finland
+
+Per eseguire davvero:
+
+    python -m gioover25.reset_data --group USA_USLLeagueTwo --apply
+
 STATISTICHE
 & "gioover25\raccogli_storici.ps1"  
 

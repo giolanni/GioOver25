@@ -1,0 +1,597 @@
+﻿Engine;LeagueId;Home;Away;Reason
+v13;USA_MLSNextPro_EasternConference_SoutheastDivision;Atlanta United 2;Toronto FC II;Squadra non trovata nella classifica ricostruita
+v13;USA_MLSNextPro_WesternConference_CentralDivision;Huntsville;Chicago Fire II;Squadra non trovata nella classifica ricostruita
+v13;USA_MLSNextPro_EasternConference_SoutheastDivision;Crown Legacy;New York City II;Squadra non trovata nella classifica ricostruita
+v13;Bulgaria_ParvaLiga;Slavia Sofia;CSKA Sofia;Squadra non trovata nella classifica ricostruita
+v13;Bulgaria_ParvaLiga;Botev Plovdiv;Lok. Sofia;Squadra non trovata nella classifica ricostruita
+v13;Romania_Superliga;Corvinul;Csikszereda M. Ciuc;Squadra non trovata nella classifica ricostruita
+v13;Romania_Superliga;Rapid Bucarest;Sepsi Sf. Gheorghe;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Nord;Grossbardorf;Wurzburger FV;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Nord;Bamberg;Weiden;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Nord;DJK Bamberg;Kornburg;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Nord;Neudrossenfeld;Fortuna Regensburg;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Sud;Ismaning;Pfaffenhofen;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;Schwabmunchen;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Sud;Pipinsried;Heimstetten;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Sud;Rosenheim;Schalding;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Nord;Kornburg;Ammerthal;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Sud;Heimstetten;FC Schwaig;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Sud;Landshut;Erlbach;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Sud;TSV 1880 Wasserburg;Gundelfingen;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Sud;Hankofen-Hailing;Ismaning;Squadra non trovata nella classifica ricostruita
+v13;Romania_Superliga;UTA Arad;Otelul;Squadra non trovata nella classifica ricostruita
+v13;Finland_Kolmonen_Southern_Group2;LPS Helsinki;VJS Vantaa B;Squadra non trovata nella classifica ricostruita
+v13;Finland_Kolmonen_Western_Group2;NOPS;FC Haka Juniors;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Bayern;Eichstatt;Illertissen;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Bayern;Schwaben Augsburg;Buchbach;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Bayern;Landsberg;Memmingen;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Bayern;Vilzing;Norinberga II;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Bayern;Ansbach;Burghausen;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Bayern;Bayern II;Eltersdorf;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Bayern;Bayreuth;Augsburg II;Squadra non trovata nella classifica ricostruita
+v13;Finland_Kolmonen_Western_Group2;TP-49;Ylojarvi United;Squadra non trovata nella classifica ricostruita
+v13;Finland_Kolmonen_Western_Group2;Tampere Utd II;Lasten;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Bayern_Nord;Neumarkt;Grossbardorf;Squadra non trovata nella classifica ricostruita
+v13;Romania_Superliga;Din. Bucuresti;Univ. Craiova;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Bayern;Unterhaching;Furth II;Squadra non trovata nella classifica ricostruita
+v13;Denmark_Superliga;Sonderjyske;Midtjylland;Squadra non trovata nella classifica ricostruita
+v13;Denmark_Superliga;FC Copenhagen;Lyngby;Squadra non trovata nella classifica ricostruita
+v13;Denmark_Superliga;Horsens;Nordsjaelland;Squadra non trovata nella classifica ricostruita
+v13;Denmark_1stDivision;Hobro;Aarhus Fremad;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Nordost;Chemie Leipzig;Babelsberg;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Nordost;Greifswald;Hallescher;Squadra non trovata nella classifica ricostruita
+v13;Germany_Regionalliga_Nordost;Jena;Zwickau;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Hamburg;HEBC Hamburg;Niendorfer TSV;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Hamburg;Sasel;TSV Buchholz 08;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Hamburg;Pinneberg;Harksheide;Squadra non trovata nella classifica ricostruita
+v13;Germany_Oberliga_Hamburg;Vorwarts-Wacker;Tesla Hamburg;Squadra non trovata nella classifica ricostruita
+v13;Poland_Ekstraklasa;Rakow;Plock;Squadra non trovata nella classifica ricostruita
+v13;Poland_Ekstraklasa;Widzew Lodz;Motor Lublin;Squadra non trovata nella classifica ricostruita
+v13;Poland_Ekstraklasa;Wisla;Katowice;Squadra non trovata nella classifica ricostruita
+v13;Poland_Division1;Termalica B-B.;Ruch;Squadra non trovata nella classifica ricostruita
+v13;Poland_Division1;Skierniewice;Stal Mielec;Squadra non trovata nella classifica ricostruita
+v13;Poland_Division1;Puszcza;Polonia W.;Squadra non trovata nella classifica ricostruita
+v13;Poland_Division2;Avia Swidnik;Ol. Grudziadz;Squadra non trovata nella classifica ricostruita
+v13;Poland_Division2;Chojniczanka;Tychy;Squadra non trovata nella classifica ricostruita
+v13;CzechRepublic_ChNL;Slavia Praga B;Pribram;Squadra non trovata nella classifica ricostruita
+v13;CzechRepublic_ChNL;Ostrava B;Vlasim;Squadra non trovata nella classifica ricostruita
+v13;Russia_PremierLeague;Lok. Mosca;Akhmat Grozny;Squadra non trovata nella classifica ricostruita
+v13;Russia_PremierLeague;Kazan;Krasnodar;Squadra non trovata nella classifica ricostruita
+v13;Russia_PremierLeague;Orenburg;FK Rostov;Squadra non trovata nella classifica ricostruita
+v13;Ukraine_PershaLiga;Kolos Kovalivka 2;Prykarpattya;Squadra non trovata nella classifica ricostruita
+v13;Ukraine_PershaLiga;Probiy Horodenka;Inhulets;Squadra non trovata nella classifica ricostruita
+v13;Ukraine_PershaLiga;Kulikiv;Metalist Kharkiv;Squadra non trovata nella classifica ricostruita
+v13;Hungary_NBI;Vasas;Győr;Squadra non trovata nella classifica ricostruita
+v13;Hungary_NBI;Debrecen;Puskas Academy;Squadra non trovata nella classifica ricostruita
+v13;Hungary_NBI;Paks;Ferencvaros;Squadra non trovata nella classifica ricostruita
+v13;Romania_Superliga;CFR Cluj;FC Voluntari;Squadra non trovata nella classifica ricostruita
+v13;Denmark_Superliga;Randers;Silkeborg;Squadra non trovata nella classifica ricostruita
+v13;Poland_Ekstraklasa;Zaglebie;Piast;Squadra non trovata nella classifica ricostruita
+v13;Poland_Division1;Legnica;Podbeskidzie;Squadra non trovata nella classifica ricostruita
+v13;CzechRepublic_1Liga;Artis Brno;Mlada Boleslav;Squadra non trovata nella classifica ricostruita
+v13;CzechRepublic_ChNL;Opava;Karvina;Squadra non trovata nella classifica ricostruita
+v13;Slovakia_2Liga;Samorin;Malzenice;Squadra non trovata nella classifica ricostruita
+v13;Hungary_NBI;MTK Budapest;Zalaegerszeg;Squadra non trovata nella classifica ricostruita
+v13;Finland_Kolmonen_Western_Group3;VPV;KPV/Akatemia;Squadra non trovata nella classifica ricostruita
+v20;USA_MLSNextPro_EasternConference_SoutheastDivision;Atlanta United 2;Toronto FC II;Squadra non trovata nella classifica ricostruita
+v20;USA_MLSNextPro_WesternConference_CentralDivision;Huntsville;Chicago Fire II;Squadra non trovata nella classifica ricostruita
+v20;USA_MLSNextPro_EasternConference_SoutheastDivision;Crown Legacy;New York City II;Squadra non trovata nella classifica ricostruita
+v20;Bulgaria_ParvaLiga;Slavia Sofia;CSKA Sofia;Squadra non trovata nella classifica ricostruita
+v20;Bulgaria_ParvaLiga;Botev Plovdiv;Lok. Sofia;Squadra non trovata nella classifica ricostruita
+v20;Romania_Superliga;Corvinul;Csikszereda M. Ciuc;Squadra non trovata nella classifica ricostruita
+v20;Romania_Superliga;Rapid Bucarest;Sepsi Sf. Gheorghe;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Nord;Grossbardorf;Wurzburger FV;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Nord;Bamberg;Weiden;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Nord;DJK Bamberg;Kornburg;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Nord;Neudrossenfeld;Fortuna Regensburg;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Sud;Ismaning;Pfaffenhofen;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;Schwabmunchen;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Sud;Pipinsried;Heimstetten;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Sud;Rosenheim;Schalding;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Sud;Landshut;Erlbach;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Nord;Kornburg;Ammerthal;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Sud;Heimstetten;FC Schwaig;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Sud;TSV 1880 Wasserburg;Gundelfingen;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Sud;Hankofen-Hailing;Ismaning;Squadra non trovata nella classifica ricostruita
+v20;Romania_Superliga;UTA Arad;Otelul;Squadra non trovata nella classifica ricostruita
+v20;Finland_Kolmonen_Southern_Group2;LPS Helsinki;VJS Vantaa B;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Bayern;Eichstatt;Illertissen;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Bayern;Schwaben Augsburg;Buchbach;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Bayern;Landsberg;Memmingen;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Bayern;Vilzing;Norinberga II;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Bayern;Ansbach;Burghausen;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Bayern;Bayern II;Eltersdorf;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Bayern;Bayreuth;Augsburg II;Squadra non trovata nella classifica ricostruita
+v20;Finland_Kolmonen_Western_Group2;TP-49;Ylojarvi United;Squadra non trovata nella classifica ricostruita
+v20;Finland_Kolmonen_Western_Group2;Tampere Utd II;Lasten;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Bayern_Nord;Neumarkt;Grossbardorf;Squadra non trovata nella classifica ricostruita
+v20;Romania_Superliga;Din. Bucuresti;Univ. Craiova;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Bayern;Unterhaching;Furth II;Squadra non trovata nella classifica ricostruita
+v20;Denmark_Superliga;Sonderjyske;Midtjylland;Squadra non trovata nella classifica ricostruita
+v20;Denmark_Superliga;FC Copenhagen;Lyngby;Squadra non trovata nella classifica ricostruita
+v20;Denmark_Superliga;Horsens;Nordsjaelland;Squadra non trovata nella classifica ricostruita
+v20;Denmark_1stDivision;Hobro;Aarhus Fremad;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Nordost;Chemie Leipzig;Babelsberg;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Nordost;Greifswald;Hallescher;Squadra non trovata nella classifica ricostruita
+v20;Germany_Regionalliga_Nordost;Jena;Zwickau;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Hamburg;HEBC Hamburg;Niendorfer TSV;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Hamburg;Sasel;TSV Buchholz 08;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Hamburg;Pinneberg;Harksheide;Squadra non trovata nella classifica ricostruita
+v20;Germany_Oberliga_Hamburg;Vorwarts-Wacker;Tesla Hamburg;Squadra non trovata nella classifica ricostruita
+v20;Poland_Ekstraklasa;Rakow;Plock;Squadra non trovata nella classifica ricostruita
+v20;Poland_Ekstraklasa;Widzew Lodz;Motor Lublin;Squadra non trovata nella classifica ricostruita
+v20;Poland_Ekstraklasa;Wisla;Katowice;Squadra non trovata nella classifica ricostruita
+v20;Poland_Division1;Termalica B-B.;Ruch;Squadra non trovata nella classifica ricostruita
+v20;Poland_Division1;Skierniewice;Stal Mielec;Squadra non trovata nella classifica ricostruita
+v20;Poland_Division1;Puszcza;Polonia W.;Squadra non trovata nella classifica ricostruita
+v20;Poland_Division2;Avia Swidnik;Ol. Grudziadz;Squadra non trovata nella classifica ricostruita
+v20;Poland_Division2;Chojniczanka;Tychy;Squadra non trovata nella classifica ricostruita
+v20;CzechRepublic_ChNL;Slavia Praga B;Pribram;Squadra non trovata nella classifica ricostruita
+v20;CzechRepublic_ChNL;Ostrava B;Vlasim;Squadra non trovata nella classifica ricostruita
+v20;Russia_PremierLeague;Lok. Mosca;Akhmat Grozny;Squadra non trovata nella classifica ricostruita
+v20;Russia_PremierLeague;Kazan;Krasnodar;Squadra non trovata nella classifica ricostruita
+v20;Russia_PremierLeague;Orenburg;FK Rostov;Squadra non trovata nella classifica ricostruita
+v20;Ukraine_PershaLiga;Kolos Kovalivka 2;Prykarpattya;Squadra non trovata nella classifica ricostruita
+v20;Ukraine_PershaLiga;Probiy Horodenka;Inhulets;Squadra non trovata nella classifica ricostruita
+v20;Ukraine_PershaLiga;Kulikiv;Metalist Kharkiv;Squadra non trovata nella classifica ricostruita
+v20;Hungary_NBI;Vasas;Győr;Squadra non trovata nella classifica ricostruita
+v20;Hungary_NBI;Debrecen;Puskas Academy;Squadra non trovata nella classifica ricostruita
+v20;Hungary_NBI;Paks;Ferencvaros;Squadra non trovata nella classifica ricostruita
+v20;Romania_Superliga;CFR Cluj;FC Voluntari;Squadra non trovata nella classifica ricostruita
+v20;Denmark_Superliga;Randers;Silkeborg;Squadra non trovata nella classifica ricostruita
+v20;Poland_Ekstraklasa;Zaglebie;Piast;Squadra non trovata nella classifica ricostruita
+v20;Poland_Division1;Legnica;Podbeskidzie;Squadra non trovata nella classifica ricostruita
+v20;CzechRepublic_1Liga;Artis Brno;Mlada Boleslav;Squadra non trovata nella classifica ricostruita
+v20;CzechRepublic_ChNL;Opava;Karvina;Squadra non trovata nella classifica ricostruita
+v20;Slovakia_2Liga;Samorin;Malzenice;Squadra non trovata nella classifica ricostruita
+v20;Hungary_NBI;MTK Budapest;Zalaegerszeg;Squadra non trovata nella classifica ricostruita
+v20;Finland_Kolmonen_Western_Group3;VPV;KPV/Akatemia;Squadra non trovata nella classifica ricostruita
+v21;USA_MLSNextPro_EasternConference_SoutheastDivision;Atlanta United 2;Toronto FC II;Squadra non trovata nella classifica ricostruita
+v21;USA_MLSNextPro_WesternConference_CentralDivision;Huntsville;Chicago Fire II;Squadra non trovata nella classifica ricostruita
+v21;USA_MLSNextPro_EasternConference_SoutheastDivision;Crown Legacy;New York City II;Squadra non trovata nella classifica ricostruita
+v21;Bulgaria_ParvaLiga;Slavia Sofia;CSKA Sofia;Squadra non trovata nella classifica ricostruita
+v21;Bulgaria_ParvaLiga;Botev Plovdiv;Lok. Sofia;Squadra non trovata nella classifica ricostruita
+v21;Romania_Superliga;Corvinul;Csikszereda M. Ciuc;Squadra non trovata nella classifica ricostruita
+v21;Romania_Superliga;Rapid Bucarest;Sepsi Sf. Gheorghe;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Nord;Grossbardorf;Wurzburger FV;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Nord;Bamberg;Weiden;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Nord;DJK Bamberg;Kornburg;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Nord;Neudrossenfeld;Fortuna Regensburg;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Sud;Ismaning;Pfaffenhofen;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;Schwabmunchen;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Sud;Pipinsried;Heimstetten;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Sud;Rosenheim;Schalding;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Sud;Heimstetten;FC Schwaig;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Nord;Kornburg;Ammerthal;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Sud;Landshut;Erlbach;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Sud;TSV 1880 Wasserburg;Gundelfingen;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Sud;Hankofen-Hailing;Ismaning;Squadra non trovata nella classifica ricostruita
+v21;Romania_Superliga;UTA Arad;Otelul;Squadra non trovata nella classifica ricostruita
+v21;Finland_Kolmonen_Southern_Group2;LPS Helsinki;VJS Vantaa B;Squadra non trovata nella classifica ricostruita
+v21;Finland_Kolmonen_Western_Group2;NOPS;FC Haka Juniors;Squadra non trovata nella classifica ricostruita
+v21;Finland_Kolmonen_Western_Group2;LeKi Futis;Saaksjarven Loiske;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Bayern;Eichstatt;Illertissen;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Bayern;Schwaben Augsburg;Buchbach;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Bayern;Landsberg;Memmingen;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Bayern;Vilzing;Norinberga II;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Bayern;Ansbach;Burghausen;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Bayern;Bayern II;Eltersdorf;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Bayern;Bayreuth;Augsburg II;Squadra non trovata nella classifica ricostruita
+v21;Finland_Kolmonen_Western_Group2;TP-49;Ylojarvi United;Squadra non trovata nella classifica ricostruita
+v21;Finland_Kolmonen_Western_Group2;Tampere Utd II;Lasten;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Bayern_Nord;Neumarkt;Grossbardorf;Squadra non trovata nella classifica ricostruita
+v21;Romania_Superliga;Din. Bucuresti;Univ. Craiova;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Bayern;Unterhaching;Furth II;Squadra non trovata nella classifica ricostruita
+v21;Denmark_Superliga;Sonderjyske;Midtjylland;Squadra non trovata nella classifica ricostruita
+v21;Denmark_Superliga;FC Copenhagen;Lyngby;Squadra non trovata nella classifica ricostruita
+v21;Denmark_Superliga;Horsens;Nordsjaelland;Squadra non trovata nella classifica ricostruita
+v21;Denmark_1stDivision;Hobro;Aarhus Fremad;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Nordost;Chemie Leipzig;Babelsberg;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Nordost;Greifswald;Hallescher;Squadra non trovata nella classifica ricostruita
+v21;Germany_Regionalliga_Nordost;Jena;Zwickau;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Hamburg;HEBC Hamburg;Niendorfer TSV;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Hamburg;Sasel;TSV Buchholz 08;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Hamburg;Pinneberg;Harksheide;Squadra non trovata nella classifica ricostruita
+v21;Germany_Oberliga_Hamburg;Vorwarts-Wacker;Tesla Hamburg;Squadra non trovata nella classifica ricostruita
+v21;Poland_Ekstraklasa;Rakow;Plock;Squadra non trovata nella classifica ricostruita
+v21;Poland_Ekstraklasa;Widzew Lodz;Motor Lublin;Squadra non trovata nella classifica ricostruita
+v21;Poland_Ekstraklasa;Wisla;Katowice;Squadra non trovata nella classifica ricostruita
+v21;Poland_Division1;Termalica B-B.;Ruch;Squadra non trovata nella classifica ricostruita
+v21;Poland_Division1;Skierniewice;Stal Mielec;Squadra non trovata nella classifica ricostruita
+v21;Poland_Division1;Puszcza;Polonia W.;Squadra non trovata nella classifica ricostruita
+v21;Poland_Division2;Avia Swidnik;Ol. Grudziadz;Squadra non trovata nella classifica ricostruita
+v21;Poland_Division2;Chojniczanka;Tychy;Squadra non trovata nella classifica ricostruita
+v21;CzechRepublic_ChNL;Slavia Praga B;Pribram;Squadra non trovata nella classifica ricostruita
+v21;CzechRepublic_ChNL;Ostrava B;Vlasim;Squadra non trovata nella classifica ricostruita
+v21;Russia_PremierLeague;Lok. Mosca;Akhmat Grozny;Squadra non trovata nella classifica ricostruita
+v21;Russia_PremierLeague;Kazan;Krasnodar;Squadra non trovata nella classifica ricostruita
+v21;Russia_PremierLeague;Orenburg;FK Rostov;Squadra non trovata nella classifica ricostruita
+v21;Ukraine_PershaLiga;Kolos Kovalivka 2;Prykarpattya;Squadra non trovata nella classifica ricostruita
+v21;Ukraine_PershaLiga;Probiy Horodenka;Inhulets;Squadra non trovata nella classifica ricostruita
+v21;Ukraine_PershaLiga;Kulikiv;Metalist Kharkiv;Squadra non trovata nella classifica ricostruita
+v21;Hungary_NBI;Vasas;Győr;Squadra non trovata nella classifica ricostruita
+v21;Hungary_NBI;Debrecen;Puskas Academy;Squadra non trovata nella classifica ricostruita
+v21;Hungary_NBI;Paks;Ferencvaros;Squadra non trovata nella classifica ricostruita
+v21;Romania_Superliga;CFR Cluj;FC Voluntari;Squadra non trovata nella classifica ricostruita
+v21;Denmark_Superliga;Randers;Silkeborg;Squadra non trovata nella classifica ricostruita
+v21;Poland_Ekstraklasa;Zaglebie;Piast;Squadra non trovata nella classifica ricostruita
+v21;Poland_Division1;Legnica;Podbeskidzie;Squadra non trovata nella classifica ricostruita
+v21;CzechRepublic_1Liga;Artis Brno;Mlada Boleslav;Squadra non trovata nella classifica ricostruita
+v21;CzechRepublic_ChNL;Opava;Karvina;Squadra non trovata nella classifica ricostruita
+v21;Slovakia_2Liga;Samorin;Malzenice;Squadra non trovata nella classifica ricostruita
+v21;Hungary_NBI;MTK Budapest;Zalaegerszeg;Squadra non trovata nella classifica ricostruita
+v21;Finland_Kolmonen_Western_Group3;VPV;KPV/Akatemia;Squadra non trovata nella classifica ricostruita
+v21dev;USA_MLSNextPro_EasternConference_SoutheastDivision;Atlanta United 2;Toronto FC II;Squadra non trovata nella classifica ricostruita
+v21dev;USA_MLSNextPro_WesternConference_CentralDivision;Huntsville;Chicago Fire II;Squadra non trovata nella classifica ricostruita
+v21dev;USA_MLSNextPro_EasternConference_SoutheastDivision;Crown Legacy;New York City II;Squadra non trovata nella classifica ricostruita
+v21dev;Bulgaria_ParvaLiga;Slavia Sofia;CSKA Sofia;Squadra non trovata nella classifica ricostruita
+v21dev;Bulgaria_ParvaLiga;Botev Plovdiv;Lok. Sofia;Squadra non trovata nella classifica ricostruita
+v21dev;Romania_Superliga;Corvinul;Csikszereda M. Ciuc;Squadra non trovata nella classifica ricostruita
+v21dev;Romania_Superliga;Rapid Bucarest;Sepsi Sf. Gheorghe;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Nord;Grossbardorf;Wurzburger FV;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Nord;Bamberg;Weiden;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Nord;DJK Bamberg;Kornburg;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Nord;Neudrossenfeld;Fortuna Regensburg;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Sud;Ismaning;Pfaffenhofen;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;Schwabmunchen;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Sud;Pipinsried;Heimstetten;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Sud;Rosenheim;Schalding;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Sud;Heimstetten;FC Schwaig;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Nord;Kornburg;Ammerthal;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Sud;Landshut;Erlbach;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Sud;TSV 1880 Wasserburg;Gundelfingen;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Sud;Hankofen-Hailing;Ismaning;Squadra non trovata nella classifica ricostruita
+v21dev;Romania_Superliga;UTA Arad;Otelul;Squadra non trovata nella classifica ricostruita
+v21dev;Finland_Kolmonen_Southern_Group2;LPS Helsinki;VJS Vantaa B;Squadra non trovata nella classifica ricostruita
+v21dev;Finland_Kolmonen_Western_Group2;NOPS;FC Haka Juniors;Squadra non trovata nella classifica ricostruita
+v21dev;Finland_Kolmonen_Western_Group2;LeKi Futis;Saaksjarven Loiske;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Bayern;Eichstatt;Illertissen;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Bayern;Schwaben Augsburg;Buchbach;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Bayern;Landsberg;Memmingen;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Bayern;Vilzing;Norinberga II;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Bayern;Ansbach;Burghausen;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Bayern;Bayern II;Eltersdorf;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Bayern;Bayreuth;Augsburg II;Squadra non trovata nella classifica ricostruita
+v21dev;Finland_Kolmonen_Western_Group2;TP-49;Ylojarvi United;Squadra non trovata nella classifica ricostruita
+v21dev;Finland_Kolmonen_Western_Group2;Tampere Utd II;Lasten;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Bayern_Nord;Neumarkt;Grossbardorf;Squadra non trovata nella classifica ricostruita
+v21dev;Romania_Superliga;Din. Bucuresti;Univ. Craiova;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Bayern;Unterhaching;Furth II;Squadra non trovata nella classifica ricostruita
+v21dev;Denmark_Superliga;Sonderjyske;Midtjylland;Squadra non trovata nella classifica ricostruita
+v21dev;Denmark_Superliga;FC Copenhagen;Lyngby;Squadra non trovata nella classifica ricostruita
+v21dev;Denmark_Superliga;Horsens;Nordsjaelland;Squadra non trovata nella classifica ricostruita
+v21dev;Denmark_1stDivision;Hobro;Aarhus Fremad;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Nordost;Chemie Leipzig;Babelsberg;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Nordost;Greifswald;Hallescher;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Regionalliga_Nordost;Jena;Zwickau;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Hamburg;HEBC Hamburg;Niendorfer TSV;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Hamburg;Sasel;TSV Buchholz 08;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Hamburg;Pinneberg;Harksheide;Squadra non trovata nella classifica ricostruita
+v21dev;Germany_Oberliga_Hamburg;Vorwarts-Wacker;Tesla Hamburg;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Ekstraklasa;Rakow;Plock;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Ekstraklasa;Widzew Lodz;Motor Lublin;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Ekstraklasa;Wisla;Katowice;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Division1;Termalica B-B.;Ruch;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Division1;Skierniewice;Stal Mielec;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Division1;Puszcza;Polonia W.;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Division2;Avia Swidnik;Ol. Grudziadz;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Division2;Chojniczanka;Tychy;Squadra non trovata nella classifica ricostruita
+v21dev;CzechRepublic_ChNL;Slavia Praga B;Pribram;Squadra non trovata nella classifica ricostruita
+v21dev;CzechRepublic_ChNL;Ostrava B;Vlasim;Squadra non trovata nella classifica ricostruita
+v21dev;Russia_PremierLeague;Lok. Mosca;Akhmat Grozny;Squadra non trovata nella classifica ricostruita
+v21dev;Russia_PremierLeague;Kazan;Krasnodar;Squadra non trovata nella classifica ricostruita
+v21dev;Russia_PremierLeague;Orenburg;FK Rostov;Squadra non trovata nella classifica ricostruita
+v21dev;Ukraine_PershaLiga;Kolos Kovalivka 2;Prykarpattya;Squadra non trovata nella classifica ricostruita
+v21dev;Ukraine_PershaLiga;Probiy Horodenka;Inhulets;Squadra non trovata nella classifica ricostruita
+v21dev;Ukraine_PershaLiga;Kulikiv;Metalist Kharkiv;Squadra non trovata nella classifica ricostruita
+v21dev;Hungary_NBI;Vasas;Győr;Squadra non trovata nella classifica ricostruita
+v21dev;Hungary_NBI;Debrecen;Puskas Academy;Squadra non trovata nella classifica ricostruita
+v21dev;Hungary_NBI;Paks;Ferencvaros;Squadra non trovata nella classifica ricostruita
+v21dev;Romania_Superliga;CFR Cluj;FC Voluntari;Squadra non trovata nella classifica ricostruita
+v21dev;Denmark_Superliga;Randers;Silkeborg;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Ekstraklasa;Zaglebie;Piast;Squadra non trovata nella classifica ricostruita
+v21dev;Poland_Division1;Legnica;Podbeskidzie;Squadra non trovata nella classifica ricostruita
+v21dev;CzechRepublic_1Liga;Artis Brno;Mlada Boleslav;Squadra non trovata nella classifica ricostruita
+v21dev;CzechRepublic_ChNL;Opava;Karvina;Squadra non trovata nella classifica ricostruita
+v21dev;Slovakia_2Liga;Samorin;Malzenice;Squadra non trovata nella classifica ricostruita
+v21dev;Hungary_NBI;MTK Budapest;Zalaegerszeg;Squadra non trovata nella classifica ricostruita
+v21dev;Finland_Kolmonen_Western_Group3;VPV;KPV/Akatemia;Squadra non trovata nella classifica ricostruita
+v22;USA_MLSNextPro_EasternConference_SoutheastDivision;Atlanta United 2;Toronto FC II;Squadra non trovata nella classifica ricostruita
+v22;USA_MLSNextPro_WesternConference_CentralDivision;Huntsville;Chicago Fire II;Squadra non trovata nella classifica ricostruita
+v22;USA_MLSNextPro_EasternConference_SoutheastDivision;Crown Legacy;New York City II;Squadra non trovata nella classifica ricostruita
+v22;Bulgaria_ParvaLiga;Slavia Sofia;CSKA Sofia;Squadra non trovata nella classifica ricostruita
+v22;Bulgaria_ParvaLiga;Botev Plovdiv;Lok. Sofia;Squadra non trovata nella classifica ricostruita
+v22;Romania_Superliga;Corvinul;Csikszereda M. Ciuc;Squadra non trovata nella classifica ricostruita
+v22;Romania_Superliga;Rapid Bucarest;Sepsi Sf. Gheorghe;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Nord;Grossbardorf;Wurzburger FV;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Nord;Bamberg;Weiden;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Nord;DJK Bamberg;Kornburg;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Nord;Neudrossenfeld;Fortuna Regensburg;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Sud;Ismaning;Pfaffenhofen;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;Schwabmunchen;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Sud;Pipinsried;Heimstetten;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Sud;Rosenheim;Schalding;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Sud;Heimstetten;FC Schwaig;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Nord;Kornburg;Ammerthal;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Sud;Landshut;Erlbach;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Sud;TSV 1880 Wasserburg;Gundelfingen;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Sud;Hankofen-Hailing;Ismaning;Squadra non trovata nella classifica ricostruita
+v22;Romania_Superliga;UTA Arad;Otelul;Squadra non trovata nella classifica ricostruita
+v22;Finland_Kolmonen_Southern_Group2;LPS Helsinki;VJS Vantaa B;Squadra non trovata nella classifica ricostruita
+v22;Finland_Kolmonen_Western_Group2;NOPS;FC Haka Juniors;Squadra non trovata nella classifica ricostruita
+v22;Finland_Kolmonen_Western_Group2;LeKi Futis;Saaksjarven Loiske;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Bayern;Eichstatt;Illertissen;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Bayern;Schwaben Augsburg;Buchbach;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Bayern;Landsberg;Memmingen;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Bayern;Vilzing;Norinberga II;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Bayern;Ansbach;Burghausen;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Bayern;Bayern II;Eltersdorf;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Bayern;Bayreuth;Augsburg II;Squadra non trovata nella classifica ricostruita
+v22;Finland_Kolmonen_Western_Group2;TP-49;Ylojarvi United;Squadra non trovata nella classifica ricostruita
+v22;Finland_Kolmonen_Western_Group2;Tampere Utd II;Lasten;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Bayern_Nord;Neumarkt;Grossbardorf;Squadra non trovata nella classifica ricostruita
+v22;Romania_Superliga;Din. Bucuresti;Univ. Craiova;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Bayern;Unterhaching;Furth II;Squadra non trovata nella classifica ricostruita
+v22;Denmark_Superliga;Sonderjyske;Midtjylland;Squadra non trovata nella classifica ricostruita
+v22;Denmark_Superliga;FC Copenhagen;Lyngby;Squadra non trovata nella classifica ricostruita
+v22;Denmark_Superliga;Horsens;Nordsjaelland;Squadra non trovata nella classifica ricostruita
+v22;Denmark_1stDivision;Hobro;Aarhus Fremad;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Nordost;Chemie Leipzig;Babelsberg;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Nordost;Greifswald;Hallescher;Squadra non trovata nella classifica ricostruita
+v22;Germany_Regionalliga_Nordost;Jena;Zwickau;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Hamburg;HEBC Hamburg;Niendorfer TSV;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Hamburg;Sasel;TSV Buchholz 08;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Hamburg;Pinneberg;Harksheide;Squadra non trovata nella classifica ricostruita
+v22;Germany_Oberliga_Hamburg;Vorwarts-Wacker;Tesla Hamburg;Squadra non trovata nella classifica ricostruita
+v22;Poland_Ekstraklasa;Rakow;Plock;Squadra non trovata nella classifica ricostruita
+v22;Poland_Ekstraklasa;Widzew Lodz;Motor Lublin;Squadra non trovata nella classifica ricostruita
+v22;Poland_Ekstraklasa;Wisla;Katowice;Squadra non trovata nella classifica ricostruita
+v22;Poland_Division1;Termalica B-B.;Ruch;Squadra non trovata nella classifica ricostruita
+v22;Poland_Division1;Skierniewice;Stal Mielec;Squadra non trovata nella classifica ricostruita
+v22;Poland_Division1;Puszcza;Polonia W.;Squadra non trovata nella classifica ricostruita
+v22;Poland_Division2;Avia Swidnik;Ol. Grudziadz;Squadra non trovata nella classifica ricostruita
+v22;Poland_Division2;Chojniczanka;Tychy;Squadra non trovata nella classifica ricostruita
+v22;CzechRepublic_ChNL;Slavia Praga B;Pribram;Squadra non trovata nella classifica ricostruita
+v22;CzechRepublic_ChNL;Ostrava B;Vlasim;Squadra non trovata nella classifica ricostruita
+v22;Russia_PremierLeague;Lok. Mosca;Akhmat Grozny;Squadra non trovata nella classifica ricostruita
+v22;Russia_PremierLeague;Kazan;Krasnodar;Squadra non trovata nella classifica ricostruita
+v22;Russia_PremierLeague;Orenburg;FK Rostov;Squadra non trovata nella classifica ricostruita
+v22;Ukraine_PershaLiga;Kolos Kovalivka 2;Prykarpattya;Squadra non trovata nella classifica ricostruita
+v22;Ukraine_PershaLiga;Probiy Horodenka;Inhulets;Squadra non trovata nella classifica ricostruita
+v22;Ukraine_PershaLiga;Kulikiv;Metalist Kharkiv;Squadra non trovata nella classifica ricostruita
+v22;Hungary_NBI;Vasas;Győr;Squadra non trovata nella classifica ricostruita
+v22;Hungary_NBI;Debrecen;Puskas Academy;Squadra non trovata nella classifica ricostruita
+v22;Hungary_NBI;Paks;Ferencvaros;Squadra non trovata nella classifica ricostruita
+v22;Romania_Superliga;CFR Cluj;FC Voluntari;Squadra non trovata nella classifica ricostruita
+v22;Denmark_Superliga;Randers;Silkeborg;Squadra non trovata nella classifica ricostruita
+v22;Poland_Ekstraklasa;Zaglebie;Piast;Squadra non trovata nella classifica ricostruita
+v22;Poland_Division1;Legnica;Podbeskidzie;Squadra non trovata nella classifica ricostruita
+v22;CzechRepublic_1Liga;Artis Brno;Mlada Boleslav;Squadra non trovata nella classifica ricostruita
+v22;CzechRepublic_ChNL;Opava;Karvina;Squadra non trovata nella classifica ricostruita
+v22;Slovakia_2Liga;Samorin;Malzenice;Squadra non trovata nella classifica ricostruita
+v22;Hungary_NBI;MTK Budapest;Zalaegerszeg;Squadra non trovata nella classifica ricostruita
+v22;Finland_Kolmonen_Western_Group3;VPV;KPV/Akatemia;Squadra non trovata nella classifica ricostruita
+v23;USA_MLSNextPro_EasternConference_SoutheastDivision;Atlanta United 2;Toronto FC II;Squadra non trovata nella classifica ricostruita
+v23;USA_MLSNextPro_WesternConference_CentralDivision;Huntsville;Chicago Fire II;Squadra non trovata nella classifica ricostruita
+v23;USA_MLSNextPro_EasternConference_SoutheastDivision;Crown Legacy;New York City II;Squadra non trovata nella classifica ricostruita
+v23;Bulgaria_ParvaLiga;Slavia Sofia;CSKA Sofia;Squadra non trovata nella classifica ricostruita
+v23;Bulgaria_ParvaLiga;Botev Plovdiv;Lok. Sofia;Squadra non trovata nella classifica ricostruita
+v23;Romania_Superliga;Corvinul;Csikszereda M. Ciuc;Squadra non trovata nella classifica ricostruita
+v23;Romania_Superliga;Rapid Bucarest;Sepsi Sf. Gheorghe;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Nord;Grossbardorf;Wurzburger FV;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Nord;Bamberg;Weiden;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Nord;DJK Bamberg;Kornburg;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Nord;Neudrossenfeld;Fortuna Regensburg;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Sud;Ismaning;Pfaffenhofen;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;Schwabmunchen;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Sud;Pipinsried;Heimstetten;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Sud;Rosenheim;Schalding;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Sud;Heimstetten;FC Schwaig;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Nord;Kornburg;Ammerthal;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Sud;Landshut;Erlbach;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Sud;TSV 1880 Wasserburg;Gundelfingen;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Sud;Hankofen-Hailing;Ismaning;Squadra non trovata nella classifica ricostruita
+v23;Romania_Superliga;UTA Arad;Otelul;Squadra non trovata nella classifica ricostruita
+v23;Finland_Kolmonen_Southern_Group2;LPS Helsinki;VJS Vantaa B;Squadra non trovata nella classifica ricostruita
+v23;Finland_Kolmonen_Western_Group2;NOPS;FC Haka Juniors;Squadra non trovata nella classifica ricostruita
+v23;Finland_Kolmonen_Western_Group2;LeKi Futis;Saaksjarven Loiske;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Bayern;Eichstatt;Illertissen;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Bayern;Schwaben Augsburg;Buchbach;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Bayern;Landsberg;Memmingen;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Bayern;Vilzing;Norinberga II;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Bayern;Ansbach;Burghausen;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Bayern;Bayern II;Eltersdorf;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Bayern;Bayreuth;Augsburg II;Squadra non trovata nella classifica ricostruita
+v23;Finland_Kolmonen_Western_Group2;TP-49;Ylojarvi United;Squadra non trovata nella classifica ricostruita
+v23;Finland_Kolmonen_Western_Group2;Tampere Utd II;Lasten;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Bayern_Nord;Neumarkt;Grossbardorf;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Bayern;Unterhaching;Furth II;Squadra non trovata nella classifica ricostruita
+v23;Romania_Superliga;Din. Bucuresti;Univ. Craiova;Squadra non trovata nella classifica ricostruita
+v23;Denmark_Superliga;Sonderjyske;Midtjylland;Squadra non trovata nella classifica ricostruita
+v23;Denmark_Superliga;FC Copenhagen;Lyngby;Squadra non trovata nella classifica ricostruita
+v23;Denmark_Superliga;Horsens;Nordsjaelland;Squadra non trovata nella classifica ricostruita
+v23;Denmark_1stDivision;Hobro;Aarhus Fremad;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Nordost;Chemie Leipzig;Babelsberg;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Nordost;Greifswald;Hallescher;Squadra non trovata nella classifica ricostruita
+v23;Germany_Regionalliga_Nordost;Jena;Zwickau;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Hamburg;HEBC Hamburg;Niendorfer TSV;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Hamburg;Sasel;TSV Buchholz 08;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Hamburg;Pinneberg;Harksheide;Squadra non trovata nella classifica ricostruita
+v23;Germany_Oberliga_Hamburg;Vorwarts-Wacker;Tesla Hamburg;Squadra non trovata nella classifica ricostruita
+v23;Poland_Ekstraklasa;Rakow;Plock;Squadra non trovata nella classifica ricostruita
+v23;Poland_Ekstraklasa;Widzew Lodz;Motor Lublin;Squadra non trovata nella classifica ricostruita
+v23;Poland_Ekstraklasa;Wisla;Katowice;Squadra non trovata nella classifica ricostruita
+v23;Poland_Division1;Termalica B-B.;Ruch;Squadra non trovata nella classifica ricostruita
+v23;Poland_Division1;Skierniewice;Stal Mielec;Squadra non trovata nella classifica ricostruita
+v23;Poland_Division1;Puszcza;Polonia W.;Squadra non trovata nella classifica ricostruita
+v23;Poland_Division2;Avia Swidnik;Ol. Grudziadz;Squadra non trovata nella classifica ricostruita
+v23;Poland_Division2;Chojniczanka;Tychy;Squadra non trovata nella classifica ricostruita
+v23;CzechRepublic_ChNL;Slavia Praga B;Pribram;Squadra non trovata nella classifica ricostruita
+v23;CzechRepublic_ChNL;Ostrava B;Vlasim;Squadra non trovata nella classifica ricostruita
+v23;Russia_PremierLeague;Lok. Mosca;Akhmat Grozny;Squadra non trovata nella classifica ricostruita
+v23;Russia_PremierLeague;Kazan;Krasnodar;Squadra non trovata nella classifica ricostruita
+v23;Russia_PremierLeague;Orenburg;FK Rostov;Squadra non trovata nella classifica ricostruita
+v23;Ukraine_PershaLiga;Kolos Kovalivka 2;Prykarpattya;Squadra non trovata nella classifica ricostruita
+v23;Ukraine_PershaLiga;Probiy Horodenka;Inhulets;Squadra non trovata nella classifica ricostruita
+v23;Ukraine_PershaLiga;Kulikiv;Metalist Kharkiv;Squadra non trovata nella classifica ricostruita
+v23;Hungary_NBI;Vasas;Győr;Squadra non trovata nella classifica ricostruita
+v23;Hungary_NBI;Debrecen;Puskas Academy;Squadra non trovata nella classifica ricostruita
+v23;Hungary_NBI;Paks;Ferencvaros;Squadra non trovata nella classifica ricostruita
+v23;Romania_Superliga;CFR Cluj;FC Voluntari;Squadra non trovata nella classifica ricostruita
+v23;Denmark_Superliga;Randers;Silkeborg;Squadra non trovata nella classifica ricostruita
+v23;Poland_Ekstraklasa;Zaglebie;Piast;Squadra non trovata nella classifica ricostruita
+v23;Poland_Division1;Legnica;Podbeskidzie;Squadra non trovata nella classifica ricostruita
+v23;CzechRepublic_1Liga;Artis Brno;Mlada Boleslav;Squadra non trovata nella classifica ricostruita
+v23;CzechRepublic_ChNL;Opava;Karvina;Squadra non trovata nella classifica ricostruita
+v23;Slovakia_2Liga;Samorin;Malzenice;Squadra non trovata nella classifica ricostruita
+v23;Hungary_NBI;MTK Budapest;Zalaegerszeg;Squadra non trovata nella classifica ricostruita
+v23;Finland_Kolmonen_Western_Group3;VPV;KPV/Akatemia;Squadra non trovata nella classifica ricostruita
+v24;USA_MLSNextPro_EasternConference_SoutheastDivision;Atlanta United 2;Toronto FC II;Squadra non trovata nella classifica ricostruita
+v24;USA_MLSNextPro_WesternConference_CentralDivision;Huntsville;Chicago Fire II;Squadra non trovata nella classifica ricostruita
+v24;USA_MLSNextPro_EasternConference_SoutheastDivision;Crown Legacy;New York City II;Squadra non trovata nella classifica ricostruita
+v24;Bulgaria_ParvaLiga;Slavia Sofia;CSKA Sofia;Squadra non trovata nella classifica ricostruita
+v24;Bulgaria_ParvaLiga;Botev Plovdiv;Lok. Sofia;Squadra non trovata nella classifica ricostruita
+v24;Romania_Superliga;Corvinul;Csikszereda M. Ciuc;Squadra non trovata nella classifica ricostruita
+v24;Romania_Superliga;Rapid Bucarest;Sepsi Sf. Gheorghe;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Nord;Grossbardorf;Wurzburger FV;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Nord;Bamberg;Weiden;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Nord;DJK Bamberg;Kornburg;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Nord;Neudrossenfeld;Fortuna Regensburg;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Sud;Ismaning;Pfaffenhofen;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;Schwabmunchen;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Sud;Pipinsried;Heimstetten;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Sud;Rosenheim;Schalding;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Sud;Heimstetten;FC Schwaig;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Nord;Kornburg;Ammerthal;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Sud;Landshut;Erlbach;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Sud;TSV 1880 Wasserburg;Gundelfingen;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Sud;Hankofen-Hailing;Ismaning;Squadra non trovata nella classifica ricostruita
+v24;Romania_Superliga;UTA Arad;Otelul;Squadra non trovata nella classifica ricostruita
+v24;Finland_Kolmonen_Western_Group2;NOPS;FC Haka Juniors;Squadra non trovata nella classifica ricostruita
+v24;Finland_Kolmonen_Western_Group2;LeKi Futis;Saaksjarven Loiske;Squadra non trovata nella classifica ricostruita
+v24;Finland_Kolmonen_Southern_Group2;LPS Helsinki;VJS Vantaa B;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Bayern;Eichstatt;Illertissen;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Bayern;Schwaben Augsburg;Buchbach;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Bayern;Landsberg;Memmingen;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Bayern;Vilzing;Norinberga II;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Bayern;Ansbach;Burghausen;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Bayern;Bayern II;Eltersdorf;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Bayern;Bayreuth;Augsburg II;Squadra non trovata nella classifica ricostruita
+v24;Finland_Kolmonen_Western_Group2;TP-49;Ylojarvi United;Squadra non trovata nella classifica ricostruita
+v24;Finland_Kolmonen_Western_Group2;Tampere Utd II;Lasten;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Bayern_Nord;Neumarkt;Grossbardorf;Squadra non trovata nella classifica ricostruita
+v24;Romania_Superliga;Din. Bucuresti;Univ. Craiova;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Bayern;Unterhaching;Furth II;Squadra non trovata nella classifica ricostruita
+v24;Denmark_Superliga;Sonderjyske;Midtjylland;Squadra non trovata nella classifica ricostruita
+v24;Denmark_Superliga;FC Copenhagen;Lyngby;Squadra non trovata nella classifica ricostruita
+v24;Denmark_Superliga;Horsens;Nordsjaelland;Squadra non trovata nella classifica ricostruita
+v24;Denmark_1stDivision;Hobro;Aarhus Fremad;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Nordost;Chemie Leipzig;Babelsberg;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Nordost;Greifswald;Hallescher;Squadra non trovata nella classifica ricostruita
+v24;Germany_Regionalliga_Nordost;Jena;Zwickau;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Hamburg;HEBC Hamburg;Niendorfer TSV;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Hamburg;Sasel;TSV Buchholz 08;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Hamburg;Pinneberg;Harksheide;Squadra non trovata nella classifica ricostruita
+v24;Germany_Oberliga_Hamburg;Vorwarts-Wacker;Tesla Hamburg;Squadra non trovata nella classifica ricostruita
+v24;Poland_Ekstraklasa;Rakow;Plock;Squadra non trovata nella classifica ricostruita
+v24;Poland_Ekstraklasa;Widzew Lodz;Motor Lublin;Squadra non trovata nella classifica ricostruita
+v24;Poland_Ekstraklasa;Wisla;Katowice;Squadra non trovata nella classifica ricostruita
+v24;Poland_Division1;Termalica B-B.;Ruch;Squadra non trovata nella classifica ricostruita
+v24;Poland_Division1;Skierniewice;Stal Mielec;Squadra non trovata nella classifica ricostruita
+v24;Poland_Division1;Puszcza;Polonia W.;Squadra non trovata nella classifica ricostruita
+v24;Poland_Division2;Avia Swidnik;Ol. Grudziadz;Squadra non trovata nella classifica ricostruita
+v24;Poland_Division2;Chojniczanka;Tychy;Squadra non trovata nella classifica ricostruita
+v24;CzechRepublic_ChNL;Slavia Praga B;Pribram;Squadra non trovata nella classifica ricostruita
+v24;CzechRepublic_ChNL;Ostrava B;Vlasim;Squadra non trovata nella classifica ricostruita
+v24;Russia_PremierLeague;Lok. Mosca;Akhmat Grozny;Squadra non trovata nella classifica ricostruita
+v24;Russia_PremierLeague;Kazan;Krasnodar;Squadra non trovata nella classifica ricostruita
+v24;Russia_PremierLeague;Orenburg;FK Rostov;Squadra non trovata nella classifica ricostruita
+v24;Ukraine_PershaLiga;Kolos Kovalivka 2;Prykarpattya;Squadra non trovata nella classifica ricostruita
+v24;Ukraine_PershaLiga;Probiy Horodenka;Inhulets;Squadra non trovata nella classifica ricostruita
+v24;Ukraine_PershaLiga;Kulikiv;Metalist Kharkiv;Squadra non trovata nella classifica ricostruita
+v24;Hungary_NBI;Vasas;Győr;Squadra non trovata nella classifica ricostruita
+v24;Hungary_NBI;Debrecen;Puskas Academy;Squadra non trovata nella classifica ricostruita
+v24;Hungary_NBI;Paks;Ferencvaros;Squadra non trovata nella classifica ricostruita
+v24;Romania_Superliga;CFR Cluj;FC Voluntari;Squadra non trovata nella classifica ricostruita
+v24;Denmark_Superliga;Randers;Silkeborg;Squadra non trovata nella classifica ricostruita
+v24;Poland_Ekstraklasa;Zaglebie;Piast;Squadra non trovata nella classifica ricostruita
+v24;Poland_Division1;Legnica;Podbeskidzie;Squadra non trovata nella classifica ricostruita
+v24;CzechRepublic_1Liga;Artis Brno;Mlada Boleslav;Squadra non trovata nella classifica ricostruita
+v24;CzechRepublic_ChNL;Opava;Karvina;Squadra non trovata nella classifica ricostruita
+v24;Slovakia_2Liga;Samorin;Malzenice;Squadra non trovata nella classifica ricostruita
+v24;Hungary_NBI;MTK Budapest;Zalaegerszeg;Squadra non trovata nella classifica ricostruita
+v24;Finland_Kolmonen_Western_Group3;VPV;KPV/Akatemia;Squadra non trovata nella classifica ricostruita
+v25;USA_MLSNextPro_WesternConference_CentralDivision;Huntsville;Chicago Fire II;Squadra non trovata nella classifica ricostruita
+v25;USA_MLSNextPro_EasternConference_SoutheastDivision;Crown Legacy;New York City II;Squadra non trovata nella classifica ricostruita
+v25;Bulgaria_ParvaLiga;Slavia Sofia;CSKA Sofia;Squadra non trovata nella classifica ricostruita
+v25;Bulgaria_ParvaLiga;Botev Plovdiv;Lok. Sofia;Squadra non trovata nella classifica ricostruita
+v25;Romania_Superliga;Corvinul;Csikszereda M. Ciuc;Squadra non trovata nella classifica ricostruita
+v25;Romania_Superliga;Rapid Bucarest;Sepsi Sf. Gheorghe;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Nord;Grossbardorf;Wurzburger FV;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Nord;Bamberg;Weiden;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Nord;DJK Bamberg;Kornburg;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Nord;Neudrossenfeld;Fortuna Regensburg;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Sud;Ismaning;Pfaffenhofen;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;Schwabmunchen;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Sud;Pipinsried;Heimstetten;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Sud;Rosenheim;Schalding;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Sud;Heimstetten;FC Schwaig;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Nord;Kornburg;Ammerthal;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Sud;Landshut;Erlbach;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Sud;TSV 1880 Wasserburg;Gundelfingen;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Sud;Hankofen-Hailing;Ismaning;Squadra non trovata nella classifica ricostruita
+v25;Romania_Superliga;UTA Arad;Otelul;Squadra non trovata nella classifica ricostruita
+v25;Finland_Kolmonen_Southern_Group2;LPS Helsinki;VJS Vantaa B;Squadra non trovata nella classifica ricostruita
+v25;Finland_Kolmonen_Western_Group2;NOPS;FC Haka Juniors;Squadra non trovata nella classifica ricostruita
+v25;Finland_Kolmonen_Western_Group2;LeKi Futis;Saaksjarven Loiske;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Bayern;Eichstatt;Illertissen;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Bayern;Schwaben Augsburg;Buchbach;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Bayern;Landsberg;Memmingen;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Bayern;Vilzing;Norinberga II;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Bayern;Ansbach;Burghausen;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Bayern;Bayern II;Eltersdorf;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Bayern;Bayreuth;Augsburg II;Squadra non trovata nella classifica ricostruita
+v25;Finland_Kolmonen_Western_Group2;TP-49;Ylojarvi United;Squadra non trovata nella classifica ricostruita
+v25;Finland_Kolmonen_Western_Group2;Tampere Utd II;Lasten;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Bayern_Nord;Neumarkt;Grossbardorf;Squadra non trovata nella classifica ricostruita
+v25;Romania_Superliga;Din. Bucuresti;Univ. Craiova;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Bayern;Unterhaching;Furth II;Squadra non trovata nella classifica ricostruita
+v25;Denmark_Superliga;Sonderjyske;Midtjylland;Squadra non trovata nella classifica ricostruita
+v25;Denmark_Superliga;FC Copenhagen;Lyngby;Squadra non trovata nella classifica ricostruita
+v25;Denmark_Superliga;Horsens;Nordsjaelland;Squadra non trovata nella classifica ricostruita
+v25;Denmark_1stDivision;Hobro;Aarhus Fremad;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Nordost;Chemie Leipzig;Babelsberg;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Nordost;Greifswald;Hallescher;Squadra non trovata nella classifica ricostruita
+v25;Germany_Regionalliga_Nordost;Jena;Zwickau;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Hamburg;HEBC Hamburg;Niendorfer TSV;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Hamburg;Sasel;TSV Buchholz 08;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Hamburg;Pinneberg;Harksheide;Squadra non trovata nella classifica ricostruita
+v25;Germany_Oberliga_Hamburg;Vorwarts-Wacker;Tesla Hamburg;Squadra non trovata nella classifica ricostruita
+v25;Poland_Ekstraklasa;Rakow;Plock;Squadra non trovata nella classifica ricostruita
+v25;Poland_Ekstraklasa;Widzew Lodz;Motor Lublin;Squadra non trovata nella classifica ricostruita
+v25;Poland_Ekstraklasa;Wisla;Katowice;Squadra non trovata nella classifica ricostruita
+v25;Poland_Division1;Termalica B-B.;Ruch;Squadra non trovata nella classifica ricostruita
+v25;Poland_Division1;Skierniewice;Stal Mielec;Squadra non trovata nella classifica ricostruita
+v25;Poland_Division1;Puszcza;Polonia W.;Squadra non trovata nella classifica ricostruita
+v25;Poland_Division2;Avia Swidnik;Ol. Grudziadz;Squadra non trovata nella classifica ricostruita
+v25;Poland_Division2;Chojniczanka;Tychy;Squadra non trovata nella classifica ricostruita
+v25;CzechRepublic_ChNL;Slavia Praga B;Pribram;Squadra non trovata nella classifica ricostruita
+v25;CzechRepublic_ChNL;Ostrava B;Vlasim;Squadra non trovata nella classifica ricostruita
+v25;Russia_PremierLeague;Lok. Mosca;Akhmat Grozny;Squadra non trovata nella classifica ricostruita
+v25;Russia_PremierLeague;Kazan;Krasnodar;Squadra non trovata nella classifica ricostruita
+v25;Russia_PremierLeague;Orenburg;FK Rostov;Squadra non trovata nella classifica ricostruita
+v25;Ukraine_PershaLiga;Kolos Kovalivka 2;Prykarpattya;Squadra non trovata nella classifica ricostruita
+v25;Ukraine_PershaLiga;Probiy Horodenka;Inhulets;Squadra non trovata nella classifica ricostruita
+v25;Ukraine_PershaLiga;Kulikiv;Metalist Kharkiv;Squadra non trovata nella classifica ricostruita
+v25;Hungary_NBI;Vasas;Győr;Squadra non trovata nella classifica ricostruita
+v25;Hungary_NBI;Debrecen;Puskas Academy;Squadra non trovata nella classifica ricostruita
+v25;Hungary_NBI;Paks;Ferencvaros;Squadra non trovata nella classifica ricostruita
+v25;Romania_Superliga;CFR Cluj;FC Voluntari;Squadra non trovata nella classifica ricostruita
+v25;Denmark_Superliga;Randers;Silkeborg;Squadra non trovata nella classifica ricostruita
+v25;Poland_Ekstraklasa;Zaglebie;Piast;Squadra non trovata nella classifica ricostruita
+v25;Poland_Division1;Legnica;Podbeskidzie;Squadra non trovata nella classifica ricostruita
+v25;CzechRepublic_1Liga;Artis Brno;Mlada Boleslav;Squadra non trovata nella classifica ricostruita
+v25;CzechRepublic_ChNL;Opava;Karvina;Squadra non trovata nella classifica ricostruita
+v25;Slovakia_2Liga;Samorin;Malzenice;Squadra non trovata nella classifica ricostruita
+v25;Hungary_NBI;MTK Budapest;Zalaegerszeg;Squadra non trovata nella classifica ricostruita
+v25;Finland_Kolmonen_Western_Group3;VPV;KPV/Akatemia;Squadra non trovata nella classifica ricostruita

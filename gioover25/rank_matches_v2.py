@@ -661,7 +661,59 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
             away_team=away,
             before_round=statistics_before_round,
         )
-        score = engine.calculate_score(match_stats, league_info)
+
+        # ------------------------------------------------------------------
+        # Campione minimo opzionale per engine sperimentali
+        # ------------------------------------------------------------------
+        # v20dev e v201dev richiedono il numero di partite effettivamente
+        # disputate da Home e Away prima del match. Gli altri engine non
+        # espongono REQUIRES_PLAYED_COUNTS e continuano a ricevere la stessa
+        # chiamata di prima.
+        requires_played_counts = bool(
+            getattr(
+                engine,
+                "REQUIRES_PLAYED_COUNTS",
+                False,
+            )
+        )
+
+        home_played_for_engine = None
+        away_played_for_engine = None
+
+        if requires_played_counts:
+            (
+                home_played_for_engine,
+                _home_points_for_engine,
+                _home_ppg_for_engine,
+            ) = calculate_team_ppg_before_match(
+                team=home,
+                source_league_id=home_source,
+                histories=histories,
+                match_date=match_date_value,
+            )
+
+            (
+                away_played_for_engine,
+                _away_points_for_engine,
+                _away_ppg_for_engine,
+            ) = calculate_team_ppg_before_match(
+                team=away,
+                source_league_id=away_source,
+                histories=histories,
+                match_date=match_date_value,
+            )
+
+            score = engine.calculate_score(
+                match_stats,
+                league_info,
+                home_played=home_played_for_engine,
+                away_played=away_played_for_engine,
+            )
+        else:
+            score = engine.calculate_score(
+                match_stats,
+                league_info,
+            )
 
         # ------------------------------------------------------------------
         # Driver contestuali opzionali dell'engine
@@ -768,6 +820,15 @@ def main() -> None:
     base_name = input_path.stem.replace("partite", "ranking")
 
     if args.engine == "all":
+        # Esegue tutti gli engine registrati nel factory, compresi quelli
+        # sperimentali (es. v20dev e v201dev).
+        #
+        # Gli engine sperimentali restano distinti concettualmente nel factory,
+        # ma operativamente vengono alimentati insieme agli altri così:
+        # - usano lo stesso input;
+        # - generano output e storico nello stesso formato;
+        # - il file delle partite viene archiviato una sola volta, soltanto
+        #   dopo che tutti gli engine hanno completato correttamente.
         engine_names = get_available_engines()
 
         # Prima di generare i nuovi ranking, archivia gli output precedenti
