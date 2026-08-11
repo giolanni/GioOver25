@@ -1,19 +1,19 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Backnang;1;1;0;0;5;0;5;3;3.0
-1;2;Oberachern;1;1;0;0;3;0;3;3;3.0
-1;3;Reutlingen;1;1;0;0;3;1;2;3;3.0
-1;4;Villingen;1;1;0;0;3;1;2;3;3.0
-1;5;Teningen;1;1;0;0;3;2;1;3;3.0
-1;6;Singen;1;1;0;0;1;0;1;3;3.0
-1;7;Essingen;1;0;1;0;1;1;0;1;1.0
-1;8;FC Holzhausen;1;0;1;0;1;1;0;1;1.0
-1;9;Pforzheim;1;0;1;0;1;1;0;1;1.0
-1;10;Young Boys Reutlingen;1;0;1;0;1;1;0;1;1.0
-1;11;Bahlinger;1;0;1;0;0;0;0;1;1.0
-1;12;Ravensburg;1;0;1;0;0;0;0;1;1.0
-1;13;Normannia Gmund;1;0;0;1;2;3;-1;0;0.0
-1;14;Neckarsulm;1;0;0;1;0;1;-1;0;0.0
-1;15;Balingen;1;0;0;1;1;3;-2;0;0.0
-1;16;Nottingen;1;0;0;1;1;3;-2;0;0.0
-1;17;Karlsruher II;1;0;0;1;0;3;-3;0;0.0
-1;18;1\. FC Muhlhausen;1;0;0;1;0;5;-5;0;0.0
+2;1;Backnang;1;1;0;0;5;0;5;3;3.0
+2;2;Oberachern;1;1;0;0;3;0;3;3;3.0
+2;3;Reutlingen;1;1;0;0;3;1;2;3;3.0
+2;4;Villingen;1;1;0;0;3;1;2;3;3.0
+2;5;Teningen;1;1;0;0;3;2;1;3;3.0
+2;6;Singen;1;1;0;0;1;0;1;3;3.0
+2;7;Bahlinger;2;0;2;0;1;1;0;2;1.0
+2;8;Essingen;1;0;1;0;1;1;0;1;1.0
+2;9;FC Holzhausen;1;0;1;0;1;1;0;1;1.0
+2;10;Pforzheim;1;0;1;0;1;1;0;1;1.0
+2;11;Young Boys Reutlingen;1;0;1;0;1;1;0;1;1.0
+2;12;Ravensburg;1;0;1;0;0;0;0;1;1.0
+2;13;Karlsruher II;2;0;1;1;1;4;-3;1;0.5
+2;14;Normannia Gmund;1;0;0;1;2;3;-1;0;0.0
+2;15;Neckarsulm;1;0;0;1;0;1;-1;0;0.0
+2;16;Balingen;1;0;0;1;1;3;-2;0;0.0
+2;17;Nottingen;1;0;0;1;1;3;-2;0;0.0
+2;18;1\. FC Muhlhausen;1;0;0;1;0;5;-5;0;0.0
