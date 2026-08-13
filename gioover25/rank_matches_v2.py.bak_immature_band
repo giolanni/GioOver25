@@ -61,13 +61,7 @@ RESULTS_DIR = Path("data/storico/risultati")
 OUTPUT_DIR = Path("data/output_ranking")
 INPUT_ARCHIVE_DIR = Path("data/input_partite/oldmatches")
 OUTPUT_ARCHIVE_NAME = "old_ranking"
-# Regola campione immaturo:
-# - HomePlayed + AwayPlayed < 4  -> partita esclusa
-# - totale >= 4 ma almeno una squadra < 5 gare -> score calcolato comunque
-#   e, se sarebbe ALTA, Band = IMM-ALTA-# dove # è il totale gare
-# - entrambe >= 5 -> fascia normale
-MIN_TOTAL_TEAM_MATCHES = 4
-MATURE_TEAM_MATCHES = 5
+MIN_COMPLETED_ROUNDS_PER_LEAGUE = 5
 REGISTRY_FILE = Path("data/league_registry.csv")
 
 FIELDNAMES = [
@@ -591,12 +585,42 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
         )
         histories = load_group_histories(group_league_ids)
 
-        # Se non esiste alcuno storico, Home + Away hanno complessivamente
-        # meno delle 4 gare minime richieste: la partita resta esclusa.
+        # Se non esiste ancora alcun file storico, la competizione è appena iniziata
+        # oppure non sono stati ancora acquisiti risultati.
+        #
+        # In questa situazione la lega equivale ad avere zero partite concluse:
+        # non deve interrompere l'elaborazione degli altri campionati, ma deve essere
+        # semplicemente esclusa dal ranking fino al raggiungimento della soglia minima.
         if not histories:
             print(
                 f"[SKIP] {league_id}: nessuno storico risultati disponibile "
-                f"(minimo {MIN_TOTAL_TEAM_MATCHES} gare complessive Home+Away)."
+                f"(0 partite concluse, minimo richiesto: 5)."
+            )
+            continue
+
+        # Per le leghe ordinarie il controllo usa lo storico della singola lega.
+        # Per play-in/playoff e CompetitionGroup usa gli storici divisionali
+        # disponibili, perché la fase dedicata può non avere ancora un file proprio.
+        readiness_matches = (
+            [
+                match
+                for source_matches in histories.values()
+                for match in source_matches
+            ]
+            if competition_group
+            else histories.get(league_id, [])
+        )
+
+        completed_rounds = count_completed_rounds_before(
+            readiness_matches,
+            match_date_value,
+        )
+
+        if completed_rounds < MIN_COMPLETED_ROUNDS_PER_LEAGUE:
+            print(
+                f"[SKIP] {league_id}: solo {completed_rounds} turni conclusi "
+                f"prima del {match_date_text}; minimo richiesto: "
+                f"{MIN_COMPLETED_ROUNDS_PER_LEAGUE}."
             )
             continue
 
@@ -619,47 +643,6 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
             match_date_value,
             fallback_league_id=fallback_league_id,
         )
-
-        # --------------------------------------------------------------
-        # MATURITÀ DEL CAMPIONE - valutata sulle due squadre.
-        # --------------------------------------------------------------
-        (
-            home_played,
-            home_points,
-            home_ppg,
-        ) = calculate_team_ppg_before_match(
-            team=home,
-            source_league_id=home_source,
-            histories=histories,
-            match_date=match_date_value,
-        )
-
-        (
-            away_played,
-            away_points,
-            away_ppg,
-        ) = calculate_team_ppg_before_match(
-            team=away,
-            source_league_id=away_source,
-            histories=histories,
-            match_date=match_date_value,
-        )
-
-        total_played = home_played + away_played
-
-        if total_played < MIN_TOTAL_TEAM_MATCHES:
-            print(
-                f"[SKIP] {league_id} | {home} - {away}: "
-                f"GP={home_played}/{away_played}, totale={total_played}; "
-                f"minimo richiesto: {MIN_TOTAL_TEAM_MATCHES}."
-            )
-            continue
-
-        immature_sample = (
-            home_played < MATURE_TEAM_MATCHES
-            or away_played < MATURE_TEAM_MATCHES
-        )
-
         # L'unione è sicura perché build_match_statistics filtra per squadra.
         statistics_matches = [
             match
@@ -752,6 +735,28 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
         )
 
         if callable(apply_contextual_band):
+            (
+                home_played,
+                home_points,
+                home_ppg,
+            ) = calculate_team_ppg_before_match(
+                team=home,
+                source_league_id=home_source,
+                histories=histories,
+                match_date=match_date_value,
+            )
+
+            (
+                away_played,
+                away_points,
+                away_ppg,
+            ) = calculate_team_ppg_before_match(
+                team=away,
+                source_league_id=away_source,
+                histories=histories,
+                match_date=match_date_value,
+            )
+
             base_band = score_value(
                 score,
                 "band",
@@ -774,26 +779,6 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
                     f"PPG={home_ppg:.3f}/{away_ppg:.3f} | "
                     f"gap={abs(home_ppg - away_ppg):.3f}"
                 )
-
-        # --------------------------------------------------------------
-        # CAMPIONE IMMATURO
-        # --------------------------------------------------------------
-        # Lo score resta invariato. Se almeno una squadra ha meno di 5 gare
-        # ma Home+Away totalizzano almeno 4 gare, una ALTA non viene certificata
-        # come ALTA piena: diventa IMM-ALTA-# (es. IMM-ALTA-7).
-        base_band = score_value(
-            score,
-            "band",
-        )
-
-        if immature_sample and base_band == "ALTA":
-            contextual_band = f"IMM-ALTA-{total_played}"
-
-            print(
-                f"[{engine_name}][IMM] {home} - {away}: "
-                f"ALTA -> {contextual_band} | "
-                f"GP={home_played}/{away_played} | totale={total_played}"
-            )
 
         results.append(build_output_row(
             prediction_date=prediction_date,
