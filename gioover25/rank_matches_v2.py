@@ -38,7 +38,10 @@ LIMITAZIONI
 -----------
 - Se una squadra compare in più LeagueId del gruppo, lo script sceglie la lega
   in cui possiede la partita storica più recente prima di MatchDate.
-- Se una squadra non viene trovata, viene sollevato un errore esplicito.
+- Se una squadra non possiede ancora alcuna partita storica precedente,
+  NON viene sollevato errore: viene trattata come squadra a 0 gare e sarà la
+  regola MIN_TOTAL_TEAM_MATCHES / IMM-ALTA a decidere se includere o scartare
+  la partita.
 ===============================================================================
 """
 
@@ -213,9 +216,11 @@ def find_team_source_league(
         )
         return fallback_league_id
 
-    raise ValueError(
-        f"Squadra non trovata negli storici del CompetitionGroup: {team}"
-    )
+    # Nei CompetitionGroup, se la squadra non compare ancora in nessuno
+    # storico precedente alla MatchDate, NON blocchiamo tutto il ranking.
+    # Restituiamo None: il chiamante potrà trattarla come squadra con 0 gare
+    # precedenti e applicare la regola di maturità del campione.
+    return None
 
 def _match_has_final_score(match) -> bool:
     """Restituisce True quando lo storico contiene un risultato concluso."""
@@ -619,6 +624,16 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
             match_date_value,
             fallback_league_id=fallback_league_id,
         )
+
+        # Se una squadra non ha ancora alcuno storico precedente nel
+        # CompetitionGroup, la consideriamo semplicemente a 0 gare.
+        # Per i conteggi di maturità usiamo comunque il LeagueId della partita
+        # come contenitore logico, senza inventare una divisione di origine.
+        if home_source is None:
+            home_source = league_id
+
+        if away_source is None:
+            away_source = league_id
 
         # --------------------------------------------------------------
         # MATURITÀ DEL CAMPIONE - valutata sulle due squadre.
