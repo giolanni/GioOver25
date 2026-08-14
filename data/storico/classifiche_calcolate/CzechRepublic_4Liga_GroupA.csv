@@ -1,15 +1,15 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Sobeslav;1;1;0;0;5;1;4;3;3.0
-1;2;Doubravka;1;1;0;0;3;1;2;3;3.0
-1;3;Spartak Pribram;1;1;0;0;3;1;2;3;3.0
-1;4;Rokycany;1;1;0;0;2;1;1;3;3.0
-1;5;Petrin Plzen;1;1;0;0;1;0;1;3;3.0
-1;6;Hluboka nad Vltavou;1;0;1;0;2;2;0;1;1.0
-1;7;Horovice;1;0;1;0;2;2;0;1;1.0
-1;8;FK Komarov;1;0;1;0;1;1;0;1;1.0
-1;9;Taborsko akademie;1;0;1;0;1;1;0;1;1.0
-1;10;Milevsko;1;0;0;1;1;2;-1;0;0.0
-1;11;Domazlice B;1;0;0;1;0;1;-1;0;0.0
-1;12;Krimice;1;0;0;1;1;3;-2;0;0.0
-1;13;SK Strakonice 1908;1;0;0;1;1;3;-2;0;0.0
-1;14;Cesky Krumlov;1;0;0;1;1;5;-4;0;0.0
+2;1;Horovice;2;1;1;0;4;3;1;4;2.0
+2;2;Hluboka nad Vltavou;2;1;1;0;3;2;1;4;2.0
+2;3;Sobeslav;2;1;0;1;6;3;3;3;1.5
+2;4;Doubravka;1;1;0;0;3;1;2;3;3.0
+2;5;Spartak Pribram;1;1;0;0;3;1;2;3;3.0
+2;6;Rokycany;1;1;0;0;2;1;1;3;3.0
+2;7;Petrin Plzen;2;1;0;1;1;1;0;3;1.5
+2;8;FK Komarov;1;0;1;0;1;1;0;1;1.0
+2;9;Taborsko akademie;1;0;1;0;1;1;0;1;1.0
+2;10;Milevsko;1;0;0;1;1;2;-1;0;0.0
+2;11;Domazlice B;1;0;0;1;0;1;-1;0;0.0
+2;12;Krimice;1;0;0;1;1;3;-2;0;0.0
+2;13;SK Strakonice 1908;1;0;0;1;1;3;-2;0;0.0
+2;14;Cesky Krumlov;1;0;0;1;1;5;-4;0;0.0

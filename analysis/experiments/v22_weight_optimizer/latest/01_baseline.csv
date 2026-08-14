@@ -1,0 +1,2 @@
+﻿ConfigId;Type;Overall_OK;Overall_KO;Overall_Total;Overall_HitRate;Overall_SampleClass;NoAU_OK;NoAU_KO;NoAU_Total;NoAU_HitRate;Train_OK;Train_KO;Train_Total;Train_HitRate;Test_OK;Test_KO;Test_Total;Test_HitRate;Test_SampleClass;TrainTestDelta;W_RankingGap;W_HomeAttack;W_AwayAttack;W_HomeDefenseWeakness;W_AwayDefenseWeakness;W_HomeLast10Over;W_AwayLast10Over;W_HomeVenueOver;W_AwayVenueOver;W_BTTSProfile
+BASE_V22;BASELINE;515;206;721;71.4286;100+;362;138;500;72.4;286;135;421;67.9335;229;71;300;76.3333;100+;8.3998;6.0;13.0;13.0;8.0;10.0;12.0;12.0;10.0;10.0;12.0

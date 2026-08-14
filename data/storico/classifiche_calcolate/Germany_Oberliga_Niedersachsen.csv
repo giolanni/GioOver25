@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Spelle-Venhaus;1;1;0;0;5;0;5;3;3.0
-1;2;Heeslinger;1;1;0;0;3;0;3;3;3.0
-1;3;Nordhorn;1;1;0;0;2;0;2;3;3.0
-1;4;Wilhelmshaven;1;1;0;0;2;0;2;3;3.0
-1;5;Braunschweig U23;1;1;0;0;3;2;1;3;3.0
-1;6;Vorsfelde;1;1;0;0;1;0;1;3;3.0
-1;7;Egestorf-Langreder;1;0;1;0;2;2;0;1;1.0
-1;8;Lohne;1;0;1;0;2;2;0;1;1.0
-1;9;BSV Rehden;1;0;1;0;0;0;0;1;1.0
-1;10;Bersenbruck;1;0;1;0;0;0;0;1;1.0
-1;11;Luneburger Hansa;1;0;0;1;2;3;-1;0;0.0
-1;12;Verden;1;0;0;1;0;1;-1;0;0.0
-1;13;Drochtersen/Assel II;1;0;0;1;0;2;-2;0;0.0
-1;14;Meppen II;1;0;0;1;0;2;-2;0;0.0
-1;15;Hemmingen;1;0;0;1;0;3;-3;0;0.0
-1;16;Hildesheim;1;0;0;1;0;5;-5;0;0.0
+2;1;Spelle-Venhaus;2;2;0;0;8;1;7;6;3.0
+2;2;Heeslinger;1;1;0;0;3;0;3;3;3.0
+2;3;Nordhorn;1;1;0;0;2;0;2;3;3.0
+2;4;Wilhelmshaven;1;1;0;0;2;0;2;3;3.0
+2;5;Braunschweig U23;1;1;0;0;3;2;1;3;3.0
+2;6;Vorsfelde;1;1;0;0;1;0;1;3;3.0
+2;7;Egestorf-Langreder;1;0;1;0;2;2;0;1;1.0
+2;8;BSV Rehden;1;0;1;0;0;0;0;1;1.0
+2;9;Bersenbruck;1;0;1;0;0;0;0;1;1.0
+2;10;Lohne;2;0;1;1;3;5;-2;1;0.5
+2;11;Luneburger Hansa;1;0;0;1;2;3;-1;0;0.0
+2;12;Verden;1;0;0;1;0;1;-1;0;0.0
+2;13;Drochtersen/Assel II;1;0;0;1;0;2;-2;0;0.0
+2;14;Meppen II;1;0;0;1;0;2;-2;0;0.0
+2;15;Hemmingen;1;0;0;1;0;3;-3;0;0.0
+2;16;Hildesheim;1;0;0;1;0;5;-5;0;0.0
