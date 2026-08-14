@@ -1,6 +1,5 @@
 ﻿LeagueId;Round;MatchDate;Home;Away;Status;Notes
 Kazakhstan_PremierLeague;?;2026-07-19;Ertis Pavlodar;FC Astana;POSTICIPATA;Postponed
-Australia_NPLNorthernNSW;20;2026-07-19;Charlestown Azzurri;Edgeworth E.;POSTICIPATA;
 Somalia_NationalLeague;25;2026-07-22;Gantaalaha Afgooye;Mogadishu City;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;?;2026-07-04;Sibbo-Vargarna;JäPS/47;RINVIATA;Postponed
 Finland_Kolmonen_Western_Group3;?;2026-06-28;Sporting Kristina;Saaripotku;RINVIATA;Postponed
@@ -18,11 +17,7 @@ Kyrgyzstan_PremierLiga;16;2026-07-08;Alga;Dordoi Bishkek;POSTICIPATA;
 Serbia_SuperLiga;?;2026-07-26;Radnicki 1923;Zeleznicar Pancevo;POSTICIPATA;
 USA_USLChampionship;?;2026-07-26;Birmingham;New Mexico;POSTICIPATA;
 Kazakhstan_PremierLeague;27;2026-07-12;Atyrau;Yelimay Semey;POSTICIPATA;
-Australia_NPLNorthernNSW;19;2026-07-14;Kahibah;Maitland;POSTICIPATA;
-Somalia_NationalLeague;?;2026-07-29;Jeenyo;Jazeera;POSTICIPATA;
-Somalia_NationalLeague;?;2026-07-29;Jubba;Gantaalaha Afgooye;POSTICIPATA;
 Somalia_NationalLeague;?;2026-07-30;Gaadiidka;Dekedaha;POSTICIPATA;
-Somalia_NationalLeague;?;2026-07-30;Mogadishu City;Heegan;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;?;2026-07-31;MK-United;JäPS/47;POSTICIPATA;
 Belarus_VysshayaLiga;?;2026-08-01;BATE;Neman;POSTICIPATA;
 Belarus_VysshayaLiga;?;2026-08-01;Din. Minsk;Slavia Mozyr;POSTICIPATA;
@@ -41,3 +36,6 @@ Austria_Karnten;?;2026-08-07;Dellach/Gail;Launsdorf;POSTICIPATA;
 Austria_Oberosterreich;?;2026-08-07;Ostermiething;Union Unis Gschwandt;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;?;2026-08-08;IF Sibbo Vargarna;MK-United;POSTICIPATA;Fonte: Annullata
 Finland_Kolmonen_Western_Group3;?;2026-08-07;FC Sääripotku;FC Ylivieska;POSTICIPATA;Fonte: Annullata
+Finland_Kolmonen_Western_Group3;;2026-08-12;KPV/Akatemia;Sp. Kristina;POSTICIPATA;Fonte: Interrotta sullo 0-0
+Finland_Kolmonen_Western_Group3;;2026-08-13;Sundom IF;FC Sääripotku;POSTICIPATA;Fonte: Annullata
+Kazakhstan_PremierLeague;;2026-08-09;Tobol;Kaisar;POSTICIPATA;

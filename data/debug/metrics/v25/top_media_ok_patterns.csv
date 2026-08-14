@@ -1,2 +1,2 @@
 ﻿metric_name;family;description;occurrences;alta_ok;alta_ko;media_ok;media_ko;other;over_total;under_total;over_precision;coverage;alta_ko_capture;alta_ok_capture;media_ok_capture;media_ko_capture;alta_ko_lift;media_ok_precision;media_ok_lift;exclusion_efficiency;promotion_efficiency
-attack_gap_ge_8;attacco;attack_gap >= 8;72;12;5;21;4;30;33;9;0.7857142857142857;0.05024424284717376;0.02702702702702703;0.024844720496894408;0.046875;0.012618296529968454;1.0620031796502385;0.84;1.434375;0.29411764705882354;0.84
+attack_gap_ge_8;attacco;attack_gap >= 8;74;14;5;21;4;30;35;9;0.7954545454545454;0.050340136054421766;0.026595744680851064;0.028056112224448898;0.04565217391304348;0.01238390092879257;0.961646136618141;0.84;1.4298260869565216;0.2631578947368421;0.84
