@@ -1,71 +1,78 @@
 ﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
-USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-06-25;Los Angeles FC 2;Minnesota 2;1;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-06-27;Portland Timbers 2;San Jose Earthquakes II;2;3;
-USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-06-28;Ventura County;Real Monarchs;3;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;2;2026-05-24;Los Angeles FC 2;St. Louis City 2;1;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;2;2026-06-14;Ventura County;Colorado Rapids 2;1;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;2;2026-06-18;Vancouver 2;San Jose Earthquakes II;3;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;2;2026-06-22;Tacoma Defiance;Real Monarchs;1;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;3;2026-06-11;Vancouver 2;North Texas;1;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;3;2026-06-13;Real Monarchs;Portland Timbers 2;4;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;3;2026-06-18;Tacoma Defiance;Houston Dynamo 2;2;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;4;2026-06-06;Vancouver 2;Portland Timbers 2;0;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;4;2026-06-07;Ventura County;Houston Dynamo 2;3;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;4;2026-06-08;San Jose Earthquakes II;Real Monarchs;3;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;5;2026-05-30;Real Monarchs;Sporting Kansas City II;1;3;
-USA;MLS Next Pro - Western Conference - Pacific Division;5;2026-05-31;Portland Timbers 2;Tacoma Defiance;1;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;5;2026-05-31;Ventura County;Vancouver 2;2;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;6;2026-05-23;Tacoma Defiance;Ventura County;1;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;6;2026-05-24;Portland Timbers 2;Houston Dynamo 2;0;3;
-USA;MLS Next Pro - Western Conference - Pacific Division;6;2026-05-25;Vancouver 2;Real Monarchs;1;3;
-USA;MLS Next Pro - Western Conference - Pacific Division;7;2026-05-17;Los Angeles FC 2;Ventura County;3;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;7;2026-05-18;San Jose Earthquakes II;Portland Timbers 2;0;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;7;2026-05-18;Vancouver 2;Tacoma Defiance;0;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;7;2026-05-21;Real Monarchs;Colorado Rapids 2;2;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;8;2026-05-14;Portland Timbers 2;Minnesota 2;2;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;8;2026-05-14;Real Monarchs;San Jose Earthquakes II;1;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;9;2026-05-09;San Jose Earthquakes II;Vancouver 2;6;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;9;2026-05-10;Los Angeles FC 2;Real Monarchs;3;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;9;2026-05-10;Portland Timbers 2;Ventura County;3;3;
-USA;MLS Next Pro - Western Conference - Pacific Division;10;2026-04-19;Portland Timbers 2;North Texas;2;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;10;2026-04-19;Real Monarchs;Houston Dynamo 2;0;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;10;2026-05-02;Ventura County;San Jose Earthquakes II;1;3;
-USA;MLS Next Pro - Western Conference - Pacific Division;10;2026-05-04;Los Angeles FC 2;Vancouver 2;2;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;11;2026-04-19;Ventura County;Austin FC II;1;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;11;2026-04-27;Tacoma Defiance;Los Angeles FC 2;4;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;11;2026-04-27;Vancouver 2;Colorado Rapids 2;1;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;12;2026-04-18;Tacoma Defiance;St. Louis City 2;1;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;12;2026-04-20;Los Angeles FC 2;San Jose Earthquakes II;2;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;13;2026-03-16;Ventura County;St. Louis City 2;2;3;
-USA;MLS Next Pro - Western Conference - Pacific Division;13;2026-03-23;Tacoma Defiance;Austin FC II;0;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;13;2026-04-13;San Jose Earthquakes II;Minnesota 2;1;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;13;2026-04-16;Los Angeles FC 2;Portland Timbers 2;0;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;14;2026-03-15;Tacoma Defiance;San Jose Earthquakes II;0;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;14;2026-03-29;Vancouver 2;Los Angeles FC 2;2;3;
-USA;MLS Next Pro - Western Conference - Pacific Division;15;2026-03-22;Real Monarchs;Vancouver 2;3;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;16;2026-03-15;Real Monarchs;Los Angeles FC 2;2;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;16;2026-03-16;Vancouver 2;Minnesota 2;2;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;17;2026-03-01;Real Monarchs;North Texas;2;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;17;2026-03-08;Portland Timbers 2;Vancouver 2;0;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;17;2026-03-09;San Jose Earthquakes II;Los Angeles FC 2;4;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;18;2026-06-29;Los Angeles FC 2;Houston Dynamo 2;3;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;18;2026-06-30;Colorado Rapids 2;Vancouver 2;1;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;18;2026-07-06;Tacoma Defiance;Portland Timbers 2;0;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;19;2026-07-06;Los Angeles FC 2;Real Monarchs;2;2;After penalties 8-9
-USA;MLS Next Pro - Western Conference - Pacific Division;20;2026-07-08;San Jose Earthquakes II;Sporting Kansas City II;6;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;20;2026-07-08;Vancouver 2;Ventura County;3;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;20;2026-07-12;Los Angeles FC 2;Portland Timbers 2;0;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;20;2026-07-12;Real Monarchs;Vancouver 2;2;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;21;2026-07-13;San Jose Earthquakes II;Tacoma Defiance;0;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;21;2026-07-19;Ventura County;Los Angeles FC 2;2;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;21;2026-07-23;Vancouver 2;Austin FC II;0;4;
-USA;MLS Next Pro - Western Conference - Pacific Division;22;2026-07-19;San Jose Earthquakes II;North Texas;0;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;22;2026-07-20;Real Monarchs;Tacoma Defiance;2;4;
-USA;MLS Next Pro - Western Conference - Pacific Division;23;2026-07-26;Portland Timbers 2;Real Monarchs;1;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;23;2026-07-26;Ventura County;San Jose Earthquakes II;3;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;23;2026-07-28;Tacoma Defiance;Colorado Rapids 2;2;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;24;2026-08-01;Los Angeles FC 2;Colorado Rapids 2;3;0;
-USA;MLS Next Pro - Western Conference - Pacific Division;24;2026-08-01;Ventura County;North Texas;6;1;
-USA;MLS Next Pro - Western Conference - Pacific Division;24;2026-08-02;Tacoma Defiance;Vancouver 2;4;2;
-USA;MLS Next Pro - Western Conference - Pacific Division;24;2026-08-03;San Jose Earthquakes II;Austin FC II;1;1;Dopo Rigori
-USA;MLS Next Pro - Western Conference - Pacific Division;25;2026-08-08;Portland Timbers 2;Los Angeles FC 2;0;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-08-01;Ventura County;North Texas;6;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-08-02;Tacoma Defiance;Vancouver 2;4;2;
+USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-08-03;San Jose Earthquakes 2;Austin FC 2;1;1;Dopo Rigori 3-4
+USA;MLS Next Pro - Western Conference - Pacific Division;1;2026-08-08;Portland Timbers 2;Los Angeles FC 2;0;0;Dopo Rigori 8-7
+USA;MLS Next Pro - Western Conference - Pacific Division;2;2026-07-23;Vancouver 2;Austin FC 2;0;4;
+USA;MLS Next Pro - Western Conference - Pacific Division;2;2026-07-26;Portland Timbers 2;Real Monarchs;1;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;2;2026-07-26;Ventura County;San Jose Earthquakes 2;3;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;2;2026-08-01;Los Angeles FC 2;Colorado Rapids 2;3;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;3;2026-07-19;San Jose Earthquakes 2;North Texas;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;3;2026-07-19;Ventura County;Los Angeles FC 2;2;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;3;2026-07-27;Tacoma Defiance;Colorado Rapids 2;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;4;2026-07-12;Los Angeles FC 2;Portland Timbers 2;0;0;Dopo Rigori 2-4
+USA;MLS Next Pro - Western Conference - Pacific Division;4;2026-07-20;Real Monarchs;Tacoma Defiance;2;4;
+USA;MLS Next Pro - Western Conference - Pacific Division;5;2026-07-12;Real Monarchs;Vancouver 2;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;5;2026-07-13;San Jose Earthquakes 2;Tacoma Defiance;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;6;2026-07-06;Los Angeles FC 2;Real Monarchs;2;2;Dopo Rigori 8-9
+USA;MLS Next Pro - Western Conference - Pacific Division;6;2026-07-06;Tacoma Defiance;Portland Timbers 2;0;2;
+USA;MLS Next Pro - Western Conference - Pacific Division;6;2026-07-08;San Jose Earthquakes 2;Sporting Kansas City 2;6;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;6;2026-07-08;Vancouver 2;Ventura County;3;2;
+USA;MLS Next Pro - Western Conference - Pacific Division;7;2026-06-27;Portland Timbers 2;San Jose Earthquakes 2;2;3;
+USA;MLS Next Pro - Western Conference - Pacific Division;7;2026-06-28;Ventura County;Real Monarchs;3;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;7;2026-06-29;Los Angeles FC 2;Houston Dynamo 2;3;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;8;2026-06-14;Ventura County;Colorado Rapids 2;1;1;Dopo Rigori 4-5
+USA;MLS Next Pro - Western Conference - Pacific Division;8;2026-06-18;Vancouver 2;San Jose Earthquakes 2;3;2;
+USA;MLS Next Pro - Western Conference - Pacific Division;8;2026-06-22;Tacoma Defiance;Real Monarchs;1;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;8;2026-06-25;Los Angeles FC 2;Minnesota 2;1;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;9;2026-05-24;Los Angeles FC 2;St. Louis City 2;1;1;Dopo Rigori 7-6
+USA;MLS Next Pro - Western Conference - Pacific Division;9;2026-06-11;Vancouver 2;North Texas;1;1;Dopo Rigori 4-3
+USA;MLS Next Pro - Western Conference - Pacific Division;9;2026-06-13;Real Monarchs;Portland Timbers 2;4;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;9;2026-06-18;Tacoma Defiance;Houston Dynamo 2;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;10;2026-06-06;Vancouver 2;Portland Timbers 2;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;10;2026-06-07;Ventura County;Houston Dynamo 2;3;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;10;2026-06-08;San Jose Earthquakes 2;Real Monarchs;3;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;11;2026-05-30;Real Monarchs;Sporting Kansas City 2;1;3;
+USA;MLS Next Pro - Western Conference - Pacific Division;11;2026-05-31;Portland Timbers 2;Tacoma Defiance;1;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;11;2026-05-31;Ventura County;Vancouver 2;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;12;2026-05-23;Tacoma Defiance;Ventura County;1;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;12;2026-05-24;Portland Timbers 2;Houston Dynamo 2;0;3;
+USA;MLS Next Pro - Western Conference - Pacific Division;12;2026-05-25;Vancouver 2;Real Monarchs;1;3;
+USA;MLS Next Pro - Western Conference - Pacific Division;13;2026-05-17;Los Angeles FC 2;Ventura County;3;2;
+USA;MLS Next Pro - Western Conference - Pacific Division;13;2026-05-18;San Jose Earthquakes 2;Portland Timbers 2;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;13;2026-05-18;Vancouver 2;Tacoma Defiance;0;2;
+USA;MLS Next Pro - Western Conference - Pacific Division;13;2026-05-21;Real Monarchs;Colorado Rapids 2;2;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;14;2026-05-14;Portland Timbers 2;Minnesota 2;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;14;2026-05-14;Real Monarchs;San Jose Earthquakes 2;1;1;Dopo Rigori 4-3
+USA;MLS Next Pro - Western Conference - Pacific Division;15;2026-05-09;San Jose Earthquakes 2;Vancouver 2;6;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;15;2026-05-10;Los Angeles FC 2;Real Monarchs;3;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;15;2026-05-10;Portland Timbers 2;Ventura County;3;3;Dopo Rigori 6-7
+USA;MLS Next Pro - Western Conference - Pacific Division;16;2026-05-02;Ventura County;San Jose Earthquakes 2;1;3;
+USA;MLS Next Pro - Western Conference - Pacific Division;16;2026-05-03;Real Monarchs;Portland Timbers 2;0;3;
+USA;MLS Next Pro - Western Conference - Pacific Division;16;2026-05-04;Los Angeles FC 2;Vancouver 2;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;17;2026-04-19;Portland Timbers 2;North Texas;2;2;Dopo Rigori 3-5
+USA;MLS Next Pro - Western Conference - Pacific Division;17;2026-04-19;Real Monarchs;Houston Dynamo 2;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;17;2026-04-19;Ventura County;Austin FC 2;1;1;Dopo Rigori 1-3
+USA;MLS Next Pro - Western Conference - Pacific Division;17;2026-04-27;Tacoma Defiance;Los Angeles FC 2;4;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;17;2026-04-27;Vancouver 2;Colorado Rapids 2;1;1;Dopo Rigori 3-2
+USA;MLS Next Pro - Western Conference - Pacific Division;18;2026-04-13;Ventura County;Real Monarchs;2;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;18;2026-04-18;Tacoma Defiance;St. Louis City 2;1;2;
+USA;MLS Next Pro - Western Conference - Pacific Division;18;2026-04-20;Los Angeles FC 2;San Jose Earthquakes 2;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;19;2026-04-13;San Jose Earthquakes 2;Minnesota 2;1;0;
+USA;MLS Next Pro - Western Conference - Pacific Division;19;2026-04-13;Vancouver 2;Tacoma Defiance;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;19;2026-04-16;Los Angeles FC 2;Portland Timbers 2;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;20;2026-03-29;Vancouver 2;Los Angeles FC 2;2;3;
+USA;MLS Next Pro - Western Conference - Pacific Division;20;2026-03-30;Tacoma Defiance;Ventura County;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;21;2026-03-22;Real Monarchs;Vancouver 2;3;2;
+USA;MLS Next Pro - Western Conference - Pacific Division;21;2026-03-23;Tacoma Defiance;Austin FC 2;0;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;21;2026-03-24;Portland Timbers 2;Ventura County;0;0;Dopo Rigori 7-8
+USA;MLS Next Pro - Western Conference - Pacific Division;22;2026-03-15;Real Monarchs;Los Angeles FC 2;2;2;Dopo Rigori 5-4
+USA;MLS Next Pro - Western Conference - Pacific Division;22;2026-03-15;Tacoma Defiance;San Jose Earthquakes 2;0;0;Dopo Rigori 4-1
+USA;MLS Next Pro - Western Conference - Pacific Division;22;2026-03-16;Vancouver 2;Minnesota 2;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;22;2026-03-16;Ventura County;St. Louis City 2;2;3;
+USA;MLS Next Pro - Western Conference - Pacific Division;23;2026-03-01;Real Monarchs;North Texas;2;2;Dopo Rigori 4-3
+USA;MLS Next Pro - Western Conference - Pacific Division;23;2026-03-08;Portland Timbers 2;Vancouver 2;0;0;Dopo Rigori 7-6
+USA;MLS Next Pro - Western Conference - Pacific Division;23;2026-03-09;San Jose Earthquakes 2;Los Angeles FC 2;4;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;24;2026-03-01;Portland Timbers 2;San Jose Earthquakes 2;2;1;
+USA;MLS Next Pro - Western Conference - Pacific Division;24;2026-03-02;Tacoma Defiance;Los Angeles FC 2;2;2;Dopo Rigori 1-4
+USA;MLS Next Pro - Western Conference - Pacific Division;24;2026-03-02;Ventura County;Vancouver 2;4;2;

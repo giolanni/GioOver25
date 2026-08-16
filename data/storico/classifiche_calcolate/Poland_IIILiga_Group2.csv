@@ -1,19 +1,19 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 3;1;Sroda;3;3;0;0;8;1;7;9;3.0
 3;2;Luzino;3;2;1;0;10;4;6;7;2.333
-3;3;KKS Kalisz;2;2;0;0;2;0;2;6;3.0
-3;4;Lech II;2;1;1;0;6;3;3;4;2.0
-3;5;Gedania Gdansk;2;1;1;0;7;5;2;4;2.0
-3;6;Kluczevia Stargard;2;1;1;0;5;4;1;4;2.0
-3;7;Wda Swiecie;2;1;1;0;3;2;1;4;2.0
-3;8;Grom Nowy Staw;2;1;0;1;4;3;1;3;1.5
-3;9;Swinoujscie;2;1;0;1;2;1;1;3;1.5
-3;10;Notec Czarnkow;3;1;0;2;6;7;-1;3;1.0
-3;11;Unia Swarzedz;3;1;0;2;3;6;-3;3;1.0
-3;12;Elana Torun;2;0;2;0;3;3;0;2;1.0
-3;13;Chemik Bydgoszcz;3;0;2;1;5;8;-3;2;0.667
-3;14;Blekitni Stargard;2;0;1;1;2;3;-1;1;0.5
-3;15;Lipno Steszew;2;0;1;1;2;3;-1;1;0.5
-3;16;Koszalin;2;0;1;1;1;4;-3;1;0.5
-3;17;Wrzesnia;3;0;0;3;3;9;-6;0;0.0
-3;18;Kotwica Kornik;2;0;0;2;2;8;-6;0;0.0
+3;3;Kluczevia Stargard;3;2;1;0;9;5;4;7;2.333
+3;4;KKS Kalisz;3;2;1;0;4;2;2;7;2.333
+3;5;Swinoujscie;3;2;0;1;4;2;2;6;2.0
+3;6;Gedania Gdansk;3;1;2;0;8;6;2;5;1.667
+3;7;Elana Torun;3;1;2;0;5;4;1;5;1.667
+3;8;Wda Swiecie;3;1;2;0;4;3;1;5;1.667
+3;9;Lech II;3;1;1;1;8;7;1;4;1.333
+3;10;Blekitni Stargard;3;1;1;1;6;5;1;4;1.333
+3;11;Grom Nowy Staw;3;1;0;2;5;5;0;3;1.0
+3;12;Notec Czarnkow;3;1;0;2;6;7;-1;3;1.0
+3;13;Unia Swarzedz;3;1;0;2;3;6;-3;3;1.0
+3;14;Chemik Bydgoszcz;3;0;2;1;5;8;-3;2;0.667
+3;15;Lipno Steszew;3;0;1;2;3;7;-4;1;0.333
+3;16;Koszalin;3;0;1;2;2;6;-4;1;0.333
+3;17;Kotwica Kornik;3;0;1;2;4;10;-6;1;0.333
+3;18;Wrzesnia;3;0;0;3;3;9;-6;0;0.0

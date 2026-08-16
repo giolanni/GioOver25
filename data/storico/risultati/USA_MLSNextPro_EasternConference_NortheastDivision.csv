@@ -1,82 +1,89 @@
 ﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
-USA;MLS Next Pro - Eastern Conference - Northeast Division;1;2026-06-22;Columbus Crew 2;Atlanta United 2;3;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;1;2026-06-27;Connecticut FC;New York City II;1;4;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;1;2026-06-28;Toronto FC II;New England Revolution II;1;3;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;2;2026-06-19;Connecticut FC;Cincinnati 2;4;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;2;2026-06-21;New England Revolution II;Chicago Fire II;1;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;2;2026-06-22;New York City II;Chattanooga;1;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;2;2026-06-22;New York Red Bulls II;Toronto FC II;5;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;3;2026-06-14;New England Revolution II;New York Red Bulls II;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;3;2026-06-14;Toronto FC II;Connecticut FC;2;4;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;3;2026-06-15;Cincinnati 2;Columbus Crew 2;0;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;3;2026-06-18;New York City II;Carolina Core;3;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;4;2026-06-06;Toronto FC II;Huntsville;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;4;2026-06-08;Cincinnati 2;New England Revolution II;0;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;4;2026-06-08;Columbus Crew 2;Connecticut FC;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;4;2026-06-14;Philadelphia II;New York City II;0;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;5;2026-05-17;New England Revolution II;Orlando City B;1;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;5;2026-05-25;New York Red Bulls II;Connecticut FC;1;3;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;5;2026-05-30;Toronto FC II;Philadelphia II;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;5;2026-05-31;New York City II;Columbus Crew 2;2;3;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;6;2026-05-23;Philadelphia II;Atlanta United 2;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;6;2026-05-24;New York City II;Cincinnati 2;2;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;6;2026-05-25;Columbus Crew 2;Toronto FC II;2;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;7;2026-05-17;Connecticut FC;Toronto FC II;0;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;7;2026-05-17;Philadelphia II;Columbus Crew 2;1;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;7;2026-05-18;Cincinnati 2;Chattanooga;1;3;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;7;2026-05-18;New York Red Bulls II;New York City II;2;3;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;8;2026-05-04;Columbus Crew 2;Inter Miami II;3;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;8;2026-05-08;Toronto FC II;New York Red Bulls II;1;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;8;2026-05-14;Philadelphia II;New England Revolution II;0;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;9;2026-05-03;Philadelphia II;New York Red Bulls II;1;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;9;2026-05-04;Cincinnati 2;Toronto FC II;5;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;9;2026-05-10;New England Revolution II;New York City II;3;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;10;2026-04-26;New York Red Bulls II;Columbus Crew 2;4;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;10;2026-05-04;Connecticut FC;New England Revolution II;0;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;10;2026-05-06;New York City II;Chicago Fire II;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;11;2026-04-18;Columbus Crew 2;New England Revolution II;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;11;2026-04-19;New York Red Bulls II;Cincinnati 2;3;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;11;2026-04-25;Toronto FC II;New York City II;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;11;2026-04-26;Connecticut FC;Philadelphia II;1;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;12;2026-04-12;Philadelphia II;Carolina Core;4;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;12;2026-04-12;Toronto FC II;Crown Legacy;3;3;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;12;2026-04-19;New York City II;Connecticut FC;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;13;2026-03-22;New York Red Bulls II;Philadelphia II;1;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;13;2026-04-11;Connecticut FC;Columbus Crew 2;1;3;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;13;2026-04-13;Cincinnati 2;New York City II;1;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;14;2026-03-19;New York City II;Toronto FC II;0;5;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;14;2026-03-21;Columbus Crew 2;Cincinnati 2;2;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;14;2026-03-22;New England Revolution II;Connecticut FC;2;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;15;2026-03-15;New England Revolution II;Cincinnati 2;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;15;2026-03-15;New York City II;New York Red Bulls II;1;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;15;2026-03-15;Philadelphia II;Connecticut FC;1;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;16;2026-03-08;Columbus Crew 2;New York City II;0;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;16;2026-03-08;New England Revolution II;Toronto FC II;0;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;16;2026-03-08;Philadelphia II;Cincinnati 2;1;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;16;2026-03-09;New York Red Bulls II;Inter Miami II;3;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;17;2026-02-28;Philadelphia II;Toronto FC II;1;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;17;2026-03-02;Cincinnati 2;Connecticut FC;1;3;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;17;2026-03-02;New England Revolution II;Atlanta United 2;1;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;18;2026-06-29;Cincinnati 2;Inter Miami II;1;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;18;2026-07-06;Connecticut FC;Carolina Core;3;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;18;2026-07-06;New England Revolution II;Philadelphia II;0;4;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;19;2026-07-06;Cincinnati 2;New York Red Bulls II;2;2;After penalties 5-4
-USA;MLS Next Pro - Eastern Conference - Northeast Division;19;2026-07-12;Philadelphia II;Huntsville;0;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;19;2026-07-13;Connecticut FC;Toronto FC II;3;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;19;2026-07-16;New England Revolution II;Columbus Crew 2;2;2;After penalties 3-4
-USA;MLS Next Pro - Eastern Conference - Northeast Division;20;2026-07-12;Chicago Fire II;New York Red Bulls II;3;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;20;2026-07-18;Toronto FC II;Cincinnati 2;3;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;20;2026-07-19;Columbus Crew 2;Philadelphia II;2;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;20;2026-07-23;New England Revolution II;New York City II;3;0;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;21;2026-07-20;Connecticut FC;New York Red Bulls II;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;21;2026-07-28;Cincinnati 2;New England Revolution II;2;2;Dopo Rigori
-USA;MLS Next Pro - Eastern Conference - Northeast Division;21;2026-08-02;New York City II;Philadelphia II;1;1;Dopo Rigori
-USA;MLS Next Pro - Eastern Conference - Northeast Division;22;2026-07-25;New York Red Bulls II;Crown Legacy;0;3;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;22;2026-07-28;Connecticut FC;Columbus Crew 2;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;22;2026-08-02;Chicago Fire II;Cincinnati 2;7;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;23;2026-08-02;Connecticut FC;Orlando City B;4;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;23;2026-08-02;New York Red Bulls II;New England Revolution II;1;4;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;23;2026-08-08;Philadelphia II;Cincinnati 2;2;1;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;24;2026-08-09;Columbus Crew 2;New York Red Bulls II;1;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;24;2026-08-09;Connecticut FC;New England Revolution II;1;2;
-USA;MLS Next Pro - Eastern Conference - Northeast Division;24;2026-08-11;New York City II;Orlando City B;3;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;1;2026-08-08;Philadelphia 2;Cincinnati 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;1;2026-08-09;Connecticut FC;New England Revolution 2;1;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;1;2026-08-15;Toronto FC 2;Chattanooga;2;2;Dopo Rigori 5-4
+USA;MLS Next Pro - Eastern Conference - Northeast Division;1;2026-08-16;Columbus Crew 2;New York City 2;4;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;2;2026-08-09;Columbus Crew 2;New York Red Bulls 2;1;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;2;2026-08-11;New York City 2;Orlando City B;3;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;3;2026-08-02;Connecticut FC;Orlando City B;4;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;3;2026-08-02;New York City 2;Philadelphia 2;1;1;Dopo Rigori 8-7
+USA;MLS Next Pro - Eastern Conference - Northeast Division;3;2026-08-02;New York Red Bulls 2;New England Revolution 2;1;4;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;4;2026-07-25;New York Red Bulls 2;Crown Legacy;0;3;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;4;2026-07-27;Cincinnati 2;New England Revolution 2;2;2;Dopo Rigori 4-1
+USA;MLS Next Pro - Eastern Conference - Northeast Division;4;2026-07-27;Connecticut FC;Columbus Crew 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;5;2026-07-18;Toronto FC 2;Cincinnati 2;3;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;5;2026-07-19;Columbus Crew 2;Philadelphia 2;2;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;5;2026-07-20;Connecticut FC;New York Red Bulls 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;5;2026-07-23;New England Revolution 2;New York City 2;3;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;6;2026-07-12;Philadelphia 2;Huntsville;0;0;Dopo Rigori 5-3
+USA;MLS Next Pro - Eastern Conference - Northeast Division;6;2026-07-13;Cincinnati 2;Orlando City B;1;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;6;2026-07-13;Connecticut FC;Toronto FC 2;3;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;6;2026-07-16;New England Revolution 2;Columbus Crew 2;2;2;Dopo Rigori 3-4
+USA;MLS Next Pro - Eastern Conference - Northeast Division;7;2026-06-22;Columbus Crew 2;Atlanta United 2;3;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;7;2026-07-05;New England Revolution 2;Philadelphia 2;0;4;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;7;2026-07-06;Cincinnati 2;New York Red Bulls 2;2;2;Dopo Rigori 5-4
+USA;MLS Next Pro - Eastern Conference - Northeast Division;7;2026-07-06;Connecticut FC;Carolina Core;3;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;8;2026-06-27;Connecticut FC;New York City 2;1;4;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;8;2026-06-28;Toronto FC 2;New England Revolution 2;1;3;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;8;2026-06-29;Cincinnati 2;Inter Miami 2;1;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;8;2026-06-29;New York Red Bulls 2;Philadelphia 2;5;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;9;2026-06-19;Connecticut FC;Cincinnati 2;4;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;9;2026-06-21;New England Revolution 2;Chicago Fire 2;1;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;9;2026-06-22;New York City 2;Chattanooga;1;1;Dopo Rigori 4-5
+USA;MLS Next Pro - Eastern Conference - Northeast Division;9;2026-06-22;New York Red Bulls 2;Toronto FC 2;5;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;10;2026-06-14;New England Revolution 2;New York Red Bulls 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;10;2026-06-14;Toronto FC 2;Connecticut FC;2;4;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;10;2026-06-15;Cincinnati 2;Columbus Crew 2;0;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;10;2026-06-18;New York City 2;Carolina Core;3;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;11;2026-06-06;Toronto FC 2;Huntsville;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;11;2026-06-08;Cincinnati 2;New England Revolution 2;0;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;11;2026-06-08;Columbus Crew 2;Connecticut FC;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;11;2026-06-14;Philadelphia 2;New York City 2;0;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;12;2026-05-17;New England Revolution 2;Orlando City B;1;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;12;2026-05-25;New York Red Bulls 2;Connecticut FC;1;3;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;12;2026-05-30;Toronto FC 2;Philadelphia 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;12;2026-05-31;New York City 2;Columbus Crew 2;2;3;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;13;2026-05-23;Philadelphia 2;Atlanta United 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;13;2026-05-24;New York City 2;Cincinnati 2;2;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;13;2026-05-25;Columbus Crew 2;Toronto FC 2;2;2;Dopo Rigori 1-3
+USA;MLS Next Pro - Eastern Conference - Northeast Division;14;2026-05-17;Connecticut FC;Toronto FC 2;0;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;14;2026-05-17;Philadelphia 2;Columbus Crew 2;1;1;Dopo Rigori 7-8
+USA;MLS Next Pro - Eastern Conference - Northeast Division;14;2026-05-18;Cincinnati 2;Chattanooga;1;3;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;14;2026-05-18;New York Red Bulls 2;New York City 2;2;3;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;15;2026-05-08;Toronto FC 2;New York Red Bulls 2;1;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;15;2026-05-11;Cincinnati 2;Columbus Crew 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;15;2026-05-14;Philadelphia 2;New England Revolution 2;0;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;16;2026-05-03;Philadelphia 2;New York Red Bulls 2;1;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;16;2026-05-04;Cincinnati 2;Toronto FC 2;5;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;16;2026-05-04;Columbus Crew 2;Inter Miami 2;3;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;16;2026-05-10;New England Revolution 2;New York City 2;3;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;17;2026-04-26;New York Red Bulls 2;Columbus Crew 2;4;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;17;2026-05-04;Connecticut FC;New England Revolution 2;0;0;Dopo Rigori 6-5
+USA;MLS Next Pro - Eastern Conference - Northeast Division;17;2026-05-06;New York City 2;Chicago Fire 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;18;2026-04-18;Columbus Crew 2;New England Revolution 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;18;2026-04-19;New York Red Bulls 2;Cincinnati 2;3;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;18;2026-04-25;Toronto FC 2;New York City 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;18;2026-04-26;Connecticut FC;Philadelphia 2;1;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;19;2026-04-13;New England Revolution 2;New York Red Bulls 2;1;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;19;2026-04-18;Toronto FC 2;Philadelphia 2;1;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;19;2026-04-19;New York City 2;Connecticut FC;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;20;2026-04-11;Connecticut FC;Columbus Crew 2;1;3;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;20;2026-04-12;Philadelphia 2;Carolina Core;4;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;20;2026-04-12;Toronto FC 2;Crown Legacy;3;3;Dopo Rigori 1-3
+USA;MLS Next Pro - Eastern Conference - Northeast Division;20;2026-04-13;Cincinnati 2;New York City 2;1;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;21;2026-03-19;New York City 2;Toronto FC 2;0;5;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;21;2026-03-21;Columbus Crew 2;Cincinnati 2;2;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;21;2026-03-22;New England Revolution 2;Connecticut FC;2;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;21;2026-03-22;New York Red Bulls 2;Philadelphia 2;1;1;Dopo Rigori 3-4
+USA;MLS Next Pro - Eastern Conference - Northeast Division;22;2026-03-15;Columbus Crew 2;Toronto FC 2;3;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;22;2026-03-15;New England Revolution 2;Cincinnati 2;2;1;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;22;2026-03-15;New York City 2;New York Red Bulls 2;1;1;Dopo Rigori 5-4
+USA;MLS Next Pro - Eastern Conference - Northeast Division;22;2026-03-15;Philadelphia 2;Connecticut FC;1;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;23;2026-03-08;Columbus Crew 2;New York City 2;0;0;Dopo Rigori 5-4
+USA;MLS Next Pro - Eastern Conference - Northeast Division;23;2026-03-08;New England Revolution 2;Toronto FC 2;0;0;Dopo Rigori 7-6
+USA;MLS Next Pro - Eastern Conference - Northeast Division;23;2026-03-08;Philadelphia 2;Cincinnati 2;1;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;23;2026-03-09;New York Red Bulls 2;Inter Miami 2;3;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;24;2026-02-28;Philadelphia 2;Toronto FC 2;1;0;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;24;2026-03-01;New York Red Bulls 2;Columbus Crew 2;4;2;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;24;2026-03-02;Cincinnati 2;Connecticut FC;1;3;
+USA;MLS Next Pro - Eastern Conference - Northeast Division;24;2026-03-02;New England Revolution 2;Atlanta United 2;1;1;Dopo Rigori 4-2

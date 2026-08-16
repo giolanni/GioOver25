@@ -1,8 +1,8 @@
 """
 GioOver2.5 - engines/factory.py
 
-Gli engine sperimentali sono selezionabili esplicitamente ma separati
-dagli engine ufficiali usati da --engine all.
+Engine ufficiali e sperimentali.
+I nuovi strong-defense DEV sono congelati dal 16/08/2026.
 """
 
 from . import (
@@ -10,14 +10,18 @@ from . import (
     v20,
     v20dev,
     v201dev,
+    v202dev,
     v21,
     v21dev,
     v22,
+    v22dev,
     v23,
     v24,
     v25,
+    v25dev,
     v251,
     v26,
+    v26dev,
 )
 
 OFFICIAL_ENGINES = {
@@ -36,6 +40,10 @@ OFFICIAL_ENGINES = {
 EXPERIMENTAL_ENGINES = {
     "v20dev": v20dev,
     "v201dev": v201dev,
+    "v202dev": v202dev,
+    "v22dev": v22dev,
+    "v25dev": v25dev,
+    "v26dev": v26dev,
 }
 
 ENGINES = {

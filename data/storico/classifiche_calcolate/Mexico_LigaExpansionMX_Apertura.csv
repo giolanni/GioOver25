@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-3;1;Correcaminos;3;2;1;0;9;5;4;7;2.333
-3;2;Venados;3;2;1;0;7;3;4;7;2.333
-3;3;Piratas;3;2;1;0;4;0;4;7;2.333
-3;4;Atl. Morelia;3;2;0;1;8;4;4;6;2.0
-3;5;Leones Negros;3;2;0;1;7;5;2;6;2.0
-3;6;Alacranes;3;2;0;1;2;3;-1;6;2.0
-3;7;Zacatecas Mineros;3;1;2;0;8;6;2;5;1.667
-3;8;Dorados;2;1;1;0;4;2;2;4;2.0
-3;9;Jaiba Brava;3;1;1;1;3;1;2;4;1.333
-3;10;Tapatio;3;1;1;1;3;3;0;4;1.333
-3;11;Atletico La Paz;3;1;0;2;7;5;2;3;1.0
-3;12;Alebrijes Oaxaca;3;1;0;2;2;5;-3;3;1.0
-3;13;Cruz Azul Hidalgo;3;0;2;1;1;4;-3;2;0.667
-3;14;Cancun;2;0;0;2;1;6;-5;0;0.0
-3;15;Tlaxcala;3;0;0;3;3;9;-6;0;0.0
-3;16;Tepatitlan de Morelos;3;0;0;3;1;9;-8;0;0.0
+4;1;Atl. Morelia;4;3;0;1;10;5;5;9;2.25
+4;2;Zacatecas Mineros;4;2;2;0;13;7;6;8;2.0
+4;3;Correcaminos;4;2;1;1;11;8;3;7;1.75
+4;4;Piratas;4;2;1;1;4;2;2;7;1.75
+4;5;Tapatio;4;2;1;1;6;5;1;7;1.75
+4;6;Venados;4;2;1;1;8;8;0;7;1.75
+4;7;Atletico La Paz;4;2;0;2;9;5;4;6;1.5
+4;8;Leones Negros;3;2;0;1;7;5;2;6;2.0
+4;9;Alacranes;3;2;0;1;2;3;-1;6;2.0
+4;10;Dorados;2;1;1;0;4;2;2;4;2.0
+4;11;Jaiba Brava;3;1;1;1;3;1;2;4;1.333
+4;12;Alebrijes Oaxaca;3;1;0;2;2;5;-3;3;1.0
+4;13;Cruz Azul Hidalgo;4;0;2;2;2;6;-4;2;0.5
+4;14;Cancun;2;0;0;2;1;6;-5;0;0.0
+4;15;Tlaxcala;3;0;0;3;3;9;-6;0;0.0
+4;16;Tepatitlan de Morelos;3;0;0;3;1;9;-8;0;0.0

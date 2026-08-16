@@ -1,25 +1,25 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-29;1;Blacktown Spartans;29;21;5;3;79;35;44;68;2.345
-29;2;Northern Tigers;28;16;7;5;50;28;22;55;1.964
-29;3;Bankstown City Lions;28;15;6;7;53;42;11;51;1.821
-29;4;Macarthur Rams;28;15;6;7;39;30;9;51;1.821
-29;5;Canterbury Bankstown;27;12;6;9;61;48;13;42;1.556
-29;6;Hills United;27;11;7;9;49;43;6;40;1.481
-29;7;Hakoah Sydney;27;10;9;8;54;42;12;39;1.444
-29;8;Rydalmere Lions;27;10;8;9;39;38;1;38;1.407
-29;9;Bulls Academy;27;11;3;13;49;44;5;36;1.333
-29;10;Hurstville Zagreb;27;9;6;12;40;45;-5;33;1.222
-29;11;Inter Lions;27;8;5;14;34;52;-18;29;1.074
-29;12;Newcastle Jets U23;27;6;10;11;49;58;-9;28;1.037
-29;13;Central Coast Mariners U23;27;7;7;13;43;55;-12;28;1.037
-29;14;Dulwich Hill;27;6;9;12;35;52;-17;27;1.0
-29;15;Prospect United;27;2;14;11;26;47;-21;20;0.741
-29;16;Western City Rangers;27;5;5;17;30;62;-32;20;0.741
-29;17;Mt Druitt Town Rangers;1;1;0;0;3;2;1;3;3.0
-29;18;Rydalmere;2;1;0;1;3;4;-1;3;1.5
-29;19;Dulwich Hill FC;1;0;1;0;2;2;0;1;1.0
-29;20;Inter Lions FC;1;0;0;1;2;3;-1;0;0.0
-29;21;Northbridge FC Bulls;1;0;0;1;2;3;-1;0;0.0
-29;22;Central Coast Mariners Youth;1;0;0;1;1;2;-1;0;0.0
-29;23;Hills United FC;1;0;0;1;1;2;-1;0;0.0
-29;24;Newcastle Jets Youth;1;0;0;1;2;7;-5;0;0.0
+30;1;Blacktown Spartans;30;22;5;3;81;35;46;71;2.367
+30;2;Northern Tigers;29;16;8;5;51;29;22;56;1.931
+30;3;Bankstown City Lions;29;15;6;8;53;44;9;51;1.759
+30;4;Macarthur Rams;29;15;6;8;39;32;7;51;1.759
+30;5;Canterbury Bankstown;28;13;6;9;65;51;14;45;1.607
+30;6;Hills United;28;12;7;9;51;44;7;43;1.536
+30;7;Hakoah Sydney;28;10;9;9;57;46;11;39;1.393
+30;8;Rydalmere Lions;28;10;8;10;39;41;-2;38;1.357
+30;9;Bulls Academy;28;11;4;13;50;45;5;37;1.321
+30;10;Hurstville Zagreb;27;9;6;12;40;45;-5;33;1.222
+30;11;Inter Lions;28;9;5;14;36;52;-16;32;1.143
+30;12;Dulwich Hill;28;7;9;12;38;53;-15;30;1.071
+30;13;Newcastle Jets U23;28;6;10;12;50;61;-11;28;1.0
+30;14;Central Coast Mariners U23;27;7;7;13;43;55;-12;28;1.037
+30;15;Prospect United;28;3;14;11;29;47;-18;23;0.821
+30;16;Western City Rangers;28;5;5;18;31;64;-33;20;0.714
+30;17;Mt Druitt Town Rangers;1;1;0;0;3;2;1;3;3.0
+30;18;Rydalmere;2;1;0;1;3;4;-1;3;1.5
+30;19;Dulwich Hill FC;1;0;1;0;2;2;0;1;1.0
+30;20;Inter Lions FC;1;0;0;1;2;3;-1;0;0.0
+30;21;Northbridge FC Bulls;1;0;0;1;2;3;-1;0;0.0
+30;22;Central Coast Mariners Youth;1;0;0;1;1;2;-1;0;0.0
+30;23;Hills United FC;1;0;0;1;1;2;-1;0;0.0
+30;24;Newcastle Jets Youth;1;0;0;1;2;7;-5;0;0.0

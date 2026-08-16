@@ -389,6 +389,87 @@ def calculate_team_ppg_before_match(
     )
 
 
+
+def calculate_team_ga_last5_before_match(
+    *,
+    team: str,
+    source_league_id: str,
+    histories: dict[str, list],
+    match_date: date | None,
+) -> float | None:
+    """
+    Media gol subiti nelle ultime 5 gare concluse precedenti alla MatchDate.
+
+    Restituisce None se la squadra non dispone di almeno 5 gare precedenti.
+    La funzione viene usata esclusivamente dagli engine che espongono:
+        REQUIRES_DEFENSE_LAST5 = True
+    """
+
+    matches = histories.get(source_league_id, [])
+    canonical_team = normalize_team_name(
+        source_league_id,
+        team,
+    )
+
+    observations = []
+
+    for match in matches:
+        current_date = _match_date(match)
+
+        if current_date is None:
+            continue
+
+        if (
+            match_date is not None
+            and current_date >= match_date
+        ):
+            continue
+
+        goals = _match_goals(match)
+
+        if goals is None:
+            continue
+
+        home_goals, away_goals = goals
+
+        historical_home = normalize_team_name(
+            source_league_id,
+            getattr(match, "home", ""),
+        )
+
+        historical_away = normalize_team_name(
+            source_league_id,
+            getattr(match, "away", ""),
+        )
+
+        if canonical_team == historical_home:
+            observations.append(
+                (current_date, away_goals)
+            )
+
+        elif canonical_team == historical_away:
+            observations.append(
+                (current_date, home_goals)
+            )
+
+    observations.sort(
+        key=lambda item: item[0]
+    )
+
+    recent = observations[-5:]
+
+    if len(recent) < 5:
+        return None
+
+    return round(
+        sum(
+            goals_against
+            for _, goals_against in recent
+        ) / 5.0,
+        4,
+    )
+
+
 def count_completed_rounds_before(
     matches: list,
     match_date: date | None,
@@ -712,6 +793,16 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
         home_played_for_engine = None
         away_played_for_engine = None
 
+        requires_defense_last5 = bool(
+            getattr(
+                engine,
+                "REQUIRES_DEFENSE_LAST5",
+                False,
+            )
+        )
+
+        engine_kwargs = {}
+
         if requires_played_counts:
             (
                 home_played_for_engine,
@@ -735,17 +826,32 @@ def rank_matches(input_file: str | Path, output_file: str | Path, engine_name: s
                 match_date=match_date_value,
             )
 
-            score = engine.calculate_score(
-                match_stats,
-                league_info,
+            engine_kwargs.update(
                 home_played=home_played_for_engine,
                 away_played=away_played_for_engine,
             )
-        else:
-            score = engine.calculate_score(
-                match_stats,
-                league_info,
+
+        if requires_defense_last5:
+            engine_kwargs.update(
+                home_ga_last5=calculate_team_ga_last5_before_match(
+                    team=home,
+                    source_league_id=home_source,
+                    histories=histories,
+                    match_date=match_date_value,
+                ),
+                away_ga_last5=calculate_team_ga_last5_before_match(
+                    team=away,
+                    source_league_id=away_source,
+                    histories=histories,
+                    match_date=match_date_value,
+                ),
             )
+
+        score = engine.calculate_score(
+            match_stats,
+            league_info,
+            **engine_kwargs,
+        )
 
         # ------------------------------------------------------------------
         # Driver contestuali opzionali dell'engine

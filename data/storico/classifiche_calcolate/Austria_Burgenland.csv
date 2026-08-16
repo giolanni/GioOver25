@@ -1,10 +1,10 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-2;1;Bad Sauerbrunn;2;1;1;0;5;2;3;4;2.0
-2;2;Neusiedl;2;1;1;0;4;2;2;4;2.0
-2;3;Leithaprodersdorf;2;1;1;0;5;4;1;4;2.0
-2;4;Klingenbach;2;1;1;0;3;2;1;4;2.0
-2;5;Deutschkreutz;2;1;1;0;2;1;1;4;2.0
-2;6;Margarethen;1;1;0;0;3;1;2;3;3.0
+2;1;Margarethen;2;2;0;0;5;1;4;6;3.0
+2;2;Bad Sauerbrunn;2;1;1;0;5;2;3;4;2.0
+2;3;Neusiedl;2;1;1;0;4;2;2;4;2.0
+2;4;Leithaprodersdorf;2;1;1;0;5;4;1;4;2.0
+2;5;Klingenbach;2;1;1;0;3;2;1;4;2.0
+2;6;Deutschkreutz;2;1;1;0;2;1;1;4;2.0
 2;7;Oberpullendorf;2;1;0;1;3;1;2;3;1.5
 2;8;Halbturn;2;1;0;1;3;3;0;3;1.5
 2;9;Pama;2;1;0;1;2;3;-1;3;1.5
@@ -14,4 +14,4 @@
 2;13;Neudorf/Parndorf;2;0;1;1;0;3;-3;1;0.5
 2;14;Edelserpentin;1;0;0;1;2;3;-1;0;0.0
 2;15;Rust;2;0;0;2;3;6;-3;0;0.0
-2;16;Lackenbach;1;0;0;1;0;3;-3;0;0.0
+2;16;Lackenbach;2;0;0;2;0;5;-5;0;0.0

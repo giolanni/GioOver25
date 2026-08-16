@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-4;1;Rapid Lubeck;3;3;0;0;9;4;5;9;3.0
-4;2;Kiel II;4;2;1;1;12;6;6;7;1.75
-4;3;VfR Neumunster;3;2;1;0;6;2;4;7;2.333
-4;4;Kilia Kiel;3;2;1;0;8;5;3;7;2.333
-4;5;Flensburg;3;2;0;1;13;5;8;6;2.0
-4;6;Phonix Lubeck B;3;2;0;1;9;8;1;6;2.0
-4;7;Nordmark Satrup;3;2;0;1;8;7;1;6;2.0
-4;8;Hohenwestedt;4;1;1;2;11;13;-2;4;1.0
-4;9;Oldenburger;3;1;1;1;7;9;-2;4;1.333
-4;10;Rotenhof;3;1;1;1;7;9;-2;4;1.333
-4;11;PSV Neumunster;3;1;1;1;4;6;-2;4;1.333
-4;12;Kaltenkirchen;3;1;0;2;4;5;-1;3;1.0
+4;1;Rapid Lubeck;4;4;0;0;11;4;7;12;3.0
+4;2;Phonix Lubeck B;4;3;0;1;11;9;2;9;2.25
+4;3;Kiel II;4;2;1;1;12;6;6;7;1.75
+4;4;VfR Neumunster;3;2;1;0;6;2;4;7;2.333
+4;5;Kilia Kiel;3;2;1;0;8;5;3;7;2.333
+4;6;Oldenburger;4;2;1;1;10;10;0;7;1.75
+4;7;Flensburg;3;2;0;1;13;5;8;6;2.0
+4;8;Nordmark Satrup;4;2;0;2;9;10;-1;6;1.5
+4;9;Rotenhof;4;1;2;1;9;11;-2;5;1.25
+4;10;PSV Neumunster;4;1;2;1;6;8;-2;5;1.25
+4;11;Hohenwestedt;4;1;1;2;11;13;-2;4;1.0
+4;12;Kaltenkirchen;4;1;0;3;5;7;-2;3;0.75
 4;13;Eckernforder SV;4;1;0;3;7;10;-3;3;0.75
 4;14;Heider SV;3;1;0;2;5;10;-5;3;1.0
 4;15;Eichede;4;0;1;3;5;8;-3;1;0.25
-4;16;Lubeck II;3;0;0;3;4;12;-8;0;0.0
+4;16;Lubeck II;4;0;0;4;4;14;-10;0;0.0
