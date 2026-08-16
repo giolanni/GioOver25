@@ -33,38 +33,94 @@ def _ensure_team(table: dict[str, TeamStanding], team: str) -> TeamStanding:
 
 def calculate_standings_after_round(
     matches: list[MatchResult],
-    round_number: int
+    round_number: int,
+    included_teams: set[str] | None = None,
 ) -> list[TeamStanding]:
+    """
+    Calcola la classifica dopo il round indicato.
+
+    Comportamento standard
+    ----------------------
+    Se ``included_teams`` non viene specificato, il comportamento resta
+    identico a quello storico: tutte le squadre presenti nelle partite
+    contribuiscono alla classifica.
+
+    Classifiche divisionali con gare inter-divisione
+    ------------------------------------------------
+    Se ``included_teams`` contiene un insieme di squadre, vengono mostrate e
+    classificate soltanto quelle squadre, MA valgono comunque anche le partite
+    disputate contro avversarie esterne all'insieme.
+
+    Questo è necessario, ad esempio, per MLS Next Pro: una squadra appartiene
+    a una divisione ma può giocare partite valide per la propria classifica
+    contro squadre di altre divisioni.
+
+    Esempio:
+        included_teams = {"Toronto FC 2", "Columbus Crew 2", ...}
+
+    Una partita Toronto FC 2 - Chattanooga viene quindi conteggiata per
+    Toronto, senza inserire Chattanooga nella classifica Northeast.
+    """
+
     table: dict[str, TeamStanding] = {}
 
     filtered_matches = [m for m in matches if m.round <= round_number]
 
     for match in filtered_matches:
-        home = _ensure_team(table, match.home)
-        away = _ensure_team(table, match.away)
+        include_home = (
+            included_teams is None
+            or match.home in included_teams
+        )
+        include_away = (
+            included_teams is None
+            or match.away in included_teams
+        )
 
-        home.played += 1
-        away.played += 1
+        # Se nessuna delle due squadre appartiene alla classifica richiesta,
+        # la partita non ha alcun effetto su questa classifica.
+        if not include_home and not include_away:
+            continue
 
-        home.gf += match.home_goals
-        home.ga += match.away_goals
+        home = (
+            _ensure_team(table, match.home)
+            if include_home
+            else None
+        )
+        away = (
+            _ensure_team(table, match.away)
+            if include_away
+            else None
+        )
 
-        away.gf += match.away_goals
-        away.ga += match.home_goals
+        # Statistiche della squadra di casa, se inclusa nella classifica.
+        if home is not None:
+            home.played += 1
+            home.gf += match.home_goals
+            home.ga += match.away_goals
 
-        if match.home_goals > match.away_goals:
-            home.wins += 1
-            away.losses += 1
-            home.points += 3
-        elif match.home_goals < match.away_goals:
-            away.wins += 1
-            home.losses += 1
-            away.points += 3
-        else:
-            home.draws += 1
-            away.draws += 1
-            home.points += 1
-            away.points += 1
+            if match.home_goals > match.away_goals:
+                home.wins += 1
+                home.points += 3
+            elif match.home_goals < match.away_goals:
+                home.losses += 1
+            else:
+                home.draws += 1
+                home.points += 1
+
+        # Statistiche della squadra ospite, se inclusa nella classifica.
+        if away is not None:
+            away.played += 1
+            away.gf += match.away_goals
+            away.ga += match.home_goals
+
+            if match.away_goals > match.home_goals:
+                away.wins += 1
+                away.points += 3
+            elif match.away_goals < match.home_goals:
+                away.losses += 1
+            else:
+                away.draws += 1
+                away.points += 1
 
     standings = list(table.values())
 
