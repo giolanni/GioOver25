@@ -16,7 +16,6 @@ TEAM_ALIASES: dict[str, dict[str, str]] = {
         "fc blackbird": "fc jyvaskyla blackbird",
     },
     "Finland_Kolmonen_Eastern_Group3": {
-        "mikkelin palloilijat 2": "mikkelin palloilijat ii",
         "kouvolan jalkapallo": "kjp",
     },
     "Finland_Kolmonen_Western_Group3": {
@@ -28,9 +27,37 @@ TEAM_ALIASES: dict[str, dict[str, str]] = {
 }
 
 
+def canonicalize_team_display_name(value: object) -> str:
+    """Restituisce il nome squadra nella forma canonica persistibile.
+
+    Regola globale GioOver2.5:
+    - il suffisso finale ``II`` (o il carattere unicode ``Ⅱ``) viene sempre
+      convertito in ``2``;
+    - un nome che termina già in ``2`` resta invariato;
+    - la sostituzione riguarda solo il token finale, quindi non modifica
+      sequenze ``ii`` presenti all'interno di altre parole.
+
+    Esempi:
+        New York Red Bulls II -> New York Red Bulls 2
+        Sporting Kansas City Ⅱ -> Sporting Kansas City 2
+        Zimbru 2 -> Zimbru 2
+    """
+
+    text = " ".join(str(value or "").strip().split())
+
+    if not text:
+        return text
+
+    return re.sub(
+        r"(?i)\s+(?:II|Ⅱ)$",
+        " 2",
+        text,
+    )
+
+
 def _basic_normalize(value: object) -> str:
     """Normalizza grafia, maiuscole, accenti e separatori."""
-    text = str(value or "").casefold().strip()
+    text = canonicalize_team_display_name(value).casefold().strip()
     text = unicodedata.normalize("NFKD", text)
     text = text.encode("ascii", "ignore").decode("ascii")
     text = re.sub(r"[._/\\'’`-]+", " ", text)

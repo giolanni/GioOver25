@@ -49,7 +49,7 @@ from .match_statistics import build_match_statistics
 from .registry import get_league_info
 from .ranking_history import append_predictions
 from .engines.factory import get_engine, get_available_engines
-from .team_names import normalize_team_name
+from .team_names import canonicalize_team_display_name, normalize_team_name
 
 
 INPUT_REQUIRED_COLUMNS = {"LeagueId", "MatchDate", "Home", "Away"}
@@ -96,7 +96,7 @@ FIELDNAMES = [
 
 
 def _normalize_team(value: str) -> str:
-    return " ".join(str(value or "").strip().casefold().split())
+    return canonicalize_team_display_name(value).casefold()
 
 
 def _parse_date(value) -> date | None:
@@ -293,7 +293,7 @@ def get_mls_next_pro_division_team_names(
                 getattr(match, "home", ""),
                 getattr(match, "away", ""),
             ):
-                name = str(value or "").strip()
+                name = canonicalize_team_display_name(value)
                 if name and _normalize_team(name) in member_keys:
                     names.add(name)
 
@@ -541,7 +541,13 @@ def read_matches_to_rank(path: str | Path) -> list[dict]:
             + ", ".join(sorted(missing))
         )
 
-    return list(reader)
+    rows = list(reader)
+
+    for row in rows:
+        row["Home"] = canonicalize_team_display_name(row.get("Home", ""))
+        row["Away"] = canonicalize_team_display_name(row.get("Away", ""))
+
+    return rows
 
 
 def build_output_row(
@@ -562,8 +568,8 @@ def build_output_row(
     return {
         "MatchDate": match_date,
         "LeagueId": league_id,
-        "Home": home,
-        "Away": away,
+        "Home": canonicalize_team_display_name(home),
+        "Away": canonicalize_team_display_name(away),
         "Score": score_value(score, "score"),
         "Band": (
             band_override
@@ -658,8 +664,8 @@ def rank_matches(
         league_id = row["LeagueId"].strip()
         match_date_text = row["MatchDate"].strip()
         match_date_value = _parse_date(match_date_text)
-        home = row["Home"].strip()
-        away = row["Away"].strip()
+        home = canonicalize_team_display_name(row["Home"])
+        away = canonicalize_team_display_name(row["Away"])
 
         league_info = get_league_info(league_id)
         competition_group = get_competition_group(league_id, registry_rows)

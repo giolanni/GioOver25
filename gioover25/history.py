@@ -2,6 +2,8 @@ import csv
 from dataclasses import dataclass
 from pathlib import Path
 
+from .team_names import canonicalize_team_display_name
+
 
 @dataclass
 class MatchResult:
@@ -17,6 +19,12 @@ class MatchResult:
     # Compatibilità temporanea con codice non ancora bonificato.
     # Non viene più letto né scritto nei file risultati.
     season: int = 0
+
+    def __post_init__(self) -> None:
+        # Regola canonica GioOver2.5: una seconda squadra indicata con suffisso
+        # II viene sempre trattata e persistita come suffisso 2.
+        self.home = canonicalize_team_display_name(self.home)
+        self.away = canonicalize_team_display_name(self.away)
 
     @property
     def result(self) -> str:
@@ -136,8 +144,8 @@ def write_results_file(matches: list[MatchResult], path: str | Path) -> None:
                     "League": match.league,
                     "Round": match.round,
                     "MatchDate": match.date,
-                    "Home": match.home,
-                    "Away": match.away,
+                    "Home": canonicalize_team_display_name(match.home),
+                    "Away": canonicalize_team_display_name(match.away),
                     "HG": match.home_goals,
                     "AG": match.away_goals,
                     "Notes": match.notes,
