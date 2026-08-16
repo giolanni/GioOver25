@@ -356,31 +356,48 @@ def build_match_statistics(
     away_team: str,
     before_round: int,
     standing_teams: set[str] | None = None,
+    home_standing_teams: set[str] | None = None,
+    away_standing_teams: set[str] | None = None,
 ) -> MatchStatistics:
     """
     Costruisce le statistiche della partita e neutralizza i gap non affidabili.
 
-    ``standing_teams`` è opzionale e, quando valorizzato, limita soltanto la
-    classifica usata per position/points/PPG. Le statistiche di Home e Away
-    continuano invece a utilizzare tutte le partite ricevute, comprese le gare
-    contro squadre esterne alla divisione.
+    ``standing_teams`` resta disponibile per retrocompatibilità e applica lo
+    stesso insieme a entrambe le squadre.
+
+    ``home_standing_teams`` e ``away_standing_teams`` permettono invece di
+    usare classifiche differenti per Home e Away. È il caso di MLS Next Pro:
+    una partita inter-divisione deve confrontare ciascuna squadra con la
+    posizione e il PPG della propria divisione, pur usando tutte le gare per
+    le statistiche offensive/difensive.
 
     Se una squadra non ha ancora disputato gare, non viene trattata come
     automaticamente ultima: la sua posizione viene temporaneamente allineata
     a quella dell'altra squadra per evitare gap artificiali enormi.
     """
 
+    effective_home_standing_teams = (
+        home_standing_teams
+        if home_standing_teams is not None
+        else standing_teams
+    )
+    effective_away_standing_teams = (
+        away_standing_teams
+        if away_standing_teams is not None
+        else standing_teams
+    )
+
     home = build_team_context(
         matches,
         home_team,
         before_round,
-        standing_teams=standing_teams,
+        standing_teams=effective_home_standing_teams,
     )
     away = build_team_context(
         matches,
         away_team,
         before_round,
-        standing_teams=standing_teams,
+        standing_teams=effective_away_standing_teams,
     )
 
     home_has_history = home.overall.played > 0
