@@ -102,15 +102,26 @@ class MatchStatistics:
 def _get_standing_map(
     matches: list[MatchResult],
     before_round: int,
+    included_teams: set[str] | None = None,
 ) -> dict[str, dict]:
     """
     Ricostruisce la classifica prima del round da analizzare.
+
+    ``included_teams`` è opzionale. Se presente, limita la classifica alle
+    sole squadre indicate, continuando però a conteggiare per esse anche le
+    gare disputate contro avversarie esterne all'insieme. Questo permette di
+    rappresentare correttamente competizioni con classifiche divisionali e
+    partite inter-divisione, come MLS Next Pro.
 
     La funzione restituisce un dizionario indicizzato per nome squadra così da
     recuperare rapidamente posizione, punti e PPG.
     """
 
-    standings = calculate_standings_after_round(matches, before_round - 1)
+    standings = calculate_standings_after_round(
+        matches,
+        before_round - 1,
+        included_teams=included_teams,
+    )
     result: dict[str, dict] = {}
 
     for position, standing in enumerate(standings, start=1):
@@ -121,7 +132,6 @@ def _get_standing_map(
         }
 
     return result
-
 
 
 
@@ -269,16 +279,24 @@ def build_team_context(
     matches: list[MatchResult],
     team: str,
     before_round: int,
+    standing_teams: set[str] | None = None,
 ) -> TeamMatchContext:
     """
     Costruisce il contesto completo di una squadra prima della partita.
 
-    Le statistiche `overall`, `last5`, `last10`, `home` e `away` sono quelle
-    tradizionali del progetto. Lo stato restart viene aggiunto senza alterare
-    i calcoli preesistenti.
+    Le statistiche `overall`, `last5`, `last10`, `home` e `away` sono sempre
+    calcolate su tutte le partite ricevute. ``standing_teams`` influenza solo
+    la ricostruzione della classifica (posizione, punti e PPG), non le
+    statistiche offensive/difensive della squadra.
+
+    Lo stato restart viene aggiunto senza alterare i calcoli preesistenti.
     """
 
-    standing_map = _get_standing_map(matches, before_round)
+    standing_map = _get_standing_map(
+        matches,
+        before_round,
+        included_teams=standing_teams,
+    )
 
     standing = standing_map.get(
         team,
@@ -337,17 +355,33 @@ def build_match_statistics(
     home_team: str,
     away_team: str,
     before_round: int,
+    standing_teams: set[str] | None = None,
 ) -> MatchStatistics:
     """
     Costruisce le statistiche della partita e neutralizza i gap non affidabili.
+
+    ``standing_teams`` è opzionale e, quando valorizzato, limita soltanto la
+    classifica usata per position/points/PPG. Le statistiche di Home e Away
+    continuano invece a utilizzare tutte le partite ricevute, comprese le gare
+    contro squadre esterne alla divisione.
 
     Se una squadra non ha ancora disputato gare, non viene trattata come
     automaticamente ultima: la sua posizione viene temporaneamente allineata
     a quella dell'altra squadra per evitare gap artificiali enormi.
     """
 
-    home = build_team_context(matches, home_team, before_round)
-    away = build_team_context(matches, away_team, before_round)
+    home = build_team_context(
+        matches,
+        home_team,
+        before_round,
+        standing_teams=standing_teams,
+    )
+    away = build_team_context(
+        matches,
+        away_team,
+        before_round,
+        standing_teams=standing_teams,
+    )
 
     home_has_history = home.overall.played > 0
     away_has_history = away.overall.played > 0
