@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-2;1;Domazlice;2;1;1;0;3;2;1;4;2.0
-2;2;Ceske Budejovice;1;1;0;0;5;0;5;3;3.0
-2;3;Motorlet Prague;1;1;0;0;3;0;3;3;3.0
-2;4;Pisek;1;1;0;0;3;0;3;3;3.0
-2;5;Slavia Praga U20;1;1;0;0;2;0;2;3;3.0
-2;6;Loko Praha;1;1;0;0;1;0;1;3;3.0
-2;7;Aritma Prague;2;0;2;0;0;0;0;2;1.0
-2;8;Kraluv Dvur;1;0;1;0;2;2;0;1;1.0
-2;9;Plzen B;1;0;1;0;2;2;0;1;1.0
-2;10;Sparta Praga B;1;0;1;0;2;2;0;1;1.0
-2;11;Benesov;2;0;1;1;0;1;-1;1;0.5
-2;12;Povltavska FA;2;0;1;1;0;3;-3;1;0.5
-2;13;Dukla Praga B;1;0;0;1;0;1;-1;0;0.0
-2;14;Pribram B;1;0;0;1;0;2;-2;0;0.0
-2;15;Bohemians 1905 B;1;0;0;1;0;3;-3;0;0.0
-2;16;Admira Prague;1;0;0;1;0;5;-5;0;0.0
+2;1;Ceske Budejovice;2;2;0;0;7;0;7;6;3.0
+2;2;Pisek;2;1;1;0;5;2;3;4;2.0
+2;3;Kraluv Dvur;2;1;1;0;5;3;2;4;2.0
+2;4;Slavia Praga U20;2;1;1;0;2;0;2;4;2.0
+2;5;Domazlice;2;1;1;0;3;2;1;4;2.0
+2;6;Loko Praha;2;1;1;0;3;2;1;4;2.0
+2;7;Plzen B;2;1;1;0;3;2;1;4;2.0
+2;8;Motorlet Prague;2;1;0;1;3;1;2;3;1.5
+2;9;Admira Prague;2;1;0;1;1;5;-4;3;1.5
+2;10;Aritma Prague;2;0;2;0;0;0;0;2;1.0
+2;11;Sparta Praga B;2;0;1;1;2;3;-1;1;0.5
+2;12;Benesov;2;0;1;1;0;1;-1;1;0.5
+2;13;Bohemians 1905 B;2;0;1;1;0;3;-3;1;0.5
+2;14;Povltavska FA;2;0;1;1;0;3;-3;1;0.5
+2;15;Dukla Praga B;2;0;0;2;1;4;-3;0;0.0
+2;16;Pribram B;2;0;0;2;0;4;-4;0;0.0

@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-2;1;Siedenbollentin;2;1;0;1;4;3;1;3;1.5
-2;2;Lichtenberg;1;1;0;0;3;2;1;3;3.0
-2;3;Schwerin;1;1;0;0;2;1;1;3;3.0
-2;4;Wismar;1;1;0;0;1;0;1;3;3.0
-2;5;Neustrelitz;2;1;0;1;5;5;0;3;1.5
-2;6;Mahlsdorf;2;1;0;1;1;2;-1;3;1.5
-2;7;Stendal;1;0;1;0;2;2;0;1;1.0
-2;8;TB Berlin;1;0;1;0;2;2;0;1;1.0
-2;9;Hansa Rostock II;1;0;1;0;1;1;0;1;1.0
-2;10;Klosterfelde;1;0;1;0;1;1;0;1;1.0
-2;11;Reinickendorfer Fuchse;1;0;1;0;1;1;0;1;1.0
-2;12;Sparta Lichtenberg;1;0;1;0;1;1;0;1;1.0
-2;13;Berliner AK 07;1;0;1;0;0;0;0;1;1.0
-2;14;Rathenow;2;0;1;1;0;1;-1;1;0.5
-2;15;Makkabi Berlin;1;0;0;1;1;2;-1;0;0.0
-2;16;Hertha Zehlendorf;1;0;0;1;0;1;-1;0;0.0
+2;1;Wismar;2;2;0;0;4;2;2;6;3.0
+2;2;Klosterfelde;2;1;1;0;3;2;1;4;2.0
+2;3;Schwerin;2;1;1;0;3;2;1;4;2.0
+2;4;Berliner AK 07;2;1;1;0;2;1;1;4;2.0
+2;5;Siedenbollentin;2;1;0;1;4;3;1;3;1.5
+2;6;Hertha Zehlendorf;2;1;0;1;2;1;1;3;1.5
+2;7;Neustrelitz;2;1;0;1;5;5;0;3;1.5
+2;8;Lichtenberg;2;1;0;1;4;4;0;3;1.5
+2;9;Mahlsdorf;2;1;0;1;1;2;-1;3;1.5
+2;10;Sparta Lichtenberg;2;0;2;0;2;2;0;2;1.0
+2;11;TB Berlin;2;0;2;0;2;2;0;2;1.0
+2;12;Stendal;2;0;1;1;4;5;-1;1;0.5
+2;13;Reinickendorfer Fuchse;2;0;1;1;2;3;-1;1;0.5
+2;14;Makkabi Berlin;2;0;1;1;1;2;-1;1;0.5
+2;15;Rathenow;2;0;1;1;0;1;-1;1;0.5
+2;16;Hansa Rostock 2;2;0;1;1;1;3;-2;1;0.5

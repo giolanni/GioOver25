@@ -1,6 +1,6 @@
 ﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Germany;Oberliga Baden-Württemberg;1;2026-08-07;Balingen;Villingen;1;3;
-Germany;Oberliga Baden-Württemberg;1;2026-08-07;Oberachern;Karlsruher II;3;0;
+Germany;Oberliga Baden-Württemberg;1;2026-08-07;Oberachern;Karlsruher 2;3;0;
 Germany;Oberliga Baden-Württemberg;1;2026-08-07;Reutlingen;Nottingen;3;1;
 Germany;Oberliga Baden-Württemberg;1;2026-08-08;Backnang;1\. FC Muhlhausen;5;0;
 Germany;Oberliga Baden-Württemberg;1;2026-08-08;Bahlinger;Ravensburg;0;0;
@@ -8,10 +8,13 @@ Germany;Oberliga Baden-Württemberg;1;2026-08-08;FC Holzhausen;Pforzheim;1;1;
 Germany;Oberliga Baden-Württemberg;1;2026-08-08;Normannia Gmund;Teningen;2;3;
 Germany;Oberliga Baden-Württemberg;1;2026-08-08;Young Boys Reutlingen;Essingen;1;1;
 Germany;Oberliga Baden-Württemberg;1;2026-08-09;Singen;Neckarsulm;1;0;
-Germany;Oberliga Baden-Württemberg;2;2026-08-11;Bahlinger;Karlsruher II;1;1;
+Germany;Oberliga Baden-Württemberg;2;2026-08-11;Bahlinger;Karlsruher 2;1;1;
 Germany;Oberliga Baden-Württemberg;2;2026-08-14;Nottingen;Normannia Gmund;2;0;
 Germany;Oberliga Baden-Württemberg;2;2026-08-15;Essingen;Balingen;3;1;
 Germany;Oberliga Baden-Württemberg;2;2026-08-15;Ravensburg;Singen;1;1;
 Germany;Oberliga Baden-Württemberg;2;2026-08-15;Teningen;Backnang;1;4;
 Germany;Oberliga Baden-Württemberg;2;2026-08-15;Villingen;Reutlingen;1;2;
+Germany;Oberliga Baden-Württemberg;2;2026-08-16;1. FC Muhlhausen;Oberachern;3;5;
+Germany;Oberliga Baden-Württemberg;2;2026-08-16;Neckarsulm;Young Boys Reutlingen;1;3;
 Germany;Oberliga Baden-Württemberg;3;2026-08-15;Pforzheim;Bahlinger;2;2;
+Germany;Oberliga Baden-Württemberg;3;2026-08-16;Karlsruher 2;FC Holzhausen;4;5;

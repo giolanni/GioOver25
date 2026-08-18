@@ -1,6 +1,6 @@
 ﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
-Germany;Oberliga Westfalen;1;2026-08-07;SpVgg Herne Horsthausen;Verl II;1;2;
-Germany;Oberliga Westfalen;1;2026-08-08;Sprockhovel;Bielefeld II;2;2;
+Germany;Oberliga Westfalen;1;2026-08-07;SpVgg Herne Horsthausen;Verl 2;1;2;
+Germany;Oberliga Westfalen;1;2026-08-08;Sprockhovel;Bielefeld 2;2;2;
 Germany;Oberliga Westfalen;1;2026-08-09;Eintracht Rheine;Clarholz;4;2;
 Germany;Oberliga Westfalen;1;2026-08-09;Ennepetal;Gievenbeck;1;1;
 Germany;Oberliga Westfalen;1;2026-08-09;Lippstadt;Westfalia Kinderhaus;0;2;
@@ -8,4 +8,12 @@ Germany;Oberliga Westfalen;1;2026-08-09;Maaslingen;ASC 09 Dortmund;3;1;
 Germany;Oberliga Westfalen;1;2026-08-09;Schermbeck 2020;Munster 2;0;3;
 Germany;Oberliga Westfalen;1;2026-08-09;TuS Hordel;Erkenschwick;1;1;
 Germany;Oberliga Westfalen;1;2026-08-09;Vreden;Hiltrup;2;0;
-Germany;Oberliga Westfalen;2;2026-08-15;Bielefeld II;Eintracht Rheine;1;2;
+Germany;Oberliga Westfalen;2;2026-08-15;Bielefeld 2;Eintracht Rheine;1;2;
+Germany;Oberliga Westfalen;2;2026-08-16;Clarholz;Schermbeck 2020;3;1;
+Germany;Oberliga Westfalen;2;2026-08-16;Erkenschwick;Ennepetal;1;0;
+Germany;Oberliga Westfalen;2;2026-08-16;Gievenbeck;Maaslingen;3;1;
+Germany;Oberliga Westfalen;2;2026-08-16;Hiltrup;SpVgg Herne Horsthausen;0;3;
+Germany;Oberliga Westfalen;2;2026-08-16;Munster 2;Lippstadt;0;0;
+Germany;Oberliga Westfalen;2;2026-08-16;Verl 2;Sprockhovel;3;1;
+Germany;Oberliga Westfalen;2;2026-08-16;Vreden;ASC 09 Dortmund;5;2;
+Germany;Oberliga Westfalen;2;2026-08-16;Westfalia Kinderhaus;TuS Hordel;1;0;

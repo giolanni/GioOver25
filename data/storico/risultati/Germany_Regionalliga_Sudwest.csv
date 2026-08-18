@@ -1,16 +1,19 @@
 ﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Germany;Regionalliga Sudwest;1;2026-08-07;Kickers Stoccarda;Ulm;4;2;
 Germany;Regionalliga Sudwest;1;2026-08-08;FSV Francoforte;VfR Mannheim;2;2;
-Germany;Regionalliga Sudwest;1;2026-08-08;Homburg;Mainz II;2;1;
-Germany;Regionalliga Sudwest;1;2026-08-08;Kaiserslautern II;Freiberg;0;5;
-Germany;Regionalliga Sudwest;1;2026-08-08;Kassel;Eint. Frankfurt II;3;0;
+Germany;Regionalliga Sudwest;1;2026-08-08;Homburg;Mainz 2;2;1;
+Germany;Regionalliga Sudwest;1;2026-08-08;Kaiserslautern 2;Freiberg;0;5;
+Germany;Regionalliga Sudwest;1;2026-08-08;Kassel;Eint. Frankfurt 2;3;0;
 Germany;Regionalliga Sudwest;1;2026-08-08;Offenbach;Walldorf;2;1;
 Germany;Regionalliga Sudwest;1;2026-08-08;Sandhausen;Steinbach Haiger;2;2;
 Germany;Regionalliga Sudwest;1;2026-08-08;Trier;Fulda-Lehnerz;0;1;
-Germany;Regionalliga Sudwest;1;2026-08-09;Aalen;Freiburg II;1;1;
+Germany;Regionalliga Sudwest;1;2026-08-09;Aalen;Freiburg 2;1;1;
 Germany;Regionalliga Sudwest;2;2026-08-14;Ulm;Offenbach;0;2;
-Germany;Regionalliga Sudwest;2;2026-08-15;Eint. Frankfurt II;Kickers Stoccarda;2;3;
+Germany;Regionalliga Sudwest;2;2026-08-15;Eint. Frankfurt 2;Kickers Stoccarda;2;3;
 Germany;Regionalliga Sudwest;2;2026-08-15;Freiberg;Homburg;3;0;
 Germany;Regionalliga Sudwest;2;2026-08-15;Fulda-Lehnerz;Sandhausen;3;4;
 Germany;Regionalliga Sudwest;2;2026-08-15;Steinbach Haiger;Aalen;1;1;
-Germany;Regionalliga Sudwest;2;2026-08-15;Walldorf;Kaiserslautern II;3;3;
+Germany;Regionalliga Sudwest;2;2026-08-15;Walldorf;Kaiserslautern 2;3;3;
+Germany;Regionalliga Sudwest;2;2026-08-16;Freiburg 2;Kassel;5;1;
+Germany;Regionalliga Sudwest;2;2026-08-16;Mainz 2;FSV Francoforte;2;1;
+Germany;Regionalliga Sudwest;2;2026-08-16;VfR Mannheim;Trier;1;2;
