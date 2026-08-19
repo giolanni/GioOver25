@@ -13,8 +13,13 @@ TEAM_ALIASES: dict[str, dict[str, str]] = {
         "sexypoxyt": "poxyt",
     },
     "Finland_Kolmonen_Southern_Group2": {
+        # Forme estese/alternative incontrate nelle fonti del girone.
+        # Le forme canoniche seguono quelle della classifica ufficiale SofaScore.
         "tips vantaa": "tips",
         "puotinkylan valtti": "valtti",
+        "fc kontu": "kontu",
+        "lps helsinki": "laajasalon palloseura",
+        "vjs vantaa b": "vjs 2",
     },
     "Finland_Kolmonen_Eastern_Group1": {
         "jyvaskylan seudun palloseura": "sapa",
