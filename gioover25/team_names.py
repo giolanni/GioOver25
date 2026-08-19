@@ -8,18 +8,23 @@ import unicodedata
 # da _basic_normalize().
 TEAM_ALIASES: dict[str, dict[str, str]] = {
     "Finland_Kolmonen_Southern_Group1": {
-        # SofaScore usa anche la denominazione societaria "SexyPöxyt".
-        # Nel progetto la forma canonica di questa squadra è "Pöxyt".
         "sexypoxyt": "poxyt",
     },
     "Finland_Kolmonen_Southern_Group2": {
-        # Forme estese/alternative incontrate nelle fonti del girone.
-        # Le forme canoniche seguono quelle della classifica ufficiale SofaScore.
         "tips vantaa": "tips",
         "puotinkylan valtti": "valtti",
         "fc kontu": "kontu",
         "lps helsinki": "laajasalon palloseura",
         "vjs vantaa b": "vjs 2",
+    },
+    "Finland_Kolmonen_Southern_Group3": {
+        "riihimaen palloseura": "rips",
+        "fc futura": "futura",
+        "atlantis fc akatemia": "atlantis 2",
+        "atlantis ii": "atlantis 2",
+        "tips u21": "tips 2 u21",
+        "tuusulan palloseura": "tups",
+        "fc lahti 69": "lahti 69",
     },
     "Finland_Kolmonen_Eastern_Group1": {
         "jyvaskylan seudun palloseura": "sapa",
@@ -28,16 +33,42 @@ TEAM_ALIASES: dict[str, dict[str, str]] = {
     "Finland_Kolmonen_Eastern_Group3": {
         "kouvolan jalkapallo": "kjp",
     },
+    "Finland_Kolmonen_Western_Group1": {
+        "piikkion palloseura": "pips",
+        "ifk mariehamn 2": "ifk 2",
+        "maskun palloseura": "maps",
+        "jyrkkalan tykit": "jyty",
+        "littoisten tyovaen urheilijat u20": "ltu u20",
+        "pargas if": "pif",
+        "kaarinan pojat": "kaapo",
+        "abo cf": "acf",
+    },
+    "Finland_Kolmonen_Western_Group2": {
+        "nokian palloseura": "nops",
+        "tampere united 2": "tampere utd 2",
+        "ylojarvi united fc": "ylojarvi utd",
+        "tampereen peli toverit": "tp t",
+        "leki futis": "fc leki",
+        "saaksjarven loiske": "saaksjarven loiske",
+        "fc haka juniors": "fc haka j",
+        "lasten": "fc lasten",
+    },
     "Finland_Kolmonen_Western_Group3": {
         "lapuan virkia": "virkia",
+        "fc kiisto": "kiisto",
+        "kiisto vaasa": "kiisto",
+        "vaasa ifk": "vifk",
+        "vaasan pallo veikot": "vpv",
+        "vpv pallo veikot": "vpv",
+        "sif": "sundom if",
+        "sporting kristina": "sp kristina",
+        "ypa ylivieska": "fc ylivieska",
+        "sjk j apollo": "sjk j",
     },
     "Finland_Kolmonen_Eastern_Group2": {
         "kings sc": "kings",
     },
     "Finland_Kolmonen_North": {
-        # SofaScore usa in vari punti i nomi societari estesi, mentre nei
-        # risultati/classifica del girone mostra le forme brevi sottostanti.
-        # Senza questi alias la stessa squadra può essere conteggiata due volte.
         "kajaanin haka": "kajha",
         "kajaanin palloilijat": "kapa",
         "kemin palloseura": "keps",
@@ -56,17 +87,9 @@ def canonicalize_team_display_name(value: object) -> str:
     - ``EPS/Reservi`` viene persistito come ``EPS Reservi``;
     - ``SexyPöxyt`` viene persistito come ``Pöxyt``;
     - le sostituzioni avvengono solo su nomi completi noti o sul token finale II.
-
-    Esempi:
-        New York Red Bulls II -> New York Red Bulls 2
-        Sporting Kansas City Ⅱ -> Sporting Kansas City 2
-        EPS/Reservi -> EPS Reservi
-        SexyPöxyt -> Pöxyt
-        Zimbru 2 -> Zimbru 2
     """
 
     text = " ".join(str(value or "").strip().split())
-
     if not text:
         return text
 
@@ -77,15 +100,10 @@ def canonicalize_team_display_name(value: object) -> str:
     }
 
     exact = exact_aliases.get(text.casefold())
-
     if exact is not None:
         return exact
 
-    return re.sub(
-        r"(?i)\s+(?:II|Ⅱ)$",
-        " 2",
-        text,
-    )
+    return re.sub(r"(?i)\s+(?:II|Ⅱ)$", " 2", text)
 
 
 def _basic_normalize(value: object) -> str:
