@@ -7,6 +7,11 @@ import unicodedata
 # Sia le chiavi sia i valori devono essere scritti nella forma già normalizzata
 # da _basic_normalize().
 TEAM_ALIASES: dict[str, dict[str, str]] = {
+    "Finland_Kolmonen_Southern_Group1": {
+        # SofaScore usa anche la denominazione societaria "SexyPöxyt".
+        # Nel progetto la forma canonica di questa squadra è "Pöxyt".
+        "sexypoxyt": "poxyt",
+    },
     "Finland_Kolmonen_Southern_Group2": {
         "tips vantaa": "tips",
         "puotinkylan valtti": "valtti",
@@ -40,16 +45,18 @@ TEAM_ALIASES: dict[str, dict[str, str]] = {
 def canonicalize_team_display_name(value: object) -> str:
     """Restituisce il nome squadra nella forma canonica persistibile.
 
-    Regola globale GioOver2.5:
+    Regole globali GioOver2.5:
     - il suffisso finale ``II`` (o il carattere unicode ``Ⅱ``) viene sempre
       convertito in ``2``;
-    - un nome che termina già in ``2`` resta invariato;
-    - la sostituzione riguarda solo il token finale, quindi non modifica
-      sequenze ``ii`` presenti all'interno di altre parole.
+    - ``EPS/Reservi`` viene persistito come ``EPS Reservi``;
+    - ``SexyPöxyt`` viene persistito come ``Pöxyt``;
+    - le sostituzioni avvengono solo su nomi completi noti o sul token finale II.
 
     Esempi:
         New York Red Bulls II -> New York Red Bulls 2
         Sporting Kansas City Ⅱ -> Sporting Kansas City 2
+        EPS/Reservi -> EPS Reservi
+        SexyPöxyt -> Pöxyt
         Zimbru 2 -> Zimbru 2
     """
 
@@ -57,6 +64,17 @@ def canonicalize_team_display_name(value: object) -> str:
 
     if not text:
         return text
+
+    exact_aliases = {
+        "eps/reservi": "EPS Reservi",
+        "sexypöxyt": "Pöxyt",
+        "sexypoxyt": "Pöxyt",
+    }
+
+    exact = exact_aliases.get(text.casefold())
+
+    if exact is not None:
+        return exact
 
     return re.sub(
         r"(?i)\s+(?:II|Ⅱ)$",
