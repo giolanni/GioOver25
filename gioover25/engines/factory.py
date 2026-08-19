@@ -1,27 +1,51 @@
 """
 GioOver2.5 - engines/factory.py
 
-Engine ufficiali e sperimentali.
-I nuovi strong-defense DEV sono congelati dal 16/08/2026.
+NAMING DEGLI ENGINE SPERIMENTALI
+--------------------------------
+La nomenclatura funzionale sostituisce la vecchia sequenza v20dev/v201dev/
+v202dev, che non descriveva più correttamente il ruolo degli engine.
+
+Suffissi:
+    plus    = engine base + selezioni promosse
+    select  = solo sottoinsieme selezionato
+    def     = variante con penalità strong-defense
+
+Famiglia v20 originale:
+    v20
+    v20select
+    v20plus
+
+Famiglia v20 strong-defense:
+    v20def
+    v20defselect
+    v20defplus
+
+Altre varianti strong-defense:
+    v22def
+    v25def
+    v26def
 """
 
 from . import (
     v13,
     v20,
-    v20dev,
-    v201dev,
-    v202dev,
+    v20plus,
+    v20select,
+    v20def,
+    v20defselect,
+    v20defplus,
     v21,
     v21dev,
     v22,
-    v22dev,
+    v22def,
     v23,
     v24,
     v25,
-    v25dev,
+    v25def,
     v251,
     v26,
-    v26dev,
+    v26def,
 )
 
 OFFICIAL_ENGINES = {
@@ -38,12 +62,14 @@ OFFICIAL_ENGINES = {
 }
 
 EXPERIMENTAL_ENGINES = {
-    "v20dev": v20dev,
-    "v201dev": v201dev,
-    "v202dev": v202dev,
-    "v22dev": v22dev,
-    "v25dev": v25dev,
-    "v26dev": v26dev,
+    "v20plus": v20plus,
+    "v20select": v20select,
+    "v20def": v20def,
+    "v20defselect": v20defselect,
+    "v20defplus": v20defplus,
+    "v22def": v22def,
+    "v25def": v25def,
+    "v26def": v26def,
 }
 
 ENGINES = {
