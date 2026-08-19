@@ -24,6 +24,16 @@ TEAM_ALIASES: dict[str, dict[str, str]] = {
     "Finland_Kolmonen_Eastern_Group2": {
         "kings sc": "kings",
     },
+    "Finland_Kolmonen_North": {
+        # SofaScore usa in vari punti i nomi societari estesi, mentre nei
+        # risultati/classifica del girone mostra le forme brevi sottostanti.
+        # Senza questi alias la stessa squadra può essere conteggiata due volte.
+        "kajaanin haka": "kajha",
+        "kajaanin palloilijat": "kapa",
+        "kemin palloseura": "keps",
+        "rollon pojat": "ropo",
+        "fc santa claus": "santa claus",
+    },
 }
 
 
