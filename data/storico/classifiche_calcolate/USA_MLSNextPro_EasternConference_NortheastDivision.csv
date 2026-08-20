@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-25;1;New England Revolution 2;21;11;5;5;35;26;9;38;1.81
-25;2;Columbus Crew 2;20;11;4;5;39;31;8;37;1.85
-25;3;Connecticut FC;20;11;1;8;39;33;6;34;1.7
-25;4;New York Red Bulls 2;19;10;3;6;42;29;13;33;1.737
-25;5;Philadelphia 2;20;8;4;8;26;26;0;28;1.4
-25;6;New York City 2;19;8;4;7;30;31;-1;28;1.474
-25;7;Toronto FC 2;19;7;4;8;32;37;-5;25;1.316
-25;8;Cincinnati 2;20;4;2;14;22;37;-15;14;0.7
-25;9;Chicago Fire 2;3;2;0;1;5;3;2;6;2.0
-25;10;Chattanooga;3;1;2;0;6;4;2;5;1.667
-25;11;Crown Legacy;2;1;1;0;6;3;3;4;2.0
-25;12;Orlando City B;5;1;0;4;4;11;-7;3;0.6
-25;13;Huntsville;2;0;1;1;1;2;-1;1;0.5
-25;14;Atlanta United 2;3;0;1;2;4;6;-2;1;0.333
-25;15;Carolina Core;3;0;0;3;4;10;-6;0;0.0
-25;16;Inter Miami 2;3;0;0;3;1;7;-6;0;0.0
+26;1;New England Revolution 2;21;11;5;5;35;26;9;38;1.81
+26;2;Columbus Crew 2;20;11;4;5;39;31;8;37;1.85
+26;3;Connecticut FC;20;11;1;8;39;33;6;34;1.7
+26;4;New York Red Bulls 2;19;10;3;6;42;29;13;33;1.737
+26;5;New York City 2;20;9;4;7;35;31;4;31;1.55
+26;6;Philadelphia 2;20;8;4;8;26;26;0;28;1.4
+26;7;Toronto FC 2;19;7;4;8;32;37;-5;25;1.316
+26;8;Cincinnati 2;21;4;2;15;22;42;-20;14;0.667
+26;9;Chicago Fire 2;3;2;0;1;5;3;2;6;2.0
+26;10;Chattanooga;3;1;2;0;6;4;2;5;1.667
+26;11;Crown Legacy;2;1;1;0;6;3;3;4;2.0
+26;12;Orlando City B;5;1;0;4;4;11;-7;3;0.6
+26;13;Huntsville;2;0;1;1;1;2;-1;1;0.5
+26;14;Atlanta United 2;3;0;1;2;4;6;-2;1;0.333
+26;15;Carolina Core;3;0;0;3;4;10;-6;0;0.0
+26;16;Inter Miami 2;3;0;0;3;1;7;-6;0;0.0
