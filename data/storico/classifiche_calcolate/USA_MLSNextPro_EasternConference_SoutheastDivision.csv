@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-25;1;Crown Legacy;20;11;6;3;48;27;21;39;1.95
-25;2;Atlanta United 2;20;11;3;6;43;31;12;36;1.8
-25;3;Chattanooga;20;10;5;5;37;28;9;35;1.75
-25;4;Chicago Fire 2;21;8;6;7;43;33;10;30;1.429
-25;5;Huntsville;21;8;5;8;36;40;-4;29;1.381
-25;6;Orlando City B;19;7;7;5;38;34;4;28;1.474
-25;7;Carolina Core;20;5;8;7;28;30;-2;23;1.15
-25;8;Inter Miami 2;18;1;4;13;15;44;-29;7;0.389
-25;9;New York Red Bulls 2;4;1;1;2;3;9;-6;4;1.0
-25;10;New York City 2;2;1;0;1;5;3;2;3;1.5
-25;11;Toronto FC 2;3;1;0;2;5;5;0;3;1.0
-25;12;Philadelphia 2;3;1;0;2;2;6;-4;3;1.0
-25;13;New England Revolution 2;1;0;1;0;2;2;0;1;1.0
-25;14;Connecticut FC;2;0;1;1;4;6;-2;1;0.5
-25;15;Columbus Crew 2;2;0;1;1;2;4;-2;1;0.5
-25;16;Cincinnati 2;2;0;0;2;2;11;-9;0;0.0
+26;1;Crown Legacy;21;11;6;4;48;29;19;39;1.857
+26;2;Atlanta United 2;20;11;3;6;43;31;12;36;1.8
+26;3;Chattanooga;20;10;5;5;37;28;9;35;1.75
+26;4;Chicago Fire 2;21;8;6;7;43;33;10;30;1.429
+26;5;Huntsville;21;8;5;8;36;40;-4;29;1.381
+26;6;Orlando City B;19;7;7;5;38;34;4;28;1.474
+26;7;Carolina Core;20;5;8;7;28;30;-2;23;1.15
+26;8;Inter Miami 2;19;2;4;13;19;46;-27;10;0.526
+26;9;Connecticut FC;3;1;1;1;6;6;0;4;1.333
+26;10;New York Red Bulls 2;4;1;1;2;3;9;-6;4;1.0
+26;11;New York City 2;2;1;0;1;5;3;2;3;1.5
+26;12;Toronto FC 2;3;1;0;2;5;5;0;3;1.0
+26;13;Philadelphia 2;3;1;0;2;2;6;-4;3;1.0
+26;14;New England Revolution 2;2;0;1;1;4;6;-2;1;0.5
+26;15;Columbus Crew 2;2;0;1;1;2;4;-2;1;0.5
+26;16;Cincinnati 2;2;0;0;2;2;11;-9;0;0.0

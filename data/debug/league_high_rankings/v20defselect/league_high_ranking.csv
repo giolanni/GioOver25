@@ -1,1 +1,3 @@
-﻿Rank;Engine;LeagueId;OK;KO;Total;HitRate;FirstMatchDate;LastMatchDate
+﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
+1;v20defselect;Finland_Kolmonen_Eastern_Group3;1;0;2026-08-20;2026-08-20;1;100.0
+2;v20defselect;Finland_Kolmonen_Western_Group2;1;0;2026-08-20;2026-08-20;1;100.0

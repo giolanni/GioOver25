@@ -1,4 +1,4 @@
-Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Finland;Kolmonen Southern Group 3;1;2026-04-17;Atlantis 2;TiPS/2 U21;3;1;
 Finland;Kolmonen Southern Group 3;1;2026-04-17;Gnistan/Ogeli;JäPS/47;2;2;
 Finland;Kolmonen Southern Group 3;1;2026-04-17;RiPS;Futura;1;5;
@@ -74,3 +74,4 @@ Finland;Kolmonen Southern Group 3;15;2026-08-14;Ponnistus;Lahti/69;2;2;
 Finland;Kolmonen Southern Group 3;15;2026-08-14;RiPS;TuPS;3;0;
 Finland;Kolmonen Southern Group 3;15;2026-08-15;Atlantis 2;IF Sibbo Vargarna;0;17;
 Finland;Kolmonen Southern Group 3;15;2026-08-16;JäPS/47;ToTe/Tapio;4;0;
+Finland;Kolmonen Southern Group 3;16;2026-08-20;JäPS/47;TuPS;1;3;

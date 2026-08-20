@@ -1,4 +1,5 @@
 ﻿LeagueId;Country;League;Teams;ExpectedRounds;HomeAway;Notes;CompetitionGroup;
+Albania_AbissnetSuperiore;Albania;Abissnet Superiore;10;18;Yes;;;
 Armenia_FirstLeague;Armenia;First League;16;30;Yes;2026/27: 16 squadre, calendario su 30 giornate; seconda divisione armena;
 Armenia_PremierLeague;Armenia;Premier League;12;33;Yes;2026/27: 12 squadre, 33 giornate, formato a tre gironi;;
 Australia_NorthernNSWStateLeague;Australia;Northern NSW State League;10;18;Yes;Round 13 currently partial in supplied data;;
@@ -241,3 +242,5 @@ USA_USLLeagueTwo_Valley;USA;USL League Two - Valley Division;6;0;No;UNBALANCED;U
 Wales_CymruNorth;Wales;Cymru North;16;30;Yes;"Tier 2; one of two regional divisions";Wales_CymruTier2;
 Wales_CymruPremier;Wales;Cymru Premier;0;0;Yes;Da completare;;
 Wales_CymruSouth;Wales;Cymru South;16;30;Yes;"Tier 2; one of two regional divisions";Wales_CymruTier2;
+Croatia_HNL;Croatia;HNL;10;36;No;2026/27 top flight; 10 clubs, quadruple round robin;;
+Austria_WomensBundesliga;Austria;ÖFB Frauen Bundesliga;10;18;No;2026/27 top women's league; 18-round regular season followed by Meister/Qualifikation phase;;

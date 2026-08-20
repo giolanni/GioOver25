@@ -8,7 +8,6 @@ Armenia_PremierLeague;2026-08-21;Alashkert;FC Gandzasar
 Australia_NPLNSW;2026-08-21;Sydney FC U23;Rockdale Ilinden
 Australia_NPLVictoria;2026-08-21;Green Gully;St Albans
 Australia_NSWLeagueOne;2026-08-21;Blacktown Spartans;Hurstville Zagreb
-Australia_SAStateLeague;2026-08-21;Adelaide Olympic;Adelaide Atletico
 Australia_VictoriaPremierLeague;2026-08-21;Northcote City;Brunswick Juventus
 Australia_VictoriaPremierLeague2;2026-08-21;Box Hill;Nunawading City
 Australia_VictoriaPremierLeague2;2026-08-21;Essendon Royals SC;Keilor Park
@@ -87,7 +86,6 @@ Belarus_PershayaLiga;2026-08-21;Molodechno;Soligorsk
 Bosnia_WWINLigaBiH;2026-08-21;Sarajevo;BSK Banja Luka
 Bulgaria_ParvaLiga;2026-08-21;Cherno More;Dunav Ruse
 Bulgaria_VtoraLiga;2026-08-21;Lok. Gorna;Etar
-Croatia_HNL;2026-08-21;Rudes;Lok. Zagreb
 Denmark_1stDivision;2026-08-21;Hobro;Aalborg
 Denmark_1stDivision;2026-08-21;Vejle;Esbjerg
 Denmark_1stDivision;2026-08-21;Fredericia;Aarhus Fremad
@@ -166,12 +164,12 @@ Iceland_Division_1;2026-08-21;Aegir;Afturelding
 Iceland_Division_1;2026-08-21;Grotta;IR Reykjavik
 FaroeIslands_PremierLeague;2026-08-21;Vikingur;B36 Torshavn
 Italy_SerieB;2026-08-21;L.R. Vicenza;Catanzaro
-Italy_SerieC_GroupA;2026-08-21;Alcione Milano;Renate
-Italy_SerieC_GroupA;2026-08-21;Brescia;Carpi
-Italy_SerieC_GroupB;2026-08-21;Vado;Atalanta U23
-Italy_SerieC_GroupC;2026-08-21;Bari;Cavese
-Italy_SerieC_GroupC;2026-08-21;Giugliano;Scafatese
-Italy_SerieC_GroupC;2026-08-21;Potenza;Casarano
+Italy_SerieC_GironeA;2026-08-21;Alcione Milano;Renate
+Italy_SerieC_GironeA;2026-08-21;Brescia;Carpi
+Italy_SerieC_GironeB;2026-08-21;Vado;Atalanta U23
+Italy_SerieC_GironeC;2026-08-21;Bari;Cavese
+Italy_SerieC_GironeC;2026-08-21;Giugliano;Scafatese
+Italy_SerieC_GironeC;2026-08-21;Potenza;Casarano
 Kazakhstan_FirstLeague;2026-08-21;Jaiyq;Kaspij Aktau 2
 Kazakhstan_FirstLeague;2026-08-21;Shakhter K.;FC Astana 2
 Kazakhstan_FirstLeague;2026-08-21;Turan;Kairat Almaty 2
@@ -187,9 +185,9 @@ NorthMacedonia_1MFL;2026-08-21;Bregalnica;Bashkimi
 Mexico_LigaExpansionMX_Apertura;2026-08-21;Venados;Dorados
 Mexico_LigaExpansionMX_Apertura;2026-08-21;Atl. Morelia;Correcaminos
 Mexico_LigaExpansionMX_Apertura;2026-08-21;Tepatitlan de Morelos;Tlaxcala
-Moldova_Liga1;2026-08-21;Iskra Ribnita;Sparta Selemet
-Moldova_Liga1;2026-08-21;Univer Comrat;Vulturii Cutezatori
-Moldova_Liga1;2026-08-21;Zimbru 2;FCM Ungheni
+Moldova_Liga1_GroupA;2026-08-21;Iskra Ribnita;Sparta Selemet
+Moldova_Liga1_GroupA;2026-08-21;Univer Comrat;Vulturii Cutezatori
+Moldova_Liga1_GroupA;2026-08-21;Zimbru 2;FCM Ungheni
 Montenegro_PrvaCrnogorskaLiga;2026-08-21;Mornar;Buducnost
 Netherlands_EersteDivisie;2026-08-21;Den Bosch;Eindhoven
 Netherlands_EersteDivisie;2026-08-21;Dordrecht;Roda
@@ -209,7 +207,7 @@ Poland_Division2;2026-08-21;Sandecja;Leczna
 Poland_Division2;2026-08-21;Chojniczanka;S. Wola
 Portugal_LigaPortugal2;2026-08-21;Benfica B;Portimonense
 Portugal_LigaPortugal2;2026-08-21;Tondela;Academica
-Portugal_Liga3;2026-08-21;Fafe;Guimaraes B
+Portugal_Liga3_SerieA;2026-08-21;Fafe;Guimaraes B
 CzechRepublic_ChNL;2026-08-21;Jihlava;Taborsko
 CzechRepublic_ChNL;2026-08-21;Karvina;Zizkov
 CzechRepublic_ChNL;2026-08-21;Opava;Trinec
@@ -238,7 +236,7 @@ Spain_LaLiga2;2026-08-21;Cordoba;Girona
 SriLanka_SuperLeague;2026-08-21;Defenders FC;Ratnam
 Sweden_Allsvenskan;2026-08-21;Sirius;Hacken
 Sweden_Division1_Norra;2026-08-21;Stockholm Internazionale;Jarfalla
-Sweden_Division2_Norrland_Relegation;2026-08-21;Umea FF;IFK Umea
+Sweden_Division2_Norrland;2026-08-21;Umea FF;IFK Umea
 Sweden_Division2_NorraGotaland;2026-08-21;Kumla;Husqvarna
 Sweden_Division2_NorraGotaland;2026-08-21;Lidkoping;Ahlafors IF
 Sweden_Division2_NorraGotaland;2026-08-21;Herrestads AIF;Vanersborgs IF
@@ -263,4 +261,4 @@ Finland_Kolmonen_Southern_Group1;2026-08-21;MPS;Etelä-Espoon Pallo
 Finland_Kolmonen_Eastern_Group1;2026-08-21;Jyväskylän Seudun Palloseura;SaPa
 Finland_Kolmonen_Southern_Group2;2026-08-21;Kontu;Valtti
 Finland_Kolmonen_Southern_Group3;2026-08-21;Lahti/69;RiPS
-Finland_Kolmonen_North_Group;2026-08-21;Ajax Sarkkiranta;Santa Claus
+Finland_Kolmonen_North;2026-08-21;Ajax Sarkkiranta;Santa Claus

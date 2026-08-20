@@ -1,4 +1,4 @@
-Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Finland;Kolmonen Southern Group 2;1;2026-04-17;Kontu;Atlantis FC/2;2;2;
 Finland;Kolmonen Southern Group 2;1;2026-04-17;PPS;MPS;1;2;
 Finland;Kolmonen Southern Group 2;1;2026-04-23;Atlantis FC/2;VJS/2;3;6;
@@ -74,15 +74,16 @@ Finland;Kolmonen Southern Group 2;13;2026-07-31;Kontu;HPS/2;3;2;Canonicalized te
 Finland;Kolmonen Southern Group 2;13;2026-08-01;MPS;Töölön Taisto;2;2;
 Finland;Kolmonen Southern Group 2;13;2026-08-01;ToTe;PPS;3;1;
 Finland;Kolmonen Southern Group 2;13;2026-08-01;VJS/2;Atlantis FC/2;10;1;
+Finland;Kolmonen Southern Group 2;14;2026-08-06;Atlantis FC/2;HPS/2;4;3;
 Finland;Kolmonen Southern Group 2;14;2026-08-06;Töölön Taisto;Valtti;1;1;
 Finland;Kolmonen Southern Group 2;14;2026-08-07;Kontu;MPS;1;1;
 Finland;Kolmonen Southern Group 2;14;2026-08-07;PPS;Laajasalon Palloseura;2;1;
 Finland;Kolmonen Southern Group 2;14;2026-08-08;ToTe;PPJ/Lauttasaari;1;1;
 Finland;Kolmonen Southern Group 2;14;2026-08-09;VJS/2;TiPS;4;1;
-Finland;Kolmonen Southern Group 2;14;2026-08-06;Atlantis FC/2;HPS/2;4;3;
-Finland;Kolmonen Southern Group 2;15;2026-08-13;MPS;VJS/2;2;1;
 Finland;Kolmonen Southern Group 2;15;2026-08-13;HPS/2;PPS;2;2;
+Finland;Kolmonen Southern Group 2;15;2026-08-13;MPS;VJS/2;2;1;
 Finland;Kolmonen Southern Group 2;15;2026-08-14;Laajasalon Palloseura;Töölön Taisto;4;1;
 Finland;Kolmonen Southern Group 2;15;2026-08-14;PPJ/Lauttasaari;Kontu;4;1;
 Finland;Kolmonen Southern Group 2;15;2026-08-14;TiPS;ToTe;2;0;
 Finland;Kolmonen Southern Group 2;15;2026-08-14;Valtti;Atlantis FC/2;1;3;
+Finland;Kolmonen Southern Group 2;16;2026-08-20;Töölön Taisto;PPJ/Lauttasaari;2;0;
