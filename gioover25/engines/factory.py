@@ -20,6 +20,8 @@ Famiglia v20 strong-defense:
     v20def
     v20defselect
     v20defplus
+    v20defplus_v2
+    v20defplus_v3
 
 Altre varianti strong-defense:
     v22def
@@ -35,6 +37,8 @@ from . import (
     v20def,
     v20defselect,
     v20defplus,
+    v20defplus_v2,
+    v20defplus_v3,
     v21,
     v21dev,
     v22,
@@ -67,6 +71,8 @@ EXPERIMENTAL_ENGINES = {
     "v20def": v20def,
     "v20defselect": v20defselect,
     "v20defplus": v20defplus,
+    "v20defplus_v2": v20defplus_v2,
+    "v20defplus_v3": v20defplus_v3,
     "v22def": v22def,
     "v25def": v25def,
     "v26def": v26def,
