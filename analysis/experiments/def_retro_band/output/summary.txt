@@ -1,0 +1,98 @@
+RETROACTIVE DEF BAND BACKTEST
+============================
+
+Obiettivo: simulare v20def, v22def e v25def su tutti i pronostici
+storici dei rispettivi engine base, senza imporre a priori 71 o 75.
+
+ANTI-LEAKAGE
+------------
+Strong Defense usa solo partite con data strettamente precedente.
+
+V20DEF
+------
+Base: v20
+Pronostici unici con esito: 3394
+Esito intero universo: 2143/3394 = 63.14% (KO 1251)
+Penalità DEF attiva: 2156/3394
+Duplicati storici rimossi: 0
+Home GA Last5 non disponibile: 636
+Away GA Last5 non disponibile: 664
+
+Confronto soglie ALTA:
+  >=  60.0: 693/955 = 72.57% | no AU 526/711 = 73.98%
+  >=  65.0: 444/599 = 74.12% | no AU 334/437 = 76.43%
+  >=  70.0: 264/344 = 76.74% | no AU 204/252 = 80.95%
+  >=  71.0: 225/295 = 76.27% | no AU 174/217 = 80.18%
+  >=  72.0: 195/259 = 75.29% | no AU 148/186 = 79.57%
+  >=  73.0: 171/227 = 75.33% | no AU 126/160 = 78.75%
+  >=  74.0: 151/196 = 77.04% | no AU 111/139 = 79.86%
+  >=  75.0: 127/166 = 76.51% | no AU 92/116 = 79.31%
+  >=  80.0: 45/66 = 68.18% | no AU 35/48 = 72.92%
+  >=  85.0: 13/14 = 92.86% | no AU 11/12 = 91.67%
+  >=  90.0: 6/7 = 85.71% | no AU 6/7 = 85.71%
+
+Migliore soglia robusta (min sample 20, ordinata per Wilson 95%):
+  >= 70.00: 264/344 = 76.74%
+  senza AU: 204/252 = 80.95%
+
+V22DEF
+------
+Base: v22
+Pronostici unici con esito: 3317
+Esito intero universo: 2092/3317 = 63.07% (KO 1225)
+Penalità DEF attiva: 1446/3317
+Duplicati storici rimossi: 0
+Home GA Last5 non disponibile: 636
+Away GA Last5 non disponibile: 664
+
+Confronto soglie ALTA:
+  >=  60.0: 1261/1850 = 68.16% | no AU 972/1412 = 68.84%
+  >=  65.0: 1022/1476 = 69.24% | no AU 790/1130 = 69.91%
+  >=  70.0: 781/1111 = 70.30% | no AU 603/851 = 70.86%
+  >=  71.0: 738/1038 = 71.10% | no AU 568/791 = 71.81%
+  >=  72.0: 690/965 = 71.50% | no AU 527/731 = 72.09%
+  >=  73.0: 651/904 = 72.01% | no AU 496/681 = 72.83%
+  >=  74.0: 613/840 = 72.98% | no AU 462/629 = 73.45%
+  >=  75.0: 572/780 = 73.33% | no AU 430/583 = 73.76%
+  >=  80.0: 354/471 = 75.16% | no AU 275/361 = 76.18%
+  >=  85.0: 177/243 = 72.84% | no AU 150/196 = 76.53%
+  >=  90.0: 82/114 = 71.93% | no AU 71/97 = 73.20%
+
+Migliore soglia robusta (min sample 20, ordinata per Wilson 95%):
+  >= 77.00: 483/646 = 74.77%
+  senza AU: 367/486 = 75.51%
+
+V25DEF
+------
+Base: v25
+Pronostici unici con esito: 3045
+Esito intero universo: 1918/3045 = 62.99% (KO 1127)
+Penalità DEF attiva: 1304/3045
+Duplicati storici rimossi: 0
+Home GA Last5 non disponibile: 636
+Away GA Last5 non disponibile: 663
+
+Confronto soglie ALTA:
+  >=  60.0: 1147/1686 = 68.03% | no AU 900/1324 = 67.98%
+  >=  65.0: 930/1344 = 69.20% | no AU 734/1059 = 69.31%
+  >=  70.0: 721/1019 = 70.76% | no AU 566/803 = 70.49%
+  >=  71.0: 680/951 = 71.50% | no AU 533/748 = 71.26%
+  >=  72.0: 639/886 = 72.12% | no AU 496/692 = 71.68%
+  >=  73.0: 600/828 = 72.46% | no AU 465/643 = 72.32%
+  >=  74.0: 562/768 = 73.18% | no AU 431/594 = 72.56%
+  >=  75.0: 524/712 = 73.60% | no AU 401/550 = 72.91%
+  >=  80.0: 320/425 = 75.29% | no AU 254/339 = 74.93%
+  >=  85.0: 159/216 = 73.61% | no AU 139/185 = 75.14%
+  >=  90.0: 75/102 = 73.53% | no AU 66/92 = 71.74%
+
+Migliore soglia robusta (min sample 20, ordinata per Wilson 95%):
+  >= 77.00: 438/585 = 74.87%
+  senza AU: 339/456 = 74.34%
+
+LETTURA
+-------
+new_alta_thresholds.csv contiene la percentuale OK di OGNI nuova ALTA.
+score_buckets.csv mostra eventuali sweet spot per intervallo di score.
+top_thresholds.csv usa Wilson 95% per evitare di premiare troppo campioni piccoli.
+Nessuna soglia deve essere adottata automaticamente: va valutata anche la
+stabilità mensile e la copertura rispetto alla soglia attuale >=75.

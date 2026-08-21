@@ -1,0 +1,34 @@
+DEF SELECTOR BAND EXPERIMENT
+============================
+
+Base candidati: v20def MEDIA-ALTA con score >= 71.00
+Candidati comuni con esito: 11
+Esito candidati grezzi: 11 OK / 0 KO = 100.00%
+
+BASELINE ATTUALE
+----------------
+Regola: v22def >= 75 (ALTA) + v25def >= 75 (ALTA)
+Tutte le leghe: 8/8 = 100.00%
+Senza Australia: 8/8 = 100.00%
+
+Min sample classifica: 20
+Date train: 2026-08-16 -> 2026-08-19
+Date test: 2026-08-20 -> 2026-08-20
+
+MIGLIORE CONFIGURAZIONE SECONDO IL TEST TEMPORALE
+-------------------------------------------------
+v22def >= 55
+v25def >= 55
+Overall: 11/11 = 100.00%
+No AU: 11/11 = 100.00%
+Train: 8/8 = 100.00%
+Test: 3/3 = 100.00%
+
+LETTURA CORRETTA
+-----------------
+Una soglia migliore della baseline NON va adottata automaticamente.
+Va considerata interessante se mantiene un campione sufficiente e
+resta superiore o almeno stabile anche nel blocco temporale TEST.
+
+band_matrix.csv serve invece a capire se esistono sweet spot:
+potrebbe emergere, per esempio, che 80-84.99 funzioni meglio di 90+.

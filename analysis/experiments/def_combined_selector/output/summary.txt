@@ -1,0 +1,58 @@
+COMBINED RETROACTIVE DEF SELECTOR BACKTEST
+==========================================
+
+Regola simulata:
+  v20def >= X AND v22def >= Y AND v25def >= Z
+
+Gli score DEF sono ricostruiti point-in-time; nessun dato della stessa
+giornata o successivo viene usato per la Strong Defense.
+
+SET COMUNE
+----------
+Partite comuni con esito: 2637
+Esito universo comune: 1669/2637 = 63.29% (KO 968)
+Senza Australia: 1371/2173 = 63.09% (KO 802)
+
+BASELINE ATTUALE 71 / 75 / 75
+-----------------------------
+154/199 = 77.39% | no AU 123/155 = 79.35%
+Wilson95Lower: 71.09% | worst month 65.57% | mesi <70%: 1
+
+IPOTESI 70 / 80 / 80
+--------------------
+146/181 = 80.66% | no AU 123/150 = 82.00%
+Wilson95Lower: 74.30% | worst month 72.22% | mesi <70%: 0
+
+GRIGLIA: 60..90 step 1; min sample 20
+Combinazioni con campione sufficiente: 21242
+
+MIGLIORE COMBINAZIONE ROBUSTA (WILSON 95%)
+------------------------------------------
+v20def >= 69.0
+v22def >= 60.0
+v25def >= 80.0
+Overall: 157/194 = 80.93%
+No AU: 130/159 = 81.76%
+Wilson95Lower: 74.82%
+Worst month: 72.88% | mesi <70%: 0
+
+TOP 10
+------
+#1 69.0/60.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+#2 69.0/61.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+#3 69.0/62.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+#4 69.0/63.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+#5 69.0/64.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+#6 69.0/65.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+#7 69.0/66.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+#8 69.0/67.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+#9 69.0/68.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+#10 69.0/69.0/80.0: 157/194 = 80.93% | no AU 81.76% | Wilson 74.82%
+
+LETTURA CORRETTA
+----------------
+La migliore combinazione statistica NON va adottata automaticamente.
+Confrontare soprattutto baseline, 70/80/80, numerosità, no-AU e
+stabilità mensile prima di creare/modificare un engine operativo.
+
+File principali: combination_grid.csv e top_combinations.csv.
