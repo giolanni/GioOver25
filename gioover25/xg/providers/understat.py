@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-import html
 import json
-import re
 from urllib.request import Request, urlopen
 
 from ..models import XGMatch
@@ -19,59 +17,53 @@ UNDERSTAT_LEAGUES = {
 
 
 class UnderstatProvider:
-    """Downloader leggero per i JSON incorporati nelle pagine Understat.
+    """Downloader xG per gli endpoint AJAX pubblicamente accessibili di Understat.
 
-    Understat non pubblica una API ufficiale: il provider legge esclusivamente
-    dati pubblici presenti nelle pagine league/match e li normalizza.
+    Da gennaio 2026 Understat carica i dati principali tramite endpoint JSON
+    dinamici (es. ``getLeagueData/Serie_A/2026``), quindi non e' piu' affidabile
+    cercare ``datesData`` incorporato nell'HTML della pagina della lega.
     """
 
     base_url = "https://understat.com"
 
     @staticmethod
-    def _get(url: str) -> str:
+    def _get_json(url: str) -> dict:
         req = Request(
             url,
             headers={
                 "User-Agent": "Mozilla/5.0 GioOver2.5-xG/1.0",
-                "Accept": "text/html,application/xhtml+xml",
+                "Accept": "application/json,text/plain,*/*",
+                "X-Requested-With": "XMLHttpRequest",
             },
         )
         with urlopen(req, timeout=30) as response:
-            return response.read().decode("utf-8", errors="replace")
-
-    @staticmethod
-    def _extract_json(page: str, variable: str):
-        # Formato normalmente usato da Understat:
-        # var datesData = JSON.parse('...');
-        patterns = [
-            rf"var\s+{re.escape(variable)}\s*=\s*JSON\.parse\('(.+?)'\)",
-            rf"{re.escape(variable)}\s*=\s*JSON\.parse\('(.+?)'\)",
-        ]
-        for pattern in patterns:
-            match = re.search(pattern, page, flags=re.S)
-            if not match:
-                continue
-            encoded = html.unescape(match.group(1))
-            # Il payload è una stringa JS escaped. Decodifica prima gli escape
-            # unicode/slash, poi il JSON reale.
-            decoded = bytes(encoded, "utf-8").decode("unicode_escape")
-            return json.loads(decoded)
-        raise ValueError(f"Payload Understat non trovato: {variable}")
+            payload = response.read().decode("utf-8", errors="replace")
+        data = json.loads(payload)
+        if not isinstance(data, dict):
+            raise ValueError(f"Risposta Understat inattesa da {url}")
+        return data
 
     def download_league_matches(self, league_id: str, season_start_year: int) -> list[XGMatch]:
         code = UNDERSTAT_LEAGUES.get(league_id)
         if not code:
             raise ValueError(f"LeagueId non supportato da Understat: {league_id}")
 
-        page = self._get(f"{self.base_url}/league/{code}/{int(season_start_year)}")
-        rows = self._extract_json(page, "datesData")
-        output: list[XGMatch] = []
+        url = f"{self.base_url}/getLeagueData/{code}/{int(season_start_year)}"
+        payload = self._get_json(url)
+        rows = payload.get("dates", [])
+        if not isinstance(rows, list):
+            raise ValueError("Payload Understat senza lista 'dates'")
 
+        output: list[XGMatch] = []
         for row in rows:
+            if not isinstance(row, dict):
+                continue
+
             xg = row.get("xG") or {}
             home_xg = xg.get("h")
             away_xg = xg.get("a")
             if home_xg in (None, "") or away_xg in (None, ""):
+                # Fixture future: Understat non dispone ancora degli xG reali.
                 continue
 
             home = (row.get("h") or {}).get("title", "")
@@ -96,5 +88,8 @@ class UnderstatProvider:
 
     def download_match_shots(self, match_id: str) -> dict:
         """Restituisce lo shot-level xG grezzo di una singola partita."""
-        page = self._get(f"{self.base_url}/match/{match_id}")
-        return self._extract_json(page, "shotsData")
+        payload = self._get_json(f"{self.base_url}/getMatchData/{match_id}")
+        shots = payload.get("shots", {})
+        if not isinstance(shots, dict):
+            raise ValueError(f"Payload Understat shots inatteso per match {match_id}")
+        return shots
