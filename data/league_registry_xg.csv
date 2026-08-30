@@ -1,8 +1,8 @@
-LeagueId
-England_PremierLeague
-France_Ligue1
-Germany_Bundesliga
-Italy_SerieA
-Russia_PremierLeague
-Spain_LaLiga
-USA_MLS
+LeagueId;Country;League;Teams;ExpectedRounds;HomeAway;Notes;CompetitionGroup;
+England_PremierLeague;England;Premier League;20;38;Yes;;;
+France_Ligue1;France;Ligue 1;18;34;Yes;;;
+Germany_Bundesliga;Germany;Bundesliga;18;34;Yes;;;
+Italy_SerieA;Italy;Serie A;20;38;Yes;;;
+Russia_PremierLeague;Russia;Premier League;16;30;Yes;;;
+Spain_LaLiga;Spain;La Liga;20;38;Yes;;;
+USA_MLS;USA;MLS;30;58;Yes;;;
