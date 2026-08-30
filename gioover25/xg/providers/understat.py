@@ -1,8 +1,5 @@
 from __future__ import annotations
 
-import json
-from urllib.request import Request, urlopen
-
 from ..models import XGMatch
 
 
@@ -17,30 +14,59 @@ UNDERSTAT_LEAGUES = {
 
 
 class UnderstatProvider:
-    """Downloader xG per gli endpoint AJAX pubblicamente accessibili di Understat.
+    """Downloader xG per gli endpoint AJAX di Understat.
 
-    Da gennaio 2026 Understat carica i dati principali tramite endpoint JSON
-    dinamici (es. ``getLeagueData/Serie_A/2026``), quindi non e' piu' affidabile
-    cercare ``datesData`` incorporato nell'HTML della pagina della lega.
+    Replica il comportamento usato dall'attuale progetto ``understatAPI``:
+    sessione ``requests`` persistente e header ``X-Requested-With`` per le
+    chiamate ``getLeagueData`` / ``getMatchData``.
     """
 
-    base_url = "https://understat.com"
+    base_url = "https://understat.com/"
 
-    @staticmethod
-    def _get_json(url: str) -> dict:
-        req = Request(
-            url,
-            headers={
-                "User-Agent": "Mozilla/5.0 GioOver2.5-xG/1.0",
-                "Accept": "application/json,text/plain,*/*",
+    def __init__(self) -> None:
+        try:
+            import requests
+        except ImportError as exc:
+            raise RuntimeError(
+                "Il provider Understat richiede il pacchetto 'requests'. "
+                "Installa con: python -m pip install requests"
+            ) from exc
+
+        self._requests = requests
+        self.session = requests.Session()
+        self.session.headers.update(
+            {
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/131.0.0.0 Safari/537.36"
+                ),
+                "Accept": "application/json, text/javascript, */*; q=0.01",
                 "X-Requested-With": "XMLHttpRequest",
-            },
+                "Referer": "https://understat.com/",
+            }
         )
-        with urlopen(req, timeout=30) as response:
-            payload = response.read().decode("utf-8", errors="replace")
-        data = json.loads(payload)
+
+    def _get_json(self, endpoint: str) -> dict:
+        url = self.base_url + endpoint.lstrip("/")
+        response = self.session.get(url, timeout=30)
+        response.raise_for_status()
+
+        # Evitiamo l'errore criptico "Expecting value: line 1 column 1" e
+        # mostriamo cosa ha realmente risposto Understat se non arriva JSON.
+        try:
+            data = response.json()
+        except ValueError as exc:
+            preview = (response.text or "").strip().replace("\n", " ")[:250]
+            content_type = response.headers.get("Content-Type", "")
+            raise RuntimeError(
+                "Understat non ha restituito JSON "
+                f"(HTTP {response.status_code}, Content-Type={content_type!r}, "
+                f"body={preview!r})"
+            ) from exc
+
         if not isinstance(data, dict):
-            raise ValueError(f"Risposta Understat inattesa da {url}")
+            raise ValueError(f"Risposta Understat inattesa da {url}: {type(data).__name__}")
         return data
 
     def download_league_matches(self, league_id: str, season_start_year: int) -> list[XGMatch]:
@@ -48,8 +74,7 @@ class UnderstatProvider:
         if not code:
             raise ValueError(f"LeagueId non supportato da Understat: {league_id}")
 
-        url = f"{self.base_url}/getLeagueData/{code}/{int(season_start_year)}"
-        payload = self._get_json(url)
+        payload = self._get_json(f"getLeagueData/{code}/{int(season_start_year)}")
         rows = payload.get("dates", [])
         if not isinstance(rows, list):
             raise ValueError("Payload Understat senza lista 'dates'")
@@ -63,7 +88,7 @@ class UnderstatProvider:
             home_xg = xg.get("h")
             away_xg = xg.get("a")
             if home_xg in (None, "") or away_xg in (None, ""):
-                # Fixture future: Understat non dispone ancora degli xG reali.
+                # Fixture future: gli xG reali non esistono ancora.
                 continue
 
             home = (row.get("h") or {}).get("title", "")
@@ -88,7 +113,7 @@ class UnderstatProvider:
 
     def download_match_shots(self, match_id: str) -> dict:
         """Restituisce lo shot-level xG grezzo di una singola partita."""
-        payload = self._get_json(f"{self.base_url}/getMatchData/{match_id}")
+        payload = self._get_json(f"getMatchData/{match_id}")
         shots = payload.get("shots", {})
         if not isinstance(shots, dict):
             raise ValueError(f"Payload Understat shots inatteso per match {match_id}")
