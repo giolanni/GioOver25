@@ -13,12 +13,13 @@ REGISTRY = ROOT / 'data' / 'league_registry_xg.csv'
 RAW_DIR = ROOT / 'data' / 'xg' / 'raw'
 
 
-def read_registry() -> list[str]:
+def read_registry() -> list[dict]:
+    """Legge il registry xG, che mantiene lo stesso schema del registry canonico."""
     with REGISTRY.open('r', encoding='utf-8-sig', newline='') as handle:
         reader = csv.DictReader(handle, delimiter=';')
-        if reader.fieldnames != ['LeagueId']:
-            raise ValueError(f'{REGISTRY} deve contenere la sola colonna LeagueId')
-        return [str(row['LeagueId']).strip() for row in reader if str(row.get('LeagueId', '')).strip()]
+        if not reader.fieldnames or 'LeagueId' not in reader.fieldnames:
+            raise ValueError(f'{REGISTRY} deve contenere la colonna LeagueId')
+        return [row for row in reader if str(row.get('LeagueId', '')).strip()]
 
 
 def write_matches(path: Path, matches) -> None:
@@ -69,14 +70,15 @@ def main() -> None:
     parser.add_argument('--season', type=int, help='Anno iniziale stagione Understat, es. 2026')
     args = parser.parse_args()
 
-    league_ids = read_registry()
+    rows = read_registry()
     if args.league_id:
-        if args.league_id not in league_ids:
+        rows = [row for row in rows if row['LeagueId'] == args.league_id]
+        if not rows:
             raise SystemExit(f'LeagueId non presente in {REGISTRY}: {args.league_id}')
-        league_ids = [args.league_id]
 
     total = 0
-    for league_id in league_ids:
+    for row in rows:
+        league_id = str(row['LeagueId']).strip()
         provider_name = args.provider or default_provider(league_id)
         if provider_name not in available_providers(league_id):
             print(f'[SKIP] {league_id}: {provider_name} non supportato')
