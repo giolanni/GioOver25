@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import re
 from collections import defaultdict, deque
 from pathlib import Path
 
@@ -22,45 +23,72 @@ def _fmt(value) -> str:
     return '' if value is None else f'{value:.4f}'
 
 
+def _season_from_path(path: Path, league_id: str) -> str:
+    """Ricava la stagione dal suffisso del file normalizzato.
+
+    Esempio: Italy_SerieA_2025.csv -> 2025.
+    Manteniamo Season nel dataset xG, pur lasciandola fuori dal registry canonico:
+    qui serve come frontiera temporale per impedire leakage tra stagioni.
+    """
+    match = re.match(rf'^{re.escape(league_id)}_(\d{{4}})\.csv$', path.name)
+    return match.group(1) if match else ''
+
+
 def read_rows(league_id: str) -> list[dict]:
     rows = []
     seen = set()
     for path in sorted(RAW_DIR.glob(f'*/{league_id}*.csv')):
+        file_season = _season_from_path(path, league_id)
         with path.open('r', encoding='utf-8-sig', newline='') as handle:
             for row in csv.DictReader(handle, delimiter=';'):
-                key = (row.get('LeagueId'), row.get('MatchDate'), row.get('Home'), row.get('Away'))
+                row = dict(row)
+                row['Season'] = str(row.get('Season') or file_season).strip()
+                key = (
+                    row.get('LeagueId'), row.get('Season'), row.get('MatchDate'),
+                    row.get('Home'), row.get('Away'),
+                )
                 if key in seen:
                     continue
                 seen.add(key)
                 rows.append(row)
-    rows.sort(key=lambda r: (r.get('MatchDate', ''), r.get('Home', ''), r.get('Away', '')))
+    rows.sort(key=lambda r: (
+        r.get('Season', ''), r.get('MatchDate', ''),
+        r.get('Home', ''), r.get('Away', ''),
+    ))
     return rows
 
 
 def build_point_in_time_features(rows: list[dict]) -> list[dict]:
     """Costruisce feature usando solo xG di partite STRETTAMENTE precedenti.
 
-    Le gare dello stesso giorno vengono elaborate come blocco: nessuna partita
-    può vedere gli xG di un'altra gara disputata nello stesso giorno. Questo
-    rende il dataset adatto ai backtest senza leakage temporale.
+    Due barriere anti-leakage sono intenzionali:
+    1. lo storico viene separato per stagione;
+    2. le gare dello stesso giorno vengono elaborate come blocco.
+
+    In questo modo la prima partita di una nuova stagione parte sempre da zero
+    e nessuna gara può vedere gli xG prodotti più tardi nello stesso giorno.
     """
-    season = defaultdict(lambda: {'xgf': [], 'xga': []})
+    season_stats = defaultdict(lambda: {'xgf': [], 'xga': []})
     recent = defaultdict(lambda: {'xgf': deque(maxlen=10), 'xga': deque(maxlen=10)})
     output = []
 
+    # Il blocco temporale deve comprendere anche Season. Due stagioni diverse
+    # possono teoricamente contenere la stessa data in dati di test/importati.
     by_date = defaultdict(list)
     for row in rows:
-        by_date[row.get('MatchDate', '')].append(row)
+        season = str(row.get('Season') or '')
+        by_date[(season, row.get('MatchDate', ''))].append(row)
 
-    for match_date in sorted(by_date):
+    for season, match_date in sorted(by_date):
         pending_updates = []
-        for row in by_date[match_date]:
+        for row in by_date[(season, match_date)]:
             league = row['LeagueId']
             home, away = row['Home'], row['Away']
-            hk, ak = (league, home), (league, away)
+            hk = (league, season, home)
+            ak = (league, season, away)
 
             def side_features(key, prefix: str) -> dict:
-                s = season[key]
+                s = season_stats[key]
                 r = recent[key]
                 result = {
                     f'{prefix}XGPlayed': len(s['xgf']),
@@ -72,13 +100,26 @@ def build_point_in_time_features(rows: list[dict]) -> list[dict]:
                     result[f'{prefix}XGALast{n}Avg'] = _fmt(_avg(list(r['xga'])[-n:]))
                 return result
 
+            home_goals = str(row.get('HomeGoals') or '').strip()
+            away_goals = str(row.get('AwayGoals') or '').strip()
+            actual_goals = ''
+            over25 = ''
+            if home_goals != '' and away_goals != '':
+                actual_goals = int(float(home_goals)) + int(float(away_goals))
+                over25 = 1 if actual_goals >= 3 else 0
+
             feat = {
                 'LeagueId': league,
+                'Season': season,
                 'MatchDate': match_date,
                 'Home': home,
                 'Away': away,
                 'ActualHomeXG': row['HomeXG'],
                 'ActualAwayXG': row['AwayXG'],
+                'HomeGoals': home_goals,
+                'AwayGoals': away_goals,
+                'Goals': actual_goals,
+                'Over25': over25,
                 'Source': row.get('Source', ''),
             }
             feat.update(side_features(hk, 'Home'))
@@ -86,10 +127,10 @@ def build_point_in_time_features(rows: list[dict]) -> list[dict]:
 
             # Stima neutra e leggibile: forza offensiva di una squadra mediata
             # con la vulnerabilità xG dell'avversaria. Non è ancora un engine.
-            home_xgf = _avg(season[hk]['xgf'])
-            home_xga = _avg(season[hk]['xga'])
-            away_xgf = _avg(season[ak]['xgf'])
-            away_xga = _avg(season[ak]['xga'])
+            home_xgf = _avg(season_stats[hk]['xgf'])
+            home_xga = _avg(season_stats[hk]['xga'])
+            away_xgf = _avg(season_stats[ak]['xgf'])
+            away_xga = _avg(season_stats[ak]['xga'])
             projected_home = None if home_xgf is None or away_xga is None else (home_xgf + away_xga) / 2
             projected_away = None if away_xgf is None or home_xga is None else (away_xgf + home_xga) / 2
             projected_total = None if projected_home is None or projected_away is None else projected_home + projected_away
@@ -102,8 +143,8 @@ def build_point_in_time_features(rows: list[dict]) -> list[dict]:
             pending_updates.extend([(hk, hxg, axg), (ak, axg, hxg)])
 
         for key, xgf, xga in pending_updates:
-            season[key]['xgf'].append(xgf)
-            season[key]['xga'].append(xga)
+            season_stats[key]['xgf'].append(xgf)
+            season_stats[key]['xga'].append(xga)
             recent[key]['xgf'].append(xgf)
             recent[key]['xga'].append(xga)
 
@@ -125,7 +166,8 @@ def main() -> None:
         writer = csv.DictWriter(handle, fieldnames=list(features[0].keys()), delimiter=';')
         writer.writeheader()
         writer.writerows(features)
-    print(f'[OK] {len(features)} feature match -> {out}')
+    seasons = sorted({str(row.get('Season') or '') for row in features})
+    print(f'[OK] {len(features)} feature match ({", ".join(seasons)}) -> {out}')
 
 
 if __name__ == '__main__':
