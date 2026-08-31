@@ -1,0 +1,38 @@
+name: Sync xG experiment from v2-dev
+
+on:
+  push:
+    branches:
+      - v2-dev
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-xg-experiment
+  cancel-in-progress: false
+
+jobs:
+  merge-v2-dev-into-xg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout experiment-xg-engine with full history
+        uses: actions/checkout@v4
+        with:
+          ref: experiment-xg-engine
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch v2-dev
+        run: git fetch origin v2-dev
+
+      - name: Merge v2-dev into experiment-xg-engine
+        run: |
+          git merge --no-edit origin/v2-dev
+          git push origin HEAD:experiment-xg-engine
