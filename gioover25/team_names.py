@@ -51,20 +51,27 @@ TEAM_ALIASES: dict[str, dict[str, str]] = {
     },
     "Norway_2ndDivision_Group1": {
         "mjndalen": "mjoendalen",
+        "mjondalen": "mjoendalen",
     },
     "Norway_2ndDivision_Group2": {
         "kjelsas": "kjelsaas",
     },
     "Norway_3rdDivision_Group1": {
         "valerenga if 2": "vaalerenga if 2",
+        "valerenga 2": "vaalerenga if 2",
         "brum": "baerum",
+        "baerum sportsklubb": "baerum",
     },
     "Norway_3rdDivision_Group3": {
         "frde": "foerde",
     },
     "Norway_3rdDivision_Group5": {
         "flya": "floeya",
+        "floya": "floeya",
         "skjervy": "skjervoey",
+    },
+    "USA_USLChampionship": {
+        "birmingham": "birmingham legion",
     },
     "Finland_Kolmonen_Southern_Group1": {
         "sexypoxyt": "poxyt",
