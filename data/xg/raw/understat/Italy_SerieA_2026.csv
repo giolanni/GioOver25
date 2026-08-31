@@ -1,0 +1,19 @@
+﻿LeagueId;MatchDate;Home;Away;HomeXG;AwayXG;HomeGoals;AwayGoals;Source;SourceMatchId
+Italy_SerieA;2026-08-22;Genoa;Napoli;0.500846;1.15739;0;2;understat;31563
+Italy_SerieA;2026-08-22;Inter;Monza;1.5385;1.21666;4;1;understat;31560
+Italy_SerieA;2026-08-22;Parma Calcio 1913;Cagliari;1.02972;1.2574;0;1;understat;31562
+Italy_SerieA;2026-08-22;Udinese;Como;2.12071;2.38585;1;1;understat;31561
+Italy_SerieA;2026-08-23;Atalanta;Sassuolo;0.922815;2.70103;2;1;understat;31567
+Italy_SerieA;2026-08-23;Frosinone;Juventus;0.365497;2.61714;0;1;understat;31564
+Italy_SerieA;2026-08-23;Torino;AC Milan;1.13035;1.74146;1;2;understat;31566
+Italy_SerieA;2026-08-23;Venezia;Lecce;3.19474;2.45246;0;2;understat;31565
+Italy_SerieA;2026-08-24;Bologna;Lazio;2.0643;0.805148;0;1;understat;31568
+Italy_SerieA;2026-08-24;Roma;Fiorentina;3.77522;0.287976;4;0;understat;31569
+Italy_SerieA;2026-08-28;AC Milan;Venezia;3.21774;0.521597;2;0;understat;31570
+Italy_SerieA;2026-08-29;Fiorentina;Frosinone;1.8162;1.95272;0;3;understat;31573
+Italy_SerieA;2026-08-29;Juventus;Parma Calcio 1913;1.82242;0.200754;2;0;understat;31574
+Italy_SerieA;2026-08-29;Monza;Udinese;1.89797;1.02273;2;3;understat;31571
+Italy_SerieA;2026-08-29;Sassuolo;Torino;1.54523;1.50213;2;1;understat;31572
+Italy_SerieA;2026-08-30;Cagliari;Inter;0.323326;3.97224;0;1;understat;31576
+Italy_SerieA;2026-08-30;Lazio;Genoa;2.11324;0.743486;1;0;understat;31577
+Italy_SerieA;2026-08-30;Napoli;Como;1.03232;1.0975;1;2;understat;31575

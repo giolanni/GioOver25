@@ -1,0 +1,381 @@
+﻿LeagueId;MatchDate;Home;Away;HomeXG;AwayXG;HomeGoals;AwayGoals;Source;SourceMatchId
+Italy_SerieA;2023-08-19;Empoli;Verona;0.844727;0.690842;0;1;understat;22305
+Italy_SerieA;2023-08-19;Frosinone;Napoli;0.871157;1.31464;1;3;understat;22306
+Italy_SerieA;2023-08-19;Genoa;Fiorentina;0.79732;1.1197;1;4;understat;22308
+Italy_SerieA;2023-08-19;Inter;Monza;2.49549;0.581247;2;0;understat;22307
+Italy_SerieA;2023-08-20;Lecce;Lazio;1.75411;2.22215;2;1;understat;22312
+Italy_SerieA;2023-08-20;Roma;Salernitana;2.00607;0.364297;2;2;understat;22309
+Italy_SerieA;2023-08-20;Sassuolo;Atalanta;0.381264;1.50058;0;2;understat;22310
+Italy_SerieA;2023-08-20;Udinese;Juventus;1.20988;1.86438;0;3;understat;22311
+Italy_SerieA;2023-08-21;Bologna;AC Milan;1.17349;1.1479;0;2;understat;22314
+Italy_SerieA;2023-08-21;Torino;Cagliari;1.03099;0.443184;0;0;understat;22313
+Italy_SerieA;2023-08-26;AC Milan;Torino;3.25277;0.563184;4;1;understat;22317
+Italy_SerieA;2023-08-26;Frosinone;Atalanta;0.760807;1.44199;2;1;understat;22315
+Italy_SerieA;2023-08-26;Monza;Empoli;2.0469;1.13824;2;0;understat;22316
+Italy_SerieA;2023-08-26;Verona;Roma;0.904461;2.00413;2;1;understat;22318
+Italy_SerieA;2023-08-27;Fiorentina;Lecce;1.51003;0.494028;2;2;understat;22319
+Italy_SerieA;2023-08-27;Juventus;Bologna;0.915803;0.687398;1;1;understat;22320
+Italy_SerieA;2023-08-27;Lazio;Genoa;0.937895;0.69511;0;1;understat;22321
+Italy_SerieA;2023-08-27;Napoli;Sassuolo;3.53489;0.145568;2;0;understat;22322
+Italy_SerieA;2023-08-28;Cagliari;Inter;0.484344;1.25423;0;2;understat;22324
+Italy_SerieA;2023-08-28;Salernitana;Udinese;0.559371;0.548425;1;1;understat;22323
+Italy_SerieA;2023-09-01;Roma;AC Milan;0.412392;1.62873;1;2;understat;22326
+Italy_SerieA;2023-09-01;Sassuolo;Verona;2.62139;0.555465;3;1;understat;22325
+Italy_SerieA;2023-09-02;Atalanta;Monza;1.96499;0.37036;3;0;understat;22329
+Italy_SerieA;2023-09-02;Bologna;Cagliari;2.8268;0.537052;2;1;understat;22328
+Italy_SerieA;2023-09-02;Napoli;Lazio;1.04344;1.04826;1;2;understat;22330
+Italy_SerieA;2023-09-02;Udinese;Frosinone;2.07837;2.41709;0;0;understat;22327
+Italy_SerieA;2023-09-03;Empoli;Juventus;0.304187;3.04937;0;2;understat;22333
+Italy_SerieA;2023-09-03;Inter;Fiorentina;5.21474;0.346607;4;0;understat;22332
+Italy_SerieA;2023-09-03;Lecce;Salernitana;1.83665;1.05367;2;0;understat;22334
+Italy_SerieA;2023-09-03;Torino;Genoa;0.481429;0.102008;1;0;understat;22331
+Italy_SerieA;2023-09-16;Genoa;Napoli;1.33007;0.984291;2;2;understat;22337
+Italy_SerieA;2023-09-16;Inter;AC Milan;2.95417;0.989611;5;1;understat;22336
+Italy_SerieA;2023-09-16;Juventus;Lazio;2.6734;0.704843;3;1;understat;22335
+Italy_SerieA;2023-09-17;Cagliari;Udinese;2.2007;0.836992;0;0;understat;22338
+Italy_SerieA;2023-09-17;Fiorentina;Atalanta;1.4533;0.632092;3;2;understat;22341
+Italy_SerieA;2023-09-17;Frosinone;Sassuolo;2.97022;1.93433;4;2;understat;22339
+Italy_SerieA;2023-09-17;Monza;Lecce;3.29559;0.895727;1;1;understat;22340
+Italy_SerieA;2023-09-17;Roma;Empoli;2.49292;0.166755;7;0;understat;22342
+Italy_SerieA;2023-09-18;Salernitana;Torino;0.694683;1.54562;0;3;understat;22343
+Italy_SerieA;2023-09-18;Verona;Bologna;0.408446;0.896605;0;0;understat;22344
+Italy_SerieA;2023-09-22;Lecce;Genoa;1.00903;0.532474;1;0;understat;22351
+Italy_SerieA;2023-09-22;Salernitana;Frosinone;0.834621;0.98737;1;1;understat;22350
+Italy_SerieA;2023-09-23;AC Milan;Verona;0.916672;0.845815;1;0;understat;22352
+Italy_SerieA;2023-09-23;Lazio;Monza;1.02354;1.80956;1;1;understat;22348
+Italy_SerieA;2023-09-23;Sassuolo;Juventus;1.74238;1.36816;4;2;understat;22353
+Italy_SerieA;2023-09-24;Atalanta;Cagliari;1.67724;1.00314;2;0;understat;22345
+Italy_SerieA;2023-09-24;Bologna;Napoli;0.184666;1.84847;0;0;understat;22346
+Italy_SerieA;2023-09-24;Empoli;Inter;0.330665;1.63518;0;1;understat;22347
+Italy_SerieA;2023-09-24;Torino;Roma;1.10678;1.10764;1;1;understat;22354
+Italy_SerieA;2023-09-24;Udinese;Fiorentina;2.40063;0.281122;0;2;understat;22349
+Italy_SerieA;2023-09-26;Juventus;Lecce;1.64987;0.0667791;1;0;understat;22359
+Italy_SerieA;2023-09-27;Cagliari;AC Milan;0.67613;2.10838;1;3;understat;22355
+Italy_SerieA;2023-09-27;Empoli;Salernitana;2.29107;0.477434;1;0;understat;22356
+Italy_SerieA;2023-09-27;Inter;Sassuolo;1.02458;1.02404;1;2;understat;22358
+Italy_SerieA;2023-09-27;Lazio;Torino;0.773684;0.213455;2;0;understat;22360
+Italy_SerieA;2023-09-27;Napoli;Udinese;3.70921;0.82191;4;1;understat;22361
+Italy_SerieA;2023-09-27;Verona;Atalanta;0.325267;1.38356;0;1;understat;22362
+Italy_SerieA;2023-09-28;Frosinone;Fiorentina;0.976021;1.45269;1;1;understat;22364
+Italy_SerieA;2023-09-28;Genoa;Roma;1.59801;1.29625;4;1;understat;22357
+Italy_SerieA;2023-09-28;Monza;Bologna;1.02777;1.04179;0;0;understat;22363
+Italy_SerieA;2023-09-30;AC Milan;Lazio;2.69178;0.502537;2;0;understat;22373
+Italy_SerieA;2023-09-30;Lecce;Napoli;0.612649;2.71689;0;4;understat;22367
+Italy_SerieA;2023-09-30;Salernitana;Inter;0.620122;2.5554;0;4;understat;22372
+Italy_SerieA;2023-10-01;Atalanta;Juventus;1.97735;0.203059;0;0;understat;22365
+Italy_SerieA;2023-10-01;Bologna;Empoli;3.28867;1.04905;3;0;understat;22366
+Italy_SerieA;2023-10-01;Roma;Frosinone;0.830718;0.791935;2;0;understat;22369
+Italy_SerieA;2023-10-01;Udinese;Genoa;1.53115;0.83333;2;2;understat;22370
+Italy_SerieA;2023-10-02;Fiorentina;Cagliari;1.52678;0.81356;3;0;understat;22368
+Italy_SerieA;2023-10-02;Sassuolo;Monza;1.49022;1.84951;0;1;understat;22374
+Italy_SerieA;2023-10-02;Torino;Verona;0.617691;0.273624;0;0;understat;22371
+Italy_SerieA;2023-10-06;Empoli;Udinese;1.00116;1.23968;0;0;understat;22376
+Italy_SerieA;2023-10-06;Lecce;Sassuolo;1.51817;1.74518;1;1;understat;22380
+Italy_SerieA;2023-10-07;Genoa;AC Milan;0.353901;0.898603;0;1;understat;22378
+Italy_SerieA;2023-10-07;Inter;Bologna;0.705274;1.04766;2;2;understat;22383
+Italy_SerieA;2023-10-07;Juventus;Torino;2.40906;0.592513;2;0;understat;22379
+Italy_SerieA;2023-10-08;Cagliari;Roma;1.76268;3.3327;1;4;understat;22375
+Italy_SerieA;2023-10-08;Frosinone;Verona;1.91977;0.506291;2;1;understat;22377
+Italy_SerieA;2023-10-08;Lazio;Atalanta;1.65045;1.0016;3;2;understat;22382
+Italy_SerieA;2023-10-08;Monza;Salernitana;3.73783;0.999628;3;0;understat;22381
+Italy_SerieA;2023-10-08;Napoli;Fiorentina;1.77418;1.76863;1;3;understat;22384
+Italy_SerieA;2023-10-21;Sassuolo;Lazio;0.319165;2.93562;0;2;understat;22392
+Italy_SerieA;2023-10-21;Torino;Inter;0.596799;2.44253;0;3;understat;22390
+Italy_SerieA;2023-10-21;Verona;Napoli;0.87241;2.65531;1;3;understat;22387
+Italy_SerieA;2023-10-22;AC Milan;Juventus;0.238518;1.80571;0;1;understat;22391
+Italy_SerieA;2023-10-22;Atalanta;Genoa;1.97081;1.04166;2;0;understat;22385
+Italy_SerieA;2023-10-22;Bologna;Frosinone;1.63336;1.42786;2;1;understat;22386
+Italy_SerieA;2023-10-22;Roma;Monza;2.53278;0.423669;1;0;understat;22394
+Italy_SerieA;2023-10-22;Salernitana;Cagliari;1.33333;1.4958;2;2;understat;22388
+Italy_SerieA;2023-10-23;Fiorentina;Empoli;0.764401;1.79488;0;2;understat;22389
+Italy_SerieA;2023-10-23;Udinese;Lecce;2.58184;0.808325;1;1;understat;22393
+Italy_SerieA;2023-10-27;Genoa;Salernitana;0.40726;0.778619;1;0;understat;22396
+Italy_SerieA;2023-10-28;Juventus;Verona;3.64831;0.318759;1;0;understat;22403
+Italy_SerieA;2023-10-28;Lecce;Torino;0.462357;1.33241;0;1;understat;22398
+Italy_SerieA;2023-10-28;Sassuolo;Bologna;0.864789;0.829724;1;1;understat;22401
+Italy_SerieA;2023-10-29;Cagliari;Frosinone;4.07472;1.29593;4;3;understat;22395
+Italy_SerieA;2023-10-29;Inter;Roma;2.25314;0.495306;1;0;understat;22397
+Italy_SerieA;2023-10-29;Monza;Udinese;0.40283;1.05616;1;1;understat;22399
+Italy_SerieA;2023-10-29;Napoli;AC Milan;1.50253;2.37489;2;2;understat;22404
+Italy_SerieA;2023-10-30;Empoli;Atalanta;0.271851;2.19175;0;3;understat;22400
+Italy_SerieA;2023-10-30;Lazio;Fiorentina;2.36178;0.389451;1;0;understat;22402
+Italy_SerieA;2023-11-03;Bologna;Lazio;0.698258;0.462021;1;0;understat;22406
+Italy_SerieA;2023-11-04;AC Milan;Udinese;1.28493;2.1049;0;1;understat;22410
+Italy_SerieA;2023-11-04;Atalanta;Inter;1.36089;1.39642;1;2;understat;22405
+Italy_SerieA;2023-11-04;Salernitana;Napoli;0.322231;1.67658;0;2;understat;22413
+Italy_SerieA;2023-11-05;Cagliari;Genoa;1.26944;0.669834;2;1;understat;22407
+Italy_SerieA;2023-11-05;Fiorentina;Juventus;0.675388;0.855784;0;1;understat;22408
+Italy_SerieA;2023-11-05;Roma;Lecce;2.55177;1.20256;2;1;understat;22412
+Italy_SerieA;2023-11-05;Verona;Monza;1.12724;1.39014;1;3;understat;22409
+Italy_SerieA;2023-11-06;Frosinone;Empoli;0.80376;1.87117;2;1;understat;22411
+Italy_SerieA;2023-11-06;Torino;Sassuolo;3.43408;0.499189;2;1;understat;22414
+Italy_SerieA;2023-11-10;Genoa;Verona;2.04226;0.2458;1;0;understat;22415
+Italy_SerieA;2023-11-10;Sassuolo;Salernitana;2.4684;0.946956;2;2;understat;22423
+Italy_SerieA;2023-11-11;Juventus;Cagliari;3.04248;0.477922;2;1;understat;22421
+Italy_SerieA;2023-11-11;Lecce;AC Milan;1.99035;2.22404;2;2;understat;22417
+Italy_SerieA;2023-11-11;Monza;Torino;1.16628;0.819686;1;1;understat;22418
+Italy_SerieA;2023-11-12;Fiorentina;Bologna;1.57435;2.31019;2;1;understat;22420
+Italy_SerieA;2023-11-12;Inter;Frosinone;3.2782;0.58612;2;0;understat;22424
+Italy_SerieA;2023-11-12;Lazio;Roma;0.398131;0.320262;0;0;understat;22416
+Italy_SerieA;2023-11-12;Napoli;Empoli;1.06052;0.38859;0;1;understat;22422
+Italy_SerieA;2023-11-12;Udinese;Atalanta;1.21433;0.575292;1;1;understat;22419
+Italy_SerieA;2023-11-25;AC Milan;Fiorentina;1.78395;1.69486;1;0;understat;22433
+Italy_SerieA;2023-11-25;Atalanta;Napoli;0.880466;2.51076;1;2;understat;22426
+Italy_SerieA;2023-11-25;Salernitana;Lazio;1.40102;1.83536;2;1;understat;22431
+Italy_SerieA;2023-11-26;Cagliari;Monza;1.58663;0.802396;1;1;understat;22430
+Italy_SerieA;2023-11-26;Empoli;Sassuolo;1.47716;2.97603;3;4;understat;22429
+Italy_SerieA;2023-11-26;Frosinone;Genoa;0.990501;1.82552;2;1;understat;22428
+Italy_SerieA;2023-11-26;Juventus;Inter;0.488914;0.692636;1;1;understat;22432
+Italy_SerieA;2023-11-26;Roma;Udinese;1.25942;0.532293;3;1;understat;22434
+Italy_SerieA;2023-11-27;Bologna;Torino;1.34938;0.573292;2;0;understat;22425
+Italy_SerieA;2023-11-27;Verona;Lecce;1.94683;1.52186;2;2;understat;22427
+Italy_SerieA;2023-12-01;Monza;Juventus;0.656513;2.95935;1;2;understat;22443
+Italy_SerieA;2023-12-02;AC Milan;Frosinone;1.01016;0.728766;3;1;understat;22440
+Italy_SerieA;2023-12-02;Genoa;Empoli;0.832928;0.753276;1;1;understat;22439
+Italy_SerieA;2023-12-02;Lazio;Cagliari;2.50417;0.613719;1;0;understat;22438
+Italy_SerieA;2023-12-03;Fiorentina;Salernitana;3.06935;0.780756;3;0;understat;22435
+Italy_SerieA;2023-12-03;Lecce;Bologna;1.65827;1.51659;1;1;understat;22437
+Italy_SerieA;2023-12-03;Napoli;Inter;0.787314;2.58503;0;3;understat;22442
+Italy_SerieA;2023-12-03;Sassuolo;Roma;0.916551;1.9994;1;2;understat;22444
+Italy_SerieA;2023-12-03;Udinese;Verona;2.14774;1.56674;3;3;understat;22441
+Italy_SerieA;2023-12-04;Torino;Atalanta;1.63866;0.345831;3;0;understat;22436
+Italy_SerieA;2023-12-08;Juventus;Napoli;0.662608;1.00524;1;0;understat;22451
+Italy_SerieA;2023-12-09;Atalanta;AC Milan;3.10106;1.00625;3;2;understat;22445
+Italy_SerieA;2023-12-09;Inter;Udinese;3.34151;0.847308;4;0;understat;22450
+Italy_SerieA;2023-12-09;Verona;Lazio;0.792676;1.01398;1;1;understat;22449
+Italy_SerieA;2023-12-10;Frosinone;Torino;1.50797;1.06355;0;0;understat;22448
+Italy_SerieA;2023-12-10;Monza;Genoa;0.67177;1.74997;1;0;understat;22454
+Italy_SerieA;2023-12-10;Roma;Fiorentina;0.702857;0.975261;1;1;understat;22453
+Italy_SerieA;2023-12-10;Salernitana;Bologna;0.601235;1.67302;1;2;understat;22452
+Italy_SerieA;2023-12-11;Cagliari;Sassuolo;1.2382;1.29012;2;1;understat;22446
+Italy_SerieA;2023-12-11;Empoli;Lecce;1.8919;0.985028;1;1;understat;22447
+Italy_SerieA;2023-12-15;Genoa;Juventus;0.844502;2.10424;1;1;understat;22458
+Italy_SerieA;2023-12-16;Lecce;Frosinone;0.729342;1.84133;2;1;understat;22462
+Italy_SerieA;2023-12-16;Napoli;Cagliari;3.03273;1.83831;2;1;understat;22460
+Italy_SerieA;2023-12-16;Torino;Empoli;2.11343;0.28927;1;0;understat;22461
+Italy_SerieA;2023-12-17;AC Milan;Monza;2.26584;1.42821;3;0;understat;22459
+Italy_SerieA;2023-12-17;Bologna;Roma;0.782175;0.566461;2;0;understat;22456
+Italy_SerieA;2023-12-17;Fiorentina;Verona;0.330363;2.92504;1;0;understat;22457
+Italy_SerieA;2023-12-17;Lazio;Inter;1.63799;1.69409;0;2;understat;22463
+Italy_SerieA;2023-12-17;Udinese;Sassuolo;0.750879;2.90114;2;2;understat;22464
+Italy_SerieA;2023-12-18;Atalanta;Salernitana;2.34764;0.976758;4;1;understat;22455
+Italy_SerieA;2023-12-22;Empoli;Lazio;0.659249;1.95383;0;2;understat;22465
+Italy_SerieA;2023-12-22;Monza;Fiorentina;0.659021;1.95676;0;1;understat;22471
+Italy_SerieA;2023-12-22;Salernitana;AC Milan;1.14336;2.9432;2;2;understat;22473
+Italy_SerieA;2023-12-22;Sassuolo;Genoa;2.17129;1.3709;1;2;understat;22472
+Italy_SerieA;2023-12-23;Bologna;Atalanta;0.986587;1.59382;1;0;understat;22469
+Italy_SerieA;2023-12-23;Frosinone;Juventus;0.495508;1.27523;1;2;understat;22466
+Italy_SerieA;2023-12-23;Inter;Lecce;3.28691;1.1279;2;0;understat;22467
+Italy_SerieA;2023-12-23;Roma;Napoli;2.06895;0.44093;2;0;understat;22474
+Italy_SerieA;2023-12-23;Torino;Udinese;0.666821;0.919531;1;1;understat;22468
+Italy_SerieA;2023-12-23;Verona;Cagliari;0.986759;1.20911;2;0;understat;22470
+Italy_SerieA;2023-12-29;Fiorentina;Torino;0.885643;0.439657;1;0;understat;22477
+Italy_SerieA;2023-12-29;Genoa;Inter;0.410279;1.8593;1;1;understat;22478
+Italy_SerieA;2023-12-29;Lazio;Frosinone;1.74892;1.13132;3;1;understat;22483
+Italy_SerieA;2023-12-29;Napoli;Monza;2.37308;1.09674;0;0;understat;22484
+Italy_SerieA;2023-12-30;AC Milan;Sassuolo;1.49842;0.40374;1;0;understat;22481
+Italy_SerieA;2023-12-30;Atalanta;Lecce;1.4919;1.38509;1;0;understat;22475
+Italy_SerieA;2023-12-30;Cagliari;Empoli;1.4357;0.222516;0;0;understat;22476
+Italy_SerieA;2023-12-30;Juventus;Roma;1.63273;0.39518;1;0;understat;22480
+Italy_SerieA;2023-12-30;Udinese;Bologna;1.53169;0.766703;3;0;understat;22482
+Italy_SerieA;2023-12-30;Verona;Salernitana;0.812164;0.768493;0;1;understat;22479
+Italy_SerieA;2024-01-05;Bologna;Genoa;1.35919;0.153342;1;1;understat;22485
+Italy_SerieA;2024-01-06;Frosinone;Monza;1.14998;1.45289;2;3;understat;22487
+Italy_SerieA;2024-01-06;Inter;Verona;2.12311;1.36479;2;1;understat;22491
+Italy_SerieA;2024-01-06;Lecce;Cagliari;1.61147;0.994223;1;1;understat;22489
+Italy_SerieA;2024-01-06;Sassuolo;Fiorentina;0.701861;1.4924;1;0;understat;22490
+Italy_SerieA;2024-01-07;Empoli;AC Milan;0.945682;1.51431;0;3;understat;22486
+Italy_SerieA;2024-01-07;Roma;Atalanta;2.58182;1.11144;1;1;understat;22488
+Italy_SerieA;2024-01-07;Salernitana;Juventus;0.930992;1.82515;1;2;understat;22492
+Italy_SerieA;2024-01-07;Torino;Napoli;2.13004;1.14787;3;0;understat;22494
+Italy_SerieA;2024-01-07;Udinese;Lazio;0.612027;0.498208;1;2;understat;22493
+Italy_SerieA;2024-01-13;Genoa;Torino;0.575708;0.30855;0;0;understat;22497
+Italy_SerieA;2024-01-13;Monza;Inter;1.07372;4.72502;1;5;understat;22504
+Italy_SerieA;2024-01-13;Napoli;Salernitana;2.73312;0.151576;2;1;understat;22501
+Italy_SerieA;2024-01-13;Verona;Empoli;1.25066;0.720625;2;1;understat;22503
+Italy_SerieA;2024-01-14;AC Milan;Roma;1.57355;1.23713;3;1;understat;22500
+Italy_SerieA;2024-01-14;Cagliari;Bologna;0.48909;0.738045;2;1;understat;22502
+Italy_SerieA;2024-01-14;Fiorentina;Udinese;1.66667;1.16643;2;2;understat;22496
+Italy_SerieA;2024-01-14;Lazio;Lecce;1.08287;0.971265;1;0;understat;22499
+Italy_SerieA;2024-01-15;Atalanta;Frosinone;4.91726;0.434507;5;0;understat;22495
+Italy_SerieA;2024-01-16;Juventus;Sassuolo;1.23237;0.29509;3;0;understat;22498
+Italy_SerieA;2024-01-20;Roma;Verona;1.4542;1.09599;2;1;understat;22510
+Italy_SerieA;2024-01-20;Udinese;AC Milan;0.813024;2.43121;2;3;understat;22513
+Italy_SerieA;2024-01-21;Empoli;Monza;1.78103;0.868813;3;0;understat;22506
+Italy_SerieA;2024-01-21;Frosinone;Cagliari;2.9278;0.599249;3;1;understat;22508
+Italy_SerieA;2024-01-21;Lecce;Juventus;0.493249;2.48407;0;3;understat;22511
+Italy_SerieA;2024-01-21;Salernitana;Genoa;1.1539;1.11078;1;2;understat;22509
+Italy_SerieA;2024-01-26;Cagliari;Torino;1.97593;2.42275;1;2;understat;22523
+Italy_SerieA;2024-01-27;AC Milan;Bologna;3.60116;2.07278;2;2;understat;22518
+Italy_SerieA;2024-01-27;Atalanta;Udinese;1.32201;0.616693;2;0;understat;22515
+Italy_SerieA;2024-01-27;Juventus;Empoli;0.990773;0.696403;1;1;understat;22517
+Italy_SerieA;2024-01-28;Fiorentina;Inter;1.89212;0.617311;0;1;understat;22522
+Italy_SerieA;2024-01-28;Genoa;Lecce;2.08542;2.29888;2;1;understat;22521
+Italy_SerieA;2024-01-28;Lazio;Napoli;0.414353;0.169707;0;0;understat;22520
+Italy_SerieA;2024-01-28;Monza;Sassuolo;0.419129;0.725542;1;0;understat;22519
+Italy_SerieA;2024-01-28;Verona;Frosinone;2.29871;1.66579;1;1;understat;22516
+Italy_SerieA;2024-01-29;Salernitana;Roma;1.42906;1.48834;1;2;understat;22524
+Italy_SerieA;2024-02-02;Lecce;Fiorentina;2.31602;1.07539;3;2;understat;22534
+Italy_SerieA;2024-02-03;Bologna;Sassuolo;0.889471;0.898681;4;2;understat;22528
+Italy_SerieA;2024-02-03;Empoli;Genoa;0.58479;0.577479;0;0;understat;22530
+Italy_SerieA;2024-02-03;Frosinone;AC Milan;1.0672;2.01173;2;3;understat;22531
+Italy_SerieA;2024-02-03;Udinese;Monza;0.780762;0.124799;0;0;understat;22527
+Italy_SerieA;2024-02-04;Atalanta;Lazio;2.87997;1.29656;3;1;understat;22526
+Italy_SerieA;2024-02-04;Inter;Juventus;1.64254;0.597312;1;0;understat;22532
+Italy_SerieA;2024-02-04;Napoli;Verona;1.97716;1.18484;2;1;understat;22525
+Italy_SerieA;2024-02-04;Torino;Salernitana;0.742534;0.0814573;0;0;understat;22529
+Italy_SerieA;2024-02-05;Roma;Cagliari;3.35931;0.503174;4;0;understat;22533
+Italy_SerieA;2024-02-09;Salernitana;Empoli;0.799924;2.14988;1;3;understat;22541
+Italy_SerieA;2024-02-10;Cagliari;Lazio;0.69339;1.60335;1;3;understat;22536
+Italy_SerieA;2024-02-10;Roma;Inter;1.00864;1.24183;2;4;understat;22544
+Italy_SerieA;2024-02-10;Sassuolo;Torino;0.803849;1.11139;1;1;understat;22540
+Italy_SerieA;2024-02-11;AC Milan;Napoli;1.37304;0.502118;1;0;understat;22539
+Italy_SerieA;2024-02-11;Bologna;Lecce;1.77523;1.10831;4;0;understat;22535
+Italy_SerieA;2024-02-11;Fiorentina;Frosinone;3.17846;1.2861;5;1;understat;22537
+Italy_SerieA;2024-02-11;Genoa;Atalanta;0.906299;2.84643;1;4;understat;22542
+Italy_SerieA;2024-02-11;Monza;Verona;0.831924;0.576842;0;0;understat;22543
+Italy_SerieA;2024-02-12;Juventus;Udinese;2.01527;1.13222;0;1;understat;22538
+Italy_SerieA;2024-02-14;Bologna;Fiorentina;2.65166;0.969673;2;0;understat;22505
+Italy_SerieA;2024-02-16;Inter;Salernitana;4.48759;0.0464174;4;0;understat;22550
+Italy_SerieA;2024-02-16;Torino;Lecce;1.52802;0.415653;2;0;understat;22547
+Italy_SerieA;2024-02-17;Atalanta;Sassuolo;5.00929;1.81361;3;0;understat;22554
+Italy_SerieA;2024-02-17;Napoli;Genoa;1.18788;0.285006;1;1;understat;22546
+Italy_SerieA;2024-02-17;Verona;Juventus;0.617246;1.80606;2;2;understat;22551
+Italy_SerieA;2024-02-18;Empoli;Fiorentina;0.945067;0.920295;1;1;understat;22553
+Italy_SerieA;2024-02-18;Frosinone;Roma;1.62402;1.81853;0;3;understat;22552
+Italy_SerieA;2024-02-18;Lazio;Bologna;1.14123;1.16044;1;2;understat;22549
+Italy_SerieA;2024-02-18;Monza;AC Milan;1.6186;1.33102;4;2;understat;22548
+Italy_SerieA;2024-02-18;Udinese;Cagliari;1.17588;0.817344;1;1;understat;22545
+Italy_SerieA;2024-02-22;Torino;Lazio;1.94911;0.352376;0;2;understat;22512
+Italy_SerieA;2024-02-23;Bologna;Verona;2.33279;0.701896;2;0;understat;22555
+Italy_SerieA;2024-02-24;Genoa;Udinese;1.62322;0.322829;2;0;understat;22558
+Italy_SerieA;2024-02-24;Salernitana;Monza;0.728802;2.6089;0;2;understat;22564
+Italy_SerieA;2024-02-24;Sassuolo;Empoli;1.60152;2.52542;2;3;understat;22561
+Italy_SerieA;2024-02-25;AC Milan;Atalanta;1.38915;1.06552;1;1;understat;22560
+Italy_SerieA;2024-02-25;Cagliari;Napoli;0.916353;1.46253;1;1;understat;22556
+Italy_SerieA;2024-02-25;Juventus;Frosinone;1.74414;0.570671;3;2;understat;22562
+Italy_SerieA;2024-02-25;Lecce;Inter;0.928229;3.07379;0;4;understat;22563
+Italy_SerieA;2024-02-26;Fiorentina;Lazio;3.86937;0.611852;2;1;understat;22557
+Italy_SerieA;2024-02-26;Roma;Torino;1.52399;0.551839;3;2;understat;22559
+Italy_SerieA;2024-02-28;Inter;Atalanta;2.91852;0.258264;4;0;understat;22507
+Italy_SerieA;2024-02-28;Sassuolo;Napoli;0.237572;2.7969;1;6;understat;22514
+Italy_SerieA;2024-03-01;Lazio;AC Milan;1.59899;0.849675;0;1;understat;22568
+Italy_SerieA;2024-03-02;Monza;Roma;1.01584;1.89657;1;4;understat;22569
+Italy_SerieA;2024-03-02;Torino;Fiorentina;0.561691;0.697752;0;0;understat;22571
+Italy_SerieA;2024-03-02;Udinese;Salernitana;1.98278;0.839171;1;1;understat;22574
+Italy_SerieA;2024-03-03;Atalanta;Bologna;1.20723;1.58258;1;2;understat;22565
+Italy_SerieA;2024-03-03;Empoli;Cagliari;1.50581;0.428646;0;1;understat;22570
+Italy_SerieA;2024-03-03;Frosinone;Lecce;1.53511;1.29494;1;1;understat;22566
+Italy_SerieA;2024-03-03;Napoli;Juventus;1.7764;2.0359;2;1;understat;22573
+Italy_SerieA;2024-03-03;Verona;Sassuolo;0.504318;0.360012;1;0;understat;22567
+Italy_SerieA;2024-03-04;Inter;Genoa;2.90423;1.17046;2;1;understat;22572
+Italy_SerieA;2024-03-08;Napoli;Torino;1.61516;1.12784;1;1;understat;22584
+Italy_SerieA;2024-03-09;Bologna;Inter;0.668681;0.81996;0;1;understat;22575
+Italy_SerieA;2024-03-09;Cagliari;Salernitana;3.41823;1.17253;4;2;understat;22576
+Italy_SerieA;2024-03-09;Genoa;Monza;1.81546;1.66208;2;3;understat;22582
+Italy_SerieA;2024-03-09;Sassuolo;Frosinone;0.596618;1.38509;1;0;understat;22580
+Italy_SerieA;2024-03-10;AC Milan;Empoli;0.988992;0.419598;1;0;understat;22579
+Italy_SerieA;2024-03-10;Fiorentina;Roma;2.47793;0.776614;2;2;understat;22577
+Italy_SerieA;2024-03-10;Juventus;Atalanta;1.66716;0.470912;2;2;understat;22578
+Italy_SerieA;2024-03-10;Lecce;Verona;1.03517;0.556534;0;1;understat;22581
+Italy_SerieA;2024-03-11;Lazio;Udinese;2.15139;1.48854;1;2;understat;22583
+Italy_SerieA;2024-03-15;Empoli;Bologna;0.868895;2.30568;0;1;understat;22591
+Italy_SerieA;2024-03-16;Frosinone;Lazio;1.90054;3.30539;2;3;understat;22586
+Italy_SerieA;2024-03-16;Monza;Cagliari;1.4436;0.443858;1;0;understat;22590
+Italy_SerieA;2024-03-16;Salernitana;Lecce;1.45145;2.01475;0;1;understat;22594
+Italy_SerieA;2024-03-16;Udinese;Torino;0.384805;1.54612;0;2;understat;22593
+Italy_SerieA;2024-03-17;Inter;Napoli;1.37916;1.36148;1;1;understat;22587
+Italy_SerieA;2024-03-17;Juventus;Genoa;1.38709;0.175513;0;0;understat;22589
+Italy_SerieA;2024-03-17;Roma;Sassuolo;0.858457;0.777601;1;0;understat;22592
+Italy_SerieA;2024-03-17;Verona;AC Milan;0.565727;2.75283;1;3;understat;22588
+Italy_SerieA;2024-03-30;Fiorentina;AC Milan;1.69969;3.17431;1;2;understat;22601
+Italy_SerieA;2024-03-30;Genoa;Frosinone;1.65796;1.00689;1;1;understat;22602
+Italy_SerieA;2024-03-30;Lazio;Juventus;1.24248;0.479175;1;0;understat;22603
+Italy_SerieA;2024-03-30;Napoli;Atalanta;1.83498;1.55904;0;3;understat;22598
+Italy_SerieA;2024-03-30;Torino;Monza;1.61585;0.560169;1;0;understat;22604
+Italy_SerieA;2024-04-01;Bologna;Salernitana;1.85322;0.702173;3;0;understat;22596
+Italy_SerieA;2024-04-01;Cagliari;Verona;0.594452;1.09202;1;1;understat;22595
+Italy_SerieA;2024-04-01;Inter;Empoli;2.03375;0.560443;2;0;understat;22599
+Italy_SerieA;2024-04-01;Lecce;Roma;1.97592;1.69372;0;0;understat;22600
+Italy_SerieA;2024-04-01;Sassuolo;Udinese;1.47611;1.72665;1;1;understat;22597
+Italy_SerieA;2024-04-05;Salernitana;Sassuolo;1.2795;1.88042;2;2;understat;22611
+Italy_SerieA;2024-04-06;AC Milan;Lecce;2.41313;0.841362;3;0;understat;22612
+Italy_SerieA;2024-04-06;Empoli;Torino;0.487874;2.5343;3;2;understat;22609
+Italy_SerieA;2024-04-06;Roma;Lazio;0.635152;0.480271;1;0;understat;22608
+Italy_SerieA;2024-04-07;Cagliari;Atalanta;0.715338;0.772446;2;1;understat;22613
+Italy_SerieA;2024-04-07;Frosinone;Bologna;0.568316;2.46415;0;0;understat;22614
+Italy_SerieA;2024-04-07;Juventus;Fiorentina;2.46449;0.508961;1;0;understat;22605
+Italy_SerieA;2024-04-07;Monza;Napoli;0.414034;2.70294;2;4;understat;22610
+Italy_SerieA;2024-04-07;Verona;Genoa;0.961468;2.01327;1;2;understat;22606
+Italy_SerieA;2024-04-08;Udinese;Inter;0.0699579;3.41188;1;2;understat;22607
+Italy_SerieA;2024-04-12;Lazio;Salernitana;2.50164;0.544591;4;1;understat;22615
+Italy_SerieA;2024-04-13;Bologna;Monza;2.77216;0.409248;0;0;understat;22622
+Italy_SerieA;2024-04-13;Lecce;Empoli;3.15126;0.136102;1;0;understat;22617
+Italy_SerieA;2024-04-13;Torino;Juventus;0.834792;1.25957;0;0;understat;22619
+Italy_SerieA;2024-04-14;Inter;Cagliari;1.95072;1.10904;2;2;understat;22616
+Italy_SerieA;2024-04-14;Napoli;Frosinone;2.7326;2.31434;2;2;understat;22618
+Italy_SerieA;2024-04-14;Sassuolo;AC Milan;1.37198;3.05285;3;3;understat;22620
+Italy_SerieA;2024-04-14;Udinese;Roma;0.94473;1.61555;1;2;understat;22621
+Italy_SerieA;2024-04-15;Atalanta;Verona;1.67088;1.10418;2;2;understat;22624
+Italy_SerieA;2024-04-15;Fiorentina;Genoa;1.78763;1.59509;1;1;understat;22623
+Italy_SerieA;2024-04-19;Cagliari;Juventus;1.97822;0.595113;2;2;understat;22625
+Italy_SerieA;2024-04-19;Genoa;Lazio;0.608539;0.952136;0;1;understat;22627
+Italy_SerieA;2024-04-20;Empoli;Napoli;1.25351;0.891755;1;0;understat;22626
+Italy_SerieA;2024-04-20;Verona;Udinese;1.29522;1.97219;1;0;understat;22628
+Italy_SerieA;2024-04-21;Monza;Atalanta;0.878869;2.19828;1;2;understat;22629
+Italy_SerieA;2024-04-21;Salernitana;Fiorentina;0.32683;2.45106;0;2;understat;22631
+Italy_SerieA;2024-04-21;Sassuolo;Lecce;0.410145;2.36614;0;3;understat;22634
+Italy_SerieA;2024-04-21;Torino;Frosinone;0.520991;0.57895;0;0;understat;22632
+Italy_SerieA;2024-04-22;AC Milan;Inter;2.51108;1.62976;1;2;understat;22633
+Italy_SerieA;2024-04-22;Roma;Bologna;1.83356;1.25682;1;3;understat;22630
+Italy_SerieA;2024-04-26;Frosinone;Salernitana;1.75172;1.03098;3;0;understat;22640
+Italy_SerieA;2024-04-27;Juventus;AC Milan;1.76562;0.277994;0;0;understat;22638
+Italy_SerieA;2024-04-27;Lazio;Verona;1.31699;0.629309;1;0;understat;22635
+Italy_SerieA;2024-04-27;Lecce;Monza;0.927644;1.09563;1;1;understat;22639
+Italy_SerieA;2024-04-28;Atalanta;Empoli;2.13088;0.593896;2;0;understat;22644
+Italy_SerieA;2024-04-28;Bologna;Udinese;0.709144;0.613931;1;1;understat;22642
+Italy_SerieA;2024-04-28;Fiorentina;Sassuolo;4.29626;0.268378;5;1;understat;22643
+Italy_SerieA;2024-04-28;Inter;Torino;1.90101;0.45813;2;0;understat;22641
+Italy_SerieA;2024-04-28;Napoli;Roma;3.87555;1.78885;2;2;understat;22636
+Italy_SerieA;2024-04-29;Genoa;Cagliari;1.09421;0.781529;3;0;understat;22637
+Italy_SerieA;2024-05-03;Torino;Bologna;0.786625;0.169889;0;0;understat;22648
+Italy_SerieA;2024-05-04;Monza;Lazio;2.08077;1.57454;2;2;understat;22653
+Italy_SerieA;2024-05-04;Sassuolo;Inter;0.334967;1.63693;1;0;understat;22651
+Italy_SerieA;2024-05-05;AC Milan;Genoa;2.31497;0.91116;3;3;understat;22650
+Italy_SerieA;2024-05-05;Cagliari;Lecce;0.923968;1.81298;1;1;understat;22645
+Italy_SerieA;2024-05-05;Empoli;Frosinone;0.318217;0.947755;0;0;understat;22646
+Italy_SerieA;2024-05-05;Roma;Juventus;1.60597;0.95263;1;1;understat;22652
+Italy_SerieA;2024-05-05;Verona;Fiorentina;1.49212;1.10741;2;1;understat;22649
+Italy_SerieA;2024-05-06;Salernitana;Atalanta;0.497067;2.26499;1;2;understat;22647
+Italy_SerieA;2024-05-06;Udinese;Napoli;0.521861;1.1157;1;1;understat;22654
+Italy_SerieA;2024-05-10;Frosinone;Inter;1.88809;2.05666;0;5;understat;22657
+Italy_SerieA;2024-05-11;AC Milan;Cagliari;3.56305;1.33911;5;1;understat;22663
+Italy_SerieA;2024-05-11;Napoli;Bologna;1.48316;1.74055;0;2;understat;22662
+Italy_SerieA;2024-05-12;Atalanta;Roma;2.85949;1.17185;2;1;understat;22655
+Italy_SerieA;2024-05-12;Genoa;Sassuolo;0.81296;1.69037;2;1;understat;22658
+Italy_SerieA;2024-05-12;Juventus;Salernitana;2.36999;0.921042;1;1;understat;22660
+Italy_SerieA;2024-05-12;Lazio;Empoli;1.61078;1.10282;2;0;understat;22664
+Italy_SerieA;2024-05-12;Verona;Torino;1.09252;0.956758;1;2;understat;22659
+Italy_SerieA;2024-05-13;Fiorentina;Monza;2.45011;1.19628;2;1;understat;22656
+Italy_SerieA;2024-05-13;Lecce;Udinese;0.3485;1.63735;0;2;understat;22661
+Italy_SerieA;2024-05-17;Fiorentina;Napoli;0.566509;1.32124;2;2;understat;22666
+Italy_SerieA;2024-05-18;Lecce;Atalanta;1.03049;2.22033;0;2;understat;22668
+Italy_SerieA;2024-05-18;Torino;AC Milan;1.08012;1.64179;3;1;understat;22674
+Italy_SerieA;2024-05-19;Inter;Lazio;1.61165;0.686603;1;1;understat;22667
+Italy_SerieA;2024-05-19;Monza;Frosinone;1.24886;2.22694;0;1;understat;22671
+Italy_SerieA;2024-05-19;Roma;Genoa;0.736827;0.508028;1;0;understat;22672
+Italy_SerieA;2024-05-19;Sassuolo;Cagliari;0.269648;1.47384;0;2;understat;22669
+Italy_SerieA;2024-05-19;Udinese;Empoli;1.66873;0.82957;1;1;understat;22670
+Italy_SerieA;2024-05-20;Bologna;Juventus;1.379;1.27372;3;3;understat;22665
+Italy_SerieA;2024-05-20;Salernitana;Verona;0.900837;2.33362;1;2;understat;22673
+Italy_SerieA;2024-05-24;Cagliari;Fiorentina;2.08262;2.21632;2;3;understat;22676
+Italy_SerieA;2024-05-24;Genoa;Bologna;1.5757;0.450804;2;0;understat;22683
+Italy_SerieA;2024-05-25;AC Milan;Salernitana;2.82527;1.80163;3;3;understat;22682
+Italy_SerieA;2024-05-25;Juventus;Monza;1.92843;1.13394;2;0;understat;22680
+Italy_SerieA;2024-05-26;Atalanta;Torino;2.56869;1.69527;3;0;understat;22675
+Italy_SerieA;2024-05-26;Empoli;Roma;2.88989;1.45583;2;1;understat;22677
+Italy_SerieA;2024-05-26;Frosinone;Udinese;0.869244;0.895463;0;1;understat;22678
+Italy_SerieA;2024-05-26;Lazio;Sassuolo;1.25146;1.11933;1;1;understat;22681
+Italy_SerieA;2024-05-26;Napoli;Lecce;1.83014;0.622384;0;0;understat;22684
+Italy_SerieA;2024-05-26;Verona;Inter;1.63678;2.99853;2;2;understat;22679
+Italy_SerieA;2024-06-02;Atalanta;Fiorentina;1.69732;1.0071;2;3;understat;22585
