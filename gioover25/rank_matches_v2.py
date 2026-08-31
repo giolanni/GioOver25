@@ -541,13 +541,38 @@ def read_matches_to_rank(path: str | Path) -> list[dict]:
             + ", ".join(sorted(missing))
         )
 
-    rows = list(reader)
+    # Una partita è univocamente identificata dalla chiave canonica
+    # LeagueId + MatchDate + Home + Away. Se la stessa partita compare più
+    # volte nell'input, l'ultima occorrenza sostituisce la precedente.
+    # Questo impedisce che una singola partita venga processata e salvata due
+    # volte nei ranking.
+    rows_by_match: dict[tuple[str, str, str, str], dict] = {}
+    duplicate_rows = 0
 
-    for row in rows:
+    for row in reader:
+        row["LeagueId"] = str(row.get("LeagueId", "")).strip()
+        row["MatchDate"] = str(row.get("MatchDate", "")).strip()
         row["Home"] = canonicalize_team_display_name(row.get("Home", ""))
         row["Away"] = canonicalize_team_display_name(row.get("Away", ""))
 
-    return rows
+        key = (
+            row["LeagueId"],
+            row["MatchDate"],
+            row["Home"],
+            row["Away"],
+        )
+
+        if key in rows_by_match:
+            duplicate_rows += 1
+
+        rows_by_match[key] = row
+
+    if duplicate_rows:
+        print(
+            f"[DEDUP] {duplicate_rows} righe duplicate sostituite nell'input."
+        )
+
+    return list(rows_by_match.values())
 
 
 def build_output_row(
