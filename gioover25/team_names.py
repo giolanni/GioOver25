@@ -7,6 +7,65 @@ import unicodedata
 # Sia le chiavi sia i valori devono essere scritti nella forma già normalizzata
 # da _basic_normalize().
 TEAM_ALIASES: dict[str, dict[str, str]] = {
+    # Alias verificati confrontando ranking e storico risultati del 29/08/2026.
+    # Il valore è un token interno di confronto: non modifica il nome persistito.
+    "Australia_NSWLeagueOne": {
+        "canterbury bankstown fc": "canterbury bankstown",
+        "newcastle jets youth": "newcastle jets u23",
+        "northbridge fc bulls": "bulls academy",
+    },
+    "Estonia_Esiliiga": {
+        "tartu jk welco": "tartu welco",
+    },
+    "Germany_Oberliga_Bayern_Sud": {
+        "tsv kottern": "kottern st mang",
+        "tsv schwabmuenchen": "schwabmunchen",
+    },
+    "Germany_Oberliga_Hessen": {
+        "fc giessen": "giessen",
+    },
+    "Germany_Oberliga_SchleswigHolstein": {
+        "holstein kiel 2": "kiel 2",
+    },
+    "Germany_Regionalliga_Bayern": {
+        "sc eltersdorf": "eltersdorf",
+        "djk vilzing": "vilzing",
+        "fc memmingen": "memmingen",
+    },
+    "Germany_Regionalliga_Nord": {
+        "sc weiche flensburg": "sc weiche 08",
+        "sv drochtersen assel": "drochtersen assel",
+    },
+    "Germany_Regionalliga_Nordost": {
+        "rw erfurt": "erfurt",
+        "fsv zwickau": "zwickau",
+    },
+    "Hungary_NBII": {
+        "kecskemeti te": "kecskemeti",
+        "mezokovesd se": "mezokovesd",
+    },
+    "Iceland_Division_2": {
+        "kormakur hvoet": "kormakur hvot",
+        "umf selfoss": "selfoss",
+        "vikingur olafsvik": "olafsvik",
+    },
+    "Norway_2ndDivision_Group1": {
+        "mjndalen": "mjoendalen",
+    },
+    "Norway_2ndDivision_Group2": {
+        "kjelsas": "kjelsaas",
+    },
+    "Norway_3rdDivision_Group1": {
+        "valerenga if 2": "vaalerenga if 2",
+        "brum": "baerum",
+    },
+    "Norway_3rdDivision_Group3": {
+        "frde": "foerde",
+    },
+    "Norway_3rdDivision_Group5": {
+        "flya": "floeya",
+        "skjervy": "skjervoey",
+    },
     "Finland_Kolmonen_Southern_Group1": {
         "sexypoxyt": "poxyt",
     },
