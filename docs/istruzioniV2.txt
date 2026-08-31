@@ -69,8 +69,11 @@ Per eseguire davvero:
 
     python -m gioover25.reset_data --group USA_USLLeagueTwo --apply
 
-STATISTICHE
+STATISTICHE ASUS
 & "gioover25\raccogli_storici.ps1"  
+
+STATISTICHE WORK
+\raccogli_storici.ps1 -- VERIFICARE  
 
 compara v25 e v251
 python -m analysis.metrics.compare_v25_v251
