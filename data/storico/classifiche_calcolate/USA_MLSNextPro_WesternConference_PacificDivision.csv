@@ -1,15 +1,15 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-25;1;Portland Timbers 2;18;9;6;3;22;17;5;33;1.833
-25;2;Los Angeles FC 2;19;9;6;4;33;29;4;33;1.737
-25;3;Ventura County;18;9;4;5;38;24;14;31;1.722
-25;4;Tacoma Defiance;18;9;2;7;28;22;6;29;1.611
-25;5;San Jose Earthquakes 2;18;7;3;8;32;23;9;24;1.333
-25;6;Real Monarchs;19;5;4;10;26;36;-10;19;1.0
-25;7;Vancouver 2;19;4;3;12;25;44;-19;15;0.789
-25;8;St. Louis City 2;4;3;1;0;8;4;4;10;2.5
-25;9;Austin FC 2;4;2;2;0;7;2;5;8;2.0
-25;10;Houston Dynamo 2;5;2;0;3;7;8;-1;6;1.2
-25;11;North Texas;5;1;3;1;7;11;-4;6;1.2
-25;12;Sporting Kansas City 2;2;1;0;1;4;7;-3;3;1.5
-25;13;Colorado Rapids 2;5;0;2;3;3;9;-6;2;0.4
-25;14;Minnesota 2;4;0;0;4;2;6;-4;0;0.0
+27;1;Portland Timbers 2;21;11;7;3;29;20;9;40;1.905
+27;2;Los Angeles FC 2;20;9;6;5;34;33;1;33;1.65
+27;3;Ventura County;19;9;5;5;40;26;14;32;1.684
+27;4;Tacoma Defiance;19;10;2;7;32;22;10;32;1.684
+27;5;San Jose Earthquakes 2;18;7;3;8;32;23;9;24;1.333
+27;6;Real Monarchs;19;5;4;10;26;36;-10;19;1.0
+27;7;Vancouver 2;21;5;3;13;30;49;-19;18;0.857
+27;8;Austin FC 2;6;3;2;1;12;5;7;11;1.833
+27;9;St. Louis City 2;4;3;1;0;8;4;4;10;2.5
+27;10;Houston Dynamo 2;5;2;0;3;7;8;-1;6;1.2
+27;11;North Texas;6;1;3;2;7;14;-7;6;1.0
+27;12;Sporting Kansas City 2;3;1;0;2;4;11;-7;3;1.0
+27;13;Colorado Rapids 2;5;0;2;3;3;9;-6;2;0.4
+27;14;Minnesota 2;4;0;0;4;2;6;-4;0;0.0

@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-2;1;Wismar;2;2;0;0;4;2;2;6;3.0
-2;2;Klosterfelde;2;1;1;0;3;2;1;4;2.0
-2;3;Schwerin;2;1;1;0;3;2;1;4;2.0
-2;4;Berliner AK 07;2;1;1;0;2;1;1;4;2.0
-2;5;Siedenbollentin;2;1;0;1;4;3;1;3;1.5
-2;6;Hertha Zehlendorf;2;1;0;1;2;1;1;3;1.5
-2;7;Neustrelitz;2;1;0;1;5;5;0;3;1.5
-2;8;Lichtenberg;2;1;0;1;4;4;0;3;1.5
-2;9;Mahlsdorf;2;1;0;1;1;2;-1;3;1.5
-2;10;Sparta Lichtenberg;2;0;2;0;2;2;0;2;1.0
-2;11;TB Berlin;2;0;2;0;2;2;0;2;1.0
-2;12;Stendal;2;0;1;1;4;5;-1;1;0.5
-2;13;Reinickendorfer Fuchse;2;0;1;1;2;3;-1;1;0.5
-2;14;Makkabi Berlin;2;0;1;1;1;2;-1;1;0.5
-2;15;Rathenow;2;0;1;1;0;1;-1;1;0.5
-2;16;Hansa Rostock 2;2;0;1;1;1;3;-2;1;0.5
+3;1;Berliner AK 07;3;2;1;0;5;2;3;7;2.333
+3;2;Schwerin;3;2;1;0;5;3;2;7;2.333
+3;3;Siedenbollentin;3;2;0;1;7;3;4;6;2.0
+3;4;Lichtenberg;3;2;0;1;6;4;2;6;2.0
+3;5;Wismar;3;2;0;1;5;4;1;6;2.0
+3;6;Stendal;3;1;1;1;6;6;0;4;1.333
+3;7;Makkabi Berlin;3;1;1;1;3;3;0;4;1.333
+3;8;Rathenow;3;1;1;1;2;2;0;4;1.333
+3;9;Mahlsdorf;3;1;1;1;2;3;-1;4;1.333
+3;10;Klosterfelde;3;1;1;1;3;5;-2;4;1.333
+3;11;Neustrelitz;3;1;0;2;6;7;-1;3;1.0
+3;12;Hertha Zehlendorf;3;1;0;2;2;3;-1;3;1.0
+3;13;Reinickendorfer Fuchse;3;0;2;1;3;4;-1;2;0.667
+3;14;TB Berlin;3;0;2;1;3;4;-1;2;0.667
+3;15;Sparta Lichtenberg;3;0;2;1;3;5;-2;2;0.667
+3;16;Hansa Rostock 2;3;0;1;2;2;5;-3;1;0.333

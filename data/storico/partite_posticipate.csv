@@ -8,7 +8,6 @@ Finland_Kolmonen_Southern_Group1;10;2026-06-25;MPS;Pöxyt;POSTICIPATA;Postponed
 Finland_Kolmonen_Southern_Group3;9;2026-06-12;RiPS;MK-United;POSTICIPATA;Postponed
 Finland_Kolmonen_Eastern_Group1;13;2026-07-24;FC Metso;SAPA;POSTICIPATA;Postponed
 Australia_NPLTasmania;14;2026-07-04;Launceston;Launceston United;POSTICIPATA;
-Australia_TasmaniaNorthernChampionship;13;2026-07-04;Launceston U21;Somerset;POSTICIPATA;
 Australia_NPLNorthernNSW;19;2026-07-07;Charlestown Azzurri;Weston Bears;POSTICIPATA;
 Bhutan_PremierLeague;9;2026-07-07;Drukpa;Thimphu FC;POSTICIPATA;
 Kyrgyzstan_PremierLiga;16;2026-07-07;Asia Talas;Abdysh-Ata;POSTICIPATA;
@@ -27,7 +26,6 @@ Hungary_NBII;?;2026-08-01;DVTK;Szentlorinc;POSTICIPATA;
 Hungary_NBII;?;2026-08-01;Mezokovesd;Ajka;POSTICIPATA;
 Hungary_NBII;?;2026-08-01;Szeged;BVSC-Zuglo;POSTICIPATA;
 USA_MLSNextPro_EasternConference_NortheastDivision;?;2026-08-01;Toronto FC II;Columbus Crew 2;POSTICIPATA;
-Austria_Tirol;?;2026-08-02;Telfs;Haiming;POSTICIPATA;
 Peru_Liga2;?;2026-08-02;Estudiantil CNI;Binacional;POSTICIPATA;Fonte: SRF
 USA_USLLeagueOne;?;2026-08-02;Chattanooga Red Wolves;Spokane Velocity;POSTICIPATA;Fonte: Abbandonata
 USA_USLLeagueOne;?;2026-08-02;Sarasota Paradise;FC Naples;POSTICIPATA;
@@ -36,7 +34,6 @@ Finland_Kolmonen_Southern_Group3;?;2026-08-08;IF Sibbo Vargarna;MK-United;POSTIC
 Finland_Kolmonen_Western_Group3;?;2026-08-07;FC Sääripotku;FC Ylivieska;POSTICIPATA;Fonte: Annullata
 Finland_Kolmonen_Western_Group3;;2026-08-12;KPV/Akatemia;Sp. Kristina;POSTICIPATA;Fonte: Interrotta sullo 0-0
 Finland_Kolmonen_Western_Group3;;2026-08-13;Sundom IF;FC Sääripotku;POSTICIPATA;Fonte: Annullata
-Kazakhstan_PremierLeague;;2026-08-09;Tobol;Kaisar;POSTICIPATA;
 Australia_TasmaniaSouthernChampionship;?;2026-08-15;South East Utd. U21;Clarence Zebras U21;RINVIATA;
 Wales_CymruSouth;?;2026-08-15;Ynyshir Albions;Aberystwyth;POSTICIPATA;
 Wales_CymruNorth;?;2026-08-15;Penrhyncoch;Bala Town;POSTICIPATA;
@@ -59,3 +56,33 @@ Iceland_1DeildWomen;;2026-07-02;Keflavik;KR Reykjavik;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-04;UMF Selfoss;Fjardab/Hottur/Leiknir;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-04;Tindastoll;Haukar;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-29;Tindastoll;ÍA Akranes;POSTICIPATA;
+Slovenia_2SNL;;2026-08-21;Triglav;Brezice;POSTICIPATA;
+CzechRepublic_3CFL_GroupA;3;2026-08-22;Benesov;Sparta Praga B;POSTICIPATA;
+CzechRepublic_3CFL_GroupA;3;2026-08-22;Povltavska FA;Domazlice;POSTICIPATA;
+CzechRepublic_3CFL_GroupB;3;2026-08-22;Banik Most-Sous;Benatky;POSTICIPATA;
+CzechRepublic_3CFL_GroupB;3;2026-08-22;Brozany;Pardubice B;POSTICIPATA;
+CzechRepublic_3CFL_GroupB;3;2026-08-22;Varnsdorf;Horni Redice;POSTICIPATA;
+CzechRepublic_4Liga_GroupA;3;2026-08-22;FK Komarov;Doubravka;POSTICIPATA;
+CzechRepublic_4Liga_GroupB;3;2026-08-22;Ostrov;Brandys n. Labem;POSTICIPATA;
+CzechRepublic_4Liga_GroupC;3;2026-08-22;Vykan;Slavia HK;POSTICIPATA;
+Latvia_NakotnesLiga;18;2026-08-22;Tukums 2000 2;JFK Ventspils;POSTICIPATA;
+Lithuania_ILyga;22;2026-08-22;FK Minija;Kauno Zalgiris 2;POSTICIPATA;
+Wales_CymruNorth;3;2026-08-22;Caersws;Newtown;POSTICIPATA;
+Bulgaria_ParvaLiga;;2026-08-23;Lok. Sofia;CSKA Sofia;POSTICIPATA;
+CzechRepublic_3CFL_GroupB;;2026-08-23;Zapy;Liberec B;POSTICIPATA;
+Kazakhstan_PremierLeague;;2026-08-23;Aktobe;Ordabasy;POSTICIPATA;
+Kazakhstan_PremierLeague;;2026-08-23;Altai;Atyrau;POSTICIPATA;
+Kazakhstan_PremierLeague;;2026-08-23;FC Astana;Kaspij Aktau;POSTICIPATA;
+Kazakhstan_PremierLeague;;2026-08-23;Tobol;Zhenis;POSTICIPATA;
+Kazakhstan_PremierLeague;;2026-08-23;Yelimay Semey;Ulytau;POSTICIPATA;
+Kazakhstan_PremierLeague;;2026-08-23;Zhetysu;Kaisar;POSTICIPATA;
+Finland_Kolmonen_Western_Group3;;2026-08-27;VPV;FC Sääripotku;POSTICIPATA;
+Finland_Kolmonen_Southern_Group3;;2026-08-29;Atlantis 2;MK-United;POSTICIPATA;
+Wales_CymruSouth;;2026-08-28;Treowen;Cardiff Draconians;POSTICIPATA;
+Germany_Oberliga_BadenWurttemberg;;2026-08-28;Pforzheim;Young Boys Reutlingen;POSTICIPATA;
+Norway_3rdDivision_Group1;;2026-08-28;Union Carl Berner;K. Oslo 2;POSTICIPATA;
+NorthernIreland_NIFLPremiership;;2026-08-29;Ballymena;Larne;POSTICIPATA;
+Norway_3rdDivision_Group5;;2026-08-29;Skjetten;Skjervoy;POSTICIPATA;
+CzechRepublic_1Liga;;2026-08-29;Bohemians;Mlada Boleslav;POSTICIPATA;
+Norway_2ndDivision_Group2;18;2026-08-16;Grorud;Tromsdalen;POSTICIPATA;
+Switzerland_SuperLeague;4;2026-08-23;Thun;Servette;POSTICIPATA;

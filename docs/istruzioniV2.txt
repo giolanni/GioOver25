@@ -1,5 +1,5 @@
 Import risultati
-python -m gioover25.append_results data/input_risultati/risultati_2026_06_25.csv
+python -m gioover25.append_results data/input_risultati/risultati.csv
 
 Ranking solo v13:
 python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v13
