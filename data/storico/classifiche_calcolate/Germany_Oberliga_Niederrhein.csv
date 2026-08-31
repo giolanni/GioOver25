@@ -1,13 +1,19 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Uerdingen;1;1;0;0;5;1;4;3;3.0
-1;2;SC St.Tonis;1;1;0;0;3;2;1;3;3.0
-1;3;SSVg Velbert;1;1;0;0;1;0;1;3;3.0
-1;4;Buderich;1;0;1;0;2;2;0;1;1.0
-1;5;FC Monheim;1;0;1;0;2;2;0;1;1.0
-1;6;Germania Ratingen;1;0;1;0;2;2;0;1;1.0
-1;7;Schonnebeck;1;0;1;0;2;2;0;1;1.0
-1;8;Baumberg;1;0;1;0;1;1;0;1;1.0
-1;9;Sonsbeck;1;0;1;0;1;1;0;1;1.0
-1;10;Solingen-Wald;1;0;0;1;2;3;-1;0;0.0
-1;11;Wuppertaler;1;0;0;1;0;1;-1;0;0.0
-1;12;Holzheim;1;0;0;1;1;5;-4;0;0.0
+3;1;Baumberg;3;2;1;0;7;4;3;7;2.333
+3;2;FC Monheim;3;1;2;0;6;5;1;5;1.667
+3;3;Schonnebeck;2;1;1;0;7;5;2;4;2.0
+3;4;SC St.Tonis;2;1;1;0;6;5;1;4;2.0
+3;5;Buderich;2;1;1;0;3;2;1;4;2.0
+3;6;Uerdingen;2;1;0;1;6;3;3;3;1.5
+3;7;Juchen-Garzweiler;1;1;0;0;4;2;2;3;3.0
+3;8;Dusseldorf 2;1;1;0;0;2;0;2;3;3.0
+3;9;Sonsbeck;3;0;3;0;3;3;0;3;1.0
+3;10;SSVg Velbert;2;1;0;1;4;5;-1;3;1.5
+3;11;Solingen-Wald;3;1;0;2;4;6;-2;3;1.0
+3;12;Germania Ratingen;2;0;2;0;2;2;0;2;1.0
+3;13;Scherpenberg;2;0;2;0;1;1;0;2;1.0
+3;14;SW Essen;1;0;1;0;1;1;0;1;1.0
+3;15;Dingden;2;0;1;1;0;1;-1;1;0.5
+3;16;Meerbusch;2;0;1;1;2;4;-2;1;0.5
+3;17;Wuppertaler;2;0;0;2;0;2;-2;0;0.0
+3;18;Holzheim;3;0;0;3;4;11;-7;0;0.0

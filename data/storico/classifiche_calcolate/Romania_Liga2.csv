@@ -1,23 +1,23 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-3;1;Politehnica Timisoara;3;2;1;0;3;1;2;7;2.333
-3;2;CSM Slatina;2;2;0;0;6;1;5;6;3.0
-3;3;Chindia Targoviste;3;2;0;1;6;2;4;6;2.0
-3;4;CSM Resita;2;2;0;0;4;0;4;6;3.0
-3;5;Cetatea Suceava;2;2;0;0;4;0;4;6;3.0
-3;6;Concordia;2;2;0;0;4;1;3;6;3.0
-3;7;Metalul Buzau;2;2;0;0;4;1;3;6;3.0
-3;8;Popesti Leordeni;2;1;1;0;4;3;1;4;2.0
-3;9;FC Bacau;2;1;0;1;5;3;2;3;1.5
-3;10;Gloria Bistrita;2;1;0;1;4;2;2;3;1.5
-3;11;Metaloglobus Bucharest;2;1;0;1;4;4;0;3;1.5
-3;12;Ramnicu Valcea;2;1;0;1;2;2;0;3;1.5
-3;13;Stefanesti;2;1;0;1;1;2;-1;3;1.5
-3;14;CSC Dumbravita;3;0;2;1;2;3;-1;2;0.667
-3;15;Selimbar;2;0;1;1;2;4;-2;1;0.5
-3;16;Bihor;2;0;1;1;1;3;-2;1;0.5
-3;17;FC ASA Tg. Mures;2;0;1;1;1;3;-2;1;0.5
-3;18;CSM Satu Mare;3;0;1;2;1;5;-4;1;0.333
-3;19;Steaua Bucuresti;2;0;0;2;1;5;-4;0;0.0
-3;20;Unirea Slobozia;2;0;0;2;0;4;-4;0;0.0
-3;21;Afumati;2;0;0;2;1;6;-5;0;0.0
-3;22;CS Din. Bucuresti;2;0;0;2;1;6;-5;0;0.0
+5;1;Politehnica Timisoara;5;4;1;0;11;2;9;13;2.6
+5;2;CSM Slatina;3;3;0;0;8;1;7;9;3.0
+5;3;Chindia Targoviste;4;3;0;1;9;3;6;9;2.25
+5;4;CSM Resita;4;3;0;1;7;5;2;9;2.25
+5;5;Concordia;4;3;0;1;8;7;1;9;2.25
+5;6;Popesti Leordeni;4;2;2;0;9;5;4;8;2.0
+5;7;Cetatea Suceava;4;2;1;1;6;4;2;7;1.75
+5;8;Ramnicu Valcea;4;2;1;1;5;4;1;7;1.75
+5;9;Gloria Bistrita;4;2;0;2;5;3;2;6;1.5
+5;10;Metaloglobus Bucharest;4;2;0;2;7;8;-1;6;1.5
+5;11;Metalul Buzau;4;2;0;2;5;6;-1;6;1.5
+5;12;Stefanesti;4;2;0;2;4;7;-3;6;1.5
+5;13;Bihor;4;1;2;1;5;3;2;5;1.25
+5;14;Selimbar;4;1;2;1;4;5;-1;5;1.25
+5;15;FC Bacau;3;1;1;1;7;5;2;4;1.333
+5;16;Afumati;4;1;1;2;4;8;-4;4;1.0
+5;17;FC ASA Tg. Mures;4;1;1;2;2;6;-4;4;1.0
+5;18;CSC Dumbravita;5;0;3;2;4;6;-2;3;0.6
+5;19;CSM Satu Mare;5;0;2;3;1;6;-5;2;0.4
+5;20;Steaua Bucuresti;4;0;1;3;4;9;-5;1;0.25
+5;21;Unirea Slobozia;4;0;0;4;2;8;-6;0;0.0
+5;22;CS Din. Bucuresti;3;0;0;3;1;7;-6;0;0.0
