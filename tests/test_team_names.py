@@ -27,12 +27,17 @@ from gioover25.team_names import canonicalize_team_display_name, normalize_team_
         ("Iceland_Division_2", "UMF Selfoss", "Selfoss"),
         ("Iceland_Division_2", "Vikingur Olafsvik", "Olafsvik"),
         ("Norway_2ndDivision_Group1", "Mjoendalen", "Mjøndalen"),
+        ("Norway_2ndDivision_Group1", "Mjoendalen", "Mjondalen"),
         ("Norway_2ndDivision_Group2", "Kjelsaas", "Kjelsås"),
         ("Norway_3rdDivision_Group1", "Vaalerenga IF 2", "Vålerenga IF 2"),
+        ("Norway_3rdDivision_Group1", "Vaalerenga IF 2", "Vålerenga 2"),
         ("Norway_3rdDivision_Group1", "Baerum", "Bærum"),
+        ("Norway_3rdDivision_Group1", "Baerum", "Baerum Sportsklubb"),
         ("Norway_3rdDivision_Group3", "Foerde", "Førde"),
         ("Norway_3rdDivision_Group5", "Floeya", "Fløya"),
+        ("Norway_3rdDivision_Group5", "Floeya", "Floya"),
         ("Norway_3rdDivision_Group5", "Skjervoey", "Skjervøy"),
+        ("USA_USLChampionship", "Birmingham Legion", "Birmingham"),
     ],
 )
 def test_verified_aliases_resolve_to_same_team(league_id, ranking_name, result_name):
