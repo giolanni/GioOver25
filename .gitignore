@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .venv/
 .vscode/
+
+# Debug metric dumps are generated artifacts and can become very large.
+# Keep them local: they are reproducible and should not be versioned.
+data/debug/metrics/**/metric_occurrences.csv
