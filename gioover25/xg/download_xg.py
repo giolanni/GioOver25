@@ -54,7 +54,7 @@ def download_one(league_id: str, provider_name: str, season: int | None):
         if league_id not in UNDERSTAT_LEAGUES:
             raise ValueError(f'{league_id} non disponibile su Understat')
         if season is None:
-            raise ValueError('Understat richiede --season (anno iniziale, es. 2026)')
+            raise ValueError('Understat richiede --season/--seasons (anno iniziale, es. 2026)')
         return UnderstatProvider().download_league_matches(league_id, season)
     if provider_name == 'bigballs':
         if league_id not in BIGBALLS_LEAGUES:
@@ -65,37 +65,61 @@ def download_one(league_id: str, provider_name: str, season: int | None):
 
 def main() -> None:
     parser = argparse.ArgumentParser(description='Scarica e normalizza dati xG')
-    parser.add_argument('--league-id', help='LeagueId canonico; se omesso usa tutto il registry xG')
+    target = parser.add_mutually_exclusive_group()
+    target.add_argument('--league-id', help='LeagueId canonico da scaricare')
+    target.add_argument('--all', action='store_true', help='Scarica tutte le LeagueId del registry xG supportate dal provider')
     parser.add_argument('--provider', choices=['understat','bigballs'], help='Forza un provider')
-    parser.add_argument('--season', type=int, help='Anno iniziale stagione Understat, es. 2026')
+    seasons = parser.add_mutually_exclusive_group()
+    seasons.add_argument('--season', type=int, help='Singola stagione Understat, es. 2026')
+    seasons.add_argument('--seasons', type=int, nargs='+', help='Più stagioni Understat, es. 2022 2023 2024 2025 2026')
     args = parser.parse_args()
+
+    if args.seasons and not args.all and not args.league_id:
+        parser.error('--seasons richiede --all oppure --league-id')
 
     rows = read_registry()
     if args.league_id:
         rows = [row for row in rows if row['LeagueId'] == args.league_id]
         if not rows:
             raise SystemExit(f'LeagueId non presente in {REGISTRY}: {args.league_id}')
+    elif not args.all:
+        # Compatibilità con il comportamento precedente: senza target esplicito
+        # continua a scorrere l'intero registry xG.
+        pass
+
+    requested_seasons = args.seasons or ([args.season] if args.season is not None else [None])
 
     total = 0
+    downloaded_files = 0
     for row in rows:
         league_id = str(row['LeagueId']).strip()
         provider_name = args.provider or default_provider(league_id)
         if provider_name not in available_providers(league_id):
             print(f'[SKIP] {league_id}: {provider_name} non supportato')
             continue
-        print(f'[XG] {league_id} <- {provider_name}')
-        try:
-            matches = download_one(league_id, provider_name, args.season)
-        except Exception as exc:
-            print(f'[WARN] {league_id}: {exc}')
-            continue
-        suffix = f'_{args.season}' if provider_name == 'understat' and args.season else ''
-        out = RAW_DIR / provider_name / f'{league_id}{suffix}.csv'
-        write_matches(out, matches)
-        total += len(matches)
-        print(f'      {len(matches)} match -> {out}')
 
-    print(f'[OK] xG normalizzati: {total}')
+        league_seasons = requested_seasons if provider_name == 'understat' else [None]
+        if provider_name == 'bigballs' and (args.season is not None or args.seasons):
+            print(f'[SKIP] {league_id}: Big Balls non usa --season/--seasons')
+            continue
+
+        for season in league_seasons:
+            season_label = f' season={season}' if season is not None else ''
+            print(f'[XG] {league_id} <- {provider_name}{season_label}')
+            try:
+                matches = download_one(league_id, provider_name, season)
+            except Exception as exc:
+                print(f'[WARN] {league_id}{season_label}: {exc}')
+                continue
+
+            suffix = f'_{season}' if provider_name == 'understat' and season is not None else ''
+            out = RAW_DIR / provider_name / f'{league_id}{suffix}.csv'
+            write_matches(out, matches)
+            total += len(matches)
+            downloaded_files += 1
+            print(f'      {len(matches)} match -> {out}')
+
+    print(f'[OK] xG normalizzati: {total} match in {downloaded_files} file')
 
 
 if __name__ == '__main__':
