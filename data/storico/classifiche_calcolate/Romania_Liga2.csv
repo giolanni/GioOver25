@@ -1,6 +1,6 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 5;1;Politehnica Timisoara;5;4;1;0;11;2;9;13;2.6
-5;2;CSM Slatina;3;3;0;0;8;1;7;9;3.0
+5;2;CSM Slatina;4;3;1;0;8;1;7;10;2.5
 5;3;Chindia Targoviste;4;3;0;1;9;3;6;9;2.25
 5;4;CSM Resita;4;3;0;1;7;5;2;9;2.25
 5;5;Concordia;4;3;0;1;8;7;1;9;2.25
@@ -11,9 +11,9 @@
 5;10;Metaloglobus Bucharest;4;2;0;2;7;8;-1;6;1.5
 5;11;Metalul Buzau;4;2;0;2;5;6;-1;6;1.5
 5;12;Stefanesti;4;2;0;2;4;7;-3;6;1.5
-5;13;Bihor;4;1;2;1;5;3;2;5;1.25
-5;14;Selimbar;4;1;2;1;4;5;-1;5;1.25
-5;15;FC Bacau;3;1;1;1;7;5;2;4;1.333
+5;13;FC Bacau;4;1;2;1;7;5;2;5;1.25
+5;14;Bihor;4;1;2;1;5;3;2;5;1.25
+5;15;Selimbar;4;1;2;1;4;5;-1;5;1.25
 5;16;Afumati;4;1;1;2;4;8;-4;4;1.0
 5;17;FC ASA Tg. Mures;4;1;1;2;2;6;-4;4;1.0
 5;18;CSC Dumbravita;5;0;3;2;4;6;-2;3;0.6
