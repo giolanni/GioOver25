@@ -1,19 +1,19 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-5;1;Pinneberg;5;4;1;0;17;6;11;13;2.6
-5;2;Dassendorf;4;3;1;0;14;2;12;10;2.5
-5;3;Paloma;5;3;1;1;16;9;7;10;2.0
-5;4;Victoria Hamburg;5;3;1;1;12;8;4;10;2.0
-5;5;Sasel;4;3;0;1;8;7;1;9;2.25
+5;1;Dassendorf;5;4;1;0;17;3;14;13;2.6
+5;2;Pinneberg;5;4;1;0;17;6;11;13;2.6
+5;3;Sasel;5;4;0;1;11;7;4;12;2.4
+5;4;Paloma;5;3;1;1;16;9;7;10;2.0
+5;5;Victoria Hamburg;5;3;1;1;12;8;4;10;2.0
 5;6;Altona;5;3;0;2;12;13;-1;9;1.8
 5;7;TSV Buchholz 08;4;2;1;1;9;6;3;7;1.75
 5;8;Suderelbe;5;2;1;2;11;9;2;7;1.4
-5;9;ETSV Hamburg;4;2;1;1;8;7;1;7;1.75
+5;9;ETSV Hamburg;5;2;1;2;10;10;0;7;1.4
 5;10;Vorwarts-Wacker;5;2;1;2;7;11;-4;7;1.4
 5;11;Niendorfer TSV;5;2;1;2;9;14;-5;7;1.4
 5;12;HT 16;5;2;0;3;9;9;0;6;1.2
-5;13;Tesla Hamburg;5;1;1;3;7;11;-4;4;0.8
-5;14;Teutonia Ottensen;4;1;1;2;4;8;-4;4;1.0
-5;15;HEBC Hamburg;4;1;0;3;2;5;-3;3;0.75
-5;16;Harksheide;4;0;2;2;3;6;-3;2;0.5
+5;13;HEBC Hamburg;5;2;0;3;5;7;-2;6;1.2
+5;14;Tesla Hamburg;5;1;1;3;7;11;-4;4;0.8
+5;15;Teutonia Ottensen;4;1;1;2;4;8;-4;4;1.0
+5;16;Harksheide;5;0;2;3;4;9;-5;2;0.4
 5;17;Wandsbeker Concordia;5;0;1;4;5;13;-8;1;0.2
-5;18;Norderstedt 2;4;0;0;4;6;15;-9;0;0.0
+5;18;Norderstedt 2;5;0;0;5;6;18;-12;0;0.0

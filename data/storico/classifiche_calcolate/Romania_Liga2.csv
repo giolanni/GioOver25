@@ -1,7 +1,7 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 5;1;Politehnica Timisoara;5;4;1;0;11;2;9;13;2.6
 5;2;CSM Slatina;4;3;1;0;8;1;7;10;2.5
-5;3;Chindia Targoviste;4;3;0;1;9;3;6;9;2.25
+5;3;Chindia Targoviste;5;3;0;2;10;5;5;9;1.8
 5;4;CSM Resita;4;3;0;1;7;5;2;9;2.25
 5;5;Concordia;4;3;0;1;8;7;1;9;2.25
 5;6;Popesti Leordeni;4;2;2;0;9;5;4;8;2.0
@@ -17,7 +17,7 @@
 5;16;Afumati;4;1;1;2;4;8;-4;4;1.0
 5;17;FC ASA Tg. Mures;4;1;1;2;2;6;-4;4;1.0
 5;18;CSC Dumbravita;5;0;3;2;4;6;-2;3;0.6
-5;19;CSM Satu Mare;5;0;2;3;1;6;-5;2;0.4
-5;20;Steaua Bucuresti;4;0;1;3;4;9;-5;1;0.25
-5;21;Unirea Slobozia;4;0;0;4;2;8;-6;0;0.0
-5;22;CS Din. Bucuresti;3;0;0;3;1;7;-6;0;0.0
+5;19;CS Din. Bucuresti;4;1;0;3;3;8;-5;3;0.75
+5;20;CSM Satu Mare;5;0;2;3;1;6;-5;2;0.4
+5;21;Steaua Bucuresti;4;0;1;3;4;9;-5;1;0.25
+5;22;Unirea Slobozia;4;0;0;4;2;8;-6;0;0.0

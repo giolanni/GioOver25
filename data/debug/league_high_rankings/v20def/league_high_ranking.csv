@@ -1,8 +1,8 @@
 ﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
 1;v20def;Australia_NPL_NSW_U20;3;0;2026-08-21;2026-08-30;3;100.0
 2;v20def;Finland_Kolmonen_Eastern_Group3;3;0;2026-08-28;2026-08-30;3;100.0
-3;v20def;Finland_Kakkonen_GroupC;2;0;2026-08-16;2026-08-22;2;100.0
-4;v20def;Finland_Kolmonen_Southern_Group2;2;0;2026-08-22;2026-08-27;2;100.0
+3;v20def;Finland_Kolmonen_Southern_Group2;3;0;2026-08-21;2026-08-27;3;100.0
+4;v20def;Finland_Kakkonen_GroupC;2;0;2026-08-16;2026-08-22;2;100.0
 5;v20def;Finland_Kolmonen_Southern_Group3;2;0;2026-08-16;2026-08-28;2;100.0
 6;v20def;Iceland_BestaDeildKarla;2;1;2026-08-17;2026-08-30;3;66.67
 7;v20def;Australia_NPLACT;1;0;2026-08-22;2026-08-22;1;100.0
