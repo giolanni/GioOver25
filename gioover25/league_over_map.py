@@ -73,6 +73,18 @@ def rebuild_league_over_map() -> Path:
         matches = read_results_file(results_file)
         rows.append(calculate_league_over_row(league_id, matches))
 
+    # La mappa deve essere immediatamente utile come classifica delle leghe:
+    # prima la percentuale Over 2.5 più alta, poi Over 1.5 come discriminante
+    # in caso di parità e infine LeagueId alfabetico per rendere l'output
+    # stabile e deterministico tra una rigenerazione e l'altra.
+    rows.sort(
+        key=lambda row: (
+            -row["Over25Pct"],
+            -row["Over15Pct"],
+            row["LeagueId"],
+        )
+    )
+
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
     with output_file.open("w", newline="", encoding="utf-8-sig") as f:
