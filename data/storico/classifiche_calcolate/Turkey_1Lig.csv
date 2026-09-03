@@ -1,21 +1,21 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-5;1;Batman Petrolspor;4;3;1;0;8;4;4;10;2.5
+5;1;Batman Petrolspor;5;4;1;0;10;4;6;13;2.6
 5;2;Sariyer;5;3;1;1;8;4;4;10;2.0
-5;3;Kayserispor;4;3;0;1;6;2;4;9;2.25
-5;4;Bursaspor;4;3;0;1;6;3;3;9;2.25
-5;5;Mardin 1969;4;2;2;0;6;1;5;8;2.0
+5;3;Kayserispor;5;3;1;1;7;3;4;10;2.0
+5;4;Mardin 1969;5;2;3;0;8;3;5;9;1.8
+5;5;Bursaspor;4;3;0;1;6;3;3;9;2.25
 5;6;Keciorengucu;5;2;2;1;12;8;4;8;1.6
 5;7;Manisa FK;4;2;2;0;8;4;4;8;2.0
 5;8;Muglaspor;5;2;2;1;3;2;1;8;1.6
-5;9;Karagumruk;4;2;1;1;5;5;0;7;1.75
+5;9;Karagumruk;5;2;2;1;6;6;0;8;1.6
 5;10;Bandirmaspor;5;1;3;1;5;3;2;6;1.2
 5;11;Igdir FK;4;2;0;2;3;2;1;6;1.5
 5;12;Antalyaspor;5;2;0;3;8;10;-2;6;1.2
 5;13;Pendikspor;5;1;2;2;7;11;-4;5;1.0
-5;14;Vanspor FK;4;1;1;2;5;9;-4;4;1.0
+5;14;Vanspor FK;5;1;1;3;5;11;-6;4;0.8
 5;15;Erokspor;4;0;3;1;2;3;-1;3;0.75
 5;16;Umraniyespor;5;0;3;2;4;6;-2;3;0.6
 5;17;Bodrumspor;4;0;3;1;2;4;-2;3;0.75
-5;18;Sivasspor;4;0;2;2;3;6;-3;2;0.5
+5;18;Sivasspor;5;0;3;2;5;8;-3;3;0.6
 5;19;Istanbulspor;4;0;2;2;5;9;-4;2;0.5
 5;20;Boluspor;5;0;0;5;1;11;-10;0;0.0
