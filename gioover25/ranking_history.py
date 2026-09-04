@@ -28,6 +28,12 @@ from .team_names import normalize_team_name
 POSTPONED_FILE = Path("data/storico/partite_posticipate.csv")
 DEBUG_DIR = Path("data/debug/ranking_not_found")
 
+# Una stessa coppia Home/Away nella stessa lega non può rappresentare una
+# nuova gara se il MatchDate differisce di meno di 3 giorni. Questa tolleranza
+# protegge lo storico ranking da duplicati dovuti a piccoli spostamenti/correzioni
+# della data nel file partite.
+NEAR_DUPLICATE_MATCH_DATE_DAYS = 3
+
 BASE_FIELDNAMES = [
     "PredictionDate",
     "MatchDate",
@@ -105,6 +111,17 @@ def _text(value) -> str:
     return str(value or "").strip()
 
 
+def _parse_date(value: str) -> date | None:
+    raw = _text(value)
+    if not raw:
+        return None
+
+    try:
+        return date.fromisoformat(raw)
+    except ValueError:
+        return None
+
+
 def _key(row: dict) -> tuple[str, str, str, str, str]:
     league_id = _text(row.get("LeagueId"))
     match_date = _text(row.get("MatchDate"))
@@ -118,6 +135,39 @@ def _key(row: dict) -> tuple[str, str, str, str, str]:
     return ("PREDICTION_DATE", league_id, prediction_date, home, away)
 
 
+def _is_near_duplicate_prediction(
+    history_row: dict,
+    new_row: dict,
+    max_days: int = NEAR_DUPLICATE_MATCH_DATE_DAYS,
+) -> bool:
+    """Riconosce la stessa gara riproposta con MatchDate quasi identico.
+
+    Stessa LeagueId + stessi nomi canonici Home/Away e differenza assoluta
+    tra MatchDate inferiore a ``max_days``. Con il default, 0/1/2 giorni sono
+    considerati la stessa partita; 3 o più giorni restano distinguibili.
+    """
+    league_id = _text(new_row.get("LeagueId"))
+
+    if _text(history_row.get("LeagueId")) != league_id:
+        return False
+
+    if (
+        normalize_team_name(league_id, history_row.get("Home", ""))
+        != normalize_team_name(league_id, new_row.get("Home", ""))
+        or normalize_team_name(league_id, history_row.get("Away", ""))
+        != normalize_team_name(league_id, new_row.get("Away", ""))
+    ):
+        return False
+
+    existing_date = _parse_date(history_row.get("MatchDate", ""))
+    new_date = _parse_date(new_row.get("MatchDate", ""))
+
+    if existing_date is None or new_date is None:
+        return False
+
+    return abs((new_date - existing_date).days) < max_days
+
+
 def append_predictions(
     rows: list[dict],
     engine_name: str,
@@ -126,6 +176,7 @@ def append_predictions(
     history = _read_history(engine_name)
     existing_keys = {_key(row) for row in history}
     added = 0
+    near_duplicates = 0
 
     for row in rows:
         history_row = dict(row)
@@ -146,6 +197,17 @@ def append_predictions(
         if key in existing_keys:
             continue
 
+        # rank_matches può essere rilanciato con la stessa gara dopo una piccola
+        # correzione del MatchDate. In tal caso non deve nascere una seconda
+        # prediction irrisolta nello storico: per la stessa lega/Home/Away una
+        # distanza di 0, 1 o 2 giorni identifica la stessa partita.
+        if any(
+            _is_near_duplicate_prediction(existing_row, history_row)
+            for existing_row in history
+        ):
+            near_duplicates += 1
+            continue
+
         history.append(history_row)
         existing_keys.add(key)
         added += 1
@@ -155,17 +217,12 @@ def append_predictions(
         f"[{engine_name}] Storico ranking aggiornato. "
         f"Nuove previsioni: {added}"
     )
-
-
-def _parse_date(value: str) -> date | None:
-    raw = _text(value)
-    if not raw:
-        return None
-
-    try:
-        return date.fromisoformat(raw)
-    except ValueError:
-        return None
+    if near_duplicates:
+        print(
+            f"[{engine_name}] Prediction quasi-duplicate ignorate "
+            f"(MatchDate < {NEAR_DUPLICATE_MATCH_DATE_DAYS} giorni): "
+            f"{near_duplicates}"
+        )
 
 
 def _read_postponed_rows() -> list[dict]:
