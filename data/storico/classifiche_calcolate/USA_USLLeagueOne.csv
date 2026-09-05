@@ -1,21 +1,21 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-34;1;Charlotte Independ.;22;14;4;4;52;29;23;46;2.091
-34;2;Union Omaha;24;14;4;6;41;27;14;46;1.917
-34;3;Forward Madison;22;13;4;5;43;23;20;43;1.955
-34;4;Boise;24;12;5;7;39;35;4;41;1.708
-34;5;One Knoxville;22;11;6;5;37;25;12;39;1.773
-34;6;Spokane Velocity;21;12;2;7;32;27;5;38;1.81
-34;7;Chattanooga Red Wolves;21;10;2;9;40;35;5;32;1.524
-34;8;AV Alta;25;8;8;9;33;34;-1;32;1.28
-34;9;Fort Wayne;21;8;6;7;30;25;5;30;1.429
-34;10;Corpus Christi FC;23;7;9;7;28;32;-4;30;1.304
-34;11;FC Naples;23;8;2;13;27;39;-12;26;1.13
-34;12;Westchester SC;22;6;5;11;34;34;0;23;1.045
-34;13;Greenville;22;6;5;11;27;35;-8;23;1.045
-34;14;Portland Hearts of Pine;24;5;8;11;34;45;-11;23;0.958
-34;15;Sarasota Paradise;22;6;4;12;23;36;-13;22;1.0
-34;16;New York Cosmos;22;5;4;13;25;44;-19;19;0.864
-34;17;Richmond Kickers;23;5;4;14;22;45;-23;19;0.826
-34;18;Fort Wayne FC;1;1;0;0;4;1;3;3;3.0
-34;19;Forward Madison FC;1;1;0;0;2;1;1;3;3.0
-34;20;Chattanooga Red Wolves SC;1;0;0;1;2;3;-1;0;0.0
+35;1;Charlotte Independ.;23;15;4;4;55;31;24;49;2.13
+35;2;Union Omaha;24;14;4;6;41;27;14;46;1.917
+35;3;Forward Madison;23;13;5;5;44;24;20;44;1.913
+35;4;Boise;24;12;5;7;39;35;4;41;1.708
+35;5;One Knoxville;23;11;7;5;38;26;12;40;1.739
+35;6;Spokane Velocity;21;12;2;7;32;27;5;38;1.81
+35;7;Chattanooga Red Wolves;22;11;2;9;41;35;6;35;1.591
+35;8;Fort Wayne;22;9;6;7;32;25;7;33;1.5
+35;9;AV Alta;25;8;8;9;33;34;-1;32;1.28
+35;10;Corpus Christi FC;23;7;9;7;28;32;-4;30;1.304
+35;11;FC Naples;23;8;2;13;27;39;-12;26;1.13
+35;12;Sarasota Paradise;23;7;4;12;25;37;-12;25;1.087
+35;13;Westchester SC;23;6;5;12;34;35;-1;23;1.0
+35;14;Greenville;22;6;5;11;27;35;-8;23;1.045
+35;15;Portland Hearts of Pine;25;5;8;12;36;48;-12;23;0.92
+35;16;New York Cosmos;23;5;4;14;26;46;-20;19;0.826
+35;17;Richmond Kickers;24;5;4;15;22;47;-25;19;0.792
+35;18;Fort Wayne FC;1;1;0;0;4;1;3;3;3.0
+35;19;Forward Madison FC;1;1;0;0;2;1;1;3;3.0
+35;20;Chattanooga Red Wolves SC;1;0;0;1;2;3;-1;0;0.0
