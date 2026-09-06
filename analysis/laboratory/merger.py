@@ -32,11 +32,7 @@ def _reference_date(row: dict) -> date | None:
 
 
 def _base_key(row: dict) -> tuple[str, str, str]:
-    return (
-        _text(row.get("LeagueId")),
-        _normalize_team(row.get("Home")),
-        _normalize_team(row.get("Away")),
-    )
+    return (_text(row.get("LeagueId")), _normalize_team(row.get("Home")), _normalize_team(row.get("Away")))
 
 
 def _teams_key(row: dict) -> tuple[str, str]:
@@ -51,8 +47,7 @@ def _outcome(row: dict) -> str:
     explicit = _text(row.get("Outcome") or row.get("Over25")).upper()
     if explicit in {"OK", "KO"}:
         return explicit
-    hg = _text(row.get("HG"))
-    ag = _text(row.get("AG"))
+    hg, ag = _text(row.get("HG")), _text(row.get("AG"))
     if hg and ag:
         try:
             return "OK" if int(float(hg.replace(",", "."))) + int(float(ag.replace(",", "."))) >= 3 else "KO"
@@ -72,8 +67,7 @@ def _status(row: dict) -> str:
 
 
 def _date_distance(a: dict, b: dict) -> int:
-    da = _reference_date(a)
-    db = _reference_date(b)
+    da, db = _reference_date(a), _reference_date(b)
     if da is None or db is None:
         return 999999
     return abs((da - db).days)
@@ -87,36 +81,18 @@ def build_index(rankings: list[dict]) -> dict[tuple[str, str, str], list[dict]]:
 
 
 def _score_candidate(history: dict, ranking: dict, fallback: bool = False) -> tuple:
-    hs = _status(history)
-    rs = _status(ranking)
+    hs, rs = _status(history), _status(ranking)
     history_final = hs == "FINAL" or _has_result(history)
     history_postponed = hs == "POSTPONED"
-
-    if history_final:
-        status_penalty = int(rs == "POSTPONED")
-    elif history_postponed:
-        status_penalty = int(rs != "POSTPONED")
-    else:
-        status_penalty = 0
-
-    hr = _text(history.get("Round"))
-    rr = _text(ranking.get("Round"))
-    hpd = _text(history.get("PredictionDate"))
-    rpd = _text(ranking.get("PredictionDate"))
-    hmd = _text(history.get("MatchDate"))
-    rmd = _text(ranking.get("MatchDate"))
-    hscore = _text(history.get("Score"))
-    rscore = _text(ranking.get("Score"))
-    hband = _text(history.get("Band"))
-    rband = _text(ranking.get("Band"))
-    halg = _text(history.get("AlgorithmVersion"))
-    ralg = _text(ranking.get("AlgorithmVersion"))
-
-    # Exact league matches always outrank fallback team/date matches.
-    league_penalty = int(_text(history.get("LeagueId")) != _text(ranking.get("LeagueId")))
-
+    status_penalty = int(rs == "POSTPONED") if history_final else int(rs != "POSTPONED") if history_postponed else 0
+    hr, rr = _text(history.get("Round")), _text(ranking.get("Round"))
+    hpd, rpd = _text(history.get("PredictionDate")), _text(ranking.get("PredictionDate"))
+    hmd, rmd = _text(history.get("MatchDate")), _text(ranking.get("MatchDate"))
+    hscore, rscore = _text(history.get("Score")), _text(ranking.get("Score"))
+    hband, rband = _text(history.get("Band")), _text(ranking.get("Band"))
+    halg, ralg = _text(history.get("AlgorithmVersion")), _text(ranking.get("AlgorithmVersion"))
     return (
-        league_penalty if not fallback else 1,
+        1 if fallback else 0,
         status_penalty,
         int(not (hr and rr and hr == rr)),
         int(not (hpd and rpd and hpd == rpd)),
@@ -128,36 +104,6 @@ def _score_candidate(history: dict, ranking: dict, fallback: bool = False) -> tu
     )
 
 
-def _find_ranking(history: dict, ranking_index: dict, team_index: dict) -> tuple[dict | None, str, int | None, str, int]:
-    exact = ranking_index.get(_base_key(history), [])
-
-    if exact:
-        scored = sorted((_score_candidate(history, r, False), r) for r in exact)
-        best_score = scored[0][0]
-        best = [r for score, r in scored if score == best_score]
-        if len(best) == 1:
-            r = best[0]
-            distance = _date_distance(history, r)
-            return r, _match_mode(history, r), None if distance == 999999 else distance, "", len(exact)
-
-    # IMPORTANT: historical LeagueIds can differ from the canonical registry IDs.
-    # If exact LeagueId matching fails, recover the prediction by Home/Away and
-    # temporal identity. This is the critical fallback for migrated registry IDs.
-    candidates = team_index.get(_teams_key(history), [])
-    if candidates:
-        scored = sorted((_score_candidate(history, r, True), r) for r in candidates)
-        best_score = scored[0][0]
-        best = [r for score, r in scored if score == best_score]
-        if len(best) == 1:
-            r = best[0]
-            distance = _date_distance(history, r)
-            # Do not accept a completely unrelated prediction when dates exist.
-            if distance == 999999 or distance <= 14:
-                return r, "LEAGUE_FALLBACK_" + _match_mode(history, r), None if distance == 999999 else distance, "", len(candidates)
-        
-    return None, "", None, "NO_RANKING_CANDIDATE", len(candidates) if candidates else len(exact)
-
-
 def _match_mode(history: dict, ranking: dict) -> str:
     if _text(history.get("PredictionDate")) and _text(history.get("PredictionDate")) == _text(ranking.get("PredictionDate")):
         return "PREDICTION_DATE"
@@ -166,6 +112,36 @@ def _match_mode(history: dict, ranking: dict) -> str:
     if _text(history.get("Round")) and _text(history.get("Round")) == _text(ranking.get("Round")):
         return "ROUND"
     return "DETERMINISTIC_TIEBREAK"
+
+
+def _choose(scored: list[tuple[tuple, dict]]) -> dict | None:
+    scored.sort(key=lambda item: item[0])
+    best_score = scored[0][0]
+    best = [ranking for score, ranking in scored if score == best_score]
+    return best[0] if len(best) == 1 else None
+
+
+def _find_ranking(history: dict, ranking_index: dict, team_index: dict) -> tuple[dict | None, str, int | None, str, int]:
+    exact = ranking_index.get(_base_key(history), [])
+    if exact:
+        ranking = _choose([(_score_candidate(history, r, False), r) for r in exact])
+        if ranking is not None:
+            distance = _date_distance(history, ranking)
+            return ranking, _match_mode(history, ranking), None if distance == 999999 else distance, "", len(exact)
+
+    candidates = team_index.get(_teams_key(history), [])
+    if candidates:
+        scored = [(_score_candidate(history, r, True), r) for r in candidates]
+        scored.sort(key=lambda item: item[0])
+        best_score = scored[0][0]
+        best = [r for score, r in scored if score == best_score]
+        if len(best) == 1:
+            ranking = best[0]
+            distance = _date_distance(history, ranking)
+            if distance == 999999 or distance <= 14:
+                return ranking, "LEAGUE_FALLBACK_" + _match_mode(history, ranking), None if distance == 999999 else distance, "", len(candidates)
+
+    return None, "", None, "NO_RANKING_CANDIDATE", len(candidates) if candidates else len(exact)
 
 
 def _write_unmatched(rows: list[dict]) -> None:
@@ -183,42 +159,28 @@ def merge_matches(history: list[dict], rankings: list[dict]) -> list[dict]:
     for ranking in rankings:
         team_index.setdefault(_teams_key(ranking), []).append(ranking)
 
-    merged: list[dict] = []
-    unmatched: list[dict] = []
+    merged, unmatched = [], []
     counters = {"PREDICTION_DATE": 0, "MATCH_DATE": 0, "ROUND": 0, "DETERMINISTIC_TIEBREAK": 0, "LEAGUE_FALLBACK": 0}
 
     for history_row in history:
         ranking, mode, distance, reason, candidates = _find_ranking(history_row, ranking_index, team_index)
         if ranking is None:
             unmatched.append({
-                "LeagueId": history_row.get("LeagueId", ""),
-                "PredictionDate": history_row.get("PredictionDate", ""),
-                "MatchDate": history_row.get("MatchDate", ""),
-                "Round": history_row.get("Round", ""),
-                "Home": history_row.get("Home", ""),
-                "Away": history_row.get("Away", ""),
-                "Band": history_row.get("Band", ""),
-                "Outcome": _outcome(history_row),
-                "HG": history_row.get("HG", ""),
-                "AG": history_row.get("AG", ""),
-                "MatchStatus": history_row.get("MatchStatus", ""),
-                "Reason": reason,
-                "BaseCandidates": candidates,
+                "LeagueId": history_row.get("LeagueId", ""), "PredictionDate": history_row.get("PredictionDate", ""),
+                "MatchDate": history_row.get("MatchDate", ""), "Round": history_row.get("Round", ""),
+                "Home": history_row.get("Home", ""), "Away": history_row.get("Away", ""), "Band": history_row.get("Band", ""),
+                "Outcome": _outcome(history_row), "HG": history_row.get("HG", ""), "AG": history_row.get("AG", ""),
+                "MatchStatus": history_row.get("MatchStatus", ""), "Reason": reason, "BaseCandidates": candidates,
                 "HistorySource": history_row.get("SourceFile", ""),
             })
             continue
 
         row = deepcopy(ranking)
-        for field in (
-            "PredictionDate", "MatchDate", "LeagueId", "Round", "Home", "Away", "Score", "Band",
-            "HG", "AG", "Goals", "BTTS", "Reason", "AlgorithmVersion", "MatchStatus",
-            "CompetitionGroup", "HomeSourceLeagueId", "AwaySourceLeagueId",
-        ):
+        for field in ("PredictionDate", "MatchDate", "LeagueId", "Round", "Home", "Away", "Score", "Band", "HG", "AG", "Goals", "BTTS", "Reason", "AlgorithmVersion", "MatchStatus", "CompetitionGroup", "HomeSourceLeagueId", "AwaySourceLeagueId"):
             value = history_row.get(field, "")
             if _text(value):
                 row[field] = value
 
-        # Always provide Outcome. Prefer the stored result, then derive it from HG/AG.
         row["Outcome"] = _outcome(history_row)
         row["HistorySource"] = history_row.get("SourceFile", "")
         row["RankingSource"] = ranking.get("SourceFile", "")
@@ -233,7 +195,6 @@ def merge_matches(history: list[dict], rankings: list[dict]) -> list[dict]:
             counters["LEAGUE_FALLBACK"] += 1
 
     _write_unmatched(unmatched)
-
     print()
     print("===== LABORATORY MERGE =====")
     print(f"Storico caricato:          {len(history)}")
