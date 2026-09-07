@@ -95,3 +95,16 @@ def test_hercules_reserve_aliases_share_one_canonical_display_name(source_name):
         source_name,
         "Finland_Kolmonen_North",
     ) == "Hercules-j"
+
+
+@pytest.mark.parametrize("source_name", ["TPV/2", "TPV 2", "TPV II"])
+def test_tpv_reserve_aliases_share_one_canonical_display_name(source_name):
+    assert canonicalize_team_display_name(
+        source_name,
+        "Finland_Kolmonen_Western_Group2",
+    ) == "TPV/2"
+
+
+@pytest.mark.parametrize("source_name", ["RoPS", "Rovaniemi", "Rovaniemen Palloseura"])
+def test_rops_aliases_share_one_canonical_display_name(source_name):
+    assert canonicalize_team_display_name(source_name, "Finland_Ykkonen") == "RoPS"
