@@ -26,6 +26,16 @@ class MatchResult:
         self.home = canonicalize_team_display_name(self.home)
         self.away = canonicalize_team_display_name(self.away)
 
+        # VJS/2 è la forma storica ancora presente in alcuni CSV del
+        # Finland_Kolmonen_Southern_Group2. VJS/Akatemia viene invece già
+        # canonicalizzata in input a VJS 2. Le due forme devono quindi
+        # coincidere anche nei MatchResult, altrimenti statistics.py usa il
+        # confronto letterale e perde tutto lo storico della squadra.
+        if self.home.casefold() == "vjs/2":
+            self.home = "VJS 2"
+        if self.away.casefold() == "vjs/2":
+            self.away = "VJS 2"
+
     @property
     def result(self) -> str:
         if self.home_goals > self.away_goals:
