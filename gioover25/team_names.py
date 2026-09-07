@@ -153,8 +153,9 @@ def canonicalize_team_display_name(value: object) -> str:
       convertito in ``2``;
     - ``EPS/Reservi`` viene persistito come ``EPS Reservi``;
     - ``SexyPöxyt`` viene persistito come ``Pöxyt``;
-    - ``TiPS Vantaa`` viene persistito come ``TiPS``. Il nome è un alias
-      ufficiale della stessa squadra già presente nello storico canonico della
+    - ``TiPS Vantaa`` viene persistito come ``TiPS``;
+    - ``VJS/Akatemia`` viene persistito come ``VJS 2``. È la forma canonica
+      necessaria per allineare input, storico e statistiche della
       Finland_Kolmonen_Southern_Group2;
     - le sostituzioni avvengono solo su nomi completi noti o sul token finale II.
     """
@@ -168,6 +169,7 @@ def canonicalize_team_display_name(value: object) -> str:
         "sexypöxyt": "Pöxyt",
         "sexypoxyt": "Pöxyt",
         "tips vantaa": "TiPS",
+        "vjs/akatemia": "VJS 2",
     }
 
     exact = exact_aliases.get(text.casefold())
