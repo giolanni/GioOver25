@@ -82,6 +82,7 @@ TEAM_ALIASES: dict[str, dict[str, str]] = {
         "fc kontu": "kontu",
         "lps helsinki": "laajasalon palloseura",
         "vjs vantaa b": "vjs 2",
+        "vjs akatemia": "vjs 2",
     },
     "Finland_Kolmonen_Southern_Group3": {
         "riihimaen palloseura": "rips",
