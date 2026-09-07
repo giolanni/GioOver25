@@ -44,6 +44,7 @@ python -m analysis.metrics.build_engine_league_high_rankings
 from __future__ import annotations
 
 import csv
+from itertools import chain
 from pathlib import Path
 
 import pandas as pd
@@ -103,21 +104,105 @@ def detect_delimiter(
     path: Path,
 ) -> str:
     """
-    Rileva il separatore, con fallback al punto e virgola.
-    """
+    Rileva il separatore dall'header, con fallback al punto e virgola.
 
-    sample = path.read_text(
+    Non usa il contenuto delle righe: campi testuali con molte virgole possono
+    altrimenti far classificare come CSV separato da virgola uno storico che
+    in realtà usa il punto e virgola.
+    """
+    with path.open(
+        "r",
         encoding="utf-8-sig",
         errors="replace",
-    )[:4096]
+        newline="",
+    ) as handle:
+        header = handle.readline()
 
-    try:
-        return csv.Sniffer().sniff(
-            sample,
-            delimiters=";,\t,",
-        ).delimiter
-    except csv.Error:
-        return ";"
+    required = {"LeagueId", "Band", "Over25"}
+    for delimiter in (";", ",", "\t"):
+        values = next(
+            csv.reader([header], delimiter=delimiter),
+            [],
+        )
+        columns = {value.strip() for value in values}
+        if required.issubset(columns):
+            return delimiter
+
+        # Gli storici meno recenti non hanno header. Le posizioni sono quelle
+        # del formato storico ufficiale: Band=7 e Over25=12.
+        if (
+            len(values) >= 14
+            and values[7].strip().upper()
+            in {"ALTA", "MEDIA-ALTA", "MEDIA", "BASSA"}
+            and values[12].strip().upper()
+            in {"OK", "KO", ""}
+        ):
+            return delimiter
+
+    return ";"
+
+
+def load_history_columns(
+    history_file: Path,
+    delimiter: str,
+) -> tuple[pd.DataFrame, set[str]]:
+    """Legge soltanto le colonne necessarie senza perdere righe irregolari.
+
+    La lettura posizionale conserva i campi iniziali anche quando un vecchio
+    campo testuale contiene un separatore non quotato. Questo evita sia il
+    crash del parser pandas sia l'uso di ``on_bad_lines=skip``.
+    """
+    wanted = (
+        "LeagueId",
+        "Band",
+        "Over25",
+        "MatchDate",
+        "PredictionDate",
+    )
+    with history_file.open(
+        "r",
+        encoding="utf-8-sig",
+        errors="replace",
+        newline="",
+    ) as handle:
+        reader = csv.reader(handle, delimiter=delimiter)
+        first = next(reader, None)
+        if first is None:
+            return pd.DataFrame(columns=wanted), set()
+
+        required = {"LeagueId", "Band", "Over25"}
+        stripped_header = [value.strip() for value in first]
+        if required.issubset(set(stripped_header)):
+            indexes = {
+                column: stripped_header.index(column)
+                for column in wanted
+                if column in stripped_header
+            }
+            data_rows = reader
+        elif len(first) >= 14:
+            indexes = {
+                "PredictionDate": 0,
+                "MatchDate": 1,
+                "LeagueId": 2,
+                "Band": 7,
+                "Over25": 12,
+            }
+            data_rows = chain([first], reader)
+        else:
+            return pd.DataFrame(), required
+
+        records = []
+        for values in data_rows:
+            records.append({
+                column: (
+                    values[index]
+                    if index < len(values)
+                    else ""
+                )
+                for column, index in indexes.items()
+            })
+
+    return pd.DataFrame.from_records(records), set()
 
 
 def build_engine_ranking(
@@ -132,23 +217,9 @@ def build_engine_ranking(
         history_file
     )
 
-    history = pd.read_csv(
+    history, missing = load_history_columns(
         history_file,
-        sep=delimiter,
-        encoding="utf-8-sig",
-        low_memory=False,
-        dtype=str,
-    )
-
-    required = {
-        "LeagueId",
-        "Band",
-        "Over25",
-    }
-
-    missing = (
-        required
-        - set(history.columns)
+        delimiter,
     )
 
     if missing:
@@ -228,6 +299,8 @@ def build_engine_ranking(
         alta["_ResolvedDate"] = pd.to_datetime(
             alta[date_column],
             errors="coerce",
+            format="mixed",
+            dayfirst=True,
         )
     else:
         alta["_ResolvedDate"] = pd.NaT

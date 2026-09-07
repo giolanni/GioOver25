@@ -133,6 +133,11 @@ Dalla cartella principale del progetto:
 
     python -m gioover25.append_results data/input_risultati/risultati.csv
 
+L'aggiornamento ordinario del Laboratory è incrementale e non rigenera le
+analisi sperimentali pesanti. Per richiedere anche la ricostruzione completa:
+
+    python -m gioover25.append_results data/input_risultati/risultati.csv --full-analysis
+
 LIMITAZIONI
 -----------
 Il controllo dei duplicati usa stessa lega, stesse squadre e stesso risultato.
@@ -1272,16 +1277,36 @@ def append_results(
         f"{archive_file}"
     )
 
-def _run_post_update_tasks() -> None:
-    commands = [
-        (
-            "aggiornamento laboratory",
-            [sys.executable, "-m", "analysis.laboratory.run_all"],
-        ),
-        (
-            "aggiornamento metrics",
-            [sys.executable, "-m", "analysis.metrics.analyze_metrics"],
-        ),
+def _run_post_update_tasks(full_analysis: bool = False) -> None:
+    if full_analysis:
+        commands = [
+            (
+                "ricostruzione completa laboratory",
+                [sys.executable, "-m", "analysis.laboratory.run_all"],
+            ),
+            (
+                "aggiornamento completo metrics",
+                [sys.executable, "-m", "analysis.metrics.analyze_metrics"],
+            ),
+        ]
+    else:
+        commands = [
+            (
+                "aggiornamento incrementale laboratory",
+                [
+                    sys.executable,
+                    "-m",
+                    "analysis.laboratory.build_laboratory",
+                    "--incremental",
+                ],
+            ),
+        ]
+        print(
+            "\nAnalisi sperimentali pesanti non eseguite. "
+            "Usare --full-analysis per rigenerarle."
+        )
+
+    commands.append(
         (
             "classifica leghe fascia alta per engine",
             [
@@ -1289,8 +1314,8 @@ def _run_post_update_tasks() -> None:
                 "-m",
                 "analysis.metrics.build_engine_league_high_rankings",
             ],
-        ),
-    ]
+        )
+    )
 
     for description, command in commands:
         print(f"\nAvvio {description}...")
@@ -1326,12 +1351,23 @@ def main() -> None:
         ),
     )
 
+    parser.add_argument(
+        "--full-analysis",
+        action="store_true",
+        help=(
+            "Dopo l'import rigenera anche distribuzioni, regole candidate, "
+            "driver analysis, autopsia KO e tutte le metriche."
+        ),
+    )
+
     args = parser.parse_args()
 
     append_results(
         args.input_file
     )
-    _run_post_update_tasks() #aggiorna metriche e laboratory
+    _run_post_update_tasks(
+        full_analysis=args.full_analysis
+    )
 
 if __name__ == "__main__":
     main()
