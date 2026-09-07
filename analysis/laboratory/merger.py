@@ -44,22 +44,29 @@ def _has_result(row: dict) -> bool:
 
 
 def _outcome(row: dict) -> str:
-    explicit = _text(row.get("Outcome") or row.get("Over25")).upper()
-    if explicit in {"OK", "KO"}:
-        return explicit
+    """Restituisce sempre l'esito canonico OK/KO quando il risultato esiste."""
     hg, ag = _text(row.get("HG")), _text(row.get("AG"))
     if hg and ag:
         try:
-            return "OK" if int(float(hg.replace(",", "."))) + int(float(ag.replace(",", "."))) >= 3 else "KO"
+            total = int(float(hg.replace(",", "."))) + int(float(ag.replace(",", ".")))
+            return "OK" if total >= 3 else "KO"
         except ValueError:
             pass
-    goals = _text(row.get("Goals"))
-    if goals:
-        try:
-            return "OK" if float(goals.replace(",", ".")) >= 3 else "KO"
-        except ValueError:
-            pass
+
+    explicit = _text(row.get("Outcome") or row.get("Over25")).upper()
+    if explicit in {"OK", "KO"}:
+        return explicit
     return ""
+
+
+def _band(row: dict) -> str:
+    """Normalizza le varianti di fascia usate dai ranking nel dataset del laboratorio."""
+    raw = _text(row.get("Band")).upper().replace(" ", "_").replace("-", "_")
+    if raw in {"ALTA", "HIGH", "HA", "FASCIA_ALTA"} or raw.startswith("ALTA_") or raw.startswith("HIGH_"):
+        return "ALTA"
+    if raw in {"MEDIA", "MEDIUM", "M", "FASCIA_MEDIA"} or raw.startswith("MEDIA_") or raw.startswith("MEDIUM_"):
+        return "MEDIA"
+    return _text(row.get("Band"))
 
 
 def _status(row: dict) -> str:
@@ -168,7 +175,7 @@ def merge_matches(history: list[dict], rankings: list[dict]) -> list[dict]:
             unmatched.append({
                 "LeagueId": history_row.get("LeagueId", ""), "PredictionDate": history_row.get("PredictionDate", ""),
                 "MatchDate": history_row.get("MatchDate", ""), "Round": history_row.get("Round", ""),
-                "Home": history_row.get("Home", ""), "Away": history_row.get("Away", ""), "Band": history_row.get("Band", ""),
+                "Home": history_row.get("Home", ""), "Away": history_row.get("Away", ""), "Band": _band(history_row),
                 "Outcome": _outcome(history_row), "HG": history_row.get("HG", ""), "AG": history_row.get("AG", ""),
                 "MatchStatus": history_row.get("MatchStatus", ""), "Reason": reason, "BaseCandidates": candidates,
                 "HistorySource": history_row.get("SourceFile", ""),
@@ -176,11 +183,13 @@ def merge_matches(history: list[dict], rankings: list[dict]) -> list[dict]:
             continue
 
         row = deepcopy(ranking)
-        for field in ("PredictionDate", "MatchDate", "LeagueId", "Round", "Home", "Away", "Score", "Band", "HG", "AG", "Goals", "BTTS", "Reason", "AlgorithmVersion", "MatchStatus", "CompetitionGroup", "HomeSourceLeagueId", "AwaySourceLeagueId"):
+        for field in ("PredictionDate", "MatchDate", "LeagueId", "Round", "Home", "Away", "Score", "HG", "AG", "Goals", "BTTS", "Reason", "AlgorithmVersion", "MatchStatus", "CompetitionGroup", "HomeSourceLeagueId", "AwaySourceLeagueId"):
             value = history_row.get(field, "")
             if _text(value):
                 row[field] = value
 
+        # Canonical values are required by all downstream Laboratory reports.
+        row["Band"] = _band(history_row) or _band(ranking)
         row["Outcome"] = _outcome(history_row)
         row["HistorySource"] = history_row.get("SourceFile", "")
         row["RankingSource"] = ranking.get("SourceFile", "")
