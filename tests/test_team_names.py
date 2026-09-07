@@ -76,3 +76,11 @@ def test_real_name_is_available_from_dictionary():
         "Finland_Kolmonen_Southern_Group2",
         "VJS/2",
     ) == "VJS/Akatemia"
+
+
+@pytest.mark.parametrize("source_name", ["PeKa", "FC Peli-Karhut", "Peli-Karhut"])
+def test_peka_aliases_share_one_canonical_display_name(source_name):
+    assert canonicalize_team_display_name(
+        source_name,
+        "Finland_Kolmonen_Eastern_Group3",
+    ) == "PeKa"
