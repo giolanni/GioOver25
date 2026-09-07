@@ -14,8 +14,6 @@ def _text(value: Any) -> str:
 
 
 def _normalize_team(value: Any) -> str:
-    # Keep the laboratory matching consistent with the project canonical form:
-    # reserve-team suffix II is represented as 2.
     value = _text(value).replace("II", "2")
     return " ".join(value.casefold().split())
 
@@ -31,12 +29,13 @@ def _parse_date(value: Any) -> date | None:
 
 
 def _key(row: dict) -> tuple[str, str, str, str]:
-    return (
-        _text(row.get("LeagueId")),
-        _text(row.get("MatchDate")),
-        _normalize_team(row.get("Home")),
-        _normalize_team(row.get("Away")),
-    )
+    return (_text(row.get("LeagueId")), _text(row.get("MatchDate")),
+            _normalize_team(row.get("Home")), _normalize_team(row.get("Away")))
+
+
+def _round_team_key(row: dict) -> tuple[str, str, str, str]:
+    return (_text(row.get("LeagueId")), _text(row.get("Round")),
+            _normalize_team(row.get("Home")), _normalize_team(row.get("Away")))
 
 
 def _outcome(hg: Any, ag: Any) -> str:
@@ -50,22 +49,30 @@ def _outcome(hg: Any, ag: Any) -> str:
     return "OK" if total >= 3 else "KO"
 
 
-def _result_index(results: list[dict]) -> dict[tuple[str, str, str, str], dict]:
-    index = {}
+def _result_index(results: list[dict]) -> tuple[dict, dict]:
+    """Build exact and safe fallback indexes.
+
+    The primary identity is LeagueId + MatchDate + Home + Away. A secondary
+    index is retained only when LeagueId + Round + Home + Away identifies one
+    and only one concluded result. It is used only when MatchDate is missing
+    from the prediction, so old ranking rows can be recovered without guessing.
+    """
+    exact: dict[tuple[str, str, str, str], dict] = {}
+    by_round: dict[tuple[str, str, str, str], list[dict]] = {}
     for result in results:
         if _parse_date(result.get("MatchDate")) is None:
             continue
         if not _text(result.get("HG")) or not _text(result.get("AG")):
             continue
-        index[_key(result)] = result
-    return index
+        exact[_key(result)] = result
+        by_round.setdefault(_round_team_key(result), []).append(result)
+    unique_round = {key: rows[0] for key, rows in by_round.items() if len(rows) == 1}
+    return exact, unique_round
 
 
 def _write_unmatched(rows: list[dict]) -> None:
-    fields = [
-        "LeagueId", "PredictionDate", "MatchDate", "Round", "Home", "Away",
-        "Band", "Score", "Reason", "RankingSource", "ReasonUnmatched",
-    ]
+    fields = ["LeagueId", "PredictionDate", "MatchDate", "Round", "Home", "Away",
+              "Band", "Score", "Reason", "RankingSource", "ReasonUnmatched"]
     UNMATCHED_FILE.parent.mkdir(parents=True, exist_ok=True)
     with UNMATCHED_FILE.open("w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields, delimiter=";", extrasaction="ignore")
@@ -74,67 +81,70 @@ def _write_unmatched(rows: list[dict]) -> None:
 
 
 def merge_matches(predictions: list[dict], results: list[dict]) -> list[dict]:
-    """Attach the real result to every v25 prediction when an exact match exists.
-
-    Match identity is strictly LeagueId + MatchDate + Home + Away. No league,
-    date or team-pair fallback is used: a fallback could attach a result from a
-    different fixture and silently corrupt the laboratory.
-    """
-    result_index = _result_index(results)
-    merged = []
-    unmatched = []
-    concluded = 0
-    scheduled = 0
+    """Attach real results using exact identity plus safe missing-date recovery."""
+    exact_index, round_index = _result_index(results)
+    merged, unmatched = [], []
+    concluded = scheduled = exact_matches = round_fallback_matches = 0
 
     for prediction in predictions:
         row = deepcopy(prediction)
-        result = result_index.get(_key(prediction))
+        result = exact_index.get(_key(prediction))
+        match_mode = "EXACT_RESULT_KEY"
+
+        if result is None and not _text(prediction.get("MatchDate")):
+            result = round_index.get(_round_team_key(prediction))
+            if result is not None:
+                match_mode = "ROUND_TEAM_FALLBACK"
 
         if result is not None:
             hg, ag = _text(result.get("HG")), _text(result.get("AG"))
-            row["HG"] = hg
-            row["AG"] = ag
+            row["HG"], row["AG"] = hg, ag
             row["Goals"] = str(int(float(hg)) + int(float(ag)))
             row["Outcome"] = _outcome(hg, ag)
             row["MatchStatus"] = "FINAL"
             row["ResultSource"] = result.get("SourceFile", "")
+            row["MatchMode"] = match_mode
+            row["DateDifferenceDays"] = 0 if match_mode == "EXACT_RESULT_KEY" else ""
+            if match_mode == "ROUND_TEAM_FALLBACK":
+                row["MatchDate"] = result.get("MatchDate", "")
+                round_fallback_matches += 1
+            else:
+                exact_matches += 1
             concluded += 1
         else:
-            row["HG"] = ""
-            row["AG"] = ""
-            row["Goals"] = ""
-            row["Outcome"] = ""
+            row["HG"] = row["AG"] = row["Goals"] = row["Outcome"] = ""
             row["MatchStatus"] = "SCHEDULED"
             row["ResultSource"] = ""
+            row["MatchMode"] = "NO_RESULT"
+            row["DateDifferenceDays"] = ""
             scheduled += 1
+            reason = ("NO_EXACT_RESULT_AND_NO_UNIQUE_ROUND_MATCH"
+                      if not _text(prediction.get("MatchDate")) else "NO_EXACT_RESULT")
             unmatched.append({
                 "LeagueId": prediction.get("LeagueId", ""),
                 "PredictionDate": prediction.get("PredictionDate", ""),
                 "MatchDate": prediction.get("MatchDate", ""),
                 "Round": prediction.get("Round", ""),
-                "Home": prediction.get("Home", ""),
-                "Away": prediction.get("Away", ""),
-                "Band": prediction.get("Band", ""),
-                "Score": prediction.get("Score", ""),
+                "Home": prediction.get("Home", ""), "Away": prediction.get("Away", ""),
+                "Band": prediction.get("Band", ""), "Score": prediction.get("Score", ""),
                 "Reason": prediction.get("Reason", ""),
                 "RankingSource": prediction.get("SourceFile", ""),
-                "ReasonUnmatched": "NO_EXACT_RESULT",
+                "ReasonUnmatched": reason,
             })
 
         row["MatchId"] = len(merged) + 1
         row["HistorySource"] = row.get("ResultSource", "")
         row["RankingSource"] = prediction.get("SourceFile", "")
-        row["MatchMode"] = "EXACT_RESULT_KEY" if result is not None else "NO_RESULT"
-        row["DateDifferenceDays"] = 0 if result is not None else ""
         merged.append(row)
 
     _write_unmatched(unmatched)
-
     print()
     print("===== LABORATORY MERGE =====")
     print(f"Predizioni caricate:       {len(predictions)}")
     print(f"Risultati caricati:        {len(results)}")
     print(f"Predizioni abbinate:       {concluded}")
+    print(f"  Exact MatchDate:         {exact_matches}")
+    print(f"  Fallback Round+Teams:    {round_fallback_matches}")
     print(f"Match conclusi:             {concluded}")
     print(f"Match senza risultato:      {scheduled}")
     print(f"Righe non abbinate:         {scheduled}")
