@@ -1,4 +1,4 @@
-LeagueId;MatchDate;Home;Away
+﻿LeagueId;MatchDate;Home;Away
 Australia_NPLNSW;2026-07-24;Manly Utd;Sydney Olympic
 Australia_NPLVictoria;2026-07-24;Green Gully;Dandenong City
 Australia_NPLVictoria;2026-07-24;Heidelberg;George Cross
@@ -32,12 +32,12 @@ Germany_Regionalliga_Nordost;2026-07-24;Luckenwalde;Lokomotive Leipzig
 Germany_Regionalliga_Bayern;2026-07-24;Eichstatt;Illertissen
 Germany_Regionalliga_Bayern;2026-07-24;Schwaben Augsburg;Buchbach
 Germany_Regionalliga_Bayern;2026-07-24;Landsberg;Memmingen
-Germany_Regionalliga_Bayern;2026-07-24;Vilzing;Norinberga II
+Germany_Regionalliga_Bayern;2026-07-24;Vilzing;Norinberga 2
 Germany_Regionalliga_Bayern;2026-07-24;Ansbach;Burghausen
-Germany_Regionalliga_Bayern;2026-07-24;Bayern II;Eltersdorf
-Germany_Regionalliga_Bayern;2026-07-24;Bayreuth;Augsburg II
+Germany_Regionalliga_Bayern;2026-07-24;Bayern 2;Eltersdorf
+Germany_Regionalliga_Bayern;2026-07-24;Bayreuth;Augsburg 2
 Germany_Oberliga_Hamburg;2026-07-24;HT 16;Paloma
-Germany_Oberliga_Bayern_Nord;2026-07-24;Gebenbach;Ingolstadt II
+Germany_Oberliga_Bayern_Nord;2026-07-24;Gebenbach;Ingolstadt 2
 Germany_Oberliga_Bayern_Nord;2026-07-24;Kornburg;Ammerthal
 Germany_Oberliga_Bayern_Nord;2026-07-24;Weiden;Cham
 Germany_Oberliga_Bayern_Sud;2026-07-24;Hankofen-Hailing;Ismaning
@@ -88,7 +88,7 @@ Ukraine_PershaLiga;2026-07-24;Oleksandriya;Nyva Ternopil
 Hungary_NBI;2026-07-24;Nyiregyhaza;Ujpest
 Finland_Kolmonen_Eastern_Group2;2026-07-24;Kings;Zulimanit
 Finland_Kolmonen_Southern_Group2;2026-07-24;Valtti;ToTe
-Finland_Kolmonen_Western_Group2;2026-07-24;NOPS;FC Haka Juniors
+Finland_Kolmonen_Western_Group2;2026-07-24;NoPS;FC Haka j.
 Finland_Kolmonen_Eastern_Group1;2026-07-24;JJK/2;SAPA
-Finland_Kolmonen_Western_Group2;2026-07-24;LeKi Futis;Saaksjarven Loiske
-Finland_Kolmonen_Southern_Group2;2026-07-24;LPS Helsinki;VJS Vantaa B
+Finland_Kolmonen_Western_Group2;2026-07-24;FC LeKi;Sääksjärven Loiske
+Finland_Kolmonen_Southern_Group2;2026-07-24;Laajasalon Palloseura;VJS 2

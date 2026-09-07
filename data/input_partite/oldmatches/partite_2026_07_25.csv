@@ -1,4 +1,4 @@
-LeagueId;MatchDate;Home;Away
+﻿LeagueId;MatchDate;Home;Away
 Australia_NPLACT;2026-07-25;Canberra Olympic;Queanbeyan City
 Australia_NPLACT;2026-07-25;Brindabella;Canberra White Eagles
 Australia_NPLACT;2026-07-25;Belconnen Utd.;O'Connor Knights
@@ -94,18 +94,18 @@ Finland_Kakkonen_GroupB;2026-07-25;MuSa;EPS
 Finland_Kakkonen_GroupC;2026-07-25;Huima / Urho;SJK Akatemia 2
 Finland_Kakkonen_GroupC;2026-07-25;JBK;VPS 2
 Germany_Regionalliga_Nordost;2026-07-25;BFC Preussen;RSV Eintracht
-Germany_Regionalliga_Nordost;2026-07-25;Hertha II;Chemnitzer
-Germany_Regionalliga_Nordost;2026-07-25;Magdeburg II;Tasmania Berlin
+Germany_Regionalliga_Nordost;2026-07-25;Hertha 2;Chemnitzer
+Germany_Regionalliga_Nordost;2026-07-25;Magdeburg 2;Tasmania Berlin
 Germany_Regionalliga_Nordost;2026-07-25;Aue;Altglienicke
-Germany_Regionalliga_Bayern;2026-07-25;Unterhaching;Furth II
+Germany_Regionalliga_Bayern;2026-07-25;Unterhaching;Furth 2
 Germany_Oberliga_Hamburg;2026-07-25;Dassendorf;ETSV Hamburg
 Germany_Oberliga_Hamburg;2026-07-25;Teutonia Ottensen;Wandsbeker Concordia
-Germany_Oberliga_Hamburg;2026-07-25;Victoria Hamburg;Norderstedt II
+Germany_Oberliga_Hamburg;2026-07-25;Victoria Hamburg;Norderstedt 2
 Germany_Oberliga_Hamburg;2026-07-25;Suderelbe;Altona
 Germany_Oberliga_Bayern_Nord;2026-07-25;Stadeln;Neudrossenfeld
 Germany_Oberliga_Bayern_Nord;2026-07-25;Neumarkt;Grossbardorf
 Germany_Oberliga_Bayern_Nord;2026-07-25;Bayern Hof;DJK Bamberg
-Germany_Oberliga_Bayern_Nord;2026-07-25;Regensburg II;Nordlingen
+Germany_Oberliga_Bayern_Nord;2026-07-25;Regensburg 2;Nordlingen
 Germany_Oberliga_Bayern_Nord;2026-07-25;Fortuna Regensburg;Bamberg
 Germany_Oberliga_Bayern_Sud;2026-07-25;Deisenhofen;Kirchanschoring
 Germany_Oberliga_Bayern_Sud;2026-07-25;Pfaffenhofen;Rosenheim
@@ -134,7 +134,7 @@ Norway_Eliteserien;2026-07-25;Kristiansund;Start
 Norway_OBOSLigaen;2026-07-25;Strömsgodset;Lyn
 Norway_OBOSLigaen;2026-07-25;Haugesund;Bryne
 Norway_2ndDivision_Group1;2026-07-25;Bjarg;Pors
-Norway_2ndDivision_Group1;2026-07-25;Brattvag;Mjondalen
+Norway_2ndDivision_Group1;2026-07-25;Brattvag;Mjoendalen
 Norway_2ndDivision_Group1;2026-07-25;Arendal;Vidar
 Norway_2ndDivision_Group1;2026-07-25;Eik-Tonsberg;Sandviken
 Norway_2ndDivision_Group1;2026-07-25;Notodden;Sotra
@@ -146,7 +146,7 @@ Norway_2ndDivision_Group2;2026-07-25;Tromsdalen;Follo
 Norway_3rdDivision_Group1;2026-07-25;Grei;Konnerud
 Norway_3rdDivision_Group1;2026-07-25;Nordstrand;Gamle Oslo
 Norway_3rdDivision_Group1;2026-07-25;Ullern;Heming
-Norway_3rdDivision_Group1;2026-07-25;Baerum Sportsklubb;Vålerenga 2
+Norway_3rdDivision_Group1;2026-07-25;Baerum;Vaalerenga IF 2
 Norway_3rdDivision_Group2;2026-07-25;Aalesund 2;Orkla
 Norway_3rdDivision_Group2;2026-07-25;Molde 2;Byåsen
 Norway_3rdDivision_Group2;2026-07-25;Spjelkavik;Nardo
@@ -162,7 +162,7 @@ Norway_3rdDivision_Group5;2026-07-25;Harstad;Fauske Sprint
 Norway_3rdDivision_Group5;2026-07-25;Finnsnes;Strømsgodset 2
 Norway_3rdDivision_Group5;2026-07-25;Skjervoy;Alta
 Norway_3rdDivision_Group5;2026-07-25;Tromsø 2;Ulfstind
-Norway_3rdDivision_Group5;2026-07-25;Floya;Lillestrom 2
+Norway_3rdDivision_Group5;2026-07-25;Floeya;Lillestrom 2
 Norway_3rdDivision_Group6;2026-07-25;Drobak-Frogn;Brumunddal
 Norway_3rdDivision_Group6;2026-07-25;Bjorkelangen;Fram
 Norway_3rdDivision_Group6;2026-07-25;Elverum;Sandefjord 2
@@ -174,8 +174,8 @@ Poland_Ekstraklasa;2026-07-25;Lech;Cracovia
 Poland_Division1;2026-07-25;Lechia;Grodzisk M.
 Poland_Division1;2026-07-25;Pogon Siedlce;LKS Lodz
 Poland_Division1;2026-07-25;S. Rzeszow;Chrobry Glogow
-Poland_Division2;2026-07-25;Podhale Nowy Targ;Slask II
-Poland_Division2;2026-07-25;Legia II;S. Wola
+Poland_Division2;2026-07-25;Podhale Nowy Targ;Slask 2
+Poland_Division2;2026-07-25;Legia 2;S. Wola
 Poland_Division2;2026-07-25;Swit Szczecin;Leczna
 Poland_Division2;2026-07-25;Zawisza;Kleczew
 Poland_Division2;2026-07-25;Sandecja;Hutnik Krakow
@@ -207,9 +207,9 @@ Ukraine_PershaLiga;2026-07-25;Ahrobiznes Volochysk;SC Poltava
 Ukraine_PershaLiga;2026-07-25;Lokomotyv Kyiv;FC Chernihiv
 Ukraine_PershaLiga;2026-07-25;Zhytomyr 2;UCSA
 Hungary_NBI;2026-07-25;Kisvarda;Honved
-USA_USLChampionship;2026-07-25;Birmingham;New Mexico
-USA_MLSNextPro_EasternConference_NortheastDivision;2026-07-25;New York Red Bulls II;Crown Legacy
-USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-25;Inter Miami II;Toronto FC II
+USA_USLChampionship;2026-07-25;Birmingham Legion;New Mexico
+USA_MLSNextPro_EasternConference_NortheastDivision;2026-07-25;New York Red Bulls 2;Crown Legacy
+USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-25;Inter Miami 2;Toronto FC 2
 USA_USLLeagueTwo_PlayOff;2026-07-25;Vermont Green;Asheville City
 USA_USLLeagueTwo_PlayOff;2026-07-25;Flint City;Peoria
 USA_USLLeagueTwo_PlayOff;2026-07-25;Laredo Heat;Fort Lauderdale

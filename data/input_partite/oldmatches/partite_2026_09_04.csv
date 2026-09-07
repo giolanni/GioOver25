@@ -105,24 +105,24 @@ Germany_Bundesliga;2026-09-04;Stoccarda;Colonia
 Germany_2Bundesliga;2026-09-04;Bielefeld;St. Pauli
 Germany_2Bundesliga;2026-09-04;Hannover;Karlsruher
 Germany_3Liga;2026-09-04;Ingolstadt;Aachen
-Germany_Regionalliga_Nord;2026-09-04;Hannover II;St. Pauli II
+Germany_Regionalliga_Nord;2026-09-04;Hannover 2;St. Pauli 2
 Germany_Regionalliga_Nord;2026-09-04;Drochtersen/Assel;Eimsbutteler
-Germany_Regionalliga_West;2026-09-04;Bonner;Colonia II
-Germany_Regionalliga_Sudwest;2026-09-04;Eint. Frankfurt II;Walldorf
+Germany_Regionalliga_West;2026-09-04;Bonner;Colonia 2
+Germany_Regionalliga_Sudwest;2026-09-04;Eint. Frankfurt 2;Walldorf
 Germany_Regionalliga_Sudwest;2026-09-04;Ulm;Freiberg
 Germany_Regionalliga_Bayern;2026-09-04;Aubstadt;Ansbach
-Germany_Regionalliga_Bayern;2026-09-04;Bayern II;Eichstatt
+Germany_Regionalliga_Bayern;2026-09-04;Bayern 2;Eichstatt
 Germany_Regionalliga_Bayern;2026-09-04;Bayreuth;Burghausen
 Germany_Regionalliga_Bayern;2026-09-04;Eltersdorf;Illertissen
 Germany_Regionalliga_Bayern;2026-09-04;Vilzing;Monaco 1860
 Germany_Oberliga_SchleswigHolstein;2026-09-04;Hohenwestedt;Eckernforder SV
 Germany_Oberliga_Hamburg;2026-09-04;Vorwarts-Wacker;Victoria Hamburg
 Germany_Oberliga_Hamburg;2026-09-04;Harksheide;Wandsbeker Concordia
-Germany_Oberliga_Hamburg;2026-09-04;Norderstedt II;Teutonia Ottensen
+Germany_Oberliga_Hamburg;2026-09-04;Norderstedt 2;Teutonia Ottensen
 Germany_Oberliga_Bremen;2026-09-04;Leher;Vatan Bremen
 Germany_Oberliga_Bremen;2026-09-04;Oberneuland;Aumund-Vegesack
 Germany_Oberliga_Westfalen;2026-09-04;Gievenbeck;Munster 2
-Germany_Oberliga_Westfalen;2026-09-04;Lippstadt;Verl II
+Germany_Oberliga_Westfalen;2026-09-04;Lippstadt;Verl 2
 Germany_Oberliga_Westfalen;2026-09-04;Sprockhovel;Vreden
 Germany_Oberliga_Hessen;2026-09-04;Hanauer SC;Eddersheim
 Germany_Oberliga_Hessen;2026-09-04;Hunfelder;RW Walldorf
@@ -133,10 +133,10 @@ Germany_Oberliga_Bayern_Nord;2026-09-04;DJK Bamberg;Wurzburger FV
 Germany_Oberliga_Bayern_Nord;2026-09-04;Kornburg;Gebenbach
 Germany_Oberliga_Bayern_Nord;2026-09-04;Weiden;Fortuna Regensburg
 Germany_Oberliga_Bayern_Sud;2026-09-04;Heimstetten;Deisenhofen
-Germany_Oberliga_Bayern_Sud;2026-09-04;Monaco 1860 II;Gundelfingen
+Germany_Oberliga_Bayern_Sud;2026-09-04;Monaco 1860 2;Gundelfingen
 Germany_Oberliga_Bayern_Sud;2026-09-04;Rosenheim;Erlbach
 Germany_Oberliga_BadenWurttemberg;2026-09-04;FC Holzhausen;Nottingen
-Germany_Oberliga_BadenWurttemberg;2026-09-04;Young Boys Reutlingen;Karlsruher II
+Germany_Oberliga_BadenWurttemberg;2026-09-04;Young Boys Reutlingen;Karlsruher 2
 Indonesia_SuperLeague;2026-09-04;Arema;Isenmulang Kalteng
 Indonesia_SuperLeague;2026-09-04;Bali United;PSS Sleman
 England_PremierLeague;2026-09-04;Ipswich;Liverpool
@@ -182,7 +182,7 @@ Poland_Division1;2026-09-04;Termalica B-B.;Lechia
 Poland_Division2;2026-09-04;S. Wola;Zawisza
 Poland_IIILiga_Group1;2026-09-04;Pelikan;Swit
 Poland_IIILiga_Group1;2026-09-04;Warta Sieradz;Elblag
-Poland_IIILiga_Group2;2026-09-04;Unia Swarzedz;Lech II
+Poland_IIILiga_Group2;2026-09-04;Unia Swarzedz;Lech 2
 Poland_IIILiga_Group2;2026-09-04;Elana Torun;Wda Swiecie
 Poland_IIILiga_Group4;2026-09-04;Kolbuszowa Dolna;Star Starachowice
 Portugal_LigaPortugal;2026-09-04;FC Porto;Moreirense
@@ -234,21 +234,21 @@ Hungary_NBI;2026-09-04;Vasas;Nyiregyhaza
 Australia_NPL_NSW_U20;2026-09-04;Manly Utd U20;NWS Spirit U20
 Australia_NPL_NSW_U20;2026-09-04;Marconi S. U20;Sydney FC U20
 Finland_Kolmonen_Eastern_Group1;2026-09-04;Keuruun Pallo;FC Metso
-Finland_Kolmonen_Western_Group1;2026-09-04;Åbo CF;Maskun Palloseura
-Finland_Kolmonen_Southern_Group1;2026-09-04;Nummelan Palloseura;EPS/Reservi
+Finland_Kolmonen_Western_Group1;2026-09-04;ÅCF;MaPS
+Finland_Kolmonen_Southern_Group1;2026-09-04;Nummelan Palloseura;EPS Reservi
 Finland_Kolmonen_Southern_Group2;2026-09-04;Atlantis FC/2;Pakkalan Palloseura
-Finland_Kolmonen_Southern_Group3;2026-09-04;Riihimäen Palloseura;Atlantis FC/Akatemia
-Finland_Kolmonen_Southern_Group2;2026-09-04;FC Kontu;Töölön Taisto
-Finland_Kolmonen_Southern_Group2;2026-09-04;TiPS Vantaa;HPS/2
+Finland_Kolmonen_Southern_Group3;2026-09-04;RiPS;Atlantis 2
+Finland_Kolmonen_Southern_Group2;2026-09-04;Kontu;Töölön Taisto
+Finland_Kolmonen_Southern_Group2;2026-09-04;TiPS;HPS/2
 Finland_Kolmonen_Southern_Group3;2026-09-04;ToTe/Tapio;TiPS/2 U21
-Finland_Kolmonen_Western_Group2;2026-09-04;Nokian Palloseura;FC LeKi
+Finland_Kolmonen_Western_Group2;2026-09-04;NoPS;FC LeKi
 Finland_Kolmonen_Western_Group1;2026-09-04;VG-62;Peimari United
 Finland_Kolmonen_Southern_Group1;2026-09-04;Malmin Palloseura;PPJ/Ruoholahti
-Finland_Kolmonen_Eastern_Group1;2026-09-04;Jyväskylän Seudun Palloseura;Jyväskylän Komeetat
-Finland_Kolmonen_Eastern_Group1;2026-09-04;FC Blackbird;Savon Pallo
-Finland_Kolmonen_Western_Group3;2026-09-04;FC Kiisto;Sporting Kristina
-Finland_Kolmonen_Western_Group1;2026-09-04;Littoisten Työväen Urheilijat U20;Kaarinan Pojat
-Finland_Kolmonen_Western_Group1;2026-09-04;Piikkiön Palloseura;Pargas IF
-Finland_Kolmonen_Eastern_Group2;2026-09-04;Kings SC;Toivalan Urheilijat
+Finland_Kolmonen_Eastern_Group1;2026-09-04;SAPA;Jyväskylän Komeetat
+Finland_Kolmonen_Eastern_Group1;2026-09-04;Blackbird;Savon Pallo
+Finland_Kolmonen_Western_Group3;2026-09-04;Kiisto;Sp. Kristina
+Finland_Kolmonen_Western_Group1;2026-09-04;LTU U20;KaaPo
+Finland_Kolmonen_Western_Group1;2026-09-04;PiPS;PIF
+Finland_Kolmonen_Eastern_Group2;2026-09-04;Kings;Toivalan Urheilijat
 Finland_Kolmonen_Southern_Group3;2026-09-04;Ponnistus;JäPS/47
-Finland_Kolmonen_Southern_Group1;2026-09-04;SexyPöxyt;Etelä-Espoon Pallo
+Finland_Kolmonen_Southern_Group1;2026-09-04;Pöxyt;Etelä-Espoon Pallo

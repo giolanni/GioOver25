@@ -1,4 +1,4 @@
-LeagueId;MatchDate;Home;Away
+﻿LeagueId;MatchDate;Home;Away
 Australia_NPLACT;2026-08-02;Canberra Croatia;Canberra Juventus
 Australia_NPLNorthernNSW;2026-08-02;Edgeworth E.;Belmont Swansea Utd.
 Australia_NPLNSW;2026-08-02;Sydney Utd;NWS Spirit
@@ -79,7 +79,7 @@ USA_USLChampionship;2026-08-02;Lexington;Monterey Bay
 USA_USLChampionship;2026-08-02;Loudoun;Hartford Athletic
 USA_USLChampionship;2026-08-02;Miami FC;Detroit
 USA_USLChampionship;2026-08-02;Charleston;Brooklyn
-USA_USLChampionship;2026-08-02;Birmingham;Rhode Island
+USA_USLChampionship;2026-08-02;Birmingham Legion;Rhode Island
 USA_USLChampionship;2026-08-02;Tampa Bay;Louisville City
 USA_USLChampionship;2026-08-02;New Mexico;Colorado Springs
 USA_USLChampionship;2026-08-02;Oakland Roots;Pittsburgh
@@ -87,11 +87,11 @@ USA_USLChampionship;2026-08-02;Orange County SC;El Paso
 USA_USLChampionship;2026-08-02;Las Vegas Lights;Phoenix Rising
 USA_USLChampionship;2026-08-02;Sacramento Republic;Sporting Jax
 USA_MLSNextPro_EasternConference_SoutheastDivision;2026-08-02;Connecticut FC;Orlando City B
-USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-02;New York City II;Philadelphia II
+USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-02;New York City 2;Philadelphia 2
 USA_MLSNextPro_EasternConference_SoutheastDivision;2026-08-02;Huntsville;Crown Legacy
 USA_MLSNextPro_WesternConference_PacificDivision;2026-08-02;Tacoma Defiance;Vancouver 2
-USA_MLSNextPro_EasternConference_SoutheastDivision;2026-08-02;Chicago Fire II;Cincinnati 2
-USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-02;New York Red Bulls II;New England Revolution II
+USA_MLSNextPro_EasternConference_SoutheastDivision;2026-08-02;Chicago Fire 2;Cincinnati 2
+USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-02;New York Red Bulls 2;New England Revolution 2
 USA_USLLeagueOne;2026-08-02;Charlotte Independ.;One Knoxville
 USA_USLLeagueOne;2026-08-02;Chattanooga Red Wolves;Spokane Velocity
 USA_USLLeagueOne;2026-08-02;Greenville;Portland Hearts of Pine

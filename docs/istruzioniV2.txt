@@ -72,8 +72,14 @@ Per eseguire davvero:
 STATISTICHE ASUS
 & "gioover25\raccogli_storici.ps1"  
 
+Ranking ASUS
+& "gioover25\raccogli_ranking.ps1" 
+
 STATISTICHE WORK
 \raccogli_storici.ps1 -- VERIFICARE  
+
+Ranking ASUS
+\raccogli_raccogli_ranking.ps1" --VERIFICARE
 
 compara v25 e v251
 python -m analysis.metrics.compare_v25_v251

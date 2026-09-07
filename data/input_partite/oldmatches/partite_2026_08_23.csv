@@ -73,8 +73,8 @@ Finland_Ykkonen;2026-08-23;VJS;Jazz Pori
 France_Ligue1;2026-08-23;Angers;Lilla
 France_Ligue1;2026-08-23;PSG;Rennes
 France_Ligue1;2026-08-23;Norderstedt;SC Weiche-08
-Germany_Regionalliga_West;2026-08-23;Lotte;Bochum II
-Germany_Regionalliga_West;2026-08-23;Paderborn II;Bonner
+Germany_Regionalliga_West;2026-08-23;Lotte;Bochum 2
+Germany_Regionalliga_West;2026-08-23;Paderborn 2;Bonner
 Germany_Oberliga_SchleswigHolstein;2026-08-23;Eichede;Flensburg
 Germany_Oberliga_SchleswigHolstein;2026-08-23;Oldenburger;PSV Neumunster
 Germany_Oberliga_Hamburg;2026-08-23;Paloma;Pinneberg
@@ -85,9 +85,9 @@ Germany_Oberliga_Bremen;2026-08-23;Schwachhausen;Geestemunde
 Germany_Oberliga_Niedersachsen;2026-08-23;Egestorf-Langreder;Wilhelmshaven
 Germany_Oberliga_Niedersachsen;2026-08-23;Hemmingen;Braunschweig U23
 Germany_Oberliga_Niedersachsen;2026-08-23;Spelle-Venhaus;BSV Rehden
-Germany_Oberliga_Niedersachsen;2026-08-23;Verden;Drochtersen/Assel II
+Germany_Oberliga_Niedersachsen;2026-08-23;Verden;Drochtersen/Assel 2
 Germany_Oberliga_Niedersachsen;2026-08-23;Vorsfelde;Hildesheim
-Germany_Oberliga_Westfalen;2026-08-23;Eintracht Rheine;Verl II
+Germany_Oberliga_Westfalen;2026-08-23;Eintracht Rheine;Verl 2
 Germany_Oberliga_Westfalen;2026-08-23;Gievenbeck;Erkenschwick
 Germany_Oberliga_Westfalen;2026-08-23;Lippstadt;Clarholz
 Germany_Oberliga_Westfalen;2026-08-23;Maaslingen;Vreden
@@ -176,22 +176,22 @@ Poland_Ekstraklasa;2026-08-23;Pogon Szczecin;Wisla
 Poland_Division1;2026-08-23;Legnica;Arka
 Poland_Division1;2026-08-23;Puszcza;Skierniewice
 Poland_Division1;2026-08-23;LKS Lodz;Stal Mielec
-Poland_Division2;2026-08-23;Legia II;Kleczew
+Poland_Division2;2026-08-23;Legia 2;Kleczew
 Poland_Division2;2026-08-23;Z. Gora;Hutnik Krakow
 Poland_Division2;2026-08-23;Bielsko-Biala;Ol. Grudziadz
-Poland_Division2;2026-08-23;Tychy;Slask II
+Poland_Division2;2026-08-23;Tychy;Slask 2
 Poland_IIILiga_Group1;2026-08-23;Pelikan;Troszyn
-Poland_IIILiga_Group1;2026-08-23;Widzew Lodz II;Lidzbark Warminski
-Poland_IIILiga_Group1;2026-08-23;Weszlo;Jagiellonia II
-Poland_IIILiga_Group1;2026-08-23;T. Mazowiecki;LKS Lodz II
-Poland_IIILiga_Group1;2026-08-23;Zambrow;Plock II
+Poland_IIILiga_Group1;2026-08-23;Widzew Lodz 2;Lidzbark Warminski
+Poland_IIILiga_Group1;2026-08-23;Weszlo;Jagiellonia 2
+Poland_IIILiga_Group1;2026-08-23;T. Mazowiecki;LKS Lodz 2
+Poland_IIILiga_Group1;2026-08-23;Zambrow;Plock 2
 Poland_IIILiga_Group1;2026-08-23;Suwalki;Swit
-Poland_IIILiga_Group2;2026-08-23;Gedania Gdansk;Lech II
+Poland_IIILiga_Group2;2026-08-23;Gedania Gdansk;Lech 2
 Poland_IIILiga_Group2;2026-08-23;Blekitni Stargard;Luzino
 Poland_IIILiga_Group2;2026-08-23;Unia Swarzedz;Wda Swiecie
 Poland_IIILiga_Group2;2026-08-23;Grom Nowy Staw;Kluczevia Stargard
 Poland_IIILiga_Group2;2026-08-23;Koszalin;KKS Kalisz
-Poland_IIILiga_Group3;2026-08-23;Brzeg;Rakow II
+Poland_IIILiga_Group3;2026-08-23;Brzeg;Rakow 2
 Poland_IIILiga_Group3;2026-08-23;Polkowice;Jelenia Gora
 Poland_IIILiga_Group4;2026-08-23;Naprzod Jedrzejow;Chelmianka Chelm
 Poland_IIILiga_Group4;2026-08-23;Kolbuszowa Dolna;Siarka Tarnobrzeg
@@ -289,7 +289,7 @@ Sweden_Division1_Norra;2026-08-23;Arlanda;FBK Karlstad
 Sweden_Division1_Norra;2026-08-23;Hammarby TFF;Pitea
 Sweden_Division1_Norra;2026-08-23;Assyriska FF;Gefle
 Sweden_Division1_Sodra;2026-08-23;Skövde;Kristianstad
-Sweden_Division2_NorraGotaland;2026-08-23;Motala;Karlstad II
+Sweden_Division2_NorraGotaland;2026-08-23;Motala;Karlstad 2
 Sweden_Division2_NorraSvealand;2026-08-23;Helges;Falu
 Sweden_Division2_NorraSvealand;2026-08-23;IK Franke;Skiljebo
 Sweden_Division2_NorraSvealand;2026-08-23;Lidingo IFK;Enskede
@@ -302,7 +302,7 @@ Sweden_Division2_VastraGotaland;2026-08-23;Galtabacks BK;Jonsereds
 Switzerland_SuperLeague;2026-08-23;Young Boys;Vaduz
 Switzerland_SuperLeague;2026-08-23;Thun;Servette
 Switzerland_ChallengeLeague;2026-08-23;Yverdon;Aarau
-Switzerland_PromotionLeague;2026-08-23;Biel;Lugano II
+Switzerland_PromotionLeague;2026-08-23;Biel;Lugano 2
 Turkey_SuperLig;2026-08-23;Eyupspor;Gaziantep
 Turkey_SuperLig;2026-08-23;Trabzonspor;Basaksehir
 Turkey_SuperLig;2026-08-23;Alanyaspor;Besiktas
@@ -336,15 +336,15 @@ USA_USLChampionship;2026-08-23;Indy Eleven;Louisville City
 USA_USLChampionship;2026-08-23;Lexington;Las Vegas Lights
 USA_USLChampionship;2026-08-23;Charleston;Miami FC
 USA_USLChampionship;2026-08-23;Rhode Island;Monterey Bay
-USA_USLChampionship;2026-08-23;Birmingham;Sporting Jax
+USA_USLChampionship;2026-08-23;Birmingham Legion;Sporting Jax
 USA_USLChampionship;2026-08-23;Colorado Springs;El Paso
 USA_USLChampionship;2026-08-23;San Antonio;Oakland Roots
 USA_USLChampionship;2026-08-23;Orange County SC;FC Tulsa
 USA_USLChampionship;2026-08-23;Sacramento Republic;Phoenix Rising
 USA_MLSNextPro_EasternConference_SoutheastDivision;2026-08-23;Carolina Core;Cincinnati 2
 USA_MLSNextPro_WesternConference_CentralDivision;2026-08-23;North Texas;Minnesota 2
-USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-23;Philadelphia II;Connecticut FC
-USA_MLSNextPro_WesternConference_CentralDivision;2026-08-23;Chicago Fire II;Inter Miami II
+USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-23;Philadelphia 2;Connecticut FC
+USA_MLSNextPro_WesternConference_CentralDivision;2026-08-23;Chicago Fire 2;Inter Miami 2
 USA_USLLeagueOne;2026-08-23;Chattanooga Red Wolves;New York Cosmos
 USA_USLLeagueOne;2026-08-23;Richmond Kickers;Portland Hearts of Pine
 USA_USLLeagueOne;2026-08-23;Union Omaha;Sarasota Paradise
@@ -354,5 +354,5 @@ USA_USLLeagueOne;2026-08-23;Corpus Christi FC;Westchester SC
 USA_USLLeagueOne;2026-08-23;Spokane Velocity;Greenville
 USA_USLLeagueOne;2026-08-23;AV Alta;FC Naples
 Finland_Kolmonen_Western_Group3;2026-08-23;Sp. Kristina;Larsmo Bollklubb
-Finland_Kolmonen_Eastern_Group2;2026-08-23;PK-37;Kings SC
+Finland_Kolmonen_Eastern_Group2;2026-08-23;PK-37;Kings
 Finland_Kolmonen_Southern_Group3;2026-08-23;ToTe/Tapio;Gnistan/Ogeli

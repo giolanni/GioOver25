@@ -3,7 +3,7 @@ Finland_Kolmonen_Western_Group2;2026-08-15;Ylöjärvi Utd.;Tampere Utd/2
 Finland_Kolmonen_Western_Group1;2026-08-15;PIF;VG-62
 Finland_Kolmonen_Western_Group1;2026-08-15;EuPa;JyTy
 Finland_Kolmonen_Eastern_Group3;2026-08-15;HaPK;Kumu
-Finland_Kolmonen_Southern_Group3;2026-08-15;Atlantis II;IF Sibbo Vargarna
+Finland_Kolmonen_Southern_Group3;2026-08-15;Atlantis 2;IF Sibbo Vargarna
 Finland_Kolmonen_Western_Group1;2026-08-15;IFK 2;MaPS
 Finland_Kolmonen_North;2026-08-15;Ajax Sarkkiranta;Villan Pojat
 Finland_Kolmonen_North;2026-08-15;KaPa;KePS
@@ -77,7 +77,7 @@ Australia_NPL_NSW_U20;2026-08-15;Sydney Olympic U20;Sydney Utd U20
 Austria_Bundesliga;2026-08-15;A. Lustenau;Wolfsberger
 Austria_Bundesliga;2026-08-15;Sturm Graz;Altach
 Austria_2Liga;2026-08-15;Floridsdorfer AC;Amstetten
-Austria_2Liga;2026-08-15;Sturm Graz II;Admira
+Austria_2Liga;2026-08-15;Sturm Graz 2;Admira
 Austria_2Liga;2026-08-15;Austria (Am);A. Salzburg
 Austria_2Liga;2026-08-15;Kapfenberg;Innsbruck
 Austria_2Liga;2026-08-15;Voitsberg;Bregenz
@@ -186,7 +186,7 @@ Germany_2Bundesliga;2026-08-15;Furth;Norimberga
 Germany_2Bundesliga;2026-08-15;Hertha;Heidenheim
 Germany_2Bundesliga;2026-08-15;Osnabruck;Magdeburg
 Germany_2Bundesliga;2026-08-15;Kaiserslautern;Karlsruher
-Germany_3Liga;2026-08-15;Dusseldorf;Hoffenheim II
+Germany_3Liga;2026-08-15;Dusseldorf;Hoffenheim 2
 Germany_3Liga;2026-08-15;Fortuna Colonia;Aachen
 Germany_3Liga;2026-08-15;Meppen;Grossaspach
 Germany_3Liga;2026-08-15;Munster;Ingolstadt
@@ -197,26 +197,26 @@ Germany_Regionalliga_Nord;2026-08-15;Emden;Eimsbutteler
 Germany_Regionalliga_Nord;2026-08-15;VfB Oldenburg;Norderstedt
 Germany_Regionalliga_Nord;2026-08-15;Phonix Lubeck;VfB Lubeck
 Germany_Regionalliga_Nordost;2026-08-15;BFC Preussen;Greifswald
-Germany_Regionalliga_Nordost;2026-08-15;Erfurt;Magdeburg II
+Germany_Regionalliga_Nordost;2026-08-15;Erfurt;Magdeburg 2
 Germany_Regionalliga_Nordost;2026-08-15;Chemnitzer;Aue
-Germany_Regionalliga_West;2026-08-15;Bochum II;Oberhausen
-Germany_Regionalliga_West;2026-08-15;Monchengladbach II;Bocholt
-Germany_Regionalliga_West;2026-08-15;Rodinghausen;Paderborn II
+Germany_Regionalliga_West;2026-08-15;Bochum 2;Oberhausen
+Germany_Regionalliga_West;2026-08-15;Monchengladbach 2;Bocholt
+Germany_Regionalliga_West;2026-08-15;Rodinghausen;Paderborn 2
 Germany_Regionalliga_West;2026-08-15;Hilden;Wattenscheid
-Germany_Regionalliga_Sudwest;2026-08-15;Eint. Frankfurt II;Kickers Stoccarda
+Germany_Regionalliga_Sudwest;2026-08-15;Eint. Frankfurt 2;Kickers Stoccarda
 Germany_Regionalliga_Sudwest;2026-08-15;Freiberg;Homburg
 Germany_Regionalliga_Sudwest;2026-08-15;Fulda-Lehnerz;Sandhausen
 Germany_Regionalliga_Sudwest;2026-08-15;Steinbach Haiger;Aalen
-Germany_Regionalliga_Sudwest;2026-08-15;Walldorf;Kaiserslautern II
+Germany_Regionalliga_Sudwest;2026-08-15;Walldorf;Kaiserslautern 2
 Germany_Oberliga_NOFV_Nord;2026-08-15;Mahlsdorf;Rathenow
 Germany_Oberliga_NOFV_Sud;2026-08-15;Einheit Wernigerode;Halle
 Germany_Oberliga_SchleswigHolstein;2026-08-15;Kaltenkirchen;Phonix Lubeck B
 Germany_Oberliga_SchleswigHolstein;2026-08-15;Nordmark Satrup;Oldenburger
 Germany_Oberliga_SchleswigHolstein;2026-08-15;Rotenhof;PSV Neumunster
-Germany_Oberliga_SchleswigHolstein;2026-08-15;Rapid Lubeck;Lubeck II
+Germany_Oberliga_SchleswigHolstein;2026-08-15;Rapid Lubeck;Lubeck 2
 Germany_Oberliga_Niedersachsen;2026-08-15;BSV Rehden;Egestorf-Langreder
 Germany_Oberliga_Niedersachsen;2026-08-15;Hildesheim;Nordhorn
-Germany_Oberliga_Westfalen;2026-08-15;Bielefeld II;Eintracht Rheine
+Germany_Oberliga_Westfalen;2026-08-15;Bielefeld 2;Eintracht Rheine
 Germany_Oberliga_Hessen;2026-08-15;Giessen;Hanauer SC
 Germany_Oberliga_Hessen;2026-08-15;Hadamar;Unter-Flockenbach
 Germany_Oberliga_Hessen;2026-08-15;VfB Marburg;Kassel 2
@@ -228,8 +228,8 @@ Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;Pirmasens;Mechtersheim
 Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;RW Koblenz;Diefflen
 Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;Engers;Schott Mainz
 Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;RW Wittlich;TSV 1881 Gau-Odernheim
-Germany_Oberliga_Bayern_Nord;2026-08-15;Bamberg;Regensburg II
-Germany_Oberliga_Bayern_Nord;2026-08-15;Ingolstadt II;Wurzburger FV
+Germany_Oberliga_Bayern_Nord;2026-08-15;Bamberg;Regensburg 2
+Germany_Oberliga_Bayern_Nord;2026-08-15;Ingolstadt 2;Wurzburger FV
 Germany_Oberliga_Bayern_Nord;2026-08-15;Neumarkt;Weiden
 Germany_Oberliga_Bayern_Nord;2026-08-15;Grossbardorf;Nordlingen
 Germany_Oberliga_Bayern_Sud;2026-08-15;Geretsried;Schwabmunchen
@@ -313,11 +313,11 @@ Norway_OBOSLigaen;2026-08-15;Lyn;Odd
 Norway_OBOSLigaen;2026-08-15;Ranheim;Strömsgodset
 Norway_2ndDivision_Group1;2026-08-15;Notodden;Brattvag
 Norway_2ndDivision_Group1;2026-08-15;Lysekloster;Halden
-Norway_2ndDivision_Group1;2026-08-15;Mjondalen;Eik-Tonsberg
+Norway_2ndDivision_Group1;2026-08-15;Mjoendalen;Eik-Tonsberg
 Norway_2ndDivision_Group1;2026-08-15;Vidar;Arendal
 Norway_2ndDivision_Group2;2026-08-15;Lørenskog;Eidsvold
 Norway_3rdDivision_Group1;2026-08-15;Frigg;Lokomotiv Oslo
-Norway_3rdDivision_Group1;2026-08-15;Grei;Baerum Sportsklubb
+Norway_3rdDivision_Group1;2026-08-15;Grei;Baerum
 Norway_3rdDivision_Group1;2026-08-15;Heming;Asker
 Norway_3rdDivision_Group1;2026-08-15;Ullern;Union Carl Berner
 Norway_3rdDivision_Group1;2026-08-15;Gamle Oslo;Konnerud
@@ -335,13 +335,13 @@ Norway_3rdDivision_Group4;2026-08-15;Flekkeroy;Brodd
 Norway_3rdDivision_Group4;2026-08-15;Vag;Mandalskameratene
 Norway_3rdDivision_Group4;2026-08-15;Vindbjart;Akra
 Norway_3rdDivision_Group5;2026-08-15;Ulfstind;Skjetten
-Norway_3rdDivision_Group5;2026-08-15;Skjervoy;Floya
+Norway_3rdDivision_Group5;2026-08-15;Skjervoy;Floeya
 Norway_3rdDivision_Group6;2026-08-15;Oppsal;Elverum
 Norway_3rdDivision_Group6;2026-08-15;Orn;SK Gjovik-Lyn
 Norway_3rdDivision_Group6;2026-08-15;Brumunddal;Raelingen
 Norway_3rdDivision_Group6;2026-08-15;Rade;Drobak-Frogn
 Norway_3rdDivision_Group6;2026-08-15;Sandefjord 2;Bjorkelangen
-Netherlands_Eredivisie;2026-08-15;Willem II;Nijmegen
+Netherlands_Eredivisie;2026-08-15;Willem 2;Nijmegen
 Netherlands_Eredivisie;2026-08-15;Utrecht;Alkmaar
 Netherlands_Eredivisie;2026-08-15;Excelsior;PSV
 Netherlands_Eredivisie;2026-08-15;Sittard;Cambuur
@@ -349,7 +349,7 @@ Netherlands_EersteDivisie;2026-08-15;FC Volendam;Oss
 Paraguay_DivisionIntermedia;2026-08-15;Fernando de la Mora;Benjamin Aceval
 Paraguay_DivisionIntermedia;2026-08-15;Guairena;Independiente F.B.C.
 Paraguay_DivisionIntermedia;2026-08-15;Paraguari AC;Sol De America
-Peru_Liga1_Clausura;2026-08-15;Cusco;Juan Pablo II
+Peru_Liga1_Clausura;2026-08-15;Cusco;Juan Pablo 2
 Peru_Liga1_Clausura;2026-08-15;AD Tarma;Alianza Atl.
 Peru_Liga1_Clausura;2026-08-15;Los Chankas;Melgar
 Peru_Liga2;2026-08-15;Minas;Ayacucho
@@ -360,30 +360,30 @@ Poland_Ekstraklasa;2026-08-15;Widzew Lodz;Korona
 Poland_Division1;2026-08-15;Chrobry Glogow;Podbeskidzie
 Poland_Division1;2026-08-15;Odra Opole;Warta Poznan
 Poland_Division1;2026-08-15;Pogon Siedlce;Polonia W.
-Poland_Division2;2026-08-15;Slask II;Chojniczanka
+Poland_Division2;2026-08-15;Slask 2;Chojniczanka
 Poland_Division2;2026-08-15;Kleczew;Bielsko-Biala
 Poland_Division2;2026-08-15;Swit Szczecin;Sandecja
 Poland_Division2;2026-08-15;R. Rzeszow;Tychy
-Poland_IIILiga_Group1;2026-08-15;Widzew Lodz II;Swit
-Poland_IIILiga_Group1;2026-08-15;Pelikan;LKS Lodz II
-Poland_IIILiga_Group1;2026-08-15;Lidzbark Warminski;Plock II
+Poland_IIILiga_Group1;2026-08-15;Widzew Lodz 2;Swit
+Poland_IIILiga_Group1;2026-08-15;Pelikan;LKS Lodz 2
+Poland_IIILiga_Group1;2026-08-15;Lidzbark Warminski;Plock 2
 Poland_IIILiga_Group1;2026-08-15;Zambrow;Elblag
-Poland_IIILiga_Group1;2026-08-15;Warta Sieradz;Jagiellonia II
+Poland_IIILiga_Group1;2026-08-15;Warta Sieradz;Jagiellonia 2
 Poland_IIILiga_Group2;2026-08-15;Gedania Gdansk;Wda Swiecie
 Poland_IIILiga_Group2;2026-08-15;Koszalin;Swinoujscie
 Poland_IIILiga_Group2;2026-08-15;Grom Nowy Staw;Elana Torun
-Poland_IIILiga_Group2;2026-08-15;Blekitni Stargard;Lech II
+Poland_IIILiga_Group2;2026-08-15;Blekitni Stargard;Lech 2
 Poland_IIILiga_Group2;2026-08-15;Kotwica Kornik;KKS Kalisz
 Poland_IIILiga_Group2;2026-08-15;Lipno Steszew;Kluczevia Stargard
 Poland_IIILiga_Group3;2026-08-15;Goczalkowice Zdroj;Sleza Wroclaw
 Poland_IIILiga_Group3;2026-08-15;Stilon Gorzow;Nysa
 Poland_IIILiga_Group3;2026-08-15;Sulow;Warta Gorzow
 Poland_IIILiga_Group3;2026-08-15;Bytom Odrzanski;Kluczbork
-Poland_IIILiga_Group4;2026-08-15;Wisla II;Wislanie Skawina
+Poland_IIILiga_Group4;2026-08-15;Wisla 2;Wislanie Skawina
 Poland_IIILiga_Group4;2026-08-15;Busko-Zdroj;Siarka Tarnobrzeg
 Poland_IIILiga_Group4;2026-08-15;Czarni Polaniec;Biala Podlaska
 Poland_IIILiga_Group4;2026-08-15;Hetman Zamosc;Star Starachowice
-Poland_IIILiga_Group4;2026-08-15;Jaroslaw;Wieczysta Krakow II
+Poland_IIILiga_Group4;2026-08-15;Jaroslaw;Wieczysta Krakow 2
 Poland_IIILiga_Group4;2026-08-15;Moravia Morawica;Chelmianka Chelm
 Poland_IIILiga_Group4;2026-08-15;Naprzod Jedrzejow;Lubaczow
 Portugal_LigaPortugal;2026-08-15;Alverca;Estrela
@@ -533,7 +533,7 @@ Sweden_Division2_SodraSvealand;2026-08-15;Smedby;Eker Orebro
 Sweden_Division2_VastraGotaland;2026-08-15;Jonsereds;Onsala
 Sweden_Division2_VastraGotaland;2026-08-15;Torslanda;Dalstorps IF
 Switzerland_PromotionLeague;2026-08-15;Paradiso;Breitenrain
-Switzerland_PromotionLeague;2026-08-15;Lugano II;Luzerna II
+Switzerland_PromotionLeague;2026-08-15;Lugano 2;Luzerna 2
 Turkey_SuperLig;2026-08-15;Kasimpasa;Trabzonspor
 Turkey_SuperLig;2026-08-15;Konyaspor;Rizespor
 Turkey_SuperLig;2026-08-15;Gaziantep;Alanyaspor
@@ -558,8 +558,8 @@ Hungary_NBII;2026-08-15;Mezokovesd;BVSC-Zuglo
 Hungary_NBII;2026-08-15;Nagykanizsa;Soroksar
 Hungary_NBII;2026-08-15;Szeged;Gyirmot
 USA_MLSNextPro_WesternConference_CentralDivision;2026-08-15;Houston Dynamo 2;Ventura County
-USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-15;Toronto FC II;Chattanooga
-USA_MLSNextPro_EasternConference_SoutheastDivision;2026-08-15;Chicago Fire II;Orlando City B
+USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-15;Toronto FC 2;Chattanooga
+USA_MLSNextPro_EasternConference_SoutheastDivision;2026-08-15;Chicago Fire 2;Orlando City B
 Iceland_BestaDeildKarla;2026-08-15;Thor Akureyri;Keflavik
 Iceland_Division_2;2026-08-15;Kari;Olafsvik
 Iceland_Division_2;2026-08-15;KFG Gardabaer;KFA

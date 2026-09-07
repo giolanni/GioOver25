@@ -1,4 +1,4 @@
-LeagueId;MatchDate;Home;Away
+﻿LeagueId;MatchDate;Home;Away
 Australia_VictoriaPremierLeague;2026-07-27;Melbourne Victory U21;North Sunshine Eagles
 Australia_VictoriaPremierLeague;2026-07-27;Bulleen;Langwarrin
 Bolivia_DivisionProfesional;2026-07-27;Nacional Potosi;Tomayapo
@@ -41,8 +41,8 @@ Sweden_Superettan;2026-07-27;Örebro;Oddevold
 Sweden_Superettan;2026-07-27;Öster;Varberg
 Hungary_NBI;2026-07-27;MTK Budapest;Zalaegerszeg
 USA_MLSNextPro_EasternConference_NortheastDivision;2026-07-27;Connecticut FC;Columbus Crew 2
-USA_MLSNextPro_EasternConference_NortheastDivision;2026-07-27;Cincinnati 2;New England Revolution II
-USA_MLSNextPro_WesternConference_CentralDivision;2026-07-27;Houston Dynamo 2;Austin FC II
+USA_MLSNextPro_EasternConference_NortheastDivision;2026-07-27;Cincinnati 2;New England Revolution 2
+USA_MLSNextPro_WesternConference_CentralDivision;2026-07-27;Houston Dynamo 2;Austin FC 2
 USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-27;Orlando City B;Huntsville
 USA_MLSNextPro_WesternConference_CentralDivision;2026-07-27;St. Louis City 2;Vancouver 2
 USA_MLSNextPro_WesternConference_PacificDivision;2026-07-27;Tacoma Defiance;Colorado Rapids 2

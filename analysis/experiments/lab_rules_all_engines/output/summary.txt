@@ -1,0 +1,43 @@
+LABORATORY RULES - ALL ENGINES
+==============================
+
+Le 15 regole candidate v25 sono state applicate ESPLICITAMENTE a tutti
+gli storici engine disponibili. Nessun engine operativo viene modificato.
+
+Engine trovati: 20
+Regole testate: 15
+Min sample per classifica: 10
+Split temporale train/test: 70%/30%
+
+ALTA CON ESITO PER ENGINE
+------------------------
+v13: 40
+v20: 5
+v20def: 4
+v20defplus: 9
+v20defplus_v2: 10
+v20defplus_v3: 11
+v20defselect: 5
+v20plus: 11
+v20select: 6
+v21: 63
+v21dev: 63
+v22: 51
+v22def: 28
+v23: 49
+v24: 113
+v25: 51
+v251: 50
+v25def: 28
+v26: 44
+v26def: 24
+
+MIGLIORI REGOLE PER ENGINE
+---------------------------
+
+NOTE
+----
+- La baseline è specifica per regola: usa solo ALTA dove entrambi i driver sono disponibili.
+- Questo rende DeltaVsBaseline confrontabile e non premia artificialmente i missing.
+- Per la scelta finale guardare soprattutto precisione, test temporale e no-Australia;
+  il volume resta un indicatore di robustezza, non il criterio principale.

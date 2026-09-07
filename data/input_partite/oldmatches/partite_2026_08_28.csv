@@ -110,16 +110,16 @@ Wales_CymruNorth;2026-08-28;Ruthin;Mold Alexandra
 Germany_Bundesliga;2026-08-28;Bayern;Stoccarda
 Germany_2Bundesliga;2026-08-28;Bochum;Osnabruck
 Germany_2Bundesliga;2026-08-28;Braunschweig;Hertha
-Germany_3Liga;2026-08-28;Dusseldorf;Stoccarda II
+Germany_3Liga;2026-08-28;Dusseldorf;Stoccarda 2
 Germany_Regionalliga_Nordost;2026-08-28;Altglienicke;Chemie Leipzig
 Germany_Regionalliga_Nordost;2026-08-28;Chemnitzer;Jena
-Germany_Regionalliga_West;2026-08-28;Bonner;Bochum II
+Germany_Regionalliga_West;2026-08-28;Bonner;Bochum 2
 Germany_Regionalliga_West;2026-08-28;Rodinghausen;Siegen
 Germany_Regionalliga_West;2026-08-28;Westfalia Rhynern;FC Gutersloh
 Germany_Regionalliga_Sudwest;2026-08-28;Fulda-Lehnerz;FSV Francoforte
-Germany_Regionalliga_Sudwest;2026-08-28;Offenbach;Kaiserslautern II
+Germany_Regionalliga_Sudwest;2026-08-28;Offenbach;Kaiserslautern 2
 Germany_Regionalliga_Bayern;2026-08-28;Ansbach;Schwaben Augsburg
-Germany_Regionalliga_Bayern;2026-08-28;Schweinfurt;Furth II
+Germany_Regionalliga_Bayern;2026-08-28;Schweinfurt;Furth 2
 Germany_Oberliga_NOFV_Nord;2026-08-28;Rathenow;Neustrelitz
 Germany_Oberliga_NOFV_Nord;2026-08-28;Schwerin;TB Berlin
 Germany_Oberliga_NOFV_Sud;2026-08-28;Bautzen;Auerbach
@@ -143,10 +143,10 @@ Germany_Oberliga_Bayern_Nord;2026-08-28;Gebenbach;Neumarkt
 Germany_Oberliga_Bayern_Sud;2026-08-28;Schalding;FC Schwaig
 Germany_Oberliga_Bayern_Sud;2026-08-28;Hankofen-Hailing;Geretsried
 Germany_Oberliga_Bayern_Sud;2026-08-28;Landshut;Heimstetten
-Germany_Oberliga_Bayern_Sud;2026-08-28;TSV 1880 Wasserburg;Monaco 1860 II
+Germany_Oberliga_Bayern_Sud;2026-08-28;TSV 1880 Wasserburg;Monaco 1860 2
 Germany_Oberliga_Bayern_Sud;2026-08-28;Erlbach;Ismaning
 Germany_Oberliga_BadenWurttemberg;2026-08-28;Pforzheim;Young Boys Reutlingen
-Germany_Oberliga_Niederrhein;2026-08-28;Dusseldorf II;Solingen-Wald
+Germany_Oberliga_Niederrhein;2026-08-28;Dusseldorf 2;Solingen-Wald
 Germany_Oberliga_Niederrhein;2026-08-28;SSVg Velbert;Schonnebeck
 Germany_Oberliga_Niederrhein;2026-08-28;Dingden;Germania Ratingen
 England_PremierLeague;2026-08-28;Crystal Palace;Manchester City
@@ -207,7 +207,7 @@ Poland_IIILiga_Group2;2026-08-28;Wda Swiecie;Notec Czarnkow
 Poland_IIILiga_Group2;2026-08-28;Kotwica Kornik;Chemik Bydgoszcz
 Poland_IIILiga_Group2;2026-08-28;Sroda;Gedania Gdansk
 Poland_IIILiga_Group3;2026-08-28;Carina Gubin;Sulow
-Poland_IIILiga_Group3;2026-08-28;Legnica II;Stilon Gorzow
+Poland_IIILiga_Group3;2026-08-28;Legnica 2;Stilon Gorzow
 Poland_IIILiga_Group3;2026-08-28;Kluczbork;Brzeg
 Poland_IIILiga_Group4;2026-08-28;Wislanie Skawina;Czarni Polaniec
 Poland_IIILiga_Group4;2026-08-28;Biala Podlaska;Kolbuszowa Dolna
@@ -255,10 +255,10 @@ Ukraine_PremierLeague;2026-08-28;Kolos Kovalivka;Obolon
 Ukraine_PershaLiga;2026-08-28;Lokomotyv Kyiv;Fenix Mariupol
 Ukraine_PershaLiga;2026-08-28;Kolos Kovalivka 2;SC Poltava
 Hungary_NBI;2026-08-28;Debrecen;MTK Budapest
-Finland_Kolmonen_Eastern_Group1;2026-08-28;KeuPa;Jyväskylän Seudun Palloseura
+Finland_Kolmonen_Eastern_Group1;2026-08-28;KeuPa;SAPA
 Finland_Kolmonen_Western_Group1;2026-08-28;MaPS;PiPS
 Finland_Kolmonen_Southern_Group1;2026-08-28;LoPa;NuPS
-Finland_Kolmonen_Southern_Group2;2026-08-28;PPS;VJS/2
+Finland_Kolmonen_Southern_Group2;2026-08-28;PPS;VJS 2
 Finland_Kolmonen_Southern_Group3;2026-08-28;Futura;Ponnistus
 Finland_Kolmonen_Eastern_Group3;2026-08-28;Edustus IPS;LAUTP/2
 Finland_Kolmonen_Southern_Group2;2026-08-28;ToTe;Kontu

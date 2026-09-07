@@ -1,4 +1,4 @@
-LeagueId;MatchDate;Home;Away
+﻿LeagueId;MatchDate;Home;Away
 Bhutan_PremierLeague;2026-07-23;Tensung;Paro
 Finland_Kakkonen_GroupC;2026-07-23;TP-47;Hercules
 Germany_Regionalliga_Bayern;2026-07-23;Aubstadt;Schweinfurt
@@ -24,9 +24,9 @@ USA_MLS;2026-07-23;Portland Timbers;FC Dallas
 USA_MLS;2026-07-23;San Jose Earthquakes;Orlando City
 USA_USLChampionship;2026-07-23;Lexington;Oakland Roots
 USA_USLChampionship;2026-07-23;Colorado Springs;Miami FC
-USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-23;Carolina Core;Inter Miami II
-USA_MLSNextPro_WesternConference_PacificDivision;2026-07-23;Vancouver 2;Austin FC II
-USA_MLSNextPro_EasternConference_NortheastDivision;2026-07-23;New England Revolution II;New York City II
+USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-23;Carolina Core;Inter Miami 2
+USA_MLSNextPro_WesternConference_PacificDivision;2026-07-23;Vancouver 2;Austin FC 2
+USA_MLSNextPro_EasternConference_NortheastDivision;2026-07-23;New England Revolution 2;New York City 2
 USA_USLLeagueOne;2026-07-23;Portland Hearts of Pine;Union Omaha
 USA_USLLeagueOne;2026-07-23;Westchester SC;New York Cosmos
 USA_USLLeagueOne;2026-07-23;Spokane Velocity;Charlotte Independ.

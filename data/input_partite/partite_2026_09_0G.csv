@@ -1,4 +1,4 @@
-LeagueId;MatchDate;Home;Away
+﻿LeagueId;MatchDate;Home;Away
 Armenia_PremierLeague;2026-08-13;Urartu;Syunik
 Austria_Burgenland;2026-08-13;Klingenbach;Rust
 Finland_Kakkonen_GroupA;2026-08-13;PPJ;MyPa
@@ -21,7 +21,7 @@ Finland_Kolmonen_Eastern_Group3;2026-08-13;Edustus IPS;Kultsu
 Finland_Kolmonen_Eastern_Group3;2026-08-13;PeKa;LAUTP/2
 Finland_Kolmonen_Western_Group3;2026-08-13;Larsmo Bollklubb;Virkiä
 Finland_Kolmonen_Western_Group3;2026-08-13;FC Ylivieska;NIK
-Finland_Kolmonen_Southern_Group2;2026-08-13;MPS;VJS/2
+Finland_Kolmonen_Southern_Group2;2026-08-13;MPS;VJS 2
 Finland_Kolmonen_Western_Group2;2026-08-13;TP-T;TP-49
 Finland_Kolmonen_Western_Group3;2026-08-13;SJK-j;VIFK
 Finland_Kolmonen_Western_Group2;2026-08-13;Fish United;FC LeKi
