@@ -138,6 +138,7 @@ Latvia_Virsliga;Latvia;Virsliga;10;36;Yes;;;
 Lebanon_PremierLeague;Lebanon;Premier League;12;22;Yes;Playoff and placement rounds excluded from supplied import;;
 Lithuania_ILyga;Lithuania;I Lyga;16;30;Yes;Round 15 currently partial in supplied data;;
 Lithuania_Toplyga;Lithuania;TOPLYGA;10;36;Yes;;;
+Malta_PremierLeague_OpeningRound;Malta;Premier League - Opening Round;12;16;No;11-round league phase followed by Top 6/Bottom 6 split;Malta_PremierLeague;
 Mexico_LigaExpansionMX_Apertura;Mexico;Liga de Expansión MX - Apertura;15;15;No;"Second tier; Apertura regular phase with 15 clubs over 15 matchdays, single round-robin with one bye per club; playoff/Liguilla to use dedicated LeagueId";;
 Mexico_LigaMX_Apertura;Mexico;Liga MX - Apertura;18;17;No;Apertura regular season;;
 Moldova_Liga1_GroupA;Moldova;Liga 1 Group A;6;15;No;"Second tier 2026/27 first phase; one of two six-team groups";Moldova_Liga1;

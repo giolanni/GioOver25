@@ -1,1 +1,6 @@
-﻿Rank;Engine;LeagueId;OK;KO;Total;HitRate;FirstMatchDate;LastMatchDate
+﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
+1;v20def;Norway_3rdDivision_Group2;1;0;2026-09-07;2026-09-07;1;100.0
+2;v20def;Norway_3rdDivision_Group5;1;0;2026-09-06;2026-09-06;1;100.0
+3;v20def;Poland_IIILiga_Group3;1;0;2026-09-06;2026-09-06;1;100.0
+4;v20def;Slovakia_NikeLiga;1;0;2026-09-06;2026-09-06;1;100.0
+5;v20def;Switzerland_PromotionLeague;1;0;2026-09-06;2026-09-06;1;100.0
