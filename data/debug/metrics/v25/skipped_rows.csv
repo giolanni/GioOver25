@@ -16,10 +16,10 @@
 14;USA_USLLeagueTwo_SouthAtlantic;;North Carolina FC U23;Asheville City;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 15;Sweden_Allsvenskan;;Brommapojkarna;GAIS;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 16;Latvia_Virsliga;;Super Nova;Ogre United;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-17;USA_MLSNextPro_WesternConference_CentralDivision;;Austin FC II;Colorado Rapids 2;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+17;USA_MLSNextPro_WesternConference_CentralDivision;;Austin FC 2;Colorado Rapids 2;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 18;Lithuania_Toplyga;;Suduva;Transinvest;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 19;USA_MLSNextPro_WesternConference_PacificDivision;;Tacoma Defiance;Portland Timbers 2;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-20;USA_MLSNextPro_WesternConference_CentralDivision;;Huntsville;Chicago Fire II;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+20;USA_MLSNextPro_WesternConference_CentralDivision;;Huntsville;Chicago Fire 2;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 22;USA_USLLeagueTwo_GreatForest;;Lorain County Leviathan;Erie Sports Center;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 24;USA_USLLeagueTwo_LoneStar;;Lonestar SC;Hill Country Lobos;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 25;USA_USLLeagueTwo_Northeast;;Black Rock;Seacoast Utd Phantoms;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -34,7 +34,7 @@
 36;USA_USLLeagueTwo_GreatLakes;;Union FC Macomb;Ann Arbor;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 37;USA_USLLeagueTwo_Northeast;;NEFC;Boston City;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 39;USA_USLLeagueTwo_Mountain;;Real Colorado;Albion Colorado;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-40;USA_MLSNextPro_WesternConference_PacificDivision;;San Jose Earthquakes II;Sporting Kansas City II;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+40;USA_MLSNextPro_WesternConference_PacificDivision;;San Jose Earthquakes 2;Sporting Kansas City 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 41;Australia_NPLNorthernNSW;;Kahibah;Maitland;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 42;USA_USLLeagueTwo_Northwest;;Tacoma Stars;Midlakes United;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 43;Bolivia_DivisionProfesional;;Real Oruro;Universitario de Vinto;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -234,7 +234,7 @@
 315;USA_USLLeagueTwo_Northwest;2026-07-12;West Seattle Junction;Portland Bangers;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 316;USA_USLLeagueTwo_NorCal;2026-07-12;Almaden;Davis Legacy;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 318;USA_USLLeagueTwo_Chesapeake;2026-07-12;Hill City;Virginia Marauders;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-319;USA_MLSNextPro_EasternConference_NortheastDivision;2026-07-12;Chicago Fire II;New York Red Bulls II;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+319;USA_MLSNextPro_EasternConference_NortheastDivision;2026-07-12;Chicago Fire 2;New York Red Bulls 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 321;USA_USLLeagueTwo_Mountain;2026-07-12;Atletico Union;Flatirons;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 325;USA_USLLeagueTwo_SouthAtlantic;2026-07-12;Tobacco Road;Port City;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 326;Australia_NorthernNSWStateLeague;2026-07-12;West Wallsend;New Lambton;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -272,7 +272,7 @@
 383;Belarus_VysshayaLiga;2026-07-12;Arsenal Dzerzhinsk;Vitebsk;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 384;Kazakhstan_PremierLeague;2026-07-12;FC Astana;Aktobe;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 385;Kazakhstan_PremierLeague;2026-07-12;Ulytau;Kaisar;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-386;USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-12;Crown Legacy;New York City II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+386;USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-12;Crown Legacy;New York City 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 387;USA_USLLeagueTwo_NorCal;2026-07-13;San Juan;Marin;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 389;USA_USLLeagueTwo_SouthAtlantic;2026-07-13;Appalachian;SC United Bantams;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 390;USA_USLLeagueTwo_Northwest;2026-07-13;Bigfoot;Midlakes United;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -284,7 +284,7 @@
 406;USA_USLLeagueTwo_SouthFlorida;2026-07-13;Weston;Miami;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 407;Australia_SAStateLeague;2026-07-13;Blue Eagles;Modbury;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 408;USA_USLLeagueTwo_SouthFlorida;2026-07-13;Lakeland United;Fort Lauderdale;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-409;USA_MLSNextPro_WesternConference_PacificDivision;2026-07-13;San Jose Earthquakes II;Tacoma Defiance;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+409;USA_MLSNextPro_WesternConference_PacificDivision;2026-07-13;San Jose Earthquakes 2;Tacoma Defiance;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 417;Australia_NPLNorthernNSW;2026-07-14;Kahibah;Maitland;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 418;Finland_Kakkonen_GroupC;2026-07-14;GBK Kokkola;Narpes Kraft;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 419;Australia_NPLNorthernNSW;2026-07-14;Charlestown Azzurri;Weston Bears;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -374,7 +374,7 @@
 630;Finland_Ykkosliiga;2026-07-18;KTP;PK-35;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 631;Kazakhstan_PremierLeague;2026-07-18;Kaisar;Kaspij Aktau;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 632;Kazakhstan_PremierLeague;2026-07-18;Zhenis;Ulytau;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-633;USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-18;Toronto FC II;Cincinnati 2;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+633;USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-18;Toronto FC 2;Cincinnati 2;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 637;Australia_NPLNorthernNSW;2026-07-19;Charlestown Azzurri;Edgeworth E.;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 645;Australia_NorthernNSWStateLeague;2026-07-19;Dudley Redhead United;Newcastle Croatia;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 648;Australia_NorthernNSWStateLeague;2026-07-19;New Lambton;Toronto Awaba Stags;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -402,6 +402,7 @@
 700;Australia_NPLNSW;2026-07-19;Marconi;Sydney Utd;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 701;Lithuania_ILyga;2026-07-19;Kauno Zalgiris 2;Babrungas;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 702;Lithuania_Toplyga;2026-07-19;Dziugas Telsiai;Banga;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+712;Finland_Ykkonen;2026-07-20;KPV;Rovaniemi;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 716;Lithuania_ILyga;2026-07-20;Transinvest 2;Neptunas;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 717;Lebanon_PremierLeague;2026-07-20;Al Ansar;Nejmeh SC;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 718;Lithuania_Toplyga;2026-07-20;Suduva;Hegelmann;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -428,16 +429,13 @@
 775;USA_MLS;2026-07-23;Los Angeles Galaxy;St. Louis City;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 776;Kazakhstan_FirstLeague;2026-07-23;Kaspij Aktau 2;FC Batyr;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 777;USA_MLS;2026-07-23;Austin FC;Seattle Sounders;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-778;USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-23;Carolina Core;Inter Miami II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+778;USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-23;Carolina Core;Inter Miami 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 779;USA_MLS;2026-07-23;Columbus Crew;New York City;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 780;USA_MLS;2026-07-23;Houston Dynamo;DC United;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 781;Kazakhstan_FirstLeague;2026-07-23;Jaiyq;Khan Tengri;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 782;Kyrgyzstan_PremierLiga;2026-07-23;Toktogul;Alay Osh;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-783;USA_MLSNextPro_WesternConference_PacificDivision;2026-07-23;Vancouver 2;Austin FC II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-784;Finland_Kolmonen_Southern_Group2;2026-07-24;LPS Helsinki;VJS Vantaa B;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+783;USA_MLSNextPro_WesternConference_PacificDivision;2026-07-23;Vancouver 2;Austin FC 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 785;Finland_Kolmonen_Eastern_Group1;2026-07-24;JJK/2;SAPA;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-786;Finland_Kolmonen_Western_Group2;2026-07-24;NOPS;FC Haka Juniors;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-790;Finland_Kolmonen_Western_Group2;2026-07-24;LeKi Futis;Saaksjarven Loiske;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 791;Somalia_NationalLeague;2026-07-24;Badbaado;Raadsan;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 825;Lithuania_Toplyga;2026-07-24;FA Siauliai;Hegelmann;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 826;Kyrgyzstan_PremierLiga;2026-07-24;Muras United;Bishkek City;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -448,11 +446,11 @@
 831;Australia_NPLVictoria;2026-07-24;Green Gully;Dandenong City;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 832;Australia_NPLNSW;2026-07-24;Manly Utd;Sydney Olympic;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 833;Lithuania_ILyga;2026-07-24;Tauras;Kauno Zalgiris 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-834;Germany_Oberliga_Bayern_Nord;2026-07-24;Gebenbach;Ingolstadt II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+834;Germany_Oberliga_Bayern_Nord;2026-07-24;Gebenbach;Ingolstadt 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 835;Somalia_NationalLeague;2026-07-24;Elman;Jeenyo;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 836;Germany_Oberliga_Bayern_Sud;2026-07-24;Heimstetten;FC Schwaig;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 837;Germany_Oberliga_Bayern_Nord;2026-07-24;Kornburg;Ammerthal;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-838;Finland_Kolmonen_Eastern_Group2;2026-07-24;Kings;Zulimanit;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+838;Finland_Kolmonen_Eastern_Group2;2026-07-24;Kings;Zulimanit;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 839;Germany_Oberliga_Bayern_Sud;2026-07-24;Landshut;Erlbach;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 840;Bulgaria_ParvaLiga;2026-07-24;Arda;Slavia Sofia;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 841;Romania_Superliga;2026-07-24;FC Arges;Petrolul;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -461,14 +459,15 @@
 844;Germany_Regionalliga_Bayern;2026-07-24;Eichstatt;Illertissen;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 845;Germany_Regionalliga_Bayern;2026-07-24;Schwaben Augsburg;Buchbach;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 846;Germany_Regionalliga_Bayern;2026-07-24;Landsberg;Memmingen;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-847;Germany_Regionalliga_Bayern;2026-07-24;Vilzing;Norinberga II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+847;Germany_Regionalliga_Bayern;2026-07-24;Vilzing;Norinberga 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 848;Germany_Regionalliga_Bayern;2026-07-24;Ansbach;Burghausen;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-849;Germany_Regionalliga_Bayern;2026-07-24;Bayern II;Eltersdorf;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-850;Germany_Regionalliga_Bayern;2026-07-24;Bayreuth;Augsburg II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+849;Germany_Regionalliga_Bayern;2026-07-24;Bayern 2;Eltersdorf;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+850;Germany_Regionalliga_Bayern;2026-07-24;Bayreuth;Augsburg 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 851;Romania_Superliga;2026-07-24;UTA Arad;Otelul;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 888;Somalia_NationalLeague;2026-07-25;Heegan;Jazeera;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 923;USA_USLLeagueTwo_PlayOff;2026-07-25;Flint City;Peoria;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 935;USA_USLLeagueTwo_PlayOff;2026-07-25;Vermont Green;Asheville City;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+947;Finland_Ykkonen;2026-07-25;Rovaniemi;JJK Jyvaskyla;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 962;Somalia_NationalLeague;2026-07-25;Horseed;Jubba;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 987;USA_USLLeagueTwo_PlayOff;2026-07-25;Laredo Heat;Fort Lauderdale;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 988;Norway_Eliteserien;2026-07-25;Kristiansund;Start;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -489,11 +488,11 @@
 1003;Norway_2ndDivision_Group1;2026-07-25;Eik-Tonsberg;Sandviken;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1004;Bulgaria_ParvaLiga;2026-07-25;Lok. Sofia;Levski;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1005;Australia_NPLNSW;2026-07-25;SD Raiders;Marconi;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1006;USA_USLChampionship;2026-07-25;Birmingham;New Mexico;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1006;USA_USLChampionship;2026-07-25;Birmingham Legion;New Mexico;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1007;Kyrgyzstan_PremierLiga;2026-07-25;Talant;Kyrgyzaltyn;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1008;Lithuania_ILyga;2026-07-25;Jonava;Garliava;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1009;Finland_Ykkosliiga;2026-07-25;Mikkeli;KTP;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1010;Germany_Oberliga_Bayern_Nord;2026-07-25;Regensburg II;Nordlingen;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1010;Germany_Oberliga_Bayern_Nord;2026-07-25;Regensburg 2;Nordlingen;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1011;Kazakhstan_PremierLeague;2026-07-25;Zhetysu;Kyzylzhar;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1012;Slovenia_PrvaLiga;2026-07-25;Mura;O. Ljubljana;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1013;Germany_Oberliga_Bayern_Sud;2026-07-25;Deisenhofen;Kirchanschoring;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -512,13 +511,13 @@
 1026;Germany_Oberliga_Bayern_Sud;2026-07-25;Pfaffenhofen;Rosenheim;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1027;Mexico_LigaMX_Apertura;2026-07-25;Atlante;Club America;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1028;Serbia_SuperLiga;2026-07-25;OFK Belgrado;Radnik;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1029;USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-25;Inter Miami II;Toronto FC II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1029;USA_MLSNextPro_EasternConference_SoutheastDivision;2026-07-25;Inter Miami 2;Toronto FC 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1030;Serbia_SuperLiga;2026-07-25;Radnicki Nis;Cukaricki;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1031;SouthKorea_KLeague1;2026-07-25;Pohang;Jeonbuk;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1032;Slovenia_PrvaLiga;2026-07-25;Maribor;Grosuplje;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1033;Germany_Oberliga_Bayern_Nord;2026-07-25;Neumarkt;Grossbardorf;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1034;Romania_Superliga;2026-07-25;Din. Bucuresti;Univ. Craiova;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1035;Germany_Regionalliga_Bayern;2026-07-25;Unterhaching;Furth II;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1035;Germany_Regionalliga_Bayern;2026-07-25;Unterhaching;Furth 2;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1122;USA_USLChampionship;2026-07-26;Indy Eleven;Loudoun;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1123;USA_MLS;2026-07-26;Philadelphia Union;Seattle Sounders;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1124;Lithuania_Toplyga;2026-07-26;Transinvest;Dziugas Telsiai;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -549,7 +548,7 @@
 1149;SouthKorea_KLeague1;2026-07-26;Gwangju;Jeju SK;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1150;USA_USLChampionship;2026-07-26;Phoenix Rising;Hartford Athletic;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1151;SouthKorea_KLeague1;2026-07-26;Incheon;Bucheon;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1152;Germany_Oberliga_Bayern_Sud;2026-07-26;Schwabmunchen;Monaco 1860 II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1152;Germany_Oberliga_Bayern_Sud;2026-07-26;Schwabmunchen;Monaco 1860 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1153;Romania_Superliga;2026-07-26;Sepsi Sf. Gheorghe;U. Cluj;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1154;Romania_Superliga;2026-07-26;Csikszereda M. Ciuc;FCSB;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1155;Slovenia_PrvaLiga;2026-07-26;Bravo;Nafta;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -633,15 +632,13 @@
 1245;Somalia_NationalLeague;2026-07-28;Raadsan;Elman;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1251;Sweden_Superettan;2026-07-28;Landskrona;Norrkoping;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1252;Finland_Kolmonen_Eastern_Group3;2026-07-28;HaPK;KoPa;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1255;Finland_Kolmonen_Western_Group3;2026-07-29;KPV/Akatemia;Virkia;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1257;Finland_Kolmonen_Eastern_Group1;2026-07-29;SAPA;FC Jyvaskyla Blackbird;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1265;Somalia_NationalLeague;2026-07-29;Jubba;Gantaalaha Afgooye;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1266;Somalia_NationalLeague;2026-07-29;Jeenyo;Jazeera;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1270;Bhutan_PremierLeague;2026-07-29;Thimphu City;Tensung;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1271;Iceland_Division_1;2026-07-29;Grindavik;Leiknir;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1281;Somalia_NationalLeague;2026-07-30;Gaadiidka;Dekedaha;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1286;Somalia_NationalLeague;2026-07-30;Mogadishu City;Heegan;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1287;USA_USLChampionship;2026-07-30;Louisville City;Birmingham;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1287;USA_USLChampionship;2026-07-30;Louisville City;Birmingham Legion;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1288;Kazakhstan_FirstLeague;2026-07-30;FC Batyr;Yelimay Semey 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1289;Bhutan_PremierLeague;2026-07-30;Ugyen Academy;RTC;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1290;Finland_Ykkosliiga;2026-07-30;Jippo;JaPS;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -666,9 +663,10 @@
 1404;Bolivia_DivisionProfesional;2026-07-31;The Strongest;Aurora;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1405;Finland_Ykkosliiga;2026-07-31;Ekenas;Klubi 04;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1406;Finland_Ykkosliiga;2026-07-31;PK-35;Haka;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1431;USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-01;Toronto FC II;Columbus Crew 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1431;USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-01;Toronto FC 2;Columbus Crew 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1487;USA_MLSNextPro_WesternConference_CentralDivision;2026-08-01;St. Louis City 2;Real Monarchs;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1554;Australia_NPLSouthAustralia;2026-08-01;Sturt Lions;Adelaide Comets;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1560;Finland_Ykkonen;2026-08-01;TPV;Rovaniemi;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1568;Belarus_VysshayaLiga;2026-08-01;Arsenal Dzerzhinsk;FC Minsk;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1569;Finland_Veikkausliiga;2026-08-01;Gnistan;KuPS;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1570;Australia_NPLVictoria;2026-08-01;Dandenong Thunder;Dandenong City;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -707,7 +705,7 @@
 1661;USA_USLChampionship;2026-08-02;Miami FC;Detroit;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1662;Latvia_NakotnesLiga;2026-08-02;JFK Ventspils;FK Smiltene;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1663;Norway_Eliteserien;2026-08-02;Molde;Sarpsborg 08;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1664;USA_USLChampionship;2026-08-02;Birmingham;Rhode Island;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1664;USA_USLChampionship;2026-08-02;Birmingham Legion;Rhode Island;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1665;Australia_NPLNSW;2026-08-02;Blacktown City;Sydney FC U23;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1666;Estonia_Meistriliiga;2026-08-02;Paide;Kuressaare;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1667;FaroeIslands_PremierLeague;2026-08-02;Argir;Skala Itrottarfelag;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -732,8 +730,8 @@
 1686;USA_USLChampionship;2026-08-02;Loudoun;Hartford Athletic;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1687;Australia_NPLNSW;2026-08-02;Sydney Utd;NWS Spirit;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1720;Sweden_Division1_Norra;2026-08-03;Hammarby TFF;Arlanda;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1721;USA_USLChampionship;2026-08-03;Birmingham;Rhode Island;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1722;USA_MLSNextPro_WesternConference_PacificDivision;2026-08-03;San Jose Earthquakes II;Austin FC II;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1721;USA_USLChampionship;2026-08-03;Birmingham Legion;Rhode Island;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1722;USA_MLSNextPro_WesternConference_PacificDivision;2026-08-03;San Jose Earthquakes 2;Austin FC 2;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1723;Lithuania_Toplyga;2026-08-03;FK Panevezys;Dziugas Telsiai;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1724;Sweden_Superettan;2026-08-03;Örebro;Värnamo;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1725;Lithuania_Toplyga;2026-08-03;FA Siauliai;Banga;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -741,7 +739,7 @@
 1727;Kyrgyzstan_PremierLiga;2026-08-03;Neftchi Kochkor-Ata;Talant;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1731;Finland_Kolmonen_Western_Group3;2026-08-04;VPV;KPV/Akatemia;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1732;Bhutan_PremierLeague;2026-08-04;RTC;Thimphu FC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1755;Finland_Kolmonen_Eastern_Group1;2026-08-05;Jyväskylän Seudun Palloseura;FC Vaajakoski/2;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1751;Finland_Ykkonen;2026-08-05;Rovaniemi;Jazz Pori;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1756;Finland_Kolmonen_Eastern_Group3;2026-08-05;LAUTP/2;STPS;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1757;Belarus_PershayaLiga;2026-08-05;Uni X Labs;Smorgon;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1758;Finland_Kolmonen_Eastern_Group2;2026-08-05;Jippo-j/Punamusta;PK-37;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -768,7 +766,7 @@
 1861;Finland_Ykkosliiga;2026-08-07;Haka;Jippo;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1862;Kazakhstan_FirstLeague;2026-08-07;Jaiyq;Taraz;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1863;Finland_Ykkosliiga;2026-08-07;JaPS;Mikkeli;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1864;Finland_Kolmonen_Eastern_Group1;2026-08-07;SaPa;FC Metso;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1864;Finland_Kolmonen_Eastern_Group1;2026-08-07;SAPA;FC Metso;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1865;Finland_Kolmonen_Western_Group3;2026-08-07;VIFK;Sundom IF;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1866;Finland_Kolmonen_Western_Group3;2026-08-07;Kiisto;SJK-j;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1887;Iceland_Division_2;2026-08-08;Kormakur/Hvot;Throttur Vogar;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -779,7 +777,7 @@
 1989;SouthKorea_KLeague1;2026-08-08;Gimcheon Sangmu;Seoul;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1990;Sweden_Division2_NorraSvealand;2026-08-08;Angby;Gute;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1991;Sweden_Division2_NorraSvealand;2026-08-08;Falu;Sunnersta AIF;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-1992;USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-08;Philadelphia II;Cincinnati 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+1992;USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-08;Philadelphia 2;Cincinnati 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1993;Sweden_Division2_NorraGotaland;2026-08-08;Kumla;Vanersborgs IF;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1994;Latvia_NakotnesLiga;2026-08-08;JFK Ventspils;Super Nova 2;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 1995;Sweden_Division2_SodraSvealand;2026-08-08;Orebro Syr.;Forward;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -838,32 +836,32 @@
 2206;Latvia_Virsliga;2026-08-10;RFS;Grobina;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2207;Lithuania_ILyga;2026-08-10;Zalgiris 2;Kauno Zalgiris 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2208;Sweden_Superettan;2026-08-10;Norrby;Örebro;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2212;Finland_Ykkonen;2026-08-11;Rovaniemi;KuPS Akatemia;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2223;Finland_Kolmonen_Western_Group3;2026-08-11;VPV;Kiisto;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2224;Finland_Kolmonen_Western_Group1;2026-08-11;SalPa II;LTU U20;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2224;Finland_Kolmonen_Western_Group1;2026-08-11;SalPa 2;LTU U20;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2234;Sweden_Division2_Norrland;2026-08-12;IFK Lulea;Boden;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2235;Finland_Kolmonen_Western_Group3;2026-08-12;KPV/Akatemia;Sp. Kristina;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2242;Finland_Kolmonen_Eastern_Group1;2026-08-12;JJK/2;Jyväskylän Seudun Palloseura;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2266;Iceland_Division_1;2026-08-13;Grindavik;Throttur;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2267;Finland_Kolmonen_Western_Group3;2026-08-13;FC Ylivieska;NIK;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2268;Armenia_PremierLeague;2026-08-13;Urartu;Syunik;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2269;Denmark_2ndDivision;2026-08-14;Nykobing;B.93;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2270;Germany_Regionalliga_West;2026-08-14;Westfalia Rhynern;Wiedenbruck;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2271;Poland_IIILiga_Group3;2026-08-14;Polkowice;Legnica II;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2271;Poland_IIILiga_Group3;2026-08-14;Polkowice;Legnica 2;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2272;Austria_Karnten;2026-08-14;SC St. Veit;Saint Michael Lavanttal;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2273;Denmark_2ndDivision;2026-08-14;Skive;F. Amager;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2274;Wales_CymruPremier;2026-08-14;Llandudno;Holywell;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2276;Germany_Regionalliga_West;2026-08-14;Schalke II;Siegen;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2276;Germany_Regionalliga_West;2026-08-14;Schalke 2;Siegen;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2279;Germany_Regionalliga_Bayern;2026-08-14;Memmingen;Monaco 1860;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2280;Germany_Oberliga_Hamburg;2026-08-14;Victoria Hamburg;Paloma;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2281;Austria_Regionalliga_North;2026-08-14;Wallern/St Marienkirchen;Dietach;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2282;Germany_Oberliga_Bayern_Sud;2026-08-14;FC Schwaig;Kirchanschoring;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2283;Germany_Oberliga_Hamburg;2026-08-14;Vorwarts-Wacker;Niendorfer TSV;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2284;Germany_Oberliga_SchleswigHolstein;2026-08-14;Eckernforder SV;Kiel II;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2284;Germany_Oberliga_SchleswigHolstein;2026-08-14;Eckernforder SV;Kiel 2;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2286;Denmark_3rdDivision;2026-08-14;Helsingor;BK Frem;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2288;Germany_Oberliga_Hamburg;2026-08-14;Suderelbe;Norderstedt II;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2288;Germany_Oberliga_Hamburg;2026-08-14;Suderelbe;Norderstedt 2;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2289;Austria_Tirol;2026-08-14;Absam;SC Kundl;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2291;Slovakia_2Liga;2026-08-14;Pohronie;MFK Bytca;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2293;Finland_Kolmonen_Eastern_Group1;2026-08-14;FC Vaajakoski/2;SaPa;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2293;Finland_Kolmonen_Eastern_Group1;2026-08-14;FC Vaajakoski/2;SAPA;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2299;Poland_IIILiga_Group2;2026-08-14;Wrzesnia;Luzino;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2300;Poland_Ekstraklasa;2026-08-14;Legia;Radomiak Radom;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2301;Germany_Oberliga_Bayern_Nord;2026-08-14;DJK Bamberg;Stadeln;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -871,12 +869,12 @@
 2303;Poland_IIILiga_Group1;2026-08-14;Mazovia Minsk Mazowiecki;Zabki;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2306;Germany_Oberliga_Bayern_Sud;2026-08-14;Heimstetten;Schalding;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2309;Austria_Tirol;2026-08-14;FC Natters;Innsbrucker AC;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2312;Germany_Oberliga_Bayern_Sud;2026-08-14;Monaco 1860 II;Hankofen-Hailing;IMM-ALTA-7;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2312;Germany_Oberliga_Bayern_Sud;2026-08-14;Monaco 1860 2;Hankofen-Hailing;IMM-ALTA-7;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2315;Germany_Oberliga_RheinlandPfalzSaar;2026-08-14;Auersmacher;Hertha Wiesbach;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2317;Austria_Salzburg;2026-08-14;Strasswalchen;SAK 1914;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2318;Armenia_PremierLeague;2026-08-14;FC Gandzasar;Shirak;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2319;Denmark_2ndDivision;2026-08-14;Brabrand;Naestved;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2320;Germany_Regionalliga_Nordost;2026-08-14;Hertha II;BFC Dynamo;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2320;Germany_Regionalliga_Nordost;2026-08-14;Hertha 2;BFC Dynamo;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2321;Austria_Regionalliga_East;2026-08-14;Donaufeld Wien;SV Oberwart;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2322;Germany_Oberliga_RheinlandPfalzSaar;2026-08-14;Ahrweiler;Emmelshausen-Karbach;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2323;Austria_Regionalliga_North;2026-08-14;UFC Hallein;Schallerbach;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -900,7 +898,7 @@
 2399;Australia_VictoriaPremierLeague2;2026-08-14;Nunawading City;Bayside Argonauts;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2400;Finland_Veikkausliiga;2026-08-14;VPS;TPS Turku;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2401;Australia_NPLVictoria;2026-08-14;St Albans;Bentleigh;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2402;Germany_Oberliga_RheinlandPfalzSaar;2026-08-14;Elversberg II;Worms;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2402;Germany_Oberliga_RheinlandPfalzSaar;2026-08-14;Elversberg 2;Worms;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2403;Kyrgyzstan_PremierLiga;2026-08-14;Neftchi Kochkor-Ata;Abdysh-Ata;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2404;Germany_Regionalliga_Nordost;2026-08-14;Babelsberg;RSV Eintracht;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2405;CzechRepublic_ChNL;2026-08-14;Dukla Praga;Slavia Praga B;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -930,17 +928,17 @@
 2429;Mexico_LigaExpansionMX_Apertura;2026-08-14;Alebrijes Oaxaca;Tepatitlan de Morelos;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2430;Ukraine_PremierLeague;2026-08-14;Epitsentr;Veres-Rivne;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2431;Austria_Oberosterreich;2026-08-14;Friedburg;Edelweiss;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2432;Austria_2Liga;2026-08-14;Hertha Wels;SK Rapid II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2432;Austria_2Liga;2026-08-14;Hertha Wels;SK Rapid 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2433;Poland_IIILiga_Group3;2026-08-14;Carina Gubin;Jelenia Gora;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2434;Germany_Regionalliga_West;2026-08-14;Bergisch Gladbach;Dortmund II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2434;Germany_Regionalliga_West;2026-08-14;Bergisch Gladbach;Dortmund 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2435;Romania_Superliga;2026-08-14;FC Voluntari;Petrolul;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2436;Russia_FNL;2026-08-14;Neftekhimik;Yaroslavl;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2437;Germany_Regionalliga_Bayern;2026-08-14;Furth II;Landsberg;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2437;Germany_Regionalliga_Bayern;2026-08-14;Furth 2;Landsberg;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2438;Austria_2Liga;2026-08-14;St. Polten;BW Linz;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2439;Germany_Regionalliga_West;2026-08-14;Bonner;Lotte;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2440;Austria_Karnten;2026-08-14;SV Spittal;TSV Grafenstein;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2441;Denmark_Superliga;2026-08-14;Viborg;Aarhus;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2442;Germany_Regionalliga_Bayern;2026-08-14;Eltersdorf;Norinberga II;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2442;Germany_Regionalliga_Bayern;2026-08-14;Eltersdorf;Norinberga 2;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2443;Germany_Regionalliga_Bayern;2026-08-14;Burghausen;Schwaben Augsburg;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2444;Denmark_1stDivision;2026-08-14;Aalborg;Fredericia;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2445;Finland_Kolmonen_Eastern_Group1;2026-08-14;KeuPa;Blackbird;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -958,22 +956,22 @@
 2457;Serbia_PrvaLiga;2026-08-14;Vozdovac;Graficar Beograd;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2458;Denmark_2ndDivision;2026-08-14;Nykobing;B.93;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2459;Germany_Regionalliga_West;2026-08-14;Westfalia Rhynern;Wiedenbruck;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2460;Poland_IIILiga_Group3;2026-08-14;Polkowice;Legnica II;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2460;Poland_IIILiga_Group3;2026-08-14;Polkowice;Legnica 2;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2461;Austria_Karnten;2026-08-14;SC St. Veit;Saint Michael Lavanttal;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2462;Denmark_2ndDivision;2026-08-14;Skive;F. Amager;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2463;Wales_CymruPremier;2026-08-14;Llandudno;Holywell;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2465;Germany_Regionalliga_West;2026-08-14;Schalke II;Siegen;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2465;Germany_Regionalliga_West;2026-08-14;Schalke 2;Siegen;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2468;Germany_Regionalliga_Bayern;2026-08-14;Memmingen;Monaco 1860;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2469;Germany_Oberliga_Hamburg;2026-08-14;Victoria Hamburg;Paloma;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2470;Austria_Regionalliga_North;2026-08-14;Wallern/St Marienkirchen;Dietach;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2471;Germany_Oberliga_Bayern_Sud;2026-08-14;FC Schwaig;Kirchanschoring;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2472;Germany_Oberliga_Hamburg;2026-08-14;Vorwarts-Wacker;Niendorfer TSV;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2473;Germany_Oberliga_SchleswigHolstein;2026-08-14;Eckernforder SV;Kiel II;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2473;Germany_Oberliga_SchleswigHolstein;2026-08-14;Eckernforder SV;Kiel 2;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2475;Denmark_3rdDivision;2026-08-14;Helsingor;BK Frem;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2477;Germany_Oberliga_Hamburg;2026-08-14;Suderelbe;Norderstedt II;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2477;Germany_Oberliga_Hamburg;2026-08-14;Suderelbe;Norderstedt 2;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2478;Austria_Tirol;2026-08-14;Absam;SC Kundl;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2480;Slovakia_2Liga;2026-08-14;Pohronie;MFK Bytca;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2484;Finland_Kolmonen_Eastern_Group1;2026-08-14;FC Vaajakoski/2;SaPa;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2484;Finland_Kolmonen_Eastern_Group1;2026-08-14;FC Vaajakoski/2;SAPA;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2488;Poland_IIILiga_Group2;2026-08-14;Wrzesnia;Luzino;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2489;Poland_Ekstraklasa;2026-08-14;Legia;Radomiak Radom;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2490;Germany_Oberliga_Bayern_Nord;2026-08-14;DJK Bamberg;Stadeln;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -981,12 +979,12 @@
 2492;Poland_IIILiga_Group1;2026-08-14;Mazovia Minsk Mazowiecki;Zabki;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2495;Germany_Oberliga_Bayern_Sud;2026-08-14;Heimstetten;Schalding;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2498;Austria_Tirol;2026-08-14;FC Natters;Innsbrucker AC;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2501;Germany_Oberliga_Bayern_Sud;2026-08-14;Monaco 1860 II;Hankofen-Hailing;IMM-ALTA-7;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2501;Germany_Oberliga_Bayern_Sud;2026-08-14;Monaco 1860 2;Hankofen-Hailing;IMM-ALTA-7;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2504;Germany_Oberliga_RheinlandPfalzSaar;2026-08-14;Auersmacher;Hertha Wiesbach;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2506;Austria_Salzburg;2026-08-14;Strasswalchen;SAK 1914;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2507;Armenia_PremierLeague;2026-08-14;FC Gandzasar;Shirak;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2508;Denmark_2ndDivision;2026-08-14;Brabrand;Naestved;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2509;Germany_Regionalliga_Nordost;2026-08-14;Hertha II;BFC Dynamo;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2509;Germany_Regionalliga_Nordost;2026-08-14;Hertha 2;BFC Dynamo;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2510;Austria_Regionalliga_East;2026-08-14;Donaufeld Wien;SV Oberwart;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2511;Germany_Oberliga_RheinlandPfalzSaar;2026-08-14;Ahrweiler;Emmelshausen-Karbach;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2512;Austria_Regionalliga_North;2026-08-14;UFC Hallein;Schallerbach;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1013,7 +1011,7 @@
 2591;Kyrgyzstan_PremierLiga;2026-08-14;Neftchi Kochkor-Ata;Abdysh-Ata;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2592;Germany_Regionalliga_Nordost;2026-08-14;Babelsberg;RSV Eintracht;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2593;CzechRepublic_ChNL;2026-08-14;Dukla Praga;Slavia Praga B;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2594;Germany_Oberliga_RheinlandPfalzSaar;2026-08-14;Elversberg II;Worms;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2594;Germany_Oberliga_RheinlandPfalzSaar;2026-08-14;Elversberg 2;Worms;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2595;Belarus_VysshayaLiga;2026-08-14;Dnepr Mogilev;Belshina;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2596;Germany_Oberliga_Bayern_Sud;2026-08-14;Rosenheim;Deisenhofen;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2597;Germany_Oberliga_SchleswigHolstein;2026-08-14;Hohenwestedt;Eichede;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1040,17 +1038,17 @@
 2618;Mexico_LigaExpansionMX_Apertura;2026-08-14;Alebrijes Oaxaca;Tepatitlan de Morelos;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2619;Ukraine_PremierLeague;2026-08-14;Epitsentr;Veres-Rivne;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2620;Austria_Oberosterreich;2026-08-14;Friedburg;Edelweiss;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2621;Austria_2Liga;2026-08-14;Hertha Wels;SK Rapid II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2621;Austria_2Liga;2026-08-14;Hertha Wels;SK Rapid 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2622;Poland_IIILiga_Group3;2026-08-14;Carina Gubin;Jelenia Gora;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2623;Germany_Regionalliga_West;2026-08-14;Bergisch Gladbach;Dortmund II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2623;Germany_Regionalliga_West;2026-08-14;Bergisch Gladbach;Dortmund 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2624;Romania_Superliga;2026-08-14;FC Voluntari;Petrolul;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2625;Russia_FNL;2026-08-14;Neftekhimik;Yaroslavl;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2626;Germany_Regionalliga_Bayern;2026-08-14;Furth II;Landsberg;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2626;Germany_Regionalliga_Bayern;2026-08-14;Furth 2;Landsberg;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2627;Austria_2Liga;2026-08-14;St. Polten;BW Linz;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2628;Germany_Regionalliga_West;2026-08-14;Bonner;Lotte;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2629;Austria_Karnten;2026-08-14;SV Spittal;TSV Grafenstein;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2630;Denmark_Superliga;2026-08-14;Viborg;Aarhus;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2631;Germany_Regionalliga_Bayern;2026-08-14;Eltersdorf;Norinberga II;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2631;Germany_Regionalliga_Bayern;2026-08-14;Eltersdorf;Norinberga 2;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2632;Germany_Regionalliga_Bayern;2026-08-14;Burghausen;Schwaben Augsburg;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2633;Denmark_1stDivision;2026-08-14;Aalborg;Fredericia;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2634;Finland_Kolmonen_Eastern_Group1;2026-08-14;KeuPa;Blackbird;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1073,8 +1071,8 @@
 2651;Germany_Regionalliga_Nord;2026-08-15;Emden;Eimsbutteler;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2652;Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;Pirmasens;Mechtersheim;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2653;Austria_Salzburg;2026-08-15;USV 1960 Berndorf;Eugendorf;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2654;Germany_Oberliga_SchleswigHolstein;2026-08-15;Rapid Lubeck;Lubeck II;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2655;Poland_IIILiga_Group1;2026-08-15;Lidzbark Warminski;Plock II;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2654;Germany_Oberliga_SchleswigHolstein;2026-08-15;Rapid Lubeck;Lubeck 2;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2655;Poland_IIILiga_Group1;2026-08-15;Lidzbark Warminski;Plock 2;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2656;Austria_Salzburg;2026-08-15;Burmoos;Neumarkt;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2660;Slovakia_NikeLiga;2026-08-15;Skalica;Kosice;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2661;Denmark_3rdDivision;2026-08-15;Holbaek;Sundby;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1087,7 +1085,7 @@
 2682;Austria_Karnten;2026-08-15;KAC 1909;Nussdorf;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2688;Germany_Oberliga_SchleswigHolstein;2026-08-15;Kaltenkirchen;Phonix Lubeck B;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2689;Austria_2Liga;2026-08-15;Kapfenberg;Innsbruck;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2694;Germany_Regionalliga_Nordost;2026-08-15;Erfurt;Magdeburg II;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2694;Germany_Regionalliga_Nordost;2026-08-15;Erfurt;Magdeburg 2;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2703;Austria_Salzburg;2026-08-15;Schwarzach;Golling;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2705;Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;Cosmos Koblenz;Eisbachtal;IMM-ALTA-5;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2706;Poland_IIILiga_Group1;2026-08-15;Zambrow;Elblag;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1096,7 +1094,7 @@
 2715;NorthernIreland_NIFLChampionship;2026-08-15;Glenavon;Strabane Athletic;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2717;Austria_Regionalliga_West;2026-08-15;Fugen;Hohenems;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2719;Poland_Ekstraklasa;2026-08-15;Piast;Wieczysta Krakow;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2721;Germany_Regionalliga_West;2026-08-15;Rodinghausen;Paderborn II;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2721;Germany_Regionalliga_West;2026-08-15;Rodinghausen;Paderborn 2;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2722;Slovakia_2Liga;2026-08-15;Samorin;Lehota p. V.;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2724;Germany_Regionalliga_Nordost;2026-08-15;BFC Preussen;Greifswald;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2729;Austria_Salzburg;2026-08-15;Puch;TSU Bramberg;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1106,8 +1104,8 @@
 2737;Slovakia_NikeLiga;2026-08-15;Slovan Bratislava;Ruzomberok;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2740;Ukraine_PershaLiga;2026-08-15;Metalist Kharkiv;Oleksandriya;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2741;NorthernIreland_NIFLChampionship;2026-08-15;Institute;Loughgall;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2742;Poland_IIILiga_Group1;2026-08-15;Widzew Lodz II;Swit;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2743;USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-15;Toronto FC II;Chattanooga;IMM-ALTA-18;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2742;Poland_IIILiga_Group1;2026-08-15;Widzew Lodz 2;Swit;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2743;USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-15;Toronto FC 2;Chattanooga;IMM-ALTA-18;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2744;Germany_Oberliga_SchleswigHolstein;2026-08-15;Rotenhof;PSV Neumunster;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2746;Austria_Salzburg;2026-08-15;Seekirchen U21;Union Henndorf;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2750;Mexico_LigaExpansionMX_Apertura;2026-08-15;Correcaminos;Tapatio;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1119,10 +1117,11 @@
 2763;USA_MLSNextPro_WesternConference_CentralDivision;2026-08-15;Houston Dynamo 2;Ventura County;IMM-ALTA-18;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2764;Austria_Oberosterreich;2026-08-15;Perg;Garsten;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2765;Hungary_NBII;2026-08-15;Nagykanizsa;Soroksar;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2766;Switzerland_PromotionLeague;2026-08-15;Lugano II;Luzerna II;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2766;Switzerland_PromotionLeague;2026-08-15;Lugano 2;Luzerna 2;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2774;Poland_IIILiga_Group2;2026-08-15;Gedania Gdansk;Wda Swiecie;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2775;Austria_2Liga;2026-08-15;Voitsberg;Bregenz;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2812;Russia_FNL;2026-08-15;Sochi;Ulyanovsk;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2831;Finland_Ykkonen;2026-08-15;OLS Oulu;Rovaniemi;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2922;SouthKorea_KLeague2;2026-08-15;Cheongju Jikji;Jeonnam;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2923;Australia_WAStateLeague;2026-08-15;Cockburn City;Inglewood;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2924;Belarus_VysshayaLiga;2026-08-15;Gomel;Naftan;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1139,7 +1138,7 @@
 2935;Russia_PremierLeague;2026-08-15;CSKA Mosca;F. Voronezh;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2936;Australia_NPLVictoria;2026-08-15;Melbourne City U21;South Melbourne;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2937;SouthKorea_KLeague2;2026-08-15;Suwon Bluewings;Suwon FC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2938;Germany_Regionalliga_West;2026-08-15;Monchengladbach II;Bocholt;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2938;Germany_Regionalliga_West;2026-08-15;Monchengladbach 2;Bocholt;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2939;Hungary_NBII;2026-08-15;Szeged;Gyirmot;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2940;Sweden_Division2_NorraGotaland;2026-08-15;Tord;Motala;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2941;Poland_Division1;2026-08-15;Pogon Siedlce;Polonia W.;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1171,7 +1170,7 @@
 2967;Poland_Division2;2026-08-15;R. Rzeszow;Tychy;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2968;Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;Gonsenheim;Koblenz;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2969;Ukraine_PershaLiga;2026-08-15;FC Chernihiv;Zhytomyr 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2970;Germany_Regionalliga_West;2026-08-15;Bochum II;Oberhausen;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2970;Germany_Regionalliga_West;2026-08-15;Bochum 2;Oberhausen;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2971;Germany_Regionalliga_Nord;2026-08-15;SC Weiche-08;Jeddeloh;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2972;Austria_2Liga;2026-08-15;Austria (Am);A. Salzburg;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2973;Slovakia_2Liga;2026-08-15;Z. Moravce-Vrable;Zilina B;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1194,7 +1193,7 @@
 2990;Mexico_LigaExpansionMX_Apertura;2026-08-15;Cruz Azul Hidalgo;Atl. Morelia;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2991;Belarus_VysshayaLiga;2026-08-15;BATE;Vitebsk;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2992;Germany_Oberliga_Bayern_Nord;2026-08-15;Neumarkt;Weiden;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-2993;Poland_IIILiga_Group1;2026-08-15;Pelikan;LKS Lodz II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+2993;Poland_IIILiga_Group1;2026-08-15;Pelikan;LKS Lodz 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2994;Serbia_PrvaLiga;2026-08-15;Javor;Vrsac;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2995;Norway_2ndDivision_Group1;2026-08-15;Notodden;Brattvag;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 2996;CzechRepublic_ChNL;2026-08-15;Taborsko;Opava;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1237,8 +1236,8 @@
 3033;Germany_Regionalliga_Nord;2026-08-15;Emden;Eimsbutteler;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3034;Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;Pirmasens;Mechtersheim;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3035;Austria_Salzburg;2026-08-15;USV 1960 Berndorf;Eugendorf;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3036;Germany_Oberliga_SchleswigHolstein;2026-08-15;Rapid Lubeck;Lubeck II;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3037;Poland_IIILiga_Group1;2026-08-15;Lidzbark Warminski;Plock II;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3036;Germany_Oberliga_SchleswigHolstein;2026-08-15;Rapid Lubeck;Lubeck 2;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3037;Poland_IIILiga_Group1;2026-08-15;Lidzbark Warminski;Plock 2;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3038;Austria_Salzburg;2026-08-15;Burmoos;Neumarkt;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3042;Slovakia_NikeLiga;2026-08-15;Skalica;Kosice;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3043;Denmark_3rdDivision;2026-08-15;Holbaek;Sundby;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1251,7 +1250,7 @@
 3067;Austria_Karnten;2026-08-15;KAC 1909;Nussdorf;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3073;Germany_Oberliga_SchleswigHolstein;2026-08-15;Kaltenkirchen;Phonix Lubeck B;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3074;Austria_2Liga;2026-08-15;Kapfenberg;Innsbruck;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3079;Germany_Regionalliga_Nordost;2026-08-15;Erfurt;Magdeburg II;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3079;Germany_Regionalliga_Nordost;2026-08-15;Erfurt;Magdeburg 2;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3088;Austria_Salzburg;2026-08-15;Schwarzach;Golling;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3090;Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;Cosmos Koblenz;Eisbachtal;IMM-ALTA-5;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3091;Poland_IIILiga_Group1;2026-08-15;Zambrow;Elblag;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1260,7 +1259,7 @@
 3101;NorthernIreland_NIFLChampionship;2026-08-15;Glenavon;Strabane Athletic;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3103;Austria_Regionalliga_West;2026-08-15;Fugen;Hohenems;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3105;Poland_Ekstraklasa;2026-08-15;Piast;Wieczysta Krakow;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3107;Germany_Regionalliga_West;2026-08-15;Rodinghausen;Paderborn II;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3107;Germany_Regionalliga_West;2026-08-15;Rodinghausen;Paderborn 2;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3108;Slovakia_2Liga;2026-08-15;Samorin;Lehota p. V.;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3110;Germany_Regionalliga_Nordost;2026-08-15;BFC Preussen;Greifswald;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3115;Austria_Salzburg;2026-08-15;Puch;TSU Bramberg;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1270,8 +1269,8 @@
 3123;Slovakia_NikeLiga;2026-08-15;Slovan Bratislava;Ruzomberok;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3126;Ukraine_PershaLiga;2026-08-15;Metalist Kharkiv;Oleksandriya;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3127;NorthernIreland_NIFLChampionship;2026-08-15;Institute;Loughgall;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3128;Poland_IIILiga_Group1;2026-08-15;Widzew Lodz II;Swit;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3129;USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-15;Toronto FC II;Chattanooga;IMM-ALTA-18;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3128;Poland_IIILiga_Group1;2026-08-15;Widzew Lodz 2;Swit;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3129;USA_MLSNextPro_EasternConference_NortheastDivision;2026-08-15;Toronto FC 2;Chattanooga;IMM-ALTA-18;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3131;Germany_Oberliga_SchleswigHolstein;2026-08-15;Rotenhof;PSV Neumunster;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3133;Austria_Salzburg;2026-08-15;Seekirchen U21;Union Henndorf;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3138;Mexico_LigaExpansionMX_Apertura;2026-08-15;Correcaminos;Tapatio;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1283,10 +1282,11 @@
 3151;USA_MLSNextPro_WesternConference_CentralDivision;2026-08-15;Houston Dynamo 2;Ventura County;IMM-ALTA-18;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3152;Austria_Oberosterreich;2026-08-15;Perg;Garsten;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3153;Hungary_NBII;2026-08-15;Nagykanizsa;Soroksar;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3154;Switzerland_PromotionLeague;2026-08-15;Lugano II;Luzerna II;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3154;Switzerland_PromotionLeague;2026-08-15;Lugano 2;Luzerna 2;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3162;Poland_IIILiga_Group2;2026-08-15;Gedania Gdansk;Wda Swiecie;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3163;Austria_2Liga;2026-08-15;Voitsberg;Bregenz;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3202;Russia_FNL;2026-08-15;Sochi;Ulyanovsk;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3223;Finland_Ykkonen;2026-08-15;OLS Oulu;Rovaniemi;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3315;SouthKorea_KLeague2;2026-08-15;Cheongju Jikji;Jeonnam;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3316;Australia_WAStateLeague;2026-08-15;Cockburn City;Inglewood;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3317;Belarus_VysshayaLiga;2026-08-15;Gomel;Naftan;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1303,7 +1303,7 @@
 3328;Russia_PremierLeague;2026-08-15;CSKA Mosca;F. Voronezh;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3329;Australia_NPLVictoria;2026-08-15;Melbourne City U21;South Melbourne;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3330;SouthKorea_KLeague2;2026-08-15;Suwon Bluewings;Suwon FC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3331;Germany_Regionalliga_West;2026-08-15;Monchengladbach II;Bocholt;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3331;Germany_Regionalliga_West;2026-08-15;Monchengladbach 2;Bocholt;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3332;Hungary_NBII;2026-08-15;Szeged;Gyirmot;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3333;Sweden_Division2_NorraGotaland;2026-08-15;Tord;Motala;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3334;Poland_Division1;2026-08-15;Pogon Siedlce;Polonia W.;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1335,7 +1335,7 @@
 3360;Poland_Division2;2026-08-15;R. Rzeszow;Tychy;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3361;Germany_Oberliga_RheinlandPfalzSaar;2026-08-15;Gonsenheim;Koblenz;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3362;Ukraine_PershaLiga;2026-08-15;FC Chernihiv;Zhytomyr 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3363;Germany_Regionalliga_West;2026-08-15;Bochum II;Oberhausen;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3363;Germany_Regionalliga_West;2026-08-15;Bochum 2;Oberhausen;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3364;Germany_Regionalliga_Nord;2026-08-15;SC Weiche-08;Jeddeloh;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3365;Austria_2Liga;2026-08-15;Austria (Am);A. Salzburg;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3366;Slovakia_2Liga;2026-08-15;Z. Moravce-Vrable;Zilina B;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1358,7 +1358,7 @@
 3383;Mexico_LigaExpansionMX_Apertura;2026-08-15;Cruz Azul Hidalgo;Atl. Morelia;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3384;Belarus_VysshayaLiga;2026-08-15;BATE;Vitebsk;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3385;Germany_Oberliga_Bayern_Nord;2026-08-15;Neumarkt;Weiden;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3386;Poland_IIILiga_Group1;2026-08-15;Pelikan;LKS Lodz II;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3386;Poland_IIILiga_Group1;2026-08-15;Pelikan;LKS Lodz 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3387;Serbia_PrvaLiga;2026-08-15;Javor;Vrsac;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3388;Norway_2ndDivision_Group1;2026-08-15;Notodden;Brattvag;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3389;CzechRepublic_ChNL;2026-08-15;Taborsko;Opava;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1395,7 +1395,7 @@
 3420;Serbia_PrvaLiga;2026-08-15;Proleter 023;Dubocica;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3421;Hungary_NBII;2026-08-15;Mezokovesd;BVSC-Zuglo;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3422;Poland_Ekstraklasa;2026-08-16;Gornik Zabrze;Wisla;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3424;Germany_Regionalliga_Nord;2026-08-16;Amburgo II;Drochtersen/Assel;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3424;Germany_Regionalliga_Nord;2026-08-16;Amburgo 2;Drochtersen/Assel;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3426;Poland_Ekstraklasa;2026-08-16;Motor Lublin;Katowice;IMM-ALTA-5;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3427;Austria_2Liga;2026-08-16;First Vienna;Liefering;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3429;Denmark_Superliga;2026-08-16;Lyngby;Midtjylland;IMM-ALTA-5;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1411,7 +1411,7 @@
 3462;Germany_Oberliga_SchleswigHolstein;2026-08-16;VfR Neumunster;Heider SV;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3464;Russia_PremierLeague;2026-08-16;Baltika;Sp. Mosca;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3469;Russia_PremierLeague;2026-08-16;Zenit;Din. Mosca;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3473;Poland_Division2;2026-08-16;Hutnik Krakow;Legia II;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3473;Poland_Division2;2026-08-16;Hutnik Krakow;Legia 2;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3474;Bulgaria_ParvaLiga;2026-08-16;CSKA Sofia;Botev Vratsa;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3475;Germany_Regionalliga_Nordost;2026-08-16;Tasmania Berlin;Lokomotive Leipzig;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3478;Germany_Oberliga_Hamburg;2026-08-16;HEBC Hamburg;HT 16;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1436,15 +1436,15 @@
 3599;Russia_PremierLeague;2026-08-16;Samara;Dynamo Makhachkala;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3600;Slovakia_2Liga;2026-08-16;Petrzalka;Presov;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3601;Sweden_Division1_Norra;2026-08-16;Stockholm Internazionale;Arlanda;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3602;USA_USLChampionship;2026-08-16;Colorado Springs;Birmingham;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3602;USA_USLChampionship;2026-08-16;Colorado Springs;Birmingham Legion;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3603;Bolivia_DivisionProfesional;2026-08-16;Always Ready;Real Potosi;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3604;USA_MLSNextPro_WesternConference_PacificDivision;2026-08-16;Austin FC II;Vancouver 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3604;USA_MLSNextPro_WesternConference_PacificDivision;2026-08-16;Austin FC 2;Vancouver 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3605;CzechRepublic_3MSFL;2026-08-16;Polanka nad Odrou;Vitkovice;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3606;Slovenia_PrvaLiga;2026-08-16;Koper;Bravo;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3607;Sweden_Division2_SodraSvealand;2026-08-16;Nacka FC;Orebro Syr.;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3608;Kazakhstan_PremierLeague;2026-08-16;Atyrau;Okzhetpes;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3609;USA_USLChampionship;2026-08-16;San Antonio;El Paso;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3610;Germany_Regionalliga_West;2026-08-16;Colonia II;FC Gutersloh;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3610;Germany_Regionalliga_West;2026-08-16;Colonia 2;FC Gutersloh;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3611;SriLanka_SuperLeague;2026-08-16;Ratnam;UP Country Lions;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3612;Ukraine_PershaLiga;2026-08-16;Inhulets;Nyva Ternopil;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3613;Bulgaria_ParvaLiga;2026-08-16;Lok. Plovdiv;Dunav Ruse;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1497,7 +1497,7 @@
 3660;Montenegro_PrvaCrnogorskaLiga;2026-08-16;Petrovac;Jezero;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3661;Montenegro_PrvaCrnogorskaLiga;2026-08-16;Arsenal Tivat;Buducnost;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3665;Poland_Ekstraklasa;2026-08-16;Gornik Zabrze;Wisla;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3666;Germany_Regionalliga_Nord;2026-08-16;Amburgo II;Drochtersen/Assel;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3666;Germany_Regionalliga_Nord;2026-08-16;Amburgo 2;Drochtersen/Assel;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3669;Poland_Ekstraklasa;2026-08-16;Motor Lublin;Katowice;IMM-ALTA-5;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3671;Austria_2Liga;2026-08-16;First Vienna;Liefering;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3672;Denmark_Superliga;2026-08-16;Lyngby;Midtjylland;IMM-ALTA-5;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1513,7 +1513,7 @@
 3709;Russia_PremierLeague;2026-08-16;Baltika;Sp. Mosca;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3711;Germany_Oberliga_SchleswigHolstein;2026-08-16;VfR Neumunster;Heider SV;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3715;Russia_PremierLeague;2026-08-16;Zenit;Din. Mosca;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3718;Poland_Division2;2026-08-16;Hutnik Krakow;Legia II;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3718;Poland_Division2;2026-08-16;Hutnik Krakow;Legia 2;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3719;Bulgaria_ParvaLiga;2026-08-16;CSKA Sofia;Botev Vratsa;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3720;Germany_Regionalliga_Nordost;2026-08-16;Tasmania Berlin;Lokomotive Leipzig;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3722;Poland_Division1;2026-08-16;LKS Lodz;Termalica B-B.;IMM-ALTA-6;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1539,11 +1539,11 @@
 3845;USA_USLLeagueOne;2026-08-16;Westchester SC;FC Naples;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3846;Slovakia_2Liga;2026-08-16;Petrzalka;Presov;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3847;Sweden_Division1_Norra;2026-08-16;Stockholm Internazionale;Arlanda;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3848;USA_USLChampionship;2026-08-16;Colorado Springs;Birmingham;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3849;USA_MLSNextPro_WesternConference_PacificDivision;2026-08-16;Austin FC II;Vancouver 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3848;USA_USLChampionship;2026-08-16;Colorado Springs;Birmingham Legion;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3849;USA_MLSNextPro_WesternConference_PacificDivision;2026-08-16;Austin FC 2;Vancouver 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3850;CzechRepublic_3MSFL;2026-08-16;Polanka nad Odrou;Vitkovice;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3851;Russia_PremierLeague;2026-08-16;Samara;Dynamo Makhachkala;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-3852;Germany_Regionalliga_West;2026-08-16;Colonia II;FC Gutersloh;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+3852;Germany_Regionalliga_West;2026-08-16;Colonia 2;FC Gutersloh;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3853;Slovenia_PrvaLiga;2026-08-16;Koper;Bravo;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3854;Sweden_Division2_SodraSvealand;2026-08-16;Nacka FC;Orebro Syr.;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 3855;Kazakhstan_PremierLeague;2026-08-16;Atyrau;Okzhetpes;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1803,7 +1803,7 @@
 4355;Germany_Regionalliga_Bayern;2026-08-21;Eltersdorf;Furth 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4356;France_Ligue2;2026-08-21;Pau FC;Nancy;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4357;France_Ligue2;2026-08-21;Boulogne;Red Star;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-4358;Finland_Kolmonen_Eastern_Group1;2026-08-21;Jyväskylän Seudun Palloseura;SaPa;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+4358;Finland_Kolmonen_Eastern_Group1;2026-08-21;SAPA;SAPA;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4359;Slovakia_3Liga_West;2026-08-21;MSK Senec;Dun. Streda B;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4360;Hungary_NBI;2026-08-21;Paks;Ujpest;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4361;Germany_Regionalliga_Nord;2026-08-21;Amburgo 2;Eimsbutteler;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -1934,7 +1934,7 @@
 4584;Germany_Regionalliga_Bayern;2026-08-21;Eltersdorf;Furth 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4585;France_Ligue2;2026-08-21;Pau FC;Nancy;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4586;France_Ligue2;2026-08-21;Boulogne;Red Star;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-4587;Finland_Kolmonen_Eastern_Group1;2026-08-21;Jyväskylän Seudun Palloseura;SaPa;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+4587;Finland_Kolmonen_Eastern_Group1;2026-08-21;SAPA;SAPA;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4588;Germany_Oberliga_Bremen;2026-08-22;BTS Neustadt;Vatan Bremen;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4589;CzechRepublic_4Liga_GroupC;2026-08-22;Vykan;Slavia HK;IMM-ALTA-4;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4590;Germany_Oberliga_Bremen;2026-08-22;Bremen III;Blumenthaler;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2041,7 +2041,7 @@
 4913;CzechRepublic_4Liga_GroupE;2026-08-22;Nove Sady;Bzenec-Vracov;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4914;CzechRepublic_4Liga_GroupA;2026-08-22;Petrin Plzen;Sobeslav;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4915;Denmark_3rdDivision;2026-08-22;Sundby;Horsholm-Usserod;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-4916;Finland_Ykkonen;2026-08-22;Tampere Utd;Rovaniemi;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+4916;Finland_Ykkonen;2026-08-22;Tampere Utd;Rovaniemi;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4917;Romania_Liga2;2026-08-22;CSM Slatina;Metalul Buzau;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4918;Switzerland_PromotionLeague;2026-08-22;Amical Saint-Prex;YF Juventus;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 4919;Germany_Regionalliga_Sudwest;2026-08-22;Aalen;Eint. Frankfurt 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2202,7 +2202,7 @@
 5097;Poland_IIILiga_Group1;2026-08-23;Pelikan;Troszyn;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5111;Bulgaria_ParvaLiga;2026-08-23;Lok. Sofia;CSKA Sofia;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5180;USA_USLChampionship;2026-08-23;Charleston;Miami FC;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5225;USA_USLChampionship;2026-08-23;Birmingham;Sporting Jax;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5225;USA_USLChampionship;2026-08-23;Birmingham Legion;Sporting Jax;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5226;Austria_Regionalliga_West;2026-08-23;Tirol (Am);Wolfurt;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5227;Poland_Division1;2026-08-23;Puszcza;Skierniewice;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5228;Sweden_Allsvenskan;2026-08-23;Hammarby;GAIS;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2481,7 +2481,7 @@
 5689;Germany_Oberliga_Niedersachsen;2026-08-28;Wilhelmshaven;Spelle-Venhaus;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5690;Bulgaria_ParvaLiga;2026-08-28;Slavia Sofia;Septemvri Sofia;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5691;Austria_Tirol;2026-08-28;Kolsass Weer;SC Mils 05;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5692;Finland_Kolmonen_Eastern_Group1;2026-08-28;KeuPa;Jyväskylän Seudun Palloseura;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5692;Finland_Kolmonen_Eastern_Group1;2026-08-28;KeuPa;SAPA;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5693;Austria_Burgenland;2026-08-28;Edelserpentin;Lackenbach;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5694;France_Ligue2;2026-08-28;Rodez;Pau FC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5695;Moldova_Liga1_GroupB;2026-08-28;Victoria;National Ialoveni;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2496,15 +2496,15 @@
 5704;Turkey_1Lig;2026-08-28;Muglaspor;Boluspor;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5705;France_Ligue2;2026-08-28;Montpellier;Boulogne;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5706;Norway_3rdDivision_Group1;2026-08-29;Asker;Frigg;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5707;Australia_NSWLeagueOne;2026-08-29;Northbridge FC Bulls;Blacktown Spartans;IMM-ALTA-31;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5707;Australia_NSWLeagueOne;2026-08-29;Bulls Academy;Blacktown Spartans;IMM-ALTA-31;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5709;Sweden_Division2_VastraGotaland;2026-08-29;Onsala BK;Dalstorps IF;IMM-ALTA-20;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5711;Iceland_Division_2;2026-08-29;UMF Selfoss;Magni;IMM-ALTA-19;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5711;Iceland_Division_2;2026-08-29;Selfoss;Magni;IMM-ALTA-19;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5719;Germany_Oberliga_NOFV_Sud;2026-08-29;Plauen;Einheit Wernigerode;IMM-ALTA-4;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5721;Australia_NSWLeagueOne;2026-08-29;Newcastle Jets Youth;Bankstown City Lions;IMM-ALTA-30;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5721;Australia_NSWLeagueOne;2026-08-29;Newcastle Jets U23;Bankstown City Lions;IMM-ALTA-30;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5725;Iceland_Division_1;2026-08-29;Leiknir Reykjavik;Njardvik;IMM-ALTA-21;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5726;Australia_NSWLeagueOne;2026-08-29;Mt Druitt Town Rangers;Northern Tigers;IMM-ALTA-30;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5732;Norway_2ndDivision_Group2;2026-08-29;Eidsvold TF;Grorud;IMM-ALTA-16;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5736;Norway_3rdDivision_Group1;2026-08-29;Heming;Vaalerenga IF 2;IMM-ALTA-17;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5736;Norway_3rdDivision_Group1;2026-08-29;Heming;Vaalerenga IF 2;IMM-ALTA-17;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5740;Norway_3rdDivision_Group6;2026-08-29;Raelingen;Oppsal;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5742;Norway_3rdDivision_Group3;2026-08-29;Askoy;Gneist;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5760;USA_USLChampionship;2026-08-29;Brooklyn;Sporting Jax;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2514,15 +2514,15 @@
 5765;Belarus_VysshayaLiga;2026-08-29;Dnepr Mogilev;Isloch;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5766;Australia_NPLVictoria;2026-08-29;Caroline Springs George Cross;South Melbourne;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5767;France_Ligue2;2026-08-29;Guingamp;Nantes;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5768;Germany_Oberliga_SchleswigHolstein;2026-08-29;Nordmark Satrup;Holstein Kiel 2;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5768;Germany_Oberliga_SchleswigHolstein;2026-08-29;Nordmark Satrup;Kiel 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5769;France_National;2026-08-29;Amiens;Versailles;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5770;Germany_Regionalliga_Bayern;2026-08-29;Augsburg 2;SC Eltersdorf;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5770;Germany_Regionalliga_Bayern;2026-08-29;Augsburg 2;Eltersdorf;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5771;Bulgaria_ParvaLiga;2026-08-29;CSKA 1948 Sofia;Lokomotiv Plovdiv;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5772;Norway_3rdDivision_Group1;2026-08-29;Lokomotiv Oslo FK;Ullern;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5773;Norway_3rdDivision_Group5;2026-08-29;Harstad;Floeya;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5773;Norway_3rdDivision_Group5;2026-08-29;Harstad;Floeya;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5774;Australia_NPLVictoria;2026-08-29;Avondale FC;Hume City FC;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5775;Iceland_Division_2;2026-08-29;Kormakur/Hvoet;KFA;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5776;Norway_3rdDivision_Group5;2026-08-29;Skjetten;Skjervoey;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5775;Iceland_Division_2;2026-08-29;Kormakur/Hvot;KFA;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5776;Norway_3rdDivision_Group5;2026-08-29;Skjetten;Skjervoey;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5777;Australia_NPLVictoria;2026-08-29;Oakleigh Cannons;Dandenong City;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5778;Norway_3rdDivision_Group3;2026-08-29;FK Fyllingsdalen;Austevoll;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5779;Bulgaria_ParvaLiga;2026-08-29;Slavia Sofia;Septemvri Sofia;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2531,55 +2531,55 @@
 5782;Hungary_NBI;2026-08-29;Ujpest;Vasas Budapest;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5783;Norway_2ndDivision_Group1;2026-08-29;Jerv;Pors Football;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5784;Norway_3rdDivision_Group6;2026-08-29;Elverum;Lillehammer FK;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5785;Norway_3rdDivision_Group3;2026-08-29;Foerde;Stord;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5785;Norway_3rdDivision_Group3;2026-08-29;Foerde;Stord;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5786;Hungary_NBI;2026-08-29;Budapest Honved;Zalaegerszeg;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5787;France_National;2026-08-29;Valenciennes;Concarneau;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5788;Norway_3rdDivision_Group1;2026-08-29;IF Ready Football;Gamle Oslo;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5789;Sweden_Division2_Norrland;2026-08-29;Friska Viljor;Team TG FF;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5790;Norway_3rdDivision_Group1;2026-08-29;Konnerud;Baerum;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5790;Norway_3rdDivision_Group1;2026-08-29;Konnerud;Baerum;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5791;Bulgaria_ParvaLiga;2026-08-29;Arda Kardzhali;Botev Vratsa;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5792;Iceland_Division_2;2026-08-29;Vikingur Olafsvik;Haukar;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5792;Iceland_Division_2;2026-08-29;Olafsvik;Haukar;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5793;Iceland_Division_1;2026-08-29;Grindavik;HK Kopavogs;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5794;USA_MLS;2026-08-29;Atlanta United;Charlotte;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5795;USA_USLLeagueOne;2026-08-29;Portland Hearts of Pine;Fort Wayne FC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5796;Germany_Regionalliga_Nordost;2026-08-29;RW Erfurt;BFC Preussen;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5796;Germany_Regionalliga_Nordost;2026-08-29;Erfurt;BFC Preussen;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5797;USA_MLS;2026-08-29;Toronto FC;New York City FC;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5798;Sweden_Division2_NorraGotaland;2026-08-29;Ahlafors IF;IFK Kumla;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5799;Hungary_NBII;2026-08-29;Kecskemeti TE;Kozarmisleny;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5800;Norway_2ndDivision_Group1;2026-08-29;Bjarg;Mjoendalen;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5801;Germany_Regionalliga_Bayern;2026-08-29;Burghausen;DJK Vilzing;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5802;Germany_Regionalliga_Nordost;2026-08-29;FSV Zwickau;Babelsberg;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5799;Hungary_NBII;2026-08-29;Kecskemeti;Kozarmisleny;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5800;Norway_2ndDivision_Group1;2026-08-29;Bjarg;Mjoendalen;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5801;Germany_Regionalliga_Bayern;2026-08-29;Burghausen;Vilzing;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5802;Germany_Regionalliga_Nordost;2026-08-29;Zwickau;Babelsberg;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5803;Sweden_Division2_SodraGotaland;2026-08-29;IFK Karlshamn;Nosaby IF;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5804;USA_MLS;2026-08-29;Inter Miami CF;CF Montreal;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5805;Norway_2ndDivision_Group2;2026-08-29;Tromsdalen;Kjelsaas;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5805;Norway_2ndDivision_Group2;2026-08-29;Tromsdalen;Kjelsaas;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5806;Turkey_1Lig;2026-08-29;Batman Petrolspor;Sivasspor;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5807;Belarus_VysshayaLiga;2026-08-29;BATE Borisov;FC Minsk;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5808;Finland_Kolmonen_Eastern_Group1;2026-08-29;SaPa;Komeetat;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5809;Germany_Oberliga_Bayern_Sud;2026-08-29;Gundelfingen;TSV Kottern;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5810;Germany_Oberliga_Bayern_Sud;2026-08-29;Pfaffenhofen;TSV Schwabmuenchen;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5808;Finland_Kolmonen_Eastern_Group1;2026-08-29;SAPA;Komeetat;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5809;Germany_Oberliga_Bayern_Sud;2026-08-29;Gundelfingen;Kottern-St. Mang;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5810;Germany_Oberliga_Bayern_Sud;2026-08-29;Pfaffenhofen;Schwabmunchen;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5811;USA_MLS;2026-08-29;Seattle Sounders FC;Chicago Fire;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5812;France_Ligue2;2026-08-29;Red Star;Reims;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5813;Norway_3rdDivision_Group2;2026-08-29;NTNUI;Herd;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5814;Belarus_VysshayaLiga;2026-08-29;Arsenal Dzerzhinsk;Torpedo Zhodino;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5815;Belgium_JupilerProLeague;2026-08-29;Raal La Louviere;KV Mechelen;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5816;Finland_Ykkonen;2026-08-29;RoPS;VJS;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5817;Germany_Regionalliga_Nord;2026-08-29;SC Weiche Flensburg;Delmenhorst;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5817;Germany_Regionalliga_Nord;2026-08-29;SC Weiche-08;Delmenhorst;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5818;Bulgaria_ParvaLiga;2026-08-29;Spartak Varna;Ludogorets Razgrad;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5819;Belarus_VysshayaLiga;2026-08-29;Neman Grodno;Slavia Mozyr;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5820;Germany_Regionalliga_Bayern;2026-08-29;FC Memmingen;Unterhaching;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5820;Germany_Regionalliga_Bayern;2026-08-29;Memmingen;Unterhaching;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5821;Bulgaria_ParvaLiga;2026-08-29;Botev Plovdiv;Levski Sofia;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5822;USA_USLLeagueOne;2026-08-29;Richmond Kickers;Forward Madison FC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5823;USA_USLLeagueOne;2026-08-29;Chattanooga Red Wolves SC;Boise;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5824;Germany_Oberliga_Hessen;2026-08-29;FC Giessen;VfB Marburg;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5825;Estonia_Esiliiga;2026-08-29;Tartu JK Welco;Viimsi JK;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5824;Germany_Oberliga_Hessen;2026-08-29;Giessen;VfB Marburg;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5825;Estonia_Esiliiga;2026-08-29;Tartu Welco;Viimsi JK;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5826;Bulgaria_ParvaLiga;2026-08-29;Dunav Ruse;PFC Lokomotiv Sofia 1929;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5827;Hungary_NBII;2026-08-29;Mezokovesd SE;Gyirmot;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5827;Hungary_NBII;2026-08-29;Mezokovesd;Gyirmot;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5828;Kazakhstan_PremierLeague;2026-08-29;Zhenis;Altai Semey;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5829;USA_USLChampionship;2026-08-29;Hartford Athletic;Birmingham Legion;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5829;USA_USLChampionship;2026-08-29;Hartford Athletic;Birmingham Legion;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5830;Kazakhstan_PremierLeague;2026-08-29;Ulytau;Zhetysu Taldykorgan;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5831;Germany_Regionalliga_Nord;2026-08-29;VfB Lubeck;SV Drochtersen/Assel;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5831;Germany_Regionalliga_Nord;2026-08-29;VfB Lubeck;Drochtersen/Assel;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5832;Belarus_VysshayaLiga;2026-08-29;Gomel;Belshina Bobruisk;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-5833;Australia_NSWLeagueOne;2026-08-29;Canterbury Bankstown FC;Macarthur Rams;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+5833;Australia_NSWLeagueOne;2026-08-29;Canterbury Bankstown;Macarthur Rams;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5834;Turkey_1Lig;2026-08-29;Kayserispor;Bursaspor;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5835;Finland_Ykkosliiga;2026-08-29;EIF;JIPPO;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 5836;Norway_3rdDivision_Group3;2026-08-29;Vard Haugesund;Os;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2714,7 +2714,7 @@
 6184;Romania_Superliga;2026-08-30;FCSB;UTA Arad;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6185;USA_USLChampionship;2026-08-30;Phoenix Rising;Indy Eleven;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6186;Portugal_LigaPortugal2;2026-08-30;Sporting B;Farense;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6187;USA_USLChampionship;2026-08-30;Hartford Athletic;Birmingham;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6187;USA_USLChampionship;2026-08-30;Hartford Athletic;Birmingham Legion;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6188;Serbia_SuperLiga;2026-08-30;Zemun;Stella Rossa;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6189;CzechRepublic_4Liga_GroupD;2026-08-30;Zdar nad Sazavou;Velka Bites;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6190;Austria_Bundesliga;2026-08-30;Hartberg;Ried;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2831,15 +2831,12 @@
 6363;NorthMacedonia_1MFL;2026-08-31;Tikves;Vardar;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6364;SriLanka_SuperLeague;2026-08-31;Sea Hawks;Colombo;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6365;Paraguay_DivisionIntermedia;2026-08-31;Paraguari AC;Resistencia;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6366;Finland_Kolmonen_Southern_Group2;2026-08-31;TiPS;Töölön Taisto;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6368;Armenia_FirstLeague;2026-09-01;Noah 2;Andranik;IMM-ALTA-7;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6369;Finland_Kolmonen_Western_Group2;2026-09-01;FC Haka j.;Ylöjärvi Utd.;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6370;Armenia_FirstLeague;2026-09-01;BKMA 2;Bentonit;IMM-ALTA-7;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6374;England_Championship;2026-09-01;Stoke;Norwich;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6375;England_Championship;2026-09-01;Portsmouth;Derby;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6376;Austria_Regionalliga_South;2026-09-01;Lafnitz;Kalsdorf;IMM-ALTA-5;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6377;Germany_Regionalliga_West;2026-09-01;Oberhausen;Westfalia Rhynern;IMM-ALTA-9;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6378;Finland_Kolmonen_Western_Group3;2026-09-01;KPV/Akatemia;Sp. Kristina;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6401;Armenia_FirstLeague;2026-09-01;Ararat-Armenia 2;Mika;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6402;Austria_Regionalliga_East;2026-09-01;Horn;Parndorf;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6403;Turkey_1Lig;2026-09-01;Bandirmaspor;Antalyaspor;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2860,13 +2857,11 @@
 6418;Turkey_1Lig;2026-09-01;Umraniyespor;Muglaspor;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6419;Switzerland_ChallengeLeague;2026-09-01;Lausanne Ouchy;Etoile-Carouge;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6421;Armenia_FirstLeague;2026-09-01;Noah 2;Andranik;IMM-ALTA-7;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6422;Finland_Kolmonen_Western_Group2;2026-09-01;FC Haka j.;Ylöjärvi Utd.;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6423;Armenia_FirstLeague;2026-09-01;BKMA 2;Bentonit;IMM-ALTA-7;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6427;England_Championship;2026-09-01;Stoke;Norwich;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6428;Austria_Regionalliga_South;2026-09-01;Lafnitz;Kalsdorf;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6429;England_Championship;2026-09-01;Portsmouth;Derby;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6430;Germany_Regionalliga_West;2026-09-01;Oberhausen;Westfalia Rhynern;IMM-ALTA-9;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6431;Finland_Kolmonen_Western_Group3;2026-09-01;KPV/Akatemia;Sp. Kristina;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6455;Armenia_FirstLeague;2026-09-01;Ararat-Armenia 2;Mika;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6456;Austria_Oberosterreich;2026-09-01;Weisskirchen;Friedburg;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6457;Turkey_1Lig;2026-09-01;Bandirmaspor;Antalyaspor;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2887,7 +2882,6 @@
 6472;Switzerland_ChallengeLeague;2026-09-01;Lausanne Ouchy;Etoile-Carouge;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6473;Switzerland_SuperLeague;2026-09-02;Grasshoppers;St. Gallen;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6479;England_LeagueOne;2026-09-02;Luton;Stockport;IMM-ALTA-4;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6480;Finland_Kolmonen_Western_Group2;2026-09-02;TPV/2;Fish United;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6481;England_Championship;2026-09-02;Burnley;Middlesbrough;IMM-ALTA-5;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6483;Germany_Regionalliga_West;2026-09-02;Wiedenbruck;Monchengladbach 2;IMM-ALTA-9;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6484;Japan_J1League;2026-09-02;Avispa Fukuoka;Urawa;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -2943,13 +2937,13 @@
 6599;Finland_Kolmonen_Eastern_Group3;2026-09-03;LAUTP 2;Mikkelin Palloilijat 2;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6600;Turkey_1Lig;2026-09-03;Igdir FK;Manisa FK;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6601;Bulgaria_VtoraLiga;2026-09-03;Lok. Gorna;Dobrudzha;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6602;Finland_Kolmonen_North;2026-09-03;RoPo;FC Santa Claus;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6603;Finland_Kolmonen_Southern_Group3;2026-09-03;TuPS;FC Lahti/69;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6602;Finland_Kolmonen_North;2026-09-03;RoPo;Santa Claus;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6603;Finland_Kolmonen_Southern_Group3;2026-09-03;TuPS;Lahti/69;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6604;SaudiArabia_ProfessionalLeague;2026-09-03;Neom SC;Al Khaleej;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6605;Finland_Kolmonen_North;2026-09-03;Ajax Sarkkiranta;Hercules 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6605;Finland_Kolmonen_North;2026-09-03;Ajax Sarkkiranta;Hercules-j;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6606;Montenegro_PrvaCrnogorskaLiga;2026-09-03;Mornar;Bokelj;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6607;Turkey_1Lig;2026-09-03;Bodrumspor;Erokspor;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6608;Finland_Kolmonen_Southern_Group2;2026-09-04;TiPS Vantaa;HPS/2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6608;Finland_Kolmonen_Southern_Group2;2026-09-04;TiPS;HPS/2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6609;Austria_Tirol;2026-09-04;SC Kundl;Ebbs;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6610;Austria_Salzburg;2026-09-04;Puch;Seekirchen U21;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6611;Netherlands_EersteDivisie;2026-09-04;Heracles;De Graafschap;IMM-ALTA-8;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -3155,18 +3149,18 @@
 6811;Poland_IIILiga_Group4;2026-09-04;Kolbuszowa Dolna;Star Starachowice;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6812;Paraguay_DivisionIntermedia;2026-09-04;Sp. Carapegua;Paraguari AC;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6813;Belarus_VysshayaLiga;2026-09-04;Slavia Mozyr;Vitebsk;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6814;Finland_Kolmonen_Western_Group3;2026-09-04;FC Kiisto;Sporting Kristina;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6815;Finland_Kolmonen_Western_Group2;2026-09-04;Nokian Palloseura;FC LeKi;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6814;Finland_Kolmonen_Western_Group3;2026-09-04;Kiisto;Sp. Kristina;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6815;Finland_Kolmonen_Western_Group2;2026-09-04;NoPS;FC LeKi;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6816;Germany_Regionalliga_Bayern;2026-09-04;Bayern 2;Eichstatt;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6817;Finland_Kolmonen_Eastern_Group1;2026-09-04;FC Blackbird;Savon Pallo;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6818;Finland_Kolmonen_Southern_Group2;2026-09-04;FC Kontu;Töölön Taisto;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6819;Finland_Kolmonen_Eastern_Group2;2026-09-04;Kings SC;Toivalan Urheilijat;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6817;Finland_Kolmonen_Eastern_Group1;2026-09-04;Blackbird;Savon Pallo;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6818;Finland_Kolmonen_Southern_Group2;2026-09-04;Kontu;Töölön Taisto;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6819;Finland_Kolmonen_Eastern_Group2;2026-09-04;Kings;Toivalan Urheilijat;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6820;Finland_Kolmonen_Southern_Group1;2026-09-04;Malmin Palloseura;PPJ/Ruoholahti;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6821;Slovenia_2SNL;2026-09-04;Vrhnika;Rudar;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6822;Finland_Kolmonen_Southern_Group1;2026-09-04;Nummelan Palloseura;EPS Reservi;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6823;Montenegro_PrvaCrnogorskaLiga;2026-09-04;Petrovac;Sutjeska;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6824;Austria_Niederosterreich;2026-09-04;Ortmann;Korneuburg;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6825;Finland_Kolmonen_Eastern_Group1;2026-09-04;Jyväskylän Seudun Palloseura;Jyväskylän Komeetat;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6825;Finland_Kolmonen_Eastern_Group1;2026-09-04;SAPA;Jyväskylän Komeetat;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6826;Finland_Kolmonen_Eastern_Group1;2026-09-04;Keuruun Pallo;FC Metso;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6827;Belgium_ChallengerProLeague;2026-09-04;Dender;Seraing;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6828;Ukraine_PremierLeague;2026-09-04;Ch. Odesa;Livyi Bereg;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -3178,10 +3172,10 @@
 6834;France_Ligue2;2026-09-04;Pau FC;Sochaux;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6835;Peru_Liga2;2026-09-04;Sport Huancayo 2;Binacional;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6836;Azerbaijan_PremierLeague;2026-09-04;Gabala;Imisli FK;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6837;Finland_Kolmonen_Western_Group1;2026-09-04;Åbo CF;Maskun Palloseura;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6838;Finland_Kolmonen_Southern_Group3;2026-09-04;Riihimäen Palloseura;Atlantis FC/Akatemia;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6839;Finland_Kolmonen_Western_Group1;2026-09-04;Littoisten Työväen Urheilijat U20;Kaarinan Pojat;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-6840;Finland_Kolmonen_Western_Group1;2026-09-04;Piikkiön Palloseura;Pargas IF;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6837;Finland_Kolmonen_Western_Group1;2026-09-04;ÅCF;MaPS;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6838;Finland_Kolmonen_Southern_Group3;2026-09-04;RiPS;Atlantis 2;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6839;Finland_Kolmonen_Western_Group1;2026-09-04;LTU U20;KaaPo;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+6840;Finland_Kolmonen_Western_Group1;2026-09-04;PiPS;PIF;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6841;Netherlands_Eredivisie;2026-09-05;Utrecht;G.A. Eagles;IMM-ALTA-8;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6843;Germany_3Liga;2026-09-05;Mannheim;Verl;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 6846;Germany_Regionalliga_Sudwest;2026-09-05;Kickers Stoccarda;Mainz 2;IMM-ALTA-8;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -3294,7 +3288,7 @@
 7155;Romania_Superliga;2026-09-05;UTA Arad;Csikszereda M. Ciuc;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7156;Scotland_Premiership;2026-09-05;Dundee Utd;Falkirk;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7157;Slovenia_PrvaLiga;2026-09-05;Aluminij;Bravo;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7158;Finland_Kolmonen_Southern_Group2;2026-09-05;Laajasalon Palloseura;Puotinkylän Valtti;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7158;Finland_Kolmonen_Southern_Group2;2026-09-05;Laajasalon Palloseura;Valtti;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7159;Montenegro_PrvaCrnogorskaLiga;2026-09-05;Otrant;Buducnost;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7160;Portugal_LigaPortugal2;2026-09-05;Penafiel;Academica;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7161;Russia_FNL;2026-09-05;Leningradets;SKA Khabarovsk;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -3304,15 +3298,15 @@
 7165;Ukraine_PershaLiga;2026-09-05;FC Chernihiv;Nyva Ternopil;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7166;Romania_Liga2;2026-09-05;Selimbar;Metalul Buzau;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7167;Hungary_NBII;2026-09-05;BVSC-Zuglo;Nagykanizsa;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7168;Finland_Kolmonen_North;2026-09-05;Haukiputaan Pallo;Kemin Palloseura;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7168;Finland_Kolmonen_North;2026-09-05;Haukiputaan Pallo;KePS;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7169;Slovenia_PrvaLiga;2026-09-05;O. Ljubljana;Grosuplje;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7170;Belarus_VysshayaLiga;2026-09-05;Zhodino;Gomel;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7171;Serbia_SuperLiga;2026-09-05;Mladost;Radnicki Nis;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7172;Finland_Kolmonen_Eastern_Group3;2026-09-05;Kumu;Kouvolan Jalkapallo;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7172;Finland_Kolmonen_Eastern_Group3;2026-09-05;Kumu;KJP;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7173;Portugal_LigaPortugal2;2026-09-05;Tondela;FC Porto B;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7174;Peru_Liga2;2026-09-05;Cesar Vallejo;ADA Jaen;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7175;Finland_Kolmonen_Western_Group3;2026-09-05;Lapuan Virkiä;Sundom IF;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7176;Finland_Kolmonen_Western_Group2;2026-09-05;Sääksjärven Loiske;Tampereen Peli-Toverit;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7175;Finland_Kolmonen_Western_Group3;2026-09-05;Virkiä;Sundom IF;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7176;Finland_Kolmonen_Western_Group2;2026-09-05;Sääksjärven Loiske;TP-T;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7177;Germany_2Bundesliga;2026-09-05;Dresda;Bochum;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7178;Ukraine_PremierLeague;2026-09-05;FC Kharkiv;Obolon;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7179;Finland_Kolmonen_Eastern_Group2;2026-09-05;Niemisen Urheilijat;Ylämyllyn Yllätys;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -3323,7 +3317,7 @@
 7184;Romania_Superliga;2026-09-05;Botosani;Sepsi Sf. Gheorghe;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7185;Portugal_LigaPortugal2;2026-09-05;Feirense;Sporting B;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7186;Montenegro_PrvaCrnogorskaLiga;2026-09-05;Jezero;Arsenal Tivat;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7187;Finland_Kolmonen_Western_Group1;2026-09-05;IFK Mariehamn 2;Jyrkkälän Tykit;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7187;Finland_Kolmonen_Western_Group1;2026-09-05;IFK 2;JyTy;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7188;CzechRepublic_4Liga_GroupB;2026-09-06;Hostoun;Brandys n. Labem;IMM-ALTA-7;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7189;Germany_2Bundesliga;2026-09-06;Furth;Heidenheim;IMM-ALTA-6;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7190;Germany_Oberliga_Westfalen;2026-09-06;Eintracht Rheine;ASC 09 Dortmund;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -3394,7 +3388,7 @@
 7441;Mexico_LigaExpansionMX_Apertura;2026-09-06;Piratas;Correcaminos;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7442;Netherlands_EersteDivisie;2026-09-06;Maastricht;Roda;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7443;CzechRepublic_3MSFL;2026-09-06;Sigma Olomouc B;Artis Brno B;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7444;USA_USLChampionship;2026-09-06;Indy Eleven;Birmingham;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7444;USA_USLChampionship;2026-09-06;Indy Eleven;Birmingham Legion;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7445;Italy_SerieC_GironeB;2026-09-06;Grosseto;Torres;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7446;Bulgaria_ParvaLiga;2026-09-06;Lok. Plovdiv;Cherno More;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7447;Netherlands_Eredivisie;2026-09-06;Heerenveen;Alkmaar;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
@@ -3474,80 +3468,46 @@
 7521;Azerbaijan_PremierLeague;2026-09-06;Turan;Sumqayit;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7522;Italy_SerieC_GironeB;2026-09-06;Perugia;Pineto;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7523;CzechRepublic_3CFL_GroupB;2026-09-06;Caslav;Benatky;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7524;Norway_3rdDivision_Group2;2026-09-07;Molde 2;Aalesund 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7525;Norway_3rdDivision_Group1;2026-09-07;K. Oslo 2;Lokomotiv Oslo;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7526;FaroeIslands_1Deild;2026-09-07;TB Tvoroyri;Vikingur 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7527;Norway_3rdDivision_Group6;2026-09-07;Drobak-Frogn;Lyn 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7528;Armenia_FirstLeague;2026-09-07;Ararat 2;Olympia Yerevan;IMM-ALTA-8;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7529;Norway_3rdDivision_Group2;2026-09-07;FK Kvik;Ranheim 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7530;Norway_3rdDivision_Group3;2026-09-07;Gneist;Åsane 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7531;Netherlands_EersteDivisie;2026-09-07;Jong PSV;Den Bosch;IMM-ALTA-9;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7532;Hungary_NBII;2026-09-07;Videoton;DVTK;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7533;Netherlands_EersteDivisie;2026-09-07;Jong Utrecht;Eindhoven;IMM-ALTA-9;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7534;Armenia_FirstLeague;2026-09-07;Araks Ararat;Noah 2;IMM-ALTA-8;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7535;Norway_3rdDivision_Group6;2026-09-07;Orn;Sarpsborg 08 2;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7536;Armenia_FirstLeague;2026-09-07;Andranik;Pyunik 2;IMM-ALTA-9;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7537;Latvia_NakotnesLiga;2026-09-07;Riga FC 2;Skanste;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7538;Kyrgyzstan_PremierLiga;2026-09-07;Asia Talas;Alga;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7539;Sweden_Allsvenskan;2026-09-07;Malmo FF;AIK Stockholm;ALTA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7528;Armenia_FirstLeague;2026-09-07;Ararat 2;Olympia Yerevan;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7531;Netherlands_EersteDivisie;2026-09-07;Jong PSV;Den Bosch;IMM-ALTA-9;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7533;Netherlands_EersteDivisie;2026-09-07;Jong Utrecht;Eindhoven;IMM-ALTA-9;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7534;Armenia_FirstLeague;2026-09-07;Araks Ararat;Noah 2;IMM-ALTA-8;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7536;Armenia_FirstLeague;2026-09-07;Andranik;Pyunik 2;IMM-ALTA-9;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7540;USA_MLSNextPro_EasternConference_NortheastDivision;2026-09-07;Portland Timbers 2;Vancouver 2;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7541;Spain_LaLiga;2026-09-07;Elche;Real Sociedad;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7542;Italy_SerieC_GironeC;2026-09-07;Picerno;Inter U23;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7543;Mexico_LigaMX_Apertura;2026-09-07;Cruz Azul;Santos Laguna;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7544;Turkey_1Lig;2026-09-07;Manisa FK;Bursaspor;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7545;England_LeagueOne;2026-09-07;Bromley;Wimbledon;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7546;Romania_Superliga;2026-09-07;Univ. Craiova;U. Cluj;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7547;Latvia_Virsliga;2026-09-07;RFS;FK Liepaja;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7548;Mexico_LigaExpansionMX_Apertura;2026-09-07;Tapatio;Leones Negros;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7549;Iceland_BestaDeildKvenna;2026-09-07;Stjarnan D;Vikingur Reykjavik D;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7550;Kyrgyzstan_PremierLiga;2026-09-07;Dordoi Bishkek;Aldier;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7551;Slovakia_2Liga;2026-09-07;Zilina B;S. Bratislava B;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
 7552;Iceland_BestaDeildKvenna;2026-09-07;Throttur D;Breidablik D;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7553;Poland_Ekstraklasa;2026-09-07;Wieczysta Krakow;Zaglebie;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7554;Latvia_Virsliga;2026-09-07;Riga FC;BFC Daugavpils;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7555;Bolivia_DivisionProfesional;2026-09-07;The Strongest;Tomayapo;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7556;SaudiArabia_ProfessionalLeague;2026-09-07;Al Khaleej;Al Riyadh;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7557;SaudiArabia_ProfessionalLeague;2026-09-07;Al-Hilal;Neom SC;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7558;USA_USLLeagueOne;2026-09-07;Portland Hearts of Pine;Westchester SC;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7559;Sweden_Allsvenskan;2026-09-07;Kalmar;Djurgarden;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7560;Sweden_Allsvenskan;2026-09-07;Mjallby;Göteborg;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7561;Kyrgyzstan_PremierLiga;2026-09-07;Asiagoal Bishkek;Kyrgyzaltyn;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7562;Lithuania_ILyga;2026-09-07;Zalgiris 2;Neptunas;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7563;Peru_Liga1_Clausura;2026-09-07;Melgar;AD Tarma;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7564;Poland_Ekstraklasa;2026-09-07;Pogon Szczecin;Plock;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7565;Belarus_VysshayaLiga;2026-09-07;Isloch;Arsenal Dzerzhinsk;MEDIA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7566;NorthMacedonia_1MFL;2026-09-07;Struga;Sileks;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7567;Russia_PremierLeague;2026-09-07;Kazan;Akhmat Grozny;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7568;Bulgaria_VtoraLiga;2026-09-07;Spartak Pleven;Hebar;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7569;Italy_SerieC_GironeA;2026-09-07;Pro Vercelli;Folgore Caratese;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7570;Finland_Ykkosliiga;2026-09-07;Klubi 04;KaPa;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7571;SriLanka_SuperLeague;2026-09-07;New Young's SC;Sea Hawks;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7572;Belarus_VysshayaLiga;2026-09-07;Dynamo Brest;BATE;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7573;Bulgaria_ParvaLiga;2026-09-07;Dunav Ruse;Slavia Sofia;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7574;Sweden_Superettan;2026-09-07;Örebro;Östersund;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7575;Lithuania_Toplyga;2026-09-07;Hegelmann;FK Panevezys;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7576;Spain_LaLiga2;2026-09-07;Sabadell;Cordoba;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7577;Italy_SerieB;2026-09-07;Palermo;Sampdoria;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7578;Serbia_PrvaLiga;2026-09-07;Vozdovac;TSC;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7579;Serbia_SuperLiga;2026-09-07;OFK Belgrado;IMT Novi Beograd;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7580;Turkey_1Lig;2026-09-07;Istanbulspor;Igdir FK;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7581;Turkey_SuperLig;2026-09-07;Goztepe;Gaziantep;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7582;Bolivia_DivisionProfesional;2026-09-07;Nacional Potosi;Blooming;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7583;Portugal_LigaPortugal2;2026-09-07;Lusitania FC;AFS;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7584;Romania_Superliga;2026-09-07;FC Voluntari;FC Arges;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7585;Turkey_SuperLig;2026-09-07;Rizespor;Alanyaspor;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7586;Peru_Liga2;2026-09-07;Pirata;Carlos Mannucci;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7587;Denmark_Superliga;2026-09-07;Midtjylland;Nordsjaelland;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7588;NorthMacedonia_1MFL;2026-09-07;Vardar;Arsimi;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7589;Portugal_LigaPortugal;2026-09-07;Estoril;Arouca;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7590;Bulgaria_VtoraLiga;2026-09-07;Pirin Blagoevgrad;Ludogorets 2;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7591;France_Ligue2;2026-09-07;Nantes;Nancy;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7592;Turkey_1Lig;2026-09-07;Mardin 1969;Bodrumspor;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7593;Bulgaria_VtoraLiga;2026-09-07;Fratria;Chernomorets 1919;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7594;Poland_Division1;2026-09-07;Ruch;Skierniewice;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7595;Bulgaria_VtoraLiga;2026-09-07;Svoge;Lok. Gorna;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7596;Turkey_1Lig;2026-09-07;Erokspor;Kayserispor;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7597;Spain_LaLiga;2026-09-07;Getafe;Celta Vigo;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7598;Finland_Kolmonen_Southern_Group2;2026-09-07;VJS/Akatemia;Toukolan Teräs;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7599;Finland_Kolmonen_Southern_Group2;2026-09-07;VJS 2;Toukolan Teräs;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
-7600;Finland_Kolmonen_Southern_Group2;2026-09-07;VJS 2;Toukolan Teräs;BASSA;;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7566;NorthMacedonia_1MFL;2026-09-07;Struga;Sileks;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7567;Russia_PremierLeague;2026-09-07;Kazan;Akhmat Grozny;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7568;Bulgaria_VtoraLiga;2026-09-07;Spartak Pleven;Hebar;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7569;Italy_SerieC_GironeA;2026-09-07;Pro Vercelli;Folgore Caratese;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7570;Finland_Ykkosliiga;2026-09-07;Klubi 04;KaPa;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7571;SriLanka_SuperLeague;2026-09-07;New Young's SC;Sea Hawks;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7572;Belarus_VysshayaLiga;2026-09-07;Dynamo Brest;BATE;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7573;Bulgaria_ParvaLiga;2026-09-07;Dunav Ruse;Slavia Sofia;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7574;Sweden_Superettan;2026-09-07;Örebro;Östersund;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7575;Lithuania_Toplyga;2026-09-07;Hegelmann;FK Panevezys;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7576;Spain_LaLiga2;2026-09-07;Sabadell;Cordoba;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7577;Italy_SerieB;2026-09-07;Palermo;Sampdoria;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7578;Serbia_PrvaLiga;2026-09-07;Vozdovac;TSC;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7579;Serbia_SuperLiga;2026-09-07;OFK Belgrado;IMT Novi Beograd;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7580;Turkey_1Lig;2026-09-07;Istanbulspor;Igdir FK;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7581;Turkey_SuperLig;2026-09-07;Goztepe;Gaziantep;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7582;Bolivia_DivisionProfesional;2026-09-07;Nacional Potosi;Blooming;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7583;Portugal_LigaPortugal2;2026-09-07;Lusitania FC;AFS;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7584;Romania_Superliga;2026-09-07;FC Voluntari;FC Arges;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7585;Turkey_SuperLig;2026-09-07;Rizespor;Alanyaspor;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7586;Peru_Liga2;2026-09-07;Pirata;Carlos Mannucci;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7587;Denmark_Superliga;2026-09-07;Midtjylland;Nordsjaelland;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7588;NorthMacedonia_1MFL;2026-09-07;Vardar;Arsimi;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7589;Portugal_LigaPortugal;2026-09-07;Estoril;Arouca;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7590;Bulgaria_VtoraLiga;2026-09-07;Pirin Blagoevgrad;Ludogorets 2;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7591;France_Ligue2;2026-09-07;Nantes;Nancy;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7592;Turkey_1Lig;2026-09-07;Mardin 1969;Bodrumspor;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7593;Bulgaria_VtoraLiga;2026-09-07;Fratria;Chernomorets 1919;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7594;Poland_Division1;2026-09-07;Ruch;Skierniewice;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7595;Bulgaria_VtoraLiga;2026-09-07;Svoge;Lok. Gorna;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7596;Turkey_1Lig;2026-09-07;Erokspor;Kayserispor;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7597;Spain_LaLiga;2026-09-07;Getafe;Celta Vigo;BASSA;KO;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7598;Finland_Kolmonen_Southern_Group2;2026-09-07;VJS 2;ToTe;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
+7599;Finland_Kolmonen_Southern_Group2;2026-09-07;VJS 2;ToTe;BASSA;OK;Band o Outcome non riconosciuti/mancanti;analysis\laboratory\data\01_matches.csv
