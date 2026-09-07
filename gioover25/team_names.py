@@ -1,195 +1,126 @@
 from __future__ import annotations
 
+import csv
 import re
 import unicodedata
-
-# Alias espliciti, limitati al LeagueId per evitare collisioni tra campionati.
-# Sia le chiavi sia i valori devono essere scritti nella forma già normalizzata
-# da _basic_normalize().
-TEAM_ALIASES: dict[str, dict[str, str]] = {
-    # Alias verificati confrontando ranking e storico risultati del 29/08/2026.
-    # Il valore è un token interno di confronto: non modifica il nome persistito.
-    "Australia_NSWLeagueOne": {
-        "canterbury bankstown fc": "canterbury bankstown",
-        "newcastle jets youth": "newcastle jets u23",
-        "northbridge fc bulls": "bulls academy",
-    },
-    "Estonia_Esiliiga": {
-        "tartu jk welco": "tartu welco",
-    },
-    "Germany_Oberliga_Bayern_Sud": {
-        "tsv kottern": "kottern st mang",
-        "tsv schwabmuenchen": "schwabmunchen",
-    },
-    "Germany_Oberliga_Hessen": {
-        "fc giessen": "giessen",
-    },
-    "Germany_Oberliga_SchleswigHolstein": {
-        "holstein kiel 2": "kiel 2",
-    },
-    "Germany_Regionalliga_Bayern": {
-        "sc eltersdorf": "eltersdorf",
-        "djk vilzing": "vilzing",
-        "fc memmingen": "memmingen",
-    },
-    "Germany_Regionalliga_Nord": {
-        "sc weiche flensburg": "sc weiche 08",
-        "sv drochtersen assel": "drochtersen assel",
-    },
-    "Germany_Regionalliga_Nordost": {
-        "rw erfurt": "erfurt",
-        "fsv zwickau": "zwickau",
-    },
-    "Hungary_NBII": {
-        "kecskemeti te": "kecskemeti",
-        "mezokovesd se": "mezokovesd",
-    },
-    "Iceland_Division_2": {
-        "kormakur hvoet": "kormakur hvot",
-        "umf selfoss": "selfoss",
-        "vikingur olafsvik": "olafsvik",
-    },
-    "Norway_2ndDivision_Group1": {
-        "mjndalen": "mjoendalen",
-        "mjondalen": "mjoendalen",
-    },
-    "Norway_2ndDivision_Group2": {
-        "kjelsas": "kjelsaas",
-    },
-    "Norway_3rdDivision_Group1": {
-        "valerenga if 2": "vaalerenga if 2",
-        "valerenga 2": "vaalerenga if 2",
-        "brum": "baerum",
-        "baerum sportsklubb": "baerum",
-    },
-    "Norway_3rdDivision_Group3": {
-        "frde": "foerde",
-    },
-    "Norway_3rdDivision_Group5": {
-        "flya": "floeya",
-        "floya": "floeya",
-        "skjervy": "skjervoey",
-    },
-    "USA_USLChampionship": {
-        "birmingham": "birmingham legion",
-    },
-    "Finland_Kolmonen_Southern_Group1": {
-        "sexypoxyt": "poxyt",
-    },
-    "Finland_Kolmonen_Southern_Group2": {
-        "tips vantaa": "tips",
-        "puotinkylan valtti": "valtti",
-        "fc kontu": "kontu",
-        "lps helsinki": "laajasalon palloseura",
-        "vjs vantaa b": "vjs 2",
-        "vjs akatemia": "vjs 2",
-    },
-    "Finland_Kolmonen_Southern_Group3": {
-        "riihimaen palloseura": "rips",
-        "fc futura": "futura",
-        "atlantis fc akatemia": "atlantis 2",
-        "atlantis ii": "atlantis 2",
-        "tips u21": "tips 2 u21",
-        "tuusulan palloseura": "tups",
-        "fc lahti 69": "lahti 69",
-    },
-    "Finland_Kolmonen_Eastern_Group1": {
-        "jyvaskylan seudun palloseura": "sapa",
-        "fc blackbird": "fc jyvaskyla blackbird",
-    },
-    "Finland_Kolmonen_Eastern_Group3": {
-        "kouvolan jalkapallo": "kjp",
-    },
-    "Finland_Kolmonen_Western_Group1": {
-        "piikkion palloseura": "pips",
-        "ifk mariehamn 2": "ifk 2",
-        "maskun palloseura": "maps",
-        "jyrkkalan tykit": "jyty",
-        "littoisten tyovaen urheilijat u20": "ltu u20",
-        "pargas if": "pif",
-        "kaarinan pojat": "kaapo",
-        "abo cf": "acf",
-    },
-    "Finland_Kolmonen_Western_Group2": {
-        "nokian palloseura": "nops",
-        "tampere united 2": "tampere utd 2",
-        "ylojarvi united fc": "ylojarvi utd",
-        "tampereen peli toverit": "tp t",
-        "leki futis": "fc leki",
-        "saaksjarven loiske": "saaksjarven loiske",
-        "fc haka juniors": "fc haka j",
-        "lasten": "fc lasten",
-    },
-    "Finland_Kolmonen_Western_Group3": {
-        "lapuan virkia": "virkia",
-        "fc kiisto": "kiisto",
-        "kiisto vaasa": "kiisto",
-        "vaasa ifk": "vifk",
-        "vaasan pallo veikot": "vpv",
-        "vpv pallo veikot": "vpv",
-        "sif": "sundom if",
-        "sporting kristina": "sp kristina",
-        "ypa ylivieska": "fc ylivieska",
-        "sjk j apollo": "sjk j",
-    },
-    "Finland_Kolmonen_Eastern_Group2": {
-        "kings sc": "kings",
-    },
-    "Finland_Kolmonen_North": {
-        "kajaanin haka": "kajha",
-        "kajaanin palloilijat": "kapa",
-        "kemin palloseura": "keps",
-        "rollon pojat": "ropo",
-        "fc santa claus": "santa claus",
-    },
-}
+from dataclasses import dataclass
+from functools import lru_cache
+from pathlib import Path
 
 
-def canonicalize_team_display_name(value: object) -> str:
-    """Restituisce il nome squadra nella forma canonica persistibile.
+TEAM_NAME_DICTIONARY = (
+    Path(__file__).resolve().parents[1] / "data" / "team_name_dictionary.csv"
+)
 
-    Regole globali GioOver2.5:
-    - il suffisso finale ``II`` (o il carattere unicode ``Ⅱ``) viene sempre
-      convertito in ``2``;
-    - ``EPS/Reservi`` viene persistito come ``EPS Reservi``;
-    - ``SexyPöxyt`` viene persistito come ``Pöxyt``;
-    - ``TiPS Vantaa`` viene persistito come ``TiPS``;
-    - ``VJS/Akatemia`` viene persistito come ``VJS 2``. È la forma canonica
-      necessaria per allineare input, storico e statistiche della
-      Finland_Kolmonen_Southern_Group2;
-    - le sostituzioni avvengono solo su nomi completi noti o sul token finale II.
-    """
 
+@dataclass(frozen=True)
+class TeamNameEntry:
+    canonical_name: str
+    real_name: str
+
+
+def _global_canonicalize(value: object) -> str:
+    """Applica soltanto le convenzioni valide per tutte le leghe."""
     text = " ".join(str(value or "").strip().split())
     if not text:
         return text
 
-    exact_aliases = {
-        "eps/reservi": "EPS Reservi",
-        "sexypöxyt": "Pöxyt",
-        "sexypoxyt": "Pöxyt",
-        "tips vantaa": "TiPS",
-        "vjs/akatemia": "VJS 2",
-    }
-
-    exact = exact_aliases.get(text.casefold())
-    if exact is not None:
-        return exact
-
+    # Convenzione globale GioOver2.5: il suffisso finale II/Ⅱ diventa 2.
     return re.sub(r"(?i)\s+(?:II|Ⅱ)$", " 2", text)
 
 
 def _basic_normalize(value: object) -> str:
-    """Normalizza grafia, maiuscole, accenti e separatori."""
-    text = canonicalize_team_display_name(value).casefold().strip()
+    """Normalizza grafia, maiuscole, accenti e separatori per il confronto."""
+    text = _global_canonicalize(value).casefold().strip()
     text = unicodedata.normalize("NFKD", text)
     text = text.encode("ascii", "ignore").decode("ascii")
     text = re.sub(r"[._/\\'’`-]+", " ", text)
     return " ".join(text.split())
 
 
+@lru_cache(maxsize=1)
+def _load_team_name_dictionary() -> dict[str, dict[str, TeamNameEntry]]:
+    """Carica il dizionario unico alias -> nome canonico per LeagueId."""
+    entries: dict[str, dict[str, TeamNameEntry]] = {}
+
+    if not TEAM_NAME_DICTIONARY.exists():
+        return entries
+
+    with TEAM_NAME_DICTIONARY.open(newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        required = {"LeagueId", "CanonicalName", "RealName", "Aliases"}
+        missing = required - set(reader.fieldnames or [])
+        if missing:
+            raise ValueError(
+                "team_name_dictionary.csv non valido. Mancano le colonne: "
+                + ", ".join(sorted(missing))
+            )
+
+        for line_number, row in enumerate(reader, start=2):
+            league_id = str(row.get("LeagueId", "")).strip()
+            canonical_name = _global_canonicalize(row.get("CanonicalName", ""))
+            real_name = " ".join(str(row.get("RealName", "")).strip().split())
+
+            if not league_id or not canonical_name:
+                raise ValueError(
+                    "team_name_dictionary.csv non valido alla riga "
+                    f"{line_number}: LeagueId e CanonicalName sono obbligatori"
+                )
+
+            entry = TeamNameEntry(
+                canonical_name=canonical_name,
+                real_name=real_name or canonical_name,
+            )
+            league_entries = entries.setdefault(league_id, {})
+            names = [canonical_name, real_name]
+            names.extend(str(row.get("Aliases", "")).split("|"))
+
+            for name in names:
+                key = _basic_normalize(name)
+                if not key:
+                    continue
+
+                previous = league_entries.get(key)
+                if previous is not None and previous != entry:
+                    raise ValueError(
+                        "Alias squadra ambiguo in team_name_dictionary.csv "
+                        f"alla riga {line_number}: {name!r}"
+                    )
+                league_entries[key] = entry
+
+    return entries
+
+
+def canonicalize_team_display_name(
+    value: object,
+    league_id: str | None = None,
+) -> str:
+    """Restituisce il nome canonico da mostrare e persistere.
+
+    Il dizionario è specifico per lega, evitando collisioni tra squadre con
+    nomi simili. Senza una voce nel dizionario restano attive soltanto le
+    regole globali, come la conversione del suffisso ``II`` in ``2``.
+    """
+    text = _global_canonicalize(value)
+    if not text or not league_id:
+        return text
+
+    entry = _load_team_name_dictionary().get(str(league_id).strip(), {}).get(
+        _basic_normalize(text)
+    )
+    return entry.canonical_name if entry is not None else text
+
+
+def get_real_team_name(league_id: str, team_name: object) -> str:
+    """Restituisce il nome reale/esteso registrato nel dizionario."""
+    text = _global_canonicalize(team_name)
+    entry = _load_team_name_dictionary().get(str(league_id).strip(), {}).get(
+        _basic_normalize(text)
+    )
+    return entry.real_name if entry is not None else text
+
+
 def normalize_team_name(league_id: str, team_name: object) -> str:
-    """Restituisce il nome canonico della squadra per la lega indicata."""
-    normalized = _basic_normalize(team_name)
-    aliases = TEAM_ALIASES.get(str(league_id or "").strip(), {})
-    return aliases.get(normalized, normalized)
+    """Restituisce il token interno di confronto della squadra."""
+    canonical_name = canonicalize_team_display_name(team_name, league_id)
+    return _basic_normalize(canonical_name)

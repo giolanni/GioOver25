@@ -1,6 +1,19 @@
 from gioover25.history import read_results_file
 
 
+def test_read_results_uses_league_team_dictionary(tmp_path):
+    results_file = tmp_path / "Finland_Kolmonen_Southern_Group2.csv"
+    results_file.write_text(
+        "Country;League;Round;MatchDate;Home;Away;HG;AG;Notes\n"
+        "Finland;Kolmonen Southern Group 2;1;2026-04-23;Atlantis 2;VJS/2;3;6;\n",
+        encoding="utf-8",
+    )
+
+    matches = read_results_file(results_file)
+
+    assert matches[0].away == "VJS 2"
+
+
 def test_read_results_file():
     path = "data/storico/risultati/Norway_3rdDivision_Group1_2026.csv"
 

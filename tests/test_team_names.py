@@ -1,6 +1,10 @@
 import pytest
 
-from gioover25.team_names import canonicalize_team_display_name, normalize_team_name
+from gioover25.team_names import (
+    canonicalize_team_display_name,
+    get_real_team_name,
+    normalize_team_name,
+)
 
 
 @pytest.mark.parametrize(
@@ -54,3 +58,21 @@ def test_aliases_are_scoped_to_league():
 
 def test_reserve_suffix_ii_is_still_canonicalized_to_2():
     assert canonicalize_team_display_name("Holstein Kiel II") == "Holstein Kiel 2"
+
+
+@pytest.mark.parametrize(
+    "source_name",
+    ["VJS/Akatemia", "VJS/2", "VJS Vantaa B", "VJS Akatemia", "VJS 2"],
+)
+def test_vjs_aliases_share_one_canonical_display_name(source_name):
+    assert canonicalize_team_display_name(
+        source_name,
+        "Finland_Kolmonen_Southern_Group2",
+    ) == "VJS 2"
+
+
+def test_real_name_is_available_from_dictionary():
+    assert get_real_team_name(
+        "Finland_Kolmonen_Southern_Group2",
+        "VJS/2",
+    ) == "VJS/Akatemia"

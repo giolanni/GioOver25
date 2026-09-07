@@ -26,16 +26,6 @@ class MatchResult:
         self.home = canonicalize_team_display_name(self.home)
         self.away = canonicalize_team_display_name(self.away)
 
-        # VJS/2 è la forma storica ancora presente in alcuni CSV del
-        # Finland_Kolmonen_Southern_Group2. VJS/Akatemia viene invece già
-        # canonicalizzata in input a VJS 2. Le due forme devono quindi
-        # coincidere anche nei MatchResult, altrimenti statistics.py usa il
-        # confronto letterale e perde tutto lo storico della squadra.
-        if self.home.casefold() == "vjs/2":
-            self.home = "VJS 2"
-        if self.away.casefold() == "vjs/2":
-            self.away = "VJS 2"
-
     @property
     def result(self) -> str:
         if self.home_goals > self.away_goals:
@@ -116,8 +106,12 @@ def read_results_file(path: str | Path) -> list[MatchResult]:
                     league=row["League"].strip(),
                     round=_parse_round(row.get("Round")),
                     date=row[date_column].strip(),
-                    home=row["Home"].strip(),
-                    away=row["Away"].strip(),
+                    home=canonicalize_team_display_name(
+                        row["Home"], results_path.stem
+                    ),
+                    away=canonicalize_team_display_name(
+                        row["Away"], results_path.stem
+                    ),
                     home_goals=_int(row["HG"]),
                     away_goals=_int(row["AG"]),
                     notes=row.get("Notes", "").strip(),
@@ -130,6 +124,7 @@ def read_results_file(path: str | Path) -> list[MatchResult]:
 def write_results_file(matches: list[MatchResult], path: str | Path) -> None:
     results_path = Path(path)
     results_path.parent.mkdir(parents=True, exist_ok=True)
+    league_id = results_path.stem
 
     fieldnames = [
         "Country",
@@ -154,8 +149,8 @@ def write_results_file(matches: list[MatchResult], path: str | Path) -> None:
                     "League": match.league,
                     "Round": match.round,
                     "MatchDate": match.date,
-                    "Home": canonicalize_team_display_name(match.home),
-                    "Away": canonicalize_team_display_name(match.away),
+                    "Home": canonicalize_team_display_name(match.home, league_id),
+                    "Away": canonicalize_team_display_name(match.away, league_id),
                     "HG": match.home_goals,
                     "AG": match.away_goals,
                     "Notes": match.notes,

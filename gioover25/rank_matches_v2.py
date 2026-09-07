@@ -552,8 +552,12 @@ def read_matches_to_rank(path: str | Path) -> list[dict]:
     for row in reader:
         row["LeagueId"] = str(row.get("LeagueId", "")).strip()
         row["MatchDate"] = str(row.get("MatchDate", "")).strip()
-        row["Home"] = canonicalize_team_display_name(row.get("Home", ""))
-        row["Away"] = canonicalize_team_display_name(row.get("Away", ""))
+        row["Home"] = canonicalize_team_display_name(
+            row.get("Home", ""), row["LeagueId"]
+        )
+        row["Away"] = canonicalize_team_display_name(
+            row.get("Away", ""), row["LeagueId"]
+        )
 
         key = (
             row["LeagueId"],
@@ -593,8 +597,8 @@ def build_output_row(
     return {
         "MatchDate": match_date,
         "LeagueId": league_id,
-        "Home": canonicalize_team_display_name(home),
-        "Away": canonicalize_team_display_name(away),
+        "Home": canonicalize_team_display_name(home, league_id),
+        "Away": canonicalize_team_display_name(away, league_id),
         "Score": score_value(score, "score"),
         "Band": (
             band_override
@@ -689,8 +693,8 @@ def rank_matches(
         league_id = row["LeagueId"].strip()
         match_date_text = row["MatchDate"].strip()
         match_date_value = _parse_date(match_date_text)
-        home = canonicalize_team_display_name(row["Home"])
-        away = canonicalize_team_display_name(row["Away"])
+        home = canonicalize_team_display_name(row["Home"], league_id)
+        away = canonicalize_team_display_name(row["Away"], league_id)
 
         league_info = get_league_info(league_id)
         competition_group = get_competition_group(league_id, registry_rows)
