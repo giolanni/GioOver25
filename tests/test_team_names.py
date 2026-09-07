@@ -84,3 +84,14 @@ def test_peka_aliases_share_one_canonical_display_name(source_name):
         source_name,
         "Finland_Kolmonen_Eastern_Group3",
     ) == "PeKa"
+
+
+@pytest.mark.parametrize(
+    "source_name",
+    ["Hercules-j", "Hercules 2", "Hercules II", "JS Hercules II", "Hercules-J"],
+)
+def test_hercules_reserve_aliases_share_one_canonical_display_name(source_name):
+    assert canonicalize_team_display_name(
+        source_name,
+        "Finland_Kolmonen_North",
+    ) == "Hercules-j"
