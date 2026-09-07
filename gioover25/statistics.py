@@ -34,18 +34,18 @@ class StatsSummary:
         return self.over25 / self.played if self.played else 0.0
 
 
-def _team_key(league_id: str, team: object) -> str:
-    return normalize_team_name(league_id, team)
+def _match_team_key(match: MatchResult, team: object, league_id: str | None = None) -> str:
+    effective_league = league_id or getattr(match, "league", "")
+    return normalize_team_name(effective_league, team)
 
 
 def summarize_team_matches(matches: list[MatchResult], team: str, league_id: str | None = None) -> StatsSummary:
     summary = StatsSummary()
-    target_key = _team_key(league_id or "", team)
 
     for match in matches:
-        match_league = league_id or getattr(match, "league", "")
-        home_key = _team_key(match_league, match.home)
-        away_key = _team_key(match_league, match.away)
+        target_key = _match_team_key(match, team, league_id)
+        home_key = _match_team_key(match, match.home, league_id)
+        away_key = _match_team_key(match, match.away, league_id)
         is_home = home_key == target_key
         is_away = away_key == target_key
 
@@ -82,13 +82,12 @@ def summarize_team_matches(matches: list[MatchResult], team: str, league_id: str
 
 
 def team_matches_before_round(matches: list[MatchResult], team: str, round_number: int, league_id: str | None = None) -> list[MatchResult]:
-    target_key = _team_key(league_id or "", team)
     return [
         match for match in matches
         if match.round < round_number
         and (
-            _team_key(league_id or getattr(match, "league", ""), match.home) == target_key
-            or _team_key(league_id or getattr(match, "league", ""), match.away) == target_key
+            _match_team_key(match, match.home, league_id) == _match_team_key(match, team, league_id)
+            or _match_team_key(match, match.away, league_id) == _match_team_key(match, team, league_id)
         )
     ]
 
@@ -100,18 +99,16 @@ def last_matches(matches: list[MatchResult], team: str, n: int, league_id: str |
 
 
 def home_matches(matches: list[MatchResult], team: str, league_id: str | None = None) -> list[MatchResult]:
-    target_key = _team_key(league_id or "", team)
     return [
         match for match in matches
-        if _team_key(league_id or getattr(match, "league", ""), match.home) == target_key
+        if _match_team_key(match, match.home, league_id) == _match_team_key(match, team, league_id)
     ]
 
 
 def away_matches(matches: list[MatchResult], team: str, league_id: str | None = None) -> list[MatchResult]:
-    target_key = _team_key(league_id or "", team)
     return [
         match for match in matches
-        if _team_key(league_id or getattr(match, "league", ""), match.away) == target_key
+        if _match_team_key(match, match.away, league_id) == _match_team_key(match, team, league_id)
     ]
 
 
@@ -133,12 +130,11 @@ def get_team_statistics(
     elif venue == "away":
         filtered = away_matches(filtered, team, league_id=league_id)
     else:
-        target_key = _team_key(league_id or "", team)
         filtered = [
             match for match in filtered
             if (
-                _team_key(league_id or getattr(match, "league", ""), match.home) == target_key
-                or _team_key(league_id or getattr(match, "league", ""), match.away) == target_key
+                _match_team_key(match, match.home, league_id) == _match_team_key(match, team, league_id)
+                or _match_team_key(match, match.away, league_id) == _match_team_key(match, team, league_id)
             )
         ]
 
