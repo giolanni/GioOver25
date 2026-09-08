@@ -1,4 +1,11 @@
-from gioover25.rank_matches_v2 import build_output_row, read_matches_to_rank
+from datetime import date
+from types import SimpleNamespace
+
+from gioover25.rank_matches_v2 import (
+    build_output_row,
+    find_team_source_league,
+    read_matches_to_rank,
+)
 
 
 def test_ranking_input_and_output_use_canonical_team_name(tmp_path):
@@ -29,3 +36,22 @@ def test_ranking_input_and_output_use_canonical_team_name(tmp_path):
 
     assert output["Home"] == "VJS 2"
     assert output["Away"] == "ToTe"
+
+
+def test_find_team_source_uses_league_specific_aliases():
+    league_id = "Finland_Kolmonen_Eastern_Group3"
+    histories = {
+        league_id: [
+            SimpleNamespace(
+                date="2026-09-03",
+                home="Kultsu",
+                away="KoPa",
+            )
+        ]
+    }
+
+    assert find_team_source_league(
+        "Kultsu FC",
+        histories,
+        date(2026, 9, 8),
+    ) == league_id

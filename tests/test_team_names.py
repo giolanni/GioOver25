@@ -108,3 +108,19 @@ def test_tpv_reserve_aliases_share_one_canonical_display_name(source_name):
 @pytest.mark.parametrize("source_name", ["RoPS", "Rovaniemi", "Rovaniemen Palloseura"])
 def test_rops_aliases_share_one_canonical_display_name(source_name):
     assert canonicalize_team_display_name(source_name, "Finland_Ykkonen") == "RoPS"
+
+
+@pytest.mark.parametrize(
+    ("league_id", "source_name", "canonical_name"),
+    [
+        ("Finland_Kolmonen_Eastern_Group3", "Kultsu FC", "Kultsu"),
+        ("Finland_Kolmonen_Western_Group3", "Nykarleby IK", "NIK"),
+        ("Finland_Kolmonen_Eastern_Group1", "Keuruun Pallo", "KeuPa"),
+        ("Finland_Kolmonen_Eastern_Group2", "Pallo-Kerho 37", "PK-37"),
+        ("Finland_Kolmonen_Southern_Group1", "Leppävaaran Pallo", "LePa"),
+    ],
+)
+def test_finland_full_names_resolve_to_historical_names(
+    league_id, source_name, canonical_name
+):
+    assert canonicalize_team_display_name(source_name, league_id) == canonical_name

@@ -29,6 +29,7 @@ Norway_3rdDivision_Group5;Skjervoey;Skjervoey;Skjervy|Skjervøy
 USA_USLChampionship;Birmingham Legion;Birmingham Legion;Birmingham
 Finland_Kolmonen_Southern_Group1;EPS Reservi;EPS/Reservi;EPS/Reservi
 Finland_Kolmonen_Southern_Group1;Pöxyt;SexyPöxyt;SexyPöxyt|SexyPoxyt
+Finland_Kolmonen_Southern_Group1;LePa;Leppävaaran Pallo;Leppävaaran Pallo
 Finland_Kolmonen_Southern_Group2;TiPS;TiPS Vantaa;TiPS Vantaa
 Finland_Kolmonen_Southern_Group2;Valtti;Puotinkylän Valtti;Puotinkylan Valtti
 Finland_Kolmonen_Southern_Group2;Kontu;FC Kontu;FC Kontu
@@ -43,8 +44,11 @@ Finland_Kolmonen_Southern_Group3;TuPS;Tuusulan Palloseura;Tuusulan Palloseura
 Finland_Kolmonen_Southern_Group3;Lahti/69;FC Lahti/69;FC Lahti 69|Lahti 69
 Finland_Kolmonen_Eastern_Group1;SAPA;Jyväskylän Seudun Palloseura;Jyvaskylan Seudun Palloseura|SaPa
 Finland_Kolmonen_Eastern_Group1;Blackbird;FC Jyväskylä Blackbird;FC Blackbird|FC Jyvaskyla Blackbird
+Finland_Kolmonen_Eastern_Group1;KeuPa;Keuruun Pallo;Keuruun Pallo
+Finland_Kolmonen_Eastern_Group2;PK-37;Pallo-Kerho 37;Pallo-Kerho 37
 Finland_Kolmonen_Eastern_Group3;KJP;Kouvolan Jalkapallo;Kouvolan Jalkapallo
 Finland_Kolmonen_Eastern_Group3;PeKa;Peli-Karhut;FC Peli-Karhut|Peli-Karhut
+Finland_Kolmonen_Eastern_Group3;Kultsu;Kultsu FC;Kultsu FC
 Finland_Kolmonen_Western_Group1;PiPS;Piikkiön Palloseura;Piikkion Palloseura
 Finland_Kolmonen_Western_Group1;IFK 2;IFK Mariehamn 2;IFK Mariehamn 2
 Finland_Kolmonen_Western_Group1;MaPS;Maskun Palloseura;Maskun Palloseura
@@ -70,6 +74,7 @@ Finland_Kolmonen_Western_Group3;Sundom IF;Sundom IF;SIF
 Finland_Kolmonen_Western_Group3;Sp. Kristina;Sporting Kristina;Sporting Kristina
 Finland_Kolmonen_Western_Group3;FC Ylivieska;YPA Ylivieska;YPA Ylivieska
 Finland_Kolmonen_Western_Group3;SJK-j;SJK-j Apollo;SJK j Apollo|SJK J
+Finland_Kolmonen_Western_Group3;NIK;Nykarleby IK;Nykarleby IK
 Finland_Kolmonen_Eastern_Group2;Kings;Kings SC;Kings SC
 Finland_Kolmonen_North;KajHa;Kajaanin Haka;Kajaanin Haka
 Finland_Kolmonen_North;KaPa;Kajaanin Palloilijat;Kajaanin Palloilijat

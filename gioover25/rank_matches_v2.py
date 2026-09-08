@@ -95,8 +95,9 @@ FIELDNAMES = [
 ]
 
 
-def _normalize_team(value: str) -> str:
-    return canonicalize_team_display_name(value).casefold()
+def _normalize_team(value: str, league_id: str) -> str:
+    """Normalizza un nome applicando anche gli alias della relativa lega."""
+    return normalize_team_name(league_id, value)
 
 
 def _parse_date(value) -> date | None:
@@ -184,16 +185,16 @@ def find_team_source_league(
     per i CompetitionGroup tradizionali.
     """
 
-    normalized = _normalize_team(team)
     candidates = []
 
     for league_id, matches in histories.items():
+        normalized = _normalize_team(team, league_id)
         team_dates = []
 
         for match in matches:
             teams = {
-                _normalize_team(getattr(match, "home", "")),
-                _normalize_team(getattr(match, "away", "")),
+                _normalize_team(getattr(match, "home", ""), league_id),
+                _normalize_team(getattr(match, "away", ""), league_id),
             }
 
             if normalized not in teams:
@@ -241,14 +242,17 @@ def find_mls_next_pro_home_league(
     squadra non costituisce informazione futura sul risultato delle partite.
     """
 
-    normalized = _normalize_team(team)
     candidates = []
 
     for league_id, matches in histories.items():
+        normalized = _normalize_team(team, league_id)
         home_dates = []
 
         for match in matches:
-            if _normalize_team(getattr(match, "home", "")) != normalized:
+            if (
+                _normalize_team(getattr(match, "home", ""), league_id)
+                != normalized
+            ):
                 continue
 
             current_date = _match_date(match)
@@ -280,7 +284,7 @@ def get_mls_next_pro_division_team_names(
 
     source_matches = histories.get(source_league_id, [])
     member_keys = {
-        _normalize_team(getattr(match, "home", ""))
+        _normalize_team(getattr(match, "home", ""), source_league_id)
         for match in source_matches
         if str(getattr(match, "home", "")).strip()
     }
@@ -294,7 +298,10 @@ def get_mls_next_pro_division_team_names(
                 getattr(match, "away", ""),
             ):
                 name = canonicalize_team_display_name(value)
-                if name and _normalize_team(name) in member_keys:
+                if (
+                    name
+                    and _normalize_team(name, source_league_id) in member_keys
+                ):
                     names.add(name)
 
     return names
