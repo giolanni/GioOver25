@@ -1,3 +1,5 @@
+import pytest
+
 from gioover25.history import MatchResult
 from gioover25 import ranking_history
 
@@ -55,6 +57,22 @@ def test_unique_fixture_can_recover_shifted_date(monkeypatch, tmp_path):
     assert row["AG"] == "1"
     assert row["Over25"] == "OK"
     assert row["MatchStatus"] == "FINAL"
+
+
+def test_read_history_rejects_a_data_row_used_as_header(monkeypatch, tmp_path):
+    history_file = tmp_path / "storico_ranking_v20.csv"
+    history_file.write_text(
+        "2026-09-05;2026-09-05;Finland_Kakkonen_GroupC;21;GBK;JBK\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(
+        ranking_history,
+        "_history_file",
+        lambda engine_name: history_file,
+    )
+
+    with pytest.raises(ValueError, match="intestazione non valida"):
+        ranking_history._read_history("v20")
 
 
 def test_shifted_date_is_not_forced_when_fixture_is_ambiguous(monkeypatch, tmp_path):

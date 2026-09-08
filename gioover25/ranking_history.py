@@ -80,7 +80,17 @@ def _read_history(engine_name: str) -> list[dict]:
         return []
 
     with path.open(newline="", encoding="utf-8-sig") as file_handle:
-        return list(csv.DictReader(file_handle, delimiter=";"))
+        reader = csv.DictReader(file_handle, delimiter=";")
+        fieldnames = set(reader.fieldnames or [])
+        missing = set(BASE_FIELDNAMES).difference(fieldnames)
+        if missing:
+            missing_text = ", ".join(sorted(missing))
+            raise ValueError(
+                f"Storico ranking corrotto per {engine_name}: "
+                f"intestazione non valida in {path}; campi mancanti: "
+                f"{missing_text}. Ripristinare il file prima di aggiornarlo."
+            )
+        return list(reader)
 
 
 def _collect_fieldnames(rows: list[dict]) -> list[str]:
