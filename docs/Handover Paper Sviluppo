@@ -1,0 +1,1381 @@
+# HANDOVER PAPER — GioOver2.5
+## Stato sviluppo, bug storici ranking e Laboratory / nuovo esperimento
+Data handover: 7 settembre 2026
+Branch principale: v2-dev
+Repository: giolanni/GioOver25
+
+======================================================================
+1. CONTESTO E FILOSOFIA DEL PROGETTO
+======================================================================
+
+GioOver2.5 è un sistema sperimentale per classificare partite di calcio in
+funzione della probabilità di Over 2.5.
+
+Engine attualmente/storicamente analizzati:
+- v13
+- v20
+- v20plus
+- v20select
+- v20def
+- v20defselect
+- v20defplus
+- v20defplus_v2
+- v20defplus_v3
+- v21
+- v21dev
+- v22
+- v22def
+- v23
+- v24
+- v25
+- v251
+- v25def
+- v26
+- v26def
+
+Principio fondamentale indicato dall'utente:
+
+PRECISIONE > VOLUME.
+
+Esempio:
+- 10/10 = preferibile
+- 65/80 = meno interessante nonostante il campione molto maggiore
+
+Il volume serve principalmente a giudicare la robustezza statistica di una
+regola, non è l'obiettivo da massimizzare.
+
+L'obiettivo del Laboratory non è semplicemente descrivere gli engine:
+deve cercare indizi utilizzabili per MIGLIORARLI.
+
+Non bisogna essere eccessivamente prudenti davanti a risultati che non sono
+"definitivi": se esistono segnali interessanti, devono essere investigati con
+esperimenti controllati.
+
+======================================================================
+2. STRUTTURA DATI RILEVANTE
+======================================================================
+
+Risultati reali:
+
+data/storico/risultati/
+
+Classifiche ricostruite:
+
+data/storico/classifiche_calcolate/
+
+Storici delle prediction:
+
+data/storico/ranking/<engine>/
+    storico_ranking_<engine>.csv
+
+Input partite:
+
+data/input_partite/
+
+Input risultati:
+
+data/input_risultati/
+
+Output ranking:
+
+data/output_ranking/
+
+Mappa statistica delle leghe:
+
+data/storico/league_over_map.csv
+
+======================================================================
+3. LEAGUE_OVER_MAP — MODIFICA RECENTE
+======================================================================
+
+`append_results` richiama alla fine:
+
+    rebuild_league_over_map()
+
+che aggiorna:
+
+    data/storico/league_over_map.csv
+
+È stato richiesto che il file non venga più ordinato alfabeticamente per lega,
+ma secondo le statistiche Over.
+
+Ordinamento desiderato:
+
+1. Over25Pct DESC
+2. Over15Pct DESC
+3. LeagueId ASC
+
+Logica:
+
+    rows.sort(
+        key=lambda row: (
+            -row["Over25Pct"],
+            -row["Over15Pct"],
+            row["LeagueId"],
+        )
+    )
+
+Lo scopo è avere immediatamente in cima le leghe statisticamente più propense
+all'Over 2.5, usando Over 1.5 come secondo criterio.
+
+======================================================================
+4. BUG ANALIZZATO: MISSING_RESULTS / APPEND_RESULTS
+======================================================================
+
+Caso concreto studiato:
+
+LeagueId:
+    Bulgaria_ParvaLiga
+
+Partita:
+    Slavia Sofia - Septemvri Sofia
+
+MatchDate:
+    2026-08-28
+
+Round:
+    6
+
+Risultato:
+    1-1
+
+Riga presente nello storico risultati:
+
+    Bulgaria;Parva Liga;6;2026-08-28;
+    Slavia Sofia;Septemvri Sofia;1;1;
+
+La partita continuava inizialmente ad apparire nelle verifiche di
+missing_results.
+
+È stata controllata la prediction negli storici ranking.
+
+Esempio v25:
+
+    PredictionDate : 2026-08-21
+    MatchDate      : 2026-08-28
+    LeagueId       : Bulgaria_ParvaLiga
+    Round          : 6
+    Home           : Slavia Sofia
+    Away           : Septemvri Sofia
+    MatchStatus    : FINAL
+    HG             : 1
+    AG             : 1
+    Goals          : 2
+    Over25         : KO
+    BTTS           : OK
+
+Successivamente è stato effettuato il controllo su TUTTI gli engine.
+
+Risultato:
+
+    v13           FINAL 1 1
+    v20           FINAL 1 1
+    v20def        FINAL 1 1
+    v20defplus    FINAL 1 1
+    v20defplus_v2 FINAL 1 1
+    v20defplus_v3 FINAL 1 1
+    v20defselect  FINAL 1 1
+    v20plus       FINAL 1 1
+    v20select     FINAL 1 1
+    v21           FINAL 1 1
+    v21dev        FINAL 1 1
+    v22           FINAL 1 1
+    v22def        FINAL 1 1
+    v23           FINAL 1 1
+    v24           FINAL 1 1
+    v25           FINAL 1 1
+    v251          FINAL 1 1
+    v25def        FINAL 1 1
+    v26           FINAL 1 1
+    v26def        FINAL 1 1
+
+Quindi append_results HA valorizzato correttamente la partita negli storici.
+
+La ricerca si è quindi spostata sulla gestione delle prediction duplicate /
+ravvicinate e su missing_result/rank_matches.
+
+----------------------------------------------------------------------
+4.1 Matching utilizzato da ranking_history
+----------------------------------------------------------------------
+
+`ranking_history.py` usa sostanzialmente:
+
+LeagueId
++ Home canonica
++ Away canonica
++ compatibilità MatchDate
+
+Il matching dei risultati non deve dipendere semplicemente dal Round.
+
+Sono previste anche tolleranze per partite rinviate/spostate.
+
+----------------------------------------------------------------------
+4.2 Problema concettuale emerso
+----------------------------------------------------------------------
+
+È stato osservato che rank_matches può inserire nuovamente nello storico
+ranking la stessa fixture in date molto ravvicinate.
+
+Questo è concettualmente sbagliato nel caso normale:
+
+se esiste già:
+
+    LeagueId = X
+    Home = A
+    Away = B
+    MatchDate = D
+
+non dovrebbe essere possibile registrare nuovamente:
+
+    LeagueId = X
+    Home = A
+    Away = B
+
+con MatchDate distante meno di circa 3 giorni, salvo casi esplicitamente
+gestiti come rinvii/correzioni.
+
+L'utente ha quindi richiesto di intervenire in rank_matches con una protezione
+contro near-duplicates.
+
+È stato predisposto anche un test:
+
+    tests/test_ranking_history_near_duplicates.py
+
+Il test non è stato eseguito sul secondo PC perché:
+
+    python -m pytest tests/test_ranking_history_near_duplicates.py
+
+ha restituito:
+
+    No module named pytest
+
+Quindi su quella macchina pytest non è installato.
+
+Prima di assumere che il test sia passato, eseguirlo in un ambiente con pytest
+oppure installare pytest nell'ambiente di sviluppo.
+
+======================================================================
+5. LABORATORY — FILE ANALIZZATI
+======================================================================
+
+Sono stati forniti gli output del Laboratory:
+
+01_matches.csv
+02_drivers.csv
+03_driver_statistics.csv
+04_driver_distributions.csv
+05_candidate_rules.csv
+06_unmatched_matches.csv
+07_driver_power.csv
+08_driver_curves.csv
+09_driver_pairs.csv
+10_driver_triples.csv
+11_driver_correlation.csv
+12_driver_useless.csv
+14_high_ko_autopsy.csv
+15_high_ko_patterns.csv
+16_high_band_daily.csv
+
+Questi file servono a studiare:
+
+- singoli driver
+- distribuzioni
+- potere discriminante
+- curve
+- correlazioni
+- coppie
+- triple
+- metriche inutili/ridondanti
+- autopsia dei KO in fascia ALTA
+- pattern dei KO
+- andamento giornaliero ALTA
+- candidate rules
+
+Principio operativo concordato:
+
+NON limitarsi a dire:
+"non c'è abbastanza evidenza".
+
+Se compare un indizio consistente, bisogna costruire un esperimento dedicato
+per capire se può migliorare gli engine esistenti.
+
+======================================================================
+6. INDIZI GIÀ EMERSI DAL LABORATORY
+======================================================================
+
+Nel lavoro precedente erano emersi alcuni pattern ricorrenti.
+
+POSITIVI / POTENZIALMENTE UTILI:
+
+- AwayGALast5Avg alto
+- HomeWinsLast5 alto
+- HomePPGLast5 alto
+- HomeGFAvgSinceRestart alto
+- HomeGFLast5Avg alto
+- Home Over recente alto
+
+POTENZIALMENTE CONTROINTUITIVI:
+
+- AwayAttackScore spesso risulta LOWER_IS_BETTER nelle fasce alte
+- AwayPPGLast5 / AwayWinsLast5 bassi talvolta accompagnano risultati migliori
+
+Questo suggerisce che alcuni engine potrebbero sovrappesare la forza offensiva
+della trasferta.
+
+POTENZIALMENTE UTILI MA DA CONTESTUALIZZARE:
+
+- AwayDefenseWeaknessScore
+- HomeLast10OverScore
+
+SPESSO DEBOLI / RIDONDANTI:
+
+- BTTSProfileScore
+- AwayLast10OverScore
+
+Correlazioni già individuate:
+
+AveragePPGLast5 ~ TotalPPGLast5 = circa 1.0
+
+AwayPPGLast5 ~ AwayWinsLast5 = circa 0.975
+
+HomePPGLast5 ~ HomeWinsLast5 = circa 0.972
+
+Quindi non bisogna trattare automaticamente queste coppie come informazioni
+indipendenti.
+
+======================================================================
+7. ULTIMO ESPERIMENTO — PARTE PIÙ IMPORTANTE DELL'HANDOVER
+======================================================================
+
+È stato avviato un esperimento dedicato a cercare combinazioni di condizioni
+che selezionassero subset ad ALTISSIMA precisione.
+
+L'idea NON è:
+
+"troviamo la correlazione più forte".
+
+L'idea è:
+
+"troviamo condizioni semplici e interpretabili che, applicate alle prediction
+esistenti, isolino gruppi di partite con percentuale OK nettamente superiore
+alla baseline".
+
+Sono state considerate soprattutto condizioni legate a:
+
+- attacco trasferta
+- fragilità difensiva trasferta
+- GA trasferta ultime 5
+- PPG recente peggiore delle due squadre
+- GF casa dopo restart
+- Over casa dopo restart
+
+Le candidate rule sono state valutate almeno secondo:
+
+- risultati complessivi
+- percentuale complessiva
+- test/holdout
+- percentuale test
+- risultato senza Australia
+- delta rispetto alla baseline
+- criterio YES/NO di accettazione
+
+======================================================================
+8. RISULTATI DELL'ULTIMO ESPERIMENTO
+======================================================================
+
+Output dei migliori candidati:
+
+1)
+away_attack_le_10_0
+AND
+home_restart_gf_ge_2_5
+
+Totale:
+    57/62 = 91.94%
+
+Test:
+    10/10 = 100.00%
+
+No Australia:
+    90.91%
+
+Delta:
+    +17.75 punti
+
+Esito:
+    YES
+
+
+2)
+away_ga_l5_ge_2_0
+AND
+home_restart_over_ge_1_0
+
+Totale:
+    119/132 = 90.15%
+
+Test:
+    26/27 = 96.30%
+
+No Australia:
+    89.84%
+
+Delta:
+    +15.96
+
+Esito:
+    YES
+
+
+3)
+away_ga_l5_ge_2_0
+AND
+home_restart_gf_ge_2_5
+
+Totale:
+    88/98 = 89.80%
+
+Test:
+    20/22 = 90.91%
+
+No Australia:
+    89.66%
+
+Delta:
+    +15.61
+
+Esito:
+    YES
+
+
+4)
+worst_ppg_l5_le_0_8
+AND
+home_restart_gf_ge_2_5
+
+Totale:
+    59/66 = 89.39%
+
+Test:
+    14/15 = 93.33%
+
+No Australia:
+    88.71%
+
+Delta:
+    +15.20
+
+Esito:
+    YES
+
+
+5)
+away_ga_l5_ge_2_0
+AND
+home_restart_over_ge_0_8
+
+Totale:
+    150/168 = 89.29%
+
+Test:
+    38/40 = 95.00%
+
+No Australia:
+    88.96%
+
+Delta:
+    +15.10
+
+Esito:
+    YES
+
+
+6)
+away_ga_l5_ge_1_8
+AND
+home_restart_gf_ge_2_5
+
+Totale:
+    100/112 = 89.29%
+
+Test:
+    26/28 = 92.86%
+
+No Australia:
+    90.00%
+
+Delta:
+    +15.10
+
+Esito:
+    YES
+
+
+7)
+away_attack_le_11_0
+AND
+home_restart_gf_ge_2_5
+
+Totale:
+    73/82 = 89.02%
+
+Test:
+    13/15 = 86.67%
+
+No Australia:
+    88.00%
+
+Delta:
+    +14.83
+
+Esito:
+    YES
+
+
+8)
+away_def_weak_ge_8_0
+AND
+home_restart_gf_ge_2_5
+
+Totale:
+    97/109 = 88.99%
+
+Test:
+    24/25 = 96.00%
+
+No Australia:
+    88.89%
+
+Delta:
+    +14.80
+
+Esito:
+    YES
+
+
+9)
+away_ga_l5_ge_1_8
+AND
+home_restart_over_ge_1_0
+
+Totale:
+    141/159 = 88.68%
+
+Test:
+    28/29 = 96.55%
+
+No Australia:
+    88.31%
+
+Delta:
+    +14.49
+
+Esito:
+    YES
+
+
+10)
+home_restart_gf_ge_2_5
+AND
+home_restart_over_ge_0_8
+
+Totale:
+    117/132 = 88.64%
+
+Test:
+    27/30 = 90.00%
+
+No Australia:
+    88.89%
+
+Delta:
+    +14.45
+
+Esito:
+    YES
+
+
+11)
+home_restart_gf_ge_2_0
+AND
+home_restart_over_ge_0_8
+
+Totale:
+    194/219 = 88.58%
+
+Test:
+    47/51 = 92.16%
+
+No Australia:
+    89.18%
+
+Delta:
+    +14.39
+
+Esito:
+    YES
+
+
+12)
+away_def_weak_ge_9_0
+AND
+home_restart_gf_ge_2_5
+
+Totale:
+    84/95 = 88.42%
+
+Test:
+    23/24 = 95.83%
+
+No Australia:
+    88.37%
+
+Delta:
+    +14.23
+
+Esito:
+    YES
+
+
+13)
+away_attack_le_10_0
+AND
+home_restart_gf_ge_2_0
+
+Totale:
+    97/110 = 88.18%
+
+Test:
+    22/23 = 95.65%
+
+No Australia:
+    88.89%
+
+Delta:
+    +13.99
+
+Esito:
+    YES
+
+
+14)
+home_restart_gf_ge_2_0
+AND
+home_restart_over_ge_1_0
+
+Totale:
+    145/165 = 87.88%
+
+Test:
+    26/28 = 92.86%
+
+No Australia:
+    88.61%
+
+Delta:
+    +13.69
+
+Esito:
+    YES
+
+
+15)
+away_def_weak_ge_8_0
+AND
+home_restart_over_ge_1_0
+
+Totale:
+    137/156 = 87.82%
+
+Test:
+    29/29 = 100.00%
+
+No Australia:
+    88.00%
+
+Delta:
+    +13.63
+
+Esito:
+    YES
+
+======================================================================
+9. INTERPRETAZIONE IMPORTANTE DEI RISULTATI
+======================================================================
+
+Questi risultati NON sono "nessuna evidenza".
+
+Al contrario, esiste un segnale piuttosto evidente.
+
+Tre famiglie ricorrono continuamente:
+
+A) FORZA OFFENSIVA CASA
+
+    home_restart_gf >= 2.0 / 2.5
+    home_restart_over >= 0.8 / 1.0
+
+B) FRAGILITÀ DIFENSIVA TRASFERTA
+
+    away_ga_l5 >= 1.8 / 2.0
+    away_def_weak >= 8 / 9
+
+C) ATTACCO TRASFERTA NON NECESSARIAMENTE FORTE
+
+    away_attack <= 10 / 11
+
+Quest'ultimo punto è particolarmente interessante perché conferma un indizio
+già apparso nel Laboratory:
+
+    AwayAttackScore alto NON sembra essere necessariamente una condizione
+    favorevole all'Over 2.5.
+
+In alcuni subset accade addirittura il contrario.
+
+Questo potrebbe indicare che alcuni engine stanno assegnando troppo peso
+all'attacco della squadra ospite.
+
+======================================================================
+10. REGOLA PIÙ ROBUSTA DA STUDIARE
+======================================================================
+
+La candidata più spettacolare in percentuale è:
+
+    away_attack <= 10
+    AND
+    home_restart_gf >= 2.5
+
+91.94%
+57/62
+test 10/10
+
+È estremamente interessante, ma il test è soltanto di 10 partite.
+
+La candidata che offre probabilmente il miglior compromesso iniziale tra
+PRECISIONE + CAMPIONE + HOLDOUT è invece:
+
+    away_ga_l5 >= 2.0
+    AND
+    home_restart_over >= 1.0
+
+Risultati:
+
+    119/132 = 90.15%
+    test = 26/27 = 96.30%
+    no Australia = 89.84%
+    delta = +15.96
+
+È un segnale molto forte perché:
+
+- campione totale >130
+- precisione circa 90%
+- holdout quasi perfetto
+- risultato resta elevato senza Australia
+- condizioni semplici e interpretabili
+
+Altra regola molto interessante:
+
+    home_restart_gf >= 2.0
+    AND
+    home_restart_over >= 0.8
+
+    194/219 = 88.58%
+    test 47/51 = 92.16%
+    noAU 89.18%
+
+Questa ha un campione ancora maggiore e potrebbe essere molto utile come
+"confidence booster".
+
+======================================================================
+11. ATTENZIONE ALLA RIDONDANZA
+======================================================================
+
+Le 15 regole NON rappresentano 15 scoperte indipendenti.
+
+Molte sono variazioni dello stesso fenomeno.
+
+Esempio:
+
+    away_ga_l5 >=1.8
+    away_ga_l5 >=2.0
+
+sono soglie diverse dello stesso driver.
+
+Analogamente:
+
+    home_restart_gf >=2.0
+    home_restart_gf >=2.5
+
+e:
+
+    home_restart_over >=0.8
+    home_restart_over >=1.0
+
+Quindi NON bisogna inserire 15 bonus nell'engine.
+
+Il risultato importante è che sembrano emergere 3 ASSI:
+
+    HOME ATTACK / OVER PROFILE
+    AWAY DEFENSIVE WEAKNESS
+    LOW/MODERATE AWAY ATTACK
+
+Il prossimo esperimento deve separare il contributo di questi assi.
+
+======================================================================
+12. DOMANDA POSTA: "SI POSSONO APPLICARE A TUTTI GLI ENGINE?"
+======================================================================
+
+La risposta operativa è:
+
+POTENZIALMENTE SÌ, ma NON bisogna assumere che il miglior threshold globale
+sia automaticamente il migliore per ogni engine.
+
+La soluzione corretta è usare queste regole come OVERLAY sperimentale sugli
+engine esistenti.
+
+Per ogni engine:
+
+    v20
+    v20def
+    v22
+    v22def
+    v25
+    v25def
+    v26
+    v26def
+    ecc.
+
+misurare:
+
+BASELINE ENGINE
+vs
+ENGINE + RULE FILTER/BOOSTER
+
+Per ogni combinazione calcolare almeno:
+
+    N baseline
+    OK baseline
+    % baseline
+
+    N rule
+    OK rule
+    % rule
+
+    delta precisione
+
+    train
+    test
+    no Australia
+
+Idealmente anche:
+
+    per mese
+    per lega
+    per fascia
+    ALTA
+    MEDIA-ALTA
+    IMM-ALTA
+
+======================================================================
+13. COME NON USARE QUESTE REGOLE
+======================================================================
+
+NON fare immediatamente:
+
+    if away_ga_l5 >= 2:
+        score += X
+
+Non sappiamo ancora se il segnale funziona meglio come:
+
+- bonus score
+- filtro
+- promozione di fascia
+- conferma ALTA
+- selector indipendente
+
+Il primo esperimento deve evitare di contaminare gli engine.
+
+======================================================================
+14. PROSSIMO ESPERIMENTO CONSIGLIATO
+======================================================================
+
+Creare un esperimento dedicato, per esempio:
+
+analysis/experiments/lab_rule_engine_overlay_backtest.py
+
+SCOPO:
+
+applicare le principali famiglie di regole separatamente a ciascun engine
+senza modificare l'engine.
+
+Regole iniziali da testare:
+
+RULE A
+    away_attack <= 10
+    AND home_restart_gf >= 2.5
+
+RULE B
+    away_ga_l5 >= 2.0
+    AND home_restart_over >= 1.0
+
+RULE C
+    away_ga_l5 >= 2.0
+    AND home_restart_gf >= 2.5
+
+RULE D
+    worst_ppg_l5 <= 0.8
+    AND home_restart_gf >= 2.5
+
+RULE E
+    home_restart_gf >= 2.0
+    AND home_restart_over >= 0.8
+
+RULE F
+    away_def_weak >= 8
+    AND home_restart_over >= 1.0
+
+Non partire da tutte le 15 varianti perché sono fortemente ridondanti.
+
+======================================================================
+15. OUTPUT DESIDERATO DEL NUOVO ESPERIMENTO
+======================================================================
+
+Per ogni engine:
+
+ENGINE: v20
+
+Baseline ALTA:
+    250/320 = 78.13%
+
+RULE A:
+    45/48 = 93.75%
+    delta +15.62
+    test ...
+    noAU ...
+
+RULE B:
+    ...
+
+e così via.
+
+Poi classifica finale:
+
+Engine | Rule | OK/N | % | Test | Test% | noAU | Delta
+
+La metrica principale deve essere:
+
+    %
+
+Secondarie:
+
+    test %
+    N
+    noAU %
+    delta
+
+Non ordinare semplicemente per volume.
+
+======================================================================
+16. ESPERIMENTO ANCORA PIÙ IMPORTANTE: PROMOZIONE MEDIA-ALTA
+======================================================================
+
+Dopo aver verificato che le regole funzionano per engine, il test forse più
+interessante è:
+
+POSSONO QUESTE REGOLE TROVARE ALTA NASCOSTE NELLA MEDIA-ALTA?
+
+Esempio:
+
+v20 MEDIA-ALTA
++
+away_ga_l5 >=2
++
+home_restart_over >=1
+
+Quanto produce?
+
+Se ottenesse, per esempio:
+
+    40/44 = 90.9%
+
+avremmo un potenziale selector molto più interessante del semplice incremento
+dello score.
+
+Quindi testare separatamente:
+
+1. ALTA confermate dalla regola
+2. MEDIA-ALTA promosse dalla regola
+3. eventuale MEDIA
+4. IMM-ALTA separatamente
+
+Questo evita di confondere un filtro che seleziona ALTA già forti con una
+regola realmente capace di migliorare il ranking.
+
+======================================================================
+17. TEST DI STABILITÀ NECESSARI
+======================================================================
+
+Per le migliori regole bisogna verificare:
+
+A. TRAIN / TEST
+
+Già presente nell'esperimento iniziale ed estremamente promettente.
+
+B. NO AUSTRALIA
+
+Già presente.
+Le migliori regole mantengono circa 88-90%, quindi il fenomeno non sembra
+dipendere esclusivamente dalle problematiche leghe australiane.
+
+C. TEMPORALE
+
+Per mese / periodo.
+
+Una regola 90% complessiva potrebbe essere:
+
+    giugno 95%
+    luglio 93%
+    agosto 70%
+
+Questo cambierebbe completamente la valutazione.
+
+D. PER ENGINE
+
+Essenziale prima di implementare modifiche.
+
+E. PER LEGA
+
+Serve soprattutto per evitare che 2-3 leghe dominino il campione.
+
+F. SOVRAPPOSIZIONE
+
+Calcolare quante partite soddisfano contemporaneamente Rule A/B/C/E.
+
+Se quasi tutte coincidono, abbiamo un solo segnale.
+Se selezionano subset diversi, abbiamo più informazioni realmente utili.
+
+======================================================================
+18. IPOTESI DI SVILUPPO SE L'OVERLAY CONFERMA I RISULTATI
+======================================================================
+
+Tre possibili implementazioni.
+
+OPZIONE 1 — CONFIDENCE FLAG
+
+Non modificare Score.
+
+Aggiungere qualcosa come:
+
+    LAB-CONFIRMED
+
+oppure:
+
+    HIGH-CONFIDENCE
+
+quando una ALTA soddisfa una regola robusta.
+
+È l'approccio meno invasivo.
+
+OPZIONE 2 — SELECTOR
+
+Creare un selector che estrae soltanto prediction soddisfacenti alle regole.
+
+Molto coerente con la filosofia:
+
+    precisione > volume.
+
+OPZIONE 3 — PROMOTION
+
+Una MEDIA-ALTA che soddisfa una regola robusta potrebbe essere promossa a una
+fascia sperimentale, ad esempio:
+
+    LAB-ALTA
+
+senza alterare immediatamente l'ALTA originale.
+
+Questa è probabilmente la strada sperimentale più interessante.
+
+Solo dopo un backtest forte valutare un vero bonus sullo Score.
+
+======================================================================
+19. CONFRONTO CON IL LAVORO DEF GIÀ SVOLTO
+======================================================================
+
+In precedenza erano stati sviluppati engine DEF basati soprattutto sulla
+penalizzazione delle difese forti.
+
+Esempi:
+
+v20def:
+    -3 se almeno una Last5 GA <=1.60
+
+v22def:
+    -13 se Away Last5 GA <=1.60
+
+v25def:
+    -13 se Away Last5 GA <=1.60
+
+v26def:
+    -14 se almeno una Last5 GA <=1.20
+
+Il nuovo Laboratory sembra mostrare il lato complementare dello stesso
+fenomeno:
+
+non soltanto:
+
+    DIFESA FORTE -> rischio KO
+
+ma anche:
+
+    DIFESA TRASFERTA DEBOLE -> forte probabilità OK
+
+In particolare:
+
+    away_ga_l5 >=2
+
+ricorre nelle migliori regole.
+
+Questo rende il segnale interessante anche concettualmente perché non nasce
+completamente dal nulla: è coerente con quanto osservato nel lavoro DEF.
+
+======================================================================
+20. INTERPRETAZIONE CALCISTICA DA NON CONFONDERE CON LA PROVA STATISTICA
+======================================================================
+
+Possibile interpretazione:
+
+Una squadra di casa che:
+
+- produce molti gol
+- ha un profilo recente fortemente Over
+
+contro una trasferta che:
+
+- concede circa 2+ gol/gara recentemente
+
+crea una situazione nella quale l'Over può essere prodotto quasi interamente
+dalla squadra di casa.
+
+Questo potrebbe spiegare anche il risultato apparentemente paradossale:
+
+    AwayAttackScore basso può essere positivo.
+
+Non è necessariamente necessario che ENTRAMBE le squadre abbiano un attacco
+forte.
+
+Una configurazione tipo:
+
+    casa 3 gol
+    ospite 0/1
+
+è sufficiente per Over 2.5.
+
+Questo potrebbe spiegare perché alcuni engine che premiano molto l'attacco
+ospite introducano rumore.
+
+Questa è però un'IPOTESI interpretativa; ciò che conta è il backtest.
+
+======================================================================
+21. PRIORITÀ OPERATIVE PER LA NUOVA CHAT
+======================================================================
+
+PRIORITÀ 1
+
+Non perdere i risultati dell'ultimo esperimento.
+
+PRIORITÀ 2
+
+Costruire:
+
+    lab_rule_engine_overlay_backtest.py
+
+PRIORITÀ 3
+
+Applicare Rule A-F a ogni engine separatamente.
+
+PRIORITÀ 4
+
+Separare:
+
+    ALTA
+    MEDIA-ALTA
+    IMM-ALTA
+
+PRIORITÀ 5
+
+Studiare soprattutto la capacità di promuovere MEDIA-ALTA ad alta precisione.
+
+PRIORITÀ 6
+
+Fare stabilità:
+
+    test
+    no Australia
+    mese
+    lega
+    overlap
+
+PRIORITÀ 7
+
+Solo dopo decidere se implementare:
+
+    flag
+    selector
+    promotion
+    score bonus
+
+======================================================================
+22. REGOLE CHE MERITANO PRIORITÀ
+======================================================================
+
+Tier 1:
+
+B:
+    away_ga_l5 >=2.0
+    AND home_restart_over >=1.0
+
+    119/132 = 90.15%
+    test 26/27 = 96.30%
+
+E:
+    home_restart_gf >=2.0
+    AND home_restart_over >=0.8
+
+    194/219 = 88.58%
+    test 47/51 = 92.16%
+
+A:
+    away_attack <=10
+    AND home_restart_gf >=2.5
+
+    57/62 = 91.94%
+    test 10/10 = 100%
+
+Tier 2:
+
+C:
+    away_ga_l5 >=2.0
+    AND home_restart_gf >=2.5
+
+    88/98 = 89.80%
+    test 20/22
+
+D:
+    worst_ppg_l5 <=0.8
+    AND home_restart_gf >=2.5
+
+    59/66 = 89.39%
+    test 14/15
+
+F:
+    away_def_weak >=8
+    AND home_restart_over >=1.0
+
+    137/156 = 87.82%
+    test 29/29
+
+Il Tier non significa che A sia peggiore statisticamente.
+Tiene conto anche della dimensione del test e dell'utilità per il prossimo
+esperimento.
+
+======================================================================
+23. DOMANDE A CUI IL PROSSIMO ESPERIMENTO DEVE RISPONDERE
+======================================================================
+
+1. Le regole funzionano allo stesso modo su v20, v22, v25 e v26?
+
+2. Funzionano meglio sugli engine originali o sui DEF?
+
+3. Selezionano semplicemente ALTA già molto forti?
+
+4. Riescono a recuperare MEDIA-ALTA con precisione >=85/90%?
+
+5. Quale regola mantiene la migliore precisione nel tempo?
+
+6. Quanto sono sovrapposte A-F?
+
+7. Il fenomeno away_ga_l5 >=2 è realmente indipendente dal
+   home_restart_over?
+
+8. AwayAttackScore basso aggiunge informazione indipendente oppure è un proxy
+   di qualche altro profilo?
+
+9. Escludendo Australia il segnale rimane forte?
+   Dai primi dati: SÌ.
+
+10. Le regole funzionano su molte leghe oppure il risultato è concentrato?
+
+11. Esiste una singola regola sufficientemente robusta da diventare un
+    selector generale?
+
+12. Possiamo creare una nuova fascia sperimentale ad altissima precisione?
+
+======================================================================
+24. COSA NON FARE NELLA NUOVA CHAT
+======================================================================
+
+- Non ricominciare l'analisi Laboratory da zero.
+- Non liquidare i risultati come "campione insufficiente".
+- Non inserire subito bonus negli engine.
+- Non scegliere la regola solo perché ha la % più alta.
+- Non sommare regole fortemente correlate come se fossero segnali indipendenti.
+- Non mescolare Australia e no-Australia senza mostrarli separatamente.
+- Non ottimizzare per quantità di prediction.
+- Non modificare contemporaneamente tutti gli engine prima del backtest overlay.
+
+======================================================================
+25. PRINCIPIO DECISIONALE FINALE
+======================================================================
+
+Il risultato più importante dell'ultimo esperimento non è il singolo:
+
+    57/62 = 91.94%
+
+È la RIPETIZIONE DELLO STESSO SEGNALE attraverso molte combinazioni.
+
+In particolare:
+
+    CASA OFFENSIVAMENTE FORTE / OVER
+                  +
+    TRASFERTA DIFENSIVAMENTE FRAGILE
+
+produce ripetutamente subset nell'ordine dell'88-90% complessivo e spesso
+oltre il 90-95% nel test.
+
+Questo è abbastanza forte da giustificare immediatamente il prossimo
+esperimento.
+
+Non è ancora abbastanza per cambiare direttamente gli engine.
+
+La prossima fase deve quindi essere:
+
+    DISCOVERY
+        ↓
+    ENGINE OVERLAY BACKTEST
+        ↓
+    BAND-SPECIFIC TEST
+        ↓
+    TEMPORAL / LEAGUE STABILITY
+        ↓
+    SELECTOR/PROMOTION EXPERIMENT
+        ↓
+    eventuale nuova versione engine
+
+26. PUNTO ESATTO DA CUI RIPARTIRE
+======================================================================
+
+La nuova chat dovrebbe partire da questa richiesta:
+
+"Partendo dall'handover, sviluppiamo sul branch v2-dev
+lab_rule_engine_overlay_backtest.py.
+
+Voglio verificare le sei regole A-F separatamente per ogni engine e per
+ALTA/MEDIA-ALTA/IMM-ALTA.
+
+L'output deve mostrare baseline, OK/N, percentuale, delta, test, no Australia,
+stabilità temporale e overlap tra regole.
+
+La priorità è precisione, non volume.
+
+Non modifichiamo ancora gli engine: questo deve essere un esperimento puro."
+
+questo è la base del ragionamento del progetto gioover25. Tu sei la chat in cui porteremo avanti lo sviluppo di v2-dev
