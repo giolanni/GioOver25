@@ -18,6 +18,8 @@ registrato esplicitamente prima dell'arrivo del risultato.
 """
 
 import csv
+import os
+import tempfile
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -64,6 +66,7 @@ BASE_FIELDNAMES = [
 ]
 
 RESULT_FIELDS = ["HG", "AG", "Goals", "Over25", "BTTS"]
+REQUIRED_ROW_FIELDS = ["PredictionDate", "LeagueId", "Home", "Away"]
 
 
 def _history_file(engine_name: str) -> Path:
@@ -90,7 +93,34 @@ def _read_history(engine_name: str) -> list[dict]:
                 f"intestazione non valida in {path}; campi mancanti: "
                 f"{missing_text}. Ripristinare il file prima di aggiornarlo."
             )
-        return list(reader)
+        rows = list(reader)
+
+    for row_number, row in enumerate(rows, start=2):
+        missing_values = [
+            field_name
+            for field_name in REQUIRED_ROW_FIELDS
+            if not str(row.get(field_name, "") or "").strip()
+        ]
+        invalid_dates = [
+            field_name
+            for field_name in ("PredictionDate", "MatchDate")
+            if str(row.get(field_name, "") or "").strip()
+            and _parse_date(row.get(field_name, "")) is None
+        ]
+        if None in row:
+            missing_values.append("numero colonne")
+        if missing_values or invalid_dates:
+            details = ", ".join(
+                missing_values
+                + [f"{field_name} non valida" for field_name in invalid_dates]
+            )
+            raise ValueError(
+                f"Storico ranking corrotto per {engine_name}: "
+                f"riga {row_number} non valida in {path}; "
+                f"controllare: {details}. Nessuna modifica eseguita."
+            )
+
+    return rows
 
 
 def _collect_fieldnames(rows: list[dict]) -> list[str]:
@@ -105,16 +135,34 @@ def _collect_fieldnames(rows: list[dict]) -> list[str]:
 def _write_history(engine_name: str, rows: list[dict]) -> None:
     path = _history_file(engine_name)
     path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = None
 
-    with path.open("w", newline="", encoding="utf-8-sig") as file_handle:
-        writer = csv.DictWriter(
-            file_handle,
-            fieldnames=_collect_fieldnames(rows),
-            delimiter=";",
-            extrasaction="ignore",
-        )
-        writer.writeheader()
-        writer.writerows(rows)
+    try:
+        with tempfile.NamedTemporaryFile(
+            "w",
+            newline="",
+            encoding="utf-8-sig",
+            dir=path.parent,
+            prefix=f".{path.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as file_handle:
+            temporary_path = Path(file_handle.name)
+            writer = csv.DictWriter(
+                file_handle,
+                fieldnames=_collect_fieldnames(rows),
+                delimiter=";",
+                extrasaction="ignore",
+            )
+            writer.writeheader()
+            writer.writerows(rows)
+            file_handle.flush()
+            os.fsync(file_handle.fileno())
+
+        os.replace(temporary_path, path)
+    finally:
+        if temporary_path is not None and temporary_path.exists():
+            temporary_path.unlink()
 
 
 def _text(value) -> str:
