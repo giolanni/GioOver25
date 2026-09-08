@@ -101,6 +101,33 @@ def enrich_incrementally(
     return enriched, len(reused), len(new_matches)
 
 
+def write_laboratory_outputs(
+    matches: list[dict],
+    *,
+    incremental: bool,
+) -> None:
+    """Scrive solo gli output necessari alla modalità richiesta.
+
+    ``02_drivers.csv`` è un dataset lungo usato esclusivamente dalle analisi
+    complete (distribuzioni e regole candidate). Riscriverlo durante ogni
+    import incrementale genera centinaia di migliaia di righe inutili.
+    """
+    OUTPUT.mkdir(parents=True, exist_ok=True)
+
+    print("Writing 01_matches.csv...")
+    write_matches(matches, MATCHES_FILE)
+
+    if incremental:
+        print(
+            "Skipping 02_drivers.csv "
+            "(verrà rigenerato con --full-analysis)."
+        )
+        return
+
+    print("Writing 02_drivers.csv...")
+    write_drivers(matches, OUTPUT / "02_drivers.csv")
+
+
 def main(incremental: bool = False):
     print("Loading rankings...")
     rankings = load_rankings(RANKINGS)
@@ -124,11 +151,10 @@ def main(incremental: bool = False):
         print("Calculating recent-form candidate drivers...")
         matches = enrich_matches_with_recent_form(matches)
 
-    OUTPUT.mkdir(parents=True, exist_ok=True)
-    print("Writing 01_matches.csv...")
-    write_matches(matches, MATCHES_FILE)
-    print("Writing 02_drivers.csv...")
-    write_drivers(matches, OUTPUT / "02_drivers.csv")
+    write_laboratory_outputs(
+        matches,
+        incremental=incremental,
+    )
     print()
     print("Done")
     print(f"Predictions : {len(matches)}")

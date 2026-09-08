@@ -125,3 +125,56 @@ def test_full_post_update_includes_metrics(monkeypatch):
         "analysis.metrics.analyze_metrics",
         "analysis.metrics.build_engine_league_high_rankings",
     ]
+
+
+def test_incremental_output_does_not_write_drivers(monkeypatch, tmp_path):
+    matches_file = tmp_path / "01_matches.csv"
+    calls = []
+
+    monkeypatch.setattr(build_laboratory, "OUTPUT", tmp_path)
+    monkeypatch.setattr(build_laboratory, "MATCHES_FILE", matches_file)
+    monkeypatch.setattr(
+        build_laboratory,
+        "write_matches",
+        lambda rows, path: calls.append(("matches", path)),
+    )
+    monkeypatch.setattr(
+        build_laboratory,
+        "write_drivers",
+        lambda rows, path: calls.append(("drivers", path)),
+    )
+
+    build_laboratory.write_laboratory_outputs(
+        [{"MatchId": 1}],
+        incremental=True,
+    )
+
+    assert calls == [("matches", matches_file)]
+
+
+def test_full_output_writes_matches_and_drivers(monkeypatch, tmp_path):
+    matches_file = tmp_path / "01_matches.csv"
+    calls = []
+
+    monkeypatch.setattr(build_laboratory, "OUTPUT", tmp_path)
+    monkeypatch.setattr(build_laboratory, "MATCHES_FILE", matches_file)
+    monkeypatch.setattr(
+        build_laboratory,
+        "write_matches",
+        lambda rows, path: calls.append(("matches", path)),
+    )
+    monkeypatch.setattr(
+        build_laboratory,
+        "write_drivers",
+        lambda rows, path: calls.append(("drivers", path)),
+    )
+
+    build_laboratory.write_laboratory_outputs(
+        [{"MatchId": 1}],
+        incremental=False,
+    )
+
+    assert calls == [
+        ("matches", matches_file),
+        ("drivers", tmp_path / "02_drivers.csv"),
+    ]
