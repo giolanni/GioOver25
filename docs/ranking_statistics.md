@@ -34,13 +34,18 @@ python -m analysis.ranking_statistics --dates 2026-09-05 2026-09-06 2026-09-07 -
 ```
 
 Con `--daily --csv`, il CSV contiene entrambi i livelli. Le colonne
-`PeriodType` e `Period` distinguono:
+`TipoPeriodo` e `Periodo` distinguono:
 
-- `CUMULATIVE`: totale delle date richieste;
-- `DAILY`: singola `MatchDate`.
+- `CUMULATIVO`: totale delle date richieste;
+- `GIORNO`: singola `MatchDate`.
 
 Le date ripetute nella riga di comando vengono deduplicate. Le date richieste
 senza risultati conclusi restano presenti nel CSV con conteggi a zero.
+
+Il CSV usa un formato leggibile: ogni riga rappresenta un engine e le metriche
+sono colonne nel formato `OK/N (percentuale)`. `Analisi` contiene `GLOBALE` o
+`SET COMUNE`; `Posizione` segue la percentuale della metrica scelta con
+`--sort-by`, usando il volume soltanto come secondo criterio.
 
 Sono accettate anche date italiane:
 

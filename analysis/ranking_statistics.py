@@ -399,22 +399,25 @@ def export_report(
     cumulative_report: Sequence[ReportRow],
     cumulative_label: str,
     daily_reports: Sequence[tuple[date, Sequence[ReportRow]]] = (),
+    metrics: Sequence[Metric] = METRICS,
+    sort_by: str = "alta_o25",
 ) -> None:
+    """Esporta una tabella leggibile con una riga per engine.
+
+    Ogni metrica occupa una sola colonna nel formato ``OK/N (percentuale)``.
+    """
+
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8-sig") as handle:
         fieldnames = [
-            "PeriodType",
-            "Period",
-            "Scope",
-            "LeagueView",
+            "TipoPeriodo",
+            "Periodo",
+            "Analisi",
+            "Leghe",
+            "Posizione",
             "Engine",
-            "Metric",
-            "OK",
-            "KO",
-            "N",
-            "Pct",
-            "Population",
-        ]
+            "PartiteDisponibili",
+        ] + [metric.title for metric in metrics]
         writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter=";")
         writer.writeheader()
 
@@ -423,26 +426,56 @@ def export_report(
             period: str,
             rows: Sequence[ReportRow],
         ) -> None:
-            for row in rows:
-                writer.writerow(
-                    {
-                        "PeriodType": period_type,
-                        "Period": period,
-                        "Scope": row.scope,
-                        "LeagueView": row.league_view,
-                        "Engine": row.engine,
-                        "Metric": row.metric,
-                        "OK": row.ok,
-                        "KO": row.ko,
-                        "N": row.total,
-                        "Pct": "" if row.percentage is None else f"{row.percentage:.2f}",
-                        "Population": row.population,
-                    }
-                )
+            index = {
+                (row.scope, row.league_view, row.engine, row.metric): row
+                for row in rows
+            }
+            scopes = list(dict.fromkeys(row.scope for row in rows))
+            league_views = list(dict.fromkeys(row.league_view for row in rows))
+            engines = sorted({row.engine for row in rows})
 
-        write_rows("CUMULATIVE", cumulative_label, cumulative_report)
+            for scope in scopes:
+                for league_view in league_views:
+                    ranking = []
+                    for engine in engines:
+                        primary = index.get((scope, league_view, engine, sort_by))
+                        percentage = (
+                            primary.percentage
+                            if primary and primary.percentage is not None
+                            else -1.0
+                        )
+                        total = primary.total if primary else 0
+                        ranking.append((engine, percentage, total))
+                    ranking.sort(key=lambda item: (-item[1], -item[2], item[0]))
+
+                    for position, (engine, _, _) in enumerate(ranking, start=1):
+                        first = index.get(
+                            (scope, league_view, engine, metrics[0].key)
+                        )
+                        output = {
+                            "TipoPeriodo": period_type,
+                            "Periodo": period,
+                            "Analisi": (
+                                "SET COMUNE" if scope == "common" else "GLOBALE"
+                            ),
+                            "Leghe": (
+                                "NO AUSTRALIA"
+                                if league_view == "no-australia"
+                                else "TUTTE"
+                            ),
+                            "Posizione": position,
+                            "Engine": engine,
+                            "PartiteDisponibili": first.population if first else 0,
+                        }
+                        for metric in metrics:
+                            output[metric.title] = _format_stat(
+                                index.get((scope, league_view, engine, metric.key))
+                            )
+                        writer.writerow(output)
+
+        write_rows("CUMULATIVO", cumulative_label, cumulative_report)
         for selected_day, daily_report in daily_reports:
-            write_rows("DAILY", selected_day.isoformat(), daily_report)
+            write_rows("GIORNO", selected_day.isoformat(), daily_report)
 
 
 def _scope_values(value: str) -> list[str]:
@@ -613,7 +646,14 @@ def main(argv: Sequence[str] | None = None) -> int:
     if duplicate_total:
         print(f"Nota: {duplicate_total} duplicati di fixture sono stati deduplicati.")
     if args.csv:
-        export_report(args.csv, report, period_label, daily_reports)
+        export_report(
+            args.csv,
+            report,
+            period_label,
+            daily_reports,
+            metrics,
+            args.sort_by,
+        )
         print(f"\nCSV creato: {args.csv}")
     return 0
 

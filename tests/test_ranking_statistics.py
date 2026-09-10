@@ -226,14 +226,15 @@ class RankingStatisticsTests(unittest.TestCase):
 
         self.assertEqual(result, 0)
         self.assertEqual(len(exported), 4)
-        self.assertEqual(exported[0]["PeriodType"], "CUMULATIVE")
-        self.assertEqual(exported[0]["OK"], "1")
-        daily = [item for item in exported if item["PeriodType"] == "DAILY"]
+        self.assertEqual(exported[0]["TipoPeriodo"], "CUMULATIVO")
+        self.assertEqual(exported[0]["Analisi"], "GLOBALE")
+        self.assertEqual(exported[0]["ALTA O2.5"], "1/2 (50.00%)")
+        daily = [item for item in exported if item["TipoPeriodo"] == "GIORNO"]
         self.assertEqual(
-            [item["Period"] for item in daily],
+            [item["Periodo"] for item in daily],
             ["2026-09-04", "2026-09-05", "2026-09-08"],
         )
-        self.assertEqual(daily[-1]["N"], "0")
+        self.assertEqual(daily[-1]["ALTA O2.5"], "-")
 
 
 if __name__ == "__main__":
