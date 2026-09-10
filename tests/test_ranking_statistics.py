@@ -206,8 +206,6 @@ class RankingStatisticsTests(unittest.TestCase):
                     str(self.root),
                     "--engines",
                     "v20",
-                    "--scope",
-                    "overall",
                     "--dates",
                     "2026-09-05",
                     "2026-09-04",
@@ -227,7 +225,7 @@ class RankingStatisticsTests(unittest.TestCase):
         self.assertEqual(result, 0)
         self.assertEqual(len(exported), 4)
         self.assertEqual(exported[0]["TipoPeriodo"], "CUMULATIVO")
-        self.assertEqual(exported[0]["Analisi"], "GLOBALE")
+        self.assertEqual(exported[0]["Analisi"], "DATE RICHIESTE")
         self.assertEqual(exported[0]["ALTA O2.5"], "1/2 (50.00%)")
         daily = [item for item in exported if item["TipoPeriodo"] == "GIORNO"]
         self.assertEqual(

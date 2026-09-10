@@ -14,11 +14,13 @@ usata `PredictionDate`.
 
 ## Esempi
 
-Intero storico di ogni engine e set comune a tutti gli engine:
+Intero storico di ogni engine dalla sua creazione:
 
 ```powershell
 python -m analysis.ranking_statistics
 ```
+
+Il CSV identifica questa analisi come `STORICO COMPLETO ENGINE`.
 
 Giorni specifici:
 
@@ -33,6 +35,9 @@ cumulativo sia ogni giornata separata:
 python -m analysis.ranking_statistics --dates 2026-09-05 2026-09-06 2026-09-07 --daily
 ```
 
+Questa analisi è indicata come `DATE RICHIESTE`: non viene mescolata
+automaticamente con lo storico completo o con il set comune.
+
 Con `--daily --csv`, il CSV contiene entrambi i livelli. Le colonne
 `TipoPeriodo` e `Periodo` distinguono:
 
@@ -43,9 +48,11 @@ Le date ripetute nella riga di comando vengono deduplicate. Le date richieste
 senza risultati conclusi restano presenti nel CSV con conteggi a zero.
 
 Il CSV usa un formato leggibile: ogni riga rappresenta un engine e le metriche
-sono colonne nel formato `OK/N (percentuale)`. `Analisi` contiene `GLOBALE` o
-`SET COMUNE`; `Posizione` segue la percentuale della metrica scelta con
-`--sort-by`, usando il volume soltanto come secondo criterio.
+sono colonne nel formato `OK/N (percentuale)`. `Analisi` usa termini espliciti:
+`DATE RICHIESTE`, `ULTIMI N GIORNI`, `STORICO COMPLETO ENGINE` oppure
+`SET COMUNE`. `Posizione` segue la percentuale della metrica scelta con
+`--sort-by`, usando il volume soltanto come secondo criterio. Il default genera
+sempre una sola analisi.
 
 Sono accettate anche date italiane:
 
@@ -62,10 +69,16 @@ python -m analysis.ranking_statistics --last-days 10
 
 Si può aggiungere `--daily` anche agli ultimi N giorni.
 
-Solo set comune e anche confronto senza Australia:
+Set comune completo a tutti gli engine e anche confronto senza Australia:
 
 ```powershell
-python -m analysis.ranking_statistics --scope common --league-view both
+python -m analysis.ranking_statistics --set-comune --league-view both
+```
+
+Set comune limitato alle date richieste:
+
+```powershell
+python -m analysis.ranking_statistics --dates 2026-09-05 2026-09-06 --set-comune --daily
 ```
 
 Solo alcuni engine:

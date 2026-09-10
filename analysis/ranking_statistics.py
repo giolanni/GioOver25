@@ -351,6 +351,7 @@ def print_report(
     sort_by: str,
     period_label: str,
     inconsistent_by_view: dict[str, int],
+    analysis_labels: dict[str, str],
 ) -> None:
     index = {
         (row.scope, row.league_view, row.engine, row.metric): row
@@ -369,7 +370,7 @@ def print_report(
                 ranking.append((engine, percentage, total))
             ranking.sort(key=lambda item: (-item[1], -item[2], item[0]))
 
-            label_scope = "SET COMUNE" if scope == "common" else "GLOBALE PER ENGINE"
+            label_scope = analysis_labels[scope]
             label_leagues = "NO AUSTRALIA" if league_view == "no-australia" else "TUTTE LE LEGHE"
             print(f"\n{label_scope} - {label_leagues}")
             if scope == "common" and engines:
@@ -401,12 +402,17 @@ def export_report(
     daily_reports: Sequence[tuple[date, Sequence[ReportRow]]] = (),
     metrics: Sequence[Metric] = METRICS,
     sort_by: str = "alta_o25",
+    analysis_labels: dict[str, str] | None = None,
 ) -> None:
     """Esporta una tabella leggibile con una riga per engine.
 
     Ogni metrica occupa una sola colonna nel formato ``OK/N (percentuale)``.
     """
 
+    analysis_labels = analysis_labels or {
+        "overall": "STORICO COMPLETO ENGINE",
+        "common": "SET COMUNE COMPLETO",
+    }
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8-sig") as handle:
         fieldnames = [
@@ -416,7 +422,7 @@ def export_report(
             "Leghe",
             "Posizione",
             "Engine",
-            "PartiteDisponibili",
+            "PartiteConRisultato",
         ] + [metric.title for metric in metrics]
         writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter=";")
         writer.writeheader()
@@ -455,9 +461,7 @@ def export_report(
                         output = {
                             "TipoPeriodo": period_type,
                             "Periodo": period,
-                            "Analisi": (
-                                "SET COMUNE" if scope == "common" else "GLOBALE"
-                            ),
+                            "Analisi": analysis_labels[scope],
                             "Leghe": (
                                 "NO AUSTRALIA"
                                 if league_view == "no-australia"
@@ -465,7 +469,7 @@ def export_report(
                             ),
                             "Posizione": position,
                             "Engine": engine,
-                            "PartiteDisponibili": first.population if first else 0,
+                            "PartiteConRisultato": first.population if first else 0,
                         }
                         for metric in metrics:
                             output[metric.title] = _format_stat(
@@ -479,6 +483,8 @@ def export_report(
 
 
 def _scope_values(value: str) -> list[str]:
+    if value == "auto":
+        return ["overall"]
     return ["overall", "common"] if value == "both" else [value]
 
 
@@ -497,9 +503,13 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--scope",
-        choices=("overall", "common", "both"),
-        default="both",
-        help="Popolazione per engine, set comune o entrambe (default: both).",
+        choices=("auto", "overall", "common", "both"),
+        help=argparse.SUPPRESS,
+    )
+    parser.add_argument(
+        "--set-comune",
+        action="store_true",
+        help="Analizza soltanto le partite presenti in tutti gli engine.",
     )
     parser.add_argument(
         "--dates",
@@ -554,6 +564,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         parser.error("--dates non può essere combinato con intervalli o --last-days")
     if args.last_days is not None and (args.start_date or args.end_date):
         parser.error("--last-days non può essere combinato con --start-date/--end-date")
+    if args.set_comune and args.scope:
+        parser.error("--set-comune non può essere combinato con il vecchio --scope")
 
     available = discover_engines(args.history_root)
     engines = args.engines or available
@@ -594,15 +606,34 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     if explicit_dates is not None:
         period_label = ", ".join(value.isoformat() for value in sorted(explicit_dates))
+        analysis_labels = {
+            "overall": "DATE RICHIESTE",
+            "common": "SET COMUNE DELLE DATE",
+        }
+    elif args.last_days is not None:
+        period_label = f"{start_date.isoformat()} -> {end_date.isoformat()}"
+        analysis_labels = {
+            "overall": f"ULTIMI {args.last_days} GIORNI",
+            "common": f"SET COMUNE ULTIMI {args.last_days} GIORNI",
+        }
     elif start_date or end_date:
         period_label = f"{start_date.isoformat() if start_date else 'inizio'} -> {end_date.isoformat() if end_date else 'ultima data'}"
+        analysis_labels = {
+            "overall": "INTERVALLO RICHIESTO",
+            "common": "SET COMUNE DELL'INTERVALLO",
+        }
     else:
         period_label = "intero storico di ciascun engine"
+        analysis_labels = {
+            "overall": "STORICO COMPLETO ENGINE",
+            "common": "SET COMUNE COMPLETO",
+        }
 
     metrics = [METRIC_BY_KEY[key] for key in args.metrics]
     if args.sort_by not in args.metrics:
         parser.error("--sort-by deve essere compreso nelle metriche richieste con --metrics")
-    scopes = _scope_values(args.scope)
+    scope_value = args.scope or ("common" if args.set_comune else "auto")
+    scopes = _scope_values(scope_value)
     league_views = _league_values(args.league_view)
     report, _, inconsistent = build_report(histories, metrics, scopes, league_views)
 
@@ -614,6 +645,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         args.sort_by,
         period_label,
         inconsistent,
+        analysis_labels,
     )
     daily_reports: list[tuple[date, Sequence[ReportRow]]] = []
     if args.daily:
@@ -640,6 +672,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                     args.sort_by,
                     selected_day.isoformat(),
                     daily_inconsistent,
+                    analysis_labels,
                 )
     if legacy_total:
         print(f"\nNota: {legacy_total} righe legacy hanno usato PredictionDate perché MatchDate era vuota.")
@@ -653,6 +686,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             daily_reports,
             metrics,
             args.sort_by,
+            analysis_labels,
         )
         print(f"\nCSV creato: {args.csv}")
     return 0
