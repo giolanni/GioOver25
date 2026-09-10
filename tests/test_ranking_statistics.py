@@ -1,6 +1,8 @@
 import csv
+import io
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from datetime import date
 from pathlib import Path
 
@@ -11,6 +13,7 @@ from analysis.ranking_statistics import (
     common_keys,
     filter_dates,
     load_engine_history,
+    main,
     parse_date,
     remove_australia,
 )
@@ -184,6 +187,53 @@ class RankingStatisticsTests(unittest.TestCase):
         self.assertEqual(indexed[("overall", "v20")].percentage, 50.0)
         self.assertEqual(indexed[("common", "v20")].total, 1)
         self.assertEqual(indexed[("common", "v25")].total, 1)
+
+    def test_daily_csv_contains_cumulative_and_each_unique_requested_date(self):
+        write_history(
+            self.root,
+            "v20",
+            [
+                row("2026-09-04", "League_A", "A", "B", "ALTA", "2", "1", "OK"),
+                row("2026-09-05", "League_A", "C", "D", "ALTA", "1", "0", "KO"),
+            ],
+        )
+        output = self.root / "report.csv"
+
+        with redirect_stdout(io.StringIO()):
+            result = main(
+                [
+                    "--history-root",
+                    str(self.root),
+                    "--engines",
+                    "v20",
+                    "--scope",
+                    "overall",
+                    "--dates",
+                    "2026-09-05",
+                    "2026-09-04",
+                    "2026-09-05",
+                    "2026-09-08",
+                    "--daily",
+                    "--metrics",
+                    "alta_o25",
+                    "--csv",
+                    str(output),
+                ]
+            )
+
+        with output.open(encoding="utf-8-sig", newline="") as handle:
+            exported = list(csv.DictReader(handle, delimiter=";"))
+
+        self.assertEqual(result, 0)
+        self.assertEqual(len(exported), 4)
+        self.assertEqual(exported[0]["PeriodType"], "CUMULATIVE")
+        self.assertEqual(exported[0]["OK"], "1")
+        daily = [item for item in exported if item["PeriodType"] == "DAILY"]
+        self.assertEqual(
+            [item["Period"] for item in daily],
+            ["2026-09-04", "2026-09-05", "2026-09-08"],
+        )
+        self.assertEqual(daily[-1]["N"], "0")
 
 
 if __name__ == "__main__":

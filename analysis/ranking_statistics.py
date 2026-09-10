@@ -394,10 +394,17 @@ def print_report(
             _print_table(["Engine"] + [metric.title for metric in metrics], table_rows)
 
 
-def export_report(path: Path, report: Sequence[ReportRow]) -> None:
+def export_report(
+    path: Path,
+    cumulative_report: Sequence[ReportRow],
+    cumulative_label: str,
+    daily_reports: Sequence[tuple[date, Sequence[ReportRow]]] = (),
+) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8-sig") as handle:
         fieldnames = [
+            "PeriodType",
+            "Period",
             "Scope",
             "LeagueView",
             "Engine",
@@ -410,20 +417,32 @@ def export_report(path: Path, report: Sequence[ReportRow]) -> None:
         ]
         writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter=";")
         writer.writeheader()
-        for row in report:
-            writer.writerow(
-                {
-                    "Scope": row.scope,
-                    "LeagueView": row.league_view,
-                    "Engine": row.engine,
-                    "Metric": row.metric,
-                    "OK": row.ok,
-                    "KO": row.ko,
-                    "N": row.total,
-                    "Pct": "" if row.percentage is None else f"{row.percentage:.2f}",
-                    "Population": row.population,
-                }
-            )
+
+        def write_rows(
+            period_type: str,
+            period: str,
+            rows: Sequence[ReportRow],
+        ) -> None:
+            for row in rows:
+                writer.writerow(
+                    {
+                        "PeriodType": period_type,
+                        "Period": period,
+                        "Scope": row.scope,
+                        "LeagueView": row.league_view,
+                        "Engine": row.engine,
+                        "Metric": row.metric,
+                        "OK": row.ok,
+                        "KO": row.ko,
+                        "N": row.total,
+                        "Pct": "" if row.percentage is None else f"{row.percentage:.2f}",
+                        "Population": row.population,
+                    }
+                )
+
+        write_rows("CUMULATIVE", cumulative_label, cumulative_report)
+        for selected_day, daily_report in daily_reports:
+            write_rows("DAILY", selected_day.isoformat(), daily_report)
 
 
 def _scope_values(value: str) -> list[str]:
@@ -563,19 +582,23 @@ def main(argv: Sequence[str] | None = None) -> int:
         period_label,
         inconsistent,
     )
+    daily_reports: list[tuple[date, Sequence[ReportRow]]] = []
     if args.daily:
-        selected_days = sorted(
-            {row.match_date for rows in histories.values() for row in rows}
+        selected_days = (
+            sorted(explicit_dates)
+            if explicit_dates is not None
+            else sorted({row.match_date for rows in histories.values() for row in rows})
         )
-        if len(selected_days) > 1:
-            for selected_day in selected_days:
-                daily_histories = {
-                    engine: [row for row in rows if row.match_date == selected_day]
-                    for engine, rows in histories.items()
-                }
-                daily_report, _, daily_inconsistent = build_report(
-                    daily_histories, metrics, scopes, league_views
-                )
+        for selected_day in selected_days:
+            daily_histories = {
+                engine: [row for row in rows if row.match_date == selected_day]
+                for engine, rows in histories.items()
+            }
+            daily_report, _, daily_inconsistent = build_report(
+                daily_histories, metrics, scopes, league_views
+            )
+            daily_reports.append((selected_day, daily_report))
+            if len(selected_days) > 1:
                 print_report(
                     daily_report,
                     metrics,
@@ -590,7 +613,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     if duplicate_total:
         print(f"Nota: {duplicate_total} duplicati di fixture sono stati deduplicati.")
     if args.csv:
-        export_report(args.csv, report)
+        export_report(args.csv, report, period_label, daily_reports)
         print(f"\nCSV creato: {args.csv}")
     return 0
 

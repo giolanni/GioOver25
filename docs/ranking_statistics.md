@@ -33,6 +33,15 @@ cumulativo sia ogni giornata separata:
 python -m analysis.ranking_statistics --dates 2026-09-05 2026-09-06 2026-09-07 --daily
 ```
 
+Con `--daily --csv`, il CSV contiene entrambi i livelli. Le colonne
+`PeriodType` e `Period` distinguono:
+
+- `CUMULATIVE`: totale delle date richieste;
+- `DAILY`: singola `MatchDate`.
+
+Le date ripetute nella riga di comando vengono deduplicate. Le date richieste
+senza risultati conclusi restano presenti nel CSV con conteggi a zero.
+
 Sono accettate anche date italiane:
 
 ```powershell
