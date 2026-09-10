@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-7;1;Treibach;5;4;1;0;13;3;10;13;2.6
+7;1;Treibach;6;4;1;1;14;6;8;13;2.167
 7;2;A. Klagenfurt;6;4;1;1;14;8;6;13;2.167
 7;3;Atus Velden;6;3;3;0;11;5;6;12;2.0
 7;4;Kalsdorf;5;3;2;0;11;6;5;11;2.2
-7;5;Lafnitz;5;2;2;1;15;13;2;8;1.6
-7;6;Deutschlandsberger;5;2;2;1;11;9;2;8;1.6
-7;7;Volkermarkt;5;2;1;2;11;8;3;7;1.4
-7;8;Tillmitsch;4;2;1;1;11;10;1;7;1.75
-7;9;Weiz;4;1;2;1;6;3;3;5;1.25
-7;10;Allerheiligen;4;1;2;1;7;7;0;5;1.25
-7;11;Wolfsberger (Am);5;1;2;2;8;12;-4;5;1.0
-7;12;Bleiburg;5;0;3;2;7;9;-2;3;0.6
+7;5;Weiz;5;2;2;1;8;4;4;8;1.6
+7;6;Allerheiligen;5;2;2;1;12;9;3;8;1.6
+7;7;Lafnitz;5;2;2;1;15;13;2;8;1.6
+7;8;Deutschlandsberger;5;2;2;1;11;9;2;8;1.6
+7;9;Wolfsberger (Am);6;2;2;2;9;12;-3;8;1.333
+7;10;Volkermarkt;6;2;1;3;11;9;2;7;1.167
+7;11;Tillmitsch;5;2;1;2;13;15;-2;7;1.4
+7;12;Bleiburg;6;1;3;2;10;10;0;6;1.0
 7;13;Gleisdorf;5;1;0;4;6;11;-5;3;0.6
-7;14;ATSV Wolfsberger;5;0;2;3;3;16;-13;2;0.4
-7;15;Donau Klagenfurt;5;0;1;4;6;12;-6;1;0.2
-7;16;Hartberg (Am);4;0;1;3;3;11;-8;1;0.25
+7;14;ATSV Wolfsberger;6;0;3;3;3;16;-13;3;0.5
+7;15;Donau Klagenfurt;6;0;2;4;6;12;-6;2;0.333
+7;16;Hartberg (Am);5;0;1;4;4;13;-9;1;0.2
