@@ -94,3 +94,45 @@ def test_regenerate_standings_merges_aliases_and_backs_up(tmp_path, monkeypatch)
     assert (
         backup_root / "classifiche_calcolate" / standings_file.name
     ).exists()
+
+
+def test_eastern_group1_standings_merge_aliases_but_keep_sapa_clubs_distinct(
+    tmp_path, monkeypatch
+):
+    league_id = "Finland_Kolmonen_Eastern_Group1"
+    results_dir = tmp_path / "risultati"
+    standings_dir = tmp_path / "classifiche_calcolate"
+    results_dir.mkdir()
+    standings_dir.mkdir()
+
+    results_file = results_dir / f"{league_id}.csv"
+    results_file.write_text(
+        "Country;League;Round;MatchDate;Home;Away;HG;AG;Notes\n"
+        "Finland;Kolmonen;1;2026-01-01;SAPA;SaPa;2;1;\n"
+        "Finland;Kolmonen;2;2026-01-02;JJK/2;FC Vaajakoski/2;1;0;\n"
+        "Finland;Kolmonen;3;2026-01-03;JJK Jyvaskyla 2;FC Vaajakoski 2;2;2;\n"
+        "Finland;Kolmonen;4;2026-01-04;Komeetat;Jyväskylän Komeetat;3;1;\n",
+        encoding="utf-8",
+    )
+    standings_file = standings_dir / f"{league_id}.csv"
+
+    monkeypatch.setattr(normalize_team_names, "RESULTS_DIR", results_dir)
+    monkeypatch.setattr(normalize_team_names, "STANDINGS_DIR", standings_dir)
+    normalize_team_names._regenerate_standings(
+        {league_id},
+        backup_root=tmp_path / "backup",
+    )
+
+    rows = {row["Team"]: row for row in _read_rows(standings_file)}
+    assert set(rows) == {
+        "SAPA",
+        "Savon Pallo",
+        "JJK/2",
+        "FC Vaajakoski/2",
+        "Komeetat",
+    }
+    assert rows["SAPA"]["Played"] == "1"
+    assert rows["Savon Pallo"]["Played"] == "1"
+    assert rows["JJK/2"]["Played"] == "2"
+    assert rows["FC Vaajakoski/2"]["Played"] == "2"
+    assert rows["Komeetat"]["Played"] == "2"

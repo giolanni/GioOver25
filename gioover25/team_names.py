@@ -19,6 +19,12 @@ class TeamNameEntry:
     real_name: str
 
 
+@dataclass(frozen=True)
+class TeamNameDictionary:
+    exact: dict[str, dict[str, TeamNameEntry]]
+    normalized: dict[str, dict[str, TeamNameEntry]]
+
+
 def _global_canonicalize(value: object) -> str:
     """Applica soltanto le convenzioni valide per tutte le leghe."""
     text = " ".join(str(value or "").strip().split())
@@ -39,12 +45,19 @@ def _basic_normalize(value: object) -> str:
 
 
 @lru_cache(maxsize=1)
-def _load_team_name_dictionary() -> dict[str, dict[str, TeamNameEntry]]:
-    """Carica il dizionario unico alias -> nome canonico per LeagueId."""
-    entries: dict[str, dict[str, TeamNameEntry]] = {}
+def _load_team_name_dictionary() -> TeamNameDictionary:
+    """Carica gli alias esatti e quelli normalizzati per ciascun LeagueId.
+
+    Il lookup esatto serve per i rari nomi distinti solo dalle maiuscole, come
+    ``SAPA`` e ``SaPa`` nello stesso girone di Kolmonen. Se una chiave
+    normalizzata e case-insensitive e' ambigua, non viene usata come fallback.
+    """
+    exact_entries: dict[str, dict[str, TeamNameEntry]] = {}
+    normalized_entries: dict[str, dict[str, TeamNameEntry]] = {}
+    ambiguous_normalized: dict[str, set[str]] = {}
 
     if not TEAM_NAME_DICTIONARY.exists():
-        return entries
+        return TeamNameDictionary(exact={}, normalized={})
 
     with TEAM_NAME_DICTIONARY.open(newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f, delimiter=";")
@@ -71,24 +84,43 @@ def _load_team_name_dictionary() -> dict[str, dict[str, TeamNameEntry]]:
                 canonical_name=canonical_name,
                 real_name=real_name or canonical_name,
             )
-            league_entries = entries.setdefault(league_id, {})
+            league_exact = exact_entries.setdefault(league_id, {})
+            league_normalized = normalized_entries.setdefault(league_id, {})
+            league_ambiguous = ambiguous_normalized.setdefault(league_id, set())
             names = [canonical_name, real_name]
             names.extend(str(row.get("Aliases", "")).split("|"))
 
             for name in names:
-                key = _basic_normalize(name)
-                if not key:
+                exact_key = _global_canonicalize(name)
+                if not exact_key:
                     continue
 
-                previous = league_entries.get(key)
+                previous = league_exact.get(exact_key)
                 if previous is not None and previous != entry:
                     raise ValueError(
-                        "Alias squadra ambiguo in team_name_dictionary.csv "
+                        "Alias squadra esatto ambiguo in team_name_dictionary.csv "
                         f"alla riga {line_number}: {name!r}"
                     )
-                league_entries[key] = entry
+                league_exact[exact_key] = entry
 
-    return entries
+                normalized_key = _basic_normalize(exact_key)
+                if normalized_key in league_ambiguous:
+                    continue
+
+                previous = league_normalized.get(normalized_key)
+                if previous is not None and previous != entry:
+                    # Non possiamo distinguere in modo case-insensitive, ma il
+                    # lookup esatto resta sicuro e separa correttamente i club.
+                    league_normalized.pop(normalized_key, None)
+                    league_ambiguous.add(normalized_key)
+                    continue
+
+                league_normalized[normalized_key] = entry
+
+    return TeamNameDictionary(
+        exact=exact_entries,
+        normalized=normalized_entries,
+    )
 
 
 def canonicalize_team_display_name(
@@ -105,18 +137,26 @@ def canonicalize_team_display_name(
     if not text or not league_id:
         return text
 
-    entry = _load_team_name_dictionary().get(str(league_id).strip(), {}).get(
-        _basic_normalize(text)
-    )
+    dictionary = _load_team_name_dictionary()
+    league_key = str(league_id).strip()
+    entry = dictionary.exact.get(league_key, {}).get(text)
+    if entry is None:
+        entry = dictionary.normalized.get(league_key, {}).get(
+            _basic_normalize(text)
+        )
     return entry.canonical_name if entry is not None else text
 
 
 def get_real_team_name(league_id: str, team_name: object) -> str:
     """Restituisce il nome reale/esteso registrato nel dizionario."""
     text = _global_canonicalize(team_name)
-    entry = _load_team_name_dictionary().get(str(league_id).strip(), {}).get(
-        _basic_normalize(text)
-    )
+    dictionary = _load_team_name_dictionary()
+    league_key = str(league_id).strip()
+    entry = dictionary.exact.get(league_key, {}).get(text)
+    if entry is None:
+        entry = dictionary.normalized.get(league_key, {}).get(
+            _basic_normalize(text)
+        )
     return entry.real_name if entry is not None else text
 
 

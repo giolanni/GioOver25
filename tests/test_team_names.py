@@ -111,6 +111,43 @@ def test_rops_aliases_share_one_canonical_display_name(source_name):
 
 
 @pytest.mark.parametrize(
+    ("source_name", "canonical_name"),
+    [
+        ("JJK Jyväskylä II", "JJK/2"),
+        ("JJK Jyvaskyla 2", "JJK/2"),
+        ("Jyväskylän Komeetat", "Komeetat"),
+        ("Jyvaskylan Komeetat", "Komeetat"),
+        ("FC Vaajakoski 2", "FC Vaajakoski/2"),
+        ("FC Vaajakoski II", "FC Vaajakoski/2"),
+    ],
+)
+def test_kolmonen_eastern_group1_aliases_share_historical_names(
+    source_name, canonical_name
+):
+    assert canonicalize_team_display_name(
+        source_name,
+        "Finland_Kolmonen_Eastern_Group1",
+    ) == canonical_name
+
+
+def test_sapa_and_sapa_mixed_case_are_distinct_clubs():
+    league_id = "Finland_Kolmonen_Eastern_Group1"
+
+    assert canonicalize_team_display_name("SAPA", league_id) == "SAPA"
+    assert canonicalize_team_display_name("SaPa", league_id) == "Savon Pallo"
+    assert normalize_team_name(league_id, "SAPA") != normalize_team_name(
+        league_id, "SaPa"
+    )
+
+
+def test_ambiguous_lowercase_sapa_is_not_guessed():
+    assert canonicalize_team_display_name(
+        "sapa",
+        "Finland_Kolmonen_Eastern_Group1",
+    ) == "sapa"
+
+
+@pytest.mark.parametrize(
     ("league_id", "source_name", "canonical_name"),
     [
         ("Finland_Kolmonen_Eastern_Group3", "Kultsu FC", "Kultsu"),
