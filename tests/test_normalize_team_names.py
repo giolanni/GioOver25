@@ -8,6 +8,16 @@ def _read_rows(path):
         return list(csv.DictReader(handle, delimiter=";"))
 
 
+def test_cleanup_roots_cover_all_persisted_team_name_datasets():
+    roots = {str(path).replace("\\", "/") for path in normalize_team_names.ROOTS}
+
+    assert "data/storico/risultati" in roots
+    assert "data/storico/classifiche_calcolate" in roots
+    assert "data/storico/ranking" in roots
+    assert "data/storico/ranking-risultati" in roots
+    assert "data/output_ranking" in roots
+
+
 def test_dry_run_reports_without_modifying_file(tmp_path):
     path = tmp_path / "ranking.csv"
     original = (
@@ -60,6 +70,23 @@ def test_results_filename_supplies_league_id(tmp_path):
     assert {item["LeagueId"] for item in changes} == {
         "Finland_Kolmonen_Southern_Group2"
     }
+
+
+def test_standings_filename_supplies_league_id(tmp_path):
+    standings_dir = tmp_path / "classifiche_calcolate"
+    standings_dir.mkdir()
+    path = standings_dir / "Finland_Kolmonen_Southern_Group2.csv"
+    path.write_text(
+        "Team;Played\nVJS/Akatemia;10\nToukolan Teräs;10\n",
+        encoding="utf-8",
+    )
+
+    changes = normalize_team_names._process_file(path, apply=False)
+
+    assert [(item["Old"], item["New"]) for item in changes] == [
+        ("VJS/Akatemia", "VJS 2"),
+        ("Toukolan Teräs", "ToTe"),
+    ]
 
 
 def test_regenerate_standings_merges_aliases_and_backs_up(tmp_path, monkeypatch):
