@@ -8,6 +8,11 @@ Applicazione con backup:
 
 Il report viene scritto in ``data/debug/team_name_normalization_report.csv``.
 I backup vengono raccolti in ``data/backup/team_names/<timestamp>/``.
+
+La bonifica e' volutamente retroattiva: oltre agli input correnti attraversa
+storico risultati, classifiche calcolate, storico ranking/ranking-risultati e
+output ranking. In questo modo la stessa tipologica viene applicata sia ai
+dati futuri sia a tutto il pregresso gia' persistito.
 """
 
 from __future__ import annotations
@@ -22,16 +27,23 @@ from .standings import generate_current_standings_file
 from .team_names import canonicalize_team_display_name
 
 
+RESULTS_DIR = Path("data/storico/risultati")
+STANDINGS_DIR = Path("data/storico/classifiche_calcolate")
+RANKING_HISTORY_DIR = Path("data/storico/ranking")
+# Compatibilita' con eventuali checkout/archivi che usano il nome storico
+# "ranking-risultati". Se la directory non esiste viene semplicemente saltata.
+RANKING_RESULTS_DIR = Path("data/storico/ranking-risultati")
+
 ROOTS = (
-    Path("data/storico/risultati"),
-    Path("data/storico/ranking"),
+    RESULTS_DIR,
+    STANDINGS_DIR,
+    RANKING_HISTORY_DIR,
+    RANKING_RESULTS_DIR,
     Path("data/input_partite"),
     Path("data/input_risultati"),
     Path("data/output_ranking"),
 )
 
-RESULTS_DIR = Path("data/storico/risultati")
-STANDINGS_DIR = Path("data/storico/classifiche_calcolate")
 REPORT_FILE = Path("data/debug/team_name_normalization_report.csv")
 BACKUP_BASE_DIR = Path("data/backup/team_names")
 
@@ -115,7 +127,7 @@ def _process_file(
 
     if changes and apply:
         if backup_root is None:
-            raise ValueError("backup_root obbligatorio in modalità apply")
+            raise ValueError("backup_root obbligatorio in modalita apply")
 
         _backup_file(path, backup_root)
         with path.open("w", newline="", encoding="utf-8-sig") as handle:
@@ -145,6 +157,9 @@ def _regenerate_standings(
         if not results_file.exists():
             continue
 
+        # La classifica viene comunque rigenerata dai risultati gia'
+        # canonicalizzati, anche se era stata bonificata direttamente poco
+        # prima: il risultato finale resta deterministico e idempotente.
         if standings_file.exists():
             _backup_file(standings_file, backup_root)
 
@@ -168,7 +183,10 @@ def _write_report(changes: list[dict]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Bonifica i nomi squadra usando team_name_dictionary.csv."
+        description=(
+            "Bonifica retroattivamente i nomi squadra usando "
+            "team_name_dictionary.csv."
+        )
     )
     parser.add_argument(
         "--apply",
@@ -223,7 +241,7 @@ def main() -> None:
 
     _write_report(all_changes)
 
-    print(f"Modalità: {'APPLY' if args.apply else 'DRY-RUN'}")
+    print(f"Modalita: {'APPLY' if args.apply else 'DRY-RUN'}")
     print(f"CSV analizzati: {files_scanned}")
     print(f"CSV con modifiche: {files_changed}")
     print(f"Nomi normalizzati/da normalizzare: {len(all_changes)}")
