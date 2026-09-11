@@ -1,4 +1,4 @@
-LeagueId;Round;MatchDate;Home;Away;HG;AG;Status;Notes
+﻿LeagueId;Round;MatchDate;Home;Away;HG;AG;Status;Notes
 SaudiArabia_ProfessionalLeague;6;2026-09-08;Al-Ettifaq;Al-Faysaly;0;0;Finale;
 SaudiArabia_ProfessionalLeague;6;2026-09-08;Al Hazem;Al-Taawon;1;0;Finale;
 SaudiArabia_ProfessionalLeague;6;2026-09-08;Al Qadsiah;Al Ahli SC;3;2;Finale;
@@ -38,4 +38,4 @@ Paraguay_DivisionIntermedia;6;2026-09-08;Paraguari AC;Guairena;3;1;Finale;
 SriLanka_SuperLeague;9;2026-09-08;Colombo;UP Country Lions;0;2;Finale;
 SouthKorea_KLeague1;28;2026-09-08;Incheon;Bucheon;2;1;Finale;
 SouthKorea_KLeague1;28;2026-09-08;Ulsan HD;Seoul;1;0;Finale;
-Finland_Kolmonen_Eastern_Group1;21;2026-09-08;FC Metso;Jyväskylän Seudun Palloseura;0;4;Finale;
+Finland_Kolmonen_Eastern_Group1;21;2026-09-08;FC Metso;SAPA;0;4;Finale;

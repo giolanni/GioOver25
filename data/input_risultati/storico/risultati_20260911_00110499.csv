@@ -1,4 +1,4 @@
-LeagueId;Round;MatchDate;Home;Away;HG;AG;Status;Notes
+﻿LeagueId;Round;MatchDate;Home;Away;HG;AG;Status;Notes
 Azerbaijan_FirstLeague;2;2026-09-10;Sabail;Mingachevir;2;1;Finale;
 Azerbaijan_FirstLeague;2;2026-09-10;Zaqatala;Baku Sporting;3;0;Finale;
 Azerbaijan_FirstLeague;2;2026-09-10;Gancabasar;Khankendi;2;1;Finale;
@@ -51,7 +51,7 @@ Finland_Kolmonen_Southern_Group2;;2026-09-10;HPS/2;Valtti;3;2;Finale;
 Finland_Kolmonen_Southern_Group1;;2026-09-10;HooGee;MPS;3;3;Finale;
 Finland_Kolmonen_Western_Group2;;2026-09-10;Fish United;FC Lasten;1;5;Finale;
 Finland_Kolmonen_Southern_Group3;;2026-09-10;TuPS;MK-United;;;Posticipata;Sorgente: annullata
-Finland_Kolmonen_Southern_Group2;;2026-09-10;PPJ/Lauttasaari;VJS/2;3;1;Finale;
+Finland_Kolmonen_Southern_Group2;;2026-09-10;PPJ/Lauttasaari;VJS 2;3;1;Finale;
 Finland_Kolmonen_Western_Group3;;2026-09-10;VPV;FC Ylivieska;0;1;Finale;
 Finland_Kolmonen_Western_Group2;;2026-09-10;TP-T;NoPS;1;5;Finale;
 Finland_Kolmonen_Southern_Group3;;2026-09-10;TiPS/2 U21;Lahti/69;7;2;Finale;

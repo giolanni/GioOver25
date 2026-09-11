@@ -1,4 +1,4 @@
-LeagueId;Round;MatchDate;Home;Away;HG;AG;Status;Notes
+﻿LeagueId;Round;MatchDate;Home;Away;HG;AG;Status;Notes
 Albania_AbissnetSuperiore;;2026-09-05;Laci;Teuta;1;3;Finale;
 Albania_AbissnetSuperiore;;2026-09-05;Vllaznia;Partizani;2;3;Finale;
 SaudiArabia_ProfessionalLeague;;2026-09-05;Al-Faysaly;Al Hazem;0;0;Finale;
@@ -576,21 +576,21 @@ Germany_Oberliga_Hamburg;;2026-09-05;Altona;ETSV Hamburg;;;Posticipata;
 Finland_Kolmonen_Eastern_Group3;21;2026-09-05;Savonlinnan Seudun Palloseura;Haminan Pallo-Kissat;4;1;Finale;
 Finland_Kolmonen_North;19;2026-09-05;Haukiputaan Pallo;KePS;1;1;Finale;
 Finland_Kolmonen_North;19;2026-09-05;Ponkilan Pantterit;Villan Pojat;0;4;Finale;
-Finland_Kolmonen_Western_Group1;20;2026-09-05;IFK Mariehamn 2;Jyrkkälän Tykit;1;1;Finale;
+Finland_Kolmonen_Western_Group1;20;2026-09-05;IFK 2;JyTy;1;1;Finale;
 Finland_Kolmonen_Southern_Group1;18;2026-09-05;Gilla FC;GrIFK/Akatemia U23;7;1;Finale;
-Finland_Kolmonen_Eastern_Group3;21;2026-09-05;Kumu;Kouvolan Jalkapallo;0;1;Finale;
-Finland_Kolmonen_Western_Group3;14;2026-09-05;Lapuan Virkiä;Sundom IF;0;5;Finale;
-Finland_Kolmonen_Western_Group2;20;2026-09-05;Tampere United/2;TP-49;16;0;Finale;
-Finland_Kolmonen_Western_Group2;20;2026-09-05;Sääksjärven Loiske;Tampereen Peli-Toverit;2;1;Finale;
+Finland_Kolmonen_Eastern_Group3;21;2026-09-05;Kumu;KJP;0;1;Finale;
+Finland_Kolmonen_Western_Group3;14;2026-09-05;Virkiä;Sundom IF;0;5;Finale;
+Finland_Kolmonen_Western_Group2;20;2026-09-05;Tampere Utd/2;TP-49;16;0;Finale;
+Finland_Kolmonen_Western_Group2;20;2026-09-05;Sääksjärven Loiske;TP-T;2;1;Finale;
 Finland_Kolmonen_Eastern_Group2;20;2026-09-05;Niemisen Urheilijat;Ylämyllyn Yllätys;3;2;Finale;
-Finland_Kolmonen_Southern_Group2;20;2026-09-05;Laajasalon Palloseura;Puotinkylän Valtti;3;1;Finale;
+Finland_Kolmonen_Southern_Group2;20;2026-09-05;Laajasalon Palloseura;Valtti;3;1;Finale;
 Finland_Kolmonen_Southern_Group3;19;2026-09-05;IF Sibbo Vargarna;Gnistan/Ogeli;7;2;Finale;
 Iceland_1DeildWomen;;2026-09-05;Tindastoll;KR Reykjavik;0;11;Finale;
 Iceland_1DeildWomen;;2026-09-05;Volsungur;Grótta;1;3;Finale;
 Iceland_1DeildWomen;;2026-09-05;ÍA Akranes;Haukar;1;3;Finale;
-Finland_Kolmonen_Southern_Group1;19;2026-09-09;Leppävaaran Pallo;GrIFK/Akatemia U23;0;1;Finale;
-Finland_Kolmonen_Eastern_Group2;20;2026-09-09;KuPS/Akatemia 2;Pallo-Kerho 37;0;1;Finale;
+Finland_Kolmonen_Southern_Group1;19;2026-09-09;LePa;GrIFK/Akatemia U23;0;1;Finale;
+Finland_Kolmonen_Eastern_Group2;20;2026-09-09;KuPS/Akatemia 2;PK-37;0;1;Finale;
 Finland_Kolmonen_North;19;2026-09-09;Hercules-j;Ponkilan Pantterit;1;1;Finale;
-Finland_Kolmonen_Eastern_Group1;21;2026-09-09;FC Vaajakoski/2;Keuruun Pallo;4;5;Finale;
-Finland_Kolmonen_Western_Group3;15;2026-09-09;KPV/Akatemia;Nykarleby IK;1;2;Finale;
-Finland_Kolmonen_Eastern_Group3;21;2026-09-09;LAUTP;Kultsu FC;0;4;Finale;
+Finland_Kolmonen_Eastern_Group1;21;2026-09-09;FC Vaajakoski/2;KeuPa;4;5;Finale;
+Finland_Kolmonen_Western_Group3;15;2026-09-09;KPV/Akatemia;NIK;1;2;Finale;
+Finland_Kolmonen_Eastern_Group3;21;2026-09-09;LAUTP;Kultsu;0;4;Finale;

@@ -12,9 +12,9 @@ Estonia_Meistriliiga;2026-09-09;Tammeka;Paide
 Georgia_ErovnuliLiga;2026-09-09;Samgurali;Dila Gori
 Georgia_ErovnuliLiga;2026-09-09;Spaeri;Rustavi
 Georgia_ErovnuliLiga;2026-09-09;Dinamo Batumi;Iberia 1999
-Germany_Regionalliga_Sudwest;2026-09-09;Fulda-Lehnerz;Eint. Frankfurt II
-Germany_Regionalliga_Sudwest;2026-09-09;Homburg;Kaiserslautern II
-Germany_Regionalliga_Sudwest;2026-09-09;Mainz II;VfR Mannheim
+Germany_Regionalliga_Sudwest;2026-09-09;Fulda-Lehnerz;Eint. Frankfurt 2
+Germany_Regionalliga_Sudwest;2026-09-09;Homburg;Kaiserslautern 2
+Germany_Regionalliga_Sudwest;2026-09-09;Mainz 2;VfR Mannheim
 Germany_Oberliga_Hessen;2026-09-09;Alzenau;Hanauer SC
 Germany_Oberliga_Hessen;2026-09-09;Pohlheim;Fernwald
 Germany_Oberliga_Hessen;2026-09-09;Baunatal;CSC 03 Kassel
@@ -33,13 +33,13 @@ Germany_Oberliga_Bayern_Nord;2026-09-09;Grossbardorf;Aschaffenburg
 Germany_Oberliga_BadenWurttemberg;2026-09-09;Normannia Gmund;Backnang
 Germany_Oberliga_BadenWurttemberg;2026-09-09;Ravensburg;Balingen
 Germany_Oberliga_BadenWurttemberg;2026-09-09;Teningen;Singen
-Germany_Oberliga_BadenWurttemberg;2026-09-09;Karlsruher II;Essingen
+Germany_Oberliga_BadenWurttemberg;2026-09-09;Karlsruher 2;Essingen
 Germany_Oberliga_BadenWurttemberg;2026-09-09;Pforzheim;Neckarsulm
 Germany_Oberliga_BadenWurttemberg;2026-09-09;Villingen;FC Holzhausen
 Germany_Oberliga_BadenWurttemberg;2026-09-09;1. FC Muhlhausen;Young Boys Reutlingen
 Germany_Oberliga_BadenWurttemberg;2026-09-09;Nottingen;Bahlinger
 Germany_Oberliga_BadenWurttemberg;2026-09-09;Reutlingen;Oberachern
-Germany_Oberliga_Niederrhein;2026-09-09;Uerdingen;Dusseldorf II
+Germany_Oberliga_Niederrhein;2026-09-09;Uerdingen;Dusseldorf 2
 Germany_Oberliga_Niederrhein;2026-09-09;Juchen-Garzweiler;SC St.Tonis
 England_Championship;2026-09-09;Derby;West Brom
 England_Championship;2026-09-09;Norwich;Birmingham
@@ -69,9 +69,9 @@ Sweden_Superettan;2026-09-09;Landskrona;Helsingborg
 Sweden_Superettan;2026-09-09;Ljungskile;Norrby
 Sweden_Superettan;2026-09-09;Nordic United;Värnamo
 Sweden_Superettan;2026-09-09;Sandviken;Oddevold
-Finland_Kolmonen_Eastern_Group3;2026-09-09;LAUTP;Kultsu FC
-Finland_Kolmonen_Western_Group3;2026-09-09;KPV/Akatemia;Nykarleby IK
-Finland_Kolmonen_Eastern_Group1;2026-09-09;FC Vaajakoski/2;Keuruun Pallo
+Finland_Kolmonen_Eastern_Group3;2026-09-09;LAUTP;Kultsu
+Finland_Kolmonen_Western_Group3;2026-09-09;KPV/Akatemia;NIK
+Finland_Kolmonen_Eastern_Group1;2026-09-09;FC Vaajakoski/2;KeuPa
 Finland_Kolmonen_North;2026-09-09;Hercules-j;Ponkilan Pantterit
-Finland_Kolmonen_Eastern_Group2;2026-09-09;KuPS/Akatemia II;Pallo-Kerho 37
-Finland_Kolmonen_Southern_Group1;2026-09-09;Leppävaaran Pallo;GrIFK/Akatemia U23
+Finland_Kolmonen_Eastern_Group2;2026-09-09;KuPS/Akatemia 2;PK-37
+Finland_Kolmonen_Southern_Group1;2026-09-09;LePa;GrIFK/Akatemia U23
