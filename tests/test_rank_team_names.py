@@ -6,6 +6,7 @@ from gioover25.rank_matches_v2 import (
     find_team_source_league,
     read_matches_to_rank,
 )
+from gioover25.team_names import get_team_id, normalize_team_name
 
 
 def test_ranking_input_and_output_use_canonical_team_name(tmp_path):
@@ -55,3 +56,18 @@ def test_find_team_source_uses_league_specific_aliases():
         histories,
         date(2026, 9, 8),
     ) == league_id
+
+
+def test_machine_safe_team_ids_are_used_for_identity():
+    western = "Finland_Kolmonen_Western_Group2"
+    southern = "Finland_Kolmonen_Southern_Group2"
+
+    assert get_team_id(western, "Ylöjärvi Utd.") == "FIN_YLOJARVI_UTD"
+    assert get_team_id(western, "Ylojarvi United FC") == "FIN_YLOJARVI_UTD"
+    assert normalize_team_name(western, "Ylöjärvi Utd.") == "FIN_YLOJARVI_UTD"
+
+    assert get_team_id(southern, "PPS") == "FIN_PPS"
+    assert get_team_id(southern, "Pakkalan Palloseura") == "FIN_PPS"
+    assert normalize_team_name(southern, "PPS") == normalize_team_name(
+        southern, "Pakkalan Palloseura"
+    )
