@@ -1,89 +1,90 @@
-LeagueId;CanonicalName;RealName;Aliases
-Australia_NSWLeagueOne;Canterbury Bankstown;Canterbury Bankstown FC;Canterbury Bankstown FC
-Australia_NSWLeagueOne;Newcastle Jets U23;Newcastle Jets Youth;Newcastle Jets Youth
-Australia_NSWLeagueOne;Bulls Academy;Northbridge FC Bulls;Northbridge FC Bulls
-Estonia_Esiliiga;Tartu Welco;Tartu JK Welco;Tartu JK Welco
-Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;TSV Kottern;TSV Kottern
-Germany_Oberliga_Bayern_Sud;Schwabmunchen;TSV Schwabmuenchen;TSV Schwabmuenchen
-Germany_Oberliga_Hessen;Giessen;FC Giessen;FC Giessen
-Germany_Oberliga_SchleswigHolstein;Kiel 2;Holstein Kiel 2;Holstein Kiel 2|Holstein Kiel II
-Germany_Regionalliga_Bayern;Eltersdorf;SC Eltersdorf;SC Eltersdorf
-Germany_Regionalliga_Bayern;Vilzing;DJK Vilzing;DJK Vilzing
-Germany_Regionalliga_Bayern;Memmingen;FC Memmingen;FC Memmingen
-Germany_Regionalliga_Nord;SC Weiche-08;SC Weiche Flensburg;SC Weiche Flensburg
-Germany_Regionalliga_Nord;Drochtersen/Assel;SV Drochtersen/Assel;SV Drochtersen/Assel
-Germany_Regionalliga_Nordost;Erfurt;RW Erfurt;RW Erfurt
-Germany_Regionalliga_Nordost;Zwickau;FSV Zwickau;FSV Zwickau
-Hungary_NBII;Kecskemeti;Kecskemeti TE;Kecskemeti TE
-Hungary_NBII;Mezokovesd;Mezokovesd SE;Mezokovesd SE
-Iceland_Division_2;Kormakur/Hvot;Kormakur/Hvoet;Kormakur/Hvoet
-Iceland_Division_2;Selfoss;UMF Selfoss;UMF Selfoss
-Iceland_Division_2;Olafsvik;Vikingur Olafsvik;Vikingur Olafsvik
-Norway_2ndDivision_Group1;Mjoendalen;Mjoendalen;Mjondalen|Mjøndalen
-Norway_2ndDivision_Group2;Kjelsaas;Kjelsaas;Kjelsås
-Norway_3rdDivision_Group1;Vaalerenga IF 2;Vaalerenga IF 2;Valerenga IF 2|Valerenga 2|Vålerenga IF 2|Vålerenga 2
-Norway_3rdDivision_Group1;Baerum;Baerum;Brum|Bærum|Baerum Sportsklubb
-Norway_3rdDivision_Group3;Foerde;Foerde;Frde|Førde
-Norway_3rdDivision_Group5;Floeya;Floeya;Flya|Fløya|Floya
-Norway_3rdDivision_Group5;Skjervoey;Skjervoey;Skjervy|Skjervøy
-USA_USLChampionship;Birmingham Legion;Birmingham Legion;Birmingham
-Finland_Kolmonen_Southern_Group1;EPS Reservi;EPS/Reservi;EPS/Reservi
-Finland_Kolmonen_Southern_Group1;Pöxyt;SexyPöxyt;SexyPöxyt|SexyPoxyt
-Finland_Kolmonen_Southern_Group1;LePa;Leppävaaran Pallo;Leppävaaran Pallo
-Finland_Kolmonen_Southern_Group2;TiPS;TiPS Vantaa;TiPS Vantaa
-Finland_Kolmonen_Southern_Group2;Valtti;Puotinkylän Valtti;Puotinkylan Valtti
-Finland_Kolmonen_Southern_Group2;Kontu;FC Kontu;FC Kontu
-Finland_Kolmonen_Southern_Group2;Laajasalon Palloseura;LPS Helsinki;LPS Helsinki
-Finland_Kolmonen_Southern_Group2;VJS 2;VJS/Akatemia;VJS/Akatemia|VJS/2|VJS Vantaa B|VJS Akatemia
-Finland_Kolmonen_Southern_Group2;ToTe;Toukolan Teräs;Toukolan Teras
-Finland_Kolmonen_Southern_Group3;RiPS;Riihimäen Palloseura;Riihimaen Palloseura
-Finland_Kolmonen_Southern_Group3;Futura;FC Futura;FC Futura
-Finland_Kolmonen_Southern_Group3;Atlantis 2;Atlantis FC/Akatemia;Atlantis FC Akatemia|Atlantis II
-Finland_Kolmonen_Southern_Group3;TiPS/2 U21;TiPS U21;TiPS U21
-Finland_Kolmonen_Southern_Group3;TuPS;Tuusulan Palloseura;Tuusulan Palloseura
-Finland_Kolmonen_Southern_Group3;Lahti/69;FC Lahti/69;FC Lahti 69|Lahti 69
-Finland_Kolmonen_Eastern_Group1;SAPA;Jyväskylän Seudun Palloseura;Jyvaskylan Seudun Palloseura
-Finland_Kolmonen_Eastern_Group1;Savon Pallo;SaPa;SaPa
-Finland_Kolmonen_Eastern_Group1;JJK/2;JJK Jyväskylä II;JJK Jyväskylä II|JJK Jyvaskyla II|JJK Jyväskylä 2|JJK Jyvaskyla 2
-Finland_Kolmonen_Eastern_Group1;Komeetat;Jyväskylän Komeetat;Jyväskylän Komeetat|Jyvaskylan Komeetat
-Finland_Kolmonen_Eastern_Group1;FC Vaajakoski/2;FC Vaajakoski 2;FC Vaajakoski 2|FC Vaajakoski II
-Finland_Kolmonen_Eastern_Group1;Blackbird;FC Jyväskylä Blackbird;FC Blackbird|FC Jyvaskyla Blackbird
-Finland_Kolmonen_Eastern_Group1;KeuPa;Keuruun Pallo;Keuruun Pallo
-Finland_Kolmonen_Eastern_Group2;PK-37;Pallo-Kerho 37;Pallo-Kerho 37
-Finland_Kolmonen_Eastern_Group3;KJP;Kouvolan Jalkapallo;Kouvolan Jalkapallo
-Finland_Kolmonen_Eastern_Group3;PeKa;Peli-Karhut;FC Peli-Karhut|Peli-Karhut
-Finland_Kolmonen_Eastern_Group3;Kultsu;Kultsu FC;Kultsu FC
-Finland_Kolmonen_Western_Group1;PiPS;Piikkiön Palloseura;Piikkion Palloseura
-Finland_Kolmonen_Western_Group1;IFK 2;IFK Mariehamn 2;IFK Mariehamn 2
-Finland_Kolmonen_Western_Group1;MaPS;Maskun Palloseura;Maskun Palloseura
-Finland_Kolmonen_Western_Group1;JyTy;Jyrkkälän Tykit;Jyrkkalan Tykit
-Finland_Kolmonen_Western_Group1;LTU U20;Littoisten Työväen Urheilijat U20;Littoisten Tyovaen Urheilijat U20
-Finland_Kolmonen_Western_Group1;PIF;Pargas IF;Pargas IF
-Finland_Kolmonen_Western_Group1;KaaPo;Kaarinan Pojat;Kaarinan Pojat
-Finland_Kolmonen_Western_Group1;ÅCF;Åbo CF;Abo CF|ACF
-Finland_Kolmonen_Western_Group2;NoPS;Nokian Palloseura;Nokian Palloseura
-Finland_Kolmonen_Western_Group2;Tampere Utd/2;Tampere United 2;Tampere United 2
-Finland_Kolmonen_Western_Group2;Ylöjärvi Utd.;Ylöjärvi United FC;Ylojarvi United FC|Ylojarvi Utd
-Finland_Kolmonen_Western_Group2;TP-T;Tampereen Peli-Toverit;Tampereen Peli Toverit
-Finland_Kolmonen_Western_Group2;FC LeKi;LeKi-futis;LeKi Futis
-Finland_Kolmonen_Western_Group2;Sääksjärven Loiske;Sääksjärven Loiske;Saaksjarven Loiske
-Finland_Kolmonen_Western_Group2;FC Haka j.;FC Haka Juniors;FC Haka Juniors
-Finland_Kolmonen_Western_Group2;FC Lasten;FC Lasten;Lasten
-Finland_Kolmonen_Western_Group2;TPV/2;Tampereen Pallo-Veikot 2;TPV 2|TPV II
-Finland_Kolmonen_Western_Group3;Virkiä;Lapuan Virkiä;Lapuan Virkia
-Finland_Kolmonen_Western_Group3;Kiisto;FC Kiisto;FC Kiisto|Kiisto Vaasa
-Finland_Kolmonen_Western_Group3;VIFK;Vaasa IFK;Vaasa IFK
-Finland_Kolmonen_Western_Group3;VPV;Vaasan Pallo-Veikot;Vaasan Pallo Veikot|VPV Pallo Veikot
-Finland_Kolmonen_Western_Group3;Sundom IF;Sundom IF;SIF
-Finland_Kolmonen_Western_Group3;Sp. Kristina;Sporting Kristina;Sporting Kristina
-Finland_Kolmonen_Western_Group3;FC Ylivieska;YPA Ylivieska;YPA Ylivieska
-Finland_Kolmonen_Western_Group3;SJK-j;SJK-j Apollo;SJK j Apollo|SJK J
-Finland_Kolmonen_Western_Group3;NIK;Nykarleby IK;Nykarleby IK
-Finland_Kolmonen_Eastern_Group2;Kings;Kings SC;Kings SC
-Finland_Kolmonen_North;KajHa;Kajaanin Haka;Kajaanin Haka
-Finland_Kolmonen_North;KaPa;Kajaanin Palloilijat;Kajaanin Palloilijat
-Finland_Kolmonen_North;KePS;Kemin Palloseura;Kemin Palloseura
-Finland_Kolmonen_North;RoPo;Rollon Pojat;Rollon Pojat
-Finland_Kolmonen_North;Santa Claus;FC Santa Claus;FC Santa Claus
-Finland_Kolmonen_North;Hercules-j;JS Hercules II;Hercules 2|Hercules II|JS Hercules II|Hercules-J
-Finland_Ykkonen;RoPS;Rovaniemen Palloseura;Rovaniemi|Rovaniemen Palloseura
+TeamId;LeagueId;CanonicalName;RealName;Aliases
+AUS_CANTERBURY_BANKSTOWN;Australia_NSWLeagueOne;Canterbury Bankstown;Canterbury Bankstown FC;Canterbury Bankstown FC
+AUS_NEWCASTLE_JETS_U23;Australia_NSWLeagueOne;Newcastle Jets U23;Newcastle Jets Youth;Newcastle Jets Youth
+AUS_BULLS_ACADEMY;Australia_NSWLeagueOne;Bulls Academy;Northbridge FC Bulls;Northbridge FC Bulls
+EST_TARTU_WELCO;Estonia_Esiliiga;Tartu Welco;Tartu JK Welco;Tartu JK Welco
+GER_KOTTERN_ST_MANG;Germany_Oberliga_Bayern_Sud;Kottern-St. Mang;TSV Kottern;TSV Kottern
+GER_SCHWABMUNCHEN;Germany_Oberliga_Bayern_Sud;Schwabmunchen;TSV Schwabmuenchen;TSV Schwabmuenchen
+GER_GIESSEN;Germany_Oberliga_Hessen;Giessen;FC Giessen;FC Giessen
+GER_KIEL_2;Germany_Oberliga_SchleswigHolstein;Kiel 2;Holstein Kiel 2;Holstein Kiel 2|Holstein Kiel II
+GER_ELTERSDORF;Germany_Regionalliga_Bayern;Eltersdorf;SC Eltersdorf;SC Eltersdorf
+GER_VILZING;Germany_Regionalliga_Bayern;Vilzing;DJK Vilzing;DJK Vilzing
+GER_MEMMINGEN;Germany_Regionalliga_Bayern;Memmingen;FC Memmingen;FC Memmingen
+GER_SC_WEICHE_08;Germany_Regionalliga_Nord;SC Weiche-08;SC Weiche Flensburg;SC Weiche Flensburg
+GER_DROCHTERSEN_ASSEL;Germany_Regionalliga_Nord;Drochtersen/Assel;SV Drochtersen/Assel;SV Drochtersen/Assel
+GER_ERFURT;Germany_Regionalliga_Nordost;Erfurt;RW Erfurt;RW Erfurt
+GER_ZWICKAU;Germany_Regionalliga_Nordost;Zwickau;FSV Zwickau;FSV Zwickau
+HUN_KECSKEMETI;Hungary_NBII;Kecskemeti;Kecskemeti TE;Kecskemeti TE
+HUN_MEZOKOVESD;Hungary_NBII;Mezokovesd;Mezokovesd SE;Mezokovesd SE
+ISL_KORMAKUR_HVOT;Iceland_Division_2;Kormakur/Hvot;Kormakur/Hvoet;Kormakur/Hvoet
+ISL_SELFOSS;Iceland_Division_2;Selfoss;UMF Selfoss;UMF Selfoss
+ISL_OLAFSVIK;Iceland_Division_2;Olafsvik;Vikingur Olafsvik;Vikingur Olafsvik
+NOR_MJOENDALEN;Norway_2ndDivision_Group1;Mjoendalen;Mjoendalen;Mjondalen|Mjøndalen
+NOR_KJELSAAS;Norway_2ndDivision_Group2;Kjelsaas;Kjelsaas;Kjelsås
+NOR_VAALERENGA_IF_2;Norway_3rdDivision_Group1;Vaalerenga IF 2;Vaalerenga IF 2;Valerenga IF 2|Valerenga 2|Vålerenga IF 2|Vålerenga 2
+NOR_BAERUM;Norway_3rdDivision_Group1;Baerum;Baerum;Brum|Bærum|Baerum Sportsklubb
+NOR_FOERDE;Norway_3rdDivision_Group3;Foerde;Foerde;Frde|Førde
+NOR_FLOEYA;Norway_3rdDivision_Group5;Floeya;Floeya;Flya|Fløya|Floya
+NOR_SKJERVOEY;Norway_3rdDivision_Group5;Skjervoey;Skjervoey;Skjervy|Skjervøy
+USA_BIRMINGHAM_LEGION;USA_USLChampionship;Birmingham Legion;Birmingham Legion;Birmingham
+FIN_EPS_RESERVI;Finland_Kolmonen_Southern_Group1;EPS Reservi;EPS/Reservi;EPS/Reservi
+FIN_POXYT;Finland_Kolmonen_Southern_Group1;Pöxyt;SexyPöxyt;SexyPöxyt|SexyPoxyt
+FIN_LEPA;Finland_Kolmonen_Southern_Group1;LePa;Leppävaaran Pallo;Leppävaaran Pallo
+FIN_TIPS;Finland_Kolmonen_Southern_Group2;TiPS;TiPS Vantaa;TiPS Vantaa
+FIN_VALTTI;Finland_Kolmonen_Southern_Group2;Valtti;Puotinkylän Valtti;Puotinkylan Valtti
+FIN_KONTU;Finland_Kolmonen_Southern_Group2;Kontu;FC Kontu;FC Kontu
+FIN_LAAJASALON_PALLOSEURA;Finland_Kolmonen_Southern_Group2;Laajasalon Palloseura;LPS Helsinki;LPS Helsinki
+FIN_VJS_2;Finland_Kolmonen_Southern_Group2;VJS 2;VJS/Akatemia;VJS/Akatemia|VJS/2|VJS Vantaa B|VJS Akatemia
+FIN_TOTE;Finland_Kolmonen_Southern_Group2;ToTe;Toukolan Teräs;Toukolan Teras
+FIN_PPS;Finland_Kolmonen_Southern_Group2;PPS;Pakkalan Palloseura;Pakkalan Palloseura
+FIN_RIPS;Finland_Kolmonen_Southern_Group3;RiPS;Riihimäen Palloseura;Riihimaen Palloseura
+FIN_FUTURA;Finland_Kolmonen_Southern_Group3;Futura;FC Futura;FC Futura
+FIN_ATLANTIS_2;Finland_Kolmonen_Southern_Group3;Atlantis 2;Atlantis FC/Akatemia;Atlantis FC Akatemia|Atlantis II
+FIN_TIPS_2_U21;Finland_Kolmonen_Southern_Group3;TiPS/2 U21;TiPS U21;TiPS U21
+FIN_TUPS;Finland_Kolmonen_Southern_Group3;TuPS;Tuusulan Palloseura;Tuusulan Palloseura
+FIN_LAHTI_69;Finland_Kolmonen_Southern_Group3;Lahti/69;FC Lahti/69;FC Lahti 69|Lahti 69
+FIN_SAPA;Finland_Kolmonen_Eastern_Group1;SAPA;Jyväskylän Seudun Palloseura;Jyvaskylan Seudun Palloseura
+FIN_SAVON_PALLO;Finland_Kolmonen_Eastern_Group1;Savon Pallo;SaPa;SaPa
+FIN_JJK_2;Finland_Kolmonen_Eastern_Group1;JJK/2;JJK Jyväskylä II;JJK Jyväskylä II|JJK Jyvaskyla II|JJK Jyväskylä 2|JJK Jyvaskyla 2
+FIN_KOMEETAT;Finland_Kolmonen_Eastern_Group1;Komeetat;Jyväskylän Komeetat;Jyväskylän Komeetat|Jyvaskylan Komeetat
+FIN_FC_VAAJAKOSKI_2;Finland_Kolmonen_Eastern_Group1;FC Vaajakoski/2;FC Vaajakoski 2;FC Vaajakoski 2|FC Vaajakoski II
+FIN_BLACKBIRD;Finland_Kolmonen_Eastern_Group1;Blackbird;FC Jyväskylä Blackbird;FC Blackbird|FC Jyvaskyla Blackbird
+FIN_KEUPA;Finland_Kolmonen_Eastern_Group1;KeuPa;Keuruun Pallo;Keuruun Pallo
+FIN_PK_37;Finland_Kolmonen_Eastern_Group2;PK-37;Pallo-Kerho 37;Pallo-Kerho 37
+FIN_KJP;Finland_Kolmonen_Eastern_Group3;KJP;Kouvolan Jalkapallo;Kouvolan Jalkapallo
+FIN_PEKA;Finland_Kolmonen_Eastern_Group3;PeKa;Peli-Karhut;FC Peli-Karhut|Peli-Karhut
+FIN_KULTSU;Finland_Kolmonen_Eastern_Group3;Kultsu;Kultsu FC;Kultsu FC
+FIN_PIPS;Finland_Kolmonen_Western_Group1;PiPS;Piikkiön Palloseura;Piikkion Palloseura
+FIN_IFK_2;Finland_Kolmonen_Western_Group1;IFK 2;IFK Mariehamn 2;IFK Mariehamn 2
+FIN_MAPS;Finland_Kolmonen_Western_Group1;MaPS;Maskun Palloseura;Maskun Palloseura
+FIN_JYTY;Finland_Kolmonen_Western_Group1;JyTy;Jyrkkälän Tykit;Jyrkkalan Tykit
+FIN_LTU_U20;Finland_Kolmonen_Western_Group1;LTU U20;Littoisten Työväen Urheilijat U20;Littoisten Tyovaen Urheilijat U20
+FIN_PIF;Finland_Kolmonen_Western_Group1;PIF;Pargas IF;Pargas IF
+FIN_KAAPO;Finland_Kolmonen_Western_Group1;KaaPo;Kaarinan Pojat;Kaarinan Pojat
+FIN_ACF;Finland_Kolmonen_Western_Group1;ÅCF;Åbo CF;Abo CF|ACF
+FIN_NOPS;Finland_Kolmonen_Western_Group2;NoPS;Nokian Palloseura;Nokian Palloseura
+FIN_TAMPERE_UTD_2;Finland_Kolmonen_Western_Group2;Tampere Utd/2;Tampere United 2;Tampere United 2
+FIN_YLOJARVI_UTD;Finland_Kolmonen_Western_Group2;Ylöjärvi Utd.;Ylöjärvi United FC;Ylojarvi United FC|Ylojarvi Utd
+FIN_TP_T;Finland_Kolmonen_Western_Group2;TP-T;Tampereen Peli-Toverit;Tampereen Peli Toverit
+FIN_FC_LEKI;Finland_Kolmonen_Western_Group2;FC LeKi;LeKi-futis;LeKi Futis
+FIN_SAAKSJARVEN_LOISKE;Finland_Kolmonen_Western_Group2;Sääksjärven Loiske;Sääksjärven Loiske;Saaksjarven Loiske
+FIN_FC_HAKA_J;Finland_Kolmonen_Western_Group2;FC Haka j.;FC Haka Juniors;FC Haka Juniors
+FIN_FC_LASTEN;Finland_Kolmonen_Western_Group2;FC Lasten;FC Lasten;Lasten
+FIN_TPV_2;Finland_Kolmonen_Western_Group2;TPV/2;Tampereen Pallo-Veikot 2;TPV 2|TPV II
+FIN_VIRKIA;Finland_Kolmonen_Western_Group3;Virkiä;Lapuan Virkiä;Lapuan Virkia
+FIN_KIISTO;Finland_Kolmonen_Western_Group3;Kiisto;FC Kiisto;FC Kiisto|Kiisto Vaasa
+FIN_VIFK;Finland_Kolmonen_Western_Group3;VIFK;Vaasa IFK;Vaasa IFK
+FIN_VPV;Finland_Kolmonen_Western_Group3;VPV;Vaasan Pallo-Veikot;Vaasan Pallo Veikot|VPV Pallo Veikot
+FIN_SUNDOM_IF;Finland_Kolmonen_Western_Group3;Sundom IF;Sundom IF;SIF
+FIN_SP_KRISTINA;Finland_Kolmonen_Western_Group3;Sp. Kristina;Sporting Kristina;Sporting Kristina
+FIN_FC_YLIVIESKA;Finland_Kolmonen_Western_Group3;FC Ylivieska;YPA Ylivieska;YPA Ylivieska
+FIN_SJK_J;Finland_Kolmonen_Western_Group3;SJK-j;SJK-j Apollo;SJK j Apollo|SJK J
+FIN_NIK;Finland_Kolmonen_Western_Group3;NIK;Nykarleby IK;Nykarleby IK
+FIN_KINGS;Finland_Kolmonen_Eastern_Group2;Kings;Kings SC;Kings SC
+FIN_KAJHA;Finland_Kolmonen_North;KajHa;Kajaanin Haka;Kajaanin Haka
+FIN_KAPA;Finland_Kolmonen_North;KaPa;Kajaanin Palloilijat;Kajaanin Palloilijat
+FIN_KEPS;Finland_Kolmonen_North;KePS;Kemin Palloseura;Kemin Palloseura
+FIN_ROPO;Finland_Kolmonen_North;RoPo;Rollon Pojat;Rollon Pojat
+FIN_SANTA_CLAUS;Finland_Kolmonen_North;Santa Claus;FC Santa Claus;FC Santa Claus
+FIN_HERCULES_J;Finland_Kolmonen_North;Hercules-j;JS Hercules II;Hercules 2|Hercules II|JS Hercules II|Hercules-J
+FIN_ROPS;Finland_Ykkonen;RoPS;Rovaniemen Palloseura;Rovaniemi|Rovaniemen Palloseura
