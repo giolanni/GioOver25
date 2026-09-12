@@ -30,6 +30,7 @@ Altre varianti strong-defense:
 
 Engine young-history:
     v30
+    v31
 """
 
 from . import (
@@ -54,6 +55,7 @@ from . import (
     v26,
     v26def,
     v30,
+    v31,
 )
 
 OFFICIAL_ENGINES = {
@@ -81,6 +83,7 @@ EXPERIMENTAL_ENGINES = {
     "v25def": v25def,
     "v26def": v26def,
     "v30": v30,
+    "v31": v31,
 }
 
 ENGINES = {
