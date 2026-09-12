@@ -16,6 +16,12 @@ def maturity(n):
 def key(league_id, match_date, home, away):
     return (league_id, match_date, normalize_team_name(league_id, home), normalize_team_name(league_id, away))
 
+def parse_over25(value):
+    raw = str(value or "").strip().upper()
+    if raw in {"OK", "1", "TRUE", "YES"}: return 1
+    if raw in {"KO", "0", "FALSE", "NO"}: return 0
+    return None
+
 def stats(rows):
     n=len(rows); ok=sum(int(r["Over25"]) == 1 for r in rows)
     return ok,n-ok,n,round(ok/n*100,2) if n else 0.0
@@ -27,6 +33,8 @@ def main():
     features=build_feature_rows(min_history=5,windows=(5,7,8))
     idx={key(r["LeagueId"],r["MatchDate"],r["Home"],r["Away"]):r for r in features}
     joined=[]
+    final_rows=0
+    result_rows=0
     for engine_dir in sorted(RANKING_DIR.iterdir() if RANKING_DIR.exists() else []):
         if not engine_dir.is_dir(): continue
         engine=engine_dir.name
@@ -36,14 +44,21 @@ def main():
             reader=csv.DictReader(h,delimiter=";")
             for row in reader:
                 if str(row.get("MatchStatus","")).strip().upper() not in {"FINAL","FINALE"}: continue
-                if str(row.get("Over25","")).strip() not in {"0","1"}: continue
+                final_rows += 1
+                over25 = parse_over25(row.get("Over25",""))
+                if over25 is None: continue
+                result_rows += 1
                 league_id=str(row.get("LeagueId","")).strip(); md=str(row.get("MatchDate","")).strip()
                 f=idx.get(key(league_id,md,row.get("Home",""),row.get("Away","")))
                 if f is None: continue
                 joined.append({"Engine":engine,"Band":str(row.get("Band","")).strip().upper(),"LeagueId":league_id,"MatchDate":md,
-                               "Home":row.get("Home",""),"Away":row.get("Away",""),"Over25":int(row["Over25"]),
+                               "Home":row.get("Home",""),"Away":row.get("Away",""),"Over25":over25,
                                "MinPlayedBefore":f["MinPlayedBefore"],"MaturityBand":maturity(int(f["MinPlayedBefore"]))})
-    if not joined: raise RuntimeError("Nessuna prediction FINAL abbinata allo storico partite.")
+    if not joined:
+        raise RuntimeError(
+            "Nessuna prediction FINAL abbinata allo storico partite. "
+            f"FINAL lette={final_rows}, con risultato Over25 valido={result_rows}, feature storiche={len(features)}."
+        )
     results=[]
     engines=sorted({r["Engine"] for r in joined})
     for engine in engines:
@@ -59,6 +74,9 @@ def main():
                 if not subset: continue
                 ok,ko,n,hit=stats(subset); results.append({"Engine":engine,"Population":pop,"Maturity":label,"OK":ok,"KO":ko,"N":n,"HitRate":hit})
     out=Path(args.output_dir); write_csv(out/"engine_maturity_results.csv",results); write_csv(out/"engine_maturity_joined.csv",joined)
+    print(f"Prediction FINAL lette: {final_rows}")
+    print(f"Prediction con Over25 valido: {result_rows}")
+    print(f"Feature storiche disponibili: {len(features)}")
     print(f"Prediction abbinate: {len(joined)}")
     print("\nALTA - migliori engine con storico 5-8 gare:")
     short=[r for r in results if r["Population"]=="ALTA" and r["Maturity"] in {"5-6","7-8"}]
