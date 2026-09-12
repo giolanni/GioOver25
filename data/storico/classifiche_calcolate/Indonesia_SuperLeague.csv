@@ -1,19 +1,19 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Arema;1;1;0;0;4;0;4;3;3.0
-1;2;Persib;1;1;0;0;3;1;2;3;3.0
-1;3;Madura United;1;1;0;0;2;0;2;3;3.0
-1;4;Bali United;1;1;0;0;2;1;1;3;3.0
-1;5;Dewa United;1;1;0;0;1;0;1;3;3.0
-1;6;Persija Jakarta;1;1;0;0;1;0;1;3;3.0
-1;7;FC Bhayangkara;1;0;1;0;1;1;0;1;1.0
-1;8;Garudayaksa;1;0;1;0;1;1;0;1;1.0
-1;9;Java United;1;0;1;0;1;1;0;1;1.0
-1;10;PSIM Yogyakarta;1;0;1;0;1;1;0;1;1.0
-1;11;Persebaya;1;0;1;0;1;1;0;1;1.0
-1;12;Persita;1;0;1;0;1;1;0;1;1.0
-1;13;PSS Sleman;1;0;0;1;1;2;-1;0;0.0
-1;14;Borneo;1;0;0;1;0;1;-1;0;0.0
-1;15;Persik Kediri;1;0;0;1;0;1;-1;0;0.0
-1;16;PSM Makassar;1;0;0;1;1;3;-2;0;0.0
-1;17;Persijap Jepara;1;0;0;1;0;2;-2;0;0.0
-1;18;Isenmulang Kalteng;1;0;0;1;0;4;-4;0;0.0
+2;1;Dewa United;2;1;1;0;3;2;1;4;2.0
+2;2;Arema;1;1;0;0;4;0;4;3;3.0
+2;3;Persib;1;1;0;0;3;1;2;3;3.0
+2;4;Madura United;1;1;0;0;2;0;2;3;3.0
+2;5;Bali United;1;1;0;0;2;1;1;3;3.0
+2;6;Persik Kediri;2;1;0;1;2;1;1;3;1.5
+2;7;Persija Jakarta;1;1;0;0;1;0;1;3;3.0
+2;8;FC Bhayangkara;2;0;2;0;3;3;0;2;1.0
+2;9;Java United;1;0;1;0;1;1;0;1;1.0
+2;10;PSIM Yogyakarta;1;0;1;0;1;1;0;1;1.0
+2;11;Persebaya;1;0;1;0;1;1;0;1;1.0
+2;12;Persita;1;0;1;0;1;1;0;1;1.0
+2;13;Garudayaksa;2;0;1;1;1;3;-2;1;0.5
+2;14;PSS Sleman;1;0;0;1;1;2;-1;0;0.0
+2;15;Borneo;1;0;0;1;0;1;-1;0;0.0
+2;16;PSM Makassar;1;0;0;1;1;3;-2;0;0.0
+2;17;Persijap Jepara;1;0;0;1;0;2;-2;0;0.0
+2;18;Isenmulang Kalteng;1;0;0;1;0;4;-4;0;0.0

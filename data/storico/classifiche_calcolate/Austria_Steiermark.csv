@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-2;1;Grossklein;2;1;1;0;2;1;1;4;2.0
-2;2;Stadtwerke Bruck/Mur;1;1;0;0;3;0;3;3;3.0
-2;3;Pachern;1;1;0;0;2;0;2;3;3.0
-2;4;SV Union Gnas;1;1;0;0;2;0;2;3;3.0
-2;5;SV Wildon;1;1;0;0;2;1;1;3;3.0
-2;6;Koflach;1;1;0;0;1;0;1;3;3.0
-2;7;Hohenhaus Schladming;1;0;1;0;2;2;0;1;1.0
-2;8;SV Schermann Rorhrach;1;0;1;0;2;2;0;1;1.0
-2;9;TUS Bad Waltersdorf;1;0;1;0;2;2;0;1;1.0
-2;10;Ilzer SV;1;0;1;0;0;0;0;1;1.0
-2;11;Lebring;2;0;1;1;3;4;-1;1;0.5
-2;12;Leoben;1;0;0;1;1;2;-1;0;0.0
-2;13;UFC Fehring;1;0;0;1;0;1;-1;0;0.0
-2;14;Furstenfeld;1;0;0;1;0;2;-2;0;0.0
-2;15;Weindorf St. Anna;1;0;0;1;0;2;-2;0;0.0
-2;16;Kindberg Murzhofen;1;0;0;1;0;3;-3;0;0.0
+3;1;SV Wildon;2;2;0;0;6;1;5;6;3.0
+3;2;Stadtwerke Bruck/Mur;2;2;0;0;6;1;5;6;3.0
+3;3;SV Union Gnas;2;2;0;0;4;1;3;6;3.0
+3;4;Pachern;2;2;0;0;3;0;3;6;3.0
+3;5;Grossklein;3;1;2;0;6;5;1;5;1.667
+3;6;SV Schermann Rorhrach;2;1;1;0;8;4;4;4;2.0
+3;7;Ilzer SV;2;1;1;0;4;1;3;4;2.0
+3;8;Koflach;2;1;0;1;1;1;0;3;1.5
+3;9;Weindorf St. Anna;2;1;0;1;1;2;-1;3;1.5
+3;10;Hohenhaus Schladming;2;0;1;1;3;4;-1;1;0.5
+3;11;Lebring;3;0;1;2;3;5;-2;1;0.333
+3;12;Kindberg Murzhofen;2;0;1;1;4;7;-3;1;0.5
+3;13;TUS Bad Waltersdorf;2;0;1;1;3;6;-3;1;0.5
+3;14;UFC Fehring;2;0;0;2;1;4;-3;0;0.0
+3;15;Leoben;2;0;0;2;3;8;-5;0;0.0
+3;16;Furstenfeld;2;0;0;2;0;6;-6;0;0.0
