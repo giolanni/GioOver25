@@ -27,8 +27,8 @@ def _row(
     }
 
 
-def test_append_predictions_skips_same_fixture_with_match_date_less_than_3_days(monkeypatch):
-    existing = _row("2026-08-28", status="FINAL", hg="1", ag="1")
+def test_append_predictions_corrects_match_date_within_two_days(monkeypatch):
+    existing = _row("2026-08-28")
     written = {}
 
     monkeypatch.setattr(ranking_history, "_read_history", lambda engine_name: [existing])
@@ -46,10 +46,8 @@ def test_append_predictions_skips_same_fixture_with_match_date_less_than_3_days(
 
     assert written["engine"] == "v25"
     assert len(written["rows"]) == 1
-    assert written["rows"][0]["MatchDate"] == "2026-08-28"
-    assert written["rows"][0]["MatchStatus"] == "FINAL"
-    assert written["rows"][0]["HG"] == "1"
-    assert written["rows"][0]["AG"] == "1"
+    assert written["rows"][0]["MatchDate"] == "2026-08-30"
+    assert written["rows"][0]["MatchStatus"] == "SCHEDULED"
 
 
 def test_append_predictions_allows_same_fixture_at_3_days_distance(monkeypatch):
