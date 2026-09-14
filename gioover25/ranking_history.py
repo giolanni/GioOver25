@@ -234,7 +234,7 @@ def append_predictions(
     history = _read_history(engine_name)
     existing_keys = {_key(row) for row in history}
     added = 0
-    near_duplicates = 0
+    match_dates_corrected = 0
 
     for row in rows:
         history_row = dict(row)
@@ -256,14 +256,24 @@ def append_predictions(
             continue
 
         # rank_matches può essere rilanciato con la stessa gara dopo una piccola
-        # correzione del MatchDate. In tal caso non deve nascere una seconda
-        # prediction irrisolta nello storico: per la stessa lega/Home/Away una
-        # distanza di 0, 1 o 2 giorni identifica la stessa partita.
-        if any(
-            _is_near_duplicate_prediction(existing_row, history_row)
-            for existing_row in history
-        ):
-            near_duplicates += 1
+        # correzione del MatchDate. La gara non va scartata: correggiamo la data
+        # della prediction già presente così che compaia nella giornata corrente.
+        near_duplicate = next(
+            (
+                existing_row
+                for existing_row in history
+                if _is_near_duplicate_prediction(existing_row, history_row)
+            ),
+            None,
+        )
+        if near_duplicate is not None:
+            old_key = _key(near_duplicate)
+            near_duplicate["MatchDate"] = history_row["MatchDate"]
+            if _text(history_row.get("Round")):
+                near_duplicate["Round"] = history_row["Round"]
+            existing_keys.discard(old_key)
+            existing_keys.add(_key(near_duplicate))
+            match_dates_corrected += 1
             continue
 
         history.append(history_row)
@@ -275,11 +285,11 @@ def append_predictions(
         f"[{engine_name}] Storico ranking aggiornato. "
         f"Nuove previsioni: {added}"
     )
-    if near_duplicates:
+    if match_dates_corrected:
         print(
-            f"[{engine_name}] Prediction quasi-duplicate ignorate "
-            f"(MatchDate < {NEAR_DUPLICATE_MATCH_DATE_DAYS} giorni): "
-            f"{near_duplicates}"
+            f"[{engine_name}] MatchDate corretti su prediction esistenti "
+            f"(differenza < {NEAR_DUPLICATE_MATCH_DATE_DAYS} giorni): "
+            f"{match_dates_corrected}"
         )
 
 
