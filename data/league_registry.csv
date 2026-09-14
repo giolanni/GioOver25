@@ -1,5 +1,6 @@
 ﻿LeagueId;Country;League;Teams;ExpectedRounds;HomeAway;Notes;CompetitionGroup;
 Albania_AbissnetSuperiore;Albania;Abissnet Superiore;10;18;Yes;;;
+Andorra_PrimeraDivisio;Andorra;Primera Divisió;10;27;No;2026/27: 10 squadre, calendario su 27 giornate con triplo girone;;
 Armenia_FirstLeague;Armenia;First League;16;30;Yes;2026/27: 16 squadre, calendario su 30 giornate; seconda divisione armena;
 Armenia_PremierLeague;Armenia;Premier League;12;33;Yes;2026/27: 12 squadre, 33 giornate, formato a tre gironi;;
 Australia_NorthernNSWStateLeague;Australia;Northern NSW State League;10;18;Yes;Round 13 currently partial in supplied data;;
