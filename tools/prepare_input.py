@@ -95,7 +95,6 @@ def resolve(registry, country, league):
     target=aliases(league)
     exact=[r for r in candidates if norm(r.league) in target or bool(aliases(r.league)&target)]
     if len(exact)==1: return exact[0].league_id
-    # phase-aware fallback: require all meaningful registry tokens to occur in source or vice versa
     nl=norm(league)
     fuzzy=[r for r in candidates if norm(r.league) in nl or nl in norm(r.league)]
     return fuzzy[0].league_id if len(fuzzy)==1 else None
@@ -115,7 +114,6 @@ def parse_date(line, default_year):
 
 
 def dedupe_pair(lines, i):
-    """Flashscore usually repeats each team. Return displayed name and next index."""
     if i>=len(lines): return None,i
     name=lines[i]; i+=1
     if i<len(lines) and lines[i]==name: i+=1
@@ -131,7 +129,6 @@ def parse_standard(lines, mode, registry, default_year):
         if line.endswith(":"):
             country=line[:-1].strip(); i+=1; continue
         if line in IGNORE or line.startswith("mostra partite") or line=="SRF": i+=1; continue
-        # League title is normally immediately before COUNTRY:
         if i+1<len(lines) and lines[i+1].endswith(":"):
             league=line; i+=1; continue
         if mode=="rank" and TIME_RE.match(line):
@@ -148,7 +145,6 @@ def parse_standard(lines, mode, registry, default_year):
             status=line
             if not (league and country and current_date): i+=1; continue
             home,j=dedupe_pair(lines,i+1); away,j=dedupe_pair(lines,j)
-            # Some source rows contain stray ranking/penalty numbers. Take first two consecutive numeric score lines.
             nums=[]; k=j
             while k<len(lines) and len(nums)<2 and k<j+5:
                 if INT_RE.match(lines[k]): nums.append(lines[k])
@@ -173,13 +169,11 @@ def parse_kolmonen(lines, mode, registry, default_year):
         d=parse_date(lines[i+4],default_year)
         marker=lines[i+5]
         if not d or not (TIME_RE.match(marker) or marker in {"FT","Finale"}): i+=1; continue
-        # In this format first value is full name, second may be source abbreviation: keep full names.
         home=lines[i+6]; away=lines[i+8] if i+8<len(lines) else ""
         lid=resolve(registry,country,league)
         if not lid: unresolved.add((country,league)); i+=1; continue
         if mode=="rank" and TIME_RE.match(marker): out.append(Match(lid,d,home,away))
         elif mode=="results" and marker in {"FT","Finale"}:
-            # home, alias, away, alias, HG, AG; later numbers are not regulation score.
             score_i=i+10
             if score_i+1<len(lines) and INT_RE.match(lines[score_i]) and INT_RE.match(lines[score_i+1]):
                 out.append(Match(lid,d,home,away,lines[score_i],lines[score_i+1],"FINAL",""))
@@ -220,11 +214,13 @@ def main():
     standard,u1=parse_standard(lines,a.mode,registry,a.year)
     kolmonen,u2=parse_kolmonen(lines,a.mode,registry,a.year)
     matches=unique(standard+kolmonen)
-    if a.output: output=a.output
+    if a.output:
+        output=a.output
+    elif a.mode=="results":
+        output=ROOT/"data"/"input_risultati"/"risultati.csv"
     else:
         date=matches[0].date.replace("-","_") if matches else "unknown"
-        folder=ROOT/"data"/("input_partite" if a.mode=="rank" else "input_risultati")
-        output=folder/f"{'partite' if a.mode=='rank' else 'risultati'}_{date}.csv"
+        output=ROOT/"data"/"input_partite"/f"partite_{date}.csv"
     write_csv(output,a.mode,matches)
     unresolved=sorted(u1|u2)
     print(f"[OK] {len(matches)} partite scritte in {output}")
