@@ -1,11 +1,11 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-3;1;Oliveirense;2;1;1;0;4;3;1;4;2.0
-3;2;Mafra;2;1;1;0;2;1;1;4;2.0
-3;3;Caldas;3;1;1;1;3;4;-1;4;1.333
-3;4;Os Belenenses;1;1;0;0;3;1;2;3;3.0
-3;5;Louletano;2;1;0;1;5;5;0;3;1.5
-3;6;Atletico;1;0;1;0;1;1;0;1;1.0
-3;7;Lusitano GC;1;0;1;0;0;0;0;1;1.0
-3;8;Vitoria Sernache;2;0;1;1;2;3;-1;1;0.5
-3;9;Santarem;2;0;1;1;1;2;-1;1;0.5
-3;10;Covilha;2;0;1;1;0;1;-1;1;0.5
+4;1;Oliveirense;3;2;1;0;6;4;2;7;2.333
+4;2;Caldas;4;2;1;1;5;4;1;7;1.75
+4;3;Os Belenenses;2;2;0;0;4;1;3;6;3.0
+4;4;Mafra;3;1;1;1;3;3;0;4;1.333
+4;5;Santarem;3;1;1;1;3;3;0;4;1.333
+4;6;Louletano;3;1;0;2;6;7;-1;3;1.0
+4;7;Lusitano GC;1;0;1;0;0;0;0;1;1.0
+4;8;Atletico;2;0;1;1;1;2;-1;1;0.5
+4;9;Covilha;2;0;1;1;0;1;-1;1;0.5
+4;10;Vitoria Sernache;3;0;1;2;2;5;-3;1;0.333
