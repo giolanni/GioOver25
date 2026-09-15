@@ -1,7 +1,4 @@
-from dataclasses import replace
-
-from .scoring_v21dev import _band
-from .scoring_v25 import calculate_score_v25
+from .scoring_v21dev import ScoreV21DevResult, _band
 
 
 MIN_BTTS_FULL = 0.70
@@ -12,7 +9,10 @@ MIN_OVER_FULL_TOP = 0.80
 BASE_SCORE = 76.0
 ALTA_SCORE = 85.0
 TOP_SCORE = 92.0
-NON_TARGET_SCORE_CAP = 74.99
+
+
+def _clamp(value: float, minimum: float = 0.0, maximum: float = 1.0) -> float:
+    return max(minimum, min(maximum, float(value)))
 
 
 def _btts_rate(summary) -> float:
@@ -55,19 +55,37 @@ def _features(match_stats):
     }
 
 
-def calculate_score_vg1(match_stats, league_info):
-    """VG1: primo engine sperimentale dedicato al mercato GOAL/BTTS.
+def _goal_ranking_score(f) -> float:
+    """Score continuo GOAL per ordinare anche le partite fuori dal CORE.
 
-    Ricerca storica anti-lookahead:
-      BASE: MinBTTSFull >= .70 e MinGFL5 >= 1.80
-      ALTA: BASE + PPGGapFull <= 1.00 + DeltaBTTSL5 >= 0
-      TOP:  ALTA + MinOverFull >= .80
-
-    TOP resta un booster sperimentale; ALTA e il segnale principale da validare
-    su prediction future. Lo scoring v25 viene usato soltanto come contenitore
-    compatibile con la pipeline esistente, non come logica di selezione GOAL.
+    Non usa alcun engine Over2.5. I pesi servono solo al ranking relativo dei
+    NO-SIGNAL; le soglie BASE/ALTA/TOP restano quelle validate dal laboratorio.
     """
-    base_score = calculate_score_v25(match_stats, league_info)
+    btts_component = _clamp(f["min_btts_full"] / MIN_BTTS_FULL)
+    gf_component = _clamp(f["min_gf_l5"] / MIN_GF_L5)
+    ppg_component = _clamp(1.0 - f["ppg_gap_full"] / 2.0)
+    delta_component = _clamp((f["delta_btts_l5"] + 0.30) / 0.60)
+    over_component = _clamp(f["min_over_full"] / MIN_OVER_FULL_TOP)
+
+    raw = (
+        0.40 * btts_component
+        + 0.35 * gf_component
+        + 0.10 * ppg_component
+        + 0.10 * delta_component
+        + 0.05 * over_component
+    )
+    return round(raw * 74.0, 2)
+
+
+def calculate_score_vg1(match_stats, league_info):
+    """VG1: primo engine sperimentale autonomo per il mercato GOAL/BTTS.
+
+    BASE: MinBTTSFull >= .70 e MinGFL5 >= 1.80
+    ALTA: BASE + PPGGapFull <= 1.00 + DeltaBTTSL5 >= 0
+    TOP:  ALTA + MinOverFull >= .80
+
+    Nessuna dipendenza da scoring V20/V25 o altri engine Over2.5.
+    """
     f = _features(match_stats)
 
     if f["top"]:
@@ -77,17 +95,28 @@ def calculate_score_vg1(match_stats, league_info):
     elif f["base"]:
         score = BASE_SCORE
     else:
-        score = min(float(base_score.score), NON_TARGET_SCORE_CAP)
+        score = _goal_ranking_score(f)
 
-    vg_reason = (
+    reason = (
         f"VG1 {f['level']}: MinBTTSFull={f['min_btts_full']:.2f}, "
         f"MinGFL5={f['min_gf_l5']:.2f}, PPGGapFull={f['ppg_gap_full']:.2f}, "
         f"DeltaBTTSL5={f['delta_btts_l5']:+.2f}, MinOverFull={f['min_over_full']:.2f}"
     )
 
-    return replace(
-        base_score,
+    # Mantiene il contratto ScoreResult atteso dalla pipeline. I campi legacy
+    # non partecipano allo scoring VG1.
+    return ScoreV21DevResult(
         score=round(score, 2),
         band=_band(score),
-        reason=vg_reason,
+        reason=reason,
+        ranking_gap_score=0.0,
+        home_attack_score=0.0,
+        away_attack_score=0.0,
+        home_defense_weakness_score=0.0,
+        away_defense_weakness_score=0.0,
+        home_last10_over_score=0.0,
+        away_last10_over_score=0.0,
+        home_venue_over_score=0.0,
+        away_venue_over_score=0.0,
+        btts_profile_score=round(f["min_btts_full"] * 12.0, 2),
     )
