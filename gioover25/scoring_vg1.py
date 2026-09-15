@@ -15,17 +15,26 @@ TOP_SCORE = 92.0
 NON_TARGET_SCORE_CAP = 74.99
 
 
+def _btts_rate(summary) -> float:
+    return float(summary.btts) / float(summary.played) if summary.played else 0.0
+
+
 def _features(match_stats):
     home = match_stats.home
     away = match_stats.away
 
-    min_btts_full = min(float(home.overall.btts_rate), float(away.overall.btts_rate))
+    home_btts_full = _btts_rate(home.overall)
+    away_btts_full = _btts_rate(away.overall)
+    home_btts_l5 = _btts_rate(home.last5)
+    away_btts_l5 = _btts_rate(away.last5)
+
+    min_btts_full = min(home_btts_full, away_btts_full)
     min_gf_l5 = min(float(home.last5.gf_per_match), float(away.last5.gf_per_match))
     min_over_full = min(float(home.overall.over25_rate), float(away.overall.over25_rate))
-    ppg_gap_full = abs(float(home.overall.ppg) - float(away.overall.ppg))
+    ppg_gap_full = abs(float(home.ppg) - float(away.ppg))
 
-    avg_btts_l5 = (float(home.last5.btts_rate) + float(away.last5.btts_rate)) / 2.0
-    avg_btts_full = (float(home.overall.btts_rate) + float(away.overall.btts_rate)) / 2.0
+    avg_btts_l5 = (home_btts_l5 + away_btts_l5) / 2.0
+    avg_btts_full = (home_btts_full + away_btts_full) / 2.0
     delta_btts_l5 = avg_btts_l5 - avg_btts_full
 
     base = min_btts_full >= MIN_BTTS_FULL and min_gf_l5 >= MIN_GF_L5
