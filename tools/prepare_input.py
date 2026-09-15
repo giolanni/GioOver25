@@ -10,7 +10,7 @@ DATE_HEADER=re.compile(r"^(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?(?:\s+\S+)?$")
 DATED_TIME_RE=re.compile(r"^(\d{1,2})\.(\d{1,2})\.\s+(\d{1,2}:\d{2})$")
 ROUND_RE=re.compile(r"^Giornata\s+(\d+)$",re.I)
 TIME_RE=re.compile(r"^\d{1,2}:\d{2}$"); INT_RE=re.compile(r"^\d+$")
-COUNTRY_MAP={"ARMENIA":"Armenia","AUSTRALIA":"Australia","AUSTRIA":"Austria","AZERBAIJAN":"Azerbaijan","BELGIO":"Belgium","BHUTAN":"Bhutan","BIELORUSSIA":"Belarus","BOLIVIA":"Bolivia","BOSNIA & HERZEGOVINA":"Bosnia & Herzegovina","BULGARIA":"Bulgaria","CROAZIA":"Croatia","DANIMARCA":"Denmark","ESTONIA":"Estonia","FINLANDIA":"Finland","FRANCIA":"France","GALLES":"Wales","GEORGIA":"Georgia","GERMANIA":"Germany","GIAPPONE":"Japan","INDONESIA":"Indonesia","INGHILTERRA":"England","ISLANDA":"Iceland","ISOLE FAR OER":"Faroe Islands","ITALIA":"Italy","LETTONIA":"Latvia","LITUANIA":"Lithuania","MESSICO":"Mexico","NORVEGIA":"Norway","OLANDA":"Netherlands","PARAGUAY":"Paraguay","POLONIA":"Poland","PORTOGALLO":"Portugal","REPUBBLICA CECA":"Czech Republic","ROMANIA":"Romania","RUSSIA":"Russia","SERBIA":"Serbia","SLOVACCHIA":"Slovakia","SLOVENIA":"Slovenia","SPAGNA":"Spain","SVEZIA":"Sweden","SVIZZERA":"Switzerland","TURCHIA":"Turkey","UCRAINA":"Ukraine","USA":"USA"}
+COUNTRY_MAP={"ARMENIA":"Armenia","AUSTRALIA":"Australia","AUSTRIA":"Austria","AZERBAIJAN":"Azerbaijan","BELGIO":"Belgium","BHUTAN":"Bhutan","BIELORUSSIA":"Belarus","BOLIVIA":"Bolivia","BOSNIA & HERZEGOVINA":"Bosnia & Herzegovina","BULGARIA":"Bulgaria","CROAZIA":"Croatia","DANIMARCA":"Denmark","ESTONIA":"Estonia","FINLANDIA":"Finland","FRANCIA":"France","GALLES":"Wales","GEORGIA":"Georgia","GERMANIA":"Germany","GIAPPONE":"Japan","INDONESIA":"Indonesia","INGHILTERRA":"England","IRLANDA DEL NORD":"Northern Ireland","ISLANDA":"Iceland","ISOLE FAR OER":"Faroe Islands","ITALIA":"Italy","LETTONIA":"Latvia","LITUANIA":"Lithuania","MESSICO":"Mexico","NORVEGIA":"Norway","OLANDA":"Netherlands","PARAGUAY":"Paraguay","POLONIA":"Poland","PORTOGALLO":"Portugal","REPUBBLICA CECA":"Czech Republic","ROMANIA":"Romania","RUSSIA":"Russia","SCOZIA":"Scotland","SERBIA":"Serbia","SLOVACCHIA":"Slovakia","SLOVENIA":"Slovenia","SPAGNA":"Spain","SVEZIA":"Sweden","SVIZZERA":"Switzerland","TURCHIA":"Turkey","UCRAINA":"Ukraine","USA":"USA"}
 IGNORE={"Tutte","LIVE","Conclusi","Programma","Classifiche","Classifiche Live","Tabellone"}; STATUS={"Finale","FT","Dopo Suppl.","Posticipata","Rinviata","Sospesa"}; SKIP_STATUS={"Posticipata","Rinviata","Sospesa"}
 @dataclass
 class RegistryRow: league_id:str; country:str; league:str
@@ -28,9 +28,23 @@ def aliases(s):
  for a,b in {"ovest":"west","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff"}.items():x=x.replace(a,b)
  vals.add(norm(x));return vals
 def resolve(reg,country,league):
- c=COUNTRY_MAP.get(country.upper(),country.title());cand=[r for r in reg if norm(r.country)==norm(c)];target=aliases(league);exact=[r for r in cand if norm(r.league) in target or aliases(r.league)&target]
+ c=COUNTRY_MAP.get(country.upper(),country.title());cand=[r for r in reg if norm(r.country)==norm(c)];target=aliases(league)
+ exact=[r for r in cand if norm(r.league) in target or aliases(r.league)&target]
  if len(exact)==1:return exact[0].league_id
- nl=norm(league);fuzzy=[r for r in cand if norm(r.league) in nl or nl in norm(r.league)];return fuzzy[0].league_id if len(fuzzy)==1 else None
+ nl=norm(league);fuzzy=[r for r in cand if norm(r.league) in nl or nl in norm(r.league)]
+ if len(fuzzy)==1:return fuzzy[0].league_id
+ # The source often uses a display label different from League (e.g. Oberosterreich vs OÖ-Liga).
+ # Compare also against the semantic suffix of LeagueId, still restricted to the resolved country.
+ country_prefix=norm(c)
+ by_id=[]
+ for r in cand:
+  rid=norm(r.league_id);suffix=rid[len(country_prefix):] if rid.startswith(country_prefix) else rid
+  if suffix==nl or suffix in nl or nl in suffix:by_id.append(r)
+ if len(by_id)==1:return by_id[0].league_id
+ # Known source label whose official registry League field is intentionally different.
+ explicit={("austria","oberosterreich"):"Austria_Oberosterreich"}
+ wanted=explicit.get((norm(c),nl))
+ return wanted if wanted and any(r.league_id==wanted for r in cand) else None
 def clean_lines(text):return [x.strip() for x in text.replace("\r","").split("\n") if x.strip()]
 def parse_date(line,year):
  m=DATE_HEADER.match(line)
