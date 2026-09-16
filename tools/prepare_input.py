@@ -32,7 +32,6 @@ def resolve(reg,country,league):
  c=COUNTRY_MAP.get(country.upper(),country.title());cand=[r for r in reg if norm(r.country)==norm(c)];target=aliases(league)
  exact=[r for r in cand if norm(r.league) in target or aliases(r.league)&target]
  if len(exact)==1:return exact[0].league_id
- # Match aliases on both source and registry labels, not only literal normalized names.
  alias_matches=[r for r in cand if aliases(r.league)&target]
  if len(alias_matches)==1:return alias_matches[0].league_id
  nl=norm(league);fuzzy=[r for r in cand if norm(r.league) in nl or nl in norm(r.league)]
@@ -132,7 +131,7 @@ def main():
  if a.date:
   try:datetime.strptime(a.date,"%Y-%m-%d")
   except ValueError:p.error("--date deve essere YYYY-MM-DD")
- lines=clean_lines(a.input.read_text(encoding="utf-8-sig"));reg=load_registry(a.registry);standard,u1=parse_standard(lines,a.mode,reg,a.year,fallback);kol,u2=parse_kolmonen(lines,a.mode,reg,a.year);ms=unique(standard+kol);output=a.output or (ROOT/"data"/"input_risultati"/"risultati.csv" if a.mode=="results" else ROOT/"data"/"input_partite"/f"partite_{(ms[0].date if ms else fallback).replace('-','_')}.csv");write_csv(output,a.mode,ms);print(f"[OK] {len(ms)} partite scritte in {output}");unresolved=sorted(u1|u2)
+ lines=clean_lines(a.input.read_text(encoding="utf-8-sig"));reg=load_registry(a.registry);standard,u1=parse_standard(lines,a.mode,reg,a.year,fallback);kol,u2=parse_kolmonen(lines,a.mode,reg,a.year);ms=unique(standard+kol);output=a.output or (ROOT/"data"/"input_risultati"/"risultati.csv" if a.mode=="results" else ROOT/"data"/"input_partite"/"partite.csv");write_csv(output,a.mode,ms);print(f"[OK] {len(ms)} partite scritte in {output}");unresolved=sorted(u1|u2)
  if unresolved:
   print(f"[WARN] {len(unresolved)} competizioni non riconosciute/escluse:");[print(f"  - {c}: {l}") for c,l in unresolved]
 if __name__=="__main__":main()
