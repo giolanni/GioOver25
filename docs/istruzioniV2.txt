@@ -1,3 +1,9 @@
+Genera input_partite
+python tools/prepare_input.py rank c:\temp\input.txt
+
+Genera input_risultati
+python tools/prepare_input.py results c:\temp\input2.txt
+
 Import risultati
 python -m gioover25.append_results data/input_risultati/risultati.csv
 
@@ -16,11 +22,9 @@ python -m gioover25.update_ranking_results
 Aggiorna solo v13:
 python -m gioover25.update_ranking_results --engine v13
 
-Aggiorna solo v20:
-python -m gioover25.update_ranking_results --engine v20
-
-Aggiorna solo v21:
-python -m gioover25.update_ranking_results --engine v21
+Qualità dei dati:
+python -m analysis.data_quality --quick
+python -m analysis.data_quality --full
 
 Import vecchi ranking nello storico
 python -m gioover25.import_old_rankings

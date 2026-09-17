@@ -669,6 +669,41 @@ def archive_output_rankings(engine_name: str) -> int:
     print(f"[ARCHIVE] {engine_name}: {archived} ranking archiviati.")
     return archived
 
+def _input_archive_date(input_path: Path) -> date:
+    with input_path.open("r", newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f, delimiter=";")
+        for row in reader:
+            parsed = _parse_date(row.get("MatchDate", ""))
+            if parsed is not None:
+                return parsed
+
+    return date.today()
+
+
+def _input_archive_destination(input_path: Path) -> Path:
+    archive_date = _input_archive_date(input_path)
+
+    destination = (
+        INPUT_ARCHIVE_DIR
+        / f"partite_{archive_date.strftime('%d_%m_%Y')}.csv"
+    )
+
+    if not destination.exists():
+        return destination
+
+    timestamp = datetime.now().strftime("%H%M%S")
+    candidate = destination.with_name(
+        f"{destination.stem}_{timestamp}{destination.suffix}"
+    )
+
+    counter = 1
+    while candidate.exists():
+        candidate = destination.with_name(
+            f"{destination.stem}_{timestamp}_{counter}{destination.suffix}"
+        )
+        counter += 1
+
+    return candidate
 
 def archive_input_file(input_path: Path) -> Path:
     if not input_path.exists():
@@ -677,7 +712,7 @@ def archive_input_file(input_path: Path) -> Path:
         )
 
     INPUT_ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
-    destination = _collision_safe_destination(INPUT_ARCHIVE_DIR / input_path.name)
+    destination = _input_archive_destination(input_path)
 
     shutil.move(str(input_path), str(destination))
     print(f"[ARCHIVE] Input: {input_path} -> {destination}")
