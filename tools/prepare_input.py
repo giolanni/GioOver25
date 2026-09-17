@@ -6,11 +6,12 @@ from datetime import datetime,timedelta
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 DEFAULT_REGISTRY=ROOT/"data"/"league_registry.csv"
+MOLDOVA_GROUP_MAP=ROOT/"docs"/"moldova_liga1_groups_2026.csv"
 DATE_HEADER=re.compile(r"^(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?(?:\s+\S+)?$")
 DATED_TIME_RE=re.compile(r"^(\d{1,2})\.(\d{1,2})\.\s+(\d{1,2}:\d{2})$")
 ROUND_RE=re.compile(r"^Giornata\s+(\d+)$",re.I)
 TIME_RE=re.compile(r"^\d{1,2}:\d{2}$"); INT_RE=re.compile(r"^\d+$")
-COUNTRY_MAP={"ALBANIA":"Albania","ANDORRA":"Andorra","ARABIA SAUDITA":"Saudi Arabia","ARMENIA":"Armenia","AUSTRALIA":"Australia","AUSTRIA":"Austria","AZERBAIJAN":"Azerbaijan","BELGIO":"Belgium","BHUTAN":"Bhutan","BIELORUSSIA":"Belarus","BOLIVIA":"Bolivia","BOSNIA & HERZEGOVINA":"Bosnia & Herzegovina","BULGARIA":"Bulgaria","CROAZIA":"Croatia","DANIMARCA":"Denmark","ESTONIA":"Estonia","FINLANDIA":"Finland","FRANCIA":"France","GALLES":"Wales","GEORGIA":"Georgia","GERMANIA":"Germany","GIAPPONE":"Japan","INDONESIA":"Indonesia","INGHILTERRA":"England","IRLANDA DEL NORD":"Northern Ireland","ISLANDA":"Iceland","ISOLE FAR OER":"Faroe Islands","ITALIA":"Italy","KAZAKISTAN":"Kazakhstan","LETTONIA":"Latvia","LITUANIA":"Lithuania","MACEDONIA DEL NORD":"North Macedonia","MESSICO":"Mexico","MOLDAVIA":"Moldova","MONTENEGRO":"Montenegro","NORVEGIA":"Norway","OLANDA":"Netherlands","PARAGUAY":"Paraguay","PERU":"Peru","POLONIA":"Poland","PORTOGALLO":"Portugal","REPUBBLICA CECA":"Czech Republic","ROMANIA":"Romania","RUSSIA":"Russia","SCOZIA":"Scotland","SERBIA":"Serbia","SLOVACCHIA":"Slovakia","SLOVENIA":"Slovenia","SPAGNA":"Spain","SRI LANKA":"Sri Lanka","SUD COREA":"South Korea","SVEZIA":"Sweden","SVIZZERA":"Switzerland","TURCHIA":"Turkey","UCRAINA":"Ukraine","USA":"USA"}
+COUNTRY_MAP={"ALBANIA":"Albania","ANDORRA":"Andorra","ARABIA SAUDITA":"Saudi Arabia","ARMENIA":"Armenia","AUSTRALIA":"Australia","AUSTRIA":"Austria","AZERBAIJAN":"Azerbaijan","BELGIO":"Belgium","BHUTAN":"Bhutan","BIELORUSSIA":"Belarus","BOLIVIA":"Bolivia","BOSNIA & HERZEGOVINA":"Bosnia & Herzegovina","BULGARIA":"Bulgaria","CROAZIA":"Croatia","DANIMARCA":"Denmark","ESTONIA":"Estonia","FINLANDIA":"Finland","FRANCIA":"France","GALLES":"Wales","GEORGIA":"Georgia","GERMANIA":"Germany","GIAPPONE":"Japan","INDONESIA":"Indonesia","INGHILTERRA":"England","IRLANDA DEL NORD":"Northern Ireland","ISLANDA":"Iceland","ISOLE FAR OER":"Faroe Islands","ITALIA":"Italy","KAZAKISTAN":"Kazakhstan","LETTONIA":"Latvia","LITUANIA":"Lithuania","MACEDONIA DEL NORD":"North Macedonia","MESSICO":"Mexico","MOLDAVIA":"Moldova","MONTENEGRO":"Montenegro","NORVEGIA":"Norway","OLANDA":"Netherlands","PARAGUAY":"Paraguay","PERU":"Peru","POLONIA":"Poland","PORTOGALLO":"Portugal","REPUBBLICA CECA":"Czech Republic","ROMANIA":"Romania","RUSSIA":"Russia","SCOZIA":"Scotland","SERBIA":"Serbia","SLOVACCHIA":"Slovakia","SLOVENIA":"Slovenia","SPAGNA":"Spain","SRI LANKA":"Sri Lanka","SUD COREA":"South Korea","SVEZIA":"Sweden","SVIZZERA":"Switzerland","TURCHIA":"Turkey","UCRAINA":"Ukraine","UNGHERIA":"Hungary","USA":"USA"}
 IGNORE={"Tutte","LIVE","Conclusi","Programma","Classifiche","Classifiche Live","Tabellone"}; STATUS={"Finale","FT","Dopo Suppl.","Posticipata","Rinviata","Sospesa"}; SKIP_STATUS={"Posticipata","Rinviata","Sospesa"}
 @dataclass
 class RegistryRow: league_id:str; country:str; league:str
@@ -23,9 +24,16 @@ def load_registry(path):
   for r in csv.DictReader(f,delimiter=";"):
    if r.get("LeagueId"): rows.append(RegistryRow(r["LeagueId"].strip(),r.get("Country","").strip(),r.get("League","").strip()))
  return rows
+def load_moldova_groups(path=MOLDOVA_GROUP_MAP):
+ groups={}
+ if not path.exists():return groups
+ with path.open(encoding="utf-8-sig",newline="") as f:
+  for r in csv.DictReader(f,delimiter=";"):
+   if r.get("Team") and r.get("LeagueId"):groups[norm(r["Team"])]=r["LeagueId"].strip()
+ return groups
 def aliases(s):
  x=s.casefold();vals={norm(s)}
- replacements={"ovest":"west","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff","division 3":"3rd division","besta deild femminile":"besta deild kvenna","ligue 3":"national"}
+ replacements={"ovest":"west","est":"east","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff","division 3":"3rd division","besta deild femminile":"besta deild kvenna","ligue 3":"national","jupiler league":"jupiler pro league"}
  for a,b in replacements.items():x=x.replace(a,b)
  vals.add(norm(x));return vals
 def resolve(reg,country,league):
@@ -41,8 +49,15 @@ def resolve(reg,country,league):
   rid=norm(r.league_id);suffix=rid[len(country_prefix):] if rid.startswith(country_prefix) else rid
   if suffix==nl or suffix in nl or nl in suffix:by_id.append(r)
  if len(by_id)==1:return by_id[0].league_id
- explicit={("austria","oberosterreich"):"Austria_Oberosterreich",("france","ligue3"):"France_National",("iceland","bestadeildfemminile"):"Iceland_BestaDeildKvenna"}
+ explicit={("austria","oberosterreich"):"Austria_Oberosterreich",("austria","regionalligaest"):"Austria_Regionalliga_East",("belgium","jupilerleague"):"Belgium_JupilerProLeague",("france","ligue3"):"France_National",("hungary","nbi"):"Hungary_NBI",("iceland","bestadeildfemminile"):"Iceland_BestaDeildKvenna",("italy","seriea"):"Italy_SerieA"}
  wanted=explicit.get((norm(c),nl));return wanted if wanted and any(r.league_id==wanted for r in cand) else None
+def resolve_match(reg,country,league,home,away):
+ c=COUNTRY_MAP.get(country.upper(),country.title())
+ if norm(c)=="moldova" and norm(league)=="liga1":
+  groups=load_moldova_groups();h=groups.get(norm(home));a=groups.get(norm(away))
+  if h and a and h==a:return h
+  return None
+ return resolve(reg,country,league)
 def clean_lines(text):return [x.strip() for x in text.replace("\r","").split("\n") if x.strip()]
 def parse_date(line,year):
  m=DATE_HEADER.match(line)
@@ -84,7 +99,7 @@ def parse_standard(lines,mode,reg,year,fallback_date):
     if INT_RE.match(lines[k]):nums.append(lines[k])
     else:break
     k+=1
-   lid=resolve(reg,country,league)
+   lid=resolve_match(reg,country,league,home,away)
    if len(nums)>=2:
     if lid:out.append(Match(lid,historical_date,home,away,nums[0],nums[1],"Finale","",current_round))
     else:unresolved.add((country,league))
@@ -93,7 +108,7 @@ def parse_standard(lines,mode,reg,year,fallback_date):
   if marker and league and country and current_date:
    status=line if mode=="results" else "";start=i+1
    if mode=="rank" and start<len(lines) and lines[start]=="SRF":start+=1
-   home,j=dedupe_pair(lines,start);away,j=dedupe_pair(lines,j);lid=resolve(reg,country,league)
+   home,j=dedupe_pair(lines,start);away,j=dedupe_pair(lines,j);lid=resolve_match(reg,country,league,home,away)
    if mode=="rank":
     if lid:out.append(Match(lid,current_date,home,away))
     else:unresolved.add((country,league))
