@@ -56,10 +56,16 @@ def parse_dated_time(line,year):
  d,mo,_=m.groups()
  try:return datetime(year,int(mo),int(d)).strftime("%Y-%m-%d")
  except ValueError:return None
+def dedupe_name(name):
+ name=name.strip()
+ if len(name)%2==0:
+  half=len(name)//2
+  if name[:half]==name[half:]:return name[:half]
+ return name
 def dedupe_pair(lines,i):
  if i>=len(lines):return None,i
- name=lines[i];i+=1
- if i<len(lines) and lines[i]==name:i+=1
+ name=dedupe_name(lines[i]);i+=1
+ if i<len(lines) and dedupe_name(lines[i])==name:i+=1
  return name,i
 def parse_standard(lines,mode,reg,year,fallback_date):
  out=[];unresolved=set();current_date=fallback_date;league=country=None;current_round="";i=0
@@ -109,7 +115,7 @@ def parse_kolmonen(lines,mode,reg,year):
   if lines[i]!="Kolmonen" or not lines[i+1].startswith("Kolmonen,"):i+=1;continue
   league=lines[i+1].replace(","," ").replace("  "," ").strip();d=parse_date(lines[i+4],year);marker=lines[i+5];lid=resolve(reg,"Finland",league)
   if not d or not lid:i+=1;continue
-  home=lines[i+6];away=lines[i+8]
+  home=dedupe_name(lines[i+6]);away=dedupe_name(lines[i+8])
   if mode=="rank" and TIME_RE.match(marker):out.append(Match(lid,d,home,away))
   elif mode=="results" and marker in {"FT","Finale"} and i+11<len(lines) and INT_RE.match(lines[i+10]) and INT_RE.match(lines[i+11]):out.append(Match(lid,d,home,away,lines[i+10],lines[i+11],"Finale",""))
   i+=10
