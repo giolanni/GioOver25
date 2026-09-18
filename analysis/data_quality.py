@@ -18,6 +18,8 @@ from dataclasses import dataclass, asdict
 from datetime import date
 from pathlib import Path
 
+from gioover25.team_names import normalize_team_name
+
 ROOT = Path(__file__).resolve().parents[1]
 STANDINGS_DIR = ROOT / "data" / "storico" / "classifiche_calcolate"
 RESULTS_DIR = ROOT / "data" / "storico" / "risultati"
@@ -99,6 +101,18 @@ def check_standings(items: list[Anomaly]) -> tuple[int, int]:
                 detail=f"Squadre duplicate: {', '.join(duplicates[:10])}",
                 suggestion="Verificare alias/normalizzazione nomi squadra.", source=str(path.relative_to(ROOT)))
 
+        identity_groups: dict[str, list[str]] = defaultdict(list)
+        for team in teams:
+            if team:
+                identity_groups[normalize_team_name(league, team)].append(team)
+        aliases = [sorted(set(names)) for names in identity_groups.values() if len(set(names)) > 1]
+        if aliases:
+            rendered = [" / ".join(group) for group in aliases[:10]]
+            add(items, "CRITICAL", "standings", "ST_ALIAS_SUSPECTED", league_id=league,
+                detail=f"Più nomi risolvono alla stessa identità canonica: {', '.join(rendered)}.",
+                suggestion="Consolidare tramite team_name_dictionary.csv e rigenerare classifica/Laboratory.",
+                source=str(path.relative_to(ROOT)))
+
         if len(rows) % 2:
             add(items, "INFO", "standings", "ST_ODD_TEAMS", league_id=league,
                 detail=f"Numero squadre dispari: {len(rows)}.",
@@ -167,7 +181,7 @@ def check_results(items: list[Anomaly], known_leagues: set[str]) -> tuple[int, i
                 except ValueError:
                     add(items, "WARNING", "results", "RS_BAD_DATE", league_id=league, match_date=md, home=home, away=away,
                         detail="MatchDate non ISO YYYY-MM-DD.", source=source)
-            key = (league, md, home.casefold(), away.casefold())
+            key = (league, md, normalize_team_name(league, home), normalize_team_name(league, away))
             if all(key):
                 previous = global_keys.get(key)
                 if previous:
@@ -210,7 +224,7 @@ def check_laboratory(items: list[Anomaly], known_leagues: set[str]) -> int:
             if (truthy or falsy) and truthy != expected:
                 add(items, "WARNING", "laboratory", "LAB_BTTS", league_id=league, match_date=md, home=home, away=away,
                     detail=f"BTTS={text(r,'BTTS')} incompatibile con {hg}-{ag}.", source=source)
-        key = (league, md, home.casefold(), away.casefold(), engine)
+        key = (league, md, normalize_team_name(league, home), normalize_team_name(league, away), engine)
         signature = (text(r, "HG"), text(r, "AG"), text(r, "Outcome"))
         if all(key):
             if key in seen:
