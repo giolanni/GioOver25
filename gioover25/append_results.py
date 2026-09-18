@@ -936,6 +936,15 @@ def read_input_results(
                     f"{match_date or '<vuota>'}"
                 )
 
+            home_identity = normalize_team_name(league_id, row["Home"])
+            away_identity = normalize_team_name(league_id, row["Away"])
+            if home_identity == away_identity:
+                raise ValueError(
+                    "Partita non valida: Home e Away coincidono "
+                    f"dopo la normalizzazione per {league_id} | "
+                    f"{row['Home']} - {row['Away']}"
+                )
+
             _remove_postponed_if_present(
                 postponed_rows,
                 league_id,
