@@ -82,15 +82,12 @@ def dedupe_pair(lines,i):
  name=dedupe_name(lines[i]);i+=1
  if i<len(lines) and dedupe_name(lines[i])==name:i+=1
  return name,i
-def score_from_tokens(tokens):
- # Flashscore incolla spesso il risultato FT come un solo token: "35" = 3-5.
- # Se i primi due token sono cifre singole, invece, sono HG e AG separati.
+def score_from_tokens(tokens,compact=False):
  if not tokens:return None
  first=tokens[0]
- if len(first)==2 and first.isdigit():return first[0],first[1]
- # Alcuni blocchi Flashscore inseriscono prima del risultato un numero
- # accessorio (es. cartellini/classifica): "2", "21" deve diventare 2-1,
- # non 2-21. Un secondo token compatto ha quindi precedenza.
+ # Nel formato Flashscore standard "35" significa 3-5; nei blocchi
+ # alternativi/Kolmonen lo stesso token può essere il testo "3-5" collassato.
+ if compact and len(first)==2 and first.isdigit():return first[0],first[1]
  if len(tokens)>=2 and len(first)==1 and len(tokens[1])==2 and tokens[1].isdigit():
   return tokens[1][0],tokens[1][1]
  if len(tokens)>=2 and first.isdigit() and tokens[1].isdigit():
@@ -112,7 +109,10 @@ def parse_standard(lines,mode,reg,year,fallback_date):
   # I blocchi Kolmonen hanno un formato autonomo. Azzera il contesto standard
   # per evitare che vengano attribuiti all'ultima lega Flashscore precedente.
   if line=="Kolmonen":
-   league=country=None;i+=1;continue
+   # Il resto del testo può contenere solo blocchi Kolmonen: il parser
+   # dedicato li leggerà separatamente. Uscire evita qualsiasi ereditarietà
+   # dell'ultima lega standard.
+   break
   d=parse_date(line,year)
   if d:current_date=d;i+=1;continue
   rm=ROUND_RE.match(line)
@@ -124,7 +124,7 @@ def parse_standard(lines,mode,reg,year,fallback_date):
   if historical_date and league and country:
    home,j=dedupe_pair(lines,i+1);away,j=dedupe_pair(lines,j)
    tokens,k=collect_score_tokens(lines,j)
-   score=score_from_tokens(tokens);lid=resolve_match(reg,country,league,home,away)
+   score=score_from_tokens(tokens,compact=True);lid=resolve_match(reg,country,league,home,away)
    if score:
     if lid:out.append(Match(lid,historical_date,home,away,score[0],score[1],"Finale","",current_round))
     else:unresolved.add((country,league))
@@ -139,7 +139,7 @@ def parse_standard(lines,mode,reg,year,fallback_date):
     else:unresolved.add((country,league))
     i=j;continue
    tokens,k=collect_score_tokens(lines,j)
-   score=score_from_tokens(tokens)
+   score=score_from_tokens(tokens,compact=True)
    if status not in SKIP_STATUS and score:
     notes="ET" if status=="Dopo Suppl." else ("PEN" if status=="Dopo Rigori" else "")
     if lid:out.append(Match(lid,current_date,home,away,score[0],score[1],"Finale",notes,current_round))
@@ -179,7 +179,13 @@ def parse_kolmonen(lines,mode,reg,year):
   if mode=="rank" and TIME_RE.match(marker):
    out.append(Match(lid,d,home,away))
   elif mode=="results" and marker in {"FT","Finale"}:
-   score=score_from_tokens(tokens)
+   # Nel dump Kolmonen esistono due forme:
+   #   22 / 00  => FT 2-2, poi HT 0-0
+   #   4 / 2    => FT 4-2
+   if len(tokens)>=2 and len(tokens[0])==2 and len(tokens[1])==2:
+    score=(tokens[0][0],tokens[0][1])
+   else:
+    score=score_from_tokens(tokens,compact=False)
    if score:out.append(Match(lid,d,home,away,score[0],score[1],"Finale",""))
   i=max(end,i+1)
  return out,unresolved
