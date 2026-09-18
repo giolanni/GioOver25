@@ -88,6 +88,11 @@ def score_from_tokens(tokens):
  if not tokens:return None
  first=tokens[0]
  if len(first)==2 and first.isdigit():return first[0],first[1]
+ # Alcuni blocchi Flashscore inseriscono prima del risultato un numero
+ # accessorio (es. cartellini/classifica): "2", "21" deve diventare 2-1,
+ # non 2-21. Un secondo token compatto ha quindi precedenza.
+ if len(tokens)>=2 and len(first)==1 and len(tokens[1])==2 and tokens[1].isdigit():
+  return tokens[1][0],tokens[1][1]
  if len(tokens)>=2 and first.isdigit() and tokens[1].isdigit():
   return first,tokens[1]
  return None
