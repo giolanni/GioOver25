@@ -12,7 +12,7 @@ DATED_TIME_RE=re.compile(r"^(\d{1,2})\.(\d{1,2})\.\s+(\d{1,2}:\d{2})$")
 ROUND_RE=re.compile(r"^Giornata\s+(\d+)$",re.I)
 TIME_RE=re.compile(r"^\d{1,2}:\d{2}$"); INT_RE=re.compile(r"^\d+$")
 COUNTRY_MAP={"ALBANIA":"Albania","ANDORRA":"Andorra","ARABIA SAUDITA":"Saudi Arabia","ARMENIA":"Armenia","AUSTRALIA":"Australia","AUSTRIA":"Austria","AZERBAIJAN":"Azerbaijan","BELGIO":"Belgium","BHUTAN":"Bhutan","BIELORUSSIA":"Belarus","BOLIVIA":"Bolivia","BOSNIA & HERZEGOVINA":"Bosnia & Herzegovina","BULGARIA":"Bulgaria","CROAZIA":"Croatia","DANIMARCA":"Denmark","ESTONIA":"Estonia","FINLANDIA":"Finland","FRANCIA":"France","GALLES":"Wales","GEORGIA":"Georgia","GERMANIA":"Germany","GIAPPONE":"Japan","INDONESIA":"Indonesia","INGHILTERRA":"England","IRLANDA DEL NORD":"Northern Ireland","ISLANDA":"Iceland","ISOLE FAR OER":"Faroe Islands","ITALIA":"Italy","KAZAKISTAN":"Kazakhstan","LETTONIA":"Latvia","LITUANIA":"Lithuania","MACEDONIA DEL NORD":"North Macedonia","MESSICO":"Mexico","MOLDAVIA":"Moldova","MONTENEGRO":"Montenegro","NORVEGIA":"Norway","OLANDA":"Netherlands","PARAGUAY":"Paraguay","PERU":"Peru","POLONIA":"Poland","PORTOGALLO":"Portugal","REPUBBLICA CECA":"Czech Republic","ROMANIA":"Romania","RUSSIA":"Russia","SCOZIA":"Scotland","SERBIA":"Serbia","SLOVACCHIA":"Slovakia","SLOVENIA":"Slovenia","SPAGNA":"Spain","SRI LANKA":"Sri Lanka","SUD COREA":"South Korea","SVEZIA":"Sweden","SVIZZERA":"Switzerland","TURCHIA":"Turkey","UCRAINA":"Ukraine","UNGHERIA":"Hungary","USA":"USA"}
-IGNORE={"Tutte","LIVE","Conclusi","Programma","Classifiche","Classifiche Live","Tabellone"}; STATUS={"Finale","FT","Dopo Suppl.","Posticipata","Rinviata","Sospesa"}; SKIP_STATUS={"Posticipata","Rinviata","Sospesa"}
+IGNORE={"Tutte","LIVE","Conclusi","Programma","Classifiche","Classifiche Live","Tabellone"}; STATUS={"Finale","FT","Dopo Suppl.","Dopo Rigori","Posticipata","Rinviata","Sospesa"}; SKIP_STATUS={"Posticipata","Rinviata","Sospesa"}
 @dataclass
 class RegistryRow: league_id:str; country:str; league:str
 @dataclass
@@ -82,10 +82,33 @@ def dedupe_pair(lines,i):
  name=dedupe_name(lines[i]);i+=1
  if i<len(lines) and dedupe_name(lines[i])==name:i+=1
  return name,i
+def score_from_tokens(tokens):
+ # Flashscore incolla spesso il risultato FT come un solo token: "35" = 3-5.
+ # Se i primi due token sono cifre singole, invece, sono HG e AG separati.
+ if not tokens:return None
+ first=tokens[0]
+ if len(first)==2 and first.isdigit():return first[0],first[1]
+ if len(tokens)>=2 and first.isdigit() and tokens[1].isdigit():
+  return first,tokens[1]
+ return None
+def collect_score_tokens(lines,start,limit=6):
+ tokens=[];k=start
+ while k<len(lines) and k<start+limit:
+  value=lines[k]
+  if value in STATUS or value=="Kolmonen" or parse_date(value,datetime.now().year):break
+  if INT_RE.match(value):tokens.append(value)
+  elif tokens:break
+  k+=1
+ return tokens,k
 def parse_standard(lines,mode,reg,year,fallback_date):
  out=[];unresolved=set();current_date=fallback_date;league=country=None;current_round="";i=0
  while i<len(lines):
-  line=lines[i];d=parse_date(line,year)
+  line=lines[i]
+  # I blocchi Kolmonen hanno un formato autonomo. Azzera il contesto standard
+  # per evitare che vengano attribuiti all'ultima lega Flashscore precedente.
+  if line=="Kolmonen":
+   league=country=None;i+=1;continue
+  d=parse_date(line,year)
   if d:current_date=d;i+=1;continue
   rm=ROUND_RE.match(line)
   if rm:current_round=rm.group(1);i+=1;continue
@@ -94,14 +117,11 @@ def parse_standard(lines,mode,reg,year,fallback_date):
   if i+1<len(lines) and lines[i+1].endswith(":"):league=line;i+=1;continue
   historical_date=parse_dated_time(line,year) if mode=="results" else None
   if historical_date and league and country:
-   home,j=dedupe_pair(lines,i+1);away,j=dedupe_pair(lines,j);nums=[];k=j
-   while k<len(lines) and len(nums)<2 and k<j+4:
-    if INT_RE.match(lines[k]):nums.append(lines[k])
-    else:break
-    k+=1
-   lid=resolve_match(reg,country,league,home,away)
-   if len(nums)>=2:
-    if lid:out.append(Match(lid,historical_date,home,away,nums[0],nums[1],"Finale","",current_round))
+   home,j=dedupe_pair(lines,i+1);away,j=dedupe_pair(lines,j)
+   tokens,k=collect_score_tokens(lines,j)
+   score=score_from_tokens(tokens);lid=resolve_match(reg,country,league,home,away)
+   if score:
+    if lid:out.append(Match(lid,historical_date,home,away,score[0],score[1],"Finale","",current_round))
     else:unresolved.add((country,league))
    i=max(k,j);continue
   marker=(mode=="rank" and TIME_RE.match(line)) or (mode=="results" and line in STATUS)
@@ -113,27 +133,50 @@ def parse_standard(lines,mode,reg,year,fallback_date):
     if lid:out.append(Match(lid,current_date,home,away))
     else:unresolved.add((country,league))
     i=j;continue
-   nums=[];k=j
-   while k<len(lines) and len(nums)<2 and k<j+5:
-    if INT_RE.match(lines[k]):nums.append(lines[k])
-    elif lines[k] not in {"-"}:break
-    k+=1
-   if status not in SKIP_STATUS and len(nums)>=2:
-    if lid:out.append(Match(lid,current_date,home,away,nums[0],nums[1],"Finale","ET" if status=="Dopo Suppl." else "",current_round))
+   tokens,k=collect_score_tokens(lines,j)
+   score=score_from_tokens(tokens)
+   if status not in SKIP_STATUS and score:
+    notes="ET" if status=="Dopo Suppl." else ("PEN" if status=="Dopo Rigori" else "")
+    if lid:out.append(Match(lid,current_date,home,away,score[0],score[1],"Finale",notes,current_round))
     else:unresolved.add((country,league))
    i=max(k,j);continue
   i+=1
  return out,unresolved
 def parse_kolmonen(lines,mode,reg,year):
  out=[];unresolved=set();i=0
- while i+7<len(lines):
-  if lines[i]!="Kolmonen" or not lines[i+1].startswith("Kolmonen,"):i+=1;continue
-  league=lines[i+1].replace(","," ").replace("  "," ").strip();d=parse_date(lines[i+4],year);marker=lines[i+5];lid=resolve(reg,"Finland",league)
-  if not d or not lid:i+=1;continue
-  home=dedupe_name(lines[i+6]);away=dedupe_name(lines[i+8])
-  if mode=="rank" and TIME_RE.match(marker):out.append(Match(lid,d,home,away))
-  elif mode=="results" and marker in {"FT","Finale"} and i+11<len(lines) and INT_RE.match(lines[i+10]) and INT_RE.match(lines[i+11]):out.append(Match(lid,d,home,away,lines[i+10],lines[i+11],"Finale",""))
-  i+=10
+ while i<len(lines):
+  if i+5>=len(lines) or lines[i]!="Kolmonen" or not lines[i+1].startswith("Kolmonen,"):
+   i+=1;continue
+  league=lines[i+1].replace(","," ").replace("  "," ").strip()
+  d=parse_date(lines[i+4],year);marker=lines[i+5];lid=resolve(reg,"Finland",league)
+  # Il blocco termina al prossimo "Kolmonen" oppure dopo un piccolo margine.
+  end=i+6
+  while end<len(lines) and end<i+16 and lines[end]!="Kolmonen":end+=1
+  block=lines[i+6:end]
+  if not d or not lid:
+   if not lid:unresolved.add(("Finland",league))
+   i=max(end,i+1);continue
+  if len(block)<2:
+   i=max(end,i+1);continue
+  # Prima dei punteggi ci sono home/alias e away/alias. Gli alias possono
+  # coincidere col nome oppure essere diversi: per il CSV usiamo il primo
+  # nome visualizzato di ciascuna squadra.
+  numpos=next((n for n,v in enumerate(block) if INT_RE.match(v)),None)
+  if numpos is None:
+   i=max(end,i+1);continue
+  names=block[:numpos];tokens=[v for v in block[numpos:] if INT_RE.match(v)]
+  if len(names)>=4:
+   home=dedupe_name(names[0]);away=dedupe_name(names[2])
+  elif len(names)>=2:
+   home=dedupe_name(names[0]);away=dedupe_name(names[1])
+  else:
+   i=max(end,i+1);continue
+  if mode=="rank" and TIME_RE.match(marker):
+   out.append(Match(lid,d,home,away))
+  elif mode=="results" and marker in {"FT","Finale"}:
+   score=score_from_tokens(tokens)
+   if score:out.append(Match(lid,d,home,away,score[0],score[1],"Finale",""))
+  i=max(end,i+1)
  return out,unresolved
 def unique(ms):
  seen=set();out=[]
