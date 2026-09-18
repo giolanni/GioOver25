@@ -48,7 +48,6 @@ USA_USLLeagueOne;27;2026-08-02;2026-08-02;Sarasota Paradise;FC Naples;BASSA;POST
 Iceland_Division_2;30;2026-08-08;2026-08-08;Kormakur/Hvot;Throttur Vogar;PROX-ALTA;POSTPONED;SI;data\storico\ranking\v26\storico_ranking_v26.csv
 Kazakhstan_PremierLeague;31;2026-08-09;2026-08-09;Tobol;Kaisar;BASSA;POSTPONED;SI;data\storico\ranking\v26\storico_ranking_v26.csv
 Finland_Kolmonen_Western_Group3;12;2026-08-12;2026-08-12;KPV/Akatemia;Sp. Kristina;ALTA;POSTPONED;SI;data\storico\ranking\v26\storico_ranking_v26.csv
-USA_MLSNextPro_WesternConference_PacificDivision;26;2026-08-14;2026-08-13;Real Monarchs;Minnesota 2;MEDIA;POSTPONED;SI;data\storico\ranking\v26\storico_ranking_v26.csv
 Estonia_EsiliigaB;23;2026-08-15;2026-08-14;Legion;Tammeka U21;ALTA;POSTPONED;SI;data\storico\ranking\v26\storico_ranking_v26.csv
 Germany_Oberliga_RheinlandPfalzSaar;4;2026-08-15;2026-08-14;RW Wittlich;TSV 1881 Gau-Odernheim;BASSA;POSTPONED;SI;data\storico\ranking\v26\storico_ranking_v26.csv
 Russia_FNL;6;2026-08-15;2026-08-14;Sochi;Ulyanovsk;MEDIA;POSTPONED;SI;data\storico\ranking\v26\storico_ranking_v26.csv
@@ -100,93 +99,255 @@ Ukraine_PremierLeague;7;2026-09-12;2026-09-12;Kryvbas;FC Kharkiv;MEDIA;POSTPONED
 Ukraine_PremierLeague;7;2026-09-12;2026-09-12;Veres-Rivne;Kudrivka;BASSA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
 Estonia_Esiliiga;33;2026-09-13;2026-09-13;Maardu;Tallinna Kalev;MEDIA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
 Germany_Oberliga_Westfalen;6;2026-09-13;2026-09-13;ASC 09 Dortmund;Schermbeck 2020;MEDIA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
-Armenia_FirstLeague;8;2026-09-15;2026-09-14;Lernayin Artsakh;Sardarapat 2;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Armenia_FirstLeague;8;2026-09-15;2026-09-14;Mika;Urartu 2;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Armenia_FirstLeague;8;2026-09-15;2026-09-14;Olympia Yerevan;Shirak 2;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Armenia_FirstLeague;8;2026-09-15;2026-09-14;Pyunik 2;Araks Ararat;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Oberosterreich;9;2026-09-15;2026-09-14;Vocklamarkt;Ostermiething;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Regionalliga_North;9;2026-09-15;2026-09-14;Vorwarts Steyr;Schallerbach;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Steiermark;4;2026-09-15;2026-09-14;Furstenfeld;Lebring;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Steiermark;4;2026-09-15;2026-09-14;Hohenhaus Schladming;Koflach;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Steiermark;4;2026-09-15;2026-09-14;Ilzer SV;Pachern;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Steiermark;4;2026-09-15;2026-09-14;Kindberg Murzhofen;TUS Bad Waltersdorf;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Steiermark;4;2026-09-15;2026-09-14;Leoben;SV Union Gnas;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Steiermark;4;2026-09-15;2026-09-14;SV Wildon;SV Schermann Rorhrach;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Steiermark;4;2026-09-15;2026-09-14;UFC Fehring;Grossklein;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Austria_Steiermark;4;2026-09-15;2026-09-14;Weindorf St. Anna;Stadtwerke Bruck/Mur;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Bhutan_PremierLeague;17;2026-09-15;2026-09-14;Tensung;BFF Academy U19;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Bolivia_DivisionProfesional;24;2026-09-15;2026-09-14;Academia del Balompie;The Strongest;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Bolivia_DivisionProfesional;24;2026-09-15;2026-09-14;Real Oruro;Real Potosi;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Bulgaria_VtoraLiga;10;2026-09-15;2026-09-14;Lok. Gorna;Nesebar;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Bulgaria_VtoraLiga;10;2026-09-15;2026-09-14;Ludogorets 2;Fratria;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-England_Championship;8;2026-09-15;2026-09-14;Bristol City;Lincoln;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-England_Championship;8;2026-09-15;2026-09-14;Middlesbrough;Millwall;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Estonia_EsiliigaB;30;2026-09-15;2026-09-14;Levadia U19;Tulevik;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Estonia_EsiliigaB;30;2026-09-15;2026-09-14;Narva U21;Tammeka U21;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Finland_Kolmonen_Western_Group1;22;2026-09-15;2026-09-15;SalPa 2;PIF;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Finland_Kolmonen_Western_Group2;22;2026-09-15;2026-09-15;FC Haka j.;Fish United;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_3Liga;6;2026-09-15;2026-09-14;Duisburg;Havelse;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_3Liga;6;2026-09-15;2026-09-14;Grossaspach;Verl;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_3Liga;6;2026-09-15;2026-09-14;Meppen;Viktoria Koln;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_3Liga;6;2026-09-15;2026-09-14;Regensburg;Dusseldorf;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_3Liga;6;2026-09-15;2026-09-14;Wurzburger Kickers;Aachen;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Oberliga_Bayern_Nord;14;2026-09-15;2026-09-14;Aschaffenburg;Wurzburger FV;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Oberliga_Niederrhein;8;2026-09-15;2026-09-14;Dusseldorf 2;Wuppertaler;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Bayern;10;2026-09-15;2026-09-14;Bayern 2;Augsburg 2;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Bayern;10;2026-09-15;2026-09-14;Bayreuth;Aubstadt;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Bayern;10;2026-09-15;2026-09-14;Eltersdorf;Eichstatt;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Bayern;10;2026-09-15;2026-09-14;Furth 2;Monaco 1860;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Bayern;10;2026-09-15;2026-09-14;Memmingen;Burghausen;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Bayern;10;2026-09-15;2026-09-14;Norinberga 2;Schwaben Augsburg;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Bayern;10;2026-09-15;2026-09-14;Schweinfurt;Illertissen;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Bayern;10;2026-09-15;2026-09-14;Vilzing;Ansbach;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Nord;10;2026-09-15;2026-09-14;Drochtersen/Assel;Emden;ALTA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Nordost;10;2026-09-15;2026-09-14;Hallescher;Jena;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Nordost;10;2026-09-15;2026-09-14;Hertha 2;Erfurt;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Nordost;10;2026-09-15;2026-09-14;Luckenwalde;BFC Preussen;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Germany_Regionalliga_Nordost;10;2026-09-15;2026-09-14;Zwickau;Altglienicke;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Iceland_BestaDeildKarla;29;2026-09-15;2026-09-15;Fram;Breidablik;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Bari;Potenza;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Barletta;Salernitana;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Casarano;Audace Cerignola;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Casertana;Altamura;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Cavese;Sorrento;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Crotone;Inter U23;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Foggia;Savoia;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Giugliano;Cosenza;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Picerno;Catania;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Italy_SerieC_GironeC;5;2026-09-15;2026-09-14;Scafatese;Monopoli;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Latvia_Virsliga;32;2026-09-15;2026-09-14;Super Nova;Riga FC;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Mexico_LigaMX_Apertura;9;2026-09-15;2026-09-14;Leon;Atl. San Luis;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Montenegro_PrvaCrnogorskaLiga;10;2026-09-15;2026-09-14;Jezero;Bokelj;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Netherlands_Eredivisie;8;2026-09-15;2026-09-14;Ajax;Willem 2;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-NorthernIreland_NIFLPremiership;9;2026-09-15;2026-09-14;Ballymena;C. Rangers;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-NorthernIreland_NIFLPremiership;9;2026-09-15;2026-09-14;Crusaders;Dungannon;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-NorthernIreland_NIFLPremiership;9;2026-09-15;2026-09-14;Glentoran;Coleraine;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-NorthernIreland_NIFLPremiership;9;2026-09-15;2026-09-14;Larne;Cliftonville;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-NorthernIreland_NIFLPremiership;9;2026-09-15;2026-09-14;Limavady;Bangor FC;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-NorthernIreland_NIFLPremiership;9;2026-09-15;2026-09-14;Portadown;Linfield;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Paraguay_DivisionIntermedia;9;2026-09-15;2026-09-14;Atl. Tembetary;Sp. Carapegua;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Paraguay_DivisionIntermedia;9;2026-09-15;2026-09-14;Independiente F.B.C.;Encarnacion FC;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Poland_Ekstraklasa;10;2026-09-15;2026-09-14;Korona;Gornik Zabrze;BASSA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
-Poland_Ekstraklasa;10;2026-09-15;2026-09-14;Rakow;Zaglebie;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Romania_Liga2;8;2026-09-15;2026-09-14;CSM Resita;FC Bacau;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Scotland_Premiership;8;2026-09-15;2026-09-14;Falkirk;Hearts;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Scotland_Premiership;8;2026-09-15;2026-09-14;Hibernian;Kilmarnock;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Scotland_Premiership;8;2026-09-15;2026-09-14;Motherwell;Aberdeen;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Spain_LaLiga;8;2026-09-15;2026-09-14;Alaves;Valencia;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Spain_LaLiga;8;2026-09-15;2026-09-14;Elche;Real Madrid;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Spain_LaLiga;8;2026-09-15;2026-09-14;Vallecano;Espanyol;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-SriLanka_SuperLeague;11;2026-09-15;2026-09-14;Blue Eagles;Sea Hawks;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Sweden_Superettan;29;2026-09-15;2026-09-14;Brage;Sandviken;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Sweden_Superettan;29;2026-09-15;2026-09-14;Landskrona;Sundsvall;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Sweden_Superettan;29;2026-09-15;2026-09-14;Värnamo;Öster;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Switzerland_SuperLeague;9;2026-09-15;2026-09-14;Grasshoppers;Sion;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Wales_CymruNorth;8;2026-09-15;2026-09-14;Penrhyncoch;Bala Town;MEDIA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
-Wales_CymruPremier;9;2026-09-15;2026-09-14;Barry;Ammanford;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Wales_CymruPremier;9;2026-09-15;2026-09-14;Connah's Q.;Airbus;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Wales_CymruPremier;9;2026-09-15;2026-09-14;Holywell;Colwyn Bay;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Wales_CymruPremier;9;2026-09-15;2026-09-14;Llandudno;Caernarfon;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Wales_CymruPremier;9;2026-09-15;2026-09-14;Penybont;Briton Ferry;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Wales_CymruPremier;9;2026-09-15;2026-09-14;TNS;Flint;BASSA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
-Wales_CymruPremier;9;2026-09-15;2026-09-14;Trefelin;Cambrian United;MEDIA;SCHEDULED;NO;data\storico\ranking\v31\storico_ranking_v31.csv
+Austria_Steiermark;4;2026-09-15;2026-09-15;SV Wildon;SV Schermann Rorhrach;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Spain_LaLiga;8;2026-09-15;2026-09-15;Vallecano;Espanyol;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Eastern_Group2;22;2026-09-16;2026-09-16;Jippo-J/Punamusta;Niemisen Urheilijat;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Spain_LaLiga;9;2026-09-16;2026-09-16;Levante;Ath. Bilbao;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruSouth;8;2026-09-16;2026-09-16;Newport City;Trethomas Bluebirds;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Eastern_Group3;23;2026-09-17;2026-09-16;Mikkelin Pallo-Kissat;KJP;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Southern_Group1;20;2026-09-17;2026-09-16;EIF/Akademi;Gilla FC;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Albania_AbissnetSuperiore;5;2026-09-18;2026-09-17;Vllaznia;Teuta;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Armenia_PremierLeague;11;2026-09-18;2026-09-17;FC Gandzasar;Urartu;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Armenia_PremierLeague;11;2026-09-18;2026-09-17;Noah;Van;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_2Liga;7;2026-09-18;2026-09-17;BW Linz;Admira;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_2Liga;7;2026-09-18;2026-09-17;Floridsdorfer AC;Liefering;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_2Liga;7;2026-09-18;2026-09-17;Hertha Wels;First Vienna;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_2Liga;7;2026-09-18;2026-09-17;Kapfenberg;Amstetten;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Bundesliga;8;2026-09-18;2026-09-17;SK Rapid;Tirol;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Burgenland;8;2026-09-18;2026-09-17;Deutschkreutz;Edelserpentin;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Burgenland;8;2026-09-18;2026-09-17;Kohfidisch;Margarethen;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Burgenland;8;2026-09-18;2026-09-17;Neusiedl;Oberpullendorf;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Burgenland;8;2026-09-18;2026-09-17;Pinkafeld;Bad Sauerbrunn;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Karnten;10;2026-09-18;2026-09-17;Atus Ferlach;Lendorf;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Karnten;10;2026-09-18;2026-09-17;Dellach/Gail;Nussdorf;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Karnten;10;2026-09-18;2026-09-17;Matrei;Seeboden;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Karnten;10;2026-09-18;2026-09-17;SV Spittal;SC St. Veit;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Karnten;10;2026-09-18;2026-09-17;TSV Grafenstein;Saint Michael Lavanttal;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Niederosterreich;7;2026-09-18;2026-09-17;Ardagger;Wieselburg;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Niederosterreich;7;2026-09-18;2026-09-17;Ebreichsdorf;Retz;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Niederosterreich;7;2026-09-18;2026-09-17;Korneuburg;Admira (Am);BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Niederosterreich;7;2026-09-18;2026-09-17;Langenrohr;Amstetten (Am);BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Niederosterreich;7;2026-09-18;2026-09-17;St. Peter in der Au;St. Polten (Am);BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Oberosterreich;10;2026-09-18;2026-09-17;Edelweiss;Union Unis Gschwandt;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Oberosterreich;10;2026-09-18;2026-09-17;Garsten;Vocklamarkt;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Oberosterreich;10;2026-09-18;2026-09-17;Gmunden;ASK St.Valentin;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Oberosterreich;10;2026-09-18;2026-09-17;Pregarten;Micheldorf;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_East;8;2026-09-18;2026-09-17;Favoritner;Kremser;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_East;8;2026-09-18;2026-09-17;Gloggnitz;Horn;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_East;8;2026-09-18;2026-09-17;Mattersburg SV 2020;SV Donau;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_East;8;2026-09-18;2026-09-17;SV Oberwart;Parndorf;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_East;8;2026-09-18;2026-09-17;Traiskirchen;Marchfeld;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_East;8;2026-09-18;2026-09-17;Wiener;Leobendorf;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_North;10;2026-09-18;2026-09-17;Kuchl;UFC Hallein;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_North;10;2026-09-18;2026-09-17;Seekirchen;Wals-Grunau;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_North;10;2026-09-18;2026-09-17;Vorwarts Steyr;Dietach;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_North;10;2026-09-18;2026-09-17;Wallern/St Marienkirchen;Union Gurten;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_South;9;2026-09-18;2026-09-17;Allerheiligen;Lafnitz;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_South;9;2026-09-18;2026-09-17;Deutschlandsberger;Kalsdorf;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_South;9;2026-09-18;2026-09-17;Volkermarkt;Treibach;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_South;9;2026-09-18;2026-09-17;Weiz;Gleisdorf;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_West;9;2026-09-18;2026-09-17;Dornbirn;Lauterach;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Salzburg;10;2026-09-18;2026-09-17;Puch;UFC Siezenheim;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Salzburg;10;2026-09-18;2026-09-17;Schwarzach;Strasswalchen;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Salzburg;10;2026-09-18;2026-09-17;Thalgau;Neumarkt;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Steiermark;5;2026-09-18;2026-09-17;Grossklein;Weindorf St. Anna;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Steiermark;5;2026-09-18;2026-09-17;Pachern;Kindberg Murzhofen;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Steiermark;5;2026-09-18;2026-09-17;SV Union Gnas;SV Wildon;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Tirol;9;2026-09-18;2026-09-17;Munster;Vols;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Tirol;9;2026-09-18;2026-09-17;SC Kundl;FC Volders;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Tirol;9;2026-09-18;2026-09-17;SV Worgl;Stubai;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Wien;5;2026-09-18;2026-09-17;Red Star-Penzing;Lac Inter;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Wien;5;2026-09-18;2026-09-17;Schwechat;First Vienna (Am);BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Wien;5;2026-09-18;2026-09-17;TWL Elektra;A XIII-Auhof Center;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Azerbaijan_FirstLeague;3;2026-09-18;2026-09-17;Khankendi;Moik Baku;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Azerbaijan_PremierLeague;6;2026-09-18;2026-09-17;Gabala;Neftci Baku;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Azerbaijan_PremierLeague;6;2026-09-18;2026-09-17;Qarabag;Safa Baku;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Belarus_PershayaLiga;27;2026-09-18;2026-09-17;Gomel 2;Din. Minsk 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Belarus_VysshayaLiga;26;2026-09-18;2026-09-17;Belshina;FC Minsk;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Belarus_VysshayaLiga;26;2026-09-18;2026-09-17;ML Vitebsk;Arsenal Dzerzhinsk;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Belgium_ChallengerProLeague;6;2026-09-18;2026-09-17;Club Brugge U23;Gent U23;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Belgium_ChallengerProLeague;6;2026-09-18;2026-09-17;Francs Borains;Anderlecht U23;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Belgium_JupilerProLeague;10;2026-09-18;2026-09-17;Gent;St. Liege;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Bhutan_PremierLeague;17;2026-09-18;2026-09-17;Transport United;RTC;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Bolivia_DivisionProfesional;25;2026-09-18;2026-09-17;Bolivar;GV San Jose;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Bolivia_DivisionProfesional;25;2026-09-18;2026-09-17;Tomayapo;Oriente Petrolero;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Bosnia_WWINLigaBiH;9;2026-09-18;2026-09-17;Zeljeznicar;Celik Zenica;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Bulgaria_ParvaLiga;10;2026-09-18;2026-09-17;Slavia Sofia;CSKA 1948 Sofia;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Croatia_HNL;5;2026-09-18;2026-09-17;Rudes;Slaven Belupo;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Croatia_PrvaNL;6;2026-09-18;2026-09-17;Mladost Zdralovi;Segesta;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Croatia_PrvaNL;6;2026-09-18;2026-09-17;Sesvete;Cibalia;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_3MSFL;9;2026-09-18;2026-09-17;SK Hranice;Slovacko B;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_4Liga_GroupA;7;2026-09-18;2026-09-17;FK Komarov;SK Strakonice 1908;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_4Liga_GroupA;7;2026-09-18;2026-09-17;Hluboka nad Vltavou;Milevsko;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_4Liga_GroupB;7;2026-09-18;2026-09-17;Karlovy Vary;Sokolov;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_4Liga_GroupE;7;2026-09-18;2026-09-17;Hluk;Holesov;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_4Liga_GroupF;7;2026-09-18;2026-09-17;Hlucin;Pusta Polom;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_4Liga_GroupF;7;2026-09-18;2026-09-17;Valasske Mezirici;Stonava;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_ChNL;9;2026-09-18;2026-09-17;Jihlava;Slavia Praga B;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_ChNL;9;2026-09-18;2026-09-17;Karvina;Kromeriz;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_ChNL;9;2026-09-18;2026-09-17;Opava;Ceska Lipa;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_ChNL;9;2026-09-18;2026-09-17;Prostejov;Dukla Praga;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Denmark_1stDivision;10;2026-09-18;2026-09-17;Kolding;Hillerod;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Denmark_2ndDivision;8;2026-09-18;2026-09-17;F. Amager;Naestved;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Denmark_2ndDivision;8;2026-09-18;2026-09-17;Nykobing;Hellerup;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Denmark_2ndDivision;8;2026-09-18;2026-09-17;Roskilde;FA 2000;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Denmark_2ndDivision;8;2026-09-18;2026-09-17;Skive;B.93;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Denmark_3rdDivision;8;2026-09-18;2026-09-17;Holbaek;Ringsted;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Denmark_Superliga;10;2026-09-18;2026-09-17;Lyngby;Silkeborg;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+England_Championship;9;2026-09-18;2026-09-17;Bristol City;Watford;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+England_PremierLeague;5;2026-09-18;2026-09-17;Brentford;Chelsea;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Estonia_Esiliiga;34;2026-09-18;2026-09-17;Tallinna Kalev;Flora U21;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Estonia_EsiliigaB;30;2026-09-18;2026-09-17;Parnu JK Vaprus U21;Legion;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Estonia_Meistriliiga;32;2026-09-18;2026-09-17;Harju JK Laagri;Kuressaare;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+FaroeIslands_1Deild;25;2026-09-18;2026-09-17;Fuglafjordur;HB Torshavn 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+FaroeIslands_1Deild;25;2026-09-18;2026-09-17;Sandur;Streymur 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+FaroeIslands_PremierLeague;27;2026-09-18;2026-09-17;B36 Torshavn;Runavik;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+FaroeIslands_PremierLeague;27;2026-09-18;2026-09-17;Klaksvik;Skala Itrottarfelag;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Eastern_Group1;24;2026-09-18;2026-09-17;FC Metso;FC Vaajakoski/2;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Eastern_Group1;24;2026-09-18;2026-09-17;JJK/2;Komeetat;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Eastern_Group2;22;2026-09-18;2026-09-17;Kings;KuPS/Akatemia 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Eastern_Group3;23;2026-09-18;2026-09-17;PeKa;Edustus IPS;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Eastern_Group3;23;2026-09-18;2026-09-17;Savonlinnan Seudun Palloseura;Mikkelin Palloilijat 2;IMM-ALTA-21;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Southern_Group1;20;2026-09-18;2026-09-17;Malmin Palloseura;EPS Reservi;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Southern_Group1;20;2026-09-18;2026-09-17;Nummelan Palloseura;Pöxyt;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Southern_Group2;22;2026-09-18;2026-09-17;Laajasalon Palloseura;ToTe;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Southern_Group2;22;2026-09-18;2026-09-17;Valtti;PPS;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Southern_Group3;21;2026-09-18;2026-09-17;Atlantis 2;ToTe/Tapio;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Southern_Group3;21;2026-09-18;2026-09-17;Lahti/69;Futura;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Western_Group1;22;2026-09-18;2026-09-17;PiPS;JyTy;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Western_Group1;22;2026-09-18;2026-09-17;ÅCF;KaaPo;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Western_Group2;22;2026-09-18;2026-09-17;Sääksjärven Loiske;ACE;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Western_Group3;16;2026-09-18;2026-09-17;FC Ylivieska;KPV/Akatemia;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Kolmonen_Western_Group3;16;2026-09-18;2026-09-17;VIFK;Kiisto;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Veikkausliiga;24;2026-09-18;2026-09-17;Lahti;Jaro;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Veikkausliiga;24;2026-09-18;2026-09-17;SJK;Mariehamn;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Ykkosliiga;27;2026-09-18;2026-09-17;Haka;Klubi 04;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Finland_Ykkosliiga;27;2026-09-18;2026-09-17;JaPS;Ekenas;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+France_Ligue1;5;2026-09-18;2026-09-17;Monaco;Lens;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+France_Ligue2;7;2026-09-18;2026-09-17;Annecy;Dijon;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+France_Ligue2;7;2026-09-18;2026-09-17;Grenoble;Clermont;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+France_Ligue2;7;2026-09-18;2026-09-17;Laval;Sochaux;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+France_Ligue2;7;2026-09-18;2026-09-17;Pau FC;Dunkerque;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+France_Ligue2;7;2026-09-18;2026-09-17;Reims;Montpellier;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+France_Ligue2;7;2026-09-18;2026-09-17;Rodez;Nancy;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_2Bundesliga;6;2026-09-18;2026-09-17;Furth;Magdeburg;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_2Bundesliga;6;2026-09-18;2026-09-17;Wolfsburg;Darmstadt;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_3Liga;8;2026-09-18;2026-09-17;Verl;Wurzburger Kickers;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Bundesliga;4;2026-09-18;2026-09-17;Bayern;Union Berlino;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_BadenWurttemberg;10;2026-09-18;2026-09-17;Nottingen;Young Boys Reutlingen;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_BadenWurttemberg;10;2026-09-18;2026-09-17;Villingen;Singen;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bayern_Nord;15;2026-09-18;2026-09-17;Cham;Neudrossenfeld;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bayern_Nord;15;2026-09-18;2026-09-17;Grossbardorf;Bamberg;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bayern_Nord;15;2026-09-18;2026-09-17;Kornburg;Aschaffenburg;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bayern_Nord;15;2026-09-18;2026-09-17;Weiden;Gebenbach;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bayern_Sud;12;2026-09-18;2026-09-17;FC Schwaig;Rosenheim;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bayern_Sud;12;2026-09-18;2026-09-17;Heimstetten;Gundelfingen;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bayern_Sud;12;2026-09-18;2026-09-17;Monaco 1860 2;Erlbach;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bremen;7;2026-09-18;2026-09-17;Leher;Geestemunde;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bremen;7;2026-09-18;2026-09-17;Oberneuland;Vatan Bremen;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Hamburg;8;2026-09-18;2026-09-17;Harksheide;TSV Buchholz 08;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Hamburg;8;2026-09-18;2026-09-17;Norderstedt 2;ETSV Hamburg;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Hamburg;8;2026-09-18;2026-09-17;Victoria Hamburg;Pinneberg;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Hamburg;8;2026-09-18;2026-09-17;Vorwarts-Wacker;Suderelbe;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Hessen;11;2026-09-18;2026-09-17;Hanauer SC;RW Walldorf;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_NOFV_Nord;5;2026-09-18;2026-09-17;Reinickendorfer Fuchse;Klosterfelde;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_NOFV_Nord;5;2026-09-18;2026-09-17;Schwerin;Wismar;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_NOFV_Sud;5;2026-09-18;2026-09-17;1.FC Frankfurt;Meuselwitz;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Niederrhein;9;2026-09-18;2026-09-17;Schonnebeck;SC St.Tonis;IMM-ALTA-9;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_RheinlandPfalzSaar;11;2026-09-18;2026-09-17;Ahrweiler;RW Koblenz;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_Bayern;11;2026-09-18;2026-09-17;Aubstadt;Bayern 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_Bayern;11;2026-09-18;2026-09-17;Buchbach;Schweinfurt;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_Nordost;11;2026-09-18;2026-09-17;Zwickau;Hallescher;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_Sudwest;10;2026-09-18;2026-09-17;FSV Francoforte;Kickers Stoccarda;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_Sudwest;10;2026-09-18;2026-09-17;Trier;Offenbach;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_West;9;2026-09-18;2026-09-17;Rodinghausen;FC Gutersloh;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_West;9;2026-09-18;2026-09-17;Siegen;Wattenscheid;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Hungary_NBI;9;2026-09-18;2026-09-17;Puskas Academy;Honved;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Iceland_BestaDeildKvenna;21;2026-09-18;2026-09-17;Fram D;Vikingur Reykjavik D;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Iceland_BestaDeildKvenna;21;2026-09-18;2026-09-17;Hafnarfjordur D;Stjarnan D;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Iceland_BestaDeildKvenna;21;2026-09-18;2026-09-17;IBV Vestmannaeyjar D;Throttur D;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Indonesia_SuperLeague;3;2026-09-18;2026-09-17;Arema;Persik Kediri;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Indonesia_SuperLeague;3;2026-09-18;2026-09-17;Madura United;PSIM Yogyakarta;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Italy_SerieA;5;2026-09-18;2026-09-17;Monza;Sassuolo;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Italy_SerieB;5;2026-09-18;2026-09-17;Juve Stabia;Cesena;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kazakhstan_FirstLeague;32;2026-09-18;2026-09-17;FC Astana 2;FC Batyr;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kazakhstan_FirstLeague;32;2026-09-18;2026-09-17;Khan Tengri;Kairat Almaty 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kazakhstan_FirstLeague;32;2026-09-18;2026-09-17;Turan;Yelimay Semey 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kazakhstan_PremierLeague;38;2026-09-18;2026-09-17;Aktobe;Ulytau;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kazakhstan_PremierLeague;38;2026-09-18;2026-09-17;Altai;Ertis Pavlodar;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kazakhstan_PremierLeague;38;2026-09-18;2026-09-17;Kyzylzhar;Kaisar;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kazakhstan_PremierLeague;38;2026-09-18;2026-09-17;Okzhetpes;Zhenis;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kazakhstan_PremierLeague;38;2026-09-18;2026-09-17;Zhetysu;Kaspij Aktau;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kyrgyzstan_PremierLiga;28;2026-09-18;2026-09-17;Bars;Aldier;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Kyrgyzstan_PremierLiga;28;2026-09-18;2026-09-17;Bishkek City;Alay Osh;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Lithuania_ILyga;26;2026-09-18;2026-09-17;BE1 NFA;Transinvest 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Lithuania_ILyga;26;2026-09-18;2026-09-17;Hegelmann Litauen 2;Dainava Alytus;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Lithuania_ILyga;26;2026-09-18;2026-09-17;Jonava;Tauras;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Mexico_LigaExpansionMX_Apertura;9;2026-09-18;2026-09-17;Alacranes;Cruz Azul Hidalgo;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Moldova_Liga1_GroupA;6;2026-09-18;2026-09-17;Iskra Ribnita;Zimbru 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Moldova_Liga1_GroupA;6;2026-09-18;2026-09-17;Univer Comrat;FCM Ungheni;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Moldova_Liga1_GroupB;7;2026-09-18;2026-09-17;Stauceni;Victoria;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Montenegro_PrvaCrnogorskaLiga;10;2026-09-18;2026-09-17;Buducnost;Petrovac;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_EersteDivisie;9;2026-09-18;2026-09-17;Almere City;Heracles;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_EersteDivisie;9;2026-09-18;2026-09-17;Den Bosch;Helmond;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_EersteDivisie;9;2026-09-18;2026-09-17;Eindhoven;FC Emmen;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_EersteDivisie;9;2026-09-18;2026-09-17;Jong AZ;FC Volendam;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_EersteDivisie;9;2026-09-18;2026-09-17;Jong Ajax;Roda;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_EersteDivisie;9;2026-09-18;2026-09-17;Jong Utrecht;Venlo;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_EersteDivisie;9;2026-09-18;2026-09-17;Oss;Dordrecht;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_EersteDivisie;9;2026-09-18;2026-09-17;Waalwijk;Maastricht;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_Eredivisie;8;2026-09-18;2026-09-17;Groningen;Zwolle;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+NorthMacedonia_1MFL;7;2026-09-18;2026-09-17;Shkendija;Bashkimi;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+NorthMacedonia_1MFL;7;2026-09-18;2026-09-17;Sileks;Tikves;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+NorthernIreland_NIFLChampionship;8;2026-09-18;2026-09-17;Dundela;Strabane Athletic;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+NorthernIreland_NIFLChampionship;8;2026-09-18;2026-09-17;Newry City;Annagh;ALTA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Norway_Eliteserien;29;2026-09-18;2026-09-17;Sarpsborg 08;KFUM Oslo;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Paraguay_DivisionIntermedia;10;2026-09-18;2026-09-17;Deportivo Santani;Sol De America;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Peru_Liga1_Clausura;10;2026-09-18;2026-09-17;Alianza Atl.;Comerciantes Unidos;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_Division1;9;2026-09-18;2026-09-17;Polonia B.;Ruch;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_Division1;9;2026-09-18;2026-09-17;Warta Poznan;Puszcza;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_Division2;9;2026-09-18;2026-09-17;Bielsko-Biala;Swit Szczecin;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_Division2;9;2026-09-18;2026-09-17;Kleczew;Avia Swidnik;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_Division2;9;2026-09-18;2026-09-17;Zawisza;Leczna;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_Ekstraklasa;11;2026-09-18;2026-09-17;Widzew Lodz;Wieczysta Krakow;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_Ekstraklasa;11;2026-09-18;2026-09-17;Wisla;Slask;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_IIILiga_Group1;9;2026-09-18;2026-09-17;LKS Lomza;Zabki;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_IIILiga_Group1;9;2026-09-18;2026-09-17;T. Mazowiecki;Swit;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_IIILiga_Group3;9;2026-09-18;2026-09-17;Bytom Odrzanski;Sulow;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_IIILiga_Group3;9;2026-09-18;2026-09-17;Nysa;Rakow 2;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_IIILiga_Group3;9;2026-09-18;2026-09-17;Polkowice;Sosnowiec;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_IIILiga_Group3;9;2026-09-18;2026-09-17;Zaglebie 2;Carina Gubin;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Romania_Superliga;10;2026-09-18;2026-09-17;Rapid Bucarest;FC Arges;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Romania_Superliga;10;2026-09-18;2026-09-17;UTA Arad;Sepsi Sf. Gheorghe;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Russia_FNL;12;2026-09-18;2026-09-17;Chelyabinsk;Ufa;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Russia_FNL;12;2026-09-18;2026-09-17;Neftekhimik;Ural;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Russia_FNL;12;2026-09-18;2026-09-17;Sochi;SKA Khabarovsk;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Russia_FNL;12;2026-09-18;2026-09-17;Ulyanovsk;S. Kostroma;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Russia_FNL;12;2026-09-18;2026-09-17;Yaroslavl;Kamaz;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Slovakia_2Liga;9;2026-09-18;2026-09-17;L. Mikulas;Z. Moravce-Vrable;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Slovakia_3Liga_West;7;2026-09-18;2026-09-17;MSK Senec;D. Luzna;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Spain_LaLiga;9;2026-09-18;2026-09-17;Espanyol;Elche;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Spain_LaLiga2;6;2026-09-18;2026-09-17;Albacete;Cordoba;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Sweden_Division2_NorraGotaland;24;2026-09-18;2026-09-17;Herrestads AIF;Kumla;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Sweden_Division2_NorraGotaland;24;2026-09-18;2026-09-17;Husqvarna;IFK Skovde;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Sweden_Division2_SodraGotaland;27;2026-09-18;2026-09-17;Lilla Torg;Linero IF;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Sweden_Division2_SodraGotaland;27;2026-09-18;2026-09-17;Staffanstorp United;Osterlen;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Sweden_Division2_VastraGotaland;24;2026-09-18;2026-09-17;Boljan;Landvetter;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Sweden_Division2_VastraGotaland;24;2026-09-18;2026-09-17;Torslanda;Lindome;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Sweden_Superettan;29;2026-09-18;2026-09-17;Falkenberg;Östersund;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Switzerland_ChallengeLeague;9;2026-09-18;2026-09-17;Kriens;Etoile-Carouge;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Switzerland_ChallengeLeague;9;2026-09-18;2026-09-17;Wil;Nyonnais;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Switzerland_ChallengeLeague;9;2026-09-18;2026-09-17;Winterthur;Aarau;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Switzerland_ChallengeLeague;9;2026-09-18;2026-09-17;Xamax;Rapperswil-Jona;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Turkey_1Lig;8;2026-09-18;2026-09-17;Bandirmaspor;Umraniyespor;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Turkey_1Lig;8;2026-09-18;2026-09-17;Muglaspor;Igdir FK;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Turkey_SuperLig;6;2026-09-18;2026-09-17;Kasimpasa;Konyaspor;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Ukraine_PremierLeague;7;2026-09-18;2026-09-17;Ch. Odesa;Obolon;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Ukraine_PremierLeague;7;2026-09-18;2026-09-17;Polissya Zhytomyr;Kryvbas;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruPremier;10;2026-09-18;2026-09-17;Airbus;Flint;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruPremier;10;2026-09-18;2026-09-17;Ammanford;Penybont;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruPremier;10;2026-09-18;2026-09-17;Briton Ferry;Trefelin;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruPremier;10;2026-09-18;2026-09-17;Caernarfon;Cambrian United;MEDIA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruPremier;10;2026-09-18;2026-09-17;Colwyn Bay;Barry;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruPremier;10;2026-09-18;2026-09-17;Connah's Q.;Cardiff Metropolitan;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruPremier;10;2026-09-18;2026-09-17;Haverfordwest;Holywell;BASSA;SCHEDULED;NO;data\storico\ranking\vg1\storico_ranking_vg1.csv

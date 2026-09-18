@@ -113,4 +113,11 @@ Finland;Kolmonen Eastern Group 3;21;2026-09-13;Mikkelin Palloilijat 2;MiPK;1;4;
 Finland;Kolmonen Eastern Group 3;22;2026-09-12;Edustus IPS;STPS;5;2;
 Finland;Kolmonen Eastern Group 3;22;2026-09-12;HaPK;PeKa;2;1;
 Finland;Kolmonen Eastern Group 3;22;2026-09-12;KJP;LAUTP/2;2;0;
+<<<<<<< Updated upstream
 Finland;Kolmonen Eastern Group 3;22;2026-09-12;KoPa;Kumu;3;1;
+=======
+Finland;Kolmonen Eastern Group 3;22;2026-09-12;Kotajärven Pallo;Kumu;3;1;
+Finland;Kolmonen Eastern Group 3;23;2026-09-17;LAUTP/2;Kotajärven Pallo;0;1;
+Finland;Kolmonen Eastern Group 3;23;2026-09-17;MiPK;KJP;2;2;
+Finland;Kolmonen Eastern Group 3;23;2026-09-17;Mikkelin Pallo-Kissat;KJP;2;2;
+>>>>>>> Stashed changes
