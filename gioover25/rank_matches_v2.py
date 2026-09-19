@@ -68,6 +68,10 @@ MATURE_TEAM_MATCHES = 5
 REGISTRY_FILE = Path("data/league_registry.csv")
 MLS_NEXT_PRO_PREFIX = "USA_MLSNextPro_"
 
+# Cache di processo: gli storici sono piccoli e immutabili durante un ranking.
+# Ogni CSV viene quindi letto dal disco una sola volta, anche con --engine all.
+_HISTORY_CACHE: dict[str, list] = {}
+
 FIELDNAMES = [
     "MatchDate",
     "LeagueId",
@@ -169,8 +173,11 @@ def load_group_histories(league_ids: list[str]) -> dict[str, list]:
     histories = {}
     for source_league_id in league_ids:
         path = RESULTS_DIR / f"{source_league_id}.csv"
-        if path.exists():
-            histories[source_league_id] = read_results_file(path)
+        if not path.exists():
+            continue
+        if source_league_id not in _HISTORY_CACHE:
+            _HISTORY_CACHE[source_league_id] = read_results_file(path)
+        histories[source_league_id] = _HISTORY_CACHE[source_league_id]
     return histories
 
 
@@ -884,33 +891,11 @@ def rank_matches(
         engine_kwargs = {}
 
         if requires_played_counts:
-            (
-                home_played_for_engine,
-                _home_points_for_engine,
-                _home_ppg_for_engine,
-            ) = calculate_team_ppg_before_match(
-                team=home,
-                source_league_id=home_source,
-                histories=histories,
-                match_date=match_date_value,
-                include_all_histories=use_all_team_histories,
-            )
-
-            (
-                away_played_for_engine,
-                _away_points_for_engine,
-                _away_ppg_for_engine,
-            ) = calculate_team_ppg_before_match(
-                team=away,
-                source_league_id=away_source,
-                histories=histories,
-                match_date=match_date_value,
-                include_all_histories=use_all_team_histories,
-            )
-
+            # Questi valori sono già stati calcolati sopra per la regola del
+            # campione immaturo: non scandire nuovamente gli stessi storici.
             engine_kwargs.update(
-                home_played=home_played_for_engine,
-                away_played=away_played_for_engine,
+                home_played=home_played,
+                away_played=away_played,
             )
 
         if requires_defense_last5:
