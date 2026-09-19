@@ -99,22 +99,49 @@ def read_results_file(path: str | Path) -> list[MatchResult]:
 
         date_column = "MatchDate" if "MatchDate" in fieldnames else "Date"
 
-        for row in reader:
+        for row_number, row in enumerate(reader, start=2):
+            # DictReader assegna None ai campi mancanti nelle righe corte.
+            # Validiamo prima di chiamare .strip(), così un CSV storico
+            # corrotto indica subito file, riga e colonne problematiche.
+            required_row_fields = (
+                "Country",
+                "League",
+                date_column,
+                "Home",
+                "Away",
+                "HG",
+                "AG",
+            )
+            invalid_fields = [
+                field
+                for field in required_row_fields
+                if row.get(field) is None
+            ]
+            if None in row:
+                invalid_fields.append("colonne extra/non allineate")
+
+            if invalid_fields:
+                raise ValueError(
+                    f"File risultati non valido: {results_path}, "
+                    f"riga {row_number}; campi mancanti/non allineati: "
+                    + ", ".join(invalid_fields)
+                )
+
             matches.append(
                 MatchResult(
-                    country=row["Country"].strip(),
-                    league=row["League"].strip(),
+                    country=str(row.get("Country", "")).strip(),
+                    league=str(row.get("League", "")).strip(),
                     round=_parse_round(row.get("Round")),
-                    date=row[date_column].strip(),
+                    date=str(row.get(date_column, "")).strip(),
                     home=canonicalize_team_display_name(
-                        row["Home"], results_path.stem
+                        row.get("Home", ""), results_path.stem
                     ),
                     away=canonicalize_team_display_name(
-                        row["Away"], results_path.stem
+                        row.get("Away", ""), results_path.stem
                     ),
-                    home_goals=_int(row["HG"]),
-                    away_goals=_int(row["AG"]),
-                    notes=row.get("Notes", "").strip(),
+                    home_goals=_int(row.get("HG")),
+                    away_goals=_int(row.get("AG")),
+                    notes=str(row.get("Notes", "") or "").strip(),
                 )
             )
 
