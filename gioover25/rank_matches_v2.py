@@ -692,7 +692,7 @@ def _input_archive_destination(input_path: Path) -> Path:
 
     destination = (
         INPUT_ARCHIVE_DIR
-        / f"partite_{archive_date.strftime('%d_%m_%Y')}.csv"
+        / f"partite_{archive_date.strftime('%Y_%m_%d')}.csv"
     )
 
     if not destination.exists():
