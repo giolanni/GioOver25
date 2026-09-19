@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import zipfile
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -11,6 +12,7 @@ RESULTS_DIR = Path("data/storico/risultati")
 STANDINGS_DIR = Path("data/storico/classifiche_calcolate")
 RANKING_ROOT = Path("data/storico/ranking")
 POSTPONED_FILE = Path("data/storico/partite_posticipate.csv")
+ARCHIVE_ROOT = Path("data/archive")
 
 AGGREGATES_DIR = Path("data/storico/aggregati_reset")
 LEAGUE_STATS_FILE = AGGREGATES_DIR / "league_stats.csv"
@@ -380,6 +382,46 @@ def build_plan(
     )
 
 
+def archive_file(path: Path, category: str, reset_id: str) -> Path | None:
+    """Archivia un file prima del reset senza sovrascrivere archivi esistenti."""
+    if not path.exists():
+        return None
+    archive_dir = ARCHIVE_ROOT / datetime.now().strftime("%Y") / category
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    archive_path = archive_dir / f"{path.stem}_{reset_id}.zip"
+    counter = 1
+    while archive_path.exists():
+        archive_path = archive_dir / f"{path.stem}_{reset_id}_{counter}.zip"
+        counter += 1
+    with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        archive.write(path, arcname=path.name)
+    return archive_path
+
+
+def archive_ranking_rows(league_id: str, reset_id: str) -> int:
+    """Archivia le sole righe della lega prima di rimuoverle dai ranking attivi."""
+    archived_total = 0
+    archive_dir = ARCHIVE_ROOT / datetime.now().strftime("%Y") / "rankings"
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    for engine, history_file in engine_history_files():
+        fieldnames, rows = read_csv(history_file)
+        selected = [row for row in rows if text(row.get("LeagueId")).casefold() == league_id.casefold()]
+        if not selected:
+            continue
+        temp_csv = archive_dir / f".{league_id}_{engine}_{reset_id}.csv"
+        write_csv(temp_csv, fieldnames, selected)
+        archive_path = archive_dir / f"{league_id}_{engine}_{reset_id}.zip"
+        counter = 1
+        while archive_path.exists():
+            archive_path = archive_dir / f"{league_id}_{engine}_{reset_id}_{counter}.zip"
+            counter += 1
+        with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+            archive.write(temp_csv, arcname=f"{league_id}_{engine}.csv")
+        temp_csv.unlink()
+        archived_total += len(selected)
+    return archived_total
+
+
 def remove_from_rankings(league_id: str) -> int:
     removed_total = 0
 
@@ -442,10 +484,18 @@ def apply_one(
     standings_removed = standings_file.exists()
 
     if results_removed:
+        archived = archive_file(results_file, "risultati", reset_id)
+        print(f"[ARCHIVE] Risultati: {results_file} -> {archived}")
         results_file.unlink()
 
     if standings_removed:
+        archived = archive_file(standings_file, "classifiche", reset_id)
+        print(f"[ARCHIVE] Classifica: {standings_file} -> {archived}")
         standings_file.unlink()
+
+    ranking_archived = archive_ranking_rows(plan.league_id, reset_id)
+    if ranking_archived:
+        print(f"[ARCHIVE] Ranking: {plan.league_id}, {ranking_archived} righe archiviate.")
 
     ranking_removed = remove_from_rankings(plan.league_id)
     postponed_removed = remove_from_postponed(plan.league_id)
