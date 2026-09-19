@@ -745,7 +745,18 @@ def rank_matches(
         home = canonicalize_team_display_name(row["Home"], league_id)
         away = canonicalize_team_display_name(row["Away"], league_id)
 
-        league_info = get_league_info(league_id)
+        try:
+            league_info = get_league_info(league_id)
+        except KeyError as exc:
+            raise ValueError(
+                "LeagueId non valido nel file di input: "
+                f"{league_id!r} | partita {home} - {away} | "
+                f"MatchDate={match_date_text}. "
+                "Verificare data/input_partite/partite.csv: "
+                "potrebbe esserci una riga header duplicata oppure una lega "
+                "non presente in data/league_registry.csv."
+            ) from exc
+
         competition_group = get_competition_group(league_id, registry_rows)
         mls_next_pro = is_mls_next_pro_league(league_id)
 
