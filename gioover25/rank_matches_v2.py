@@ -721,8 +721,8 @@ def archive_input_file(input_path: Path) -> Path:
     INPUT_ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
     destination = _input_archive_destination(input_path)
 
-    shutil.move(str(input_path), str(destination))
-    print(f"[ARCHIVE] Input: {input_path} -> {destination}")
+    shutil.copy2(str(input_path), str(destination))
+    print(f"[ARCHIVE] Copia input: {input_path} -> {destination}")
     return destination
 
 
