@@ -216,6 +216,51 @@ def load_results_index(results_root: Path) -> Dict[Tuple[str, str, str, str], Tu
     return index
 
 
+def exclude_matches_already_in_results(
+    matches: Iterable[MissingMatch],
+    results_index: Dict[Tuple[str, str, str, str], Tuple[str, str]],
+) -> List[MissingMatch]:
+    """Esclude prediction senza OK/KO quando il risultato è già nello storico.
+
+    Per i recuperi posticipati la MatchDate del ranking può essere quella
+    originaria. Se la stessa coppia LeagueId+Home+Away compare una sola volta
+    negli storici risultati, quella gara è considerata conclusa anche quando
+    la data finale è diversa.
+    """
+    result_dates_by_fixture: Dict[Tuple[str, str, str], set[str]] = {}
+    for league, match_date, home, away in results_index:
+        result_dates_by_fixture.setdefault(
+            (league, home, away), set()
+        ).add(match_date)
+
+    output: List[MissingMatch] = []
+    excluded = 0
+
+    for match in matches:
+        league = match.league_id.casefold()
+        home = normalize_team_name(match.league_id, match.home)
+        away = normalize_team_name(match.league_id, match.away)
+        exact_key = (league, match.match_date.casefold(), home, away)
+
+        exact_result = exact_key in results_index
+        result_dates = result_dates_by_fixture.get((league, home, away), set())
+        unique_fixture_result = len(result_dates) == 1
+
+        if exact_result or unique_fixture_result:
+            excluded += 1
+            continue
+
+        output.append(match)
+
+    if excluded:
+        print(
+            f"[INFO] {excluded} prediction senza OK/KO escluse perché il "
+            "risultato è già presente negli storici risultati."
+        )
+
+    return output
+
+
 def annotate_postponed(
     matches: Iterable[MissingMatch],
     results_index: Dict[Tuple[str, str, str, str], Tuple[str, str]],
@@ -507,6 +552,7 @@ def main() -> int:
     )
 
     results_index = load_results_index(Path(args.results_root))
+    matches = exclude_matches_already_in_results(matches, results_index)
     matches = annotate_postponed(matches, results_index)
 
     print_table(matches)
