@@ -10,3 +10,6 @@ data/debug/team_name_normalization_report.csv
 
 # Backup locali creati dalle procedure di bonifica dati.
 data/backup/
+
+# Archivi ZIP dei reset: backup operativi locali, non versionare.
+data/archive/
