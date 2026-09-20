@@ -555,10 +555,25 @@ def main() -> int:
     matches = exclude_matches_already_in_results(matches, results_index)
     matches = annotate_postponed(matches, results_index)
 
-    print_table(matches)
+    total = len(matches)
+    postponed_count = sum(1 for match in matches if match.postponed == "SI")
+    leagues_count = len({match.league_id for match in matches})
+    engines_count = len({
+        Path(match.source_file).parent.name
+        for match in matches
+        if match.source_file
+    })
+
+    print("Riepilogo risultati mancanti")
+    print(f"  Totale: {total}")
+    print(f"  Leghe coinvolte: {leagues_count}")
+    print(f"  Engine coinvolti: {engines_count}")
+    print(f"  Marcate POSTPONED: {postponed_count}")
 
     if args.csv_output:
         export_csv(matches, Path(args.csv_output))
+    elif total:
+        print("Usare --csv <file> per esportare il dettaglio.")
 
     return 0
 
