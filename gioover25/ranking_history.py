@@ -482,6 +482,22 @@ def _date_is_compatible(
     return False
 
 
+def _apply_final_result(row: dict, match: MatchResult, result_date: date) -> None:
+    """Chiude una prediction con il risultato finale effettivo."""
+    goals = match.home_goals + match.away_goals
+    row["MatchDate"] = result_date.isoformat()
+    if not _text(row.get("Round")) and getattr(match, "round", 0):
+        row["Round"] = str(match.round)
+    row["HG"] = str(match.home_goals)
+    row["AG"] = str(match.away_goals)
+    row["Goals"] = str(goals)
+    row["Over25"] = "OK" if goals >= 3 else "KO"
+    row["BTTS"] = (
+        "OK" if match.home_goals > 0 and match.away_goals > 0 else "KO"
+    )
+    row["MatchStatus"] = "FINAL"
+
+
 def update_finished_matches(
     engine_name: str,
     finished_matches: list[tuple[str, MatchResult]],
@@ -594,6 +610,23 @@ def update_finished_matches(
             == normalized_away
         ]
 
+        # Prima di qualsiasi controllo "già FINAL", chiudiamo tutte le
+        # prediction POSTPONED ancora aperte della stessa fixture. Questo è
+        # fondamentale nei re-import: può esistere già una riga FINAL e,
+        # contemporaneamente, una vecchia riga POSTPONED rimasta indietro.
+        # MatchDate originaria presente, diversa o vuota non cambia la regola.
+        postponed_open_rows = [
+            row
+            for row in same_fixture_rows
+            if _is_unresolved(row)
+            and _text(row.get("MatchStatus")).upper() == "POSTPONED"
+        ]
+        if postponed_open_rows:
+            for postponed_row in postponed_open_rows:
+                _apply_final_result(postponed_row, match, result_date)
+                updated += 1
+            continue
+
         exact_final_rows = [
             row
             for row in same_fixture_rows
@@ -678,22 +711,7 @@ def update_finished_matches(
             continue
 
         selected_row = best_rows[0]
-        goals = match.home_goals + match.away_goals
-
-        selected_row["MatchDate"] = result_date.isoformat()
-        if not _text(selected_row.get("Round")) and getattr(match, "round", 0):
-            selected_row["Round"] = str(match.round)
-
-        selected_row["HG"] = str(match.home_goals)
-        selected_row["AG"] = str(match.away_goals)
-        selected_row["Goals"] = str(goals)
-        selected_row["Over25"] = "OK" if goals >= 3 else "KO"
-        selected_row["BTTS"] = (
-            "OK"
-            if match.home_goals > 0 and match.away_goals > 0
-            else "KO"
-        )
-        selected_row["MatchStatus"] = "FINAL"
+        _apply_final_result(selected_row, match, result_date)
         updated += 1
 
         # La prediction selezionata non è più posticipata: ora è FINAL e
