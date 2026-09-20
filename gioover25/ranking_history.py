@@ -470,6 +470,13 @@ def _date_is_compatible(
         return False
 
     if prediction_date is not None:
+        # Le righe legacy possono avere MatchDate vuota. Se erano già state
+        # marcate POSTPONED, il risultato finale della stessa fixture deve
+        # poterle chiudere anche oltre la normale finestra dalla PredictionDate.
+        # La MatchDate verrà poi sostituita con la data reale del recupero.
+        if match_status == "POSTPONED" and result_date >= prediction_date:
+            return True
+
         return result_date <= prediction_date + timedelta(days=legacy_max_days)
 
     return False
