@@ -602,6 +602,19 @@ def update_finished_matches(
         unresolved_fixture_rows = [
             row for row in same_fixture_rows if _is_unresolved(row)
         ]
+
+        # Se la gara era stata marcata POSTPONED e ora arriva il risultato
+        # finale della stessa LeagueId+Home+Away, è quella stessa prediction
+        # che va chiusa. La data originaria del rinvio viene sostituita con la
+        # data reale in cui la partita è stata giocata.
+        postponed_fixture_rows = [
+            row
+            for row in unresolved_fixture_rows
+            if _text(row.get("MatchStatus")).upper() == "POSTPONED"
+        ]
+        if len(postponed_fixture_rows) == 1:
+            unresolved_fixture_rows = postponed_fixture_rows
+
         is_unique_unresolved_fixture = len(unresolved_fixture_rows) == 1
 
         compatible_rows = [
@@ -670,7 +683,9 @@ def update_finished_matches(
         selected_row["MatchStatus"] = "FINAL"
         updated += 1
 
-        # Prediction precedenti della stessa gara restano POSTPONED.
+        # La prediction selezionata non è più posticipata: ora è FINAL e
+        # porta la MatchDate effettiva del recupero. Eventuali altre prediction
+        # precedenti della stessa gara restano POSTPONED.
         selected_prediction_date = _parse_date(
             selected_row.get("PredictionDate", "")
         )
