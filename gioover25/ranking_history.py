@@ -619,24 +619,30 @@ def update_finished_matches(
             for row in unresolved_fixture_rows
             if _text(row.get("MatchStatus")).upper() == "POSTPONED"
         ]
+
+        # Un risultato finale deve chiudere direttamente una prediction
+        # POSTPONED della stessa LeagueId+Home+Away. La vecchia MatchDate
+        # (anche valorizzata e molto distante) è la data originaria del rinvio,
+        # quindi non deve essere usata per scartare il recupero.
         if len(postponed_fixture_rows) == 1:
-            unresolved_fixture_rows = postponed_fixture_rows
+            compatible_rows = postponed_fixture_rows
+        else:
+            is_unique_unresolved_fixture = len(unresolved_fixture_rows) == 1
+            compatible_rows = [
+                row
+                for row in unresolved_fixture_rows
+                if _date_is_compatible(
+                    row,
+                    result_date,
+                    is_unique_unresolved_fixture=is_unique_unresolved_fixture,
+                    legacy_max_days=legacy_max_days,
+                    match_date_tolerance_days=match_date_tolerance_days,
+                    unique_fixture_recovery_days=unique_fixture_recovery_days,
+                )
+            ]
 
-        is_unique_unresolved_fixture = len(unresolved_fixture_rows) == 1
-
-        compatible_rows = [
-            row
-            for row in unresolved_fixture_rows
-            if _date_is_compatible(
-                row,
-                result_date,
-                is_unique_unresolved_fixture=is_unique_unresolved_fixture,
-                legacy_max_days=legacy_max_days,
-                match_date_tolerance_days=match_date_tolerance_days,
-                unique_fixture_recovery_days=unique_fixture_recovery_days,
-            )
-        ]
-
+        # Se non c'è una POSTPONED univoca, resta la normale compatibilità
+        # temporale per le prediction SCHEDULED/legacy.
         if not compatible_rows:
             not_found += 1
             reason = (
