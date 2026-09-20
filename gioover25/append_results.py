@@ -1265,7 +1265,7 @@ def append_results(
         f"{len(finished_matches)}"
     )
 
-    for engine_name in get_available_engines():
+    for engine_name in ranking_history_engines:
         update_finished_matches(
             engine_name,
             finished_matches,
