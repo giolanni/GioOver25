@@ -2,7 +2,7 @@ Genera input_partite
 python tools/prepare_input.py rank c:\temp\input.txt
 
 Genera input_risultati
-python tools/prepare_input.py results c:\temp\input2.txt
+python tools/git results c:\temp\input2.txt
 
 Import risultati
 python -m gioover25.append_results data/input_risultati/risultati.csv
@@ -53,6 +53,13 @@ python -m gioover25.missing_results --band ALTA --exclude-australia
 
 #VERIFICARE LA PRESENZA DI PARTITE DUPLICATE IN STORICO RISULTATI
 python -m gioover25.find_duplicate_results_different_dates
+
+############### HEALTH REPOSITORY ###############
+
+python -m analysis.repository_health
+
+controlla i files con size >10 mb e restituisce la top 30
+python -m analysis.repository_health --warn-mb 10 --top 30
 
 ############# RESET DATA #####################
 Singola lega

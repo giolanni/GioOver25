@@ -1,6 +1,5 @@
 ﻿LeagueId;Round;MatchDate;Home;Away;Status;Notes
 Kazakhstan_PremierLeague;?;2026-07-19;Ertis Pavlodar;FC Astana;POSTICIPATA;Postponed
-Somalia_NationalLeague;25;2026-07-22;Gantaalaha Afgooye;Mogadishu City;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;?;2026-07-04;Sibbo-Vargarna;JäPS/47;RINVIATA;Postponed
 Finland_Kolmonen_Western_Group3;?;2026-06-28;Sporting Kristina;Saaripotku;RINVIATA;Postponed
 Finland_Kolmonen_North;8;2026-07-04;Ajax Sarkkiranta;Santa Claus;POSTICIPATA;Postponed
@@ -19,7 +18,6 @@ Belarus_VysshayaLiga;?;2026-08-01;ML Vitebsk;Zhodino;POSTICIPATA;
 Hungary_NBII;?;2026-08-01;DVTK;Szentlorinc;POSTICIPATA;
 Hungary_NBII;?;2026-08-01;Mezokovesd;Ajka;POSTICIPATA;
 Hungary_NBII;?;2026-08-01;Szeged;BVSC-Zuglo;POSTICIPATA;
-USA_MLSNextPro_EasternConference_NortheastDivision;?;2026-08-01;Toronto FC II;Columbus Crew 2;POSTICIPATA;
 Peru_Liga2;?;2026-08-02;Estudiantil CNI;Binacional;POSTICIPATA;Fonte: SRF
 USA_USLLeagueOne;?;2026-08-02;Chattanooga Red Wolves;Spokane Velocity;POSTICIPATA;Fonte: Abbandonata
 USA_USLLeagueOne;?;2026-08-02;Sarasota Paradise;FC Naples;POSTICIPATA;
@@ -31,23 +29,19 @@ Wales_CymruSouth;?;2026-08-15;Ynyshir Albions;Aberystwyth;POSTICIPATA;
 Germany_Oberliga_RheinlandPfalzSaar;?;2026-08-15;RW Wittlich;TSV 1881 Gau-Odernheim;POSTICIPATA;
 Kyrgyzstan_PremierLiga;?;2026-08-15;Alga;Muras United;POSTICIPATA;
 CzechRepublic_3CFL_GroupB;?;2026-08-15;Liberec B;Caslav;POSTICIPATA;
-Armenia_PremierLeague;?;2026-08-16;Pyunik;Sardarapat;POSTICIPATA;
 Poland_Ekstraklasa;?;2026-08-16;Jagiellonia;Pogon Szczecin;POSTICIPATA;
 Poland_Ekstraklasa;?;2026-08-16;Plock;Lech;POSTICIPATA;
 Portugal_LigaPortugal;?;2026-08-16;Braga;Gil Vicente;POSTICIPATA;
 Estonia_EsiliigaB;?;2026-08-16;Legion;Tammeka U21;POSTICIPATA;
 Finland_Kolmonen_Western_Group3;;2026-08-19;FC Sääripotku;Sp. Kristina;POSTICIPATA;FRO / risultato non disponibile
 Armenia_FirstLeague;;2026-08-20;Araks Ararat;Hayq;POSTICIPATA;
-Finland_Kolmonen_Southern_Group2;;2026-08-20;Atlantis FC/2;ToTe;POSTICIPATA;FRO / risultato non disponibile
 Iceland_1DeildWomen;;2026-07-02;Keflavik;KR Reykjavik;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-04;UMF Selfoss;Fjardab/Hottur/Leiknir;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-04;Tindastoll;Haukar;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-29;Tindastoll;ÍA Akranes;POSTICIPATA;
 CzechRepublic_3CFL_GroupA;3;2026-08-22;Benesov;Sparta Praga B;POSTICIPATA;
-CzechRepublic_3CFL_GroupA;3;2026-08-22;Povltavska FA;Domazlice;POSTICIPATA;
 CzechRepublic_3CFL_GroupB;3;2026-08-22;Banik Most-Sous;Benatky;POSTICIPATA;
 CzechRepublic_3CFL_GroupB;3;2026-08-22;Varnsdorf;Horni Redice;POSTICIPATA;
-CzechRepublic_4Liga_GroupA;3;2026-08-22;FK Komarov;Doubravka;POSTICIPATA;
 CzechRepublic_4Liga_GroupB;3;2026-08-22;Ostrov;Brandys n. Labem;POSTICIPATA;
 CzechRepublic_4Liga_GroupC;3;2026-08-22;Vykan;Slavia HK;POSTICIPATA;
 Latvia_NakotnesLiga;18;2026-08-22;Tukums 2000 2;JFK Ventspils;POSTICIPATA;
@@ -92,3 +86,7 @@ Wales_CymruSouth;7;2026-09-11;Newport City;Trethomas Bluebirds;POSTICIPATA;
 Estonia_Esiliiga;;2026-09-13;Maardu;Tallinna Kalev;POSTICIPATA;
 Germany_Oberliga_Westfalen;;2026-09-13;ASC 09 Dortmund;Schermbeck 2020;POSTICIPATA;
 Spain_LaLiga;9;2026-09-16;Levante;Ath. Bilbao;POSTICIPATA;
+Germany_Oberliga_Hamburg;8;2026-09-18;Norderstedt 2;ETSV Hamburg;POSTICIPATA;Annullata per malattia della squadra di casa
+Estonia_Esiliiga;;2026-09-19;Levadia U21;Maardu;POSTICIPATA;
+Bulgaria_ParvaLiga;;2026-09-20;Levski;Ludogorets;POSTICIPATA;
+Ukraine_PershaLiga;;2026-09-20;FC Chernihiv;Inhulets;POSTICIPATA;
