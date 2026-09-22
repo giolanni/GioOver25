@@ -23,6 +23,7 @@ Finland_Kolmonen_Eastern_Group1;76;73;96.05;58;76.32;49;64.47;53;69.74;4.68
 Netherlands_Eredivisie;63;57;90.48;48;76.19;40;63.49;44;69.84;3.81
 Finland_Kolmonen_Western_Group3;105;94;89.52;80;76.19;55;52.38;75;71.43;3.95
 Moldova_Liga1_GroupA;24;23;95.83;18;75.0;15;62.5;19;79.17;4.71
+England_ProfessionalDevelopmentLeague;36;33;91.67;27;75.0;23;63.89;25;69.44;4.11
 Norway_3rdDivision_Group3;144;132;91.67;108;75.0;81;56.25;97;67.36;4.17
 CzechRepublic_4Liga_GroupA;48;41;85.42;36;75.0;21;43.75;30;62.5;3.73
 CzechRepublic_4Liga_GroupF;56;47;83.93;42;75.0;29;51.79;36;64.29;3.7
@@ -51,6 +52,7 @@ Germany_Oberliga_NOFV_Sud;40;34;85.0;28;70.0;23;57.5;28;70.0;3.7
 Austria_Regionalliga_North;63;57;90.48;44;69.84;28;44.44;39;61.9;3.43
 Switzerland_PromotionLeague;72;58;80.56;50;69.44;30;41.67;42;58.33;3.28
 Wales_CymruSouth;42;33;78.57;29;69.05;20;47.62;24;57.14;3.4
+England_IsthmianLeaguePremierDivision;87;76;87.36;60;68.97;44;50.57;52;59.77;3.4
 Finland_Kakkonen_GroupA;90;81;90.0;62;68.89;44;48.89;64;71.11;3.77
 Germany_Regionalliga_Nord;90;81;90.0;62;68.89;48;53.33;56;62.22;3.94
 Austria_Regionalliga_West;64;56;87.5;44;68.75;33;51.56;42;65.62;3.48
@@ -87,6 +89,7 @@ Germany_Oberliga_Westfalen;62;55;88.71;40;64.52;29;46.77;44;70.97;3.55
 Germany_Regionalliga_Nordost;90;79;87.78;58;64.44;36;40.0;58;64.44;3.18
 Germany_Oberliga_Bayern_Nord;98;79;80.61;63;64.29;40;40.82;55;56.12;3.29
 Austria_2Liga;56;45;80.36;36;64.29;27;48.21;31;55.36;3.3
+England_NPLPremierDivision;100;83;83.0;64;64.0;39;39.0;55;55.0;3.3
 Kazakhstan_FirstLeague;161;125;77.64;103;63.98;64;39.75;77;47.83;3.25
 Albania_AbissnetSuperiore;22;20;90.91;14;63.64;8;36.36;15;68.18;3.05
 Finland_Ykkonen;132;112;84.85;84;63.64;63;47.73;80;60.61;3.5
@@ -152,6 +155,7 @@ SriLanka_SuperLeague;45;37;82.22;25;55.56;19;42.22;15;33.33;3.33
 Denmark_1stDivision;54;42;77.78;30;55.56;17;31.48;34;62.96;2.78
 Slovakia_2Liga;72;55;76.39;40;55.56;19;26.39;38;52.78;2.74
 Georgia_ErovnuliLiga;38;31;81.58;21;55.26;13;34.21;22;57.89;2.95
+England_SouthernLeaguePremierSouth;80;62;77.5;44;55.0;27;33.75;45;56.25;3.01
 SaudiArabia_ProfessionalLeague;51;39;76.47;28;54.9;16;31.37;27;52.94;2.76
 Portugal_LigaPortugal;62;47;75.81;34;54.84;23;37.1;31;50.0;2.74
 Bosnia_PrvaLiga_FBiH;44;30;68.18;24;54.55;14;31.82;19;43.18;2.68
@@ -159,6 +163,7 @@ FaroeIslands_PremierLeague;114;88;77.19;62;54.39;36;31.58;66;57.89;2.89
 Poland_IIILiga_Group4;72;56;77.78;39;54.17;21;29.17;39;54.17;2.88
 Sweden_Allsvenskan;176;144;81.82;95;53.98;54;30.68;93;52.84;2.94
 Germany_Oberliga_NOFV_Nord;39;32;82.05;21;53.85;8;20.51;23;58.97;2.62
+England_SouthernLeaguePremierCentral;78;63;80.77;42;53.85;22;28.21;46;58.97;2.82
 Japan_J1League;80;63;78.75;43;53.75;27;33.75;48;60.0;2.96
 Denmark_Superliga;54;45;83.33;29;53.7;21;38.89;32;59.26;2.96
 Lithuania_Toplyga;136;104;76.47;73;53.68;41;30.15;64;47.06;2.68

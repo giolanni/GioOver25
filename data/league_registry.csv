@@ -73,6 +73,11 @@ Denmark_ALigaWomen;Denmark;A-Liga Women;10;18;Yes;2026/27: massima serie femmini
 England_Championship;England;Championship;24;46;Yes;;;
 England_LeagueOne;England;League One;24;46;Yes;;;
 England_PremierLeague;England;Premier League;20;38;Yes;;;
+England_SouthernLeaguePremierCentral;England;Southern League Premier Central;22;42;Yes;"2026/27: 22 clubs, double round-robin; seventh tier (Step 3)";
+England_SouthernLeaguePremierSouth;England;Southern League Premier South;22;42;Yes;"2026/27: 22 clubs, double round-robin; seventh tier (Step 3)";
+England_ProfessionalDevelopmentLeague;England;Professional Development League;17;0;No;"2026/27 U21 competition; regional and cross-group schedule, source has no numbered rounds";
+England_NPLPremierDivision;England;NPL Premier Division;22;42;Yes;"2026/27: 22 clubs, double round-robin; seventh tier (Step 3)";
+England_IsthmianLeaguePremierDivision;England;Isthmian League Premier Division;22;42;Yes;;
 Estonia_Esiliiga;Estonia;Esiliiga;10;36;Yes;Round 17 complete in supplied data;;
 Estonia_EsiliigaB;Estonia;Esiliiga B;10;36;Yes;Round 17 complete in supplied data;;
 Estonia_Meistriliiga;Estonia;Meistriliiga;10;36;Yes;Round 17 currently partial in supplied data;;
