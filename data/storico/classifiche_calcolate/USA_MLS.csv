@@ -1,7 +1,7 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 29;1;Nashville SC;25;16;6;3;52;21;31;54;2.16
 29;2;Vancouver Whitecaps;25;15;4;6;56;23;33;49;1.96
-29;3;Inter Miami;26;13;9;4;68;47;21;48;1.846
+29;3;Inter Miami;27;13;10;4;70;49;21;49;1.815
 29;4;Charlotte;27;13;7;7;49;37;12;46;1.704
 29;5;New England Revolution;26;14;4;8;45;33;12;46;1.769
 29;6;St. Louis City;26;12;8;6;45;36;9;44;1.692
@@ -18,7 +18,7 @@
 29;17;Cincinnati;25;8;9;8;54;61;-7;33;1.32
 29;18;New York Red Bulls;26;9;6;11;34;48;-14;33;1.269
 29;19;Portland Timbers;26;9;5;12;47;48;-1;32;1.231
-29;20;San Diego FC;25;8;6;11;42;42;0;30;1.2
+29;20;San Diego FC;26;8;7;11;44;44;0;31;1.192
 29;21;Seattle Sounders;25;7;9;9;30;35;-5;30;1.2
 29;22;Austin FC;26;7;9;10;32;44;-12;30;1.154
 29;23;Real Salt Lake;25;8;5;12;37;42;-5;29;1.16
