@@ -42,8 +42,6 @@ Iceland_1DeildWomen;;2026-07-29;Tindastoll;ÍA Akranes;POSTICIPATA;
 CzechRepublic_3CFL_GroupA;3;2026-08-22;Benesov;Sparta Praga B;POSTICIPATA;
 CzechRepublic_3CFL_GroupB;3;2026-08-22;Banik Most-Sous;Benatky;POSTICIPATA;
 CzechRepublic_3CFL_GroupB;3;2026-08-22;Varnsdorf;Horni Redice;POSTICIPATA;
-CzechRepublic_4Liga_GroupB;3;2026-08-22;Ostrov;Brandys n. Labem;POSTICIPATA;
-CzechRepublic_4Liga_GroupC;3;2026-08-22;Vykan;Slavia HK;POSTICIPATA;
 Latvia_NakotnesLiga;18;2026-08-22;Tukums 2000 2;JFK Ventspils;POSTICIPATA;
 Lithuania_ILyga;22;2026-08-22;FK Minija;Kauno Zalgiris 2;POSTICIPATA;
 Wales_CymruNorth;3;2026-08-22;Caersws;Newtown;POSTICIPATA;
@@ -59,10 +57,8 @@ Wales_CymruSouth;;2026-08-28;Treowen;Cardiff Draconians;POSTICIPATA;
 Germany_Oberliga_BadenWurttemberg;;2026-08-28;Pforzheim;Young Boys Reutlingen;POSTICIPATA;
 Norway_3rdDivision_Group1;;2026-08-28;Union Carl Berner;K. Oslo 2;POSTICIPATA;
 NorthernIreland_NIFLPremiership;;2026-08-29;Ballymena;Larne;POSTICIPATA;
-Norway_3rdDivision_Group5;;2026-08-29;Skjetten;Skjervoy;POSTICIPATA;
 CzechRepublic_1Liga;;2026-08-29;Bohemians;Mlada Boleslav;POSTICIPATA;
 Norway_3rdDivision_Group1;;2026-08-29;Asker;Frigg;POSTICIPATA;
-CzechRepublic_4Liga_GroupB;3;2026-08-21;Meteor Prague;Sokolov;POSTICIPATA;Rinviata al 2026-08-28
 Norway_3rdDivision_Group5;18;2026-08-21;Skjetten;Skjervoey;POSTICIPATA;
 Wales_CymruSouth;;2026-08-31;Cardiff Draconians;Pontardawe;POSTICIPATA;
 Wales_CymruSouth;;2026-08-31;Newport City;Pure Swansea;POSTICIPATA;
@@ -78,7 +74,6 @@ Finland_Kolmonen_Western_Group3;;2026-09-04;FC Sääripotku;KPV/Akatemia;POSTICI
 Finland_Kakkonen_GroupA;;2026-09-04;PPJ;Kiffen;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;;2026-09-10;TuPS;MK-United;POSTICIPATA;Sorgente: annullata
 Germany_Oberliga_SchleswigHolstein;7;2026-09-03;Hohenwestedt;Eckernforder SV;POSTICIPATA;
-Austria_Wien;;2026-09-11;Stammersdorf;Sportunion Mauer;POSTICIPATA;
 Ukraine_PremierLeague;;2026-09-12;Kryvbas;FC Kharkiv;POSTICIPATA;
 Ukraine_PremierLeague;;2026-09-12;Veres-Rivne;Kudrivka;POSTICIPATA;
 Finland_Kolmonen_Western_Group3;;2026-09-12;Larsmo Bollklubb;FC Sääripotku;POSTICIPATA;Sorgente: annullata
@@ -90,3 +85,9 @@ Germany_Oberliga_Hamburg;8;2026-09-18;Norderstedt 2;ETSV Hamburg;POSTICIPATA;Ann
 Estonia_Esiliiga;;2026-09-19;Levadia U21;Maardu;POSTICIPATA;
 Bulgaria_ParvaLiga;;2026-09-20;Levski;Ludogorets;POSTICIPATA;
 Ukraine_PershaLiga;;2026-09-20;FC Chernihiv;Inhulets;POSTICIPATA;
+England_SouthernLeaguePremierCentral;;2026-09-22;Leamington;Halesowen;POSTICIPATA;Rinviata per FA Cup.
+England_SouthernLeaguePremierCentral;;2026-09-22;Leighton Town;Needham Market;POSTICIPATA;Rinviata per FA Cup.
+England_SouthernLeaguePremierSouth;;2026-09-22;Chippenham;Sholing;POSTICIPATA;Rinviata per FA Cup.
+England_SouthernLeaguePremierSouth;;2026-09-22;Hanwell Town;Uxbridge;POSTICIPATA;Rinviata per FA Cup.
+England_SouthernLeaguePremierSouth;;2026-09-22;Poole;Wimborne;POSTICIPATA;Rinviata per FA Cup.
+England_SouthernLeaguePremierSouth;;2026-09-22;Yate Town;Evesham;POSTICIPATA;Rinviata per FA Cup.
