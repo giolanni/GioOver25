@@ -10,9 +10,6 @@ python -m gioover25.append_results data/input_risultati/risultati.csv
 Ranking solo v13:
 python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v13
 
-Ranking solo v20:
-python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v20
-
 Ranking ogni engines:
 python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_09_11.csv --engine all
 

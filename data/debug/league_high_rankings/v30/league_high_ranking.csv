@@ -1,5 +1,5 @@
 ﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
-1;v30;Poland_IIILiga_Group1;2;0;2026-09-12;2026-09-19;2;100.0
+1;v30;Poland_IIILiga_Group1;2;0;2026-09-19;2026-12-09;2;100.0
 2;v30;Austria_Salzburg;1;0;2026-09-18;2026-09-18;1;100.0
 3;v30;CzechRepublic_1Liga;1;0;2026-09-20;2026-09-20;1;100.0
 4;v30;CzechRepublic_ChNL;1;0;2026-09-18;2026-09-18;1;100.0
@@ -14,7 +14,7 @@
 13;v30;Austria_Regionalliga_North;1;1;2026-09-18;2026-09-19;2;50.0
 14;v30;Austria_Regionalliga_West;1;1;2026-09-18;2026-09-20;2;50.0
 15;v30;Germany_Regionalliga_West;1;1;2026-09-18;2026-09-18;2;50.0
-16;v30;Serbia_PrvaLiga;1;1;2026-09-12;2026-09-13;2;50.0
+16;v30;Serbia_PrvaLiga;1;1;2026-09-13;2026-12-09;2;50.0
 17;v30;Bulgaria_ParvaLiga;0;1;2026-09-16;2026-09-16;1;0.0
 18;v30;England_SouthernLeaguePremierCentral;0;1;2026-09-22;2026-09-22;1;0.0
 19;v30;Germany_Oberliga_RheinlandPfalzSaar;0;1;2026-09-17;2026-09-17;1;0.0
