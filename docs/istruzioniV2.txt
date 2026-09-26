@@ -2,7 +2,7 @@ Genera input_partite
 python tools/prepare_input.py rank c:\temp\input.txt
 
 Genera input_risultati
-python tools/git results c:\temp\input2.txt
+python tools/prepare_input.py results c:\temp\input.txt
 
 Import risultati
 python -m gioover25.append_results data/input_risultati/risultati.csv

@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-7;1;Pure Swansea;5;4;1;0;19;5;14;13;2.6
-7;2;Treowen;6;4;1;1;14;7;7;13;2.167
-7;3;Baglan Dragons;7;4;0;3;8;8;0;12;1.714
-7;4;Pontypridd;5;3;1;1;13;9;4;10;2.0
-7;5;Afan Lido;7;3;1;3;11;10;1;10;1.429
-7;6;Caerau Ely;6;3;1;2;13;13;0;10;1.667
-7;7;Aberystwyth;4;3;0;1;9;4;5;9;2.25
-7;8;Trethomas Bluebirds;6;2;2;2;14;13;1;8;1.333
-7;9;Carmarthen;6;2;2;2;13;13;0;8;1.333
-7;10;Cardiff Draconians;4;2;1;1;7;7;0;7;1.75
-7;11;Ynyshir Albions;4;1;3;0;4;3;1;6;1.5
-7;12;Caerphilly;5;1;2;2;5;8;-3;5;1.0
-7;13;Newport City;4;1;0;3;5;4;1;3;0.75
-7;14;Llanelli;7;0;2;5;5;19;-14;2;0.286
-7;15;Llantwit Major;3;0;1;2;1;7;-6;1;0.333
-7;16;Pontardawe;5;0;0;5;2;13;-11;0;0.0
+8;1;Pure Swansea;6;4;2;0;19;5;14;14;2.333
+8;2;Treowen;6;4;1;1;14;7;7;13;2.167
+8;3;Pontypridd;6;4;1;1;15;10;5;13;2.167
+8;4;Baglan Dragons;8;4;0;4;9;10;-1;12;1.5
+8;5;Carmarthen;7;3;2;2;15;14;1;11;1.571
+8;6;Afan Lido;8;3;2;3;11;10;1;11;1.375
+8;7;Aberystwyth;5;3;1;1;9;4;5;10;2.0
+8;8;Caerau Ely;6;3;1;2;13;13;0;10;1.667
+8;9;Trethomas Bluebirds;6;2;2;2;14;13;1;8;1.333
+8;10;Cardiff Draconians;4;2;1;1;7;7;0;7;1.75
+8;11;Ynyshir Albions;4;1;3;0;4;3;1;6;1.5
+8;12;Caerphilly;6;1;2;3;6;10;-4;5;0.833
+8;13;Newport City;5;1;1;3;5;4;1;4;0.8
+8;14;Llanelli;7;0;2;5;5;19;-14;2;0.286
+8;15;Llantwit Major;3;0;1;2;1;7;-6;1;0.333
+8;16;Pontardawe;5;0;0;5;2;13;-11;0;0.0
