@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 9;1;Kulikiv;9;5;2;2;19;9;10;17;1.889
 9;2;Viktoria;9;5;2;2;11;6;5;17;1.889
-9;3;SC Poltava;9;4;3;2;13;5;8;15;1.667
-9;4;Oleksandriya;8;4;3;1;12;6;6;15;1.875
+9;3;Oleksandriya;9;4;4;1;13;7;6;16;1.778
+9;4;SC Poltava;9;4;3;2;13;5;8;15;1.667
 9;5;Prykarpattya;9;4;2;3;12;9;3;14;1.556
-9;6;Inhulets;8;4;2;2;10;10;0;14;1.75
-9;7;Ahrobiznes Volochysk;8;4;1;3;14;12;2;13;1.625
-9;8;Fenix Mariupol;8;4;1;3;11;10;1;13;1.625
-9;9;Lokomotyv Kyiv;9;3;3;3;9;9;0;12;1.333
-9;10;UCSA;9;2;4;3;12;14;-2;10;1.111
-9;11;Metalist Kharkiv;8;3;1;4;9;11;-2;10;1.25
-9;12;Nyva Ternopil;8;2;3;3;9;9;0;9;1.125
+9;6;Ahrobiznes Volochysk;9;4;2;3;14;12;2;14;1.556
+9;7;Fenix Mariupol;9;4;2;3;12;11;1;14;1.556
+9;8;Inhulets;8;4;2;2;10;10;0;14;1.75
+9;9;Metalist Kharkiv;9;4;1;4;11;11;0;13;1.444
+9;10;Lokomotyv Kyiv;9;3;3;3;9;9;0;12;1.333
+9;11;Nyva Ternopil;9;2;4;3;9;9;0;10;1.111
+9;12;UCSA;9;2;4;3;12;14;-2;10;1.111
 9;13;Kolos Kovalivka 2;8;3;0;5;8;15;-7;9;1.125
-9;14;FC Chernihiv;7;1;4;2;8;9;-1;7;1.0
+9;14;FC Chernihiv;8;1;4;3;8;11;-3;7;0.875
 9;15;Zhytomyr 2;8;1;3;4;11;14;-3;6;0.75
 9;16;Probiy Horodenka;9;0;2;7;6;26;-20;2;0.222
