@@ -16,7 +16,9 @@ sys.path.insert(0, str(ROOT))
 
 from tools.prepare_input import Match, load_registry, resolve_match, unique, write_csv
 
-BASE_URL = "https://m.diretta.it/"\nFEED_URL = "https://global.flashscore.ninja/323/x/feed/f_1_{day}_3_it_1"\nFEED_SIGN = "SW9D1eZo"
+BASE_URL = "https://m.diretta.it/"
+FEED_URL = "https://global.flashscore.ninja/323/x/feed/f_1_{day}_3_it_1"
+FEED_SIGN = "SW9D1eZo"
 HEAD_RE = re.compile(r"^\s*([^:]+):\s*(.+?)\s*$")
 MATCH_RE = re.compile(
     r"(?P<time>\d{1,2}:\d{2})\s+"
