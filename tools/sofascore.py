@@ -8,7 +8,6 @@ import re
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
-from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 API = "https://api.sofascore.com/api/v1"
@@ -17,15 +16,31 @@ KOLMONEN_PREFIX = "Finland_Kolmonen_"
 
 
 def get_json(url: str, timeout: int = 20):
-    req = Request(url, headers={
-        "User-Agent": "Mozilla/5.0 (GioOver25 SofaScore prototype)",
-        "Accept": "application/json",
-        "Referer": "https://www.sofascore.com/",
-        "Origin": "https://www.sofascore.com",
-        "X-Requested-With": "XMLHttpRequest",
-    })
-    with urlopen(req, timeout=timeout) as response:
-        return json.load(response)
+    try:
+        from curl_cffi import requests
+    except ImportError as exc:
+        raise SystemExit(
+            "SofaScore blocca i client HTTP Python standard. Installa il client TLS compatibile "
+            "con Chrome con: pip install curl_cffi"
+        ) from exc
+
+    response = requests.get(
+        url,
+        timeout=timeout,
+        impersonate="chrome",
+        headers={
+            "Accept": "application/json",
+            "Referer": "https://www.sofascore.com/",
+            "Origin": "https://www.sofascore.com",
+        },
+    )
+    if response.status_code == 403:
+        raise SystemExit(
+            "SofaScore ha restituito HTTP 403 anche con TLS Chrome: sorgente non affidabile "
+            "per l'automazione da questa connessione."
+        )
+    response.raise_for_status()
+    return response.json()
 
 
 def norm(value: str) -> str:
