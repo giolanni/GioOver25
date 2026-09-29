@@ -22,6 +22,8 @@ TEAM_ALIASES={
  "pargasif":"PIF","maskunpalloseura":"MaPS","nykarlebyik":"NIK",
  "lapuanvirkia":"Virkiä","vaasaifk":"VIFK","tampereunited2":"Tampere Utd/2",
  "kajaaninhaka":"KajHa","keminpalloseura":"KePS",
+ "fckiisto":"Kiisto","fcsaaripotku":"Sääripotku",
+ "riihimaenpalloseura":"RiPS","tipsu21":"TiPS/2 U21",
 }
 def canonical_team(name):
  """Restituisce il nome squadra canonico noto a GioOver25, altrimenti l'originale."""
