@@ -10,7 +10,7 @@ from datetime import date, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-API = "https://api.sofascore.com/api/v1"
+API = "https://www.sofascore.com/api/v1"
 KOLMONEN_TOURNAMENT_ID = 25914
 KOLMONEN_PREFIX = "Finland_Kolmonen_"
 
