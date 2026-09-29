@@ -163,6 +163,11 @@ def parse_feed(payload: str) -> list[RawMatch]:
             match_date = ""
         hg, ag = fields.get("AG", ""), fields.get("AH", "")
         score = f"{hg}-{ag}" if hg.isdigit() and ag.isdigit() else "-"
+        # Diagnostic for non-scored records: Flashscore/Diretta may encode
+        # postponed/cancelled state outside the AB field.
+        if score == "-":
+            raw_state = " | ".join(f"{k}={v}" for k, v in sorted(fields.items()))
+            print(f"[DIRETTA RAW NO-SCORE] {fields.get('AE', '')} - {fields.get('AF', '')}: {raw_state}")
         ab = fields.get("AB", "")
         status = "" if ab in {"", "1", "3"} else ab
         out.append(RawMatch(country, league, tm, fields["AE"], fields["AF"], score, status, match_date))
