@@ -80,10 +80,7 @@ def build_team_index(league_ids: set[str]):
                             team_groups[norm(team)].add(lid)
         except (UnicodeDecodeError, csv.Error):
             continue
-    return team_groups
-
-
-def resolve_group(home: str, away: str, team_groups) -> tuple[str | None, str]:
+    # Squadra ritirata: i risultati 2026 sono stati annullati e quindi non è\n    # presente negli storici, ma il gruppo è documentato nel registry.\n    team_groups[norm(canonical_team("FC Sääripotku"))].add("Finland_Kolmonen_Western_Group3")\n    return team_groups\n\n\ndef resolve_group(home: str, away: str, team_groups) -> tuple[str | None, str]:
     hg = team_groups.get(norm(canonical_team(home)), set())
     ag = team_groups.get(norm(canonical_team(away)), set())
     common = hg & ag
