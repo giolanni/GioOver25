@@ -202,7 +202,14 @@ def main():
     page = fetch_html(offset)
     raw = parse_mobile(page)
     if not raw:
-        raise SystemExit("[ERRORE] Nessuna partita riconosciuta: formato HTML forse cambiato.")
+        debug_dir = ROOT / "data" / "debug"
+        debug_dir.mkdir(parents=True, exist_ok=True)
+        debug_file = debug_dir / f"diretta_mobile_{target_date.isoformat()}.html"
+        debug_file.write_text(page, encoding="utf-8")
+        print(f"[DEBUG] HTML ricevuto salvato in {debug_file}")
+        print(f"[DEBUG] Dimensione risposta: {len(page)} caratteri")
+        print(f"[DEBUG] Prime 300 battute: {page[:300]!r}")
+        raise SystemExit("[ERRORE] Nessuna partita riconosciuta. Invia il file DEBUG per correggere il parser.")
 
     registry = load_registry(args.registry)
     matches, unmapped, borderline, skipped = convert(raw, offset, mode, registry)
