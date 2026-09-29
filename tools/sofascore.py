@@ -59,11 +59,7 @@ def kolmonen_ids() -> set[str]:
 
 
 def build_team_index(league_ids: set[str]):
-    """Ricava dagli storici quali squadre appartengono a ciascun gruppo Kolmonen.
-
-    I CSV storici non hanno la colonna LeagueId: il LeagueId canonico coincide
-    con il nome del file (senza .csv).
-    """
+    """Ricava dagli storici quali squadre appartengono a ciascun gruppo Kolmonen."""
     team_groups = defaultdict(set)
     results_root = ROOT / "data" / "storico" / "risultati"
     for path in results_root.glob("Finland_Kolmonen_*.csv"):
@@ -80,7 +76,14 @@ def build_team_index(league_ids: set[str]):
                             team_groups[norm(team)].add(lid)
         except (UnicodeDecodeError, csv.Error):
             continue
-    # Squadra ritirata: i risultati 2026 sono stati annullati e quindi non è\n    # presente negli storici, ma il gruppo è documentato nel registry.\n    team_groups[norm(canonical_team("FC Sääripotku"))].add("Finland_Kolmonen_Western_Group3")\n    return team_groups\n\n\ndef resolve_group(home: str, away: str, team_groups) -> tuple[str | None, str]:
+    # Ritirata: risultati annullati, quindi assente dagli storici.
+    team_groups[norm(canonical_team("FC Sääripotku"))].add(
+        "Finland_Kolmonen_Western_Group3"
+    )
+    return team_groups
+
+
+def resolve_group(home: str, away: str, team_groups) -> tuple[str | None, str]:
     hg = team_groups.get(norm(canonical_team(home)), set())
     ag = team_groups.get(norm(canonical_team(away)), set())
     common = hg & ag
@@ -92,7 +95,6 @@ def build_team_index(league_ids: set[str]):
     if not union:
         return None, "unknown"
     return None, "ambiguous"
-
 
 def get_season_id(year: int) -> int:
     data = get_json(f"{API}/unique-tournament/{KOLMONEN_TOURNAMENT_ID}/seasons")
