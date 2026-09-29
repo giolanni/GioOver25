@@ -4,11 +4,65 @@ python tools/prepare_input.py rank c:\temp\input.txt
 Genera input_risultati
 python tools/prepare_input.py results c:\temp\input.txt
 
+### DIRETTA MOBILE
+
+Genera automaticamente gli input GioOver2.5 interrogando `m.diretta.it`.
+
+```powershell
+# Risultati di ieri → input per append_results
+python -m tools.diretta_mobile --yesterday
+
+# Partite di oggi → input per rank_matches
+python -m tools.diretta_mobile --today
+
+# Partite di domani → input per rank_matches
+python -m tools.diretta_mobile --tomorrow
+```
+
+Per provare senza modificare i CSV aggiungere `--dry-run`.
+
+Documentazione completa: `docs/diretta_mobile.md`
+
+# =========================
+# GETMATCHES → partite.csv
+# =========================
+
+python getmatches.py
+python getmatches.py --today
+python getmatches.py --tomorrow
+python getmatches.py --yesterday
+python getmatches.py --date 2026-10-03
+
+# Test senza scrivere il CSV
+python getmatches.py --dry-run
+python getmatches.py --today --dry-run
+python getmatches.py --tomorrow --dry-run
+python getmatches.py --yesterday --dry-run
+python getmatches.py --date 2026-10-03 --dry-run
+
+
+# =========================
+# GETRESULTS → risultati.csv
+# =========================
+
+python getresults.py
+python getresults.py --today
+python getresults.py --yesterday
+python getresults.py --tomorrow
+python getresults.py --date 2026-09-28
+
+# Test senza scrivere il CSV
+python getresults.py --dry-run
+python getresults.py --today --dry-run
+python getresults.py --yesterday --dry-run
+python getresults.py --tomorrow --dry-run
+python getresults.py --date 2026-09-28 --dry-run
+
 Import risultati
 python -m gioover25.append_results data/input_risultati/risultati.csv
 
 Ranking solo v13:
-python -m gioover25.rank_matches_v2 data/input_partite/partite_2026_06_26.csv --engine v13
+python -m gioover25.rank_matches_v2 data/input_partite/partite.csv --engine v13
 
 Ranking ogni engines:
 python -m gioover25.rank_matches_v2 data/input_partite/partite.csv --engine all
