@@ -45,9 +45,9 @@ def diretta_matches(target: date, mode: str, registry):
         matches, unmapped, skipped = [], set(), 0
         status_map = {
             "postponed": "Posticipata", "posticipata": "Posticipata",
-            "cancelled": "Annullata", "canceled": "Annullata", "annullata": "Annullata",
-            "suspended": "Sospesa", "sospesa": "Sospesa",
-            "rinviata": "Rinviata",
+            "cancelled": "Posticipata", "canceled": "Posticipata", "annullata": "Posticipata",
+            "suspended": "Posticipata", "sospesa": "Posticipata",
+            "rinviata": "Posticipata",
         }
         for r in raw:
             lid = resolve_match(registry, r.country, r.league, r.home, r.away)
@@ -98,8 +98,8 @@ def sofascore_matches(target: date, mode: str):
             out.append(Match(lid, target.isoformat(), home, away))
         else:
             sofa_status = {
-                "canceled": "Annullata", "cancelled": "Annullata",
-                "postponed": "Posticipata", "suspended": "Sospesa",
+                "canceled": "Posticipata", "cancelled": "Posticipata",
+                "postponed": "Posticipata", "suspended": "Posticipata",
             }
             if state in sofa_status:
                 out.append(Match(lid, target.isoformat(), home, away, "", "", sofa_status[state]))
