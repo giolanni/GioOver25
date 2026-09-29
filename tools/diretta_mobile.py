@@ -63,7 +63,7 @@ class MobileParser(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         tag = tag.lower()
-        if tag == "h4":
+        if tag in {"h3", "h4"}:
             self._flush_block()
             self.in_h4 = True
             self.h4_parts = []
