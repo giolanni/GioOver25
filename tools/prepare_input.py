@@ -24,6 +24,8 @@ TEAM_ALIASES={
  "kajaaninhaka":"KajHa","keminpalloseura":"KePS",
  "fckiisto":"Kiisto","fcsaaripotku":"Sääripotku",
  "riihimaenpalloseura":"RiPS","tipsu21":"TiPS/2 U21",
+ "puotinkylanvaltti":"Valtti","vjsakatemia":"VJS 2",
+ "pakkalanpalloseura":"PPS","fckontu":"Kontu",
 }
 def canonical_team(name):
  """Restituisce il nome squadra canonico noto a GioOver25, altrimenti l'originale."""
