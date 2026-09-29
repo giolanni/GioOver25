@@ -17,9 +17,36 @@ def diretta_matches(target: date, mode: str, registry):
     if offset is None:
         print(f"[DIRETTA] {target}: feed disponibile solo per ieri/oggi/domani; salto provider.")
         return []
-    raw = parse_feed(fetch_feed(offset))
+
+    # Diretta/Flashscore può cambiare il significato del feed relativo prima
+    # della mezzanotte locale. Interroga quindi anche i feed adiacenti e usa
+    # MatchDate (AD) come autorità sulla giornata reale.
+    raw_by_key = {}
+    feed_offsets = []
+    for candidate in (offset, offset - 1, offset + 1):
+        if candidate not in feed_offsets:
+            feed_offsets.append(candidate)
+    errors = []
+    for candidate in feed_offsets:
+        try:
+            for r in parse_feed(fetch_feed(candidate)):
+                if r.match_date != target.isoformat():
+                    continue
+                key = (r.country, r.league, r.match_date, r.home, r.away)
+                raw_by_key[key] = r
+        except Exception as exc:
+            errors.append(f"{candidate}: {exc}")
+
+    raw = list(raw_by_key.values())
+    # convert() calcola MatchDate dall'offset; il target è comunque entro
+    # ieri/oggi/domani, quindi passiamo l'offset originario richiesto.
     matches, unmapped, _borderline, skipped = convert(raw, offset, mode, registry)
-    print(f"[DIRETTA] {len(matches)} valide | {len(unmapped)} competizioni escluse | {skipped} scartate")
+    print(
+        f"[DIRETTA] {len(matches)} valide | {len(unmapped)} competizioni escluse | "
+        f"{skipped} scartate | feed {','.join(map(str, feed_offsets))}"
+    )
+    if errors:
+        print(f"[DIRETTA] Warning feed parziali: {'; '.join(errors)}")
     return matches
 
 
