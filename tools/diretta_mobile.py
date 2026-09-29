@@ -43,50 +43,87 @@ class RawMatch:
 
 
 class MobileParser(HTMLParser):
-    """Estrae testo per blocchi H4, senza dipendenze esterne."""
-
-    BREAK_TAGS = {"br", "p", "div", "li", "tr", "td"}
+    """Parser del blocco #score-data di m.diretta.it."""
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.in_h4 = False
-        self.h4_parts: list[str] = []
-        self.current_heading: str | None = None
-        self.block_parts: list[str] = []
-        self.blocks: list[tuple[str, str]] = []
-
-    def _flush_block(self):
-        if self.current_heading:
-            text = " ".join("".join(self.block_parts).split())
-            self.blocks.append((self.current_heading, text))
-        self.block_parts = []
+        self.in_score_data = False
+        self.depth = 0
+        self.in_heading = False
+        self.heading_parts = []
+        self.country = ""
+        self.league = ""
+        self.time = ""
+        self.status = ""
+        self.fixture_parts = []
+        self.in_score = False
+        self.score_parts = []
+        self.matches = []
 
     def handle_starttag(self, tag, attrs):
-        tag = tag.lower()
-        if tag in {"h3", "h4"}:
-            self._flush_block()
-            self.in_h4 = True
-            self.h4_parts = []
-        elif tag in self.BREAK_TAGS and not self.in_h4:
-            self.block_parts.append(" ")
+        attrs = dict(attrs)
+        if not self.in_score_data and tag == "div" and attrs.get("id") == "score-data":
+            self.in_score_data = True
+            self.depth = 1
+            return
+        if not self.in_score_data:
+            return
+        if tag == "div":
+            self.depth += 1
+        if tag == "h4":
+            self.in_heading = True
+            self.heading_parts = []
+            self.fixture_parts = []
+        elif tag == "a" and "fin" in attrs.get("class", "").split():
+            self.in_score = True
+            self.score_parts = []
 
     def handle_endtag(self, tag):
-        tag = tag.lower()
+        if not self.in_score_data:
+            return
         if tag == "h4":
-            self.in_h4 = False
-            self.current_heading = " ".join("".join(self.h4_parts).split())
-        elif tag in self.BREAK_TAGS and not self.in_h4:
-            self.block_parts.append(" ")
+            self.in_heading = False
+            heading = " ".join("".join(self.heading_parts).split())
+            heading = re.sub(r"\\s+Classifiche\\s*$", "", heading, flags=re.I)
+            hm = HEAD_RE.match(heading)
+            if hm:
+                self.country, self.league = hm.group(1).strip(), hm.group(2).strip()
+        elif tag == "a" and self.in_score:
+            self.in_score = False
+            score = " ".join("".join(self.score_parts).replace("\\xa0", " ").split())
+            fixture = " ".join("".join(self.fixture_parts).split())
+            if " - " in fixture and self.country and self.league:
+                home, away = fixture.split(" - ", 1)
+                self.matches.append(RawMatch(self.country, self.league, self.time, home.strip(), away.strip(), score, self.status))
+            self.fixture_parts = []
+            self.status = ""
+        elif tag == "br":
+            self.fixture_parts = []
+            self.time = ""
+            self.status = ""
+        elif tag == "div":
+            self.depth -= 1
+            if self.depth <= 0:
+                self.in_score_data = False
 
     def handle_data(self, data):
-        if self.in_h4:
-            self.h4_parts.append(data)
-        elif self.current_heading:
-            self.block_parts.append(data)
-
-    def close(self):
-        super().close()
-        self._flush_block()
+        if not self.in_score_data:
+            return
+        if self.in_heading:
+            self.heading_parts.append(data)
+            return
+        if self.in_score:
+            self.score_parts.append(data)
+            return
+        value = " ".join(data.split())
+        if not value:
+            return
+        if re.fullmatch(r"\\d{1,2}:\\d{2}", value):
+            self.time = value
+        elif value in {"Rinviata", "Posticipata", "Sospesa"}:
+            self.status = value
+        else:
+            self.fixture_parts.append(" " + value)
 
 
 def fetch_html(day_offset: int, timeout: int = 20) -> str:
@@ -107,27 +144,7 @@ def parse_mobile(page: str) -> list[RawMatch]:
     parser = MobileParser()
     parser.feed(page)
     parser.close()
-    out: list[RawMatch] = []
-    for heading, block in parser.blocks:
-        hm = HEAD_RE.match(html.unescape(heading))
-        if not hm:
-            continue
-        country, league = hm.group(1).strip(), hm.group(2).strip()
-        # "Classifiche" e altre etichette possono precedere la prima partita.
-        block = re.sub(r"^\s*(?:Classifiche(?: Live)?|Tabellone)\s*", "", html.unescape(block), flags=re.I)
-        for m in MATCH_RE.finditer(block):
-            out.append(
-                RawMatch(
-                    country=country,
-                    league=league,
-                    time=m.group("time"),
-                    home=" ".join(m.group("home").split()),
-                    away=" ".join(m.group("away").split()),
-                    score=m.group("score").replace(" ", ""),
-                    status=(m.group("status") or "").strip(),
-                )
-            )
-    return out
+    return parser.matches
 
 
 def convert(raw: list[RawMatch], day_offset: int, mode: str, registry):
