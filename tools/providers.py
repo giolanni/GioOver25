@@ -38,9 +38,35 @@ def diretta_matches(target: date, mode: str, registry):
             errors.append(f"{candidate}: {exc}")
 
     raw = list(raw_by_key.values())
-    # convert() calcola MatchDate dall'offset; il target è comunque entro
-    # ieri/oggi/domani, quindi passiamo l'offset originario richiesto.
-    matches, unmapped, _borderline, skipped = convert(raw, offset, mode, registry)
+    # Per i risultati conserviamo anche gli esiti amministrativi della partita.
+    if mode == "results":
+        import re
+        from tools.prepare_input import resolve_match
+        matches, unmapped, skipped = [], set(), 0
+        status_map = {
+            "postponed": "Posticipata", "posticipata": "Posticipata",
+            "cancelled": "Annullata", "canceled": "Annullata", "annullata": "Annullata",
+            "suspended": "Sospesa", "sospesa": "Sospesa",
+            "rinviata": "Rinviata",
+        }
+        for r in raw:
+            lid = resolve_match(registry, r.country, r.league, r.home, r.away)
+            if not lid:
+                unmapped.add((r.country, r.league))
+                continue
+            sm = re.fullmatch(r"(\\d+)-(\\d+)", r.score)
+            normalized = status_map.get(r.status.strip().casefold())
+            if sm and not r.status:
+                matches.append(Match(lid, target.isoformat(), r.home, r.away,
+                                     sm.group(1), sm.group(2), "Finale"))
+            elif normalized:
+                matches.append(Match(lid, target.isoformat(), r.home, r.away,
+                                     "", "", normalized))
+            else:
+                skipped += 1
+        matches = unique(matches)
+    else:
+        matches, unmapped, _borderline, skipped = convert(raw, offset, mode, registry)
     print(
         f"[DIRETTA] {len(matches)} valide | {len(unmapped)} competizioni escluse | "
         f"{skipped} scartate | feed {','.join(map(str, feed_offsets))}"
@@ -71,6 +97,13 @@ def sofascore_matches(target: date, mode: str):
                 continue
             out.append(Match(lid, target.isoformat(), home, away))
         else:
+            sofa_status = {
+                "canceled": "Annullata", "cancelled": "Annullata",
+                "postponed": "Posticipata", "suspended": "Sospesa",
+            }
+            if state in sofa_status:
+                out.append(Match(lid, target.isoformat(), home, away, "", "", sofa_status[state]))
+                continue
             if state != "finished":
                 continue
             hg = event.get("homeScore", {}).get("current")
