@@ -18,6 +18,14 @@ class RegistryRow: league_id:str; country:str; league:str
 @dataclass
 class Match: league_id:str; date:str; home:str; away:str; hg:str=""; ag:str=""; status:str=""; notes:str=""; round:str=""
 def norm(s): return re.sub(r"[^a-z0-9]+","",unicodedata.normalize("NFKD",s).encode("ascii","ignore").decode().casefold())
+TEAM_ALIASES={
+ "pargasif":"PIF","maskunpalloseura":"MaPS","nykarlebyik":"NIK",
+ "lapuanvirkia":"Virkiä","vaasaifk":"VIFK","tampereunited2":"Tampere Utd/2",
+ "kajaaninhaka":"KajHa","keminpalloseura":"KePS",
+}
+def canonical_team(name):
+ """Restituisce il nome squadra canonico noto a GioOver25, altrimenti l'originale."""
+ return TEAM_ALIASES.get(norm(name),name.strip())
 def load_registry(path):
  rows=[]
  with path.open(encoding="utf-8-sig",newline="") as f:
