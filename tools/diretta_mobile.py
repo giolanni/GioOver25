@@ -84,7 +84,7 @@ class MobileParser(HTMLParser):
         if tag == "h4":
             self.in_heading = False
             heading = " ".join("".join(self.heading_parts).split())
-            heading = re.sub(r"\\s+Classifiche\\s*$", "", heading, flags=re.I)
+            heading = re.sub(r"\\s*Classifiche\\s*$", "", heading, flags=re.I)
             hm = HEAD_RE.match(heading)
             if hm:
                 self.country, self.league = hm.group(1).strip(), hm.group(2).strip()
