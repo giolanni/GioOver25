@@ -43,6 +43,7 @@ def diretta_matches(target: date, mode: str, registry):
         import re
         from tools.prepare_input import resolve_match
         matches, unmapped, skipped = [], set(), 0
+        skipped_states = {}
         status_map = {
             "postponed": "Posticipata", "posticipata": "Posticipata",
             "cancelled": "Posticipata", "canceled": "Posticipata", "annullata": "Posticipata",
@@ -64,7 +65,12 @@ def diretta_matches(target: date, mode: str, registry):
                                      "", "", normalized))
             else:
                 skipped += 1
+                state_key = r.status.strip() or "<vuoto>"
+                skipped_states[state_key] = skipped_states.get(state_key, 0) + 1
         matches = unique(matches)
+        if skipped_states:
+            print("[DIRETTA DEBUG] Stati/codici delle partite scartate: " +
+                  ", ".join(f"{k}={v}" for k, v in sorted(skipped_states.items())))
     else:
         matches, unmapped, _borderline, skipped = convert(raw, offset, mode, registry)
     print(
