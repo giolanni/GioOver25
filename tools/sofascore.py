@@ -11,7 +11,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-API = "https://www.sofascore.com/api/v1"
+API = "https://api.sofascore.com/api/v1"
 KOLMONEN_TOURNAMENT_ID = 25914
 KOLMONEN_PREFIX = "Finland_Kolmonen_"
 
@@ -21,6 +21,8 @@ def get_json(url: str, timeout: int = 20):
         "User-Agent": "Mozilla/5.0 (GioOver25 SofaScore prototype)",
         "Accept": "application/json",
         "Referer": "https://www.sofascore.com/",
+        "Origin": "https://www.sofascore.com",
+        "X-Requested-With": "XMLHttpRequest",
     })
     with urlopen(req, timeout=timeout) as response:
         return json.load(response)
