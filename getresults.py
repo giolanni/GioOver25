@@ -36,6 +36,9 @@ def main():
     matches = merge_matches(d, s)
     output = ROOT / "data" / "input_risultati" / "risultati.csv"
     print(f"[GETRESULTS] {target}: {len(matches)} risultati finali")
+    if not matches and not args.dry_run:
+        print(f"[WARN] 0 righe ottenute: {output.name} NON viene sovrascritto.")
+        return
     if not args.dry_run:
         write_csv(output, "results", matches)
         print(f"[OK] scritto {output}")
