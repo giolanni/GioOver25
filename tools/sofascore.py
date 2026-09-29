@@ -57,19 +57,21 @@ def kolmonen_ids() -> set[str]:
 
 
 def build_team_index(league_ids: set[str]):
-    """Ricava dagli storici quali squadre appartengono a ciascun gruppo Kolmonen."""
+    """Ricava dagli storici quali squadre appartengono a ciascun gruppo Kolmonen.
+
+    I CSV storici non hanno la colonna LeagueId: il LeagueId canonico coincide
+    con il nome del file (senza .csv).
+    """
     team_groups = defaultdict(set)
     results_root = ROOT / "data" / "storico" / "risultati"
-    for path in results_root.rglob("*.csv"):
+    for path in results_root.glob("Finland_Kolmonen_*.csv"):
+        lid = path.stem
+        if lid not in league_ids:
+            continue
         try:
             with path.open(encoding="utf-8-sig", newline="") as f:
                 reader = csv.DictReader(f, delimiter=";")
-                if not reader.fieldnames or "LeagueId" not in reader.fieldnames:
-                    continue
                 for row in reader:
-                    lid = row.get("LeagueId", "")
-                    if lid not in league_ids:
-                        continue
                     for key in ("Home", "Away"):
                         team = row.get(key, "").strip()
                         if team:
