@@ -9,6 +9,8 @@ from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
 
+from tools.prepare_input import canonical_team
+
 ROOT = Path(__file__).resolve().parents[1]
 API = "https://www.sofascore.com/api/v1"
 KOLMONEN_TOURNAMENT_ID = 25914
@@ -82,8 +84,8 @@ def build_team_index(league_ids: set[str]):
 
 
 def resolve_group(home: str, away: str, team_groups) -> tuple[str | None, str]:
-    hg = team_groups.get(norm(home), set())
-    ag = team_groups.get(norm(away), set())
+    hg = team_groups.get(norm(canonical_team(home)), set())
+    ag = team_groups.get(norm(canonical_team(away)), set())
     common = hg & ag
     if len(common) == 1:
         return next(iter(common)), "both"
