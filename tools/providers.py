@@ -70,6 +70,11 @@ def diretta_matches(target: date, mode: str, registry):
                 skipped_states[state_key] = skipped_states.get(state_key, 0) + 1
                 score_key = r.score or "<vuoto>"
                 skipped_scores[score_key] = skipped_scores.get(score_key, 0) + 1
+                print(
+                    f"[DIRETTA SCARTATA] {lid};{target.isoformat()};"
+                    f"{r.home};{r.away} | score={r.score or '<vuoto>'} "
+                    f"| status={r.status or '<vuoto>'}"
+                )
         matches = unique(matches)
         if skipped_states:
             print("[DIRETTA DEBUG] Stati/codici delle partite scartate: " +
