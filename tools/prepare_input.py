@@ -26,6 +26,7 @@ TEAM_ALIASES={
  "riihimaenpalloseura":"RiPS","tipsu21":"TiPS/2 U21",
  "puotinkylanvaltti":"Valtti","vjsakatemia":"VJS 2",
  "pakkalanpalloseura":"PPS","fckontu":"Kontu",
+ "atlantisfcakatemia":"Atlantis 2",
  "fcpelikarhut":"PeKa","kouvolanjalkapallo":"KoPa",
  "littoistentyovaenurheilijatU20".casefold():"LTU U20","ifkmariehamn2":"IFK 2",
 }
