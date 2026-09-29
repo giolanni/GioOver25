@@ -93,14 +93,48 @@ def resolve_group(home: str, away: str, team_groups) -> tuple[str | None, str]:
     return None, "ambiguous"
 
 
-def fetch_day(day: str):
-    data = get_json(f"{API}/sport/football/scheduled-events/{day}")
+def get_season_id(year: int) -> int:
+    data = get_json(f"{API}/unique-tournament/{KOLMONEN_TOURNAMENT_ID}/seasons")
+    for season in data.get("seasons", []):
+        if str(season.get("year")) == str(year) or str(season.get("name")) == str(year):
+            return int(season["id"])
+    raise SystemExit(f"Stagione Kolmonen {year} non trovata su SofaScore.")
+
+
+def fetch_season_events(season_id: int, direction: str):
     events = []
-    for event in data.get("events", []):
-        tournament = event.get("tournament", {}).get("uniqueTournament", {})
-        if tournament.get("id") == KOLMONEN_TOURNAMENT_ID:
-            events.append(event)
+    page = 0
+    while True:
+        data = get_json(
+            f"{API}/unique-tournament/{KOLMONEN_TOURNAMENT_ID}/season/"
+            f"{season_id}/events/{direction}/{page}"
+        )
+        events.extend(data.get("events", []))
+        if not data.get("hasNextPage"):
+            break
+        page += 1
+        if page > 100:
+            raise SystemExit("Troppe pagine SofaScore: interruzione di sicurezza.")
     return events
+
+
+def fetch_day(day: str):
+    target = date.fromisoformat(day)
+    season_id = get_season_id(target.year)
+    # 'last' contiene lo storico della stagione. 'next' completa eventuali date future.
+    events = fetch_season_events(season_id, "last")
+    if target >= date.today():
+        events += fetch_season_events(season_id, "next")
+
+    found = {}
+    for event in events:
+        ts = event.get("startTimestamp")
+        if not ts:
+            continue
+        event_day = datetime.fromtimestamp(ts).astimezone().date()
+        if event_day == target:
+            found[event.get("id", (event.get("homeTeam", {}).get("name"), event.get("awayTeam", {}).get("name")))] = event
+    return list(found.values())
 
 
 def main():
