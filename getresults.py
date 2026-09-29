@@ -40,6 +40,9 @@ def main():
         write_csv(output, "results", matches)
         print(f"[OK] scritto {output}")
     else:
+        print("[DRY-RUN] Righe che verrebbero scritte:")
+        for m in matches:
+            print(f"  {m.league_id};{m.round};{m.date};{m.home};{m.away};{m.hg};{m.ag};{m.status};{m.notes}")
         print("[DRY-RUN] CSV non modificato.")
 
 
