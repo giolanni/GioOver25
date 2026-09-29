@@ -6,7 +6,7 @@ import html
 import re
 import sys
 from dataclasses import dataclass
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT))
 
 from tools.prepare_input import Match, load_registry, resolve_match, unique, write_csv
 
-BASE_URL = "https://m.diretta.it/"
+BASE_URL = "https://m.diretta.it/"\nFEED_URL = "https://global.flashscore.ninja/323/x/feed/f_1_{day}_3_it_1"\nFEED_SIGN = "SW9D1eZo"
 HEAD_RE = re.compile(r"^\s*([^:]+):\s*(.+?)\s*$")
 MATCH_RE = re.compile(
     r"(?P<time>\d{1,2}:\d{2})\s+"
@@ -126,6 +126,43 @@ class MobileParser(HTMLParser):
             self.fixture_parts.append(" " + value)
 
 
+def fetch_feed(day_offset: int, timeout: int = 20) -> str:
+    req = Request(FEED_URL.format(day=day_offset), headers={
+        "User-Agent": "Mozilla/5.0", "Accept": "*/*",
+        "Accept-Language": "it-IT,it;q=0.9",
+        "Referer": "https://www.diretta.it/", "Origin": "https://www.diretta.it",
+        "x-fsign": FEED_SIGN,
+    })
+    with urlopen(req, timeout=timeout) as response:
+        return response.read().decode("utf-8", errors="replace")
+
+
+def parse_feed(payload: str) -> list[RawMatch]:
+    out, country, league = [], "", ""
+    for record in payload.split("~"):
+        fields = {}
+        for item in record.split("¬"):
+            if "÷" in item:
+                k, v = item.split("÷", 1)
+                fields[k] = v
+        if "ZA" in fields:
+            hm = HEAD_RE.match(fields["ZA"].strip())
+            country, league = (hm.group(1).strip(), hm.group(2).strip()) if hm else ("", fields["ZA"].strip())
+            continue
+        if not all(k in fields for k in ("AA", "AE", "AF")):
+            continue
+        try:
+            tm = datetime.fromtimestamp(int(fields.get("AD", ""))).astimezone().strftime("%H:%M")
+        except (ValueError, TypeError, OSError):
+            tm = ""
+        hg, ag = fields.get("AG", ""), fields.get("AH", "")
+        score = f"{hg}-{ag}" if hg.isdigit() and ag.isdigit() else "-"
+        ab = fields.get("AB", "")
+        status = "" if ab in {"", "1", "3"} else ab
+        out.append(RawMatch(country, league, tm, fields["AE"], fields["AF"], score, status))
+    return out
+
+
 def fetch_html(day_offset: int, timeout: int = 20) -> str:
     url = BASE_URL if day_offset == 0 else f"{BASE_URL}?d={day_offset}"
     req = Request(
@@ -216,8 +253,14 @@ def main():
     url = BASE_URL if offset == 0 else f"{BASE_URL}?d={offset}"
 
     print(f"[DIRETTA] Download {url} -> {target_date.isoformat()} ({mode})")
-    page = fetch_html(offset)
-    raw = parse_mobile(page)
+    try:
+        page = fetch_feed(offset)
+        raw = parse_feed(page)
+        print(f"[DIRETTA] Sorgente feed completo: {len(raw)} partite")
+    except Exception as exc:
+        print(f"[WARN] Feed non disponibile ({exc}); fallback pagina mobile.")
+        page = fetch_html(offset)
+        raw = parse_mobile(page)
     if not raw:
         debug_dir = ROOT / "data" / "debug"
         debug_dir.mkdir(parents=True, exist_ok=True)
