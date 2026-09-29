@@ -38,6 +38,7 @@ class RawMatch:
     away: str
     score: str
     status: str = ""
+    match_date: str = ""
 
     @property
     def borderline(self) -> bool:
@@ -154,14 +155,17 @@ def parse_feed(payload: str) -> list[RawMatch]:
         if not all(k in fields for k in ("AA", "AE", "AF")):
             continue
         try:
-            tm = datetime.fromtimestamp(int(fields.get("AD", ""))).astimezone().strftime("%H:%M")
+            dt = datetime.fromtimestamp(int(fields.get("AD", ""))).astimezone()
+            tm = dt.strftime("%H:%M")
+            match_date = dt.date().isoformat()
         except (ValueError, TypeError, OSError):
             tm = ""
+            match_date = ""
         hg, ag = fields.get("AG", ""), fields.get("AH", "")
         score = f"{hg}-{ag}" if hg.isdigit() and ag.isdigit() else "-"
         ab = fields.get("AB", "")
         status = "" if ab in {"", "1", "3"} else ab
-        out.append(RawMatch(country, league, tm, fields["AE"], fields["AF"], score, status))
+        out.append(RawMatch(country, league, tm, fields["AE"], fields["AF"], score, status, match_date))
     return out
 
 
@@ -194,6 +198,9 @@ def convert(raw: list[RawMatch], day_offset: int, mode: str, registry):
     skipped_status = 0
 
     for r in raw:
+        # Il feed giornaliero può includere eventi adiacenti: usa sempre la data reale AD.
+        if r.match_date and r.match_date != match_date:
+            continue
         if r.borderline:
             borderline.append(r)
         league_id = resolve_match(registry, r.country, r.league, r.home, r.away)
