@@ -56,7 +56,7 @@ def diretta_matches(target: date, mode: str, registry):
             if not lid:
                 unmapped.add((r.country, r.league))
                 continue
-            sm = re.fullmatch(r"(\\d+)-(\\d+)", r.score)
+            sm = re.fullmatch(r"(\d+)-(\d+)", r.score)
             normalized = status_map.get(r.status.strip().casefold())
             if sm and not r.status:
                 matches.append(Match(lid, target.isoformat(), r.home, r.away,
