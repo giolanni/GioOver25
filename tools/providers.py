@@ -98,7 +98,16 @@ def sofascore_matches(target: date, mode: str):
     groups = build_team_index(kolmonen_ids())
     out = []
     unresolved = 0
-    for event in fetch_day(target.isoformat()):
+    try:
+        events = fetch_day(target.isoformat())
+    except Exception as exc:
+        print(
+            f"[SOFASCORE WARN] Provider non disponibile: "
+            f"{exc.__class__.__name__}: {exc}"
+        )
+        print("[SOFASCORE] 0 valide | provider saltato")
+        return []
+    for event in events:
         home_raw = event.get("homeTeam", {}).get("name", "")
         away_raw = event.get("awayTeam", {}).get("name", "")
         lid, _method = resolve_group(home_raw, away_raw, groups)
