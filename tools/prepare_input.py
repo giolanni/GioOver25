@@ -29,7 +29,7 @@ TEAM_ALIASES={
  "atlantisfcakatemia":"Atlantis 2",
  "niemisenurheilijat":"NiemU","toivalanurheilijat":"ToU",
  "kotajarvenpallo":"KJP","savonlinnanseudunpalloseura":"STPS","mikkelinpallokissat":"MiPK",
- "gillafc":"Gilla","nummelanpalloseura":"NuPS","lohjanpallo":"LoPa","mpsatleticomalmi":"MPS",
+ "gillafc":"Gilla","nummelanpalloseura":"NuPS","lohjanpallo":"LoPa","malminpalloseura":"MPS","mpsatleticomalmi":"MPS",
  "fcpelikarhut":"PeKa","kouvolanjalkapallo":"KoPa",
  "littoistentyovaenurheilijatU20".casefold():"LTU U20","ifkmariehamn2":"IFK 2",
 }
