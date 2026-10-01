@@ -129,13 +129,13 @@ def check_standings(items: list[Anomaly]) -> tuple[int, int]:
         valid_played = [p for p in played_values if p is not None]
         if valid_played:
             delta = max(valid_played) - min(valid_played)
-            severity = "CRITICAL" if delta >= 6 else "WARNING" if delta >= 4 else "INFO" if delta >= 3 else None
+            severity = "WARNING" if delta >= 4 else "INFO" if delta >= 3 else None
             if severity:
                 low = [text(r, "Team") for r in rows if integer(r.get("Played")) == min(valid_played)]
                 high = [text(r, "Team") for r in rows if integer(r.get("Played")) == max(valid_played)]
                 add(items, severity, "standings", "ST_PLAYED_SPREAD", league_id=league,
                     detail=f"Played min={min(valid_played)}, max={max(valid_played)}, delta={delta}; min: {', '.join(low)}; max: {', '.join(high)}.",
-                    suggestion="Controllare risultati mancanti, squadra duplicata/alias, rinvii o cambio formato.", source=str(path.relative_to(ROOT)))
+                    suggestion="Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.", source=str(path.relative_to(ROOT)))
 
         for r in rows:
             team = text(r, "Team")
