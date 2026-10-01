@@ -101,6 +101,16 @@ def load_rankings(folder):
     print(f"Ranking files : {len(files)}")
     for file in files:
         for row in load_csv(file):
+            home = str(row.get("Home", "") or "").strip()
+            away = str(row.get("Away", "") or "").strip()
+            if home and away and home.casefold() == away.casefold():
+                print(
+                    "Ranking scartato (self-match impossibile): "
+                    f"{row.get('LeagueId', '')} | "
+                    f"{row.get('MatchDate', '')} | {home} - {away} | "
+                    f"{file}"
+                )
+                continue
             fingerprint = (
                 row.get("PredictionDate", ""), row.get("MatchDate", ""), row.get("LeagueId", ""),
                 row.get("Round", ""), row.get("Home", ""), row.get("Away", ""), row.get("Score", ""),
