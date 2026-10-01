@@ -30,6 +30,7 @@ TEAM_ALIASES={
  "niemisenurheilijat":"NiemU","toivalanurheilijat":"ToU",
  "kotajarvenpallo":"KJP","savonlinnanseudunpalloseura":"STPS","mikkelinpallokissat":"MiPK",
  "gillafc":"Gilla","nummelanpalloseura":"NuPS","lohjanpallo":"LoPa","malminpalloseura":"MPS","mpsatleticomalmi":"MPS",
+ "viktoriacolonia":"Viktoria Koln","raelingen":"Raelingen","rælingen":"Raelingen",
  "fcpelikarhut":"PeKa","kouvolanjalkapallo":"KoPa",
  "littoistentyovaenurheilijatU20".casefold():"LTU U20","ifkmariehamn2":"IFK 2",
 }
