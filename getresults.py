@@ -30,6 +30,9 @@ def parser(description):
 def main():
     args = parser("Genera risultati.csv interrogando Diretta e SofaScore.").parse_args()
     target = parse_target(args)
+    if target > date.today():
+        print(f"[INFO] {target} è una data futura: nessun risultato da acquisire.")
+        return
     registry = load_registry(ROOT / "data" / "league_registry.csv")
     d = diretta_matches(target, "results", registry)
     s = sofascore_matches(target, "results")
