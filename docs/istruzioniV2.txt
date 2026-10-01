@@ -147,13 +147,6 @@ compara v25 e v251
 python -m analysis.metrics.compare_v25_v251
 python -m analysis.metrics.compare_v25_v251 --exclude-australia
 
-Test principali
-pytest tests/test_history.py -s
-pytest tests/test_standings.py -s
-pytest tests/test_statistics.py -s
-pytest tests/test_match_statistics.py -s
-pytest tests/test_ranking_gap.py -s
-pytest tests/test_scoring_v2.py -s
 
 Git
 git status
