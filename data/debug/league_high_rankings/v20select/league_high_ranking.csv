@@ -1,5 +1,5 @@
 ﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
-1;v20select;Finland_Kolmonen_Southern_Group2;7;0;2026-08-09;2026-09-18;7;100.0
+1;v20select;Finland_Kolmonen_Southern_Group2;7;1;2026-08-09;2026-10-02;8;87.5
 2;v20select;Estonia_EsiliigaB;7;2;2026-08-15;2026-09-19;9;77.78
 3;v20select;Austria_Karnten;5;0;2026-09-04;2026-09-26;5;100.0
 4;v20select;Norway_3rdDivision_Group4;5;0;2026-08-08;2026-09-26;5;100.0
@@ -17,9 +17,9 @@
 16;v20select;Sweden_Division2_Norrland;3;0;2026-08-22;2026-09-30;3;100.0
 17;v20select;Sweden_Division2_SodraGotaland;3;0;2026-08-08;2026-09-27;3;100.0
 18;v20select;Switzerland_SuperLeague;3;0;2026-09-06;2026-09-20;3;100.0
-19;v20select;Poland_IIILiga_Group1;3;1;2026-09-06;2026-09-25;4;75.0
-20;v20select;CzechRepublic_4Liga_GroupB;3;2;2026-09-19;2026-09-26;5;60.0
-21;v20select;Austria_Regionalliga_South;2;0;2026-09-18;2026-09-19;2;100.0
+19;v20select;Austria_Salzburg;3;1;2026-09-06;2026-10-02;4;75.0
+20;v20select;Poland_IIILiga_Group1;3;1;2026-09-06;2026-09-25;4;75.0
+21;v20select;CzechRepublic_4Liga_GroupB;3;2;2026-09-19;2026-09-26;5;60.0
 22;v20select;Finland_Kolmonen_Eastern_Group1;2;0;2026-09-11;2026-09-12;2;100.0
 23;v20select;Finland_Kolmonen_Eastern_Group3;2;0;2026-09-18;2026-09-30;2;100.0
 24;v20select;Germany_Oberliga_Hamburg;2;0;2026-09-13;2026-09-13;2;100.0
@@ -27,7 +27,7 @@
 26;v20select;Poland_IIILiga_Group3;2;0;2026-09-12;2026-09-19;2;100.0
 27;v20select;Sweden_Division2_VastraGotaland;2;0;2026-08-14;2026-09-19;2;100.0
 28;v20select;Wales_CymruPremier;2;0;2026-09-18;2026-09-26;2;100.0
-29;v20select;Austria_Salzburg;2;1;2026-09-06;2026-09-18;3;66.67
+29;v20select;Austria_Regionalliga_South;2;1;2026-09-18;2026-10-02;3;66.67
 30;v20select;Finland_Kolmonen_Western_Group2;2;1;2026-08-13;2026-08-27;3;66.67
 31;v20select;Iceland_BestaDeildKarla;2;1;2026-08-31;2026-09-14;3;66.67
 32;v20select;Iceland_Division_2;2;2;2026-08-14;2026-08-28;4;50.0
