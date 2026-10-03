@@ -4,6 +4,7 @@ import argparse
 import csv
 import sys
 from dataclasses import dataclass, replace
+from datetime import date
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 
@@ -366,7 +367,22 @@ def filter_matches(
     wanted_band = normalize(band).upper()
 
     output: List[MissingMatch] = []
+    today = date.today()
+
     for match in matches:
+        # Missing results only: today's fixtures and future fixtures cannot
+        # have a result missing yet. MatchDate is the canonical date used by
+        # GioOver2.5; PredictionDate must not be used for this decision.
+        try:
+            match_day = date.fromisoformat(normalize(match.match_date))
+        except ValueError:
+            # A missing/invalid MatchDate cannot be safely classified as a
+            # past fixture, so do not report it as a missing result.
+            continue
+
+        if match_day >= today:
+            continue
+
         if wanted_band and normalize(match.band).upper() != wanted_band:
             continue
         if exclude_australia and match.league_id.casefold().startswith("australia_"):
