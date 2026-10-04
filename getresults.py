@@ -40,7 +40,14 @@ def main():
     output = ROOT / "data" / "input_risultati" / "risultati.csv"
     print(f"[GETRESULTS] {target}: {len(matches)} risultati finali")
     if not matches and not args.dry_run:
-        print(f"[WARN] 0 righe ottenute: {output.name} NON viene sovrascritto.")
+        # Non lasciare mai un input della giornata precedente: append_results
+        # potrebbe interpretarlo come l'output appena prodotto. Un recupero
+        # vuoto deve quindi produrre un CSV vuoto (solo intestazione).
+        write_csv(output, "results", [])
+        print(
+            f"[WARN] 0 righe ottenute per {target}: "
+            f"{output.name} azzerato (solo intestazione)."
+        )
         return
     if not args.dry_run:
         write_csv(output, "results", matches)
