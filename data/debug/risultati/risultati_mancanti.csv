@@ -22,7 +22,6 @@ Poland_Division1;7;2026-09-06;2026-09-06;Pogon Siedlce;Puszcza;BASSA;POSTPONED;S
 USA_MLS;26;2026-09-06;2026-09-06;Cincinnati;DC United;PROX-MEDIA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Wales_CymruSouth;7;2026-09-11;2026-09-10;Newport City;Trethomas Bluebirds;MEDIA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Ukraine_PremierLeague;7;2026-09-12;2026-09-12;Kryvbas;FC Kharkiv;MEDIA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
-Ukraine_PremierLeague;7;2026-09-12;2026-09-12;Veres-Rivne;Kudrivka;BASSA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
 Estonia_Esiliiga;33;2026-09-13;2026-09-13;Maardu;Tallinna Kalev;MEDIA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
 Germany_Oberliga_Westfalen;6;2026-09-13;2026-09-13;ASC 09 Dortmund;Schermbeck 2020;MEDIA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
 Spain_LaLiga;9;2026-09-16;2026-09-16;Levante;Ath. Bilbao;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
@@ -34,3 +33,7 @@ Belarus_PershayaLiga;29;2026-09-27;2026-09-27;Din. Minsk 2;Molodechno;BASSA;POST
 Bulgaria_VtoraLiga;11;2026-09-27;2026-09-27;Ludogorets 2;Etar;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 England_NPLPremierDivision;11;2026-09-29;2026-09-28;Warrington;Gainsborough;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Germany_Oberliga_Niedersachsen;10;2026-10-02;2026-10-01;Lohne;BSV Rehden;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Belarus_PershayaLiga;29;2026-10-03;2026-10-03;Uni X Labs;Din. Minsk 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_Nord;13;2026-10-03;2026-10-03;Delmenhorst;St. Pauli 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_Nord;13;2026-10-03;2026-10-03;Norderstedt;Bremer;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Spain_LaLiga2;8;2026-10-03;2026-10-03;Sabadell;Andorra;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
