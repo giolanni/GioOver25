@@ -64,6 +64,14 @@ def diretta_matches(target: date, mode: str, registry):
             elif normalized:
                 matches.append(Match(lid, target.isoformat(), r.home, r.away,
                                      "", "", normalized))
+            elif target < date.today() and r.score == "-" and not r.status:
+                # Se una giornata passata è ancora nel feed senza punteggio,
+                # non è una normale gara futura: nel formato GioOver la
+                # conserviamo nel bucket amministrativo canonico Posticipata.
+                # La regola NON vale per oggi, dove score "-" è fisiologico
+                # per le partite non ancora iniziate.
+                matches.append(Match(lid, target.isoformat(), r.home, r.away,
+                                     "", "", "Posticipata"))
             else:
                 skipped += 1
                 state_key = r.status.strip() or "<vuoto>"
