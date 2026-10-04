@@ -164,15 +164,18 @@ def parse_feed(payload: str) -> list[RawMatch]:
         hg, ag = fields.get("AG", ""), fields.get("AH", "")
         score = f"{hg}-{ag}" if hg.isdigit() and ag.isdigit() else "-"
         ab = fields.get("AB", "")
-        am = fields.get("AM", "")
-        # Diretta uses AB=3 for this rescheduled state; AM contains the
-        # explicit new-date message (e.g. "L'evento si disputerà il ...").
-        # Keep the canonical status required by append_results.
-        if (
-            score == "-"
-            and ab == "3"
-            and ("si disputer" in am.casefold() or "posticip" in am.casefold() or "rinvi" in am.casefold())
-        ):
+        # Lo stato amministrativo non è sempre confinato in AM e il testo può
+        # arrivare localizzato. Cerca quindi gli indicatori di rinvio in tutti
+        # i campi del record, mantenendo il vincolo score == "-" per non
+        # confondere una partita conclusa con un rinvio.
+        status_text = " ".join(str(value) for value in fields.values()).casefold()
+        postponed_tokens = (
+            "si disputer", "posticip", "rinvi", "sospes", "annull",
+            "postpon", "cancel", "suspend",
+            "verleg", "verschob", "abgesag", "abgesetz",
+            "aplaz", "suspendid",
+        )
+        if score == "-" and any(token in status_text for token in postponed_tokens):
             status = "Posticipata"
         else:
             status = "" if ab in {"", "1", "3"} else ab
