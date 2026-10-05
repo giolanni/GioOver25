@@ -1,5 +1,4 @@
 ﻿LeagueId;Round;MatchDate;PredictionDate;Home;Away;Band;HistoricalStatus;Postponed;SourceFile
-USA_USLChampionship;22;2026-07-05;2026-07-05;FC Tulsa;Sacramento Republic;BASSA;POSTPONED;SI;data\storico\ranking\v24\storico_ranking_v24.csv
 Kazakhstan_PremierLeague;27;2026-07-12;2026-07-12;Atyrau;Yelimay Semey;BASSA;POSTPONED;SI;data\storico\ranking\v25\storico_ranking_v25.csv
 USA_USLChampionship;26;2026-08-02;2026-08-02;Birmingham Legion;Rhode Island;BASSA;POSTPONED;SI;data\storico\ranking\v251\storico_ranking_v251.csv
 USA_USLLeagueOne;27;2026-08-02;2026-08-02;Sarasota Paradise;FC Naples;BASSA;POSTPONED;SI;data\storico\ranking\v251\storico_ranking_v251.csv
@@ -36,4 +35,6 @@ Germany_Oberliga_Niedersachsen;10;2026-10-02;2026-10-01;Lohne;BSV Rehden;BASSA;P
 Belarus_PershayaLiga;29;2026-10-03;2026-10-03;Uni X Labs;Din. Minsk 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Germany_Regionalliga_Nord;13;2026-10-03;2026-10-03;Delmenhorst;St. Pauli 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Germany_Regionalliga_Nord;13;2026-10-03;2026-10-03;Norderstedt;Bremer;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
-Spain_LaLiga2;8;2026-10-03;2026-10-03;Sabadell;Andorra;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Niedersachsen;10;2026-10-04;2026-10-03;Drochtersen/Assel 2;Luneburger Hansa;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Niedersachsen;10;2026-10-04;2026-10-03;Hemmingen;Egestorf-Langreder;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Niedersachsen;10;2026-10-04;2026-10-03;Hildesheim;Wilhelmshaven;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv

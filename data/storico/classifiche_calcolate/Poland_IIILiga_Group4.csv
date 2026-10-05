@@ -1,19 +1,19 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-10;1;Chelmianka Chelm;9;7;2;0;15;3;12;23;2.556
+10;1;Chelmianka Chelm;10;7;3;0;17;5;12;24;2.4
 10;2;Wisloka Debica;10;7;0;3;15;12;3;21;2.1
 10;3;Ostrowiec;10;4;5;1;15;9;6;17;1.7
 10;4;Naprzod Jedrzejow;10;5;2;3;22;17;5;17;1.7
 10;5;Czarni Polaniec;10;5;2;3;15;15;0;17;1.7
 10;6;Jaroslaw;10;5;1;4;25;18;7;16;1.6
 10;7;Wislanie Skawina;10;4;2;4;13;11;2;14;1.4
-10;8;Siarka Tarnobrzeg;10;4;1;5;13;14;-1;13;1.3
-10;9;Hetman Zamosc;9;3;3;3;17;17;0;12;1.333
-10;10;Kolbuszowa Dolna;10;2;6;2;10;10;0;12;1.2
-10;11;Biala Podlaska;10;3;3;4;10;12;-2;12;1.2
-10;12;Star Starachowice;10;2;5;3;11;13;-2;11;1.1
-10;13;Wieczysta Krakow 2;10;3;2;5;9;11;-2;11;1.1
-10;14;Korona 2;10;3;2;5;19;22;-3;11;1.1
-10;15;Wisla 2;9;2;4;3;9;11;-2;10;1.111
-10;16;Busko-Zdroj;9;3;1;5;13;20;-7;10;1.111
+10;8;Hetman Zamosc;10;3;4;3;19;19;0;13;1.3
+10;9;Siarka Tarnobrzeg;10;4;1;5;13;14;-1;13;1.3
+10;10;Busko-Zdroj;10;4;1;5;16;20;-4;13;1.3
+10;11;Kolbuszowa Dolna;10;2;6;2;10;10;0;12;1.2
+10;12;Biala Podlaska;10;3;3;4;10;12;-2;12;1.2
+10;13;Star Starachowice;10;2;5;3;11;13;-2;11;1.1
+10;14;Wieczysta Krakow 2;10;3;2;5;9;11;-2;11;1.1
+10;15;Korona 2;10;3;2;5;19;22;-3;11;1.1
+10;16;Wisla 2;10;2;4;4;9;14;-5;10;1.0
 10;17;Moravia Morawica;10;2;2;6;13;20;-7;8;0.8
 10;18;Lubaczow;10;2;1;7;11;20;-9;7;0.7

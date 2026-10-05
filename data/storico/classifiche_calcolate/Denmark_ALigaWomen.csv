@@ -1,11 +1,11 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-10;1;Koge D;9;8;0;1;28;9;19;24;2.667
-10;2;Nordsjaelland D;9;6;2;1;30;10;20;20;2.222
+10;1;Koge D;10;8;1;1;30;11;19;25;2.5
+10;2;Nordsjaelland D;10;6;3;1;32;12;20;21;2.1
 10;3;Brondby D;10;6;2;2;25;8;17;20;2.0
-10;4;Midtjylland D;10;5;2;3;15;13;2;17;1.7
-10;5;Fortuna Hjorring D;9;4;2;3;20;12;8;14;1.556
+10;4;Fortuna Hjorring D;10;5;2;3;23;12;11;17;1.7
+10;5;Midtjylland D;10;5;2;3;15;13;2;17;1.7
 10;6;ASA Aarhus D;10;4;1;5;12;19;-7;13;1.3
 10;7;KoldingQ D;10;4;0;6;20;29;-9;12;1.2
-10;8;Odense Q D;9;3;1;5;6;18;-12;10;1.111
+10;8;Odense Q D;10;3;1;6;6;21;-15;10;1.0
 10;9;FC Copenhagen D;10;2;0;8;12;33;-21;6;0.6
 10;10;Aarhus D;10;1;0;9;7;24;-17;3;0.3
