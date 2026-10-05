@@ -7,16 +7,13 @@ from tools.diretta_mobile import fetch_feed, parse_feed, convert
 from tools.prepare_input import Match, canonical_team, load_registry, norm, unique
 
 
-def target_offset(target: date) -> int | None:
-    delta = (target - date.today()).days
-    return delta if delta in (-1, 0, 1) else None
+def target_offset(target: date) -> int:
+    """Offset relativo richiesto dal feed Diretta/Flashscore."""
+    return (target - date.today()).days
 
 
 def diretta_matches(target: date, mode: str, registry):
     offset = target_offset(target)
-    if offset is None:
-        print(f"[DIRETTA] {target}: feed disponibile solo per ieri/oggi/domani; salto provider.")
-        return []
 
     # Diretta/Flashscore può cambiare il significato del feed relativo prima
     # della mezzanotte locale. Interroga quindi anche i feed adiacenti e usa
