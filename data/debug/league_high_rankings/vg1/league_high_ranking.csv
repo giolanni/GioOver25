@@ -4,10 +4,10 @@
 3;vg1;Germany_Regionalliga_West;5;1;2026-09-18;2026-10-04;6;83.33
 4;vg1;Austria_Karnten;4;0;2026-09-25;2026-10-03;4;100.0
 5;vg1;Norway_3rdDivision_Group1;4;0;2026-09-19;2026-09-26;4;100.0
-6;vg1;Austria_Salzburg;4;1;2026-09-18;2026-10-02;5;80.0
-7;vg1;CzechRepublic_4Liga_GroupF;3;0;2026-09-27;2026-10-03;3;100.0
-8;vg1;Germany_Oberliga_Hamburg;3;0;2026-09-18;2026-10-04;3;100.0
-9;vg1;Norway_3rdDivision_Group3;3;0;2026-09-17;2026-10-03;3;100.0
+6;vg1;Norway_3rdDivision_Group3;4;0;2026-09-17;2026-10-05;4;100.0
+7;vg1;Austria_Salzburg;4;1;2026-09-18;2026-10-02;5;80.0
+8;vg1;CzechRepublic_4Liga_GroupF;3;0;2026-09-27;2026-10-03;3;100.0
+9;vg1;Germany_Oberliga_Hamburg;3;0;2026-09-18;2026-10-04;3;100.0
 10;vg1;Sweden_Division2_Norrland;3;0;2026-09-19;2026-10-03;3;100.0
 11;vg1;Germany_Oberliga_Hessen;3;2;2026-09-19;2026-10-04;5;60.0
 12;vg1;Estonia_EsiliigaB;2;0;2026-09-14;2026-10-03;2;100.0
@@ -51,5 +51,6 @@
 50;vg1;Moldova_Liga1_GroupA;0;1;2026-09-18;2026-09-18;1;0.0
 51;vg1;Netherlands_Eredivisie;0;1;2026-09-20;2026-09-20;1;0.0
 52;vg1;Norway_2ndDivision_Group2;0;1;2026-09-19;2026-09-19;1;0.0
-53;vg1;Poland_IIILiga_Group3;0;1;2026-09-19;2026-09-19;1;0.0
-54;vg1;Sweden_Division1_Sodra;0;1;2026-10-04;2026-10-04;1;0.0
+53;vg1;Norway_OBOSLigaen;0;1;2026-10-05;2026-10-05;1;0.0
+54;vg1;Poland_IIILiga_Group3;0;1;2026-09-19;2026-09-19;1;0.0
+55;vg1;Sweden_Division1_Sodra;0;1;2026-10-04;2026-10-04;1;0.0
