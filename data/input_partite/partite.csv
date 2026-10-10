@@ -1,700 +1,410 @@
 ﻿LeagueId;MatchDate;Home;Away
-Albania_AbissnetSuperiore;2026-10-10;AF Elbasani;Vora
-Albania_AbissnetSuperiore;2026-10-10;Teuta;Skenderbeu
-Andorra_PrimeraDivisio;2026-10-10;Ordino;Inter Escaldes
-SaudiArabia_ProfessionalLeague;2026-10-10;Al Hazem;Neom SC
-SaudiArabia_ProfessionalLeague;2026-10-10;Al Ettifaq;Al Khaleej
-SaudiArabia_ProfessionalLeague;2026-10-10;Al Hilal;Al-Ittihad FC
-Armenia_PremierLeague;2026-10-10;Van;FC Gandzasar
-Armenia_PremierLeague;2026-10-10;Ararat-Armenia;Alashkert
-Austria_Bundesliga;2026-10-10;Grazer;Salzburg
-Austria_Bundesliga;2026-10-10;Tirol;Ried
-Austria_Bundesliga;2026-10-10;Austria Vienna;Sturm Graz
-Austria_2Liga;2026-10-10;A. Salzburg;Floridsdorfer AC
-Austria_2Liga;2026-10-10;Hertha Wels;Bregenz
-Austria_2Liga;2026-10-10;Liefering;Sturm Graz II
-Austria_2Liga;2026-10-10;SK Rapid II;Innsbruck
-Austria_Regionalliga_East;2026-10-10;SV Donau;Warth
-Austria_Regionalliga_East;2026-10-10;Wienerberger;Gloggnitz
-Austria_Regionalliga_East;2026-10-10;Horn;Favoritner
-Austria_Regionalliga_West;2026-10-10;Reichenau;Kitzbuhel
-Austria_Regionalliga_West;2026-10-10;Fugen;Lochau
-Austria_Regionalliga_West;2026-10-10;Hohenems;Dornbirn
-Austria_Regionalliga_West;2026-10-10;Kufstein;Altach U21
-Austria_Regionalliga_West;2026-10-10;Lauterach;Wolfurt
-Austria_Regionalliga_West;2026-10-10;SC Imst;FC Lustenau
-Austria_Regionalliga_West;2026-10-10;Schwaz;Tirol (Am)
-Austria_Regionalliga_South;2026-10-10;Hartberg (Am);Deutschlandsberger
-Austria_Regionalliga_South;2026-10-10;Donau Klagenfurt;Volkermarkt
-Austria_Regionalliga_South;2026-10-10;Treibach;Wolfsberger (Am)
-Austria_Regionalliga_North;2026-10-10;Leonfelden;Saalfelden
-Austria_Regionalliga_North;2026-10-10;Ried (Am);Dietach
-Austria_Regionalliga_North;2026-10-10;Grodig;LASK (Am)
-Austria_Burgenland;2026-10-10;Halbturn;Margarethen
-Austria_Burgenland;2026-10-10;Lackenbach;Pama
-Austria_Burgenland;2026-10-10;Bad Sauerbrunn;Kohfidisch
-Austria_Burgenland;2026-10-10;Klingenbach;Oberpullendorf
-Austria_Karnten;2026-10-10;Saint Michael Lavanttal;Atus Ferlach
-Austria_Karnten;2026-10-10;Seeboden;TSV Grafenstein
-Austria_Karnten;2026-10-10;Nussdorf;SGA Sirnitz
-Austria_Karnten;2026-10-10;SC Landskron;KAC 1909
-Austria_Karnten;2026-10-10;Lendorf;Matrei
-Austria_Niederosterreich;2026-10-10;Amstetten (Am);Wiener Neustadt
-Austria_Oberosterreich;2026-10-10;Ostermiething;Friedburg
-Austria_Oberosterreich;2026-10-10;Union Unis Gschwandt;Bad Ischl
-Austria_Salzburg;2026-10-10;USK Anif;Puch
-Austria_Salzburg;2026-10-10;Burmoos;Seekirchen U21
-Austria_Salzburg;2026-10-10;Neumarkt;TSU Bramberg
-Austria_Salzburg;2026-10-10;SAK 1914;Union Henndorf
-Austria_Salzburg;2026-10-10;Thalgau;Eugendorf
-Austria_Tirol;2026-10-10;Stubai;Ebbs
-Austria_Tirol;2026-10-10;SC Mils 05;SC Kundl
-Austria_Tirol;2026-10-10;Kolsass Weer;Munster
-Austria_Vorarlberg;2026-10-10;Feldkirch;Admira Dornbirn
-Austria_Vorarlberg;2026-10-10;Hard;Alberschwende
-Austria_Vorarlberg;2026-10-10;Ludesch;Bizau
-Austria_Vorarlberg;2026-10-10;Schlins;Andelsbuch
-Austria_Vorarlberg;2026-10-10;Rotenberg;Brauerei Egg
-Austria_Wien;2026-10-10;Dinamo Helfort;Post Wien
-Austria_Wien;2026-10-10;A XIII-Auhof Center;1980 Wien
-Austria_Wien;2026-10-10;Lac Inter;Schwechat
-Azerbaijan_PremierLeague;2026-10-10;Zira;Shamakhi
-Azerbaijan_PremierLeague;2026-10-10;Sumqayit;Gabala
-Azerbaijan_FirstLeague;2026-10-10;Gancabasar;Baku Sporting
-Belgium_JupilerProLeague;2026-10-10;Cercle Brugge;Anderlecht
-Belgium_JupilerProLeague;2026-10-10;RAAL La Louviere;Club Brugge
-Belgium_JupilerProLeague;2026-10-10;Genk;Kortrijk
-Belgium_JupilerProLeague;2026-10-10;Waregem;Gent
-Belgium_ChallengerProLeague;2026-10-10;K. Lierse S.K.;Francs Borains
-Belgium_ChallengerProLeague;2026-10-10;Virton;Hasselt
-Belgium_ChallengerProLeague;2026-10-10;Beerschot VA;RFC Liege
-Belarus_VysshayaLiga;2026-10-10;FC Minsk;Zhodino
-Belarus_VysshayaLiga;2026-10-10;Naftan;Belshina
-Belarus_VysshayaLiga;2026-10-10;BATE;Slavia Mozyr
-Belarus_VysshayaLiga;2026-10-10;Neman;Baranovici
-Belarus_PershayaLiga;2026-10-10;SKA-1938;Molodechno
-Belarus_PershayaLiga;2026-10-10;Niva Dolbizno;Gomel 2
-Belarus_PershayaLiga;2026-10-10;Osipovichi;Volna Pinsk
-Belarus_PershayaLiga;2026-10-10;Soligorsk;BumProm Gomel
-Belarus_PershayaLiga;2026-10-10;Slutsk;Uni X Labs
-Belarus_PershayaLiga;2026-10-10;Ostrovets;FC Slonim
-Belarus_PershayaLiga;2026-10-10;Din. Minsk 2;BATE 2
-Bolivia_DivisionProfesional;2026-10-10;Universitario de Vinto;Real Oruro
-Bosnia_WWINLigaBiH;2026-10-10;Borac Banja Luka;BSK Banja Luka
-Bosnia_PrvaLiga_FBiH;2026-10-10;Banovici;Capljina
-Bosnia_PrvaLiga_FBiH;2026-10-10;Gradacac;Bratstvo Gracanica
-Bosnia_PrvaLiga_FBiH;2026-10-10;Hadzici;Stupcanica
-Bosnia_PrvaLiga_FBiH;2026-10-10;NK Vitez;Posusje
-Bosnia_PrvaLiga_FBiH;2026-10-10;Sloboda;Travnik
-Bosnia_PrvaLiga_FBiH;2026-10-10;Tomislav;Kakanj
-Bosnia_PrvaLiga_RS;2026-10-10;Famos Vojkovici;Sutjeska Foca
-Bosnia_PrvaLiga_RS;2026-10-10;Laktasi;Omarska
-Bosnia_PrvaLiga_RS;2026-10-10;Majevica;Nevesinje
-Bosnia_PrvaLiga_RS;2026-10-10;Romanija Pale;Leotar
-Bosnia_PrvaLiga_RS;2026-10-10;Zvijezda 09;Drina Zvornik
-Bulgaria_ParvaLiga;2026-10-10;Botev Vratsa;Spartak Varna
-Bulgaria_ParvaLiga;2026-10-10;Lok. Sofia;Lok. Plovdiv
-Bulgaria_ParvaLiga;2026-10-10;Botev Plovdiv;Slavia Sofia
-Bulgaria_VtoraLiga;2026-10-10;Marek;Beroe
-Bulgaria_VtoraLiga;2026-10-10;Nesebar;CSKA Sofia II
-Bulgaria_VtoraLiga;2026-10-10;Pirin Blagoevgrad;Spartak Pleven
-Bulgaria_VtoraLiga;2026-10-10;Rilski Sportist;Lok. Gorna
-Bulgaria_VtoraLiga;2026-10-10;Svoge;Hebar
-Bulgaria_VtoraLiga;2026-10-10;Dobrudzha;Chernomorets 1919
-Croatia_HNL;2026-10-10;Hajduk Split;Din. Zagabria
-Croatia_HNL;2026-10-10;Osijek;Istra 1961
-Croatia_PrvaNL;2026-10-10;Orijent;Dubrava
-Croatia_PrvaNL;2026-10-10;Vukovar 1991;Hrvace
-Denmark_1stDivision;2026-10-10;Hillerod;Fredericia
-Denmark_1stDivision;2026-10-10;Esbjerg;Aalborg
-Denmark_1stDivision;2026-10-10;Hobro;Kolding
-Denmark_2ndDivision;2026-10-10;Brabrand;F. Amager
-Denmark_2ndDivision;2026-10-10;FA 2000;Naestved
-Denmark_2ndDivision;2026-10-10;Hellerup;Thisted
-Denmark_2ndDivision;2026-10-10;Roskilde;Skive
-Denmark_2ndDivision;2026-10-10;B.93;Middelfart
-Denmark_3rdDivision;2026-10-10;Helsingor;ASA Aarhus
-Denmark_3rdDivision;2026-10-10;Ringsted;Horsholm-Usserod
-Denmark_3rdDivision;2026-10-10;BK Frem;Næsby
-Denmark_3rdDivision;2026-10-10;Vanløse;Holbaek
-Denmark_3rdDivision;2026-10-10;Holstebro;Bronshoj
-Estonia_Meistriliiga;2026-10-10;Kalju;Harju JK Laagri
-Estonia_Meistriliiga;2026-10-10;Parnu JK Vaprus;Narva
-Estonia_Meistriliiga;2026-10-10;Tammeka;Nomme Utd
-Estonia_Esiliiga;2026-10-10;Flora U21;FC Tallinn
-Estonia_Esiliiga;2026-10-10;Tallinna Kalev;Viimsi JK
-Estonia_EsiliigaB;2026-10-10;Legion;Tulevik
-Estonia_EsiliigaB;2026-10-10;Tartu Kalev;Levadia U19
-Finland_Veikkausliiga;2026-10-10;TPS Turku;Jaro
-Finland_Veikkausliiga;2026-10-10;Mariehamn;Ilves
-Finland_Ykkonen;2026-10-10;KuPS Akatemia;VJS
-Finland_Ykkonen;2026-10-10;TPV;KPV
-Finland_Ykkonen;2026-10-10;Keski-Uusimaa;SalPa
-Finland_Ykkonen;2026-10-10;OLS Oulu;Tampere Utd
-Finland_Ykkonen;2026-10-10;Rovaniemi;JJK Jyvaskyla
-Finland_Kakkonen_GroupA;2026-10-10;PuiU;Lahden Reipas
-Finland_Kakkonen_GroupA;2026-10-10;Union Plaani;MyPa
-Finland_Kakkonen_GroupB;2026-10-10;EBK;MuSa
-Finland_Kakkonen_GroupB;2026-10-10;GrIFK;NJS
-Finland_Kakkonen_GroupC;2026-10-10;Hercules;TP-47
-Finland_Kakkonen_GroupC;2026-10-10;Vaajakoski;SJK Akatemia 2
-France_Ligue1;2026-10-10;Lilla;Le Havre
-France_Ligue1;2026-10-10;Brest;Angers
-France_Ligue1;2026-10-10;Lorient;Paris FC
-France_Ligue1;2026-10-10;Monaco;Tolosa
-France_Ligue1;2026-10-10;PSG;Le Mans
-France_Ligue2;2026-10-10;Clermont;Red Star
-France_Ligue2;2026-10-10;Nantes;Reims
-France_Ligue2;2026-10-10;St. Etienne;Rodez
-Wales_CymruPremier;2026-10-10;Flint;Colwyn Bay
-Wales_CymruSouth;2026-10-10;Aberystwyth;Caerau Ely
-Wales_CymruSouth;2026-10-10;Baglan Dragons;Pontypridd
-Wales_CymruSouth;2026-10-10;Cardiff Draconians;Carmarthen
-Wales_CymruSouth;2026-10-10;Llantwit Major;Pontardawe
-Wales_CymruSouth;2026-10-10;Treowen;Trethomas Bluebirds
-Wales_CymruSouth;2026-10-10;Ynyshir Albions;Llanelli
-Wales_CymruNorth;2026-10-10;Brickfield;Mold Alexandra
-Wales_CymruNorth;2026-10-10;Gresford;Porthmadog
-Wales_CymruNorth;2026-10-10;Guilsfield;Denbigh
-Wales_CymruNorth;2026-10-10;Holyhead;Caersws
-Wales_CymruNorth;2026-10-10;Llanuwchllyn;Penrhyncoch
-Wales_CymruNorth;2026-10-10;Newtown;Bangor 1876
-Georgia_ErovnuliLiga;2026-10-10;Meshakhte Tkibuli;Iberia 1999
-Georgia_ErovnuliLiga;2026-10-10;Rustavi;Dila Gori
-Georgia_ErovnuliLiga;2026-10-10;Spaeri;Torpedo Kutaisi
-Georgia_ErovnuliLiga;2026-10-10;Odishi 1919;FC Gareji Sagarejo
-Georgia_ErovnuliLiga;2026-10-10;Gori;Merani Martvili
-Georgia_ErovnuliLiga;2026-10-10;Samtredia;Bolnisi
-Georgia_ErovnuliLiga;2026-10-10;Shturmi;Kolkheti 1913
-Georgia_ErovnuliLiga;2026-10-10;Dusheti;Telavi
-Germany_Bundesliga;2026-10-10;Augusta;Bayern
-Germany_Bundesliga;2026-10-10;Hoffenheim;Amburgo
-Germany_Bundesliga;2026-10-10;Magonza;Leverkusen
-Germany_Bundesliga;2026-10-10;Paderborn;Stoccarda
-Germany_Bundesliga;2026-10-10;Union Berlino;Elversberg
-Germany_Bundesliga;2026-10-10;RB Lipsia;Francoforte
-Germany_2Bundesliga;2026-10-10;Darmstadt;Cottbus
-Germany_2Bundesliga;2026-10-10;Magdeburg;Hannover
-Germany_2Bundesliga;2026-10-10;Osnabruck;Dresda
-Germany_2Bundesliga;2026-10-10;Norimberga;Wolfsburg
-Germany_3Liga;2026-10-10;Fortuna Colonia;Saarbrucken
-Germany_3Liga;2026-10-10;Grossaspach;Mannheim
-Germany_3Liga;2026-10-10;Meppen;Stoccarda II
-Germany_3Liga;2026-10-10;Regensburg;Havelse
-Germany_3Liga;2026-10-10;Wurzburger Kickers;Rostock
-Germany_3Liga;2026-10-10;Duisburg;Hoffenheim II
-Germany_Regionalliga_Nord;2026-10-10;Eimsbutteler;Hannover II
-Germany_Regionalliga_Nord;2026-10-10;Schoningen;Amburgo II
-Germany_Regionalliga_Nordost;2026-10-10;BFC Preussen;Hertha II
-Germany_Regionalliga_Nordost;2026-10-10;Jena;Magdeburg II
-Germany_Regionalliga_West;2026-10-10;Bergisch Gladbach;Schalke II
-Germany_Regionalliga_West;2026-10-10;Dortmund II;Wattenscheid
-Germany_Regionalliga_West;2026-10-10;FC Gutersloh;Siegen
-Germany_Regionalliga_West;2026-10-10;Lotte;Paderborn II
-Germany_Regionalliga_West;2026-10-10;Oberhausen;Bocholt
-Germany_Regionalliga_West;2026-10-10;Westfalia Rhynern;Hilden
-Germany_Regionalliga_Sudwest;2026-10-10;FSV Francoforte;Sandhausen
-Germany_Regionalliga_Sudwest;2026-10-10;Fulda-Lehnerz;Aalen
-Germany_Regionalliga_Sudwest;2026-10-10;Kaiserslautern II;Kassel
-Germany_Regionalliga_Sudwest;2026-10-10;Steinbach Haiger;Trier
-Germany_Regionalliga_Sudwest;2026-10-10;Ulm;Eint. Frankfurt II
-Germany_Regionalliga_Sudwest;2026-10-10;VfR Mannheim;Kickers Stoccarda
-Germany_Regionalliga_Sudwest;2026-10-10;Walldorf;Mainz II
-Germany_Regionalliga_Bayern;2026-10-10;Ansbach;Norinberga II
-Germany_Regionalliga_Bayern;2026-10-10;Burghausen;Furth II
-Germany_Regionalliga_Bayern;2026-10-10;Illertissen;Monaco 1860
-Germany_Regionalliga_Bayern;2026-10-10;Landsberg;Aubstadt
-Germany_Regionalliga_Bayern;2026-10-10;Memmingen;Eichstatt
-Germany_Regionalliga_Bayern;2026-10-10;Schwaben Augsburg;Bayreuth
-Germany_Regionalliga_Bayern;2026-10-10;Vilzing;Buchbach
-Germany_Oberliga_NOFV_Nord;2026-10-10;Lichtenberg;Wismar
-Germany_Oberliga_NOFV_Nord;2026-10-10;Mahlsdorf;Neustrelitz
-Germany_Oberliga_NOFV_Nord;2026-10-10;Rathenow;Makkabi Berlin
-Germany_Oberliga_NOFV_Nord;2026-10-10;Reinickendorfer Fuchse;Stendal
-Germany_Oberliga_NOFV_Nord;2026-10-10;Siedenbollentin;TB Berlin
-Germany_Oberliga_NOFV_Nord;2026-10-10;Berliner AK 07;Klosterfelde
-Germany_Oberliga_NOFV_Sud;2026-10-10;Eilenburg;Einheit Wernigerode
-Germany_Oberliga_NOFV_Sud;2026-10-10;1.FC Frankfurt;Halberstadt
-Germany_Oberliga_NOFV_Sud;2026-10-10;Freital;Glauchau
-Germany_Oberliga_NOFV_Sud;2026-10-10;Plauen;Sandersdorf
-Germany_Oberliga_SchleswigHolstein;2026-10-10;Heider SV;Phonix Lubeck B
-Germany_Oberliga_SchleswigHolstein;2026-10-10;Hohenwestedt;Kaltenkirchen
-Germany_Oberliga_SchleswigHolstein;2026-10-10;Kilia Kiel;Lubeck II
-Germany_Oberliga_SchleswigHolstein;2026-10-10;PSV Neumunster;Nordmark Satrup
-Germany_Oberliga_SchleswigHolstein;2026-10-10;Rotenhof;Rapid Lubeck
-Germany_Oberliga_Hamburg;2026-10-10;Dassendorf;Victoria Hamburg
-Germany_Oberliga_Hamburg;2026-10-10;Sasel;Pinneberg
-Germany_Oberliga_Hamburg;2026-10-10;Altona;Tesla Hamburg
-Germany_Oberliga_Bremen;2026-10-10;Brinkumer;Bremen III
-Germany_Oberliga_Bremen;2026-10-10;Union 60 Bremen;Blumenthaler
-Germany_Oberliga_Bremen;2026-10-10;Woltmershausen;Vatan Bremen
-Germany_Oberliga_Niedersachsen;2026-10-10;Braunschweig U23;Verden
-Germany_Oberliga_Niedersachsen;2026-10-10;BSV Rehden;Hemmingen
-Germany_Oberliga_Westfalen;2026-10-10;ASC 09 Dortmund;Gievenbeck
-Germany_Oberliga_Hessen;2026-10-10;Baunatal;Hanauer SC
-Germany_Oberliga_Hessen;2026-10-10;Friedberg;Alzenau
-Germany_Oberliga_Hessen;2026-10-10;Giessen;Hummetroth
-Germany_Oberliga_Hessen;2026-10-10;Unter-Flockenbach;Hunfelder
-Germany_Oberliga_Hessen;2026-10-10;Hadamar;VfB Marburg
-Germany_Oberliga_RheinlandPfalzSaar;2026-10-10;Cosmos Koblenz;Gonsenheim
-Germany_Oberliga_RheinlandPfalzSaar;2026-10-10;Pirmasens;Elversberg II
-Germany_Oberliga_RheinlandPfalzSaar;2026-10-10;RW Koblenz;Auersmacher
-Germany_Oberliga_RheinlandPfalzSaar;2026-10-10;Schott Mainz;Koblenz
-Germany_Oberliga_RheinlandPfalzSaar;2026-10-10;Diefflen;Worms
-Germany_Oberliga_RheinlandPfalzSaar;2026-10-10;Emmelshausen-Karbach;TSV 1881 Gau-Odernheim
-Germany_Oberliga_RheinlandPfalzSaar;2026-10-10;Engers;RW Wittlich
-Germany_Oberliga_RheinlandPfalzSaar;2026-10-10;Eisbachtal;Hertha Wiesbach
-Germany_Oberliga_Bayern_Nord;2026-10-10;Aschaffenburg;Fortuna Regensburg
-Germany_Oberliga_Bayern_Nord;2026-10-10;Bamberg;Ammerthal
-Germany_Oberliga_Bayern_Nord;2026-10-10;Gebenbach;Grossbardorf
-Germany_Oberliga_Bayern_Nord;2026-10-10;Wurzburger FV;Weiden
-Germany_Oberliga_Bayern_Nord;2026-10-10;Nordlingen;Bayern Hof
-Germany_Oberliga_Bayern_Nord;2026-10-10;Regensburg II;Stadeln
-Germany_Oberliga_Bayern_Sud;2026-10-10;Deisenhofen;Hankofen-Hailing
-Germany_Oberliga_Bayern_Sud;2026-10-10;Ismaning;Heimstetten
-Germany_Oberliga_Bayern_Sud;2026-10-10;Kottern-St. Mang;Monaco 1860 II
-Germany_Oberliga_Bayern_Sud;2026-10-10;Gundelfingen;Schalding
-Germany_Oberliga_Bayern_Sud;2026-10-10;Kirchanschoring;Schwabmunchen
-Germany_Oberliga_Bayern_Sud;2026-10-10;Landshut;FC Schwaig
-Germany_Oberliga_BadenWurttemberg;2026-10-10;Essingen;Reutlingen
-Germany_Oberliga_BadenWurttemberg;2026-10-10;Pforzheim;Teningen
-Germany_Oberliga_BadenWurttemberg;2026-10-10;Bahlinger;Oberachern
-Germany_Oberliga_BadenWurttemberg;2026-10-10;Ravensburg;Nottingen
-Germany_Oberliga_Niederrhein;2026-10-10;SW Essen;Germania Ratingen
-Japan_J1League;2026-10-10;C-Osaka;Yokohama M.
-Japan_J1League;2026-10-10;Avispa Fukuoka;Okayama
-Japan_J1League;2026-10-10;Tokyo;Urawa
-Japan_J1League;2026-10-10;Kyoto;Machida
-Indonesia_SuperLeague;2026-10-10;Bali United;Persijap Jepara
-Indonesia_Championship;2026-10-10;Barito Putera;Balikpapan
-Indonesia_Championship;2026-10-10;Tornado Pekanbaru;PSBS Biak Numfor
-England_PremierLeague;2026-10-10;Arsenal;Leeds
-England_PremierLeague;2026-10-10;Aston Villa;Brentford
-England_PremierLeague;2026-10-10;Chelsea;Bournemouth
-England_PremierLeague;2026-10-10;Ipswich;Fulham
-England_PremierLeague;2026-10-10;Sunderland;Brighton
-England_PremierLeague;2026-10-10;Manchester Utd;Tottenham
-England_Championship;2026-10-10;Charlton;Bristol City
-England_Championship;2026-10-10;Swansea;Norwich
-England_Championship;2026-10-10;West Brom;Birmingham
-England_Championship;2026-10-10;Blackburn;Cardiff
-England_Championship;2026-10-10;Bolton;Stoke
-England_Championship;2026-10-10;Derby;Wrexham
-England_Championship;2026-10-10;Middlesbrough;Wolves
-England_Championship;2026-10-10;Preston;Millwall
-England_Championship;2026-10-10;Sheffield Utd;Lincoln
-England_Championship;2026-10-10;Watford;Burnley
-England_LeagueOne;2026-10-10;Notts County;Oxford Utd
-England_LeagueOne;2026-10-10;Plymouth;Wimbledon
-England_LeagueOne;2026-10-10;Bradford City;Leyton Orient
-England_LeagueOne;2026-10-10;Cambridge Utd;Blackpool
-England_LeagueOne;2026-10-10;Doncaster;Burton
-England_LeagueOne;2026-10-10;Huddersfield;Sheffield Wed
-England_LeagueOne;2026-10-10;Leicester;Peterborough
-England_LeagueOne;2026-10-10;Mansfield;Bromley
-England_LeagueOne;2026-10-10;Milton Keynes;Reading
-England_LeagueOne;2026-10-10;Stevenage;Wigan
-England_LeagueOne;2026-10-10;Stockport;Barnsley
-England_LeagueOne;2026-10-10;Wycombe;Luton
-England_LeagueTwo;2026-10-10;Oldham;Accrington
-England_LeagueTwo;2026-10-10;Swindon;Crewe
-England_LeagueTwo;2026-10-10;Bristol Rovers;Barnet
-England_LeagueTwo;2026-10-10;Cheltenham;Salford
-England_LeagueTwo;2026-10-10;Crawley;Chesterfield
-England_LeagueTwo;2026-10-10;Fleetwood;Walsall
-England_LeagueTwo;2026-10-10;Newport;Colchester
-England_LeagueTwo;2026-10-10;Port Vale;Grimsby
-England_LeagueTwo;2026-10-10;Rotherham;Gillingham FC
-England_LeagueTwo;2026-10-10;Shrewsbury;Exeter
-England_LeagueTwo;2026-10-10;Tranmere;Rochdale
-England_LeagueTwo;2026-10-10;York;Northampton
-England_NPLPremierDivision;2026-10-10;Alfreton;Bury
-England_NPLPremierDivision;2026-10-10;Avro;Guiseley
-England_NPLPremierDivision;2026-10-10;Cleethorpes;Warrington Rylands
-England_NPLPremierDivision;2026-10-10;Curzon Ashton;Hyde
-England_NPLPremierDivision;2026-10-10;Emley;Gainsborough
-England_NPLPremierDivision;2026-10-10;Ilkeston;Redcar Athletic
-England_NPLPremierDivision;2026-10-10;Leek;Ashton Utd
-England_NPLPremierDivision;2026-10-10;Quorn;Workington
-England_NPLPremierDivision;2026-10-10;Stockton;FC United
-England_NPLPremierDivision;2026-10-10;Warrington;Lancaster
-England_NPLPremierDivision;2026-10-10;Whitby;Bamber Bridge
-England_SouthernLeaguePremierCentral;2026-10-10;Alvechurch;Bury Town
-England_SouthernLeaguePremierCentral;2026-10-10;Banbury;Stamford
-England_SouthernLeaguePremierCentral;2026-10-10;Hitchin;Peterborough Sports
-England_SouthernLeaguePremierCentral;2026-10-10;Kettering;Halesowen
-England_SouthernLeaguePremierCentral;2026-10-10;Needham Market;Anstey Nomads
-England_SouthernLeaguePremierCentral;2026-10-10;Racing Club Warwick;Leiston
-England_SouthernLeaguePremierCentral;2026-10-10;Real Bedford;Bromsgrove
-England_SouthernLeaguePremierCentral;2026-10-10;Redditch;Bishop's Stortford
-England_SouthernLeaguePremierCentral;2026-10-10;Rushall;Worcester
-England_SouthernLeaguePremierCentral;2026-10-10;Stourbridge;Leighton Town
-England_SouthernLeaguePremierCentral;2026-10-10;Stratford;Leamington
-England_SouthernLeaguePremierSouth;2026-10-10;Basingstoke;Malvern Town
-England_SouthernLeaguePremierSouth;2026-10-10;Bath;Gosport
-England_SouthernLeaguePremierSouth;2026-10-10;Chertsey;Chippenham
-England_SouthernLeaguePremierSouth;2026-10-10;Chichester;Plymouth Parkway
-England_SouthernLeaguePremierSouth;2026-10-10;Frome;Sholing
-England_SouthernLeaguePremierSouth;2026-10-10;Hanworth;Gloucester
-England_SouthernLeaguePremierSouth;2026-10-10;Poole;Bracknell
-England_SouthernLeaguePremierSouth;2026-10-10;Taunton;Hanwell Town
-England_SouthernLeaguePremierSouth;2026-10-10;Uxbridge;Evesham
-England_SouthernLeaguePremierSouth;2026-10-10;Wimborne;Havant & W
-England_SouthernLeaguePremierSouth;2026-10-10;Yate Town;Berkhamsted
-England_IsthmianLeaguePremierDivision;2026-10-10;Burgess Hill;Aveley
-England_IsthmianLeaguePremierDivision;2026-10-10;Carshalton;St. Albans
-England_IsthmianLeaguePremierDivision;2026-10-10;Chatham;Brentwood
-England_IsthmianLeaguePremierDivision;2026-10-10;Cray Wanderers;Lewes
-England_IsthmianLeaguePremierDivision;2026-10-10;Dartford;Wingate & Finchley
-England_IsthmianLeaguePremierDivision;2026-10-10;Eastbourne Boro;Welling
-England_IsthmianLeaguePremierDivision;2026-10-10;Enfield Town;Dulwich Hamlet
-England_IsthmianLeaguePremierDivision;2026-10-10;Leatherhead;Cheshunt
-England_IsthmianLeaguePremierDivision;2026-10-10;Maldon & Tiptree;Whyteleafe
-England_IsthmianLeaguePremierDivision;2026-10-10;Stanway;Three Bridges
-England_IsthmianLeaguePremierDivision;2026-10-10;Whitehawk;Ramsgate
-England_PremierLeague;2026-10-10;Arsenal U21;Sunderland U21
-England_PremierLeague;2026-10-10;Brentford U21;Derby U21
-NorthernIreland_NIFLPremiership;2026-10-10;Coleraine;Cliftonville
-NorthernIreland_NIFLPremiership;2026-10-10;Crusaders;Larne
-NorthernIreland_NIFLPremiership;2026-10-10;Dungannon;C. Rangers
-NorthernIreland_NIFLPremiership;2026-10-10;Limavady;Ballymena
-NorthernIreland_NIFLPremiership;2026-10-10;Linfield;Bangor FC
-NorthernIreland_NIFLChampionship;2026-10-10;Institute;H&W Welders
-NorthernIreland_NIFLChampionship;2026-10-10;Loughgall;Moyola
-NorthernIreland_NIFLChampionship;2026-10-10;Queens Univ.;Ballinamallard
-NorthernIreland_NIFLChampionship;2026-10-10;Warrenpoint;Strabane Athletic
-NorthernIreland_NIFLChampionship;2026-10-10;Annagh;Glenavon
-Iceland_BestaDeildKarla;2026-10-10;Stjarnan;Akureyri
-Iceland_BestaDeildKarla;2026-10-10;Thor Akureyri;Vestmannaeyjar
-Iceland_BestaDeildKarla;2026-10-10;Valur;Hafnarfjordur
-Iceland_BestaDeildKarla;2026-10-10;Fram;KR Reykjavik
-FaroeIslands_PremierLeague;2026-10-10;07 Vestur Sorvagur;Streymur
-FaroeIslands_1Deild;2026-10-10;Fuglafjordur;TB Tvoroyri
-FaroeIslands_1Deild;2026-10-10;Streymur 2;B36 Torshavn 2
-FaroeIslands_1Deild;2026-10-10;Runavik 2;Sandur
-FaroeIslands_1Deild;2026-10-10;FC Suduroy;HB Torshavn 2
-FaroeIslands_1Deild;2026-10-10;Hoyvik;Vikingur 2
-Italy_SerieA;2026-10-10;Genoa;Fiorentina
-Italy_SerieA;2026-10-10;Inter;Parma
-Italy_SerieA;2026-10-10;Napoli;Frosinone
-Italy_SerieB;2026-10-10;Benevento;Cesena
-Italy_SerieB;2026-10-10;Empoli;Palermo
-Italy_SerieB;2026-10-10;Entella;Juve Stabia
-Italy_SerieB;2026-10-10;Südtirol;Ascoli
-Italy_SerieB;2026-10-10;L.R. Vicenza;Pisa
-Italy_SerieB;2026-10-10;Arezzo;Cremonese
-Italy_SerieC_GironeA;2026-10-10;Pergolettese;Carpi
-Italy_SerieC_GironeA;2026-10-10;Arzignano;Juventus U23
-Italy_SerieC_GironeA;2026-10-10;Desenzano;Dolomiti Bellunesi
-Italy_SerieC_GironeA;2026-10-10;Lumezzane;AlbinoLeffe
-Italy_SerieC_GironeA;2026-10-10;Novara;Cittadella
-Italy_SerieC_GironeB;2026-10-10;Vis Pesaro;Grosseto
-Italy_SerieC_GironeB;2026-10-10;Ostiamare;Pianese
-Italy_SerieC_GironeB;2026-10-10;Pineto;Reggiana
-Italy_SerieC_GironeB;2026-10-10;Spezia;Gubbio
-Italy_SerieC_GironeC;2026-10-10;Bari;Giugliano
-Italy_SerieC_GironeC;2026-10-10;Casertana;Monopoli
-Italy_SerieC_GironeC;2026-10-10;Crotone;Audace Cerignola
-Italy_SerieC_GironeC;2026-10-10;Savoia;Inter U23
-Kazakhstan_PremierLeague;2026-10-10;Ertis Pavlodar;Kyzylzhar
-Kazakhstan_PremierLeague;2026-10-10;Tobol;FC Astana
-Kazakhstan_PremierLeague;2026-10-10;Yelimay Semey;Aktobe
-Kazakhstan_PremierLeague;2026-10-10;Kairat Almaty;Zhetysu
-Kazakhstan_PremierLeague;2026-10-10;Zhenis;Atyrau
-Kyrgyzstan_PremierLiga;2026-10-10;Alay Osh;Abdysh-Ata
-Kyrgyzstan_PremierLiga;2026-10-10;Aldier;Talant
-Kyrgyzstan_PremierLiga;2026-10-10;Kyrgyzaltyn;Bishkek City
-Latvia_Virsliga;2026-10-10;Tukums 2000;Riga FC
-Latvia_Virsliga;2026-10-10;Super Nova;Grobina
-Latvia_NakotnesLiga;2026-10-10;RFS 2;Marupe
-Latvia_NakotnesLiga;2026-10-10;Metta;Riga Mariners
-Latvia_NakotnesLiga;2026-10-10;Valmiera;Super Nova 2
-Latvia_NakotnesLiga;2026-10-10;Skanste;Alberts JDFS
-Latvia_NakotnesLiga;2026-10-10;JFK Ventspils;Leevon PPK
-Lithuania_Toplyga;2026-10-10;Zalgiris;Suduva
-Lithuania_ILyga;2026-10-10;Babrungas;Jonava
-Lithuania_ILyga;2026-10-10;Garliava;Atmosfera
-Lithuania_ILyga;2026-10-10;Neptunas;Hegelmann Litauen 2
-Lithuania_ILyga;2026-10-10;Transinvest 2;Ekranas
-NorthMacedonia_1MFL;2026-10-10;Tikves;Bregalnica
-NorthMacedonia_1MFL;2026-10-10;Arsimi;Sileks
-Mexico_LigaMX_Apertura;2026-10-10;Puebla;Leon
-Mexico_LigaMX_Apertura;2026-10-10;Tigres;Toluca
-Mexico_LigaExpansionMX_Apertura;2026-10-10;Tapatio;Atletico La Paz
-Mexico_LigaExpansionMX_Apertura;2026-10-10;Tepatitlan de Morelos;Atl. Morelia
-Moldova_SuperLiga;2026-10-10;Balti;Real Sireti
-Moldova_SuperLiga;2026-10-10;Dacia Buiucani;S. Tiraspol
-Moldova_Liga1_GroupB;2026-10-10;Falesti;National Ialoveni
-Moldova_Liga1_GroupA;2026-10-10;Sparta Selemet;Iskra Ribnita
-Montenegro_PrvaCrnogorskaLiga;2026-10-10;Buducnost;Sutjeska
-Montenegro_DrugaLiga;2026-10-10;Grbalj;Mogren
-Norway_Eliteserien;2026-10-10;Bodo/Glimt;Kristiansund
-Norway_Eliteserien;2026-10-10;Rosenborg;Sandefjord
-Norway_2ndDivision_Group1;2026-10-10;Sotra;Halden
-Norway_2ndDivision_Group1;2026-10-10;Jerv;Arendal
-Norway_2ndDivision_Group1;2026-10-10;Mjondalen;Pors
-Norway_2ndDivision_Group2;2026-10-10;Eidsvold;Skeid
-Norway_2ndDivision_Group2;2026-10-10;Ull/Kisa;Follo
-Norway_3rdDivision_Group1;2026-10-10;Lokomotiv Oslo;Konnerud
-Norway_3rdDivision_Group1;2026-10-10;Ready;Union Carl Berner
-Norway_3rdDivision_Group1;2026-10-10;Ullern;Grei
-Norway_3rdDivision_Group1;2026-10-10;Asker;Baerum Sportsklubb
-Norway_3rdDivision_Group1;2026-10-10;Gamle Oslo;Nordstrand
-Norway_3rdDivision_Group1;2026-10-10;Vålerenga 2;Frigg
-Norway_3rdDivision_Group2;2026-10-10;Ntnui;Volda TI
-Norway_3rdDivision_Group2;2026-10-10;Orkla;FK Kvik
-Norway_3rdDivision_Group2;2026-10-10;Byåsen;Nardo
-Norway_3rdDivision_Group3;2026-10-10;Åsane 2;V. Haugesund
-Norway_3rdDivision_Group3;2026-10-10;Askoy;Fana
-Norway_3rdDivision_Group3;2026-10-10;Varegg;Stord
-Norway_3rdDivision_Group3;2026-10-10;Austevoll;Forde
-Norway_3rdDivision_Group3;2026-10-10;Fyllingsdalen;OS
-Norway_3rdDivision_Group3;2026-10-10;Sogndal 2;Gneist
-Norway_3rdDivision_Group4;2026-10-10;Brodd;Hinna
-Norway_3rdDivision_Group4;2026-10-10;Varhaug;Madla IL
-Norway_3rdDivision_Group4;2026-10-10;Staal Jorpeland;Vag
-Norway_3rdDivision_Group4;2026-10-10;Viking 2;Vindbjart
-Norway_3rdDivision_Group5;2026-10-10;Skedsmo;Floya
-Norway_3rdDivision_Group5;2026-10-10;Alta;Skjervoy
-Norway_3rdDivision_Group6;2026-10-10;Bjorkelangen;SK Gjovik-Lyn
-Norway_3rdDivision_Group6;2026-10-10;Oppsal;Drobak-Frogn
-Norway_3rdDivision_Group6;2026-10-10;Fram;Brumunddal
-Norway_3rdDivision_Group6;2026-10-10;Orn;Lillehammer
-Netherlands_Eredivisie;2026-10-10;G.A. Eagles;Sparta Rotterdam
-Netherlands_Eredivisie;2026-10-10;Feyenoord;Alkmaar
-Netherlands_Eredivisie;2026-10-10;Sittard;Twente
-Netherlands_Eredivisie;2026-10-10;Ajax;Nijmegen
-Paraguay_DivisionIntermedia;2026-10-10;Sol De America;Sp. Carapegua
-Paraguay_DivisionIntermedia;2026-10-10;3 de Noviembre;Fernando de la Mora
-Paraguay_DivisionIntermedia;2026-10-10;Guairena;Encarnacion FC
-Paraguay_DivisionIntermedia;2026-10-10;Independiente F.B.C.;Atl. Tembetary
-Peru_Liga1_Clausura;2026-10-10;Deportivo Garcilaso;Huancayo
-Peru_Liga1_Clausura;2026-10-10;AD Tarma;FC Cajamarca
-Peru_Liga1_Clausura;2026-10-10;Comerciantes Unidos;Juan Pablo II
-Poland_Ekstraklasa;2026-10-10;Cracovia;Zaglebie
-Poland_Ekstraklasa;2026-10-10;Slask;Lech
-Poland_Ekstraklasa;2026-10-10;Jagiellonia;Gornik Zabrze
-Poland_Division1;2026-10-10;Arka;Polonia W.
-Poland_Division1;2026-10-10;Chrobry Glogow;Grodzisk M.
-Poland_Division1;2026-10-10;Skierniewice;Termalica B-B.
-Poland_Division2;2026-10-10;Avia Swidnik;Swit Szczecin
-Poland_Division2;2026-10-10;S. Wola;Slask II
-Poland_Division2;2026-10-10;Z. Gora;Legia II
-Poland_IIILiga_Group1;2026-10-10;Elblag;Mlawa
-Poland_IIILiga_Group1;2026-10-10;Mazovia Minsk Mazowiecki;Pelikan
-Poland_IIILiga_Group1;2026-10-10;Plock II;Troszyn
-Poland_IIILiga_Group1;2026-10-10;Swit;LKS Lodz II
-Poland_IIILiga_Group1;2026-10-10;Zabki;Jagiellonia II
-Poland_IIILiga_Group1;2026-10-10;Lidzbark Warminski;LKS Lomza
-Poland_IIILiga_Group2;2026-10-10;Luzino;Wda Swiecie
-Poland_IIILiga_Group2;2026-10-10;Wrzesnia;Grom Nowy Staw
-Poland_IIILiga_Group2;2026-10-10;Blekitni Stargard;Lipno Steszew
-Poland_IIILiga_Group2;2026-10-10;Kotwica Kornik;Notec Czarnkow
-Poland_IIILiga_Group2;2026-10-10;Koszalin;Unia Swarzedz
-Poland_IIILiga_Group2;2026-10-10;Chemik Bydgoszcz;Gedania Gdansk
-Poland_IIILiga_Group2;2026-10-10;KKS Kalisz;Lech II
-Poland_IIILiga_Group3;2026-10-10;Legnica II;Rakow II
-Poland_IIILiga_Group3;2026-10-10;Carina Gubin;Goczalkowice Zdroj
-Poland_IIILiga_Group3;2026-10-10;Warta Gorzow;Nysa
-Poland_IIILiga_Group3;2026-10-10;Jelenia Gora;BKS Sparta Katowice
-Poland_IIILiga_Group3;2026-10-10;ROW Rybnik;Sleza Wroclaw
-Poland_IIILiga_Group3;2026-10-10;Sosnowiec;Kluczbork
-Poland_IIILiga_Group3;2026-10-10;Sulow;Brzeg
-Poland_IIILiga_Group3;2026-10-10;Bytom Odrzanski;Zaglebie II
-Poland_IIILiga_Group4;2026-10-10;Wisla II;Jaroslaw
-Poland_IIILiga_Group4;2026-10-10;Korona II;Biala Podlaska
-Poland_IIILiga_Group4;2026-10-10;Chelmianka Chelm;Star Starachowice
-Poland_IIILiga_Group4;2026-10-10;Lubaczow;Wieczysta Krakow II
-Poland_IIILiga_Group4;2026-10-10;Moravia Morawica;Wisloka Debica
-Poland_IIILiga_Group4;2026-10-10;Ostrowiec;Busko-Zdroj
-Portugal_LigaPortugal;2026-10-10;Maritimo;FC Porto
-Portugal_LigaPortugal;2026-10-10;Academico Viseu;Estoril
-Portugal_LigaPortugal;2026-10-10;Casa Pia;Santa Clara
-Portugal_LigaPortugal2;2026-10-10;Tondela;Torreense
-Portugal_LigaPortugal2;2026-10-10;Amarante;Portimonense
-Portugal_LigaPortugal2;2026-10-10;Leixoes;FC Porto B
-Portugal_LigaPortugal2;2026-10-10;Vizela;Sporting B
-CzechRepublic_1Liga;2026-10-10;Brno;Jablonec
-CzechRepublic_1Liga;2026-10-10;Hradec Kralove;Artis Brno
-CzechRepublic_1Liga;2026-10-10;Plzen;Mlada Boleslav
-CzechRepublic_1Liga;2026-10-10;Bohemians;Ostrava
-CzechRepublic_ChNL;2026-10-10;Ceska Lipa;Zizkov
-CzechRepublic_ChNL;2026-10-10;Kromeriz;Pribram
-CzechRepublic_ChNL;2026-10-10;Trinec;Kladno
-CzechRepublic_3CFL_GroupA;2026-10-10;Domazlice;Pribram B
-CzechRepublic_3CFL_GroupA;2026-10-10;Kraluv Dvur;Motorlet Prague
-CzechRepublic_3CFL_GroupB;2026-10-10;Velke Hamry;Teplice B
-CzechRepublic_3MSFL;2026-10-10;Blansko;Vsetin
-CzechRepublic_3MSFL;2026-10-10;Hodonin;FK Frydek-Mistek
-CzechRepublic_3MSFL;2026-10-10;Nove Mesto na Morave;Unicov
-CzechRepublic_3MSFL;2026-10-10;Vitkovice;Karvina B
-CzechRepublic_4Liga_GroupA;2026-10-10;Doubravka;Taborsko akademie
-CzechRepublic_4Liga_GroupA;2026-10-10;Nyrsko;Hluboka nad Vltavou
-CzechRepublic_4Liga_GroupA;2026-10-10;Rokycany;Horovice
-CzechRepublic_4Liga_GroupA;2026-10-10;Spartak Pribram;Domazlice B
-CzechRepublic_4Liga_GroupB;2026-10-10;Steti;Karlovy Vary
-CzechRepublic_4Liga_GroupB;2026-10-10;Chomutov;Tempo Prague
-CzechRepublic_4Liga_GroupB;2026-10-10;Psary;Brandys n. Labem
-CzechRepublic_4Liga_GroupB;2026-10-10;Slany;Hvezda Cheb
-CzechRepublic_4Liga_GroupC;2026-10-10;Vykan;Prepere
-CzechRepublic_4Liga_GroupC;2026-10-10;Hlinsko;Kosmonosy
-CzechRepublic_4Liga_GroupC;2026-10-10;Letohrad;Turnov
-CzechRepublic_4Liga_GroupD;2026-10-10;Bedrichov;Kurim
-CzechRepublic_4Liga_GroupD;2026-10-10;Zdirec n. D.;FS Trebic
-CzechRepublic_4Liga_GroupD;2026-10-10;Havlickuv Brod;Znojmo
-CzechRepublic_4Liga_GroupE;2026-10-10;Batov;Vsechovice
-CzechRepublic_4Liga_GroupE;2026-10-10;Breclav;Lanzhot
-CzechRepublic_4Liga_GroupE;2026-10-10;Hluk;FK Kozlovice
-CzechRepublic_4Liga_GroupE;2026-10-10;Holesov;Nove Sady
-CzechRepublic_4Liga_GroupE;2026-10-10;Sternberk;SK Krumvir
-CzechRepublic_4Liga_GroupF;2026-10-10;Frydlant n. O.;Hlucin
-CzechRepublic_4Liga_GroupF;2026-10-10;Novy Jicin;Kravare
-Romania_Superliga;2026-10-10;Botosani;UTA Arad
-Romania_Superliga;2026-10-10;FCSB;Otelul
-Romania_Liga2;2026-10-10;CSM Resita;CSM Slatina
-Russia_PremierLeague;2026-10-10;Orenburg;Dynamo Makhachkala
-Russia_PremierLeague;2026-10-10;F. Voronezh;Lok. Mosca
-Russia_PremierLeague;2026-10-10;Samara;Sp. Mosca
-Russia_PremierLeague;2026-10-10;Krasnodar;Zenit
-Russia_FNL;2026-10-10;Ural;Veles Moscow
-Russia_FNL;2026-10-10;Leningradets;Torpedo Moscow
-Russia_FNL;2026-10-10;Pari NN;Yenisey
-Russia_FNL;2026-10-10;R. Volgograd;Ulyanovsk
-Russia_FNL;2026-10-10;Yaroslavl;Tekstilshtik
-Russia_FNL;2026-10-10;Kaluga;Mashuk
-Russia_FNL;2026-10-10;Kirov;Alania Vladikavkaz
-Russia_FNL;2026-10-10;Miass;Dynamo Stavropol
-Russia_FNL;2026-10-10;Zenit 2;Amkar
-Russia_FNL;2026-10-10;Omsk;Tyumen
-Russia_FNL;2026-10-10;Lugansk;Nart Cherkessk
-Russia_FNL;2026-10-10;FK Pobeda;Rubin Yalta
-Russia_FNL;2026-10-10;Astrakhan;Kyzyltash
-Russia_FNL;2026-10-10;Shahter Taganrog;Nalchik
-Russia_FNL;2026-10-10;FK Chayka 2;Nazran
-Russia_FNL;2026-10-10;Rostov 2;Maykop
-Russia_FNL;2026-10-10;Iskra Smolensk;Murom
-Russia_FNL;2026-10-10;Dynamo SPB;Irkutsk
-Russia_FNL;2026-10-10;SKA Khabarovsk 2;Kvant
-Russia_FNL;2026-10-10;Kursk;Volna Nizhegorodskaya
-Russia_FNL;2026-10-10;Penza;Rodina Moscow 3
-Russia_FNL;2026-10-10;FK Shumbrat Saransk;R. Volgograd 2
-Russia_FNL;2026-10-10;Spartak Tambov;Ryazan
-Scotland_Premiership;2026-10-10;Dundee Utd;Hibernian
-Scotland_Premiership;2026-10-10;Falkirk;Dundee FC
-Scotland_Premiership;2026-10-10;Hearts;St. Mirren
-Scotland_Premiership;2026-10-10;Rangers;Kilmarnock
-Serbia_SuperLiga;2026-10-10;IMT Novi Beograd;Radnik
-Serbia_SuperLiga;2026-10-10;Cukaricki;Macva
-Serbia_SuperLiga;2026-10-10;Radnicki 1923;Stella Rossa
-Serbia_PrvaLiga;2026-10-10;Metalac;Teleoptik
-Serbia_PrvaLiga;2026-10-10;Borac 1926;Jedinstvo U.
-Slovakia_NikeLiga;2026-10-10;Kosice;Komarno
-Slovakia_NikeLiga;2026-10-10;Skalica;Slovan Bratislava
-Slovakia_NikeLiga;2026-10-10;Trencin;Banska Bystrica
-Slovakia_NikeLiga;2026-10-10;Michalovce;Dun. Streda
-Slovakia_2Liga;2026-10-10;Lehota p. V.;Zvolen
-Slovakia_2Liga;2026-10-10;MFK Bytca;FK Humenne
-Slovakia_2Liga;2026-10-10;Povazska Bystrica;Presov
-Slovakia_3Liga_West;2026-10-10;D. Luzna;Dun. Streda B
-Slovakia_3Liga_West;2026-10-10;FKM Nove Zamky;Gabcikovo
-Slovakia_3Liga_West;2026-10-10;Puchov;Banik Prievidza
-Slovakia_3Liga_West;2026-10-10;Velke Ludince;MSK Senec
-Slovakia_3Liga_West;2026-10-10;Nitra;Raca
-Slovenia_PrvaLiga;2026-10-10;Radomlje;Koper
-Slovenia_PrvaLiga;2026-10-10;Celje;Aluminij
-Slovenia_PrvaLiga;2026-10-10;O. Ljubljana;Mura
-Slovenia_2SNL;2026-10-10;Beltinci;Bilje
-Slovenia_2SNL;2026-10-10;Ilirija;NK Krka
-Slovenia_2SNL;2026-10-10;Jadran Dekani;Vrhnika
-Slovenia_2SNL;2026-10-10;NK Jesenice;Brezice
-Spain_LaLiga;2026-10-10;Rayo Vallecano;Ath. Bilbao
-Spain_LaLiga;2026-10-10;Alaves;Atl. Madrid
-Spain_LaLiga;2026-10-10;Barcellona;Getafe
-Spain_LaLiga;2026-10-10;Real Madrid;Villarreal
-Spain_LaLiga2;2026-10-10;Ceuta;Sabadell
-Spain_LaLiga2;2026-10-10;Eldense;Cordoba
-Spain_LaLiga2;2026-10-10;Celta Vigo B;Real Sociedad B
-SriLanka_SuperLeague;2026-10-10;Renown;Red Star
-SouthKorea_KLeague1;2026-10-10;Seoul;Jeju SK
-SouthKorea_KLeague2;2026-10-10;Jeonnam;Yongin
-SouthKorea_KLeague2;2026-10-10;Paju Frontier;Busan
-Sweden_Allsvenskan;2026-10-10;AIK Stockholm;Brommapojkarna
-Sweden_Allsvenskan;2026-10-10;GAIS;Sirius
-Sweden_Allsvenskan;2026-10-10;Mjallby;Degerfors
-Sweden_Superettan;2026-10-10;Landskrona;Sandviken
-Sweden_Superettan;2026-10-10;Östersund;Varberg
-Sweden_Superettan;2026-10-10;Norrby;Öster
-Sweden_Superettan;2026-10-10;Oddevold;Nordic United
-Sweden_Division1_Norra;2026-10-10;Karlbergs;Vasalund
-Sweden_Division1_Norra;2026-10-10;AFC Eskilstuna;Stockholm Internazionale
-Sweden_Division1_Norra;2026-10-10;Karlstad;Arlanda
-Sweden_Division1_Sodra;2026-10-10;Eskilsminne;Olympic
-Sweden_Division1_Sodra;2026-10-10;Hassleholms IF;Jonkoping
-Sweden_Division1_Sodra;2026-10-10;Trelleborg;Kristianstad
-Sweden_Division1_Sodra;2026-10-10;AFC Malmo;Skövde
-Sweden_Division1_Sodra;2026-10-10;Lunds;Trollhättan
-Sweden_Division1_Sodra;2026-10-10;Rosengard;Atvidaberg
-Sweden_Division2_Norrland;2026-10-10;IFK Lulea;Gottne
-Sweden_Division2_Norrland;2026-10-10;Kubikenborgs IF;IFK Ostersund
-Sweden_Division2_Norrland;2026-10-10;Taftea IK;Boden
-Sweden_Division2_Norrland;2026-10-10;Friska Viljor;IFK Umea
-Sweden_Division2_Norrland;2026-10-10;Storfors;Umea FC Akademi
-Sweden_Division2_Norrland;2026-10-10;Umea FF;Fransta
-Sweden_Division2_NorraGotaland;2026-10-10;Tord;Grebbestad
-Sweden_Division2_NorraGotaland;2026-10-10;Ahlafors IF;Stenungsunds
-Sweden_Division2_NorraGotaland;2026-10-10;Motala;Lidkoping
-Sweden_Division2_NorraSvealand;2026-10-10;Falu;Gute
-Sweden_Division2_NorraSvealand;2026-10-10;Enskede;Skiljebo
-Sweden_Division2_NorraSvealand;2026-10-10;Bollstanas;Kungsangen
-Sweden_Division2_NorraSvealand;2026-10-10;IK Franke;Helges
-Sweden_Division2_NorraSvealand;2026-10-10;Taby;Lidingo IFK
-Sweden_Division2_SodraGotaland;2026-10-10;Solvesborgs;Lilla Torg
-Sweden_Division2_SodraGotaland;2026-10-10;Linero IF;Vaxjo Norra
-Sweden_Division2_SodraGotaland;2026-10-10;Rappe GOIF;Nosaby
-Sweden_Division2_SodraSvealand;2026-10-10;Lindo FF;Orebro Syr.
-Sweden_Division2_SodraSvealand;2026-10-10;Haninge;Nacka FC
-Sweden_Division2_SodraSvealand;2026-10-10;Ragsved;Smedby
-Sweden_Division2_SodraSvealand;2026-10-10;Syrianska;Farsta
-Sweden_Division2_VastraGotaland;2026-10-10;Dalstorps IF;Jonsereds
-Sweden_Division2_VastraGotaland;2026-10-10;Landvetter;Astrio
-Sweden_Division2_VastraGotaland;2026-10-10;Onsala;Astorps
-Sweden_Division2_VastraGotaland;2026-10-10;Kongahalla;Qviding
-Switzerland_SuperLeague;2026-10-10;Lugano;Luzern
-Switzerland_SuperLeague;2026-10-10;Servette;Sion
-Switzerland_SuperLeague;2026-10-10;Zurigo;Thun
-Switzerland_PromotionLeague;2026-10-10;Bavois;Amical Saint-Prex
-Switzerland_PromotionLeague;2026-10-10;Bruhl SG;Grand-Saconnex
-Switzerland_PromotionLeague;2026-10-10;Luzerna II;Schaffhausen
-Switzerland_PromotionLeague;2026-10-10;YF Juventus;Bellinzona
-Switzerland_PromotionLeague;2026-10-10;Bulle;Paradiso
-Switzerland_PromotionLeague;2026-10-10;Young Boys II;Cham
-Switzerland_PromotionLeague;2026-10-10;Zurigo II;Breitenrain
-Turkey_SuperLig;2026-10-10;Genclerbirligi;Amedspor
-Turkey_SuperLig;2026-10-10;Alanyaspor;Erzurumspor
-Turkey_SuperLig;2026-10-10;Samsunspor;Trabzonspor
-Turkey_SuperLig;2026-10-10;Rizespor;Fenerbahce
-Turkey_1Lig;2026-10-10;Boluspor;Antalyaspor
-Turkey_1Lig;2026-10-10;Igdir FK;Batman Petrolspor
-Turkey_1Lig;2026-10-10;Istanbulspor;Erokspor
-Turkey_1Lig;2026-10-10;Kayserispor;Manisa FK
-Ukraine_PremierLeague;2026-10-10;Ch. Odesa;FC Kharkiv
-Ukraine_PremierLeague;2026-10-10;Kolos Kovalivka;Epitsentr
-Ukraine_PremierLeague;2026-10-10;Obolon;Kryvbas
-Ukraine_PershaLiga;2026-10-10;Inhulets;Ahrobiznes Volochysk
-Ukraine_PershaLiga;2026-10-10;Probiy Horodenka;SC Poltava
-Hungary_NBI;2026-10-10;Vasas;Kisvarda
-Hungary_NBI;2026-10-10;Ferencvaros;Debrecen
-Hungary_NBI;2026-10-10;Paks;MTK Budapest
-Hungary_NBII;2026-10-10;Kazincbarcika;Karcagi
-Hungary_NBII;2026-10-10;Gyirmot;Nagykanizsa
-Hungary_NBII;2026-10-10;Kozarmisleny;DVTK
-Hungary_NBII;2026-10-10;Mezokovesd;Szeged
-Hungary_NBII;2026-10-10;Tiszakecske;Ajka
-Hungary_NBII;2026-10-10;Videoton;Szentlorinc
-USA_MLS;2026-10-10;Toronto FC;CF Montreal
-USA_MLS;2026-10-10;Chicago Fire;New York City
-USA_USLChampionship;2026-10-10;Lexington;FC Tulsa
-USA_USLChampionship;2026-10-10;Sporting Jax;Birmingham
-USA_USLLeagueOne;2026-10-10;Portland Hearts of Pine;Boise
-USA_USLLeagueOne;2026-10-10;Union Omaha;Fort Wayne
-Finland_Kolmonen_North;2026-10-10;Keuruun Pallo;KajHa
+Albania_AbissnetSuperiore;2026-10-11;Laci;Egnatia
+Albania_AbissnetSuperiore;2026-10-11;Partizani;Tirana
+Albania_AbissnetSuperiore;2026-10-11;Vllaznia;Dinamo City
+Andorra_PrimeraDivisio;2026-10-11;FC Rangers;Carroi
+Andorra_PrimeraDivisio;2026-10-11;Penya;Sporting Escaldes
+Andorra_PrimeraDivisio;2026-10-11;FC Santa Coloma;Casa de Portugal
+Andorra_PrimeraDivisio;2026-10-11;Atletic Escaldes;Esperanca
+SaudiArabia_ProfessionalLeague;2026-10-11;Al Fayha;Al Riyadh
+SaudiArabia_ProfessionalLeague;2026-10-11;Abha;Al Faysaly
+SaudiArabia_ProfessionalLeague;2026-10-11;Al Shabab;Al-Taawon
+Armenia_PremierLeague;2026-10-11;Sardarapat;Noah
+Armenia_PremierLeague;2026-10-11;Urartu;Ararat
+Austria_Bundesliga;2026-10-11;Altach;Wolfsberger
+Austria_Bundesliga;2026-10-11;Hartberg;A. Lustenau
+Austria_Bundesliga;2026-10-11;LASK;SK Rapid
+Austria_2Liga;2026-10-11;Admira;Voitsberg
+Austria_Regionalliga_East;2026-10-11;Leobendorf;Donaufeld Wien
+Austria_Regionalliga_West;2026-10-11;Rothis;SK St. Johann
+Austria_Burgenland;2026-10-11;Rust;Pinkafeld
+Austria_Burgenland;2026-10-11;SV Eberau;Deutschkreutz
+Austria_Salzburg;2026-10-11;ATSV Salzburg;Schwarzach
+Austria_Salzburg;2026-10-11;UFC Siezenheim;Golling
+Austria_Tirol;2026-10-11;FC Volders;Telfs
+Austria_Tirol;2026-10-11;SV Oberperfuss;Absam
+Austria_Tirol;2026-10-11;Vols;FC Natters
+Austria_Tirol;2026-10-11;Haiming;Innsbrucker AC
+Austria_Vorarlberg;2026-10-11;Dornbirner SV;A. Lustenau (Am)
+Austria_Wien;2026-10-11;Slovan HAC;Kagran
+Austria_Wien;2026-10-11;Floridsdorfer AC (Am);Red Star-Penzing
+Azerbaijan_PremierLeague;2026-10-11;Imisli FK;Qarabag
+Azerbaijan_PremierLeague;2026-10-11;Safa Baku;Turan
+Belgium_JupilerProLeague;2026-10-11;St. Liege;Charleroi
+Belgium_JupilerProLeague;2026-10-11;Royale Union SG;Leuven
+Belgium_JupilerProLeague;2026-10-11;Westerlo;Anversa
+Belgium_JupilerProLeague;2026-10-11;KV Mechelen;St. Truiden
+Belgium_ChallengerProLeague;2026-10-11;Patro Eisden;Genk U23
+Belgium_ChallengerProLeague;2026-10-11;Gent U23;Seraing
+Belarus_VysshayaLiga;2026-10-11;Vitebsk;Isloch
+Belarus_VysshayaLiga;2026-10-11;Gomel;ML Vitebsk
+Belarus_VysshayaLiga;2026-10-11;Dnepr Mogilev;Din. Minsk
+Belarus_PershayaLiga;2026-10-11;Lida;Orsha
+Belarus_PershayaLiga;2026-10-11;Minsk 2;Smorgon
+Bolivia_DivisionProfesional;2026-10-11;Real Potosi;The Strongest
+Bolivia_DivisionProfesional;2026-10-11;Aurora;Nacional Potosi
+Bosnia_WWINLigaBiH;2026-10-11;Radnik Bijeljina;Zeljeznicar
+Bosnia_WWINLigaBiH;2026-10-11;Sloga Meridian;Zrinjski
+Bosnia_WWINLigaBiH;2026-10-11;Celik Zenica;Sarajevo
+Bosnia_PrvaLiga_FBiH;2026-10-11;TOSK Tesanj;Igman K.
+Bosnia_PrvaLiga_FBiH;2026-10-11;GOSK Gabela;Jedinstvo Bihac
+Bosnia_PrvaLiga_RS;2026-10-11;Kozara;Prijedor
+Bulgaria_ParvaLiga;2026-10-11;Septemvri Sofia;Dunav Ruse
+Bulgaria_ParvaLiga;2026-10-11;Cherno More;Levski
+Bulgaria_ParvaLiga;2026-10-11;CSKA 1948 Sofia;CSKA Sofia
+Croatia_HNL;2026-10-11;Lok. Zagreb;Varazdin
+Croatia_HNL;2026-10-11;Slaven Belupo;Rijeka
+Croatia_PrvaNL;2026-10-11;Dugopolje;Croatia Zmijavci
+Croatia_PrvaNL;2026-10-11;Segesta;Din. Zagabria 2
+Denmark_Superliga;2026-10-11;Randers;Viborg
+Denmark_Superliga;2026-10-11;Silkeborg;Horsens
+Denmark_Superliga;2026-10-11;Brondby;Lyngby
+Denmark_Superliga;2026-10-11;Midtjylland;FC Copenhagen
+Denmark_1stDivision;2026-10-11;Vendsyssel;Koge
+Denmark_2ndDivision;2026-10-11;Nykobing;VSK Aarhus
+Estonia_Meistriliiga;2026-10-11;Levadia;Paide
+Estonia_Meistriliiga;2026-10-11;Kuressaare;Flora
+Estonia_Esiliiga;2026-10-11;Maardu;Nomme Kalju U21
+Estonia_EsiliigaB;2026-10-11;Johvi Phoenix;Narva U21
+Estonia_EsiliigaB;2026-10-11;Tabasalu;Tammeka U21
+Estonia_EsiliigaB;2026-10-11;Tallinna Kalev U21;Parnu JK Vaprus U21
+Finland_Veikkausliiga;2026-10-11;Inter Turku;KuPS
+Finland_Ykkosliiga;2026-10-11;SJK Akatemia;KTP
+France_Ligue1;2026-10-11;Nizza;Strasburgo
+France_Ligue1;2026-10-11;Rennes;Auxerre
+France_Ligue1;2026-10-11;Troyes;Marsiglia
+Georgia_ErovnuliLiga;2026-10-11;Samgurali;Gagra
+Georgia_ErovnuliLiga;2026-10-11;Dinamo Batumi;Din. Tbilisi
+Germany_Bundesliga;2026-10-11;Colonia;Monchengladbach
+Germany_Bundesliga;2026-10-11;Friburgo;Schalke
+Germany_2Bundesliga;2026-10-11;Bochum;Bielefeld
+Germany_2Bundesliga;2026-10-11;Hertha;Furth
+Germany_2Bundesliga;2026-10-11;St. Pauli;Karlsruher
+Germany_3Liga;2026-10-11;Ingolstadt;Wehen
+Germany_3Liga;2026-10-11;Aachen;Viktoria Koln
+Germany_3Liga;2026-10-11;Dusseldorf;Verl
+Germany_Regionalliga_Nord;2026-10-11;Phonix Lubeck;Norderstedt
+Germany_Regionalliga_Nord;2026-10-11;St. Pauli II;Hannoverscher SC
+Germany_Regionalliga_Nord;2026-10-11;Todesfelde;SC Weiche-08
+Germany_Regionalliga_Nord;2026-10-11;Bremer;Drochtersen/Assel
+Germany_Regionalliga_Nord;2026-10-11;VfB Oldenburg;Emden
+Germany_Regionalliga_Nordost;2026-10-11;Greifswald;Aue
+Germany_Regionalliga_Nordost;2026-10-11;Hallescher;RSV Eintracht
+Germany_Regionalliga_Nordost;2026-10-11;Babelsberg;Lokomotive Leipzig
+Germany_Regionalliga_Nordost;2026-10-11;Chemnitzer;Erfurt
+Germany_Regionalliga_West;2026-10-11;Bochum II;Rodinghausen
+Germany_Regionalliga_West;2026-10-11;Wiedenbruck;Bonner
+Germany_Regionalliga_West;2026-10-11;Colonia II;Monchengladbach II
+Germany_Regionalliga_Sudwest;2026-10-11;Freiburg II;Freiberg
+Germany_Oberliga_NOFV_Nord;2026-10-11;Sparta Lichtenberg;Hertha Zehlendorf
+Germany_Oberliga_NOFV_Sud;2026-10-11;Bautzen;Weissenfels
+Germany_Oberliga_NOFV_Sud;2026-10-11;Dresden II;Krieschow
+Germany_Oberliga_NOFV_Sud;2026-10-11;Einheit Rudolstadt;Auerbach
+Germany_Oberliga_NOFV_Sud;2026-10-11;Halle;Meuselwitz
+Germany_Oberliga_SchleswigHolstein;2026-10-11;Eichede;Eckernforder SV
+Germany_Oberliga_SchleswigHolstein;2026-10-11;Flensburg;Kiel II
+Germany_Oberliga_SchleswigHolstein;2026-10-11;VfR Neumunster;Oldenburger
+Germany_Oberliga_Hamburg;2026-10-11;HEBC Hamburg;Suderelbe
+Germany_Oberliga_Hamburg;2026-10-11;TSV Buchholz 08;Paloma
+Germany_Oberliga_Bremen;2026-10-11;Schwachhausen;Grohn
+Germany_Oberliga_Bremen;2026-10-11;Eiche Horn;Aumund-Vegesack
+Germany_Oberliga_Bremen;2026-10-11;Hemelingen;OSC Bremerhaven
+Germany_Oberliga_Niedersachsen;2026-10-11;Egestorf-Langreder;Spelle-Venhaus
+Germany_Oberliga_Niedersachsen;2026-10-11;Luneburger Hansa;Hildesheim
+Germany_Oberliga_Niedersachsen;2026-10-11;Meppen II;Vorsfelde
+Germany_Oberliga_Westfalen;2026-10-11;Bielefeld II;Munster 2
+Germany_Oberliga_Westfalen;2026-10-11;Clarholz;Maaslingen
+Germany_Oberliga_Westfalen;2026-10-11;Eintracht Rheine;Schermbeck 2020
+Germany_Oberliga_Westfalen;2026-10-11;Hiltrup;Erkenschwick
+Germany_Oberliga_Westfalen;2026-10-11;Sprockhovel;Lippstadt
+Germany_Oberliga_Westfalen;2026-10-11;Verl II;Westfalia Kinderhaus
+Germany_Oberliga_Westfalen;2026-10-11;Vreden;Ennepetal
+Germany_Oberliga_Westfalen;2026-10-11;SpVgg Herne Horsthausen;TuS Hordel
+Germany_Oberliga_Hessen;2026-10-11;Pohlheim;Stadtallendorf
+Germany_Oberliga_Hessen;2026-10-11;CSC 03 Kassel;Fernwald
+Germany_Oberliga_Hessen;2026-10-11;RW Walldorf;Eddersheim
+Germany_Oberliga_Hessen;2026-10-11;Darmstadt U21;Kassel 2
+Germany_Oberliga_BadenWurttemberg;2026-10-11;Neckarsulm;Villingen
+Germany_Oberliga_BadenWurttemberg;2026-10-11;Singen;Backnang
+Germany_Oberliga_BadenWurttemberg;2026-10-11;Karlsruher II;1. FC Muhlhausen
+Germany_Oberliga_BadenWurttemberg;2026-10-11;Young Boys Reutlingen;Normannia Gmund
+Germany_Oberliga_Mittelrhein;2026-10-11;Hennef;Duren
+Germany_Oberliga_Mittelrhein;2026-10-11;Wegberg-Beeck;Merten
+Germany_Oberliga_Mittelrhein;2026-10-11;Hurth;Frechen
+Germany_Oberliga_Mittelrhein;2026-10-11;Eintracht Hohkeppel;Chlodwig Zulpich
+Germany_Oberliga_Mittelrhein;2026-10-11;Fortuna Colonia II;Lindenthal-Hohenlind
+Germany_Oberliga_Mittelrhein;2026-10-11;Konigsdorf;Porz
+Germany_Oberliga_Mittelrhein;2026-10-11;VfL Vichttal;Siegburger
+Germany_Oberliga_Niederrhein;2026-10-11;Holzheim;Dingden
+Germany_Oberliga_Niederrhein;2026-10-11;Baumberg;Schonnebeck
+Germany_Oberliga_Niederrhein;2026-10-11;Meerbusch;Juchen-Garzweiler
+Germany_Oberliga_Niederrhein;2026-10-11;Scherpenberg;Wuppertaler
+Germany_Oberliga_Niederrhein;2026-10-11;Sonsbeck;FC Monheim
+Germany_Oberliga_Niederrhein;2026-10-11;SSVg Velbert;SC St.Tonis
+Japan_J1League;2026-10-11;Chiba;V-Varen Nagasaki
+Japan_J1League;2026-10-11;Mito;Shimizu
+Japan_J1League;2026-10-11;Verdy;Hiroshima
+Japan_J1League;2026-10-11;Kawasaki;Nagoya
+Indonesia_SuperLeague;2026-10-11;Java United;Borneo
+Indonesia_SuperLeague;2026-10-11;PSS Sleman;PSM Makassar
+Indonesia_SuperLeague;2026-10-11;Persib;Dewa United
+Indonesia_Championship;2026-10-11;Persela;Sidoarjo
+Indonesia_Championship;2026-10-11;Persis Solo;Dejan
+Indonesia_Championship;2026-10-11;PSPS Riau;PSMS Medan
+Indonesia_Championship;2026-10-11;Persikad Depok;Padang
+England_PremierLeague;2026-10-11;Crystal Palace;Nottingham
+England_PremierLeague;2026-10-11;Hull;Everton
+England_PremierLeague;2026-10-11;Liverpool;Manchester City
+England_Championship;2026-10-11;Southampton;Portsmouth
+Iceland_BestaDeildKarla;2026-10-11;Breidablik;Keflavik
+Iceland_BestaDeildKarla;2026-10-11;Vikingur Reykjavik;Akranes
+FaroeIslands_PremierLeague;2026-10-11;HB Torshavn;Klaksvik
+FaroeIslands_PremierLeague;2026-10-11;Skala Itrottarfelag;Runavik
+FaroeIslands_PremierLeague;2026-10-11;Argir;B36 Torshavn
+FaroeIslands_PremierLeague;2026-10-11;Toftir;Vikingur
+Italy_SerieA;2026-10-11;Como;Roma
+Italy_SerieA;2026-10-11;Lazio;Monza
+Italy_SerieA;2026-10-11;Lecce;Bologna
+Italy_SerieA;2026-10-11;Sassuolo;Milan
+Italy_SerieA;2026-10-11;Cagliari;Juventus
+Italy_SerieB;2026-10-11;Catanzaro;Mantova
+Italy_SerieB;2026-10-11;Padova;Carrarese
+Italy_SerieB;2026-10-11;Modena;Verona
+Italy_SerieC_GironeA;2026-10-11;Renate;Giana Erminio
+Italy_SerieC_GironeA;2026-10-11;Lecco;Alcione Milano
+Italy_SerieC_GironeA;2026-10-11;Trento;Folgore Caratese
+Italy_SerieC_GironeA;2026-10-11;Treviso;Ospitaletto
+Italy_SerieC_GironeB;2026-10-11;Torres;Atalanta U23
+Italy_SerieC_GironeB;2026-10-11;Ravenna;Campobasso
+Italy_SerieC_GironeB;2026-10-11;Sambenedettese;Latina
+Italy_SerieC_GironeB;2026-10-11;Forlì;Livorno
+Italy_SerieC_GironeB;2026-10-11;Perugia;Vado
+Italy_SerieC_GironeC;2026-10-11;Altamura;Catania
+Italy_SerieC_GironeC;2026-10-11;Foggia;Potenza
+Italy_SerieC_GironeC;2026-10-11;Scafatese;Sorrento
+Italy_SerieC_GironeC;2026-10-11;Casarano;Salernitana
+Kazakhstan_PremierLeague;2026-10-11;Ulytau;Okzhetpes
+Kazakhstan_PremierLeague;2026-10-11;Kaspij Aktau;Altai
+Kazakhstan_PremierLeague;2026-10-11;Kaisar;Ordabasy
+Latvia_Virsliga;2026-10-11;Ogre United;BFC Daugavpils
+Latvia_Virsliga;2026-10-11;RFS;Jelgava
+Latvia_NakotnesLiga;2026-10-11;FK Smiltene;Tukums 2000 2
+Latvia_NakotnesLiga;2026-10-11;Riga FC 2;Rezekne
+NorthMacedonia_1MFL;2026-10-11;Shkendija Haracine;Shkendija
+NorthMacedonia_1MFL;2026-10-11;FK Skopje;Vardar
+Mexico_LigaMX_Apertura;2026-10-11;Atlas;Guadalajara
+Mexico_LigaMX_Apertura;2026-10-11;Club America;Monterrey
+Mexico_LigaExpansionMX_Apertura;2026-10-11;Dorados;Cruz Azul Hidalgo
+Mexico_LigaExpansionMX_Apertura;2026-10-11;Jaiba Brava;Alacranes
+Mexico_LigaExpansionMX_Apertura;2026-10-11;Zacatecas Mineros;Cancun
+Moldova_SuperLiga;2026-10-11;Milsami;Politehnica UTM
+Moldova_SuperLiga;2026-10-11;Petrocub;Zimbru
+Montenegro_DrugaLiga;2026-10-11;Kom Podgorica;FK Podgorica
+Montenegro_DrugaLiga;2026-10-11;Rudar;Zeta
+Montenegro_DrugaLiga;2026-10-11;Iskra;Berane
+Norway_Eliteserien;2026-10-11;Fredrikstad;Tromsø
+Norway_Eliteserien;2026-10-11;Aalesund;Sarpsborg 08
+Norway_Eliteserien;2026-10-11;Start;HamKam
+Norway_Eliteserien;2026-10-11;Lilleström;Molde
+Norway_OBOSLigaen;2026-10-11;Åsane;Sogndal
+Norway_OBOSLigaen;2026-10-11;Egersund;Hodd
+Norway_OBOSLigaen;2026-10-11;Kongsvinger;Ranheim
+Norway_OBOSLigaen;2026-10-11;Lyn;Strömsgodset
+Norway_OBOSLigaen;2026-10-11;Odd;Bryne
+Norway_OBOSLigaen;2026-10-11;Raufoss;Moss
+Norway_OBOSLigaen;2026-10-11;Sandnes;Haugesund
+Norway_OBOSLigaen;2026-10-11;Stabaek;Strømmen
+Norway_2ndDivision_Group1;2026-10-11;Bjarg;Notodden
+Norway_2ndDivision_Group1;2026-10-11;Vidar;Brattvag
+Norway_2ndDivision_Group1;2026-10-11;Traeff;Sandviken
+Norway_2ndDivision_Group1;2026-10-11;Eik-Tonsberg;Lysekloster
+Norway_2ndDivision_Group2;2026-10-11;Kjelsås;Rana FK
+Norway_2ndDivision_Group2;2026-10-11;Stjordals Blink;Tromsdalen
+Norway_2ndDivision_Group2;2026-10-11;Lørenskog;Trygg/Lade
+Norway_2ndDivision_Group2;2026-10-11;Levanger;Honefoss
+Norway_2ndDivision_Group2;2026-10-11;Junkeren;Grorud
+Norway_3rdDivision_Group4;2026-10-11;Mandalskameratene;Stabaek 2
+Norway_3rdDivision_Group5;2026-10-11;Strømsgodset 2;Skjetten
+Norway_3rdDivision_Group5;2026-10-11;Kongsvinger 2;Bossekop
+Norway_3rdDivision_Group5;2026-10-11;Fauske Sprint;Harstad
+Norway_3rdDivision_Group5;2026-10-11;Tromsø 2;Lillestrom 2
+Netherlands_Eredivisie;2026-10-11;Utrecht;Willem II
+Netherlands_Eredivisie;2026-10-11;Telstar;Den Haag
+Netherlands_Eredivisie;2026-10-11;Zwolle;Cambuur
+Netherlands_Eredivisie;2026-10-11;Excelsior;Groningen
+Paraguay_DivisionIntermedia;2026-10-11;General Caballero JLM;Deportivo Santani
+Paraguay_DivisionIntermedia;2026-10-11;Resistencia;12 de Junio
+Peru_Liga1_Clausura;2026-10-11;U. de Deportes;Melgar
+Peru_Liga1_Clausura;2026-10-11;Cajamarca;Sporting Cristal
+Peru_Liga1_Clausura;2026-10-11;Sport Boys;Alianza Atl.
+Peru_Liga2;2026-10-11;U. San Martin;Tacna Heroica
+Peru_Liga2;2026-10-11;Comerciantes;ADA Jaen
+Peru_Liga2;2026-10-11;Santos;Binacional
+Poland_Ekstraklasa;2026-10-11;Piast;Widzew Lodz
+Poland_Ekstraklasa;2026-10-11;Pogon Szczecin;Korona
+Poland_Ekstraklasa;2026-10-11;Legia;Wisla
+Poland_Division1;2026-10-11;Stal Mielec;Warta Poznan
+Poland_Division1;2026-10-11;LKS Lodz;Ruch
+Poland_Division1;2026-10-11;Puszcza;Polonia B.
+Poland_Division1;2026-10-11;Odra Opole;Legnica
+Poland_Division2;2026-10-11;Tychy;Leczna
+Poland_Division2;2026-10-11;Kleczew;Hutnik Krakow
+Poland_Division2;2026-10-11;Zawisza;Pruszkow
+Poland_IIILiga_Group1;2026-10-11;Widzew Lodz II;Weszlo
+Poland_IIILiga_Group1;2026-10-11;Zambrow;T. Mazowiecki
+Poland_IIILiga_Group4;2026-10-11;Naprzod Jedrzejow;Kolbuszowa Dolna
+Poland_IIILiga_Group4;2026-10-11;Hetman Zamosc;Czarni Polaniec
+Portugal_LigaPortugal;2026-10-11;Rio Ave;Nacional
+Portugal_LigaPortugal;2026-10-11;Benfica;Guimaraes
+Portugal_LigaPortugal;2026-10-11;Arouca;Estrela
+Portugal_LigaPortugal2;2026-10-11;Lusitania FC;Chaves
+Portugal_LigaPortugal2;2026-10-11;Farense;Feirense
+Portugal_LigaPortugal2;2026-10-11;Leiria;Academica
+CzechRepublic_1Liga;2026-10-11;Liberec;Slovacko
+CzechRepublic_1Liga;2026-10-11;Teplice;Sigma Olomouc
+CzechRepublic_1Liga;2026-10-11;Sparta Praga;Pardubice
+CzechRepublic_3CFL_GroupA;2026-10-11;Sparta Praga B;Dukla Praga B
+CzechRepublic_3CFL_GroupB;2026-10-11;Jablonec B;Brozany
+CzechRepublic_3CFL_GroupB;2026-10-11;Varnsdorf;Hradec Kralove B
+CzechRepublic_3CFL_GroupB;2026-10-11;Zapy;Caslav
+CzechRepublic_3MSFL;2026-10-11;Havirov;Sigma Olomouc B
+CzechRepublic_3MSFL;2026-10-11;Slovacko B;Hlubina
+CzechRepublic_3MSFL;2026-10-11;Zlin B;SK Hranice
+CzechRepublic_3MSFL;2026-10-11;Polanka nad Odrou;Uhersky Brod
+CzechRepublic_4Liga_GroupA;2026-10-11;SK Strakonice 1908;Petrin Plzen
+CzechRepublic_4Liga_GroupB;2026-10-11;Meteor Prague;Ostrov
+CzechRepublic_4Liga_GroupC;2026-10-11;Dvur Kralove;Chlumec nad Cidlinou
+CzechRepublic_4Liga_GroupC;2026-10-11;Kolin;Chrudim B
+CzechRepublic_4Liga_GroupC;2026-10-11;Svitavy;Vysoke Myto
+CzechRepublic_4Liga_GroupC;2026-10-11;Usti nad Orlici;Trutnov
+CzechRepublic_4Liga_GroupD;2026-10-11;Velke Mezirici;Bystrc
+CzechRepublic_4Liga_GroupD;2026-10-11;Humpolec;Velka Bites
+CzechRepublic_4Liga_GroupD;2026-10-11;Pelhrimov;Sparta Brno
+CzechRepublic_4Liga_GroupD;2026-10-11;Tasovice;Chotebor
+CzechRepublic_4Liga_GroupE;2026-10-11;Brumov;Slavicin
+CzechRepublic_4Liga_GroupE;2026-10-11;Kromeriz B;Strani
+CzechRepublic_4Liga_GroupF;2026-10-11;Bilovec;Vratimov
+CzechRepublic_4Liga_GroupF;2026-10-11;Bohumin;Frydek-Mistek B
+CzechRepublic_4Liga_GroupF;2026-10-11;Pusta Polom;Sumperk
+CzechRepublic_4Liga_GroupF;2026-10-11;Zabreh;Valasske Mezirici
+Romania_Superliga;2026-10-11;Csikszereda M. Ciuc;Univ. Craiova
+Romania_Superliga;2026-10-11;Farul Constanta;Petrolul
+Romania_Liga2;2026-10-11;Afumati;Stefanesti
+Romania_Liga2;2026-10-11;Bihor;FC Bacau
+Russia_PremierLeague;2026-10-11;Akhmat Grozny;Baltika
+Russia_PremierLeague;2026-10-11;CSKA Mosca;Rodina Moscow
+Russia_PremierLeague;2026-10-11;Kazan;Din. Mosca
+Russia_FNL;2026-10-11;Sochi;Ufa
+Russia_FNL;2026-10-11;Saratov;Dynamo Vladivostok
+Russia_FNL;2026-10-11;D. Bryansk;Rodina Moscow 2
+Russia_FNL;2026-10-11;Volgar-Astrakhan;Sibir Novosibirsk
+Russia_FNL;2026-10-11;Dynamo Makhachkala 2;FC Sevastopol
+Russia_FNL;2026-10-11;Kosmos;Dynamo Vologda
+Russia_FNL;2026-10-11;Tver;Luki-Energiya
+Russia_FNL;2026-10-11;Cherepovets;Vladimir
+Russia_FNL;2026-10-11;Sp. Mosca 2;Zvezda St. Peterburg
+Russia_FNL;2026-10-11;Chertanovo M.;Baltika 2
+Russia_FNL;2026-10-11;FK Strogino Moscow;Salyut-Belgorod
+Russia_FNL;2026-10-11;Arsenal Tula 2;Oryol
+Russia_FNL;2026-10-11;M. Lipetsk;Saturn Ramenskoye
+Russia_FNL;2026-10-11;Izhevsk;Chelyabinsk 2
+Russia_FNL;2026-10-11;Nosta;Kazan 2
+Russia_FNL;2026-10-11;Orenburg 2;Ural 2
+Russia_FNL;2026-10-11;KDV Tomsk;Dynamo Barnaul
+Russia_FNL;2026-10-11;Samara 2;Akron Togliatti 2
+Russia_FNL;2026-10-11;Khimik;Pobeda Nizhniy Novgorod
+Scotland_Premiership;2026-10-11;Motherwell;Celtic
+Scotland_Premiership;2026-10-11;Aberdeen;St. Johnstone
+Serbia_SuperLiga;2026-10-11;Radnicki Nis;Vojvodina
+Serbia_SuperLiga;2026-10-11;Partizan;Novi Pazar
+Serbia_SuperLiga;2026-10-11;Zemun;Zeleznicar Pancevo
+Serbia_PrvaLiga;2026-10-11;Bor 1919;TSC
+Serbia_PrvaLiga;2026-10-11;Graficar Beograd;Javor
+Serbia_PrvaLiga;2026-10-11;Proleter 023;Napredak
+Serbia_PrvaLiga;2026-10-11;Dubocica;Sp. Subotica
+Serbia_PrvaLiga;2026-10-11;Vozdovac;Vrsac
+Slovakia_NikeLiga;2026-10-11;Ruzomberok;Zilina
+Slovakia_NikeLiga;2026-10-11;Podbrezova;Trnava
+Slovakia_2Liga;2026-10-11;Malzenice;Inter Bratislava
+Slovakia_2Liga;2026-10-11;S. Bratislava B;L. Mikulas
+Slovakia_2Liga;2026-10-11;Zilina B;Galanta
+Slovakia_2Liga;2026-10-11;Samorin;Petrzalka
+Slovakia_3Liga_West;2026-10-11;Trencin B;Belusa
+Slovakia_3Liga_West;2026-10-11;Komarno B;Sala
+Slovenia_PrvaLiga;2026-10-11;Nafta;Bravo
+Slovenia_PrvaLiga;2026-10-11;Grosuplje;Maribor
+Slovenia_2SNL;2026-10-11;Krsko Posavje;Triglav
+Slovenia_2SNL;2026-10-11;Primorje;Dravinja
+Slovenia_2SNL;2026-10-11;Slovan Ljubljana;NK Bistrica
+Spain_LaLiga;2026-10-11;Elche;Celta Vigo
+Spain_LaLiga;2026-10-11;Real Sociedad;A Coruna
+Spain_LaLiga;2026-10-11;Betis;Osasuna
+Spain_LaLiga;2026-10-11;Racing Santander;Valencia
+Spain_LaLiga2;2026-10-11;Andorra;Castellon
+Spain_LaLiga2;2026-10-11;Almeria;Leganes
+Spain_LaLiga2;2026-10-11;Maiorca;Las Palmas
+Spain_LaLiga2;2026-10-11;Cadice;Gijon
+SriLanka_SuperLeague;2026-10-11;Blue Star;UP Country Lions
+SouthKorea_KLeague1;2026-10-11;Gwangju;Ulsan HD
+SouthKorea_KLeague2;2026-10-11;Suwon Bluewings;Ansan Greeners
+Sweden_Allsvenskan;2026-10-11;Hammarby;Djurgarden
+Sweden_Allsvenskan;2026-10-11;Hacken;Orgryte
+Sweden_Superettan;2026-10-11;Örebro;Ljungskile
+Sweden_Superettan;2026-10-11;Värnamo;Falkenberg
+Sweden_Superettan;2026-10-11;Brage;Helsingborg
+Sweden_Division1_Norra;2026-10-11;Jarfalla;Umeå
+Sweden_Division1_Norra;2026-10-11;Assyriska FF;FBK Karlstad
+Sweden_Division1_Norra;2026-10-11;Gefle;Pitea
+Sweden_Division1_Norra;2026-10-11;Hammarby TFF;Enkoping SK
+Sweden_Division1_Sodra;2026-10-11;Utsikten;Angelholm
+Sweden_Division2_Norrland;2026-10-11;Lucksta;Skelleftea
+Sweden_Division2_NorraGotaland;2026-10-11;Husqvarna;Herrestads AIF
+Sweden_Division2_NorraGotaland;2026-10-11;Karlstad II;Vanersborgs IF
+Sweden_Division2_NorraSvealand;2026-10-11;Angby;Viggbyholms
+Sweden_Division2_NorraSvealand;2026-10-11;Sunnersta AIF;Korsnas
+Sweden_Division2_SodraGotaland;2026-10-11;Osterlen;Torns
+Sweden_Division2_SodraGotaland;2026-10-11;IFK Karlshamn;Staffanstorp United
+Sweden_Division2_SodraGotaland;2026-10-11;IFK Trelleborg;Karlskrona
+Sweden_Division2_SodraSvealand;2026-10-11;Eker Orebro;Forward
+Sweden_Division2_SodraSvealand;2026-10-11;Nykopings;Karlslund
+Sweden_Division2_SodraSvealand;2026-10-11;Sleipner;Fittja
+Sweden_Division2_VastraGotaland;2026-10-11;Frölunda;Torslanda
+Sweden_Division2_VastraGotaland;2026-10-11;Galtabacks BK;Hestrafors
+Switzerland_SuperLeague;2026-10-11;Grasshoppers;Young Boys
+Switzerland_SuperLeague;2026-10-11;St. Gallen;Lausanne
+Switzerland_SuperLeague;2026-10-11;Vaduz;Basilea
+Switzerland_PromotionLeague;2026-10-11;Biel;Basilea II
+Switzerland_PromotionLeague;2026-10-11;Lugano II;Kreuzlingen
+Turkey_SuperLig;2026-10-11;Konyaspor;Basaksehir
+Turkey_SuperLig;2026-10-11;Gaziantep;Corum
+Turkey_SuperLig;2026-10-11;Besiktas;Kocaelispor
+Turkey_1Lig;2026-10-11;Karagumruk;Muglaspor
+Turkey_1Lig;2026-10-11;Bursaspor;Mardin 1969
+Ukraine_PremierLeague;2026-10-11;Dyn. Kyiv;Karpaty Lviv
+Ukraine_PremierLeague;2026-10-11;LNZ Cherkasy;Kudrivka
+Ukraine_PremierLeague;2026-10-11;Bukovyna;Polissya Zhytomyr
+Ukraine_PershaLiga;2026-10-11;UCSA;Fenix Mariupol
+Ukraine_PershaLiga;2026-10-11;Prykarpattya;FC Chernihiv
+Ukraine_PershaLiga;2026-10-11;Oleksandriya;Lokomotyv Kyiv
+Ukraine_PershaLiga;2026-10-11;Nyva Ternopil;Kolos Kovalivka 2
+Ukraine_PremierLeague;2026-10-11;Kolos Kovalivka U21;Epitsentr U21
+Ukraine_PremierLeague;2026-10-11;Obolon U21;Kryvbas U21
+Ukraine_PremierLeague;2026-10-11;Ch. Odesa U21;FC Kharkiv U21
+Hungary_NBI;2026-10-11;Zalaegerszeg;Nyiregyhaza
+Hungary_NBI;2026-10-11;Honved;Ujpest
+Hungary_NBI;2026-10-11;Győr;Puskas Academy
+Hungary_NBII;2026-10-11;Csakvari;Kecskemeti
+USA_MLS;2026-10-11;Austin FC;Nashville SC
+USA_MLS;2026-10-11;Minnesota;Houston Dynamo
+USA_MLS;2026-10-11;Sporting Kansas City;Portland Timbers
+USA_MLS;2026-10-11;Colorado Rapids;San Jose Earthquakes
+USA_MLS;2026-10-11;Los Angeles FC;Vancouver Whitecaps
+USA_USLChampionship;2026-10-11;El Paso;Orange County SC
+USA_USLChampionship;2026-10-11;New Mexico;Monterey Bay
+USA_USLChampionship;2026-10-11;Oakland Roots;San Antonio
+USA_USLChampionship;2026-10-11;Phoenix Rising;Las Vegas Lights
+USA_USLChampionship;2026-10-11;Sacramento Republic;Colorado Springs
+USA_MLS;2026-10-11;New York Red Bulls II;Huntsville
+USA_USLLeagueOne;2026-10-11;Corpus Christi FC;FC Naples
+USA_USLLeagueOne;2026-10-11;AV Alta;Greenville
+USA_USLLeagueOne;2026-10-11;One Knoxville;Spokane Velocity
