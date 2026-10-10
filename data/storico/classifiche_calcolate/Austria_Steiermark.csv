@@ -1,18 +1,18 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-7;1;Koflach;6;4;1;1;15;4;11;13;2.167
-7;2;Weindorf St. Anna;6;4;1;1;11;7;4;13;2.167
-7;3;Pachern;6;4;1;1;9;6;3;13;2.167
-7;4;Ilzer SV;6;3;2;1;16;10;6;11;1.833
-7;5;SV Wildon;7;3;2;2;13;7;6;11;1.571
-7;6;SV Union Gnas;6;3;1;2;12;6;6;10;1.667
-7;7;Stadtwerke Bruck/Mur;6;3;1;2;12;12;0;10;1.667
-7;8;SV Schermann Rorhrbach;4;3;0;1;8;5;3;9;2.25
-7;9;Hohenhaus Schladming;6;2;2;2;13;12;1;8;1.333
-7;10;Grossklein;7;2;2;3;11;17;-6;8;1.143
-7;11;SV Schermann Rorhrach;3;2;1;0;10;4;6;7;2.333
-7;12;UFC Fehring;6;2;1;3;7;10;-3;7;1.167
-7;13;Kindberg Murzhofen;6;2;1;3;13;18;-5;7;1.167
-7;14;Furstenfeld;6;2;0;4;8;15;-7;6;1.0
-7;15;Lebring;7;1;2;4;11;12;-1;5;0.714
-7;16;TUS Bad Waltersdorf;6;0;2;4;8;14;-6;2;0.333
-7;17;Leoben;6;0;0;6;6;24;-18;0;0.0
+8;1;Koflach;7;5;1;1;17;4;13;16;2.286
+8;2;SV Wildon;8;4;2;2;18;7;11;14;1.75
+8;3;Weindorf St. Anna;7;4;2;1;11;7;4;14;2.0
+8;4;Pachern;7;4;2;1;9;6;3;14;2.0
+8;5;Ilzer SV;7;3;2;2;18;13;5;11;1.571
+8;6;Stadtwerke Bruck/Mur;7;3;2;2;13;13;0;11;1.571
+8;7;SV Union Gnas;7;3;1;3;12;8;4;10;1.429
+8;8;SV Schermann Rorhrbach;5;3;1;1;9;6;3;10;2.0
+8;9;UFC Fehring;7;3;1;3;10;12;-2;10;1.429
+8;10;Hohenhaus Schladming;7;2;3;2;13;12;1;9;1.286
+8;11;Furstenfeld;7;3;0;4;12;15;-3;9;1.286
+8;12;Grossklein;8;2;2;4;11;22;-11;8;1.0
+8;13;SV Schermann Rorhrach;3;2;1;0;10;4;6;7;2.333
+8;14;Kindberg Murzhofen;7;2;1;4;13;22;-9;7;1.0
+8;15;Lebring;8;1;3;4;11;12;-1;6;0.75
+8;16;TUS Bad Waltersdorf;7;1;2;4;13;16;-3;5;0.714
+8;17;Leoben;7;0;0;7;8;29;-21;0;0.0
