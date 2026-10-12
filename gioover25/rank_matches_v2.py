@@ -855,6 +855,10 @@ def rank_matches(
             include_all_histories=use_all_team_histories,
         )
 
+        # Le funzioni PPG usano MatchDate e rappresentano il conteggio
+        # canonico delle gare realmente concluse prima della partita. Allineiamo
+        # anche il contesto passato agli engine a questi valori: in questo modo
+        # la regola IMM non può divergere dalle statistiche effettive.
         total_played = home_played + away_played
 
         if total_played < MIN_TOTAL_TEAM_MATCHES:
@@ -891,6 +895,22 @@ def rank_matches(
             home_standing_teams=home_standing_teams,
             away_standing_teams=away_standing_teams,
         )
+
+        # Il ranking può essere generato dopo che sono già state aggiunte allo
+        # storico partite con Round successivi o irregolari. Per maturità/IMM
+        # conta esclusivamente ciò che precede MatchDate, già calcolato sopra.
+        # Manteniamo quindi esplicita questa coerenza e segnaliamo eventuali
+        # divergenze, utili per diagnosticare storici sporchi.
+        if (
+            match_stats.home.overall.played != home_played
+            or match_stats.away.overall.played != away_played
+        ):
+            print(
+                f"[WARN][HISTORY-COUNT] {league_id} | {home} - {away}: "
+                f"MatchDate GP={home_played}/{away_played}, "
+                f"Round GP={match_stats.home.overall.played}/"
+                f"{match_stats.away.overall.played}."
+            )
 
         requires_played_counts = bool(
             getattr(engine, "REQUIRES_PLAYED_COUNTS", False)
