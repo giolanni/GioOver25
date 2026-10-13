@@ -13,4 +13,4 @@ def calculate_score(match_stats, league_info):
     # Keep original numeric VG1 score and all feature diagnostics.
     # ALTA means selected by this variant; otherwise retain a non-ALTA band.
     band = "ALTA" if selected else ("MEDIA" if base.band == "ALTA" else base.band)
-    return replace(base, band=band, reason=f"VG1.4 [{'selected' if False else ''}] " + ("SELECTED" if selected else "EXCLUDED") + " | " + base.reason)
+    return replace(base, band=band, reason="VG1.4 " + ("SELECTED" if selected else "EXCLUDED") + " | " + base.reason)
