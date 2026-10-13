@@ -60,6 +60,11 @@ from . import (
     v30,
     v31,
     vg1,
+    vg12,
+    vg13,
+    vg14,
+    vg22,
+    vg26,
 )
 
 OFFICIAL_ENGINES = {
@@ -89,6 +94,11 @@ EXPERIMENTAL_ENGINES = {
     "v30": v30,
     "v31": v31,
     "vg1": vg1,
+    "vg1.2": vg12,
+    "vg1.3": vg13,
+    "vg1.4": vg14,
+    "vg2.2": vg22,
+    "vg2.6": vg26,
 }
 
 ENGINES = {
