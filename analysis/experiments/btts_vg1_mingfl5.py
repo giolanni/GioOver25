@@ -56,18 +56,73 @@ def load_archive(path):
     return matches
 
 
-def load_history(path, matches):
+def _read_results_file(path, matches, target_keys):
+    """Import resolved fixtures from the canonical results store.
+
+    LeagueId may be a CSV column or derived from Country_League_Season.csv.
+    Files with unknown schema are skipped and reported, never silently counted.
+    """
+    imported = 0
     with open(path, encoding="utf-8-sig", newline="") as file:
         reader = csv.DictReader(file, delimiter=";")
+        if not reader.fieldnames:
+            return 0, "empty header"
+        headers = {x.strip().lower(): x for x in reader.fieldnames if x}
+        def get(row, *names):
+            for name in names:
+                col = headers.get(name.lower())
+                if col and row.get(col) is not None:
+                    return row[col].strip()
+            return ""
+        if not any(x in headers for x in ("matchdate", "date", "data")):
+            return 0, "missing date column"
+        if not any(x in headers for x in ("hg", "homegoals", "home_score", "fthg")):
+            return 0, "missing home goals column"
+        if not any(x in headers for x in ("ag", "awaygoals", "away_score", "ftag")):
+            return 0, "missing away goals column"
+        fallback_league = re.sub(r"_\\d{4}(?:_\\d{4})?$", "", path.stem)
         for row in reader:
-            parsed = parse_row(row)
-            if parsed is None:
+            league = get(row, "LeagueId") or fallback_league
+            home = get(row, "Home", "HomeTeam", "SquadraCasa")
+            away = get(row, "Away", "AwayTeam", "SquadraOspite")
+            raw_date = get(row, "MatchDate", "Date", "Data")
+            if not (league and home and away and raw_date):
                 continue
-            key, result = parsed
-            item = matches.setdefault(key, {"result": None, "conflict": False, "history_only": True})
-            if item["result"] is not None and item["result"] != result:
+            try:
+                date = dt.date.fromisoformat(raw_date[:10])
+                hg = int(get(row, "HG", "HomeGoals", "Home_Score", "FTHG"))
+                ag = int(get(row, "AG", "AwayGoals", "Away_Score", "FTAG"))
+                if min(hg, ag) < 0:
+                    continue
+            except (ValueError, TypeError):
+                continue
+            key = (league, date, home, away)
+            item = matches.setdefault(key, {"result": None, "conflict": False})
+            if item["result"] is not None and item["result"] != (hg, ag):
                 item["conflict"] = True
-            item["result"] = result
+            item["result"] = (hg, ag)
+            imported += 1
+    return imported, None
+
+
+def load_history(source, matches, target_keys):
+    source = pathlib.Path(source)
+    if not source.exists():
+        raise FileNotFoundError(f"Historical results not found: {source}")
+    files = sorted(source.rglob("*.csv")) if source.is_dir() else [source]
+    loaded, skipped, total = 0, [], 0
+    for path in files:
+        count, error = _read_results_file(path, matches, target_keys)
+        total += count
+        if error:
+            skipped.append((str(path), error))
+        else:
+            loaded += 1
+    print(f"History source: {source} | files read: {loaded} | rows imported: {total} | files skipped: {len(skipped)}")
+    for name, error in skipped[:10]:
+        print(f"  SKIPPED {name}: {error}")
+    if not loaded:
+        raise ValueError("No valid historical results CSV files were loaded")
 
 
 def features(history, league, home, away, min_played):
@@ -98,7 +153,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("archive", help="ZIP containing all engine ranking CSVs")
     parser.add_argument("--threshold", type=float, default=2.2)
-    parser.add_argument("--history", help="Optional full historical results CSV: LeagueId;MatchDate;Home;Away;HG;AG")
+    parser.add_argument("--history", default="data/storico/risultati",
+                        help="Historical results CSV or directory (default: data/storico/risultati)")
+    parser.add_argument("--ranking-only", action="store_true",
+                        help="Explicitly disable canonical history loading; limited coverage")
     parser.add_argument("--min-played", type=int, default=5,
                         help="Minimum preceding matches per team (default 5)")
     parser.add_argument("--output", help="Optional match-level audit CSV path")
@@ -106,8 +164,8 @@ def main():
 
     matches = load_archive(args.archive)
     target_keys = set(matches)
-    if args.history:
-        load_history(args.history, matches)
+    if not args.ranking_only:
+        load_history(args.history, matches, target_keys)
     by_day = collections.defaultdict(list)
     for key in matches:
         by_day[key[1]].append(key)
@@ -115,7 +173,7 @@ def main():
     stats = collections.defaultdict(lambda: [0, 0])
     audit = []
     coverage = collections.Counter()
-    strategies = ("VG1_replayed", "VG1_plus_MinGFL5", "MinGFL5")
+    strategies = ("VG1_replayed", "VG1_plus_MinGFL5", "MinGFL5_only")
     for day in sorted(by_day):
         staged = []
         for key in sorted(by_day[day]):
@@ -160,10 +218,9 @@ def main():
         ok, ko = overall
         if ok + ko:
             print(f"{strategy};TOTAL;{ok};{ko};{ok+ko};{100*ok/(ok+ko):.2f}")
-    print(f"Coverage: {dict(coverage)}")
-    print("CAUTION: VG1 conditions are exact, but input features are reconstructed "
-          "from available past results; complete season history is needed for "
-          "a faithful VG1 replay.")
+    print(f"Universe: {len(target_keys)} unique ranking matches; coverage: {dict(coverage)}")
+    print("CAUTION: VG1 conditions are exact, but feature parity requires matching "
+          "the original engine historical windows, team aliases and PPG semantics.")
     if args.output:
         with open(args.output, "w", newline="", encoding="utf-8-sig") as file:
             writer = csv.writer(file, delimiter=";")
