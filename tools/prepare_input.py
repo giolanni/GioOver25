@@ -52,11 +52,20 @@ def load_moldova_groups(path=MOLDOVA_GROUP_MAP):
  return groups
 def aliases(s):
  x=s.casefold();vals={norm(s)}
- replacements={"ovest":"west","est":"east","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff","division 3":"3rd division","besta deild femminile":"besta deild kvenna","ligue 3":"national","jupiler league":"jupiler pro league"}
+ replacements={"ovest":"west","est":"east","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff","division 3":"3rd division","besta deild femminile":"besta deild kvenna","women":"femminile","ligue 3":"national","jupiler league":"jupiler pro league"}
  for a,b in replacements.items():x=x.replace(a,b)
  vals.add(norm(x));return vals
 def resolve(reg,country,league):
- c=COUNTRY_MAP.get(country.upper(),country.title());cand=[r for r in reg if norm(r.country)==norm(c)];target=aliases(league)
+ c=COUNTRY_MAP.get(country.upper(),country.title());cand=[r for r in reg if norm(r.country)==norm(c)]
+ # Barriera di genere: una competizione esplicitamente femminile non deve mai
+ # ricadere per fuzzy matching su una lega maschile (es. Serie A Women -> Serie A).
+ female_markers=("women","woman","femmin","femmen","damer","dam","frauen","femen","kvenna")
+ league_norm=norm(league);is_female=any(marker in league_norm for marker in female_markers)
+ if is_female:
+  female_cand=[r for r in cand if any(marker in norm(r.league_id)+norm(r.league) for marker in female_markers)]
+  if not female_cand:return None
+  cand=female_cand
+ target=aliases(league)
  exact=[r for r in cand if norm(r.league) in target or aliases(r.league)&target]
  if len(exact)==1:return exact[0].league_id
  alias_matches=[r for r in cand if aliases(r.league)&target]
