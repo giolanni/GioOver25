@@ -28,6 +28,7 @@ REGISTRY_FILE = ROOT / "data" / "league_registry.csv"
 LAB_FILE = ROOT / "analysis" / "laboratory" / "data" / "01_matches.csv"
 LAB_UNMATCHED = ROOT / "analysis" / "laboratory" / "data" / "06_unmatched_matches.csv"
 REPORT_DIR = ROOT / "analysis" / "data_quality_report"
+VERIFIED_FILE = ROOT / "analysis" / "data_quality_verified.csv"
 
 SEVERITY_ORDER = {"CRITICAL": 0, "WARNING": 1, "INFO": 2}
 
@@ -182,7 +183,22 @@ def registry_ids() -> set[str]:
     return {text(r, "LeagueId") for r in read_csv(REGISTRY_FILE) if text(r, "LeagueId")}
 
 
-def check_results(items: list[Anomaly], known_leagues: set[str]) -> tuple[int, int]:
+def verified_anomaly_keys() -> set[tuple]:
+    keys: set[tuple] = set()
+    for r in read_csv(VERIFIED_FILE):
+        code = text(r, "Code")
+        league = text(r, "LeagueId")
+        md = text(r, "MatchDate")
+        home = text(r, "Home")
+        away = text(r, "Away")
+        hg = integer(r.get("HG"))
+        ag = integer(r.get("AG"))
+        if code and league and md and home and away:
+            keys.add((code, league, md, normalize_team_name(league, home), normalize_team_name(league, away), hg, ag))
+    return keys
+
+
+def check_results(items: list[Anomaly], known_leagues: set[str], verified: set[tuple]) -> tuple[int, int]:
     files = sorted(RESULTS_DIR.glob("*.csv"))
     total = 0
     global_keys: dict[tuple, str] = {}
@@ -225,8 +241,10 @@ def check_results(items: list[Anomaly], known_leagues: set[str]) -> tuple[int, i
                 add(items, "WARNING", "results", "RS_HALF_SCORE", league_id=league, match_date=md, home=home, away=away,
                     detail=f"Risultato incompleto HG={text(r,'HG')} AG={text(r,'AG')}.", source=source)
             if hg is not None and ag is not None and (hg < 0 or ag < 0 or hg > 20 or ag > 20):
-                add(items, "CRITICAL", "results", "RS_SCORE_RANGE", league_id=league, match_date=md, home=home, away=away,
-                    detail=f"Punteggio anomalo {hg}-{ag}.", source=source)
+                verified_key = ("RS_SCORE_RANGE", league, md, normalize_team_name(league, home), normalize_team_name(league, away), hg, ag)
+                if verified_key not in verified:
+                    add(items, "CRITICAL", "results", "RS_SCORE_RANGE", league_id=league, match_date=md, home=home, away=away,
+                        detail=f"Punteggio anomalo {hg}-{ag}.", source=source)
     return len(files), total
 
 
@@ -335,7 +353,8 @@ def main() -> None:
     results_files = results_rows = lab_rows = 0
     if mode == "full":
         known = registry_ids()
-        results_files, results_rows = check_results(anomalies, known)
+        verified = verified_anomaly_keys()
+        results_files, results_rows = check_results(anomalies, known, verified)
         lab_rows = check_laboratory(anomalies, known)
 
     stats = {
