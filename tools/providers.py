@@ -2,9 +2,33 @@
 from __future__ import annotations
 
 from datetime import date, timedelta
+import csv
+from pathlib import Path
 
 from tools.diretta_mobile import fetch_feed, parse_feed, convert
 from tools.prepare_input import Match, canonical_team, load_registry, norm, unique
+
+ROOT = Path(__file__).resolve().parents[1]
+QUARANTINE_FILE = ROOT / "data" / "debug" / "quarantine_results.csv"
+
+
+def quarantine_rows(rows, target: date, reason: str) -> int:
+    """Conserva gli eventi esclusi dal mapping senza sporcare lo storico."""
+    rows = list(rows)
+    if not rows:
+        return 0
+    QUARANTINE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    exists = QUARANTINE_FILE.exists()
+    with QUARANTINE_FILE.open("a", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.writer(handle, delimiter=";", lineterminator="\n")
+        if not exists:
+            writer.writerow(["MatchDate","Country","League","Home","Away","Score","Status","Reason"])
+        for r in rows:
+            writer.writerow([
+                r.match_date or target.isoformat(), r.country, r.league,
+                r.home, r.away, r.score, r.status, reason,
+            ])
+    return len(rows)
 
 
 def target_offset(target: date) -> int:
@@ -81,6 +105,16 @@ def diretta_matches(target: date, mode: str, registry):
                     f"| status={r.status or '<vuoto>'}"
                 )
         matches = unique(matches)
+        quarantined = quarantine_rows(
+            [r for r in raw if not resolve_match(registry, r.country, r.league, r.home, r.away)],
+            target,
+            "UNMAPPED_OR_UNSAFE_LEAGUE",
+        )
+        if quarantined:
+            print(
+                f"[WARN][QUARANTINE] {quarantined} partite escluse dallo storico; "
+                f"dettagli in {QUARANTINE_FILE.relative_to(ROOT)}"
+            )
         if skipped_states:
             print("[DIRETTA DEBUG] Stati/codici delle partite scartate: " +
                   ", ".join(f"{k}={v}" for k, v in sorted(skipped_states.items())))
