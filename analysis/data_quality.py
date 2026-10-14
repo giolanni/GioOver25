@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import csv
 import math
+import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass, asdict
 from datetime import date
