@@ -30,6 +30,21 @@ REPORT_DIR = ROOT / "analysis" / "data_quality_report"
 
 SEVERITY_ORDER = {"CRITICAL": 0, "WARNING": 1, "INFO": 2}
 
+# Suffissi usati dai provider per distinguere squadre femminili quando il nome
+# base coincide con quello maschile (es. "Roma D", "Juventus F").
+FEMALE_TEAM_SUFFIX_RE = re.compile(r"\s+(?:D|F)$", re.IGNORECASE)
+
+
+def is_male_competition(league_id: str) -> bool:
+    """Euristica prudente: esclude le competizioni esplicitamente femminili."""
+    lid = league_id.casefold()
+    female_markers = ("women", "femmin", "kvenna", "dam", "damer", "frauen", "femen")
+    return not any(marker in lid for marker in female_markers)
+
+
+def female_suffix_team(team: str) -> bool:
+    return bool(FEMALE_TEAM_SUFFIX_RE.search(team.strip()))
+
 
 @dataclass
 class Anomaly:
@@ -94,6 +109,15 @@ def check_standings(items: list[Anomaly]) -> tuple[int, int]:
             continue
 
         teams = [text(r, "Team") for r in rows]
+
+        if is_male_competition(league):
+            suspicious = [team for team in teams if female_suffix_team(team)]
+            if suspicious:
+                add(items, "WARNING", "standings", "ST_FEMALE_TEAM_IN_MALE_LEAGUE", league_id=league,
+                    detail=f"Possibile contaminazione femminile: {', '.join(suspicious[:20])}.",
+                    suggestion="Verificare mapping provider/league_registry e risultati sorgente della competizione.",
+                    source=str(path.relative_to(ROOT)))
+
         normalized = [t.casefold().strip() for t in teams if t]
         duplicates = [t for t, n in Counter(normalized).items() if n > 1]
         if duplicates:
@@ -172,6 +196,12 @@ def check_results(items: list[Anomaly], known_leagues: set[str]) -> tuple[int, i
             league = text(r, "LeagueId") or league_from_file
             md = text(r, "MatchDate"); home = text(r, "Home"); away = text(r, "Away")
             source = f"{path.relative_to(ROOT)}:{idx}"
+            if is_male_competition(league) and (female_suffix_team(home) or female_suffix_team(away)):
+                add(items, "WARNING", "results", "RS_FEMALE_TEAM_IN_MALE_LEAGUE",
+                    league_id=league, match_date=md, home=home, away=away,
+                    detail="Squadra con suffisso D/F presente in una competizione maschile.",
+                    suggestion="Verificare mapping provider/league_registry: possibile risultato femminile assegnato alla lega maschile.",
+                    source=source)
             if home and away and home.casefold() == away.casefold():
                 add(items, "CRITICAL", "results", "RS_SELF_MATCH", league_id=league, match_date=md, home=home, away=away,
                     detail="Home e Away coincidono.", source=source)
