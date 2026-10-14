@@ -22,7 +22,6 @@ Estonia_Esiliiga;33;2026-09-13;2026-09-13;Maardu;Tallinna Kalev;MEDIA;POSTPONED;
 Germany_Oberliga_Westfalen;6;2026-09-13;2026-09-13;ASC 09 Dortmund;Schermbeck 2020;MEDIA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
 Spain_LaLiga;9;2026-09-16;2026-09-16;Levante;Ath. Bilbao;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Wales_CymruSouth;8;2026-09-16;2026-09-16;Newport City;Trethomas Bluebirds;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
-Germany_Oberliga_Hamburg;8;2026-09-18;2026-09-17;Norderstedt 2;ETSV Hamburg;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Estonia_Esiliiga;35;2026-09-19;2026-09-19;Levadia U21;Maardu;ALTA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Belarus_PershayaLiga;29;2026-09-27;2026-09-27;Din. Minsk 2;Molodechno;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Bulgaria_VtoraLiga;11;2026-09-27;2026-09-27;Ludogorets 2;Etar;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
@@ -43,3 +42,6 @@ USA_USLChampionship;40;2026-10-10;2026-10-10;Sporting Jax;Birmingham Legion;BASS
 Estonia_Esiliiga;36;2026-10-11;2026-10-11;Maardu;Nomme Kalju U21;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Germany_Oberliga_SchleswigHolstein;14;2026-10-11;2026-10-11;VfR Neumunster;Oldenburger;MEDIA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 SaudiArabia_ProfessionalLeague;10;2026-10-11;2026-10-11;Abha;Al Faysaly;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+England_NPLPremierDivision;14;2026-10-13;2026-10-13;Bury;Leek;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+England_NPLPremierDivision;14;2026-10-13;2026-10-13;Guiseley;Cleethorpes;BASSA;SCHEDULED;NO;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+England_SouthernLeaguePremierSouth;16;2026-10-13;2026-10-13;Gloucester;Taunton;MEDIA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
