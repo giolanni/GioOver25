@@ -37,6 +37,7 @@ Engine GOAL/BTTS:
 """
 
 from . import (
+    v1,
     v13,
     v20,
     v20plus,
@@ -68,6 +69,7 @@ from . import (
 )
 
 OFFICIAL_ENGINES = {
+    "v1": v1,
     "v13": v13,
     "v20": v20,
     "v21": v21,
