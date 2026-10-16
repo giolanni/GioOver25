@@ -1,5 +1,4 @@
 ﻿LeagueId;Round;MatchDate;Home;Away;Status;Notes
-Kazakhstan_PremierLeague;?;2026-07-19;Ertis Pavlodar;FC Astana;POSTICIPATA;Postponed
 Finland_Kolmonen_Southern_Group3;?;2026-07-04;Sibbo-Vargarna;JäPS/47;RINVIATA;Postponed
 Finland_Kolmonen_Western_Group3;?;2026-06-28;Sporting Kristina;Saaripotku;RINVIATA;Postponed
 Finland_Kolmonen_Southern_Group3;9;2026-06-12;RiPS;MK-United;POSTICIPATA;Postponed
@@ -8,12 +7,7 @@ Kyrgyzstan_PremierLiga;16;2026-07-07;Asia Talas;Abdysh-Ata;POSTICIPATA;
 Bhutan_PremierLeague;9;2026-07-08;Paro;Tensung;POSTICIPATA;
 Kyrgyzstan_PremierLiga;16;2026-07-08;Alga;Dordoi Bishkek;POSTICIPATA;
 Serbia_SuperLiga;?;2026-07-26;Radnicki 1923;Zeleznicar Pancevo;POSTICIPATA;
-Kazakhstan_PremierLeague;27;2026-07-12;Atyrau;Yelimay Semey;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;?;2026-07-31;MK-United;JäPS/47;POSTICIPATA;
-Belarus_VysshayaLiga;?;2026-08-01;BATE;Neman;POSTICIPATA;
-Belarus_VysshayaLiga;?;2026-08-01;Din. Minsk;Slavia Mozyr;POSTICIPATA;
-Belarus_VysshayaLiga;?;2026-08-01;ML Vitebsk;Zhodino;POSTICIPATA;
-Hungary_NBII;?;2026-08-01;Mezokovesd;Ajka;POSTICIPATA;
 Hungary_NBII;?;2026-08-01;Szeged;BVSC-Zuglo;POSTICIPATA;
 Peru_Liga2;?;2026-08-02;Estudiantil CNI;Binacional;POSTICIPATA;Fonte: SRF
 USA_USLLeagueOne;?;2026-08-02;Sarasota Paradise;FC Naples;POSTICIPATA;
@@ -35,7 +29,6 @@ Iceland_1DeildWomen;;2026-07-04;UMF Selfoss;Fjardab/Hottur/Leiknir;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-04;Tindastoll;Haukar;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-29;Tindastoll;ÍA Akranes;POSTICIPATA;
 CzechRepublic_3CFL_GroupA;3;2026-08-22;Benesov;Sparta Praga B;POSTICIPATA;
-CzechRepublic_3CFL_GroupB;3;2026-08-22;Banik Most-Sous;Benatky;POSTICIPATA;
 CzechRepublic_3CFL_GroupB;3;2026-08-22;Varnsdorf;Horni Redice;POSTICIPATA;
 Wales_CymruNorth;3;2026-08-22;Caersws;Newtown;POSTICIPATA;
 Kazakhstan_PremierLeague;;2026-08-23;Aktobe;Ordabasy;POSTICIPATA;
@@ -48,15 +41,12 @@ Finland_Kolmonen_Western_Group3;;2026-08-27;VPV;FC Sääripotku;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;;2026-08-29;Atlantis 2;MK-United;POSTICIPATA;
 Wales_CymruSouth;;2026-08-28;Treowen;Cardiff Draconians;POSTICIPATA;
 NorthernIreland_NIFLPremiership;;2026-08-29;Ballymena;Larne;POSTICIPATA;
-CzechRepublic_1Liga;;2026-08-29;Bohemians;Mlada Boleslav;POSTICIPATA;
-Norway_3rdDivision_Group1;;2026-08-29;Asker;Frigg;POSTICIPATA;
 Norway_3rdDivision_Group5;18;2026-08-21;Skjetten;Skjervoey;POSTICIPATA;
 Wales_CymruSouth;;2026-08-31;Cardiff Draconians;Pontardawe;POSTICIPATA;
 Wales_CymruSouth;;2026-08-31;Newport City;Pure Swansea;POSTICIPATA;
 Wales_CymruSouth;;2026-09-05;Pontardawe;Caerau Ely;POSTICIPATA;
 Wales_CymruSouth;;2026-09-05;Ynyshir Albions;Pontypridd;POSTICIPATA;
 Germany_Oberliga_Hamburg;;2026-09-05;Altona;ETSV Hamburg;POSTICIPATA;
-Poland_Division1;7;2026-09-06;Pogon Siedlce;Puszcza;POSTICIPATA;
 USA_MLS;26;2026-09-06;Cincinnati;DC United;POSTICIPATA;
 Wales_CymruSouth;;2026-09-04;Pure Swansea;Carmarthen;POSTICIPATA;
 Finland_Kolmonen_Southern_Group3;;2026-09-04;MK-United;Futura;POSTICIPATA;
@@ -67,7 +57,6 @@ Ukraine_PremierLeague;;2026-09-12;Kryvbas;FC Kharkiv;POSTICIPATA;
 Finland_Kolmonen_Western_Group3;;2026-09-12;Larsmo Bollklubb;FC Sääripotku;POSTICIPATA;Sorgente: annullata
 Wales_CymruSouth;7;2026-09-11;Newport City;Trethomas Bluebirds;POSTICIPATA;
 Estonia_Esiliiga;;2026-09-13;Maardu;Tallinna Kalev;POSTICIPATA;
-Germany_Oberliga_Westfalen;;2026-09-13;ASC 09 Dortmund;Schermbeck 2020;POSTICIPATA;
 Spain_LaLiga;9;2026-09-16;Levante;Ath. Bilbao;POSTICIPATA;
 Estonia_Esiliiga;;2026-09-19;Levadia U21;Maardu;POSTICIPATA;
 Bulgaria_ParvaLiga;;2026-09-20;Levski;Ludogorets;POSTICIPATA;
@@ -113,9 +102,10 @@ Montenegro_PrvaCrnogorskaLiga;;2026-10-08;Bokelj;Petrovac;POSTICIPATA;
 Armenia_FirstLeague;;2026-10-09;BKMA 2;Ararat 2;POSTICIPATA;
 Belarus_PershayaLiga;;2026-10-10;Din. Minsk 2;BATE 2;POSTICIPATA;
 Russia_FNL;;2026-10-10;Dynamo SPB;Irkutsk;POSTICIPATA;
-USA_USLChampionship;;2026-10-10;Sporting Jax;Birmingham Legion;POSTICIPATA;
 Estonia_Esiliiga;;2026-10-11;Maardu;Nomme Kalju U21;POSTICIPATA;
 Germany_Oberliga_SchleswigHolstein;;2026-10-11;VfR Neumunster;Oldenburger;POSTICIPATA;
 SaudiArabia_ProfessionalLeague;8;2026-10-11;Abha;Al Faysaly;POSTICIPATA;Rinviata al 2026-10-27
 England_NPLPremierDivision;;2026-10-13;Bury;Leek;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-10-13;Gloucester;Taunton;POSTICIPATA;
+Estonia_Esiliiga;;2026-10-15;Viimsi JK;Maardu;POSTICIPATA;
+England_NPLPremierDivision;14;2026-10-13;Guiseley;Cleethorpes;POSTICIPATA;

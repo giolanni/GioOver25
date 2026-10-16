@@ -1,4 +1,7 @@
 ﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
-1;vg1.2;England_Championship;1;0;2026-10-13;2026-10-13;1;100.0
-2;vg1.2;England_SouthernLeaguePremierCentral;1;0;2026-10-13;2026-10-13;1;100.0
-3;vg1.2;England_IsthmianLeaguePremierDivision;0;1;2026-10-13;2026-10-13;1;0.0
+1;vg1.2;England_SouthernLeaguePremierCentral;1;0;2026-10-13;2026-10-13;1;100.0
+2;vg1.2;Estonia_EsiliigaB;1;0;2026-10-14;2026-10-14;1;100.0
+3;vg1.2;Germany_3Liga;1;0;2026-10-14;2026-10-14;1;100.0
+4;vg1.2;Norway_OBOSLigaen;1;0;2026-10-14;2026-10-14;1;100.0
+5;vg1.2;England_Championship;1;1;2026-10-13;2026-10-14;2;50.0
+6;vg1.2;England_IsthmianLeaguePremierDivision;0;1;2026-10-13;2026-10-13;1;0.0
