@@ -5,12 +5,12 @@ Report diagnostico READ-ONLY. Le anomalie euristiche non implicano automaticamen
 ## Riepilogo
 
 - Modalità: **full**
-- Classifiche analizzate: **218** (3581 squadre/righe)
-- File risultati analizzati: **218** (21710 partite)
-- Righe Laboratory analizzate: **14478**
+- Classifiche analizzate: **218** (3582 squadre/righe)
+- File risultati analizzati: **218** (21803 partite)
+- Righe Laboratory analizzate: **14570**
 - CRITICAL: **0**
-- WARNING: **2122**
-- INFO: **43**
+- WARNING: **2123**
+- INFO: **37**
 
 ## Priorità per analisi IA
 
@@ -20,7 +20,7 @@ Analizzare prima i CRITICAL. Prima di bonificare verificare sempre il formato re
 
 Nessuna anomalia.
 
-## WARNING (2122)
+## WARNING (2123)
 
 ### WARNING-001 · LAB_DUP_MATCH · Albania_AbissnetSuperiore | 2026-09-11 | Skenderbeu - Tirana
 - Area: `laboratory`
@@ -10454,525 +10454,495 @@ Nessuna anomalia.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Austria_Steiermark.csv`
 
-### WARNING-2079 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Belarus_VysshayaLiga
+### WARNING-2079 · ST_PLAYED_SPREAD · Azerbaijan_FirstLeague
+- Area: `standings`
+- Dettaglio: Played min=1, max=5, delta=4; min: Cebrayil; max: Sahdag Qusar, Sabail, Shimal, Khankendi, Zaqatala, Mingachevir.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Azerbaijan_FirstLeague.csv`
+
+### WARNING-2080 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Belarus_VysshayaLiga
 - Area: `standings`
 - Dettaglio: Possibile contaminazione femminile: Belshina D, Dyussh-Polesgu D.
 - Verifica suggerita: Verificare mapping provider/league_registry e risultati sorgente della competizione.
 - Sorgente: `data\storico\classifiche_calcolate\Belarus_VysshayaLiga.csv`
 
-### WARNING-2080 · ST_PLAYED_SPREAD · Belarus_VysshayaLiga
+### WARNING-2081 · ST_PLAYED_SPREAD · Belarus_VysshayaLiga
 - Area: `standings`
-- Dettaglio: Played min=1, max=24, delta=23; min: Belshina D, FC Baranovichi, Dyussh-Polesgu D; max: Dynamo Brest, Gomel, Vitebsk, FC Minsk, Arsenal Dzerzhinsk, Naftan, Dnepr Mogilev.
+- Dettaglio: Played min=1, max=24, delta=23; min: Belshina D, FC Baranovichi, Dyussh-Polesgu D; max: Dynamo Brest, Neman, Gomel, Vitebsk, FC Minsk, Zhodino, Slavia Mozyr, Arsenal Dzerzhinsk, BATE, Naftan, Dnepr Mogilev.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Belarus_VysshayaLiga.csv`
 
-### WARNING-2081 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Croatia_HNL
+### WARNING-2082 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Croatia_HNL
 - Area: `standings`
 - Dettaglio: Possibile contaminazione femminile: Osijek D, Medimurje Cakovec D, Agram Zagreb D, Din. Zagabria D, Hajduk Split D, Zadar D, Gorica D, ZNK Split D.
 - Verifica suggerita: Verificare mapping provider/league_registry e risultati sorgente della competizione.
 - Sorgente: `data\storico\classifiche_calcolate\Croatia_HNL.csv`
 
-### WARNING-2082 · ST_PLAYED_SPREAD · Croatia_HNL
+### WARNING-2083 · ST_PLAYED_SPREAD · Croatia_HNL
 - Area: `standings`
 - Dettaglio: Played min=1, max=6, delta=5; min: Osijek D, Medimurje Cakovec D, Agram Zagreb D, Din. Zagabria D, Hajduk Split D, Zadar D, Gorica D, ZNK Split D; max: Hajduk Split, Rijeka, Istra 1961, Osijek.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Croatia_HNL.csv`
 
-### WARNING-2083 · ST_PLAYED_SPREAD · England_IsthmianLeaguePremierDivision
+### WARNING-2084 · ST_PLAYED_SPREAD · England_IsthmianLeaguePremierDivision
 - Area: `standings`
 - Dettaglio: Played min=9, max=13, delta=4; min: St. Albans, Cray Wanderers; max: Carshalton.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_IsthmianLeaguePremierDivision.csv`
 
-### WARNING-2084 · ST_PLAYED_SPREAD · England_PremierLeague
+### WARNING-2085 · ST_PLAYED_SPREAD · England_PremierLeague
 - Area: `standings`
 - Dettaglio: Played min=1, max=6, delta=5; min: Bournemouth U21, Nottingham U21, Southampton U21, Newcastle U21, Chelsea U18, Exeter U21, Brentford U21, Huddersfield U21, Leeds U21, Leicester U21, Norwich U21, Brighton U21, Coventry U21, Millwall U21, Blackburn U21, Bolton U21, Arsenal U21, Burnley U21, Charlton U21, Ipswich U21, Preston U21, Stoke U21, Sunderland U21, West Brom U21, Fleetwood U21, Wolves U21, Hull U21, Wycombe U21, Reading U21, Bromley U21, Sheffield Utd U21, West Ham U21, Bristol City U21, Birmingham U21, Derby U21, Cardiff U21, Stockport U21, Luton U21, Reading U18, Peterborough U21, QPR U21, Plymouth U21; max: Manchester City, Brighton, Chelsea, Liverpool, Newcastle, Aston Villa, Bournemouth, Fulham.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_PremierLeague.csv`
 
-### WARNING-2085 · ST_PLAYED_SPREAD · England_ProfessionalDevelopmentLeague
+### WARNING-2086 · ST_PLAYED_SPREAD · England_ProfessionalDevelopmentLeague
 - Area: `standings`
 - Dettaglio: Played min=4, max=8, delta=4; min: Millwall U21; max: Wigan U21, QPR U21.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_ProfessionalDevelopmentLeague.csv`
 
-### WARNING-2086 · ST_PLAYED_SPREAD · Estonia_Esiliiga
+### WARNING-2087 · ST_PLAYED_SPREAD · Estonia_Esiliiga
 - Area: `standings`
-- Dettaglio: Played min=28, max=32, delta=4; min: Viimsi JK, Levadia U21, Maardu; max: Flora U21.
+- Dettaglio: Played min=28, max=32, delta=4; min: Viimsi JK, Maardu; max: Tartu Welco, Flora U21, FC Tallinn.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Estonia_Esiliiga.csv`
 
-### WARNING-2087 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Estonia_Meistriliiga
+### WARNING-2088 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Estonia_Meistriliiga
 - Area: `standings`
 - Dettaglio: Possibile contaminazione femminile: Flora D, Saku Sporting D, Elva D, Viimsi JK D, Paide Linnameeskond D, Harju JK Laagri D.
 - Verifica suggerita: Verificare mapping provider/league_registry e risultati sorgente della competizione.
 - Sorgente: `data\storico\classifiche_calcolate\Estonia_Meistriliiga.csv`
 
-### WARNING-2088 · ST_PLAYED_SPREAD · Estonia_Meistriliiga
+### WARNING-2089 · ST_PLAYED_SPREAD · Estonia_Meistriliiga
 - Area: `standings`
-- Dettaglio: Played min=1, max=31, delta=30; min: Flora D, Saku Sporting D, Elva D, Viimsi JK D, Paide Linnameeskond D, Harju JK Laagri D; max: Harju JK Laagri, Parnu JK Vaprus, Nomme Utd.
+- Dettaglio: Played min=1, max=31, delta=30; min: Flora D, Saku Sporting D, Elva D, Viimsi JK D, Paide Linnameeskond D, Harju JK Laagri D; max: Harju JK Laagri, Parnu JK Vaprus, Kuressaare, Nomme Utd, Narva.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Estonia_Meistriliiga.csv`
 
-### WARNING-2089 · ST_PLAYED_SPREAD · FaroeIslands_1Deild
+### WARNING-2090 · ST_PLAYED_SPREAD · FaroeIslands_1Deild
 - Area: `standings`
 - Dettaglio: Played min=20, max=25, delta=5; min: Fuglafjordur, Streymur 2; max: Vikingur 2, TB Tvoroyri.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\FaroeIslands_1Deild.csv`
 
-### WARNING-2090 · ST_PLAYED_SPREAD · Finland_Kolmonen_Eastern_Group3
+### WARNING-2091 · ST_PLAYED_SPREAD · Finland_Kolmonen_Eastern_Group3
 - Area: `standings`
 - Dettaglio: Played min=1, max=24, delta=23; min: Haminan Pallo-Kissat; max: KJP.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Kolmonen_Eastern_Group3.csv`
 
-### WARNING-2091 · ST_PLAYED_SPREAD · Finland_Kolmonen_North
+### WARNING-2092 · ST_PLAYED_SPREAD · Finland_Kolmonen_North
 - Area: `standings`
 - Dettaglio: Played min=1, max=18, delta=17; min: Keuruun Pallo; max: KajHa, Villan Pojat, Haukiputaan Pallo, Hercules-j, Santa Claus.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Kolmonen_North.csv`
 
-### WARNING-2092 · ST_PLAYED_SPREAD · Finland_Kolmonen_Southern_Group2
+### WARNING-2093 · ST_PLAYED_SPREAD · Finland_Kolmonen_Southern_Group2
 - Area: `standings`
 - Dettaglio: Played min=1, max=23, delta=22; min: MPS/Atletico Malmi; max: HPS/2.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Kolmonen_Southern_Group2.csv`
 
-### WARNING-2093 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Finland_Ykkonen
+### WARNING-2094 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Finland_Ykkonen
 - Area: `standings`
 - Dettaglio: Possibile contaminazione femminile: ONS Oulu D, TPS D, Lahti D, KTP D, HJK Akatemia D, Keski-Uusimaa D.
 - Verifica suggerita: Verificare mapping provider/league_registry e risultati sorgente della competizione.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Ykkonen.csv`
 
-### WARNING-2094 · ST_PLAYED_SPREAD · Finland_Ykkonen
+### WARNING-2095 · ST_PLAYED_SPREAD · Finland_Ykkonen
 - Area: `standings`
 - Dettaglio: Played min=1, max=24, delta=23; min: ONS Oulu D, TPS D, Lahti D, KTP D, HJK Akatemia D, Keski-Uusimaa D; max: Inter Turku 2, KuPS Akatemia.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Ykkonen.csv`
 
-### WARNING-2095 · ST_PLAYED_SPREAD · France_National
+### WARNING-2096 · ST_PLAYED_SPREAD · France_National
 - Area: `standings`
-- Dettaglio: Played min=1, max=9, delta=8; min: Furiani Agliani, Biesheim, GFA74, Le Poire Sur Vie, Lorient 2, Lusitanos, USLPV, Avranches, GOAL FC, Fleury 91, Granville, Saint-Malo, Angouleme, Creteil, Feignies-Aulnoye, Frejus, Les Herbiers, Montlouis, Racing CFF, Toulon, Saint Priest, Touraine, Andrezieux, Hauts Lyonnais, Hyeres, Nimes, Chateauroux, Dinan Lehon, Istres, Tarbes, Saumur, St. Colomban Locmine, Bayonne, Bourges 18, Chambly, Colmar, Epinal, Pontivy, Saint-Pryve, Troyes 2, Borgo, Dieppe, Stade Briochin, Chauray, Lyon - La Duchere, Limonest, Chateaubriant, Haguenau, Chantilly; max: La Roche, Rouen, Concarneau, Versailles, Amiens, Cannes, Caen, Le Puy-en-Velay, Thionville, Paris 13 Atl., Bastia, Quevilly Rouen, Orleans, Valenciennes, Aubagne, Bourg en Bresse, Villefranche.
+- Dettaglio: Played min=1, max=10, delta=9; min: Furiani Agliani, Biesheim, GFA74, Le Poire Sur Vie, Lorient 2, Lusitanos, USLPV, Avranches, GOAL FC, Fleury 91, Granville, Saint-Malo, Angouleme, Creteil, Feignies-Aulnoye, Frejus, Les Herbiers, Montlouis, Racing CFF, Toulon, Saint Priest, Touraine, Andrezieux, Hauts Lyonnais, Hyeres, Nimes, Chateauroux, Dinan Lehon, Istres, Tarbes, Saumur, St. Colomban Locmine, Bayonne, Bourges 18, Chambly, Colmar, Epinal, Pontivy, Saint-Pryve, Troyes 2, Borgo, Dieppe, Stade Briochin, Chauray, Lyon - La Duchere, Limonest, Chateaubriant, Haguenau, Chantilly; max: La Roche, Caen.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\France_National.csv`
 
-### WARNING-2096 · ST_PLAYED_SPREAD · Georgia_ErovnuliLiga
+### WARNING-2097 · ST_PLAYED_SPREAD · Georgia_ErovnuliLiga
 - Area: `standings`
 - Dettaglio: Played min=1, max=9, delta=8; min: Telavi, Samtredia, Shturmi, Gori, Odishi 1919, Merani Martvili, FC Gareji Sagarejo, Kolkheti 1913, Dusheti, Bolnisi; max: Dinamo Batumi, Rustavi, Din. Tbilisi, Iberia 1999, Samgurali, Gagra, Meshakhte Tkibuli, Spaeri.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Georgia_ErovnuliLiga.csv`
 
-### WARNING-2097 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Germany_Bundesliga
+### WARNING-2098 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Germany_Bundesliga
 - Area: `standings`
 - Dettaglio: Possibile contaminazione femminile: RB Lipsia D, Union Berlino D, Leverkusen D, Hoffenheim D, Wolfsburg D, Bayern D, Freiburg D, Brema D, 1.FC Nurnberg D, Hamburger SV D, Colonia D, Eintracht Frankfurt D, Stoccarda D, Mainz D.
 - Verifica suggerita: Verificare mapping provider/league_registry e risultati sorgente della competizione.
 - Sorgente: `data\storico\classifiche_calcolate\Germany_Bundesliga.csv`
 
-### WARNING-2098 · ST_PLAYED_SPREAD · Germany_Bundesliga
+### WARNING-2099 · ST_PLAYED_SPREAD · Germany_Bundesliga
 - Area: `standings`
 - Dettaglio: Played min=1, max=5, delta=4; min: RB Lipsia D, Union Berlino D, Leverkusen D, Hoffenheim D, Wolfsburg D, Bayern D, Freiburg D, Brema D, 1.FC Nurnberg D, Hamburger SV D, Colonia D, Eintracht Frankfurt D, Stoccarda D, Mainz D; max: Friburgo, Dortmund, Bayern, Leverkusen, RB Lipsia, Augusta, Brema, Magonza, Elversberg, Colonia, Stoccarda, Amburgo, Schalke, Francoforte, Paderborn, Union Berlino, Hoffenheim, Monchengladbach.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Germany_Bundesliga.csv`
 
-### WARNING-2099 · ST_PLAYED_SPREAD · Iceland_Division_1
+### WARNING-2100 · ST_PLAYED_SPREAD · Iceland_Division_1
 - Area: `standings`
 - Dettaglio: Played min=1, max=27, delta=26; min: Selfoss, Kari, Magni, HK Kopavogur, Throttur Vogar, KFA, KFG Gardabaer, Dalvik/Reynir, Olafsvik, Kormakur/Hvot, Fjolnir; max: Fylkir.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Iceland_Division_1.csv`
 
-### WARNING-2100 · ST_PLAYED_SPREAD · Lebanon_PremierLeague
+### WARNING-2101 · ST_PLAYED_SPREAD · Lebanon_PremierLeague
 - Area: `standings`
 - Dettaglio: Played min=11, max=23, delta=12; min: Bourj FC; max: Al Riyadi Abbasiyah, Tadamon, Racing.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Lebanon_PremierLeague.csv`
 
-### WARNING-2101 · ST_PLAYED_SPREAD · Lithuania_Toplyga
+### WARNING-2102 · ST_PLAYED_SPREAD · Lithuania_Toplyga
 - Area: `standings`
 - Dettaglio: Played min=17, max=30, delta=13; min: Riteriai; max: Suduva, Transinvest.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Lithuania_Toplyga.csv`
 
-### WARNING-2102 · ST_PLAYED_SPREAD · NorthernIreland_NIFLPremiership
+### WARNING-2103 · ST_PLAYED_SPREAD · NorthernIreland_NIFLPremiership
 - Area: `standings`
 - Dettaglio: Played min=7, max=11, delta=4; min: Larne; max: Coleraine, Glentoran, C. Rangers, Crusaders, Cliftonville, Portadown.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\NorthernIreland_NIFLPremiership.csv`
 
-### WARNING-2103 · ST_PLAYED_SPREAD · Peru_Liga2
+### WARNING-2104 · ST_PLAYED_SPREAD · Peru_Liga2
 - Area: `standings`
 - Dettaglio: Played min=5, max=9, delta=4; min: Binacional; max: Sport Huancayo 2, Llacuabamba, Tacna Heroica, Comerciantes.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Peru_Liga2.csv`
 
-### WARNING-2104 · ST_PLAYED_SPREAD · Peru_Liga2_GroupA
+### WARNING-2105 · ST_PLAYED_SPREAD · Peru_Liga2_GroupA
 - Area: `standings`
 - Dettaglio: Played min=5, max=11, delta=6; min: San Marcos; max: Llacuabamba.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Peru_Liga2_GroupA.csv`
 
-### WARNING-2105 · ST_PLAYED_SPREAD · Peru_Liga2_GroupB
+### WARNING-2106 · ST_PLAYED_SPREAD · Peru_Liga2_GroupB
 - Area: `standings`
 - Dettaglio: Played min=1, max=11, delta=10; min: AD Cantolao; max: Minas, Sport Huancayo 2, Binacional.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Peru_Liga2_GroupB.csv`
 
-### WARNING-2106 · ST_PLAYED_SPREAD · Portugal_Liga3_SerieA
+### WARNING-2107 · ST_PLAYED_SPREAD · Portugal_Liga3_SerieA
 - Area: `standings`
 - Dettaglio: Played min=1, max=5, delta=4; min: Caldas; max: Paredes, AD Marco 09, Varzim, Fafe, SC Vianense, Leca, Guimaraes B, Trofense, S. Joao Ver, Ferreira.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Portugal_Liga3_SerieA.csv`
 
-### WARNING-2107 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Romania_Superliga
+### WARNING-2108 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Romania_Superliga
 - Area: `standings`
 - Dettaglio: Possibile contaminazione femminile: Rapid Bucarest D, Csikszereda M. Ciuc D, Farul Constanta D, Gloria Bistrita D, Ol. Cluj D, Politehnica Timisoara D, Vasas Odorhei D, Univ. Craiova D.
 - Verifica suggerita: Verificare mapping provider/league_registry e risultati sorgente della competizione.
 - Sorgente: `data\storico\classifiche_calcolate\Romania_Superliga.csv`
 
-### WARNING-2108 · ST_PLAYED_SPREAD · Romania_Superliga
+### WARNING-2109 · ST_PLAYED_SPREAD · Romania_Superliga
 - Area: `standings`
 - Dettaglio: Played min=1, max=11, delta=10; min: Rapid Bucarest D, Csikszereda M. Ciuc D, Farul Constanta D, Gloria Bistrita D, Ol. Cluj D, Politehnica Timisoara D, Vasas Odorhei D, Univ. Craiova D; max: Din. Bucuresti, Rapid Bucarest, Petrolul, U. Cluj, Farul Constanta, Corvinul, FCSB, Botosani, Sepsi Sf. Gheorghe, FC Arges, FC Voluntari, Csikszereda M. Ciuc.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Romania_Superliga.csv`
 
-### WARNING-2109 · ST_PLAYED_SPREAD · Russia_FNL
+### WARNING-2110 · ST_PLAYED_SPREAD · Russia_FNL
 - Area: `standings`
-- Dettaglio: Played min=1, max=14, delta=13; min: Murom, Dynamo SPB, Yenisey 2, Vladimir, Rostov 2, Sp. Mosca 2, Omsk, Cherepovets, Dynamo Stavropol, Izberbash; max: Veles Moscow, Ulyanovsk.
+- Dettaglio: Played min=1, max=14, delta=13; min: Murom, Dynamo SPB, Yenisey 2, Rostov 2, Din. Mosca 2, Omsk, Cherepovets, Izberbash; max: Veles Moscow, Ulyanovsk.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Russia_FNL.csv`
 
-### WARNING-2110 · ST_PLAYED_SPREAD · Spain_LaLiga
+### WARNING-2111 · ST_PLAYED_SPREAD · Spain_LaLiga
 - Area: `standings`
 - Dettaglio: Played min=3, max=8, delta=5; min: Rayo Vallecano; max: Barcellona, Atl. Madrid, Alaves, A Coruna, Villarreal, Espanyol, Getafe, Racing Santander, Osasuna, Elche, Malaga.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Spain_LaLiga.csv`
 
-### WARNING-2111 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Sweden_Allsvenskan
+### WARNING-2112 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Sweden_Allsvenskan
 - Area: `standings`
 - Dettaglio: Possibile contaminazione femminile: Hacken D, Hammarby D, Kristianstad D, Vittsjo D, Djurgarden D, Malmo FF D, Norrkoping D, Pitea D, AIK D, Rosengard D, Eskilstuna Utd D, IF Brommapojkarna D, Vaxjo DFF D, Uppsala D.
 - Verifica suggerita: Verificare mapping provider/league_registry e risultati sorgente della competizione.
 - Sorgente: `data\storico\classifiche_calcolate\Sweden_Allsvenskan.csv`
 
-### WARNING-2112 · ST_PLAYED_SPREAD · Sweden_Allsvenskan
+### WARNING-2113 · ST_PLAYED_SPREAD · Sweden_Allsvenskan
 - Area: `standings`
 - Dettaglio: Played min=1, max=23, delta=22; min: Hacken D, Hammarby D, Kristianstad D, Vittsjo D, Djurgarden D, Malmo FF D, Norrkoping D, Pitea D, AIK D, Rosengard D, Eskilstuna Utd D, IF Brommapojkarna D, Vaxjo DFF D, Uppsala D; max: Sirius, Djurgarden, Hammarby, Elfsborg, Hacken, Malmo FF, Västerås SK, Göteborg, AIK Stockholm, GAIS, Brommapojkarna, Mjallby, Degerfors, Kalmar, Orgryte, Halmstad.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Sweden_Allsvenskan.csv`
 
-### WARNING-2113 · ST_PLAYED_SPREAD · Sweden_Division1_Sodra
+### WARNING-2114 · ST_PLAYED_SPREAD · Sweden_Division1_Sodra
 - Area: `standings`
 - Dettaglio: Played min=1, max=27, delta=26; min: Tvaakers IF; max: Hassleholms IF.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Sweden_Division1_Sodra.csv`
 
-### WARNING-2114 · ST_PLAYED_SPREAD · Sweden_Division2_Norrland
+### WARNING-2115 · ST_PLAYED_SPREAD · Sweden_Division2_Norrland
 - Area: `standings`
 - Dettaglio: Played min=1, max=26, delta=25; min: Team TG; max: IFK Lulea, Skelleftea, IFK Ostersund, Boden, Gottne, Lucksta.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Sweden_Division2_Norrland.csv`
 
-### WARNING-2115 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Switzerland_SuperLeague
+### WARNING-2116 · ST_FEMALE_TEAM_IN_MALE_LEAGUE · Switzerland_SuperLeague
 - Area: `standings`
 - Dettaglio: Possibile contaminazione femminile: Rapperswil-Jona D, Grasshopper D, Servette D, Yverdon D, Young Boys D, Basilea D, Luzern D, Aarau D, Zurigo D, St. Gallen D.
 - Verifica suggerita: Verificare mapping provider/league_registry e risultati sorgente della competizione.
 - Sorgente: `data\storico\classifiche_calcolate\Switzerland_SuperLeague.csv`
 
-### WARNING-2116 · ST_PLAYED_SPREAD · Switzerland_SuperLeague
+### WARNING-2117 · ST_PLAYED_SPREAD · Switzerland_SuperLeague
 - Area: `standings`
 - Dettaglio: Played min=1, max=11, delta=10; min: Rapperswil-Jona D, Grasshopper D, Servette D, Yverdon D, Young Boys D, Basilea D, Luzern D, Aarau D, Zurigo D, St. Gallen D; max: Servette, Thun.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Switzerland_SuperLeague.csv`
 
-### WARNING-2117 · ST_PLAYED_SPREAD · USA_MLS
+### WARNING-2118 · ST_PLAYED_SPREAD · USA_MLS
 - Area: `standings`
-- Dettaglio: Played min=1, max=29, delta=28; min: New York Red Bulls 2, San Jose Earthquakes 2, Tacoma Defiance, Huntsville; max: Inter Miami, Charlotte, New York City, Toronto FC, CF Montreal.
+- Dettaglio: Played min=1, max=30, delta=29; min: New York Red Bulls 2, San Jose Earthquakes 2, Tacoma Defiance, Huntsville; max: Inter Miami, Charlotte, New York City, Toronto FC, CF Montreal.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\USA_MLS.csv`
 
-### WARNING-2118 · ST_PLAYED_SPREAD · USA_MLSNextPro_EasternConference_NortheastDivision
+### WARNING-2119 · ST_PLAYED_SPREAD · USA_MLSNextPro_EasternConference_NortheastDivision
 - Area: `standings`
 - Dettaglio: Played min=1, max=23, delta=22; min: Portland Timbers 2, Vancouver 2; max: Columbus Crew 2, New England Revolution 2, Philadelphia 2, Toronto FC 2, Cincinnati 2.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\USA_MLSNextPro_EasternConference_NortheastDivision.csv`
 
-### WARNING-2119 · ST_PLAYED_SPREAD · USA_MLSNextPro_EasternConference_SoutheastDivision
+### WARNING-2120 · ST_PLAYED_SPREAD · USA_MLSNextPro_EasternConference_SoutheastDivision
 - Area: `standings`
 - Dettaglio: Played min=3, max=24, delta=21; min: Connecticut FC, New York City 2, Toronto FC 2, Philadelphia 2, Cincinnati 2, New England Revolution 2, Columbus Crew 2; max: Crown Legacy.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\USA_MLSNextPro_EasternConference_SoutheastDivision.csv`
 
-### WARNING-2120 · ST_PLAYED_SPREAD · USA_MLSNextPro_WesternConference_CentralDivision
+### WARNING-2121 · ST_PLAYED_SPREAD · USA_MLSNextPro_WesternConference_CentralDivision
 - Area: `standings`
 - Dettaglio: Played min=1, max=22, delta=21; min: Chicago Fire 2, Inter Miami 2; max: St. Louis City 2.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\USA_MLSNextPro_WesternConference_CentralDivision.csv`
 
-### WARNING-2121 · ST_PLAYED_SPREAD · USA_MLSNextPro_WesternConference_PacificDivision
+### WARNING-2122 · ST_PLAYED_SPREAD · USA_MLSNextPro_WesternConference_PacificDivision
 - Area: `standings`
 - Dettaglio: Played min=4, max=23, delta=19; min: St. Louis City 2; max: Los Angeles FC 2.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\USA_MLSNextPro_WesternConference_PacificDivision.csv`
 
-### WARNING-2122 · ST_PLAYED_SPREAD · Ukraine_PremierLeague
+### WARNING-2123 · ST_PLAYED_SPREAD · Ukraine_PremierLeague
 - Area: `standings`
 - Dettaglio: Played min=1, max=8, delta=7; min: Kolos Kovalivka U21, Obolon U21, LNZ Cherkasy U21, Bukovyna U21, Karpaty Lviv U21, Ch. Odesa U21, FC Kharkiv U21, Livyi Bereg U21, Polissya Zhytomyr U21, Kudrivka U21, Epitsentr U21, Kryvbas U21; max: Shakhtar, Polissya Zhytomyr, Karpaty Lviv, Zorya, LNZ Cherkasy, Veres-Rivne, Bukovyna, Epitsentr, Obolon, Kudrivka.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Ukraine_PremierLeague.csv`
 
-## INFO (43)
+## INFO (37)
 
 ### INFO-001 · LAB_UNMATCHED
 - Area: `laboratory`
-- Dettaglio: 06_unmatched_matches.csv contiene 1964 righe da esaminare.
+- Dettaglio: 06_unmatched_matches.csv contiene 1967 righe da esaminare.
 - Verifica suggerita: Analizzare soprattutto LeagueId/team ricorrenti: possono indicare alias o ranking non agganciati.
 - Sorgente: `analysis\laboratory\data\06_unmatched_matches.csv`
 
-### INFO-002 · ST_PLAYED_SPREAD · Armenia_FirstLeague
-- Area: `standings`
-- Dettaglio: Played min=6, max=9, delta=3; min: Ararat 2; max: Andranik, Mika, Pyunik 2, Noah 2, Ararat-Armenia 2.
-- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
-- Sorgente: `data\storico\classifiche_calcolate\Armenia_FirstLeague.csv`
-
-### INFO-003 · ST_ODD_TEAMS · Austria_Regionalliga_North
+### INFO-002 · ST_ODD_TEAMS · Austria_Regionalliga_North
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 15.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Austria_Regionalliga_North.csv`
 
-### INFO-004 · ST_ODD_TEAMS · Austria_Steiermark
+### INFO-003 · ST_ODD_TEAMS · Austria_Steiermark
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 17.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Austria_Steiermark.csv`
 
-### INFO-005 · ST_ODD_TEAMS · Azerbaijan_FirstLeague
+### INFO-004 · ST_ODD_TEAMS · Azerbaijan_FirstLeague
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 11.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Azerbaijan_FirstLeague.csv`
 
-### INFO-006 · ST_PLAYED_SPREAD · Azerbaijan_FirstLeague
-- Area: `standings`
-- Dettaglio: Played min=1, max=4, delta=3; min: Cebrayil; max: Sahdag Qusar, Sabail, Karvan, Moik Baku, Zaqatala, Khankendi, Shimal, Mingachevir, Baku Sporting.
-- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
-- Sorgente: `data\storico\classifiche_calcolate\Azerbaijan_FirstLeague.csv`
-
-### INFO-007 · ST_PLAYED_SPREAD · Belarus_PershayaLiga
+### INFO-005 · ST_PLAYED_SPREAD · Belarus_PershayaLiga
 - Area: `standings`
 - Dettaglio: Played min=25, max=28, delta=3; min: Din. Minsk 2; max: Slutsk, Niva Dolbizno, Lida, SKA-1938, FC Slonim, Soligorsk, BumProm Gomel, Smorgon, Ostrovets, Volna Pinsk, Minsk 2, Orsha, Gomel 2, Osipovichi.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Belarus_PershayaLiga.csv`
 
-### INFO-008 · ST_ODD_TEAMS · Belarus_VysshayaLiga
+### INFO-006 · ST_ODD_TEAMS · Belarus_VysshayaLiga
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 19.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Belarus_VysshayaLiga.csv`
 
-### INFO-009 · ST_ODD_TEAMS · Belgium_ChallengerProLeague
+### INFO-007 · ST_ODD_TEAMS · Belgium_ChallengerProLeague
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 15.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Belgium_ChallengerProLeague.csv`
 
-### INFO-010 · ST_PLAYED_SPREAD · Belgium_ChallengerProLeague
+### INFO-008 · ST_PLAYED_SPREAD · Belgium_ChallengerProLeague
 - Area: `standings`
 - Dettaglio: Played min=4, max=7, delta=3; min: Sporting Lokeren; max: RFC Liege.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Belgium_ChallengerProLeague.csv`
 
-### INFO-011 · ST_PLAYED_SPREAD · CzechRepublic_3CFL_GroupA
+### INFO-009 · ST_PLAYED_SPREAD · CzechRepublic_3CFL_GroupA
 - Area: `standings`
 - Dettaglio: Played min=7, max=10, delta=3; min: Sparta Praga B; max: Ceske Budejovice, Domazlice, Motorlet Prague, Loko Praha, Slavia Praga U20, Admira Prague, Pisek, Bohemians 1905 B, Pribram B, Dukla Praga B, Aritma Prague, Povltavska FA.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\CzechRepublic_3CFL_GroupA.csv`
 
-### INFO-012 · ST_ODD_TEAMS · CzechRepublic_4Liga_GroupA
+### INFO-010 · ST_ODD_TEAMS · CzechRepublic_4Liga_GroupA
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 15.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\CzechRepublic_4Liga_GroupA.csv`
 
-### INFO-013 · ST_PLAYED_SPREAD · England_Championship
-- Area: `standings`
-- Dettaglio: Played min=7, max=10, delta=3; min: Portsmouth; max: West Brom, Burnley.
-- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
-- Sorgente: `data\storico\classifiche_calcolate\England_Championship.csv`
-
-### INFO-014 · ST_PLAYED_SPREAD · England_LeagueOne
-- Area: `standings`
-- Dettaglio: Played min=6, max=9, delta=3; min: Oxford Utd; max: Plymouth, Bradford City, Burton.
-- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
-- Sorgente: `data\storico\classifiche_calcolate\England_LeagueOne.csv`
-
-### INFO-015 · ST_PLAYED_SPREAD · England_NPLPremierDivision
+### INFO-011 · ST_PLAYED_SPREAD · England_NPLPremierDivision
 - Area: `standings`
 - Dettaglio: Played min=11, max=14, delta=3; min: Bury; max: Redcar Athletic, Warrington Rylands, Workington, Lancaster, Alfreton, Hyde, Bamber Bridge, Stockton, Emley, Ilkeston.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_NPLPremierDivision.csv`
 
-### INFO-016 · ST_ODD_TEAMS · England_ProfessionalDevelopmentLeague
+### INFO-012 · ST_ODD_TEAMS · England_ProfessionalDevelopmentLeague
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 17.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\England_ProfessionalDevelopmentLeague.csv`
 
-### INFO-017 · ST_PLAYED_SPREAD · England_SouthernLeaguePremierCentral
+### INFO-013 · ST_PLAYED_SPREAD · England_SouthernLeaguePremierCentral
 - Area: `standings`
 - Dettaglio: Played min=9, max=12, delta=3; min: Halesowen; max: Peterborough Sports, Rushall.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_SouthernLeaguePremierCentral.csv`
 
-### INFO-018 · ST_PLAYED_SPREAD · Finland_Kolmonen_Eastern_Group1
+### INFO-014 · ST_PLAYED_SPREAD · Finland_Kolmonen_Eastern_Group1
 - Area: `standings`
 - Dettaglio: Played min=18, max=21, delta=3; min: KeuPa, JJK/2, Savon Pallo, Komeetat; max: SAPA.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Kolmonen_Eastern_Group1.csv`
 
-### INFO-019 · ST_ODD_TEAMS · Finland_Kolmonen_Eastern_Group3
+### INFO-015 · ST_ODD_TEAMS · Finland_Kolmonen_Eastern_Group3
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 13.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Kolmonen_Eastern_Group3.csv`
 
-### INFO-020 · ST_ODD_TEAMS · Finland_Kolmonen_North
+### INFO-016 · ST_ODD_TEAMS · Finland_Kolmonen_North
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 11.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Kolmonen_North.csv`
 
-### INFO-021 · ST_ODD_TEAMS · Finland_Kolmonen_Southern_Group2
+### INFO-017 · ST_ODD_TEAMS · Finland_Kolmonen_Southern_Group2
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 13.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Kolmonen_Southern_Group2.csv`
 
-### INFO-022 · ST_ODD_TEAMS · Finland_Kolmonen_Southern_Group3
+### INFO-018 · ST_ODD_TEAMS · Finland_Kolmonen_Southern_Group3
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 11.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Kolmonen_Southern_Group3.csv`
 
-### INFO-023 · ST_ODD_TEAMS · Finland_Kolmonen_Western_Group3
+### INFO-019 · ST_ODD_TEAMS · Finland_Kolmonen_Western_Group3
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 11.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Finland_Kolmonen_Western_Group3.csv`
 
-### INFO-024 · ST_ODD_TEAMS · France_National
+### INFO-020 · ST_ODD_TEAMS · France_National
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 67.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\France_National.csv`
 
-### INFO-025 · ST_ODD_TEAMS · Germany_Regionalliga_Bayern
+### INFO-021 · ST_ODD_TEAMS · Germany_Regionalliga_Bayern
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 19.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Germany_Regionalliga_Bayern.csv`
 
-### INFO-026 · ST_ODD_TEAMS · Iceland_Division_1
+### INFO-022 · ST_ODD_TEAMS · Iceland_Division_1
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 25.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Iceland_Division_1.csv`
 
-### INFO-027 · ST_PLAYED_SPREAD · Italy_SerieC_GironeB
+### INFO-023 · ST_PLAYED_SPREAD · Kyrgyzstan_PremierLiga
 - Area: `standings`
-- Dettaglio: Played min=6, max=9, delta=3; min: Atalanta U23; max: Spezia, Ravenna, Grosseto, Livorno, Torres, Reggiana, Perugia, Campobasso, Forlì, Pineto, Ostiamare, Pianese, Sambenedettese.
+- Dettaglio: Played min=23, max=26, delta=3; min: Dordoi Bishkek; max: Neftchi Kochkor-Ata, Aldier, Kyrgyzaltyn.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
-- Sorgente: `data\storico\classifiche_calcolate\Italy_SerieC_GironeB.csv`
+- Sorgente: `data\storico\classifiche_calcolate\Kyrgyzstan_PremierLiga.csv`
 
-### INFO-028 · ST_PLAYED_SPREAD · Latvia_Virsliga
+### INFO-024 · ST_PLAYED_SPREAD · Latvia_Virsliga
 - Area: `standings`
-- Dettaglio: Played min=27, max=30, delta=3; min: BFC Daugavpils, Super Nova, Grobina; max: Riga FC, Auda, FK Liepaja, Jelgava.
+- Dettaglio: Played min=27, max=30, delta=3; min: BFC Daugavpils, Grobina; max: Riga FC, Auda, FK Liepaja, Jelgava.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Latvia_Virsliga.csv`
 
-### INFO-029 · ST_ODD_TEAMS · Moldova_Liga1_GroupB
+### INFO-025 · ST_ODD_TEAMS · Moldova_Liga1_GroupB
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 5.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Moldova_Liga1_GroupB.csv`
 
-### INFO-030 · ST_ODD_TEAMS · Peru_Liga2
+### INFO-026 · ST_ODD_TEAMS · Peru_Liga2
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 17.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Peru_Liga2.csv`
 
-### INFO-031 · ST_ODD_TEAMS · Peru_Liga2_GroupA
+### INFO-027 · ST_ODD_TEAMS · Peru_Liga2_GroupA
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 9.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Peru_Liga2_GroupA.csv`
 
-### INFO-032 · ST_PLAYED_SPREAD · Portugal_Liga3_SerieB
+### INFO-028 · ST_PLAYED_SPREAD · Portugal_Liga3_SerieB
 - Area: `standings`
 - Dettaglio: Played min=1, max=4, delta=3; min: Lusitano GC; max: Caldas.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Portugal_Liga3_SerieB.csv`
 
-### INFO-033 · ST_ODD_TEAMS · Russia_FNL
+### INFO-029 · ST_PLAYED_SPREAD · SaudiArabia_ProfessionalLeague
 - Area: `standings`
-- Dettaglio: Numero squadre dispari: 91.
-- Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
-- Sorgente: `data\storico\classifiche_calcolate\Russia_FNL.csv`
+- Dettaglio: Played min=5, max=8, delta=3; min: Abha; max: Al Hazem, Al Kholood, Al Fateh, Al Fayha.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\SaudiArabia_ProfessionalLeague.csv`
 
-### INFO-034 · ST_PLAYED_SPREAD · Slovenia_PrvaLiga
+### INFO-030 · ST_PLAYED_SPREAD · Slovenia_PrvaLiga
 - Area: `standings`
 - Dettaglio: Played min=10, max=13, delta=3; min: Radomlje; max: Aluminij.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Slovenia_PrvaLiga.csv`
 
-### INFO-035 · ST_ODD_TEAMS · SouthKorea_KLeague2
+### INFO-031 · ST_ODD_TEAMS · SouthKorea_KLeague2
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 17.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\SouthKorea_KLeague2.csv`
 
-### INFO-036 · ST_ODD_TEAMS · Spain_LaLiga
+### INFO-032 · ST_ODD_TEAMS · Spain_LaLiga
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 21.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Spain_LaLiga.csv`
 
-### INFO-037 · ST_ODD_TEAMS · Sweden_Division1_Sodra
+### INFO-033 · ST_ODD_TEAMS · Sweden_Division1_Sodra
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 17.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Sweden_Division1_Sodra.csv`
 
-### INFO-038 · ST_ODD_TEAMS · Sweden_Division2_Norrland
+### INFO-034 · ST_ODD_TEAMS · Sweden_Division2_Norrland
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 15.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Sweden_Division2_Norrland.csv`
 
-### INFO-039 · ST_ODD_TEAMS · USA_USLChampionship
+### INFO-035 · ST_ODD_TEAMS · USA_USLChampionship
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 25.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\USA_USLChampionship.csv`
 
-### INFO-040 · ST_PLAYED_SPREAD · USA_USLChampionship
-- Area: `standings`
-- Dettaglio: Played min=26, max=29, delta=3; min: Birmingham Legion; max: Miami FC.
-- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
-- Sorgente: `data\storico\classifiche_calcolate\USA_USLChampionship.csv`
-
-### INFO-041 · ST_ODD_TEAMS · USA_USLLeagueOne
+### INFO-036 · ST_ODD_TEAMS · USA_USLLeagueOne
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 17.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\USA_USLLeagueOne.csv`
 
-### INFO-042 · ST_PLAYED_SPREAD · USA_USLLeagueOne
-- Area: `standings`
-- Dettaglio: Played min=28, max=31, delta=3; min: Spokane Velocity; max: Forward Madison, Boise, One Knoxville, Fort Wayne, Chattanooga Red Wolves, Portland Hearts of Pine, Richmond Kickers.
-- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
-- Sorgente: `data\storico\classifiche_calcolate\USA_USLLeagueOne.csv`
-
-### INFO-043 · ST_PLAYED_SPREAD · Wales_CymruSouth
+### INFO-037 · ST_PLAYED_SPREAD · Wales_CymruSouth
 - Area: `standings`
 - Dettaglio: Played min=7, max=10, delta=3; min: Ynyshir Albions, Aberystwyth, Cardiff Draconians, Llantwit Major, Newport City; max: Baglan Dragons, Afan Lido, Llanelli.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
