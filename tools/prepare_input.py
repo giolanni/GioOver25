@@ -57,8 +57,8 @@ def aliases(s):
  vals.add(norm(x));return vals
 def _has_competition_qualifier_gap(source, target):
  """True se il nome sorgente aggiunge qualificatori strutturali assenti nel target."""
- src=re.findall(r"[a-z]+|\\d+",unicodedata.normalize("NFKD",source).encode("ascii","ignore").decode().casefold())
- dst=re.findall(r"[a-z]+|\\d+",unicodedata.normalize("NFKD",target).encode("ascii","ignore").decode().casefold())
+ src=re.findall(r"[a-z]+|\d+",unicodedata.normalize("NFKD",source).encode("ascii","ignore").decode().casefold())
+ dst=re.findall(r"[a-z]+|\d+",unicodedata.normalize("NFKD",target).encode("ascii","ignore").decode().casefold())
  structural={"group","gruppo","division","league","liga","national","fnl"}
  extra_numbers={x for x in src if x.isdigit()}-{x for x in dst if x.isdigit()}
  extra_structural={x for x in src if x in structural}-{x for x in dst if x in structural}
