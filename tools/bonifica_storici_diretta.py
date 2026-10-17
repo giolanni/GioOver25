@@ -238,6 +238,19 @@ def _extract_season_ids(text: str):
     return list(dict.fromkeys(ids))
 
 
+def _html_feed_diagnostics(html: str, tournament_id: str) -> list[str]:
+    """Estrae solo piccoli indizi utili dal bootstrap HTML, senza loggare 700 KB."""
+    out = []
+    needles = [tournament_id, "initialFeeds", "tf_1_", "tr_1_", "tournament_id", "season_id"]
+    for needle in needles:
+        positions = [m.start() for m in re.finditer(re.escape(needle), html, flags=re.I)]
+        out.append(f"HTML needle {needle!r}: occurrences={len(positions)}")
+        for pos in positions[:3]:
+            snippet = re.sub(r"\\s+", " ", html[max(0, pos-180):pos+260])
+            out.append(f"  ...{snippet}...")
+    return out
+
+
 def _extract_initial_results(html: str):
     # Alcune versioni della pagina espongono direttamente il feed iniziale.
     for name in ("results", "results_s"):
@@ -270,6 +283,7 @@ def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
             try:
                 html = _fetch_page(page_url, timeout)
                 attempts.append(f"{page_url}: pagina letta ({len(html)} bytes)")
+                attempts.extend(_html_feed_diagnostics(html, candidate.tournament_id))
                 embedded = _extract_initial_results(html)
                 if embedded:
                     rows = parse_results_feed(embedded)
