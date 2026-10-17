@@ -79,13 +79,28 @@ def resolve(reg,country,league):
  if len(by_id)==1:return by_id[0].league_id
  explicit={("austria","oberosterreich"):"Austria_Oberosterreich",("austria","regionalligaest"):"Austria_Regionalliga_East",("belgium","jupilerleague"):"Belgium_JupilerProLeague",("france","ligue3"):"France_National",("hungary","nbi"):"Hungary_NBI",("iceland","bestadeildfemminile"):"Iceland_BestaDeildKvenna",("italy","seriea"):"Italy_SerieA",("iceland","bestadeildfemminileplayoffschampionship"):"Iceland_BestaDeildKvenna",("latvia","1liga"):"Latvia_NakotnesLiga",("norway","division2gruppo1"):"Norway_2ndDivision_Group1",("norway","division2gruppo2"):"Norway_2ndDivision_Group2"}
  wanted=explicit.get((norm(c),nl));return wanted if wanted and any(r.league_id==wanted for r in cand) else None
+def _competition_markers(value):
+ n=norm(value)
+ markers=set()
+ if any(x in n for x in ("women","woman","femmin","femmen","damer","frauen","femen","kvenna")):markers.add("female")
+ if re.search(r"(?:u|under)(?:18|19|20|21|23)",n):markers.add("youth")
+ if any(x in n for x in ("reserve","reserves","primavera")):markers.add("reserve")
+ return markers
 def resolve_match(reg,country,league,home,away):
  c=COUNTRY_MAP.get(country.upper(),country.title())
  if norm(c)=="moldova" and norm(league)=="liga1":
   groups=load_moldova_groups();h=groups.get(norm(home));a=groups.get(norm(away))
   if h and a and h==a:return h
   return None
- return resolve(reg,country,league)
+ lid=resolve(reg,country,league)
+ if not lid:return None
+ target=next((r for r in reg if r.league_id==lid),None)
+ source_markers=_competition_markers(league)|_competition_markers(home)|_competition_markers(away)
+ target_markers=_competition_markers(lid)|(_competition_markers(target.league) if target else set())
+ # Fail closed: una partita esplicitamente femminile/giovanile/riserve non puo'
+ # entrare in una competizione senior che non dichiara lo stesso tipo.
+ if source_markers-target_markers:return None
+ return lid
 def clean_lines(text):return [x.strip() for x in text.replace("\r","").split("\n") if x.strip()]
 def parse_date(line,year):
  m=DATE_HEADER.match(line)
