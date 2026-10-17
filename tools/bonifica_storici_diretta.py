@@ -273,13 +273,16 @@ def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
                 embedded = _extract_initial_results(html)
                 if embedded:
                     rows = parse_results_feed(embedded)
+                    attempts.append(f"{page_url}: embedded results={len(rows)}")
                     if rows:
                         overlap, union = team_overlap(target.info.league_id, local, rows)
                         ratio = overlap / union if union else 0.0
                         rank = (ratio, overlap, candidate.score, len(rows))
                         if best is None or rank > best[0]:
                             best = (rank, candidate, "embedded", rows, page_url)
-                season_ids += _extract_season_ids(html)
+                found_seasons = _extract_season_ids(html)
+                season_ids += found_seasons
+                attempts.append(f"{page_url}: season ids={found_seasons or 'NESSUNO'}")
             except Exception as exc:
                 attempts.append(f"{page_url}: {type(exc).__name__}: {exc}")
 
