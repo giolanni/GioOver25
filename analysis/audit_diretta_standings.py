@@ -474,17 +474,7 @@ def fetch_best_remote_standing(
     timeout: int,
     request_text: Callable[[str, int, dict[str, object] | None], str] = _request_text,
 ) -> tuple[RemoteStandingSource | None, str]:
-    query_names = [
-        f"{alias.country} {alias.league}".strip()
-        for alias in target.aliases
-        if alias.country or alias.league
-    ]
-    # Gli alias Diretta sono mapping espliciti e devono avere priorità sul
-    # nome canonico del registry (spesso inglese, mentre la search è localizzata).
-    query_names.append(f"{target.info.country} {target.info.league}".strip())
-    query_names = list(dict.fromkeys(query_names))
-
-    selected_candidates: list[TournamentCandidate] = []
+    # Try the competition name alone first: Livesport search often returns no result\n    # for country-qualified queries. Country/gender are still validated on candidates.\n    query_names: list[str] = []\n    for alias in target.aliases:\n        if alias.league:\n            query_names.append(alias.league.strip())\n        if alias.country or alias.league:\n            query_names.append(f"{alias.country} {alias.league}".strip())\n    query_names.append(target.info.league.strip())\n    query_names.append(f"{target.info.country} {target.info.league}".strip())\n    query_names = list(dict.fromkeys(q for q in query_names if q))\n\n    selected_candidates: list[TournamentCandidate] = []
     search_errors: list[str] = []
     for query in query_names:
         try:
