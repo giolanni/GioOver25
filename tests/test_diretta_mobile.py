@@ -1,7 +1,7 @@
 import unittest
 
 from tools.diretta_mobile import parse_mobile
-from tools.prepare_input import RegistryRow, resolve
+from tools.prepare_input import RegistryRow, resolve, resolve_match
 
 
 class DirettaMobileParserTest(unittest.TestCase):
@@ -44,6 +44,23 @@ class LeagueGenderMappingTest(unittest.TestCase):
 
     def test_male_serie_a_is_unchanged(self):
         self.assertEqual("Italy_SerieA", resolve(self.registry, "Italy", "Serie A"))
+
+    def test_generic_male_league_rejects_female_teams(self):
+        self.assertIsNone(
+            resolve_match(self.registry, "Italy", "Serie A", "Juventus D", "Roma D")
+        )
+
+    def test_generic_senior_league_rejects_youth_teams(self):
+        registry = [RegistryRow("England_PremierLeague", "England", "Premier League")]
+        self.assertIsNone(
+            resolve_match(registry, "England", "Premier League", "Chelsea U21", "Arsenal U21")
+        )
+
+    def test_senior_match_is_unchanged(self):
+        self.assertEqual(
+            "Italy_SerieA",
+            resolve_match(self.registry, "Italy", "Serie A", "Juventus", "Roma"),
+        )
 
 
 if __name__ == "__main__":
