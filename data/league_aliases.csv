@@ -1,4 +1,4 @@
-﻿Source;CountryAlias;LeagueAlias;LeagueId
+Source;CountryAlias;LeagueAlias;LeagueId
 Diretta;Austria;Bundesliga;Austria_Bundesliga
 Diretta;Austria;2. Liga;Austria_2Liga
 Diretta;Austria;Regionalliga Est;Austria_Regionalliga_East
@@ -51,3 +51,24 @@ Diretta;Svezia;Division 2 - Västra Götaland;Sweden_Division2_VastraGotaland
 Diretta;Svizzera;Super League;Switzerland_SuperLeague
 Diretta;Turchia;Super Lig;Turkey_SuperLig
 Diretta;USA;USL League Two;USA_USLLeagueTwo
+Diretta;Ucraina;Premier League;Ukraine_PremierLeague
+Diretta;Ucraina;Persha Liga;Ukraine_PershaLiga
+Diretta;Georgia;Erovnuli Liga;Georgia_ErovnuliLiga
+Diretta;Croazia;HNL;Croatia_HNL
+Diretta;Romania;SuperLiga;Romania_Superliga
+Diretta;Scozia;Premiership;Scotland_Premiership
+Diretta;Serbia;Super Liga;Serbia_SuperLiga
+Diretta;Slovacchia;Nike liga;Slovakia_NikeLiga
+Diretta;Slovenia;Prva liga;Slovenia_PrvaLiga
+Diretta;Turchia;1. Lig;Turkey_1Lig
+Diretta;USA;MLS;USA_MLS
+Diretta;USA;USL League One;USA_USLLeagueOne
+Diretta;Polonia;Ekstraklasa;Poland_Ekstraklasa
+Diretta;Polonia;Division 1;Poland_Division1
+Diretta;Spagna;LaLiga2;Spain_LaLiga2
+Diretta;Germania;2. Bundesliga;Germany_2Bundesliga
+Diretta;Germania;3. Liga;Germany_3Liga
+Diretta;Giappone;J1 League;Japan_J1League
+Diretta;Arabia Saudita;Saudi Professional League;SaudiArabia_ProfessionalLeague
+Diretta;Ungheria;NB I.;Hungary_NBI
+Diretta;Ungheria;NB II.;Hungary_NBII
