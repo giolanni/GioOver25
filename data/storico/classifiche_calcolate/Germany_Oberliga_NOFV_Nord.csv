@@ -1,7 +1,7 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-8;1;Berliner AK 07;7;4;3;0;12;6;6;15;2.143
-8;2;Siedenbollentin;7;4;1;2;12;6;6;13;1.857
-8;3;Mahlsdorf;7;4;1;2;9;6;3;13;1.857
+8;1;Mahlsdorf;8;5;1;2;12;7;5;16;2.0
+8;2;Berliner AK 07;7;4;3;0;12;6;6;15;2.143
+8;3;Siedenbollentin;7;4;1;2;12;6;6;13;1.857
 8;4;Hertha Zehlendorf;7;4;0;3;12;6;6;12;1.714
 8;5;Lichtenberg;7;4;0;3;10;8;2;12;1.714
 8;6;Wismar;7;4;0;3;11;11;0;12;1.714
@@ -10,7 +10,7 @@
 8;9;Hansa Rostock 2;7;2;3;2;18;11;7;9;1.286
 8;10;TB Berlin;7;2;3;2;7;7;0;9;1.286
 8;11;Schwerin;7;2;3;2;11;12;-1;9;1.286
-8;12;Klosterfelde;7;2;2;3;7;11;-4;8;1.143
+8;12;Klosterfelde;8;2;2;4;8;14;-6;8;1.0
 8;13;Makkabi Berlin;7;2;2;3;6;14;-8;8;1.143
 8;14;Stendal;7;2;1;4;11;14;-3;7;1.0
 8;15;Sparta Lichtenberg;7;1;2;4;8;14;-6;5;0.714
