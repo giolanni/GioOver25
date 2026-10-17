@@ -80,9 +80,10 @@ def resolve(reg,country,league):
  explicit={("austria","oberosterreich"):"Austria_Oberosterreich",("austria","regionalligaest"):"Austria_Regionalliga_East",("belgium","jupilerleague"):"Belgium_JupilerProLeague",("france","ligue3"):"France_National",("hungary","nbi"):"Hungary_NBI",("iceland","bestadeildfemminile"):"Iceland_BestaDeildKvenna",("italy","seriea"):"Italy_SerieA",("iceland","bestadeildfemminileplayoffschampionship"):"Iceland_BestaDeildKvenna",("latvia","1liga"):"Latvia_NakotnesLiga",("norway","division2gruppo1"):"Norway_2ndDivision_Group1",("norway","division2gruppo2"):"Norway_2ndDivision_Group2"}
  wanted=explicit.get((norm(c),nl));return wanted if wanted and any(r.league_id==wanted for r in cand) else None
 def _competition_markers(value):
+ raw=unicodedata.normalize("NFKD",value).encode("ascii","ignore").decode().casefold()
  n=norm(value)
  markers=set()
- if any(x in n for x in ("women","woman","femmin","femmen","damer","frauen","femen","kvenna")):markers.add("female")
+ if any(x in n for x in ("women","woman","femmin","femmen","damer","frauen","femen","kvenna")) or re.search(r"(?:^|[\s._/-])d(?:$|[\s._/-])",raw):markers.add("female")
  if re.search(r"(?:u|under)(?:18|19|20|21|23)",n):markers.add("youth")
  if any(x in n for x in ("reserve","reserves","primavera")):markers.add("reserve")
  return markers
