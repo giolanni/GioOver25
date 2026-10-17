@@ -58,9 +58,9 @@ class LeagueGenderMappingTest(unittest.TestCase):
             resolve_match(registry, "England", "Premier League", "Chelsea U21", "Arsenal U21")
         )
 
-    def test_france_ligue3_does_not_map_to_national(self):
+    def test_france_ligue3_maps_to_national(self):
         registry = [RegistryRow("France_National", "France", "National")]
-        self.assertIsNone(resolve(registry, "France", "Ligue 3"))
+        self.assertEqual("France_National", resolve(registry, "France", "Ligue 3"))
 
     def test_france_national2_does_not_map_to_national(self):
         registry = [RegistryRow("France_National", "France", "National")]
