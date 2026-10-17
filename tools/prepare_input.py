@@ -6,7 +6,14 @@ from datetime import datetime,timedelta
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 DEFAULT_REGISTRY=ROOT/"data"/"league_registry.csv"
-MOLDOVA_GROUP_MAP=ROOT/"docs"/"moldova_liga1_groups_2026.csv"
+TEAM_MAPPING_FILES=[
+ ROOT/"docs"/"moldova_liga1_groups_2026.csv",
+ ROOT/"docs"/"Portugal_Liga3_2026-27_team_mapping.csv",
+ ROOT/"docs"/"kolmonen_2026_team_league_map.csv",
+ ROOT/"docs"/"mappa_teams_groups_peru_2liga..txt",
+ ROOT/"docs"/"mappa_teams_league_mslnextpro.txt",
+ ROOT/"docs"/"mappa_teams_league_usl2division.txt",
+]
 DATE_HEADER=re.compile(r"^(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?(?:\s+\S+)?$")
 DATED_TIME_RE=re.compile(r"^(\d{1,2})\.(\d{1,2})\.\s+(\d{1,2}:\d{2})$")
 ROUND_RE=re.compile(r"^Giornata\s+(\d+)$",re.I)
@@ -43,13 +50,32 @@ def load_registry(path):
   for r in csv.DictReader(f,delimiter=";"):
    if r.get("LeagueId"): rows.append(RegistryRow(r["LeagueId"].strip(),r.get("Country","").strip(),r.get("League","").strip()))
  return rows
-def load_moldova_groups(path=MOLDOVA_GROUP_MAP):
+def load_team_mappings(paths=TEAM_MAPPING_FILES):
+ """Carica i mapping squadra->LeagueId documentati in docs (CSV ';' o TXT team=LeagueId)."""
  groups={}
- if not path.exists():return groups
- with path.open(encoding="utf-8-sig",newline="") as f:
-  for r in csv.DictReader(f,delimiter=";"):
-   if r.get("Team") and r.get("LeagueId"):groups[norm(r["Team"])]=r["LeagueId"].strip()
+ for path in paths:
+  if not path.exists():continue
+  if path.suffix.casefold()==".csv":
+   with path.open(encoding="utf-8-sig",newline="") as f:
+    for r in csv.DictReader(f,delimiter=";"):
+     team=r.get("Team") or r.get("SourceTeam") or r.get("CanonicalTeam")
+     lid=r.get("LeagueId")
+     if team and lid:groups.setdefault(norm(team),set()).add(lid.strip())
+  else:
+   for line in path.read_text(encoding="utf-8-sig").splitlines():
+    line=line.strip()
+    if not line or line.startswith("#") or "=" not in line:continue
+    team,lid=line.split("=",1)
+    if team.strip() and lid.strip():groups.setdefault(norm(team.strip()),set()).add(lid.strip())
  return groups
+
+def resolve_team_mapping(reg,country,home,away):
+ groups=load_team_mappings()
+ valid={r.league_id for r in reg if norm(r.country)==norm(country)}
+ h=groups.get(norm(home),set())&valid
+ a=groups.get(norm(away),set())&valid
+ common=h&a
+ return next(iter(common)) if len(common)==1 else None
 def aliases(s):
  x=s.casefold();vals={norm(s)}
  replacements={"ovest":"west","est":"east","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff","division 3":"3rd division","besta deild femminile":"besta deild kvenna","women":"femminile","ligue 3":"national","jupiler league":"jupiler pro league"}
@@ -98,10 +124,15 @@ def _competition_markers(value):
  return markers
 def resolve_match(reg,country,league,home,away):
  c=COUNTRY_MAP.get(country.upper(),country.title())
- if norm(c)=="moldova" and norm(league)=="liga1":
-  groups=load_moldova_groups();h=groups.get(norm(home));a=groups.get(norm(away))
-  if h and a and h==a:return h
-  return None
+ mapped=resolve_team_mapping(reg,c,home,away)
+ if mapped:return mapped
+ # Se una competizione e' suddivisa in gruppi/serie documentati ma le due
+ # squadre non convergono sullo stesso LeagueId, non forzare un fuzzy match.
+ groups=load_team_mappings()
+ h=groups.get(norm(home),set());a=groups.get(norm(away),set())
+ if h or a:
+  country_ids={r.league_id for r in reg if norm(r.country)==norm(c)}
+  if (h|a)&country_ids:return None
  lid=resolve(reg,country,league)
  if not lid:return None
  target=next((r for r in reg if r.league_id==lid),None)
