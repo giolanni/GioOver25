@@ -24,6 +24,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Iterable
+from urllib.parse import quote_plus
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -188,7 +189,13 @@ def _walk_values(obj, key_fragment: str):
             yield from _walk_values(item, key_fragment)
 
 
-def _candidate_page_urls(search_rows, candidate):
+def _slug(value: str) -> str:
+    text = unicodedata.normalize("NFKD", value or "").encode("ascii", "ignore").decode().casefold()
+    text = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    return text
+
+
+def _candidate_page_urls(search_rows, candidate, target=None):
     urls = []
     for raw in search_rows:
         tournament = raw.get("defaultTournament") or {}
@@ -200,17 +207,23 @@ def _candidate_page_urls(search_rows, candidate):
             value = value.strip()
             if value.startswith("/"):
                 value = DIRETTA_BASE + value
-            elif value.startswith("http"):
-                # La search API può restituire flashscore.com: per i dati embedded
-                # è equivalente, ma preferiamo Diretta quando il path è disponibile.
-                pass
-            else:
+            elif not value.startswith("http"):
                 continue
             if "/results" not in value.rstrip("/"):
                 value = value.rstrip("/") + "/results/"
             urls.append(value)
-    return list(dict.fromkeys(urls))
 
+    # La search API di Livesport normalmente restituisce gli ID ma non la URL
+    # pubblica. Diretta usa URL leggibili e stabili per paese/competizione.
+    if target is not None:
+        country_names = [a.country for a in target.aliases if a.country]
+        league_names = [a.league for a in target.aliases if a.league]
+        country_names += [target.info.country]
+        league_names += [target.info.league]
+        for country in dict.fromkeys(x for x in country_names if x):
+            for league in dict.fromkeys(x for x in league_names if x):
+                urls.append(f"{DIRETTA_BASE}/calcio/{_slug(country)}/{_slug(league)}/risultati/")
+    return list(dict.fromkeys(urls))
 
 def _extract_season_ids(text: str):
     ids = []
@@ -251,7 +264,7 @@ def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
     best = None
     for candidate in candidates[:5]:
         season_ids = []
-        page_urls = _candidate_page_urls(search_rows, candidate)
+        page_urls = _candidate_page_urls(search_rows, candidate, target)
         for page_url in page_urls[:4]:
             try:
                 html = _fetch_page(page_url, timeout)
