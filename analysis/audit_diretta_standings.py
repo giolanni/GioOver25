@@ -469,17 +469,19 @@ def fetch_best_remote_standing(
     timeout: int,
     request_text: Callable[[str, int, dict[str, object] | None], str] = _request_text,
 ) -> tuple[RemoteStandingSource | None, str]:
-    query_names = [f"{target.info.country} {target.info.league}".strip()]
-    query_names.extend(
+    query_names = [
         f"{alias.country} {alias.league}".strip()
         for alias in target.aliases
         if alias.country or alias.league
-    )
+    ]
+    # Gli alias Diretta sono mapping espliciti e devono avere priorità sul
+    # nome canonico del registry (spesso inglese, mentre la search è localizzata).
+    query_names.append(f"{target.info.country} {target.info.league}".strip())
     query_names = list(dict.fromkeys(query_names))
 
     selected_candidates: list[TournamentCandidate] = []
     search_errors: list[str] = []
-    for query in query_names[:2]:
+    for query in query_names:
         try:
             payload = request_text(
                 SEARCH_URL,
@@ -497,8 +499,6 @@ def fetch_best_remote_standing(
             selected_candidates.extend(select_tournament_candidates(rows, target))
         except Exception as exc:  # la singola query non deve fermare tutto l'audit
             search_errors.append(f"{query!r}: {type(exc).__name__}: {exc}")
-        if selected_candidates and selected_candidates[0].score >= 0.98:
-            break
 
     unique_candidates: dict[tuple[str, tuple[str, ...]], TournamentCandidate] = {}
     for candidate in selected_candidates:
