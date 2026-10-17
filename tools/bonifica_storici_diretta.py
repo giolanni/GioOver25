@@ -24,6 +24,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Iterable
+from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -40,7 +41,8 @@ RESULTS_DIR = ROOT / "data" / "storico" / "risultati"
 REGISTRY = ROOT / "data" / "league_registry.csv"
 ALIASES = ROOT / "data" / "league_aliases.csv"
 LOG_ROOT = ROOT / "data" / "debug" / "bonifica_storici_diretta"
-RESULTS_FEED = "https://global.flashscore.ninja/323/x/feed/tr_1_{tournament}_{stage}_0_2_it_1"
+RESULTS_FEED = "https://global.flashscore.ninja/323/x/feed/tr_1_{tournament}_{season}_0_2_it_1"
+DIRETTA_BASE = "https://www.diretta.it"
 LOGGER = logging.getLogger("bonifica_storici_diretta")
 
 
@@ -149,36 +151,128 @@ def log_file(log_dir: Path, league_id: str, text: str) -> None:
     (log_dir / f"{league_id}.log").write_text(text.rstrip() + "\n", encoding="utf-8")
 
 
-def discover(target: LeagueTarget, timeout: int):
+def _search_rows(target: LeagueTarget, timeout: int):
     queries = []
     for alias in target.aliases:
         if alias.league:
-            queries.append(alias.league)
-            queries.append(f"{alias.country} {alias.league}".strip())
-    queries += [target.info.league, f"{target.info.country} {target.info.league}"]
-    candidates = []
-    errors = []
+            queries += [alias.league, f"{alias.country} {alias.league}".strip()]
+    queries += [target.info.league, f"{target.info.country} {target.info.league}".strip()]
+    rows, errors = [], []
     for q in dict.fromkeys(x for x in queries if x):
         try:
-            candidates += select_tournament_candidates(search_tournaments(q, timeout), target)
+            rows += search_tournaments(q, timeout)
         except Exception as exc:
             errors.append(f"{q!r}: {type(exc).__name__}: {exc}")
+    return rows, errors
+
+
+def discover(target: LeagueTarget, timeout: int):
+    rows, errors = _search_rows(target, timeout)
+    candidates = select_tournament_candidates(rows, target)
     unique = {}
-    for c in candidates:
-        k = (c.tournament_id, c.stage_ids)
-        if k not in unique or c.score > unique[k].score:
-            unique[k] = c
-    return sorted(unique.values(), key=lambda x: x.score, reverse=True), errors
+    for candidate in candidates:
+        k = candidate.tournament_id
+        if k not in unique or candidate.score > unique[k].score:
+            unique[k] = candidate
+    return sorted(unique.values(), key=lambda x: x.score, reverse=True), rows, errors
+
+
+def _walk_values(obj, key_fragment: str):
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if key_fragment in str(k).casefold():
+                yield v
+            yield from _walk_values(v, key_fragment)
+    elif isinstance(obj, list):
+        for item in obj:
+            yield from _walk_values(item, key_fragment)
+
+
+def _candidate_page_urls(search_rows, candidate):
+    urls = []
+    for raw in search_rows:
+        tournament = raw.get("defaultTournament") or {}
+        if str(tournament.get("id", "")).strip() != candidate.tournament_id:
+            continue
+        for value in list(_walk_values(raw, "url")) + list(_walk_values(raw, "path")):
+            if not isinstance(value, str) or not value.strip():
+                continue
+            value = value.strip()
+            if value.startswith("/"):
+                value = DIRETTA_BASE + value
+            elif value.startswith("http"):
+                # La search API può restituire flashscore.com: per i dati embedded
+                # è equivalente, ma preferiamo Diretta quando il path è disponibile.
+                pass
+            else:
+                continue
+            if "/results" not in value.rstrip("/"):
+                value = value.rstrip("/") + "/results/"
+            urls.append(value)
+    return list(dict.fromkeys(urls))
+
+
+def _extract_season_ids(text: str):
+    ids = []
+    patterns = (
+        r'["\\\']seasonId["\\\']\\s*[:=]\\s*["\\\']?([A-Za-z0-9_-]{6,})',
+        r'["\\\']season_id["\\\']\\s*[:=]\\s*["\\\']?([A-Za-z0-9_-]{6,})',
+        r'\\bseasonId\\W+([A-Za-z0-9_-]{6,})',
+    )
+    for pattern in patterns:
+        ids += re.findall(pattern, text, flags=re.I)
+    return list(dict.fromkeys(ids))
+
+
+def _extract_initial_results(html: str):
+    # Alcune versioni della pagina espongono direttamente il feed iniziale.
+    for name in ("results", "results_s"):
+        m = re.search(
+            rf'initialFeeds\\s*\\[\\s*["\\\']{name}["\\\']\\s*\\].*?data\\s*:\\s*`(.*?)`',
+            html, flags=re.S,
+        )
+        if m:
+            return m.group(1)
+    return ""
+
+
+def _fetch_page(url: str, timeout: int) -> str:
+    req = Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (GioOver25 DirettaHistoryAudit)",
+        "Accept-Language": "it-IT,it;q=0.9,en;q=0.7",
+    })
+    with urlopen(req, timeout=timeout) as response:
+        return response.read().decode(response.headers.get_content_charset() or "utf-8", errors="replace")
 
 
 def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
-    candidates, search_errors = discover(target, timeout)
+    candidates, search_rows, search_errors = discover(target, timeout)
     attempts = []
     best = None
-    # Fail closed: pochi candidati migliori, ma prova tutti gli stage esposti.
     for candidate in candidates[:5]:
-        for stage in candidate.stage_ids[:12]:
-            url = RESULTS_FEED.format(tournament=candidate.tournament_id, stage=stage)
+        season_ids = []
+        page_urls = _candidate_page_urls(search_rows, candidate)
+        for page_url in page_urls[:4]:
+            try:
+                html = _fetch_page(page_url, timeout)
+                embedded = _extract_initial_results(html)
+                if embedded:
+                    rows = parse_results_feed(embedded)
+                    if rows:
+                        overlap, union = team_overlap(target.info.league_id, local, rows)
+                        ratio = overlap / union if union else 0.0
+                        rank = (ratio, overlap, candidate.score, len(rows))
+                        if best is None or rank > best[0]:
+                            best = (rank, candidate, "embedded", rows, page_url)
+                season_ids += _extract_season_ids(html)
+            except Exception as exc:
+                attempts.append(f"{page_url}: {type(exc).__name__}: {exc}")
+
+        # stageWithStatsDataIds NON sono season ids. Il vecchio script li usava
+        # erroneamente nel feed tr_1 e per questo otteneva solo feed vuoti.
+        # I season id vengono ricavati dalla pagina pubblica della competizione.
+        for season in dict.fromkeys(season_ids):
+            url = RESULTS_FEED.format(tournament=candidate.tournament_id, season=season)
             try:
                 payload = _request_text(url, timeout, None)
                 rows = parse_results_feed(payload)
@@ -190,12 +284,14 @@ def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
                 continue
             overlap, union = team_overlap(target.info.league_id, local, rows)
             ratio = overlap / union if union else 0.0
-            # Score primario: sovrapposizione squadre; poi qualità discovery e volume.
             rank = (ratio, overlap, candidate.score, len(rows))
             if best is None or rank > best[0]:
-                best = (rank, candidate, stage, rows, url)
+                best = (rank, candidate, season, rows, url)
+        if not season_ids and not page_urls:
+            attempts.append(
+                f"{candidate.name}/{candidate.tournament_id}: URL pagina/season id non esposti dalla search"
+            )
     return best, search_errors + attempts
-
 
 def compare(league_id: str, local: list[Result], remote: list[Result]):
     lm = {key(league_id, r): r for r in local}
