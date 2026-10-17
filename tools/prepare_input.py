@@ -52,9 +52,18 @@ def load_moldova_groups(path=MOLDOVA_GROUP_MAP):
  return groups
 def aliases(s):
  x=s.casefold();vals={norm(s)}
- replacements={"ovest":"west","est":"east","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff","division 3":"3rd division","besta deild femminile":"besta deild kvenna","women":"femminile","ligue 3":"national","jupiler league":"jupiler pro league"}
+ replacements={"ovest":"west","est":"east","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff","division 3":"3rd division","besta deild femminile":"besta deild kvenna","women":"femminile","jupiler league":"jupiler pro league"}
  for a,b in replacements.items():x=x.replace(a,b)
  vals.add(norm(x));return vals
+def _has_competition_qualifier_gap(source, target):
+ """True se il nome sorgente aggiunge qualificatori strutturali assenti nel target."""
+ src=re.findall(r"[a-z]+|\\d+",unicodedata.normalize("NFKD",source).encode("ascii","ignore").decode().casefold())
+ dst=re.findall(r"[a-z]+|\\d+",unicodedata.normalize("NFKD",target).encode("ascii","ignore").decode().casefold())
+ structural={"group","gruppo","division","league","liga","national","fnl"}
+ extra_numbers={x for x in src if x.isdigit()}-{x for x in dst if x.isdigit()}
+ extra_structural={x for x in src if x in structural}-{x for x in dst if x in structural}
+ return bool(extra_numbers or extra_structural)
+
 def resolve(reg,country,league):
  c=COUNTRY_MAP.get(country.upper(),country.title());cand=[r for r in reg if norm(r.country)==norm(c)]
  # Barriera di genere: una competizione esplicitamente femminile non deve mai
@@ -70,14 +79,14 @@ def resolve(reg,country,league):
  if len(exact)==1:return exact[0].league_id
  alias_matches=[r for r in cand if aliases(r.league)&target]
  if len(alias_matches)==1:return alias_matches[0].league_id
- nl=norm(league);fuzzy=[r for r in cand if norm(r.league) in nl or nl in norm(r.league)]
+ nl=norm(league);fuzzy=[r for r in cand if (norm(r.league) in nl or nl in norm(r.league)) and not _has_competition_qualifier_gap(league,r.league)]
  if len(fuzzy)==1:return fuzzy[0].league_id
  country_prefix=norm(c);by_id=[]
  for r in cand:
   rid=norm(r.league_id);suffix=rid[len(country_prefix):] if rid.startswith(country_prefix) else rid
-  if suffix==nl or suffix in nl or nl in suffix:by_id.append(r)
+  if (suffix==nl or suffix in nl or nl in suffix) and not _has_competition_qualifier_gap(league,r.league):by_id.append(r)
  if len(by_id)==1:return by_id[0].league_id
- explicit={("austria","oberosterreich"):"Austria_Oberosterreich",("austria","regionalligaest"):"Austria_Regionalliga_East",("belgium","jupilerleague"):"Belgium_JupilerProLeague",("france","ligue3"):"France_National",("hungary","nbi"):"Hungary_NBI",("iceland","bestadeildfemminile"):"Iceland_BestaDeildKvenna",("italy","seriea"):"Italy_SerieA",("iceland","bestadeildfemminileplayoffschampionship"):"Iceland_BestaDeildKvenna",("latvia","1liga"):"Latvia_NakotnesLiga",("norway","division2gruppo1"):"Norway_2ndDivision_Group1",("norway","division2gruppo2"):"Norway_2ndDivision_Group2"}
+ explicit={("austria","oberosterreich"):"Austria_Oberosterreich",("austria","regionalligaest"):"Austria_Regionalliga_East",("belgium","jupilerleague"):"Belgium_JupilerProLeague",("hungary","nbi"):"Hungary_NBI",("iceland","bestadeildfemminile"):"Iceland_BestaDeildKvenna",("italy","seriea"):"Italy_SerieA",("iceland","bestadeildfemminileplayoffschampionship"):"Iceland_BestaDeildKvenna",("latvia","1liga"):"Latvia_NakotnesLiga",("norway","division2gruppo1"):"Norway_2ndDivision_Group1",("norway","division2gruppo2"):"Norway_2ndDivision_Group2"}
  wanted=explicit.get((norm(c),nl));return wanted if wanted and any(r.league_id==wanted for r in cand) else None
 def _competition_markers(value):
  raw=unicodedata.normalize("NFKD",value).encode("ascii","ignore").decode().casefold()
