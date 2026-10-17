@@ -77,7 +77,7 @@ class MobileParser(HTMLParser):
             self.in_heading = True
             self.heading_parts = []
             self.fixture_parts = []
-        elif tag == "a" and "fin" in attrs.get("class", "").split():
+        elif tag == "a" and ("fin" in attrs.get("class", "").split() or "/partita/" in attrs.get("href", "")):
             self.in_score = True
             self.score_parts = []
 
