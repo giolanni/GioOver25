@@ -121,12 +121,21 @@ class MobileParser(HTMLParser):
         value = " ".join(data.split())
         if not value:
             return
-        if re.fullmatch(r"\\d{1,2}:\\d{2}", value):
-            self.time = value
-        elif value in {"Rinviata", "Posticipata", "Sospesa"}:
-            self.status = value
-        else:
-            self.fixture_parts.append(" " + value)
+        # Nella pagina mobile ora e stato possono arrivare nello stesso
+        # nodo di testo della squadra (es. "14:00 BFF Academy U19").
+        tm = re.match(r"^(\\d{1,2}:\\d{2})(?:\\s+|$)", value)
+        if tm:
+            self.time = tm.group(1)
+            value = value[tm.end():].strip()
+            if not value:
+                return
+        status_match = re.match(r"^(Rinviata|Posticipata|Sospesa)(?:\\s+|$)", value, re.I)
+        if status_match:
+            self.status = status_match.group(1)
+            value = value[status_match.end():].strip()
+            if not value:
+                return
+        self.fixture_parts.append(" " + value)
 
 
 def fetch_feed(day_offset: int, timeout: int = 20) -> str:
