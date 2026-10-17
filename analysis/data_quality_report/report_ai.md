@@ -10426,7 +10426,7 @@ Nessuna anomalia.
 
 ### WARNING-2074 · ST_PLAYED_SPREAD · Sweden_Division2_Norrland
 - Area: `standings`
-- Dettaglio: Played min=1, max=26, delta=25; min: Team TG; max: IFK Lulea, Skelleftea, IFK Ostersund, Boden, Gottne, Lucksta.
+- Dettaglio: Played min=1, max=26, delta=25; min: Umea FF; max: IFK Lulea, Skelleftea, IFK Ostersund, Boden, Gottne, Lucksta.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Sweden_Division2_Norrland.csv`
 

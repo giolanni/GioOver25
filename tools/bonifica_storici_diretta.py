@@ -252,14 +252,24 @@ def _html_feed_diagnostics(html: str, tournament_id: str) -> list[str]:
 
 
 def _extract_initial_results(html: str):
-    # Alcune versioni della pagina espongono direttamente il feed iniziale.
-    for name in ("results", "results_s"):
+    # Diretta/Livesport può esporre il feed iniziale dei risultati
+    # con nomi diversi a seconda della versione della pagina.
+    #
+    # Formato attuale osservato:
+    #   cjs.initialFeeds["summary-results"] = {
+    #       data: `SA÷1¬~ZA÷...`
+    #   }
+    #
+    # Manteniamo anche i nomi precedenti come fallback.
+    for name in ("summary-results", "results", "results_s"):
         m = re.search(
-            rf'initialFeeds\\s*\\[\\s*["\\\']{name}["\\\']\\s*\\].*?data\\s*:\\s*`(.*?)`',
-            html, flags=re.S,
+            rf'initialFeeds\s*\[\s*["\']{re.escape(name)}["\']\s*\].*?data\s*:\s*`(.*?)`',
+            html,
+            flags=re.S,
         )
         if m:
             return m.group(1)
+
     return ""
 
 

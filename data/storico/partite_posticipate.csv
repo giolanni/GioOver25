@@ -1,20 +1,12 @@
 ﻿LeagueId;Round;MatchDate;Home;Away;Status;Notes
-Finland_Kolmonen_Southern_Group3;?;2026-07-04;Sibbo-Vargarna;JäPS/47;RINVIATA;Postponed
-Finland_Kolmonen_Western_Group3;?;2026-06-28;Sporting Kristina;Saaripotku;RINVIATA;Postponed
-Finland_Kolmonen_Southern_Group3;9;2026-06-12;RiPS;MK-United;POSTICIPATA;Postponed
 Bhutan_PremierLeague;9;2026-07-07;Drukpa;Thimphu FC;POSTICIPATA;
 Kyrgyzstan_PremierLiga;16;2026-07-07;Asia Talas;Abdysh-Ata;POSTICIPATA;
 Bhutan_PremierLeague;9;2026-07-08;Paro;Tensung;POSTICIPATA;
 Kyrgyzstan_PremierLiga;16;2026-07-08;Alga;Dordoi Bishkek;POSTICIPATA;
 Serbia_SuperLiga;?;2026-07-26;Radnicki 1923;Zeleznicar Pancevo;POSTICIPATA;
-Finland_Kolmonen_Southern_Group3;?;2026-07-31;MK-United;JäPS/47;POSTICIPATA;
 Hungary_NBII;?;2026-08-01;Szeged;BVSC-Zuglo;POSTICIPATA;
-Peru_Liga2;?;2026-08-02;Estudiantil CNI;Binacional;POSTICIPATA;Fonte: SRF
 USA_USLLeagueOne;?;2026-08-02;Sarasota Paradise;FC Naples;POSTICIPATA;
 Austria_Oberosterreich;?;2026-08-07;Ostermiething;Union Unis Gschwandt;POSTICIPATA;
-Finland_Kolmonen_Southern_Group3;?;2026-08-08;IF Sibbo Vargarna;MK-United;POSTICIPATA;Fonte: Annullata
-Finland_Kolmonen_Western_Group3;?;2026-08-07;FC Sääripotku;FC Ylivieska;POSTICIPATA;Fonte: Annullata
-Finland_Kolmonen_Western_Group3;;2026-08-13;Sundom IF;FC Sääripotku;POSTICIPATA;Fonte: Annullata
 Wales_CymruSouth;?;2026-08-15;Ynyshir Albions;Aberystwyth;POSTICIPATA;
 Germany_Oberliga_RheinlandPfalzSaar;?;2026-08-15;RW Wittlich;TSV 1881 Gau-Odernheim;POSTICIPATA;
 CzechRepublic_3CFL_GroupB;?;2026-08-15;Liberec B;Caslav;POSTICIPATA;
@@ -22,7 +14,6 @@ Poland_Ekstraklasa;?;2026-08-16;Jagiellonia;Pogon Szczecin;POSTICIPATA;
 Poland_Ekstraklasa;?;2026-08-16;Plock;Lech;POSTICIPATA;
 Portugal_LigaPortugal;?;2026-08-16;Braga;Gil Vicente;POSTICIPATA;
 Estonia_EsiliigaB;?;2026-08-16;Legion;Tammeka U21;POSTICIPATA;
-Finland_Kolmonen_Western_Group3;;2026-08-19;FC Sääripotku;Sp. Kristina;POSTICIPATA;FRO / risultato non disponibile
 Armenia_FirstLeague;;2026-08-20;Araks Ararat;Hayq;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-02;Keflavik;KR Reykjavik;POSTICIPATA;
 Iceland_1DeildWomen;;2026-07-04;UMF Selfoss;Fjardab/Hottur/Leiknir;POSTICIPATA;
@@ -37,8 +28,6 @@ Kazakhstan_PremierLeague;;2026-08-23;FC Astana;Kaspij Aktau;POSTICIPATA;
 Kazakhstan_PremierLeague;;2026-08-23;Tobol;Zhenis;POSTICIPATA;
 Kazakhstan_PremierLeague;;2026-08-23;Yelimay Semey;Ulytau;POSTICIPATA;
 Kazakhstan_PremierLeague;;2026-08-23;Zhetysu;Kaisar;POSTICIPATA;
-Finland_Kolmonen_Western_Group3;;2026-08-27;VPV;FC Sääripotku;POSTICIPATA;
-Finland_Kolmonen_Southern_Group3;;2026-08-29;Atlantis 2;MK-United;POSTICIPATA;
 Wales_CymruSouth;;2026-08-28;Treowen;Cardiff Draconians;POSTICIPATA;
 NorthernIreland_NIFLPremiership;;2026-08-29;Ballymena;Larne;POSTICIPATA;
 Norway_3rdDivision_Group5;18;2026-08-21;Skjetten;Skjervoey;POSTICIPATA;
@@ -49,12 +38,8 @@ Wales_CymruSouth;;2026-09-05;Ynyshir Albions;Pontypridd;POSTICIPATA;
 Germany_Oberliga_Hamburg;;2026-09-05;Altona;ETSV Hamburg;POSTICIPATA;
 USA_MLS;26;2026-09-06;Cincinnati;DC United;POSTICIPATA;
 Wales_CymruSouth;;2026-09-04;Pure Swansea;Carmarthen;POSTICIPATA;
-Finland_Kolmonen_Southern_Group3;;2026-09-04;MK-United;Futura;POSTICIPATA;
-Finland_Kolmonen_Western_Group3;;2026-09-04;FC Sääripotku;KPV/Akatemia;POSTICIPATA;
 Finland_Kakkonen_GroupA;;2026-09-04;PPJ;Kiffen;POSTICIPATA;
-Finland_Kolmonen_Southern_Group3;;2026-09-10;TuPS;MK-United;POSTICIPATA;Sorgente: annullata
 Ukraine_PremierLeague;;2026-09-12;Kryvbas;FC Kharkiv;POSTICIPATA;
-Finland_Kolmonen_Western_Group3;;2026-09-12;Larsmo Bollklubb;FC Sääripotku;POSTICIPATA;Sorgente: annullata
 Wales_CymruSouth;7;2026-09-11;Newport City;Trethomas Bluebirds;POSTICIPATA;
 Estonia_Esiliiga;;2026-09-13;Maardu;Tallinna Kalev;POSTICIPATA;
 Spain_LaLiga;9;2026-09-16;Levante;Ath. Bilbao;POSTICIPATA;
@@ -96,7 +81,6 @@ Germany_Oberliga_Niedersachsen;;2026-10-04;Drochtersen/Assel II;Luneburger Hansa
 Germany_Oberliga_Niedersachsen;;2026-10-04;Hemmingen;Egestorf-Langreder;POSTICIPATA;
 Germany_Oberliga_Niedersachsen;;2026-10-04;Hildesheim;Wilhelmshaven;POSTICIPATA;
 Russia_FNL;;2026-10-04;Irkutsk;Cherepovets;POSTICIPATA;
-Finland_Kolmonen_Southern_Group3;;2026-10-04;Ponnistus;MK-United;POSTICIPATA;
 Montenegro_PrvaCrnogorskaLiga;;2026-10-08;Arsenal Tivat;Decic;POSTICIPATA;
 Montenegro_PrvaCrnogorskaLiga;;2026-10-08;Bokelj;Petrovac;POSTICIPATA;
 Armenia_FirstLeague;;2026-10-09;BKMA 2;Ararat 2;POSTICIPATA;
