@@ -222,7 +222,8 @@ def _candidate_page_urls(search_rows, candidate, target=None):
         league_names += [target.info.league]
         for country in dict.fromkeys(x for x in country_names if x):
             for league in dict.fromkeys(x for x in league_names if x):
-                urls.append(f"{DIRETTA_BASE}/calcio/{_slug(country)}/{_slug(league)}/risultati/")
+                urls.append(f"{DIRETTA_BASE}/calcio/{_slug(country)}/{_slug(league)}/risultati/",
+                    f"{DIRETTA_BASE}/{_slug(league)}/risultati/")
     return list(dict.fromkeys(urls))
 
 def _extract_season_ids(text: str):
@@ -265,9 +266,10 @@ def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
     for candidate in candidates[:5]:
         season_ids = []
         page_urls = _candidate_page_urls(search_rows, candidate, target)
-        for page_url in page_urls[:4]:
+        for page_url in page_urls:
             try:
                 html = _fetch_page(page_url, timeout)
+                attempts.append(f"{page_url}: pagina letta ({len(html)} bytes)")
                 embedded = _extract_initial_results(html)
                 if embedded:
                     rows = parse_results_feed(embedded)
