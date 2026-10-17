@@ -8,11 +8,13 @@ class DirettaMobileParserTest(unittest.TestCase):
     def test_scheduled_and_finished_matches(self):
         page = """
         <html><body>
+          <div id="score-data">
           <h4>BHUTAN: Premier League <a href="/classifiche/x/y/">Classifiche</a></h4>
           <div>14:00 BFF Academy U19 - Thimphu FC <a href="/partita/a/"> - </a></div>
           <h4>NORVEGIA: Division 3 - Group 4 <a href="/classifiche/x/y/">Classifiche</a></h4>
           <div>00:30 Haugesund 2 - Hinna <a href="/partita/b/">2-4</a></div>
           <div>18:00 Rinviata Team A - Team B <a href="/partita/c/"> - </a></div>
+          </div>
         </body></html>
         """
         rows = parse_mobile(page)
