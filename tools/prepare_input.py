@@ -52,7 +52,7 @@ def load_moldova_groups(path=MOLDOVA_GROUP_MAP):
  return groups
 def aliases(s):
  x=s.casefold();vals={norm(s)}
- replacements={"ovest":"west","est":"east","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff","division 3":"3rd division","besta deild femminile":"besta deild kvenna","women":"femminile","jupiler league":"jupiler pro league"}
+ replacements={"ovest":"west","est":"east","sudwest":"southwest","sud":"south","nord":"north","gruppo":"group","fase vincitori":"winners phase","play-offs championship":"championship","play off promozione":"promotion playoff","division 3":"3rd division","besta deild femminile":"besta deild kvenna","women":"femminile","ligue 3":"national","jupiler league":"jupiler pro league"}
  for a,b in replacements.items():x=x.replace(a,b)
  vals.add(norm(x));return vals
 def _has_competition_qualifier_gap(source, target):
@@ -86,7 +86,7 @@ def resolve(reg,country,league):
   rid=norm(r.league_id);suffix=rid[len(country_prefix):] if rid.startswith(country_prefix) else rid
   if (suffix==nl or suffix in nl or nl in suffix) and not _has_competition_qualifier_gap(league,r.league):by_id.append(r)
  if len(by_id)==1:return by_id[0].league_id
- explicit={("austria","oberosterreich"):"Austria_Oberosterreich",("austria","regionalligaest"):"Austria_Regionalliga_East",("belgium","jupilerleague"):"Belgium_JupilerProLeague",("hungary","nbi"):"Hungary_NBI",("iceland","bestadeildfemminile"):"Iceland_BestaDeildKvenna",("italy","seriea"):"Italy_SerieA",("iceland","bestadeildfemminileplayoffschampionship"):"Iceland_BestaDeildKvenna",("latvia","1liga"):"Latvia_NakotnesLiga",("norway","division2gruppo1"):"Norway_2ndDivision_Group1",("norway","division2gruppo2"):"Norway_2ndDivision_Group2"}
+ explicit={("austria","oberosterreich"):"Austria_Oberosterreich",("austria","regionalligaest"):"Austria_Regionalliga_East",("belgium","jupilerleague"):"Belgium_JupilerProLeague",("france","ligue3"):"France_National",("hungary","nbi"):"Hungary_NBI",("iceland","bestadeildfemminile"):"Iceland_BestaDeildKvenna",("italy","seriea"):"Italy_SerieA",("iceland","bestadeildfemminileplayoffschampionship"):"Iceland_BestaDeildKvenna",("latvia","1liga"):"Latvia_NakotnesLiga",("norway","division2gruppo1"):"Norway_2ndDivision_Group1",("norway","division2gruppo2"):"Norway_2ndDivision_Group2"}
  wanted=explicit.get((norm(c),nl));return wanted if wanted and any(r.league_id==wanted for r in cand) else None
 def _competition_markers(value):
  raw=unicodedata.normalize("NFKD",value).encode("ascii","ignore").decode().casefold()
