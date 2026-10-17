@@ -94,7 +94,7 @@ def _competition_markers(value):
  markers=set()
  if any(x in n for x in ("women","woman","femmin","femmen","damer","frauen","femen","kvenna")) or re.search(r"(?:^|[\s._/-])d(?:$|[\s._/-])",raw):markers.add("female")
  if re.search(r"(?:u|under)(?:18|19|20|21|23)",n):markers.add("youth")
- if any(x in n for x in ("reserve","reserves","primavera")):markers.add("reserve")
+ if any(x in n for x in ("reserve","reserves","primavera","nextpro")):markers.add("reserve")
  return markers
 def resolve_match(reg,country,league,home,away):
  c=COUNTRY_MAP.get(country.upper(),country.title())
