@@ -399,7 +399,12 @@ def select_tournament_candidates(
         if str(sport_id) != "1":
             continue
         country = str((raw.get("defaultCountry") or {}).get("name", "")).strip()
-        country_score = _name_similarity(country, target.info.country)
+        country_names = [target.info.country]
+        country_names.extend(alias.country for alias in target.aliases if alias.country)
+        country_score = max(
+            (_name_similarity(country, wanted) for wanted in country_names),
+            default=0.0,
+        )
         if country_score < 0.78:
             continue
         gender = str((raw.get("gender") or {}).get("name", ""))
