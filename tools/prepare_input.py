@@ -110,6 +110,17 @@ def resolve_match(reg,country,league,home,away):
  # Fail closed: una partita esplicitamente femminile/giovanile/riserve non puo'
  # entrare in una competizione senior che non dichiara lo stesso tipo.
  if source_markers-target_markers:return None
+ # MLS senior: Flashscore può mescolare partite MLS Next Pro sotto un'etichetta
+ # troppo generica. Le seconde squadre e le affiliate Next Pro non devono
+ # entrare in USA_MLS.
+ if lid=="USA_MLS":
+  n_home,n_away=norm(home),norm(away)
+  raw_home,raw_away=home.casefold(),away.casefold()
+  if re.search(r"(?:\\s|^)(?:2|ii)$",raw_home) or re.search(r"(?:\\s|^)(?:2|ii)$",raw_away):
+   return None
+  mls_next_pro_affiliates={"venturacounty","connecticutfc"}
+  if n_home in mls_next_pro_affiliates or n_away in mls_next_pro_affiliates:
+   return None
  return lid
 def clean_lines(text):return [x.strip() for x in text.replace("\r","").split("\n") if x.strip()]
 def parse_date(line,year):
