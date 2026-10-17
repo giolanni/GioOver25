@@ -222,8 +222,8 @@ def _candidate_page_urls(search_rows, candidate, target=None):
         league_names += [target.info.league]
         for country in dict.fromkeys(x for x in country_names if x):
             for league in dict.fromkeys(x for x in league_names if x):
-                urls.append(f"{DIRETTA_BASE}/calcio/{_slug(country)}/{_slug(league)}/risultati/",
-                    f"{DIRETTA_BASE}/{_slug(league)}/risultati/")
+                urls.append(f"{DIRETTA_BASE}/calcio/{_slug(country)}/{_slug(league)}/risultati/")
+                urls.append(f"{DIRETTA_BASE}/{_slug(league)}/risultati/")
     return list(dict.fromkeys(urls))
 
 def _extract_season_ids(text: str):
