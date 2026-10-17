@@ -109,7 +109,9 @@ def main():
         # 1. Numero squadre
         # ---------------------------------------------------------
 
-        if actual_teams != expected_teams:
+        # Teams=0 nel registry significa che il numero di squadre non è
+        # configurato: in quel caso il controllo non deve generare alert.
+        if expected_teams > 0 and actual_teams != expected_teams:
             alerts.append(
                 f"🚨 ALERT SQUADRE: "
                 f"attese={expected_teams} trovate={actual_teams}"
