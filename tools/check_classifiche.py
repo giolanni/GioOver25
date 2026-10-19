@@ -59,6 +59,14 @@ def load_exceptions():
     return read_csv(EXCEPTIONS_FILE)
 
 
+def is_league_played_exception(exceptions, league_id):
+    return any(
+        item.get("LeagueID", "").strip() == league_id
+        and item.get("Check", "").strip().upper() == "LEAGUE_PLAYED"
+        for item in exceptions
+    )
+
+
 def is_played_exception(exceptions, league_id, row, played):
     team = str(row.get("Team", "")).strip()
     for item in exceptions:
@@ -164,7 +172,10 @@ def main():
         # ---------------------------------------------------------
 
         played_values = []
-        if league_id not in reset_leagues:
+        if (
+            league_id not in reset_leagues
+            and not is_league_played_exception(exceptions, league_id)
+        ):
             for row in rows:
                 played = get_played(row)
                 if played is None:
