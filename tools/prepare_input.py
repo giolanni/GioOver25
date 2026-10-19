@@ -9,6 +9,7 @@ DEFAULT_REGISTRY=ROOT/"data"/"league_registry.csv"
 TEAM_MAPPING_FILES=[
  ROOT/"docs"/"moldova_liga1_groups_2026.csv",
  ROOT/"docs"/"Portugal_Liga3_2026-27_team_mapping.csv",
+ ROOT/"docs"/"Indonesia_Championship_2026-27_team_mapping.csv",
  ROOT/"docs"/"kolmonen_2026_team_league_map.csv",
  ROOT/"docs"/"mappa_teams_groups_peru_2liga..txt",
  ROOT/"docs"/"mappa_teams_league_mslnextpro.txt",
