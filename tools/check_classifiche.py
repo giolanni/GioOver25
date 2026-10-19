@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CLASSIFICHE_DIR = ROOT / "data" / "storico" / "classifiche_calcolate"
 REGISTRY_FILE = ROOT / "data" / "league_registry.csv"
 LOG_FILE = ROOT / "data" / "check_classifiche.log"
+EXCEPTIONS_FILE = ROOT / "data" / "check_classifiche_exceptions.csv"
 
 
 def read_csv(path):
@@ -39,6 +40,31 @@ def load_registry():
     return registry
 
 
+def load_exceptions():
+    if not EXCEPTIONS_FILE.exists():
+        return []
+    return read_csv(EXCEPTIONS_FILE)
+
+
+def is_played_exception(exceptions, league_id, row, played):
+    team = str(row.get("Team", "")).strip()
+    for item in exceptions:
+        if item.get("LeagueID", "").strip() != league_id:
+            continue
+        if item.get("Check", "").strip().upper() != "TEAM_PLAYED":
+            continue
+        if item.get("Team", "").strip() != team:
+            continue
+        expected = item.get("ExpectedValue", "").strip()
+        if not expected:
+            return True
+        try:
+            return played == int(float(expected))
+        except ValueError:
+            return False
+    return False
+
+
 def get_played(row):
     """
     Cerca la colonna delle partite giocate.
@@ -61,6 +87,7 @@ def get_played(row):
 
 def main():
     registry = load_registry()
+    exceptions = load_exceptions()
 
     print(f"Leghe caricate dal registry: {len(registry)}")
 
@@ -121,11 +148,14 @@ def main():
         # 2. Disparità partite giocate
         # ---------------------------------------------------------
 
-        played_values = [
-            played
-            for row in rows
-            if (played := get_played(row)) is not None
-        ]
+        played_values = []
+        for row in rows:
+            played = get_played(row)
+            if played is None:
+                continue
+            if is_played_exception(exceptions, league_id, row, played):
+                continue
+            played_values.append(played)
 
         if played_values:
             min_played = min(played_values)
