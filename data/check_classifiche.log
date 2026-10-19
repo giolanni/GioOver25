@@ -10,7 +10,6 @@ Belgium_ChallengerProLeague
 
 Bosnia_WWINLigaBiH
   🚨 ALERT SQUADRE: attese=12 trovate=10
-  ⚠ ALERT PARTITE: min=6 max=9 diff=3
 
 CzechRepublic_3CFL_GroupA
   ⚠ ALERT PARTITE: min=8 max=11 diff=3
@@ -48,16 +47,6 @@ FaroeIslands_1Deild
 Germany_Oberliga_Niedersachsen
   🚨 ALERT SQUADRE: attese=18 trovate=16
 
-Germany_Regionalliga_Bayern
-  🚨 ALERT SQUADRE: attese=18 trovate=19
-
-Indonesia_Championship
-  🚨 ALERT SQUADRE: attese=20 trovate=21
-  🚨🚨 ALERT FORTE PARTITE: min=1 max=6 diff=5
-
-Italy_SerieAWomen
-  🚨 ALERT SQUADRE: attese=12 trovate=24
-
 Italy_SerieC_GironeB
   ⚠ ALERT PARTITE: min=7 max=10 diff=3
 
@@ -70,9 +59,6 @@ Lebanon_PremierLeague
 Lithuania_Toplyga
   🚨 ALERT SQUADRE: attese=10 trovate=9
 
-Mexico_LigaExpansionMX_Apertura
-  🚨 ALERT SQUADRE: attese=15 trovate=16
-
 Moldova_Liga1_GroupB
   🚨 ALERT SQUADRE: attese=6 trovate=5
 
@@ -81,9 +67,6 @@ NorthernIreland_NIFLPremiership
 
 NorthMacedonia_1MFL
   🚨 ALERT SQUADRE: attese=12 trovate=10
-
-SaudiArabia_ProfessionalLeague
-  ⚠ ALERT PARTITE: min=6 max=9 diff=3
 
 USA_MLSNextPro_EasternConference_NortheastDivision
   🚨 ALERT SQUADRE: attese=8 trovate=2
