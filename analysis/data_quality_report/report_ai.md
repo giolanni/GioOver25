@@ -10420,7 +10420,7 @@ Nessuna anomalia.
 
 ### WARNING-2073 · ST_PLAYED_SPREAD · Sweden_Division1_Sodra
 - Area: `standings`
-- Dettaglio: Played min=1, max=27, delta=26; min: Tvaakers IF; max: Trelleborg, Hassleholms IF, Lunds.
+- Dettaglio: Played min=1, max=27, delta=26; min: Tvaaker; max: Trelleborg, Hassleholms IF, Lunds.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Sweden_Division1_Sodra.csv`
 

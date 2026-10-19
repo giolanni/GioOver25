@@ -1,23 +1,23 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-9;1;Politehnica Timisoara;9;6;3;0;19;8;11;21;2.333
-9;2;CSM Slatina;8;6;1;1;16;7;9;19;2.375
-9;3;Chindia Targoviste;9;6;0;3;20;10;10;18;2.0
-9;4;CSM Resita;8;6;0;2;14;8;6;18;2.25
-9;5;Popesti Leordeni;8;5;2;1;21;13;8;17;2.125
-9;6;Metalul Buzau;8;5;1;2;10;7;3;16;2.0
-9;7;Cetatea Suceava;8;4;3;1;17;9;8;15;1.875
-9;8;Afumati;8;4;2;2;14;11;3;14;1.75
-9;9;FC Bacau;8;3;3;2;16;9;7;12;1.5
-9;10;Gloria Bistrita;8;4;0;4;11;9;2;12;1.5
-9;11;Concordia;8;4;0;4;16;15;1;12;1.5
-9;12;Bihor;8;3;2;3;13;9;4;11;1.375
-9;13;FC ASA Tg. Mures;8;3;2;3;11;14;-3;11;1.375
-9;14;Metaloglobus Bucharest;8;3;1;4;11;15;-4;10;1.25
-9;15;Ramnicu Valcea;8;3;1;4;9;13;-4;10;1.25
-9;16;Unirea Slobozia;8;2;0;6;11;11;0;6;0.75
-9;17;Steaua Bucuresti;8;1;3;4;9;16;-7;6;0.75
-9;18;Selimbar;8;1;3;4;6;13;-7;6;0.75
-9;19;Stefanesti;8;2;0;6;6;16;-10;6;0.75
-9;20;CSM Satu Mare;9;0;5;4;5;12;-7;5;0.556
-9;21;CS Din. Bucuresti;8;1;1;6;10;27;-17;4;0.5
-9;22;CSC Dumbravita;9;0;3;6;6;19;-13;3;0.333
+10;1;Politehnica Timisoara;10;7;3;0;20;8;12;24;2.4
+10;2;CSM Slatina;9;7;1;1;17;7;10;22;2.444
+10;3;Popesti Leordeni;9;6;2;1;23;13;10;20;2.222
+10;4;Chindia Targoviste;9;6;0;3;20;10;10;18;2.0
+10;5;Cetatea Suceava;9;5;3;1;19;9;10;18;2.0
+10;6;CSM Resita;9;6;0;3;14;10;4;18;2.0
+10;7;Metalul Buzau;9;5;2;2;10;7;3;17;1.889
+10;8;FC Bacau;9;4;3;2;19;9;10;15;1.667
+10;9;Concordia;9;5;0;4;21;15;6;15;1.667
+10;10;Bihor;9;4;2;3;15;9;6;14;1.556
+10;11;Afumati;9;4;2;3;14;13;1;14;1.556
+10;12;Gloria Bistrita;9;4;0;5;11;12;-1;12;1.333
+10;13;FC ASA Tg. Mures;8;3;2;3;11;14;-3;11;1.375
+10;14;Metaloglobus Bucharest;9;3;2;4;11;15;-4;11;1.222
+10;15;Ramnicu Valcea;9;3;1;5;9;14;-5;10;1.111
+10;16;Steaua Bucuresti;9;1;4;4;9;16;-7;7;0.778
+10;17;CS Din. Bucuresti;9;2;1;6;14;28;-14;7;0.778
+10;18;Unirea Slobozia;9;2;0;7;11;12;-1;6;0.667
+10;19;CSM Satu Mare;10;0;6;4;5;12;-7;6;0.6
+10;20;Selimbar;9;1;3;5;6;18;-12;6;0.667
+10;21;Stefanesti;9;2;0;7;7;20;-13;6;0.667
+10;22;CSC Dumbravita;10;0;3;7;6;21;-15;3;0.3

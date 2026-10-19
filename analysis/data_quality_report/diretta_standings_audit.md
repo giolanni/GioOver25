@@ -492,7 +492,7 @@ _Altre 744 righe sono disponibili nel CSV._
 | Poland_Division2 | NORMALIZED_NAME | Legia 2 | Legia II | ALIAS_ONLY |
 | Poland_Division2 | NORMALIZED_NAME | Slask 2 | Slask II | ALIAS_ONLY |
 | SaudiArabia_ProfessionalLeague | NORMALIZED_NAME | Al-Hilal | Al Hilal | ALIAS_WITH_DIFFERENCES |
-| SaudiArabia_ProfessionalLeague | NORMALIZED_NAME | Al-Ettifaq | Al Ettifaq | ALIAS_WITH_DIFFERENCES |
+| SaudiArabia_ProfessionalLeague | NORMALIZED_NAME | Al-Ettifaq | Al-Ettifaq | ALIAS_WITH_DIFFERENCES |
 | SaudiArabia_ProfessionalLeague | KNOWN_ALIAS | Al-Faysaly | Al Faysaly | ALIAS_WITH_DIFFERENCES |
 | Sweden_Division2_NorraGotaland | NORMALIZED_NAME | Karlstad 2 | Karlstad II | ALIAS_ONLY |
 | USA_USLChampionship | KNOWN_ALIAS | Birmingham Legion | Birmingham | ALIAS_WITH_DIFFERENCES |

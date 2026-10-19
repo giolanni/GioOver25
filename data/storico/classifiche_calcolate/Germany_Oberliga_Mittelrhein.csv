@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-2;1;Merten;2;2;0;0;9;1;8;6;3.0
-2;2;Duren;2;2;0;0;8;4;4;6;3.0
-2;3;Lindenthal-Hohenlind;2;2;0;0;5;2;3;6;3.0
-2;4;Frechen;2;2;0;0;3;1;2;6;3.0
-2;5;Chlodwig Zulpich;2;1;0;1;8;5;3;3;1.5
-2;6;Bornheim;2;1;0;1;7;6;1;3;1.5
-2;7;Fortuna Colonia 2;2;1;0;1;3;3;0;3;1.5
-2;8;Hurth;2;1;0;1;2;2;0;3;1.5
-2;9;Konigsdorf;2;1;0;1;5;6;-1;3;1.5
-2;10;Siegburger;2;1;0;1;3;4;-1;3;1.5
-2;11;Wegberg-Beeck;2;1;0;1;1;3;-2;3;1.5
-2;12;Eintracht Hohkeppel;2;1;0;1;5;9;-4;3;1.5
-2;13;VfL Vichttal;2;0;0;2;2;4;-2;0;0.0
-2;14;Porz;2;0;0;2;1;3;-2;0;0.0
-2;15;Hennef;2;0;0;2;1;4;-3;0;0.0
-2;16;Neunkirchen-Seelscheid;2;0;0;2;1;7;-6;0;0.0
+3;1;Merten;3;3;0;0;13;1;12;9;3.0
+3;2;Duren;3;3;0;0;11;6;5;9;3.0
+3;3;Frechen;3;3;0;0;5;2;3;9;3.0
+3;4;Siegburger;3;2;0;1;7;4;3;6;2.0
+3;5;Lindenthal-Hohenlind;3;2;0;1;8;8;0;6;2.0
+3;6;Wegberg-Beeck;3;2;0;1;3;3;0;6;2.0
+3;7;Eintracht Hohkeppel;3;1;1;1;7;11;-4;4;1.333
+3;8;Chlodwig Zulpich;3;1;0;2;8;7;1;3;1.0
+3;9;VfL Vichttal;3;1;0;2;8;7;1;3;1.0
+3;10;Bornheim;3;1;0;2;8;8;0;3;1.0
+3;11;Fortuna Colonia 2;3;1;0;2;5;6;-1;3;1.0
+3;12;Hennef;3;1;0;2;3;5;-2;3;1.0
+3;13;Hurth;3;1;0;2;2;6;-4;3;1.0
+3;14;Konigsdorf;3;1;0;2;5;10;-5;3;1.0
+3;15;Neunkirchen-Seelscheid;3;0;1;2;3;9;-6;1;0.333
+3;16;Porz;3;0;0;3;2;5;-3;0;0.0

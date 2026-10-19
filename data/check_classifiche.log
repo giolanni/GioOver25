@@ -2,7 +2,7 @@ Austria_Regionalliga_Central
   🚨 ALERT SQUADRE: attese=16 trovate=12
 
 Belarus_PershayaLiga
-  🚨🚨 ALERT FORTE PARTITE: min=25 max=29 diff=4
+  ⚠ ALERT PARTITE: min=26 max=29 diff=3
 
 Belgium_ChallengerProLeague
   🚨 ALERT SQUADRE: attese=16 trovate=15
@@ -10,49 +10,65 @@ Belgium_ChallengerProLeague
 
 Bosnia_WWINLigaBiH
   🚨 ALERT SQUADRE: attese=12 trovate=10
+  ⚠ ALERT PARTITE: min=6 max=9 diff=3
 
 CzechRepublic_3CFL_GroupA
-  ⚠ ALERT PARTITE: min=7 max=10 diff=3
+  ⚠ ALERT PARTITE: min=8 max=11 diff=3
 
 CzechRepublic_4Liga_GroupA
   🚨 ALERT SQUADRE: attese=16 trovate=15
 
 England_IsthmianLeaguePremierDivision
-  🚨🚨 ALERT FORTE PARTITE: min=9 max=13 diff=4
+  🚨🚨 ALERT FORTE PARTITE: min=9 max=14 diff=5
+
+England_LeagueOne
+  ⚠ ALERT PARTITE: min=7 max=10 diff=3
 
 England_NPLPremierDivision
-  ⚠ ALERT PARTITE: min=11 max=14 diff=3
+  🚨🚨 ALERT FORTE PARTITE: min=11 max=15 diff=4
 
 England_ProfessionalDevelopmentLeague
   🚨🚨 ALERT FORTE PARTITE: min=4 max=8 diff=4
 
 England_SouthernLeaguePremierCentral
-  ⚠ ALERT PARTITE: min=9 max=12 diff=3
+  ⚠ ALERT PARTITE: min=10 max=13 diff=3
+
+England_SouthernLeaguePremierSouth
+  ⚠ ALERT PARTITE: min=10 max=13 diff=3
 
 Estonia_Esiliiga
   🚨🚨 ALERT FORTE PARTITE: min=28 max=32 diff=4
 
+Estonia_EsiliigaB
+  ⚠ ALERT PARTITE: min=30 max=33 diff=3
+
 FaroeIslands_1Deild
-  🚨🚨 ALERT FORTE PARTITE: min=20 max=25 diff=5
+  🚨🚨 ALERT FORTE PARTITE: min=21 max=26 diff=5
 
 Germany_Oberliga_Niedersachsen
   🚨 ALERT SQUADRE: attese=18 trovate=16
 
 Germany_Regionalliga_Bayern
   🚨 ALERT SQUADRE: attese=18 trovate=19
-  ⚠ ALERT PARTITE: min=12 max=15 diff=3
+
+Indonesia_Championship
+  🚨 ALERT SQUADRE: attese=20 trovate=21
+  🚨🚨 ALERT FORTE PARTITE: min=1 max=6 diff=5
+
+Italy_SerieAWomen
+  🚨 ALERT SQUADRE: attese=12 trovate=24
 
 Italy_SerieC_GironeB
   ⚠ ALERT PARTITE: min=7 max=10 diff=3
 
 Latvia_Virsliga
-  ⚠ ALERT PARTITE: min=27 max=30 diff=3
+  🚨🚨 ALERT FORTE PARTITE: min=27 max=31 diff=4
 
 Lebanon_PremierLeague
-  🚨🚨 ALERT FORTE PARTITE: min=11 max=23 diff=12
+  🚨🚨 ALERT FORTE PARTITE: min=21 max=27 diff=6
 
 Lithuania_Toplyga
-  🚨🚨 ALERT FORTE PARTITE: min=17 max=30 diff=13
+  🚨 ALERT SQUADRE: attese=10 trovate=9
 
 Mexico_LigaExpansionMX_Apertura
   🚨 ALERT SQUADRE: attese=15 trovate=16
@@ -66,22 +82,11 @@ NorthernIreland_NIFLPremiership
 NorthMacedonia_1MFL
   🚨 ALERT SQUADRE: attese=12 trovate=10
 
-Peru_Liga2
-  🚨 ALERT SQUADRE: attese=15 trovate=17
-  🚨🚨 ALERT FORTE PARTITE: min=5 max=9 diff=4
-
-Peru_Liga2_GroupA
-  🚨🚨 ALERT FORTE PARTITE: min=5 max=11 diff=6
-
-Peru_Liga2_GroupB
-  🚨 ALERT SQUADRE: attese=9 trovate=10
-  🚨🚨 ALERT FORTE PARTITE: min=1 max=11 diff=10
-
-Serbia_SuperLiga
-  🚨 ALERT SQUADRE: attese=16 trovate=14
-
-Spain_LaLiga
+SaudiArabia_ProfessionalLeague
   ⚠ ALERT PARTITE: min=6 max=9 diff=3
+
+USA_MLSNextPro_EasternConference_NortheastDivision
+  🚨 ALERT SQUADRE: attese=8 trovate=2
 
 USA_USLChampionship
   🚨 ALERT SQUADRE: attese=24 trovate=25
