@@ -1,6 +1,6 @@
-Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 11;1;Pure Swansea;9;6;3;0;30;11;19;21;2.333
-11;2;Pontypridd;10;6;2;2;24;17;7;20;2
+11;2;Pontypridd;10;6;2;2;24;17;7;20;2.0
 11;3;Aberystwyth;9;6;1;2;22;9;13;19;2.111
 11;4;Caerau Ely;10;6;1;3;22;18;4;19;1.9
 11;5;Baglan Dragons;11;5;2;4;12;12;0;17;1.545
@@ -12,6 +12,6 @@ Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 11;11;Caerphilly;10;3;2;5;12;19;-7;11;1.1
 11;12;Pontardawe;9;3;1;5;15;17;-2;10;1.111
 11;13;Cardiff Draconians;8;2;3;3;11;14;-3;9;1.125
-11;14;Newport City;8;2;2;4;12;9;3;8;1
+11;14;Newport City;8;2;2;4;12;9;3;8;1.0
 11;15;Llantwit Major;9;2;2;5;8;21;-13;8;0.889
 11;16;Llanelli;11;0;2;9;9;33;-24;2;0.182

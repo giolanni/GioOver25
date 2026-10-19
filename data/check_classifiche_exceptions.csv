@@ -1,2 +1,5 @@
 LeagueID;Check;Team;ExpectedValue;Reason
 Lebanon_PremierLeague;TEAM_PLAYED;Bourj FC;11;Withdrawn during season
+Wales_CymruSouth;TEAM_PLAYED;Cardiff Draconians;8;corretto
+Wales_CymruSouth;TEAM_PLAYED;Newport City;8;corretto
+NorthernIreland_NIFLPremiership;LEAGUE_PLAYED;;;Calendario con partite giocate non allineate

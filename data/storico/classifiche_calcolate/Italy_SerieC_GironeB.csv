@@ -1,6 +1,6 @@
-Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 10;1;Spezia;10;9;1;0;18;4;14;28;2.8
-10;2;Ravenna;10;6;2;2;16;6;10;20;2
+10;2;Ravenna;10;6;2;2;16;6;10;20;2.0
 10;3;Grosseto;10;5;4;1;21;13;8;19;1.9
 10;4;Reggiana;10;5;2;3;14;9;5;17;1.7
 10;5;Guidonia;10;4;4;2;14;10;4;16;1.6

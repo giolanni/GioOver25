@@ -1,10 +1,10 @@
-Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-11;1;Bradford City;10;6;2;2;10;5;5;20;2
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+11;1;Bradford City;10;6;2;2;10;5;5;20;2.0
 11;2;Stockport;10;6;1;3;21;11;10;19;1.9
 11;3;Huddersfield;10;5;4;1;18;9;9;19;1.9
 11;4;Plymouth;11;6;1;4;18;14;4;19;1.727
 11;5;Cambridge Utd;10;5;4;1;16;12;4;19;1.9
-11;6;Sheffield Wed;9;5;3;1;20;8;12;18;2
+11;6;Sheffield Wed;9;5;3;1;20;8;12;18;2.0
 11;7;Reading;10;4;3;3;22;12;10;15;1.5
 11;8;Oxford Utd;8;4;2;2;16;10;6;14;1.75
 11;9;Leyton Orient;10;4;2;4;15;11;4;14;1.4
@@ -15,8 +15,8 @@ Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 11;14;Leicester;9;3;3;3;12;15;-3;12;1.333
 11;15;Wimbledon;10;3;3;4;7;15;-8;12;1.2
 11;16;Luton;9;3;2;4;17;17;0;11;1.222
-11;17;Doncaster;9;2;3;4;10;11;-1;9;1
-11;18;Milton Keynes;9;1;6;2;11;16;-5;9;1
+11;17;Doncaster;9;2;3;4;10;11;-1;9;1.0
+11;18;Milton Keynes;9;1;6;2;11;16;-5;9;1.0
 11;19;Peterborough;10;2;3;5;9;16;-7;9;0.9
 11;20;Blackpool;9;2;2;5;13;16;-3;8;0.889
 11;21;Barnsley;9;2;2;5;9;17;-8;8;0.889
