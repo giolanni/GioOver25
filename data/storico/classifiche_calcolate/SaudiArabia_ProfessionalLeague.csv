@@ -1,4 +1,4 @@
-Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 10;1;Al Qadsiah;9;7;1;1;23;9;14;22;2.444
 10;2;Al-Hilal;8;7;0;1;26;7;19;21;2.625
 10;3;Al Nassr FC;8;6;1;1;19;7;12;19;2.375
@@ -9,7 +9,7 @@ Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 10;8;Al Diriyah;9;3;3;3;8;9;-1;12;1.333
 10;9;Al Kholood;9;3;3;3;14;18;-4;12;1.333
 10;10;Al Khaleej;10;2;6;2;9;13;-4;12;1.2
-10;11;Al Hazem;9;2;3;4;10;13;-3;9;1
+10;11;Al Hazem;9;2;3;4;10;13;-3;9;1.0
 10;12;Al Riyadh;8;2;3;3;9;17;-8;9;1.125
 10;13;Al Shabab;8;1;4;3;9;11;-2;7;0.875
 10;14;Al Fayha;9;1;4;4;8;14;-6;7;0.778

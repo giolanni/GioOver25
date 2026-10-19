@@ -1,15 +1,15 @@
-Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
+﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 7;1;Beerschot VA;7;6;0;1;18;6;12;18;2.571
 7;2;Dender;7;6;0;1;11;2;9;18;2.571
 7;3;Eupen;6;5;0;1;13;5;8;15;2.5
-7;4;Francs Borains;6;4;0;2;9;7;2;12;2
+7;4;Francs Borains;6;4;0;2;9;7;2;12;2.0
 7;5;Hasselt;7;4;0;3;8;10;-2;12;1.714
 7;6;Virton;6;3;1;2;11;6;5;10;1.667
 7;7;Sporting Lokeren;6;3;1;2;13;11;2;10;1.667
 7;8;K. Lierse S.K.;6;2;2;2;7;8;-1;8;1.333
 7;9;Club Brugge U23;6;2;2;2;11;13;-2;8;1.333
 7;10;Gent U23;6;2;2;2;9;11;-2;8;1.333
-7;11;Genk U23;7;2;1;4;13;16;-3;7;1
+7;11;Genk U23;7;2;1;4;13;16;-3;7;1.0
 7;12;Patro Eisden;7;2;0;5;9;13;-4;6;0.857
 7;13;RFC Liege;7;1;2;4;11;18;-7;5;0.714
 7;14;Seraing;7;0;2;5;8;15;-7;2;0.286
