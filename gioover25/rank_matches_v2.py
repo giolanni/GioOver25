@@ -41,6 +41,7 @@ quali sono state recuperate le squadre.
 import argparse
 import csv
 import shutil
+from contextlib import redirect_stdout
 from datetime import date, datetime
 from pathlib import Path
 
@@ -57,6 +58,29 @@ RESULTS_DIR = Path("data/storico/risultati")
 OUTPUT_DIR = Path("data/output_ranking")
 INPUT_ARCHIVE_DIR = Path("data/input_partite/oldmatches")
 OUTPUT_ARCHIVE_NAME = "old_ranking"
+LOG_DIR = Path("data/logs")
+
+class _TeeLog:
+    def __init__(self, file_handle):
+        self.file_handle = file_handle
+        self.buffer = ""
+        self.console_warnings = []
+        self.warning_keys = set()
+    def write(self, value):
+        self.file_handle.write(value)
+        self.file_handle.flush()
+        self.buffer += value
+        while "\n" in self.buffer:
+            line, self.buffer = self.buffer.split("\n", 1)
+            if "[WARN]" in line or "[SKIP]" in line:
+                key = line[line.find("[WARN][HISTORY-COUNT]"):] if "[HISTORY-COUNT]" in line else line
+                if key not in self.warning_keys:
+                    self.warning_keys.add(key)
+                    self.console_warnings.append(line)
+        return len(value)
+    def flush(self):
+        self.file_handle.flush()
+
 
 # Regola campione immaturo:
 # - HomePlayed + AwayPlayed < 4  -> partita esclusa
@@ -1021,46 +1045,47 @@ def rank_matches(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Genera ranking partite GioOver2.5 v2.0"
-    )
+    parser = argparse.ArgumentParser(description="Genera ranking partite GioOver2.5 v2.0")
     parser.add_argument("input_file", help="CSV partite da analizzare")
-    parser.add_argument(
-        "--engine",
-        default="v20",
-        choices=get_available_engines() + ["all"],
-        help="Motore di scoring da usare",
-    )
+    parser.add_argument("--engine", default="v20", choices=get_available_engines() + ["all"], help="Motore di scoring da usare")
     parser.add_argument("--output", default=None, help="CSV output ranking")
     args = parser.parse_args()
 
     input_path = Path(args.input_file)
     base_name = input_path.stem.replace("partite", "ranking")
+    input_rows = read_matches_to_rank(input_path)
+    engine_names = get_available_engines() if args.engine == "all" else [args.engine]
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
+    log_path = LOG_DIR / ("rank_matches_" + datetime.now().strftime("%Y%m%d_%H%M%S") + ".log")
+    archived_total = 0
+    completed_engines = 0
 
-    if args.engine == "all":
-        engine_names = get_available_engines()
+    with log_path.open("w", encoding="utf-8") as log_file:
+        tee = _TeeLog(log_file)
+        with redirect_stdout(tee):
+            if args.engine == "all":
+                for engine_name in engine_names:
+                    archived_total += archive_output_rankings(engine_name)
+                for engine_name in engine_names:
+                    output_file = OUTPUT_DIR / engine_name / f"{base_name}_{engine_name}.csv"
+                    rank_matches(args.input_file, output_file, engine_name)
+                    completed_engines += 1
+            else:
+                archived_total = archive_output_rankings(args.engine)
+                output_file = Path(args.output) if args.output else OUTPUT_DIR / args.engine / f"{base_name}_{args.engine}.csv"
+                rank_matches(args.input_file, output_file, args.engine)
+                completed_engines = 1
+            archive_input_file(input_path)
 
-        for engine_name in engine_names:
-            archive_output_rankings(engine_name)
-
-        for engine_name in engine_names:
-            output_file = (
-                OUTPUT_DIR
-                / engine_name
-                / f"{base_name}_{engine_name}.csv"
-            )
-            rank_matches(args.input_file, output_file, engine_name)
-    else:
-        archive_output_rankings(args.engine)
-
-        output_file = (
-            Path(args.output)
-            if args.output
-            else OUTPUT_DIR / args.engine / f"{base_name}_{args.engine}.csv"
-        )
-        rank_matches(args.input_file, output_file, args.engine)
-
-    archive_input_file(input_path)
+    print(f"[RANK] {len(input_rows)} partite | {len(engine_names)} engine")
+    print(f"[ARCHIVE] {archived_total} ranking archiviati")
+    if tee.console_warnings:
+        print(f"[WARN] {len(tee.console_warnings)} anomalie (dettagli nel log)")
+        for warning in tee.console_warnings:
+            print(warning)
+    print(f"[RANK] completato: {completed_engines}/{len(engine_names)} engine")
+    print("[ARCHIVE] input salvato")
+    print(f"[LOG] {log_path}")
 
 
 if __name__ == "__main__":
