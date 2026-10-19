@@ -8,6 +8,7 @@ CLASSIFICHE_DIR = ROOT / "data" / "storico" / "classifiche_calcolate"
 REGISTRY_FILE = ROOT / "data" / "league_registry.csv"
 LOG_FILE = ROOT / "data" / "check_classifiche.log"
 EXCEPTIONS_FILE = ROOT / "data" / "check_classifiche_exceptions.csv"
+RESET_LOG_FILE = ROOT / "data" / "storico" / "aggregati_reset" / "reset_log.csv"
 
 
 def read_csv(path):
@@ -38,6 +39,18 @@ def load_registry():
         registry[league_id] = teams
 
     return registry
+
+
+def load_reset_leagues():
+    """Restituisce i LeagueId presenti nello storico dei reset."""
+    if not RESET_LOG_FILE.exists():
+        return set()
+
+    return {
+        row.get("LeagueId", "").strip()
+        for row in read_csv(RESET_LOG_FILE)
+        if row.get("LeagueId", "").strip()
+    }
 
 
 def load_exceptions():
@@ -88,8 +101,10 @@ def get_played(row):
 def main():
     registry = load_registry()
     exceptions = load_exceptions()
+    reset_leagues = load_reset_leagues()
 
     print(f"Leghe caricate dal registry: {len(registry)}")
+    print(f"Leghe presenti nello storico reset: {len(reset_leagues)}")
 
     files = sorted(CLASSIFICHE_DIR.glob("*.csv"))
 
@@ -149,13 +164,14 @@ def main():
         # ---------------------------------------------------------
 
         played_values = []
-        for row in rows:
-            played = get_played(row)
-            if played is None:
-                continue
-            if is_played_exception(exceptions, league_id, row, played):
-                continue
-            played_values.append(played)
+        if league_id not in reset_leagues:
+            for row in rows:
+                played = get_played(row)
+                if played is None:
+                    continue
+                if is_played_exception(exceptions, league_id, row, played):
+                    continue
+                played_values.append(played)
 
         if played_values:
             min_played = min(played_values)
