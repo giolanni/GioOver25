@@ -1,9 +1,9 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 8;1;Amedspor;8;5;2;1;18;9;9;17;2.125
-8;2;Galatasaray;7;5;1;1;13;11;2;16;2.286
-8;3;Besiktas;7;5;0;2;16;8;8;15;2.143
-8;4;Fenerbahce;7;4;1;2;18;4;14;13;1.857
-8;5;Trabzonspor;7;4;1;2;16;5;11;13;1.857
+8;2;Trabzonspor;8;5;1;2;18;5;13;16;2.0
+8;3;Galatasaray;7;5;1;1;13;11;2;16;2.286
+8;4;Besiktas;8;5;0;3;16;10;6;15;1.875
+8;5;Fenerbahce;7;4;1;2;18;4;14;13;1.857
 8;6;Corum;7;4;1;2;18;12;6;13;1.857
 8;7;Kocaelispor;8;4;0;4;9;8;1;12;1.5
 8;8;Alanyaspor;8;3;3;2;8;9;-1;12;1.5
