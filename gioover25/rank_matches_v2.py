@@ -1002,6 +1002,12 @@ def rank_matches(
 
         base_band = score_value(score, "band")
 
+        # Gli engine selection-only producono un ranking composto soltanto
+        # dalle partite effettivamente selezionate. ALTA rappresenta il
+        # segnale positivo dell'engine.
+        if getattr(engine, "SELECTION_ONLY", False) and base_band != "ALTA":
+            continue
+
         if immature_sample and base_band == "ALTA":
             contextual_band = f"IMM-ALTA-{total_played}"
             print(
