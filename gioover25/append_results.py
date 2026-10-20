@@ -301,6 +301,31 @@ def _match_key(
     )
 
 
+
+def _assert_no_exact_match_duplicates(
+    league_id: str,
+    matches: list[MatchResult],
+) -> None:
+    """Blocca il salvataggio se lo storico contiene la stessa partita due volte."""
+    seen: dict[tuple[str, str, str], MatchResult] = {}
+
+    for match in matches:
+        key = _match_key(league_id, match)
+        previous = seen.get(key)
+
+        if previous is None:
+            seen[key] = match
+            continue
+
+        raise ValueError(
+            "Duplicato partita nello storico: "
+            f"{league_id} | {match.date} | "
+            f"{match.home} - {match.away} | "
+            f"round {previous.round} e {match.round}. "
+            "Correggere lo storico prima di proseguire."
+        )
+
+
 def _postponed_key(
     league_id: str,
     home: str,
@@ -1168,6 +1193,11 @@ def append_results(
         all_matches = (
             existing_matches
             + added
+        )
+
+        _assert_no_exact_match_duplicates(
+            league_id,
+            all_matches,
         )
 
         all_matches.sort(
