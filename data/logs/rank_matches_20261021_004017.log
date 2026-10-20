@@ -1,0 +1,6 @@
+[ARCHIVE] data\output_ranking\v27\ranking_v27.csv -> data\output_ranking\v27\old_ranking\ranking_v27.csv
+[ARCHIVE] v27: 1 ranking archiviati.
+[WARN] PK-35: nessuna partita storica precedente. Utilizzo Finland_Veikkausliiga come lega di appartenenza.
+[v27] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v27\ranking_v27.csv
+[v27] Storico ranking aggiornato. Nuove previsioni: 0
+[ARCHIVE] Copia input: data\input_partite\partite.csv -> data\input_partite\oldmatches\partite_2026_10_21_004018.csv

@@ -30,7 +30,6 @@ Belarus_PershayaLiga;30;2026-10-10;2026-10-10;Din. Minsk 2;BATE 2;BASSA;POSTPONE
 Germany_Oberliga_SchleswigHolstein;14;2026-10-11;2026-10-11;VfR Neumunster;Oldenburger;MEDIA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 SaudiArabia_ProfessionalLeague;10;2026-10-11;2026-10-11;Abha;Al Faysaly;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 England_NPLPremierDivision;14;2026-10-13;2026-10-13;Bury;Leek;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
-England_NPLPremierDivision;14;2026-10-13;2026-10-13;Guiseley;Cleethorpes;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
 England_SouthernLeaguePremierSouth;16;2026-10-13;2026-10-13;Gloucester;Taunton;MEDIA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
 Germany_Oberliga_Niederrhein;13;2026-10-16;2026-10-16;Buderich;Baumberg;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
 Germany_Oberliga_SchleswigHolstein;14;2026-10-17;2026-10-17;Nordmark Satrup;Kilia Kiel;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
@@ -39,3 +38,11 @@ Germany_Oberliga_Hamburg;14;2026-10-18;2026-10-18;Pinneberg;Dassendorf;BASSA;POS
 Germany_Oberliga_Hamburg;14;2026-10-18;2026-10-18;Tesla Hamburg;Harksheide;MEDIA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
 Germany_Regionalliga_Nord;16;2026-10-18;2026-10-18;Norderstedt;Eimsbutteler;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
 England_SouthernLeaguePremierCentral;14;2026-10-19;2026-10-19;Redditch;Worcester;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+England_IsthmianLeaguePremierDivision;26;2026-10-20;2026-10-19;Cheshunt;Cray Wanderers;MEDIA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+England_IsthmianLeaguePremierDivision;26;2026-10-20;2026-10-19;Welling;Leatherhead;BASSA;SCHEDULED;NO;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+England_NPLPremierDivision;16;2026-10-20;2026-10-19;Curzon Ashton;FC United;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+England_NPLPremierDivision;16;2026-10-20;2026-10-19;Quorn;Bury;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+England_SouthernLeaguePremierCentral;14;2026-10-20;2026-10-19;Alvechurch;Bromsgrove;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+England_SouthernLeaguePremierCentral;14;2026-10-20;2026-10-19;Stourbridge;Anstey Nomads;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+England_SouthernLeaguePremierSouth;18;2026-10-20;2026-10-19;Poole;Hanwell Town;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+Germany_Oberliga_Hamburg;14;2026-10-20;2026-10-19;Altona;ETSV Hamburg;MEDIA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv

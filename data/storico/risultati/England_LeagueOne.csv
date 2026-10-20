@@ -1,4 +1,4 @@
-Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 England;League One;1;2026-08-15;Barnsley;Bromley;0;1;
 England;League One;1;2026-08-15;Blackpool;Wycombe;1;1;
 England;League One;1;2026-08-15;Bradford City;Peterborough;2;0;
@@ -113,3 +113,14 @@ England;League One;11;2026-10-17;Sheffield Wed;Wimbledon;5;0;
 England;League One;11;2026-10-17;Stockport;Bromley;1;0;
 England;League One;11;2026-10-17;Wigan;Reading;1;0;
 England;League One;11;2026-10-17;Wycombe;Notts County;2;0;
+England;League One;12;2026-10-20;Blackpool;Milton Keynes;2;0;
+England;League One;12;2026-10-20;Bromley;Leicester;0;4;
+England;League One;12;2026-10-20;Burton;Bradford City;0;0;
+England;League One;12;2026-10-20;Cambridge Utd;Wycombe;2;2;
+England;League One;12;2026-10-20;Doncaster;Stockport;0;2;
+England;League One;12;2026-10-20;Huddersfield;Peterborough;4;1;
+England;League One;12;2026-10-20;Luton;Barnsley;2;1;
+England;League One;12;2026-10-20;Notts County;Sheffield Wed;2;0;
+England;League One;12;2026-10-20;Oxford Utd;Wigan;2;1;
+England;League One;12;2026-10-20;Stevenage;Plymouth;3;0;
+England;League One;12;2026-10-20;Wimbledon;Mansfield;0;3;
