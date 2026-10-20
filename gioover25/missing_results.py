@@ -17,7 +17,7 @@ POSTPONED_STATUSES = {"posticipata", "postponed", "rinviata", "delayed"}
 DEFAULT_RESULTS_ROOT = Path("data/storico/risultati")
 
 COLUMN_ALIASES = {
-    "league_id": ("LeagueId", "league_id", "League", "league"),
+    "league_id": ("LeagueId", "league_id"),
     "season": ("Season", "season"),
     "round": ("Round", "round", "MatchRound", "match_round"),
     "match_date": ("MatchDate", "Date", "match_date", "date"),
