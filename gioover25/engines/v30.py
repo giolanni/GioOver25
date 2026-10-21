@@ -3,6 +3,7 @@ from gioover25.scoring_v30 import calculate_score_v30
 
 ENGINE_NAME = "v30"
 ENGINE_VERSION = "3.0.0"
+SELECTION_ONLY = True
 
 
 def calculate_score(match_stats, league_info):
