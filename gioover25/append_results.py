@@ -1148,15 +1148,6 @@ def append_results(
                 dates_updated += 1
                 total_dates_updated += 1
 
-                print(
-                    "  Data corretta: "
-                    f"{match.home} - "
-                    f"{match.away} | "
-                    f"{old_date} -> "
-                    f"{match.date} "
-                    f"({days_difference} giorni)"
-                )
-
                 continue
 
             distant_matches = [
@@ -1222,25 +1213,6 @@ def append_results(
         total_added += len(added)
         total_duplicates += duplicates
 
-        print(league_id)
-        print(
-            f"  Aggiunte: {len(added)}"
-        )
-        print(
-            "  Duplicate esatte ignorate: "
-            f"{duplicates}"
-        )
-        print(
-            "  Date corrette: "
-            f"{dates_updated}"
-        )
-        print(
-            f"  Storico: {results_file}"
-        )
-        print(
-            f"  Classifica: {standings_file}"
-        )
-        print()
 
     _write_postponed(
         postponed_rows
@@ -1290,11 +1262,6 @@ def append_results(
         for match in matches
     ]
 
-    print(
-        "Aggiornamento ranking con risultati input: "
-        f"{len(finished_matches)}"
-    )
-
     for engine_name in ranking_history_engines:
         update_finished_matches(
             engine_name,
@@ -1311,10 +1278,6 @@ def append_results(
         input_file
     )
 
-    print(
-        "File input risultati archiviato: "
-        f"{archive_file}"
-    )
 
 def _run_post_update_tasks(full_analysis: bool = False) -> None:
     if full_analysis:
@@ -1340,10 +1303,6 @@ def _run_post_update_tasks(full_analysis: bool = False) -> None:
                 ],
             ),
         ]
-        print(
-            "\nAnalisi sperimentali pesanti non eseguite. "
-            "Usare --full-analysis per rigenerarle."
-        )
 
     commands.append(
         (
@@ -1357,8 +1316,6 @@ def _run_post_update_tasks(full_analysis: bool = False) -> None:
     )
 
     for description, command in commands:
-        print(f"\nAvvio {description}...")
-
         result = subprocess.run(
             command,
             check=False,
