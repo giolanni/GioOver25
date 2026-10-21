@@ -10,7 +10,6 @@ Germany_Oberliga_Hamburg;6;2026-09-05;2026-09-05;Altona;ETSV Hamburg;ALTA;POSTPO
 USA_MLS;26;2026-09-06;2026-09-06;Cincinnati;DC United;PROX-MEDIA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Wales_CymruSouth;7;2026-09-11;2026-09-10;Newport City;Trethomas Bluebirds;MEDIA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Ukraine_PremierLeague;7;2026-09-12;2026-09-12;Kryvbas;FC Kharkiv;MEDIA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
-Spain_LaLiga;9;2026-09-16;2026-09-16;Levante;Ath. Bilbao;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Wales_CymruSouth;8;2026-09-16;2026-09-16;Newport City;Trethomas Bluebirds;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Belarus_PershayaLiga;29;2026-09-27;2026-09-27;Din. Minsk 2;Molodechno;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Bulgaria_VtoraLiga;11;2026-09-27;2026-09-27;Ludogorets 2;Etar;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
@@ -46,3 +45,4 @@ England_SouthernLeaguePremierCentral;14;2026-10-20;2026-10-19;Alvechurch;Bromsgr
 England_SouthernLeaguePremierCentral;14;2026-10-20;2026-10-19;Stourbridge;Anstey Nomads;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
 England_SouthernLeaguePremierSouth;18;2026-10-20;2026-10-19;Poole;Hanwell Town;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
 Germany_Oberliga_Hamburg;14;2026-10-20;2026-10-19;Altona;ETSV Hamburg;MEDIA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
+Germany_Oberliga_Niedersachsen;13;2026-10-21;2026-10-21;Drochtersen/Assel 2;Luneburger Hansa;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv

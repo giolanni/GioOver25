@@ -3,10 +3,10 @@
 2;v20def;Austria_Regionalliga_North;11;2;2026-09-04;2026-10-17;13;84.62
 3;v20def;Norway_3rdDivision_Group5;9;0;2026-09-06;2026-10-17;9;100.0
 4;v20def;Poland_IIILiga_Group1;8;2;2026-09-05;2026-10-14;10;80.0
-5;v20def;Austria_Regionalliga_South;8;3;2026-09-04;2026-10-16;11;72.73
-6;v20def;Austria_Tirol;8;3;2026-09-04;2026-10-18;11;72.73
-7;v20def;Norway_3rdDivision_Group1;8;3;2026-09-12;2026-10-17;11;72.73
-8;v20def;Switzerland_PromotionLeague;8;3;2026-09-05;2026-10-17;11;72.73
+5;v20def;Austria_Tirol;8;3;2026-09-04;2026-10-18;11;72.73
+6;v20def;Norway_3rdDivision_Group1;8;3;2026-09-12;2026-10-17;11;72.73
+7;v20def;Switzerland_PromotionLeague;8;3;2026-09-05;2026-10-17;11;72.73
+8;v20def;Austria_Regionalliga_South;8;4;2026-09-04;2026-10-21;12;66.67
 9;v20def;Poland_IIILiga_Group2;8;6;2026-09-05;2026-10-17;14;57.14
 10;v20def;Germany_Oberliga_SchleswigHolstein;7;1;2026-08-30;2026-10-18;8;87.5
 11;v20def;Norway_3rdDivision_Group2;6;1;2026-09-07;2026-10-17;7;85.71
@@ -53,5 +53,6 @@
 52;v20def;Sweden_Division2_SodraSvealand;0;2;2026-09-12;2026-09-14;2;0.0
 53;v20def;England_ProfessionalDevelopmentLeague;0;1;2026-10-09;2026-10-09;1;0.0
 54;v20def;Germany_Oberliga_Hamburg;0;1;2026-09-27;2026-09-27;1;0.0
-55;v20def;Scotland_Premiership;0;1;2026-09-15;2026-09-15;1;0.0
-56;v20def;Switzerland_SuperLeague;0;1;2026-09-19;2026-09-19;1;0.0
+55;v20def;Kyrgyzstan_PremierLiga;0;1;2026-10-21;2026-10-21;1;0.0
+56;v20def;Scotland_Premiership;0;1;2026-09-15;2026-09-15;1;0.0
+57;v20def;Switzerland_SuperLeague;0;1;2026-09-19;2026-09-19;1;0.0

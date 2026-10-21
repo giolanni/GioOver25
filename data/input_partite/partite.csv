@@ -1,42 +1,34 @@
 ﻿LeagueId;MatchDate;Home;Away
-Armenia_FirstLeague;2026-10-21;Bentonit;Sardarapat 2
-Austria_Regionalliga_South;2026-10-21;Kalsdorf;Lafnitz
-Azerbaijan_FirstLeague;2026-10-21;Khankendi;Mingachevir
-Azerbaijan_FirstLeague;2026-10-21;Sahdag Qusar;Sabail
-Bosnia_PrvaLiga_RS;2026-10-21;Zvijezda 09;Omarska
-Bosnia_PrvaLiga_RS;2026-10-21;Famos Vojkovici;Prijedor
-Bosnia_PrvaLiga_RS;2026-10-21;Leotar;Nevesinje
-Bosnia_PrvaLiga_RS;2026-10-21;Romanija Pale;Slavija
-Bosnia_PrvaLiga_RS;2026-10-21;Potkozarje;Drina Zvornik
-Bosnia_PrvaLiga_RS;2026-10-21;Laktasi;Kozara
-Estonia_Meistriliiga;2026-10-21;Harju JK Laagri;Flora
-Finland_Veikkausliiga;2026-10-21;PK-35;Jaro
-Germany_Oberliga_Niedersachsen;2026-10-21;Drochtersen/Assel II;Luneburger Hansa
-Japan_J1League;2026-10-21;Avispa Fukuoka;G-Osaka
-Japan_J1League;2026-10-21;Kawasaki;Kobe
-Japan_J1League;2026-10-21;Kyoto;Kashima
-Japan_J1League;2026-10-21;Nagoya;C-Osaka
-Japan_J1League;2026-10-21;Okayama;Mito
-Japan_J1League;2026-10-21;Shimizu;Machida
-Japan_J1League;2026-10-21;Tokyo;Kashiwa
-Japan_J1League;2026-10-21;V-Varen Nagasaki;Hiroshima
-Japan_J1League;2026-10-21;Yokohama M.;Verdy
-Japan_J1League;2026-10-21;Urawa;Chiba
-Indonesia_SuperLeague;2026-10-21;Bali United;Garudayaksa
-Indonesia_SuperLeague;2026-10-21;Persija Jakarta;Arema
-England_LeagueOne;2026-10-21;Reading;Leyton Orient
-England_NPLPremierDivision;2026-10-21;Avro;Ashton Utd
-England_IsthmianLeaguePremierDivision;2026-10-21;Whyteleafe;Burgess Hill
-Kyrgyzstan_PremierLiga;2026-10-21;Alay Osh;Alga
-Kyrgyzstan_PremierLiga;2026-10-21;Bars;Abdysh-Ata
-Mexico_LigaMX_Apertura;2026-10-21;Guadalajara;Necaxa
-Mexico_LigaMX_Apertura;2026-10-21;Atl. San Luis;Queretaro
-Mexico_LigaMX_Apertura;2026-10-21;Juarez;Atlante
-Mexico_LigaMX_Apertura;2026-10-21;Tigres;Leon
-Norway_OBOSLigaen;2026-10-21;Sogndal;Raufoss
-Norway_3rdDivision_Group2;2026-10-21;Aalesund 2;Nardo
-Poland_IIILiga_Group1;2026-10-21;Widzew Lodz II;Warta Sieradz
-Slovakia_3Liga_West;2026-10-21;MSK Senec;Belusa
-Spain_LaLiga;2026-10-21;Levante;Ath. Bilbao
-Switzerland_PromotionLeague;2026-10-21;Kreuzlingen;Bulle
-Switzerland_PromotionLeague;2026-10-21;Bellinzona;Bruhl SG
+SaudiArabia_ProfessionalLeague;2026-10-22;Al Hazem;Al Fayha
+SaudiArabia_ProfessionalLeague;2026-10-22;Al Fateh;Al Shabab
+SaudiArabia_ProfessionalLeague;2026-10-22;Al Ahli SC;Al Khaleej
+Armenia_PremierLeague;2026-10-22;Sardarapat;Urartu
+Azerbaijan_FirstLeague;2026-10-22;Gancabasar;Zaqatala
+Azerbaijan_FirstLeague;2026-10-22;Moik Baku;Karvan
+Azerbaijan_FirstLeague;2026-10-22;Shimal;Baku Sporting
+Indonesia_SuperLeague;2026-10-22;Persik Kediri;PSS Sleman
+Indonesia_SuperLeague;2026-10-22;PSM Makassar;Persebaya
+Indonesia_SuperLeague;2026-10-22;Madura United;Persib
+Kazakhstan_FirstLeague;2026-10-22;Akademiya Ontustik;Turan
+Kazakhstan_FirstLeague;2026-10-22;Aktobe 2;FC Astana 2
+Kazakhstan_FirstLeague;2026-10-22;FC Batyr;Taraz
+Kazakhstan_FirstLeague;2026-10-22;Jaiyq;Arys
+Kazakhstan_FirstLeague;2026-10-22;Kaspij Aktau 2;Khan Tengri
+Kazakhstan_FirstLeague;2026-10-22;Shakhter K.;Kairat Almaty 2
+Kazakhstan_FirstLeague;2026-10-22;Yelimay Semey 2;Tobol 2
+Kyrgyzstan_PremierLiga;2026-10-22;Aldier;Asiagoal Bishkek
+Kyrgyzstan_PremierLiga;2026-10-22;Ozgon;Asia Talas
+Latvia_NakotnesLiga;2026-10-22;Tukums 2000 2;Super Nova 2
+Mexico_LigaMX_Apertura;2026-10-22;Atlas;Club America
+Mexico_LigaMX_Apertura;2026-10-22;Puebla;Monterrey
+Mexico_LigaMX_Apertura;2026-10-22;Toluca;Tijuana
+Mexico_LigaMX_Apertura;2026-10-22;Pachuca;Cruz Azul
+Mexico_LigaMX_Apertura;2026-10-22;Santos Laguna;U.N.A.M.
+Montenegro_PrvaCrnogorskaLiga;2026-10-22;Mornar;Mladost DG
+Montenegro_PrvaCrnogorskaLiga;2026-10-22;Buducnost;Arsenal Tivat
+Romania_Liga2;2026-10-22;Bihor;CSM Resita
+USA_MLS;2026-10-22;Cincinnati;DC United
+USA_USLChampionship;2026-10-22;Brooklyn;Birmingham
+USA_USLChampionship;2026-10-22;Sporting Jax;Louisville City
+USA_USLLeagueOne;2026-10-22;Sarasota Paradise;FC Naples
+USA_USLLeagueOne;2026-10-22;New York Cosmos;Spokane Velocity
