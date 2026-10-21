@@ -5,6 +5,7 @@ from . import vg1
 ENGINE_NAME = "vg22"
 ENGINE_VERSION = "1.0.0"
 MARKET = "GOAL"
+SELECTION_ONLY = True
 
 
 def calculate_score(match_stats, league_info):
