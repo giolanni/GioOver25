@@ -1,5 +1,4 @@
 ﻿LeagueId;Round;MatchDate;PredictionDate;Home;Away;Band;HistoricalStatus;Postponed;SourceFile
-USA_USLLeagueOne;27;2026-08-02;2026-08-02;Sarasota Paradise;FC Naples;BASSA;POSTPONED;SI;data\storico\ranking\v251\storico_ranking_v251.csv
 Germany_Oberliga_RheinlandPfalzSaar;4;2026-08-15;2026-08-14;RW Wittlich;TSV 1881 Gau-Odernheim;BASSA;POSTPONED;SI;data\storico\ranking\v26\storico_ranking_v26.csv
 CzechRepublic_3CFL_GroupB;3;2026-08-22;2026-08-21;Varnsdorf;Horni Redice;BASSA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Wales_CymruNorth;3;2026-08-22;2026-08-21;Caersws;Newtown;BASSA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
@@ -7,7 +6,6 @@ Wales_CymruSouth;3;2026-08-28;2026-08-21;Treowen;Cardiff Draconians;MEDIA;POSTPO
 Wales_CymruSouth;5;2026-08-31;2026-08-31;Cardiff Draconians;Pontardawe;MEDIA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Wales_CymruSouth;5;2026-08-31;2026-08-31;Newport City;Pure Swansea;IMM-ALTA-6;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Germany_Oberliga_Hamburg;6;2026-09-05;2026-09-05;Altona;ETSV Hamburg;ALTA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
-USA_MLS;26;2026-09-06;2026-09-06;Cincinnati;DC United;PROX-MEDIA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Wales_CymruSouth;7;2026-09-11;2026-09-10;Newport City;Trethomas Bluebirds;MEDIA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Ukraine_PremierLeague;7;2026-09-12;2026-09-12;Kryvbas;FC Kharkiv;MEDIA;POSTPONED;SI;data\storico\ranking\v31\storico_ranking_v31.csv
 Wales_CymruSouth;8;2026-09-16;2026-09-16;Newport City;Trethomas Bluebirds;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
