@@ -755,12 +755,9 @@ def rank_matches(
     output_file: str | Path,
     engine_name: str = "v20",
 ) -> None:
-    engine = get_engine(engine_name)
     prediction_date = date.today().isoformat()
-    algorithm_version = engine.ENGINE_VERSION
     registry_rows = read_registry()
     rows = read_matches_to_rank(input_file)
-    results = []
     return _rank_rows(
         rows=rows,
         engine_names=[engine_name],
