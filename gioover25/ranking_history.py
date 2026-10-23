@@ -20,6 +20,7 @@ registrato esplicitamente prima dell'arrivo del risultato.
 import csv
 import os
 import tempfile
+import time
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -159,7 +160,27 @@ def _write_history(engine_name: str, rows: list[dict]) -> None:
             file_handle.flush()
             os.fsync(file_handle.fileno())
 
-        os.replace(temporary_path, path)
+        # Su Windows il file destinazione puo' essere temporaneamente
+        # trattenuto da antivirus, indicizzazione o sincronizzazione anche
+        # quando nessun processo Python lo tiene aperto. Ritentiamo la
+        # sostituzione atomica prima di considerare la scrittura fallita.
+        replace_error = None
+        for attempt in range(5):
+            try:
+                os.replace(temporary_path, path)
+                replace_error = None
+                break
+            except PermissionError as exc:
+                replace_error = exc
+                if attempt < 4:
+                    time.sleep(0.25 * (attempt + 1))
+
+        if replace_error is not None:
+            raise PermissionError(
+                f"Impossibile aggiornare lo storico ranking {path} dopo "
+                "5 tentativi. Il file risulta bloccato da Windows o da un "
+                "processo esterno."
+            ) from replace_error
     finally:
         if temporary_path is not None and temporary_path.exists():
             temporary_path.unlink()
