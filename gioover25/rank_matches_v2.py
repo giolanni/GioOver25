@@ -761,6 +761,29 @@ def rank_matches(
     registry_rows = read_registry()
     rows = read_matches_to_rank(input_file)
     results = []
+    return _rank_rows(
+        rows=rows,
+        engine_names=[engine_name],
+        registry_rows=registry_rows,
+        prediction_date=prediction_date,
+        output_files={engine_name: Path(output_file)},
+    )[engine_name]
+
+
+def _rank_rows(
+    *,
+    rows: list[dict],
+    engine_names: list[str],
+    registry_rows: list[dict],
+    prediction_date: str,
+    output_files: dict[str, Path],
+) -> dict[str, list[dict]]:
+    engines = {name: get_engine(name) for name in engine_names}
+    results_by_engine = {name: [] for name in engine_names}
+    needs_defense_last5 = any(
+        getattr(engine, "REQUIRES_DEFENSE_LAST5", False)
+        for engine in engines.values()
+    )
 
     for row in rows:
         league_id = row["LeagueId"].strip()
@@ -936,118 +959,132 @@ def rank_matches(
                 f"{match_stats.away.overall.played}."
             )
 
-        requires_played_counts = bool(
-            getattr(engine, "REQUIRES_PLAYED_COUNTS", False)
-        )
-        requires_defense_last5 = bool(
-            getattr(engine, "REQUIRES_DEFENSE_LAST5", False)
-        )
-
-        engine_kwargs = {}
-
-        if requires_played_counts:
-            # Questi valori sono già stati calcolati sopra per la regola del
-            # campione immaturo: non scandire nuovamente gli stessi storici.
-            engine_kwargs.update(
-                home_played=home_played,
-                away_played=away_played,
-            )
-
-        if requires_defense_last5:
-            engine_kwargs.update(
-                home_ga_last5=calculate_team_ga_last5_before_match(
+        shared_last5 = {}
+        if needs_defense_last5:
+            shared_last5 = {
+                "home_ga_last5": calculate_team_ga_last5_before_match(
                     team=home,
                     source_league_id=home_source,
                     histories=histories,
                     match_date=match_date_value,
                     include_all_histories=use_all_team_histories,
                 ),
-                away_ga_last5=calculate_team_ga_last5_before_match(
+                "away_ga_last5": calculate_team_ga_last5_before_match(
                     team=away,
                     source_league_id=away_source,
                     histories=histories,
                     match_date=match_date_value,
                     include_all_histories=use_all_team_histories,
                 ),
-            )
+            }
 
-        score = engine.calculate_score(
-            match_stats,
-            league_info,
-            **engine_kwargs,
-        )
+        for engine_name, engine in engines.items():
+            algorithm_version = engine.ENGINE_VERSION
+            engine_kwargs = {}
 
-        contextual_band = None
-        apply_contextual_band = getattr(engine, "apply_contextual_band", None)
-
-        if callable(apply_contextual_band):
-            base_band = score_value(score, "band")
-
-            contextual_band = apply_contextual_band(
-                base_band,
-                home_played=home_played,
-                away_played=away_played,
-                home_ppg=home_ppg,
-                away_ppg=away_ppg,
-            )
-
-            if contextual_band != base_band:
-                print(
-                    f"[{engine_name}][PROX] {home} - {away}: "
-                    f"{base_band} -> {contextual_band} | "
-                    f"GP={home_played}/{away_played} | "
-                    f"PPG={home_ppg:.3f}/{away_ppg:.3f} | "
-                    f"gap={abs(home_ppg - away_ppg):.3f}"
+            if getattr(engine, "REQUIRES_PLAYED_COUNTS", False):
+                engine_kwargs.update(
+                    home_played=home_played,
+                    away_played=away_played,
                 )
 
-        base_band = score_value(score, "band")
+            if getattr(engine, "REQUIRES_DEFENSE_LAST5", False):
+                engine_kwargs.update(shared_last5)
 
-        # Gli engine selection-only producono un ranking composto soltanto
-        # dalle partite effettivamente selezionate. ALTA rappresenta il
-        # segnale positivo dell'engine.
-        if getattr(engine, "SELECTION_ONLY", False) and base_band != "ALTA":
-            continue
-
-        if immature_sample and base_band == "ALTA":
-            contextual_band = f"IMM-ALTA-{total_played}"
-            print(
-                f"[{engine_name}][IMM] {home} - {away}: "
-                f"ALTA -> {contextual_band} | "
-                f"GP={home_played}/{away_played} | totale={total_played}"
+            score = engine.calculate_score(
+                match_stats,
+                league_info,
+                **engine_kwargs,
             )
 
-        results.append(
-            build_output_row(
-                prediction_date=prediction_date,
-                match_date=match_date_text,
-                algorithm_version=algorithm_version,
-                league_id=league_id,
-                round_number=round_number,
-                home=home,
-                away=away,
-                home_source_league_id=home_source,
-                away_source_league_id=away_source,
-                competition_group=competition_group,
-                score=score,
-                band_override=contextual_band,
+            contextual_band = None
+            apply_contextual_band = getattr(
+                engine, "apply_contextual_band", None
             )
+
+            if callable(apply_contextual_band):
+                base_band = score_value(score, "band")
+                contextual_band = apply_contextual_band(
+                    base_band,
+                    home_played=home_played,
+                    away_played=away_played,
+                    home_ppg=home_ppg,
+                    away_ppg=away_ppg,
+                )
+
+                if contextual_band != base_band:
+                    print(
+                        f"[{engine_name}][PROX] {home} - {away}: "
+                        f"{base_band} -> {contextual_band} | "
+                        f"GP={home_played}/{away_played} | "
+                        f"PPG={home_ppg:.3f}/{away_ppg:.3f} | "
+                        f"gap={abs(home_ppg - away_ppg):.3f}"
+                    )
+
+            base_band = score_value(score, "band")
+
+            if (
+                getattr(engine, "SELECTION_ONLY", False)
+                and base_band != "ALTA"
+            ):
+                continue
+
+            if immature_sample and base_band == "ALTA":
+                contextual_band = f"IMM-ALTA-{total_played}"
+                print(
+                    f"[{engine_name}][IMM] {home} - {away}: "
+                    f"ALTA -> {contextual_band} | "
+                    f"GP={home_played}/{away_played} | totale={total_played}"
+                )
+
+            results_by_engine[engine_name].append(
+                build_output_row(
+                    prediction_date=prediction_date,
+                    match_date=match_date_text,
+                    algorithm_version=algorithm_version,
+                    league_id=league_id,
+                    round_number=round_number,
+                    home=home,
+                    away=away,
+                    home_source_league_id=home_source,
+                    away_source_league_id=away_source,
+                    competition_group=competition_group,
+                    score=score,
+                    band_override=contextual_band,
+                )
+            )
+
+    for engine_name, engine in engines.items():
+        results = results_by_engine[engine_name]
+        results.sort(
+            key=lambda item: float(item["Score"] or 0),
+            reverse=True,
+        )
+        output_path = output_files[engine_name]
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        with output_path.open(
+            "w", newline="", encoding="utf-8-sig"
+        ) as file_handle:
+            writer = csv.DictWriter(
+                file_handle,
+                fieldnames=FIELDNAMES,
+                delimiter=";",
+            )
+            writer.writeheader()
+            writer.writerows(results)
+
+        print(
+            f"[{engine_name}] Ranking generato: "
+            f"{output_path.resolve()}"
+        )
+        append_predictions(
+            results,
+            engine_name=engine_name,
+            algorithm_version=engine.ENGINE_VERSION,
         )
 
-    results.sort(key=lambda x: float(x["Score"] or 0), reverse=True)
-    output_path = Path(output_file)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    with output_path.open("w", newline="", encoding="utf-8-sig") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES, delimiter=";")
-        writer.writeheader()
-        writer.writerows(results)
-
-    print(f"[{engine_name}] Ranking generato: {output_path.resolve()}")
-    append_predictions(
-        results,
-        engine_name=engine_name,
-        algorithm_version=algorithm_version,
-    )
+    return results_by_engine
 
 
 def main() -> None:
@@ -1070,12 +1107,23 @@ def main() -> None:
         tee = _TeeLog(log_file)
         with redirect_stdout(tee):
             if args.engine == "all":
+                output_files = {}
                 for engine_name in engine_names:
                     archived_total += archive_output_rankings(engine_name)
-                for engine_name in engine_names:
-                    output_file = OUTPUT_DIR / engine_name / f"{base_name}_{engine_name}.csv"
-                    rank_matches(args.input_file, output_file, engine_name)
-                    completed_engines += 1
+                    output_files[engine_name] = (
+                        OUTPUT_DIR
+                        / engine_name
+                        / f"{base_name}_{engine_name}.csv"
+                    )
+
+                _rank_rows(
+                    rows=input_rows,
+                    engine_names=engine_names,
+                    registry_rows=read_registry(),
+                    prediction_date=date.today().isoformat(),
+                    output_files=output_files,
+                )
+                completed_engines = len(engine_names)
             else:
                 archived_total = archive_output_rankings(args.engine)
                 output_file = Path(args.output) if args.output else OUTPUT_DIR / args.engine / f"{base_name}_{args.engine}.csv"
