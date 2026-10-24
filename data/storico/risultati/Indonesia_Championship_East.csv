@@ -1,4 +1,4 @@
-Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Indonesia;Championship - East;1;2026-09-12;Barito Putera;Persipura;3;2;
 Indonesia;Championship - East;1;2026-09-12;De Red;Tornado Pekanbaru;0;1;
 Indonesia;Championship - East;1;2026-09-13;PSBS Biak Numfor;Sidoarjo;0;5;
@@ -29,3 +29,5 @@ Indonesia;Championship - East;6;2026-10-17;PSBS Biak Numfor;Persipura;1;6;
 Indonesia;Championship - East;6;2026-10-17;RANS Nusantara;Persela;1;0;
 Indonesia;Championship - East;6;2026-10-18;De Red;Barito Putera;0;2;
 Indonesia;Championship - East;6;2026-10-18;Sidoarjo;Persis Solo;3;3;
+Indonesia;Championship - East;7;2026-10-23;PSBS Biak Numfor;Barito Putera;0;3;
+Indonesia;Championship - East;7;2026-10-23;Persipura;Balikpapan;5;1;

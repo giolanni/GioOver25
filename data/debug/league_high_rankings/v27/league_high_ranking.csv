@@ -1,3 +1,15 @@
 ﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
-1;v27;Armenia_FirstLeague;1;0;2026-10-21;2026-10-21;1;100.0
-2;v27;Kyrgyzstan_PremierLiga;0;1;2026-10-21;2026-10-21;1;0.0
+1;v27;Austria_Regionalliga_West;2;0;2026-10-23;2026-10-23;2;100.0
+2;v27;Armenia_FirstLeague;1;0;2026-10-21;2026-10-21;1;100.0
+3;v27;Armenia_PremierLeague;1;0;2026-10-23;2026-10-23;1;100.0
+4;v27;Austria_Burgenland;1;0;2026-10-23;2026-10-23;1;100.0
+5;v27;Austria_Steiermark;1;0;2026-10-23;2026-10-23;1;100.0
+6;v27;Estonia_Esiliiga;1;0;2026-10-23;2026-10-23;1;100.0
+7;v27;Germany_Oberliga_Bremen;1;0;2026-10-23;2026-10-23;1;100.0
+8;v27;Germany_Oberliga_Niedersachsen;1;0;2026-10-23;2026-10-23;1;100.0
+9;v27;Germany_Regionalliga_West;1;0;2026-10-23;2026-10-23;1;100.0
+10;v27;Netherlands_EersteDivisie;1;0;2026-10-23;2026-10-23;1;100.0
+11;v27;Wales_CymruPremier;1;0;2026-10-23;2026-10-23;1;100.0
+12;v27;Wales_CymruSouth;1;0;2026-10-23;2026-10-23;1;100.0
+13;v27;Bosnia_WWINLigaBiH;0;1;2026-10-23;2026-10-23;1;0.0
+14;v27;Kyrgyzstan_PremierLiga;0;1;2026-10-21;2026-10-21;1;0.0

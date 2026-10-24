@@ -1,0 +1,543 @@
+[ARCHIVE] data\output_ranking\v1\ranking_v1.csv -> data\output_ranking\v1\old_ranking\ranking_v1_20261024_010203.csv
+[ARCHIVE] v1: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v13\ranking_v13.csv -> data\output_ranking\v13\old_ranking\ranking_v13_20261024_010203.csv
+[ARCHIVE] v13: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v20\ranking_v20.csv -> data\output_ranking\v20\old_ranking\ranking_v20_20261024_010203.csv
+[ARCHIVE] v20: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v20def\ranking_v20def.csv -> data\output_ranking\v20def\old_ranking\ranking_v20def_20261024_010203.csv
+[ARCHIVE] v20def: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v20defplus\ranking_v20defplus.csv -> data\output_ranking\v20defplus\old_ranking\ranking_v20defplus_20261024_010203.csv
+[ARCHIVE] v20defplus: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v20defplus_v2\ranking_v20defplus_v2.csv -> data\output_ranking\v20defplus_v2\old_ranking\ranking_v20defplus_v2_20261024_010203.csv
+[ARCHIVE] v20defplus_v2: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v20defplus_v3\ranking_v20defplus_v3.csv -> data\output_ranking\v20defplus_v3\old_ranking\ranking_v20defplus_v3_20261024_010203.csv
+[ARCHIVE] v20defplus_v3: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v20defselect\ranking_v20defselect.csv -> data\output_ranking\v20defselect\old_ranking\ranking_v20defselect_20261024_010203.csv
+[ARCHIVE] v20defselect: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v20plus\ranking_v20plus.csv -> data\output_ranking\v20plus\old_ranking\ranking_v20plus_20261024_010203.csv
+[ARCHIVE] v20plus: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v20select\ranking_v20select.csv -> data\output_ranking\v20select\old_ranking\ranking_v20select_20261024_010203.csv
+[ARCHIVE] v20select: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v21\ranking_v21.csv -> data\output_ranking\v21\old_ranking\ranking_v21_20261024_010203.csv
+[ARCHIVE] v21: 1 ranking archiviati.
+[ARCHIVE] data\output_ranking\v21dev\ranking_v21dev.csv -> data\output_ranking\v21dev\old_ranking\ranking_v21dev_20261024_010203.csv
+[ARCHIVE] v21dev: 1 ranking archiviati.
+[ARCHIVE] v22: 0 ranking archiviati.
+[ARCHIVE] v22def: 0 ranking archiviati.
+[ARCHIVE] v23: 0 ranking archiviati.
+[ARCHIVE] v24: 0 ranking archiviati.
+[ARCHIVE] v25: 0 ranking archiviati.
+[ARCHIVE] v251: 0 ranking archiviati.
+[ARCHIVE] v25def: 0 ranking archiviati.
+[ARCHIVE] v26: 0 ranking archiviati.
+[ARCHIVE] v26def: 0 ranking archiviati.
+[ARCHIVE] v27: 0 ranking archiviati.
+[ARCHIVE] v30: 0 ranking archiviati.
+[ARCHIVE] v31: 0 ranking archiviati.
+[ARCHIVE] vg1: 0 ranking archiviati.
+[ARCHIVE] vg1.2: 0 ranking archiviati.
+[ARCHIVE] vg1.3: 0 ranking archiviati.
+[ARCHIVE] vg1.4: 0 ranking archiviati.
+[ARCHIVE] vg2.2: 0 ranking archiviati.
+[ARCHIVE] vg2.6: 0 ranking archiviati.
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v1][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v1][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v1] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v1\ranking_v1.csv
+[v1] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v13][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v13][IMM] Napoli - Inter: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v13][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v13] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v13\ranking_v13.csv
+[v13] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v20] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v20\ranking_v20.csv
+[v20] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v20def] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v20def\ranking_v20def.csv
+[v20def] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v20defplus] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v20defplus\ranking_v20defplus.csv
+[v20defplus] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v20defplus_v2] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v20defplus_v2\ranking_v20defplus_v2.csv
+[v20defplus_v2] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v20defplus_v3] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v20defplus_v3\ranking_v20defplus_v3.csv
+[v20defplus_v3] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v20defselect] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v20defselect\ranking_v20defselect.csv
+[v20defselect] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v20plus] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v20plus\ranking_v20plus.csv
+[v20plus] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v20select] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v20select\ranking_v20select.csv
+[v20select] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v21][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v21][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v21][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v21] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v21\ranking_v21.csv
+[v21] Storico ranking aggiornato. Nuove previsioni: 0
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v21dev][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v21dev][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v21dev][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v21dev] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v21dev\ranking_v21dev.csv
+[v21dev] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v22][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v22][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v22][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v22] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v22\ranking_v22.csv
+[v22] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v22def][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v22def][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v22def][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v22def] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v22def\ranking_v22def.csv
+[v22def] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v23][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v23][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v23][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v23] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v23\ranking_v23.csv
+[v23] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v24][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v24][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v24][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v24] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v24\ranking_v24.csv
+[v24] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v25][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v25][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v25][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v25] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v25\ranking_v25.csv
+[v25] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v251][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v251][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v251][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v251] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v251\ranking_v251.csv
+[v251] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v25def][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v25def][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v25def][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v25def] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v25def\ranking_v25def.csv
+[v25def] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v26][PROX] Lauterach - Lochau: ALTA -> PROX-ALTA | GP=12/12 | PPG=1.000/0.917 | gap=0.083
+[v26][PROX] Donau Klagenfurt - ATSV Wolfsberger: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=0.583/0.833 | gap=0.250
+[v26][PROX] Leonfelden - TSV St. Johann: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.333/1.250 | gap=0.083
+[v26][PROX] LASK (Am) - Kuchl: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=2.000/1.750 | gap=0.250
+[v26][PROX] Rust - Neudorf/Parndorf: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.000/0.818 | gap=0.182
+[v26][PROX] Saint Michael Lavanttal - SV Spittal: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.333/1.250 | gap=0.083
+[v26][PROX] Stubai - Vols: ALTA -> PROX-ALTA | GP=12/12 | PPG=1.083/1.000 | gap=0.083
+[v26][PROX] Innsbrucker AC - Kematen: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.583/1.750 | gap=0.167
+[v26][PROX] Schlins - Nenzing: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.400/1.500 | gap=0.100
+[v26][PROX] Minsk 2 - Orsha: MEDIA -> PROX-MEDIA | GP=29/29 | PPG=1.138/0.931 | gap=0.207
+[v26][PROX] BumProm Gomel - Volna Pinsk: ALTA -> PROX-ALTA | GP=29/29 | PPG=1.414/1.207 | gap=0.207
+[v26][PROX] Drina Zvornik - Majevica: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.636/1.727 | gap=0.091
+[v26][PROX] Lok. Sofia - Botev Vratsa: MEDIA -> PROX-MEDIA | GP=12/11 | PPG=0.667/0.818 | gap=0.152
+[v26][PROX] Holstebro - Horsholm-Usserod: ALTA -> PROX-ALTA | GP=12/12 | PPG=1.083/1.333 | gap=0.250
+[v26][PROX] Meppen - Wurzburger Kickers: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.100/1.100 | gap=0.000
+[v26][PROX] Rostock - Dusseldorf: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.500/1.400 | gap=0.100
+[v26][PROX] Stoccarda 2 - Aachen: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.400/1.400 | gap=0.000
+[v26][PROX] Eimsbutteler - Jeddeloh: ALTA -> PROX-ALTA | GP=13/14 | PPG=1.077/0.929 | gap=0.148
+[v26][PROX] RSV Eintracht - Tasmania Berlin: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=0.692/0.615 | gap=0.077
+[v26][PROX] Zwickau - Aue: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.462/1.615 | gap=0.154
+[v26][PROX] Bochum 2 - Bocholt: ALTA -> PROX-ALTA | GP=12/13 | PPG=1.167/1.231 | gap=0.064
+[v26][PROX] Hilden - Schalke 2: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.385/1.462 | gap=0.077
+[v26][PROX] FSV Francoforte - Eint. Frankfurt 2: MEDIA -> PROX-MEDIA | GP=12/11 | PPG=1.083/1.182 | gap=0.098
+[v26][PROX] Augsburg 2 - Illertissen: ALTA -> PROX-ALTA | GP=14/14 | PPG=1.500/1.643 | gap=0.143
+[v26][PROX] Furth 2 - Schwaben Augsburg: MEDIA -> PROX-MEDIA | GP=14/14 | PPG=0.929/1.071 | gap=0.143
+[v26][PROX] Altona - Niendorfer TSV: ALTA -> PROX-ALTA | GP=11/12 | PPG=1.909/1.667 | gap=0.242
+[v26][PROX] Baunatal - Fernwald: MEDIA -> PROX-MEDIA | GP=14/14 | PPG=1.071/1.286 | gap=0.214
+[v26][PROX] Hadamar - Eddersheim: MEDIA -> PROX-MEDIA | GP=14/14 | PPG=1.714/1.786 | gap=0.071
+[v26][PROX] Pirmasens - Gonsenheim: ALTA -> PROX-ALTA | GP=13/13 | PPG=2.000/1.923 | gap=0.077
+[v26][PROX] RW Koblenz - RW Wittlich: ALTA -> PROX-ALTA | GP=13/12 | PPG=1.538/1.750 | gap=0.212
+[v26][PROX] Weiden - Ingolstadt 2: MEDIA -> PROX-MEDIA | GP=15/15 | PPG=0.933/0.867 | gap=0.067
+[v26][PROX] Kottern-St. Mang - Heimstetten: MEDIA -> PROX-MEDIA | GP=15/15 | PPG=1.133/1.200 | gap=0.067
+[v26][PROX] Kashima - Kashiwa: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.818/2.000 | gap=0.182
+[v26][PROX] Portsmouth - Millwall: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.364/1.364 | gap=0.000
+[v26][PROX] Blackburn - Wrexham: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.364/1.273 | gap=0.091
+[v26][PROX] West Ham - Southampton: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=2.000/1.909 | gap=0.091
+[v26][PROX] Luton - Leicester: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.400/1.500 | gap=0.100
+[v26][PROX] Cambridge Utd - Plymouth: MEDIA -> PROX-MEDIA | GP=11/12 | PPG=1.818/1.583 | gap=0.235
+[v26][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v26][PROX] Warrington - Gainsborough: ALTA -> PROX-ALTA | GP=13/13 | PPG=1.769/1.923 | gap=0.154
+[v26][PROX] H&W Welders - Loughgall: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.333/1.167 | gap=0.167
+[v26][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v26][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v26][PROX] Skanste - FK Smiltene: ALTA -> PROX-ALTA | GP=23/23 | PPG=1.130/0.870 | gap=0.261
+[v26][PROX] Atlante - Atl. San Luis: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.077/1.231 | gap=0.154
+[v26][PROX] Mjoendalen - Brattvag: MEDIA -> PROX-MEDIA | GP=25/24 | PPG=2.120/2.000 | gap=0.120
+[v26][PROX] Sotra - Notodden: MEDIA -> PROX-MEDIA | GP=24/24 | PPG=1.625/1.458 | gap=0.167
+[v26][PROX] Vidar - Lysekloster: ALTA -> PROX-ALTA | GP=24/24 | PPG=0.542/0.792 | gap=0.250
+[v26][PROX] Eidsvold - Honefoss: ALTA -> PROX-ALTA | GP=25/24 | PPG=2.320/2.042 | gap=0.278
+[v26][PROX] Ullern - Nordstrand: ALTA -> PROX-ALTA | GP=25/25 | PPG=1.040/0.920 | gap=0.120
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[v26][PROX] Mandalskameratene - Madla IL: MEDIA -> PROX-MEDIA | GP=24/24 | PPG=1.917/2.125 | gap=0.208
+[v26][PROX] Stabaek 2 - Hinna: ALTA -> PROX-ALTA | GP=24/24 | PPG=1.375/1.083 | gap=0.292
+[v26][PROX] Viking 2 - Flekkeroy: ALTA -> PROX-ALTA | GP=24/24 | PPG=1.458/1.625 | gap=0.167
+[v26][PROX] Finnsnes - Harstad: ALTA -> PROX-ALTA | GP=24/25 | PPG=1.667/1.960 | gap=0.293
+[v26][PROX] Elverum - SK Gjovik-Lyn: MEDIA -> PROX-MEDIA | GP=25/24 | PPG=2.120/1.833 | gap=0.287
+[v26][PROX] Huancayo - Alianza Atl.: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=2.000/1.727 | gap=0.273
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[v26][PROX] Korona - Katowice: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.364/1.636 | gap=0.273
+[v26][PROX] Stal Mielec - Chrobry Glogow: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.091/1.091 | gap=0.000
+[v26][PROX] S. Wola - Sandecja: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.333/1.583 | gap=0.250
+[v26][PROX] Plock 2 - Zabki: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.615/1.615 | gap=0.000
+[v26][PROX] Elblag - Jagiellonia 2: ALTA -> PROX-ALTA | GP=13/13 | PPG=1.308/1.231 | gap=0.077
+[v26][PROX] Lidzbark Warminski - LKS Lodz 2: ALTA -> PROX-ALTA | GP=13/13 | PPG=0.923/1.154 | gap=0.231
+[v26][PROX] Warta Sieradz - Pelikan: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.615/1.769 | gap=0.154
+[v26][PROX] Koszalin - Elana Torun: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.462/1.231 | gap=0.231
+[v26][PROX] Blekitni Stargard - Grom Nowy Staw: ALTA -> PROX-ALTA | GP=13/13 | PPG=1.462/1.231 | gap=0.231
+[v26][PROX] Polkowice - Goczalkowice Zdroj: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.385/1.154 | gap=0.231
+[v26][PROX] Aritma Prague - Dukla Praga B: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=0.727/0.909 | gap=0.182
+[v26][PROX] Loko Praha - Admira Prague: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.364/1.545 | gap=0.182
+[v26][PROX] Domazlice - Plzen B: ALTA -> PROX-ALTA | GP=11/10 | PPG=1.909/2.000 | gap=0.091
+[v26][PROX] Kraluv Dvur - Ceske Budejovice: ALTA -> PROX-ALTA | GP=10/11 | PPG=2.500/2.273 | gap=0.227
+[v26][PROX] Neratovice - Chrudim: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.182/1.182 | gap=0.000
+[v26][PROX] Sokolov - Ujezd Prague: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.636/1.909 | gap=0.273
+[v26][PROX] Steti - Tempo Prague: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.364/1.545 | gap=0.182
+[v26][PROX] Bohunice - Znojmo: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.909/1.636 | gap=0.273
+[v26][PROX] Havlickuv Brod - Velka Bites: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.818/1.909 | gap=0.091
+[v26][PROX] Prostejov B - Sternberk: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.636/1.545 | gap=0.091
+[v26][PROX] Opava B - Hlucin: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.727/1.818 | gap=0.091
+[v26][PROX] F. Voronezh - Rodina Moscow: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=0.545/0.545 | gap=0.000
+[v26][PROX] Arsenal Tula - Kamaz: MEDIA -> PROX-MEDIA | GP=14/14 | PPG=1.143/0.929 | gap=0.214
+[v26][PROX] Partizan - Cukaricki: MEDIA -> PROX-MEDIA | GP=11/12 | PPG=1.000/1.250 | gap=0.250
+[v26][PROX] Sollentuna - Vasalund: MEDIA -> PROX-MEDIA | GP=27/27 | PPG=1.037/1.037 | gap=0.000
+[v26][PROX] Laholms - Olympic: MEDIA -> PROX-MEDIA | GP=27/27 | PPG=1.074/1.333 | gap=0.259
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v26][PROX] Zurigo - Luzern: ALTA -> PROX-ALTA | GP=10/10 | PPG=1.400/1.200 | gap=0.200
+[v26][PROX] Aarau - Etoile-Carouge: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.200/0.900 | gap=0.300
+[v26][PROX] Amical Saint-Prex - Basilea 2: ALTA -> PROX-ALTA | GP=12/12 | PPG=1.333/1.583 | gap=0.250
+[v26][PROX] Columbus Crew - Toronto FC: MEDIA -> PROX-MEDIA | GP=30/31 | PPG=1.167/1.097 | gap=0.070
+[v26][PROX] Loudoun - Brooklyn: MEDIA -> PROX-MEDIA | GP=29/29 | PPG=0.966/0.724 | gap=0.241
+[v26] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v26\ranking_v26.csv
+[v26] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[v26def][PROX] Lauterach - Lochau: ALTA -> PROX-ALTA | GP=12/12 | PPG=1.000/0.917 | gap=0.083
+[v26def][PROX] Donau Klagenfurt - ATSV Wolfsberger: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=0.583/0.833 | gap=0.250
+[v26def][PROX] Leonfelden - TSV St. Johann: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.333/1.250 | gap=0.083
+[v26def][PROX] LASK (Am) - Kuchl: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=2.000/1.750 | gap=0.250
+[v26def][PROX] Saint Michael Lavanttal - SV Spittal: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.333/1.250 | gap=0.083
+[v26def][PROX] Stubai - Vols: ALTA -> PROX-ALTA | GP=12/12 | PPG=1.083/1.000 | gap=0.083
+[v26def][PROX] Innsbrucker AC - Kematen: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.583/1.750 | gap=0.167
+[v26def][PROX] Schlins - Nenzing: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.400/1.500 | gap=0.100
+[v26def][PROX] Minsk 2 - Orsha: MEDIA -> PROX-MEDIA | GP=29/29 | PPG=1.138/0.931 | gap=0.207
+[v26def][PROX] BumProm Gomel - Volna Pinsk: ALTA -> PROX-ALTA | GP=29/29 | PPG=1.414/1.207 | gap=0.207
+[v26def][PROX] Drina Zvornik - Majevica: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.636/1.727 | gap=0.091
+[v26def][PROX] Sutjeska Foca - Romanija Pale: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.000/1.091 | gap=0.091
+[v26def][PROX] Lok. Sofia - Botev Vratsa: MEDIA -> PROX-MEDIA | GP=12/11 | PPG=0.667/0.818 | gap=0.152
+[v26def][PROX] Middelfart - Skive: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.500/1.417 | gap=0.083
+[v26def][PROX] Holstebro - Horsholm-Usserod: ALTA -> PROX-ALTA | GP=12/12 | PPG=1.083/1.333 | gap=0.250
+[v26def][PROX] Meppen - Wurzburger Kickers: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.100/1.100 | gap=0.000
+[v26def][PROX] Rostock - Dusseldorf: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.500/1.400 | gap=0.100
+[v26def][PROX] Wehen - Grossaspach: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.200/1.200 | gap=0.000
+[v26def][PROX] Stoccarda 2 - Aachen: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.400/1.400 | gap=0.000
+[v26def][PROX] Eimsbutteler - Jeddeloh: ALTA -> PROX-ALTA | GP=13/14 | PPG=1.077/0.929 | gap=0.148
+[v26def][PROX] RSV Eintracht - Tasmania Berlin: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=0.692/0.615 | gap=0.077
+[v26def][PROX] Zwickau - Aue: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.462/1.615 | gap=0.154
+[v26def][PROX] Bochum 2 - Bocholt: ALTA -> PROX-ALTA | GP=12/13 | PPG=1.167/1.231 | gap=0.064
+[v26def][PROX] Hilden - Schalke 2: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.385/1.462 | gap=0.077
+[v26def][PROX] FSV Francoforte - Eint. Frankfurt 2: MEDIA -> PROX-MEDIA | GP=12/11 | PPG=1.083/1.182 | gap=0.098
+[v26def][PROX] Furth 2 - Schwaben Augsburg: MEDIA -> PROX-MEDIA | GP=14/14 | PPG=0.929/1.071 | gap=0.143
+[v26def][PROX] Baunatal - Fernwald: MEDIA -> PROX-MEDIA | GP=14/14 | PPG=1.071/1.286 | gap=0.214
+[v26def][PROX] Hadamar - Eddersheim: MEDIA -> PROX-MEDIA | GP=14/14 | PPG=1.714/1.786 | gap=0.071
+[v26def][PROX] Weiden - Ingolstadt 2: MEDIA -> PROX-MEDIA | GP=15/15 | PPG=0.933/0.867 | gap=0.067
+[v26def][PROX] Kottern-St. Mang - Heimstetten: MEDIA -> PROX-MEDIA | GP=15/15 | PPG=1.133/1.200 | gap=0.067
+[v26def][PROX] Kashima - Kashiwa: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.818/2.000 | gap=0.182
+[v26def][PROX] Portsmouth - Millwall: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.364/1.364 | gap=0.000
+[v26def][PROX] Blackburn - Wrexham: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.364/1.273 | gap=0.091
+[v26def][PROX] West Ham - Southampton: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=2.000/1.909 | gap=0.091
+[v26def][PROX] Luton - Leicester: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.400/1.500 | gap=0.100
+[v26def][PROX] Cambridge Utd - Plymouth: MEDIA -> PROX-MEDIA | GP=11/12 | PPG=1.818/1.583 | gap=0.235
+[v26def][IMM] Barnet - Oldham: ALTA -> IMM-ALTA-9 | GP=4/5 | totale=9
+[v26def][PROX] H&W Welders - Loughgall: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.333/1.167 | gap=0.167
+[v26def][IMM] Milan - Ternana: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v26def][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[v26def][PROX] Skanste - FK Smiltene: ALTA -> PROX-ALTA | GP=23/23 | PPG=1.130/0.870 | gap=0.261
+[v26def][PROX] Atlante - Atl. San Luis: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.077/1.231 | gap=0.154
+[v26def][PROX] Mjoendalen - Brattvag: MEDIA -> PROX-MEDIA | GP=25/24 | PPG=2.120/2.000 | gap=0.120
+[v26def][PROX] Sotra - Notodden: MEDIA -> PROX-MEDIA | GP=24/24 | PPG=1.625/1.458 | gap=0.167
+[v26def][PROX] Vidar - Lysekloster: ALTA -> PROX-ALTA | GP=24/24 | PPG=0.542/0.792 | gap=0.250
+[v26def][PROX] Ullern - Nordstrand: ALTA -> PROX-ALTA | GP=25/25 | PPG=1.040/0.920 | gap=0.120
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[v26def][PROX] Mandalskameratene - Madla IL: MEDIA -> PROX-MEDIA | GP=24/24 | PPG=1.917/2.125 | gap=0.208
+[v26def][PROX] Stabaek 2 - Hinna: ALTA -> PROX-ALTA | GP=24/24 | PPG=1.375/1.083 | gap=0.292
+[v26def][PROX] Finnsnes - Harstad: ALTA -> PROX-ALTA | GP=24/25 | PPG=1.667/1.960 | gap=0.293
+[v26def][PROX] Elverum - SK Gjovik-Lyn: MEDIA -> PROX-MEDIA | GP=25/24 | PPG=2.120/1.833 | gap=0.287
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[v26def][PROX] Korona - Katowice: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.364/1.636 | gap=0.273
+[v26def][PROX] Stal Mielec - Chrobry Glogow: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.091/1.091 | gap=0.000
+[v26def][PROX] S. Wola - Sandecja: MEDIA -> PROX-MEDIA | GP=12/12 | PPG=1.333/1.583 | gap=0.250
+[v26def][PROX] Plock 2 - Zabki: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.615/1.615 | gap=0.000
+[v26def][PROX] Lidzbark Warminski - LKS Lodz 2: ALTA -> PROX-ALTA | GP=13/13 | PPG=0.923/1.154 | gap=0.231
+[v26def][PROX] Warta Sieradz - Pelikan: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.615/1.769 | gap=0.154
+[v26def][PROX] Koszalin - Elana Torun: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.462/1.231 | gap=0.231
+[v26def][PROX] Polkowice - Goczalkowice Zdroj: MEDIA -> PROX-MEDIA | GP=13/13 | PPG=1.385/1.154 | gap=0.231
+[v26def][PROX] Aritma Prague - Dukla Praga B: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=0.727/0.909 | gap=0.182
+[v26def][PROX] Loko Praha - Admira Prague: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.364/1.545 | gap=0.182
+[v26def][PROX] Kraluv Dvur - Ceske Budejovice: ALTA -> PROX-ALTA | GP=10/11 | PPG=2.500/2.273 | gap=0.227
+[v26def][PROX] Neratovice - Chrudim: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.182/1.182 | gap=0.000
+[v26def][PROX] Sokolov - Ujezd Prague: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.636/1.909 | gap=0.273
+[v26def][PROX] Steti - Tempo Prague: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.364/1.545 | gap=0.182
+[v26def][PROX] Bohunice - Znojmo: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.909/1.636 | gap=0.273
+[v26def][PROX] Havlickuv Brod - Velka Bites: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=1.818/1.909 | gap=0.091
+[v26def][PROX] Opava B - Hlucin: ALTA -> PROX-ALTA | GP=11/11 | PPG=1.727/1.818 | gap=0.091
+[v26def][PROX] F. Voronezh - Rodina Moscow: MEDIA -> PROX-MEDIA | GP=11/11 | PPG=0.545/0.545 | gap=0.000
+[v26def][PROX] Arsenal Tula - Kamaz: MEDIA -> PROX-MEDIA | GP=14/14 | PPG=1.143/0.929 | gap=0.214
+[v26def][PROX] Partizan - Cukaricki: MEDIA -> PROX-MEDIA | GP=11/12 | PPG=1.000/1.250 | gap=0.250
+[v26def][PROX] Sollentuna - Vasalund: MEDIA -> PROX-MEDIA | GP=27/27 | PPG=1.037/1.037 | gap=0.000
+[v26def][PROX] Laholms - Olympic: MEDIA -> PROX-MEDIA | GP=27/27 | PPG=1.074/1.333 | gap=0.259
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v26def][PROX] Zurigo - Luzern: ALTA -> PROX-ALTA | GP=10/10 | PPG=1.400/1.200 | gap=0.200
+[v26def][PROX] Aarau - Etoile-Carouge: MEDIA -> PROX-MEDIA | GP=10/10 | PPG=1.200/0.900 | gap=0.300
+[v26def][PROX] Amical Saint-Prex - Basilea 2: ALTA -> PROX-ALTA | GP=12/12 | PPG=1.333/1.583 | gap=0.250
+[v26def][PROX] Columbus Crew - Toronto FC: MEDIA -> PROX-MEDIA | GP=30/31 | PPG=1.167/1.097 | gap=0.070
+[v26def][PROX] Loudoun - Brooklyn: MEDIA -> PROX-MEDIA | GP=29/29 | PPG=0.966/0.724 | gap=0.241
+[v26def] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v26def\ranking_v26def.csv
+[v26def] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v27] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v27\ranking_v27.csv
+[v27] Storico ranking aggiornato. Nuove previsioni: 34
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v30] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v30\ranking_v30.csv
+[v30] Storico ranking aggiornato. Nuove previsioni: 3
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[v31] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v31\ranking_v31.csv
+[v31] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[vg1][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[vg1] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\vg1\ranking_vg1.csv
+[vg1] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[vg1.2][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[vg1.2] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\vg1.2\ranking_vg1.2.csv
+[vg1.2] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[vg1.3][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[vg1.3] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\vg1.3\ranking_vg1.3.csv
+[vg1.3] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[vg1.4][IMM] Juventus - Roma: ALTA -> IMM-ALTA-6 | GP=3/3 | totale=6
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[vg1.4] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\vg1.4\ranking_vg1.4.csv
+[vg1.4] Storico ranking aggiornato. Nuove previsioni: 614
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[vg2.2] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\vg2.2\ranking_vg2.2.csv
+[vg2.2] Storico ranking aggiornato. Nuove previsioni: 3
+[WARN][HISTORY-COUNT] SaudiArabia_ProfessionalLeague | Al Kholood - Al Ettifaq: MatchDate GP=9/10, Round GP=9/1.
+[WARN][HISTORY-COUNT] Norway_3rdDivision_Group3 | Gneist - OS: MatchDate GP=25/25, Round GP=25/1.
+[WARN] Minas: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[WARN] Ayacucho: nessuna partita storica precedente. Utilizzo Peru_Liga2_GroupB come lega di appartenenza.
+[SKIP] Peru_Liga2_GroupB | Minas - Ayacucho: GP=0/0, totale=0; minimo richiesto: 4.
+[SKIP] Peru_Liga2_GroupA: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[SKIP] Sweden_Division2_Norrland: nessuno storico risultati disponibile (minimo 4 gare complessive Home+Away).
+[WARN] Croatia Malmo: nessuna partita storica precedente. Utilizzo Sweden_Division2_SodraGotaland come lega di appartenenza.
+[vg2.6] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\vg2.6\ranking_vg2.6.csv
+[vg2.6] Storico ranking aggiornato. Nuove previsioni: 1
+[ARCHIVE] Copia input: data\input_partite\partite.csv -> data\input_partite\oldmatches\partite_2026_10_24.csv
