@@ -1222,26 +1222,13 @@ def append_results(
         suspect_rows
     )
 
-    print("Import completato.")
     print(
-        "Totale partite aggiunte: "
-        f"{total_added}"
-    )
-    print(
-        "Totale duplicate esatte ignorate: "
-        f"{total_duplicates}"
-    )
-    print(
-        "Totale date corrette: "
-        f"{total_dates_updated}"
-    )
-    print(
-        "Nuove partite rinviate registrate: "
-        f"{postponed_registered}"
-    )
-    print(
-        "Nuovi possibili duplicati sospetti: "
-        f"{new_suspects}"
+        "[IMPORT] "
+        f"aggiunte={total_added}, "
+        f"duplicate={total_duplicates}, "
+        f"date_corrette={total_dates_updated}, "
+        f"rinviate={postponed_registered}, "
+        f"sospetti={new_suspects}"
     )
 
     if suspect_rows:
