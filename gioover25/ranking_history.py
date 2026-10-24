@@ -561,6 +561,18 @@ def update_finished_matches(
 
     history = list(unique_by_key.values())
 
+    # Indicizza una sola volta lo storico per fixture. In precedenza ogni
+    # risultato scansionava l'intero storico dell'engine.
+    fixture_index: dict[tuple[str, str, str], list[dict]] = {}
+    for history_row in history:
+        row_league_id = _text(history_row.get("LeagueId"))
+        fixture_key = (
+            row_league_id,
+            normalize_team_name(row_league_id, history_row.get("Home", "")),
+            normalize_team_name(row_league_id, history_row.get("Away", "")),
+        )
+        fixture_index.setdefault(fixture_key, []).append(history_row)
+
     if duplicate_predictions_removed:
         print(
             f"[{engine_name}] Prediction duplicate rimosse dallo storico: "
@@ -617,19 +629,14 @@ def update_finished_matches(
             )
             continue
 
-        same_fixture_rows = [
-            row
-            for row in history
-            if _text(row.get("LeagueId")) == normalized_league_id
-            and normalize_team_name(
-                normalized_league_id, row.get("Home", "")
-            )
-            == normalized_home
-            and normalize_team_name(
-                normalized_league_id, row.get("Away", "")
-            )
-            == normalized_away
-        ]
+        same_fixture_rows = fixture_index.get(
+            (
+                normalized_league_id,
+                normalized_home,
+                normalized_away,
+            ),
+            [],
+        )
 
         # Prima di qualsiasi controllo "già FINAL", chiudiamo tutte le
         # prediction POSTPONED ancora aperte della stessa fixture. Questo è
@@ -776,11 +783,10 @@ def update_finished_matches(
 
     _write_history(engine_name, history)
 
-    print(
-        f"[{engine_name}] Risultati ricevuti dall'input: "
-        f"{len(unique_finished_matches)}"
-    )
-    print(f"[{engine_name}] Risultati aggiornati: {updated}")
-    print(f"[{engine_name}] Risultati già FINAL: {already_final}")
-    print(f"[{engine_name}] Partite non trovate: {not_found}")
-    print(f"[{engine_name}] Partite ambigue: {ambiguous}")
+    if updated or duplicate_predictions_removed or not_found or ambiguous:
+        print(
+            f"[{engine_name}] ranking: aggiornati={updated}, "
+            f"gia_final={already_final}, non_trovati={not_found}, "
+            f"ambigui={ambiguous}, "
+            f"duplicati_rimossi={duplicate_predictions_removed}"
+        )
