@@ -93,7 +93,12 @@ def parse_hits(body: str, country: str, league: str) -> list[Hit]:
 
 
 def discover(country: str, league: str) -> tuple[str, Hit | None, str]:
-    query = f'site:sofascore.com/football/tournament "{league}" "{country}"'
+    # Query volutamente semplice: i motori ignorano spesso le query site:
+    # troppo restrittive. Il parser accetta comunque esclusivamente URL
+    # /football/tournament/... di sofascore.com.
+    aliases = COUNTRY_ALIASES.get(norm(country), (country,))
+    search_country = aliases[0]
+    query = f'Sofascore {search_country} {league}'
     try:
         hits = parse_hits(fetch_search(query), country, league)
     except Exception as exc:
