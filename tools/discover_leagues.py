@@ -119,7 +119,21 @@ def classify(registry, competition: Competition) -> tuple[str, str]:
 
     resolved = resolve(registry, competition.country, competition.league)
     if resolved:
-        return "KNOWN_ALIAS", resolved
+        target = next((row for row in registry if row.league_id == resolved), None)
+        source_n = norm(competition.league)
+        target_n = norm(target.league) if target else ""
+        identity_words = (
+            "cup", "coppa", "pokal", "trophy", "trofeo", "shield",
+            "women", "femmin", "donne", "damer", "frauen",
+            "u17", "u18", "u19", "u20", "u21", "u22", "u23", "youth", "primavera",
+            "reserve", "riserve", "next pro",
+        )
+        added_identity = [
+            word for word in identity_words
+            if norm(word) in source_n and norm(word) not in target_n
+        ]
+        if not added_identity:
+            return "KNOWN_ALIAS", resolved
 
     # Il fuzzy matching non deve decidere l'identita' di una nuova competizione:
     # leghe diverse dello stesso paese possono condividere marcatori e parole.
