@@ -153,16 +153,17 @@ def resolve_match(reg,country,league,home,away):
 
  target=next((r for r in reg if r.league_id==lid),None)
  league_markers=_competition_markers(league)
+ team_markers=_competition_markers(home)|_competition_markers(away)
  target_markers=_competition_markers(lid)|(_competition_markers(target.league) if target else set())
 
- # La barriera female resta sempre attiva: una sorgente esplicitamente
- # femminile non puo' ricadere su una competizione maschile.
- if "female" in league_markers-target_markers:return None
+ # La barriera female resta sempre attiva, anche con Country+League esatto:
+ # squadre esplicitamente femminili non possono entrare in una lega maschile.
+ if "female" in (league_markers|team_markers)-target_markers:return None
 
- # Solo sui mapping non esatti usiamo i marker delle squadre come cintura di
- # sicurezza contro associazioni fuzzy tra senior e youth/reserve.
+ # Solo sui mapping non esatti usiamo youth/reserve nei nomi delle squadre
+ # come cintura di sicurezza contro associazioni fuzzy errate.
  if not exact_lid:
-  source_markers=league_markers|_competition_markers(home)|_competition_markers(away)
+  source_markers=league_markers|team_markers
   if source_markers-target_markers:return None
 
  # MLS senior: Flashscore puo' mescolare partite MLS Next Pro sotto un'etichetta
