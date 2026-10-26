@@ -97,11 +97,18 @@ TEMPORARY_WORDS = (
     "cup", "coppa", "copa", "beker", "pokal", "trophy", "trofeo", "shield",
     "qualificazione", "qualification", "play off", "play-off", "playoffs",
     "spareggio", "super finale", "partita aggiuntiva", "amichevoli", "friendly",
+    "knockout",
 )
+INTERNATIONAL_COUNTRIES = {
+    "africa", "asia", "europa", "mondo", "sud america",
+    "nord e centro america",
+}
 YOUTH_WORDS = ("u17", "u18", "u19", "u20", "u21", "u22", "u23", "youth", "primavera")
 
 
-def competition_kind(league: str) -> str:
+def competition_kind(league: str, country: str = "") -> str:
+    if norm(country) in {norm(x) for x in INTERNATIONAL_COUNTRIES}:
+        return "INTERNATIONAL"
     n = norm(league)
     if any(norm(word) in n for word in YOUTH_WORDS):
         return "YOUTH"
@@ -137,7 +144,7 @@ def classify(registry, competition: Competition) -> tuple[str, str]:
 
     # Il fuzzy matching non deve decidere l'identita' di una nuova competizione:
     # leghe diverse dello stesso paese possono condividere marcatori e parole.
-    return "NEW", competition_kind(competition.league)
+    return "NEW", competition_kind(competition.league, competition.country)
 
 
 def main() -> None:
