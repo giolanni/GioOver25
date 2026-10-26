@@ -93,6 +93,25 @@ def discover(start: date, end: date) -> tuple[list[Competition], list[str]]:
     return sorted(found.values(), key=lambda x: (x.country.casefold(), x.league.casefold())), errors
 
 
+TEMPORARY_WORDS = (
+    "cup", "coppa", "pokal", "trophy", "trofeo", "shield",
+    "qualificazione", "qualification", "play off", "play-off", "playoffs",
+    "spareggio", "super finale", "partita aggiuntiva", "amichevoli", "friendly",
+)
+YOUTH_WORDS = ("u17", "u18", "u19", "u20", "u21", "u22", "u23", "youth", "primavera")
+
+
+def competition_kind(league: str) -> str:
+    n = norm(league)
+    if any(norm(word) in n for word in YOUTH_WORDS):
+        return "YOUTH"
+    if any(norm(word) in n for word in TEMPORARY_WORDS):
+        return "TEMPORARY"
+    if any(word in n for word in ("women", "femmin", "donne", "damer", "frauen")):
+        return "WOMEN_LEAGUE"
+    return "LEAGUE"
+
+
 def classify(registry, competition: Competition) -> tuple[str, str]:
     exact = _exact_league_match(registry, competition.country, competition.league)
     if exact:
@@ -102,27 +121,9 @@ def classify(registry, competition: Competition) -> tuple[str, str]:
     if resolved:
         return "KNOWN_ALIAS", resolved
 
-    candidates = [
-        row for row in registry
-        if norm(row.country) == norm(competition.country)
-    ]
-    source_markers = _competition_markers(competition.league)
-
-    # Se esistono leghe dello stesso paese con marcatori strutturali compatibili,
-    # non inventiamo un LeagueId: richiediamo revisione prima dell'onboarding.
-    compatible = []
-    for row in candidates:
-        target_markers = _competition_markers(row.league) | _competition_markers(row.league_id)
-        if source_markers == target_markers:
-            compatible.append(row.league_id)
-
-    if compatible:
-        preview = ",".join(compatible[:5])
-        if len(compatible) > 5:
-            preview += ",..."
-        return "REVIEW", preview
-
-    return "NEW", ""
+    # Il fuzzy matching non deve decidere l'identita' di una nuova competizione:
+    # leghe diverse dello stesso paese possono condividere marcatori e parole.
+    return "NEW", competition_kind(competition.league)
 
 
 def main() -> None:
@@ -161,11 +162,10 @@ def main() -> None:
         f"{len(competitions)} competizioni attive | "
         f"KNOWN={len(buckets['KNOWN'])} | "
         f"KNOWN_ALIAS={len(buckets['KNOWN_ALIAS'])} | "
-        f"REVIEW={len(buckets['REVIEW'])} | "
         f"NEW={len(buckets['NEW'])}"
     )
 
-    for status in ("NEW", "REVIEW", "KNOWN_ALIAS"):
+    for status in ("NEW", "KNOWN_ALIAS"):
         rows = buckets[status]
         if not rows:
             continue
