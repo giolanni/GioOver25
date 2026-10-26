@@ -1,46 +1,42 @@
-"""Arricchisce i candidati onboarding cercando il torneo su SofaScore.
+"""Arricchisce i candidati onboarding usando il catalogo tornei SofaScore.
 
-Input: CSV prodotto da prepare_league_onboarding.py.
-Output: CSV dry-run con identificativo torneo/URL quando il match web e' univoco.
-
-La ricerca usa l'indice pubblico del sito SofaScore (DuckDuckGo HTML), non
-inventa tournament id e non modifica registry/storici.
+Una sola chiamata a /config/unique-tournaments/EN/football costruisce la cache
+dei tornei. Il matching e' locale e conservativo: nessun ID viene inventato.
+Non modifica registry o storici.
 """
 from __future__ import annotations
 
 import argparse
 import csv
-import html
 import re
-import urllib.parse
 from dataclasses import dataclass
 from datetime import datetime
+from difflib import SequenceMatcher
 from pathlib import Path
 
 from tools.prepare_input import ROOT, norm
+from tools.sofascore import get_json
+
+API = "https://api.sofascore.com/api/v1"
+
+COUNTRY_ALIASES = {
+    "brasile": "brazil", "cile": "chile", "cina": "china", "cipro": "cyprus",
+    "costarica": "costa rica", "egitto": "egypt", "emirati arabi": "united arab emirates",
+    "etiopia": "ethiopia", "filippine": "philippines", "giamaica": "jamaica",
+    "giordania": "jordan", "grecia": "greece", "irlanda": "ireland",
+    "israele": "israel", "malesia": "malaysia", "marocco": "morocco",
+    "nuova zelanda": "new zealand", "repubblica dominicana": "dominican republic",
+    "ruanda": "rwanda", "sudafrica": "south africa", "tagikistan": "tajikistan",
+    "thailandia": "thailand",
+}
 
 
 @dataclass
-class Hit:
-    tournament_id: str
-    url: str
-    title: str
-    score: int
-
-
-COUNTRY_ALIASES = {
-    "brasile": ("brazil", "brasile"),
-    "cile": ("chile", "cile"),
-    "cina": ("china", "cina"),
-    "egitto": ("egypt", "egitto"),
-    "grecia": ("greece", "grecia"),
-    "irlanda": ("ireland", "irlanda"),
-    "israele": ("israel", "israele"),
-    "malesia": ("malaysia", "malesia"),
-    "marocco": ("morocco", "marocco"),
-    "sudafrica": ("south africa", "sudafrica"),
-    "thailandia": ("thailand", "thailandia"),
-}
+class Tournament:
+    id: int
+    name: str
+    slug: str
+    country: str
 
 
 def latest_onboarding() -> Path:
@@ -50,74 +46,70 @@ def latest_onboarding() -> Path:
     return files[-1]
 
 
-def tokens(value: str) -> set[str]:
-    return {x for x in re.split(r"[^a-z0-9]+", value.casefold()) if len(x) > 1}
+def words(value: str) -> set[str]:
+    stop = {"the", "de", "del", "di", "la", "le", "group", "gruppo"}
+    return {x for x in re.split(r"[^a-z0-9]+", value.casefold()) if len(x) > 1 and x not in stop}
 
 
-def fetch_search(query: str) -> str:
-    try:
-        from curl_cffi import requests
-    except ImportError as exc:
-        raise SystemExit("Installa curl_cffi: pip install curl_cffi") from exc
-    url = "https://html.duckduckgo.com/html/?q=" + urllib.parse.quote(query)
-    response = requests.get(url, timeout=20, impersonate="chrome")
-    response.raise_for_status()
-    return response.text
+def country_key(value: str) -> str:
+    n = value.casefold().strip()
+    return norm(COUNTRY_ALIASES.get(n, value))
 
 
-def parse_hits(body: str, country: str, league: str) -> list[Hit]:
-    # URL pubblico SofaScore: /football/tournament/<country>/<slug>/<id>
-    rx = re.compile(
-        r'href="(?P<url>https?://(?:www\.)?sofascore\.com/[^"]*?/football/tournament/[^"]+?/(?P<id>\d+))"[^>]*>(?P<title>.*?)</a>',
-        re.I | re.S,
-    )
-    wanted = tokens(league)
-    country_words = set()
-    for alias in COUNTRY_ALIASES.get(norm(country), (country,)):
-        country_words |= tokens(alias)
-    out: dict[str, Hit] = {}
-    for match in rx.finditer(body):
-        title = re.sub(r"<[^>]+>", " ", html.unescape(match.group("title")))
-        title = re.sub(r"\s+", " ", title).strip()
-        hay = tokens(title + " " + html.unescape(match.group("url")))
-        overlap = len(wanted & hay)
-        country_ok = bool(country_words & hay)
-        score = overlap * 10 + (5 if country_ok else 0)
-        if overlap == 0:
+def load_sofascore_catalog() -> list[Tournament]:
+    data = get_json(f"{API}/config/unique-tournaments/EN/football")
+    out = []
+    for item in data.get("uniqueTournaments", []):
+        category = item.get("category") or {}
+        tid = item.get("id")
+        if tid is None:
             continue
-        hit = Hit(match.group("id"), html.unescape(match.group("url")), title, score)
-        old = out.get(hit.tournament_id)
-        if old is None or hit.score > old.score:
-            out[hit.tournament_id] = hit
-    return sorted(out.values(), key=lambda x: (-x.score, x.tournament_id))
+        out.append(Tournament(
+            id=int(tid),
+            name=str(item.get("name") or ""),
+            slug=str(item.get("slug") or ""),
+            country=str(category.get("name") or ""),
+        ))
+    if not out:
+        raise RuntimeError("Catalogo SofaScore vuoto")
+    return out
 
 
-def discover(country: str, league: str) -> tuple[str, Hit | None, str]:
-    # Query volutamente semplice: i motori ignorano spesso le query site:
-    # troppo restrittive. Il parser accetta comunque esclusivamente URL
-    # /football/tournament/... di sofascore.com.
-    aliases = COUNTRY_ALIASES.get(norm(country), (country,))
-    search_country = aliases[0]
-    query = f'Sofascore {search_country} {league}'
-    try:
-        hits = parse_hits(fetch_search(query), country, league)
-    except Exception as exc:
-        return "ERROR", None, f"{exc.__class__.__name__}: {exc}"
-    if not hits:
-        return "NOT_FOUND", None, ""
-    best = hits[0]
-    tied = [x for x in hits if x.score == best.score]
-    # Match automatico solo con copertura lessicale forte e senza pareggi.
-    wanted_count = max(1, len(tokens(league)))
-    if len(tied) == 1 and best.score >= max(15, wanted_count * 7):
-        return "FOUND", best, ""
-    return "AMBIGUOUS", best, f"hits={len(hits)} best_score={best.score}"
+def score_name(source: str, target: str) -> float:
+    a, b = norm(source), norm(target)
+    if not a or not b:
+        return 0.0
+    if a == b:
+        return 1.0
+    ratio = SequenceMatcher(None, a, b).ratio()
+    aw, bw = words(source), words(target)
+    overlap = len(aw & bw) / max(1, len(aw | bw))
+    return max(ratio, overlap)
+
+
+def discover(country: str, league: str, catalog: list[Tournament]):
+    same_country = [t for t in catalog if country_key(t.country) == country_key(country)]
+    ranked = sorted(
+        ((score_name(league, t.name), t) for t in same_country),
+        key=lambda x: (-x[0], x[1].id),
+    )
+    if not ranked:
+        return "NOT_FOUND", None, "country_not_in_catalog"
+    best_score, best = ranked[0]
+    second_score = ranked[1][0] if len(ranked) > 1 else 0.0
+
+    # Auto-accept solo match forte e chiaramente separato dal secondo.
+    if best_score >= 0.82 and (best_score - second_score >= 0.08 or best_score == 1.0):
+        return "FOUND", best, f"score={best_score:.3f}"
+    if best_score >= 0.55:
+        return "AMBIGUOUS", best, f"score={best_score:.3f};second={second_score:.3f}"
+    return "NOT_FOUND", None, f"best_score={best_score:.3f};best={best.name}"
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Source discovery SofaScore per onboarding GioOver25.")
+    parser = argparse.ArgumentParser(description="SofaScore catalog discovery per onboarding GioOver25.")
     parser.add_argument("--input", help="CSV onboarding; default ultimo in data/debug")
-    parser.add_argument("--limit", type=int, default=0, help="Limita i READY da testare; 0=tutti")
+    parser.add_argument("--limit", type=int, default=0, help="Limita i READY; 0=tutti")
     parser.add_argument("--output", help="CSV output")
     args = parser.parse_args()
 
@@ -127,26 +119,39 @@ def main() -> None:
     if args.limit > 0:
         rows = rows[:args.limit]
 
+    print("[SOFASCORE] Carico catalogo tornei...")
+    try:
+        catalog = load_sofascore_catalog()
+    except Exception as exc:
+        raise SystemExit(f"[SOFASCORE ERROR] {exc.__class__.__name__}: {exc}") from exc
+    print(f"[SOFASCORE] {len(catalog)} tornei nel catalogo")
+
     output = ROOT / args.output if args.output else ROOT / "data" / "debug" / f"league_enrichment_{datetime.now():%Y%m%d-%H%M%S}.csv"
     output.parent.mkdir(parents=True, exist_ok=True)
     counts: dict[str, int] = {}
 
+    fields = list(rows[0].keys()) + [
+        "SourceStatus", "SofaTournamentId", "SofaTournamentName",
+        "SofaCountry", "SourceDetail"
+    ] if rows else []
+
     with output.open("w", encoding="utf-8-sig", newline="") as handle:
-        fields = list(rows[0].keys()) + ["SourceStatus", "SofaTournamentId", "SofaUrl", "SourceDetail"] if rows else []
         writer = csv.DictWriter(handle, fieldnames=fields, delimiter=";")
         if fields:
             writer.writeheader()
         for index, row in enumerate(rows, 1):
-            status, hit, detail = discover(row["Country"], row["League"])
+            status, hit, detail = discover(row["Country"], row["League"], catalog)
             counts[status] = counts.get(status, 0) + 1
             row.update({
                 "SourceStatus": status,
-                "SofaTournamentId": hit.tournament_id if hit else "",
-                "SofaUrl": hit.url if hit else "",
+                "SofaTournamentId": hit.id if hit else "",
+                "SofaTournamentName": hit.name if hit else "",
+                "SofaCountry": hit.country if hit else "",
                 "SourceDetail": detail,
             })
             writer.writerow(row)
-            print(f"[{index}/{len(rows)}] {row['Country']};{row['League']} -> {status}" + (f" id={hit.tournament_id}" if hit else ""))
+            extra = f" id={hit.id} name={hit.name}" if hit else ""
+            print(f"[{index}/{len(rows)}] {row['Country']};{row['League']} -> {status}{extra}")
 
     print("[ENRICHMENT] " + " | ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     print(f"[ENRICHMENT] output={output}")
