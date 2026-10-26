@@ -330,7 +330,7 @@ def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
             overlap, union = team_overlap(target.info.league_id, local, rows)
             ratio = overlap / union if union else 0.0
             coverage = min(len(rows), len(local)) / len(local) if local else 0.0
-                        rank = (ratio, coverage, overlap, len(rows), candidate.score)
+            rank = (ratio, coverage, overlap, len(rows), candidate.score)
             if best is None or rank > best[0]:
                 best = (rank, candidate, season, rows, url)
         if not season_ids and not page_urls:
