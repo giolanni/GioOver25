@@ -263,7 +263,7 @@ def _extract_initial_results(html: str):
     #   }
     #
     # Manteniamo anche i nomi precedenti come fallback.
-    for name in ("summary-results", "results", "results_s"):
+    for name in ("results", "summary-results", "results_s"):
         m = re.search(
             rf'initialFeeds\s*\[\s*["\']{re.escape(name)}["\']\s*\].*?data\s*:\s*`(.*?)`',
             html,
