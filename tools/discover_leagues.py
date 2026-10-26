@@ -94,7 +94,7 @@ def discover(start: date, end: date) -> tuple[list[Competition], list[str]]:
 
 
 TEMPORARY_WORDS = (
-    "cup", "coppa", "pokal", "trophy", "trofeo", "shield",
+    "cup", "coppa", "copa", "beker", "pokal", "trophy", "trofeo", "shield",
     "qualificazione", "qualification", "play off", "play-off", "playoffs",
     "spareggio", "super finale", "partita aggiuntiva", "amichevoli", "friendly",
 )
