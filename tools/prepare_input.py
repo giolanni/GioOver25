@@ -118,11 +118,15 @@ def resolve(reg,country,league):
  if len(by_id)==1:return by_id[0].league_id
  explicit={("austria","oberosterreich"):"Austria_Oberosterreich",("austria","regionalligaest"):"Austria_Regionalliga_East",("belgium","jupilerleague"):"Belgium_JupilerProLeague",("france","ligue3"):"France_National",("hungary","nbi"):"Hungary_NBI",("iceland","bestadeildfemminile"):"Iceland_BestaDeildKvenna",("italy","seriea"):"Italy_SerieA",("iceland","bestadeildfemminileplayoffschampionship"):"Iceland_BestaDeildKvenna",("latvia","1liga"):"Latvia_NakotnesLiga",("norway","division2gruppo1"):"Norway_2ndDivision_Group1",("norway","division2gruppo2"):"Norway_2ndDivision_Group2"}
  wanted=explicit.get((norm(c),nl));return wanted if wanted and any(r.league_id==wanted for r in cand) else None
-def _competition_markers(value):
+def _competition_markers(value, team_name=False):
  raw=unicodedata.normalize("NFKD",value).encode("ascii","ignore").decode().casefold()
  n=norm(value)
  markers=set()
- if any(x in n for x in ("women","woman","femmin","femmen","damer","frauen","femen","kvenna")) or re.search(r"(?:^|[\s._/-])d(?:$|[\s._/-])",raw):markers.add("female")
+ # Il suffisso D indica talvolta una squadra femminile (es. Juventus D),
+ # ma nei nomi delle competizioni puo' essere una divisione (es. Serie D).
+ female_word=any(x in n for x in ("women","woman","femmin","femmen","damer","frauen","femen","kvenna"))
+ female_team_suffix=team_name and bool(re.search(r"(?:^|[\s._/-])d(?:$|[\s._/-])",raw))
+ if female_word or female_team_suffix:markers.add("female")
  if re.search(r"(?:u|under)(?:18|19|20|21|23)",n):markers.add("youth")
  if any(x in n for x in ("reserve","reserves","primavera","nextpro")):markers.add("reserve")
  return markers
@@ -153,7 +157,7 @@ def resolve_match(reg,country,league,home,away):
 
  target=next((r for r in reg if r.league_id==lid),None)
  league_markers=_competition_markers(league)
- team_markers=_competition_markers(home)|_competition_markers(away)
+ team_markers=_competition_markers(home,team_name=True)|_competition_markers(away,team_name=True)
  target_markers=_competition_markers(lid)|(_competition_markers(target.league) if target else set())
 
  # La barriera female resta sempre attiva, anche con Country+League esatto:
