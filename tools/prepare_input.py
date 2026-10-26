@@ -126,6 +126,13 @@ def _competition_markers(value):
  if re.search(r"(?:u|under)(?:18|19|20|21|23)",n):markers.add("youth")
  if any(x in n for x in ("reserve","reserves","primavera","nextpro")):markers.add("reserve")
  return markers
+def _exact_league_match(reg,country,league):
+ c=COUNTRY_MAP.get(country.upper(),country.title())
+ candidates=[r for r in reg if norm(r.country)==norm(c)]
+ nl=norm(league)
+ exact=[r for r in candidates if norm(r.league)==nl]
+ return exact[0].league_id if len(exact)==1 else None
+
 def resolve_match(reg,country,league,home,away):
  c=COUNTRY_MAP.get(country.upper(),country.title())
  mapped=resolve_team_mapping(reg,c,home,away)
@@ -137,21 +144,29 @@ def resolve_match(reg,country,league,home,away):
  if h or a:
   country_ids={r.league_id for r in reg if norm(r.country)==norm(c)}
   if (h|a)&country_ids:return None
- lid=resolve(reg,country,league)
+
+ # Un Country+League esatto nel registry e' autoritativo: U19/U21/U23/Reserve
+ # possono essere squadre legittime di campionati senior inferiori.
+ exact_lid=_exact_league_match(reg,country,league)
+ lid=exact_lid or resolve(reg,country,league)
  if not lid:return None
+
  target=next((r for r in reg if r.league_id==lid),None)
- source_markers=_competition_markers(league)|_competition_markers(home)|_competition_markers(away)
+ league_markers=_competition_markers(league)
  target_markers=_competition_markers(lid)|(_competition_markers(target.league) if target else set())
- # Fail closed: una partita esplicitamente femminile/giovanile/riserve non puo'
- # entrare in una competizione senior che non dichiara lo stesso tipo.
- # Eccezione strettamente esplicita: Esiliiga ed Esiliiga B estoni ammettono
- # ufficialmente squadre U19/U21/riserve nella stessa competizione senior.
- mixed_age_leagues={"Estonia_Esiliiga","Estonia_EsiliigaB"}
- marker_gap=source_markers-target_markers
- if marker_gap and lid not in mixed_age_leagues:return None
- # MLS senior: Flashscore può mescolare partite MLS Next Pro sotto un'etichetta
- # troppo generica. Le seconde squadre e le affiliate Next Pro non devono
- # entrare in USA_MLS.
+
+ # La barriera female resta sempre attiva: una sorgente esplicitamente
+ # femminile non puo' ricadere su una competizione maschile.
+ if "female" in league_markers-target_markers:return None
+
+ # Solo sui mapping non esatti usiamo i marker delle squadre come cintura di
+ # sicurezza contro associazioni fuzzy tra senior e youth/reserve.
+ if not exact_lid:
+  source_markers=league_markers|_competition_markers(home)|_competition_markers(away)
+  if source_markers-target_markers:return None
+
+ # MLS senior: Flashscore puo' mescolare partite MLS Next Pro sotto un'etichetta
+ # troppo generica. Questa protezione provider-specifica resta esplicita.
  if lid=="USA_MLS":
   n_home,n_away=norm(home),norm(away)
   raw_home,raw_away=home.casefold(),away.casefold()
