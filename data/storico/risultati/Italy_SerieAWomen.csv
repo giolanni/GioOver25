@@ -1,4 +1,4 @@
-Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Italy;Serie A Femminile;1;2026-09-26;Como 1907;Milan;4;1;
 Italy;Serie A Femminile;1;2026-09-26;Juventus;Napoli;3;1;
 Italy;Serie A Femminile;1;2026-09-26;Lazio;Parma;0;0;
@@ -17,3 +17,9 @@ Italy;Serie A Femminile;3;2026-10-17;Ternana;Lazio;1;0;
 Italy;Serie A Femminile;3;2026-10-18;Inter;Parma;3;0;
 Italy;Serie A Femminile;3;2026-10-18;Juventus;Como 1907;2;4;
 Italy;Serie A Femminile;3;2026-10-18;Roma;Milan;4;2;
+Italy;Serie A Femminile;4;2026-10-24;Juventus;Roma;2;5;
+Italy;Serie A Femminile;4;2026-10-24;Milan;Ternana;3;0;
+Italy;Serie A Femminile;4;2026-10-24;Napoli;Inter;0;0;
+Italy;Serie A Femminile;4;2026-10-25;Como 1907;Sassuolo;2;2;
+Italy;Serie A Femminile;4;2026-10-25;Lazio;Como Women;0;0;
+Italy;Serie A Femminile;4;2026-10-25;Parma;Fiorentina;1;2;

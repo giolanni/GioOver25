@@ -1,4 +1,4 @@
-Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Indonesia;Championship - West;1;2026-09-11;PSIS Semarang;PSPS Riau;2;1;
 Indonesia;Championship - West;1;2026-09-12;Persikad Depok;PSGC Ciamis;2;1;
 Indonesia;Championship - West;1;2026-09-12;Persiku Kudus;Bekasi City;1;1;
@@ -28,3 +28,8 @@ Indonesia;Championship - West;6;2026-10-17;Padang;PSMS Medan;1;1;
 Indonesia;Championship - West;6;2026-10-17;Persiraja Aceh;Bekasi City;0;0;
 Indonesia;Championship - West;6;2026-10-18;PSPS Riau;Persiku Kudus;4;1;
 Indonesia;Championship - West;6;2026-10-18;Sumsel United;Persikad Depok;2;1;
+Indonesia;Championship - West;7;2026-10-24;Bekasi City;Sumsel United;1;1;
+Indonesia;Championship - West;7;2026-10-24;Persikad Depok;PSPS Riau;2;3;
+Indonesia;Championship - West;7;2026-10-24;Persiku Kudus;Padang;1;2;
+Indonesia;Championship - West;7;2026-10-24;Persiraja Aceh;PSGC Ciamis;2;1;
+Indonesia;Championship - West;7;2026-10-25;PSMS Medan;PSIS Semarang;2;1;

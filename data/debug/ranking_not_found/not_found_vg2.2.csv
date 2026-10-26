@@ -1,236 +1,601 @@
 ﻿LeagueId;MatchDate;Home;Away;HG;AG;Reason
-SaudiArabia_ProfessionalLeague;2026-10-23;Al Faysaly;Al Nassr FC;1;3;Nessuna prediction con stessi nomi canonici
-SaudiArabia_ProfessionalLeague;2026-10-23;Al-Ittihad FC;Al Diriyah;2;0;Nessuna prediction con stessi nomi canonici
-SaudiArabia_ProfessionalLeague;2026-10-23;Al Qadsiah;Al Hilal;2;3;Nessuna prediction con stessi nomi canonici
-Armenia_PremierLeague;2026-10-23;Van;Ararat;2;1;Nessuna prediction con stessi nomi canonici
-Armenia_PremierLeague;2026-10-23;Pyunik;FC Gandzasar;3;0;Nessuna prediction con stessi nomi canonici
-Austria_Bundesliga;2026-10-23;Altach;Austria Vienna;2;1;Nessuna prediction con stessi nomi canonici
-Austria_2Liga;2026-10-23;Amstetten;SK Rapid 2;3;2;Nessuna prediction con stessi nomi canonici
-Austria_2Liga;2026-10-23;Austria (Am);Sturm Graz 2;1;0;Nessuna prediction con stessi nomi canonici
-Austria_2Liga;2026-10-23;First Vienna;Floridsdorfer AC;2;0;Nessuna prediction con stessi nomi canonici
-Austria_2Liga;2026-10-23;Hertha Wels;Voitsberg;2;6;Nessuna prediction con stessi nomi canonici
-Austria_2Liga;2026-10-23;Kapfenberg;St. Polten;1;1;Nessuna prediction con stessi nomi canonici
-Austria_2Liga;2026-10-23;A. Salzburg;BW Linz;0;1;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_East;2026-10-23;Marchfeld;Wiener Viktoria;3;0;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_East;2026-10-23;Parndorf;Warth;5;0;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_East;2026-10-23;Horn;Wiener;3;4;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_East;2026-10-23;SV Oberwart;Favoritner;3;0;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_East;2026-10-23;Traiskirchen;Mattersburg SV 2020;2;1;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_East;2026-10-23;Kremser;Donaufeld Wien;4;3;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_East;2026-10-23;Leobendorf;Gloggnitz;1;1;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_West;2026-10-23;Kitzbuhel;Wolfurt;3;2;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_West;2026-10-23;Kufstein;Reichenau;3;1;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_West;2026-10-23;Schwaz;SK St. Johann;3;1;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_West;2026-10-23;SC Imst;Fugen;2;1;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_South;2026-10-23;Gleisdorf;Deutschlandsberger;5;3;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_South;2026-10-23;Tillmitsch;Allerheiligen;3;1;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_North;2026-10-23;Schallerbach;Seekirchen;0;0;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_North;2026-10-23;Union Gurten;Dietach;3;1;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_North;2026-10-23;Vorwarts Steyr;Wallern/St Marienkirchen;2;3;Nessuna prediction con stessi nomi canonici
-Austria_Regionalliga_North;2026-10-23;UFC Hallein;Wals-Grunau;0;2;Nessuna prediction con stessi nomi canonici
-Austria_Burgenland;2026-10-23;Pama;Pinkafeld;2;2;Nessuna prediction con stessi nomi canonici
-Austria_Burgenland;2026-10-23;SV Eberau;Kohfidisch;1;1;Nessuna prediction con stessi nomi canonici
-Austria_Burgenland;2026-10-23;Bad Sauerbrunn;Oberpullendorf;1;1;Nessuna prediction con stessi nomi canonici
-Austria_Burgenland;2026-10-23;Halbturn;Klingenbach;1;3;Nessuna prediction con stessi nomi canonici
-Austria_Burgenland;2026-10-23;Leithaprodersdorf;Neusiedl;5;1;Nessuna prediction con stessi nomi canonici
-Austria_Karnten;2026-10-23;SAK Klagenfurt;SC Landskron;1;2;Nessuna prediction con stessi nomi canonici
-Austria_Karnten;2026-10-23;Dellach/Gail;SGA Sirnitz;3;1;Nessuna prediction con stessi nomi canonici
-Austria_Karnten;2026-10-23;Lendorf;Launsdorf;4;3;Nessuna prediction con stessi nomi canonici
-Austria_Karnten;2026-10-23;SC St. Veit;TSV Grafenstein;1;1;Nessuna prediction con stessi nomi canonici
-Austria_Niederosterreich;2026-10-23;Ardagger;St. Polten (Am);5;0;Nessuna prediction con stessi nomi canonici
-Austria_Niederosterreich;2026-10-23;Langenrohr;Ebreichsdorf;0;1;Nessuna prediction con stessi nomi canonici
-Austria_Niederosterreich;2026-10-23;Wieselburg;Ortmann;2;1;Nessuna prediction con stessi nomi canonici
-Austria_Niederosterreich;2026-10-23;Zwettl;Korneuburg;0;4;Nessuna prediction con stessi nomi canonici
-Austria_Niederosterreich;2026-10-23;SCU Kilb;Admira (Am);0;3;Nessuna prediction con stessi nomi canonici
-Austria_Oberosterreich;2026-10-23;Edelweiss;Weisskirchen;2;1;Nessuna prediction con stessi nomi canonici
-Austria_Oberosterreich;2026-10-23;Garsten;Pregarten;1;1;Nessuna prediction con stessi nomi canonici
-Austria_Oberosterreich;2026-10-23;Gmunden;Bad Ischl;1;1;Nessuna prediction con stessi nomi canonici
-Austria_Oberosterreich;2026-10-23;Micheldorf;Perg;2;1;Nessuna prediction con stessi nomi canonici
-Austria_Oberosterreich;2026-10-23;Vocklamarkt;Andorf;1;2;Nessuna prediction con stessi nomi canonici
-Austria_Salzburg;2026-10-23;SAK 1914;Schwarzach;2;2;Nessuna prediction con stessi nomi canonici
-Austria_Salzburg;2026-10-23;Strasswalchen;Golling;2;1;Nessuna prediction con stessi nomi canonici
-Austria_Steiermark;2026-10-23;Ilzer SV;Leoben;5;1;Nessuna prediction con stessi nomi canonici
-Austria_Steiermark;2026-10-23;Kindberg Murzhofen;Hohenhaus Schladming;3;0;Nessuna prediction con stessi nomi canonici
-Austria_Steiermark;2026-10-23;Lebring;SV Wildon;1;3;Nessuna prediction con stessi nomi canonici
-Austria_Steiermark;2026-10-23;Pachern;SV Schermann Rorhrbach;0;3;Nessuna prediction con stessi nomi canonici
-Austria_Steiermark;2026-10-23;TUS Bad Waltersdorf;SV Union Gnas;1;0;Nessuna prediction con stessi nomi canonici
-Austria_Steiermark;2026-10-23;UFC Fehring;Weindorf St. Anna;1;0;Nessuna prediction con stessi nomi canonici
-Austria_Tirol;2026-10-23;FC Volders;Ebbs;1;0;Nessuna prediction con stessi nomi canonici
-Austria_Tirol;2026-10-23;SV Oberperfuss;FC Natters;1;1;Nessuna prediction con stessi nomi canonici
-Austria_Tirol;2026-10-23;SV Worgl;Munster;6;1;Nessuna prediction con stessi nomi canonici
-Austria_Tirol;2026-10-23;Haiming;SC Kundl;0;3;Nessuna prediction con stessi nomi canonici
-Austria_Wien;2026-10-23;Red Star-Penzing;WAF Brigittenau;2;1;Nessuna prediction con stessi nomi canonici
-Austria_Wien;2026-10-23;Simmeringer;Stammersdorf;2;1;Nessuna prediction con stessi nomi canonici
-Austria_Wien;2026-10-23;TWL Elektra;Schwechat;3;2;Nessuna prediction con stessi nomi canonici
-Austria_Wien;2026-10-23;Slovan HAC;1980 Wien;2;2;Nessuna prediction con stessi nomi canonici
-Azerbaijan_PremierLeague;2026-10-23;Araz;Gabala;1;2;Nessuna prediction con stessi nomi canonici
-Azerbaijan_PremierLeague;2026-10-23;Zira;Sumqayit;3;2;Nessuna prediction con stessi nomi canonici
-Belarus_VysshayaLiga;2026-10-23;FC Minsk;Baranovici;1;3;Nessuna prediction con stessi nomi canonici
-Belarus_PershayaLiga;2026-10-23;Din. Minsk 2;Ostrovets;0;2;Nessuna prediction con stessi nomi canonici
-Bosnia_WWINLigaBiH;2026-10-23;Zrinjski;Radnik Bijeljina;1;0;Nessuna prediction con stessi nomi canonici
-Bulgaria_ParvaLiga;2026-10-23;CSKA 1948 Sofia;Botev Plovdiv;4;0;Nessuna prediction con stessi nomi canonici
-Bulgaria_VtoraLiga;2026-10-23;Chernomorets 1919;Svoge;1;1;Nessuna prediction con stessi nomi canonici
-Bulgaria_VtoraLiga;2026-10-23;CSKA Sofia 2;Yantra Gabrovo;3;3;Nessuna prediction con stessi nomi canonici
-Bulgaria_VtoraLiga;2026-10-23;Vihren;Marek;1;1;Nessuna prediction con stessi nomi canonici
-Bulgaria_VtoraLiga;2026-10-23;Beroe;Rilski Sportist;3;1;Nessuna prediction con stessi nomi canonici
-Bulgaria_VtoraLiga;2026-10-23;Hebar;Nesebar;2;1;Nessuna prediction con stessi nomi canonici
-Bulgaria_VtoraLiga;2026-10-23;Lok. Gorna;Pirin Blagoevgrad;2;0;Nessuna prediction con stessi nomi canonici
-Bulgaria_VtoraLiga;2026-10-23;Spartak Pleven;Etar;2;1;Nessuna prediction con stessi nomi canonici
-Croatia_PrvaNL;2026-10-23;Din. Zagabria 2;Cibalia;0;1;Nessuna prediction con stessi nomi canonici
-Croatia_PrvaNL;2026-10-23;Dubrava;Kustosija;1;2;Nessuna prediction con stessi nomi canonici
-Croatia_PrvaNL;2026-10-23;Sesvete;Hrvace;0;0;Nessuna prediction con stessi nomi canonici
-Denmark_Superliga;2026-10-23;Randers;Brondby;1;3;Nessuna prediction con stessi nomi canonici
-Denmark_1stDivision;2026-10-23;Hobro;Vendsyssel;2;2;Nessuna prediction con stessi nomi canonici
-Denmark_1stDivision;2026-10-23;Hvidovre IF;Koge;2;2;Nessuna prediction con stessi nomi canonici
-Denmark_2ndDivision;2026-10-23;FA 2000;Hellerup;0;2;Nessuna prediction con stessi nomi canonici
-Denmark_2ndDivision;2026-10-23;Roskilde;F. Amager;4;0;Nessuna prediction con stessi nomi canonici
-Denmark_3rdDivision;2026-10-23;BK Frem;Helsingor;1;1;Nessuna prediction con stessi nomi canonici
-Denmark_3rdDivision;2026-10-23;Sundby;Bronshoj;3;1;Nessuna prediction con stessi nomi canonici
-Estonia_Meistriliiga;2026-10-23;Nomme Utd;Parnu JK Vaprus;4;2;Nessuna prediction con stessi nomi canonici
-Estonia_Meistriliiga;2026-10-23;Tammeka;Narva;5;1;Nessuna prediction con stessi nomi canonici
-Estonia_Esiliiga;2026-10-23;Tartu Welco;Tallinna Kalev;3;2;Nessuna prediction con stessi nomi canonici
-France_Ligue1;2026-10-23;Brest;Nizza;1;2;Nessuna prediction con stessi nomi canonici
-France_Ligue2;2026-10-23;Clermont;Guingamp;0;2;Nessuna prediction con stessi nomi canonici
-France_Ligue2;2026-10-23;Dunkerque;Metz;1;1;Nessuna prediction con stessi nomi canonici
-France_Ligue2;2026-10-23;Nancy;Laval;1;0;Nessuna prediction con stessi nomi canonici
-France_Ligue2;2026-10-23;Pau FC;Grenoble;2;1;Nessuna prediction con stessi nomi canonici
-France_Ligue2;2026-10-23;Sochaux;Annecy;1;3;Nessuna prediction con stessi nomi canonici
-Wales_CymruPremier;2026-10-23;Caernarfon;Briton Ferry;3;1;Nessuna prediction con stessi nomi canonici
-Wales_CymruPremier;2026-10-23;Cambrian United;Airbus;2;3;Nessuna prediction con stessi nomi canonici
-Wales_CymruPremier;2026-10-23;Colwyn Bay;Cardiff Metropolitan;2;2;Nessuna prediction con stessi nomi canonici
-Wales_CymruPremier;2026-10-23;TNS;Ammanford;9;0;Nessuna prediction con stessi nomi canonici
-Wales_CymruPremier;2026-10-23;Trefelin;Flint;0;2;Nessuna prediction con stessi nomi canonici
-Wales_CymruSouth;2026-10-23;Carmarthen;Caerphilly;1;3;Nessuna prediction con stessi nomi canonici
-Wales_CymruSouth;2026-10-23;Llanelli;Afan Lido;0;3;Nessuna prediction con stessi nomi canonici
-Wales_CymruSouth;2026-10-23;Newport City;Pontypridd;4;4;Nessuna prediction con stessi nomi canonici
-Wales_CymruSouth;2026-10-23;Caerau Ely;Llantwit Major;0;2;Nessuna prediction con stessi nomi canonici
-Wales_CymruSouth;2026-10-23;Trethomas Bluebirds;Cardiff Draconians;3;1;Nessuna prediction con stessi nomi canonici
-Georgia_ErovnuliLiga;2026-10-23;Spaeri;Gagra;0;0;Nessuna prediction con stessi nomi canonici
-Georgia_ErovnuliLiga;2026-10-23;Rustavi;Din. Tbilisi;0;2;Nessuna prediction con stessi nomi canonici
-Germany_Bundesliga;2026-10-23;Stoccarda;Monchengladbach;2;3;Nessuna prediction con stessi nomi canonici
-Germany_2Bundesliga;2026-10-23;Bochum;Wolfsburg;1;1;Nessuna prediction con stessi nomi canonici
-Germany_2Bundesliga;2026-10-23;Darmstadt;St. Pauli;0;0;Nessuna prediction con stessi nomi canonici
-Germany_3Liga;2026-10-23;RW Essen;Regensburg;1;0;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_Nordost;2026-10-23;Altglienicke;Luckenwalde;3;1;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_Nordost;2026-10-23;Babelsberg;BFC Preussen;1;0;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_Nordost;2026-10-23;Jena;BFC Dynamo;0;0;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_West;2026-10-23;Dortmund 2;Bonner;2;0;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_West;2026-10-23;FC Gutersloh;Wiedenbruck;3;1;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_Sudwest;2026-10-23;Kaiserslautern 2;Freiburg 2;2;2;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_Sudwest;2026-10-23;Offenbach;Freiberg;1;1;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_Bayern;2026-10-23;Buchbach;Burghausen;3;3;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_Bayern;2026-10-23;Eltersdorf;Memmingen;0;2;Nessuna prediction con stessi nomi canonici
-Germany_Regionalliga_Bayern;2026-10-23;Schweinfurt;Landsberg;2;1;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_NOFV_Nord;2026-10-23;Reinickendorfer Fuchse;TB Berlin;1;0;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_NOFV_Nord;2026-10-23;Siedenbollentin;Hansa Rostock 2;0;1;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_NOFV_Sud;2026-10-23;Bautzen;Meuselwitz;1;3;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Hamburg;2026-10-23;Wandsbeker Concordia;Victoria Hamburg;0;3;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Hamburg;2026-10-23;Harksheide;Paloma;0;2;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Hamburg;2026-10-23;Teutonia Ottensen;Pinneberg;1;3;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Hamburg;2026-10-23;Norderstedt 2;Tesla Hamburg;2;1;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bremen;2026-10-23;Brinkumer;Grohn;3;0;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bremen;2026-10-23;Oberneuland;BTS Neustadt;0;2;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Niedersachsen;2026-10-23;Bersenbruck;Verden;0;4;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Niedersachsen;2026-10-23;Spelle-Venhaus;Nordhorn;2;2;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Westfalen;2026-10-23;Schermbeck 2020;Lippstadt;1;2;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_RheinlandPfalzSaar;2026-10-23;Elversberg 2;Auersmacher;4;2;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bayern_Nord;2026-10-23;Aschaffenburg;Gebenbach;0;0;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bayern_Nord;2026-10-23;Cham;Neumarkt;5;1;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bayern_Nord;2026-10-23;DJK Bamberg;Ammerthal;4;1;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bayern_Nord;2026-10-23;Neudrossenfeld;Bayern Hof;2;3;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bayern_Sud;2026-10-23;Erlbach;Schalding;2;1;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bayern_Sud;2026-10-23;Monaco 1860 2;Pipinsried;2;0;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bayern_Sud;2026-10-23;Rosenheim;Geretsried;2;1;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bayern_Sud;2026-10-23;TSV 1880 Wasserburg;Landshut;1;2;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Bayern_Sud;2026-10-23;FC Schwaig;Deisenhofen;5;0;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_BadenWurttemberg;2026-10-23;Singen;FC Holzhausen;3;2;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Mittelrhein;2026-10-23;Duren;Porz;2;1;Nessuna prediction con stessi nomi canonici
-Germany_Oberliga_Niederrhein;2026-10-23;Dusseldorf 2;SC St.Tonis;1;1;Nessuna prediction con stessi nomi canonici
-Indonesia_Championship_East;2026-10-23;Persipura;Balikpapan;5;1;Nessuna prediction con stessi nomi canonici
-Indonesia_Championship_East;2026-10-23;PSBS Biak Numfor;Barito Putera;0;3;Nessuna prediction con stessi nomi canonici
-England_PremierLeague;2026-10-23;Ipswich;Nottingham;1;1;Nessuna prediction con stessi nomi canonici
-England_Championship;2026-10-23;Bolton;Middlesbrough;1;5;Nessuna prediction con stessi nomi canonici
-NorthernIreland_NIFLPremiership;2026-10-23;Portadown;Linfield;1;2;Nessuna prediction con stessi nomi canonici
-NorthernIreland_NIFLChampionship;2026-10-23;Newry City;Newington;0;2;Nessuna prediction con stessi nomi canonici
-NorthernIreland_NIFLChampionship;2026-10-23;Strabane Athletic;Ballinamallard;0;1;Nessuna prediction con stessi nomi canonici
-Iceland_BestaDeildKvenna;2026-10-23;Breidablik D;Hafnarfjordur D;6;2;Nessuna prediction con stessi nomi canonici
-Iceland_BestaDeildKvenna;2026-10-23;IBV Vestmannaeyjar D;Stjarnan D;2;0;Nessuna prediction con stessi nomi canonici
-Iceland_BestaDeildKvenna;2026-10-23;Throttur D;Grindavik/Njardvik D;3;2;Nessuna prediction con stessi nomi canonici
-FaroeIslands_1Deild;2026-10-23;B36 Torshavn 2;HB Torshavn 2;6;0;Nessuna prediction con stessi nomi canonici
-FaroeIslands_1Deild;2026-10-23;Runavik 2;Vikingur 2;0;1;Nessuna prediction con stessi nomi canonici
-FaroeIslands_1Deild;2026-10-23;Streymur 2;Hoyvik;0;1;Nessuna prediction con stessi nomi canonici
-Italy_SerieA;2026-10-23;Torino;Monza;3;2;Nessuna prediction con stessi nomi canonici
-Italy_SerieB;2026-10-23;Empoli;L.R. Vicenza;0;2;Nessuna prediction con stessi nomi canonici
-Italy_SerieC_GironeB;2026-10-23;Ostiamare;Vado;1;2;Nessuna prediction con stessi nomi canonici
-Italy_SerieC_GironeB;2026-10-23;Perugia;Pescara;1;2;Nessuna prediction con stessi nomi canonici
-Italy_SerieC_GironeB;2026-10-23;Pineto;Gubbio;1;0;Nessuna prediction con stessi nomi canonici
-Italy_SerieC_GironeC;2026-10-23;Altamura;Potenza;2;2;Nessuna prediction con stessi nomi canonici
-Italy_SerieC_GironeC;2026-10-23;Casertana;Bari;1;1;Nessuna prediction con stessi nomi canonici
-Kyrgyzstan_PremierLiga;2026-10-23;Ilbirs;Kyrgyzaltyn;1;1;Nessuna prediction con stessi nomi canonici
-Kyrgyzstan_PremierLiga;2026-10-23;Talant;Bishkek City;1;2;Nessuna prediction con stessi nomi canonici
-Lithuania_ILyga;2026-10-23;Garliava;Zalgiris 2;0;2;Nessuna prediction con stessi nomi canonici
-NorthMacedonia_1MFL;2026-10-23;Sileks;Shkendija Haracine;2;0;Nessuna prediction con stessi nomi canonici
-Mexico_LigaExpansionMX_Apertura;2026-10-23;Alebrijes Oaxaca;Cruz Azul Hidalgo;2;1;Nessuna prediction con stessi nomi canonici
-Moldova_Liga1_GroupA;2026-10-23;Univer Comrat;Iskra Ribnita;0;1;Nessuna prediction con stessi nomi canonici
-Moldova_Liga1_GroupA;2026-10-23;Zimbru 2;Sparta Selemet;3;1;Nessuna prediction con stessi nomi canonici
-Montenegro_PrvaCrnogorskaLiga;2026-10-23;Bokelj;Decic;2;0;Nessuna prediction con stessi nomi canonici
-Montenegro_PrvaCrnogorskaLiga;2026-10-23;Jezero;Petrovac;1;2;Nessuna prediction con stessi nomi canonici
-Norway_3rdDivision_Group4;2026-10-23;Varhaug;Haugesund 2;3;1;Nessuna prediction con stessi nomi canonici
-Netherlands_Eredivisie;2026-10-23;G.A. Eagles;Telstar;3;2;Nessuna prediction con stessi nomi canonici
-Netherlands_EersteDivisie;2026-10-23;Almere City;Roda;2;3;Nessuna prediction con stessi nomi canonici
-Netherlands_EersteDivisie;2026-10-23;Breda;Heracles;1;1;Nessuna prediction con stessi nomi canonici
-Netherlands_EersteDivisie;2026-10-23;De Graafschap;Waalwijk;1;1;Nessuna prediction con stessi nomi canonici
-Netherlands_EersteDivisie;2026-10-23;Den Bosch;Maastricht;2;2;Nessuna prediction con stessi nomi canonici
-Netherlands_EersteDivisie;2026-10-23;Eindhoven;Jong PSV;1;2;Nessuna prediction con stessi nomi canonici
-Netherlands_EersteDivisie;2026-10-23;FC Volendam;Jong Utrecht;6;2;Nessuna prediction con stessi nomi canonici
-Netherlands_EersteDivisie;2026-10-23;Jong AZ;Helmond;5;4;Nessuna prediction con stessi nomi canonici
-Netherlands_EersteDivisie;2026-10-23;Oss;Jong Ajax;3;3;Nessuna prediction con stessi nomi canonici
-Netherlands_EersteDivisie;2026-10-23;Vitesse;FC Emmen;0;2;Nessuna prediction con stessi nomi canonici
-Paraguay_DivisionIntermedia;2026-10-23;Guairena;Sp. Carapegua;0;0;Nessuna prediction con stessi nomi canonici
-Peru_Liga1_Clausura;2026-10-23;Cajamarca;Melgar;1;2;Nessuna prediction con stessi nomi canonici
-Peru_Liga1_Clausura;2026-10-23;Grau;AD Tarma;1;1;Nessuna prediction con stessi nomi canonici
-Peru_Liga2_GroupB;2026-10-23;Binacional;Santos;1;2;Nessuna prediction con stessi nomi canonici
-Poland_Ekstraklasa;2026-10-23;Motor Lublin;Zaglebie;2;2;Nessuna prediction con stessi nomi canonici
-Poland_Ekstraklasa;2026-10-23;Widzew Lodz;Gornik Zabrze;1;1;Nessuna prediction con stessi nomi canonici
-Poland_Division1;2026-10-23;Polonia W.;Legnica;1;1;Nessuna prediction con stessi nomi canonici
-Poland_Division2;2026-10-23;Kleczew;Slask 2;4;2;Nessuna prediction con stessi nomi canonici
-Poland_Division2;2026-10-23;Zawisza;Swit Szczecin;4;2;Nessuna prediction con stessi nomi canonici
-Poland_IIILiga_Group3;2026-10-23;Sosnowiec;Legnica 2;3;1;Nessuna prediction con stessi nomi canonici
-Poland_IIILiga_Group4;2026-10-23;Wislanie Skawina;Star Starachowice;1;2;Nessuna prediction con stessi nomi canonici
-Portugal_LigaPortugal;2026-10-23;Guimaraes;Maritimo;5;0;Nessuna prediction con stessi nomi canonici
-Portugal_LigaPortugal2;2026-10-23;Chaves;Vizela;2;1;Nessuna prediction con stessi nomi canonici
-Portugal_Liga3_SerieA;2026-10-23;Ferreira;Leca;1;0;Nessuna prediction con stessi nomi canonici
-CzechRepublic_ChNL;2026-10-23;Usti n. L.;Karvina;1;3;Nessuna prediction con stessi nomi canonici
-CzechRepublic_ChNL;2026-10-23;Dukla Praga;Kladno;1;1;Nessuna prediction con stessi nomi canonici
-CzechRepublic_ChNL;2026-10-23;Jihlava;Vlasim;2;0;Nessuna prediction con stessi nomi canonici
-CzechRepublic_ChNL;2026-10-23;Opava;Ostrava B;1;1;Nessuna prediction con stessi nomi canonici
-CzechRepublic_ChNL;2026-10-23;Taborsko;Trinec;1;1;Nessuna prediction con stessi nomi canonici
-CzechRepublic_4Liga_GroupB;2026-10-23;Hvezda Cheb;Karlovy Vary;1;2;Nessuna prediction con stessi nomi canonici
-CzechRepublic_4Liga_GroupE;2026-10-23;Batov;Strani;0;6;Nessuna prediction con stessi nomi canonici
-Romania_Superliga;2026-10-23;Botosani;Petrolul;1;3;Nessuna prediction con stessi nomi canonici
-Romania_Superliga;2026-10-23;Corvinul;U. Cluj;0;3;Nessuna prediction con stessi nomi canonici
-Russia_PremierLeague;2026-10-23;Akhmat Grozny;Orenburg;0;1;Nessuna prediction con stessi nomi canonici
-Russia_FNL;2026-10-23;Torpedo Moscow;R. Volgograd;1;1;Nessuna prediction con stessi nomi canonici
-Serbia_SuperLiga;2026-10-23;IMT Novi Beograd;Zeleznicar Pancevo;0;1;Nessuna prediction con stessi nomi canonici
-Serbia_SuperLiga;2026-10-23;Radnicki 1923;Radnik;1;0;Nessuna prediction con stessi nomi canonici
-Serbia_SuperLiga;2026-10-23;Radnicki Nis;Novi Pazar;0;2;Nessuna prediction con stessi nomi canonici
-Serbia_SuperLiga;2026-10-23;Zemun;Macva;1;0;Nessuna prediction con stessi nomi canonici
-Serbia_PrvaLiga;2026-10-23;Teleoptik;TSC;1;2;Nessuna prediction con stessi nomi canonici
-Serbia_PrvaLiga;2026-10-23;Dubocica;Smederevo;1;0;Nessuna prediction con stessi nomi canonici
-Slovakia_3Liga_West;2026-10-23;Myjava;Dun. Streda B;1;1;Nessuna prediction con stessi nomi canonici
-Spain_LaLiga;2026-10-23;Alaves;Malaga;1;1;Nessuna prediction con stessi nomi canonici
-Spain_LaLiga2;2026-10-23;Granada;Valladolid;2;1;Nessuna prediction con stessi nomi canonici
-Sweden_Allsvenskan;2026-10-23;Elfsborg;Malmo FF;0;0;Nessuna prediction con stessi nomi canonici
-Sweden_Allsvenskan;2026-10-23;Västerås SK;Halmstad;1;2;Nessuna prediction con stessi nomi canonici
-Sweden_Superettan;2026-10-23;Oddevold;Sundsvall;7;0;Nessuna prediction con stessi nomi canonici
-Sweden_Division1_Norra;2026-10-23;Jarfalla;Hammarby TFF;2;2;Nessuna prediction con stessi nomi canonici
-Sweden_Division1_Sodra;2026-10-23;Utsikten;Tvaaker;1;4;Nessuna prediction con stessi nomi canonici
-Switzerland_ChallengeLeague;2026-10-23;Lausanne Ouchy;Xamax;0;0;Nessuna prediction con stessi nomi canonici
-Switzerland_ChallengeLeague;2026-10-23;Wil;Rapperswil-Jona;2;2;Nessuna prediction con stessi nomi canonici
-Switzerland_ChallengeLeague;2026-10-23;Winterthur;Nyonnais;4;0;Nessuna prediction con stessi nomi canonici
-Turkey_SuperLig;2026-10-23;Alanyaspor;Kocaelispor;1;2;Nessuna prediction con stessi nomi canonici
-Turkey_1Lig;2026-10-23;Boluspor;Vanspor FK;0;3;Nessuna prediction con stessi nomi canonici
-Ukraine_PremierLeague;2026-10-23;Dyn. Kyiv;Kudrivka;3;1;Nessuna prediction con stessi nomi canonici
-Ukraine_PremierLeague;2026-10-23;Polissya Zhytomyr;Obolon;3;0;Nessuna prediction con stessi nomi canonici
-Ukraine_PremierLeague;2026-10-23;Veres-Rivne;Kolos Kovalivka;0;2;Nessuna prediction con stessi nomi canonici
-Ukraine_PershaLiga;2026-10-23;Metalist Kharkiv;Fenix Mariupol;0;2;Nessuna prediction con stessi nomi canonici
+Albania_AbissnetSuperiore;2026-10-24;Laci;Vora;1;0;Nessuna prediction con stessi nomi canonici
+Albania_AbissnetSuperiore;2026-10-24;Partizani;Skenderbeu;0;2;Nessuna prediction con stessi nomi canonici
+Albania_AbissnetSuperiore;2026-10-24;Teuta;AF Elbasani;0;0;Nessuna prediction con stessi nomi canonici
+Albania_AbissnetSuperiore;2026-10-24;Vllaznia;Tirana;2;0;Nessuna prediction con stessi nomi canonici
+Andorra_PrimeraDivisio;2026-10-24;Sporting Escaldes;Casa de Portugal;1;1;Nessuna prediction con stessi nomi canonici
+SaudiArabia_ProfessionalLeague;2026-10-24;Neom SC;Abha;2;0;Nessuna prediction con stessi nomi canonici
+SaudiArabia_ProfessionalLeague;2026-10-24;Al Kholood;Al Ettifaq;0;3;Nessuna prediction con stessi nomi canonici
+SaudiArabia_ProfessionalLeague;2026-10-24;Al Riyadh;Al-Taawon;2;1;Nessuna prediction con stessi nomi canonici
+Armenia_PremierLeague;2026-10-24;Shirak;Alashkert;0;1;Nessuna prediction con stessi nomi canonici
+Austria_Bundesliga;2026-10-24;Hartberg;Wolfsberger;1;0;Nessuna prediction con stessi nomi canonici
+Austria_Bundesliga;2026-10-24;Tirol;Grazer;1;1;Nessuna prediction con stessi nomi canonici
+Austria_Bundesliga;2026-10-24;SK Rapid;A. Lustenau;5;1;Nessuna prediction con stessi nomi canonici
+Austria_2Liga;2026-10-24;Admira;Innsbruck;1;0;Nessuna prediction con stessi nomi canonici
+Austria_2Liga;2026-10-24;Liefering;Bregenz;2;2;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_East;2026-10-24;SV Donau;Wienerberger;8;1;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_West;2026-10-24;Rothis;FC Lustenau;4;3;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_West;2026-10-24;Hohenems;Tirol (Am);5;2;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_West;2026-10-24;Lauterach;Lochau;2;0;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_South;2026-10-24;A. Klagenfurt;Atus Velden;3;0;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_South;2026-10-24;Hartberg (Am);Weiz;2;0;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_South;2026-10-24;Donau Klagenfurt;ATSV Wolfsberger;1;1;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_South;2026-10-24;Treibach;Bleiburg;1;0;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_North;2026-10-24;Leonfelden;TSV St. Johann;2;2;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_North;2026-10-24;Grodig;Saalfelden;3;1;Nessuna prediction con stessi nomi canonici
+Austria_Regionalliga_North;2026-10-24;LASK (Am);Kuchl;4;0;Nessuna prediction con stessi nomi canonici
+Austria_Burgenland;2026-10-24;Rust;Neudorf/Parndorf;1;1;Nessuna prediction con stessi nomi canonici
+Austria_Burgenland;2026-10-24;Lackenbach;Deutschkreutz;1;2;Nessuna prediction con stessi nomi canonici
+Austria_Karnten;2026-10-24;KAC 1909;Seeboden;5;0;Nessuna prediction con stessi nomi canonici
+Austria_Karnten;2026-10-24;Kottmannsdorf;Atus Ferlach;1;4;Nessuna prediction con stessi nomi canonici
+Austria_Karnten;2026-10-24;Saint Michael Lavanttal;SV Spittal;1;0;Nessuna prediction con stessi nomi canonici
+Austria_Karnten;2026-10-24;Nussdorf;Matrei;2;2;Nessuna prediction con stessi nomi canonici
+Austria_Niederosterreich;2026-10-24;Amstetten (Am);Retz;2;0;Nessuna prediction con stessi nomi canonici
+Austria_Niederosterreich;2026-10-24;Hohenau;ASK Ybbs;4;0;Nessuna prediction con stessi nomi canonici
+Austria_Niederosterreich;2026-10-24;St. Peter in der Au;Wiener Neustadt;1;3;Nessuna prediction con stessi nomi canonici
+Austria_Oberosterreich;2026-10-24;ASK St.Valentin;Ostermiething;3;2;Nessuna prediction con stessi nomi canonici
+Austria_Oberosterreich;2026-10-24;Union Unis Gschwandt;St. Martin im Muhlreis;4;1;Nessuna prediction con stessi nomi canonici
+Austria_Oberosterreich;2026-10-24;Mondsee;Friedburg;0;2;Nessuna prediction con stessi nomi canonici
+Austria_Salzburg;2026-10-24;Burmoos;UFC Siezenheim;3;0;Nessuna prediction con stessi nomi canonici
+Austria_Salzburg;2026-10-24;Thalgau;TSU Bramberg;3;2;Nessuna prediction con stessi nomi canonici
+Austria_Steiermark;2026-10-24;Grossklein;Koflach;0;5;Nessuna prediction con stessi nomi canonici
+Austria_Steiermark;2026-10-24;Stadtwerke Bruck/Mur;Furstenfeld;1;2;Nessuna prediction con stessi nomi canonici
+Austria_Tirol;2026-10-24;Stubai;Vols;4;1;Nessuna prediction con stessi nomi canonici
+Austria_Tirol;2026-10-24;Innsbrucker AC;Kematen;2;3;Nessuna prediction con stessi nomi canonici
+Austria_Tirol;2026-10-24;SC Mils 05;Absam;1;4;Nessuna prediction con stessi nomi canonici
+Austria_Tirol;2026-10-24;Kolsass Weer;Telfs;4;1;Nessuna prediction con stessi nomi canonici
+Austria_Vorarlberg;2026-10-24;Riefensberg;Bizau;1;1;Nessuna prediction con stessi nomi canonici
+Austria_Vorarlberg;2026-10-24;Admira Dornbirn;A. Lustenau (Am);4;2;Nessuna prediction con stessi nomi canonici
+Austria_Vorarlberg;2026-10-24;Dornbirner SV;Alberschwende;4;0;Nessuna prediction con stessi nomi canonici
+Austria_Vorarlberg;2026-10-24;Feldkirch;Andelsbuch;4;0;Nessuna prediction con stessi nomi canonici
+Austria_Vorarlberg;2026-10-24;Hard;Brauerei Egg;2;2;Nessuna prediction con stessi nomi canonici
+Austria_Vorarlberg;2026-10-24;Ludesch;Rotenberg;0;4;Nessuna prediction con stessi nomi canonici
+Austria_Vorarlberg;2026-10-24;Schlins;Nenzing;3;0;Nessuna prediction con stessi nomi canonici
+Austria_Wien;2026-10-24;Floridsdorfer AC (Am);Post Wien;4;0;Nessuna prediction con stessi nomi canonici
+Austria_Wien;2026-10-24;Dinamo Helfort;Sportunion Mauer;0;0;Nessuna prediction con stessi nomi canonici
+Austria_Wien;2026-10-24;Lac Inter;Kagran;1;0;Nessuna prediction con stessi nomi canonici
+Austria_Wien;2026-10-24;A XIII-Auhof Center;First Vienna (Am);2;0;Nessuna prediction con stessi nomi canonici
+Azerbaijan_PremierLeague;2026-10-24;Safa Baku;Kapaz;1;2;Nessuna prediction con stessi nomi canonici
+Azerbaijan_PremierLeague;2026-10-24;Neftci Baku;Turan;1;1;Nessuna prediction con stessi nomi canonici
+Belgium_JupilerProLeague;2026-10-24;Anversa;Charleroi;3;0;Nessuna prediction con stessi nomi canonici
+Belgium_JupilerProLeague;2026-10-24;Leuven;Lommel SK;2;2;Nessuna prediction con stessi nomi canonici
+Belgium_JupilerProLeague;2026-10-24;RAAL La Louviere;Waregem;3;0;Nessuna prediction con stessi nomi canonici
+Belgium_JupilerProLeague;2026-10-24;Westerlo;Beveren;4;4;Nessuna prediction con stessi nomi canonici
+Belgium_ChallengerProLeague;2026-10-24;Seraing;Virton;3;1;Nessuna prediction con stessi nomi canonici
+Belarus_VysshayaLiga;2026-10-24;Gomel;Din. Minsk;1;2;Nessuna prediction con stessi nomi canonici
+Belarus_VysshayaLiga;2026-10-24;Naftan;Isloch;0;6;Nessuna prediction con stessi nomi canonici
+Belarus_VysshayaLiga;2026-10-24;BATE;Belshina;0;1;Nessuna prediction con stessi nomi canonici
+Belarus_VysshayaLiga;2026-10-24;Vitebsk;ML Vitebsk;0;2;Nessuna prediction con stessi nomi canonici
+Belarus_PershayaLiga;2026-10-24;Minsk 2;Orsha;1;5;Nessuna prediction con stessi nomi canonici
+Belarus_PershayaLiga;2026-10-24;BumProm Gomel;Volna Pinsk;1;3;Nessuna prediction con stessi nomi canonici
+Belarus_PershayaLiga;2026-10-24;Lida;Molodechno;1;0;Nessuna prediction con stessi nomi canonici
+Belarus_PershayaLiga;2026-10-24;Slutsk;FC Slonim;2;0;Nessuna prediction con stessi nomi canonici
+Belarus_PershayaLiga;2026-10-24;Soligorsk;Smorgon;4;0;Nessuna prediction con stessi nomi canonici
+Bolivia_DivisionProfesional;2026-10-24;GV San Jose;Blooming;2;1;Nessuna prediction con stessi nomi canonici
+Bolivia_DivisionProfesional;2026-10-24;SA Bulo Bulo;Real Potosi;2;1;Nessuna prediction con stessi nomi canonici
+Bosnia_WWINLigaBiH;2026-10-24;Siroki Brijeg;Celik Zenica;0;0;Nessuna prediction con stessi nomi canonici
+Bosnia_WWINLigaBiH;2026-10-24;Sarajevo;Zeljeznicar;2;0;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_FBiH;2026-10-24;Banovici;NK Vitez;1;2;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_FBiH;2026-10-24;Gradacac;Capljina;4;1;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_FBiH;2026-10-24;Hadzici;Igman K.;2;1;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_FBiH;2026-10-24;Sloboda;Stupcanica;1;0;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_FBiH;2026-10-24;Tomislav;Posusje;1;3;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_FBiH;2026-10-24;Travnik;Jedinstvo Bihac;4;0;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_RS;2026-10-24;Drina Zvornik;Majevica;2;0;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_RS;2026-10-24;Kozara;Zvijezda 09;2;0;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_RS;2026-10-24;Nevesinje;Laktasi;1;8;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_RS;2026-10-24;Slavija;Leotar;1;1;Nessuna prediction con stessi nomi canonici
+Bosnia_PrvaLiga_RS;2026-10-24;Sutjeska Foca;Romanija Pale;0;3;Nessuna prediction con stessi nomi canonici
+Bulgaria_ParvaLiga;2026-10-24;Dunav Ruse;Spartak Varna;2;0;Nessuna prediction con stessi nomi canonici
+Bulgaria_ParvaLiga;2026-10-24;Lok. Sofia;Botev Vratsa;1;1;Nessuna prediction con stessi nomi canonici
+Croatia_HNL;2026-10-24;Gorica;Lok. Zagreb;0;0;Nessuna prediction con stessi nomi canonici
+Croatia_HNL;2026-10-24;Varazdin;Slaven Belupo;1;2;Nessuna prediction con stessi nomi canonici
+Croatia_PrvaNL;2026-10-24;Vukovar 1991;Bijelo Brdo;0;2;Nessuna prediction con stessi nomi canonici
+Croatia_PrvaNL;2026-10-24;Dugopolje;Opatija;1;2;Nessuna prediction con stessi nomi canonici
+Croatia_PrvaNL;2026-10-24;Segesta;Croatia Zmijavci;2;0;Nessuna prediction con stessi nomi canonici
+Croatia_PrvaNL;2026-10-24;Karlovac;Orijent;0;2;Nessuna prediction con stessi nomi canonici
+Denmark_1stDivision;2026-10-24;Hillerod;Aalborg;2;1;Nessuna prediction con stessi nomi canonici
+Denmark_1stDivision;2026-10-24;Esbjerg;Fredericia;2;1;Nessuna prediction con stessi nomi canonici
+Denmark_1stDivision;2026-10-24;AB Copenhagen;Kolding;1;0;Nessuna prediction con stessi nomi canonici
+Denmark_1stDivision;2026-10-24;Vejle;Aarhus Fremad;0;0;Nessuna prediction con stessi nomi canonici
+Denmark_2ndDivision;2026-10-24;VSK Aarhus;Naestved;2;2;Nessuna prediction con stessi nomi canonici
+Denmark_2ndDivision;2026-10-24;Middelfart;Skive;3;3;Nessuna prediction con stessi nomi canonici
+Denmark_2ndDivision;2026-10-24;B.93;Brabrand;2;3;Nessuna prediction con stessi nomi canonici
+Denmark_3rdDivision;2026-10-24;Ringsted;Ishoj;1;1;Nessuna prediction con stessi nomi canonici
+Denmark_3rdDivision;2026-10-24;Næsby;Holbaek;1;2;Nessuna prediction con stessi nomi canonici
+Denmark_3rdDivision;2026-10-24;Vanløse;ASA Aarhus;1;0;Nessuna prediction con stessi nomi canonici
+Denmark_3rdDivision;2026-10-24;Holstebro;Horsholm-Usserod;0;4;Nessuna prediction con stessi nomi canonici
+Denmark_ALigaWomen;2026-10-24;Brondby D;Midtjylland D;1;2;Nessuna prediction con stessi nomi canonici
+Denmark_ALigaWomen;2026-10-24;Fortuna Hjorring D;FC Copenhagen D;3;1;Nessuna prediction con stessi nomi canonici
+Denmark_ALigaWomen;2026-10-24;KoldingQ D;Koge D;2;3;Nessuna prediction con stessi nomi canonici
+Estonia_Meistriliiga;2026-10-24;Kuressaare;Paide;0;1;Nessuna prediction con stessi nomi canonici
+Estonia_Meistriliiga;2026-10-24;Levadia;Harju JK Laagri;2;1;Nessuna prediction con stessi nomi canonici
+Estonia_EsiliigaB;2026-10-24;Legion;Johvi Phoenix;0;4;Nessuna prediction con stessi nomi canonici
+Estonia_EsiliigaB;2026-10-24;Tabasalu;Tartu Kalev;2;1;Nessuna prediction con stessi nomi canonici
+Estonia_MeistriliigaWomen;2026-10-24;Paide Linnameeskond D;Elva D;4;0;Nessuna prediction con stessi nomi canonici
+Finland_Veikkausliiga;2026-10-24;VPS;Inter Turku;0;1;Nessuna prediction con stessi nomi canonici
+Finland_Veikkausliiga;2026-10-24;Gnistan;Oulu;3;4;Nessuna prediction con stessi nomi canonici
+France_Ligue1;2026-10-24;Lens;Paris FC;2;1;Nessuna prediction con stessi nomi canonici
+France_Ligue2;2026-10-24;Dijon;Rodez;1;2;Nessuna prediction con stessi nomi canonici
+France_Ligue2;2026-10-24;St. Etienne;Nantes;1;0;Nessuna prediction con stessi nomi canonici
+Wales_CymruPremier;2026-10-24;Connah's Q.;Llandudno;2;0;Nessuna prediction con stessi nomi canonici
+Wales_CymruPremier;2026-10-24;Barry;Haverfordwest;1;3;Nessuna prediction con stessi nomi canonici
+Wales_CymruNorth;2026-10-24;Buckley;Holyhead;0;2;Nessuna prediction con stessi nomi canonici
+Wales_CymruNorth;2026-10-24;Caersws;Guilsfield;2;2;Nessuna prediction con stessi nomi canonici
+Wales_CymruNorth;2026-10-24;Llanuwchllyn;Bala Town;3;3;Nessuna prediction con stessi nomi canonici
+Wales_CymruNorth;2026-10-24;Porthmadog;Brickfield;0;1;Nessuna prediction con stessi nomi canonici
+Wales_CymruNorth;2026-10-24;Rhyl;Newtown;2;2;Nessuna prediction con stessi nomi canonici
+Georgia_ErovnuliLiga;2026-10-24;Meshakhte Tkibuli;Dila Gori;2;1;Nessuna prediction con stessi nomi canonici
+Georgia_ErovnuliLiga;2026-10-24;Dinamo Batumi;Samgurali;3;0;Nessuna prediction con stessi nomi canonici
+Germany_Bundesliga;2026-10-24;Augusta;Union Berlino;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Bundesliga;2026-10-24;Colonia;Schalke;0;0;Nessuna prediction con stessi nomi canonici
+Germany_Bundesliga;2026-10-24;Magonza;Brema;2;3;Nessuna prediction con stessi nomi canonici
+Germany_Bundesliga;2026-10-24;Paderborn;Amburgo;1;0;Nessuna prediction con stessi nomi canonici
+Germany_Bundesliga;2026-10-24;RB Lipsia;Elversberg;4;0;Nessuna prediction con stessi nomi canonici
+Germany_Bundesliga;2026-10-24;Dortmund;Francoforte;1;0;Nessuna prediction con stessi nomi canonici
+Germany_2Bundesliga;2026-10-24;Heidenheim;Cottbus;1;1;Nessuna prediction con stessi nomi canonici
+Germany_2Bundesliga;2026-10-24;Hertha;Bielefeld;1;0;Nessuna prediction con stessi nomi canonici
+Germany_2Bundesliga;2026-10-24;Magdeburg;Karlsruher;6;1;Nessuna prediction con stessi nomi canonici
+Germany_2Bundesliga;2026-10-24;Norimberga;Kaiserslautern;0;1;Nessuna prediction con stessi nomi canonici
+Germany_3Liga;2026-10-24;Ingolstadt;Duisburg;2;1;Nessuna prediction con stessi nomi canonici
+Germany_3Liga;2026-10-24;Meppen;Wurzburger Kickers;4;0;Nessuna prediction con stessi nomi canonici
+Germany_3Liga;2026-10-24;Rostock;Dusseldorf;1;1;Nessuna prediction con stessi nomi canonici
+Germany_3Liga;2026-10-24;Viktoria Koln;Verl;3;1;Nessuna prediction con stessi nomi canonici
+Germany_3Liga;2026-10-24;Wehen;Grossaspach;7;1;Nessuna prediction con stessi nomi canonici
+Germany_3Liga;2026-10-24;Stoccarda 2;Aachen;1;2;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Nord;2026-10-24;Brema 2;Emden;3;2;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Nord;2026-10-24;Eimsbutteler;Jeddeloh;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Nord;2026-10-24;Hannover 2;Norderstedt;4;3;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Nord;2026-10-24;Drochtersen/Assel;Todesfelde;5;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Nord;2026-10-24;VfB Oldenburg;Hannoverscher SC;2;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Nordost;2026-10-24;Chemnitzer;Magdeburg 2;1;2;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Nordost;2026-10-24;RSV Eintracht;Tasmania Berlin;1;2;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Nordost;2026-10-24;Zwickau;Aue;0;3;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Nordost;2026-10-24;Greifswald;Erfurt;2;3;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_West;2026-10-24;Bergisch Gladbach;Rodinghausen;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_West;2026-10-24;Bochum 2;Bocholt;3;3;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_West;2026-10-24;Hilden;Schalke 2;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_West;2026-10-24;Lotte;Siegen;1;4;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_West;2026-10-24;Westfalia Rhynern;Monchengladbach 2;3;2;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_West;2026-10-24;Colonia 2;Paderborn 2;2;2;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Sudwest;2026-10-24;FSV Francoforte;Eint. Frankfurt 2;1;2;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Sudwest;2026-10-24;Fulda-Lehnerz;Mainz 2;3;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Sudwest;2026-10-24;Sandhausen;Aalen;0;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Sudwest;2026-10-24;Steinbach Haiger;VfR Mannheim;0;2;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Sudwest;2026-10-24;Trier;Kickers Stoccarda;2;0;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Sudwest;2026-10-24;Walldorf;Kassel;4;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Bayern;2026-10-24;Augsburg 2;Illertissen;2;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Bayern;2026-10-24;Furth 2;Schwaben Augsburg;0;2;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Bayern;2026-10-24;Norinberga 2;Aubstadt;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Regionalliga_Bayern;2026-10-24;Unterhaching;Ansbach;2;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_NOFV_Nord;2026-10-24;Mahlsdorf;Hertha Zehlendorf;2;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_NOFV_Nord;2026-10-24;Rathenow;Wismar;5;0;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_NOFV_Nord;2026-10-24;Sparta Lichtenberg;Makkabi Berlin;2;0;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_NOFV_Nord;2026-10-24;Schwerin;Lichtenberg;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_NOFV_Sud;2026-10-24;Eilenburg;Krieschow;0;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_NOFV_Sud;2026-10-24;1.FC Frankfurt;Halle;1;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_NOFV_Sud;2026-10-24;Auerbach;Einheit Wernigerode;4;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_NOFV_Sud;2026-10-24;Freital;Weissenfels;3;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_NOFV_Sud;2026-10-24;Plauen;Halberstadt;2;0;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_SchleswigHolstein;2026-10-24;Oldenburger;Hohenwestedt;4;5;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_SchleswigHolstein;2026-10-24;Heider SV;Lubeck 2;3;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_SchleswigHolstein;2026-10-24;Kilia Kiel;Rapid Lubeck;12;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_SchleswigHolstein;2026-10-24;Phonix Lubeck B;Eckernforder SV;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_SchleswigHolstein;2026-10-24;Rotenhof;Kaltenkirchen;2;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Hamburg;2026-10-24;Dassendorf;Suderelbe;1;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Hamburg;2026-10-24;Altona;Niendorfer TSV;2;3;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bremen;2026-10-24;Union 60 Bremen;Bremen III;2;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bremen;2026-10-24;Woltmershausen;Geestemunde;0;3;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bremen;2026-10-24;Aumund-Vegesack;OSC Bremerhaven;0;3;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Niedersachsen;2026-10-24;Wilhelmshaven;Hemmingen;3;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Hessen;2026-10-24;Baunatal;Fernwald;0;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Hessen;2026-10-24;Friedberg;Kassel 2;5;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Hessen;2026-10-24;Giessen;RW Walldorf;1;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Hessen;2026-10-24;Stadtallendorf;Alzenau;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Hessen;2026-10-24;Unter-Flockenbach;Hanauer SC;3;0;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Hessen;2026-10-24;Hadamar;Eddersheim;6;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_RheinlandPfalzSaar;2026-10-24;Cosmos Koblenz;TSV 1881 Gau-Odernheim;0;4;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_RheinlandPfalzSaar;2026-10-24;Pirmasens;Gonsenheim;4;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_RheinlandPfalzSaar;2026-10-24;RW Koblenz;RW Wittlich;2;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_RheinlandPfalzSaar;2026-10-24;Schott Mainz;Worms;3;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_RheinlandPfalzSaar;2026-10-24;Diefflen;Ahrweiler;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_RheinlandPfalzSaar;2026-10-24;Emmelshausen-Karbach;Hertha Wiesbach;4;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_RheinlandPfalzSaar;2026-10-24;Eisbachtal;Mechtersheim;0;3;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bayern_Nord;2026-10-24;Weiden;Ingolstadt 2;4;3;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bayern_Nord;2026-10-24;Wurzburger FV;Stadeln;4;0;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bayern_Nord;2026-10-24;Nordlingen;Fortuna Regensburg;2;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bayern_Nord;2026-10-24;Grossbardorf;Regensburg 2;4;3;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bayern_Sud;2026-10-24;Ismaning;Schwabmunchen;1;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bayern_Sud;2026-10-24;Kottern-St. Mang;Heimstetten;1;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bayern_Sud;2026-10-24;Gundelfingen;Hankofen-Hailing;0;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Bayern_Sud;2026-10-24;Kirchanschoring;Pfaffenhofen;0;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_BadenWurttemberg;2026-10-24;Pforzheim;Villingen;0;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_BadenWurttemberg;2026-10-24;Young Boys Reutlingen;Oberachern;1;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_BadenWurttemberg;2026-10-24;Essingen;Backnang;3;5;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_BadenWurttemberg;2026-10-24;Balingen;Bahlinger;0;2;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_BadenWurttemberg;2026-10-24;Ravensburg;Reutlingen;0;1;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Niederrhein;2026-10-24;SW Essen;Schonnebeck;1;4;Nessuna prediction con stessi nomi canonici
+Germany_Oberliga_Niederrhein;2026-10-24;Uerdingen;FC Monheim;0;1;Nessuna prediction con stessi nomi canonici
+Japan_J1League;2026-10-24;Hiroshima;Shimizu;4;0;Nessuna prediction con stessi nomi canonici
+Japan_J1League;2026-10-24;Kashima;Kashiwa;2;3;Nessuna prediction con stessi nomi canonici
+Japan_J1League;2026-10-24;Kobe;Machida;0;0;Nessuna prediction con stessi nomi canonici
+Japan_J1League;2026-10-24;Verdy;Avispa Fukuoka;3;1;Nessuna prediction con stessi nomi canonici
+Japan_J1League;2026-10-24;G-Osaka;Kyoto;2;2;Nessuna prediction con stessi nomi canonici
+Indonesia_SuperLeague;2026-10-24;Isenmulang Kalteng;PSIM Yogyakarta;0;0;Nessuna prediction con stessi nomi canonici
+Indonesia_SuperLeague;2026-10-24;Persijap Jepara;Java United;1;1;Nessuna prediction con stessi nomi canonici
+Indonesia_Championship_West;2026-10-24;Persikad Depok;PSPS Riau;2;3;Nessuna prediction con stessi nomi canonici
+Indonesia_Championship_West;2026-10-24;Bekasi City;Sumsel United;1;1;Nessuna prediction con stessi nomi canonici
+Indonesia_Championship_West;2026-10-24;Persiku Kudus;Padang;1;2;Nessuna prediction con stessi nomi canonici
+Indonesia_Championship_West;2026-10-24;Persiraja Aceh;PSGC Ciamis;2;1;Nessuna prediction con stessi nomi canonici
+Indonesia_Championship_East;2026-10-24;Persis Solo;RANS Nusantara;2;2;Nessuna prediction con stessi nomi canonici
+Indonesia_Championship_East;2026-10-24;Tornado Pekanbaru;Sidoarjo;2;2;Nessuna prediction con stessi nomi canonici
+England_PremierLeague;2026-10-24;Aston Villa;Manchester City;2;1;Nessuna prediction con stessi nomi canonici
+England_PremierLeague;2026-10-24;Arsenal;Everton;2;0;Nessuna prediction con stessi nomi canonici
+England_PremierLeague;2026-10-24;Coventry;Fulham;0;1;Nessuna prediction con stessi nomi canonici
+England_PremierLeague;2026-10-24;Chelsea;Tottenham;0;2;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;Charlton;Norwich;1;3;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;Portsmouth;Millwall;2;1;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;Sheffield Utd;Derby;1;1;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;Blackburn;Wrexham;2;0;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;Cardiff;Birmingham;1;0;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;Lincoln;Burnley;4;1;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;Preston;West Brom;1;1;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;QPR;Swansea;5;0;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;Stoke;Bristol City;0;0;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;West Ham;Southampton;2;3;Nessuna prediction con stessi nomi canonici
+England_Championship;2026-10-24;Wolves;Watford;1;0;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Huddersfield;Wigan;2;1;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Luton;Leicester;2;1;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Blackpool;Mansfield;1;4;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Bromley;Peterborough;1;1;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Burton;Leyton Orient;2;1;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Cambridge Utd;Plymouth;2;3;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Doncaster;Sheffield Wed;2;0;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Notts County;Stockport;1;1;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Oxford Utd;Bradford City;0;0;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Reading;Barnsley;2;1;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Stevenage;Milton Keynes;0;1;Nessuna prediction con stessi nomi canonici
+England_LeagueOne;2026-10-24;Wimbledon;Wycombe;1;1;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Bristol Rovers;Swindon;0;0;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Cheltenham;Newport;1;0;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Northampton;Colchester;2;0;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Barnet;Oldham;1;1;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Chesterfield;Crewe;5;1;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Crawley;Tranmere;1;1;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Exeter;Fleetwood;2;1;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Gillingham FC;Grimsby;1;4;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Rochdale;Accrington;0;5;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;Rotherham;Shrewsbury;3;3;Nessuna prediction con stessi nomi canonici
+England_LeagueTwo;2026-10-24;York;Port Vale;2;0;Nessuna prediction con stessi nomi canonici
+England_NPLPremierDivision;2026-10-24;Emley;Lancaster;1;0;Nessuna prediction con stessi nomi canonici
+England_NPLPremierDivision;2026-10-24;FC United;Whitby;4;2;Nessuna prediction con stessi nomi canonici
+England_NPLPremierDivision;2026-10-24;Warrington;Gainsborough;1;2;Nessuna prediction con stessi nomi canonici
+England_SouthernLeaguePremierCentral;2026-10-24;Bishop's Stortford;Real Bedford;3;1;Nessuna prediction con stessi nomi canonici
+England_SouthernLeaguePremierCentral;2026-10-24;Hitchin;Bury Town;5;1;Nessuna prediction con stessi nomi canonici
+England_SouthernLeaguePremierCentral;2026-10-24;Stratford;Alvechurch;4;4;Nessuna prediction con stessi nomi canonici
+England_SouthernLeaguePremierSouth;2026-10-24;Basingstoke;Plymouth Parkway;2;0;Nessuna prediction con stessi nomi canonici
+England_IsthmianLeaguePremierDivision;2026-10-24;Chatham;Welling;3;2;Nessuna prediction con stessi nomi canonici
+England_IsthmianLeaguePremierDivision;2026-10-24;Maldon & Tiptree;Dulwich Hamlet;1;1;Nessuna prediction con stessi nomi canonici
+England_IsthmianLeaguePremierDivision;2026-10-24;Stanway;Cheshunt;3;0;Nessuna prediction con stessi nomi canonici
+NorthernIreland_NIFLPremiership;2026-10-24;C. Rangers;Limavady;1;1;Nessuna prediction con stessi nomi canonici
+NorthernIreland_NIFLPremiership;2026-10-24;Crusaders;Coleraine;0;5;Nessuna prediction con stessi nomi canonici
+NorthernIreland_NIFLPremiership;2026-10-24;Dungannon;Cliftonville;1;3;Nessuna prediction con stessi nomi canonici
+NorthernIreland_NIFLPremiership;2026-10-24;Bangor FC;Larne;1;2;Nessuna prediction con stessi nomi canonici
+NorthernIreland_NIFLChampionship;2026-10-24;Annagh;Queens Univ.;5;1;Nessuna prediction con stessi nomi canonici
+NorthernIreland_NIFLChampionship;2026-10-24;Armagh;Ards;1;1;Nessuna prediction con stessi nomi canonici
+NorthernIreland_NIFLChampionship;2026-10-24;H&W Welders;Loughgall;1;2;Nessuna prediction con stessi nomi canonici
+Iceland_BestaDeildKarla;2026-10-24;Akranes;Keflavik;4;4;Nessuna prediction con stessi nomi canonici
+Iceland_BestaDeildKarla;2026-10-24;KR Reykjavik;Breidablik;8;3;Nessuna prediction con stessi nomi canonici
+Iceland_BestaDeildKarla;2026-10-24;Vikingur Reykjavik;Fram;2;2;Nessuna prediction con stessi nomi canonici
+FaroeIslands_1Deild;2026-10-24;TB Tvoroyri;Sandur;0;4;Nessuna prediction con stessi nomi canonici
+FaroeIslands_1Deild;2026-10-24;Fuglafjordur;FC Suduroy;6;3;Nessuna prediction con stessi nomi canonici
+Italy_SerieA;2026-10-24;Cagliari;Bologna;0;2;Nessuna prediction con stessi nomi canonici
+Italy_SerieA;2026-10-24;Como;Sassuolo;2;0;Nessuna prediction con stessi nomi canonici
+Italy_SerieA;2026-10-24;Napoli;Roma;3;3;Nessuna prediction con stessi nomi canonici
+Italy_SerieA;2026-10-24;Lazio;Parma;2;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieB;2026-10-24;Avellino;Padova;0;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieB;2026-10-24;Cremonese;Juve Stabia;0;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieB;2026-10-24;Entella;Mantova;0;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieB;2026-10-24;Modena;Cesena;3;0;Nessuna prediction con stessi nomi canonici
+Italy_SerieB;2026-10-24;Südtirol;Sampdoria;1;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieB;2026-10-24;Catanzaro;Ascoli;1;6;Nessuna prediction con stessi nomi canonici
+Italy_SerieB;2026-10-24;Arezzo;Benevento;0;3;Nessuna prediction con stessi nomi canonici
+Italy_SerieC_GironeA;2026-10-24;Treviso;Dolomiti Bellunesi;2;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieC_GironeA;2026-10-24;Alcione Milano;Carpi;1;2;Nessuna prediction con stessi nomi canonici
+Italy_SerieC_GironeA;2026-10-24;Brescia;Cittadella;2;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieC_GironeB;2026-10-24;Sambenedettese;Livorno;2;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieC_GironeB;2026-10-24;Spezia;Latina;1;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieC_GironeB;2026-10-24;Vis Pesaro;Ravenna;0;4;Nessuna prediction con stessi nomi canonici
+Italy_SerieC_GironeC;2026-10-24;Scafatese;Barletta;1;0;Nessuna prediction con stessi nomi canonici
+Italy_SerieC_GironeC;2026-10-24;Savoia;Cosenza;1;1;Nessuna prediction con stessi nomi canonici
+Italy_SerieAWomen;2026-10-24;Milan;Ternana;3;0;Nessuna prediction con stessi nomi canonici
+Italy_SerieAWomen;2026-10-24;Napoli;Inter;0;0;Nessuna prediction con stessi nomi canonici
+Italy_SerieAWomen;2026-10-24;Juventus;Roma;2;5;Nessuna prediction con stessi nomi canonici
+Kazakhstan_PremierLeague;2026-10-24;Okzhetpes;Kaspij Aktau;3;0;Nessuna prediction con stessi nomi canonici
+Kazakhstan_PremierLeague;2026-10-24;Zhetysu;Tobol;1;1;Nessuna prediction con stessi nomi canonici
+Kazakhstan_PremierLeague;2026-10-24;Kyzylzhar;Ulytau;1;0;Nessuna prediction con stessi nomi canonici
+Kazakhstan_PremierLeague;2026-10-24;Ordabasy;Zhenis;1;1;Nessuna prediction con stessi nomi canonici
+Latvia_Virsliga;2026-10-24;FK Liepaja;Tukums 2000;0;0;Nessuna prediction con stessi nomi canonici
+Latvia_NakotnesLiga;2026-10-24;Metta;Leevon PPK;2;0;Nessuna prediction con stessi nomi canonici
+Latvia_NakotnesLiga;2026-10-24;Skanste;FK Smiltene;1;3;Nessuna prediction con stessi nomi canonici
+Latvia_NakotnesLiga;2026-10-24;Valmiera;JFK Ventspils;3;0;Nessuna prediction con stessi nomi canonici
+Latvia_NakotnesLiga;2026-10-24;Marupe;Riga Mariners;1;6;Nessuna prediction con stessi nomi canonici
+Lithuania_Toplyga;2026-10-24;Transinvest;Hegelmann;2;0;Nessuna prediction con stessi nomi canonici
+Lithuania_ILyga;2026-10-24;Neptunas;Ekranas;0;2;Nessuna prediction con stessi nomi canonici
+Lithuania_ILyga;2026-10-24;Tauras;BE1 NFA;1;2;Nessuna prediction con stessi nomi canonici
+Lithuania_ILyga;2026-10-24;BFA Vilnius;FK Minija;2;1;Nessuna prediction con stessi nomi canonici
+Lithuania_ILyga;2026-10-24;Atmosfera;Jonava;3;0;Nessuna prediction con stessi nomi canonici
+NorthMacedonia_1MFL;2026-10-24;Struga;FK Skopje;4;0;Nessuna prediction con stessi nomi canonici
+NorthMacedonia_1MFL;2026-10-24;Shkendija;Vardar;0;0;Nessuna prediction con stessi nomi canonici
+Mexico_LigaMX_Apertura;2026-10-24;Necaxa;Juarez;1;1;Nessuna prediction con stessi nomi canonici
+Mexico_LigaMX_Apertura;2026-10-24;Atlante;Atl. San Luis;0;1;Nessuna prediction con stessi nomi canonici
+Mexico_LigaExpansionMX_Apertura;2026-10-24;Tepatitlan de Morelos;Cancun;0;4;Nessuna prediction con stessi nomi canonici
+Moldova_SuperLiga;2026-10-24;Politehnica UTM;S. Tiraspol;0;2;Nessuna prediction con stessi nomi canonici
+Moldova_SuperLiga;2026-10-24;Dacia Buiucani;Real Sireti;3;1;Nessuna prediction con stessi nomi canonici
+Moldova_SuperLiga;2026-10-24;Petrocub;Milsami;2;1;Nessuna prediction con stessi nomi canonici
+Moldova_Liga1_GroupA;2026-10-24;FCM Ungheni;Vulturii Cutezatori;6;1;Nessuna prediction con stessi nomi canonici
+Moldova_Liga1_GroupB;2026-10-24;Stauceni;National Ialoveni;1;0;Nessuna prediction con stessi nomi canonici
+Moldova_Liga1_GroupB;2026-10-24;Victoria;Oguzsport;0;1;Nessuna prediction con stessi nomi canonici
+Montenegro_PrvaCrnogorskaLiga;2026-10-24;Otrant;Sutjeska;1;1;Nessuna prediction con stessi nomi canonici
+Montenegro_DrugaLiga;2026-10-24;Grbalj;Jedinstvo;0;7;Nessuna prediction con stessi nomi canonici
+Norway_Eliteserien;2026-10-24;Bodo/Glimt;Vålerenga;0;1;Nessuna prediction con stessi nomi canonici
+Norway_Eliteserien;2026-10-24;HamKam;Rosenborg;0;3;Nessuna prediction con stessi nomi canonici
+Norway_OBOSLigaen;2026-10-24;Raufoss;Ranheim;1;3;Nessuna prediction con stessi nomi canonici
+Norway_2ndDivision_Group1;2026-10-24;Mjondalen;Brattvag;1;4;Nessuna prediction con stessi nomi canonici
+Norway_2ndDivision_Group1;2026-10-24;Sotra;Notodden;5;2;Nessuna prediction con stessi nomi canonici
+Norway_2ndDivision_Group1;2026-10-24;Eik-Tonsberg;Halden;3;0;Nessuna prediction con stessi nomi canonici
+Norway_2ndDivision_Group1;2026-10-24;Pors;Sandviken;0;0;Nessuna prediction con stessi nomi canonici
+Norway_2ndDivision_Group1;2026-10-24;Vidar;Lysekloster;0;2;Nessuna prediction con stessi nomi canonici
+Norway_2ndDivision_Group2;2026-10-24;Eidsvold;Honefoss;4;1;Nessuna prediction con stessi nomi canonici
+Norway_2ndDivision_Group2;2026-10-24;Follo;Skeid;2;0;Nessuna prediction con stessi nomi canonici
+Norway_2ndDivision_Group2;2026-10-24;Ull/Kisa;Lørenskog;0;4;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group1;2026-10-24;Heming;Lokomotiv Oslo;4;2;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group1;2026-10-24;Ready;Konnerud;3;2;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group1;2026-10-24;Ullern;Nordstrand;6;0;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group1;2026-10-24;Asker;Union Carl Berner;5;1;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group1;2026-10-24;Frigg;Grei;0;4;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group1;2026-10-24;Gamle Oslo;Baerum Sportsklubb;2;2;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group2;2026-10-24;Orkla;Nardo;3;2;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group2;2026-10-24;Ntnui;Melhus;1;1;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group2;2026-10-24;Herd;Strindheim;0;4;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group2;2026-10-24;Volda TI;Spjelkavik;4;1;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group3;2026-10-24;Austevoll;Stord;3;4;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group3;2026-10-24;Gneist;OS;2;4;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group3;2026-10-24;Fyllingsdalen;V. Haugesund;1;4;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group3;2026-10-24;Varegg;Forde;4;3;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group4;2026-10-24;Brodd;Akra;6;1;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group4;2026-10-24;Mandalskameratene;Madla IL;2;0;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group4;2026-10-24;Stabaek 2;Hinna;2;2;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group4;2026-10-24;Staal Jorpeland;Vindbjart;3;2;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group4;2026-10-24;Viking 2;Flekkeroy;1;2;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group5;2026-10-24;Skedsmo;Kongsvinger 2;5;1;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group5;2026-10-24;Strømsgodset 2;Ulfstind;7;2;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group5;2026-10-24;Finnsnes;Harstad;2;3;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group6;2026-10-24;Bjorkelangen;Raelingen;0;5;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group6;2026-10-24;Elverum;SK Gjovik-Lyn;3;0;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group6;2026-10-24;Brumunddal;Drobak-Frogn;1;3;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group6;2026-10-24;Fram;Lillehammer;3;2;Nessuna prediction con stessi nomi canonici
+Norway_3rdDivision_Group6;2026-10-24;Orn;Rade;1;0;Nessuna prediction con stessi nomi canonici
+Netherlands_Eredivisie;2026-10-24;Utrecht;Zwolle;1;1;Nessuna prediction con stessi nomi canonici
+Netherlands_Eredivisie;2026-10-24;Willem 2;Cambuur;1;6;Nessuna prediction con stessi nomi canonici
+Netherlands_Eredivisie;2026-10-24;Den Haag;Heerenveen;2;3;Nessuna prediction con stessi nomi canonici
+Netherlands_EersteDivisie;2026-10-24;Dordrecht;Venlo;2;4;Nessuna prediction con stessi nomi canonici
+Paraguay_DivisionIntermedia;2026-10-24;Independiente F.B.C.;Paraguari AC;1;3;Nessuna prediction con stessi nomi canonici
+Paraguay_DivisionIntermedia;2026-10-24;3 de Noviembre;Encarnacion FC;2;2;Nessuna prediction con stessi nomi canonici
+Paraguay_DivisionIntermedia;2026-10-24;Sol De America;Atl. Tembetary;1;1;Nessuna prediction con stessi nomi canonici
+Peru_Liga1_Clausura;2026-10-24;Huancayo;Alianza Atl.;4;1;Nessuna prediction con stessi nomi canonici
+Peru_Liga1_Clausura;2026-10-24;Cusco;Sporting Cristal;3;1;Nessuna prediction con stessi nomi canonici
+Peru_Liga2_GroupB;2026-10-24;Minas;Ayacucho;1;2;Nessuna prediction con stessi nomi canonici
+Peru_Liga2_GroupA;2026-10-24;Llacuabamba;ADA Jaen;1;1;Nessuna prediction con stessi nomi canonici
+Poland_Ekstraklasa;2026-10-24;Piast;Cracovia;3;1;Nessuna prediction con stessi nomi canonici
+Poland_Ekstraklasa;2026-10-24;Korona;Katowice;1;0;Nessuna prediction con stessi nomi canonici
+Poland_Ekstraklasa;2026-10-24;Pogon Szczecin;Radomiak Radom;4;3;Nessuna prediction con stessi nomi canonici
+Poland_Ekstraklasa;2026-10-24;Wisla;Rakow;2;1;Nessuna prediction con stessi nomi canonici
+Poland_Division1;2026-10-24;Arka;Termalica B-B.;3;1;Nessuna prediction con stessi nomi canonici
+Poland_Division1;2026-10-24;Skierniewice;Polonia B.;1;2;Nessuna prediction con stessi nomi canonici
+Poland_Division1;2026-10-24;Stal Mielec;Chrobry Glogow;0;0;Nessuna prediction con stessi nomi canonici
+Poland_Division1;2026-10-24;Puszcza;Lechia;2;1;Nessuna prediction con stessi nomi canonici
+Poland_Division2;2026-10-24;Bielsko-Biala;R. Rzeszow;1;1;Nessuna prediction con stessi nomi canonici
+Poland_Division2;2026-10-24;Z. Gora;Leczna;0;6;Nessuna prediction con stessi nomi canonici
+Poland_Division2;2026-10-24;Hutnik Krakow;Ol. Grudziadz;1;2;Nessuna prediction con stessi nomi canonici
+Poland_Division2;2026-10-24;Chojniczanka;Legia 2;2;3;Nessuna prediction con stessi nomi canonici
+Poland_Division2;2026-10-24;S. Wola;Sandecja;1;0;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group1;2026-10-24;Plock 2;Zabki;2;2;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group1;2026-10-24;Mazovia Minsk Mazowiecki;T. Mazowiecki;3;1;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group1;2026-10-24;Elblag;Jagiellonia 2;0;0;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group1;2026-10-24;Swit;Troszyn;3;0;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group1;2026-10-24;Zambrow;Mlawa;1;1;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group1;2026-10-24;Lidzbark Warminski;LKS Lodz 2;3;0;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group1;2026-10-24;Suwalki;Weszlo;4;1;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group1;2026-10-24;Warta Sieradz;Pelikan;2;2;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group2;2026-10-24;Chemik Bydgoszcz;Unia Swarzedz;1;3;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group2;2026-10-24;Koszalin;Elana Torun;2;3;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group2;2026-10-24;Luzino;Lech 2;2;4;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group2;2026-10-24;Kotwica Kornik;Wda Swiecie;0;2;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group2;2026-10-24;Lipno Steszew;Gedania Gdansk;1;2;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group2;2026-10-24;Blekitni Stargard;Grom Nowy Staw;3;1;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group2;2026-10-24;KKS Kalisz;Sroda;0;0;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group2;2026-10-24;Kluczevia Stargard;Swinoujscie;2;2;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group2;2026-10-24;Wrzesnia;Notec Czarnkow;0;1;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group3;2026-10-24;Polkowice;Goczalkowice Zdroj;4;1;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group3;2026-10-24;Carina Gubin;BKS Sparta Katowice;1;3;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group3;2026-10-24;Warta Gorzow;Kluczbork;0;2;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group3;2026-10-24;Jelenia Gora;Rakow 2;3;1;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group3;2026-10-24;ROW Rybnik;Nysa;3;0;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group3;2026-10-24;Bytom Odrzanski;Brzeg;3;2;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group3;2026-10-24;Sulow;Sleza Wroclaw;1;2;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group4;2026-10-24;Czarni Polaniec;Busko-Zdroj;2;1;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group4;2026-10-24;Wisla 2;Wisloka Debica;3;1;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group4;2026-10-24;Chelmianka Chelm;Korona 2;2;0;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group4;2026-10-24;Moravia Morawica;Siarka Tarnobrzeg;2;3;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group4;2026-10-24;Naprzod Jedrzejow;Wieczysta Krakow 2;2;2;Nessuna prediction con stessi nomi canonici
+Poland_IIILiga_Group4;2026-10-24;Ostrowiec;Kolbuszowa Dolna;2;1;Nessuna prediction con stessi nomi canonici
+Portugal_LigaPortugal;2026-10-24;Estrela;Casa Pia;0;2;Nessuna prediction con stessi nomi canonici
+Portugal_LigaPortugal;2026-10-24;Alverca;Arouca;0;1;Nessuna prediction con stessi nomi canonici
+Portugal_LigaPortugal;2026-10-24;Gil Vicente;FC Porto;0;1;Nessuna prediction con stessi nomi canonici
+Portugal_LigaPortugal2;2026-10-24;Academica;Leixoes;4;0;Nessuna prediction con stessi nomi canonici
+Portugal_LigaPortugal2;2026-10-24;Sporting B;Portimonense;3;0;Nessuna prediction con stessi nomi canonici
+Portugal_LigaPortugal2;2026-10-24;Feirense;Benfica B;0;0;Nessuna prediction con stessi nomi canonici
+Portugal_LigaPortugal2;2026-10-24;Farense;Penafiel;1;4;Nessuna prediction con stessi nomi canonici
+Portugal_Liga3_SerieB;2026-10-24;Caldas;Mafra;3;3;Nessuna prediction con stessi nomi canonici
+Portugal_Liga3_SerieB;2026-10-24;Lusitano GC;Oliveirense;2;2;Nessuna prediction con stessi nomi canonici
+Portugal_Liga3_SerieA;2026-10-24;Paredes;Trofense;4;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_1Liga;2026-10-24;Brno;Bohemians;2;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_1Liga;2026-10-24;Teplice;Artis Brno;0;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_1Liga;2026-10-24;Zlin;Sigma Olomouc;1;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_1Liga;2026-10-24;Slavia Praga;Mlada Boleslav;1;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_ChNL;2026-10-24;Ceska Lipa;Pribram;2;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_ChNL;2026-10-24;Kromeriz;Zizkov;2;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupA;2026-10-24;Aritma Prague;Dukla Praga B;0;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupA;2026-10-24;Benesov;Bohemians 1905 B;2;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupA;2026-10-24;Loko Praha;Admira Prague;2;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupA;2026-10-24;Povltavska FA;Pribram B;0;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupA;2026-10-24;Domazlice;Plzen B;1;4;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupA;2026-10-24;Kraluv Dvur;Ceske Budejovice;3;3;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupB;2026-10-24;Liberec B;Horni Redice;5;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupB;2026-10-24;Mlada Boleslav B;Caslav;4;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupB;2026-10-24;Neratovice;Chrudim;6;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3CFL_GroupB;2026-10-24;Velke Hamry;Benatky;3;3;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3MSFL;2026-10-24;Blansko;FK Frydek-Mistek;0;3;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3MSFL;2026-10-24;Hodonin;Uhersky Brod;1;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3MSFL;2026-10-24;Nove Mesto na Morave;Havirov;2;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_3MSFL;2026-10-24;Vitkovice;Brno B;4;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupA;2026-10-24;Cesky Krumlov;Horovice;2;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupA;2026-10-24;Krimice;Milevsko;5;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupA;2026-10-24;FK Komarov;Petrin Plzen;4;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupA;2026-10-24;Nyrsko;Taborsko akademie;1;4;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupA;2026-10-24;Rokycany;Domazlice B;5;4;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupA;2026-10-24;Spartak Pribram;Sobeslav;2;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupB;2026-10-24;Sokolov;Ujezd Prague;2;3;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupB;2026-10-24;Usti n. L. B;Vysehrad;4;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupB;2026-10-24;Chomutov;Brandys n. Labem;1;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupB;2026-10-24;Psary;Velvary;3;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupB;2026-10-24;Slany;Ostrov;4;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupC;2026-10-24;Slavia HK;Chrudim B;4;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupC;2026-10-24;Vykan;Chlumec nad Cidlinou;1;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupC;2026-10-24;Hlinsko;Turnov;1;3;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupC;2026-10-24;Trutnov;Prepere;3;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupC;2026-10-24;Usti nad Orlici;Vysoke Myto;0;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupD;2026-10-24;Bohunice;Znojmo;2;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupD;2026-10-24;Kurim;Bystrc;7;0;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupD;2026-10-24;Bedrichov;Sparta Brno;2;5;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupD;2026-10-24;Havlickuv Brod;Velka Bites;0;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupE;2026-10-24;Prostejov B;Sternberk;3;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupE;2026-10-24;Breclav;Slavicin;0;2;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupE;2026-10-24;Holesov;Vsechovice;2;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupF;2026-10-24;Bridlicna;Valasske Mezirici;0;1;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupF;2026-10-24;Opava B;Hlucin;1;3;Nessuna prediction con stessi nomi canonici
+CzechRepublic_4Liga_GroupF;2026-10-24;Novy Jicin;Vratimov;0;1;Nessuna prediction con stessi nomi canonici
+Romania_Superliga;2026-10-24;Csikszereda M. Ciuc;FC Voluntari;2;1;Nessuna prediction con stessi nomi canonici
+Romania_Superliga;2026-10-24;FC Arges;UTA Arad;0;1;Nessuna prediction con stessi nomi canonici
+Romania_Superliga;2026-10-24;FCSB;Rapid Bucarest;4;1;Nessuna prediction con stessi nomi canonici
+Romania_Liga2;2026-10-24;Cetatea Suceava;CSM Slatina;2;0;Nessuna prediction con stessi nomi canonici
+Romania_Liga2;2026-10-24;CS Din. Bucuresti;Popesti Leordeni;1;2;Nessuna prediction con stessi nomi canonici
+Romania_Liga2;2026-10-24;Gloria Bistrita;CSC Dumbravita;2;1;Nessuna prediction con stessi nomi canonici
+Romania_Liga2;2026-10-24;Metalul Buzau;Stefanesti;3;0;Nessuna prediction con stessi nomi canonici
+Romania_Liga2;2026-10-24;Unirea Slobozia;Concordia;2;2;Nessuna prediction con stessi nomi canonici
+Romania_Liga2;2026-10-24;Politehnica Timisoara;FC Bacau;1;0;Nessuna prediction con stessi nomi canonici
+Russia_PremierLeague;2026-10-24;Akron Togliatti;Din. Mosca;3;1;Nessuna prediction con stessi nomi canonici
+Russia_PremierLeague;2026-10-24;F. Voronezh;Rodina Moscow;0;1;Nessuna prediction con stessi nomi canonici
+Russia_PremierLeague;2026-10-24;Kazan;Samara;0;2;Nessuna prediction con stessi nomi canonici
+Russia_PremierLeague;2026-10-24;Krasnodar;Baltika;1;1;Nessuna prediction con stessi nomi canonici
+Russia_FNL;2026-10-24;SKA Khabarovsk;Yenisey;3;0;Nessuna prediction con stessi nomi canonici
+Russia_FNL;2026-10-24;Ufa;Pari NN;0;1;Nessuna prediction con stessi nomi canonici
+Russia_FNL;2026-10-24;Tekstilshtik;Sochi;1;3;Nessuna prediction con stessi nomi canonici
+Russia_FNL;2026-10-24;Arsenal Tula;Kamaz;4;3;Nessuna prediction con stessi nomi canonici
+Scotland_Premiership;2026-10-24;Dundee Utd;Aberdeen;3;2;Nessuna prediction con stessi nomi canonici
+Scotland_Premiership;2026-10-24;Falkirk;Kilmarnock;3;0;Nessuna prediction con stessi nomi canonici
+Scotland_Premiership;2026-10-24;Rangers;St. Johnstone;4;0;Nessuna prediction con stessi nomi canonici
+Scotland_Premiership;2026-10-24;St. Mirren;Dundee FC;2;1;Nessuna prediction con stessi nomi canonici
+Serbia_SuperLiga;2026-10-24;Partizan;Cukaricki;0;2;Nessuna prediction con stessi nomi canonici
+Serbia_SuperLiga;2026-10-24;Mladost;Vojvodina;1;1;Nessuna prediction con stessi nomi canonici
+Serbia_PrvaLiga;2026-10-24;Bor 1919;Jedinstvo U.;0;2;Nessuna prediction con stessi nomi canonici
+Serbia_PrvaLiga;2026-10-24;Graficar Beograd;Sp. Subotica;0;2;Nessuna prediction con stessi nomi canonici
+Serbia_PrvaLiga;2026-10-24;Metalac;Javor;1;2;Nessuna prediction con stessi nomi canonici
+Serbia_PrvaLiga;2026-10-24;Proleter 023;Vozdovac;2;1;Nessuna prediction con stessi nomi canonici
+Serbia_PrvaLiga;2026-10-24;Borac 1926;Napredak;0;0;Nessuna prediction con stessi nomi canonici
+Serbia_PrvaLiga;2026-10-24;Loznica;Vrsac;1;1;Nessuna prediction con stessi nomi canonici
+Slovakia_NikeLiga;2026-10-24;Michalovce;Podbrezova;1;4;Nessuna prediction con stessi nomi canonici
+Slovakia_NikeLiga;2026-10-24;Slovan Bratislava;Banska Bystrica;2;2;Nessuna prediction con stessi nomi canonici
+Slovakia_NikeLiga;2026-10-24;Skalica;Trnava;1;1;Nessuna prediction con stessi nomi canonici
+Slovakia_NikeLiga;2026-10-24;Dun. Streda;Ruzomberok;5;0;Nessuna prediction con stessi nomi canonici
+Slovakia_2Liga;2026-10-24;Galanta;FK Humenne;3;3;Nessuna prediction con stessi nomi canonici
+Slovakia_2Liga;2026-10-24;MFK Bytca;Presov;0;3;Nessuna prediction con stessi nomi canonici
+Slovakia_2Liga;2026-10-24;Povazska Bystrica;L. Mikulas;2;1;Nessuna prediction con stessi nomi canonici
+Slovakia_2Liga;2026-10-24;Samorin;Pohronie;2;1;Nessuna prediction con stessi nomi canonici
+Slovakia_2Liga;2026-10-24;Lehota p. V.;Petrzalka;1;0;Nessuna prediction con stessi nomi canonici
+Slovakia_3Liga_West;2026-10-24;FKM Nove Zamky;Castkovce;2;0;Nessuna prediction con stessi nomi canonici
+Slovakia_3Liga_West;2026-10-24;Puchov;Sala;4;0;Nessuna prediction con stessi nomi canonici
+Slovakia_3Liga_West;2026-10-24;Nitra;Komarno B;5;1;Nessuna prediction con stessi nomi canonici
+Spain_LaLiga;2026-10-24;Rayo Vallecano;Elche;0;3;Nessuna prediction con stessi nomi canonici
+Spain_LaLiga;2026-10-24;Racing Santander;Espanyol;2;1;Nessuna prediction con stessi nomi canonici
+Spain_LaLiga;2026-10-24;Valencia;Villarreal;1;2;Nessuna prediction con stessi nomi canonici
+Spain_LaLiga;2026-10-24;Atl. Madrid;A Coruna;1;0;Nessuna prediction con stessi nomi canonici
+Spain_LaLiga2;2026-10-24;Cordoba;Eibar;2;0;Nessuna prediction con stessi nomi canonici
+Spain_LaLiga2;2026-10-24;Leganes;Maiorca;1;1;Nessuna prediction con stessi nomi canonici
+Spain_LaLiga2;2026-10-24;Girona;Celta Vigo B;5;1;Nessuna prediction con stessi nomi canonici
+Spain_LaLiga2;2026-10-24;Las Palmas;Real Sociedad B;1;0;Nessuna prediction con stessi nomi canonici
+Spain_LaLiga2;2026-10-24;Almeria;Oviedo;2;2;Nessuna prediction con stessi nomi canonici
+SouthKorea_KLeague1;2026-10-24;Anyang;Jeonbuk;1;1;Nessuna prediction con stessi nomi canonici
+SouthKorea_KLeague1;2026-10-24;Bucheon;Gwangju;0;3;Nessuna prediction con stessi nomi canonici
+SouthKorea_KLeague1;2026-10-24;Gimcheon Sangmu;Daejeon;1;2;Nessuna prediction con stessi nomi canonici
+SouthKorea_KLeague1;2026-10-24;Incheon;Jeju SK;3;1;Nessuna prediction con stessi nomi canonici
+SouthKorea_KLeague1;2026-10-24;Seoul;Gangwon;1;1;Nessuna prediction con stessi nomi canonici
+SouthKorea_KLeague1;2026-10-24;Ulsan HD;Pohang;2;2;Nessuna prediction con stessi nomi canonici
+SouthKorea_KLeague2;2026-10-24;Jeonnam;Daegu;2;4;Nessuna prediction con stessi nomi canonici
+SouthKorea_KLeague2;2026-10-24;Gimpo FC;Gimhae;1;2;Nessuna prediction con stessi nomi canonici
+Sweden_Allsvenskan;2026-10-24;Hacken;Degerfors;4;0;Nessuna prediction con stessi nomi canonici
+Sweden_Allsvenskan;2026-10-24;Sirius;AIK Stockholm;1;2;Nessuna prediction con stessi nomi canonici
+Sweden_Allsvenskan;2026-10-24;Djurgarden;Orgryte;2;2;Nessuna prediction con stessi nomi canonici
+Sweden_Allsvenskan;2026-10-24;Kalmar;Brommapojkarna;0;3;Nessuna prediction con stessi nomi canonici
+Sweden_Superettan;2026-10-24;Östersund;Nordic United;4;1;Nessuna prediction con stessi nomi canonici
+Sweden_Superettan;2026-10-24;Värnamo;Sandviken;0;1;Nessuna prediction con stessi nomi canonici
+Sweden_Superettan;2026-10-24;Brage;Öster;4;5;Nessuna prediction con stessi nomi canonici
+Sweden_Division1_Norra;2026-10-24;Gefle;FBK Karlstad;1;0;Nessuna prediction con stessi nomi canonici
+Sweden_Division1_Norra;2026-10-24;Karlstad;Stockholm Internazionale;1;4;Nessuna prediction con stessi nomi canonici
+Sweden_Division1_Norra;2026-10-24;Sollentuna;Vasalund;2;0;Nessuna prediction con stessi nomi canonici
+Sweden_Division1_Sodra;2026-10-24;AFC Malmo;Angelholm;2;3;Nessuna prediction con stessi nomi canonici
+Sweden_Division1_Sodra;2026-10-24;Eskilsminne;Lunds;1;4;Nessuna prediction con stessi nomi canonici
+Sweden_Division1_Sodra;2026-10-24;Laholms;Olympic;5;1;Nessuna prediction con stessi nomi canonici
+Sweden_Division1_Sodra;2026-10-24;Rosengard;Kristianstad;1;2;Nessuna prediction con stessi nomi canonici
+Sweden_Division1_Sodra;2026-10-24;Hassleholms IF;Skövde;1;1;Nessuna prediction con stessi nomi canonici
+Sweden_Division1_Sodra;2026-10-24;Trollhättan;Jonkoping;2;4;Nessuna prediction con stessi nomi canonici
+Sweden_Division2_Norrland;2026-10-24;Bergnasets;Fransta;0;8;Nessuna prediction con stessi nomi canonici
+Sweden_Division2_SodraGotaland;2026-10-24;Croatia Malmo;Torns;2;2;Nessuna prediction con stessi nomi canonici
+Switzerland_SuperLeague;2026-10-24;Servette;Vaduz;2;1;Nessuna prediction con stessi nomi canonici
+Switzerland_SuperLeague;2026-10-24;Zurigo;Luzern;2;1;Nessuna prediction con stessi nomi canonici
+Switzerland_SuperLeague;2026-10-24;Young Boys;St. Gallen;2;0;Nessuna prediction con stessi nomi canonici
+Switzerland_ChallengeLeague;2026-10-24;Aarau;Etoile-Carouge;1;2;Nessuna prediction con stessi nomi canonici
+Switzerland_PromotionLeague;2026-10-24;Amical Saint-Prex;Basilea 2;2;0;Nessuna prediction con stessi nomi canonici
+Switzerland_PromotionLeague;2026-10-24;Bruhl SG;Zurigo 2;3;1;Nessuna prediction con stessi nomi canonici
+Switzerland_PromotionLeague;2026-10-24;Luzerna 2;Paradiso;1;2;Nessuna prediction con stessi nomi canonici
+Switzerland_PromotionLeague;2026-10-24;YF Juventus;Breitenrain;3;1;Nessuna prediction con stessi nomi canonici
+Turkey_SuperLig;2026-10-24;Eyupspor;Kasimpasa;0;1;Nessuna prediction con stessi nomi canonici
+Turkey_SuperLig;2026-10-24;Gaziantep;Erzurumspor;1;3;Nessuna prediction con stessi nomi canonici
+Turkey_SuperLig;2026-10-24;Samsunspor;Amedspor;1;2;Nessuna prediction con stessi nomi canonici
+Turkey_1Lig;2026-10-24;Bandirmaspor;Igdir FK;1;2;Nessuna prediction con stessi nomi canonici
+Turkey_1Lig;2026-10-24;Umraniyespor;Sivasspor;4;0;Nessuna prediction con stessi nomi canonici
+Turkey_1Lig;2026-10-24;Muglaspor;Istanbulspor;5;0;Nessuna prediction con stessi nomi canonici
+Turkey_1Lig;2026-10-24;Sariyer;Karagumruk;0;2;Nessuna prediction con stessi nomi canonici
+Ukraine_PremierLeague;2026-10-24;Epitsentr;FC Kharkiv;1;2;Nessuna prediction con stessi nomi canonici
+Ukraine_PremierLeague;2026-10-24;Livyi Bereg;LNZ Cherkasy;0;0;Nessuna prediction con stessi nomi canonici
+Ukraine_PremierLeague;2026-10-24;Shakhtar;Zorya;0;0;Nessuna prediction con stessi nomi canonici
+Ukraine_PershaLiga;2026-10-24;Oleksandriya;Probiy Horodenka;2;0;Nessuna prediction con stessi nomi canonici
+Ukraine_PershaLiga;2026-10-24;Prykarpattya;Viktoria;1;1;Nessuna prediction con stessi nomi canonici
+Ukraine_PershaLiga;2026-10-24;Zhytomyr 2;SC Poltava;1;2;Nessuna prediction con stessi nomi canonici
+Hungary_NBI;2026-10-24;Honved;Debrecen;0;2;Nessuna prediction con stessi nomi canonici
+Hungary_NBI;2026-10-24;Győr;Ujpest;1;0;Nessuna prediction con stessi nomi canonici
+Hungary_NBI;2026-10-24;Zalaegerszeg;Kisvarda;1;1;Nessuna prediction con stessi nomi canonici
+Hungary_NBII;2026-10-24;BVSC-Zuglo;Tiszakecske;2;2;Nessuna prediction con stessi nomi canonici
+Hungary_NBII;2026-10-24;Kazincbarcika;Nagykanizsa;2;1;Nessuna prediction con stessi nomi canonici
+Hungary_NBII;2026-10-24;Kecskemeti;Karcagi;5;2;Nessuna prediction con stessi nomi canonici
+Hungary_NBII;2026-10-24;Kozarmisleny;Szentlorinc;0;2;Nessuna prediction con stessi nomi canonici
+Hungary_NBII;2026-10-24;Szeged;DVTK;1;4;Nessuna prediction con stessi nomi canonici
+Hungary_NBII;2026-10-24;Videoton;Ajka;1;2;Nessuna prediction con stessi nomi canonici
+Hungary_NBII;2026-10-24;Gyirmot;Soroksar;3;3;Nessuna prediction con stessi nomi canonici
+USA_MLS;2026-10-24;CF Montreal;Nashville SC;0;2;Nessuna prediction con stessi nomi canonici
+USA_MLS;2026-10-24;Columbus Crew;Toronto FC;4;2;Nessuna prediction con stessi nomi canonici
+USA_MLS;2026-10-24;New York Red Bulls;Inter Miami;2;0;Nessuna prediction con stessi nomi canonici
+USA_USLChampionship;2026-10-24;Loudoun;Brooklyn;4;3;Nessuna prediction con stessi nomi canonici
+USA_USLLeagueOne;2026-10-24;New York Cosmos;Chattanooga Red Wolves;1;1;Nessuna prediction con stessi nomi canonici
+USA_USLLeagueOne;2026-10-24;Portland Hearts of Pine;Charlotte Independ.;4;1;Nessuna prediction con stessi nomi canonici

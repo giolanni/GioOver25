@@ -1,4 +1,4 @@
-Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Belgium;Challenger Pro League;1;2026-08-14;Hasselt;Dender;1;0;
 Belgium;Challenger Pro League;1;2026-08-14;Seraing;Sporting Lokeren;0;2;
 Belgium;Challenger Pro League;1;2026-08-15;Eupen;Genk U23;4;1;
@@ -48,3 +48,6 @@ Belgium;Challenger Pro League;7;2026-10-10;K. Lierse S.K.;Francs Borains;3;0;
 Belgium;Challenger Pro League;7;2026-10-10;Virton;Hasselt;3;4;
 Belgium;Challenger Pro League;7;2026-10-11;Gent U23;Seraing;3;2;
 Belgium;Challenger Pro League;7;2026-10-11;Patro Eisden;Genk U23;2;1;
+Belgium;Challenger Pro League;8;2026-10-24;Seraing;Virton;3;1;
+Belgium;Challenger Pro League;8;2026-10-25;Eupen;Beerschot VA;1;2;
+Belgium;Challenger Pro League;8;2026-10-25;RFC Liege;Patro Eisden;2;3;

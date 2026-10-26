@@ -1,4 +1,4 @@
-Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
+﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
 Czech Republic;3. CFL - Group A;1;2026-08-07;Motorlet Prague;Bohemians 1905 B;3;0;
 Czech Republic;3. CFL - Group A;1;2026-08-08;Benesov;Aritma Prague;0;0;
 Czech Republic;3. CFL - Group A;1;2026-08-08;Domazlice;Sparta Praga B;2;2;
@@ -84,3 +84,10 @@ Czech Republic;3. CFL - Group A;11;2026-10-18;Admira Prague;Povltavska FA;3;2;
 Czech Republic;3. CFL - Group A;11;2026-10-18;Bohemians 1905 B;Domazlice;7;2;
 Czech Republic;3. CFL - Group A;11;2026-10-18;Dukla Praga B;Pisek;4;0;
 Czech Republic;3. CFL - Group A;11;2026-10-18;Plzen B;Aritma Prague;3;0;
+Czech Republic;3. CFL - Group A;12;2026-10-24;Aritma Prague;Dukla Praga B;0;0;
+Czech Republic;3. CFL - Group A;12;2026-10-24;Benesov;Bohemians 1905 B;2;1;
+Czech Republic;3. CFL - Group A;12;2026-10-24;Domazlice;Plzen B;1;4;
+Czech Republic;3. CFL - Group A;12;2026-10-24;Kraluv Dvur;Ceske Budejovice;3;3;
+Czech Republic;3. CFL - Group A;12;2026-10-24;Loko Praha;Admira Prague;2;1;
+Czech Republic;3. CFL - Group A;12;2026-10-24;Povltavska FA;Pribram B;0;2;
+Czech Republic;3. CFL - Group A;12;2026-10-25;Sparta Praga B;Pisek;0;1;
