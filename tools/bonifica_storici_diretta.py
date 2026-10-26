@@ -150,8 +150,7 @@ def team_overlap(league_id: str, local: Iterable[Result], remote: Iterable[Resul
 
 def log_file(log_dir: Path, league_id: str, text: str) -> None:
     log_dir.mkdir(parents=True, exist_ok=True)
-    (log_dir / f"{league_id}.log").write_text(text.rstrip() + "
-", encoding="utf-8")
+    (log_dir / f"{league_id}.log").write_text(text.rstrip() + "\n", encoding="utf-8")
 
 
 def _search_rows(target: LeagueTarget, timeout: int):
@@ -360,8 +359,7 @@ def write_history(path: Path, remote: list[Result], local: list[Result], backup_
     shutil.copy2(path, backup_dir / path.name)
     rows.sort(key=lambda r: (r.date, int(r.round) if r.round.isdigit() else 9999, r.home, r.away))
     with path.open("w", encoding="utf-8-sig", newline="") as f:
-        w = csv.writer(f, delimiter=";", lineterminator="
-")
+        w = csv.writer(f, delimiter=";", lineterminator="\n")
         w.writerow(["Country", "League", "Round", "MatchDate", "Home", "Away", "HG", "AG", "Notes"])
         # Country/League vengono preservati dal file locale quando possibile.
         with (backup_dir / path.name).open(encoding="utf-8-sig", newline="") as old:
@@ -407,16 +405,14 @@ def main() -> int:
             if not path.exists():
                 outcome = LeagueOutcome(lid, "FILE_MISSING", message=str(path))
                 outcomes.append(outcome)
-                log_file(error_dir, lid, f"{prefix}
-FILE_MISSING: {path}")
+                log_file(error_dir, lid, f"{prefix}\nFILE_MISSING: {path}")
                 print(f"{prefix}: FILE_MISSING")
                 continue
             _, local = load_local(path)
             if not local:
                 outcome = LeagueOutcome(lid, "LOCAL_EMPTY")
                 outcomes.append(outcome)
-                log_file(error_dir, lid, f"{prefix}
-LOCAL_EMPTY")
+                log_file(error_dir, lid, f"{prefix}\nLOCAL_EMPTY")
                 print(f"{prefix}: LOCAL_EMPTY")
                 continue
 
@@ -424,10 +420,7 @@ LOCAL_EMPTY")
             if best is None:
                 outcome = LeagueOutcome(lid, "DIRETTA_NOT_FOUND", local=len(local))
                 outcomes.append(outcome)
-                log_file(error_dir, lid, f"{prefix}
-DIRETTA_NOT_FOUND
-" + "
-".join(discovery_log))
+                log_file(error_dir, lid, f"{prefix}\nDIRETTA_NOT_FOUND\n" + "\n".join(discovery_log))
                 print(f"{prefix}: DIRETTA_NOT_FOUND")
                 continue
 
@@ -446,19 +439,15 @@ DIRETTA_NOT_FOUND
                 f"local={len(local)} remote={len(remote)} equal={equal} missing_local={len(missing)} extra_local={len(extra)} score_diff={len(score_diff)}",
             ]
             if missing:
-                detail.append("
-MISSING_LOCAL:")
+                detail.append("\nMISSING_LOCAL:")
                 detail += [f"{r.date};{r.home};{r.away};{r.hg};{r.ag}" for r in missing]
             if extra:
-                detail.append("
-EXTRA_LOCAL:")
+                detail.append("\nEXTRA_LOCAL:")
                 detail += [f"{r.date};{r.home};{r.away};{r.hg};{r.ag}" for r in extra]
             if score_diff:
-                detail.append("
-SCORE_DIFF:")
+                detail.append("\nSCORE_DIFF:")
                 detail += [f"{a.date};{a.home};{a.away};LOCAL={a.hg}-{a.ag};DIRETTA={b.hg}-{b.ag}" for a,b in score_diff]
-            log_file(detail_dir, lid, "
-".join(detail))
+            log_file(detail_dir, lid, "\n".join(detail))
 
             if args.apply and status == "DIFFERENCES" and safe:
                 write_history(path, remote, local, backup_dir)
@@ -466,8 +455,7 @@ SCORE_DIFF:")
             elif args.apply and status == "DIFFERENCES" and not safe:
                 outcome.status = "AMBIGUOUS"
                 outcome.message = f"team_overlap={overlap_ratio:.3f}; equal={equal}"
-                log_file(error_dir, lid, "
-".join(detail + ["", "NOT_APPLIED: mapping/confronto non abbastanza sicuro"]))
+                log_file(error_dir, lid, "\n".join(detail + ["", "NOT_APPLIED: mapping/confronto non abbastanza sicuro"]))
 
             outcomes.append(outcome)
             suffix = " APPLIED" if outcome.applied else ""
@@ -475,8 +463,7 @@ SCORE_DIFF:")
         except Exception as exc:
             outcome = LeagueOutcome(lid, "ERROR", message=f"{type(exc).__name__}: {exc}")
             outcomes.append(outcome)
-            log_file(error_dir, lid, f"{prefix}
-{type(exc).__name__}: {exc}")
+            log_file(error_dir, lid, f"{prefix}\n{type(exc).__name__}: {exc}")
             LOGGER.exception("%s fallita", lid)
             print(f"{prefix}: ERROR")
         finally:
@@ -485,8 +472,7 @@ SCORE_DIFF:")
 
     summary = run_dir / "summary.csv"
     with summary.open("w", encoding="utf-8-sig", newline="") as f:
-        w = csv.writer(f, delimiter=";", lineterminator="
-")
+        w = csv.writer(f, delimiter=";", lineterminator="\n")
         w.writerow(["LeagueId","Status","Local","Diretta","Equal","MissingLocal","ExtraLocal","ScoreDiff","Applied","Message"])
         for x in outcomes:
             w.writerow([x.league_id,x.status,x.local,x.remote,x.equal,x.missing_local,x.extra_local,x.score_diff,"SI" if x.applied else "NO",x.message])
