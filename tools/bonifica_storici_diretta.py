@@ -43,7 +43,7 @@ REGISTRY = ROOT / "data" / "league_registry.csv"
 ALIASES = ROOT / "data" / "league_aliases.csv"
 LOG_ROOT = ROOT / "data" / "debug" / "bonifica_storici_diretta"
 RESULTS_FEED = "https://global.flashscore.ninja/323/x/feed/tr_1_{tournament}_{season}_0_2_it_1"
-DIRETTA_BASE = "https://www.diretta.it"
+DIRETTA_BASE = "https://www.diretta.it"\nFLASHSCORE_BASE = "https://www.flashscore.com"
 LOGGER = logging.getLogger("bonifica_storici_diretta")
 
 
@@ -223,7 +223,7 @@ def _candidate_page_urls(search_rows, candidate, target=None):
         for country in dict.fromkeys(x for x in country_names if x):
             for league in dict.fromkeys(x for x in league_names if x):
                 urls.append(f"{DIRETTA_BASE}/calcio/{_slug(country)}/{_slug(league)}/risultati/")
-                urls.append(f"{DIRETTA_BASE}/{_slug(league)}/risultati/")
+                urls.append(f"{DIRETTA_BASE}/{_slug(league)}/risultati/")\n                urls.append(f"{FLASHSCORE_BASE}/football/{_slug(country)}/{_slug(league)}/results/")
     return list(dict.fromkeys(urls))
 
 def _extract_season_ids(text: str):
