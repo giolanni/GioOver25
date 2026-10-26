@@ -12,9 +12,10 @@ Esempio:
 from __future__ import annotations
 
 import argparse
+import sys
 from collections import defaultdict
 from dataclasses import dataclass
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 
 from tools.diretta_mobile import fetch_feed, parse_feed
 from tools.prepare_input import (
@@ -26,6 +27,21 @@ from tools.prepare_input import (
     norm,
     resolve,
 )
+
+
+class Tee:
+    def __init__(self, *streams):
+        self.streams = streams
+
+    def write(self, data):
+        for stream in self.streams:
+            stream.write(data)
+            stream.flush()
+        return len(data)
+
+    def flush(self):
+        for stream in self.streams:
+            stream.flush()
 
 
 @dataclass
@@ -115,10 +131,17 @@ def main() -> None:
     )
     parser.add_argument("--days-before", type=int, default=7)
     parser.add_argument("--days-after", type=int, default=7)
+    parser.add_argument("--log", type=str, help="Percorso log; default data/debug/discover_leagues_<timestamp>.log")
     args = parser.parse_args()
 
     if args.days_before < 0 or args.days_after < 0:
         raise SystemExit("--days-before e --days-after devono essere >= 0")
+
+    log_path = ROOT / args.log if args.log else ROOT / "data" / "debug" / f"discover_leagues_{datetime.now():%Y%m%d-%H%M%S}.log"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    log_file = log_path.open("w", encoding="utf-8")
+    sys.stdout = Tee(sys.__stdout__, log_file)
+    print(f"[LOG] {log_path}")
 
     today = date.today()
     start = today - timedelta(days=args.days_before)
