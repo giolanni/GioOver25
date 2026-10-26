@@ -1,7 +1,7 @@
 """Probe read-only di una pagina lega Flashscore.
 
-Estrae tournament/season ID dalla pagina HTML e, quando li trova, prova i
-feed tr_1 dei risultati/calendario. Non modifica registry o storici.
+Estrae tournament ID e candidati season ID dall'HTML, quindi prova i feed
+tr_1 cercando un match ID noto. Non modifica registry o storici.
 """
 from __future__ import annotations
 
@@ -13,16 +13,15 @@ from tools.prepare_input import ROOT
 
 FSIGN = "SW9D1eZo"
 
-ID_PATTERNS = {
-    "tournament_id": (
-        r'["\']?tournament_id["\']?\s*[:=]\s*["\']?([A-Za-z0-9]+)',
-        r'["\']?tournamentId["\']?\s*[:=]\s*["\']?([A-Za-z0-9]+)',
-    ),
-    "season_id": (
-        r'["\']?season_id["\']?\s*[:=]\s*["\']?([A-Za-z0-9]+)',
-        r'["\']?seasonId["\']?\s*[:=]\s*["\']?([A-Za-z0-9]+)',
-    ),
-}
+TOURNAMENT_PATTERNS = (
+    r'["\']?tournament_id["\']?\s*[:=]\s*["\']?([A-Za-z0-9]+)',
+    r'["\']?tournamentId["\']?\s*[:=]\s*["\']?([A-Za-z0-9]+)',
+)
+SEASON_PATTERNS = (
+    r'["\']?season_id["\']?\s*[:=]\s*["\']?([A-Za-z0-9]+)',
+    r'["\']?seasonId["\']?\s*[:=]\s*["\']?([A-Za-z0-9]+)',
+    r'["\']?season["\']?\s*:\s*\{[^{}]{0,500}?["\']?id["\']?\s*:\s*["\']?([A-Za-z0-9]+)',
+)
 
 
 def fetch(url: str, referer: str = "https://www.flashscore.com/") -> tuple[int, str]:
@@ -41,12 +40,36 @@ def fetch(url: str, referer: str = "https://www.flashscore.com/") -> tuple[int, 
         return 0, f"{exc.__class__.__name__}: {exc}"
 
 
-def extract_id(html: str, kind: str) -> str | None:
-    for pattern in ID_PATTERNS[kind]:
+def first_match(html: str, patterns: tuple[str, ...]) -> str | None:
+    for pattern in patterns:
         match = re.search(pattern, html, re.IGNORECASE)
         if match:
             return match.group(1)
     return None
+
+
+def season_candidates(html: str, tournament_id: str | None) -> list[str]:
+    found: set[str] = set()
+
+    # Prima cerca vicino al tournament ID: riduce drasticamente i falsi
+    # positivi presenti nel grande HTML della pagina.
+    chunks = []
+    if tournament_id:
+        for match in re.finditer(re.escape(tournament_id), html):
+            start = max(0, match.start() - 12000)
+            end = min(len(html), match.end() + 12000)
+            chunks.append(html[start:end])
+
+    # Poi amplia all'intera pagina come fallback.
+    chunks.append(html)
+    for chunk in chunks:
+        for pattern in SEASON_PATTERNS:
+            for value in re.findall(pattern, chunk, re.IGNORECASE):
+                if value and value != "0":
+                    found.add(value)
+        if found:
+            break
+    return sorted(found)
 
 
 def main() -> None:
@@ -65,42 +88,48 @@ def main() -> None:
     (outdir / "league.html").write_text(html, encoding="utf-8")
     print(f"[PAGE] {status or 'ERR'} {args.league_url} len={len(html)}")
 
-    tournament_id = args.tournament_id or extract_id(html, "tournament_id")
-    season_id = args.season_id or extract_id(html, "season_id")
-    print(f"[DISCOVERY] tournament_id={tournament_id or 'NOT_FOUND'}")
-    print(f"[DISCOVERY] season_id={season_id or 'NOT_FOUND'}")
+    tournament_id = args.tournament_id or first_match(html, TOURNAMENT_PATTERNS)
+    seasons = [args.season_id] if args.season_id else season_candidates(html, tournament_id)
 
-    if not tournament_id or not season_id:
+    print(f"[DISCOVERY] tournament_id={tournament_id or 'NOT_FOUND'}")
+    print(f"[DISCOVERY] season_candidates={','.join(seasons) if seasons else 'NOT_FOUND'}")
+
+    if tournament_id:
+        for match in re.finditer(re.escape(tournament_id), html):
+            context = html[max(0, match.start()-350):min(len(html), match.end()+350)]
+            with (outdir / "tournament_context.txt").open("a", encoding="utf-8") as fh:
+                fh.write(context + "\n\n---\n\n")
+
+    if not tournament_id or not seasons:
         print(f"[PROBE] output={outdir}")
         print("[DRY-RUN] Nessuna modifica a registry o storici.")
-        print("[NEXT] ID non trovati nell'HTML: ispezionare league.html/config della pagina.")
+        print("[NEXT] Aprire tournament_context.txt: serve identificare il vero season ID.")
         return
 
-    # Formati osservati nella web app/librerie esistenti. Proviamo entrambe
-    # le varianti senza assumere a priori quale sia attiva.
-    endpoints = []
-    for page in range(0, 3):
-        endpoints.extend((
-            f"tr_1_{tournament_id}_{season_id}_{page}_2_en_1",
-            f"tr_1_{tournament_id}_{season_id}_{page}_3_en_1",
-        ))
-
     hits = 0
-    for endpoint in endpoints:
-        url = f"https://global.flashscore.ninja/2/x/feed/{endpoint}"
-        code, body = fetch(url, args.league_url)
-        (outdir / f"{endpoint}.txt").write_text(body, encoding="utf-8")
-        contains = bool(args.match_id and args.match_id in body)
-        if contains:
-            hits += 1
-        print(
-            f"[FEED] {code or 'ERR'} len={len(body)} "
-            f"match_id={'YES' if contains else 'NO'} {endpoint}"
-        )
+    useful: list[tuple[str, str, int]] = []
+    for season_id in seasons[:20]:
+        for page in range(0, 3):
+            for feed_type in (2, 3):
+                endpoint = f"tr_1_{tournament_id}_{season_id}_{page}_{feed_type}_en_1"
+                url = f"https://global.flashscore.ninja/2/x/feed/{endpoint}"
+                code, body = fetch(url, args.league_url)
+                contains = bool(args.match_id and args.match_id in body)
+                if code == 200 and len(body) > 1:
+                    useful.append((season_id, endpoint, len(body)))
+                    (outdir / f"{endpoint}.txt").write_text(body, encoding="utf-8")
+                    print(
+                        f"[FEED] {code} len={len(body)} "
+                        f"match_id={'YES' if contains else 'NO'} {endpoint}"
+                    )
+                if contains:
+                    hits += 1
 
-    print(f"[PROBE] match_hits={hits}")
+    print(f"[PROBE] useful_feeds={len(useful)} match_hits={hits}")
     print(f"[PROBE] output={outdir}")
     print("[DRY-RUN] Nessuna modifica a registry o storici.")
+    if not useful:
+        print("[NEXT] Nessun tr_1 utile: usare tournament_context.txt per ricavare il season ID reale.")
 
 
 if __name__ == "__main__":
