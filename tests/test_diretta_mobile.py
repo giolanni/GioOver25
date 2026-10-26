@@ -58,6 +58,20 @@ class LeagueGenderMappingTest(unittest.TestCase):
             resolve_match(registry, "England", "Premier League", "Chelsea U21", "Arsenal U21")
         )
 
+    def test_estonia_esiliiga_accepts_u21_team(self):
+        registry = [RegistryRow("Estonia_Esiliiga", "Estonia", "Esiliiga")]
+        self.assertEqual(
+            "Estonia_Esiliiga",
+            resolve_match(registry, "ESTONIA", "Esiliiga", "Viimsi JK", "Flora U21"),
+        )
+
+    def test_estonia_esiliiga_b_accepts_u19_u21_teams(self):
+        registry = [RegistryRow("Estonia_EsiliigaB", "Estonia", "Esiliiga B")]
+        self.assertEqual(
+            "Estonia_EsiliigaB",
+            resolve_match(registry, "ESTONIA", "Esiliiga B", "Levadia U19", "Parnu JK Vaprus U21"),
+        )
+
     def test_france_ligue3_maps_to_national(self):
         registry = [RegistryRow("France_National", "France", "National")]
         self.assertEqual("France_National", resolve(registry, "France", "Ligue 3"))
