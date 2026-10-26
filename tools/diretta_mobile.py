@@ -39,6 +39,9 @@ class RawMatch:
     score: str
     status: str = ""
     match_date: str = ""
+    match_id: str = ""
+    tournament_id: str = ""
+    tournament_stage_id: str = ""
 
     @property
     def borderline(self) -> bool:
@@ -188,7 +191,15 @@ def parse_feed(payload: str) -> list[RawMatch]:
             status = "Posticipata"
         else:
             status = "" if ab in {"", "1", "3"} else ab
-        out.append(RawMatch(country, league, tm, fields["AE"], fields["AF"], score, status, match_date))
+        # Identificativi interni Flashscore/Diretta. Mantenerli nel RawMatch
+        # consente di collegare discovery e futuro backfill senza cambiare
+        # l'output CSV usato da getmatches/getresults.
+        out.append(RawMatch(
+            country, league, tm, fields["AE"], fields["AF"], score, status, match_date,
+            match_id=fields.get("AA", ""),
+            tournament_id=fields.get("ZEE", ""),
+            tournament_stage_id=fields.get("ZB", ""),
+        ))
     return out
 
 
