@@ -52,10 +52,24 @@ class LeagueGenderMappingTest(unittest.TestCase):
             resolve_match(self.registry, "Italy", "Serie A", "Juventus D", "Roma D")
         )
 
-    def test_generic_senior_league_rejects_youth_teams(self):
+    def test_exact_registered_league_accepts_youth_or_reserve_teams(self):
         registry = [RegistryRow("England_PremierLeague", "England", "Premier League")]
+        self.assertEqual(
+            "England_PremierLeague",
+            resolve_match(registry, "England", "Premier League", "Chelsea U21", "Arsenal U21"),
+        )
+
+    def test_fuzzy_senior_mapping_rejects_youth_teams(self):
+        registry = [RegistryRow("France_National", "France", "National")]
         self.assertIsNone(
-            resolve_match(registry, "England", "Premier League", "Chelsea U21", "Arsenal U21")
+            resolve_match(registry, "France", "Ligue 3", "Paris FC U21", "Lyon U21")
+        )
+
+    def test_exact_lower_league_accepts_u23_second_team(self):
+        registry = [RegistryRow("Italy_SerieC", "Italy", "Serie C")]
+        self.assertEqual(
+            "Italy_SerieC",
+            resolve_match(registry, "Italy", "Serie C", "Juventus U23", "Arezzo"),
         )
 
     def test_estonia_esiliiga_accepts_u21_team(self):
