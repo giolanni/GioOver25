@@ -303,7 +303,8 @@ def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
                     if rows:
                         overlap, union = team_overlap(target.info.league_id, local, rows)
                         ratio = overlap / union if union else 0.0
-                        rank = (ratio, overlap, candidate.score, len(rows))
+                        coverage = min(len(rows), len(local)) / len(local) if local else 0.0
+                        rank = (ratio, coverage, overlap, len(rows), candidate.score)
                         if best is None or rank > best[0]:
                             best = (rank, candidate, "embedded", rows, page_url)
                 found_seasons = _extract_season_ids(html)
@@ -328,7 +329,8 @@ def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
                 continue
             overlap, union = team_overlap(target.info.league_id, local, rows)
             ratio = overlap / union if union else 0.0
-            rank = (ratio, overlap, candidate.score, len(rows))
+            coverage = min(len(rows), len(local)) / len(local) if local else 0.0
+                        rank = (ratio, coverage, overlap, len(rows), candidate.score)
             if best is None or rank > best[0]:
                 best = (rank, candidate, season, rows, url)
         if not season_ids and not page_urls:
