@@ -144,7 +144,11 @@ def resolve_match(reg,country,league,home,away):
  target_markers=_competition_markers(lid)|(_competition_markers(target.league) if target else set())
  # Fail closed: una partita esplicitamente femminile/giovanile/riserve non puo'
  # entrare in una competizione senior che non dichiara lo stesso tipo.
- if source_markers-target_markers:return None
+ # Eccezione strettamente esplicita: Esiliiga ed Esiliiga B estoni ammettono
+ # ufficialmente squadre U19/U21/riserve nella stessa competizione senior.
+ mixed_age_leagues={"Estonia_Esiliiga","Estonia_EsiliigaB"}
+ marker_gap=source_markers-target_markers
+ if marker_gap and lid not in mixed_age_leagues:return None
  # MLS senior: Flashscore può mescolare partite MLS Next Pro sotto un'etichetta
  # troppo generica. Le seconde squadre e le affiliate Next Pro non devono
  # entrare in USA_MLS.
