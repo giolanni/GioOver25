@@ -57,6 +57,22 @@ def canonical_country(country: str) -> str:
     return COUNTRY_MAP.get(country.upper(), country.title())
 
 
+CACHE_DIR = ROOT / "data" / "debug" / "discover_leagues_cache"
+
+
+def fetch_day(current: date, today: date) -> str:
+    """Riusa i feed dei giorni passati; oggi e futuro vengono sempre aggiornati."""
+    offset = (current - today).days
+    cache = CACHE_DIR / f"{current.isoformat()}.feed"
+    if current < today and cache.exists():
+        return cache.read_text(encoding="utf-8")
+    payload = fetch_feed(offset)
+    if current < today:
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        cache.write_text(payload, encoding="utf-8")
+    return payload
+
+
 def discover(start: date, end: date) -> tuple[list[Competition], list[str]]:
     found: dict[tuple[str, str], Competition] = {}
     errors: list[str] = []
@@ -66,7 +82,7 @@ def discover(start: date, end: date) -> tuple[list[Competition], list[str]]:
     while current <= end:
         offset = (current - today).days
         try:
-            raw = parse_feed(fetch_feed(offset))
+            raw = parse_feed(fetch_day(current, today))
         except Exception as exc:
             errors.append(f"{current.isoformat()}: {exc.__class__.__name__}: {exc}")
             current += timedelta(days=1)
@@ -149,10 +165,10 @@ def classify(registry, competition: Competition) -> tuple[str, str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Scopre le leghe attive su Diretta senza modificare registry o storici."
+        description="Scopre le leghe attive su Diretta/Flashscore senza modificare registry o storici."
     )
-    parser.add_argument("--days-before", type=int, default=7)
-    parser.add_argument("--days-after", type=int, default=7)
+    parser.add_argument("--days-before", type=int, default=30)
+    parser.add_argument("--days-after", type=int, default=30)
     parser.add_argument("--log", type=str, help="Percorso log; default data/debug/discover_leagues_<timestamp>.log")
     args = parser.parse_args()
 
@@ -170,7 +186,7 @@ def main() -> None:
     end = today + timedelta(days=args.days_after)
     registry = load_registry(ROOT / "data" / "league_registry.csv")
 
-    print(f"[DISCOVERY] Diretta {start.isoformat()} -> {end.isoformat()}")
+    print(f"[DISCOVERY] Diretta/Flashscore {start.isoformat()} -> {end.isoformat()} (cache giorni passati)")
     competitions, errors = discover(start, end)
 
     buckets = defaultdict(list)
