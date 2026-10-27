@@ -12,7 +12,7 @@ Esempio:
 from __future__ import annotations
 
 import argparse
-import sys
+import csv
 from collections import defaultdict
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
@@ -27,21 +27,6 @@ from tools.prepare_input import (
     norm,
     resolve,
 )
-
-
-class Tee:
-    def __init__(self, *streams):
-        self.streams = streams
-
-    def write(self, data):
-        for stream in self.streams:
-            stream.write(data)
-            stream.flush()
-        return len(data)
-
-    def flush(self):
-        for stream in self.streams:
-            stream.flush()
 
 
 @dataclass
@@ -169,17 +154,14 @@ def main() -> None:
     )
     parser.add_argument("--days-before", type=int, default=30)
     parser.add_argument("--days-after", type=int, default=30)
-    parser.add_argument("--log", type=str, help="Percorso log; default data/debug/discover_leagues_<timestamp>.log")
     args = parser.parse_args()
 
     if args.days_before < 0 or args.days_after < 0:
         raise SystemExit("--days-before e --days-after devono essere >= 0")
 
-    log_path = ROOT / args.log if args.log else ROOT / "data" / "debug" / f"discover_leagues_{datetime.now():%Y%m%d-%H%M%S}.log"
-    log_path.parent.mkdir(parents=True, exist_ok=True)
-    log_file = log_path.open("w", encoding="utf-8")
-    sys.stdout = Tee(sys.__stdout__, log_file)
-    print(f"[LOG] {log_path}")
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    output_path = ROOT / "data" / "debug" / f"discover_leagues_{stamp}.csv"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     today = date.today()
     start = today - timedelta(days=args.days_before)
@@ -202,23 +184,19 @@ def main() -> None:
         f"NEW={len(buckets['NEW'])}"
     )
 
-    for status in ("NEW", "KNOWN_ALIAS"):
-        rows = buckets[status]
-        if not rows:
-            continue
-        print(f"\n[{status}]")
-        for competition, detail in rows:
-            suffix = f" -> {detail}" if detail else ""
-            print(
-                f"{competition.country};{competition.league};"
-                f"matches={competition.matches};"
-                f"{competition.first_date}..{competition.last_date}{suffix}"
-            )
+    with output_path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.writer(handle, delimiter=";")
+        writer.writerow(["Status", "KindOrLeagueId", "Country", "League", "Matches", "FirstDate", "LastDate"])
+        for status in ("KNOWN", "KNOWN_ALIAS", "NEW"):
+            for competition, detail in buckets[status]:
+                writer.writerow([
+                    status, detail, competition.country, competition.league,
+                    competition.matches, competition.first_date, competition.last_date,
+                ])
+    print(f"[OUTPUT] {output_path}")
 
     if errors:
-        print(f"\n[WARN] {len(errors)} giornate non lette:")
-        for error in errors:
-            print(f"  - {error}")
+        error_path = output_path.with_suffix(".errors.txt")\n        error_path.write_text("\\n".join(errors) + "\\n", encoding="utf-8")\n        print(f"[WARN] {len(errors)} giornate non lette; dettagli: {error_path}")
 
     print("\n[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
