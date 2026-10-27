@@ -90,14 +90,23 @@ def read_discovery(source: Path) -> list[dict[str, str]]:
 
     rows: list[dict[str, str]] = []
     pattern = re.compile(
-        r"^NEW\s+(?P<kind>\S+)\s+\|\s+"
-        r"(?P<country>.*?)\s+\|\s+(?P<league>.*?)\s+\|\s+"
-        r"matches=(?P<matches>\d+)\s+\|\s+"
-        r"(?P<first>\d{4}-\d{2}-\d{2})\.\.(?P<last>\d{4}-\d{2}-\d{2})\s*$"
+        r"^(?P<country>[^;]+);(?P<league>[^;]+);"
+        r"matches=(?P<matches>\\d+);"
+        r"(?P<first>\\d{4}-\\d{2}-\\d{2})\\.\\.(?P<last>\\d{4}-\\d{2}-\\d{2})"
+        r"\\s+->\\s+(?P<kind>\\S+)\\s*$"
     )
+    in_new = False
     with source.open("r", encoding="utf-8-sig", errors="replace") as handle:
         for raw in handle:
-            match = pattern.match(raw.strip())
+            line = raw.strip()
+            if line == "[NEW]":
+                in_new = True
+                continue
+            if line.startswith("[") and line != "[NEW]":
+                in_new = False
+            if not in_new or not line:
+                continue
+            match = pattern.match(line)
             if not match:
                 continue
             data = match.groupdict()
@@ -113,7 +122,6 @@ def read_discovery(source: Path) -> list[dict[str, str]]:
     if not rows:
         raise SystemExit(f"Nessuna riga NEW leggibile nel log: {source}")
     return rows
-
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Verifica le NEW league sui bookmaker pubblici.")
