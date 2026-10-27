@@ -1,0 +1,742 @@
+﻿Status;KindOrLeagueId;Country;League;Matches;FirstDate;LastDate
+KNOWN;Albania_AbissnetSuperiore;Albania;Abissnet Superiore;15;2026-10-24;2026-11-02
+KNOWN;Andorra_PrimeraDivisio;Andorra;Primera Divisió;10;2026-10-24;2026-11-01
+KNOWN;Armenia_FirstLeague;Armenia;First League;11;2026-10-20;2026-11-03
+KNOWN;Armenia_PremierLeague;Armenia;Premier League;12;2026-10-22;2026-11-01
+KNOWN;Austria_2Liga;Austria;2. Liga;16;2026-10-23;2026-10-31
+KNOWN;Austria_Bundesliga;Austria;Bundesliga;12;2026-10-23;2026-11-01
+KNOWN;Austria_Karnten;Austria;Karnten;24;2026-10-23;2026-10-31
+KNOWN;Austria_Regionalliga_North;Austria;Regionalliga North;14;2026-10-23;2026-10-31
+KNOWN;Austria_Regionalliga_South;Austria;Regionalliga South;16;2026-10-21;2026-10-30
+KNOWN;Austria_Tirol;Austria;Tirol;16;2026-10-23;2026-10-31
+KNOWN;Azerbaijan_FirstLeague;Azerbaijan;I Liqa;5;2026-10-21;2026-10-22
+KNOWN;Azerbaijan_PremierLeague;Azerbaijan;Premier League;12;2026-10-23;2026-11-02
+KNOWN;Belarus_PershayaLiga;Belarus;Pershaya Liga;19;2026-10-23;2026-11-02
+KNOWN;Belarus_VysshayaLiga;Belarus;Vysshaya Liga;18;2026-10-23;2026-11-01
+KNOWN;Belgium_ChallengerProLeague;Belgium;Challenger Pro League;12;2026-10-24;2026-11-01
+KNOWN;Bolivia_DivisionProfesional;Bolivia;Division Profesional;14;2026-10-24;2026-11-02
+KNOWN;Bosnia_PrvaLiga_FBiH;Bosnia & Herzegovina;Prva Liga - FBiH;16;2026-10-24;2026-10-31
+KNOWN;Bosnia_PrvaLiga_RS;Bosnia & Herzegovina;Prva Liga - RS;20;2026-10-21;2026-11-01
+KNOWN;Bosnia_WWINLigaBiH;Bosnia & Herzegovina;WWIN Liga BiH;10;2026-10-23;2026-11-01
+KNOWN;Bulgaria_ParvaLiga;Bulgaria;Parva Liga;14;2026-10-23;2026-11-02
+KNOWN;Bulgaria_VtoraLiga;Bulgaria;Vtora liga;18;2026-10-23;2026-11-02
+KNOWN;Croatia_HNL;Croatia;HNL;10;2026-10-24;2026-11-01
+KNOWN;Croatia_PrvaNL;Croatia;Prva NL;16;2026-10-23;2026-11-01
+KNOWN;CzechRepublic_1Liga;Czech Republic;1. Liga;16;2026-10-24;2026-11-01
+KNOWN;CzechRepublic_3CFL_GroupA;Czech Republic;3. CFL - Group A;17;2026-10-24;2026-11-01
+KNOWN;CzechRepublic_3CFL_GroupB;Czech Republic;3. CFL - Group B;18;2026-10-24;2026-11-01
+KNOWN;CzechRepublic_3MSFL;Czech Republic;3. MSFL;18;2026-10-24;2026-11-01
+KNOWN;CzechRepublic_4Liga_GroupA;Czech Republic;4. liga - Group A;14;2026-10-24;2026-11-01
+KNOWN;CzechRepublic_4Liga_GroupB;Czech Republic;4. liga - Group B;16;2026-10-23;2026-11-01
+KNOWN;CzechRepublic_4Liga_GroupC;Czech Republic;4. liga - Group C;16;2026-10-24;2026-11-01
+KNOWN;CzechRepublic_4Liga_GroupD;Czech Republic;4. liga - Group D;16;2026-10-24;2026-11-01
+KNOWN;CzechRepublic_4Liga_GroupE;Czech Republic;4. liga - Group E;16;2026-10-23;2026-11-01
+KNOWN;CzechRepublic_4Liga_GroupF;Czech Republic;4. liga - Group F;16;2026-10-24;2026-11-01
+KNOWN;CzechRepublic_ChNL;Czech Republic;ChNL;16;2026-10-23;2026-11-02
+KNOWN;Denmark_1stDivision;Denmark;1st Division;12;2026-10-23;2026-11-01
+KNOWN;Denmark_2ndDivision;Denmark;2nd Division;12;2026-10-23;2026-11-01
+KNOWN;Denmark_3rdDivision;Denmark;3rd Division;12;2026-10-23;2026-10-31
+KNOWN;Denmark_ALigaWomen;Denmark;A-Liga Women;11;2026-10-20;2026-11-03
+KNOWN;Denmark_Superliga;Denmark;Superliga;12;2026-10-23;2026-11-02
+KNOWN;England_Championship;England;Championship;34;2026-10-20;2026-11-03
+KNOWN;England_IsthmianLeaguePremierDivision;England;Isthmian League Premier Division;33;2026-10-20;2026-11-03
+KNOWN;England_LeagueOne;England;League One;43;2026-10-20;2026-11-03
+KNOWN;England_LeagueTwo;England;League Two;38;2026-10-20;2026-11-03
+KNOWN;England_NPLPremierDivision;England;NPL Premier Division;25;2026-10-20;2026-11-03
+KNOWN;England_PremierLeague;England;Premier League;20;2026-10-23;2026-11-02
+KNOWN;England_ProfessionalDevelopmentLeague;England;Professional Development League;14;2026-10-20;2026-11-03
+KNOWN;England_SouthernLeaguePremierCentral;England;Southern League Premier Central;37;2026-10-20;2026-11-03
+KNOWN;England_SouthernLeaguePremierSouth;England;Southern League Premier South;34;2026-10-20;2026-11-03
+KNOWN;Estonia_Esiliiga;Estonia;Esiliiga;12;2026-10-22;2026-11-01
+KNOWN;Estonia_EsiliigaB;Estonia;Esiliiga B;10;2026-10-24;2026-11-02
+KNOWN;Estonia_Meistriliiga;Estonia;Meistriliiga;15;2026-10-21;2026-11-01
+KNOWN;FaroeIslands_1Deild;Faroe Islands;1. Deild;5;2026-10-23;2026-10-24
+KNOWN;FaroeIslands_PremierLeague;Faroe Islands;Premier League;10;2026-10-25;2026-10-31
+KNOWN;France_Ligue1;France;Ligue 1;18;2026-10-23;2026-11-02
+KNOWN;France_Ligue2;France;Ligue 2;18;2026-10-23;2026-11-02
+KNOWN;Germany_2Bundesliga;Germany;2. Bundesliga;18;2026-10-23;2026-11-01
+KNOWN;Germany_3Liga;Germany;3. Liga;20;2026-10-23;2026-11-01
+KNOWN;Germany_Bundesliga;Germany;Bundesliga;18;2026-10-23;2026-11-01
+KNOWN;Germany_Oberliga_BadenWurttemberg;Germany;Oberliga Baden-Württemberg;18;2026-10-23;2026-11-03
+KNOWN;Germany_Oberliga_Bayern_Nord;Germany;Oberliga Bayern Nord;18;2026-10-23;2026-10-31
+KNOWN;Germany_Oberliga_Bayern_Sud;Germany;Oberliga Bayern Süd;18;2026-10-23;2026-10-31
+KNOWN;Germany_Oberliga_Bremen;Germany;Oberliga Bremen;16;2026-10-23;2026-11-01
+KNOWN;Germany_Oberliga_Hamburg;Germany;Oberliga Hamburg;19;2026-10-20;2026-11-01
+KNOWN;Germany_Oberliga_Hessen;Germany;Oberliga Hessen;18;2026-10-24;2026-11-01
+KNOWN;Germany_Oberliga_Mittelrhein;Germany;Oberliga Mittelrhein;9;2026-10-23;2026-10-28
+KNOWN;Germany_Oberliga_Niederrhein;Germany;Oberliga Niederrhein;9;2026-10-23;2026-10-25
+KNOWN;Germany_Oberliga_Niedersachsen;Germany;Oberliga Niedersachsen;19;2026-10-21;2026-11-01
+KNOWN;Germany_Oberliga_NOFV_Sud;Germany;Oberliga NOFV- Sud;16;2026-10-23;2026-11-01
+KNOWN;Germany_Oberliga_NOFV_Nord;Germany;Oberliga NOFV-Nord;16;2026-10-23;2026-11-01
+KNOWN;Germany_Oberliga_RheinlandPfalzSaar;Germany;Oberliga Rheinland-Pfalz/Saar;18;2026-10-23;2026-11-01
+KNOWN;Germany_Oberliga_SchleswigHolstein;Germany;Oberliga Schleswig-Holstein;18;2026-10-20;2026-11-01
+KNOWN;Germany_Oberliga_Westfalen;Germany;Oberliga Westfalen;9;2026-10-23;2026-10-25
+KNOWN;Germany_Regionalliga_Bayern;Germany;Regionalliga Bayern;19;2026-10-23;2026-10-31
+KNOWN;Germany_Regionalliga_Nord;Germany;Regionalliga Nord;19;2026-10-24;2026-11-01
+KNOWN;Germany_Regionalliga_Nordost;Germany;Regionalliga Nordost;18;2026-10-23;2026-11-01
+KNOWN;Germany_Regionalliga_Sudwest;Germany;Regionalliga Sudwest;19;2026-10-23;2026-11-01
+KNOWN;Hungary_NBI;Hungary;NB I.;12;2026-10-24;2026-11-01
+KNOWN;Hungary_NBII;Hungary;NB II.;16;2026-10-24;2026-11-02
+KNOWN;Indonesia_SuperLeague;Indonesia;Super League;26;2026-10-20;2026-11-01
+KNOWN;Italy_SerieA;Italy;Serie A;30;2026-10-23;2026-11-02
+KNOWN;Italy_SerieAWomen;Italy;Serie A Femminile;12;2026-10-24;2026-11-02
+KNOWN;Italy_SerieB;Italy;Serie B;30;2026-10-23;2026-11-01
+KNOWN;Italy_SerieC_GironeA;Italy;Serie C - Girone A;20;2026-10-24;2026-11-02
+KNOWN;Italy_SerieC_GironeB;Italy;Serie C - Girone B;22;2026-10-20;2026-11-01
+KNOWN;Italy_SerieC_GironeC;Italy;Serie C - Girone C;21;2026-10-23;2026-11-02
+KNOWN;Japan_J1League;Japan;J1 League;30;2026-10-21;2026-11-01
+KNOWN;Kazakhstan_FirstLeague;Kazakhstan;First League;7;2026-10-22;2026-10-22
+KNOWN;Kazakhstan_PremierLeague;Kazakhstan;Premier League;16;2026-10-24;2026-10-31
+KNOWN;Kyrgyzstan_PremierLiga;Kyrgyzstan;Premier Liga;21;2026-10-20;2026-11-02
+KNOWN;Latvia_Virsliga;Latvia;Virsliga;10;2026-10-24;2026-11-01
+KNOWN;Lithuania_ILyga;Lithuania;I Lyga;16;2026-10-23;2026-11-01
+KNOWN;Lithuania_Toplyga;Lithuania;TOPLYGA;8;2026-10-24;2026-11-01
+KNOWN;Mexico_LigaExpansionMX_Apertura;Mexico;Liga de Expansion MX - Apertura;16;2026-10-23;2026-11-01
+KNOWN;Mexico_LigaMX_Apertura;Mexico;Liga MX - Apertura;28;2026-10-21;2026-11-02
+KNOWN;Moldova_SuperLiga;Moldova;Super Liga;8;2026-10-24;2026-11-01
+KNOWN;Montenegro_DrugaLiga;Montenegro;Druga Liga;10;2026-10-24;2026-10-31
+KNOWN;Montenegro_PrvaCrnogorskaLiga;Montenegro;Prva Crnogorska Liga;15;2026-10-22;2026-11-03
+KNOWN;Netherlands_EersteDivisie;Netherlands;Eerste Divisie;20;2026-10-23;2026-11-02
+KNOWN;Netherlands_Eredivisie;Netherlands;Eredivisie;18;2026-10-23;2026-11-01
+KNOWN;Netherlands_EredivisieWomen;Netherlands;Eredivisie - Women;8;2026-10-25;2026-11-01
+KNOWN;NorthMacedonia_1MFL;North Macedonia;1. MFL;10;2026-10-23;2026-11-02
+KNOWN;NorthernIreland_NIFLChampionship;Northern Ireland;NIFL Championship;16;2026-10-23;2026-10-31
+KNOWN;NorthernIreland_NIFLPremiership;Northern Ireland;NIFL Premiership;14;2026-10-20;2026-10-31
+KNOWN;Norway_Eliteserien;Norway;Eliteserien;16;2026-10-24;2026-11-01
+KNOWN;Norway_OBOSLigaen;Norway;OBOS-ligaen;17;2026-10-21;2026-11-02
+KNOWN;Paraguay_DivisionIntermedia;Paraguay;Division Intermedia;10;2026-10-21;2026-10-26
+KNOWN;Peru_Liga1_Clausura;Peru;Liga 1 - Clausura;25;2026-10-23;2026-11-03
+KNOWN;Poland_Division1;Poland;Division 1;18;2026-10-23;2026-11-03
+KNOWN;Poland_Division2;Poland;Division 2;18;2026-10-23;2026-11-02
+KNOWN;Poland_Ekstraklasa;Poland;Ekstraklasa;18;2026-10-23;2026-11-02
+KNOWN;Poland_IIILiga_Group1;Poland;III Liga - Group I;19;2026-10-21;2026-10-31
+KNOWN;Poland_IIILiga_Group2;Poland;III Liga - Group II;18;2026-10-24;2026-10-31
+KNOWN;Poland_IIILiga_Group3;Poland;III Liga - Group III;18;2026-10-23;2026-10-31
+KNOWN;Poland_IIILiga_Group4;Poland;III Liga - Group IV;18;2026-10-23;2026-10-31
+KNOWN;Portugal_LigaPortugal;Portugal;Liga Portugal;18;2026-10-23;2026-11-02
+KNOWN;Portugal_LigaPortugal2;Portugal;Liga Portugal 2;18;2026-10-23;2026-11-02
+KNOWN;Romania_Liga2;Romania;Liga 2;23;2026-10-20;2026-11-01
+KNOWN;Romania_Superliga;Romania;Superliga;16;2026-10-23;2026-11-02
+KNOWN;Russia_FNL;Russia;FNL;18;2026-10-23;2026-11-01
+KNOWN;Russia_PremierLeague;Russia;Premier League;16;2026-10-23;2026-11-02
+KNOWN;Scotland_Premiership;Scotland;Premiership;16;2026-10-24;2026-11-01
+KNOWN;Serbia_PrvaLiga;Serbia;Prva Liga;16;2026-10-23;2026-11-02
+KNOWN;Serbia_SuperLiga;Serbia;Super Liga;16;2026-10-23;2026-11-02
+KNOWN;Slovakia_2Liga;Slovakia;2. liga;16;2026-10-24;2026-11-01
+KNOWN;Slovakia_3Liga_West;Slovakia;3. Liga - West;13;2026-10-21;2026-11-01
+KNOWN;Slovakia_NikeLiga;Slovakia;Nike liga;14;2026-10-24;2026-11-01
+KNOWN;Slovenia_2SNL;Slovenia;2. SNL;16;2026-10-27;2026-11-02
+KNOWN;Slovenia_PrvaLiga;Slovenia;Prva Liga;10;2026-10-27;2026-11-02
+KNOWN;SouthKorea_KLeague1;South Korea;K League 1;6;2026-10-24;2026-10-24
+KNOWN;SouthKorea_KLeague2;South Korea;K League 2;16;2026-10-24;2026-11-01
+KNOWN;Spain_LaLiga;Spain;LaLiga;21;2026-10-21;2026-11-02
+KNOWN;Spain_LaLiga2;Spain;LaLiga2;22;2026-10-23;2026-11-02
+KNOWN;Sweden_Allsvenskan;Sweden;Allsvenskan;24;2026-10-23;2026-11-03
+KNOWN;Sweden_Division1_Norra;Sweden;Division 1, Norra;16;2026-10-23;2026-11-01
+KNOWN;Sweden_Division1_Sodra;Sweden;Division 1, Södra;16;2026-10-23;2026-11-01
+KNOWN;Sweden_Superettan;Sweden;Superettan;17;2026-10-20;2026-11-02
+KNOWN;Switzerland_ChallengeLeague;Switzerland;Challenge League;10;2026-10-23;2026-11-01
+KNOWN;Switzerland_PromotionLeague;Switzerland;Promotion League;21;2026-10-21;2026-11-01
+KNOWN;Switzerland_SuperLeague;Switzerland;Super League;12;2026-10-24;2026-11-01
+KNOWN;Turkey_1Lig;Turkey;1. Lig;20;2026-10-23;2026-11-02
+KNOWN;Turkey_SuperLig;Turkey;Super Lig;18;2026-10-23;2026-11-02
+KNOWN;Ukraine_PershaLiga;Ukraine;Persha Liga;16;2026-10-23;2026-11-02
+KNOWN;Ukraine_PremierLeague;Ukraine;Premier League;16;2026-10-23;2026-11-02
+KNOWN;USA_MLS;USA;MLS;45;2026-10-22;2026-11-02
+KNOWN;USA_USLChampionship;USA;USL Championship;14;2026-10-22;2026-10-25
+KNOWN;USA_USLLeagueOne;USA;USL League One;10;2026-10-22;2026-10-25
+KNOWN;Wales_CymruNorth;Wales;Cymru North;16;2026-10-23;2026-10-31
+KNOWN;Wales_CymruPremier;Wales;Cymru Premier;16;2026-10-23;2026-10-31
+KNOWN;Wales_CymruSouth;Wales;Cymru South;14;2026-10-23;2026-10-31
+KNOWN_ALIAS;Austria_Burgenland;Austria;Burgenland;16;2026-10-23;2026-10-31
+KNOWN_ALIAS;Austria_Niederosterreich;Austria;Niederosterreich;16;2026-10-23;2026-10-31
+KNOWN_ALIAS;Austria_Oberosterreich;Austria;Oberosterreich;16;2026-10-23;2026-10-31
+KNOWN_ALIAS;Austria_Regionalliga_East;Austria;Regionalliga Est;16;2026-10-23;2026-10-31
+KNOWN_ALIAS;Austria_Regionalliga_West;Austria;Regionalliga Ovest;16;2026-10-23;2026-10-31
+KNOWN_ALIAS;Austria_Salzburg;Austria;Salzburg;16;2026-10-23;2026-10-31
+KNOWN_ALIAS;Austria_Steiermark;Austria;Steiermark;16;2026-10-23;2026-10-31
+KNOWN_ALIAS;Austria_Vorarlberg;Austria;Vorarlberg;14;2026-10-24;2026-10-31
+KNOWN_ALIAS;Austria_Wien;Austria;Wien;16;2026-10-23;2026-11-01
+KNOWN_ALIAS;Belgium_JupilerProLeague;Belgium;Jupiler League;17;2026-10-24;2026-11-01
+KNOWN_ALIAS;Finland_Veikkausliiga;Finland;Veikkausliiga - Play-Offs Championship;9;2026-10-24;2026-11-02
+KNOWN_ALIAS;Finland_Veikkausliiga;Finland;Veikkausliiga - Spareggio;2;2026-10-21;2026-10-25
+KNOWN_ALIAS;Finland_Ykkosliiga;Finland;Ykkosliiga - Spareggio;2;2026-10-22;2026-10-25
+KNOWN_ALIAS;France_National;France;Ligue 3;9;2026-10-29;2026-10-31
+KNOWN_ALIAS;Georgia_ErovnuliLiga;Georgia;Crystalbet Erovnuli Liga;10;2026-10-23;2026-11-02
+KNOWN_ALIAS;Germany_Regionalliga_West;Germany;Regionalliga Ovest;19;2026-10-20;2026-11-01
+KNOWN_ALIAS;Iceland_BestaDeildKarla;Iceland;Besta deild karla - Play-Offs Championship;3;2026-10-24;2026-10-24
+KNOWN_ALIAS;Latvia_NakotnesLiga;Latvia;1. Liga;14;2026-10-22;2026-10-31
+KNOWN_ALIAS;Norway_2ndDivision_Group1;Norway;Division 2 - Gruppo 1;14;2026-10-24;2026-10-31
+KNOWN_ALIAS;Norway_2ndDivision_Group2;Norway;Division 2 - Gruppo 2;14;2026-10-24;2026-10-31
+KNOWN_ALIAS;Norway_3rdDivision_Group1;Norway;Division 3 - Group 1;14;2026-10-24;2026-11-01
+KNOWN_ALIAS;Norway_3rdDivision_Group2;Norway;Division 3 - Group 2;15;2026-10-21;2026-11-01
+KNOWN_ALIAS;Norway_3rdDivision_Group3;Norway;Division 3 - Group 3;14;2026-10-24;2026-11-01
+KNOWN_ALIAS;Norway_3rdDivision_Group4;Norway;Division 3 - Group 4;14;2026-10-23;2026-11-01
+KNOWN_ALIAS;Norway_3rdDivision_Group5;Norway;Division 3 - Group 5;14;2026-10-24;2026-11-01
+KNOWN_ALIAS;Norway_3rdDivision_Group6;Norway;Division 3 - Group 6;14;2026-10-24;2026-11-01
+KNOWN_ALIAS;SaudiArabia_ProfessionalLeague;Saudi Arabia;Saudi Professional League;23;2026-10-20;2026-10-31
+KNOWN_ALIAS;SouthKorea_KLeague1;South Korea;K League 1 - Play-Offs Championship;3;2026-10-31;2026-11-01
+KNOWN_ALIAS;SriLanka_SuperLeague;Sri Lanka;Super League - Play-Offs Championship;6;2026-10-23;2026-11-01
+KNOWN_ALIAS;Sweden_Division2_Norrland;Sweden;Division 2 - Norrland - Spareggio;2;2026-10-24;2026-10-31
+KNOWN_ALIAS;Sweden_Division2_SodraGotaland;Sweden;Division 2 - Södra Götaland - Spareggio;2;2026-10-24;2026-10-30
+KNOWN_ALIAS;USA_USLChampionship;USA;USL Championship - Play Off;7;2026-10-31;2026-11-02
+KNOWN_ALIAS;USA_USLLeagueOne;USA;USL League One - Play Off;4;2026-10-31;2026-11-02
+NEW;INTERNATIONAL;Africa;Africa Cup of Nations U20 - Qualificazione;4;2026-10-21;2026-10-22
+NEW;INTERNATIONAL;Africa;Africa Cup of Nations U20 - Qualificazione - Piazzamento Play Off;2;2026-10-24;2026-10-30
+NEW;INTERNATIONAL;Africa;Africa Cup of Nations U20 - Qualificazione - Play Off;6;2026-10-21;2026-10-30
+NEW;INTERNATIONAL;Africa;CAF Champions League - Qualificazione;17;2026-10-21;2026-10-25
+NEW;INTERNATIONAL;Africa;CAF Champions League Femminile;4;2026-11-01;2026-11-02
+NEW;INTERNATIONAL;Africa;CAF Confederation Cup - Qualificazione;17;2026-10-20;2026-10-25
+NEW;LEAGUE;Albania;Kategoria e Parë;18;2026-10-23;2026-11-02
+NEW;LEAGUE;Algeria;Ligue 1;25;2026-10-23;2026-11-02
+NEW;LEAGUE;Algeria;Ligue 2;32;2026-10-23;2026-10-31
+NEW;LEAGUE;Angola;Girabola League;16;2026-10-24;2026-11-03
+NEW;LEAGUE;Antigua & Barbuda;ABFA Premier League;1;2026-10-31;2026-10-31
+NEW;TEMPORARY;Argentina;Copa Argentina;1;2026-10-29;2026-10-29
+NEW;LEAGUE;Argentina;Liga Profesional - Clausura;26;2026-10-20;2026-11-03
+NEW;LEAGUE;Argentina;Primera B;21;2026-10-24;2026-11-02
+NEW;TEMPORARY;Argentina;Primera C - Play Off Promozione;9;2026-10-25;2026-11-02
+NEW;TEMPORARY;Argentina;Primera C - Spareggio;2;2026-10-25;2026-10-31
+NEW;TEMPORARY;Argentina;Primera C - Super Finale;1;2026-10-25;2026-10-25
+NEW;LEAGUE;Argentina;Primera Nacional;35;2026-10-24;2026-11-02
+NEW;LEAGUE;Argentina;Reserve League - Clausura;40;2026-10-20;2026-11-03
+NEW;TEMPORARY;Argentina;Torneo Federal - Play Off;1;2026-10-25;2026-10-25
+NEW;TEMPORARY;Argentina;Torneo Federal - Play Off Promozione;14;2026-10-24;2026-11-01
+NEW;TEMPORARY;Armenia;Coppa d'Armenia;8;2026-10-25;2026-10-29
+NEW;LEAGUE;Aruba;Division di Honor;9;2026-10-24;2026-11-03
+NEW;INTERNATIONAL;Asia;AFC Challenge League;20;2026-10-20;2026-10-24
+NEW;INTERNATIONAL;Asia;AFC Champions League - Prima fase;30;2026-10-26;2026-11-03
+NEW;INTERNATIONAL;Asia;AFC Champions League 2;18;2026-10-27;2026-11-03
+NEW;INTERNATIONAL;Asia;AFC Champions League Femminile;6;2026-11-01;2026-11-01
+NEW;INTERNATIONAL;Asia;Gulf Club Champions League;9;2026-10-27;2026-11-03
+NEW;LEAGUE;Australia;A-League;12;2026-10-23;2026-11-01
+NEW;WOMEN_LEAGUE;Australia;A-League Femminile;10;2026-10-24;2026-11-01
+NEW;LEAGUE;Australia;Australian Championship;16;2026-10-22;2026-11-01
+NEW;WOMEN_LEAGUE;Austria;Bundesliga Femminile;10;2026-10-23;2026-11-01
+NEW;TEMPORARY;Austria;ÖFB Cup;8;2026-10-27;2026-10-29
+NEW;TEMPORARY;Azerbaijan;Coppa di Azerbaijan;12;2026-10-27;2026-10-29
+NEW;TEMPORARY;Bahrain;King's Cup;4;2026-11-01;2026-11-02
+NEW;LEAGUE;Bahrain;Premier League;12;2026-10-22;2026-11-01
+NEW;LEAGUE;Bangladesh;BFL;6;2026-10-23;2026-10-24
+NEW;TEMPORARY;Bangladesh;Federation Cup;3;2026-10-20;2026-10-20
+NEW;WOMEN_LEAGUE;Belarus;Vysshaya Liga Femminile;8;2026-10-21;2026-10-31
+NEW;WOMEN_LEAGUE;Belgium;1st National - Femminile;14;2026-10-21;2026-11-01
+NEW;LEAGUE;Belgium;National Division 1 - ACFF;13;2026-10-21;2026-11-01
+NEW;LEAGUE;Belgium;National Division 1 - VV;17;2026-10-21;2026-11-01
+NEW;YOUTH;Belgium;Pro League U21;9;2026-10-23;2026-10-30
+NEW;LEAGUE;Belgium;Second Amateur Division Group ACFF;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Belgium;Second Amateur Division Group VFV A;15;2026-10-24;2026-11-01
+NEW;LEAGUE;Belgium;Second Amateur Division Group VFV B;17;2026-10-21;2026-11-01
+NEW;WOMEN_LEAGUE;Belgium;Super League Femminile;4;2026-10-24;2026-10-24
+NEW;TEMPORARY;Belgium;Woman´s Cup;8;2026-10-31;2026-10-31
+NEW;LEAGUE;Benin;Ligue 1;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Bermuda;Premier League;10;2026-10-25;2026-11-01
+NEW;TEMPORARY;Bolivia;Copa Pacena - Play Off;5;2026-10-21;2026-11-02
+NEW;TEMPORARY;Bolivia;Copa Simon Bolivar - Play Off;4;2026-10-24;2026-10-25
+NEW;TEMPORARY;Bosnia & Herzegovina;Coppa;16;2026-10-27;2026-10-28
+NEW;LEAGUE;Botswana;Premier League;17;2026-10-21;2026-11-01
+NEW;WOMEN_LEAGUE;Brasile;Alagoano Donne;5;2026-10-24;2026-11-01
+NEW;YOUTH;Brasile;Alagoano U20 - Play Off;1;2026-10-26;2026-10-26
+NEW;TEMPORARY;Brasile;Baiano Women - Play Off;3;2026-10-23;2026-10-31
+NEW;YOUTH;Brasile;Brasileiro U17 - Play Off;5;2026-10-21;2026-10-31
+NEW;TEMPORARY;Brasile;Brasiliense 2 - Play Off;3;2026-10-24;2026-10-31
+NEW;TEMPORARY;Brasile;Capixaba Femminile - Play Off;1;2026-10-24;2026-10-24
+NEW;LEAGUE;Brasile;Carioca B1;18;2026-10-20;2026-10-31
+NEW;LEAGUE;Brasile;Carioca B2;12;2026-10-26;2026-11-01
+NEW;WOMEN_LEAGUE;Brasile;Carioca Donne - Prima fase;6;2026-10-21;2026-10-24
+NEW;WOMEN_LEAGUE;Brasile;Carioca Donne - Seconda fase;6;2026-10-28;2026-10-31
+NEW;YOUTH;Brasile;Carioca U20 - Taca Guanabara - Play Off;8;2026-10-24;2026-10-31
+NEW;LEAGUE;Brasile;Catarinense 3;2;2026-10-24;2026-10-24
+NEW;TEMPORARY;Brasile;Catarinense 3 - Play Off;1;2026-11-01;2026-11-01
+NEW;WOMEN_LEAGUE;Brasile;Catarinense Donne;7;2026-10-20;2026-10-31
+NEW;WOMEN_LEAGUE;Brasile;Cearense Donne;4;2026-10-24;2026-10-31
+NEW;TEMPORARY;Brasile;Copa do Brasil;2;2026-11-01;2026-11-01
+NEW;TEMPORARY;Brasile;Copa do Brasil Women;4;2026-10-20;2026-10-23
+NEW;TEMPORARY;Brasile;Copa Fares Lopes;3;2026-10-31;2026-11-02
+NEW;TEMPORARY;Brasile;Copa FMF (Mato Grosso);4;2026-10-20;2026-10-25
+NEW;TEMPORARY;Brasile;Copa Parana - Play Off;2;2026-10-24;2026-10-27
+NEW;YOUTH;Brasile;Coppa del Brasile U20;13;2026-10-21;2026-11-03
+NEW;TEMPORARY;Brasile;Coppa Santa Catarina;8;2026-10-24;2026-11-01
+NEW;TEMPORARY;Brasile;Gaucho 2 - Play Off;4;2026-10-24;2026-11-01
+NEW;LEAGUE;Brasile;Gaucho 3;5;2026-10-24;2026-10-24
+NEW;TEMPORARY;Brasile;Gaucho 3 - Play Off;2;2026-11-01;2026-11-02
+NEW;TEMPORARY;Brasile;Gaucho Donne - Play Off;2;2026-10-31;2026-11-01
+NEW;WOMEN_LEAGUE;Brasile;Gaucho Donne - Seconda fase;3;2026-10-24;2026-10-24
+NEW;LEAGUE;Brasile;Goiano 3;6;2026-10-24;2026-11-01
+NEW;WOMEN_LEAGUE;Brasile;Goiano Donne - Seconda fase;4;2026-10-24;2026-10-31
+NEW;TEMPORARY;Brasile;Kings Cup - Brazil;9;2026-10-20;2026-11-03
+NEW;TEMPORARY;Brasile;Kings Cup - Brazil - Challenger;2;2026-10-27;2026-11-03
+NEW;WOMEN_LEAGUE;Brasile;Matogrossense Donne;6;2026-10-24;2026-10-31
+NEW;LEAGUE;Brasile;Mineiro 3 - Gruppo Finale;5;2026-10-24;2026-10-31
+NEW;YOUTH;Brasile;Mineiro U20 - 5°-8° posto;1;2026-10-20;2026-10-20
+NEW;YOUTH;Brasile;Mineiro U20 - Play Off;1;2026-10-26;2026-10-26
+NEW;YOUTH;Brasile;Paraense U20;23;2026-10-22;2026-11-01
+NEW;TEMPORARY;Brasile;Paraibano 2 - Play Off;3;2026-10-20;2026-10-23
+NEW;WOMEN_LEAGUE;Brasile;Paraibano Donne;6;2026-10-24;2026-11-01
+NEW;WOMEN_LEAGUE;Brasile;Paranaense Donne;2;2026-10-25;2026-10-28
+NEW;YOUTH;Brasile;Paulista U20 - Play Off;7;2026-10-23;2026-11-01
+NEW;LEAGUE;Brasile;Pernambucano - Prima fase;44;2026-10-20;2026-11-02
+NEW;WOMEN_LEAGUE;Brasile;Piauiense Donne;11;2026-10-20;2026-10-28
+NEW;LEAGUE;Brasile;Potiguar 2;5;2026-10-21;2026-11-01
+NEW;WOMEN_LEAGUE;Brasile;Potiguar Donne;4;2026-10-31;2026-11-01
+NEW;LEAGUE;Brasile;Sergipano 2;15;2026-10-28;2026-11-03
+NEW;LEAGUE;Brasile;Serie A;17;2026-10-20;2026-11-03
+NEW;LEAGUE;Brasile;Serie B;19;2026-10-20;2026-11-03
+NEW;TEMPORARY;Brasile;Serie C - Play Off;1;2026-10-24;2026-10-24
+NEW;TEMPORARY;Brasile;Tocantinense 2 - Play Off;4;2026-10-24;2026-10-31
+NEW;TEMPORARY;Bulgaria;Pro Cup;1;2026-10-21;2026-10-21
+NEW;LEAGUE;Bulgaria;Third League - North-East;21;2026-10-21;2026-10-31
+NEW;LEAGUE;Bulgaria;Third League - North-West;12;2026-10-22;2026-10-31
+NEW;LEAGUE;Bulgaria;Third League - South-East;24;2026-10-21;2026-11-01
+NEW;LEAGUE;Bulgaria;Third League - South-West;26;2026-10-22;2026-10-31
+NEW;LEAGUE;Burkina Faso;Premier League;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Burundi;Primus League;18;2026-10-23;2026-11-03
+NEW;LEAGUE;Cambogia;CPL;10;2026-10-24;2026-11-01
+NEW;LEAGUE;Camerun;Elite One;14;2026-10-21;2026-11-01
+NEW;LEAGUE;Camerun;Elite Two;12;2026-10-24;2026-11-01
+NEW;LEAGUE;Canada;Canadian Premier League;4;2026-10-25;2026-10-25
+NEW;TEMPORARY;Canada;Canadian Premier League - Play Off;2;2026-11-01;2026-11-01
+NEW;LEAGUE;Canada;Championship;1;2026-10-22;2026-10-22
+NEW;WOMEN_LEAGUE;Canada;NSL Women;3;2026-10-24;2026-10-27
+NEW;TEMPORARY;Canada;NSL Women - Play Off;2;2026-10-31;2026-11-01
+NEW;LEAGUE;Cile;Liga de Ascenso;17;2026-10-20;2026-11-01
+NEW;LEAGUE;Cile;Liga de Primera;15;2026-10-24;2026-11-03
+NEW;LEAGUE;Cile;Segunda Division - Gruppo Promozione;6;2026-10-24;2026-11-01
+NEW;LEAGUE;Cile;Segunda Division - Gruppo Retrocessione;6;2026-10-24;2026-11-01
+NEW;TEMPORARY;Cina;FA Cup;1;2026-11-01;2026-11-01
+NEW;LEAGUE;Cina;League One;16;2026-10-24;2026-10-31
+NEW;WOMEN_LEAGUE;Cina;League One Women - Gruppo Retrocessione;12;2026-10-23;2026-11-01
+NEW;TEMPORARY;Cina;League One Women - Play-Offs Championship;4;2026-11-03;2026-11-03
+NEW;LEAGUE;Cina;League Two - Gruppo Promozione;8;2026-10-23;2026-11-01
+NEW;LEAGUE;Cina;League Two - Gruppo Retrocessione;16;2026-10-24;2026-10-31
+NEW;LEAGUE;Cina;Super League;8;2026-10-24;2026-10-24
+NEW;WOMEN_LEAGUE;Cina;Super League Femminile - Gruppo Retrocessione;3;2026-10-24;2026-10-25
+NEW;TEMPORARY;Cina;Super League Femminile - Play-Offs Championship;3;2026-10-25;2026-10-25
+NEW;TEMPORARY;Cipro;Coppa di Cipro;6;2026-10-21;2026-11-03
+NEW;LEAGUE;Cipro;Cyprus League;14;2026-10-24;2026-11-01
+NEW;LEAGUE;Cipro;Division 2;16;2026-10-23;2026-11-01
+NEW;TEMPORARY;Colombia;Copa Colombia - Seconda fase;2;2026-10-22;2026-11-02
+NEW;LEAGUE;Colombia;Primera A - Clausura;33;2026-10-20;2026-11-03
+NEW;LEAGUE;Colombia;Primera B - Clausura;13;2026-10-20;2026-10-24
+NEW;LEAGUE;Colombia;Primera B - Clausura - Quadrangolare;7;2026-10-29;2026-11-03
+NEW;LEAGUE;Congo Dr;Ligue 1;35;2026-10-20;2026-10-31
+NEW;LEAGUE;Costa D'Avorio;Ligue 1;12;2026-10-20;2026-11-01
+NEW;LEAGUE;Costarica;Liga de Ascenso - Apertura;15;2026-10-20;2026-11-01
+NEW;LEAGUE;Costarica;Primera División - Apertura;10;2026-10-20;2026-11-01
+NEW;WOMEN_LEAGUE;Croatia;1. HNL Femminile;8;2026-10-25;2026-10-31
+NEW;TEMPORARY;Croatia;Coppa di Croazia;4;2026-10-20;2026-11-03
+NEW;LEAGUE;Croatia;Druga NL;16;2026-10-23;2026-10-31
+NEW;WOMEN_LEAGUE;Czech Republic;1. Liga Femminile;8;2026-10-24;2026-11-01
+NEW;WOMEN_LEAGUE;Czech Republic;2. Liga Femminile;10;2026-10-24;2026-11-01
+NEW;TEMPORARY;Czech Republic;Czech Cup Femminile;7;2026-10-31;2026-11-01
+NEW;LEAGUE;Czech Republic;Jihocesky KP;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Jihomoravsky KP;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Karlovarsky KP;15;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Kralovehradecky KP;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Liberecky KP;16;2026-10-24;2026-11-01
+NEW;TEMPORARY;Czech Republic;MOL Cup;7;2026-10-27;2026-10-28
+NEW;LEAGUE;Czech Republic;Moravskoslezsky KP;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Olomoucky KP;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Pardubicky KP;17;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Plzensky KP;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Prazsky prebor;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Stredocesky KP;17;2026-10-24;2026-11-01
+NEW;YOUTH;Czech Republic;U19 League;17;2026-10-24;2026-10-31
+NEW;LEAGUE;Czech Republic;Ustecky KP;23;2026-10-24;2026-11-01
+NEW;LEAGUE;Czech Republic;Vysocina KP;15;2026-10-24;2026-10-31
+NEW;LEAGUE;Czech Republic;Zlinsky KP;14;2026-10-24;2026-11-01
+NEW;WOMEN_LEAGUE;Denmark;B-Liga Women;8;2026-10-24;2026-10-31
+NEW;TEMPORARY;Denmark;Betano Pokalen;8;2026-10-21;2026-11-03
+NEW;TEMPORARY;Denmark;Danish Cup Femminile;6;2026-10-20;2026-10-21
+NEW;TEMPORARY;Ecuador;Copa Ecuador;2;2026-10-29;2026-10-30
+NEW;LEAGUE;Ecuador;Liga Pro - Gruppo Retrocessione;6;2026-10-24;2026-11-03
+NEW;TEMPORARY;Ecuador;Liga Pro - Play-Offs Championship;6;2026-10-23;2026-11-01
+NEW;LEAGUE;Ecuador;Liga Pro - Posti;4;2026-10-25;2026-11-01
+NEW;LEAGUE;Ecuador;Serie B - Gruppo Promozione;6;2026-10-22;2026-10-28
+NEW;LEAGUE;Ecuador;Serie B - Gruppo Retrocessione;6;2026-10-21;2026-10-28
+NEW;LEAGUE;Egitto;Division 2 A;20;2026-10-22;2026-10-30
+NEW;TEMPORARY;Egitto;League Cup;6;2026-11-02;2026-11-03
+NEW;LEAGUE;Egitto;Premier League;17;2026-10-20;2026-10-31
+NEW;LEAGUE;El Salvador;Primera Division - Apertura;13;2026-10-22;2026-11-02
+NEW;LEAGUE;Emirati Arabi;Division 1;7;2026-10-30;2026-11-01
+NEW;TEMPORARY;Emirati Arabi;Presidents Cup;8;2026-10-22;2026-10-24
+NEW;YOUTH;Emirati Arabi;Pro League U23;7;2026-10-30;2026-11-02
+NEW;LEAGUE;Emirati Arabi;UAE League;7;2026-10-29;2026-11-01
+NEW;LEAGUE;England;Baller League - UK;12;2026-10-26;2026-11-02
+NEW;TEMPORARY;England;Coppa di Lega - Femminile;20;2026-10-21;2026-11-01
+NEW;TEMPORARY;England;EFL Cup;8;2026-10-27;2026-10-29
+NEW;TEMPORARY;England;EFL Trophy;8;2026-10-27;2026-11-03
+NEW;TEMPORARY;England;FA Cup - Femminile;48;2026-10-24;2026-11-01
+NEW;TEMPORARY;England;FA Cup - Qualificazione;11;2026-10-20;2026-10-20
+NEW;TEMPORARY;England;FA Trophy;32;2026-10-24;2026-10-27
+NEW;WOMEN_LEAGUE;England;Femminile's National League North;6;2026-10-28;2026-10-28
+NEW;WOMEN_LEAGUE;England;Femminile's National League South;6;2026-10-28;2026-10-29
+NEW;LEAGUE;England;National League;35;2026-10-24;2026-10-31
+NEW;TEMPORARY;England;National League Cup;16;2026-10-20;2026-11-03
+NEW;LEAGUE;England;National League Nord;35;2026-10-24;2026-10-31
+NEW;LEAGUE;England;National League Sud;40;2026-10-20;2026-11-03
+NEW;LEAGUE;England;Premier League 2;14;2026-10-23;2026-10-26
+NEW;TEMPORARY;England;Premier League Cup;17;2026-10-20;2026-11-03
+NEW;YOUTH;England;Premier League U18;37;2026-10-24;2026-11-03
+NEW;LEAGUE;England;WSL;14;2026-10-24;2026-11-01
+NEW;LEAGUE;England;WSL 2;6;2026-10-25;2026-10-25
+NEW;TEMPORARY;Estonia;Coppa di Estonia;1;2026-10-29;2026-10-29
+NEW;WOMEN_LEAGUE;Estonia;Meistriliiga Femminile;6;2026-10-24;2026-10-31
+NEW;LEAGUE;Eswatini;Swazi MTN Premier League;8;2026-10-23;2026-10-25
+NEW;LEAGUE;Etiopia;Premier League;27;2026-10-20;2026-11-02
+NEW;INTERNATIONAL;Europa;Campionati Europei U17 - Femminile - Qualificazione - Round 1 - Lega A;8;2026-10-21;2026-11-02
+NEW;INTERNATIONAL;Europa;Campionati Europei U17 - Femminile - Qualificazione - Round 1 - Lega B;14;2026-10-25;2026-11-01
+NEW;INTERNATIONAL;Europa;Champions League - Prima fase;27;2026-10-20;2026-11-03
+NEW;INTERNATIONAL;Europa;Conference League - Prima fase;18;2026-10-22;2026-10-22
+NEW;INTERNATIONAL;Europa;Europa League - Prima fase;18;2026-10-22;2026-10-22
+NEW;INTERNATIONAL;Europa;Europei U17 - Qualificazione - Prima fase;5;2026-10-22;2026-11-02
+NEW;INTERNATIONAL;Europa;Premier League (Crimea);7;2026-10-21;2026-10-31
+NEW;INTERNATIONAL;Europa;Premier League International Cup;10;2026-10-20;2026-11-03
+NEW;INTERNATIONAL;Europa;UEFA Champions League Women - Prima fase;9;2026-10-28;2026-10-29
+NEW;INTERNATIONAL;Europa;UEFA Europa Cup Women;8;2026-10-28;2026-10-29
+NEW;INTERNATIONAL;Europa;UEFA Regions' Cup - Qualificazione;10;2026-10-20;2026-11-01
+NEW;INTERNATIONAL;Europa;UEFA Youth League - Play Off Vincenti;23;2026-10-27;2026-11-03
+NEW;INTERNATIONAL;Europa;UEFA Youth League - Prima fase;27;2026-10-20;2026-11-03
+NEW;LEAGUE;Filippine;PFL;3;2026-10-25;2026-10-25
+NEW;TEMPORARY;Finland;Kakkonen Play Offs;2;2026-10-23;2026-10-24
+NEW;WOMEN_LEAGUE;Finland;Kansallinen Liiga Femminile - Gruppo Retrocessione;3;2026-10-24;2026-10-24
+NEW;TEMPORARY;Finland;Kansallinen Liiga Femminile - Play-Offs Championship;3;2026-10-24;2026-10-24
+NEW;WOMEN_LEAGUE;Finland;Kansallinen Ykkonen Women - Gruppo Retrocessione;3;2026-10-24;2026-10-24
+NEW;WOMEN_LEAGUE;France;Coupe de la Ligue Women;8;2026-10-20;2026-10-21
+NEW;LEAGUE;France;National 1 - Group A;8;2026-10-31;2026-10-31
+NEW;LEAGUE;France;National 1 - Group B;8;2026-10-31;2026-10-31
+NEW;LEAGUE;France;National 1 - Group C;8;2026-10-31;2026-10-31
+NEW;WOMEN_LEAGUE;France;Premiere Ligue Femminile;12;2026-10-23;2026-11-01
+NEW;WOMEN_LEAGUE;France;Seconde Ligue Femminile;10;2026-10-25;2026-11-01
+NEW;LEAGUE;Gabon;Championnat D1;7;2026-10-24;2026-10-31
+NEW;TEMPORARY;Georgia;Coppa;2;2026-10-27;2026-10-28
+NEW;LEAGUE;Georgia;Crystalbet Erovnuli Liga 2;10;2026-10-24;2026-10-31
+NEW;LEAGUE;Georgia;Liga 3;16;2026-10-22;2026-10-31
+NEW;WOMEN_LEAGUE;Germany;2. Bundesliga - Femminile;8;2026-10-24;2026-11-01
+NEW;WOMEN_LEAGUE;Germany;Bundesliga - Femminile;8;2026-10-23;2026-10-29
+NEW;TEMPORARY;Germany;DFB Pokal;16;2026-10-27;2026-10-28
+NEW;TEMPORARY;Germany;DFB Pokal - Femminile;8;2026-10-30;2026-11-02
+NEW;YOUTH;Germany;DFB Youth League - Preliminari;52;2026-10-24;2026-11-01
+NEW;LEAGUE;Ghana;Division One League;24;2026-10-31;2026-11-02
+NEW;LEAGUE;Ghana;Premier League;18;2026-10-23;2026-11-01
+NEW;LEAGUE;Giamaica;Premier League;8;2026-10-20;2026-10-27
+NEW;LEAGUE;Gibilterra;National League;12;2026-10-23;2026-11-01
+NEW;LEAGUE;Giordania;Premier League;10;2026-10-22;2026-11-01
+NEW;TEMPORARY;Grecia;Coppa di Grecia;8;2026-10-27;2026-10-29
+NEW;WOMEN_LEAGUE;Grecia;Division A Femminile;12;2026-10-25;2026-11-01
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 1;10;2026-10-25;2026-11-01
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 10;13;2026-10-21;2026-10-31
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 2;10;2026-10-24;2026-11-01
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 3;10;2026-10-25;2026-11-01
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 4;10;2026-10-24;2026-11-01
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 5;10;2026-10-25;2026-11-01
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 6;12;2026-10-25;2026-11-01
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 7;12;2026-10-24;2026-11-01
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 8;12;2026-10-24;2026-11-01
+NEW;LEAGUE;Grecia;Gamma Ethniki - Group 9;10;2026-10-25;2026-11-01
+NEW;LEAGUE;Grecia;Super League;14;2026-10-24;2026-11-02
+NEW;LEAGUE;Grecia;Super League 2;16;2026-10-24;2026-11-02
+NEW;LEAGUE;Guatemala;Liga Nacional - Apertura;21;2026-10-20;2026-11-03
+NEW;LEAGUE;Honduras;Liga Nacional - Apertura;12;2026-10-24;2026-11-02
+NEW;LEAGUE;Hong Kong;Premier League;2;2026-10-30;2026-10-31
+NEW;YOUTH;Hong Kong;Premier League U22;5;2026-10-21;2026-10-28
+NEW;TEMPORARY;Hong Kong;Senior Shield;4;2026-10-24;2026-10-25
+NEW;TEMPORARY;Hungary;Coppa di Ungheria;16;2026-10-27;2026-10-29
+NEW;WOMEN_LEAGUE;Hungary;NB I Femminile;11;2026-10-24;2026-10-31
+NEW;LEAGUE;Hungary;NB III - Northeast;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Hungary;NB III - Northwest;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Hungary;NB III - Southeast;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Hungary;NB III - Southwest;14;2026-10-24;2026-10-31
+NEW;TEMPORARY;Iceland;Besta deild Femminile - Play-Offs Championship;3;2026-10-23;2026-10-23
+NEW;LEAGUE;Iceland;Besta deild karla - Gruppo Retrocessione;3;2026-10-24;2026-10-24
+NEW;LEAGUE;India;I-League;5;2026-10-30;2026-11-01
+NEW;LEAGUE;India;I-League 3;30;2026-10-22;2026-11-03
+NEW;LEAGUE;India;ISL;11;2026-10-23;2026-11-01
+NEW;LEAGUE;Indonesia;Championship;20;2026-10-23;2026-11-01
+NEW;LEAGUE;Iran;Azadegan League;20;2026-10-20;2026-11-02
+NEW;LEAGUE;Iran;Pro League Golfo Persico;18;2026-10-22;2026-10-31
+NEW;LEAGUE;Iraq;Stars League;20;2026-10-22;2026-10-31
+NEW;TEMPORARY;Irlanda;Division 1 - Play Off;4;2026-10-24;2026-10-27
+NEW;LEAGUE;Irlanda;National League;9;2026-10-24;2026-10-31
+NEW;WOMEN_LEAGUE;Irlanda;National League Femminile;6;2026-10-24;2026-10-25
+NEW;LEAGUE;Irlanda;Premier Division;10;2026-10-23;2026-10-30
+NEW;LEAGUE;Israele;Leumit League;16;2026-10-23;2026-11-02
+NEW;LEAGUE;Israele;Liga Alef North;19;2026-10-22;2026-11-02
+NEW;LEAGUE;Israele;Liga Alef South;18;2026-10-22;2026-11-02
+NEW;LEAGUE;Israele;Ligat ha'Al;14;2026-10-24;2026-11-02
+NEW;TEMPORARY;Israele;State Cup;14;2026-10-26;2026-10-28
+NEW;TEMPORARY;Israele;Toto Cup - Play Off;1;2026-10-29;2026-10-29
+NEW;YOUTH;Italy;Coppa Italia Primavera;16;2026-10-27;2026-10-28
+NEW;TEMPORARY;Italy;Coppa Italia Serie C;8;2026-10-27;2026-10-28
+NEW;TEMPORARY;Italy;Coppa Italia Serie D;16;2026-10-21;2026-10-28
+NEW;TEMPORARY;Italy;Kings Cup - Italy;12;2026-10-26;2026-11-02
+NEW;YOUTH;Italy;Primavera 1;20;2026-10-23;2026-11-02
+NEW;YOUTH;Italy;Primavera 2;32;2026-10-24;2026-10-31
+NEW;WOMEN_LEAGUE;Italy;Serie B Femminile;15;2026-10-24;2026-11-01
+NEW;LEAGUE;Italy;Serie D - Girone A;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Italy;Serie D - Girone B;19;2026-10-24;2026-11-01
+NEW;LEAGUE;Italy;Serie D - Girone C;18;2026-10-25;2026-11-02
+NEW;LEAGUE;Italy;Serie D - Girone D;19;2026-10-21;2026-11-01
+NEW;LEAGUE;Italy;Serie D - Girone E;18;2026-10-25;2026-11-01
+NEW;LEAGUE;Italy;Serie D - Girone F;18;2026-10-25;2026-11-01
+NEW;LEAGUE;Italy;Serie D - Girone G;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Italy;Serie D - Girone H;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Italy;Serie D - Girone I;18;2026-10-25;2026-11-01
+NEW;TEMPORARY;Japan;J.League Cup - Prima fase;4;2026-10-28;2026-10-28
+NEW;LEAGUE;Japan;J2 League;40;2026-10-21;2026-11-03
+NEW;LEAGUE;Japan;J3 League;39;2026-10-21;2026-11-03
+NEW;WOMEN_LEAGUE;Japan;Nadeshiko League Femminile;6;2026-10-25;2026-10-25
+NEW;WOMEN_LEAGUE;Japan;WE League Women;17;2026-10-21;2026-11-01
+NEW;LEAGUE;Kenya;Premier League;36;2026-10-20;2026-11-01
+NEW;LEAGUE;Kenya;Super League;10;2026-10-25;2026-10-26
+NEW;LEAGUE;Kosovo;Liga e Pare;28;2026-10-21;2026-11-01
+NEW;LEAGUE;Kosovo;Superliga;10;2026-10-23;2026-11-01
+NEW;LEAGUE;Kuwait;Division 1;3;2026-10-24;2026-10-24
+NEW;LEAGUE;Kuwait;Premier League;12;2026-10-23;2026-11-02
+NEW;LEAGUE;Laos;Lao League;10;2026-10-24;2026-11-01
+NEW;WOMEN_LEAGUE;Latvia;1. Liga Femminile;8;2026-10-21;2026-10-31
+NEW;LEAGUE;Lesotho;Premier League;8;2026-10-24;2026-10-25
+NEW;LEAGUE;Libano;Premier League;11;2026-10-23;2026-11-01
+NEW;LEAGUE;Liberia;LFA First Division;27;2026-10-21;2026-10-29
+NEW;LEAGUE;Libia;Premier League;26;2026-10-20;2026-11-03
+NEW;TEMPORARY;Liechtenstein;Liechtenstein Cup;4;2026-10-27;2026-11-03
+NEW;LEAGUE;Lussemburgo;BGL Ligue;16;2026-10-24;2026-10-31
+NEW;LEAGUE;Malawi;Super League;16;2026-10-23;2026-11-01
+NEW;TEMPORARY;Malesia;FA Cup;2;2026-10-23;2026-10-23
+NEW;LEAGUE;Malesia;Super League;4;2026-10-30;2026-11-01
+NEW;LEAGUE;Mali;Premiere Division;7;2026-10-31;2026-11-02
+NEW;LEAGUE;Malta;Challenge League;16;2026-10-23;2026-11-01
+NEW;LEAGUE;Malta;Premier League - Prima fase - Principale;18;2026-10-21;2026-11-01
+NEW;LEAGUE;Marocco;Botola 2;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Marocco;Botola Pro;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Martinica;Trophee Gerard Janvion;8;2026-10-24;2026-10-31
+NEW;LEAGUE;Mauritania;Ligue 1;7;2026-10-20;2026-10-29
+NEW;LEAGUE;Mauritius;Super League;5;2026-10-31;2026-10-31
+NEW;TEMPORARY;Mexico;Kings Cup - Mexico - Play Off;1;2026-10-25;2026-10-25
+NEW;WOMEN_LEAGUE;Mexico;Liga MX Femminile - Apertura;22;2026-10-20;2026-11-03
+NEW;YOUTH;Mexico;Liga MX U21 - Apertura;27;2026-10-20;2026-11-01
+NEW;LEAGUE;Mexico;Liga Premier Serie A;16;2026-10-21;2026-11-03
+NEW;LEAGUE;Mexico;Liga Premier Serie B;4;2026-10-25;2026-11-01
+NEW;LEAGUE;Mexico;Primera Premier;19;2026-10-20;2026-11-01
+NEW;LEAGUE;Moldova;Liga 1;10;2026-10-23;2026-10-31
+NEW;TEMPORARY;Moldova;Moldovia Coppa;8;2026-10-27;2026-10-28
+NEW;INTERNATIONAL;Mondo;Amichevoli Internazionali - Femminile;1;2026-10-29;2026-10-29
+NEW;INTERNATIONAL;Mondo;Amichevoli per Club;1;2026-10-21;2026-10-21
+NEW;INTERNATIONAL;Mondo;FIFA Women's Champions Cup;1;2026-10-25;2026-10-25
+NEW;INTERNATIONAL;Mondo;Kings League - MENA;5;2026-10-23;2026-10-23
+NEW;INTERNATIONAL;Mondo;Kings League - MENA - Play Off;5;2026-10-26;2026-10-30
+NEW;INTERNATIONAL;Mondo;Mondiali U17 - Femminile;24;2026-10-20;2026-10-25
+NEW;INTERNATIONAL;Mondo;Mondiali U17 - Femminile - Play Off;8;2026-10-28;2026-10-29
+NEW;LEAGUE;Mongolia;Premier League;12;2026-10-24;2026-11-02
+NEW;LEAGUE;Mozambico;Mocambola;7;2026-10-21;2026-10-28
+NEW;LEAGUE;Myanmar;M League;11;2026-10-24;2026-11-01
+NEW;LEAGUE;Netherlands;Derde Divisie;19;2026-10-23;2026-10-31
+NEW;YOUTH;Netherlands;Divisie 1 U19 - Autunno;9;2026-10-24;2026-10-31
+NEW;YOUTH;Netherlands;Divisie 1 U21 - Autunno;11;2026-10-24;2026-11-03
+NEW;TEMPORARY;Netherlands;KNVB Beker;26;2026-10-27;2026-10-29
+NEW;LEAGUE;Netherlands;Tweede Divisie;9;2026-10-24;2026-10-24
+NEW;LEAGUE;Nicaragua;Liga Primera - Apertura;11;2026-10-21;2026-10-30
+NEW;LEAGUE;Niger;Super Ligue;10;2026-10-21;2026-10-30
+NEW;LEAGUE;Nigeria;NNL;1;2026-10-31;2026-10-31
+NEW;LEAGUE;Nigeria;NPFL;18;2026-10-24;2026-11-01
+NEW;INTERNATIONAL;Nord E Centro America;CONCACAF Caribbean Cup - Play Off;2;2026-10-23;2026-10-29
+NEW;INTERNATIONAL;Nord E Centro America;CONCACAF Central American Cup - Play Off;4;2026-10-22;2026-10-30
+NEW;INTERNATIONAL;Nord E Centro America;CONCACAF Central American Cup - Play-in;4;2026-10-21;2026-10-29
+NEW;WOMEN_LEAGUE;North Macedonia;1. WFL Femminile;10;2026-10-21;2026-11-03
+NEW;LEAGUE;North Macedonia;2. MFL;14;2026-10-24;2026-11-01
+NEW;TEMPORARY;North Macedonia;Coppa;7;2026-10-28;2026-10-28
+NEW;TEMPORARY;Northern Ireland;Irish League Cup;12;2026-10-20;2026-10-21
+NEW;TEMPORARY;Norway;Coppa di Norvegia - Femminile;11;2026-10-20;2026-10-21
+NEW;WOMEN_LEAGUE;Norway;Division 1 Femminile;7;2026-10-21;2026-10-24
+NEW;YOUTH;Norway;Nasjonal U19 CL - Play Off;1;2026-10-29;2026-10-29
+NEW;TEMPORARY;Norway;NM Cup;13;2026-10-28;2026-10-28
+NEW;WOMEN_LEAGUE;Norway;Toppserien - Femminile;12;2026-10-23;2026-11-02
+NEW;TEMPORARY;Nuova Zelanda;National League - Play-Offs Championship;10;2026-10-23;2026-11-01
+NEW;WOMEN_LEAGUE;Nuova Zelanda;National League Femminile;7;2026-10-23;2026-11-01
+NEW;LEAGUE;Oman;Professional League;7;2026-10-23;2026-10-24
+NEW;TEMPORARY;Oman;Sultan Cup;6;2026-10-28;2026-10-31
+NEW;LEAGUE;Panama;LPF - Apertura;19;2026-10-20;2026-11-01
+NEW;TEMPORARY;Paraguay;Copa de Primera - Clausura;7;2026-10-23;2026-11-01
+NEW;LEAGUE;Peru;Liga 2 - Gruppo Promozione;12;2026-10-24;2026-10-31
+NEW;LEAGUE;Peru;Liga 2 - Gruppo Retrocessione;2;2026-10-23;2026-10-31
+NEW;TEMPORARY;Peru;Liga Femminile - Clausura - Play Offs;2;2026-10-24;2026-10-25
+NEW;YOUTH;Poland;Central Youth League;16;2026-10-24;2026-10-31
+NEW;TEMPORARY;Poland;Coppa di Polonia;16;2026-10-27;2026-10-29
+NEW;WOMEN_LEAGUE;Poland;Ekstraliga Femminile;9;2026-10-21;2026-11-03
+NEW;TEMPORARY;Poland;Polish Cup Femminile;31;2026-10-23;2026-10-25
+NEW;LEAGUE;Portugal;Campeonato de Portugal - Group A;14;2026-10-25;2026-11-01
+NEW;LEAGUE;Portugal;Campeonato de Portugal - Group B;14;2026-10-25;2026-11-01
+NEW;LEAGUE;Portugal;Campeonato de Portugal - Group C;14;2026-10-25;2026-11-01
+NEW;LEAGUE;Portugal;Campeonato de Portugal - Group D;14;2026-10-24;2026-11-01
+NEW;YOUTH;Portugal;Campeonato Nacional U19;18;2026-10-24;2026-10-31
+NEW;TEMPORARY;Portugal;Coppa di Lega;4;2026-10-27;2026-10-29
+NEW;LEAGUE;Portugal;Liga 3;20;2026-10-23;2026-11-01
+NEW;WOMEN_LEAGUE;Portugal;Liga BPI Femminile;10;2026-10-24;2026-11-03
+NEW;YOUTH;Portugal;Liga Next Gen U23;20;2026-10-20;2026-11-03
+NEW;LEAGUE;Qatar;QSL;12;2026-10-22;2026-10-31
+NEW;LEAGUE;Qatar;QSL 2;5;2026-10-28;2026-10-29
+NEW;LEAGUE;Repubblica Dominicana;LDF - Apertura;5;2026-10-23;2026-11-01
+NEW;TEMPORARY;Romania;Coppa di Romania;12;2026-10-27;2026-10-29
+NEW;LEAGUE;Romania;Liga 3 - Seria 1;12;2026-10-23;2026-10-31
+NEW;LEAGUE;Romania;Liga 3 - Seria 2;12;2026-10-23;2026-10-31
+NEW;LEAGUE;Romania;Liga 3 - Seria 3;12;2026-10-23;2026-10-31
+NEW;LEAGUE;Romania;Liga 3 - Seria 4;12;2026-10-23;2026-10-31
+NEW;LEAGUE;Romania;Liga 3 - Seria 5;12;2026-10-23;2026-10-31
+NEW;LEAGUE;Romania;Liga 3 - Seria 6;12;2026-10-23;2026-10-31
+NEW;LEAGUE;Romania;Liga 3 - Seria 7;12;2026-10-23;2026-10-31
+NEW;LEAGUE;Romania;Liga 3 - Seria 8;12;2026-10-23;2026-10-31
+NEW;WOMEN_LEAGUE;Romania;Superliga Women;12;2026-10-20;2026-11-01
+NEW;LEAGUE;Ruanda;Premier League;26;2026-10-21;2026-11-03
+NEW;TEMPORARY;Russia;Coppa di Russia - Fase a Gironi;8;2026-10-27;2026-10-29
+NEW;TEMPORARY;Russia;Coppa di Russia - Regions Path;1;2026-11-03;2026-11-03
+NEW;LEAGUE;Russia;FNL 2 - Division A Gold - Autunno;10;2026-10-24;2026-10-31
+NEW;TEMPORARY;Russia;FNL 2 - Division A Silver - Spareggio;2;2026-10-21;2026-10-25
+NEW;LEAGUE;Russia;FNL 2 - Division B - Group 1;14;2026-10-24;2026-10-31
+NEW;LEAGUE;Russia;FNL 2 - Division B - Group 2;13;2026-10-24;2026-11-01
+NEW;LEAGUE;Russia;FNL 2 - Division B - Group 3;16;2026-10-23;2026-10-31
+NEW;LEAGUE;Russia;FNL 2 - Division B - Group 4 - Gruppo Retrocessione;6;2026-10-24;2026-11-01
+NEW;TEMPORARY;Russia;FNL 2 - Division B - Group 4 - Play-Offs Championship;6;2026-10-25;2026-11-01
+NEW;WOMEN_LEAGUE;Russia;Supreme Division Femminile;12;2026-10-24;2026-10-31
+NEW;YOUTH;Russia;Youth League;16;2026-10-23;2026-10-30
+NEW;LEAGUE;San Marino;Campionato Sammarinese;16;2026-10-23;2026-11-01
+NEW;TEMPORARY;San Marino;Coppa Titano;7;2026-10-27;2026-10-28
+NEW;LEAGUE;Saudi Arabia;Division 1;24;2026-10-20;2026-11-03
+NEW;LEAGUE;Saudi Arabia;Division 2;45;2026-10-23;2026-11-03
+NEW;WOMEN_LEAGUE;Saudi Arabia;Premier League Femminile;8;2026-10-22;2026-10-31
+NEW;TEMPORARY;Scotland;Challenge Cup - Play Off;16;2026-11-03;2026-11-03
+NEW;LEAGUE;Scotland;Championship;12;2026-10-20;2026-10-31
+NEW;TEMPORARY;Scotland;Coppa di Scozia;20;2026-10-24;2026-10-31
+NEW;LEAGUE;Scotland;Highland League;12;2026-10-24;2026-10-31
+NEW;TEMPORARY;Scotland;League Cup - Play Off;2;2026-10-31;2026-11-01
+NEW;LEAGUE;Scotland;League One;11;2026-10-24;2026-10-31
+NEW;LEAGUE;Scotland;League Two;5;2026-10-31;2026-10-31
+NEW;LEAGUE;Scotland;Lowland League;32;2026-10-20;2026-10-31
+NEW;WOMEN_LEAGUE;Scotland;SWPL 1 Femminile;10;2026-10-21;2026-10-25
+NEW;TEMPORARY;Scotland;SWPL Cup Women - Play Off;4;2026-10-30;2026-11-01
+NEW;LEAGUE;Senegal;Ligue 1;8;2026-10-24;2026-10-25
+NEW;TEMPORARY;Serbia;Coppa di Serbia;12;2026-10-27;2026-10-28
+NEW;LEAGUE;Serbia;Srpska Liga - Belgrade;14;2026-10-23;2026-10-31
+NEW;LEAGUE;Serbia;Srpska Liga - East;16;2026-10-23;2026-11-01
+NEW;LEAGUE;Serbia;Srpska Liga - Vojvodina;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Serbia;Srpska Liga - West;16;2026-10-24;2026-11-01
+NEW;YOUTH;Serbia;U19 League;14;2026-10-24;2026-10-31
+NEW;LEAGUE;Seychelles;Premier League;10;2026-10-22;2026-10-31
+NEW;LEAGUE;Sierra Leone;Premier League;15;2026-10-21;2026-11-01
+NEW;LEAGUE;Singapore;Premier League;9;2026-10-21;2026-11-01
+NEW;LEAGUE;Singapore;Premier League 2;1;2026-10-20;2026-10-20
+NEW;LEAGUE;Siria;Premier League;14;2026-10-23;2026-11-02
+NEW;LEAGUE;Slovakia;3. Liga - Central;14;2026-10-24;2026-11-01
+NEW;LEAGUE;Slovakia;3. Liga - East;14;2026-10-24;2026-10-31
+NEW;LEAGUE;Slovakia;4. liga - Bratislava;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Slovakia;4. liga - Central;14;2026-10-24;2026-11-01
+NEW;LEAGUE;Slovakia;4. liga - East;14;2026-10-24;2026-11-01
+NEW;LEAGUE;Slovakia;4. liga - West;16;2026-10-24;2026-11-01
+NEW;TEMPORARY;Slovakia;Coppa di Slovacchia;2;2026-10-20;2026-10-21
+NEW;WOMEN_LEAGUE;Slovakia;Orange Liga Women;9;2026-10-21;2026-10-31
+NEW;WOMEN_LEAGUE;Slovenia;1. SZNL Femminile;15;2026-10-22;2026-11-01
+NEW;LEAGUE;Slovenia;3. SNL - East;13;2026-10-28;2026-10-31
+NEW;LEAGUE;Slovenia;3. SNL - West;14;2026-10-24;2026-10-31
+NEW;TEMPORARY;Slovenia;Coppa di Slovenia;16;2026-10-23;2026-10-25
+NEW;LEAGUE;South Korea;K League 1 - Gruppo Retrocessione;3;2026-10-31;2026-11-01
+NEW;LEAGUE;South Korea;K3 League;7;2026-10-31;2026-11-01
+NEW;LEAGUE;South Korea;K4 League;7;2026-10-25;2026-11-01
+NEW;WOMEN_LEAGUE;South Korea;WK League Femminile;6;2026-10-28;2026-10-31
+NEW;TEMPORARY;Spain;Copa de la Reina - Femminile;1;2026-11-03;2026-11-03
+NEW;TEMPORARY;Spain;Copa del Rey;56;2026-10-27;2026-10-29
+NEW;WOMEN_LEAGUE;Spain;Liga F - Femminile;16;2026-10-23;2026-11-02
+NEW;WOMEN_LEAGUE;Spain;Primera Federacion - Femminile;7;2026-10-31;2026-11-01
+NEW;LEAGUE;Spain;Primera RFEF - Group 1;20;2026-10-23;2026-11-01
+NEW;LEAGUE;Spain;Primera RFEF - Group 2;20;2026-10-23;2026-11-02
+NEW;LEAGUE;Spain;Segunda RFEF - Group 1;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Segunda RFEF - Group 2;19;2026-10-21;2026-11-01
+NEW;LEAGUE;Spain;Segunda RFEF - Group 3;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Segunda RFEF - Group 4;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Segunda RFEF - Group 5;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 1;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 10;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 11;19;2026-10-21;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 12;27;2026-10-21;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 13;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 14;22;2026-10-21;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 15;18;2026-10-23;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 16;18;2026-10-25;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 17;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 18;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 2;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 3;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 4;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 5;19;2026-10-21;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 6;20;2026-10-20;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 7;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 8;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Spain;Tercera RFEF - Group 9;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Sri Lanka;Super League - Gruppo Retrocessione;3;2026-10-20;2026-10-28
+NEW;INTERNATIONAL;Sud America;Copa Libertadores - Play Off;2;2026-10-22;2026-10-23
+NEW;INTERNATIONAL;Sud America;Copa Libertadores - Women;10;2026-10-20;2026-10-23
+NEW;INTERNATIONAL;Sud America;Copa Libertadores - Women - Play Off;6;2026-10-24;2026-10-29
+NEW;INTERNATIONAL;Sud America;Copa Sudamericana - Play Off;2;2026-10-21;2026-10-22
+NEW;LEAGUE;Sudafrica;Betway Premiership;8;2026-10-30;2026-10-31
+NEW;TEMPORARY;Sudafrica;Carling Knockout;8;2026-10-24;2026-10-28
+NEW;LEAGUE;Sudafrica;Diski Challenge;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Sudafrica;Motsepe Foundation Championship;16;2026-10-23;2026-11-01
+NEW;WOMEN_LEAGUE;Sudafrica;Super League Women;16;2026-10-23;2026-11-01
+NEW;LEAGUE;Suriname;SML;10;2026-10-22;2026-11-01
+NEW;WOMEN_LEAGUE;Sweden;Allsvenskan - Femminile;14;2026-10-23;2026-11-02
+NEW;TEMPORARY;Sweden;Division 2 - Norra Götaland - Spareggio;2;2026-10-24;2026-10-31
+NEW;TEMPORARY;Sweden;Division 2 - Norra Svealand - Spareggio;2;2026-10-24;2026-10-31
+NEW;LEAGUE;Sweden;Division 2 - Promotion Group;4;2026-10-24;2026-11-01
+NEW;TEMPORARY;Sweden;Division 2 - Södra Svealand - Spareggio;2;2026-10-24;2026-11-01
+NEW;TEMPORARY;Sweden;Division 2 - Västra Götaland - Spareggio;2;2026-10-24;2026-10-31
+NEW;WOMEN_LEAGUE;Sweden;Elitettan Femminile;14;2026-10-24;2026-11-01
+NEW;TEMPORARY;Switzerland;1.Liga Classic Cup;2;2026-10-21;2026-10-28
+NEW;LEAGUE;Switzerland;1.Liga Gruppo 1;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Switzerland;1.Liga Gruppo 2;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Switzerland;1.Liga Gruppo 3;16;2026-10-24;2026-11-01
+NEW;WOMEN_LEAGUE;Switzerland;Super League Femminile;5;2026-10-30;2026-11-01
+NEW;LEAGUE;Tagikistan;Vysshaya Liga;13;2026-10-20;2026-11-01
+NEW;WOMEN_LEAGUE;Taiwan;Mulan Football League Femminile;8;2026-10-24;2026-10-31
+NEW;LEAGUE;Taiwan;Premier League;8;2026-10-25;2026-11-01
+NEW;LEAGUE;Tanzania;Ligi Kuu Bara;25;2026-10-23;2026-11-02
+NEW;TEMPORARY;Thailandia;Thai FA Cup;32;2026-10-20;2026-10-22
+NEW;LEAGUE;Thailandia;Thai League 1;14;2026-10-24;2026-11-02
+NEW;LEAGUE;Thailandia;Thai League 2;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Tunisia;Ligue 2;28;2026-10-26;2026-11-01
+NEW;LEAGUE;Tunisia;Ligue Professionnelle 1;8;2026-10-23;2026-11-03
+NEW;LEAGUE;Turkey;2. Lig Red Group;16;2026-10-24;2026-11-01
+NEW;LEAGUE;Turkey;2. Lig White Group;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Turkey;3. Lig Group 1;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Turkey;3. Lig Group 2;18;2026-10-24;2026-11-01
+NEW;LEAGUE;Turkey;3. Lig Group 3;17;2026-10-23;2026-11-01
+NEW;TEMPORARY;Turkey;Coppa di Turchia - Qualificazione;36;2026-10-27;2026-10-29
+NEW;WOMEN_LEAGUE;Turkey;Super Lig Femminile;24;2026-10-23;2026-11-02
+NEW;YOUTH;Turkey;U19 League;16;2026-10-25;2026-11-02
+NEW;LEAGUE;Turkmenistan;Yokary Liga;6;2026-10-21;2026-11-01
+NEW;LEAGUE;Uganda;Big League;12;2026-10-25;2026-11-01
+NEW;LEAGUE;Uganda;Premier League;30;2026-10-20;2026-11-03
+NEW;WOMEN_LEAGUE;Ukraine;Championship Femminile;8;2026-10-23;2026-11-01
+NEW;TEMPORARY;Ukraine;Coppa di Ucraina;8;2026-10-27;2026-10-29
+NEW;LEAGUE;Ukraine;Druha Liga;17;2026-10-20;2026-11-01
+NEW;LEAGUE;Ukraine;Premier League 2;17;2026-10-21;2026-11-03
+NEW;YOUTH;Ukraine;U19 League;14;2026-10-21;2026-10-28
+NEW;TEMPORARY;Uruguay;Copa Uruguay - Play Off;4;2026-10-21;2026-10-30
+NEW;LEAGUE;Uruguay;Liga AUF Uruguaya - Clausura;16;2026-10-20;2026-11-03
+NEW;LEAGUE;Uruguay;Segunda Division;11;2026-10-24;2026-11-01
+NEW;TEMPORARY;USA;Coppa US Open;1;2026-10-22;2026-10-22
+NEW;TEMPORARY;USA;MLS Next Pro - Play Off;5;2026-10-25;2026-10-31
+NEW;WOMEN_LEAGUE;USA;NWSL Femminile;8;2026-10-24;2026-10-26
+NEW;WOMEN_LEAGUE;USA;USL Super League Femminile;6;2026-10-23;2026-11-01
+NEW;LEAGUE;Uzbekistan;Pro Liga;17;2026-10-20;2026-11-03
+NEW;LEAGUE;Uzbekistan;Super League;15;2026-10-22;2026-11-01
+NEW;TEMPORARY;Uzbekistan;Uzbekistan Cup;4;2026-10-20;2026-10-21
+NEW;TEMPORARY;Venezuela;Copa Venezuela - Play Off;8;2026-10-21;2026-10-23
+NEW;LEAGUE;Venezuela;Liga FUTVE - Clausura - Quadrangolare;13;2026-10-24;2026-11-03
+NEW;LEAGUE;Venezuela;Liga FUTVE 2;8;2026-10-24;2026-10-25
+NEW;TEMPORARY;Venezuela;Liga FUTVE 2 - Partita Aggiuntiva;1;2026-10-28;2026-10-28
+NEW;TEMPORARY;Venezuela;Liga FUTVE 2 - Play Off;3;2026-11-01;2026-11-01
+NEW;WOMEN_LEAGUE;Vietnam;National League Femminile;3;2026-10-23;2026-10-23
+NEW;LEAGUE;Vietnam;V.League 1;14;2026-10-22;2026-11-01
+NEW;LEAGUE;Vietnam;V.League 2;21;2026-10-22;2026-11-01
+NEW;WOMEN_LEAGUE;Wales;Premier Femminile;8;2026-10-25;2026-11-01
+NEW;LEAGUE;Zambia;Super League;21;2026-10-24;2026-11-01
+NEW;TEMPORARY;Zimbabwe;Chibuku Super Cup;2;2026-10-31;2026-11-01
+NEW;LEAGUE;Zimbabwe;Premier Soccer League;9;2026-10-24;2026-10-29
