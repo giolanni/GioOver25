@@ -93,34 +93,30 @@ def read_discovery(source: Path) -> list[dict[str, str]]:
         r"^(?P<country>[^;]+);(?P<league>[^;]+);"
         r"matches=(?P<matches>\\d+);"
         r"(?P<first>\\d{4}-\\d{2}-\\d{2})\\.\\.(?P<last>\\d{4}-\\d{2}-\\d{2})"
-        r"\\s+->\\s+(?P<kind>\\S+)\\s*$"
+        r"\\s*->\\s*(?P<kind>LEAGUE|WOMEN_LEAGUE|YOUTH|TEMPORARY|INTERNATIONAL)\\s*$"
     )
-    in_new = False
     with source.open("r", encoding="utf-8-sig", errors="replace") as handle:
         for raw in handle:
-            line = raw.strip()
-            if line == "[NEW]":
-                in_new = True
-                continue
-            if line.startswith("[") and line != "[NEW]":
-                in_new = False
-            if not in_new or not line:
-                continue
-            match = pattern.match(line)
+            match = pattern.match(raw.strip())
             if not match:
                 continue
             data = match.groupdict()
             rows.append({
                 "Status": "NEW",
                 "KindOrLeagueId": data["kind"],
-                "Country": data["country"],
-                "League": data["league"],
+                "Country": data["country"].strip(),
+                "League": data["league"].strip(),
                 "Matches": data["matches"],
                 "FirstDate": data["first"],
                 "LastDate": data["last"],
             })
+
     if not rows:
-        raise SystemExit(f"Nessuna riga NEW leggibile nel log: {source}")
+        raise SystemExit(
+            f"Nessuna riga discovery leggibile nel log: {source}. "
+            "Formato atteso: Country;League;matches=N;YYYY-MM-DD..YYYY-MM-DD -> KIND"
+        )
+    print(f"[PARSE] {len(rows)} righe NEW recuperate dal log")
     return rows
 
 def main() -> None:
