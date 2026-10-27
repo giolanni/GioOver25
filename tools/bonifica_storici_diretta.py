@@ -442,7 +442,12 @@ def main() -> int:
             overlap_ratio = rank[0]
             equal, missing, extra, score_diff = compare(lid, local, remote)
             safe = overlap_ratio >= args.min_overlap and equal > 0
-            status = "OK" if not missing and not extra and not score_diff else "DIFFERENCES"
+            if not missing and not extra and not score_diff:
+                status = "OK"
+            elif missing and not extra and not score_diff and equal == len(local):
+                status = "SAFE_MISSING"
+            else:
+                status = "DIFFERENCES"
             outcome = LeagueOutcome(lid, status, len(local), len(remote), equal, len(missing), len(extra), len(score_diff))
             detail = [
                 prefix,
