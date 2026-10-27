@@ -18,7 +18,7 @@ class FlashscoreMatch:
 def fetch_page(url: str, timeout: int = 20) -> str:
     req = Request(url, headers={"User-Agent":"Mozilla/5.0 (GioOver25 FlashscoreHistory)","Accept":"text/html,application/xhtml+xml","Accept-Language":"en-US,en;q=0.9"})
     with urlopen(req, timeout=timeout) as response:
-        return response.read().decode(response.headers.get_content_charset() or "utf-8", errors="replace")
+        return response.read().decode("utf-8", errors="replace")
 
 def extract_ids(html: str) -> dict[str, str]:
     patterns = {
