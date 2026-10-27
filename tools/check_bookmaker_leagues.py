@@ -61,12 +61,11 @@ def present(book: str, league: str, status: int, body: str) -> bool:
     if status != 200 or not body:
         return False
     text = re.sub(r"<[^>]+>", " ", body)
-    text = re.sub(r"\\s+", " ", text)
+    text = re.sub(r"\s+", " ", text)
     needle = norm(league)
     hay = norm(text)
     if needle and needle in hay:
         return True
-    # SNAI/DAZN: una pagina valida di competizione con mercati/eventi e URL specifico
     if book in {"SNAI", "DAZNBET"}:
         markers = ("1x2", "under over", "doppia chance", "eventi")
         return sum(marker in hay for marker in markers) >= 2
@@ -74,10 +73,45 @@ def present(book: str, league: str, status: int, body: str) -> bool:
 
 
 def latest_discovery() -> Path:
-    files = sorted(DEBUG.glob("discover_leagues_*.csv"))
-    if not files:
-        raise SystemExit("Nessun discover_leagues_*.csv trovato in data/debug")
-    return files[-1]
+    csv_files = sorted(DEBUG.glob("discover_leagues_*.csv"))
+    if csv_files:
+        return csv_files[-1]
+    log_files = sorted(DEBUG.glob("discover_leagues_*.log"))
+    if log_files:
+        return log_files[-1]
+    raise SystemExit("Nessun discover_leagues_*.csv o discover_leagues_*.log trovato in data/debug")
+
+
+def read_discovery(source: Path) -> list[dict[str, str]]:
+    if source.suffix.casefold() == ".csv":
+        with source.open("r", encoding="utf-8-sig", newline="") as handle:
+            return list(csv.DictReader(handle, delimiter=";"))
+
+    rows: list[dict[str, str]] = []
+    pattern = re.compile(
+        r"^NEW\s+(?P<kind>\S+)\s+\|\s+"
+        r"(?P<country>.*?)\s+\|\s+(?P<league>.*?)\s+\|\s+"
+        r"matches=(?P<matches>\d+)\s+\|\s+"
+        r"(?P<first>\d{4}-\d{2}-\d{2})\.\.(?P<last>\d{4}-\d{2}-\d{2})\s*$"
+    )
+    with source.open("r", encoding="utf-8-sig", errors="replace") as handle:
+        for raw in handle:
+            match = pattern.match(raw.strip())
+            if not match:
+                continue
+            data = match.groupdict()
+            rows.append({
+                "Status": "NEW",
+                "KindOrLeagueId": data["kind"],
+                "Country": data["country"],
+                "League": data["league"],
+                "Matches": data["matches"],
+                "FirstDate": data["first"],
+                "LastDate": data["last"],
+            })
+    if not rows:
+        raise SystemExit(f"Nessuna riga NEW leggibile nel log: {source}")
+    return rows
 
 
 def main() -> None:
@@ -87,11 +121,11 @@ def main() -> None:
     args = parser.parse_args()
 
     source = args.input or latest_discovery()
+    print(f"[INPUT] {source}")
+    rows = read_discovery(source)
+
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     output = DEBUG / f"bookmaker_leagues_{stamp}.csv"
-
-    with source.open("r", encoding="utf-8-sig", newline="") as handle:
-        rows = list(csv.DictReader(handle, delimiter=";"))
 
     allowed = {"LEAGUE"}
     if args.include_women:
@@ -104,7 +138,6 @@ def main() -> None:
         urls = bookmaker_urls(row["Country"], row["League"])
         found = {}
         for book, url in urls.items():
-            # Betsson e' una pagina paese: una sola richiesta viene riusata per tutte le leghe del paese.
             key = (book, url)
             if key not in cache:
                 cache[key] = fetch(url)
