@@ -1,0 +1,10 @@
+[1/1] Italy_SerieC_GironeC
+status=DIFFERENCES
+tournament=Serie C - Group C country=Italy tournament_id=f3Mw8tKH stage=embedded
+source=https://www.diretta.it/calcio/italia/serie-c-girone-c/risultati/
+team_overlap=1.000
+local=102 remote=104 equal=102 missing_local=2 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-10-17;Inter U23;Monopoli;2;4
+2026-10-24;Inter U23;Sorrento;1;1

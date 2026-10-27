@@ -1,0 +1,6 @@
+[1/1] Italy_SerieB
+status=OK
+tournament=Serie B country=Italy tournament_id=Eu36Dpjt stage=embedded
+source=https://www.diretta.it/calcio/italia/serie-b/risultati/
+team_overlap=1.000
+local=80 remote=80 equal=80 missing_local=0 extra_local=0 score_diff=0

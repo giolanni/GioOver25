@@ -1,0 +1,16 @@
+[1/1] Italy_SerieC_GironeB
+status=DIFFERENCES
+tournament=Serie C - Group B country=Italy tournament_id=nwJV92k5 stage=embedded
+source=https://www.diretta.it/calcio/italia/serie-c-girone-b/risultati/
+team_overlap=1.000
+local=108 remote=106 equal=104 missing_local=2 extra_local=4 score_diff=0
+
+MISSING_LOCAL:
+2026-10-18;Gubbio;Atalanta U23;0;2
+2026-10-24;Atalanta U23;Campobasso;1;2
+
+EXTRA_LOCAL:
+2026-08-22;Pescara;Vis Pesaro;2;0
+2026-10-10;Pineto;Reggiana;2;0
+2026-08-22;Guidonia;Gubbio;3;0
+2026-08-21;Vado;Atalanta U23;2;0

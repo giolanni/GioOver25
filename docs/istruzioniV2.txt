@@ -61,6 +61,10 @@ python getresults.py --date 2026-09-28 --dry-run
 Import risultati
 python -m gioover25.append_results data/input_risultati/risultati.csv
 
+#TROVARE RISULTATI MANCANTI
+python -m gioover25.missing_results
+python -m gioover25.missing_results --csv "data\debug\risultati\risultati_mancanti.csv"
+
 Ranking solo v13:
 python -m gioover25.rank_matches_v2 data/input_partite/partite.csv --engine v13
 
@@ -88,10 +92,6 @@ python -m gioover25.rebuild_ranking_history --engine all
 python -m gioover25.rebuild_ranking_history --engine v13
 python -m gioover25.rebuild_ranking_history --engine v20
 python -m gioover25.rebuild_ranking_history --engine v21
-
-#TROVARE RISULTATI MANCANTI
-python -m gioover25.missing_results
-python -m gioover25.missing_results --csv "data\debug\risultati\risultati_mancanti.csv"
 
 # Solo fascia ALTA
 python -m gioover25.missing_results --band ALTA

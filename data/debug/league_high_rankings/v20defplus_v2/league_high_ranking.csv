@@ -1,9 +1,9 @@
 ﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
-1;v20defplus_v2;Austria_Karnten;20;5;2026-09-04;2026-10-24;25;80.0
-2;v20defplus_v2;Norway_3rdDivision_Group5;18;5;2026-08-29;2026-10-25;23;78.26
-3;v20defplus_v2;Germany_Oberliga_SchleswigHolstein;17;2;2026-08-30;2026-10-24;19;89.47
-4;v20defplus_v2;Norway_3rdDivision_Group1;17;5;2026-09-01;2026-10-24;22;77.27
-5;v20defplus_v2;Norway_3rdDivision_Group2;14;4;2026-08-31;2026-10-24;18;77.78
+1;v20defplus_v2;Austria_Karnten;23;5;2026-09-04;2026-10-26;28;82.14
+2;v20defplus_v2;Norway_3rdDivision_Group1;18;5;2026-09-01;2026-10-26;23;78.26
+3;v20defplus_v2;Norway_3rdDivision_Group5;18;5;2026-08-29;2026-10-25;23;78.26
+4;v20defplus_v2;Germany_Oberliga_SchleswigHolstein;17;2;2026-08-30;2026-10-24;19;89.47
+5;v20defplus_v2;Norway_3rdDivision_Group2;14;5;2026-08-31;2026-10-26;19;73.68
 6;v20defplus_v2;Austria_Tirol;13;3;2026-09-04;2026-10-24;16;81.25
 7;v20defplus_v2;Austria_Regionalliga_North;12;2;2026-09-04;2026-10-24;14;85.71
 8;v20defplus_v2;Poland_IIILiga_Group1;12;4;2026-09-05;2026-10-24;16;75.0

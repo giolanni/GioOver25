@@ -1,0 +1,10 @@
+[1/1] Italy_SerieC_GironeA
+status=DIFFERENCES
+tournament=Serie C - Group A country=Italy tournament_id=ng1EBOKh stage=embedded
+source=https://www.diretta.it/calcio/italia/serie-c-girone-a/risultati/
+team_overlap=1.000
+local=101 remote=103 equal=101 missing_local=2 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-10-19;Juventus U23;Renate;2;1
+2026-10-25;Trento;Juventus U23;2;1

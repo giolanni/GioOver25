@@ -1,0 +1,14 @@
+[1/1] Italy_SerieB
+status=DIFFERENCES
+tournament=Serie B country=Italy tournament_id=Eu36Dpjt stage=embedded
+source=https://www.diretta.it/calcio/italia/serie-b/risultati/
+team_overlap=1.000
+local=74 remote=80 equal=74 missing_local=6 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-08-22;Benevento;Modena;1;2
+2026-08-22;Südtirol;Entella;1;0
+2026-08-21;L.R. Vicenza;Catanzaro;3;2
+2026-08-22;Avellino;Arezzo;1;2
+2026-08-22;Empoli;Cremonese;1;0
+2026-08-22;Carrarese;Mantova;1;2
