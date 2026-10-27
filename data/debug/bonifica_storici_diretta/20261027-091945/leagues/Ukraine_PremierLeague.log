@@ -1,0 +1,6 @@
+[232/264] Ukraine_PremierLeague
+status=OK
+tournament=Premier League country=Ukraine tournament_id=l6go6y74 stage=embedded
+source=https://www.diretta.it/calcio/ucraina/premier-league/risultati/
+team_overlap=1.000
+local=77 remote=77 equal=77 missing_local=0 extra_local=0 score_diff=0

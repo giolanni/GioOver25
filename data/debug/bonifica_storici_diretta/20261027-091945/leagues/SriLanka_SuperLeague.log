@@ -1,0 +1,13 @@
+[215/264] SriLanka_SuperLeague
+status=DIFFERENCES
+tournament=Super League country=Sri Lanka tournament_id=8O2Noqwh stage=embedded
+source=https://www.diretta.it/calcio/sri-lanka/super-league/risultati/
+team_overlap=1.000
+local=53 remote=55 equal=52 missing_local=2 extra_local=0 score_diff=1
+
+MISSING_LOCAL:
+2026-10-19;New Young's SC;Ratnam;0;3
+2026-10-20;Blue Eagles;Defenders FC;2;1
+
+SCORE_DIFF:
+2026-10-12;Sea Hawks;Colombo;LOCAL=1-1;DIRETTA=1-2

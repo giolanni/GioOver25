@@ -1,0 +1,9 @@
+[140/264] Indonesia_SuperLeague
+status=DIFFERENCES
+tournament=Super League country=Indonesia tournament_id=2ynqQ9rm stage=embedded
+source=https://www.diretta.it/calcio/indonesia/super-league/risultati/
+team_overlap=1.000
+local=61 remote=61 equal=60 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-09-20;Borneo;Bali United;LOCAL=2-1;DIRETTA=1-0

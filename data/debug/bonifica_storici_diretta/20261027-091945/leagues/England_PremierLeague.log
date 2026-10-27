@@ -1,0 +1,14 @@
+[75/264] England_PremierLeague
+status=DIFFERENCES
+tournament=Premier League country=England tournament_id=SY30SsKF stage=embedded
+source=https://www.diretta.it/calcio/inghilterra/premier-league/risultati/
+team_overlap=1.000
+local=74 remote=80 equal=74 missing_local=6 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-08-22;Everton;Crystal Palace;2;0
+2026-08-22;Nottingham;Leeds;0;1
+2026-08-22;Ipswich;Sunderland;2;1
+2026-08-22;Hull;Manchester Utd;2;0
+2026-08-21;Arsenal;Coventry;3;0
+2026-08-22;Brentford;Tottenham;3;0

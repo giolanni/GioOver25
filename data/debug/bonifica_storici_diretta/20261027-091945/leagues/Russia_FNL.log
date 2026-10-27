@@ -1,0 +1,38 @@
+[199/264] Russia_FNL
+status=DIFFERENCES
+tournament=FNL country=Russia tournament_id=rXQUSf8L stage=embedded
+source=https://www.diretta.it/calcio/russia/fnl/risultati/
+team_overlap=1.000
+local=136 remote=106 equal=106 missing_local=0 extra_local=30 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-01;Neftekhimik;Tekstilshtik;1;0
+2026-07-19;Tekstilshtik;Ufa;2;2
+2026-07-11;Ufa;Leningradets;3;0
+2026-07-19;Torpedo Moscow;Ulyanovsk;3;1
+2026-07-11;Ulyanovsk;Yenisey;1;2
+2026-07-26;Sochi;Arsenal Tula;5;0
+2026-07-13;Ural;Torpedo Moscow;0;1
+2026-08-01;S. Kostroma;Yenisey;2;2
+2026-07-26;Ufa;SKA Khabarovsk;1;0
+2026-07-12;Pari NN;R. Volgograd;4;2
+2026-07-27;Kamaz;R. Volgograd;0;2
+2026-07-26;Leningradets;Ural;0;0
+2026-07-12;S. Kostroma;Kamaz;3;1
+2026-07-19;Veles Moscow;Chelyabinsk;1;0
+2026-07-25;Ulyanovsk;Neftekhimik;2;0
+2026-07-19;Arsenal Tula;Neftekhimik;0;1
+2026-07-11;Neftekhimik;Veles Moscow;0;1
+2026-07-26;Yenisey;Veles Moscow;4;1
+2026-07-19;Kamaz;Pari NN;1;2
+2026-07-12;Yaroslavl;Sochi;2;2
+2026-07-13;Chelyabinsk;SKA Khabarovsk;3;1
+2026-07-19;Sochi;S. Kostroma;0;2
+2026-07-19;Ural;Yenisey;3;0
+2026-07-25;Tekstilshtik;S. Kostroma;0;0
+2026-07-20;R. Volgograd;SKA Khabarovsk;1;0
+2026-08-01;Leningradets;Sochi;2;1
+2026-07-26;Torpedo Moscow;Yaroslavl;1;1
+2026-07-19;Yaroslavl;Leningradets;2;0
+2026-07-25;Chelyabinsk;Pari NN;1;2
+2026-07-13;Arsenal Tula;Tekstilshtik;2;1

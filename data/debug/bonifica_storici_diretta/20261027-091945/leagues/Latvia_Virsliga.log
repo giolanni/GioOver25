@@ -1,0 +1,87 @@
+[152/264] Latvia_Virsliga
+status=DIFFERENCES
+tournament=Virsliga country=Latvia tournament_id=bqxn6uET stage=embedded
+source=https://www.diretta.it/calcio/latvia/virsliga/risultati/
+team_overlap=1.000
+local=170 remote=103 equal=98 missing_local=5 extra_local=72 score_diff=0
+
+MISSING_LOCAL:
+2026-07-05;Grobina;Tukums 2000;3;1
+2026-07-04;RFS;Auda;1;1
+2026-07-04;BFC Daugavpils;FK Liepaja;3;1
+2026-07-27;Tukums 2000;RFS;0;1
+2026-07-27;Grobina;Ogre United;2;2
+
+EXTRA_LOCAL:
+2026-03-08;Auda;Super Nova;2;1
+2026-04-27;BFC Daugavpils;Super Nova;0;1
+2026-05-01;Super Nova;Auda;1;2
+2026-04-09;Riga FC;Tukums 2000;3;3
+2026-03-14;Riga FC;BFC Daugavpils;4;2
+2026-04-12;Auda;BFC Daugavpils;2;3
+2026-03-21;RFS;BFC Daugavpils;4;1
+2026-04-17;Tukums 2000;FK Liepaja;2;2
+2026-05-16;Riga FC;Jelgava;2;2
+2026-04-21;Jelgava;Auda;2;3
+2026-03-08;Jelgava;Tukums 2000;2;1
+2026-03-14;Grobina;Auda;0;2
+2026-04-03;Ogre United;Super Nova;1;2
+2026-07-28;Tukums 2000;RFS;0;1
+2026-05-02;Ogre United;RFS;3;4
+2026-04-22;Grobina;RFS;0;1
+2026-05-20;Tukums 2000;Riga FC;1;3
+2026-05-16;Super Nova;Ogre United;3;1
+2026-04-26;Auda;Tukums 2000;2;1
+2026-04-04;RFS;Auda;0;1
+2026-05-13;BFC Daugavpils;RFS;0;1
+2026-04-28;FK Liepaja;Grobina;1;1
+2026-05-17;FK Liepaja;BFC Daugavpils;2;1
+2026-05-07;Tukums 2000;Ogre United;6;1
+2026-05-12;Riga FC;Auda;4;1
+2026-05-17;Auda;RFS;0;3
+2026-04-12;FK Liepaja;Jelgava;1;1
+2026-07-06;Grobina;Tukums 2000;3;1
+2026-04-21;Tukums 2000;BFC Daugavpils;1;1
+2026-04-09;Grobina;Super Nova;0;1
+2026-03-15;Super Nova;Jelgava;1;1
+2026-04-08;Jelgava;RFS;0;1
+2026-04-04;Jelgava;Riga FC;0;8
+2026-04-23;Super Nova;FK Liepaja;1;2
+2026-04-13;Tukums 2000;RFS;1;2
+2026-03-20;Ogre United;FK Liepaja;0;1
+2026-03-22;Tukums 2000;Super Nova;1;2
+2026-05-06;Jelgava;Super Nova;1;0
+2026-04-16;BFC Daugavpils;Jelgava;1;0
+2026-04-14;Super Nova;Riga FC;1;4
+2026-03-20;Auda;Riga FC;1;2
+2026-03-06;RFS;Ogre United;2;0
+2026-03-07;BFC Daugavpils;Grobina;0;1
+2026-05-20;Grobina;Super Nova;0;2
+2026-07-05;RFS;Auda;1;1
+2026-03-21;Jelgava;Grobina;0;1
+2026-05-08;RFS;FK Liepaja;5;0
+2026-04-22;Riga FC;Ogre United;4;0
+2026-03-07;FK Liepaja;Riga FC;2;1
+2026-07-28;Grobina;Ogre United;2;2
+2026-04-05;Tukums 2000;Grobina;1;1
+2026-04-18;RFS;Super Nova;2;0
+2026-03-13;FK Liepaja;RFS;0;1
+2026-04-18;Grobina;Riga FC;0;3
+2026-04-27;Ogre United;Jelgava;0;1
+2026-05-15;Grobina;Tukums 2000;3;3
+2026-04-17;Ogre United;Auda;1;1
+2026-05-08;BFC Daugavpils;Riga FC;1;3
+2026-04-13;Ogre United;Grobina;1;1
+2026-04-28;RFS;Riga FC;3;3
+2026-03-15;Ogre United;Tukums 2000;1;1
+2026-05-07;Auda;Grobina;7;0
+2026-05-03;Riga FC;FK Liepaja;1;0
+2026-07-05;BFC Daugavpils;FK Liepaja;3;1
+2026-04-07;BFC Daugavpils;Ogre United;2;1
+2026-05-11;Super Nova;Tukums 2000;1;1
+2026-05-12;FK Liepaja;Ogre United;4;1
+2026-05-01;Tukums 2000;Jelgava;5;0
+2026-04-08;FK Liepaja;Auda;1;2
+2026-05-11;Grobina;Jelgava;0;0
+2026-05-02;Grobina;BFC Daugavpils;1;1
+2026-04-03;BFC Daugavpils;FK Liepaja;2;0

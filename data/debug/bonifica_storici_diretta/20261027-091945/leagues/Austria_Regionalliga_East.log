@@ -1,0 +1,6 @@
+[31/264] Austria_Regionalliga_East
+status=OK
+tournament=Regionalliga East country=Austria tournament_id=xO5c0isJ stage=embedded
+source=https://www.diretta.it/calcio/austria/regionalliga-est/risultati/
+team_overlap=1.000
+local=104 remote=104 equal=104 missing_local=0 extra_local=0 score_diff=0

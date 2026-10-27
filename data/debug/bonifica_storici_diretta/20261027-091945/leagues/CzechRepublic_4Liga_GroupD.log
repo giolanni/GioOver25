@@ -1,0 +1,6 @@
+[63/264] CzechRepublic_4Liga_GroupD
+status=OK
+tournament=4. liga - Group D country=Czech Republic tournament_id=zi3p2s0l stage=embedded
+source=https://www.diretta.it/calcio/czech-republic/4-liga-group-d/risultati/
+team_overlap=1.000
+local=96 remote=96 equal=96 missing_local=0 extra_local=0 score_diff=0

@@ -1,0 +1,6 @@
+[124/264] Germany_Oberliga_Westfalen
+status=OK
+tournament=Oberliga Westfalen country=Germany tournament_id=2FQe7HuP stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-westfalen/risultati/
+team_overlap=1.000
+local=107 remote=107 equal=107 missing_local=0 extra_local=0 score_diff=0

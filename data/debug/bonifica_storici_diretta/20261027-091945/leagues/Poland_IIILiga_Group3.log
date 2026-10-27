@@ -1,0 +1,29 @@
+[191/264] Poland_IIILiga_Group3
+status=DIFFERENCES
+tournament=III Liga - Group III country=Poland tournament_id=IDZcFYNi stage=embedded
+source=https://www.diretta.it/calcio/poland/iii-liga-group-iii/risultati/
+team_overlap=1.000
+local=125 remote=107 equal=106 missing_local=0 extra_local=18 score_diff=1
+
+EXTRA_LOCAL:
+2026-08-08;Jelenia Gora;ROW Rybnik;1;0
+2026-08-08;Warta Gorzow;Carina Gubin;2;1
+2026-08-08;Nysa;Zaglebie 2;2;2
+2026-08-08;BKS Sparta Katowice;Stilon Gorzow;2;1
+2026-07-31;Polkowice;Rakow 2;5;4
+2026-08-01;Sulow;Kluczbork;2;0
+2026-08-09;Legnica 2;Sulow;1;2
+2026-08-01;Carina Gubin;Legnica 2;2;1
+2026-08-01;Zaglebie 2;BKS Sparta Katowice;1;0
+2026-08-01;Jelenia Gora;Sosnowiec;0;0
+2026-08-09;Sosnowiec;Goczalkowice Zdroj;2;0
+2026-08-01;ROW Rybnik;Warta Gorzow;5;1
+2026-07-31;Brzeg;Goczalkowice Zdroj;1;1
+2026-08-01;Bytom Odrzanski;Nysa;3;0
+2026-08-08;Kluczbork;Polkowice;2;1
+2026-08-01;Stilon Gorzow;Sleza Wroclaw;3;1
+2026-08-08;Rakow 2;Bytom Odrzanski;0;1
+2026-08-07;Brzeg;Sleza Wroclaw;5;1
+
+SCORE_DIFF:
+2026-08-22;Sulow;ROW Rybnik;LOCAL=14-1;DIRETTA=4-0

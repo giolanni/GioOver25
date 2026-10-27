@@ -1,0 +1,9 @@
+[197/264] Romania_Liga2
+status=DIFFERENCES
+tournament=Liga 2 country=Romania tournament_id=vFKjUS0N stage=embedded
+source=https://www.diretta.it/calcio/romania/liga-2/risultati/
+team_overlap=1.000
+local=112 remote=111 equal=111 missing_local=0 extra_local=1 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-04;Politehnica Timisoara;Chindia Targoviste;1;0

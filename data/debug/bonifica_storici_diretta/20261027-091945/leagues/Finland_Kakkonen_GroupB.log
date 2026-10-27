@@ -1,0 +1,54 @@
+[88/264] Finland_Kakkonen_GroupB
+status=DIFFERENCES
+tournament=Kakkonen Group B country=Finland tournament_id=Wfi09bJi stage=embedded
+source=https://www.diretta.it/calcio/finland/kakkonen-group-b/risultati/
+team_overlap=1.000
+local=96 remote=103 equal=78 missing_local=24 extra_local=17 score_diff=1
+
+MISSING_LOCAL:
+2026-06-28;Ilves 2;EBK;3;2
+2026-07-04;P-Iirot Rauma;HJS;3;0
+2026-09-12;NJS;GrIFK;2;1
+2026-09-26;EBK;GrIFK;1;1
+2026-09-19;Honka;Abo;3;0
+2026-09-06;Abo;EPS;0;0
+2026-09-19;EBK;NJS;4;0
+2026-09-07;Ilves 2;P-Iirot Rauma;6;1
+2026-09-06;Honka;HJS;5;1
+2026-09-18;GrIFK;MuSa;1;1
+2026-09-13;Ilves 2;Honka;2;0
+2026-09-12;P-Iirot Rauma;EPS;3;0
+2026-09-12;MuSa;EBK;1;1
+2026-07-05;Ilves 2;EPS;4;2
+2026-09-19;HJS;P-Iirot Rauma;4;1
+2026-08-28;Abo;Ilves 2;1;0
+2026-08-28;EPS;HJS;4;1
+2026-09-04;NJS;MuSa;4;0
+2026-08-28;Honka;P-Iirot Rauma;1;1
+2026-09-26;MuSa;NJS;3;2
+2026-09-19;EPS;Ilves 2;0;1
+2026-09-04;GrIFK;EBK;1;1
+2026-07-04;Honka;MuSa;7;1
+2026-09-12;Abo;HJS;3;1
+
+EXTRA_LOCAL:
+2026-04-24;MuSa;Honka;0;6
+2026-04-24;Abo;EBK;3;0
+2026-07-06;Ilves 2;EPS;4;2
+2026-07-05;Honka;MuSa;7;1
+2026-04-24;NJS;GrIFK;0;1
+2026-05-02;P-Iirot Rauma;EPS;2;1
+2026-04-18;P-Iirot Rauma;MuSa;4;0
+2026-05-02;GrIFK;MuSa;1;1
+2026-04-18;Honka;Abo;1;1
+2026-04-25;HJS;P-Iirot Rauma;2;0
+2026-07-05;P-Iirot Rauma;HJS;3;0
+2026-04-25;EPS;Ilves 2;1;1
+2026-04-17;NJS;HJS;2;4
+2026-04-18;EBK;Ilves 2;2;2
+2026-05-02;HJS;Honka;0;2
+2026-04-17;GrIFK;EPS;1;0
+2026-05-03;EBK;NJS;3;1
+
+SCORE_DIFF:
+2026-07-31;GrIFK;EBK;LOCAL=2-2;DIRETTA=2-1

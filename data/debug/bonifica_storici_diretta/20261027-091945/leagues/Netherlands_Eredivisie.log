@@ -1,0 +1,6 @@
+[165/264] Netherlands_Eredivisie
+status=OK
+tournament=Eredivisie country=Netherlands tournament_id=nHciQpuf stage=embedded
+source=https://www.diretta.it/calcio/netherlands/eredivisie/risultati/
+team_overlap=1.000
+local=90 remote=90 equal=90 missing_local=0 extra_local=0 score_diff=0

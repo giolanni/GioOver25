@@ -1,0 +1,11 @@
+[1/1] Albania_AbissnetSuperiore
+status=DIFFERENCES
+tournament=Abissnet Superiore country=Albania tournament_id=hKLv1TGj stage=embedded
+source=https://www.diretta.it/calcio/albania/abissnet-superiore/risultati/
+team_overlap=1.000
+local=37 remote=40 equal=37 missing_local=3 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-08-22;Partizani;Teuta;0;0
+2026-08-21;Vllaznia;Skenderbeu;2;2
+2026-08-22;Laci;AF Elbasani;1;1

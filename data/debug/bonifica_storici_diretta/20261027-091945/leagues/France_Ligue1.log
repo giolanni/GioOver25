@@ -1,0 +1,14 @@
+[103/264] France_Ligue1
+status=DIFFERENCES
+tournament=Ligue 1 country=France tournament_id=0Mp0HlJb stage=embedded
+source=https://www.diretta.it/calcio/francia/ligue-1/risultati/
+team_overlap=1.000
+local=66 remote=72 equal=66 missing_local=6 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-08-22;Tolosa;Lione;0;2
+2026-08-22;Le Mans;Brest;2;2
+2026-08-22;Nizza;Lorient;0;0
+2026-08-22;Troyes;Paris FC;0;0
+2026-08-22;Lens;Auxerre;5;2
+2026-08-21;Marsiglia;Strasburgo;4;0

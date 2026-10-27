@@ -1,0 +1,6 @@
+[46/264] Belgium_JupilerProLeague
+status=OK
+tournament=Jupiler Pro League country=Belgium tournament_id=QNIOJe2e stage=embedded
+source=https://www.diretta.it/calcio/belgium/jupiler-pro-league/risultati/
+team_overlap=1.000
+local=80 remote=80 equal=80 missing_local=0 extra_local=0 score_diff=0

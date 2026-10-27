@@ -1,0 +1,11 @@
+[1/1] Estonia_MeistriliigaWomen
+status=DIFFERENCES
+tournament=Meistriliiga Women country=Estonia tournament_id=z1mhz13e stage=embedded
+source=https://www.diretta.it/calcio/estonia/meistriliiga-women/risultati/
+team_overlap=1.000
+local=66 remote=69 equal=66 missing_local=3 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-10-03;Viimsi JK D;Elva D;3;3
+2026-10-03;Flora D;Harju JK Laagri D;6;0
+2026-10-03;Saku Sporting D;Paide Linnameeskond D;3;0

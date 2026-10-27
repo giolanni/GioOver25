@@ -1,0 +1,10 @@
+[1/1] Slovakia_3Liga_West
+status=DIFFERENCES
+tournament=3. Liga - West country=Slovakia tournament_id=Ygk3jFn3 stage=embedded
+source=https://www.diretta.it/calcio/slovakia/3-liga-west/risultati/
+team_overlap=1.000
+local=95 remote=97 equal=95 missing_local=2 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-10-17;Sala;D. Luzna;0;1
+2026-10-24;D. Luzna;Raca;2;1

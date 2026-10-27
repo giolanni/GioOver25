@@ -1,0 +1,12 @@
+[230/264] Turkey_SuperLig
+status=DIFFERENCES
+tournament=Super Lig country=Turkey tournament_id=ABdATjMP stage=embedded
+source=https://www.diretta.it/calcio/turchia/super-lig/risultati/
+team_overlap=1.000
+local=77 remote=81 equal=77 missing_local=4 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-08-22;Corum;Kasimpasa;0;1
+2026-08-22;Rizespor;Samsunspor;0;2
+2026-08-21;Erzurumspor;Galatasaray;0;4
+2026-08-22;Fenerbahce;Konyaspor;4;2

@@ -1,0 +1,9 @@
+[113/264] Germany_Oberliga_Bremen
+status=DIFFERENCES
+tournament=Oberliga Bremen country=Germany tournament_id=lhKuBat0 stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-bremen/risultati/
+team_overlap=1.000
+local=88 remote=88 equal=87 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-09-27;Geestemunde;Brinkumer;LOCAL=1-7;DIRETTA=3-3

@@ -1,0 +1,6 @@
+[161/264] Moldova_SuperLiga
+status=OK
+tournament=Super Liga country=Moldova tournament_id=fsTNBUwQ stage=embedded
+source=https://www.diretta.it/calcio/moldova/super-liga/risultati/
+team_overlap=1.000
+local=64 remote=64 equal=64 missing_local=0 extra_local=0 score_diff=0

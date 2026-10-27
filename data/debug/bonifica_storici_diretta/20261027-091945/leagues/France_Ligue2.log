@@ -1,0 +1,11 @@
+[104/264] France_Ligue2
+status=DIFFERENCES
+tournament=Ligue 2 country=France tournament_id=42ie8pto stage=embedded
+source=https://www.diretta.it/calcio/francia/ligue-2/risultati/
+team_overlap=1.000
+local=87 remote=90 equal=87 missing_local=3 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-08-22;St. Etienne;Grenoble;4;0
+2026-08-22;Nantes;Rodez;2;5
+2026-08-22;Metz;Laval;1;1

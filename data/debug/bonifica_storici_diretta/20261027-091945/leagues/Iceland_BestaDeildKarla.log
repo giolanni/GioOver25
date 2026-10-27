@@ -1,0 +1,90 @@
+[134/264] Iceland_BestaDeildKarla
+status=DIFFERENCES
+tournament=Besta deild karla country=Iceland tournament_id=YZPIM59T stage=embedded
+source=https://www.diretta.it/calcio/islanda/besta-deild-karla/risultati/
+team_overlap=1.000
+local=157 remote=106 equal=92 missing_local=13 extra_local=64 score_diff=1
+
+MISSING_LOCAL:
+2026-07-27;Breidablik;Vestmannaeyjar;1;0
+2026-06-28;Keflavik;KR Reykjavik;3;2
+2026-07-04;Vestmannaeyjar;Valur;1;0
+2026-07-27;Akureyri;Thor Akureyri;0;0
+2026-10-24;Stjarnan;Valur;6;0
+2026-06-28;Stjarnan;Akureyri;3;1
+2026-10-17;Thor Akureyri;Stjarnan;3;1
+2026-07-04;Akranes;Breidablik;1;2
+2026-06-28;Thor Akureyri;Valur;2;4
+2026-10-24;Akureyri;Vestmannaeyjar;5;1
+2026-10-24;Hafnarfjordur;Thor Akureyri;1;2
+2026-06-28;Hafnarfjordur;Vestmannaeyjar;1;1
+2026-10-17;Valur;Akureyri;4;1
+
+EXTRA_LOCAL:
+2026-05-03;Vestmannaeyjar;Breidablik;1;2
+2026-04-12;Vestmannaeyjar;Hafnarfjordur;1;1
+2026-04-12;Fram;Akranes;3;3
+2026-04-17;Akureyri;Vikingur Reykjavik;0;2
+2026-04-17;Fram;Keflavik;3;1
+2026-04-23;Thor Akureyri;Fram;1;0
+2026-05-17;Keflavik;Stjarnan;1;1
+2026-05-31;Thor Akureyri;Stjarnan;1;3
+2026-07-05;Akranes;Breidablik;1;2
+2026-04-17;Stjarnan;Hafnarfjordur;3;2
+2026-05-08;Breidablik;Hafnarfjordur;3;3
+2026-05-08;Vikingur Reykjavik;Thor Akureyri;6;0
+2026-04-27;KR Reykjavik;Hafnarfjordur;4;2
+2026-05-08;Akranes;Keflavik;1;3
+2026-04-27;Stjarnan;Valur;2;4
+2026-05-17;Valur;Breidablik;3;2
+2026-05-22;Breidablik;KR Reykjavik;6;3
+2026-05-22;Keflavik;Thor Akureyri;1;0
+2026-05-29;Fram;Breidablik;4;3
+2026-06-30;Keflavik;KR Reykjavik;3;2
+2026-05-26;KR Reykjavik;Valur;3;1
+2026-04-27;Breidablik;Thor Akureyri;4;0
+2026-05-17;Vestmannaeyjar;Vikingur Reykjavik;0;2
+2026-05-26;Stjarnan;Vikingur Reykjavik;1;3
+2026-04-10;Vikingur Reykjavik;Breidablik;1;1
+2026-05-02;Valur;KR Reykjavik;1;4
+2026-05-08;Stjarnan;KR Reykjavik;2;3
+2026-07-28;Akureyri;Thor Akureyri;0;0
+2026-04-12;Akureyri;Stjarnan;2;3
+2026-06-30;Stjarnan;Akureyri;3;1
+2026-05-22;Vikingur Reykjavik;Hafnarfjordur;5;0
+2026-04-23;Valur;Hafnarfjordur;3;0
+2026-05-10;Akureyri;Vestmannaeyjar;2;0
+2026-05-17;Thor Akureyri;Akranes;1;2
+2026-04-17;Breidablik;Akranes;1;0
+2026-04-26;Akureyri;Keflavik;1;2
+2026-04-27;Vikingur Reykjavik;Akranes;4;0
+2026-05-31;KR Reykjavik;Akureyri;5;3
+2026-05-02;Thor Akureyri;Akureyri;0;1
+2026-04-17;KR Reykjavik;Thor Akureyri;5;2
+2026-07-05;Vestmannaeyjar;Valur;1;0
+2026-05-17;KR Reykjavik;Fram;2;2
+2026-05-22;Stjarnan;Fram;0;1
+2026-05-08;Fram;Valur;3;2
+2026-04-17;Valur;Vestmannaeyjar;2;1
+2026-06-30;Thor Akureyri;Valur;2;4
+2026-05-03;Stjarnan;Akranes;1;2
+2026-04-22;Akranes;Akureyri;1;1
+2026-05-21;Akranes;Vestmannaeyjar;2;2
+2026-04-12;Valur;Thor Akureyri;1;2
+2026-06-30;Hafnarfjordur;Vestmannaeyjar;1;1
+2026-04-12;KR Reykjavik;Keflavik;3;2
+2026-07-28;Breidablik;Vestmannaeyjar;1;0
+2026-05-03;Keflavik;Vikingur Reykjavik;1;3
+2026-04-22;Keflavik;Breidablik;0;0
+2026-05-31;Valur;Vikingur Reykjavik;1;5
+2026-05-03;Hafnarfjordur;Fram;3;4
+2026-05-17;Hafnarfjordur;Akureyri;1;2
+2026-05-29;Hafnarfjordur;Akranes;0;1
+2026-05-31;Vestmannaeyjar;Keflavik;6;1
+2026-04-23;Vestmannaeyjar;KR Reykjavik;2;6
+2026-04-23;Vikingur Reykjavik;Stjarnan;3;2
+2026-04-27;Fram;Vestmannaeyjar;5;1
+2026-05-22;Akureyri;Valur;0;1
+
+SCORE_DIFF:
+2026-09-19;KR Reykjavik;Vikingur Reykjavik;LOCAL=2-1;DIRETTA=1-2

@@ -1,0 +1,9 @@
+[209/264] Slovenia_PrvaLiga
+status=DIFFERENCES
+tournament=Prva liga country=Slovenia tournament_id=2gREOxl4 stage=embedded
+source=https://www.diretta.it/calcio/slovenia/prva-liga/risultati/
+team_overlap=1.000
+local=60 remote=59 equal=59 missing_local=0 extra_local=1 score_diff=0
+
+EXTRA_LOCAL:
+2026-07-25;Aluminij;Celje;0;3

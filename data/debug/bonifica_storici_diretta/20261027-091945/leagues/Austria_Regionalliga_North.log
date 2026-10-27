@@ -1,0 +1,6 @@
+[32/264] Austria_Regionalliga_North
+status=OK
+tournament=Regionalliga North country=Austria tournament_id=nqGSLXJ5 stage=embedded
+source=https://www.diretta.it/calcio/austria/regionalliga-north/risultati/
+team_overlap=1.000
+local=98 remote=98 equal=98 missing_local=0 extra_local=0 score_diff=0

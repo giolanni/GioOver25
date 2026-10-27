@@ -1,0 +1,9 @@
+[61/264] CzechRepublic_4Liga_GroupB
+status=DIFFERENCES
+tournament=4. liga - Group B country=Czech Republic tournament_id=vy0c9P7E stage=embedded
+source=https://www.diretta.it/calcio/czech-republic/4-liga-group-b/risultati/
+team_overlap=1.000
+local=96 remote=96 equal=95 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-08-22;Steti;Psary;LOCAL=16-11;DIRETTA=1-0

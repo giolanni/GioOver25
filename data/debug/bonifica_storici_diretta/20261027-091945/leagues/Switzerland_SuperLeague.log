@@ -1,0 +1,9 @@
+[228/264] Switzerland_SuperLeague
+status=DIFFERENCES
+tournament=Super League country=Switzerland tournament_id=OEQ3jBP7 stage=embedded
+source=https://www.diretta.it/calcio/svizzera/super-league/risultati/
+team_overlap=1.000
+local=67 remote=66 equal=66 missing_local=0 extra_local=1 score_diff=0
+
+EXTRA_LOCAL:
+2016-09-16;Thun;Servette;2;4

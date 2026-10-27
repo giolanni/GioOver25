@@ -1,0 +1,9 @@
+[64/264] CzechRepublic_4Liga_GroupE
+status=DIFFERENCES
+tournament=4. liga - Group E country=Czech Republic tournament_id=WIdg0LU0 stage=embedded
+source=https://www.diretta.it/calcio/czech-republic/4-liga-group-e/risultati/
+team_overlap=1.000
+local=95 remote=95 equal=94 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-09-12;Holesov;Breclav;LOCAL=0-0;DIRETTA=1-2

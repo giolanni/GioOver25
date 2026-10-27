@@ -1,0 +1,13 @@
+[123/264] Germany_Oberliga_SchleswigHolstein
+status=DIFFERENCES
+tournament=Oberliga Schleswig-Holstein country=Germany tournament_id=ILuiVTRE stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-schleswig-holstein/risultati/
+team_overlap=1.000
+local=109 remote=108 equal=106 missing_local=0 extra_local=1 score_diff=2
+
+EXTRA_LOCAL:
+2026-07-31;PSV Neumunster;VfR Neumunster;0;3
+
+SCORE_DIFF:
+2026-08-15;Kaltenkirchen;Phonix Lubeck B;LOCAL=1-2;DIRETTA=3-0
+2026-09-26;Kilia Kiel;Phonix Lubeck B;LOCAL=2-2;DIRETTA=3-0

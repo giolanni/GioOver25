@@ -1,0 +1,9 @@
+[62/264] CzechRepublic_4Liga_GroupC
+status=DIFFERENCES
+tournament=4. liga - Group C country=Czech Republic tournament_id=0jl673xR stage=embedded
+source=https://www.diretta.it/calcio/czech-republic/4-liga-group-c/risultati/
+team_overlap=1.000
+local=96 remote=96 equal=95 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-08-09;Svitavy;Letohrad;LOCAL=2-1;DIRETTA=3-1

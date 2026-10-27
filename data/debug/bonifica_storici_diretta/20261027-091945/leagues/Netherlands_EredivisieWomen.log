@@ -1,0 +1,6 @@
+[166/264] Netherlands_EredivisieWomen
+status=OK
+tournament=Eredivisie Women country=Netherlands tournament_id=Ya0Rvy04 stage=embedded
+source=https://www.diretta.it/calcio/netherlands/eredivisie-women/risultati/
+team_overlap=1.000
+local=40 remote=40 equal=40 missing_local=0 extra_local=0 score_diff=0

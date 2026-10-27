@@ -1,0 +1,17 @@
+[53/264] Bulgaria_VtoraLiga
+status=DIFFERENCES
+tournament=Vtora liga country=Bulgaria tournament_id=8SP8qIYo stage=embedded
+source=https://www.diretta.it/calcio/bulgaria/vtora-liga/risultati/
+team_overlap=1.000
+local=96 remote=105 equal=96 missing_local=9 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-08-04;Montana;Nesebar;3;1
+2026-08-03;Etar;Yantra Gabrovo;2;1
+2026-08-03;Ludogorets II;Lok. Gorna;2;1
+2026-08-01;Chernomorets 1919;Beroe;1;0
+2026-08-03;Pirin Blagoevgrad;CSKA Sofia II;0;3
+2026-08-01;Spartak Pleven;Marek;2;1
+2026-08-01;Fratria;Rilski Sportist;1;0
+2026-08-02;Hebar;Vihren;2;3
+2026-08-02;Dobrudzha;Svoge;0;0

@@ -1,0 +1,6 @@
+[37/264] Austria_Tirol
+status=OK
+tournament=Tirol country=Austria tournament_id=GlXgQ7AU stage=embedded
+source=https://www.diretta.it/calcio/austria/tirol/risultati/
+team_overlap=1.000
+local=104 remote=104 equal=104 missing_local=0 extra_local=0 score_diff=0

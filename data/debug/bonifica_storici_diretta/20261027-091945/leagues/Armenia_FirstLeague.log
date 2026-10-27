@@ -1,0 +1,9 @@
+[3/264] Armenia_FirstLeague
+status=DIFFERENCES
+tournament=First League country=Armenia tournament_id=KjaGAkec stage=embedded
+source=https://www.diretta.it/calcio/armenia/first-league/risultati/
+team_overlap=1.000
+local=66 remote=66 equal=65 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-09-22;Sardarapat 2;Ararat-Armenia 2;LOCAL=0-1;DIRETTA=3-0

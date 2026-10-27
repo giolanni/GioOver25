@@ -1,0 +1,58 @@
+[142/264] Italy_SerieAWomen
+status=DIFFERENCES
+tournament=Serie A Women country=Italy tournament_id=ERi3oM7t stage=embedded
+source=https://www.diretta.it/calcio/italy/serie-a-femminile/risultati/
+team_overlap=0.000
+local=24 remote=24 equal=0 missing_local=24 extra_local=24 score_diff=0
+
+MISSING_LOCAL:
+2026-10-18;Juventus D;Como 1907 D;2;4
+2026-10-03;Fiorentina D;Sassuolo D;2;0
+2026-10-25;Como 1907 D;Sassuolo D;2;2
+2026-10-17;Como D;Fiorentina D;1;1
+2026-10-24;Milan D;Ternana D;3;0
+2026-10-04;Como D;Inter D;0;2
+2026-10-03;Parma D;Ternana D;1;2
+2026-10-18;Roma D;Milan D;4;2
+2026-10-03;Roma D;Lazio D;3;1
+2026-09-27;Ternana D;Como D;1;2
+2026-10-04;Napoli D;Como 1907 D;1;2
+2026-09-26;Como 1907 D;Milan D;4;1
+2026-10-25;Lazio D;Como D;0;0
+2026-10-25;Parma D;Fiorentina D;1;2
+2026-09-27;Inter D;Fiorentina D;2;0
+2026-09-26;Lazio D;Parma D;0;0
+2026-10-17;Sassuolo D;Napoli D;1;4
+2026-09-27;Sassuolo D;Roma D;1;3
+2026-10-24;Napoli D;Inter D;0;0
+2026-10-04;Milan D;Juventus D;2;1
+2026-10-17;Ternana D;Lazio D;1;0
+2026-09-26;Juventus D;Napoli D;3;1
+2026-10-24;Juventus D;Roma D;2;5
+2026-10-18;Inter D;Parma D;3;0
+
+EXTRA_LOCAL:
+2026-09-26;Juventus;Napoli;3;1
+2026-09-27;Inter;Fiorentina;2;0
+2026-10-04;Milan;Juventus;2;1
+2026-09-27;Ternana;Como Women;1;2
+2026-10-04;Napoli;Como 1907;1;2
+2026-10-25;Como 1907;Sassuolo;2;2
+2026-10-25;Parma;Fiorentina;1;2
+2026-10-17;Sassuolo;Napoli;1;4
+2026-10-18;Inter;Parma;3;0
+2026-10-17;Ternana;Lazio;1;0
+2026-10-04;Como Women;Inter;0;2
+2026-10-18;Roma;Milan;4;2
+2026-09-26;Lazio;Parma;0;0
+2026-10-24;Napoli;Inter;0;0
+2026-10-18;Juventus;Como 1907;2;4
+2026-10-24;Juventus;Roma;2;5
+2026-10-24;Milan;Ternana;3;0
+2026-09-26;Como 1907;Milan;4;1
+2026-10-17;Como Women;Fiorentina;1;1
+2026-10-25;Lazio;Como Women;0;0
+2026-10-03;Fiorentina;Sassuolo;2;0
+2026-10-03;Parma;Ternana;1;2
+2026-09-27;Sassuolo;Roma;1;3
+2026-10-03;Roma;Lazio;3;1

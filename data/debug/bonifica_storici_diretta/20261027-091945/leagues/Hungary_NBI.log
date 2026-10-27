@@ -1,0 +1,14 @@
+[131/264] Hungary_NBI
+status=DIFFERENCES
+tournament=NB I. country=Hungary tournament_id=rH0myWTh stage=embedded
+source=https://www.diretta.it/calcio/ungheria/nb-i/risultati/
+team_overlap=1.000
+local=65 remote=65 equal=63 missing_local=2 extra_local=2 score_diff=0
+
+MISSING_LOCAL:
+2026-07-27;MTK Budapest;Zalaegerszeg;3;0
+2026-08-28;Debrecen;MTK Budapest;2;2
+
+EXTRA_LOCAL:
+2026-08-29;Debrecen;MTK Budapest;2;2
+2026-07-28;MTK Budapest;Zalaegerszeg;3;0

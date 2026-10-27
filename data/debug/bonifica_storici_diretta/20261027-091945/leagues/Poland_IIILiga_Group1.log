@@ -1,0 +1,26 @@
+[189/264] Poland_IIILiga_Group1
+status=DIFFERENCES
+tournament=III Liga - Group I country=Poland tournament_id=M1O3iVVp stage=embedded
+source=https://www.diretta.it/calcio/poland/iii-liga-group-i/risultati/
+team_overlap=1.000
+local=126 remote=108 equal=108 missing_local=0 extra_local=18 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-07;Elblag;Lidzbark Warminski;4;2
+2026-08-08;LKS Lomza;Weszlo;0;1
+2026-08-08;Swit;Zambrow;4;0
+2026-08-08;Plock 2;T. Mazowiecki;2;1
+2026-08-07;Jagiellonia 2;Suwalki;1;1
+2026-08-08;Zabki;Widzew Lodz 2;1;0
+2026-08-01;Zambrow;Zabki;5;0
+2026-08-01;Warta Sieradz;Mlawa;1;2
+2026-08-07;Mlawa;Pelikan;0;1
+2026-08-02;Widzew Lodz 2;Troszyn;5;1
+2026-08-02;Suwalki;LKS Lodz 2;2;0
+2026-07-31;Weszlo;T. Mazowiecki;2;1
+2026-07-31;Mazovia Minsk Mazowiecki;Jagiellonia 2;2;3
+2026-08-08;Troszyn;Mazovia Minsk Mazowiecki;1;4
+2026-08-01;Lidzbark Warminski;Swit;1;2
+2026-08-09;LKS Lodz 2;Warta Sieradz;0;1
+2026-08-01;Pelikan;LKS Lomza;3;2
+2026-07-31;Elblag;Plock 2;1;2

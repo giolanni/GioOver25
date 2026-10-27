@@ -1,0 +1,6 @@
+[119/264] Germany_Oberliga_NOFV_Nord
+status=OK
+tournament=Oberliga NOFV-Nord country=Germany tournament_id=Sf9e9n5e stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-nofv-nord/risultati/
+team_overlap=1.000
+local=72 remote=72 equal=72 missing_local=0 extra_local=0 score_diff=0

@@ -1,0 +1,15 @@
+[49/264] Bosnia_PrvaLiga_FBiH
+status=DIFFERENCES
+tournament=Prva Liga - FBiH country=Bosnia and Herzegovina tournament_id=YqUqSYC5 stage=embedded
+source=https://www.diretta.it/calcio/bosnia-herzegovina/prva-liga-fbih/risultati/
+team_overlap=1.000
+local=84 remote=88 equal=83 missing_local=4 extra_local=0 score_diff=1
+
+MISSING_LOCAL:
+2026-08-22;Hadzici;TOSK Tesanj;2;0
+2026-08-22;Bratstvo Gracanica;Igman K.;0;0
+2026-08-22;Jedinstvo Bihac;Kakanj;5;0
+2026-08-22;Posusje;Gradacac;1;0
+
+SCORE_DIFF:
+2026-08-14;Bratstvo Gracanica;Posusje;LOCAL=2-2;DIRETTA=0-3

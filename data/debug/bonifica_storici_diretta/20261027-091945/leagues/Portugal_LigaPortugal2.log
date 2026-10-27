@@ -1,0 +1,6 @@
+[196/264] Portugal_LigaPortugal2
+status=OK
+tournament=Liga Portugal 2 country=Portugal tournament_id=t6eaybOk stage=embedded
+source=https://www.diretta.it/calcio/portogallo/liga-portugal-2/risultati/
+team_overlap=1.000
+local=72 remote=72 equal=72 missing_local=0 extra_local=0 score_diff=0

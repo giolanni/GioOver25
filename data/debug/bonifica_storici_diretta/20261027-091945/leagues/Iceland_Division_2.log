@@ -1,0 +1,42 @@
+[137/264] Iceland_Division_2
+status=DIFFERENCES
+tournament=Division 2 country=Iceland tournament_id=lWHqumPc stage=embedded
+source=https://www.diretta.it/calcio/iceland/division-2/risultati/
+team_overlap=1.000
+local=132 remote=108 equal=104 missing_local=4 extra_local=28 score_diff=0
+
+MISSING_LOCAL:
+2026-07-04;Magni;Throttur Vogar;4;3
+2026-07-04;Fjolnir;Kormakur/Hvot;1;1
+2026-07-04;KFA;Olafsvik;3;0
+2026-07-01;Haukar;Kari;4;1
+
+EXTRA_LOCAL:
+2026-05-23;KFA;Magni;4;0
+2026-05-02;Kari;KFG Gardabaer;5;1
+2026-05-15;Haukar;Fjolnir;3;1
+2026-05-23;Fjolnir;Olafsvik;5;1
+2026-05-02;Dalvik/Reynir;Kormakur/Hvot;1;0
+2026-05-09;Haukar;Magni;6;1
+2026-07-02;Haukar;Kari;4;1
+2026-05-14;Throttur Vogar;KFA;2;0
+2026-07-05;Fjolnir;Kormakur/Hvot;1;1
+2026-07-05;KFA;Olafsvik;3;0
+2026-05-16;KFG Gardabaer;Magni;1;2
+2026-05-01;Throttur Vogar;Haukar;2;1
+2026-05-16;Olafsvik;Dalvik/Reynir;2;1
+2026-05-23;Hviti;Throttur Vogar;2;0
+2026-05-16;Selfoss;Kormakur/Hvot;2;1
+2026-05-23;Kormakur/Hvot;Kari;4;1
+2026-05-01;Olafsvik;Hviti;3;3
+2026-05-21;KFG Gardabaer;Haukar;0;4
+2026-07-05;Magni;Throttur Vogar;4;3
+2026-05-09;Hviti;Selfoss;1;1
+2026-05-09;Olafsvik;Kormakur/Hvot;0;2
+2026-05-02;Selfoss;KFA;2;4
+2026-05-15;Kari;Hviti;0;0
+2026-05-09;Fjolnir;Dalvik/Reynir;2;1
+2026-05-23;Dalvik/Reynir;Selfoss;2;2
+2026-05-01;Fjolnir;Magni;4;1
+2026-05-09;KFG Gardabaer;Throttur Vogar;3;1
+2026-05-09;KFA;Kari;2;4

@@ -1,0 +1,59 @@
+[106/264] Georgia_ErovnuliLiga
+status=DIFFERENCES
+tournament=Crystalbet Erovnuli Liga country=Georgia tournament_id=vo6umLPj stage=embedded
+source=https://www.diretta.it/calcio/georgia/erovnuli-liga/risultati/
+team_overlap=1.000
+local=54 remote=105 equal=54 missing_local=51 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-05-20;Iberia 1999;Gagra;1;0
+2026-05-25;Spaeri;Meshakhte Tkibuli;2;1
+2026-05-10;Dinamo Batumi;Samgurali;3;1
+2026-05-01;Spaeri;Torpedo Kutaisi;1;1
+2026-05-24;Din. Tbilisi;Torpedo Kutaisi;0;1
+2026-06-17;Iberia 1999;Rustavi;1;2
+2026-05-06;Dila Gori;Iberia 1999;0;1
+2026-05-05;Torpedo Kutaisi;Rustavi;1;1
+2026-06-23;Din. Tbilisi;Dinamo Batumi;2;1
+2026-05-16;Dinamo Batumi;Meshakhte Tkibuli;2;1
+2026-06-18;Meshakhte Tkibuli;Gagra;1;1
+2026-05-16;Din. Tbilisi;Iberia 1999;2;0
+2026-05-29;Dila Gori;Samgurali;2;3
+2026-05-02;Samgurali;Gagra;2;0
+2026-05-16;Gagra;Rustavi;1;1
+2026-05-01;Rustavi;Dila Gori;1;0
+2026-05-10;Meshakhte Tkibuli;Dila Gori;0;2
+2026-05-17;Samgurali;Spaeri;0;0
+2026-05-29;Rustavi;Spaeri;2;1
+2026-05-06;Gagra;Dinamo Batumi;1;2
+2026-06-14;Gagra;Din. Tbilisi;2;1
+2026-05-07;Din. Tbilisi;Spaeri;2;1
+2026-05-02;Meshakhte Tkibuli;Iberia 1999;1;4
+2026-06-22;Torpedo Kutaisi;Spaeri;0;0
+2026-06-22;Dila Gori;Rustavi;3;0
+2026-05-24;Gagra;Dila Gori;2;0
+2026-05-21;Spaeri;Dinamo Batumi;3;3
+2026-05-15;Torpedo Kutaisi;Dila Gori;2;1
+2026-05-25;Dinamo Batumi;Rustavi;1;0
+2026-05-28;Torpedo Kutaisi;Gagra;1;2
+2026-05-11;Spaeri;Gagra;3;0
+2026-06-18;Din. Tbilisi;Samgurali;5;3
+2026-06-12;Iberia 1999;Spaeri;1;1
+2026-05-29;Iberia 1999;Dinamo Batumi;1;0
+2026-05-10;Iberia 1999;Torpedo Kutaisi;1;1
+2026-06-24;Gagra;Samgurali;0;0
+2026-06-13;Rustavi;Meshakhte Tkibuli;1;0
+2026-05-20;Dila Gori;Din. Tbilisi;0;0
+2026-05-02;Dinamo Batumi;Din. Tbilisi;2;2
+2026-06-23;Iberia 1999;Meshakhte Tkibuli;2;1
+2026-06-13;Samgurali;Torpedo Kutaisi;2;1
+2026-06-17;Torpedo Kutaisi;Dinamo Batumi;2;3
+2026-05-11;Rustavi;Din. Tbilisi;2;3
+2026-05-30;Meshakhte Tkibuli;Din. Tbilisi;1;6
+2026-05-06;Samgurali;Meshakhte Tkibuli;3;1
+2026-05-21;Rustavi;Samgurali;1;0
+2026-06-12;Dinamo Batumi;Dila Gori;3;2
+2026-05-20;Meshakhte Tkibuli;Torpedo Kutaisi;1;4
+2026-05-25;Samgurali;Iberia 1999;3;2
+2026-08-22;Dila Gori;Torpedo Kutaisi;2;2
+2026-06-16;Dila Gori;Spaeri;3;1

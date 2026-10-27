@@ -1,0 +1,6 @@
+[25/264] Austria_Bundesliga
+status=OK
+tournament=Bundesliga country=Austria tournament_id=8rEt4Zsf stage=embedded
+source=https://www.diretta.it/calcio/austria/bundesliga/risultati/
+team_overlap=1.000
+local=60 remote=60 equal=60 missing_local=0 extra_local=0 score_diff=0

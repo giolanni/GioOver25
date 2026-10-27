@@ -1,0 +1,277 @@
+[238/264] USA_USLChampionship
+status=DIFFERENCES
+tournament=USL Championship country=USA tournament_id=QR7aRI3d stage=embedded
+source=https://www.diretta.it/calcio/usa/usl-championship/risultati/
+team_overlap=1.000
+local=375 remote=106 equal=106 missing_local=0 extra_local=269 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-16;Sacramento Republic;Lexington;1;0
+2026-08-09;Pittsburgh;Sacramento Republic;0;0
+2026-03-29;Tampa Bay;Loudoun;3;1
+2026-03-21;Loudoun;Miami FC;0;0
+2026-07-19;Detroit;Indy Eleven;2;0
+2026-05-24;Las Vegas Lights;Colorado Springs;2;0
+2026-05-23;FC Tulsa;Hartford Athletic;2;0
+2026-06-11;Detroit;El Paso;1;1
+2026-03-14;Colorado Springs;Las Vegas Lights;3;2
+2026-03-28;Detroit;Charleston;1;0
+2026-03-15;FC Tulsa;San Antonio;0;0
+2026-07-26;Monterey Bay;Orange County SC;1;2
+2026-06-21;Phoenix Rising;Oakland Roots;3;4
+2026-06-14;Oakland Roots;Miami FC;0;0
+2026-03-14;Rhode Island;Sporting Jax;1;1
+2026-08-30;FC Tulsa;Rhode Island;1;0
+2026-08-30;Louisville City;Detroit;0;0
+2026-06-21;FC Tulsa;Colorado Springs;1;2
+2026-03-14;Louisville City;Miami FC;4;1
+2026-07-19;San Antonio;Las Vegas Lights;1;2
+2026-08-23;Loudoun;New Mexico;0;0
+2026-03-22;Brooklyn;Hartford Athletic;1;2
+2026-08-09;Louisville City;San Antonio;1;1
+2026-06-14;El Paso;Phoenix Rising;1;1
+2026-06-25;Miami FC;Orange County SC;2;4
+2026-08-02;Miami FC;Detroit;2;2
+2026-05-24;Rhode Island;Brooklyn;4;1
+2026-07-06;Las Vegas Lights;El Paso;1;2
+2026-04-19;El Paso;San Antonio;2;3
+2026-08-09;FC Tulsa;Detroit;0;1
+2026-08-29;Pittsburgh;Tampa Bay;0;0
+2026-05-10;Louisville City;Pittsburgh;0;2
+2026-08-25;Charleston;Miami FC;5;0
+2026-07-06;New Mexico;Oakland Roots;2;1
+2026-08-30;Phoenix Rising;Indy Eleven;2;1
+2026-03-08;San Antonio;Phoenix Rising;2;1
+2026-08-23;Orange County SC;FC Tulsa;1;5
+2026-07-26;FC Tulsa;Lexington;0;0
+2026-08-02;Sacramento Republic;Sporting Jax;5;0
+2026-08-06;FC Tulsa;Sacramento Republic;1;0
+2026-04-04;Rhode Island;Detroit;0;0
+2026-06-11;Tampa Bay;Charleston;2;2
+2026-07-26;Phoenix Rising;Hartford Athletic;0;0
+2026-06-14;Colorado Springs;Sacramento Republic;0;1
+2026-07-16;Miami FC;Indy Eleven;2;0
+2026-08-30;New Mexico;San Antonio;1;2
+2026-08-16;San Antonio;El Paso;0;3
+2026-03-22;Orange County SC;Colorado Springs;1;0
+2026-07-19;Loudoun;Tampa Bay;1;1
+2026-04-19;Hartford Athletic;Loudoun;0;0
+2026-04-12;Indy Eleven;Monterey Bay;3;1
+2026-08-27;New Mexico;Lexington;2;1
+2026-08-30;Monterey Bay;Sacramento Republic;1;1
+2026-08-30;Brooklyn;Sporting Jax;4;1
+2026-08-30;Las Vegas Lights;Charleston;0;2
+2026-06-14;Loudoun;Rhode Island;1;4
+2026-05-09;Colorado Springs;Orange County SC;2;2
+2026-08-23;Birmingham Legion;Sporting Jax;2;3
+2026-06-14;Charleston;FC Tulsa;5;1
+2026-08-23;Brooklyn;Pittsburgh;0;1
+2026-08-23;Detroit;Tampa Bay;1;0
+2026-08-16;Oakland Roots;Monterey Bay;1;1
+2026-05-21;New Mexico;Tampa Bay;0;1
+2026-08-02;Oakland Roots;Pittsburgh;0;1
+2026-08-16;Pittsburgh;Charleston;3;1
+2026-08-16;Detroit;Loudoun;0;0
+2026-08-02;New Mexico;Colorado Springs;1;0
+2026-05-31;Monterey Bay;Loudoun;4;1
+2026-03-08;Birmingham Legion;Tampa Bay;0;1
+2026-07-26;El Paso;Sporting Jax;2;0
+2026-08-09;Indy Eleven;Hartford Athletic;1;1
+2026-04-19;Miami FC;Phoenix Rising;0;3
+2026-07-26;Brooklyn;San Antonio;0;1
+2026-03-22;Indy Eleven;Detroit;2;1
+2026-08-02;Orange County SC;El Paso;2;0
+2026-07-26;Oakland Roots;Sacramento Republic;1;3
+2026-05-31;Oakland Roots;Colorado Springs;0;1
+2026-04-19;Pittsburgh;Detroit;2;1
+2026-05-09;Lexington;Monterey Bay;3;1
+2026-05-24;Loudoun;Detroit;0;0
+2026-03-08;Monterey Bay;Oakland Roots;0;1
+2026-08-09;Rhode Island;Colorado Springs;2;0
+2026-04-18;Charleston;Tampa Bay;1;1
+2026-07-26;Pittsburgh;Rhode Island;0;1
+2026-08-02;Las Vegas Lights;Phoenix Rising;1;1
+2026-07-26;Indy Eleven;Loudoun;0;1
+2026-05-10;Indy Eleven;Sporting Jax;2;1
+2026-03-29;San Antonio;Lexington;2;0
+2026-08-16;New Mexico;FC Tulsa;1;0
+2026-08-06;El Paso;Monterey Bay;1;0
+2026-04-12;FC Tulsa;Orange County SC;0;1
+2026-08-09;Monterey Bay;New Mexico;2;5
+2026-08-03;Birmingham Legion;Rhode Island;1;0
+2026-06-14;Lexington;San Antonio;2;0
+2026-05-10;Oakland Roots;El Paso;2;1
+2026-04-12;Brooklyn;Charleston;3;0
+2026-06-25;Charleston;Loudoun;4;1
+2026-03-22;Phoenix Rising;Oakland Roots;2;2
+2026-04-12;Tampa Bay;Oakland Roots;2;2
+2026-07-30;Louisville City;Birmingham Legion;2;1
+2026-06-14;Louisville City;Brooklyn;2;2
+2026-06-21;Las Vegas Lights;Orange County SC;2;3
+2026-04-19;Oakland Roots;FC Tulsa;1;1
+2026-04-09;Orange County SC;San Antonio;2;0
+2026-08-16;Orange County SC;Louisville City;2;3
+2026-05-31;Sporting Jax;Brooklyn;2;2
+2026-03-29;Brooklyn;Louisville City;0;1
+2026-03-08;Brooklyn;Indy Eleven;1;0
+2026-04-12;Birmingham Legion;Pittsburgh;1;0
+2026-08-02;Charleston;Brooklyn;5;0
+2026-05-24;Orange County SC;Oakland Roots;3;2
+2026-03-22;FC Tulsa;Las Vegas Lights;3;2
+2026-07-16;Lexington;New Mexico;1;4
+2026-04-11;Loudoun;Louisville City;3;3
+2026-06-14;Sporting Jax;Detroit;2;6
+2026-04-18;Colorado Springs;Monterey Bay;4;1
+2026-07-06;Louisville City;Hartford Athletic;1;0
+2026-03-11;Birmingham Legion;Hartford Athletic;0;0
+2026-03-08;Orange County SC;Las Vegas Lights;1;1
+2026-03-29;Las Vegas Lights;Monterey Bay;1;0
+2026-07-05;Loudoun;Sporting Jax;2;2
+2026-08-23;Colorado Springs;El Paso;0;1
+2026-05-24;Monterey Bay;Birmingham Legion;2;0
+2026-04-04;Colorado Springs;Lexington;1;1
+2026-03-21;Louisville City;Rhode Island;4;2
+2026-07-26;Detroit;Las Vegas Lights;0;1
+2026-03-08;Sporting Jax;Hartford Athletic;0;3
+2026-03-28;Hartford Athletic;Indy Eleven;2;2
+2026-08-29;Hartford Athletic;Birmingham Legion;3;2
+2026-05-03;Pittsburgh;Phoenix Rising;0;1
+2026-04-04;Miami FC;Hartford Athletic;0;0
+2026-04-05;Indy Eleven;Pittsburgh;1;1
+2026-06-04;Birmingham Legion;Louisville City;1;1
+2026-06-21;Brooklyn;Tampa Bay;0;2
+2026-04-05;Monterey Bay;San Antonio;0;0
+2026-05-31;Phoenix Rising;Sacramento Republic;2;0
+2026-03-15;Lexington;Sacramento Republic;0;0
+2026-05-03;San Antonio;Colorado Springs;3;3
+2026-03-15;Monterey Bay;El Paso;0;3
+2026-07-06;Rhode Island;Orange County SC;1;1
+2026-08-02;Lexington;Monterey Bay;3;2
+2026-08-23;Indy Eleven;Louisville City;2;1
+2026-06-21;Birmingham Legion;Loudoun;1;1
+2026-03-29;Pittsburgh;Sporting Jax;3;2
+2026-08-09;El Paso;Oakland Roots;1;0
+2026-06-18;FC Tulsa;Monterey Bay;2;0
+2026-05-03;Las Vegas Lights;Lexington;2;1
+2026-03-29;Oakland Roots;Orange County SC;0;1
+2026-08-27;El Paso;Pittsburgh;2;1
+2026-05-24;Indy Eleven;Lexington;3;1
+2026-07-19;Phoenix Rising;Monterey Bay;3;2
+2026-08-02;Loudoun;Hartford Athletic;2;0
+2026-07-26;Colorado Springs;Charleston;2;1
+2026-04-11;Detroit;Sporting Jax;1;0
+2026-07-19;Rhode Island;Hartford Athletic;1;0
+2026-05-24;Tampa Bay;Phoenix Rising;3;0
+2026-07-06;Tampa Bay;Lexington;1;4
+2026-08-02;Tampa Bay;Louisville City;5;4
+2026-08-30;El Paso;Loudoun;4;1
+2026-04-19;Birmingham Legion;Indy Eleven;2;2
+2026-03-08;Sacramento Republic;FC Tulsa;2;0
+2026-04-12;Phoenix Rising;New Mexico;3;0
+2026-08-23;Rhode Island;Monterey Bay;3;1
+2026-07-03;Birmingham Legion;Detroit;1;2
+2026-05-21;Detroit;Miami FC;2;1
+2026-06-21;Sporting Jax;Charleston;2;5
+2026-07-06;San Antonio;Monterey Bay;0;0
+2026-05-10;Rhode Island;Tampa Bay;1;1
+2026-04-22;Brooklyn;Sacramento Republic;1;1
+2026-05-31;Las Vegas Lights;FC Tulsa;0;0
+2026-05-03;Tampa Bay;Indy Eleven;1;0
+2026-05-31;Hartford Athletic;New Mexico;0;0
+2026-05-24;San Antonio;Sacramento Republic;2;1
+2026-06-14;Birmingham Legion;Las Vegas Lights;1;2
+2026-07-30;Pittsburgh;FC Tulsa;0;1
+2026-06-14;Tampa Bay;Hartford Athletic;0;1
+2026-08-09;Miami FC;Las Vegas Lights;0;1
+2026-05-24;Miami FC;Louisville City;4;3
+2026-03-15;Phoenix Rising;Orange County SC;1;1
+2026-03-29;FC Tulsa;Phoenix Rising;1;1
+2026-05-02;Loudoun;Oakland Roots;2;2
+2026-04-19;Orange County SC;Lexington;0;0
+2026-06-11;Phoenix Rising;Louisville City;0;2
+2026-03-08;El Paso;Colorado Springs;2;2
+2026-08-30;Oakland Roots;Orange County SC;1;1
+2026-04-05;Sacramento Republic;Phoenix Rising;2;0
+2026-04-18;Louisville City;Sporting Jax;1;0
+2026-08-09;Lexington;Phoenix Rising;1;0
+2026-07-19;FC Tulsa;El Paso;1;0
+2026-04-04;Loudoun;Birmingham Legion;2;2
+2026-05-04;Monterey Bay;FC Tulsa;1;2
+2026-03-22;San Antonio;New Mexico;1;0
+2026-05-31;Louisville City;Tampa Bay;0;2
+2026-05-03;Miami FC;Brooklyn;3;2
+2026-07-06;Miami FC;Birmingham Legion;1;1
+2026-08-16;Hartford Athletic;Miami FC;2;1
+2026-04-23;Oakland Roots;Las Vegas Lights;4;2
+2026-05-31;El Paso;Lexington;1;4
+2026-04-12;San Antonio;Miami FC;0;0
+2026-06-21;Hartford Athletic;Pittsburgh;0;0
+2026-03-26;Sporting Jax;Miami FC;2;4
+2026-05-03;Sacramento Republic;Orange County SC;3;2
+2026-08-20;Phoenix Rising;Colorado Springs;3;1
+2026-03-15;Oakland Roots;New Mexico;2;1
+2026-05-31;Pittsburgh;Miami FC;2;0
+2026-04-05;El Paso;Las Vegas Lights;3;2
+2026-04-12;Lexington;Rhode Island;1;3
+2026-08-30;Lexington;Colorado Springs;0;1
+2026-04-12;Hartford Athletic;El Paso;0;4
+2026-08-16;Tampa Bay;Rhode Island;2;0
+2026-05-10;New Mexico;Las Vegas Lights;3;1
+2026-06-14;New Mexico;Orange County SC;1;1
+2026-07-26;Miami FC;Tampa Bay;2;3
+2026-05-31;Charleston;Detroit;2;0
+2026-05-03;Detroit;Louisville City;2;1
+2026-05-08;Birmingham Legion;Miami FC;0;0
+2026-04-30;El Paso;FC Tulsa;1;4
+2026-03-22;Sacramento Republic;Monterey Bay;1;1
+2026-03-08;Charleston;Pittsburgh;2;1
+2026-03-29;Miami FC;Rhode Island;2;1
+2026-08-16;Sporting Jax;Indy Eleven;0;1
+2026-07-09;Hartford Athletic;Orange County SC;2;2
+2026-07-16;Sporting Jax;Pittsburgh;2;1
+2026-05-28;Sporting Jax;San Antonio;4;4
+2026-04-05;Orange County SC;New Mexico;0;1
+2026-07-06;Colorado Springs;Phoenix Rising;3;1
+2026-08-06;Las Vegas Lights;Oakland Roots;0;0
+2026-08-16;Las Vegas Lights;Brooklyn;2;1
+2026-07-06;Pittsburgh;Brooklyn;0;2
+2026-08-23;Lexington;Las Vegas Lights;2;0
+2026-03-14;Loudoun;Pittsburgh;2;3
+2026-07-18;Pittsburgh;Louisville City;3;1
+2026-07-23;Colorado Springs;Miami FC;2;0
+2026-05-10;Brooklyn;Loudoun;0;1
+2026-07-19;Charleston;Sacramento Republic;1;1
+2026-05-07;New Mexico;El Paso;2;2
+2026-05-10;Hartford Athletic;Detroit;2;1
+2026-03-22;Tampa Bay;Pittsburgh;3;0
+2026-03-14;Detroit;Brooklyn;3;0
+2026-03-07;Lexington;Louisville City;1;2
+2026-08-23;Sacramento Republic;Phoenix Rising;2;2
+2026-03-26;Lexington;Brooklyn;3;0
+2026-03-28;New Mexico;Colorado Springs;3;2
+2026-06-11;Monterey Bay;Sporting Jax;2;1
+2026-05-24;New Mexico;Charleston;1;0
+2026-07-23;Lexington;Oakland Roots;2;0
+2026-06-14;Pittsburgh;Indy Eleven;1;0
+2026-07-05;Indy Eleven;Charleston;2;0
+2026-06-17;Oakland Roots;Birmingham Legion;1;1
+2026-03-29;Sacramento Republic;El Paso;1;2
+2026-07-09;Sacramento Republic;Rhode Island;2;1
+2026-04-12;Las Vegas Lights;Sacramento Republic;1;1
+2026-05-03;Rhode Island;Birmingham Legion;1;3
+2026-08-16;Colorado Springs;Birmingham Legion;3;2
+2026-07-19;Sporting Jax;Brooklyn;2;2
+2026-08-01;San Antonio;Indy Eleven;3;1
+2026-03-22;Charleston;Birmingham Legion;3;2
+2026-05-10;Phoenix Rising;San Antonio;1;1
+2026-04-04;Louisville City;Charleston;0;2
+2026-08-09;Orange County SC;Tampa Bay;0;3
+2026-05-03;Charleston;Sporting Jax;4;0
+2026-08-09;Loudoun;Charleston;0;1
+2026-06-25;Colorado Springs;San Antonio;1;2
+2026-05-31;Indy Eleven;Rhode Island;1;0
+2026-06-21;Monterey Bay;El Paso;1;0
+2026-04-23;Rhode Island;Charleston;4;0
+2026-08-23;San Antonio;Oakland Roots;0;1
+2026-06-21;Sacramento Republic;New Mexico;0;1
+2026-04-05;Sporting Jax;Tampa Bay;0;1

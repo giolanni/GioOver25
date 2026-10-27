@@ -1,0 +1,9 @@
+[4/264] Armenia_PremierLeague
+status=DIFFERENCES
+tournament=Premier League country=Armenia tournament_id=lSrMnn3j stage=embedded
+source=https://www.diretta.it/calcio/armenia/premier-league/risultati/
+team_overlap=1.000
+local=67 remote=66 equal=66 missing_local=0 extra_local=1 score_diff=0
+
+EXTRA_LOCAL:
+2026-09-02;Pyunik;Sardarapat;1;0

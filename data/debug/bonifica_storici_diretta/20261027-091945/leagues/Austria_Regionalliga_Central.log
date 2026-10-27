@@ -1,0 +1,124 @@
+[30/264] Austria_Regionalliga_Central
+status=DIFFERENCES
+tournament=Regionalliga Central country=Austria tournament_id=0lloZVXR stage=embedded
+source=https://www.diretta.it/calcio/austria/regionalliga-central/risultati/
+team_overlap=0.333
+local=6 remote=108 equal=0 missing_local=108 extra_local=6 score_diff=0
+
+MISSING_LOCAL:
+2026-03-22;Ried (Am);Voitsberg;1;4
+2026-05-29;Wolfsberger (Am);Kalsdorf;5;3
+2026-05-29;Dietach;Voitsberg;1;1
+2026-05-22;Atus Velden;Weiz;4;2
+2026-03-27;Lafnitz;Weiz;2;2
+2026-03-13;Lafnitz;Union Gurten;1;2
+2026-04-26;Ried (Am);Oedt;0;3
+2026-06-05;Ried (Am);Lafnitz;2;1
+2026-05-15;Wallern/St Marienkirchen;Atus Velden;1;3
+2026-05-01;Lafnitz;Dietach;2;1
+2026-04-24;LASK (Am);Lafnitz;0;3
+2026-04-10;Lafnitz;Gleisdorf;2;0
+2026-05-16;Kalsdorf;Dietach;1;2
+2026-05-22;Union Gurten;Kalsdorf;2;0
+2026-04-30;Kalsdorf;LASK (Am);3;1
+2026-05-23;Oedt;Wallern/St Marienkirchen;4;1
+2026-04-17;Deutschlandsberger;Dietach;4;1
+2026-03-27;Gleisdorf;Deutschlandsberger;1;5
+2026-04-02;Atus Velden;Weindorf St. Anna;2;1
+2026-03-20;Weiz;Gleisdorf;1;1
+2026-03-14;Dietach;Atus Velden;0;3
+2026-03-13;Gleisdorf;Wallern/St Marienkirchen;1;1
+2026-06-03;Kalsdorf;Wallern/St Marienkirchen;2;3
+2026-05-29;Deutschlandsberger;Atus Velden;1;1
+2026-06-05;Weindorf St. Anna;Dietach;1;3
+2026-03-13;Deutschlandsberger;Weiz;3;2
+2026-04-30;Wallern/St Marienkirchen;Treibach;2;0
+2026-04-17;Gleisdorf;LASK (Am);1;3
+2026-04-03;Deutschlandsberger;Lafnitz;1;2
+2026-04-26;Dietach;Gleisdorf;0;1
+2026-03-15;Wolfsberger (Am);Ried (Am);0;0
+2026-03-14;Voitsberg;Treibach;3;1
+2026-05-03;Deutschlandsberger;Voitsberg;1;3
+2026-05-29;Wallern/St Marienkirchen;Union Gurten;0;3
+2026-05-21;Treibach;Gleisdorf;2;2
+2026-04-17;Weiz;Wolfsberger (Am);2;1
+2026-03-28;Dietach;Union Gurten;0;1
+2026-05-15;Weiz;Ried (Am);3;1
+2026-04-12;Wolfsberger (Am);Wallern/St Marienkirchen;0;2
+2026-03-27;LASK (Am);Wallern/St Marienkirchen;2;1
+2026-03-27;Treibach;Kalsdorf;2;1
+2026-03-20;Union Gurten;LASK (Am);2;1
+2026-05-23;Wolfsberger (Am);Dietach;6;1
+2026-05-10;Wolfsberger (Am);Lafnitz;0;0
+2026-03-20;Kalsdorf;Deutschlandsberger;3;2
+2026-05-15;Union Gurten;Oedt;2;1
+2026-04-01;Kalsdorf;Gleisdorf;0;2
+2026-03-07;Treibach;Wolfsberger (Am);3;1
+2026-03-28;Voitsberg;Atus Velden;6;0
+2026-04-18;Oedt;Treibach;6;0
+2026-04-10;Dietach;Weiz;1;0
+2026-05-30;Lafnitz;Treibach;4;2
+2026-05-17;LASK (Am);Wolfsberger (Am);2;2
+2026-05-09;Weindorf St. Anna;Deutschlandsberger;0;1
+2026-05-15;Lafnitz;Voitsberg;1;3
+2026-05-10;Ried (Am);Wallern/St Marienkirchen;2;0
+2026-06-05;Treibach;LASK (Am);2;1
+2026-05-29;Weiz;Oedt;1;1
+2026-05-08;Voitsberg;Gleisdorf;6;0
+2026-05-01;Union Gurten;Ried (Am);3;0
+2026-05-08;Dietach;LASK (Am);0;4
+2026-06-03;Atus Velden;Gleisdorf;2;0
+2026-04-11;Voitsberg;Union Gurten;0;1
+2026-03-14;Weindorf St. Anna;Kalsdorf;0;1
+2026-04-10;LASK (Am);Deutschlandsberger;1;1
+2026-03-07;Weindorf St. Anna;Voitsberg;0;8
+2026-05-29;Gleisdorf;Ried (Am);1;0
+2026-05-29;LASK (Am);Weindorf St. Anna;2;1
+2026-05-15;Gleisdorf;Weindorf St. Anna;4;1
+2026-04-11;Weindorf St. Anna;Oedt;1;1
+2026-04-10;Treibach;Atus Velden;2;0
+2026-03-28;Weindorf St. Anna;Ried (Am);0;2
+2026-03-20;Atus Velden;Wolfsberger (Am);1;0
+2026-03-13;LASK (Am);Oedt;1;1
+2026-04-30;Weiz;Weindorf St. Anna;4;1
+2026-04-25;Voitsberg;Weiz;7;0
+2026-03-20;Oedt;Dietach;3;2
+2026-04-17;Kalsdorf;Lafnitz;3;0
+2026-06-03;Oedt;Deutschlandsberger;5;2
+2026-05-22;Ried (Am);Deutschlandsberger;1;3
+2026-04-03;Wallern/St Marienkirchen;Dietach;2;2
+2026-04-17;Wallern/St Marienkirchen;Voitsberg;1;2
+2026-04-17;Atus Velden;Ried (Am);3;2
+2026-04-03;Weiz;LASK (Am);5;1
+2026-04-30;Gleisdorf;Wolfsberger (Am);2;2
+2026-03-21;Treibach;Weindorf St. Anna;0;2
+2026-05-08;Atus Velden;Union Gurten;3;1
+2026-05-08;Oedt;Kalsdorf;1;1
+2026-06-05;Union Gurten;Weiz;1;0
+2026-04-24;Atus Velden;Kalsdorf;2;1
+2026-04-12;Ried (Am);Kalsdorf;4;2
+2026-05-22;Weindorf St. Anna;Lafnitz;2;0
+2026-04-17;Union Gurten;Weindorf St. Anna;0;0
+2026-04-25;Weindorf St. Anna;Wallern/St Marienkirchen;0;1
+2026-05-13;Deutschlandsberger;Treibach;1;0
+2026-04-26;Wolfsberger (Am);Deutschlandsberger;0;1
+2026-05-22;Voitsberg;LASK (Am);7;0
+2026-04-04;Oedt;Voitsberg;0;4
+2026-05-08;Treibach;Weiz;2;5
+2026-04-24;Treibach;Union Gurten;0;1
+2026-05-02;Oedt;Atus Velden;2;0
+2026-04-03;Union Gurten;Wolfsberger (Am);3;0
+2026-06-05;Voitsberg;Wolfsberger (Am);2;1
+2026-03-20;Wallern/St Marienkirchen;Lafnitz;3;2
+2026-04-04;Ried (Am);Treibach;2;0
+2026-03-07;Kalsdorf;Weiz;3;0
+2026-03-07;Atus Velden;LASK (Am);3;1
+2026-03-29;Wolfsberger (Am);Oedt;0;2
+
+EXTRA_LOCAL:
+2026-08-14;A. Klagenfurt;Wolfsberger (Am);5;0
+2026-08-14;ATSV Wolfsberger;Volkermarkt;0;5
+2026-08-14;Kalsdorf;Allerheiligen;5;2
+2026-08-14;Tillmitsch;Gleisdorf;2;1
+2026-08-14;Weiz;Deutschlandsberger;4;0
+2026-08-14;Treibach;Atus Velden;0;0

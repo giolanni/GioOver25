@@ -1,0 +1,13 @@
+[169/264] NorthMacedonia_1MFL
+status=DIFFERENCES
+tournament=1. MFL country=North Macedonia tournament_id=Gb0YIeSN stage=embedded
+source=https://www.diretta.it/calcio/north-macedonia/1-mfl/risultati/
+team_overlap=1.000
+local=50 remote=55 equal=50 missing_local=5 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-07-25;Vardar;Bregalnica;2;0
+2026-07-26;Sileks;Bashkimi;6;0
+2026-07-24;Tikves;Arsimi;5;1
+2026-07-26;Shkendija;FK Skopje;3;0
+2026-07-25;Struga;Shkendija Haracine;3;0

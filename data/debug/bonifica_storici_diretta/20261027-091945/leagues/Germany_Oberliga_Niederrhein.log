@@ -1,0 +1,18 @@
+[117/264] Germany_Oberliga_Niederrhein
+status=DIFFERENCES
+tournament=Oberliga Niederrhein country=Germany tournament_id=I36JMp6b stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-niederrhein/risultati/
+team_overlap=1.000
+local=92 remote=99 equal=91 missing_local=7 extra_local=0 score_diff=1
+
+MISSING_LOCAL:
+2026-08-21;Wuppertaler;Schonnebeck;1;3
+2026-08-22;SW Essen;SSVg Velbert;1;4
+2026-08-21;Germania Ratingen;Buderich;3;3
+2026-08-14;Dingden;Juchen-Garzweiler;3;0
+2026-08-14;Scherpenberg;SW Essen;5;3
+2026-10-16;Buderich;Baumberg;0;0
+2026-08-14;Dusseldorf II;Meerbusch;3;0
+
+SCORE_DIFF:
+2026-09-13;FC Monheim;Dusseldorf 2;LOCAL=3-1;DIRETTA=1-3

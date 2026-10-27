@@ -1,0 +1,9 @@
+[24/264] Austria_2Liga
+status=DIFFERENCES
+tournament=2. Liga country=Austria tournament_id=tdCl2DC6 stage=embedded
+source=https://www.diretta.it/calcio/austria/2-liga/risultati/
+team_overlap=1.000
+local=80 remote=80 equal=79 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-08-15;Sturm Graz 2;Admira;LOCAL=2-0;DIRETTA=0-2

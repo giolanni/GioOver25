@@ -1,0 +1,17 @@
+[227/264] Switzerland_PromotionLeague
+status=DIFFERENCES
+tournament=Promotion League country=Switzerland tournament_id=GlNehXfe stage=embedded
+source=https://www.diretta.it/calcio/switzerland/promotion-league/risultati/
+team_overlap=1.000
+local=114 remote=108 equal=107 missing_local=0 extra_local=6 score_diff=1
+
+EXTRA_LOCAL:
+2026-08-01;YF Juventus;Luzerna 2;0;3
+2026-08-01;Bellinzona;Bavois;0;2
+2026-08-01;Kreuzlingen;Basilea 2;3;1
+2026-07-31;Bruhl SG;Young Boys 2;4;2
+2026-08-01;Cham;Breitenrain;2;1
+2026-08-01;Grand-Saconnex;Amical Saint-Prex;6;0
+
+SCORE_DIFF:
+2026-10-03;Grand-Saconnex;YF Juventus;LOCAL=0-1;DIRETTA=3-0

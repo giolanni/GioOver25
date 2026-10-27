@@ -1,0 +1,42 @@
+[115/264] Germany_Oberliga_Hessen
+status=DIFFERENCES
+tournament=Oberliga Hessen country=Germany tournament_id=nR6CBTit stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-hessen/risultati/
+team_overlap=1.000
+local=133 remote=108 equal=105 missing_local=2 extra_local=27 score_diff=1
+
+MISSING_LOCAL:
+2026-10-18;Hanauer SC;Darmstadt U21;1;0
+2026-10-24;Darmstadt U21;VfB Marburg;3;0
+
+EXTRA_LOCAL:
+2026-08-02;Eddersheim;Pohlheim;4;1
+2026-07-31;Hadamar;Baunatal;2;1
+2026-07-31;Fernwald;Stadtallendorf;2;0
+2026-08-12;Hanauer SC;Alzenau;2;2
+2026-08-12;Kassel 2;Hunfelder;0;2
+2026-08-09;Pohlheim;Hummetroth;3;1
+2026-08-09;Kassel 2;Hanauer SC;0;2
+2026-08-07;Hunfelder;VfB Marburg;0;1
+2026-08-08;Baunatal;Giessen;0;0
+2026-08-08;Friedberg;RW Walldorf;1;0
+2026-08-08;Stadtallendorf;Eddersheim;1;1
+2026-08-12;Fernwald;Pohlheim;1;1
+2026-08-01;Hummetroth;Friedberg;2;4
+2026-08-12;Eddersheim;Friedberg;1;1
+2026-08-08;Unter-Flockenbach;CSC 03 Kassel;6;0
+2026-08-02;RW Walldorf;Unter-Flockenbach;1;4
+2026-08-12;RW Walldorf;Darmstadt U21;1;4
+2026-08-12;VfB Marburg;Stadtallendorf;2;2
+2026-08-02;Hanauer SC;Hunfelder;3;4
+2026-08-12;CSC 03 Kassel;Baunatal;3;1
+2026-08-02;CSC 03 Kassel;Darmstadt U21;1;5
+2026-08-12;Hummetroth;Unter-Flockenbach;1;2
+2026-08-08;Alzenau;Fernwald;1;1
+2026-08-01;VfB Marburg;Alzenau;2;1
+2026-08-12;Giessen;Hadamar;0;0
+2026-08-08;Darmstadt U21;Hadamar;1;1
+2026-08-01;Giessen;Kassel 2;0;2
+
+SCORE_DIFF:
+2026-09-06;Kassel 2;Hummetroth;LOCAL=1-1;DIRETTA=0-0

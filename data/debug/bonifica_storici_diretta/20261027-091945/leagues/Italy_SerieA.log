@@ -1,0 +1,6 @@
+[141/264] Italy_SerieA
+status=OK
+tournament=Serie A country=Italy tournament_id=WdNk9YwP stage=embedded
+source=https://www.diretta.it/calcio/italia/serie-a/risultati/
+team_overlap=1.000
+local=80 remote=80 equal=80 missing_local=0 extra_local=0 score_diff=0

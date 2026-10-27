@@ -1,0 +1,26 @@
+[42/264] Azerbaijan_PremierLeague
+status=DIFFERENCES
+tournament=Premier League country=Azerbaijan tournament_id=OhHMcW1c stage=embedded
+source=https://www.diretta.it/calcio/azerbaijan/premier-league/risultati/
+team_overlap=0.923
+local=50 remote=52 equal=43 missing_local=9 extra_local=7 score_diff=0
+
+MISSING_LOCAL:
+2026-08-15;Sabah FC;Kapaz;2;0
+2026-08-31;Araz;Sabah FC;0;1
+2026-09-14;Safa Baku;Sabah FC;0;3
+2026-08-22;Zira;Imisli FK;3;1
+2026-10-17;Gabala;Sabah FC;0;4
+2026-09-19;Sabah FC;Imisli FK;3;1
+2026-09-05;Sabah FC;Zira;5;0
+2026-10-09;Neftci Baku;Sabah FC;0;0
+2026-08-22;Gabala;Safa Baku;0;1
+
+EXTRA_LOCAL:
+2026-09-05;Sabah Baku;Zira;5;0
+2026-09-14;Safa Baku;Sabah Baku;0;3
+2026-08-15;Sabah Baku;Kapaz;2;0
+2026-08-31;Araz;Sabah Baku;0;1
+2026-10-09;Neftci Baku;Sabah Baku;0;0
+2026-10-17;Gabala;Sabah Baku;0;4
+2026-09-19;Sabah Baku;Imisli FK;3;1

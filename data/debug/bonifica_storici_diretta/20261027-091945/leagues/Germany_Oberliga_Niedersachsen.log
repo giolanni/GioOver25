@@ -1,0 +1,11 @@
+[118/264] Germany_Oberliga_Niedersachsen
+status=DIFFERENCES
+tournament=Oberliga Niedersachsen country=Germany tournament_id=U1Sm9wBC stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-niedersachsen/risultati/
+team_overlap=1.000
+local=87 remote=90 equal=87 missing_local=3 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-10-18;Drochtersen/Assel II;Braunschweig U23;2;3
+2026-10-21;Drochtersen/Assel II;Luneburger Hansa;0;0
+2026-10-23;Braunschweig U23;Hildesheim;2;0
