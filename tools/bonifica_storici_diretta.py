@@ -89,6 +89,18 @@ def parse_records(payload: str) -> list[dict[str, str]]:
     return out
 
 
+def repair_mojibake(value: str) -> str:
+    """Ripara solo il mojibake tipico UTF-8 letto come Latin-1/CP1252."""
+    text = value or ""
+    if not any(token in text for token in ("Ã", "Â", "â", "ð")):
+        return text
+    try:
+        repaired = text.encode("latin-1").decode("utf-8")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        return text
+    return repaired if repaired != text else text
+
+
 def parse_results_feed(payload: str) -> list[Result]:
     out = []
     current_round = ""
@@ -107,7 +119,7 @@ def parse_results_feed(payload: str) -> list[Result]:
             date = datetime.fromtimestamp(int(row["AD"])).astimezone().date().isoformat()
         except (ValueError, TypeError, OSError):
             continue
-        out.append(Result(date, row["AE"].strip(), row["AF"].strip(), int(hg), int(ag), current_round))
+        out.append(Result(date, repair_mojibake(row["AE"].strip()), repair_mojibake(row["AF"].strip()), int(hg), int(ag), current_round))
     # deduplica per event identity visibile
     unique = {}
     for r in out:
