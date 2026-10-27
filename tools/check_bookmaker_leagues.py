@@ -13,7 +13,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-from tools.prepare_input import ROOT, norm
+from tools.prepare_input import ROOT, norm\nfrom tools.discover_leagues import competition_kind
 
 DEBUG = ROOT / "data" / "debug"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36"
