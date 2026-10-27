@@ -1,0 +1,16 @@
+[198/264] Romania_Superliga
+status=DIFFERENCES
+tournament=Superliga country=Romania tournament_id=WlHrWlWA stage=embedded
+source=https://www.diretta.it/calcio/romania/superliga/risultati/
+team_overlap=1.000
+local=102 remote=104 equal=100 missing_local=4 extra_local=2 score_diff=0
+
+MISSING_LOCAL:
+2026-07-18;Univ. Craiova;UTA Arad;4;0
+2026-07-27;Botosani;Rapid Bucarest;1;1
+2026-07-27;CFR Cluj;FC Voluntari;5;0
+2026-07-18;Otelul;CFR Cluj;2;1
+
+EXTRA_LOCAL:
+2026-07-28;CFR Cluj;FC Voluntari;5;0
+2026-07-28;Botosani;Rapid Bucarest;1;1

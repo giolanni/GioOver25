@@ -1,0 +1,9 @@
+[2/264] Andorra_PrimeraDivisio
+status=DIFFERENCES
+tournament=Primera Divisió country=Andorra tournament_id=vaMtrI5m stage=embedded
+source=https://www.diretta.it/calcio/andorra/primera-divisio/risultati/
+team_overlap=1.000
+local=30 remote=30 equal=29 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-09-20;Inter Escaldes;FC Rangers;LOCAL=2-3;DIRETTA=3-0

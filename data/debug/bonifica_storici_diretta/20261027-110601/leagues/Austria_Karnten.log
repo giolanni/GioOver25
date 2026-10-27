@@ -1,0 +1,19 @@
+[27/264] Austria_Karnten
+status=DIFFERENCES
+tournament=Karnten country=Austria tournament_id=QVSnFjdC stage=embedded
+source=https://www.diretta.it/calcio/austria/karnten/risultati/
+team_overlap=1.000
+local=111 remote=104 equal=103 missing_local=1 extra_local=8 score_diff=0
+
+MISSING_LOCAL:
+2026-08-21;Atus Ferlach;Launsdorf;1;2
+
+EXTRA_LOCAL:
+2026-07-31;SGA Sirnitz;TSV Grafenstein;0;2
+2026-08-02;Launsdorf;Saint Michael Lavanttal;2;1
+2026-08-02;Seeboden;Nussdorf;5;3
+2026-07-31;SV Spittal;Atus Ferlach;0;1
+2026-07-31;SC Landskron;Dellach/Gail;1;0
+2026-07-31;Matrei;Kottmannsdorf;2;0
+2026-07-31;KAC 1909;Lendorf;3;2
+2026-07-31;SC St. Veit;SAK Klagenfurt;3;3

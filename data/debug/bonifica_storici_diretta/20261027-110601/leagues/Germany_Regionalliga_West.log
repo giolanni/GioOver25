@@ -1,0 +1,26 @@
+[130/264] Germany_Regionalliga_West
+status=DIFFERENCES
+tournament=Regionalliga West country=Germany tournament_id=v115fmj2 stage=embedded
+source=https://www.diretta.it/calcio/germany/regionalliga-west/risultati/
+team_overlap=1.000
+local=125 remote=107 equal=107 missing_local=0 extra_local=18 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-01;Colonia 2;Wiedenbruck;2;1
+2026-08-09;Wiedenbruck;Bergisch Gladbach;1;3
+2026-08-01;Bochum 2;Dortmund 2;1;1
+2026-08-01;Hilden;Bocholt;0;0
+2026-08-08;Siegen;Hilden;1;1
+2026-08-01;Lotte;FC Gutersloh;0;1
+2026-08-08;Wattenscheid;Westfalia Rhynern;1;2
+2026-08-01;Monchengladbach 2;Rodinghausen;2;0
+2026-08-01;Westfalia Rhynern;Siegen;3;2
+2026-08-08;Rodinghausen;Bonner;2;1
+2026-08-07;FC Gutersloh;Bochum 2;2;1
+2026-08-09;Oberhausen;Lotte;0;0
+2026-08-08;Bocholt;Schalke 2;4;5
+2026-08-08;Paderborn 2;Monchengladbach 2;1;3
+2026-08-07;Dortmund 2;Colonia 2;1;1
+2026-07-31;Bonner;Oberhausen;1;2
+2026-08-01;Bergisch Gladbach;Wattenscheid;1;1
+2026-08-01;Schalke 2;Paderborn 2;2;3

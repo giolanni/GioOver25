@@ -1,0 +1,6 @@
+[66/264] CzechRepublic_ChNL
+status=OK
+tournament=ChNL country=Czech Republic tournament_id=Umc6FtFs stage=embedded
+source=https://www.diretta.it/calcio/czech-republic/chnl/risultati/
+team_overlap=1.000
+local=96 remote=96 equal=96 missing_local=0 extra_local=0 score_diff=0

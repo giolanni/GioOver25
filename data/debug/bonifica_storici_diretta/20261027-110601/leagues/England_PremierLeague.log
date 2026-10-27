@@ -1,0 +1,6 @@
+[75/264] England_PremierLeague
+status=OK
+tournament=Premier League country=England tournament_id=SY30SsKF stage=embedded
+source=https://www.diretta.it/calcio/inghilterra/premier-league/risultati/
+team_overlap=1.000
+local=80 remote=80 equal=80 missing_local=0 extra_local=0 score_diff=0

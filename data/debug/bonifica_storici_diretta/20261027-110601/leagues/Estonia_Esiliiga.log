@@ -1,0 +1,91 @@
+[81/264] Estonia_Esiliiga
+status=DIFFERENCES
+tournament=Esiliiga country=Estonia tournament_id=fgnyr5t9 stage=embedded
+source=https://www.diretta.it/calcio/estonia/esiliiga/risultati/
+team_overlap=1.000
+local=159 remote=97 equal=88 missing_local=8 extra_local=70 score_diff=1
+
+MISSING_LOCAL:
+2026-10-19;Tallinna Kalev;Levadia U21;1;2
+2026-07-05;Nomme Kalju U21;Elva;2;2
+2026-07-27;Nomme Utd U21;Viimsi JK;0;3
+2026-07-05;Flora U21;Levadia U21;0;4
+2026-10-22;Flora U21;Nomme Utd U21;3;2
+2026-10-25;Elva;Levadia U21;3;3
+2026-10-24;Nomme Kalju U21;FC Tallinn;1;2
+2026-07-04;FC Tallinn;Nomme Utd U21;4;3
+
+EXTRA_LOCAL:
+2026-05-28;Levadia U21;Elva;1;3
+2026-04-26;Viimsi JK;Maardu;1;1
+2026-04-03;Elva;Viimsi JK;1;0
+2026-04-11;Nomme Kalju U21;Tartu Welco;1;5
+2026-03-07;Levadia U21;Nomme Kalju U21;2;0
+2026-04-27;FC Tallinn;Levadia U21;4;2
+2026-04-19;Elva;Nomme Utd U21;1;3
+2026-03-22;Nomme Utd U21;FC Tallinn;2;2
+2026-03-06;Viimsi JK;Flora U21;2;1
+2026-04-11;Maardu;Levadia U21;3;2
+2026-05-28;FC Tallinn;Maardu;0;0
+2026-03-08;Nomme Utd U21;Maardu;4;1
+2026-03-19;Viimsi JK;Tallinna Kalev;2;0
+2026-05-01;Flora U21;Maardu;5;0
+2026-05-02;Elva;Nomme Kalju U21;2;4
+2026-07-06;Flora U21;Levadia U21;0;4
+2026-05-01;Levadia U21;Viimsi JK;1;2
+2026-07-05;FC Tallinn;Nomme Utd U21;4;3
+2026-04-09;Tallinna Kalev;Elva;2;1
+2026-05-16;Levadia U21;Maardu;1;2
+2026-04-10;Flora U21;FC Tallinn;5;0
+2026-04-27;Tartu Welco;Elva;3;3
+2026-04-23;Levadia U21;Tallinna Kalev;3;2
+2026-04-23;Viimsi JK;Tartu Welco;2;0
+2026-05-13;Flora U21;Nomme Utd U21;2;2
+2026-03-12;Maardu;Elva;0;3
+2026-04-23;Flora U21;Elva;3;2
+2026-04-03;Maardu;Tallinna Kalev;1;1
+2026-05-16;Nomme Kalju U21;Viimsi JK;1;1
+2026-05-09;Maardu;Nomme Utd U21;2;1
+2026-05-24;FC Tallinn;Viimsi JK;0;2
+2026-03-14;Nomme Kalju U21;Viimsi JK;0;0
+2026-04-03;Nomme Utd U21;Tartu Welco;1;3
+2026-04-24;Nomme Utd U21;Nomme Kalju U21;0;3
+2026-03-19;Flora U21;Nomme Kalju U21;3;1
+2026-03-16;Levadia U21;Nomme Utd U21;0;1
+2026-03-07;FC Tallinn;Elva;1;1
+2026-05-16;Nomme Utd U21;Elva;1;0
+2026-05-27;Tallinna Kalev;Viimsi JK;0;3
+2026-03-05;Tartu Welco;Tallinna Kalev;3;0
+2026-03-15;Tallinna Kalev;FC Tallinn;5;1
+2026-03-21;Elva;Levadia U21;3;2
+2026-06-01;Elva;Tartu Welco;0;2
+2026-04-05;Levadia U21;Flora U21;1;3
+2026-04-17;Tartu Welco;Levadia U21;3;2
+2026-05-11;Nomme Kalju U21;Levadia U21;1;0
+2026-04-27;Nomme Kalju U21;Tallinna Kalev;0;4
+2026-05-01;Tallinna Kalev;Nomme Utd U21;4;4
+2026-05-25;Levadia U21;Nomme Utd U21;4;2
+2026-05-09;Tallinna Kalev;Tartu Welco;2;0
+2026-04-18;Nomme Kalju U21;Maardu;3;2
+2026-05-14;FC Tallinn;Tallinna Kalev;1;1
+2026-05-01;FC Tallinn;Tartu Welco;0;2
+2026-07-06;Nomme Kalju U21;Elva;2;2
+2026-05-09;Flora U21;Viimsi JK;0;4
+2026-03-21;Tartu Welco;Maardu;5;1
+2026-05-07;Elva;FC Tallinn;2;0
+2026-06-01;Nomme Kalju U21;FC Tallinn;1;3
+2026-04-23;Maardu;FC Tallinn;1;1
+2026-05-17;Tartu Welco;Flora U21;3;3
+2026-05-24;Elva;Tallinna Kalev;3;1
+2026-05-28;Tartu Welco;Nomme Kalju U21;4;2
+2026-04-16;Viimsi JK;FC Tallinn;5;1
+2026-05-24;Maardu;Tartu Welco;0;1
+2026-04-12;Viimsi JK;Nomme Utd U21;1;3
+2026-04-16;Tallinna Kalev;Flora U21;1;4
+2026-05-31;Tallinna Kalev;Levadia U21;1;2
+2026-04-04;FC Tallinn;Nomme Kalju U21;6;3
+2026-03-14;Flora U21;Tartu Welco;1;6
+2026-07-28;Nomme Utd U21;Viimsi JK;0;3
+
+SCORE_DIFF:
+2026-09-03;Nomme Utd U21;Elva;LOCAL=3-0;DIRETTA=0-1

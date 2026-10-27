@@ -1,0 +1,6 @@
+[41/264] Azerbaijan_FirstLeague
+status=OK
+tournament=I Liqa country=Azerbaijan tournament_id=4SARZS9j stage=embedded
+source=https://www.diretta.it/calcio/azerbaijan/i-liqa/risultati/
+team_overlap=1.000
+local=30 remote=30 equal=30 missing_local=0 extra_local=0 score_diff=0

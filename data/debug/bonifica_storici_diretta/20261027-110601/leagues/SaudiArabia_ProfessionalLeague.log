@@ -1,0 +1,6 @@
+[201/264] SaudiArabia_ProfessionalLeague
+status=OK
+tournament=Saudi Professional League country=Saudi Arabia tournament_id=KhnwMkjD stage=embedded
+source=https://www.diretta.it/calcio/arabia-saudita/saudi-professional-league/risultati/
+team_overlap=1.000
+local=94 remote=94 equal=94 missing_local=0 extra_local=0 score_diff=0

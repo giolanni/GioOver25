@@ -1,0 +1,13 @@
+[45/264] Belgium_ChallengerProLeague
+status=DIFFERENCES
+tournament=Challenger Pro League country=Belgium tournament_id=48UFLHXr stage=embedded
+source=https://www.diretta.it/calcio/belgium/challenger-pro-league/risultati/
+team_overlap=1.000
+local=52 remote=54 equal=51 missing_local=2 extra_local=0 score_diff=1
+
+MISSING_LOCAL:
+2026-10-24;Genk U23;Club Brugge U23;0;0
+2026-10-24;Sporting Lokeren;Gent U23;2;0
+
+SCORE_DIFF:
+2026-10-11;Patro Eisden;Genk U23;LOCAL=2-1;DIRETTA=1-0

@@ -1,0 +1,12 @@
+[132/264] Hungary_NBII
+status=DIFFERENCES
+tournament=NB II. country=Hungary tournament_id=8lD4Z9b5 stage=embedded
+source=https://www.diretta.it/calcio/ungheria/nb-ii/risultati/
+team_overlap=1.000
+local=86 remote=87 equal=85 missing_local=1 extra_local=0 score_diff=1
+
+MISSING_LOCAL:
+2026-08-08;Videoton;Szeged;1;0
+
+SCORE_DIFF:
+2026-08-01;Gyirmot;Kozarmisleny;LOCAL=2-2;DIRETTA=2-1

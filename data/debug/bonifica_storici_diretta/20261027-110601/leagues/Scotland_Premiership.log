@@ -1,0 +1,6 @@
+[202/264] Scotland_Premiership
+status=OK
+tournament=Premiership country=Scotland tournament_id=O03ldAOr stage=embedded
+source=https://www.diretta.it/calcio/scozia/premiership/risultati/
+team_overlap=1.000
+local=60 remote=60 equal=60 missing_local=0 extra_local=0 score_diff=0

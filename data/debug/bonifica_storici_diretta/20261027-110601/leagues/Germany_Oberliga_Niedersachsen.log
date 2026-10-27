@@ -1,0 +1,6 @@
+[118/264] Germany_Oberliga_Niedersachsen
+status=OK
+tournament=Oberliga Niedersachsen country=Germany tournament_id=U1Sm9wBC stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-niedersachsen/risultati/
+team_overlap=1.000
+local=90 remote=90 equal=90 missing_local=0 extra_local=0 score_diff=0

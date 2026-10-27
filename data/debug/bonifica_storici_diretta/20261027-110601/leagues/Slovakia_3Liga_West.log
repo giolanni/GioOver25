@@ -1,0 +1,6 @@
+[206/264] Slovakia_3Liga_West
+status=OK
+tournament=3. Liga - West country=Slovakia tournament_id=Ygk3jFn3 stage=embedded
+source=https://www.diretta.it/calcio/slovakia/3-liga-west/risultati/
+team_overlap=1.000
+local=97 remote=97 equal=97 missing_local=0 extra_local=0 score_diff=0

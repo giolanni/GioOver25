@@ -1,0 +1,6 @@
+[230/264] Turkey_SuperLig
+status=OK
+tournament=Super Lig country=Turkey tournament_id=ABdATjMP stage=embedded
+source=https://www.diretta.it/calcio/turchia/super-lig/risultati/
+team_overlap=1.000
+local=81 remote=81 equal=81 missing_local=0 extra_local=0 score_diff=0

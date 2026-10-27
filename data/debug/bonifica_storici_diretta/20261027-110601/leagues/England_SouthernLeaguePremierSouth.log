@@ -1,0 +1,30 @@
+[77/264] England_SouthernLeaguePremierSouth
+status=DIFFERENCES
+tournament=Southern League Premier South country=England tournament_id=tWSVfXgJ stage=embedded
+source=https://www.diretta.it/calcio/england/southern-league-premier-south/risultati/
+team_overlap=1.000
+local=134 remote=112 equal=112 missing_local=0 extra_local=22 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-11;Bath;Plymouth Parkway;1;1
+2026-08-11;Evesham;Frome;0;4
+2026-08-11;Wimborne;Chichester;0;1
+2026-08-11;Taunton;Malvern Town;5;2
+2026-08-08;Sholing;Bath;1;2
+2026-08-12;Gosport;Hanworth;0;1
+2026-08-11;Hanwell Town;Basingstoke;2;1
+2026-08-08;Hanworth;Taunton;2;0
+2026-08-11;Poole;Sholing;0;1
+2026-08-08;Yate Town;Gosport;1;0
+2026-08-08;Gloucester;Chertsey;0;1
+2026-08-08;Berkhamsted;Havant & W;2;0
+2026-08-11;Chertsey;Berkhamsted;4;1
+2026-08-08;Chichester;Poole;1;2
+2026-08-11;Havant & W;Uxbridge;0;2
+2026-08-08;Plymouth Parkway;Bracknell;7;0
+2026-08-08;Uxbridge;Chippenham;2;0
+2026-08-11;Chippenham;Yate Town;1;1
+2026-08-08;Frome;Wimborne;2;0
+2026-08-08;Malvern Town;Hanwell Town;2;2
+2026-08-08;Basingstoke;Evesham;2;4
+2026-08-11;Bracknell;Gloucester;3;2

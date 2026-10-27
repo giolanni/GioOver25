@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-27T11:44:52",
+  "apply": false,
+  "total": 264,
+  "status_counts": {
+    "OK": 54,
+    "DIFFERENCES": 107,
+    "FILE_MISSING": 59,
+    "DIRETTA_NOT_FOUND": 37,
+    "SAFE_MISSING": 7
+  },
+  "summary": "C:\\mi\\AIOver25\\data\\debug\\bonifica_storici_diretta\\20261027-110601\\summary.csv"
+}

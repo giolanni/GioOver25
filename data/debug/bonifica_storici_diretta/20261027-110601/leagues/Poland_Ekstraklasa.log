@@ -1,0 +1,14 @@
+[188/264] Poland_Ekstraklasa
+status=DIFFERENCES
+tournament=Ekstraklasa country=Poland tournament_id=jTW70Z8b stage=embedded
+source=https://www.diretta.it/calcio/polonia/ekstraklasa/risultati/
+team_overlap=1.000
+local=106 remote=104 equal=103 missing_local=1 extra_local=3 score_diff=0
+
+MISSING_LOCAL:
+2026-07-27;Zaglebie;Piast;2;0
+
+EXTRA_LOCAL:
+2026-07-24;Pogon Szczecin;Legia;0;1
+2026-07-28;Zaglebie;Piast;2;0
+2026-07-24;Radomiak Radom;Wieczysta Krakow;2;1

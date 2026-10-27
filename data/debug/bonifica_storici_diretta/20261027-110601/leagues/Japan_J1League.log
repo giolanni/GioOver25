@@ -1,0 +1,16 @@
+[147/264] Japan_J1League
+status=DIFFERENCES
+tournament=J1 League country=Japan tournament_id=j5IFXmLj stage=embedded
+source=https://www.diretta.it/calcio/giappone/j1-league/risultati/
+team_overlap=1.000
+local=120 remote=112 equal=112 missing_local=0 extra_local=8 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-08;C-Osaka;Okayama;2;1
+2026-08-08;Hiroshima;Chiba;3;0
+2026-08-07;G-Osaka;Urawa;4;3
+2026-08-07;Yokohama M.;Kashima;3;4
+2026-08-08;Kashiwa;Mito;2;1
+2026-08-08;Tokyo;Machida;1;5
+2026-08-08;Avispa Fukuoka;Kobe;0;1
+2026-08-08;Nagoya;Shimizu;0;1

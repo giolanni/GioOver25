@@ -1,0 +1,6 @@
+[213/264] Spain_LaLiga
+status=OK
+tournament=LaLiga country=Spain tournament_id=QeI1Oeyi stage=embedded
+source=https://www.diretta.it/calcio/spagna/laliga/risultati/
+team_overlap=1.000
+local=100 remote=100 equal=100 missing_local=0 extra_local=0 score_diff=0

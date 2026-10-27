@@ -1,0 +1,42 @@
+[79/264] England_NPLPremierDivision
+status=DIFFERENCES
+tournament=NPL Premier Division country=England tournament_id=W6AiU3k3 stage=embedded
+source=https://www.diretta.it/calcio/england/npl-premier-division/risultati/
+team_overlap=1.000
+local=156 remote=122 equal=122 missing_local=0 extra_local=34 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-11;Stockton;Ashton Utd;0;1
+2026-08-15;FC United;Gainsborough;0;3
+2026-08-08;Gainsborough;Workington;2;0
+2026-08-11;Lancaster;Warrington Rylands;1;0
+2026-08-11;FC United;Leek;1;1
+2026-08-08;Ilkeston;Stockton;1;0
+2026-08-08;Leek;Whitby;1;2
+2026-08-14;Emley;Curzon Ashton;2;1
+2026-08-08;Warrington Rylands;FC United;3;0
+2026-08-08;Cleethorpes;Bamber Bridge;2;0
+2026-08-15;Lancaster;Hyde;1;2
+2026-10-06;Emley;Bamber Bridge;0;3
+2026-08-08;Curzon Ashton;Alfreton;1;0
+2026-08-08;Hyde;Emley;0;0
+2026-08-11;Whitby;Guiseley;0;2
+2026-08-15;Stockton;Leek;1;1
+2026-08-15;Warrington;Cleethorpes;1;1
+2026-08-11;Bamber Bridge;Avro;1;6
+2026-08-11;Bury;Curzon Ashton;3;2
+2026-08-11;Emley;Ilkeston;1;2
+2026-08-11;Quorn;Cleethorpes;0;5
+2026-08-11;Workington;Redcar Athletic;0;1
+2026-08-08;Guiseley;Warrington;1;2
+2026-08-15;Quorn;Redcar Athletic;1;1
+2026-08-15;Bamber Bridge;Ashton Utd;1;0
+2026-08-11;Warrington;Hyde;3;0
+2026-08-15;Whitby;Ilkeston;2;0
+2026-08-08;Redcar Athletic;Bury;0;0
+2026-08-11;Alfreton;Gainsborough;2;1
+2026-08-15;Bury;Warrington Rylands;1;0
+2026-08-08;Avro;Quorn;2;1
+2026-08-15;Workington;Guiseley;2;2
+2026-08-08;Ashton Utd;Lancaster;4;1
+2026-08-15;Alfreton;Avro;3;0

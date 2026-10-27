@@ -1,0 +1,6 @@
+[231/264] Ukraine_PershaLiga
+status=OK
+tournament=Persha Liga country=Ukraine tournament_id=Sj5x8cxh stage=embedded
+source=https://www.diretta.it/calcio/ucraina/persha-liga/risultati/
+team_overlap=1.000
+local=102 remote=102 equal=102 missing_local=0 extra_local=0 score_diff=0

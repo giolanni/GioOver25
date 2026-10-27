@@ -1,0 +1,89 @@
+[222/264] Sweden_Division2_SodraGotaland
+status=DIFFERENCES
+tournament=Division 2 - Södra Götaland country=Sweden tournament_id=Y1d9T484 stage=embedded
+source=https://www.diretta.it/calcio/svezia/division-2-sodra-gotaland/risultati/
+team_overlap=1.000
+local=183 remote=106 equal=105 missing_local=1 extra_local=78 score_diff=0
+
+MISSING_LOCAL:
+2026-06-28;Linero IF;IFK Karlshamn;3;1
+
+EXTRA_LOCAL:
+2026-04-19;Karlskrona;Osterlen;3;1
+2026-05-16;Karlskrona;Staffanstorp United;1;1
+2026-05-22;IFK Karlshamn;Vaxjo Norra;1;2
+2026-04-19;IFK Karlshamn;IFK Berga;0;1
+2026-05-09;Lilla Torg;Vaxjo Norra;1;1
+2026-03-29;IFK Berga;Nosaby;2;3
+2026-05-09;Osterlen;IFK Berga;1;2
+2026-04-12;Rappe GOIF;Lilla Torg;1;1
+2026-05-01;Karlskrona;Solvesborgs;1;0
+2026-05-29;Vaxjo Norra;Rappe GOIF;0;2
+2026-04-03;Lilla Torg;Solvesborgs;0;5
+2026-05-09;Oskarshamn;Torns;6;1
+2026-04-24;Torns;Nosaby;1;3
+2026-05-02;IFK Karlshamn;Linero IF;1;2
+2026-06-07;Oskarshamn;Osterlen;1;1
+2026-03-28;Rappe GOIF;IFK Karlshamn;3;1
+2026-05-22;Linero IF;IFK Trelleborg;2;1
+2026-05-30;Osterlen;Staffanstorp United;3;1
+2026-05-30;Nosaby;IFK Karlshamn;2;2
+2026-04-18;Rappe GOIF;Linero IF;0;2
+2026-04-30;Lilla Torg;Osterlen;0;0
+2026-04-05;Karlskrona;IFK Trelleborg;0;0
+2026-04-03;Vaxjo Norra;Torns;1;0
+2026-05-14;Vaxjo Norra;Linero IF;2;1
+2026-05-29;Torns;Linero IF;2;1
+2026-04-18;Nosaby;Vaxjo Norra;0;0
+2026-03-28;Solvesborgs;Vaxjo Norra;2;3
+2026-05-24;Lilla Torg;IFK Berga;2;1
+2026-05-22;Staffanstorp United;Nosaby;5;0
+2026-04-24;IFK Berga;Oskarshamn;1;1
+2026-04-05;Staffanstorp United;IFK Berga;1;1
+2026-05-13;Torns;Lilla Torg;0;2
+2026-06-07;Staffanstorp United;Vaxjo Norra;2;2
+2026-04-11;Oskarshamn;Staffanstorp United;3;0
+2026-05-16;IFK Trelleborg;Osterlen;1;1
+2026-05-16;Nosaby;Solvesborgs;2;0
+2026-04-17;Staffanstorp United;Torns;2;4
+2026-05-24;Oskarshamn;Karlskrona;0;3
+2026-06-06;Linero IF;IFK Berga;1;0
+2026-05-22;Solvesborgs;Osterlen;2;1
+2026-04-18;Oskarshamn;Solvesborgs;4;2
+2026-04-03;IFK Karlshamn;Osterlen;0;1
+2026-04-25;IFK Trelleborg;IFK Karlshamn;2;1
+2026-05-31;Karlskrona;Lilla Torg;1;1
+2026-05-01;Vaxjo Norra;IFK Berga;1;1
+2026-05-23;Rappe GOIF;Torns;1;2
+2026-04-05;Linero IF;Oskarshamn;1;2
+2026-03-28;Oskarshamn;Lilla Torg;2;0
+2026-04-26;Osterlen;Rappe GOIF;2;1
+2026-05-29;IFK Berga;Solvesborgs;3;2
+2026-05-02;Staffanstorp United;Rappe GOIF;2;1
+2026-05-10;Solvesborgs;IFK Trelleborg;0;1
+2026-04-17;Lilla Torg;IFK Trelleborg;1;0
+2026-05-30;IFK Trelleborg;Oskarshamn;1;1
+2026-04-25;Linero IF;Lilla Torg;4;0
+2026-05-01;Nosaby;Oskarshamn;4;0
+2026-04-25;Vaxjo Norra;Karlskrona;4;0
+2026-05-14;IFK Karlshamn;Oskarshamn;1;5
+2026-06-06;Nosaby;Karlskrona;3;1
+2026-03-28;IFK Trelleborg;Staffanstorp United;3;1
+2026-04-11;Solvesborgs;Linero IF;2;1
+2026-06-06;Rappe GOIF;IFK Trelleborg;0;1
+2026-06-04;Solvesborgs;Torns;1;3
+2026-04-03;Nosaby;Rappe GOIF;1;1
+2026-03-29;Osterlen;Linero IF;1;2
+2026-05-10;Staffanstorp United;IFK Karlshamn;1;2
+2026-04-12;IFK Trelleborg;Nosaby;1;1
+2026-04-25;Solvesborgs;Staffanstorp United;2;3
+2026-05-04;IFK Trelleborg;Torns;5;1
+2026-04-10;IFK Berga;Karlskrona;1;3
+2026-04-11;Osterlen;Vaxjo Norra;1;2
+2026-03-28;Torns;Karlskrona;1;3
+2026-06-07;IFK Karlshamn;Lilla Torg;2;0
+2026-06-30;Linero IF;IFK Karlshamn;3;1
+2026-05-14;IFK Berga;Rappe GOIF;6;0
+2026-05-08;Rappe GOIF;Karlskrona;1;2
+2026-04-11;Torns;IFK Karlshamn;2;1
+2026-05-10;Linero IF;Nosaby;3;0

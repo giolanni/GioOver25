@@ -1,0 +1,41 @@
+[112/264] Germany_Oberliga_Bayern_Sud
+status=DIFFERENCES
+tournament=Oberliga Bayern Süd country=Germany tournament_id=6uLq6PLH stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-bayern-sud/risultati/
+team_overlap=1.000
+local=143 remote=113 equal=112 missing_local=0 extra_local=30 score_diff=1
+
+EXTRA_LOCAL:
+2026-07-21;Pipinsried;Heimstetten;3;2
+2026-07-21;Ismaning;Pfaffenhofen;0;0
+2026-08-07;Schalding;Pipinsried;1;4
+2026-07-24;Landshut;Erlbach;1;0
+2026-08-01;Pipinsried;Schwabmunchen;2;1
+2026-07-25;Deisenhofen;Kirchanschoring;2;2
+2026-07-25;Pfaffenhofen;Rosenheim;2;0
+2026-07-25;Schalding;Kottern-St. Mang;4;2
+2026-08-01;Kottern-St. Mang;Pfaffenhofen;1;4
+2026-07-24;Hankofen-Hailing;Ismaning;2;0
+2026-08-07;Pfaffenhofen;Monaco 1860 2;3;2
+2026-07-31;Erlbach;Deisenhofen;1;0
+2026-07-28;FC Schwaig;TSV 1880 Wasserburg;5;1
+2026-07-18;Kirchanschoring;Landshut;1;2
+2026-07-18;Gundelfingen;Deisenhofen;0;2
+2026-07-31;Rosenheim;Hankofen-Hailing;2;2
+2026-07-21;Rosenheim;Schalding;2;2
+2026-07-25;Geretsried;Pipinsried;0;5
+2026-07-21;Kottern-St. Mang;Schwabmunchen;1;0
+2026-08-01;Kirchanschoring;TSV 1880 Wasserburg;3;2
+2026-07-31;Heimstetten;Geretsried;1;1
+2026-07-24;Heimstetten;FC Schwaig;1;2
+2026-08-07;Landshut;Rosenheim;1;1
+2026-07-24;TSV 1880 Wasserburg;Gundelfingen;1;3
+2026-07-31;Ismaning;Landshut;3;1
+2026-07-17;Monaco 1860 2;Geretsried;5;1
+2026-08-07;TSV 1880 Wasserburg;Erlbach;2;2
+2026-07-31;FC Schwaig;Gundelfingen;1;1
+2026-07-31;Monaco 1860 2;Schalding;1;1
+2026-07-26;Schwabmunchen;Monaco 1860 2;1;5
+
+SCORE_DIFF:
+2026-09-26;Gundelfingen;Geretsried;LOCAL=0-0;DIRETTA=0-1

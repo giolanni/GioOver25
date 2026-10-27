@@ -1,0 +1,9 @@
+[58/264] CzechRepublic_3CFL_GroupB
+status=DIFFERENCES
+tournament=3. CFL - Group B country=Czech Republic tournament_id=t0hnk4Gr stage=embedded
+source=https://www.diretta.it/calcio/czech-republic/3-cfl-group-b/risultati/
+team_overlap=1.000
+local=93 remote=93 equal=92 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-08-22;Mlada Boleslav B;Neratovice;LOCAL=6-12;DIRETTA=1-2

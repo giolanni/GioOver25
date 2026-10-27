@@ -1,0 +1,26 @@
+[190/264] Poland_IIILiga_Group2
+status=DIFFERENCES
+tournament=III Liga - Group II country=Poland tournament_id=EuT6DCh4 stage=embedded
+source=https://www.diretta.it/calcio/poland/iii-liga-group-ii/risultati/
+team_overlap=1.000
+local=125 remote=107 equal=107 missing_local=0 extra_local=18 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-09;Luzino;Koszalin;1;1
+2026-07-31;Gedania Gdansk;Notec Czarnkow;5;3
+2026-08-01;Swinoujscie;KKS Kalisz;0;1
+2026-08-01;Wrzesnia;Lech 2;2;5
+2026-08-01;Blekitni Stargard;Wda Swiecie;1;1
+2026-08-08;Kluczevia Stargard;Blekitni Stargard;2;1
+2026-08-01;Elana Torun;Lipno Steszew;1;1
+2026-08-08;Elana Torun;Gedania Gdansk;2;2
+2026-08-01;Grom Nowy Staw;Unia Swarzedz;2;3
+2026-08-08;Swinoujscie;Kotwica Kornik;2;0
+2026-08-09;KKS Kalisz;Unia Swarzedz;1;0
+2026-08-07;Sroda;Wrzesnia;1;0
+2026-08-01;Chemik Bydgoszcz;Kluczevia Stargard;3;3
+2026-08-08;Lech 2;Chemik Bydgoszcz;1;1
+2026-08-08;Wda Swiecie;Lipno Steszew;2;1
+2026-08-01;Koszalin;Sroda;0;3
+2026-08-08;Notec Czarnkow;Grom Nowy Staw;0;2
+2026-08-01;Kotwica Kornik;Luzino;2;6

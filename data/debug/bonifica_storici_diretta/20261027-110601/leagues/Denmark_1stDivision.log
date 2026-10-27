@@ -1,0 +1,6 @@
+[67/264] Denmark_1stDivision
+status=OK
+tournament=1st Division country=Denmark tournament_id=OlonMubB stage=embedded
+source=https://www.diretta.it/calcio/denmark/1st-division/risultati/
+team_overlap=1.000
+local=72 remote=72 equal=72 missing_local=0 extra_local=0 score_diff=0

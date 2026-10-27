@@ -1,0 +1,6 @@
+[107/264] Germany_2Bundesliga
+status=OK
+tournament=2. Bundesliga country=Germany tournament_id=tM115Db3 stage=embedded
+source=https://www.diretta.it/calcio/germania/2-bundesliga/risultati/
+team_overlap=1.000
+local=81 remote=81 equal=81 missing_local=0 extra_local=0 score_diff=0

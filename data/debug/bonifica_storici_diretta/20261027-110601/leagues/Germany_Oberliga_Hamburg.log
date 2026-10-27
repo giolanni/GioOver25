@@ -1,0 +1,17 @@
+[114/264] Germany_Oberliga_Hamburg
+status=DIFFERENCES
+tournament=Oberliga Hamburg country=Germany tournament_id=xAhPCLBm stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-hamburg/risultati/
+team_overlap=1.000
+local=114 remote=105 equal=105 missing_local=0 extra_local=9 score_diff=0
+
+EXTRA_LOCAL:
+2026-07-26;Pinneberg;Harksheide;2;1
+2026-07-24;HT 16;Paloma;2;3
+2026-07-25;Victoria Hamburg;Norderstedt 2;3;2
+2026-07-26;HEBC Hamburg;Niendorfer TSV;0;3
+2026-07-25;Teutonia Ottensen;Wandsbeker Concordia;2;0
+2026-07-26;Sasel;TSV Buchholz 08;0;4
+2026-07-25;Dassendorf;ETSV Hamburg;1;1
+2026-07-25;Suderelbe;Altona;1;2
+2026-07-26;Vorwarts-Wacker;Tesla Hamburg;1;3

@@ -1,0 +1,47 @@
+[116/264] Germany_Oberliga_Mittelrhein
+status=SAFE_MISSING
+tournament=Oberliga Mittelrhein country=Germany tournament_id=MyDAO6yn stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-mittelrhein/risultati/
+team_overlap=1.000
+local=32 remote=71 equal=32 missing_local=39 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-09-20;Duren;Eintracht Hohkeppel;1;2
+2026-08-30;Frechen;Chlodwig Zulpich;4;0
+2026-09-27;Lindenthal-Hohenlind;Frechen;2;2
+2026-09-27;Fortuna Colonia II;Siegburger;3;1
+2026-09-06;Chlodwig Zulpich;Siegburger;5;2
+2026-09-06;Merten;Lindenthal-Hohenlind;5;0
+2026-08-30;Bornheim;Konigsdorf;4;1
+2026-09-13;VfL Vichttal;Merten;2;2
+2026-09-25;VfL Vichttal;Neunkirchen-Seelscheid;3;0
+2026-09-06;Duren;Hurth;0;0
+2026-09-06;Porz;VfL Vichttal;2;2
+2026-09-27;Konigsdorf;Hennef;1;4
+2026-09-25;Wegberg-Beeck;Duren;2;1
+2026-09-13;Fortuna Colonia II;Frechen;5;2
+2026-09-20;Neunkirchen-Seelscheid;Lindenthal-Hohenlind;0;1
+2026-09-27;Bornheim;Merten;4;3
+2026-08-30;Eintracht Hohkeppel;Wegberg-Beeck;1;1
+2026-09-13;Hurth;Porz;2;0
+2026-09-20;Hennef;Wegberg-Beeck;0;3
+2026-09-20;Porz;Bornheim;2;0
+2026-09-20;Chlodwig Zulpich;VfL Vichttal;4;3
+2026-09-20;Frechen;Siegburger;2;2
+2026-09-13;Bornheim;Duren;1;3
+2026-09-13;Lindenthal-Hohenlind;Chlodwig Zulpich;5;0
+2026-09-13;Siegburger;Neunkirchen-Seelscheid;2;2
+2026-08-30;Fortuna Colonia II;Neunkirchen-Seelscheid;3;2
+2026-09-06;Wegberg-Beeck;Fortuna Colonia II;2;1
+2026-09-06;Hennef;Bornheim;2;1
+2026-08-30;Lindenthal-Hohenlind;Porz;2;2
+2026-09-11;Wegberg-Beeck;Konigsdorf;7;1
+2026-08-28;VfL Vichttal;Duren;6;2
+2026-08-30;Hurth;Hennef;0;0
+2026-09-27;Eintracht Hohkeppel;Porz;4;1
+2026-09-06;Konigsdorf;Eintracht Hohkeppel;0;7
+2026-08-30;Siegburger;Merten;2;0
+2026-09-13;Eintracht Hohkeppel;Hennef;3;0
+2026-09-06;Neunkirchen-Seelscheid;Frechen;3;1
+2026-09-20;Merten;Hurth;3;1
+2026-09-27;Hurth;Chlodwig Zulpich;2;2

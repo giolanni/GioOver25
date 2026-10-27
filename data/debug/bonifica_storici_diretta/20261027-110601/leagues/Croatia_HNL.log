@@ -1,0 +1,25 @@
+[54/264] Croatia_HNL
+status=SAFE_MISSING
+tournament=HNL country=Croatia tournament_id=SnJPiwm3 stage=embedded
+source=https://www.diretta.it/calcio/croazia/hnl/risultati/
+team_overlap=1.000
+local=36 remote=53 equal=36 missing_local=17 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-08-22;Slaven Belupo;Gorica;2;0
+2026-08-08;Lok. Zagreb;Gorica;3;1
+2026-08-22;Din. Zagabria;Varazdin;3;1
+2026-08-21;Rudes;Lok. Zagreb;4;1
+2026-08-15;Istra 1961;Slaven Belupo;3;0
+2026-08-02;Rijeka;Rudes;2;1
+2026-08-15;Osijek;Lok. Zagreb;1;0
+2026-07-31;Din. Zagabria;Slaven Belupo;2;0
+2026-08-01;Istra 1961;Lok. Zagreb;2;3
+2026-08-02;Varazdin;Hajduk Split;2;1
+2026-08-01;Gorica;Osijek;0;2
+2026-08-09;Slaven Belupo;Varazdin;1;4
+2026-08-16;Varazdin;Rijeka;2;0
+2026-08-08;Rudes;Osijek;1;6
+2026-08-16;Gorica;Hajduk Split;1;2
+2026-08-09;Hajduk Split;Istra 1961;2;2
+2026-08-14;Din. Zagabria;Rudes;4;0

@@ -1,0 +1,6 @@
+[167/264] NorthernIreland_NIFLChampionship
+status=OK
+tournament=NIFL Championship country=Northern Ireland tournament_id=vB4pCYye stage=embedded
+source=https://www.diretta.it/calcio/northern-ireland/nifl-championship/risultati/
+team_overlap=1.000
+local=101 remote=101 equal=101 missing_local=0 extra_local=0 score_diff=0

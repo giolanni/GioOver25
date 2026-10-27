@@ -1,0 +1,19 @@
+[50/264] Bosnia_PrvaLiga_RS
+status=DIFFERENCES
+tournament=Prva Liga - RS country=Bosnia and Herzegovina tournament_id=6cSiQCsI stage=embedded
+source=https://www.diretta.it/calcio/bosnia-herzegovina/prva-liga-rs/risultati/
+team_overlap=1.000
+local=86 remote=90 equal=84 missing_local=5 extra_local=1 score_diff=1
+
+MISSING_LOCAL:
+2026-08-22;Famos Vojkovici;Kozara;0;1
+2026-08-22;Potkozarje;Omarska;2;0
+2026-08-28;Prijedor;Romanija Pale;4;1
+2026-08-22;Romanija Pale;Drina Zvornik;2;1
+2026-08-22;Nevesinje;Slavija;1;1
+
+EXTRA_LOCAL:
+2026-08-29;Prijedor;Romanija Pale;4;1
+
+SCORE_DIFF:
+2026-09-23;Slavija;Kozara;LOCAL=0-0;DIRETTA=0-3

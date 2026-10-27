@@ -1,0 +1,6 @@
+[109/264] Germany_Bundesliga
+status=OK
+tournament=Bundesliga country=Germany tournament_id=KY7LrA6d stage=embedded
+source=https://www.diretta.it/calcio/germania/bundesliga/risultati/
+team_overlap=1.000
+local=63 remote=63 equal=63 missing_local=0 extra_local=0 score_diff=0

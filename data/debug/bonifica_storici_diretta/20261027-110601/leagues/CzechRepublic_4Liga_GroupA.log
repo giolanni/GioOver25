@@ -1,0 +1,13 @@
+[60/264] CzechRepublic_4Liga_GroupA
+status=DIFFERENCES
+tournament=4. liga - Group A country=Czech Republic tournament_id=Aup3oMF7 stage=embedded
+source=https://www.diretta.it/calcio/czech-republic/4-liga-group-a/risultati/
+team_overlap=1.000
+local=83 remote=84 equal=81 missing_local=1 extra_local=0 score_diff=2
+
+MISSING_LOCAL:
+2026-08-21;Domazlice B;Hluboka nad Vltavou;0;1
+
+SCORE_DIFF:
+2026-08-22;Petrin Plzen;Sobeslav;LOCAL=9-3;DIRETTA=2-1
+2026-08-22;Horovice;Taborsko akademie;LOCAL=1-10;DIRETTA=1-3

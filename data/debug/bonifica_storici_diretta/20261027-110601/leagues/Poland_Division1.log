@@ -1,0 +1,14 @@
+[186/264] Poland_Division1
+status=DIFFERENCES
+tournament=Division 1 country=Poland tournament_id=G0qPbDwB stage=embedded
+source=https://www.diretta.it/calcio/polonia/division-1/risultati/
+team_overlap=1.000
+local=108 remote=106 equal=105 missing_local=1 extra_local=3 score_diff=0
+
+MISSING_LOCAL:
+2026-07-27;Legnica;Podbeskidzie;1;1
+
+EXTRA_LOCAL:
+2026-07-24;Polonia B.;Warta Poznan;4;3
+2026-07-28;Legnica;Podbeskidzie;1;1
+2026-07-24;Odra Opole;Arka;0;1

@@ -1,0 +1,6 @@
+[195/264] Portugal_LigaPortugal
+status=OK
+tournament=Liga Portugal country=Portugal tournament_id=AN4TtK0S stage=embedded
+source=https://www.diretta.it/calcio/portogallo/liga-portugal/risultati/
+team_overlap=1.000
+local=81 remote=81 equal=81 missing_local=0 extra_local=0 score_diff=0

@@ -1,0 +1,101 @@
+[100/264] Finland_Veikkausliiga
+status=DIFFERENCES
+tournament=Veikkausliiga country=Finland tournament_id=jg5JgLZo stage=embedded
+source=https://www.diretta.it/calcio/finlandia/veikkausliiga/risultati/
+team_overlap=1.000
+local=151 remote=106 equal=83 missing_local=23 extra_local=68 score_diff=0
+
+MISSING_LOCAL:
+2026-09-14;Inter Turku;VPS;1;0
+2026-09-18;Oulu;Inter Turku;0;1
+2026-07-04;SJK;TPS Turku;3;1
+2026-09-12;Jaro;SJK;1;1
+2026-09-08;VPS;Oulu;1;0
+2026-09-08;Lahti;Mariehamn;2;1
+2026-09-12;Oulu;Gnistan;1;2
+2026-10-17;Ilves;SJK;2;0
+2026-09-12;Mariehamn;TPS Turku;1;0
+2026-09-18;Gnistan;HJK;1;1
+2026-09-19;VPS;KuPS;0;2
+2026-09-12;Ilves;Lahti;3;1
+2026-09-08;TPS Turku;SJK;0;0
+2026-09-08;Ilves;Jaro;2;0
+2026-07-04;Lahti;Gnistan;1;0
+2026-10-17;Lahti;TPS Turku;5;1
+2026-09-09;HJK;Inter Turku;2;1
+2026-09-08;Gnistan;KuPS;1;1
+2026-07-04;VPS;Mariehamn;4;0
+2026-09-13;KuPS;HJK;0;0
+2026-10-17;Jaro;Mariehamn;1;1
+2026-09-19;TPS Turku;Ilves;0;3
+2026-07-04;Jaro;Ilves;2;1
+
+EXTRA_LOCAL:
+2026-05-10;Lahti;Mariehamn;1;1
+2026-06-13;Mariehamn;Gnistan;0;3
+2026-05-09;VPS;Gnistan;1;1
+2026-04-10;TPS Turku;Lahti;2;1
+2026-05-08;Ilves;Oulu;1;0
+2026-04-04;Jaro;Lahti;0;1
+2026-07-05;Jaro;Ilves;2;1
+2026-05-02;Jaro;TPS Turku;2;2
+2026-06-13;VPS;KuPS;1;1
+2026-04-26;KuPS;HJK;1;1
+2026-06-13;Lahti;SJK;2;3
+2026-05-16;Gnistan;Jaro;5;0
+2026-04-18;Oulu;VPS;2;1
+2026-05-04;HJK;Lahti;1;0
+2026-05-18;Lahti;VPS;1;1
+2026-05-31;Oulu;Jaro;2;1
+2026-04-10;VPS;Jaro;0;0
+2026-05-20;KuPS;Jaro;3;0
+2026-04-04;Mariehamn;TPS Turku;1;1
+2026-06-13;Ilves;TPS Turku;1;0
+2026-04-18;Mariehamn;Ilves;2;2
+2026-05-09;Inter Turku;Jaro;2;0
+2026-07-05;VPS;Mariehamn;4;0
+2026-05-30;TPS Turku;VPS;1;0
+2026-05-05;Gnistan;Inter Turku;2;0
+2026-04-18;TPS Turku;SJK;2;0
+2026-05-23;Inter Turku;TPS Turku;2;1
+2026-04-11;HJK;Oulu;0;1
+2026-04-04;Gnistan;Oulu;1;5
+2026-04-25;Lahti;Oulu;2;1
+2026-04-29;Inter Turku;HJK;1;1
+2026-05-02;SJK;Ilves;1;1
+2026-04-11;KuPS;Gnistan;1;0
+2026-05-16;HJK;Ilves;2;2
+2026-05-02;Mariehamn;VPS;0;1
+2026-04-10;SJK;Mariehamn;3;0
+2026-06-13;Jaro;HJK;2;5
+2026-04-18;Gnistan;HJK;0;3
+2026-05-30;HJK;Mariehamn;1;0
+2026-04-04;Inter Turku;VPS;0;0
+2026-04-11;Inter Turku;Ilves;2;1
+2026-07-05;Lahti;Gnistan;1;0
+2026-05-08;TPS Turku;HJK;1;0
+2026-04-24;SJK;Jaro;1;1
+2026-05-02;Oulu;KuPS;2;0
+2026-05-23;SJK;Oulu;0;1
+2026-05-08;KuPS;SJK;0;0
+2026-04-18;Jaro;KuPS;1;1
+2026-05-30;KuPS;Inter Turku;1;1
+2026-04-18;Lahti;Inter Turku;0;2
+2026-05-16;SJK;Inter Turku;1;3
+2026-05-30;Lahti;Ilves;5;0
+2026-06-13;Inter Turku;Oulu;0;0
+2026-05-22;VPS;HJK;2;1
+2026-04-22;KuPS;Oulu;3;2
+2026-04-24;VPS;Ilves;3;2
+2026-04-04;HJK;SJK;3;0
+2026-05-16;Oulu;TPS Turku;1;0
+2026-05-23;Ilves;Gnistan;2;0
+2026-05-23;KuPS;Lahti;2;1
+2026-04-24;TPS Turku;Gnistan;1;1
+2026-05-23;Jaro;Mariehamn;3;0
+2026-05-20;Ilves;Inter Turku;1;3
+2026-04-04;Ilves;KuPS;1;3
+2026-05-30;Gnistan;SJK;3;2
+2026-04-25;Inter Turku;Mariehamn;1;0
+2026-05-16;Mariehamn;KuPS;1;1
+2026-07-05;SJK;TPS Turku;3;1

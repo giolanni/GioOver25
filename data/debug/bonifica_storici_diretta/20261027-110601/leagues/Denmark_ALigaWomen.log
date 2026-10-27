@@ -1,0 +1,6 @@
+[71/264] Denmark_ALigaWomen
+status=OK
+tournament=A-Liga Women country=Denmark tournament_id=pvUaNMpd stage=embedded
+source=https://www.diretta.it/calcio/denmark/a-liga-women/risultati/
+team_overlap=1.000
+local=59 remote=59 equal=59 missing_local=0 extra_local=0 score_diff=0

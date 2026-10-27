@@ -1,0 +1,6 @@
+[1/264] Albania_AbissnetSuperiore
+status=OK
+tournament=Abissnet Superiore country=Albania tournament_id=hKLv1TGj stage=embedded
+source=https://www.diretta.it/calcio/albania/abissnet-superiore/risultati/
+team_overlap=1.000
+local=40 remote=40 equal=40 missing_local=0 extra_local=0 score_diff=0

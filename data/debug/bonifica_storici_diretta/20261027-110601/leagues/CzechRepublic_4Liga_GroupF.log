@@ -1,0 +1,9 @@
+[65/264] CzechRepublic_4Liga_GroupF
+status=DIFFERENCES
+tournament=4. liga - Group F country=Czech Republic tournament_id=4Wf1baaD stage=embedded
+source=https://www.diretta.it/calcio/czech-republic/4-liga-group-f/risultati/
+team_overlap=1.000
+local=96 remote=96 equal=95 missing_local=0 extra_local=0 score_diff=1
+
+SCORE_DIFF:
+2026-09-12;Stonava;Frydek-Mistek B;LOCAL=1-0;DIRETTA=2-1

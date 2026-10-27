@@ -1,0 +1,6 @@
+[226/264] Switzerland_ChallengeLeague
+status=OK
+tournament=Challenge League country=Switzerland tournament_id=fZYnfgQr stage=embedded
+source=https://www.diretta.it/calcio/switzerland/challenge-league/risultati/
+team_overlap=1.000
+local=55 remote=55 equal=55 missing_local=0 extra_local=0 score_diff=0

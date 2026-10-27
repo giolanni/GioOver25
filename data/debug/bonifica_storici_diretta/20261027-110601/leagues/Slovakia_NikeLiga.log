@@ -1,0 +1,6 @@
+[207/264] Slovakia_NikeLiga
+status=OK
+tournament=Nike liga country=Slovakia tournament_id=dUgUZg2M stage=embedded
+source=https://www.diretta.it/calcio/slovacchia/nike-liga/risultati/
+team_overlap=1.000
+local=70 remote=70 equal=70 missing_local=0 extra_local=0 score_diff=0

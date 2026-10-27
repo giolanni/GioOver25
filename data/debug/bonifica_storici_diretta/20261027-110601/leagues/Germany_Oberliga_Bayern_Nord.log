@@ -1,0 +1,41 @@
+[111/264] Germany_Oberliga_Bayern_Nord
+status=DIFFERENCES
+tournament=Oberliga Bayern Nord country=Germany tournament_id=KOMy8oi5 stage=embedded
+source=https://www.diretta.it/calcio/germany/oberliga-bayern-nord/risultati/
+team_overlap=1.000
+local=142 remote=109 equal=109 missing_local=0 extra_local=33 score_diff=0
+
+EXTRA_LOCAL:
+2026-08-01;Nordlingen;Aschaffenburg;0;4
+2026-07-21;DJK Bamberg;Kornburg;2;2
+2026-07-31;DJK Bamberg;Weiden;2;2
+2026-07-21;Bamberg;Weiden;4;1
+2026-08-07;Weiden;Ammerthal;1;2
+2026-08-08;Bayern Hof;Neumarkt;1;1
+2026-07-24;Gebenbach;Ingolstadt 2;3;1
+2026-07-18;Cham;Bayern Hof;3;0
+2026-07-31;Neumarkt;Kornburg;0;1
+2026-08-07;Fortuna Regensburg;DJK Bamberg;5;3
+2026-08-07;Wurzburger FV;Nordlingen;1;2
+2026-08-01;Bamberg;Stadeln;0;0
+2026-07-25;Bayern Hof;DJK Bamberg;2;0
+2026-08-08;Aschaffenburg;Ingolstadt 2;2;0
+2026-08-07;Kornburg;Grossbardorf;1;0
+2026-07-18;Nordlingen;Gebenbach;0;2
+2026-07-25;Fortuna Regensburg;Bamberg;0;1
+2026-07-24;Weiden;Cham;0;1
+2026-07-18;Ingolstadt 2;Stadeln;4;4
+2026-07-25;Neumarkt;Grossbardorf;0;1
+2026-07-25;Stadeln;Neudrossenfeld;2;1
+2026-08-08;Regensburg 2;Neudrossenfeld;2;1
+2026-07-25;Regensburg 2;Nordlingen;1;1
+2026-07-21;Grossbardorf;Wurzburger FV;0;2
+2026-07-31;Neudrossenfeld;Gebenbach;0;1
+2026-07-31;Cham;Fortuna Regensburg;2;1
+2026-08-07;Stadeln;Cham;0;3
+2026-07-18;Wurzburger FV;Regensburg 2;3;3
+2026-07-31;Ammerthal;Bayern Hof;1;2
+2026-08-07;Gebenbach;Bamberg;1;2
+2026-07-21;Neudrossenfeld;Fortuna Regensburg;1;0
+2026-08-01;Ingolstadt 2;Regensburg 2;3;0
+2026-07-24;Kornburg;Ammerthal;0;0

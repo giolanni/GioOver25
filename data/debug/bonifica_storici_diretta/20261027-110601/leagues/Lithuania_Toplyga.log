@@ -1,0 +1,57 @@
+[155/264] Lithuania_Toplyga
+status=DIFFERENCES
+tournament=TOPLYGA country=Lithuania tournament_id=fDMcntho stage=embedded
+source=https://www.diretta.it/calcio/lithuania/toplyga/risultati/
+team_overlap=0.900
+local=136 remote=103 equal=96 missing_local=7 extra_local=40 score_diff=0
+
+MISSING_LOCAL:
+2026-05-05;Riteriai;Banga;0;4
+2026-05-15;Riteriai;FK Panevezys;0;3
+2026-05-29;Riteriai;Suduva;0;3
+2026-05-25;FA Siauliai;Riteriai;2;0
+2026-06-12;Zalgiris;Riteriai;3;2
+2026-05-02;Riteriai;Transinvest;0;5
+2026-05-09;Dziugas Telsiai;Riteriai;1;0
+
+EXTRA_LOCAL:
+2026-02-21;Zalgiris;Dziugas Telsiai;2;3
+2026-03-22;Transinvest;Dziugas Telsiai;0;0
+2026-04-11;Kauno Zalgiris;Hegelmann;5;0
+2026-04-26;Banga;Hegelmann;2;1
+2026-04-12;Transinvest;FK Panevezys;1;2
+2026-03-16;Zalgiris;Transinvest;1;2
+2026-03-22;Hegelmann;Zalgiris;0;0
+2026-04-17;Zalgiris;Banga;1;1
+2026-02-22;Hegelmann;Banga;0;2
+2026-04-05;Zalgiris;Kauno Zalgiris;0;3
+2026-03-10;Zalgiris;Suduva;1;0
+2026-02-28;Hegelmann;Dziugas Telsiai;1;1
+2026-02-22;FK Panevezys;Suduva;0;0
+2026-04-18;Kauno Zalgiris;Transinvest;1;2
+2026-03-14;Suduva;Hegelmann;0;0
+2026-03-21;Banga;FK Panevezys;0;1
+2026-03-07;FA Siauliai;Zalgiris;0;2
+2026-04-26;FA Siauliai;Transinvest;0;4
+2026-04-11;Banga;Suduva;2;1
+2026-04-04;Hegelmann;Transinvest;3;1
+2026-02-27;Zalgiris;FK Panevezys;4;1
+2026-03-01;Suduva;FA Siauliai;0;0
+2026-03-21;Kauno Zalgiris;Suduva;1;1
+2026-03-07;FK Panevezys;Hegelmann;1;1
+2026-03-15;FA Siauliai;Kauno Zalgiris;0;5
+2026-04-26;Dziugas Telsiai;Zalgiris;0;3
+2026-03-07;Suduva;Transinvest;2;0
+2026-03-10;Kauno Zalgiris;FK Panevezys;4;0
+2026-04-12;Dziugas Telsiai;FA Siauliai;1;0
+2026-02-28;Kauno Zalgiris;Banga;1;0
+2026-04-05;FK Panevezys;Dziugas Telsiai;0;1
+2026-04-18;FA Siauliai;FK Panevezys;3;1
+2026-04-25;Suduva;FK Panevezys;1;0
+2026-03-11;Transinvest;Banga;1;0
+2026-03-11;Hegelmann;FA Siauliai;1;1
+2026-03-15;Banga;Dziugas Telsiai;0;1
+2026-04-04;FA Siauliai;Banga;0;0
+2026-02-22;Transinvest;FA Siauliai;2;2
+2026-04-19;Suduva;Dziugas Telsiai;3;2
+2026-03-07;Dziugas Telsiai;Kauno Zalgiris;1;2

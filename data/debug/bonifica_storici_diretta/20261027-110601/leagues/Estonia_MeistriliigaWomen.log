@@ -1,0 +1,6 @@
+[84/264] Estonia_MeistriliigaWomen
+status=OK
+tournament=Meistriliiga Women country=Estonia tournament_id=z1mhz13e stage=embedded
+source=https://www.diretta.it/calcio/estonia/meistriliiga-women/risultati/
+team_overlap=1.000
+local=69 remote=69 equal=69 missing_local=0 extra_local=0 score_diff=0

@@ -1,0 +1,12 @@
+[168/264] NorthernIreland_NIFLPremiership
+status=DIFFERENCES
+tournament=NIFL Premiership country=Northern Ireland tournament_id=0EMmYOhc stage=embedded
+source=https://www.diretta.it/calcio/northern-ireland/nifl-premiership/risultati/
+team_overlap=1.000
+local=73 remote=74 equal=72 missing_local=1 extra_local=0 score_diff=1
+
+MISSING_LOCAL:
+2026-08-22;Dungannon;Bangor FC;2;0
+
+SCORE_DIFF:
+2026-09-05;Linfield;C. Rangers;LOCAL=2-1;DIRETTA=1-0

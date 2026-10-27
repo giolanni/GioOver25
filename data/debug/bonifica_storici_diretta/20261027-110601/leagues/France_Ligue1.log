@@ -1,0 +1,6 @@
+[103/264] France_Ligue1
+status=OK
+tournament=Ligue 1 country=France tournament_id=0Mp0HlJb stage=embedded
+source=https://www.diretta.it/calcio/francia/ligue-1/risultati/
+team_overlap=1.000
+local=72 remote=72 equal=72 missing_local=0 extra_local=0 score_diff=0

@@ -1,0 +1,6 @@
+[34/264] Austria_Regionalliga_West
+status=OK
+tournament=Regionalliga West country=Austria tournament_id=hKcOIYdm stage=embedded
+source=https://www.diretta.it/calcio/austria/regionalliga-ovest/risultati/
+team_overlap=1.000
+local=104 remote=104 equal=104 missing_local=0 extra_local=0 score_diff=0
