@@ -281,7 +281,7 @@ def _fetch_page(url: str, timeout: int) -> str:
         "Accept-Language": "it-IT,it;q=0.9,en;q=0.7",
     })
     with urlopen(req, timeout=timeout) as response:
-        return response.read().decode(response.headers.get_content_charset() or "utf-8", errors="replace")
+        return response.read().decode("utf-8", errors="replace")
 
 
 def fetch_remote(target: LeagueTarget, local: list[Result], timeout: int):
