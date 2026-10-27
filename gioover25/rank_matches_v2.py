@@ -45,6 +45,7 @@ from contextlib import redirect_stdout
 from datetime import date, datetime
 from pathlib import Path
 
+from .expected_goals import estimate_expected_goals
 from .history import read_results_file
 from .match_statistics import build_match_statistics
 from .registry import get_league_info
@@ -103,6 +104,7 @@ FIELDNAMES = [
     "Away",
     "Score",
     "Band",
+    "ExpectedGoals",
     "Round",
     "PredictionDate",
     "HomeSourceLeagueId",
@@ -630,6 +632,7 @@ def build_output_row(
     away_source_league_id: str,
     competition_group: str,
     score,
+    expected_goals: float | None = None,
     band_override: str | None = None,
 ) -> dict:
     return {
@@ -638,6 +641,7 @@ def build_output_row(
         "Home": canonicalize_team_display_name(home, league_id),
         "Away": canonicalize_team_display_name(away, league_id),
         "Score": score_value(score, "score"),
+        "ExpectedGoals": f"{expected_goals:.2f}" if expected_goals is not None else "",
         "Band": (
             band_override
             if band_override is not None
@@ -913,6 +917,19 @@ def _rank_rows(
             )
             continue
 
+        expected_goals = estimate_expected_goals(
+            histories=histories,
+            home=home,
+            away=away,
+            home_source=home_source,
+            away_source=away_source,
+            match_date=match_date_value,
+            include_all_histories=use_all_team_histories,
+            normalize_team=normalize_team_name,
+            match_date_of=_match_date,
+            match_goals=_match_goals,
+        )
+
         immature_sample = (
             home_played < MATURE_TEAM_MATCHES
             or away_played < MATURE_TEAM_MATCHES
@@ -1047,6 +1064,7 @@ def _rank_rows(
                     away_source_league_id=away_source,
                     competition_group=competition_group,
                     score=score,
+                    expected_goals=expected_goals,
                     band_override=contextual_band,
                 )
             )
