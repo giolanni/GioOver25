@@ -196,7 +196,9 @@ def main() -> None:
     print(f"[OUTPUT] {output_path}")
 
     if errors:
-        error_path = output_path.with_suffix(".errors.txt")\n        error_path.write_text("\\n".join(errors) + "\\n", encoding="utf-8")\n        print(f"[WARN] {len(errors)} giornate non lette; dettagli: {error_path}")
+        error_path = output_path.with_suffix(".errors.txt")
+        error_path.write_text("\\n".join(errors) + "\\n", encoding="utf-8")
+        print(f"[WARN] {len(errors)} giornate non lette; dettagli: {error_path}")
 
     print("\n[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
