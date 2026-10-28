@@ -36,6 +36,9 @@ class Competition:
     matches: int = 0
     first_date: str = ""
     last_date: str = ""
+    tournament_id: str = ""
+    tournament_stage_id: str = ""
+    sample_match_id: str = ""
 
 
 def canonical_country(country: str) -> str:
@@ -83,6 +86,12 @@ def discover(start: date, end: date) -> tuple[list[Competition], list[str]]:
                 item = Competition(country=country, league=match.league)
                 found[key] = item
             item.matches += 1
+            if not item.tournament_id and match.tournament_id:
+                item.tournament_id = match.tournament_id
+            if not item.tournament_stage_id and match.tournament_stage_id:
+                item.tournament_stage_id = match.tournament_stage_id
+            if not item.sample_match_id and match.match_id:
+                item.sample_match_id = match.match_id
             actual = match.match_date or current.isoformat()
             if not item.first_date or actual < item.first_date:
                 item.first_date = actual
@@ -186,12 +195,14 @@ def main() -> None:
 
     with output_path.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, delimiter=";")
-        writer.writerow(["Status", "KindOrLeagueId", "Country", "League", "Matches", "FirstDate", "LastDate"])
+        writer.writerow(["Status", "KindOrLeagueId", "Country", "League", "Matches", "FirstDate", "LastDate",
+                         "TournamentId", "TournamentStageId", "SampleMatchId"])
         for status in ("KNOWN", "KNOWN_ALIAS", "NEW"):
             for competition, detail in buckets[status]:
                 writer.writerow([
                     status, detail, competition.country, competition.league,
                     competition.matches, competition.first_date, competition.last_date,
+                    competition.tournament_id, competition.tournament_stage_id, competition.sample_match_id,
                 ])
     print(f"[OUTPUT] {output_path}")
 
