@@ -85,15 +85,21 @@ def main() -> None:
 
     selected = []
     for row in rows:
-        if row["Status"] != "NEW" or row["KindOrLeagueId"] in EXCLUDE_KINDS:
+        # Considera l'intera piramide attiva: KNOWN, KNOWN_ALIAS e NEW.
+        # Le categorie non appartenenti ai campionati nazionali senior restano escluse.
+        if row["Status"] == "NEW" and row["KindOrLeagueId"] in EXCLUDE_KINDS:
             continue
         level = tier(row["Country"], row["League"])
         proposed = proposed_league_id(row["Country"], row["League"])
+        if row["Status"] in {"KNOWN", "KNOWN_ALIAS"}:
+            registry_status = f"COVERED:{row['KindOrLeagueId']}"
+        else:
+            registry_status = "ID_COLLISION" if proposed.casefold() in registry_ids else "MISSING"
         selected.append({
             **row,
             "Tier": f"TIER{level}" if level else "REVIEW",
             "ProposedLeagueId": proposed,
-            "RegistryStatus": "ID_COLLISION" if proposed.casefold() in registry_ids else "READY",
+            "RegistryStatus": registry_status,
         })
 
     order = {"TIER1": 1, "TIER2": 2, "TIER3": 3, "REVIEW": 9}
@@ -108,8 +114,11 @@ def main() -> None:
         w.writerows(selected)
 
     counts = {k: sum(r["Tier"] == k for r in selected) for k in ("TIER1","TIER2","TIER3","REVIEW")}
+    covered = sum(r["RegistryStatus"].startswith("COVERED:") for r in selected)
+    missing = sum(r["RegistryStatus"] == "MISSING" for r in selected)
     print(f"[INPUT] {source}")
     print("[TIER123] " + " | ".join(f"{k}={v}" for k,v in counts.items()))
+    print(f"[REGISTRY] COVERED={covered} | MISSING={missing}")
     print(f"[OUTPUT] {out}")
     print("[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
