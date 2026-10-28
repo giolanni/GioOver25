@@ -17,6 +17,33 @@ from tools.prepare_league_onboarding import proposed_league_id
 
 EXCLUDE_KINDS = {"INTERNATIONAL", "TEMPORARY", "WOMEN_LEAGUE", "YOUTH"}
 
+# Diretta localizza alcuni nomi paese in italiano, mentre registry/tier map
+# usano prevalentemente denominazioni inglesi.
+COUNTRY_ALIASES = {
+    "brasile": "Brazil",
+    "cile": "Chile",
+    "cina": "China",
+    "egitto": "Egypt",
+    "emirati arabi": "United Arab Emirates",
+    "grecia": "Greece",
+    "irlanda": "Ireland",
+    "islanda": "Iceland",
+    "malesia": "Malaysia",
+    "marocco": "Morocco",
+    "messico": "Mexico",
+    "paesi bassi": "Netherlands",
+    "repubblica dominicana": "Dominican Republic",
+    "sudafrica": "South Africa",
+    "svizzera": "Switzerland",
+    "tagikistan": "Tajikistan",
+    "thailandia": "Thailand",
+    "tunisia": "Tunisia",
+    "turchia": "Turkey",
+    "ucraina": "Ukraine",
+    "uzbekistan": "Uzbekistan",
+    "vietnam": "Vietnam",
+}
+
 # Pattern espliciti: evitare inferenze aggressive su nomi ambigui.
 TIER_PATTERNS = {
     1: (
@@ -71,7 +98,8 @@ def load_tier_map() -> dict[tuple[str, str], int]:
 
 
 def tier(country: str, league: str, tier_map: dict[tuple[str, str], int]) -> int | None:
-    return tier_map.get((norm(country), norm(league)))
+    mapped_country = COUNTRY_ALIASES.get(norm(country), country)
+    return tier_map.get((norm(mapped_country), norm(league)))
 
 def main() -> None:
     p = argparse.ArgumentParser()
