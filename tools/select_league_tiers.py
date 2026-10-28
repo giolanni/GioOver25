@@ -131,7 +131,40 @@ def main() -> None:
     print("[TIER123] " + " | ".join(f"{k}={v}" for k,v in counts.items()))
     print(f"[TIER123 REGISTRY] COVERED={covered} | MISSING={missing} | ID_COLLISION={collisions}")
     print("[TIER123 MISSING] " + " | ".join(f"{k}={v}" for k,v in missing_by_tier.items()))
+    # Audit REVIEW: restringe i nomi non mappati che meritano controllo umano.
+    # Non assegna automaticamente un tier: serve a trovare denominazioni non
+    # convenzionali (es. Apertura/Clausura) senza introdurre falsi positivi.
+    review_exclude = re.compile(
+        r"\\b(cup|copa|coppa|coupe|pokal|trophy|super cup|supercup|"
+        r"play.?off|relegation|promotion|qualification|qualifying|"
+        r"women|woman|femeni|feminin|femenin|frauen|damer|kvinn|"
+        r"u\\d{2}|under.?\\d{2}|youth|junior|reserve|reserves|primavera)\\b",
+        re.IGNORECASE,
+    )
+    review_hints = re.compile(
+        r"\\b(liga|league|division|divisao|divisão|divisie|divisio|"
+        r"championship|national|serie|superliga|premier|premiership|"
+        r"apertura|clausura|primera|segunda|tercera|first|second|third|"
+        r"1\\.?|2\\.?|3\\.?)\\b",
+        re.IGNORECASE,
+    )
+    review_candidates = [
+        r for r in selected
+        if r["Tier"] == "REVIEW"
+        and r.get("KindOrLeagueId") not in EXCLUDE_KINDS
+        and not review_exclude.search(r["League"])
+        and review_hints.search(r["League"])
+    ]
+    review_out = ROOT / "data" / "debug" / f"league_tier_review_{datetime.now():%Y%m%d-%H%M%S}.csv"
+    review_fields = ["Country","League","Status","KindOrLeagueId","Matches","FirstDate","LastDate",
+                     "TournamentId","TournamentStageId","SampleMatchId"]
+    with review_out.open("w", encoding="utf-8-sig", newline="") as h:
+        w = csv.DictWriter(h, fieldnames=review_fields, delimiter=";", extrasaction="ignore")
+        w.writeheader()
+        w.writerows(review_candidates)
+
     print(f"[OUTPUT] {out}")
+    print(f"[REVIEW AUDIT] candidates={len(review_candidates)} | {review_out}")
     print("[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
 
