@@ -64,8 +64,10 @@ def latest_discovery() -> Path:
 
 def load_tier_map() -> dict[tuple[str, str], int]:
     path = ROOT / "data" / "league_tier_map.csv"
-    rows = csv.DictReader(path.open(encoding="utf-8-sig", newline=""), delimiter=";")
-    return {(norm(r["Country"]), norm(r["League"])): int(r["Tier"]) for r in rows}
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        lines = (line for line in handle if line.strip() and not line.lstrip().startswith("#"))
+        rows = csv.DictReader(lines, delimiter=";")
+        return {(norm(r["Country"]), norm(r["League"])): int(r["Tier"]) for r in rows}
 
 
 def tier(country: str, league: str, tier_map: dict[tuple[str, str], int]) -> int | None:
