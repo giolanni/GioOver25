@@ -94,8 +94,12 @@ def main() -> None:
         proposed = proposed_league_id(row["Country"], row["League"])
         if row["Status"] in {"KNOWN", "KNOWN_ALIAS"}:
             registry_status = f"COVERED:{row['KindOrLeagueId']}"
+        elif proposed.casefold() in registry_ids:
+            # Il discovery puo' essere precedente all'onboarding: se il LeagueId
+            # proposto ora esiste, la competizione e' coperta, non in collisione.
+            registry_status = f"COVERED:{proposed}"
         else:
-            registry_status = "ID_COLLISION" if proposed.casefold() in registry_ids else "MISSING"
+            registry_status = "MISSING"
         selected.append({
             **row,
             "Tier": f"TIER{level}" if level else "REVIEW",
