@@ -148,12 +148,14 @@ def main() -> None:
         r"1\\.?|2\\.?|3\\.?)\\b",
         re.IGNORECASE,
     )
+    # Per l'audit partiamo da tutti i REVIEW: KindOrLeagueId e i nomi locali
+    # non sono abbastanza affidabili per prefiltrare una piramide nazionale.
+    # Eliminiamo soltanto le esclusioni evidenti dal nome; la decisione sul tier
+    # resta umana.
     review_candidates = [
         r for r in selected
         if r["Tier"] == "REVIEW"
-        and r.get("KindOrLeagueId") not in EXCLUDE_KINDS
         and not review_exclude.search(r["League"])
-        and review_hints.search(r["League"])
     ]
     review_out = ROOT / "data" / "debug" / f"league_tier_review_{datetime.now():%Y%m%d-%H%M%S}.csv"
     review_fields = ["Country","League","Status","KindOrLeagueId","Matches","FirstDate","LastDate",
