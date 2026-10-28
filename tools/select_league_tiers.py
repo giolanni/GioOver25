@@ -115,11 +115,18 @@ def main() -> None:
         w.writerows(selected)
 
     counts = {k: sum(r["Tier"] == k for r in selected) for k in ("TIER1","TIER2","TIER3","REVIEW")}
-    covered = sum(r["RegistryStatus"].startswith("COVERED:") for r in selected)
-    missing = sum(r["RegistryStatus"] == "MISSING" for r in selected)
+    tier123 = [r for r in selected if r["Tier"] != "REVIEW"]
+    covered = sum(r["RegistryStatus"].startswith("COVERED:") for r in tier123)
+    missing = sum(r["RegistryStatus"] == "MISSING" for r in tier123)
+    collisions = sum(r["RegistryStatus"] == "ID_COLLISION" for r in tier123)
+    missing_by_tier = {
+        k: sum(r["Tier"] == k and r["RegistryStatus"] == "MISSING" for r in tier123)
+        for k in ("TIER1", "TIER2", "TIER3")
+    }
     print(f"[INPUT] {source}")
     print("[TIER123] " + " | ".join(f"{k}={v}" for k,v in counts.items()))
-    print(f"[REGISTRY] COVERED={covered} | MISSING={missing}")
+    print(f"[TIER123 REGISTRY] COVERED={covered} | MISSING={missing} | ID_COLLISION={collisions}")
+    print("[TIER123 MISSING] " + " | ".join(f"{k}={v}" for k,v in missing_by_tier.items()))
     print(f"[OUTPUT] {out}")
     print("[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
