@@ -47,7 +47,6 @@ Bulgaria_VtoraLiga;;2026-09-27;Ludogorets II;Etar;POSTICIPATA;
 Germany_Oberliga_Niedersachsen;;2026-10-02;Lohne;BSV Rehden;POSTICIPATA;Posticipata
 England_LeagueOne;;2026-10-03;Barnsley;Milton Keynes;POSTICIPATA;
 England_LeagueOne;;2026-10-03;Bromley;Wycombe;POSTICIPATA;
-England_LeagueOne;;2026-10-03;Luton;Doncaster;POSTICIPATA;
 England_LeagueOne;;2026-10-03;Peterborough;Notts County;POSTICIPATA;
 England_LeagueOne;;2026-10-03;Wigan;Mansfield;POSTICIPATA;
 England_LeagueOne;;2026-10-03;Wimbledon;Stevenage;POSTICIPATA;
@@ -61,7 +60,6 @@ England_SouthernLeaguePremierSouth;;2026-10-03;Chichester;Gloucester;POSTICIPATA
 England_SouthernLeaguePremierSouth;;2026-10-03;Chippenham;Havant & W;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-10-03;Malvern Town;Hanworth;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-10-03;Taunton;Wimborne;POSTICIPATA;
-England_IsthmianLeaguePremierDivision;;2026-10-03;Enfield Town;Chatham;POSTICIPATA;
 Belarus_PershayaLiga;;2026-10-03;Uni X Labs;Din. Minsk 2;POSTICIPATA;
 Germany_Regionalliga_Nord;;2026-10-03;Norderstedt;Bremer;POSTICIPATA;
 Germany_Regionalliga_Nord;;2026-10-03;Delmenhorst;St. Pauli II;POSTICIPATA;
@@ -76,8 +74,6 @@ Belarus_PershayaLiga;;2026-10-10;Din. Minsk 2;BATE 2;POSTICIPATA;
 Russia_FNL;;2026-10-10;Dynamo SPB;Irkutsk;POSTICIPATA;
 Estonia_Esiliiga;;2026-10-11;Maardu;Nomme Kalju U21;POSTICIPATA;
 Germany_Oberliga_SchleswigHolstein;;2026-10-11;VfR Neumunster;Oldenburger;POSTICIPATA;
-SaudiArabia_ProfessionalLeague;8;2026-10-11;Abha;Al Faysaly;POSTICIPATA;Rinviata al 2026-10-27
-England_NPLPremierDivision;;2026-10-13;Bury;Leek;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-10-13;Gloucester;Taunton;POSTICIPATA;
 Estonia_Esiliiga;;2026-10-15;Viimsi JK;Maardu;POSTICIPATA;
 Germany_Oberliga_Niederrhein;;2026-10-16;Buderich;Baumberg;POSTICIPATA;
@@ -132,3 +128,5 @@ Switzerland_PromotionLeague;;2026-10-24;Bavois;Schaffhausen;POSTICIPATA;
 SriLanka_SuperLeague;;2026-10-26;Colombo;UP Country Lions;POSTICIPATA;
 CzechRepublic_4Liga_GroupE;13;2026-10-24;Hluk;Nove Sady;POSTICIPATA;
 Germany_Oberliga_BadenWurttemberg;16;2026-10-25;Karlsruher 2;Nottingen;POSTICIPATA;
+England_SouthernLeaguePremierSouth;;2026-10-27;Taunton;Frome;POSTICIPATA;
+England_IsthmianLeaguePremierDivision;;2026-10-27;Stanway;Cray Wanderers;POSTICIPATA;
