@@ -198,8 +198,57 @@ def main() -> None:
         w.writeheader()
         w.writerows(review_candidates)
 
+    # Pre-onboarding: raggruppa le MISSING che sembrano fasi della stessa
+    # competizione. Non modifica i LeagueId: produce solo un audit da validare.
+    phase_re = re.compile(
+        r"\s*-\s*(apertura|clausura|opening|closing|"
+        r"gruppo promozione|gruppo retrocessione|promotion group|relegation group|"
+        r"prima fase|seconda fase|first stage|second stage).*$",
+        re.IGNORECASE,
+    )
+
+    canonical_rows = []
+    for r in tier123:
+        if r["RegistryStatus"] != "MISSING":
+            continue
+        base_league = phase_re.sub("", r["League"]).strip()
+        canonical_id = proposed_league_id(r["Country"], base_league)
+        canonical_rows.append({
+            "Tier": r["Tier"],
+            "Country": r["Country"],
+            "League": r["League"],
+            "CanonicalLeague": base_league,
+            "ProposedLeagueId": r["ProposedLeagueId"],
+            "CanonicalLeagueId": canonical_id,
+            "IsPhaseAlias": "YES" if norm(base_league) != norm(r["League"]) else "NO",
+            "Matches": r["Matches"],
+            "FirstDate": r["FirstDate"],
+            "LastDate": r["LastDate"],
+            "TournamentId": r["TournamentId"],
+            "TournamentStageId": r["TournamentStageId"],
+            "SampleMatchId": r["SampleMatchId"],
+        })
+
+    canonical_rows.sort(key=lambda r: (
+        r["CanonicalLeagueId"].casefold(), r["League"].casefold()
+    ))
+    canonical_out = ROOT / "data" / "debug" / f"league_onboarding_candidates_{datetime.now():%Y%m%d-%H%M%S}.csv"
+    canonical_fields = [
+        "Tier","Country","League","CanonicalLeague","ProposedLeagueId",
+        "CanonicalLeagueId","IsPhaseAlias","Matches","FirstDate","LastDate",
+        "TournamentId","TournamentStageId","SampleMatchId",
+    ]
+    with canonical_out.open("w", encoding="utf-8-sig", newline="") as h:
+        w = csv.DictWriter(h, fieldnames=canonical_fields, delimiter=";", extrasaction="ignore")
+        w.writeheader()
+        w.writerows(canonical_rows)
+
+    canonical_ids = {r["CanonicalLeagueId"].casefold() for r in canonical_rows}
+    phase_aliases = sum(r["IsPhaseAlias"] == "YES" for r in canonical_rows)
+
     print(f"[OUTPUT] {out}")
     print(f"[REVIEW AUDIT] candidates={len(review_candidates)} | {review_out}")
+    print(f"[ONBOARDING AUDIT] missing={len(canonical_rows)} | canonical={len(canonical_ids)} | phase_aliases={phase_aliases} | {canonical_out}")
     print("[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
 
