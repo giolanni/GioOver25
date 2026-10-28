@@ -1,0 +1,154 @@
+# Mappa esplicita della piramide nazionale senior maschile.
+# Formato: Country;League;Tier
+# Tier ammessi: 1,2,3. Le competizioni non elencate non vengono onboardate.
+Country;League;Tier
+England;Premier League;1
+England;Championship;2
+England;League One;3
+France;Ligue 1;1
+France;Ligue 2;2
+France;National;3
+Germany;Bundesliga;1
+Germany;2. Bundesliga;2
+Germany;3. Liga;3
+Italy;Serie A;1
+Italy;Serie B;2
+Italy;Serie C - Girone A;3
+Italy;Serie C - Girone B;3
+Italy;Serie C - Girone C;3
+Spain;LaLiga;1
+Spain;LaLiga2;2
+Spain;Primera RFEF - Group 1;3
+Spain;Primera RFEF - Group 2;3
+Netherlands;Eredivisie;1
+Netherlands;Eerste Divisie;2
+Belgium;Jupiler Pro League;1
+Belgium;Challenger Pro League;2
+Portugal;Liga Portugal;1
+Portugal;Liga Portugal 2;2
+Portugal;Liga 3 - Serie A;3
+Portugal;Liga 3 - Serie B;3
+Austria;Bundesliga;1
+Austria;2. Liga;2
+Austria;Regionalliga East;3
+Austria;Regionalliga Central;3
+Austria;Regionalliga West;3
+Scotland;Premiership;1
+Scotland;Championship;2
+Scotland;League One;3
+Denmark;Superliga;1
+Denmark;1st Division;2
+Denmark;2nd Division;3
+Norway;Eliteserien;1
+Norway;OBOS-ligaen;2
+Norway;2nd Division Group 1;3
+Norway;2nd Division Group 2;3
+Sweden;Allsvenskan;1
+Sweden;Superettan;2
+Sweden;Division 1 - Norra;3
+Sweden;Division 1 - Södra;3
+Finland;Veikkausliiga;1
+Finland;Ykkosliiga;2
+Finland;Ykkonen;3
+Iceland;Besta deild karla;1
+Iceland;Division 1;2
+Iceland;Division 2;3
+Estonia;Meistriliiga;1
+Estonia;Esiliiga;2
+Estonia;Esiliiga B;3
+Latvia;Virsliga;1
+Latvia;Nakotnes liga;2
+Lithuania;TOPLYGA;1
+Lithuania;I Lyga;2
+Poland;Ekstraklasa;1
+Poland;Division 1;2
+Poland;Division 2;3
+Czech Republic;1. Liga;1
+Czech Republic;ChNL;2
+Czech Republic;3. CFL - Group A;3
+Czech Republic;3. CFL - Group B;3
+Czech Republic;3. MSFL;3
+Slovakia;Nike liga;1
+Slovakia;2. liga;2
+Hungary;NB I;1
+Hungary;NB II.;2
+Romania;Superliga;1
+Romania;Liga 2;2
+Bulgaria;Parva Liga;1
+Bulgaria;Vtora liga;2
+Croatia;HNL;1
+Croatia;Prva NL;2
+Slovenia;Prva Liga;1
+Slovenia;2. SNL;2
+Serbia;Super Liga;1
+Serbia;Prva Liga;2
+Bosnia & Herzegovina;WWIN Liga BiH;1
+Bosnia & Herzegovina;Prva Liga - FBiH;2
+Bosnia & Herzegovina;Prva Liga - RS;2
+Montenegro;Prva Crnogorska Liga;1
+Montenegro;Druga Liga;2
+North Macedonia;1. MFL;1
+Albania;Abissnet Superiore;1
+Greece;Super League;1
+Greece;Super League 2;2
+Turkey;Super Lig;1
+Turkey;1. Lig;2
+Turkey;2. Lig White Group;3
+Turkey;2. Lig Red Group;3
+Switzerland;Super League;1
+Switzerland;Challenge League;2
+Ireland;Premier Division;1
+Ireland;Division 1;2
+Northern Ireland;NIFL Premiership;1
+Northern Ireland;NIFL Championship;2
+Belarus;Vysshaya Liga;1
+Belarus;Pershaya Liga;2
+Ukraine;Premier League;1
+Ukraine;Persha Liga;2
+Georgia;Erovnuli Liga;1
+Armenia;Premier League;1
+Armenia;First League;2
+Azerbaijan;Premier League;1
+Azerbaijan;I Liqa;2
+Kazakhstan;Premier League;1
+Kazakhstan;First League;2
+Japan;J1 League;1
+Japan;J2 League;2
+Japan;J3 League;3
+South Korea;K League 1;1
+South Korea;K League 2;2
+South Korea;K3 League;3
+Australia;A-League;1
+Australia;Championship;2
+Indonesia;Super League;1
+Indonesia;Championship - West;2
+Indonesia;Championship - East;2
+Saudi Arabia;Saudi Professional League;1
+Saudi Arabia;Division 1;2
+United Arab Emirates;UAE League;1
+Qatar;QSL;1
+China;Super League;1
+China;Jia League;2
+India;ISL;1
+Argentina;Liga Profesional;1
+Argentina;Primera Nacional;2
+Brazil;Serie A;1
+Brazil;Serie B;2
+Brazil;Serie C;3
+Chile;Primera Division;1
+Chile;Primera B;2
+Colombia;Primera A;1
+Colombia;Primera B;2
+Ecuador;Liga Pro;1
+Ecuador;Serie B;2
+Ecuador;Segunda Categoria;3
+Paraguay;Primera Division;1
+Paraguay;Division Intermedia;2
+Peru;Liga 1;1
+Peru;Liga 2;2
+Uruguay;Primera Division;1
+Uruguay;Segunda Division;2
+Venezuela;Liga FUTVE;1
+Mexico;Liga MX;1
+Mexico;Liga de Expansion MX;2
+USA;MLS;1
