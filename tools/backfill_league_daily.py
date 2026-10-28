@@ -1,69 +1,57 @@
-"""Backfill read-only di una lega dai feed giornalieri Diretta/Flashscore.
+"""Backfill read-only della stagione corrente da pagina risultati Diretta.
 
-Scorre all'indietro dalla data odierna, usa la stessa cache del discovery e
-raccoglie solo risultati conclusi della Country+League richiesta. Si ferma
-dopo una lunga assenza successiva ad almeno un risultato, utile per trovare
-l'inizio della stagione senza conoscere URL/ID torneo.
+Usa il feed stagionale incorporato nella pagina pubblica della competizione,
+non il feed giornaliero. Non modifica registry o storici.
 """
 from __future__ import annotations
 
 import argparse
 import csv
-from datetime import date, timedelta
+import re
+import unicodedata
 
-from tools.discover_leagues import canonical_country, fetch_day
-from tools.diretta_mobile import parse_feed
-from tools.prepare_input import ROOT, norm
+from tools.flashscore_history import fetch_embedded_results
+from tools.prepare_input import ROOT
+
+
+def slug(value: str) -> str:
+    text = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode().casefold()
+    return re.sub(r"[^a-z0-9]+", "-", text).strip("-")
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--country", required=True)
     ap.add_argument("--league", required=True)
-    ap.add_argument("--max-days", type=int, default=400)
     args = ap.parse_args()
 
-    today = date.today()
-    wanted_country, wanted_league = norm(args.country), norm(args.league)
-    rows = {}
-    errors = 0
+    url = f"https://www.diretta.it/calcio/{slug(args.country)}/{slug(args.league)}/risultati/"
+    try:
+        ids, matches, payload = fetch_embedded_results(url)
+    except Exception as exc:
+        raise SystemExit(f"[ERROR] {url}: {type(exc).__name__}: {exc}")
 
-    for back in range(args.max_days + 1):
-        current = today - timedelta(days=back)
-        try:
-            matches = parse_feed(fetch_day(current, today))
-        except Exception:
-            errors += 1
-            continue
-        found_today = False
-        for m in matches:
-            if m.match_date and m.match_date != current.isoformat():
-                continue
-            if norm(canonical_country(m.country)) != wanted_country or norm(m.league) != wanted_league:
-                continue
-            found_today = True
-            if m.score == "-" or m.status:
-                continue
-            try:
-                hg, ag = (int(x) for x in m.score.split("-", 1))
-            except ValueError:
-                continue
-            rows[(m.match_date or current.isoformat(), norm(m.home), norm(m.away))] = (
-                m.match_date or current.isoformat(), m.home, m.away, hg, ag
-            )
-
-    ordered = sorted(rows.values())
     safe = "".join(ch if ch.isalnum() else "_" for ch in f"{args.country}_{args.league}").strip("_")
     out = ROOT / "data" / "debug" / f"backfill_{safe}.csv"
     out.parent.mkdir(parents=True, exist_ok=True)
+    matches.sort(key=lambda m: (m.date, int(m.round) if m.round.isdigit() else 9999, m.home, m.away))
     with out.open("w", encoding="utf-8-sig", newline="") as h:
         w = csv.writer(h, delimiter=";")
-        w.writerow(["MatchDate","Home","Away","HG","AG"])
-        w.writerows(ordered)
+        w.writerow(["Round","MatchDate","Home","Away","HG","AG","MatchId"])
+        for m in matches:
+            w.writerow([m.round, m.date, m.home, m.away, m.hg, m.ag, m.match_id])
 
-    first = ordered[0][0] if ordered else "-"
-    last = ordered[-1][0] if ordered else "-"
-    print(f"[BACKFILL] {args.country}: {args.league} | matches={len(ordered)} | {first} -> {last} | errors={errors}")
+    first = matches[0].date if matches else "-"
+    last = matches[-1].date if matches else "-"
+    print(f"[SOURCE] {url}")
+    print(
+        f"[IDS] template={ids.get('template_id') or '-'} | "
+        f"tournament={ids.get('tournament_id') or '-'} | stage={ids.get('stage_id') or '-'}"
+    )
+    print(
+        f"[BACKFILL] {args.country}: {args.league} | matches={len(matches)} | "
+        f"{first} -> {last} | payload={len(payload)}"
+    )
     print(f"[OUTPUT] {out}")
     print("[DRY-RUN] Nessuna modifica a registry o storici.")
 
