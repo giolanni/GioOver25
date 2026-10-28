@@ -59,18 +59,18 @@ def bookmaker_urls(country: str, league: str) -> dict[str, str]:
 
 
 def present(book: str, league: str, status: int, body: str) -> bool:
+    """Conferma solo la presenza esplicita del nome competizione.
+
+    Non usare marker generici (1X2, Under/Over, ecc.): le pagine fallback dei
+    bookmaker possono contenerli anche quando la competizione richiesta non esiste.
+    """
     if status != 200 or not body:
         return False
     text = re.sub(r"<[^>]+>", " ", body)
     text = re.sub(r"\s+", " ", text)
     needle = norm(league)
     hay = norm(text)
-    if needle and needle in hay:
-        return True
-    if book in {"SNAI", "DAZNBET"}:
-        markers = ("1x2", "under over", "doppia chance", "eventi")
-        return sum(marker in hay for marker in markers) >= 2
-    return False
+    return bool(needle and needle in hay)
 
 
 def latest_discovery() -> Path:
