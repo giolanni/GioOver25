@@ -1,0 +1,212 @@
+﻿Country;League;Status;KindOrLeagueId;Matches;FirstDate;LastDate;TournamentId;TournamentStageId;SampleMatchId
+Argentina;Reserve League - Clausura;NEW;LEAGUE;46;2026-10-20;2026-11-04;;;n5Z7ajm3
+Austria;Burgenland;KNOWN_ALIAS;Austria_Burgenland;16;2026-10-23;2026-10-31;;;d6JfvN7U
+Austria;Karnten;KNOWN;Austria_Karnten;24;2026-10-23;2026-10-31;;;h68L5BFE
+Austria;Niederosterreich;KNOWN_ALIAS;Austria_Niederosterreich;16;2026-10-23;2026-10-31;;;0CcZLGiD
+Austria;Oberosterreich;KNOWN_ALIAS;Austria_Oberosterreich;16;2026-10-23;2026-10-31;;;23zdvUWF
+Austria;Regionalliga Est;KNOWN_ALIAS;Austria_Regionalliga_East;16;2026-10-23;2026-10-31;;;QNdt5CL8
+Austria;Regionalliga North;KNOWN;Austria_Regionalliga_North;14;2026-10-23;2026-10-31;;;CnRuHsDd
+Austria;Regionalliga Ovest;KNOWN_ALIAS;Austria_Regionalliga_West;16;2026-10-23;2026-10-31;;;QaUS8Sjm
+Austria;Regionalliga South;KNOWN;Austria_Regionalliga_South;16;2026-10-21;2026-10-30;;;CQi1lFqT
+Austria;Salzburg;KNOWN_ALIAS;Austria_Salzburg;16;2026-10-23;2026-10-31;;;djyn3gjo
+Austria;Steiermark;KNOWN_ALIAS;Austria_Steiermark;16;2026-10-23;2026-10-31;;;tEudowuh
+Austria;Tirol;KNOWN;Austria_Tirol;16;2026-10-23;2026-10-31;;;GEhYiKy1
+Austria;Vorarlberg;KNOWN_ALIAS;Austria_Vorarlberg;14;2026-10-24;2026-10-31;;;OtLrLKbc
+Austria;Wien;KNOWN_ALIAS;Austria_Wien;16;2026-10-23;2026-11-01;;;2JOMnZ8d
+Belgium;Second Amateur Division Group ACFF;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;StS9S7no
+Belgium;Second Amateur Division Group VFV A;NEW;LEAGUE;15;2026-10-24;2026-11-01;;;t02Lnwph
+Belgium;Second Amateur Division Group VFV B;NEW;LEAGUE;17;2026-10-21;2026-11-01;;;OvOiOWQ9
+Brasile;Carioca B1;NEW;LEAGUE;18;2026-10-20;2026-10-31;;;vkiTljjB
+Brasile;Carioca B2;NEW;LEAGUE;12;2026-10-26;2026-11-01;;;W2fL3AjU
+Brasile;Catarinense 3;NEW;LEAGUE;2;2026-10-24;2026-10-24;;;tQue6PgJ
+Brasile;Gaucho 3;NEW;LEAGUE;5;2026-10-24;2026-10-24;;;0ICTwtLr
+Brasile;Goiano 3;NEW;LEAGUE;6;2026-10-24;2026-11-01;;;vilTwsn2
+Brasile;Mineiro 3 - Gruppo Finale;NEW;LEAGUE;5;2026-10-24;2026-10-31;;;29m1MrH6
+Brasile;Pernambucano - Prima fase;NEW;LEAGUE;44;2026-10-20;2026-11-02;;;KIudgRiJ
+Brasile;Potiguar 2;NEW;LEAGUE;5;2026-10-21;2026-11-01;;;UuyrrXCd
+Brasile;Sergipano 2;NEW;LEAGUE;18;2026-10-28;2026-11-04;;;lUexTXg5
+Canada;Championship;NEW;LEAGUE;1;2026-10-22;2026-10-22;;;MLpI1YW9
+Cile;Liga de Ascenso;NEW;LEAGUE;17;2026-10-20;2026-11-01;;;MsVomjIc
+Cile;Liga de Primera;NEW;LEAGUE;15;2026-10-24;2026-11-03;;;EaGunGUO
+Cile;Segunda Division - Gruppo Promozione;NEW;LEAGUE;6;2026-10-24;2026-11-01;;;Y1HfIpRG
+Cile;Segunda Division - Gruppo Retrocessione;NEW;LEAGUE;6;2026-10-24;2026-11-01;;;SWQ91G2b
+Cina;League One;NEW;LEAGUE;16;2026-10-24;2026-10-31;;;4pbaoD3N
+Cina;League Two - Gruppo Promozione;NEW;LEAGUE;8;2026-10-23;2026-11-01;;;QNGdSAJt
+Cina;League Two - Gruppo Retrocessione;NEW;LEAGUE;16;2026-10-24;2026-10-31;;;ERLKM6mI
+Colombia;Primera B - Clausura - Quadrangolare;NEW;LEAGUE;10;2026-10-29;2026-11-04;;;WItaQWl2
+Czech Republic;4. liga - Group A;KNOWN;CzechRepublic_4Liga_GroupA;14;2026-10-24;2026-11-01;;;pOaH00aB
+Czech Republic;4. liga - Group B;KNOWN;CzechRepublic_4Liga_GroupB;16;2026-10-23;2026-11-01;;;d8neg41E
+Czech Republic;4. liga - Group C;KNOWN;CzechRepublic_4Liga_GroupC;16;2026-10-24;2026-11-01;;;vcReiLPj
+Czech Republic;4. liga - Group D;KNOWN;CzechRepublic_4Liga_GroupD;16;2026-10-24;2026-11-01;;;OMzL7VD5
+Czech Republic;4. liga - Group E;KNOWN;CzechRepublic_4Liga_GroupE;16;2026-10-23;2026-11-01;;;WIt5q5OH
+Czech Republic;4. liga - Group F;KNOWN;CzechRepublic_4Liga_GroupF;16;2026-10-24;2026-11-01;;;WEp49BAb
+Czech Republic;Jihocesky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;QP7RGg5C
+Czech Republic;Jihomoravsky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;QV4Ol6Nj
+Czech Republic;Karlovarsky KP;NEW;LEAGUE;15;2026-10-24;2026-11-01;;;v9JRz98r
+Czech Republic;Kralovehradecky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;0zCNj5xq
+Czech Republic;Liberecky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;Ik76YwgC
+Czech Republic;Moravskoslezsky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;KjPSzk0k
+Czech Republic;Olomoucky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;tn9CbdB5
+Czech Republic;Pardubicky KP;NEW;LEAGUE;17;2026-10-24;2026-11-01;;;QaU88C2K
+Czech Republic;Plzensky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;SQDt3dLE
+Czech Republic;Prazsky prebor;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;pfp5rYTN
+Czech Republic;Stredocesky KP;NEW;LEAGUE;17;2026-10-24;2026-11-01;;;xvQn6wLP
+Czech Republic;Ustecky KP;NEW;LEAGUE;23;2026-10-24;2026-11-01;;;Qkoa3SCt
+Czech Republic;Vysocina KP;NEW;LEAGUE;15;2026-10-24;2026-10-31;;;pMtDnxwo
+Czech Republic;Zlinsky KP;NEW;LEAGUE;14;2026-10-24;2026-11-01;;;SxvsSXUN
+Denmark;3rd Division;KNOWN;Denmark_3rdDivision;12;2026-10-23;2026-10-31;;;SSUVFaP6
+Denmark;A-Liga Women;KNOWN;Denmark_ALigaWomen;11;2026-10-20;2026-11-03;;;Ik30G5zn
+Ecuador;Liga Pro - Posti;NEW;LEAGUE;4;2026-10-25;2026-11-01;;;Kv7H6Lyo
+Egitto;Division 2 A;NEW;LEAGUE;20;2026-10-22;2026-10-30;;;S8SUhsAd
+Egitto;Premier League;NEW;LEAGUE;17;2026-10-20;2026-10-31;;;69z3zq3T
+England;Baller League - UK;NEW;LEAGUE;12;2026-10-26;2026-11-02;;;EJoaYWP7
+England;Isthmian League Premier Division;KNOWN;England_IsthmianLeaguePremierDivision;33;2026-10-20;2026-11-03;;;OjjTXjO6
+England;League Two;KNOWN;England_LeagueTwo;38;2026-10-20;2026-11-03;;;WSuyybTa
+England;National League;NEW;LEAGUE;35;2026-10-24;2026-10-31;;;dtjOiBYH
+England;National League Nord;NEW;LEAGUE;35;2026-10-24;2026-10-31;;;2Z4V411T
+England;National League Sud;NEW;LEAGUE;40;2026-10-20;2026-11-03;;;CC8fFqyp
+England;NPL Premier Division;KNOWN;England_NPLPremierDivision;25;2026-10-20;2026-11-03;;;U5Wkrao1
+England;Premier League 2;NEW;LEAGUE;14;2026-10-23;2026-10-26;;;KOILHaLM
+England;Professional Development League;KNOWN;England_ProfessionalDevelopmentLeague;14;2026-10-20;2026-11-03;;;dYiJiUDt
+England;Southern League Premier Central;KNOWN;England_SouthernLeaguePremierCentral;37;2026-10-20;2026-11-03;;;4vHx6jhL
+England;Southern League Premier South;KNOWN;England_SouthernLeaguePremierSouth;34;2026-10-20;2026-11-03;;;AHsODhVO
+England;WSL;NEW;LEAGUE;14;2026-10-24;2026-11-01;;;GzdcbTS7
+England;WSL 2;NEW;LEAGUE;6;2026-10-25;2026-10-25;;;6iFJiRs3
+Finland;Veikkausliiga - Play-Offs Championship;KNOWN_ALIAS;Finland_Veikkausliiga;9;2026-10-24;2026-11-02;;;lMeiR6kn
+Finland;Veikkausliiga - Spareggio;KNOWN_ALIAS;Finland_Veikkausliiga;2;2026-10-21;2026-10-25;;;GfIRCCSs
+Finland;Ykkosliiga - Spareggio;KNOWN_ALIAS;Finland_Ykkosliiga;2;2026-10-22;2026-10-25;;;WKJ5XJSE
+France;Ligue 3;KNOWN_ALIAS;France_National;9;2026-10-29;2026-10-31;;;WUtPKExI
+France;National 1 - Group A;NEW;LEAGUE;8;2026-10-31;2026-10-31;;;MwYEwcx8
+France;National 1 - Group B;NEW;LEAGUE;8;2026-10-31;2026-10-31;;;QRfuhnrQ
+France;National 1 - Group C;NEW;LEAGUE;8;2026-10-31;2026-10-31;;;2TTGkNXp
+Germany;Oberliga Baden-Württemberg;KNOWN;Germany_Oberliga_BadenWurttemberg;18;2026-10-23;2026-11-03;;;GK1htEL5
+Germany;Oberliga Bayern Nord;KNOWN;Germany_Oberliga_Bayern_Nord;18;2026-10-23;2026-10-31;;;MiXpQByf
+Germany;Oberliga Bayern Süd;KNOWN;Germany_Oberliga_Bayern_Sud;18;2026-10-23;2026-10-31;;;dMRgbniT
+Germany;Oberliga Bremen;KNOWN;Germany_Oberliga_Bremen;16;2026-10-23;2026-11-01;;;t8pmm0i3
+Germany;Oberliga Hamburg;KNOWN;Germany_Oberliga_Hamburg;19;2026-10-20;2026-11-01;;;6uZtPvGb
+Germany;Oberliga Hessen;KNOWN;Germany_Oberliga_Hessen;18;2026-10-24;2026-11-01;;;KEXWyAAE
+Germany;Oberliga Mittelrhein;KNOWN;Germany_Oberliga_Mittelrhein;9;2026-10-23;2026-10-28;;;dO6dNUel
+Germany;Oberliga Niederrhein;KNOWN;Germany_Oberliga_Niederrhein;9;2026-10-23;2026-10-25;;;EP8mBpBs
+Germany;Oberliga Niedersachsen;KNOWN;Germany_Oberliga_Niedersachsen;19;2026-10-21;2026-11-01;;;n7hij1kI
+Germany;Oberliga NOFV- Sud;KNOWN;Germany_Oberliga_NOFV_Sud;16;2026-10-23;2026-11-01;;;d6uzWDhm
+Germany;Oberliga NOFV-Nord;KNOWN;Germany_Oberliga_NOFV_Nord;16;2026-10-23;2026-11-01;;;xMExWoNj
+Germany;Oberliga Rheinland-Pfalz/Saar;KNOWN;Germany_Oberliga_RheinlandPfalzSaar;19;2026-10-23;2026-11-04;;;SKKf8gse
+Germany;Oberliga Schleswig-Holstein;KNOWN;Germany_Oberliga_SchleswigHolstein;18;2026-10-20;2026-11-01;;;S4U6aEHD
+Germany;Oberliga Westfalen;KNOWN;Germany_Oberliga_Westfalen;9;2026-10-23;2026-10-25;;;fBhlyoGr
+Germany;Regionalliga Bayern;KNOWN;Germany_Regionalliga_Bayern;19;2026-10-23;2026-10-31;;;dYB8DKSh
+Germany;Regionalliga Nord;KNOWN;Germany_Regionalliga_Nord;19;2026-10-24;2026-11-01;;;OKVeErYh
+Germany;Regionalliga Nordost;KNOWN;Germany_Regionalliga_Nordost;18;2026-10-23;2026-11-01;;;E3iZQGIq
+Germany;Regionalliga Ovest;KNOWN_ALIAS;Germany_Regionalliga_West;19;2026-10-20;2026-11-01;;;6DYh2DPh
+Germany;Regionalliga Sudwest;KNOWN;Germany_Regionalliga_Sudwest;19;2026-10-23;2026-11-01;;;6XxVY8YQ
+Grecia;Gamma Ethniki - Group 1;NEW;LEAGUE;10;2026-10-25;2026-11-01;;;WGy5Ofkm
+Grecia;Gamma Ethniki - Group 10;NEW;LEAGUE;13;2026-10-21;2026-10-31;;;hdNpJxPb
+Grecia;Gamma Ethniki - Group 2;NEW;LEAGUE;10;2026-10-24;2026-11-01;;;d6idWm97
+Grecia;Gamma Ethniki - Group 3;NEW;LEAGUE;10;2026-10-25;2026-11-01;;;na2C3rkf
+Grecia;Gamma Ethniki - Group 4;NEW;LEAGUE;10;2026-10-24;2026-11-01;;;nsiZ3ew0
+Grecia;Gamma Ethniki - Group 5;NEW;LEAGUE;10;2026-10-25;2026-11-01;;;tj92EcW0
+Grecia;Gamma Ethniki - Group 6;NEW;LEAGUE;12;2026-10-25;2026-11-01;;;WSs20HaK
+Grecia;Gamma Ethniki - Group 7;NEW;LEAGUE;12;2026-10-24;2026-11-01;;;8p997143
+Grecia;Gamma Ethniki - Group 8;NEW;LEAGUE;12;2026-10-24;2026-11-01;;;hlVd2aEO
+Grecia;Gamma Ethniki - Group 9;NEW;LEAGUE;10;2026-10-25;2026-11-01;;;SpEAgp4l
+Iceland;Besta deild karla - Gruppo Retrocessione;NEW;LEAGUE;3;2026-10-24;2026-10-24;;;Qeva0EUj
+Iceland;Besta deild karla - Play-Offs Championship;KNOWN_ALIAS;Iceland_BestaDeildKarla;3;2026-10-24;2026-10-24;;;GrdZv72D
+India;I-League 3;NEW;LEAGUE;30;2026-10-22;2026-11-03;;;QsidqXv9
+Indonesia;Championship;NEW;LEAGUE;20;2026-10-23;2026-11-01;;;bX2A8o5L
+Irlanda;National League;NEW;LEAGUE;9;2026-10-24;2026-10-31;;;fwTqy6Q8
+Italy;Serie A Femminile;KNOWN;Italy_SerieAWomen;12;2026-10-24;2026-11-02;;;CCOV3TXF
+Italy;Serie D - Girone A;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;nwDBmWZ9
+Italy;Serie D - Girone B;NEW;LEAGUE;20;2026-10-24;2026-11-04;;;lCCWYeO9
+Italy;Serie D - Girone C;NEW;LEAGUE;18;2026-10-25;2026-11-02;;;ShMXax94
+Italy;Serie D - Girone D;NEW;LEAGUE;19;2026-10-21;2026-11-01;;;2R0yMiBD
+Italy;Serie D - Girone E;NEW;LEAGUE;18;2026-10-25;2026-11-01;;;b9KrbGg3
+Italy;Serie D - Girone F;NEW;LEAGUE;18;2026-10-25;2026-11-01;;;8CsrOj0J
+Italy;Serie D - Girone G;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;Yi0tWmP7
+Italy;Serie D - Girone H;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;h62HfvG7
+Italy;Serie D - Girone I;NEW;LEAGUE;18;2026-10-25;2026-11-01;;;lKWZ0Qck
+Malesia;Super League;NEW;LEAGUE;4;2026-10-30;2026-11-01;;;WM8Hxo8r
+Marocco;Botola 2;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;fXB5NlgB
+Marocco;Botola Pro;NEW;LEAGUE;17;2026-10-24;2026-11-04;;;K4CPdliC
+Martinica;Trophee Gerard Janvion;NEW;LEAGUE;8;2026-10-24;2026-10-31;;;AFU5RgNG
+Mexico;Liga Premier Serie B;NEW;LEAGUE;4;2026-10-25;2026-11-01;;;SANEWhEN
+Mexico;Primera Premier;NEW;LEAGUE;18;2026-10-20;2026-11-01;;;tS0FZKc3
+Netherlands;Derde Divisie;NEW;LEAGUE;19;2026-10-23;2026-10-31;;;zX0ihIgU
+Netherlands;Eredivisie - Women;KNOWN;Netherlands_EredivisieWomen;8;2026-10-25;2026-11-01;;;jiXmQbkU
+Norway;Division 3 - Group 1;KNOWN_ALIAS;Norway_3rdDivision_Group1;14;2026-10-24;2026-11-01;;;SAKdOSUO
+Norway;Division 3 - Group 2;KNOWN_ALIAS;Norway_3rdDivision_Group2;15;2026-10-21;2026-11-01;;;SIpOY4un
+Norway;Division 3 - Group 3;KNOWN_ALIAS;Norway_3rdDivision_Group3;14;2026-10-24;2026-11-01;;;MJ4SAyaf
+Norway;Division 3 - Group 4;KNOWN_ALIAS;Norway_3rdDivision_Group4;14;2026-10-23;2026-11-01;;;Czb9PaP7
+Norway;Division 3 - Group 5;KNOWN_ALIAS;Norway_3rdDivision_Group5;14;2026-10-24;2026-11-01;;;2qRLykO0
+Norway;Division 3 - Group 6;KNOWN_ALIAS;Norway_3rdDivision_Group6;14;2026-10-24;2026-11-01;;;Ug19HUVF
+Poland;III Liga - Group I;KNOWN;Poland_IIILiga_Group1;19;2026-10-21;2026-10-31;;;MuZEm6eJ
+Poland;III Liga - Group II;KNOWN;Poland_IIILiga_Group2;19;2026-10-24;2026-11-04;;;pYCR3mHk
+Poland;III Liga - Group III;KNOWN;Poland_IIILiga_Group3;19;2026-10-23;2026-11-04;;;vendmHeE
+Poland;III Liga - Group IV;KNOWN;Poland_IIILiga_Group4;18;2026-10-23;2026-10-31;;;xWVoRxto
+Portugal;Campeonato de Portugal - Group A;NEW;LEAGUE;14;2026-10-25;2026-11-01;;;GYbzpcGG
+Portugal;Campeonato de Portugal - Group B;NEW;LEAGUE;14;2026-10-25;2026-11-01;;;CxOnCYBM
+Portugal;Campeonato de Portugal - Group C;NEW;LEAGUE;14;2026-10-25;2026-11-01;;;trgqFJX1
+Portugal;Campeonato de Portugal - Group D;NEW;LEAGUE;14;2026-10-24;2026-11-01;;;Qm4H7ctK
+Russia;FNL 2 - Division B - Group 1;NEW;LEAGUE;14;2026-10-24;2026-10-31;;;IN2N2zx1
+Russia;FNL 2 - Division B - Group 2;NEW;LEAGUE;13;2026-10-24;2026-11-01;;;ppJSotPc
+Russia;FNL 2 - Division B - Group 3;NEW;LEAGUE;16;2026-10-23;2026-10-31;;;lWWMoOMH
+Russia;FNL 2 - Division B - Group 4 - Gruppo Retrocessione;NEW;LEAGUE;6;2026-10-24;2026-11-01;;;GUQtVDS8
+Scotland;Highland League;NEW;LEAGUE;12;2026-10-24;2026-10-31;;;zLhdFxE6
+Scotland;League Two;NEW;LEAGUE;5;2026-10-31;2026-10-31;;;A9ifL8be
+Scotland;Lowland League;NEW;LEAGUE;32;2026-10-20;2026-10-31;;;0xF84UWj
+Serbia;Srpska Liga - Belgrade;NEW;LEAGUE;14;2026-10-23;2026-10-31;;;ULEwyddL
+Serbia;Srpska Liga - East;NEW;LEAGUE;16;2026-10-23;2026-11-01;;;dUP3zGkR
+Serbia;Srpska Liga - Vojvodina;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;4OWTnAgL
+Serbia;Srpska Liga - West;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;rNcDjar9
+Singapore;Premier League 2;NEW;LEAGUE;1;2026-10-20;2026-10-20;;;0dkr4mNN
+Slovakia;4. liga - Bratislava;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;Q3IEdV3k
+Slovakia;4. liga - Central;NEW;LEAGUE;14;2026-10-24;2026-11-01;;;ABQkrFff
+Slovakia;4. liga - East;NEW;LEAGUE;14;2026-10-24;2026-11-01;;;p0sar2Sj
+Slovakia;4. liga - West;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;vF2w2k64
+South Korea;K League 1 - Gruppo Retrocessione;NEW;LEAGUE;3;2026-10-31;2026-11-01;;;IPiu1ts3
+South Korea;K League 1 - Play-Offs Championship;KNOWN_ALIAS;SouthKorea_KLeague1;3;2026-10-31;2026-11-01;;;Ey7EQa5j
+South Korea;K4 League;NEW;LEAGUE;7;2026-10-25;2026-11-01;;;Kd2samrg
+Spain;Segunda RFEF - Group 1;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;jD4OCsim
+Spain;Segunda RFEF - Group 2;NEW;LEAGUE;20;2026-10-21;2026-11-04;;;0jWvclg2
+Spain;Segunda RFEF - Group 3;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;f302ZJ84
+Spain;Segunda RFEF - Group 4;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;pY6Ex89E
+Spain;Segunda RFEF - Group 5;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;8nOAbdD5
+Spain;Tercera RFEF - Group 1;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;hheZgeas
+Spain;Tercera RFEF - Group 10;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;tn79FXvn
+Spain;Tercera RFEF - Group 11;NEW;LEAGUE;19;2026-10-21;2026-11-01;;;0OyPH7so
+Spain;Tercera RFEF - Group 12;NEW;LEAGUE;27;2026-10-21;2026-11-01;;;EPY226Y9
+Spain;Tercera RFEF - Group 13;NEW;LEAGUE;22;2026-10-24;2026-11-04;;;QDehzzFi
+Spain;Tercera RFEF - Group 14;NEW;LEAGUE;22;2026-10-21;2026-11-01;;;zHGuIzvm
+Spain;Tercera RFEF - Group 15;NEW;LEAGUE;18;2026-10-23;2026-11-01;;;Ak99F4kB
+Spain;Tercera RFEF - Group 16;NEW;LEAGUE;18;2026-10-25;2026-11-01;;;pjGFd3WA
+Spain;Tercera RFEF - Group 17;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;dEPVWIC5
+Spain;Tercera RFEF - Group 18;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;Q7AiuKi4
+Spain;Tercera RFEF - Group 2;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;OWaRVz60
+Spain;Tercera RFEF - Group 3;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;QVWsCWTO
+Spain;Tercera RFEF - Group 4;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;YVtKvGOh
+Spain;Tercera RFEF - Group 5;NEW;LEAGUE;19;2026-10-21;2026-11-01;;;jwWulug2
+Spain;Tercera RFEF - Group 6;NEW;LEAGUE;25;2026-10-20;2026-11-04;;;8v2Gym2M
+Spain;Tercera RFEF - Group 7;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;EVuztGl5
+Spain;Tercera RFEF - Group 8;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;jiXbPbW7
+Spain;Tercera RFEF - Group 9;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;EsKhPnUg
+Sri Lanka;Super League - Gruppo Retrocessione;NEW;LEAGUE;3;2026-10-20;2026-10-28;;;O0T0IW7s
+Sri Lanka;Super League - Play-Offs Championship;KNOWN_ALIAS;SriLanka_SuperLeague;6;2026-10-23;2026-11-01;;;lvsRPQef
+Sudafrica;Betway Premiership;NEW;LEAGUE;15;2026-10-30;2026-11-04;;;jDG3X7Yr
+Sudafrica;Diski Challenge;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;tnejHOk5
+Sudafrica;Motsepe Foundation Championship;NEW;LEAGUE;16;2026-10-23;2026-11-01;;;dl6UTOa3
+Sweden;Division 2 - Norrland - Spareggio;KNOWN_ALIAS;Sweden_Division2_Norrland;2;2026-10-24;2026-10-31;;;CQHtu6Dd
+Sweden;Division 2 - Promotion Group;NEW;LEAGUE;4;2026-10-24;2026-11-01;;;MiTc2DYQ
+Sweden;Division 2 - Södra Götaland - Spareggio;KNOWN_ALIAS;Sweden_Division2_SodraGotaland;2;2026-10-24;2026-10-30;;;lWtrIoAE
+Switzerland;1.Liga Gruppo 1;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;fRnc5b9d
+Switzerland;1.Liga Gruppo 2;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;CdU5BA44
+Switzerland;1.Liga Gruppo 3;NEW;LEAGUE;16;2026-10-24;2026-11-01;;;UyTnpTYH
+Tagikistan;Vysshaya Liga;NEW;LEAGUE;13;2026-10-20;2026-11-01;;;tn5aeOdf
+Thailandia;Thai League 1;NEW;LEAGUE;14;2026-10-24;2026-11-02;;;hpXLMOAL
+Thailandia;Thai League 2;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;nm2teyvG
+Turkey;3. Lig Group 1;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;h2z74F1T
+Turkey;3. Lig Group 2;NEW;LEAGUE;18;2026-10-24;2026-11-01;;;xz6LKSnJ
+Turkey;3. Lig Group 3;NEW;LEAGUE;17;2026-10-23;2026-11-01;;;IajeKjrg
+Ukraine;Premier League 2;NEW;LEAGUE;17;2026-10-21;2026-11-03;;;jgW7M6GF
+USA;USL Championship;KNOWN;USA_USLChampionship;14;2026-10-22;2026-10-25;;;UBpjlZuh
+USA;USL Championship - Play Off;KNOWN_ALIAS;USA_USLChampionship;7;2026-10-31;2026-11-02;;;hQC2Z12K
+USA;USL League One;KNOWN;USA_USLLeagueOne;10;2026-10-22;2026-10-25;;;fqHViTL8
+USA;USL League One - Play Off;KNOWN_ALIAS;USA_USLLeagueOne;4;2026-10-31;2026-11-02;;;lWAOi4Zo
+Venezuela;Liga FUTVE - Clausura - Quadrangolare;NEW;LEAGUE;15;2026-10-24;2026-11-04;;;4QuICTRb
