@@ -212,15 +212,18 @@ def main() -> None:
         if r["RegistryStatus"] != "MISSING":
             continue
         base_league = phase_re.sub("", r["League"]).strip()
-        canonical_id = proposed_league_id(r["Country"], base_league)
+        canonical_country = COUNTRY_ALIASES.get(norm(r["Country"]), r["Country"])
+        canonical_id = proposed_league_id(canonical_country, base_league)
         canonical_rows.append({
             "Tier": r["Tier"],
             "Country": r["Country"],
+            "CanonicalCountry": canonical_country,
             "League": r["League"],
             "CanonicalLeague": base_league,
             "ProposedLeagueId": r["ProposedLeagueId"],
             "CanonicalLeagueId": canonical_id,
             "IsPhaseAlias": "YES" if norm(base_league) != norm(r["League"]) else "NO",
+            "CanonicalExists": "YES" if canonical_id.casefold() in registry_ids else "NO",
             "Matches": r["Matches"],
             "FirstDate": r["FirstDate"],
             "LastDate": r["LastDate"],
@@ -234,8 +237,8 @@ def main() -> None:
     ))
     canonical_out = ROOT / "data" / "debug" / f"league_onboarding_candidates_{datetime.now():%Y%m%d-%H%M%S}.csv"
     canonical_fields = [
-        "Tier","Country","League","CanonicalLeague","ProposedLeagueId",
-        "CanonicalLeagueId","IsPhaseAlias","Matches","FirstDate","LastDate",
+        "Tier","Country","CanonicalCountry","League","CanonicalLeague","ProposedLeagueId",
+        "CanonicalLeagueId","IsPhaseAlias","CanonicalExists","Matches","FirstDate","LastDate",
         "TournamentId","TournamentStageId","SampleMatchId",
     ]
     with canonical_out.open("w", encoding="utf-8-sig", newline="") as h:
@@ -245,10 +248,15 @@ def main() -> None:
 
     canonical_ids = {r["CanonicalLeagueId"].casefold() for r in canonical_rows}
     phase_aliases = sum(r["IsPhaseAlias"] == "YES" for r in canonical_rows)
+    merge_existing = sum(r["CanonicalExists"] == "YES" for r in canonical_rows)
+    create_ids = {
+        r["CanonicalLeagueId"].casefold()
+        for r in canonical_rows if r["CanonicalExists"] == "NO"
+    }
 
     print(f"[OUTPUT] {out}")
     print(f"[REVIEW AUDIT] candidates={len(review_candidates)} | {review_out}")
-    print(f"[ONBOARDING AUDIT] missing={len(canonical_rows)} | canonical={len(canonical_ids)} | phase_aliases={phase_aliases} | {canonical_out}")
+    print(f"[ONBOARDING AUDIT] missing={len(canonical_rows)} | canonical={len(canonical_ids)} | create={len(create_ids)} | merge_existing={merge_existing} | phase_aliases={phase_aliases} | {canonical_out}")
     print("[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
 
