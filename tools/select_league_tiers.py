@@ -253,10 +253,17 @@ def main() -> None:
         r["CanonicalLeagueId"].casefold()
         for r in canonical_rows if r["CanonicalExists"] == "NO"
     }
+    canonical_groups: dict[str, list[dict]] = {}
+    for r in canonical_rows:
+        canonical_groups.setdefault(r["CanonicalLeagueId"].casefold(), []).append(r)
+    merge_phases = sum(
+        1 for group in canonical_groups.values()
+        if len(group) > 1 and not any(r["CanonicalExists"] == "YES" for r in group)
+    )
 
     print(f"[OUTPUT] {out}")
     print(f"[REVIEW AUDIT] candidates={len(review_candidates)} | {review_out}")
-    print(f"[ONBOARDING AUDIT] missing={len(canonical_rows)} | canonical={len(canonical_ids)} | create={len(create_ids)} | merge_existing={merge_existing} | phase_aliases={phase_aliases} | {canonical_out}")
+    print(f"[ONBOARDING AUDIT] missing={len(canonical_rows)} | canonical={len(canonical_ids)} | create={len(create_ids)} | merge_existing={merge_existing} | merge_phases={merge_phases} | phase_aliases={phase_aliases} | {canonical_out}")
     print("[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
 
