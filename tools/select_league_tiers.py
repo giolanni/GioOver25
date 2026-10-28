@@ -98,6 +98,11 @@ def load_tier_map() -> dict[tuple[str, str], int]:
 
 
 def tier(country: str, league: str, tier_map: dict[tuple[str, str], int]) -> int | None:
+    # Prima prova il nome paese esatto restituito dal feed. Solo in fallback
+    # usa l'alias inglese: la tier map può contenere entrambi intenzionalmente.
+    exact = tier_map.get((norm(country), norm(league)))
+    if exact is not None:
+        return exact
     mapped_country = COUNTRY_ALIASES.get(norm(country), country)
     return tier_map.get((norm(mapped_country), norm(league)))
 
