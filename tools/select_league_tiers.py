@@ -62,16 +62,14 @@ def latest_discovery() -> Path:
     return files[-1]
 
 
-def tier(country: str, league: str) -> int | None:
-    key = (norm(country), norm(league))
-    if key in KNOWN:
-        return KNOWN[key]
-    value = norm(league)
-    for level in (1, 2, 3):
-        if any(re.search(pattern, value, re.I) for pattern in TIER_PATTERNS[level]):
-            return level
-    return None
+def load_tier_map() -> dict[tuple[str, str], int]:
+    path = ROOT / "data" / "league_tier_map.csv"
+    rows = csv.DictReader(path.open(encoding="utf-8-sig", newline=""), delimiter=";")
+    return {(norm(r["Country"]), norm(r["League"])): int(r["Tier"]) for r in rows}
 
+
+def tier(country: str, league: str, tier_map: dict[tuple[str, str], int]) -> int | None:
+    return tier_map.get((norm(country), norm(league)))
 
 def main() -> None:
     p = argparse.ArgumentParser()
@@ -80,6 +78,7 @@ def main() -> None:
     source = ROOT / args.input if args.input else latest_discovery()
 
     registry = load_registry(ROOT / "data" / "league_registry.csv")
+    tier_map = load_tier_map()
     registry_ids = {r.league_id.casefold() for r in registry}
     rows = list(csv.DictReader(source.open(encoding="utf-8-sig", newline=""), delimiter=";"))
 
@@ -89,7 +88,7 @@ def main() -> None:
         # Le categorie non appartenenti ai campionati nazionali senior restano escluse.
         if row["Status"] == "NEW" and row["KindOrLeagueId"] in EXCLUDE_KINDS:
             continue
-        level = tier(row["Country"], row["League"])
+        level = tier(row["Country"], row["League"], tier_map)
         proposed = proposed_league_id(row["Country"], row["League"])
         if row["Status"] in {"KNOWN", "KNOWN_ALIAS"}:
             registry_status = f"COVERED:{row['KindOrLeagueId']}"
