@@ -39,14 +39,31 @@ def country_slug(country: str) -> str:
 
 
 def fetch(url: str, timeout: int = 15) -> tuple[int, str]:
+    """HTTP con cache persistente: lo stesso URL non viene scaricato due volte."""
+    HTTP_CACHE.mkdir(parents=True, exist_ok=True)
+    key = hashlib.sha256(url.encode("utf-8")).hexdigest()
+    meta_path = HTTP_CACHE / f"{key}.json"
+    body_path = HTTP_CACHE / f"{key}.html"
+    if meta_path.exists() and body_path.exists():
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            return int(meta["status"]), body_path.read_text(encoding="utf-8", errors="replace")
+        except (OSError, ValueError, KeyError, json.JSONDecodeError):
+            pass
+
     req = Request(url, headers={"User-Agent": UA, "Accept-Language": "it-IT,it;q=0.9,en;q=0.7"})
     try:
         with urlopen(req, timeout=timeout) as response:
-            return response.status, response.read().decode("utf-8", errors="replace")
+            status = response.status
+            body = response.read().decode("utf-8", errors="replace")
     except HTTPError as exc:
-        return exc.code, ""
+        status, body = exc.code, ""
     except (URLError, TimeoutError, OSError):
-        return 0, ""
+        status, body = 0, ""
+
+    meta_path.write_text(json.dumps({"url": url, "status": status}, ensure_ascii=False), encoding="utf-8")
+    body_path.write_text(body, encoding="utf-8")
+    return status, body
 
 
 def bookmaker_urls(country: str, league: str) -> dict[str, str]:
