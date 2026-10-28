@@ -21,14 +21,11 @@ def main() -> None:
     ap.add_argument("--country", required=True)
     ap.add_argument("--league", required=True)
     ap.add_argument("--max-days", type=int, default=400)
-    ap.add_argument("--empty-stop", type=int, default=45)
     args = ap.parse_args()
 
     today = date.today()
     wanted_country, wanted_league = norm(args.country), norm(args.league)
     rows = {}
-    seen_any = False
-    empty_after_seen = 0
     errors = 0
 
     for back in range(args.max_days + 1):
@@ -54,13 +51,6 @@ def main() -> None:
             rows[(m.match_date or current.isoformat(), norm(m.home), norm(m.away))] = (
                 m.match_date or current.isoformat(), m.home, m.away, hg, ag
             )
-        if found_today:
-            seen_any = True
-            empty_after_seen = 0
-        elif seen_any:
-            empty_after_seen += 1
-            if empty_after_seen >= args.empty_stop:
-                break
 
     ordered = sorted(rows.values())
     safe = "".join(ch if ch.isalnum() else "_" for ch in f"{args.country}_{args.league}").strip("_")
