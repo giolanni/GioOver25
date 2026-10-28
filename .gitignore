@@ -13,3 +13,12 @@ data/backup/
 
 # Archivi ZIP dei reset: backup operativi locali, non versionare.
 data/archive/
+
+# Runtime cache/output del discovery e onboarding leghe.
+data/debug/discover_leagues_cache/
+data/debug/discover_leagues_*.csv
+data/debug/league_tier123_*.csv
+data/debug/backfill_*.csv
+data/debug/bookmaker_leagues_*.csv
+data/debug/bookmaker_http_cache/
+data/debug/flashscore_tournament_from_*/
