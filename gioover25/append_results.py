@@ -233,6 +233,7 @@ SUSPECT_DUPLICATES_FIELDNAMES = [
 POSTPONED_STATUSES = {
     "RINVIATA",
     "POSTICIPATA",
+    "NOT_FOUND",
 }
 
 CLOSE_DUPLICATE_MAX_DAYS = 4
@@ -1258,6 +1259,9 @@ def append_results(
     sync_postponed_statuses_all_engines(
         ranking_history_engines
     )
+
+    from .reconcile_results import reconcile_unresolved_matches
+    reconcile_unresolved_matches(ranking_history_engines, input_file)
 
     rebuild_league_over_map()
 
