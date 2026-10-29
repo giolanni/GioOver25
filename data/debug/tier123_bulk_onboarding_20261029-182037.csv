@@ -1,0 +1,186 @@
+﻿LeagueId;Action;Status;Matches;Sources;Errors
+Albania_KategoriaePare;CREATE;READY;48;Kategoria e Parë;
+Algeria_Ligue1;CREATE;READY;50;Ligue 1;
+Algeria_Ligue2;CREATE;READY;107;Ligue 2;
+Angola_GirabolaLeague;CREATE;READY;61;Girabola League;
+AntiguaBarbuda_ABFAPremierLeague;CREATE;READY;8;ABFA Premier League;
+Argentina_LigaProfesionalClausura;CREATE;NO_RESULTS;0;Liga Profesional - Clausura;Liga Profesional - Clausura: HTTPError: HTTP Error 404: Not Found
+Argentina_PrimeraB;CREATE;READY;110;Primera B;
+Argentina_PrimeraNacional;CREATE;READY;108;Primera Nacional;
+Aruba_DivisiondiHonor;CREATE;READY;5;Division di Honor;
+Australia_AustralianChampionship;CREATE;READY;17;Australian Championship;
+Bahrain_PremierLeague;CREATE;READY;36;Premier League;
+Bangladesh_BFL;CREATE;READY;29;BFL;
+Belgium_NationalDivision1ACFF;CREATE;READY;59;National Division 1 - ACFF;
+Belgium_NationalDivision1VV;CREATE;READY;72;National Division 1 - VV;
+Benin_Ligue1;CREATE;READY;45;Ligue 1;
+Bermuda_PremierLeague;CREATE;READY;20;Premier League;
+Botswana_PremierLeague;CREATE;READY;51;Premier League;
+Brazil_SerieA;CREATE;READY;109;Serie A;
+Brazil_SerieB;CREATE;READY;106;Serie B;
+Bulgaria_ThirdLeagueNorthEast;CREATE;READY;85;Third League - North-East;
+Bulgaria_ThirdLeagueNorthWest;CREATE;READY;50;Third League - North-West;
+Bulgaria_ThirdLeagueSouthEast;CREATE;READY;106;Third League - South-East;
+Bulgaria_ThirdLeagueSouthWest;CREATE;READY;117;Third League - South-West;
+BurkinaFaso_PremierLeague;CREATE;READY;48;Premier League;
+Burundi_PrimusLeague;CREATE;READY;64;Primus League;
+Cambogia_CPL;CREATE;READY;25;CPL;
+Camerun_EliteOne;CREATE;READY;12;Elite One;
+Camerun_EliteTwo;CREATE;READY;5;Elite Two;
+Canada_CanadianPremierLeague;CREATE;READY;103;Canadian Premier League;
+Chile_LigadeAscenso;CREATE;READY;105;Liga de Ascenso;
+Chile_LigadePrimera;CREATE;READY;103;Liga de Primera;
+Chile_SegundaDivision;CREATE;NO_RESULTS;0;Segunda Division - Gruppo Promozione | Segunda Division - Gruppo Retrocessione;Segunda Division - Gruppo Promozione: HTTPError: HTTP Error 404: Not Found | Segunda Division - Gruppo Retrocessione: HTTPError: HTTP Error 404: Not Found
+China_LeagueOne;CREATE;READY;107;League One;
+China_LeagueTwo;CREATE;NO_RESULTS;0;League Two - Gruppo Promozione | League Two - Gruppo Retrocessione;League Two - Gruppo Promozione: HTTPError: HTTP Error 404: Not Found | League Two - Gruppo Retrocessione: HTTPError: HTTP Error 404: Not Found
+China_SuperLeague;CREATE;READY;106;Super League;
+Cipro_CyprusLeague;CREATE;READY;49;Cyprus League;
+Cipro_Division2;CREATE;READY;40;Division 2;
+Colombia_PrimeraAClausura;CREATE;NO_RESULTS;0;Primera A - Clausura;Primera A - Clausura: HTTPError: HTTP Error 404: Not Found
+Colombia_PrimeraBClausura;CREATE;NO_RESULTS;0;Primera B - Clausura;Primera B - Clausura: HTTPError: HTTP Error 404: Not Found
+CongoDr_Ligue1;CREATE;READY;21;Ligue 1;
+CostaDAvorio_Ligue1;CREATE;READY;33;Ligue 1;
+Costarica_LigadeAscensoApertura;CREATE;NO_RESULTS;0;Liga de Ascenso - Apertura;Liga de Ascenso - Apertura: HTTPError: HTTP Error 404: Not Found
+Costarica_PrimeraDivisionApertura;CREATE;NO_RESULTS;0;Primera División - Apertura;Primera División - Apertura: HTTPError: HTTP Error 404: Not Found
+Croatia_DrugaNL;CREATE;READY;79;Druga NL;
+Ecuador_LigaPro;CREATE;NO_RESULTS;0;Liga Pro - Gruppo Retrocessione;Liga Pro - Gruppo Retrocessione: HTTPError: HTTP Error 404: Not Found
+Ecuador_SerieB;CREATE;NO_RESULTS;0;Serie B - Gruppo Promozione | Serie B - Gruppo Retrocessione;Serie B - Gruppo Promozione: HTTPError: HTTP Error 404: Not Found | Serie B - Gruppo Retrocessione: HTTPError: HTTP Error 404: Not Found
+Egypt_Division2A;CREATE;READY;103;Division 2 A;
+Egypt_PremierLeague;CREATE;READY;73;Premier League;
+ElSalvador_PrimeraDivisionApertura;CREATE;NO_RESULTS;0;Primera Division - Apertura;Primera Division - Apertura: HTTPError: HTTP Error 404: Not Found
+EmiratiArabi_Division1;CREATE;READY;49;Division 1;
+EmiratiArabi_UAELeague;CREATE;READY;42;UAE League;
+Eswatini_SwaziMTNPremierLeague;CREATE;READY;40;Swazi MTN Premier League;
+Etiopia_PremierLeague;CREATE;READY;30;Premier League;
+Filippine_PFL;CREATE;READY;25;PFL;
+Gabon_ChampionnatD1;CREATE;NO_RESULTS;0;Championnat D1;
+Georgia_CrystalbetErovnuliLiga2;CREATE;READY;110;Crystalbet Erovnuli Liga 2;
+Georgia_Liga3;CREATE;READY;111;Liga 3;
+Ghana_DivisionOneLeague;CREATE;READY;116;Division One League;
+Ghana_PremierLeague;CREATE;READY;72;Premier League;
+Giamaica_PremierLeague;CREATE;READY;45;Premier League;
+Gibilterra_NationalLeague;CREATE;READY;38;National League;
+Giordania_PremierLeague;CREATE;READY;31;Premier League;
+Greece_GammaEthnikiGroup1;CREATE;READY;15;Gamma Ethniki - Group 1;
+Greece_GammaEthnikiGroup10;CREATE;READY;30;Gamma Ethniki - Group 10;
+Greece_GammaEthnikiGroup2;CREATE;READY;25;Gamma Ethniki - Group 2;
+Greece_GammaEthnikiGroup3;CREATE;READY;25;Gamma Ethniki - Group 3;
+Greece_GammaEthnikiGroup4;CREATE;READY;25;Gamma Ethniki - Group 4;
+Greece_GammaEthnikiGroup5;CREATE;READY;25;Gamma Ethniki - Group 5;
+Greece_GammaEthnikiGroup6;CREATE;READY;30;Gamma Ethniki - Group 6;
+Greece_GammaEthnikiGroup7;CREATE;READY;30;Gamma Ethniki - Group 7;
+Greece_GammaEthnikiGroup8;CREATE;READY;30;Gamma Ethniki - Group 8;
+Greece_GammaEthnikiGroup9;CREATE;READY;25;Gamma Ethniki - Group 9;
+Greece_SuperLeague;CREATE;READY;55;Super League;
+Greece_SuperLeague2;CREATE;READY;64;Super League 2;
+Guatemala_LigaNacionalApertura;CREATE;NO_RESULTS;0;Liga Nacional - Apertura;Liga Nacional - Apertura: HTTPError: HTTP Error 404: Not Found
+Honduras_LigaNacionalApertura;CREATE;NO_RESULTS;0;Liga Nacional - Apertura;Liga Nacional - Apertura: HTTPError: HTTP Error 404: Not Found
+HongKong_PremierLeague;CREATE;READY;31;Premier League;
+Hungary_NBIIINortheast;CREATE;READY;104;NB III - Northeast;
+Hungary_NBIIINorthwest;CREATE;READY;104;NB III - Northwest;
+Hungary_NBIIISoutheast;CREATE;READY;104;NB III - Southeast;
+Hungary_NBIIISouthwest;CREATE;READY;90;NB III - Southwest;
+India_ILeague;CREATE;NO_RESULTS;0;I-League;
+Indonesia_Championship;CREATE;READY;72;Championship;
+Iran_AzadeganLeague;CREATE;READY;56;Azadegan League;
+Iran_ProLeagueGolfoPersico;CREATE;READY;89;Pro League Golfo Persico;
+Iraq_StarsLeague;CREATE;READY;105;Stars League;
+Ireland_NationalLeague;CREATE;READY;50;National League;
+Ireland_PremierDivision;CREATE;READY;107;Premier Division;
+Israele_LeumitLeague;CREATE;READY;88;Leumit League;
+Israele_LigaAlefNorth;CREATE;READY;68;Liga Alef North;
+Israele_LigaAlefSouth;CREATE;READY;71;Liga Alef South;
+Israele_LigathaAl;CREATE;READY;56;Ligat ha'Al;
+Japan_J2League;CREATE;READY;112;J2 League;
+Japan_J3League;CREATE;READY;103;J3 League;
+Kenya_PremierLeague;CREATE;READY;34;Premier League;
+Kenya_SuperLeague;CREATE;NO_RESULTS;0;Super League;
+Kosovo_LigaePare;CREATE;READY;107;Liga e Pare;
+Kosovo_Superliga;CREATE;READY;54;Superliga;
+Kuwait_Division1;CREATE;READY;9;Division 1;
+Kuwait_PremierLeague;CREATE;READY;34;Premier League;
+Laos_LaoLeague;CREATE;READY;15;Lao League;
+Lesotho_PremierLeague;CREATE;READY;64;Premier League;
+Libano_PremierLeague;CREATE;READY;20;Premier League;
+Liberia_LFAFirstDivision;CREATE;READY;35;LFA First Division;
+Libia_PremierLeague;CREATE;READY;36;Premier League;
+Lussemburgo_BGLLigue;CREATE;READY;88;BGL Ligue;
+Malawi_SuperLeague;CREATE;READY;109;Super League;
+Malaysia_SuperLeague;CREATE;READY;31;Super League;
+Mali_PremiereDivision;CREATE;NO_RESULTS;0;Premiere Division;
+Malta_ChallengeLeague;CREATE;READY;40;Challenge League;
+Malta_PremierLeague;CREATE;NO_RESULTS;0;Premier League - Prima fase - Principale;Premier League - Prima fase - Principale: HTTPError: HTTP Error 404: Not Found
+Mauritania_Ligue1;CREATE;READY;16;Ligue 1;
+Mauritius_SuperLeague;CREATE;NO_RESULTS;0;Super League;
+Mexico_LigaPremierSerieA;CREATE;READY;88;Liga Premier Serie A;
+Mexico_PrimeraPremier;CREATE;READY;72;Primera Premier;
+Moldova_Liga1;CREATE;READY;55;Liga 1;
+Mongolia_PremierLeague;CREATE;READY;43;Premier League;
+Morocco_Botola2;CREATE;READY;40;Botola 2;
+Morocco_BotolaPro;CREATE;READY;37;Botola Pro;
+Mozambico_Mocambola;CREATE;READY;105;Mocambola;
+Myanmar_MLeague;CREATE;READY;26;M League;
+Netherlands_TweedeDivisie;CREATE;READY;99;Tweede Divisie;
+Nicaragua_LigaPrimeraApertura;CREATE;NO_RESULTS;0;Liga Primera - Apertura;Liga Primera - Apertura: HTTPError: HTTP Error 404: Not Found
+Niger_SuperLigue;CREATE;READY;61;Super Ligue;
+Nigeria_NNL;CREATE;NO_RESULTS;0;NNL;
+Nigeria_NPFL;CREATE;READY;97;NPFL;
+NorthMacedonia_2MFL;CREATE;READY;62;2. MFL;
+Oman_ProfessionalLeague;CREATE;READY;39;Professional League;
+Panama_LPFApertura;CREATE;NO_RESULTS;0;LPF - Apertura;LPF - Apertura: HTTPError: HTTP Error 404: Not Found
+Peru_Liga2;MERGE_EXISTING;MERGE_PENDING;0;Liga 2 - Gruppo Promozione | Liga 2 - Gruppo Retrocessione;Liga 2 - Gruppo Promozione: HTTPError: HTTP Error 404: Not Found | Liga 2 - Gruppo Retrocessione: HTTPError: HTTP Error 404: Not Found
+Portugal_Liga3;CREATE;READY;70;Liga 3;
+Qatar_QSL2;CREATE;READY;28;QSL 2;
+RepubblicaDominicana_LDFApertura;CREATE;NO_RESULTS;0;LDF - Apertura;LDF - Apertura: HTTPError: HTTP Error 404: Not Found
+Romania_Liga3Seria1;CREATE;READY;60;Liga 3 - Seria 1;
+Romania_Liga3Seria2;CREATE;READY;60;Liga 3 - Seria 2;
+Romania_Liga3Seria3;CREATE;READY;60;Liga 3 - Seria 3;
+Romania_Liga3Seria4;CREATE;READY;60;Liga 3 - Seria 4;
+Romania_Liga3Seria5;CREATE;READY;60;Liga 3 - Seria 5;
+Romania_Liga3Seria6;CREATE;READY;60;Liga 3 - Seria 6;
+Romania_Liga3Seria7;CREATE;READY;60;Liga 3 - Seria 7;
+Romania_Liga3Seria8;CREATE;READY;60;Liga 3 - Seria 8;
+Ruanda_PremierLeague;CREATE;READY;40;Premier League;
+Russia_FNL2DivisionAGoldAutunno;CREATE;NO_RESULTS;0;FNL 2 - Division A Gold - Autunno;FNL 2 - Division A Gold - Autunno: HTTPError: HTTP Error 404: Not Found
+SanMarino_CampionatoSammarinese;CREATE;READY;48;Campionato Sammarinese;
+SaudiArabia_Division1;CREATE;READY;77;Division 1;
+SaudiArabia_Division2;CREATE;READY;49;Division 2;
+Scotland_Championship;CREATE;READY;59;Championship;
+Scotland_LeagueOne;CREATE;READY;60;League One;
+Senegal_Ligue1;CREATE;READY;14;Ligue 1;
+Seychelles_PremierLeague;CREATE;READY;5;Premier League;
+SierraLeone_PremierLeague;CREATE;READY;21;Premier League;
+Singapore_PremierLeague;CREATE;READY;19;Premier League;
+Siria_PremierLeague;CREATE;READY;17;Premier League;
+Slovakia_3LigaCentral;CREATE;READY;84;3. Liga - Central;
+Slovakia_3LigaEast;CREATE;READY;84;3. Liga - East;
+Slovenia_3SNLEast;CREATE;READY;77;3. SNL - East;
+Slovenia_3SNLWest;CREATE;READY;76;3. SNL - West;
+SouthAfrica_BetwayPremiership;CREATE;READY;65;Betway Premiership;
+SouthAfrica_MotsepeFoundationChampionship;CREATE;READY;64;Motsepe Foundation Championship;
+SouthKorea_K3League;CREATE;READY;110;K3 League;
+Spain_PrimeraRFEFGroup1;CREATE;READY;90;Primera RFEF - Group 1;
+Spain_PrimeraRFEFGroup2;CREATE;READY;90;Primera RFEF - Group 2;
+Suriname_SML;CREATE;READY;17;SML;
+Taiwan_PremierLeague;CREATE;READY;16;Premier League;
+Tajikistan_VysshayaLiga;CREATE;READY;103;Vysshaya Liga;
+Tanzania_LigiKuuBara;CREATE;READY;75;Ligi Kuu Bara;
+Thailand_ThaiLeague1;CREATE;READY;48;Thai League 1;
+Thailand_ThaiLeague2;CREATE;READY;72;Thai League 2;
+Tunisia_Ligue2;CREATE;READY;70;Ligue 2;
+Tunisia_LigueProfessionnelle1;CREATE;READY;51;Ligue Professionnelle 1;
+Turkey_2LigRedGroup;CREATE;READY;64;2. Lig Red Group;
+Turkey_2LigWhiteGroup;CREATE;READY;71;2. Lig White Group;
+Turkmenistan_YokaryLiga;CREATE;READY;94;Yokary Liga;
+Uganda_BigLeague;CREATE;READY;31;Big League;
+Uganda_PremierLeague;CREATE;READY;66;Premier League;
+Ukraine_DruhaLiga;CREATE;READY;93;Druha Liga;
+Uruguay_LigaAUFUruguayaClausura;CREATE;NO_RESULTS;0;Liga AUF Uruguaya - Clausura;Liga AUF Uruguaya - Clausura: HTTPError: HTTP Error 404: Not Found
+Uruguay_SegundaDivision;CREATE;READY;105;Segunda Division;
+Uzbekistan_ProLiga;CREATE;READY;106;Pro Liga;
+Uzbekistan_SuperLeague;CREATE;READY;104;Super League;
+Venezuela_LigaFUTVE2;CREATE;READY;108;Liga FUTVE 2;
+Vietnam_VLeague1;CREATE;READY;35;V.League 1;
+Vietnam_VLeague2;CREATE;READY;35;V.League 2;
+Zambia_SuperLeague;CREATE;READY;39;Super League;
+Zimbabwe_PremierSoccerLeague;CREATE;READY;108;Premier Soccer League;

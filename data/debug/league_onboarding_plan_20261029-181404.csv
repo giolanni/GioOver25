@@ -1,0 +1,186 @@
+﻿Action;Tier;LeagueId;Country;League;SourceLeagues;TournamentIds;TournamentStageIds;SourceRows
+CREATE;TIER2;Albania_KategoriaePare;Albania;Kategoria e Parë;Kategoria e Parë;;;1
+CREATE;TIER1;Algeria_Ligue1;Algeria;Ligue 1;Ligue 1;;;1
+CREATE;TIER2;Algeria_Ligue2;Algeria;Ligue 2;Ligue 2;;;1
+CREATE;TIER1;Angola_GirabolaLeague;Angola;Girabola League;Girabola League;;;1
+CREATE;TIER1;AntiguaBarbuda_ABFAPremierLeague;Antigua & Barbuda;ABFA Premier League;ABFA Premier League;;;1
+CREATE;TIER1;Argentina_LigaProfesionalClausura;Argentina;Liga Profesional - Clausura;Liga Profesional - Clausura;;;1
+CREATE;TIER3;Argentina_PrimeraB;Argentina;Primera B;Primera B;;;1
+CREATE;TIER2;Argentina_PrimeraNacional;Argentina;Primera Nacional;Primera Nacional;;;1
+CREATE;TIER1;Aruba_DivisiondiHonor;Aruba;Division di Honor;Division di Honor;;;1
+CREATE;TIER2;Australia_AustralianChampionship;Australia;Australian Championship;Australian Championship;;;1
+CREATE;TIER1;Bahrain_PremierLeague;Bahrain;Premier League;Premier League;;;1
+CREATE;TIER1;Bangladesh_BFL;Bangladesh;BFL;BFL;;;1
+CREATE;TIER3;Belgium_NationalDivision1ACFF;Belgium;National Division 1 - ACFF;National Division 1 - ACFF;;;1
+CREATE;TIER3;Belgium_NationalDivision1VV;Belgium;National Division 1 - VV;National Division 1 - VV;;;1
+CREATE;TIER1;Benin_Ligue1;Benin;Ligue 1;Ligue 1;;;1
+CREATE;TIER1;Bermuda_PremierLeague;Bermuda;Premier League;Premier League;;;1
+CREATE;TIER1;Botswana_PremierLeague;Botswana;Premier League;Premier League;;;1
+CREATE;TIER1;Brazil_SerieA;Brazil;Serie A;Serie A;;;1
+CREATE;TIER2;Brazil_SerieB;Brazil;Serie B;Serie B;;;1
+CREATE;TIER3;Bulgaria_ThirdLeagueNorthEast;Bulgaria;Third League - North-East;Third League - North-East;;;1
+CREATE;TIER3;Bulgaria_ThirdLeagueNorthWest;Bulgaria;Third League - North-West;Third League - North-West;;;1
+CREATE;TIER3;Bulgaria_ThirdLeagueSouthEast;Bulgaria;Third League - South-East;Third League - South-East;;;1
+CREATE;TIER3;Bulgaria_ThirdLeagueSouthWest;Bulgaria;Third League - South-West;Third League - South-West;;;1
+CREATE;TIER1;BurkinaFaso_PremierLeague;Burkina Faso;Premier League;Premier League;;;1
+CREATE;TIER1;Burundi_PrimusLeague;Burundi;Primus League;Primus League;;;1
+CREATE;TIER1;Cambogia_CPL;Cambogia;CPL;CPL;;;1
+CREATE;TIER1;Camerun_EliteOne;Camerun;Elite One;Elite One;;;1
+CREATE;TIER2;Camerun_EliteTwo;Camerun;Elite Two;Elite Two;;;1
+CREATE;TIER1;Canada_CanadianPremierLeague;Canada;Canadian Premier League;Canadian Premier League;;;1
+CREATE;TIER2;Chile_LigadeAscenso;Chile;Liga de Ascenso;Liga de Ascenso;;;1
+CREATE;TIER1;Chile_LigadePrimera;Chile;Liga de Primera;Liga de Primera;;;1
+CREATE;TIER3;Chile_SegundaDivision;Chile;Segunda Division;Segunda Division - Gruppo Promozione | Segunda Division - Gruppo Retrocessione;;;2
+CREATE;TIER2;China_LeagueOne;China;League One;League One;;;1
+CREATE;TIER3;China_LeagueTwo;China;League Two;League Two - Gruppo Promozione | League Two - Gruppo Retrocessione;;;2
+CREATE;TIER1;China_SuperLeague;China;Super League;Super League;;;1
+CREATE;TIER1;Cipro_CyprusLeague;Cipro;Cyprus League;Cyprus League;;;1
+CREATE;TIER2;Cipro_Division2;Cipro;Division 2;Division 2;;;1
+CREATE;TIER1;Colombia_PrimeraAClausura;Colombia;Primera A - Clausura;Primera A - Clausura;;;1
+CREATE;TIER2;Colombia_PrimeraBClausura;Colombia;Primera B - Clausura;Primera B - Clausura;;;1
+CREATE;TIER1;CongoDr_Ligue1;Congo Dr;Ligue 1;Ligue 1;;;1
+CREATE;TIER1;CostaDAvorio_Ligue1;Costa D'Avorio;Ligue 1;Ligue 1;;;1
+CREATE;TIER2;Costarica_LigadeAscensoApertura;Costarica;Liga de Ascenso - Apertura;Liga de Ascenso - Apertura;;;1
+CREATE;TIER1;Costarica_PrimeraDivisionApertura;Costarica;Primera División - Apertura;Primera División - Apertura;;;1
+CREATE;TIER3;Croatia_DrugaNL;Croatia;Druga NL;Druga NL;;;1
+CREATE;TIER1;Ecuador_LigaPro;Ecuador;Liga Pro;Liga Pro - Gruppo Retrocessione;;;1
+CREATE;TIER2;Ecuador_SerieB;Ecuador;Serie B;Serie B - Gruppo Promozione | Serie B - Gruppo Retrocessione;;;2
+CREATE;TIER2;Egypt_Division2A;Egypt;Division 2 A;Division 2 A;;;1
+CREATE;TIER1;Egypt_PremierLeague;Egypt;Premier League;Premier League;;;1
+CREATE;TIER1;ElSalvador_PrimeraDivisionApertura;El Salvador;Primera Division - Apertura;Primera Division - Apertura;;;1
+CREATE;TIER2;EmiratiArabi_Division1;Emirati Arabi;Division 1;Division 1;;;1
+CREATE;TIER1;EmiratiArabi_UAELeague;Emirati Arabi;UAE League;UAE League;;;1
+CREATE;TIER1;Eswatini_SwaziMTNPremierLeague;Eswatini;Swazi MTN Premier League;Swazi MTN Premier League;;;1
+CREATE;TIER1;Etiopia_PremierLeague;Etiopia;Premier League;Premier League;;;1
+CREATE;TIER1;Filippine_PFL;Filippine;PFL;PFL;;;1
+CREATE;TIER1;Gabon_ChampionnatD1;Gabon;Championnat D1;Championnat D1;;;1
+CREATE;TIER2;Georgia_CrystalbetErovnuliLiga2;Georgia;Crystalbet Erovnuli Liga 2;Crystalbet Erovnuli Liga 2;;;1
+CREATE;TIER3;Georgia_Liga3;Georgia;Liga 3;Liga 3;;;1
+CREATE;TIER2;Ghana_DivisionOneLeague;Ghana;Division One League;Division One League;;;1
+CREATE;TIER1;Ghana_PremierLeague;Ghana;Premier League;Premier League;;;1
+CREATE;TIER1;Giamaica_PremierLeague;Giamaica;Premier League;Premier League;;;1
+CREATE;TIER1;Gibilterra_NationalLeague;Gibilterra;National League;National League;;;1
+CREATE;TIER1;Giordania_PremierLeague;Giordania;Premier League;Premier League;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup1;Greece;Gamma Ethniki - Group 1;Gamma Ethniki - Group 1;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup10;Greece;Gamma Ethniki - Group 10;Gamma Ethniki - Group 10;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup2;Greece;Gamma Ethniki - Group 2;Gamma Ethniki - Group 2;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup3;Greece;Gamma Ethniki - Group 3;Gamma Ethniki - Group 3;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup4;Greece;Gamma Ethniki - Group 4;Gamma Ethniki - Group 4;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup5;Greece;Gamma Ethniki - Group 5;Gamma Ethniki - Group 5;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup6;Greece;Gamma Ethniki - Group 6;Gamma Ethniki - Group 6;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup7;Greece;Gamma Ethniki - Group 7;Gamma Ethniki - Group 7;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup8;Greece;Gamma Ethniki - Group 8;Gamma Ethniki - Group 8;;;1
+CREATE;TIER3;Greece_GammaEthnikiGroup9;Greece;Gamma Ethniki - Group 9;Gamma Ethniki - Group 9;;;1
+CREATE;TIER1;Greece_SuperLeague;Greece;Super League;Super League;;;1
+CREATE;TIER2;Greece_SuperLeague2;Greece;Super League 2;Super League 2;;;1
+CREATE;TIER1;Guatemala_LigaNacionalApertura;Guatemala;Liga Nacional - Apertura;Liga Nacional - Apertura;;;1
+CREATE;TIER1;Honduras_LigaNacionalApertura;Honduras;Liga Nacional - Apertura;Liga Nacional - Apertura;;;1
+CREATE;TIER1;HongKong_PremierLeague;Hong Kong;Premier League;Premier League;;;1
+CREATE;TIER3;Hungary_NBIIINortheast;Hungary;NB III - Northeast;NB III - Northeast;;;1
+CREATE;TIER3;Hungary_NBIIINorthwest;Hungary;NB III - Northwest;NB III - Northwest;;;1
+CREATE;TIER3;Hungary_NBIIISoutheast;Hungary;NB III - Southeast;NB III - Southeast;;;1
+CREATE;TIER3;Hungary_NBIIISouthwest;Hungary;NB III - Southwest;NB III - Southwest;;;1
+CREATE;TIER2;India_ILeague;India;I-League;I-League;;;1
+CREATE;TIER2;Indonesia_Championship;Indonesia;Championship;Championship;;;1
+CREATE;TIER2;Iran_AzadeganLeague;Iran;Azadegan League;Azadegan League;;;1
+CREATE;TIER1;Iran_ProLeagueGolfoPersico;Iran;Pro League Golfo Persico;Pro League Golfo Persico;;;1
+CREATE;TIER1;Iraq_StarsLeague;Iraq;Stars League;Stars League;;;1
+CREATE;TIER1;Ireland_NationalLeague;Ireland;National League;National League;;;1
+CREATE;TIER1;Ireland_PremierDivision;Ireland;Premier Division;Premier Division;;;1
+CREATE;TIER2;Israele_LeumitLeague;Israele;Leumit League;Leumit League;;;1
+CREATE;TIER3;Israele_LigaAlefNorth;Israele;Liga Alef North;Liga Alef North;;;1
+CREATE;TIER3;Israele_LigaAlefSouth;Israele;Liga Alef South;Liga Alef South;;;1
+CREATE;TIER1;Israele_LigathaAl;Israele;Ligat ha'Al;Ligat ha'Al;;;1
+CREATE;TIER2;Japan_J2League;Japan;J2 League;J2 League;;;1
+CREATE;TIER3;Japan_J3League;Japan;J3 League;J3 League;;;1
+CREATE;TIER1;Kenya_PremierLeague;Kenya;Premier League;Premier League;;;1
+CREATE;TIER2;Kenya_SuperLeague;Kenya;Super League;Super League;;;1
+CREATE;TIER2;Kosovo_LigaePare;Kosovo;Liga e Pare;Liga e Pare;;;1
+CREATE;TIER1;Kosovo_Superliga;Kosovo;Superliga;Superliga;;;1
+CREATE;TIER2;Kuwait_Division1;Kuwait;Division 1;Division 1;;;1
+CREATE;TIER1;Kuwait_PremierLeague;Kuwait;Premier League;Premier League;;;1
+CREATE;TIER1;Laos_LaoLeague;Laos;Lao League;Lao League;;;1
+CREATE;TIER1;Lesotho_PremierLeague;Lesotho;Premier League;Premier League;;;1
+CREATE;TIER1;Libano_PremierLeague;Libano;Premier League;Premier League;;;1
+CREATE;TIER1;Liberia_LFAFirstDivision;Liberia;LFA First Division;LFA First Division;;;1
+CREATE;TIER1;Libia_PremierLeague;Libia;Premier League;Premier League;;;1
+CREATE;TIER1;Lussemburgo_BGLLigue;Lussemburgo;BGL Ligue;BGL Ligue;;;1
+CREATE;TIER1;Malawi_SuperLeague;Malawi;Super League;Super League;;;1
+CREATE;TIER1;Malaysia_SuperLeague;Malaysia;Super League;Super League;;;1
+CREATE;TIER1;Mali_PremiereDivision;Mali;Premiere Division;Premiere Division;;;1
+CREATE;TIER2;Malta_ChallengeLeague;Malta;Challenge League;Challenge League;;;1
+CREATE;TIER1;Malta_PremierLeague;Malta;Premier League;Premier League - Prima fase - Principale;;;1
+CREATE;TIER1;Mauritania_Ligue1;Mauritania;Ligue 1;Ligue 1;;;1
+CREATE;TIER1;Mauritius_SuperLeague;Mauritius;Super League;Super League;;;1
+CREATE;TIER3;Mexico_LigaPremierSerieA;Mexico;Liga Premier Serie A;Liga Premier Serie A;;;1
+CREATE;TIER3;Mexico_PrimeraPremier;Mexico;Primera Premier;Primera Premier;;;1
+CREATE;TIER2;Moldova_Liga1;Moldova;Liga 1;Liga 1;;;1
+CREATE;TIER1;Mongolia_PremierLeague;Mongolia;Premier League;Premier League;;;1
+CREATE;TIER2;Morocco_Botola2;Morocco;Botola 2;Botola 2;;;1
+CREATE;TIER1;Morocco_BotolaPro;Morocco;Botola Pro;Botola Pro;;;1
+CREATE;TIER1;Mozambico_Mocambola;Mozambico;Mocambola;Mocambola;;;1
+CREATE;TIER1;Myanmar_MLeague;Myanmar;M League;M League;;;1
+CREATE;TIER3;Netherlands_TweedeDivisie;Netherlands;Tweede Divisie;Tweede Divisie;;;1
+CREATE;TIER1;Nicaragua_LigaPrimeraApertura;Nicaragua;Liga Primera - Apertura;Liga Primera - Apertura;;;1
+CREATE;TIER1;Niger_SuperLigue;Niger;Super Ligue;Super Ligue;;;1
+CREATE;TIER2;Nigeria_NNL;Nigeria;NNL;NNL;;;1
+CREATE;TIER1;Nigeria_NPFL;Nigeria;NPFL;NPFL;;;1
+CREATE;TIER2;NorthMacedonia_2MFL;North Macedonia;2. MFL;2. MFL;;;1
+CREATE;TIER1;Oman_ProfessionalLeague;Oman;Professional League;Professional League;;;1
+CREATE;TIER1;Panama_LPFApertura;Panama;LPF - Apertura;LPF - Apertura;;;1
+MERGE_EXISTING;TIER2;Peru_Liga2;Peru;Liga 2;Liga 2 - Gruppo Promozione | Liga 2 - Gruppo Retrocessione;;;2
+CREATE;TIER3;Portugal_Liga3;Portugal;Liga 3;Liga 3;;;1
+CREATE;TIER2;Qatar_QSL2;Qatar;QSL 2;QSL 2;;;1
+CREATE;TIER1;RepubblicaDominicana_LDFApertura;Repubblica Dominicana;LDF - Apertura;LDF - Apertura;;;1
+CREATE;TIER3;Romania_Liga3Seria1;Romania;Liga 3 - Seria 1;Liga 3 - Seria 1;;;1
+CREATE;TIER3;Romania_Liga3Seria2;Romania;Liga 3 - Seria 2;Liga 3 - Seria 2;;;1
+CREATE;TIER3;Romania_Liga3Seria3;Romania;Liga 3 - Seria 3;Liga 3 - Seria 3;;;1
+CREATE;TIER3;Romania_Liga3Seria4;Romania;Liga 3 - Seria 4;Liga 3 - Seria 4;;;1
+CREATE;TIER3;Romania_Liga3Seria5;Romania;Liga 3 - Seria 5;Liga 3 - Seria 5;;;1
+CREATE;TIER3;Romania_Liga3Seria6;Romania;Liga 3 - Seria 6;Liga 3 - Seria 6;;;1
+CREATE;TIER3;Romania_Liga3Seria7;Romania;Liga 3 - Seria 7;Liga 3 - Seria 7;;;1
+CREATE;TIER3;Romania_Liga3Seria8;Romania;Liga 3 - Seria 8;Liga 3 - Seria 8;;;1
+CREATE;TIER1;Ruanda_PremierLeague;Ruanda;Premier League;Premier League;;;1
+CREATE;TIER3;Russia_FNL2DivisionAGoldAutunno;Russia;FNL 2 - Division A Gold - Autunno;FNL 2 - Division A Gold - Autunno;;;1
+CREATE;TIER1;SanMarino_CampionatoSammarinese;San Marino;Campionato Sammarinese;Campionato Sammarinese;;;1
+CREATE;TIER2;SaudiArabia_Division1;Saudi Arabia;Division 1;Division 1;;;1
+CREATE;TIER3;SaudiArabia_Division2;Saudi Arabia;Division 2;Division 2;;;1
+CREATE;TIER2;Scotland_Championship;Scotland;Championship;Championship;;;1
+CREATE;TIER3;Scotland_LeagueOne;Scotland;League One;League One;;;1
+CREATE;TIER1;Senegal_Ligue1;Senegal;Ligue 1;Ligue 1;;;1
+CREATE;TIER1;Seychelles_PremierLeague;Seychelles;Premier League;Premier League;;;1
+CREATE;TIER1;SierraLeone_PremierLeague;Sierra Leone;Premier League;Premier League;;;1
+CREATE;TIER1;Singapore_PremierLeague;Singapore;Premier League;Premier League;;;1
+CREATE;TIER1;Siria_PremierLeague;Siria;Premier League;Premier League;;;1
+CREATE;TIER3;Slovakia_3LigaCentral;Slovakia;3. Liga - Central;3. Liga - Central;;;1
+CREATE;TIER3;Slovakia_3LigaEast;Slovakia;3. Liga - East;3. Liga - East;;;1
+CREATE;TIER3;Slovenia_3SNLEast;Slovenia;3. SNL - East;3. SNL - East;;;1
+CREATE;TIER3;Slovenia_3SNLWest;Slovenia;3. SNL - West;3. SNL - West;;;1
+CREATE;TIER1;SouthAfrica_BetwayPremiership;South Africa;Betway Premiership;Betway Premiership;;;1
+CREATE;TIER2;SouthAfrica_MotsepeFoundationChampionship;South Africa;Motsepe Foundation Championship;Motsepe Foundation Championship;;;1
+CREATE;TIER3;SouthKorea_K3League;South Korea;K3 League;K3 League;;;1
+CREATE;TIER3;Spain_PrimeraRFEFGroup1;Spain;Primera RFEF - Group 1;Primera RFEF - Group 1;;;1
+CREATE;TIER3;Spain_PrimeraRFEFGroup2;Spain;Primera RFEF - Group 2;Primera RFEF - Group 2;;;1
+CREATE;TIER1;Suriname_SML;Suriname;SML;SML;;;1
+CREATE;TIER1;Taiwan_PremierLeague;Taiwan;Premier League;Premier League;;;1
+CREATE;TIER1;Tajikistan_VysshayaLiga;Tajikistan;Vysshaya Liga;Vysshaya Liga;;;1
+CREATE;TIER1;Tanzania_LigiKuuBara;Tanzania;Ligi Kuu Bara;Ligi Kuu Bara;;;1
+CREATE;TIER1;Thailand_ThaiLeague1;Thailand;Thai League 1;Thai League 1;;;1
+CREATE;TIER2;Thailand_ThaiLeague2;Thailand;Thai League 2;Thai League 2;;;1
+CREATE;TIER2;Tunisia_Ligue2;Tunisia;Ligue 2;Ligue 2;;;1
+CREATE;TIER1;Tunisia_LigueProfessionnelle1;Tunisia;Ligue Professionnelle 1;Ligue Professionnelle 1;;;1
+CREATE;TIER3;Turkey_2LigRedGroup;Turkey;2. Lig Red Group;2. Lig Red Group;;;1
+CREATE;TIER3;Turkey_2LigWhiteGroup;Turkey;2. Lig White Group;2. Lig White Group;;;1
+CREATE;TIER1;Turkmenistan_YokaryLiga;Turkmenistan;Yokary Liga;Yokary Liga;;;1
+CREATE;TIER2;Uganda_BigLeague;Uganda;Big League;Big League;;;1
+CREATE;TIER1;Uganda_PremierLeague;Uganda;Premier League;Premier League;;;1
+CREATE;TIER3;Ukraine_DruhaLiga;Ukraine;Druha Liga;Druha Liga;;;1
+CREATE;TIER1;Uruguay_LigaAUFUruguayaClausura;Uruguay;Liga AUF Uruguaya - Clausura;Liga AUF Uruguaya - Clausura;;;1
+CREATE;TIER2;Uruguay_SegundaDivision;Uruguay;Segunda Division;Segunda Division;;;1
+CREATE;TIER2;Uzbekistan_ProLiga;Uzbekistan;Pro Liga;Pro Liga;;;1
+CREATE;TIER1;Uzbekistan_SuperLeague;Uzbekistan;Super League;Super League;;;1
+CREATE;TIER2;Venezuela_LigaFUTVE2;Venezuela;Liga FUTVE 2;Liga FUTVE 2;;;1
+CREATE;TIER1;Vietnam_VLeague1;Vietnam;V.League 1;V.League 1;;;1
+CREATE;TIER2;Vietnam_VLeague2;Vietnam;V.League 2;V.League 2;;;1
+CREATE;TIER1;Zambia_SuperLeague;Zambia;Super League;Super League;;;1
+CREATE;TIER1;Zimbabwe_PremierSoccerLeague;Zimbabwe;Premier Soccer League;Premier Soccer League;;;1
