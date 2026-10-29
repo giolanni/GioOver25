@@ -198,11 +198,13 @@ def main() -> None:
         w.writeheader()
         w.writerows(review_candidates)
 
-    # Pre-onboarding: raggruppa le MISSING che sembrano fasi della stessa
-    # competizione. Non modifica i LeagueId: produce solo un audit da validare.
+    # Pre-onboarding: raggruppa soltanto vere sottofasi interne della stessa
+    # competizione. Apertura/Clausura e Opening/Closing restano campionati
+    # distinti con LeagueId propri; possono condividere contesto storico a
+    # livello di analisi, ma non vengono fusi nel registry o nei risultati.
     phase_re = re.compile(
-        r"\s*-\s*(apertura|clausura|opening|closing|"
-        r"gruppo promozione|gruppo retrocessione|promotion group|relegation group|"
+        r"\s*-\s*(gruppo promozione|gruppo retrocessione|"
+        r"promotion group|relegation group|"
         r"prima fase|seconda fase|first stage|second stage).*$",
         re.IGNORECASE,
     )
@@ -256,14 +258,14 @@ def main() -> None:
     canonical_groups: dict[str, list[dict]] = {}
     for r in canonical_rows:
         canonical_groups.setdefault(r["CanonicalLeagueId"].casefold(), []).append(r)
-    merge_phases = sum(
+    merge_subphases = sum(
         1 for group in canonical_groups.values()
         if len(group) > 1 and not any(r["CanonicalExists"] == "YES" for r in group)
     )
 
     print(f"[OUTPUT] {out}")
     print(f"[REVIEW AUDIT] candidates={len(review_candidates)} | {review_out}")
-    print(f"[ONBOARDING AUDIT] missing={len(canonical_rows)} | canonical={len(canonical_ids)} | create={len(create_ids)} | merge_existing={merge_existing} | merge_phases={merge_phases} | phase_aliases={phase_aliases} | {canonical_out}")
+    print(f"[ONBOARDING AUDIT] missing={len(canonical_rows)} | canonical={len(canonical_ids)} | create={len(create_ids)} | merge_existing={merge_existing} | merge_subphases={merge_subphases} | phase_aliases={phase_aliases} | {canonical_out}")
     print("[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
 
