@@ -356,7 +356,11 @@ def sync_postponed_statuses(engine_name: str) -> int:
             normalize_team_name(league_id, row.get("Home", "")),
             normalize_team_name(league_id, row.get("Away", "")),
         )
-        candidates = postponed_index.get(key, [])
+        candidates = [
+            item for item in postponed_index.get(key, [])
+            if _text(item.get("Status")).upper() != "NOT_FOUND"
+            or _text(item.get("MatchDate")) == _text(row.get("MatchDate"))
+        ]
         if not candidates:
             continue
 
