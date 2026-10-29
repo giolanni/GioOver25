@@ -44,7 +44,16 @@ def recent_features(matches, league):
                 return sum(x[idx] for x in rows) / len(rows)
             def over(rows):
                 return sum(x[1] + x[2] >= 3 for x in rows) / len(rows)
+            home_all = history[h]
+            away_all = history[a]
+            maturity = min(len(home_all), len(away_all))
+            avg_gf_l5 = (avg(home, 1) + avg(away, 1)) / 2
+            avg_gf_full = (avg(home_all, 1) + avg(away_all, 1)) / 2
             features[(m.date, h, a)] = {
+                "maturity": maturity,
+                "delta_gf_l5": avg_gf_l5 - avg_gf_full,
+                "v30_core": int(7 <= maturity <= 8 and min(over(home), over(away)) >= .70 and avg_gf_l5 - avg_gf_full >= .20),
+                "v30_strong": int(7 <= maturity <= 8 and min(over(home), over(away)) >= .70 and avg_gf_l5 - avg_gf_full >= .30),
                 "min_gf": min(avg(home, 1), avg(away, 1)),
                 "max_ga": max(avg(home, 2), avg(away, 2)),
                 "min_ga": min(avg(home, 2), avg(away, 2)),
