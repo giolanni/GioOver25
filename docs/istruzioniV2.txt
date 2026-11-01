@@ -61,6 +61,12 @@ python getresults.py --date 2026-09-28 --dry-run
 Import risultati
 python -m gioover25.append_results data/input_risultati/risultati.csv
 
+STATISTICHE ASUS
+& "gioover25\raccogli_storici.ps1"  
+
+Ranking ASUS
+& "gioover25\raccogli_ranking.ps1" 
+
 #TROVARE RISULTATI MANCANTI
 python -m gioover25.missing_results
 python -m gioover25.missing_results --csv "data\debug\risultati\risultati_mancanti.csv"
@@ -133,12 +139,6 @@ Intera nazione
 Per eseguire davvero:
 
     python -m gioover25.reset_data --group USA_USLLeagueTwo --apply
-
-STATISTICHE ASUS
-& "gioover25\raccogli_storici.ps1"  
-
-Ranking ASUS
-& "gioover25\raccogli_ranking.ps1" 
 
 STATISTICHE WORK
 \gioover25\raccogli_storici.ps1 -- VERIFICARE  

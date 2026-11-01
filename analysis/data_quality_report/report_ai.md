@@ -5,25 +5,38 @@ Report diagnostico READ-ONLY. Le anomalie euristiche non implicano automaticamen
 ## Riepilogo
 
 - Modalità: **full**
-- Classifiche analizzate: **201** (3046 squadre/righe)
-- File risultati analizzati: **201** (20833 partite)
-- Righe Laboratory analizzate: **15802**
-- CRITICAL: **1**
-- WARNING: **2075**
-- INFO: **16**
+- Classifiche analizzate: **208** (3108 squadre/righe)
+- File risultati analizzati: **208** (23447 partite)
+- Righe Laboratory analizzate: **18700**
+- CRITICAL: **3**
+- WARNING: **2147**
+- INFO: **33**
 
 ## Priorità per analisi IA
 
 Analizzare prima i CRITICAL. Prima di bonificare verificare sempre il formato reale della competizione e lo storico sorgente. WARNING/INFO possono essere legittimi (rinvii, campionati dispari, formati speciali).
 
-## CRITICAL (1)
+## CRITICAL (3)
 
-### CRITICAL-001 · RS_DUP_MATCH · Spain_LaLiga | 2026-09-15 | Rayo Vallecano - Espanyol
-- Area: `results`
-- Dettaglio: Partita duplicata; prima occorrenza: data\storico\risultati\Spain_LaLiga.csv:50.
-- Sorgente: `data\storico\risultati\Spain_LaLiga.csv:53`
+### CRITICAL-001 · ST_ALIAS_SUSPECTED · Norway_3rdDivision_Group3
+- Area: `standings`
+- Dettaglio: Più nomi risolvono alla stessa identità canonica: OS / Os.
+- Verifica suggerita: Consolidare tramite team_name_dictionary.csv e rigenerare classifica/Laboratory.
+- Sorgente: `data\storico\classifiche_calcolate\Norway_3rdDivision_Group3.csv`
 
-## WARNING (2075)
+### CRITICAL-002 · ST_DUP_TEAM · Norway_3rdDivision_Group3
+- Area: `standings`
+- Dettaglio: Squadre duplicate: os
+- Verifica suggerita: Verificare alias/normalizzazione nomi squadra.
+- Sorgente: `data\storico\classifiche_calcolate\Norway_3rdDivision_Group3.csv`
+
+### CRITICAL-003 · ST_ALIAS_SUSPECTED · SaudiArabia_ProfessionalLeague
+- Area: `standings`
+- Dettaglio: Più nomi risolvono alla stessa identità canonica: Al Hilal / Al-Hilal, Al Ettifaq / Al-Ettifaq.
+- Verifica suggerita: Consolidare tramite team_name_dictionary.csv e rigenerare classifica/Laboratory.
+- Sorgente: `data\storico\classifiche_calcolate\SaudiArabia_ProfessionalLeague.csv`
+
+## WARNING (2147)
 
 ### WARNING-001 · LAB_DUP_MATCH · Albania_AbissnetSuperiore | 2026-09-11 | Skenderbeu - Tirana
 - Area: `laboratory`
@@ -2310,8106 +2323,8471 @@ Analizzare prima i CRITICAL. Prima di bonificare verificare sempre il formato re
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9557`
 
-### WARNING-458 · LAB_DUP_MATCH · Bosnia_PrvaLiga_RS | 2026-09-11 | Romanija Pale - Zvijezda 09
+### WARNING-458 · LAB_DUP_MATCH · Bolivia_DivisionProfesional | 2026-10-27 | Bolivar - Universitario de Vinto
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17325`
+
+### WARNING-459 · LAB_DUP_MATCH · Bosnia_PrvaLiga_RS | 2026-09-11 | Romanija Pale - Zvijezda 09
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7999`
 
-### WARNING-459 · LAB_DUP_MATCH · Bosnia_PrvaLiga_RS | 2026-09-22 | Leotar - Famos Vojkovici
+### WARNING-460 · LAB_DUP_MATCH · Bosnia_PrvaLiga_RS | 2026-09-22 | Leotar - Famos Vojkovici
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11342`
 
-### WARNING-460 · LAB_DUP_MATCH · Bosnia_WWINLigaBiH | 2026-09-01 | Zrinjski - BSK Banja Luka
+### WARNING-461 · LAB_DUP_MATCH · Bosnia_WWINLigaBiH | 2026-09-01 | Zrinjski - BSK Banja Luka
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6470`
 
-### WARNING-461 · LAB_DUP_MATCH · Bosnia_WWINLigaBiH | 2026-09-11 | Celik Zenica - Radnik Bijeljina
+### WARNING-462 · LAB_DUP_MATCH · Bosnia_WWINLigaBiH | 2026-09-11 | Celik Zenica - Radnik Bijeljina
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8124`
 
-### WARNING-462 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-14 | CSKA 1948 Sofia - Cherno More
+### WARNING-463 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-14 | CSKA 1948 Sofia - Cherno More
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2534`
 
-### WARNING-463 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-15 | Ludogorets - Botev Plovdiv
+### WARNING-464 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-15 | Ludogorets - Botev Plovdiv
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3255`
 
-### WARNING-464 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-16 | CSKA Sofia - Botev Vratsa
+### WARNING-465 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-16 | CSKA Sofia - Botev Vratsa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3721`
 
-### WARNING-465 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-16 | Lok. Plovdiv - Dunav Ruse
+### WARNING-466 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-16 | Lok. Plovdiv - Dunav Ruse
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3861`
 
-### WARNING-466 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-21 | Cherno More - Dunav Ruse
+### WARNING-467 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-21 | Cherno More - Dunav Ruse
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4456`
 
-### WARNING-467 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-30 | CSKA Sofia - Cherno More
+### WARNING-468 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-30 | CSKA Sofia - Cherno More
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6248`
 
-### WARNING-468 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-30 | Botev Plovdiv - Levski
+### WARNING-469 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-30 | Botev Plovdiv - Levski
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6255`
 
-### WARNING-469 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-30 | Spartak Varna - Ludogorets
+### WARNING-470 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-08-30 | Spartak Varna - Ludogorets
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6257`
 
-### WARNING-470 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-09-11 | Cherno More - Lok. Sofia
+### WARNING-471 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-09-11 | Cherno More - Lok. Sofia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8054`
 
-### WARNING-471 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-09-14 | Ludogorets - Septemvri Sofia
+### WARNING-472 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-09-14 | Ludogorets - Septemvri Sofia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9573`
 
-### WARNING-472 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-08-21 | Lok. Gorna - Etar
+### WARNING-473 · LAB_DUP_MATCH · Bulgaria_ParvaLiga | 2026-10-27 | Arda - Levski
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17369`
+
+### WARNING-474 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-08-21 | Lok. Gorna - Etar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4584`
 
-### WARNING-473 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-09-01 | Hebar - Fratria
+### WARNING-475 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-09-01 | Hebar - Fratria
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6459`
 
-### WARNING-474 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-09-15 | Lok. Gorna - Nesebar
+### WARNING-476 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-09-15 | Lok. Gorna - Nesebar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9506`
 
-### WARNING-475 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-09-15 | Ludogorets 2 - Fratria
+### WARNING-477 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-09-15 | Ludogorets 2 - Fratria
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9507`
 
-### WARNING-476 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-09-14 | Hebar - Etar
+### WARNING-478 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-09-14 | Hebar - Etar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9551`
 
-### WARNING-477 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-10-13 | Montana - Ludogorets 2
+### WARNING-479 · LAB_DUP_MATCH · Bulgaria_VtoraLiga | 2026-10-13 | Montana - Ludogorets 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14476`
 
-### WARNING-478 · LAB_DUP_MATCH · Croatia_HNL | 2026-09-14 | Gorica - Varazdin
+### WARNING-480 · LAB_DUP_MATCH · Croatia_HNL | 2026-09-14 | Gorica - Varazdin
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9588`
 
-### WARNING-479 · LAB_DUP_MATCH · Croatia_HNL | 2026-09-19 | Varazdin - Osijek
+### WARNING-481 · LAB_DUP_MATCH · Croatia_HNL | 2026-09-19 | Varazdin - Osijek
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10754`
 
-### WARNING-480 · LAB_DUP_MATCH · Croatia_HNL | 2026-09-19 | Istra 1961 - Gorica
+### WARNING-482 · LAB_DUP_MATCH · Croatia_HNL | 2026-09-19 | Istra 1961 - Gorica
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10804`
 
-### WARNING-481 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-11 | Din. Zagabria 2 - Sesvete
+### WARNING-483 · LAB_DUP_MATCH · Croatia_HNL | 2026-10-27 | Din. Zagabria - Rijeka
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17327`
+
+### WARNING-484 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-11 | Din. Zagabria 2 - Sesvete
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8182`
 
-### WARNING-482 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-11 | Opatija - Bijelo Brdo
+### WARNING-485 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-11 | Opatija - Bijelo Brdo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8188`
 
-### WARNING-483 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-19 | Orijent - Opatija
+### WARNING-486 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-19 | Orijent - Opatija
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10755`
 
-### WARNING-484 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-19 | Vukovar 1991 - Jadran LP
+### WARNING-487 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-19 | Vukovar 1991 - Jadran LP
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10790`
 
-### WARNING-485 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-19 | Dugopolje - Din. Zagabria 2
+### WARNING-488 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-19 | Dugopolje - Din. Zagabria 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10791`
 
-### WARNING-486 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-19 | Bijelo Brdo - Hrvace
+### WARNING-489 · LAB_DUP_MATCH · Croatia_PrvaNL | 2026-09-19 | Bijelo Brdo - Hrvace
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10837`
 
-### WARNING-487 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-15 | Sparta Praga - Teplice
+### WARNING-490 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-15 | Sparta Praga - Teplice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3186`
 
-### WARNING-488 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-15 | Pardubice - Mlada Boleslav
+### WARNING-491 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-15 | Pardubice - Mlada Boleslav
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3243`
 
-### WARNING-489 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-15 | Plzen - Zlin
+### WARNING-492 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-15 | Plzen - Zlin
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3252`
 
-### WARNING-490 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-15 | Slovacko - Sigma Olomouc
+### WARNING-493 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-15 | Slovacko - Sigma Olomouc
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3259`
 
-### WARNING-491 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-16 | Ostrava - Artis Brno
+### WARNING-494 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-16 | Ostrava - Artis Brno
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3809`
 
-### WARNING-492 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-16 | Liberec - Slavia Praga
+### WARNING-495 · LAB_DUP_MATCH · CzechRepublic_1Liga | 2026-08-16 | Liberec - Slavia Praga
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3827`
 
-### WARNING-493 · LAB_DUP_MATCH · CzechRepublic_3CFL_GroupA | 2026-08-21 | Motorlet Prague - Dukla Praga B
+### WARNING-496 · LAB_DUP_MATCH · CzechRepublic_3CFL_GroupA | 2026-08-21 | Motorlet Prague - Dukla Praga B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4536`
 
-### WARNING-494 · LAB_DUP_MATCH · CzechRepublic_3CFL_GroupA | 2026-09-11 | Pisek - Ceske Budejovice
+### WARNING-497 · LAB_DUP_MATCH · CzechRepublic_3CFL_GroupA | 2026-09-11 | Pisek - Ceske Budejovice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8067`
 
-### WARNING-495 · LAB_DUP_MATCH · CzechRepublic_3CFL_GroupB | 2026-09-11 | Liberec B - Pardubice B
+### WARNING-498 · LAB_DUP_MATCH · CzechRepublic_3CFL_GroupB | 2026-09-11 | Liberec B - Pardubice B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8076`
 
-### WARNING-496 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | Hlubina - Sigma Olomouc B
+### WARNING-499 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | Hlubina - Sigma Olomouc B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3056`
 
-### WARNING-497 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | Hodonin - Artis Brno B
+### WARNING-500 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | Hodonin - Artis Brno B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3236`
 
-### WARNING-498 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | Nove Mesto na Morave - Zlin B
+### WARNING-501 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | Nove Mesto na Morave - Zlin B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3304`
 
-### WARNING-499 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | FK Frydek-Mistek - Vsetin
+### WARNING-502 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | FK Frydek-Mistek - Vsetin
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3341`
 
-### WARNING-500 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | Uhersky Brod - SK Hranice
+### WARNING-503 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-15 | Uhersky Brod - SK Hranice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3396`
 
-### WARNING-501 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-16 | Unicov - Brno B
+### WARNING-504 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-16 | Unicov - Brno B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3678`
 
-### WARNING-502 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-16 | Slovacko B - Blansko
+### WARNING-505 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-16 | Slovacko B - Blansko
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3683`
 
-### WARNING-503 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-16 | Polanka nad Odrou - Vitkovice
+### WARNING-506 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-16 | Polanka nad Odrou - Vitkovice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3852`
 
-### WARNING-504 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-16 | Havirov - Karvina B
+### WARNING-507 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-16 | Havirov - Karvina B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3876`
 
-### WARNING-505 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-21 | SK Hranice - Havirov
+### WARNING-508 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-08-21 | SK Hranice - Havirov
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4581`
 
-### WARNING-506 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-09-19 | Hlubina - Polanka nad Odrou
+### WARNING-509 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-09-19 | Hlubina - Polanka nad Odrou
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10684`
 
-### WARNING-507 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-09-19 | Vsetin - Nove Mesto na Morave
+### WARNING-510 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-09-19 | Vsetin - Nove Mesto na Morave
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10803`
 
-### WARNING-508 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-09-19 | Sigma Olomouc B - Zlin B
+### WARNING-511 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-09-19 | Sigma Olomouc B - Zlin B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10810`
 
-### WARNING-509 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-09-19 | FK Frydek-Mistek - Havirov
+### WARNING-512 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-09-19 | FK Frydek-Mistek - Havirov
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10833`
 
-### WARNING-510 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-10-13 | Artis Brno B - Brno B
+### WARNING-513 · LAB_DUP_MATCH · CzechRepublic_3MSFL | 2026-10-13 | Artis Brno B - Brno B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14466`
 
-### WARNING-511 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-11 | Krimice - Horovice
+### WARNING-514 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-11 | Krimice - Horovice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7994`
 
-### WARNING-512 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-19 | Cesky Krumlov - Spartak Pribram
+### WARNING-515 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-19 | Cesky Krumlov - Spartak Pribram
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10578`
 
-### WARNING-513 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-19 | Sobeslav - Taborsko akademie
+### WARNING-516 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-19 | Sobeslav - Taborsko akademie
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10579`
 
-### WARNING-514 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-19 | Horovice - Nyrsko
+### WARNING-517 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-19 | Horovice - Nyrsko
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10644`
 
-### WARNING-515 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-19 | Petrin Plzen - Krimice
+### WARNING-518 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupA | 2026-09-19 | Petrin Plzen - Krimice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10688`
 
-### WARNING-516 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-08-21 | Hvezda Cheb - Velvary
+### WARNING-519 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-08-21 | Hvezda Cheb - Velvary
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4379`
 
-### WARNING-517 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-08-21 | Chomutov - Usti n. L. B
+### WARNING-520 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-08-21 | Chomutov - Usti n. L. B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4459`
 
-### WARNING-518 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Ostrov - Psary
+### WARNING-521 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Ostrov - Psary
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10572`
 
-### WARNING-519 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Brandys n. Labem - Ujezd Prague
+### WARNING-522 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Brandys n. Labem - Ujezd Prague
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10573`
 
-### WARNING-520 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Steti - Usti n. L. B
+### WARNING-523 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Steti - Usti n. L. B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10581`
 
-### WARNING-521 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Tempo Prague - Vysehrad
+### WARNING-524 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Tempo Prague - Vysehrad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10594`
 
-### WARNING-522 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Slany - Meteor Prague
+### WARNING-525 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Slany - Meteor Prague
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10606`
 
-### WARNING-523 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Hvezda Cheb - Chomutov
+### WARNING-526 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupB | 2026-09-19 | Hvezda Cheb - Chomutov
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10615`
 
-### WARNING-524 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupC | 2026-09-19 | Prepere - Hlinsko
+### WARNING-527 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupC | 2026-09-19 | Prepere - Hlinsko
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10605`
 
-### WARNING-525 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupD | 2026-08-21 | Velke Mezirici - Tasovice
+### WARNING-528 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupD | 2026-08-21 | Velke Mezirici - Tasovice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4400`
 
-### WARNING-526 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupD | 2026-09-19 | FS Trebic - Havlickuv Brod
+### WARNING-529 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupD | 2026-09-19 | FS Trebic - Havlickuv Brod
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10725`
 
-### WARNING-527 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-08-21 | Hluk - Kromeriz B
+### WARNING-530 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-08-21 | Hluk - Kromeriz B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4504`
 
-### WARNING-528 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-11 | Batov - FK Kozlovice
+### WARNING-531 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-11 | Batov - FK Kozlovice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8094`
 
-### WARNING-529 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-19 | Bzenec-Vracov - Strani
+### WARNING-532 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-19 | Bzenec-Vracov - Strani
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '6', 'OK'), attuali=('3', '6', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10575`
 
-### WARNING-530 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-19 | Nove Sady - Prostejov B
+### WARNING-533 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-19 | Nove Sady - Prostejov B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10589`
 
-### WARNING-531 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-19 | Slavicin - Kromeriz B
+### WARNING-534 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-19 | Slavicin - Kromeriz B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10599`
 
-### WARNING-532 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-19 | SK Krumvir - Breclav
+### WARNING-535 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupE | 2026-09-19 | SK Krumvir - Breclav
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10698`
 
-### WARNING-533 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupF | 2026-08-21 | Hlucin - Bridlicna
+### WARNING-536 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupF | 2026-08-21 | Hlucin - Bridlicna
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4492`
 
-### WARNING-534 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupF | 2026-09-19 | Rymarov - Opava B
+### WARNING-537 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupF | 2026-09-19 | Rymarov - Opava B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10608`
 
-### WARNING-535 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupF | 2026-09-19 | Novy Jicin - Bilovec
+### WARNING-538 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupF | 2026-09-19 | Novy Jicin - Bilovec
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10660`
 
-### WARNING-536 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupF | 2026-09-19 | Vratimov - Zabreh
+### WARNING-539 · LAB_DUP_MATCH · CzechRepublic_4Liga_GroupF | 2026-09-19 | Vratimov - Zabreh
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10767`
 
-### WARNING-537 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-14 | Dukla Praga - Slavia Praga B
+### WARNING-540 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-14 | Dukla Praga - Slavia Praga B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2595`
 
-### WARNING-538 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-14 | Kladno - Vlasim
+### WARNING-541 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-14 | Kladno - Vlasim
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2600`
 
-### WARNING-539 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-15 | Pribram - Prostejov
+### WARNING-542 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-15 | Pribram - Prostejov
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3380`
 
-### WARNING-540 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-15 | Ceska Lipa - Karvina
+### WARNING-543 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-15 | Ceska Lipa - Karvina
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '5', 'OK'), attuali=('2', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3381`
 
-### WARNING-541 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-15 | Taborsko - Opava
+### WARNING-544 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-15 | Taborsko - Opava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3391`
 
-### WARNING-542 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-15 | Kromeriz - Jihlava
+### WARNING-545 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-15 | Kromeriz - Jihlava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3420`
 
-### WARNING-543 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-16 | Zizkov - Ostrava B
+### WARNING-546 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-16 | Zizkov - Ostrava B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3894`
 
-### WARNING-544 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Vlasim - Pribram
+### WARNING-547 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Vlasim - Pribram
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4416`
 
-### WARNING-545 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Usti n. L. - Dukla Praga
+### WARNING-548 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Usti n. L. - Dukla Praga
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4453`
 
-### WARNING-546 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Karvina - Zizkov
+### WARNING-549 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Karvina - Zizkov
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4510`
 
-### WARNING-547 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Jihlava - Taborsko
+### WARNING-550 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Jihlava - Taborsko
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4522`
 
-### WARNING-548 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Prostejov - Kladno
+### WARNING-551 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Prostejov - Kladno
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4541`
 
-### WARNING-549 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Opava - Trinec
+### WARNING-552 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-08-21 | Opava - Trinec
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4577`
 
-### WARNING-550 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Dukla Praga - Vlasim
+### WARNING-553 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Dukla Praga - Vlasim
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8060`
 
-### WARNING-551 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Pribram - Ostrava B
+### WARNING-554 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Pribram - Ostrava B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8066`
 
-### WARNING-552 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Trinec - Karvina
+### WARNING-555 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Trinec - Karvina
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8095`
 
-### WARNING-553 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Usti n. L. - Jihlava
+### WARNING-556 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Usti n. L. - Jihlava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8150`
 
-### WARNING-554 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Taborsko - Kladno
+### WARNING-557 · LAB_DUP_MATCH · CzechRepublic_ChNL | 2026-09-11 | Taborsko - Kladno
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8166`
 
-### WARNING-555 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-14 | Kolding - Vejle
+### WARNING-558 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-14 | Kolding - Vejle
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2610`
 
-### WARNING-556 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-14 | Aalborg - Fredericia
+### WARNING-559 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-14 | Aalborg - Fredericia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2635`
 
-### WARNING-557 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-15 | Hillerod - Aarhus Fremad
+### WARNING-560 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-15 | Hillerod - Aarhus Fremad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3046`
 
-### WARNING-558 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-15 | Esbjerg - Hobro
+### WARNING-561 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-15 | Esbjerg - Hobro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3276`
 
-### WARNING-559 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-15 | Koge - Hvidovre IF
+### WARNING-562 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-15 | Koge - Hvidovre IF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3373`
 
-### WARNING-560 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-16 | Vendsyssel - AB Copenhagen
+### WARNING-563 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-16 | Vendsyssel - AB Copenhagen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3810`
 
-### WARNING-561 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-21 | Vejle - Esbjerg
+### WARNING-564 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-21 | Vejle - Esbjerg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4374`
 
-### WARNING-562 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-21 | Hobro - Aalborg
+### WARNING-565 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-21 | Hobro - Aalborg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4490`
 
-### WARNING-563 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-21 | Fredericia - Aarhus Fremad
+### WARNING-566 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-08-21 | Fredericia - Aarhus Fremad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4526`
 
-### WARNING-564 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-09-11 | Hobro - Vejle
+### WARNING-567 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-09-11 | Hobro - Vejle
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8027`
 
-### WARNING-565 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-09-11 | Vendsyssel - Aarhus Fremad
+### WARNING-568 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-09-11 | Vendsyssel - Aarhus Fremad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8146`
 
-### WARNING-566 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-09-19 | Aarhus Fremad - Hvidovre IF
+### WARNING-569 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-09-19 | Aarhus Fremad - Hvidovre IF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10795`
 
-### WARNING-567 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-09-19 | AB Copenhagen - Esbjerg
+### WARNING-570 · LAB_DUP_MATCH · Denmark_1stDivision | 2026-09-19 | AB Copenhagen - Esbjerg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10821`
 
-### WARNING-568 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-14 | Nykobing - B.93
+### WARNING-571 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-14 | Nykobing - B.93
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2460`
 
-### WARNING-569 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-14 | Skive - F. Amager
+### WARNING-572 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-14 | Skive - F. Amager
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2464`
 
-### WARNING-570 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-14 | Brabrand - Naestved
+### WARNING-573 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-14 | Brabrand - Naestved
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2510`
 
-### WARNING-571 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-14 | Hellerup - FA 2000
+### WARNING-574 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-14 | Hellerup - FA 2000
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2643`
 
-### WARNING-572 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-15 | Roskilde - Middelfart
+### WARNING-575 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-15 | Roskilde - Middelfart
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3141`
 
-### WARNING-573 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-15 | VSK Aarhus - Thisted
+### WARNING-576 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-15 | VSK Aarhus - Thisted
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3270`
 
-### WARNING-574 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-21 | Thisted - Skive
+### WARNING-577 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-21 | Thisted - Skive
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4468`
 
-### WARNING-575 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-21 | F. Amager - Roskilde
+### WARNING-578 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-21 | F. Amager - Roskilde
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4479`
 
-### WARNING-576 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-21 | B.93 - Hellerup
+### WARNING-579 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-08-21 | B.93 - Hellerup
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4485`
 
-### WARNING-577 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-09-11 | F. Amager - Hellerup
+### WARNING-580 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-09-11 | F. Amager - Hellerup
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8139`
 
-### WARNING-578 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-09-19 | Middelfart - VSK Aarhus
+### WARNING-581 · LAB_DUP_MATCH · Denmark_2ndDivision | 2026-09-19 | Middelfart - VSK Aarhus
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10816`
 
-### WARNING-579 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-14 | Helsingor - BK Frem
+### WARNING-582 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-14 | Helsingor - BK Frem
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2477`
 
-### WARNING-580 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | Holbaek - Sundby
+### WARNING-583 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | Holbaek - Sundby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3045`
 
-### WARNING-581 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | Ringsted - Holstebro
+### WARNING-584 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | Ringsted - Holstebro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3049`
 
-### WARNING-582 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | Næsby - Bronshoj
+### WARNING-585 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | Næsby - Bronshoj
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3314`
 
-### WARNING-583 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | ASA Aarhus - Vanløse
+### WARNING-586 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | ASA Aarhus - Vanløse
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3355`
 
-### WARNING-584 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | Horsholm-Usserod - Ishoj
+### WARNING-587 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-15 | Horsholm-Usserod - Ishoj
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3401`
 
-### WARNING-585 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-21 | Bronshoj - Holbaek
+### WARNING-588 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-08-21 | Bronshoj - Holbaek
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4478`
 
-### WARNING-586 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Sundby - Holstebro
+### WARNING-589 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Sundby - Holstebro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10610`
 
-### WARNING-587 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Horsholm-Usserod - Vanløse
+### WARNING-590 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Horsholm-Usserod - Vanløse
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10645`
 
-### WARNING-588 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Næsby - Helsingor
+### WARNING-591 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Næsby - Helsingor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10675`
 
-### WARNING-589 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Ishoj - BK Frem
+### WARNING-592 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Ishoj - BK Frem
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10764`
 
-### WARNING-590 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Bronshoj - ASA Aarhus
+### WARNING-593 · LAB_DUP_MATCH · Denmark_3rdDivision | 2026-09-19 | Bronshoj - ASA Aarhus
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10820`
 
-### WARNING-591 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-14 | Viborg - Aarhus
+### WARNING-594 · LAB_DUP_MATCH · Denmark_ALigaWomen | 2026-10-27 | Nordsjaelland D - Aarhus D
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17329`
+
+### WARNING-595 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-14 | Viborg - Aarhus
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2632`
 
-### WARNING-592 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-16 | Lyngby - Midtjylland
+### WARNING-596 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-16 | Lyngby - Midtjylland
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3674`
 
-### WARNING-593 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-16 | Randers - FC Copenhagen
+### WARNING-597 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-16 | Randers - FC Copenhagen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3834`
 
-### WARNING-594 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-16 | Odense - Horsens
+### WARNING-598 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-16 | Odense - Horsens
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3901`
 
-### WARNING-595 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-16 | Nordsjaelland - Silkeborg
+### WARNING-599 · LAB_DUP_MATCH · Denmark_Superliga | 2026-08-16 | Nordsjaelland - Silkeborg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3905`
 
-### WARNING-596 · LAB_DUP_MATCH · Denmark_Superliga | 2026-09-11 | FC Copenhagen - Horsens
+### WARNING-600 · LAB_DUP_MATCH · Denmark_Superliga | 2026-09-11 | FC Copenhagen - Horsens
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7996`
 
-### WARNING-597 · LAB_DUP_MATCH · Denmark_Superliga | 2026-09-14 | Midtjylland - Brondby
+### WARNING-601 · LAB_DUP_MATCH · Denmark_Superliga | 2026-09-14 | Midtjylland - Brondby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9560`
 
-### WARNING-598 · LAB_DUP_MATCH · Denmark_Superliga | 2026-09-19 | Odense - Midtjylland
+### WARNING-602 · LAB_DUP_MATCH · Denmark_Superliga | 2026-09-19 | Odense - Midtjylland
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10783`
 
-### WARNING-599 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Stoke - Norwich
+### WARNING-603 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Stoke - Norwich
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6427`
 
-### WARNING-600 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Portsmouth - Derby
+### WARNING-604 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Portsmouth - Derby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6429`
 
-### WARNING-601 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | West Ham - Wolves
+### WARNING-605 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | West Ham - Wolves
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6442`
 
-### WARNING-602 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Lincoln - Blackburn
+### WARNING-606 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Lincoln - Blackburn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6445`
 
-### WARNING-603 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Birmingham - Southampton
+### WARNING-607 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Birmingham - Southampton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6448`
 
-### WARNING-604 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Swansea - Watford
+### WARNING-608 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Swansea - Watford
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6458`
 
-### WARNING-605 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Preston - Bristol City
+### WARNING-609 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Preston - Bristol City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6467`
 
-### WARNING-606 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Sheffield Utd - Bolton
+### WARNING-610 · LAB_DUP_MATCH · England_Championship | 2026-09-01 | Sheffield Utd - Bolton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6468`
 
-### WARNING-607 · LAB_DUP_MATCH · England_Championship | 2026-09-11 | West Ham - Wrexham
+### WARNING-611 · LAB_DUP_MATCH · England_Championship | 2026-09-11 | West Ham - Wrexham
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8078`
 
-### WARNING-608 · LAB_DUP_MATCH · England_Championship | 2026-09-15 | Middlesbrough - Millwall
+### WARNING-612 · LAB_DUP_MATCH · England_Championship | 2026-09-15 | Middlesbrough - Millwall
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9420`
 
-### WARNING-609 · LAB_DUP_MATCH · England_Championship | 2026-09-15 | Bristol City - Lincoln
+### WARNING-613 · LAB_DUP_MATCH · England_Championship | 2026-09-15 | Bristol City - Lincoln
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9486`
 
-### WARNING-610 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Millwall - West Ham
+### WARNING-614 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Millwall - West Ham
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10611`
 
-### WARNING-611 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Stoke - Sheffield Utd
+### WARNING-615 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Stoke - Sheffield Utd
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10700`
 
-### WARNING-612 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Burnley - Derby
+### WARNING-616 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Burnley - Derby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10746`
 
-### WARNING-613 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Wrexham - Southampton
+### WARNING-617 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Wrexham - Southampton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10750`
 
-### WARNING-614 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Birmingham - Middlesbrough
+### WARNING-618 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Birmingham - Middlesbrough
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10751`
 
-### WARNING-615 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | QPR - Preston
+### WARNING-619 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | QPR - Preston
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10769`
 
-### WARNING-616 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Portsmouth - Blackburn
+### WARNING-620 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Portsmouth - Blackburn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10802`
 
-### WARNING-617 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Lincoln - Swansea
+### WARNING-621 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Lincoln - Swansea
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10841`
 
-### WARNING-618 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Cardiff - Charlton
+### WARNING-622 · LAB_DUP_MATCH · England_Championship | 2026-09-19 | Cardiff - Charlton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10853`
 
-### WARNING-619 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Millwall - Swansea
+### WARNING-623 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Millwall - Swansea
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14407`
 
-### WARNING-620 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Wolves - Bolton
+### WARNING-624 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Wolves - Bolton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14419`
 
-### WARNING-621 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Stoke - Middlesbrough
+### WARNING-625 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Stoke - Middlesbrough
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14433`
 
-### WARNING-622 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Birmingham - Preston
+### WARNING-626 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Birmingham - Preston
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14445`
 
-### WARNING-623 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Bristol City - Blackburn
+### WARNING-627 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Bristol City - Blackburn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14447`
 
-### WARNING-624 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Burnley - Charlton
+### WARNING-628 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Burnley - Charlton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14459`
 
-### WARNING-625 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Wrexham - West Brom
+### WARNING-629 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Wrexham - West Brom
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14468`
 
-### WARNING-626 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Cardiff - Watford
+### WARNING-630 · LAB_DUP_MATCH · England_Championship | 2026-10-13 | Cardiff - Watford
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14475`
 
-### WARNING-627 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-13 | Three Bridges - Lewes
+### WARNING-631 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-13 | Three Bridges - Lewes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14410`
 
-### WARNING-628 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-13 | Wingate & Finchley - Ramsgate
+### WARNING-632 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-13 | Wingate & Finchley - Ramsgate
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14413`
 
-### WARNING-629 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-13 | Burgess Hill - Dulwich Hamlet
+### WARNING-633 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-13 | Burgess Hill - Dulwich Hamlet
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14425`
 
-### WARNING-630 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Wycombe - Sheffield Wed
+### WARNING-634 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-27 | Enfield Town - Chatham
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17319`
+
+### WARNING-635 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-27 | Stanway - Cray Wanderers
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17323`
+
+### WARNING-636 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-27 | Welling - Leatherhead
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17335`
+
+### WARNING-637 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-27 | St. Albans - Burgess Hill
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17339`
+
+### WARNING-638 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-27 | Maldon & Tiptree - Eastbourne Boro
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17346`
+
+### WARNING-639 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-27 | Whitehawk - Dulwich Hamlet
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17350`
+
+### WARNING-640 · LAB_DUP_MATCH · England_IsthmianLeaguePremierDivision | 2026-10-27 | Brentwood - Cheshunt
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17353`
+
+### WARNING-641 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Wycombe - Sheffield Wed
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6437`
 
-### WARNING-631 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Doncaster - Notts County
+### WARNING-642 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Doncaster - Notts County
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6452`
 
-### WARNING-632 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Bromley - Leyton Orient
+### WARNING-643 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Bromley - Leyton Orient
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6453`
 
-### WARNING-633 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Bradford City - Cambridge Utd
+### WARNING-644 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Bradford City - Cambridge Utd
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6464`
 
-### WARNING-634 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Peterborough - Stevenage
+### WARNING-645 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Peterborough - Stevenage
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6465`
 
-### WARNING-635 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Leicester - Plymouth
+### WARNING-646 · LAB_DUP_MATCH · England_LeagueOne | 2026-09-01 | Leicester - Plymouth
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6469`
 
-### WARNING-636 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Bamber Bridge - Warrington
+### WARNING-647 · LAB_DUP_MATCH · England_LeagueOne | 2026-10-27 | Sheffield Wed - Cambridge Utd
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17357`
+
+### WARNING-648 · LAB_DUP_MATCH · England_LeagueOne | 2026-10-27 | Oxford Utd - Stockport
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17358`
+
+### WARNING-649 · LAB_DUP_MATCH · England_LeagueOne | 2026-10-27 | Luton - Doncaster
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17362`
+
+### WARNING-650 · LAB_DUP_MATCH · England_LeagueOne | 2026-10-27 | Leicester - Wigan
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17366`
+
+### WARNING-651 · LAB_DUP_MATCH · England_LeagueOne | 2026-10-27 | Milton Keynes - Bromley
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17373`
+
+### WARNING-652 · LAB_DUP_MATCH · England_LeagueTwo | 2026-10-27 | Barnet - York
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17375`
+
+### WARNING-653 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Bamber Bridge - Warrington
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14404`
 
-### WARNING-637 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Workington - Whitby
+### WARNING-654 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Workington - Whitby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14406`
 
-### WARNING-638 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Bury - Leek
+### WARNING-655 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Bury - Leek
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14411`
 
-### WARNING-639 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Lancaster - Stockton
+### WARNING-656 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Lancaster - Stockton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14427`
 
-### WARNING-640 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Warrington Rylands - Curzon Ashton
+### WARNING-657 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Warrington Rylands - Curzon Ashton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14432`
 
-### WARNING-641 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | FC United - Emley
+### WARNING-658 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | FC United - Emley
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14436`
 
-### WARNING-642 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Redcar Athletic - Avro
+### WARNING-659 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Redcar Athletic - Avro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14438`
 
-### WARNING-643 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Guiseley - Cleethorpes
+### WARNING-660 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Guiseley - Cleethorpes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14439`
 
-### WARNING-644 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Hyde - Quorn
+### WARNING-661 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Hyde - Quorn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14440`
 
-### WARNING-645 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Gainsborough - Ilkeston
+### WARNING-662 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Gainsborough - Ilkeston
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14444`
 
-### WARNING-646 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Ashton Utd - Alfreton
+### WARNING-663 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-13 | Ashton Utd - Alfreton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14469`
 
-### WARNING-647 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-14 | Leeds - Newcastle
+### WARNING-664 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-27 | Bury - Leek
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '3', 'OK'), attuali=('5', '3', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17322`
+
+### WARNING-665 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-27 | FC United - Quorn
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17324`
+
+### WARNING-666 · LAB_DUP_MATCH · England_NPLPremierDivision | 2026-10-27 | Gainsborough - Curzon Ashton
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17334`
+
+### WARNING-667 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-14 | Leeds - Newcastle
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9556`
 
-### WARNING-648 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Everton - Ipswich
+### WARNING-668 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Everton - Ipswich
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10712`
 
-### WARNING-649 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Newcastle - Hull
+### WARNING-669 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Newcastle - Hull
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10766`
 
-### WARNING-650 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Brighton - Arsenal
+### WARNING-670 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Brighton - Arsenal
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10827`
 
-### WARNING-651 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Nottingham - Coventry
+### WARNING-671 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Nottingham - Coventry
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10857`
 
-### WARNING-652 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Tottenham - Aston Villa
+### WARNING-672 · LAB_DUP_MATCH · England_PremierLeague | 2026-09-19 | Tottenham - Aston Villa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10872`
 
-### WARNING-653 · LAB_DUP_MATCH · England_ProfessionalDevelopmentLeague | 2026-10-13 | QPR U21 - Cardiff U21
+### WARNING-673 · LAB_DUP_MATCH · England_ProfessionalDevelopmentLeague | 2026-10-13 | QPR U21 - Cardiff U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14405`
 
-### WARNING-654 · LAB_DUP_MATCH · England_ProfessionalDevelopmentLeague | 2026-10-13 | Sheffield Wed U21 - Huddersfield U21
+### WARNING-674 · LAB_DUP_MATCH · England_ProfessionalDevelopmentLeague | 2026-10-13 | Sheffield Wed U21 - Huddersfield U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '5', 'OK'), attuali=('2', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14421`
 
-### WARNING-655 · LAB_DUP_MATCH · England_ProfessionalDevelopmentLeague | 2026-10-13 | Peterborough U21 - Sheffield Utd U21
+### WARNING-675 · LAB_DUP_MATCH · England_ProfessionalDevelopmentLeague | 2026-10-13 | Peterborough U21 - Sheffield Utd U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14461`
 
-### WARNING-656 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Anstey Nomads - Rushall
+### WARNING-676 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Anstey Nomads - Rushall
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14424`
 
-### WARNING-657 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Peterborough Sports - Banbury
+### WARNING-677 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Peterborough Sports - Banbury
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14428`
 
-### WARNING-658 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Bury Town - Needham Market
+### WARNING-678 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Bury Town - Needham Market
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14443`
 
-### WARNING-659 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Leamington - Redditch
+### WARNING-679 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Leamington - Redditch
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14455`
 
-### WARNING-660 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Stamford - Stratford
+### WARNING-680 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Stamford - Stratford
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14457`
 
-### WARNING-661 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Bromsgrove - Kettering
+### WARNING-681 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Bromsgrove - Kettering
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14467`
 
-### WARNING-662 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Halesowen - Alvechurch
+### WARNING-682 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Halesowen - Alvechurch
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14477`
 
-### WARNING-663 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Worcester - Stourbridge
+### WARNING-683 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-13 | Worcester - Stourbridge
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14479`
 
-### WARNING-664 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Malvern Town - Yate Town
+### WARNING-684 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Peterborough Sports - Leiston
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '5', 'OK'), attuali=('2', '5', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17320`
+
+### WARNING-685 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Needham Market - Leighton Town
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17332`
+
+### WARNING-686 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Kettering - Rushall
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17344`
+
+### WARNING-687 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Real Bedford - Stourbridge
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17345`
+
+### WARNING-688 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Racing Club Warwick - Redditch
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17349`
+
+### WARNING-689 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Bishop's Stortford - Stamford
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17351`
+
+### WARNING-690 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Bromsgrove - Stratford
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17355`
+
+### WARNING-691 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Alvechurch - Anstey Nomads
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17363`
+
+### WARNING-692 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Halesowen - Leamington
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17364`
+
+### WARNING-693 · LAB_DUP_MATCH · England_SouthernLeaguePremierCentral | 2026-10-27 | Banbury - Worcester
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17376`
+
+### WARNING-694 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Malvern Town - Yate Town
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14408`
 
-### WARNING-665 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Gloucester - Taunton
+### WARNING-695 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Gloucester - Taunton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14414`
 
-### WARNING-666 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Hanwell Town - Chertsey
+### WARNING-696 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Hanwell Town - Chertsey
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14441`
 
-### WARNING-667 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Chippenham - Frome
+### WARNING-697 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Chippenham - Frome
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14446`
 
-### WARNING-668 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Havant & W - Basingstoke
+### WARNING-698 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Havant & W - Basingstoke
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14448`
 
-### WARNING-669 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Sholing - Chichester
+### WARNING-699 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Sholing - Chichester
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14449`
 
-### WARNING-670 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Bracknell - Hanworth
+### WARNING-700 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Bracknell - Hanworth
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14450`
 
-### WARNING-671 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Evesham - Bath
+### WARNING-701 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Evesham - Bath
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14454`
 
-### WARNING-672 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Plymouth Parkway - Wimborne
+### WARNING-702 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-13 | Plymouth Parkway - Wimborne
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14463`
 
-### WARNING-673 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-15 | Tartu Welco - Flora U21
+### WARNING-703 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-27 | Taunton - Frome
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17326`
+
+### WARNING-704 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-27 | Chichester - Hanworth
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17328`
+
+### WARNING-705 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-27 | Plymouth Parkway - Gloucester
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17330`
+
+### WARNING-706 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-27 | Poole - Chertsey
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17341`
+
+### WARNING-707 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-27 | Yate Town - Wimborne
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17356`
+
+### WARNING-708 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-27 | Bracknell - Gosport
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17359`
+
+### WARNING-709 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-27 | Basingstoke - Uxbridge
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17360`
+
+### WARNING-710 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-27 | Hanwell Town - Havant & W
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '1', 'OK'), attuali=('6', '1', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17377`
+
+### WARNING-711 · LAB_DUP_MATCH · England_SouthernLeaguePremierSouth | 2026-10-27 | Berkhamsted - Sholing
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17381`
+
+### WARNING-712 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-15 | Tartu Welco - Flora U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3085`
 
-### WARNING-674 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-15 | Tallinna Kalev - Elva
+### WARNING-713 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-15 | Tallinna Kalev - Elva
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3088`
 
-### WARNING-675 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-15 | Viimsi JK - Levadia U21
+### WARNING-714 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-15 | Viimsi JK - Levadia U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3160`
 
-### WARNING-676 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-15 | Maardu - FC Tallinn
+### WARNING-715 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-15 | Maardu - FC Tallinn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3192`
 
-### WARNING-677 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-21 | Flora U21 - Viimsi JK
+### WARNING-716 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-08-21 | Flora U21 - Viimsi JK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4413`
 
-### WARNING-678 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-09-14 | Tartu Welco - Nomme Kalju U21
+### WARNING-717 · LAB_DUP_MATCH · Estonia_Esiliiga | 2026-09-14 | Tartu Welco - Nomme Kalju U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9532`
 
-### WARNING-679 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-09 | Tallinna Kalev U21 - Johvi Phoenix
+### WARNING-718 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-09 | Tallinna Kalev U21 - Johvi Phoenix
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2126`
 
-### WARNING-680 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-09 | Levadia U19 - Tabasalu
+### WARNING-719 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-09 | Levadia U19 - Tabasalu
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2134`
 
-### WARNING-681 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-09 | Legion - Narva U21
+### WARNING-720 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-09 | Legion - Narva U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2136`
 
-### WARNING-682 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-15 | Tartu Kalev - Parnu JK Vaprus U21
+### WARNING-721 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-15 | Tartu Kalev - Parnu JK Vaprus U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3042`
 
-### WARNING-683 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-15 | Narva U21 - Johvi Phoenix
+### WARNING-722 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-15 | Narva U21 - Johvi Phoenix
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3074`
 
-### WARNING-684 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-15 | Legion - Tammeka U21
+### WARNING-723 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-15 | Legion - Tammeka U21
 - Area: `laboratory`
-- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3097`
 
-### WARNING-685 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-16 | Tabasalu - Tallinna Kalev U21
+### WARNING-724 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-16 | Tabasalu - Tallinna Kalev U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3681`
 
-### WARNING-686 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-16 | Tulevik - Levadia U19
+### WARNING-725 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-16 | Tulevik - Levadia U19
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3696`
 
-### WARNING-687 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-21 | Tallinna Kalev U21 - Legion
+### WARNING-726 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-08-21 | Tallinna Kalev U21 - Legion
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4393`
 
-### WARNING-688 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-11 | Tallinna Kalev U21 - Tabasalu
+### WARNING-727 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-11 | Tallinna Kalev U21 - Tabasalu
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7995`
 
-### WARNING-689 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-11 | Narva U21 - Levadia U19
+### WARNING-728 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-11 | Narva U21 - Levadia U19
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8004`
 
-### WARNING-690 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-15 | Narva U21 - Tammeka U21
+### WARNING-729 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-15 | Narva U21 - Tammeka U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9409`
 
-### WARNING-691 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-15 | Levadia U19 - Tulevik
+### WARNING-730 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-15 | Levadia U19 - Tulevik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '5', 'OK'), attuali=('3', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9413`
 
-### WARNING-692 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-14 | Johvi Phoenix - Tallinna Kalev U21
+### WARNING-731 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-14 | Johvi Phoenix - Tallinna Kalev U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9524`
 
-### WARNING-693 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-14 | Tabasalu - Legion
+### WARNING-732 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-14 | Tabasalu - Legion
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9554`
 
-### WARNING-694 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-19 | Johvi Phoenix - Tabasalu
+### WARNING-733 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-19 | Johvi Phoenix - Tabasalu
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10597`
 
-### WARNING-695 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-19 | Tallinna Kalev U21 - Narva U21
+### WARNING-734 · LAB_DUP_MATCH · Estonia_EsiliigaB | 2026-09-19 | Tallinna Kalev U21 - Narva U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10609`
 
-### WARNING-696 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-07-31 | Nomme Utd - Narva
+### WARNING-735 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-07-31 | Nomme Utd - Narva
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1362`
 
-### WARNING-697 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-14 | Nomme Utd - Tammeka
+### WARNING-736 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-14 | Nomme Utd - Tammeka
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2507`
 
-### WARNING-698 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-16 | Harju JK Laagri - Levadia
+### WARNING-737 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-16 | Harju JK Laagri - Levadia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3745`
 
-### WARNING-699 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-16 | Narva - Paide
+### WARNING-738 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-16 | Narva - Paide
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3788`
 
-### WARNING-700 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-16 | Flora - Kuressaare
+### WARNING-739 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-16 | Flora - Kuressaare
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3803`
 
-### WARNING-701 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-16 | Kalju - Parnu JK Vaprus
+### WARNING-740 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-16 | Kalju - Parnu JK Vaprus
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3822`
 
-### WARNING-702 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-21 | Levadia - Narva
+### WARNING-741 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-08-21 | Levadia - Narva
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4438`
 
-### WARNING-703 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-10-13 | Harju JK Laagri - Nomme Utd
+### WARNING-742 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-10-13 | Harju JK Laagri - Nomme Utd
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14423`
 
-### WARNING-704 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-10-13 | Parnu JK Vaprus - Kalju
+### WARNING-743 · LAB_DUP_MATCH · Estonia_Meistriliiga | 2026-10-13 | Parnu JK Vaprus - Kalju
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14452`
 
-### WARNING-705 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | FC Suduroy - Streymur 2
+### WARNING-744 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | FC Suduroy - Streymur 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '1', 'OK'), attuali=('6', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3060`
 
-### WARNING-706 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | Vikingur 2 - Fuglafjordur
+### WARNING-745 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | Vikingur 2 - Fuglafjordur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3083`
 
-### WARNING-707 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | B36 Torshavn 2 - TB Tvoroyri
+### WARNING-746 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | B36 Torshavn 2 - TB Tvoroyri
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3087`
 
-### WARNING-708 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | Hoyvik - Sandur
+### WARNING-747 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | Hoyvik - Sandur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3106`
 
-### WARNING-709 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | Runavik 2 - HB Torshavn 2
+### WARNING-748 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-08-15 | Runavik 2 - HB Torshavn 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3286`
 
-### WARNING-710 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-09-19 | TB Tvoroyri - Hoyvik
+### WARNING-749 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-09-19 | TB Tvoroyri - Hoyvik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10603`
 
-### WARNING-711 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-09-19 | B36 Torshavn 2 - Runavik 2
+### WARNING-750 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-09-19 | B36 Torshavn 2 - Runavik 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10621`
 
-### WARNING-712 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-09-19 | Vikingur 2 - FC Suduroy
+### WARNING-751 · LAB_DUP_MATCH · FaroeIslands_1Deild | 2026-09-19 | Vikingur 2 - FC Suduroy
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10633`
 
-### WARNING-713 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-16 | Runavik - Streymur
+### WARNING-752 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-16 | Runavik - Streymur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3780`
 
-### WARNING-714 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-16 | HB Torshavn - Toftir
+### WARNING-753 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-16 | HB Torshavn - Toftir
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3793`
 
-### WARNING-715 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-16 | Skala Itrottarfelag - Vikingur
+### WARNING-754 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-16 | Skala Itrottarfelag - Vikingur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3811`
 
-### WARNING-716 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-16 | 07 Vestur Sorvagur - B36 Torshavn
+### WARNING-755 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-16 | 07 Vestur Sorvagur - B36 Torshavn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3835`
 
-### WARNING-717 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-21 | Vikingur - B36 Torshavn
+### WARNING-756 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-08-21 | Vikingur - B36 Torshavn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4474`
 
-### WARNING-718 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-09-11 | Argir - Toftir
+### WARNING-757 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-09-11 | Argir - Toftir
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8134`
 
-### WARNING-719 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-09-19 | HB Torshavn - Argir
+### WARNING-758 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-09-19 | HB Torshavn - Argir
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10756`
 
-### WARNING-720 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-09-19 | Toftir - Streymur
+### WARNING-759 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-09-19 | Toftir - Streymur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10772`
 
-### WARNING-721 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-09-19 | Vikingur - 07 Vestur Sorvagur
+### WARNING-760 · LAB_DUP_MATCH · FaroeIslands_PremierLeague | 2026-09-19 | Vikingur - 07 Vestur Sorvagur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10799`
 
-### WARNING-722 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-07-31 | Union Plaani - PEPO
+### WARNING-761 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-07-31 | Union Plaani - PEPO
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1384`
 
-### WARNING-723 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-08-15 | HIFK - Atlantis
+### WARNING-762 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-08-15 | HIFK - Atlantis
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '5', 'OK'), attuali=('3', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3066`
 
-### WARNING-724 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-08-15 | PuiU - Kiffen
+### WARNING-763 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-08-15 | PuiU - Kiffen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3193`
 
-### WARNING-725 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-08-15 | HPS - Union Plaani
+### WARNING-764 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-08-15 | HPS - Union Plaani
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3216`
 
-### WARNING-726 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-08-16 | Lahden Reipas - PEPO
+### WARNING-765 · LAB_DUP_MATCH · Finland_Kakkonen_GroupA | 2026-08-16 | Lahden Reipas - PEPO
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3733`
 
-### WARNING-727 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-07-31 | Abo - HJS
+### WARNING-766 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-07-31 | Abo - HJS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1383`
 
-### WARNING-728 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-07-31 | GrIFK - EBK
+### WARNING-767 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-07-31 | GrIFK - EBK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1386`
 
-### WARNING-729 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | Ilves 2 - NJS
+### WARNING-768 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | Ilves 2 - NJS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3152`
 
-### WARNING-730 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | Abo - EPS
+### WARNING-769 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | Abo - EPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3177`
 
-### WARNING-731 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | MuSa - EBK
+### WARNING-770 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | MuSa - EBK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3195`
 
-### WARNING-732 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | HJS - GrIFK
+### WARNING-771 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | HJS - GrIFK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3240`
 
-### WARNING-733 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | Honka - P-Iirot Rauma
+### WARNING-772 · LAB_DUP_MATCH · Finland_Kakkonen_GroupB | 2026-08-15 | Honka - P-Iirot Rauma
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3288`
 
-### WARNING-734 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-15 | VPS 2 - Hercules
+### WARNING-773 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-15 | VPS 2 - Hercules
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3059`
 
-### WARNING-735 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-15 | Vaajakoski - GBK Kokkola
+### WARNING-774 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-15 | Vaajakoski - GBK Kokkola
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3063`
 
-### WARNING-736 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-15 | Jaro 2 - Huima / Urho
+### WARNING-775 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-15 | Jaro 2 - Huima / Urho
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '6', 'OK'), attuali=('2', '6', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3122`
 
-### WARNING-737 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-16 | Narpes Kraft - SJK Akatemia 2
+### WARNING-776 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-16 | Narpes Kraft - SJK Akatemia 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3672`
 
-### WARNING-738 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-16 | JBK - TP-47
+### WARNING-777 · LAB_DUP_MATCH · Finland_Kakkonen_GroupC | 2026-08-16 | JBK - TP-47
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3756`
 
-### WARNING-739 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-08-14 | FC Vaajakoski/2 - SAPA
+### WARNING-778 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-08-14 | FC Vaajakoski/2 - SAPA
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2486`
 
-### WARNING-740 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-08-14 | FC Metso - Komeetat
+### WARNING-779 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-08-14 | FC Metso - Komeetat
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2516`
 
-### WARNING-741 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-08-14 | KeuPa - Blackbird
+### WARNING-780 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-08-14 | KeuPa - Blackbird
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2636`
 
-### WARNING-742 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-09-09 | FC Vaajakoski/2 - KeuPa
+### WARNING-781 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-09-09 | FC Vaajakoski/2 - KeuPa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7717`
 
-### WARNING-743 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-09-11 | Komeetat - Blackbird
+### WARNING-782 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group1 | 2026-09-11 | Komeetat - Blackbird
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8209`
 
-### WARNING-744 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group2 | 2026-08-14 | ToU - Ylämyllyn Yllätys
+### WARNING-783 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group2 | 2026-08-14 | ToU - Ylämyllyn Yllätys
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2499`
 
-### WARNING-745 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group2 | 2026-08-14 | Zulimanit - KuPS/Akatemia 2
+### WARNING-784 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group2 | 2026-08-14 | Zulimanit - KuPS/Akatemia 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2531`
 
-### WARNING-746 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group2 | 2026-09-09 | KuPS/Akatemia 2 - PK-37
+### WARNING-785 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group2 | 2026-09-09 | KuPS/Akatemia 2 - PK-37
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7720`
 
-### WARNING-747 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group3 | 2026-08-14 | Mikkelin Palloilijat 2 - KoPa
+### WARNING-786 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group3 | 2026-08-14 | Mikkelin Palloilijat 2 - KoPa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2481`
 
-### WARNING-748 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group3 | 2026-08-21 | KoPa - KJP
+### WARNING-787 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group3 | 2026-08-21 | KoPa - KJP
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4475`
 
-### WARNING-749 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group3 | 2026-09-09 | LAUTP - Kultsu
+### WARNING-788 · LAB_DUP_MATCH · Finland_Kolmonen_Eastern_Group3 | 2026-09-09 | LAUTP - Kultsu
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7716`
 
-### WARNING-750 · LAB_DUP_MATCH · Finland_Kolmonen_North | 2026-08-21 | Ajax Sarkkiranta - Santa Claus
+### WARNING-789 · LAB_DUP_MATCH · Finland_Kolmonen_North | 2026-08-21 | Ajax Sarkkiranta - Santa Claus
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4447`
 
-### WARNING-751 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-14 | NuPS - EIF/Akademi
+### WARNING-790 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-14 | NuPS - EIF/Akademi
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2502`
 
-### WARNING-752 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-16 | EPS Reservi - Pöxyt
+### WARNING-791 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-16 | EPS Reservi - Pöxyt
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3689`
 
-### WARNING-753 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-16 | GrIFK/Akatemia U23 - PPJ/Ruoholahti
+### WARNING-792 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-16 | GrIFK/Akatemia U23 - PPJ/Ruoholahti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3698`
 
-### WARNING-754 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-21 | Pöxyt - GrIFK/Akatemia U23
+### WARNING-793 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-21 | Pöxyt - GrIFK/Akatemia U23
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4372`
 
-### WARNING-755 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-21 | NuPS - LePa
+### WARNING-794 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-21 | NuPS - LePa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4441`
 
-### WARNING-756 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-21 | MPS - Etelä-Espoon Pallo
+### WARNING-795 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-21 | MPS - Etelä-Espoon Pallo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4503`
 
-### WARNING-757 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-30 | GrIFK/Akatemia U23 - HooGee
+### WARNING-796 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-08-30 | GrIFK/Akatemia U23 - HooGee
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6244`
 
-### WARNING-758 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-09-09 | LePa - GrIFK/Akatemia U23
+### WARNING-797 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group1 | 2026-09-09 | LePa - GrIFK/Akatemia U23
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7719`
 
-### WARNING-759 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-09 | VJS 2 - TiPS
+### WARNING-798 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-09 | VJS 2 - TiPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2211`
 
-### WARNING-760 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-14 | Laajasalon Palloseura - Töölön Taisto
+### WARNING-799 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-14 | Laajasalon Palloseura - Töölön Taisto
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2468`
 
-### WARNING-761 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-14 | Valtti - Atlantis FC/2
+### WARNING-800 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-14 | Valtti - Atlantis FC/2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2469`
 
-### WARNING-762 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-14 | PPJ/Lauttasaari - Kontu
+### WARNING-801 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-14 | PPJ/Lauttasaari - Kontu
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2483`
 
-### WARNING-763 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-14 | TiPS - ToTe
+### WARNING-802 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-14 | TiPS - ToTe
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2487`
 
-### WARNING-764 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-21 | TiPS - PPS
+### WARNING-803 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-21 | TiPS - PPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4383`
 
-### WARNING-765 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-21 | Kontu - Valtti
+### WARNING-804 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-08-21 | Kontu - Valtti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4386`
 
-### WARNING-766 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-09-07 | VJS 2 - ToTe
+### WARNING-805 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-09-07 | VJS 2 - ToTe
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7599`
 
-### WARNING-767 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-09-11 | PPS - Töölön Taisto
+### WARNING-806 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-09-11 | PPS - Töölön Taisto
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8210`
 
-### WARNING-768 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-10-02 | HPS/2 - MPS/Atletico Malmi
+### WARNING-807 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group2 | 2026-10-02 | HPS/2 - MPS/Atletico Malmi
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12278`
 
-### WARNING-769 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-14 | RiPS - TuPS
+### WARNING-808 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-14 | RiPS - TuPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2498`
 
-### WARNING-770 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-14 | Futura - TiPS/2 U21
+### WARNING-809 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-14 | Futura - TiPS/2 U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2501`
 
-### WARNING-771 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-14 | Ponnistus - Lahti/69
+### WARNING-810 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-14 | Ponnistus - Lahti/69
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2551`
 
-### WARNING-772 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-16 | JäPS/47 - ToTe/Tapio
+### WARNING-811 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-16 | JäPS/47 - ToTe/Tapio
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3684`
 
-### WARNING-773 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-21 | Lahti/69 - RiPS
+### WARNING-812 · LAB_DUP_MATCH · Finland_Kolmonen_Southern_Group3 | 2026-08-21 | Lahti/69 - RiPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4404`
 
-### WARNING-774 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-14 | KaaPo - Peimari United
+### WARNING-813 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-14 | KaaPo - Peimari United
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2520`
 
-### WARNING-775 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-14 | ÅCF - PiPS
+### WARNING-814 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-14 | ÅCF - PiPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2568`
 
-### WARNING-776 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-21 | VG-62 - KaaPo
+### WARNING-815 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-21 | VG-62 - KaaPo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4435`
 
-### WARNING-777 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-21 | ÅCF - EuPa
+### WARNING-816 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-21 | ÅCF - EuPa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4452`
 
-### WARNING-778 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-21 | LTU U20 - MaPS
+### WARNING-817 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-08-21 | LTU U20 - MaPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4477`
 
-### WARNING-779 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-09-01 | SalPa 2 - EuPa
+### WARNING-818 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group1 | 2026-09-01 | SalPa 2 - EuPa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6447`
 
-### WARNING-780 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group2 | 2026-08-14 | ACE - NoPS
+### WARNING-819 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group2 | 2026-08-14 | ACE - NoPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2476`
 
-### WARNING-781 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group2 | 2026-08-14 | Sääksjärven Loiske - TPV/2
+### WARNING-820 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group2 | 2026-08-14 | Sääksjärven Loiske - TPV/2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2505`
 
-### WARNING-782 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group2 | 2026-09-01 | FC Haka j. - Ylöjärvi Utd.
+### WARNING-821 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group2 | 2026-09-01 | FC Haka j. - Ylöjärvi Utd.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6422`
 
-### WARNING-783 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-08-09 | Sp. Kristina - VPV
+### WARNING-822 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-08-09 | Sp. Kristina - VPV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2220`
 
-### WARNING-784 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-08-11 | VPV - Kiisto
+### WARNING-823 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-08-11 | VPV - Kiisto
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2225`
 
-### WARNING-785 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-08-21 | VIFK - VPV
+### WARNING-824 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-08-21 | VIFK - VPV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4449`
 
-### WARNING-786 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-09-01 | KPV/Akatemia - Sp. Kristina
+### WARNING-825 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-09-01 | KPV/Akatemia - Sp. Kristina
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6431`
 
-### WARNING-787 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-09-09 | KPV/Akatemia - NIK
+### WARNING-826 · LAB_DUP_MATCH · Finland_Kolmonen_Western_Group3 | 2026-09-09 | KPV/Akatemia - NIK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7718`
 
-### WARNING-788 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-14 | VPS - TPS Turku
+### WARNING-827 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-14 | VPS - TPS Turku
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2591`
 
-### WARNING-789 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-15 | Mariehamn - SJK
+### WARNING-828 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-15 | Mariehamn - SJK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3349`
 
-### WARNING-790 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-16 | HJK - Jaro
+### WARNING-829 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-16 | HJK - Jaro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3797`
 
-### WARNING-791 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-16 | Lahti - KuPS
+### WARNING-830 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-16 | Lahti - KuPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3881`
 
-### WARNING-792 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-16 | Oulu - Inter Turku
+### WARNING-831 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-16 | Oulu - Inter Turku
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3889`
 
-### WARNING-793 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-21 | SJK - Lahti
+### WARNING-832 · LAB_DUP_MATCH · Finland_Veikkausliiga | 2026-08-21 | SJK - Lahti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4555`
 
-### WARNING-794 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-07-31 | Inter Turku 2 - VJS
+### WARNING-833 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-07-31 | Inter Turku 2 - VJS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1367`
 
-### WARNING-795 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-07-31 | Keski-Uusimaa - Tampere Utd
+### WARNING-834 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-07-31 | Keski-Uusimaa - Tampere Utd
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '4', 'OK'), attuali=('4', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1393`
 
-### WARNING-796 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-15 | Tampere Utd - TPV
+### WARNING-835 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-15 | Tampere Utd - TPV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3202`
 
-### WARNING-797 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-15 | OLS Oulu - RoPS
+### WARNING-836 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-15 | OLS Oulu - RoPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3225`
 
-### WARNING-798 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-15 | SalPa - Jazz Pori
+### WARNING-837 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-15 | SalPa - Jazz Pori
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3254`
 
-### WARNING-799 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-16 | KuPS Akatemia - Keski-Uusimaa
+### WARNING-838 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-16 | KuPS Akatemia - Keski-Uusimaa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3716`
 
-### WARNING-800 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-16 | VJS - JJK Jyvaskyla
+### WARNING-839 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-16 | VJS - JJK Jyvaskyla
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '4', 'OK'), attuali=('4', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3748`
 
-### WARNING-801 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-16 | Inter Turku 2 - KPV
+### WARNING-840 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-16 | Inter Turku 2 - KPV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3782`
 
-### WARNING-802 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-21 | KPV - KuPS Akatemia
+### WARNING-841 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-21 | KPV - KuPS Akatemia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4401`
 
-### WARNING-803 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-21 | Keski-Uusimaa - JJK Jyvaskyla
+### WARNING-842 · LAB_DUP_MATCH · Finland_Ykkonen | 2026-08-21 | Keski-Uusimaa - JJK Jyvaskyla
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4409`
 
-### WARNING-804 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-07-31 | KTP - SJK Akatemia
+### WARNING-843 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-07-31 | KTP - SJK Akatemia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1405`
 
-### WARNING-805 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-07-31 | Ekenas - Klubi 04
+### WARNING-844 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-07-31 | Ekenas - Klubi 04
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1407`
 
-### WARNING-806 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-07-31 | PK-35 - Haka
+### WARNING-845 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-07-31 | PK-35 - Haka
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1408`
 
-### WARNING-807 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-14 | JaPS - Haka
+### WARNING-846 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-14 | JaPS - Haka
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2609`
 
-### WARNING-808 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-15 | KTP - KaPa
+### WARNING-847 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-15 | KTP - KaPa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3245`
 
-### WARNING-809 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-15 | PK-35 - Klubi 04
+### WARNING-848 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-15 | PK-35 - Klubi 04
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3392`
 
-### WARNING-810 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-15 | Jippo - SJK Akatemia
+### WARNING-849 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-15 | Jippo - SJK Akatemia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3395`
 
-### WARNING-811 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-16 | Mikkeli - Ekenas
+### WARNING-850 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-16 | Mikkeli - Ekenas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3868`
 
-### WARNING-812 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-21 | Haka - SJK Akatemia
+### WARNING-851 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-21 | Haka - SJK Akatemia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4500`
 
-### WARNING-813 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-21 | PK-35 - JaPS
+### WARNING-852 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-21 | PK-35 - JaPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4559`
 
-### WARNING-814 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-30 | SJK Akatemia - Klubi 04
+### WARNING-853 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-08-30 | SJK Akatemia - Klubi 04
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '6', 'OK'), attuali=('2', '6', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6271`
 
-### WARNING-815 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-11 | KaPa - PK-35
+### WARNING-854 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-11 | KaPa - PK-35
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8137`
 
-### WARNING-816 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-11 | KTP - JaPS
+### WARNING-855 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-11 | KTP - JaPS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8152`
 
-### WARNING-817 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-19 | SJK Akatemia - KaPa
+### WARNING-856 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-19 | SJK Akatemia - KaPa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10811`
 
-### WARNING-818 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-19 | PK-35 - KTP
+### WARNING-857 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-19 | PK-35 - KTP
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10819`
 
-### WARNING-819 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-19 | Mikkeli - Jippo
+### WARNING-858 · LAB_DUP_MATCH · Finland_Ykkosliiga | 2026-09-19 | Mikkeli - Jippo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10824`
 
-### WARNING-820 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-11 | Rennes - Marsiglia
+### WARNING-859 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-11 | Rennes - Marsiglia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8018`
 
-### WARNING-821 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Paris FC - Strasburgo
+### WARNING-860 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Paris FC - Strasburgo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10687`
 
-### WARNING-822 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Le Mans - Lorient
+### WARNING-861 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Le Mans - Lorient
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10724`
 
-### WARNING-823 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Lione - Rennes
+### WARNING-862 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Lione - Rennes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10745`
 
-### WARNING-824 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Angers - Troyes
+### WARNING-863 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Angers - Troyes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10780`
 
-### WARNING-825 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Tolosa - Le Havre
+### WARNING-864 · LAB_DUP_MATCH · France_Ligue1 | 2026-09-19 | Tolosa - Le Havre
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10862`
 
-### WARNING-826 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Dunkerque - Montpellier
+### WARNING-865 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Dunkerque - Montpellier
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4495`
 
-### WARNING-827 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Sochaux - Guingamp
+### WARNING-866 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Sochaux - Guingamp
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4534`
 
-### WARNING-828 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Clermont - Dijon
+### WARNING-867 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Clermont - Dijon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4580`
 
-### WARNING-829 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Pau FC - Nancy
+### WARNING-868 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Pau FC - Nancy
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4586`
 
-### WARNING-830 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Boulogne - Red Star
+### WARNING-869 · LAB_DUP_MATCH · France_Ligue2 | 2026-08-21 | Boulogne - Red Star
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4587`
 
-### WARNING-831 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Rodez - Grenoble
+### WARNING-870 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Rodez - Grenoble
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8006`
 
-### WARNING-832 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Dijon - Laval
+### WARNING-871 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Dijon - Laval
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8093`
 
-### WARNING-833 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Nancy - Reims
+### WARNING-872 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Nancy - Reims
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8179`
 
-### WARNING-834 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Montpellier - Pau FC
+### WARNING-873 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Montpellier - Pau FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8190`
 
-### WARNING-835 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Clermont - Boulogne
+### WARNING-874 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-11 | Clermont - Boulogne
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8193`
 
-### WARNING-836 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-14 | Red Star - Metz
+### WARNING-875 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-14 | Red Star - Metz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9591`
 
-### WARNING-837 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-19 | Metz - St. Etienne
+### WARNING-876 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-19 | Metz - St. Etienne
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10650`
 
-### WARNING-838 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-19 | Guingamp - Red Star
+### WARNING-877 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-19 | Guingamp - Red Star
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10807`
 
-### WARNING-839 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-19 | Boulogne - Nantes
+### WARNING-878 · LAB_DUP_MATCH · France_Ligue2 | 2026-09-19 | Boulogne - Nantes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10868`
 
-### WARNING-840 · LAB_DUP_MATCH · France_National | 2026-09-24 | Caen - Rouen
+### WARNING-879 · LAB_DUP_MATCH · France_National | 2026-09-24 | Caen - Rouen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11363`
 
-### WARNING-841 · LAB_DUP_MATCH · Georgia_ErovnuliLiga | 2026-08-21 | Meshakhte Tkibuli - Dinamo Batumi
+### WARNING-880 · LAB_DUP_MATCH · Georgia_ErovnuliLiga | 2026-08-21 | Meshakhte Tkibuli - Dinamo Batumi
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4376`
 
-### WARNING-842 · LAB_DUP_MATCH · Georgia_ErovnuliLiga | 2026-09-14 | Torpedo Kutaisi - Samgurali
+### WARNING-881 · LAB_DUP_MATCH · Georgia_ErovnuliLiga | 2026-09-14 | Torpedo Kutaisi - Samgurali
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9548`
 
-### WARNING-843 · LAB_DUP_MATCH · Georgia_ErovnuliLiga | 2026-09-14 | Din. Tbilisi - Gagra
+### WARNING-882 · LAB_DUP_MATCH · Georgia_ErovnuliLiga | 2026-09-14 | Din. Tbilisi - Gagra
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9567`
 
-### WARNING-844 · LAB_DUP_MATCH · Georgia_ErovnuliLiga | 2026-09-14 | Meshakhte Tkibuli - Rustavi
+### WARNING-883 · LAB_DUP_MATCH · Georgia_ErovnuliLiga | 2026-09-14 | Meshakhte Tkibuli - Rustavi
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9589`
 
-### WARNING-845 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-11 | Norimberga - Hannover
+### WARNING-884 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-11 | Norimberga - Hannover
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8034`
 
-### WARNING-846 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-11 | Darmstadt - Bielefeld
+### WARNING-885 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-11 | Darmstadt - Bielefeld
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8065`
 
-### WARNING-847 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-19 | Karlsruher - Norimberga
+### WARNING-886 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-19 | Karlsruher - Norimberga
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10593`
 
-### WARNING-848 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-19 | Dresda - Hertha
+### WARNING-887 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-19 | Dresda - Hertha
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10634`
 
-### WARNING-849 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-19 | Kiel - Osnabruck
+### WARNING-888 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-19 | Kiel - Osnabruck
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10674`
 
-### WARNING-850 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-19 | Kaiserslautern - Braunschweig
+### WARNING-889 · LAB_DUP_MATCH · Germany_2Bundesliga | 2026-09-19 | Kaiserslautern - Braunschweig
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10691`
 
-### WARNING-851 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-11 | Viktoria Koln - Rostock
+### WARNING-890 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-11 | Viktoria Koln - Rostock
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7982`
 
-### WARNING-852 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Duisburg - Havelse
+### WARNING-891 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Duisburg - Havelse
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9411`
 
-### WARNING-853 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Wurzburger Kickers - Aachen
+### WARNING-892 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Wurzburger Kickers - Aachen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9415`
 
-### WARNING-854 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Meppen - Viktoria Koln
+### WARNING-893 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Meppen - Viktoria Koln
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9425`
 
-### WARNING-855 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Regensburg - Dusseldorf
+### WARNING-894 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Regensburg - Dusseldorf
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9471`
 
-### WARNING-856 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Grossaspach - Verl
+### WARNING-895 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-15 | Grossaspach - Verl
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9487`
 
-### WARNING-857 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-19 | Aachen - Dusseldorf
+### WARNING-896 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-19 | Aachen - Dusseldorf
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10762`
 
-### WARNING-858 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-19 | Saarbrucken - Grossaspach
+### WARNING-897 · LAB_DUP_MATCH · Germany_3Liga | 2026-09-19 | Saarbrucken - Grossaspach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10785`
 
-### WARNING-859 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | Saarbrucken - Duisburg
+### WARNING-898 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | Saarbrucken - Duisburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14401`
 
-### WARNING-860 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | Havelse - Wurzburger Kickers
+### WARNING-899 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | Havelse - Wurzburger Kickers
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14403`
 
-### WARNING-861 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | Stoccarda 2 - Hoffenheim 2
+### WARNING-900 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | Stoccarda 2 - Hoffenheim 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14412`
 
-### WARNING-862 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | Rostock - Meppen
+### WARNING-901 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | Rostock - Meppen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14415`
 
-### WARNING-863 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | RW Essen - Fortuna Colonia
+### WARNING-902 · LAB_DUP_MATCH · Germany_3Liga | 2026-10-13 | RW Essen - Fortuna Colonia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14462`
 
-### WARNING-864 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-11 | Union Berlino - Schalke
+### WARNING-903 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-11 | Union Berlino - Schalke
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8100`
 
-### WARNING-865 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Stoccarda - Dortmund
+### WARNING-904 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Stoccarda - Dortmund
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10591`
 
-### WARNING-866 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Brema - Augusta
+### WARNING-905 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Brema - Augusta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10596`
 
-### WARNING-867 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Monchengladbach - Magonza
+### WARNING-906 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Monchengladbach - Magonza
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10649`
 
-### WARNING-868 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Francoforte - Friburgo
+### WARNING-907 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Francoforte - Friburgo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10664`
 
-### WARNING-869 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Amburgo - Colonia
+### WARNING-908 · LAB_DUP_MATCH · Germany_Bundesliga | 2026-09-19 | Amburgo - Colonia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10694`
 
-### WARNING-870 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-08-21 | Oberachern - Teningen
+### WARNING-909 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-08-21 | Oberachern - Teningen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4364`
 
-### WARNING-871 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-08-21 | Balingen - Reutlingen
+### WARNING-910 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-08-21 | Balingen - Reutlingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4367`
 
-### WARNING-872 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-08-21 | Backnang - Nottingen
+### WARNING-911 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-08-21 | Backnang - Nottingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4407`
 
-### WARNING-873 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-08-21 | Young Boys Reutlingen - Ravensburg
+### WARNING-912 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-08-21 | Young Boys Reutlingen - Ravensburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4572`
 
-### WARNING-874 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Pforzheim - Balingen
+### WARNING-913 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Pforzheim - Balingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10635`
 
-### WARNING-875 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Normannia Gmund - FC Holzhausen
+### WARNING-914 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Normannia Gmund - FC Holzhausen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10641`
 
-### WARNING-876 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Teningen - Essingen
+### WARNING-915 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Teningen - Essingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10662`
 
-### WARNING-877 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Reutlingen - Bahlinger
+### WARNING-916 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Reutlingen - Bahlinger
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10670`
 
-### WARNING-878 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Backnang - Oberachern
+### WARNING-917 · LAB_DUP_MATCH · Germany_Oberliga_BadenWurttemberg | 2026-09-19 | Backnang - Oberachern
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10744`
 
-### WARNING-879 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | DJK Bamberg - Stadeln
+### WARNING-918 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | DJK Bamberg - Stadeln
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2492`
 
-### WARNING-880 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | Ammerthal - Fortuna Regensburg
+### WARNING-919 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | Ammerthal - Fortuna Regensburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2567`
 
-### WARNING-881 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | Cham - Gebenbach
+### WARNING-920 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | Cham - Gebenbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2584`
 
-### WARNING-882 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | Neudrossenfeld - Aschaffenburg
+### WARNING-921 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | Neudrossenfeld - Aschaffenburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2614`
 
-### WARNING-883 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | Kornburg - Bayern Hof
+### WARNING-922 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-14 | Kornburg - Bayern Hof
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2642`
 
-### WARNING-884 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-15 | Ingolstadt 2 - Wurzburger FV
+### WARNING-923 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-15 | Ingolstadt 2 - Wurzburger FV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3181`
 
-### WARNING-885 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-15 | Bamberg - Regensburg 2
+### WARNING-924 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-15 | Bamberg - Regensburg 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3238`
 
-### WARNING-886 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-15 | Neumarkt - Weiden
+### WARNING-925 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-15 | Neumarkt - Weiden
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3387`
 
-### WARNING-887 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-15 | Grossbardorf - Nordlingen
+### WARNING-926 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-15 | Grossbardorf - Nordlingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3413`
 
-### WARNING-888 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-21 | DJK Bamberg - Regensburg 2
+### WARNING-927 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-21 | DJK Bamberg - Regensburg 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4423`
 
-### WARNING-889 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-21 | Bamberg - Wurzburger FV
+### WARNING-928 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-21 | Bamberg - Wurzburger FV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4432`
 
-### WARNING-890 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-21 | Kornburg - Fortuna Regensburg
+### WARNING-929 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-21 | Kornburg - Fortuna Regensburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4493`
 
-### WARNING-891 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-21 | Cham - Aschaffenburg
+### WARNING-930 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-08-21 | Cham - Aschaffenburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4494`
 
-### WARNING-892 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-11 | Gebenbach - Bayern Hof
+### WARNING-931 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-11 | Gebenbach - Bayern Hof
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8038`
 
-### WARNING-893 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-11 | Neudrossenfeld - Bamberg
+### WARNING-932 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-11 | Neudrossenfeld - Bamberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8135`
 
-### WARNING-894 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-15 | Aschaffenburg - Wurzburger FV
+### WARNING-933 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-15 | Aschaffenburg - Wurzburger FV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9447`
 
-### WARNING-895 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-19 | Bayern Hof - Regensburg 2
+### WARNING-934 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-19 | Bayern Hof - Regensburg 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10654`
 
-### WARNING-896 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-19 | Fortuna Regensburg - Stadeln
+### WARNING-935 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-19 | Fortuna Regensburg - Stadeln
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10686`
 
-### WARNING-897 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-19 | DJK Bamberg - Ingolstadt 2
+### WARNING-936 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-19 | DJK Bamberg - Ingolstadt 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10692`
 
-### WARNING-898 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-19 | Neumarkt - Wurzburger FV
+### WARNING-937 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Nord | 2026-09-19 | Neumarkt - Wurzburger FV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10731`
 
-### WARNING-899 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | FC Schwaig - Kirchanschoring
+### WARNING-938 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | FC Schwaig - Kirchanschoring
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2473`
 
-### WARNING-900 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Heimstetten - Schalding
+### WARNING-939 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Heimstetten - Schalding
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2497`
 
-### WARNING-901 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Monaco 1860 2 - Hankofen-Hailing
+### WARNING-940 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Monaco 1860 2 - Hankofen-Hailing
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2503`
 
-### WARNING-902 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Pipinsried - Pfaffenhofen
+### WARNING-941 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Pipinsried - Pfaffenhofen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2521`
 
-### WARNING-903 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Kottern-St. Mang - Landshut
+### WARNING-942 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Kottern-St. Mang - Landshut
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2538`
 
-### WARNING-904 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Ismaning - TSV 1880 Wasserburg
+### WARNING-943 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Ismaning - TSV 1880 Wasserburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2549`
 
-### WARNING-905 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Rosenheim - Deisenhofen
+### WARNING-944 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Rosenheim - Deisenhofen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2598`
 
-### WARNING-906 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Erlbach - Gundelfingen
+### WARNING-945 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-14 | Erlbach - Gundelfingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2617`
 
-### WARNING-907 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-15 | Geretsried - Schwabmunchen
+### WARNING-946 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-15 | Geretsried - Schwabmunchen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3208`
 
-### WARNING-908 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-21 | Kottern-St. Mang - TSV 1880 Wasserburg
+### WARNING-947 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-21 | Kottern-St. Mang - TSV 1880 Wasserburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4443`
 
-### WARNING-909 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-21 | Heimstetten - Hankofen-Hailing
+### WARNING-948 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-21 | Heimstetten - Hankofen-Hailing
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4482`
 
-### WARNING-910 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-21 | Monaco 1860 2 - Deisenhofen
+### WARNING-949 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-21 | Monaco 1860 2 - Deisenhofen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4499`
 
-### WARNING-911 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-21 | FC Schwaig - Erlbach
+### WARNING-950 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-08-21 | FC Schwaig - Erlbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4539`
 
-### WARNING-912 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-11 | TSV 1880 Wasserburg - Heimstetten
+### WARNING-951 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-11 | TSV 1880 Wasserburg - Heimstetten
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8005`
 
-### WARNING-913 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-11 | Hankofen-Hailing - Schalding
+### WARNING-952 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-11 | Hankofen-Hailing - Schalding
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8039`
 
-### WARNING-914 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-11 | Erlbach - Kottern-St. Mang
+### WARNING-953 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-11 | Erlbach - Kottern-St. Mang
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8186`
 
-### WARNING-915 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Pipinsried - Kirchanschoring
+### WARNING-954 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Pipinsried - Kirchanschoring
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10613`
 
-### WARNING-916 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Geretsried - TSV 1880 Wasserburg
+### WARNING-955 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Geretsried - TSV 1880 Wasserburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10642`
 
-### WARNING-917 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Schalding - Landshut
+### WARNING-956 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Schalding - Landshut
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10657`
 
-### WARNING-918 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Schwabmunchen - Deisenhofen
+### WARNING-957 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Schwabmunchen - Deisenhofen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10682`
 
-### WARNING-919 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Pfaffenhofen - Hankofen-Hailing
+### WARNING-958 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Pfaffenhofen - Hankofen-Hailing
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10709`
 
-### WARNING-920 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Kottern-St. Mang - Ismaning
+### WARNING-959 · LAB_DUP_MATCH · Germany_Oberliga_Bayern_Sud | 2026-09-19 | Kottern-St. Mang - Ismaning
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10792`
 
-### WARNING-921 · LAB_DUP_MATCH · Germany_Oberliga_Bremen | 2026-08-21 | Grohn - OSC Bremerhaven
+### WARNING-960 · LAB_DUP_MATCH · Germany_Oberliga_Bremen | 2026-08-21 | Grohn - OSC Bremerhaven
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '7', 'OK'), attuali=('0', '7', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4501`
 
-### WARNING-922 · LAB_DUP_MATCH · Germany_Oberliga_Bremen | 2026-08-21 | Brinkumer - Eiche Horn
+### WARNING-961 · LAB_DUP_MATCH · Germany_Oberliga_Bremen | 2026-08-21 | Brinkumer - Eiche Horn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4531`
 
-### WARNING-923 · LAB_DUP_MATCH · Germany_Oberliga_Bremen | 2026-08-21 | Leher - Aumund-Vegesack
+### WARNING-962 · LAB_DUP_MATCH · Germany_Oberliga_Bremen | 2026-08-21 | Leher - Aumund-Vegesack
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4569`
 
-### WARNING-924 · LAB_DUP_MATCH · Germany_Oberliga_Bremen | 2026-09-11 | OSC Bremerhaven - Oberneuland
+### WARNING-963 · LAB_DUP_MATCH · Germany_Oberliga_Bremen | 2026-09-11 | OSC Bremerhaven - Oberneuland
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('12', '0', 'OK'), attuali=('12', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7993`
 
-### WARNING-925 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Victoria Hamburg - Paloma
+### WARNING-964 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Victoria Hamburg - Paloma
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '5', 'OK'), attuali=('1', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2471`
 
-### WARNING-926 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Vorwarts-Wacker - Niendorfer TSV
+### WARNING-965 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Vorwarts-Wacker - Niendorfer TSV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2474`
 
-### WARNING-927 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Suderelbe - Norderstedt 2
+### WARNING-966 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Suderelbe - Norderstedt 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2479`
 
-### WARNING-928 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Dassendorf - Altona
+### WARNING-967 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Dassendorf - Altona
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2581`
 
-### WARNING-929 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Wandsbeker Concordia - ETSV Hamburg
+### WARNING-968 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-14 | Wandsbeker Concordia - ETSV Hamburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2638`
 
-### WARNING-930 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-16 | Pinneberg - Tesla Hamburg
+### WARNING-969 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-16 | Pinneberg - Tesla Hamburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3687`
 
-### WARNING-931 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-16 | HEBC Hamburg - HT 16
+### WARNING-970 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-16 | HEBC Hamburg - HT 16
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3727`
 
-### WARNING-932 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-16 | Sasel - Harksheide
+### WARNING-971 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-16 | Sasel - Harksheide
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3795`
 
-### WARNING-933 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-21 | Norderstedt 2 - Sasel
+### WARNING-972 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-21 | Norderstedt 2 - Sasel
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4410`
 
-### WARNING-934 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-21 | Harksheide - Dassendorf
+### WARNING-973 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-21 | Harksheide - Dassendorf
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4467`
 
-### WARNING-935 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-21 | ETSV Hamburg - HEBC Hamburg
+### WARNING-974 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-08-21 | ETSV Hamburg - HEBC Hamburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4516`
 
-### WARNING-936 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-09-11 | ETSV Hamburg - Harksheide
+### WARNING-975 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-09-11 | ETSV Hamburg - Harksheide
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8003`
 
-### WARNING-937 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-09-11 | Suderelbe - HT 16
+### WARNING-976 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-09-11 | Suderelbe - HT 16
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8026`
 
-### WARNING-938 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-09-11 | Wandsbeker Concordia - Norderstedt 2
+### WARNING-977 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-09-11 | Wandsbeker Concordia - Norderstedt 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8031`
 
-### WARNING-939 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-09-19 | Altona - HEBC Hamburg
+### WARNING-978 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-09-19 | Altona - HEBC Hamburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10676`
 
-### WARNING-940 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-10-13 | Norderstedt 2 - ETSV Hamburg
+### WARNING-979 · LAB_DUP_MATCH · Germany_Oberliga_Hamburg | 2026-10-13 | Norderstedt 2 - ETSV Hamburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14399`
 
-### WARNING-941 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | Hummetroth - Stadtallendorf
+### WARNING-980 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | Hummetroth - Stadtallendorf
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3212`
 
-### WARNING-942 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | Hadamar - Unter-Flockenbach
+### WARNING-981 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | Hadamar - Unter-Flockenbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3220`
 
-### WARNING-943 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | VfB Marburg - Kassel 2
+### WARNING-982 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | VfB Marburg - Kassel 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3382`
 
-### WARNING-944 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | Fernwald - Hunfelder
+### WARNING-983 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | Fernwald - Hunfelder
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3397`
 
-### WARNING-945 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | Giessen - Hanauer SC
+### WARNING-984 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-15 | Giessen - Hanauer SC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3406`
 
-### WARNING-946 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-16 | CSC 03 Kassel - Friedberg
+### WARNING-985 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-16 | CSC 03 Kassel - Friedberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3739`
 
-### WARNING-947 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-16 | RW Walldorf - Pohlheim
+### WARNING-986 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-16 | RW Walldorf - Pohlheim
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3741`
 
-### WARNING-948 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-16 | Eddersheim - Alzenau
+### WARNING-987 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-16 | Eddersheim - Alzenau
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3750`
 
-### WARNING-949 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-16 | Baunatal - Darmstadt U21
+### WARNING-988 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-08-16 | Baunatal - Darmstadt U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3784`
 
-### WARNING-950 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Fernwald - Eddersheim
+### WARNING-989 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Fernwald - Eddersheim
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10640`
 
-### WARNING-951 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Friedberg - Giessen
+### WARNING-990 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Friedberg - Giessen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10672`
 
-### WARNING-952 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Stadtallendorf - Darmstadt U21
+### WARNING-991 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Stadtallendorf - Darmstadt U21
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10677`
 
-### WARNING-953 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | VfB Marburg - Hummetroth
+### WARNING-992 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | VfB Marburg - Hummetroth
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10718`
 
-### WARNING-954 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Hunfelder - Hadamar
+### WARNING-993 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Hunfelder - Hadamar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10741`
 
-### WARNING-955 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Alzenau - Baunatal
+### WARNING-994 · LAB_DUP_MATCH · Germany_Oberliga_Hessen | 2026-09-19 | Alzenau - Baunatal
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10776`
 
-### WARNING-956 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Nord | 2026-09-19 | Siedenbollentin - Stendal
+### WARNING-995 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Nord | 2026-09-19 | Siedenbollentin - Stendal
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10655`
 
-### WARNING-957 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Nord | 2026-09-19 | Lichtenberg - Makkabi Berlin
+### WARNING-996 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Nord | 2026-09-19 | Lichtenberg - Makkabi Berlin
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10770`
 
-### WARNING-958 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Nord | 2026-09-19 | Rathenow - Hertha Zehlendorf
+### WARNING-997 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Nord | 2026-09-19 | Rathenow - Hertha Zehlendorf
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10866`
 
-### WARNING-959 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Sud | 2026-09-11 | Sandersdorf - Meuselwitz
+### WARNING-998 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Sud | 2026-09-11 | Sandersdorf - Meuselwitz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8147`
 
-### WARNING-960 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Sud | 2026-09-19 | Plauen - Krieschow
+### WARNING-999 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Sud | 2026-09-19 | Plauen - Krieschow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10704`
 
-### WARNING-961 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Sud | 2026-09-19 | Freital - Auerbach
+### WARNING-1000 · LAB_DUP_MATCH · Germany_Oberliga_NOFV_Sud | 2026-09-19 | Freital - Auerbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10721`
 
-### WARNING-962 · LAB_DUP_MATCH · Germany_Oberliga_Niederrhein | 2026-09-11 | Holzheim - Germania Ratingen
+### WARNING-1001 · LAB_DUP_MATCH · Germany_Oberliga_Niederrhein | 2026-09-11 | Holzheim - Germania Ratingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8090`
 
-### WARNING-963 · LAB_DUP_MATCH · Germany_Oberliga_Niederrhein | 2026-09-11 | Scherpenberg - Solingen-Wald
+### WARNING-1002 · LAB_DUP_MATCH · Germany_Oberliga_Niederrhein | 2026-09-11 | Scherpenberg - Solingen-Wald
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8154`
 
-### WARNING-964 · LAB_DUP_MATCH · Germany_Oberliga_Niederrhein | 2026-09-15 | Dusseldorf 2 - Wuppertaler
+### WARNING-1003 · LAB_DUP_MATCH · Germany_Oberliga_Niederrhein | 2026-09-15 | Dusseldorf 2 - Wuppertaler
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9504`
 
-### WARNING-965 · LAB_DUP_MATCH · Germany_Oberliga_Niedersachsen | 2026-09-11 | BSV Rehden - Verden
+### WARNING-1004 · LAB_DUP_MATCH · Germany_Oberliga_Niedersachsen | 2026-09-11 | BSV Rehden - Verden
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8016`
 
-### WARNING-966 · LAB_DUP_MATCH · Germany_Oberliga_Niedersachsen | 2026-09-11 | Hildesheim - Hemmingen
+### WARNING-1005 · LAB_DUP_MATCH · Germany_Oberliga_Niedersachsen | 2026-09-11 | Hildesheim - Hemmingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8042`
 
-### WARNING-967 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-14 | Auersmacher - Hertha Wiesbach
+### WARNING-1006 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-14 | Auersmacher - Hertha Wiesbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2506`
 
-### WARNING-968 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-14 | Ahrweiler - Emmelshausen-Karbach
+### WARNING-1007 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-14 | Ahrweiler - Emmelshausen-Karbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2513`
 
-### WARNING-969 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-14 | Elversberg 2 - Worms
+### WARNING-1008 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-14 | Elversberg 2 - Worms
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2596`
 
-### WARNING-970 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | RW Koblenz - Diefflen
+### WARNING-1009 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | RW Koblenz - Diefflen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3031`
 
-### WARNING-971 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | Pirmasens - Mechtersheim
+### WARNING-1010 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | Pirmasens - Mechtersheim
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3036`
 
-### WARNING-972 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | Engers - Schott Mainz
+### WARNING-1011 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | Engers - Schott Mainz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3068`
 
-### WARNING-973 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | Cosmos Koblenz - Eisbachtal
+### WARNING-1012 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | Cosmos Koblenz - Eisbachtal
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3092`
 
-### WARNING-974 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | RW Wittlich - TSV 1881 Gau-Odernheim
+### WARNING-1013 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | RW Wittlich - TSV 1881 Gau-Odernheim
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3346`
 
-### WARNING-975 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | Gonsenheim - Koblenz
+### WARNING-1014 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-15 | Gonsenheim - Koblenz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3363`
 
-### WARNING-976 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-21 | Diefflen - Pirmasens
+### WARNING-1015 · LAB_DUP_MATCH · Germany_Oberliga_RheinlandPfalzSaar | 2026-08-21 | Diefflen - Pirmasens
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4369`
 
-### WARNING-977 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-14 | Eckernforder SV - Kiel 2
+### WARNING-1016 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-14 | Eckernforder SV - Kiel 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2475`
 
-### WARNING-978 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-14 | Hohenwestedt - Eichede
+### WARNING-1017 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-14 | Hohenwestedt - Eichede
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2599`
 
-### WARNING-979 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-15 | Nordmark Satrup - Oldenburger
+### WARNING-1018 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-15 | Nordmark Satrup - Oldenburger
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3033`
 
-### WARNING-980 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-15 | Rapid Lubeck - Lubeck 2
+### WARNING-1019 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-15 | Rapid Lubeck - Lubeck 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3038`
 
-### WARNING-981 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-15 | Kaltenkirchen - Phonix Lubeck B
+### WARNING-1020 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-15 | Kaltenkirchen - Phonix Lubeck B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3075`
 
-### WARNING-982 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-15 | Rotenhof - PSV Neumunster
+### WARNING-1021 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-15 | Rotenhof - PSV Neumunster
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3133`
 
-### WARNING-983 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-16 | Flensburg - Kilia Kiel
+### WARNING-1022 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-16 | Flensburg - Kilia Kiel
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3680`
 
-### WARNING-984 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-16 | VfR Neumunster - Heider SV
+### WARNING-1023 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-08-16 | VfR Neumunster - Heider SV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '1', 'OK'), attuali=('6', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3713`
 
-### WARNING-985 · LAB_DUP_MATCH · Germany_Oberliga_Westfalen | 2026-08-21 | Schermbeck 2020 - Bielefeld 2
+### WARNING-1024 · LAB_DUP_MATCH · Germany_Oberliga_SchleswigHolstein | 2026-10-27 | Oldenburger - VfR Neumunster
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17315`
+
+### WARNING-1025 · LAB_DUP_MATCH · Germany_Oberliga_Westfalen | 2026-08-21 | Schermbeck 2020 - Bielefeld 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4384`
 
-### WARNING-986 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Memmingen - Monaco 1860
+### WARNING-1026 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Memmingen - Monaco 1860
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2470`
 
-### WARNING-987 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Buchbach - Aubstadt
+### WARNING-1027 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Buchbach - Aubstadt
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2525`
 
-### WARNING-988 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Eichstatt - Ansbach
+### WARNING-1028 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Eichstatt - Ansbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2526`
 
-### WARNING-989 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Schweinfurt - Bayreuth
+### WARNING-1029 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Schweinfurt - Bayreuth
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2542`
 
-### WARNING-990 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Augsburg 2 - Vilzing
+### WARNING-1030 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Augsburg 2 - Vilzing
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2562`
 
-### WARNING-991 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Illertissen - Unterhaching
+### WARNING-1031 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Illertissen - Unterhaching
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2615`
 
-### WARNING-992 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Furth 2 - Landsberg
+### WARNING-1032 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Furth 2 - Landsberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2628`
 
-### WARNING-993 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Eltersdorf - Norinberga 2
+### WARNING-1033 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Eltersdorf - Norinberga 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2633`
 
-### WARNING-994 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Burghausen - Schwaben Augsburg
+### WARNING-1034 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-14 | Burghausen - Schwaben Augsburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2634`
 
-### WARNING-995 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Bayreuth - Illertissen
+### WARNING-1035 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Bayreuth - Illertissen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4421`
 
-### WARNING-996 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Norinberga 2 - Burghausen
+### WARNING-1036 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Norinberga 2 - Burghausen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4445`
 
-### WARNING-997 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Schwaben Augsburg - Augsburg 2
+### WARNING-1037 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Schwaben Augsburg - Augsburg 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4462`
 
-### WARNING-998 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Ansbach - Buchbach
+### WARNING-1038 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Ansbach - Buchbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4508`
 
-### WARNING-999 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Landsberg - Eichstatt
+### WARNING-1039 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Landsberg - Eichstatt
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4514`
 
-### WARNING-1000 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Eltersdorf - Furth 2
+### WARNING-1040 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-08-21 | Eltersdorf - Furth 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4585`
 
-### WARNING-1001 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Burghausen - Landsberg
+### WARNING-1041 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Burghausen - Landsberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8069`
 
-### WARNING-1002 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Illertissen - Norinberga 2
+### WARNING-1042 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Illertissen - Norinberga 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8074`
 
-### WARNING-1003 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Monaco 1860 - Schwaben Augsburg
+### WARNING-1043 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Monaco 1860 - Schwaben Augsburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8087`
 
-### WARNING-1004 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Aubstadt - Unterhaching
+### WARNING-1044 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Aubstadt - Unterhaching
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8127`
 
-### WARNING-1005 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Buchbach - Bayern 2
+### WARNING-1045 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-11 | Buchbach - Bayern 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8149`
 
-### WARNING-1006 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Schweinfurt - Illertissen
+### WARNING-1046 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Schweinfurt - Illertissen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9422`
 
-### WARNING-1007 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Bayreuth - Aubstadt
+### WARNING-1047 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Bayreuth - Aubstadt
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9423`
 
-### WARNING-1008 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Memmingen - Burghausen
+### WARNING-1048 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Memmingen - Burghausen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9427`
 
-### WARNING-1009 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Furth 2 - Monaco 1860
+### WARNING-1049 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Furth 2 - Monaco 1860
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9450`
 
-### WARNING-1010 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Norinberga 2 - Schwaben Augsburg
+### WARNING-1050 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Norinberga 2 - Schwaben Augsburg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9451`
 
-### WARNING-1011 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Bayern 2 - Augsburg 2
+### WARNING-1051 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Bayern 2 - Augsburg 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9453`
 
-### WARNING-1012 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Vilzing - Ansbach
+### WARNING-1052 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Vilzing - Ansbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9477`
 
-### WARNING-1013 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Eltersdorf - Eichstatt
+### WARNING-1053 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-15 | Eltersdorf - Eichstatt
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9488`
 
-### WARNING-1014 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Burghausen - Augsburg 2
+### WARNING-1054 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Burghausen - Augsburg 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10631`
 
-### WARNING-1015 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Bayreuth - Unterhaching
+### WARNING-1055 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Bayreuth - Unterhaching
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10753`
 
-### WARNING-1016 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Ansbach - Eltersdorf
+### WARNING-1056 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Ansbach - Eltersdorf
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10813`
 
-### WARNING-1017 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Eichstatt - Furth 2
+### WARNING-1057 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Eichstatt - Furth 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10822`
 
-### WARNING-1018 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Schwaben Augsburg - Landsberg
+### WARNING-1058 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Schwaben Augsburg - Landsberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10826`
 
-### WARNING-1019 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Illertissen - Memmingen
+### WARNING-1059 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-09-19 | Illertissen - Memmingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10849`
 
-### WARNING-1020 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Buchbach - Augsburg 2
+### WARNING-1060 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Buchbach - Augsburg 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14418`
 
-### WARNING-1021 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Eltersdorf - Burghausen
+### WARNING-1061 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Eltersdorf - Burghausen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14426`
 
-### WARNING-1022 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Aubstadt - Illertissen
+### WARNING-1062 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Aubstadt - Illertissen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14429`
 
-### WARNING-1023 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Monaco 1860 - Bayreuth
+### WARNING-1063 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Monaco 1860 - Bayreuth
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14430`
 
-### WARNING-1024 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Schweinfurt - Ansbach
+### WARNING-1064 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Schweinfurt - Ansbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14451`
 
-### WARNING-1025 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Unterhaching - Landsberg
+### WARNING-1065 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Unterhaching - Landsberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14460`
 
-### WARNING-1026 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Eichstatt - Vilzing
+### WARNING-1066 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Eichstatt - Vilzing
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14465`
 
-### WARNING-1027 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Furth 2 - Memmingen
+### WARNING-1067 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-13 | Furth 2 - Memmingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14474`
 
-### WARNING-1028 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-15 | Emden - Eimsbutteler
+### WARNING-1068 · LAB_DUP_MATCH · Germany_Regionalliga_Bayern | 2026-10-27 | Norinberga 2 - Bayern 2
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17372`
+
+### WARNING-1069 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-15 | Emden - Eimsbutteler
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3035`
 
-### WARNING-1029 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-15 | VfB Oldenburg - Norderstedt
+### WARNING-1070 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-15 | VfB Oldenburg - Norderstedt
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3197`
 
-### WARNING-1030 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-15 | SC Weiche-08 - Jeddeloh
+### WARNING-1071 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-15 | SC Weiche-08 - Jeddeloh
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3366`
 
-### WARNING-1031 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-15 | Phonix Lubeck - VfB Lubeck
+### WARNING-1072 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-15 | Phonix Lubeck - VfB Lubeck
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3417`
 
-### WARNING-1032 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | Amburgo 2 - Drochtersen/Assel
+### WARNING-1073 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | Amburgo 2 - Drochtersen/Assel
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3668`
 
-### WARNING-1033 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | Schoningen - Todesfelde
+### WARNING-1074 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | Schoningen - Todesfelde
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3760`
 
-### WARNING-1034 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | St. Pauli 2 - Brema 2
+### WARNING-1075 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | St. Pauli 2 - Brema 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3790`
 
-### WARNING-1035 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | Hannover 2 - Delmenhorst
+### WARNING-1076 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | Hannover 2 - Delmenhorst
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3819`
 
-### WARNING-1036 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | Bremer - Hannoverscher SC
+### WARNING-1077 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-16 | Bremer - Hannoverscher SC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3883`
 
-### WARNING-1037 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-21 | Amburgo 2 - Eimsbutteler
+### WARNING-1078 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-08-21 | Amburgo 2 - Eimsbutteler
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4362`
 
-### WARNING-1038 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-09-11 | SC Weiche-08 - Amburgo 2
+### WARNING-1079 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-09-11 | SC Weiche-08 - Amburgo 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7989`
 
-### WARNING-1039 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-09-11 | Delmenhorst - Drochtersen/Assel
+### WARNING-1080 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-09-11 | Delmenhorst - Drochtersen/Assel
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8010`
 
-### WARNING-1040 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-09-11 | VfB Oldenburg - Hannover 2
+### WARNING-1081 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-09-11 | VfB Oldenburg - Hannover 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8040`
 
-### WARNING-1041 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-09-15 | Drochtersen/Assel - Emden
+### WARNING-1082 · LAB_DUP_MATCH · Germany_Regionalliga_Nord | 2026-09-15 | Drochtersen/Assel - Emden
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('8', '2', 'OK'), attuali=('8', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9405`
 
-### WARNING-1042 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-14 | Hertha 2 - BFC Dynamo
+### WARNING-1083 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-14 | Hertha 2 - BFC Dynamo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2511`
 
-### WARNING-1043 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-14 | Zwickau - Luckenwalde
+### WARNING-1084 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-14 | Zwickau - Luckenwalde
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2565`
 
-### WARNING-1044 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-14 | Babelsberg - RSV Eintracht
+### WARNING-1085 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-14 | Babelsberg - RSV Eintracht
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2594`
 
-### WARNING-1045 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-14 | Chemie Leipzig - Jena
+### WARNING-1086 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-14 | Chemie Leipzig - Jena
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2637`
 
-### WARNING-1046 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-15 | Erfurt - Magdeburg 2
+### WARNING-1087 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-15 | Erfurt - Magdeburg 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3081`
 
-### WARNING-1047 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-15 | BFC Preussen - Greifswald
+### WARNING-1088 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-15 | BFC Preussen - Greifswald
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3112`
 
-### WARNING-1048 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-15 | Chemnitzer - Aue
+### WARNING-1089 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-15 | Chemnitzer - Aue
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3323`
 
-### WARNING-1049 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-16 | Tasmania Berlin - Lokomotive Leipzig
+### WARNING-1090 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-16 | Tasmania Berlin - Lokomotive Leipzig
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3722`
 
-### WARNING-1050 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-16 | Altglienicke - Hallescher
+### WARNING-1091 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-08-16 | Altglienicke - Hallescher
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3772`
 
-### WARNING-1051 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-11 | Erfurt - RSV Eintracht
+### WARNING-1092 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-11 | Erfurt - RSV Eintracht
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8013`
 
-### WARNING-1052 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-11 | Altglienicke - Chemnitzer
+### WARNING-1093 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-11 | Altglienicke - Chemnitzer
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8072`
 
-### WARNING-1053 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-15 | Zwickau - Altglienicke
+### WARNING-1094 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-15 | Zwickau - Altglienicke
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9443`
 
-### WARNING-1054 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-15 | Hertha 2 - Erfurt
+### WARNING-1095 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-15 | Hertha 2 - Erfurt
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9456`
 
-### WARNING-1055 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-15 | Luckenwalde - BFC Preussen
+### WARNING-1096 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-15 | Luckenwalde - BFC Preussen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9468`
 
-### WARNING-1056 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-15 | Hallescher - Jena
+### WARNING-1097 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-15 | Hallescher - Jena
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9502`
 
-### WARNING-1057 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-19 | Erfurt - Aue
+### WARNING-1098 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-19 | Erfurt - Aue
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10661`
 
-### WARNING-1058 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-19 | Altglienicke - RSV Eintracht
+### WARNING-1099 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-19 | Altglienicke - RSV Eintracht
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10673`
 
-### WARNING-1059 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-19 | BFC Preussen - Tasmania Berlin
+### WARNING-1100 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-19 | BFC Preussen - Tasmania Berlin
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10738`
 
-### WARNING-1060 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-19 | Babelsberg - Hertha 2
+### WARNING-1101 · LAB_DUP_MATCH · Germany_Regionalliga_Nordost | 2026-09-19 | Babelsberg - Hertha 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10782`
 
-### WARNING-1061 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-01 | Kassel - Trier
+### WARNING-1102 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-01 | Kassel - Trier
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6433`
 
-### WARNING-1062 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-11 | Freiburg 2 - Sandhausen
+### WARNING-1103 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-11 | Freiburg 2 - Sandhausen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8036`
 
-### WARNING-1063 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-11 | Kassel - Offenbach
+### WARNING-1104 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-11 | Kassel - Offenbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8081`
 
-### WARNING-1064 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Mainz 2 - Kaiserslautern 2
+### WARNING-1105 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Mainz 2 - Kaiserslautern 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10651`
 
-### WARNING-1065 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Eint. Frankfurt 2 - Steinbach Haiger
+### WARNING-1106 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Eint. Frankfurt 2 - Steinbach Haiger
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10659`
 
-### WARNING-1066 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Fulda-Lehnerz - Freiburg 2
+### WARNING-1107 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Fulda-Lehnerz - Freiburg 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10690`
 
-### WARNING-1067 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Homburg - Kassel
+### WARNING-1108 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Homburg - Kassel
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10697`
 
-### WARNING-1068 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Sandhausen - Ulm
+### WARNING-1109 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Sandhausen - Ulm
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10713`
 
-### WARNING-1069 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Walldorf - VfR Mannheim
+### WARNING-1110 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Walldorf - VfR Mannheim
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10796`
 
-### WARNING-1070 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Aalen - Freiberg
+### WARNING-1111 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-09-19 | Aalen - Freiberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10828`
 
-### WARNING-1071 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-14 | Westfalia Rhynern - Wiedenbruck
+### WARNING-1112 · LAB_DUP_MATCH · Germany_Regionalliga_Sudwest | 2026-10-27 | Freiburg 2 - Eint. Frankfurt 2
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17340`
+
+### WARNING-1113 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-14 | Westfalia Rhynern - Wiedenbruck
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2461`
 
-### WARNING-1072 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-14 | Schalke 2 - Siegen
+### WARNING-1114 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-14 | Schalke 2 - Siegen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2467`
 
-### WARNING-1073 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-14 | Bergisch Gladbach - Dortmund 2
+### WARNING-1115 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-14 | Bergisch Gladbach - Dortmund 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2625`
 
-### WARNING-1074 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-14 | Bonner - Lotte
+### WARNING-1116 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-14 | Bonner - Lotte
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2630`
 
-### WARNING-1075 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-15 | Rodinghausen - Paderborn 2
+### WARNING-1117 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-15 | Rodinghausen - Paderborn 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3109`
 
-### WARNING-1076 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-15 | Monchengladbach 2 - Bocholt
+### WARNING-1118 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-15 | Monchengladbach 2 - Bocholt
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3333`
 
-### WARNING-1077 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-15 | Bochum 2 - Oberhausen
+### WARNING-1119 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-15 | Bochum 2 - Oberhausen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3365`
 
-### WARNING-1078 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-15 | Hilden - Wattenscheid
+### WARNING-1120 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-15 | Hilden - Wattenscheid
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3414`
 
-### WARNING-1079 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-16 | Colonia 2 - FC Gutersloh
+### WARNING-1121 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-16 | Colonia 2 - FC Gutersloh
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3854`
 
-### WARNING-1080 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-21 | Wattenscheid - Schalke 2
+### WARNING-1122 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-21 | Wattenscheid - Schalke 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4408`
 
-### WARNING-1081 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-21 | Siegen - Monchengladbach 2
+### WARNING-1123 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-08-21 | Siegen - Monchengladbach 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4465`
 
-### WARNING-1082 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | Bocholt - Bonner
+### WARNING-1124 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | Bocholt - Bonner
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6424`
 
-### WARNING-1083 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | Oberhausen - Westfalia Rhynern
+### WARNING-1125 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | Oberhausen - Westfalia Rhynern
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6430`
 
-### WARNING-1084 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | Bochum 2 - Colonia 2
+### WARNING-1126 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | Bochum 2 - Colonia 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6443`
 
-### WARNING-1085 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | Dortmund 2 - Schalke 2
+### WARNING-1127 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | Dortmund 2 - Schalke 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6444`
 
-### WARNING-1086 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | FC Gutersloh - Hilden
+### WARNING-1128 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-01 | FC Gutersloh - Hilden
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6463`
 
-### WARNING-1087 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-11 | Oberhausen - Schalke 2
+### WARNING-1129 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-11 | Oberhausen - Schalke 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7985`
 
-### WARNING-1088 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-19 | Bocholt - Wiedenbruck
+### WARNING-1130 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-19 | Bocholt - Wiedenbruck
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10585`
 
-### WARNING-1089 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-19 | Bonner - Bergisch Gladbach
+### WARNING-1131 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-19 | Bonner - Bergisch Gladbach
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10625`
 
-### WARNING-1090 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-19 | Westfalia Rhynern - Colonia 2
+### WARNING-1132 · LAB_DUP_MATCH · Germany_Regionalliga_West | 2026-09-19 | Westfalia Rhynern - Colonia 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10639`
 
-### WARNING-1091 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-14 | Honved - Vasas
+### WARNING-1133 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-14 | Honved - Vasas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2532`
 
-### WARNING-1092 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-15 | Ujpest - MTK Budapest
+### WARNING-1134 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-15 | Ujpest - MTK Budapest
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3034`
 
-### WARNING-1093 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-15 | Nyiregyhaza - Kisvarda
+### WARNING-1135 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-15 | Nyiregyhaza - Kisvarda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3326`
 
-### WARNING-1094 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-16 | Puskas Academy - Paks
+### WARNING-1136 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-16 | Puskas Academy - Paks
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3742`
 
-### WARNING-1095 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-16 | Debrecen - Győr
+### WARNING-1137 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-16 | Debrecen - Győr
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3806`
 
-### WARNING-1096 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-21 | Paks - Ujpest
+### WARNING-1138 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-21 | Paks - Ujpest
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4361`
 
-### WARNING-1097 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-30 | Puskas Academy - Ferencvaros
+### WARNING-1139 · LAB_DUP_MATCH · Hungary_NBI | 2026-08-30 | Puskas Academy - Ferencvaros
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6262`
 
-### WARNING-1098 · LAB_DUP_MATCH · Hungary_NBI | 2026-09-19 | Kisvarda - Paks
+### WARNING-1140 · LAB_DUP_MATCH · Hungary_NBI | 2026-09-19 | Kisvarda - Paks
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10722`
 
-### WARNING-1099 · LAB_DUP_MATCH · Hungary_NBI | 2026-09-19 | Debrecen - Vasas
+### WARNING-1141 · LAB_DUP_MATCH · Hungary_NBI | 2026-09-19 | Debrecen - Vasas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10752`
 
-### WARNING-1100 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Nagykanizsa - Soroksar
+### WARNING-1142 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Nagykanizsa - Soroksar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3155`
 
-### WARNING-1101 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Kazincbarcika - Kozarmisleny
+### WARNING-1143 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Kazincbarcika - Kozarmisleny
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3219`
 
-### WARNING-1102 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Kecskemeti - Videoton
+### WARNING-1144 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Kecskemeti - Videoton
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3289`
 
-### WARNING-1103 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | DVTK - Ajka
+### WARNING-1145 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | DVTK - Ajka
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3299`
 
-### WARNING-1104 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Szeged - Gyirmot
+### WARNING-1146 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Szeged - Gyirmot
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3334`
 
-### WARNING-1105 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Mezokovesd - BVSC-Zuglo
+### WARNING-1147 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-15 | Mezokovesd - BVSC-Zuglo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3423`
 
-### WARNING-1106 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-16 | Karcagi - Tiszakecske
+### WARNING-1148 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-16 | Karcagi - Tiszakecske
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3896`
 
-### WARNING-1107 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-16 | Szentlorinc - Csakvari
+### WARNING-1149 · LAB_DUP_MATCH · Hungary_NBII | 2026-08-16 | Szentlorinc - Csakvari
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3898`
 
-### WARNING-1108 · LAB_DUP_MATCH · Hungary_NBII | 2026-10-13 | DVTK - Szentlorinc
+### WARNING-1150 · LAB_DUP_MATCH · Hungary_NBII | 2026-10-13 | DVTK - Szentlorinc
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14473`
 
-### WARNING-1109 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-08-15 | Thor Akureyri - Keflavik
+### WARNING-1151 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-08-15 | Thor Akureyri - Keflavik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3199`
 
-### WARNING-1110 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-08-16 | KR Reykjavik - Breidablik
+### WARNING-1152 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-08-16 | KR Reykjavik - Breidablik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3693`
 
-### WARNING-1111 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-08-16 | Vestmannaeyjar - Akranes
+### WARNING-1153 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-08-16 | Vestmannaeyjar - Akranes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3723`
 
-### WARNING-1112 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-08-16 | Hafnarfjordur - Vikingur Reykjavik
+### WARNING-1154 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-08-16 | Hafnarfjordur - Vikingur Reykjavik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3786`
 
-### WARNING-1113 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-09-01 | KR Reykjavik - Vikingur Reykjavik
+### WARNING-1155 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-09-01 | KR Reykjavik - Vikingur Reykjavik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6426`
 
-### WARNING-1114 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-09-14 | Vikingur Reykjavik - Keflavik
+### WARNING-1156 · LAB_DUP_MATCH · Iceland_BestaDeildKarla | 2026-09-14 | Vikingur Reykjavik - Keflavik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9537`
 
-### WARNING-1115 · LAB_DUP_MATCH · Iceland_BestaDeildKvenna | 2026-09-19 | Valur D - Thor/KA D
+### WARNING-1157 · LAB_DUP_MATCH · Iceland_BestaDeildKvenna | 2026-09-19 | Valur D - Thor/KA D
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10797`
 
-### WARNING-1116 · LAB_DUP_MATCH · Iceland_Division_1 | 2026-08-21 | Grotta - IR Reykjavik
+### WARNING-1158 · LAB_DUP_MATCH · Iceland_Division_1 | 2026-08-21 | Grotta - IR Reykjavik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4398`
 
-### WARNING-1117 · LAB_DUP_MATCH · Iceland_Division_1 | 2026-08-21 | Aegir - Afturelding
+### WARNING-1159 · LAB_DUP_MATCH · Iceland_Division_1 | 2026-08-21 | Aegir - Afturelding
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4403`
 
-### WARNING-1118 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-09 | Kormakur/Hvot - Throttur Vogar
+### WARNING-1160 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-09 | Kormakur/Hvot - Throttur Vogar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2132`
 
-### WARNING-1119 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-14 | Haukar - Hviti
+### WARNING-1161 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-14 | Haukar - Hviti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2496`
 
-### WARNING-1120 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | Selfoss - Fjolnir
+### WARNING-1162 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | Selfoss - Fjolnir
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '2', 'OK'), attuali=('6', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3043`
 
-### WARNING-1121 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | KFG Gardabaer - KFA
+### WARNING-1163 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | KFG Gardabaer - KFA
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3108`
 
-### WARNING-1122 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | Throttur Vogar - Dalvik/Reynir
+### WARNING-1164 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | Throttur Vogar - Dalvik/Reynir
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3144`
 
-### WARNING-1123 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | Magni - Kormakur/Hvot
+### WARNING-1165 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | Magni - Kormakur/Hvot
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3215`
 
-### WARNING-1124 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | Kari - Olafsvik
+### WARNING-1166 · LAB_DUP_MATCH · Iceland_Division_2 | 2026-08-15 | Kari - Olafsvik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3260`
 
-### WARNING-1125 · LAB_REGISTRY · Indonesia_Championship | 2026-09-25 | Balikpapan - Dejan
+### WARNING-1167 · LAB_REGISTRY · Indonesia_Championship | 2026-09-25 | Balikpapan - Dejan
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11490`
 
-### WARNING-1126 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | Persikad Depok - Persiraja Aceh
+### WARNING-1168 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | Persikad Depok - Persiraja Aceh
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11615`
 
-### WARNING-1127 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | Sumsel United - PSPS Riau
+### WARNING-1169 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | Sumsel United - PSPS Riau
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11618`
 
-### WARNING-1128 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | Tornado Pekanbaru - Barito Putera
+### WARNING-1170 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | Tornado Pekanbaru - Barito Putera
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11838`
 
-### WARNING-1129 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | Persipura - Persis Solo
+### WARNING-1171 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | Persipura - Persis Solo
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11876`
 
-### WARNING-1130 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | PSGC Ciamis - Padang
+### WARNING-1172 · LAB_REGISTRY · Indonesia_Championship | 2026-09-26 | PSGC Ciamis - Padang
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11893`
 
-### WARNING-1131 · LAB_REGISTRY · Indonesia_Championship | 2026-09-27 | Bekasi City - PSMS Medan
+### WARNING-1173 · LAB_REGISTRY · Indonesia_Championship | 2026-09-27 | Bekasi City - PSMS Medan
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11936`
 
-### WARNING-1132 · LAB_REGISTRY · Indonesia_Championship | 2026-10-02 | Dejan - Persipura
+### WARNING-1174 · LAB_REGISTRY · Indonesia_Championship | 2026-10-02 | Dejan - Persipura
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12266`
 
-### WARNING-1133 · LAB_REGISTRY · Indonesia_Championship | 2026-10-02 | Persiraja Aceh - Sumsel United
+### WARNING-1175 · LAB_REGISTRY · Indonesia_Championship | 2026-10-02 | Persiraja Aceh - Sumsel United
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12270`
 
-### WARNING-1134 · LAB_REGISTRY · Indonesia_Championship | 2026-10-03 | PSBS Biak Numfor - RANS Nusantara
+### WARNING-1176 · LAB_REGISTRY · Indonesia_Championship | 2026-10-03 | PSBS Biak Numfor - RANS Nusantara
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12322`
 
-### WARNING-1135 · LAB_REGISTRY · Indonesia_Championship | 2026-10-03 | PSMS Medan - Persikad Depok
+### WARNING-1177 · LAB_REGISTRY · Indonesia_Championship | 2026-10-03 | PSMS Medan - Persikad Depok
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12366`
 
-### WARNING-1136 · LAB_REGISTRY · Indonesia_Championship | 2026-10-03 | PSIS Semarang - Bekasi City
+### WARNING-1178 · LAB_REGISTRY · Indonesia_Championship | 2026-10-03 | PSIS Semarang - Bekasi City
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12647`
 
-### WARNING-1137 · LAB_REGISTRY · Indonesia_Championship | 2026-10-03 | Persis Solo - Tornado Pekanbaru
+### WARNING-1179 · LAB_REGISTRY · Indonesia_Championship | 2026-10-03 | Persis Solo - Tornado Pekanbaru
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12671`
 
-### WARNING-1138 · LAB_REGISTRY · Indonesia_Championship | 2026-10-04 | Sidoarjo - Balikpapan
+### WARNING-1180 · LAB_REGISTRY · Indonesia_Championship | 2026-10-04 | Sidoarjo - Balikpapan
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12758`
 
-### WARNING-1139 · LAB_REGISTRY · Indonesia_Championship | 2026-10-04 | Barito Putera - Persela
+### WARNING-1181 · LAB_REGISTRY · Indonesia_Championship | 2026-10-04 | Barito Putera - Persela
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12799`
 
-### WARNING-1140 · LAB_REGISTRY · Indonesia_Championship | 2026-10-04 | Padang - PSPS Riau
+### WARNING-1182 · LAB_REGISTRY · Indonesia_Championship | 2026-10-04 | Padang - PSPS Riau
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:12865`
 
-### WARNING-1141 · LAB_REGISTRY · Indonesia_Championship | 2026-10-09 | Persipura - RANS Nusantara
+### WARNING-1183 · LAB_REGISTRY · Indonesia_Championship | 2026-10-09 | Persipura - RANS Nusantara
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:13027`
 
-### WARNING-1142 · LAB_REGISTRY · Indonesia_Championship | 2026-10-09 | PSIS Semarang - Persiraja Aceh
+### WARNING-1184 · LAB_REGISTRY · Indonesia_Championship | 2026-10-09 | PSIS Semarang - Persiraja Aceh
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:13114`
 
-### WARNING-1143 · LAB_REGISTRY · Indonesia_Championship | 2026-10-10 | Tornado Pekanbaru - PSBS Biak Numfor
+### WARNING-1185 · LAB_REGISTRY · Indonesia_Championship | 2026-10-10 | Tornado Pekanbaru - PSBS Biak Numfor
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:13628`
 
-### WARNING-1144 · LAB_REGISTRY · Indonesia_Championship | 2026-10-10 | Barito Putera - Balikpapan
+### WARNING-1186 · LAB_REGISTRY · Indonesia_Championship | 2026-10-10 | Barito Putera - Balikpapan
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:13702`
 
-### WARNING-1145 · LAB_REGISTRY · Indonesia_Championship | 2026-10-11 | PSPS Riau - PSMS Medan
+### WARNING-1187 · LAB_REGISTRY · Indonesia_Championship | 2026-10-11 | PSPS Riau - PSMS Medan
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14037`
 
-### WARNING-1146 · LAB_REGISTRY · Indonesia_Championship | 2026-10-11 | Persikad Depok - Padang
+### WARNING-1188 · LAB_REGISTRY · Indonesia_Championship | 2026-10-11 | Persikad Depok - Padang
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14196`
 
-### WARNING-1147 · LAB_REGISTRY · Indonesia_Championship | 2026-10-11 | Persis Solo - Dejan
+### WARNING-1189 · LAB_REGISTRY · Indonesia_Championship | 2026-10-11 | Persis Solo - Dejan
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14205`
 
-### WARNING-1148 · LAB_REGISTRY · Indonesia_Championship | 2026-10-11 | Persela - Sidoarjo
+### WARNING-1190 · LAB_REGISTRY · Indonesia_Championship | 2026-10-11 | Persela - Sidoarjo
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14207`
 
-### WARNING-1149 · LAB_REGISTRY · Indonesia_Championship | 2026-10-16 | Balikpapan - Tornado Pekanbaru
+### WARNING-1191 · LAB_REGISTRY · Indonesia_Championship | 2026-10-16 | Balikpapan - Tornado Pekanbaru
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14746`
 
-### WARNING-1150 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | PSBS Biak Numfor - Persipura
+### WARNING-1192 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | PSBS Biak Numfor - Persipura
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14954`
 
-### WARNING-1151 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | RANS Nusantara - Persela
+### WARNING-1193 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | RANS Nusantara - Persela
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
 - Sorgente: `analysis\laboratory\data\01_matches.csv:15044`
 
-### WARNING-1152 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | Persiraja Aceh - Bekasi City
+### WARNING-1194 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | Persiraja Aceh - Bekasi City
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
-- Sorgente: `analysis\laboratory\data\01_matches.csv:15247`
+- Sorgente: `analysis\laboratory\data\01_matches.csv:15248`
 
-### WARNING-1153 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | Padang - PSMS Medan
+### WARNING-1195 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | Padang - PSMS Medan
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
-- Sorgente: `analysis\laboratory\data\01_matches.csv:15258`
+- Sorgente: `analysis\laboratory\data\01_matches.csv:15259`
 
-### WARNING-1154 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | PSGC Ciamis - PSIS Semarang
+### WARNING-1196 · LAB_REGISTRY · Indonesia_Championship | 2026-10-17 | PSGC Ciamis - PSIS Semarang
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
-- Sorgente: `analysis\laboratory\data\01_matches.csv:15283`
+- Sorgente: `analysis\laboratory\data\01_matches.csv:15284`
 
-### WARNING-1155 · LAB_REGISTRY · Indonesia_Championship | 2026-10-18 | Sumsel United - Persikad Depok
+### WARNING-1197 · LAB_REGISTRY · Indonesia_Championship | 2026-10-18 | Sumsel United - Persikad Depok
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
-- Sorgente: `analysis\laboratory\data\01_matches.csv:15341`
+- Sorgente: `analysis\laboratory\data\01_matches.csv:15342`
 
-### WARNING-1156 · LAB_REGISTRY · Indonesia_Championship | 2026-10-18 | PSPS Riau - Persiku Kudus
+### WARNING-1198 · LAB_REGISTRY · Indonesia_Championship | 2026-10-18 | PSPS Riau - Persiku Kudus
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
-- Sorgente: `analysis\laboratory\data\01_matches.csv:15382`
+- Sorgente: `analysis\laboratory\data\01_matches.csv:15383`
 
-### WARNING-1157 · LAB_REGISTRY · Indonesia_Championship | 2026-10-18 | Sidoarjo - Persis Solo
+### WARNING-1199 · LAB_REGISTRY · Indonesia_Championship | 2026-10-18 | Sidoarjo - Persis Solo
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
-- Sorgente: `analysis\laboratory\data\01_matches.csv:15686`
+- Sorgente: `analysis\laboratory\data\01_matches.csv:15687`
 
-### WARNING-1158 · LAB_REGISTRY · Indonesia_Championship | 2026-10-18 | De Red - Barito Putera
+### WARNING-1200 · LAB_REGISTRY · Indonesia_Championship | 2026-10-18 | De Red - Barito Putera
 - Area: `laboratory`
 - Dettaglio: LeagueId del Laboratory assente dal registry.
-- Sorgente: `analysis\laboratory\data\01_matches.csv:15732`
+- Sorgente: `analysis\laboratory\data\01_matches.csv:15733`
 
-### WARNING-1159 · LAB_DUP_MATCH · Indonesia_SuperLeague | 2026-09-19 | PSM Makassar - Persita
+### WARNING-1201 · LAB_DUP_MATCH · Indonesia_SuperLeague | 2026-09-19 | PSM Makassar - Persita
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10626`
 
-### WARNING-1160 · LAB_DUP_MATCH · Indonesia_SuperLeague | 2026-09-19 | Persebaya - Garudayaksa
+### WARNING-1202 · LAB_DUP_MATCH · Indonesia_SuperLeague | 2026-09-19 | Persebaya - Garudayaksa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10871`
 
-### WARNING-1161 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-11 | Venezia - Fiorentina
+### WARNING-1203 · LAB_DUP_MATCH · Indonesia_SuperLeague | 2026-10-27 | PSS Sleman - Borneo
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17336`
+
+### WARNING-1204 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-11 | Venezia - Fiorentina
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8161`
 
-### WARNING-1162 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-14 | Inter - Udinese
+### WARNING-1205 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-14 | Inter - Udinese
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '3', 'OK'), attuali=('5', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9523`
 
-### WARNING-1163 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-14 | Como - Parma
+### WARNING-1206 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-14 | Como - Parma
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9544`
 
-### WARNING-1164 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-14 | Torino - Roma
+### WARNING-1207 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-14 | Torino - Roma
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9563`
 
-### WARNING-1165 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-19 | Udinese - Cagliari
+### WARNING-1208 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-19 | Udinese - Cagliari
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10667`
 
-### WARNING-1166 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-19 | Roma - Inter
+### WARNING-1209 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-19 | Roma - Inter
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10728`
 
-### WARNING-1167 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-19 | Venezia - Lazio
+### WARNING-1210 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-19 | Venezia - Lazio
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10784`
 
-### WARNING-1168 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-19 | Bologna - Torino
+### WARNING-1211 · LAB_DUP_MATCH · Italy_SerieA | 2026-09-19 | Bologna - Torino
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10817`
 
-### WARNING-1169 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-11 | Pisa - Entella
+### WARNING-1212 · LAB_DUP_MATCH · Italy_SerieA | 2026-10-27 | Sassuolo - Lazio
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '6', 'OK'), attuali=('2', '6', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17337`
+
+### WARNING-1213 · LAB_DUP_MATCH · Italy_SerieA | 2026-10-27 | Torino - Como
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17348`
+
+### WARNING-1214 · LAB_DUP_MATCH · Italy_SerieA | 2026-10-27 | Roma - Cagliari
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17380`
+
+### WARNING-1215 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-11 | Pisa - Entella
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8089`
 
-### WARNING-1170 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-11 | Empoli - Arezzo
+### WARNING-1216 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-11 | Empoli - Arezzo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8112`
 
-### WARNING-1171 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-11 | Benevento - Verona
+### WARNING-1217 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-11 | Benevento - Verona
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8183`
 
-### WARNING-1172 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Cremonese - Entella
+### WARNING-1218 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Cremonese - Entella
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10576`
 
-### WARNING-1173 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Sampdoria - Catanzaro
+### WARNING-1219 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Sampdoria - Catanzaro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10818`
 
-### WARNING-1174 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Palermo - Padova
+### WARNING-1220 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Palermo - Padova
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10823`
 
-### WARNING-1175 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Ascoli - Avellino
+### WARNING-1221 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Ascoli - Avellino
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10867`
 
-### WARNING-1176 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Carrarese - Benevento
+### WARNING-1222 · LAB_DUP_MATCH · Italy_SerieB | 2026-09-19 | Carrarese - Benevento
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10869`
 
-### WARNING-1177 · LAB_DUP_MATCH · Italy_SerieC_GironeA | 2026-10-13 | Juventus U23 - Lumezzane
+### WARNING-1223 · LAB_DUP_MATCH · Italy_SerieB | 2026-10-27 | L.R. Vicenza - Modena
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17331`
+
+### WARNING-1224 · LAB_DUP_MATCH · Italy_SerieB | 2026-10-27 | Benevento - Catanzaro
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17338`
+
+### WARNING-1225 · LAB_DUP_MATCH · Italy_SerieB | 2026-10-27 | Ascoli - Sampdoria
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17368`
+
+### WARNING-1226 · LAB_DUP_MATCH · Italy_SerieB | 2026-10-27 | Mantova - Cremonese
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17374`
+
+### WARNING-1227 · LAB_DUP_MATCH · Italy_SerieB | 2026-10-27 | Entella - Avellino
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17378`
+
+### WARNING-1228 · LAB_DUP_MATCH · Italy_SerieB | 2026-10-27 | Cesena - Empoli
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17383`
+
+### WARNING-1229 · LAB_DUP_MATCH · Italy_SerieB | 2026-10-27 | Padova - Südtirol
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17385`
+
+### WARNING-1230 · LAB_DUP_MATCH · Italy_SerieC_GironeA | 2026-10-13 | Juventus U23 - Lumezzane
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14435`
 
-### WARNING-1178 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-11 | Casarano - Barletta
+### WARNING-1231 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-11 | Casarano - Barletta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7992`
 
-### WARNING-1179 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-11 | Audace Cerignola - Giugliano
+### WARNING-1232 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-11 | Audace Cerignola - Giugliano
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8119`
 
-### WARNING-1180 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-11 | Salernitana - Potenza
+### WARNING-1233 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-11 | Salernitana - Potenza
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8133`
 
-### WARNING-1181 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-11 | Altamura - Bari
+### WARNING-1234 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-11 | Altamura - Bari
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8189`
 
-### WARNING-1182 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Casarano - Audace Cerignola
+### WARNING-1235 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Casarano - Audace Cerignola
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9431`
 
-### WARNING-1183 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Barletta - Salernitana
+### WARNING-1236 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Barletta - Salernitana
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9434`
 
-### WARNING-1184 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Picerno - Catania
+### WARNING-1237 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Picerno - Catania
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9449`
 
-### WARNING-1185 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Casertana - Altamura
+### WARNING-1238 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Casertana - Altamura
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9461`
 
-### WARNING-1186 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Crotone - Inter U23
+### WARNING-1239 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Crotone - Inter U23
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9462`
 
-### WARNING-1187 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Bari - Potenza
+### WARNING-1240 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Bari - Potenza
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9478`
 
-### WARNING-1188 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Giugliano - Cosenza
+### WARNING-1241 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Giugliano - Cosenza
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9482`
 
-### WARNING-1189 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Cavese - Sorrento
+### WARNING-1242 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Cavese - Sorrento
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9491`
 
-### WARNING-1190 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Foggia - Savoia
+### WARNING-1243 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Foggia - Savoia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9508`
 
-### WARNING-1191 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Scafatese - Monopoli
+### WARNING-1244 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-09-15 | Scafatese - Monopoli
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9510`
 
-### WARNING-1192 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-10-13 | Giugliano - Inter U23
+### WARNING-1245 · LAB_DUP_MATCH · Italy_SerieC_GironeC | 2026-10-13 | Giugliano - Inter U23
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14442`
 
-### WARNING-1193 · LAB_DUP_MATCH · Japan_J1League | 2026-08-21 | Tokyo - Chiba
+### WARNING-1246 · LAB_DUP_MATCH · Japan_J1League | 2026-08-21 | Tokyo - Chiba
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4406`
 
-### WARNING-1194 · LAB_DUP_MATCH · Japan_J1League | 2026-08-21 | Kashiwa - V-Varen Nagasaki
+### WARNING-1247 · LAB_DUP_MATCH · Japan_J1League | 2026-08-21 | Kashiwa - V-Varen Nagasaki
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4472`
 
-### WARNING-1195 · LAB_DUP_MATCH · Japan_J1League | 2026-09-11 | Kyoto - Kashiwa
+### WARNING-1248 · LAB_DUP_MATCH · Japan_J1League | 2026-09-11 | Kyoto - Kashiwa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8077`
 
-### WARNING-1196 · LAB_DUP_MATCH · Japan_J1League | 2026-09-11 | Kobe - Kashima
+### WARNING-1249 · LAB_DUP_MATCH · Japan_J1League | 2026-09-11 | Kobe - Kashima
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8158`
 
-### WARNING-1197 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-07-31 | FC Astana 2 - Arys
+### WARNING-1250 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-07-31 | FC Astana 2 - Arys
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1363`
 
-### WARNING-1198 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-07-31 | Tobol 2 - Shakhter K.
+### WARNING-1251 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-07-31 | Tobol 2 - Shakhter K.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1373`
 
-### WARNING-1199 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-07-31 | Kairat Almaty 2 - Jaiyq
+### WARNING-1252 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-07-31 | Kairat Almaty 2 - Jaiyq
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1403`
 
-### WARNING-1200 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-14 | Khan Tengri - Arys
+### WARNING-1253 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-14 | Khan Tengri - Arys
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2558`
 
-### WARNING-1201 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-14 | Taraz - Turan
+### WARNING-1254 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-14 | Taraz - Turan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2559`
 
-### WARNING-1202 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-14 | Kaspij Aktau 2 - Yelimay Semey 2
+### WARNING-1255 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-14 | Kaspij Aktau 2 - Yelimay Semey 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2589`
 
-### WARNING-1203 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-14 | FC Batyr - Jaiyq
+### WARNING-1256 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-14 | FC Batyr - Jaiyq
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2607`
 
-### WARNING-1204 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-21 | Turan - Kairat Almaty 2
+### WARNING-1257 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-21 | Turan - Kairat Almaty 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4464`
 
-### WARNING-1205 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-21 | Shakhter K. - FC Astana 2
+### WARNING-1258 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-21 | Shakhter K. - FC Astana 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4469`
 
-### WARNING-1206 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-21 | Jaiyq - Kaspij Aktau 2
+### WARNING-1259 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-08-21 | Jaiyq - Kaspij Aktau 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4519`
 
-### WARNING-1207 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-09-11 | FC Batyr - Tobol 2
+### WARNING-1260 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-09-11 | FC Batyr - Tobol 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '5', 'OK'), attuali=('1', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8022`
 
-### WARNING-1208 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-09-11 | Kaspij Aktau 2 - Arys
+### WARNING-1261 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-09-11 | Kaspij Aktau 2 - Arys
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8118`
 
-### WARNING-1209 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-09-11 | Taraz - Khan Tengri
+### WARNING-1262 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-09-11 | Taraz - Khan Tengri
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8128`
 
-### WARNING-1210 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-09-11 | Jaiyq - Shakhter K.
+### WARNING-1263 · LAB_DUP_MATCH · Kazakhstan_FirstLeague | 2026-09-11 | Jaiyq - Shakhter K.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8176`
 
-### WARNING-1211 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-09 | FC Astana - Okzhetpes
+### WARNING-1264 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-09 | FC Astana - Okzhetpes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2161`
 
-### WARNING-1212 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-09 | Yelimay Semey - Ertis Pavlodar
+### WARNING-1265 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-09 | Yelimay Semey - Ertis Pavlodar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2169`
 
-### WARNING-1213 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-09 | Atyrau - Aktobe
+### WARNING-1266 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-09 | Atyrau - Aktobe
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2174`
 
-### WARNING-1214 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-09 | Tobol - Kaisar
+### WARNING-1267 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-09 | Tobol - Kaisar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2176`
 
-### WARNING-1215 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-15 | Ordabasy - Altai
+### WARNING-1268 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-15 | Ordabasy - Altai
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3309`
 
-### WARNING-1216 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-15 | Kairat Almaty - Ulytau
+### WARNING-1269 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-15 | Kairat Almaty - Ulytau
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3370`
 
-### WARNING-1217 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-15 | Zhenis - Zhetysu
+### WARNING-1270 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-15 | Zhenis - Zhetysu
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3371`
 
-### WARNING-1218 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-15 | Kaisar - Aktobe
+### WARNING-1271 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-15 | Kaisar - Aktobe
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3375`
 
-### WARNING-1219 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-16 | Kyzylzhar - FC Astana
+### WARNING-1272 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-16 | Kyzylzhar - FC Astana
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3831`
 
-### WARNING-1220 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-16 | Kaspij Aktau - Yelimay Semey
+### WARNING-1273 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-16 | Kaspij Aktau - Yelimay Semey
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3837`
 
-### WARNING-1221 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-16 | Atyrau - Okzhetpes
+### WARNING-1274 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-16 | Atyrau - Okzhetpes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3857`
 
-### WARNING-1222 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-16 | Ertis Pavlodar - Tobol
+### WARNING-1275 · LAB_DUP_MATCH · Kazakhstan_PremierLeague | 2026-08-16 | Ertis Pavlodar - Tobol
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3875`
 
-### WARNING-1223 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-14 | Ozgon - Aldier
+### WARNING-1276 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-14 | Ozgon - Aldier
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2552`
 
-### WARNING-1224 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-14 | Neftchi Kochkor-Ata - Abdysh-Ata
+### WARNING-1277 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-14 | Neftchi Kochkor-Ata - Abdysh-Ata
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2593`
 
-### WARNING-1225 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-15 | Kyrgyzaltyn - Bars
+### WARNING-1278 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-15 | Kyrgyzaltyn - Bars
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3089`
 
-### WARNING-1226 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-15 | Ilbirs - Dordoi Bishkek
+### WARNING-1279 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-15 | Ilbirs - Dordoi Bishkek
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3325`
 
-### WARNING-1227 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-16 | Asia Talas - Bishkek City
+### WARNING-1280 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-16 | Asia Talas - Bishkek City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3776`
 
-### WARNING-1228 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-16 | Alay Osh - Talant
+### WARNING-1281 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-16 | Alay Osh - Talant
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3878`
 
-### WARNING-1229 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-21 | Talant - Ozgon
+### WARNING-1282 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-08-21 | Talant - Ozgon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4507`
 
-### WARNING-1230 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-09-01 | Aldier - Muras United
+### WARNING-1283 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-09-01 | Aldier - Muras United
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6439`
 
-### WARNING-1231 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-09-01 | Neftchi Kochkor-Ata - Alga
+### WARNING-1284 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-09-01 | Neftchi Kochkor-Ata - Alga
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6446`
 
-### WARNING-1232 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-09-11 | Neftchi Kochkor-Ata - Asiagoal Bishkek
+### WARNING-1285 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-09-11 | Neftchi Kochkor-Ata - Asiagoal Bishkek
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8142`
 
-### WARNING-1233 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-09-11 | Ilbirs - Bishkek City
+### WARNING-1286 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-09-11 | Ilbirs - Bishkek City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8168`
 
-### WARNING-1234 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-07-31 | Super Nova 2 - Riga Mariners
+### WARNING-1287 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-10-27 | Asia Talas - Aldier
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17321`
+
+### WARNING-1288 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-10-27 | Bars - Toktogul
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17333`
+
+### WARNING-1289 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-10-27 | Bishkek City - Dordoi Bishkek
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17354`
+
+### WARNING-1290 · LAB_DUP_MATCH · Kyrgyzstan_PremierLiga | 2026-10-27 | Muras United - Abdysh-Ata
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17370`
+
+### WARNING-1291 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-07-31 | Super Nova 2 - Riga Mariners
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1391`
 
-### WARNING-1235 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-08-09 | Riga Mariners - Tukums 2000 2
+### WARNING-1292 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-08-09 | Riga Mariners - Tukums 2000 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2150`
 
-### WARNING-1236 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-08-15 | Marupe - Super Nova 2
+### WARNING-1293 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-08-15 | Marupe - Super Nova 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3292`
 
-### WARNING-1237 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-09-11 | Rezekne - Super Nova 2
+### WARNING-1294 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-09-11 | Rezekne - Super Nova 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8108`
 
-### WARNING-1238 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-09-14 | RFS 2 - Skanste
+### WARNING-1295 · LAB_DUP_MATCH · Latvia_NakotnesLiga | 2026-09-14 | RFS 2 - Skanste
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9530`
 
-### WARNING-1239 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-09 | Riga FC - Ogre United
+### WARNING-1296 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-09 | Riga FC - Ogre United
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2135`
 
-### WARNING-1240 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-09 | Super Nova - FK Liepaja
+### WARNING-1297 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-09 | Super Nova - FK Liepaja
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2163`
 
-### WARNING-1241 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-09 | Jelgava - Auda
+### WARNING-1298 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-09 | Jelgava - Auda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2173`
 
-### WARNING-1242 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-21 | Auda - Tukums 2000
+### WARNING-1299 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-21 | Auda - Tukums 2000
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4457`
 
-### WARNING-1243 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-21 | FK Liepaja - Grobina
+### WARNING-1300 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-08-21 | FK Liepaja - Grobina
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4491`
 
-### WARNING-1244 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-09-11 | Ogre United - FK Liepaja
+### WARNING-1301 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-09-11 | Ogre United - FK Liepaja
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8050`
 
-### WARNING-1245 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-09-11 | Riga FC - Auda
+### WARNING-1302 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-09-11 | Riga FC - Auda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8136`
 
-### WARNING-1246 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-09-15 | Super Nova - Riga FC
+### WARNING-1303 · LAB_DUP_MATCH · Latvia_Virsliga | 2026-09-15 | Super Nova - Riga FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9459`
 
-### WARNING-1247 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-07-31 | Hegelmann Litauen 2 - FK Minija
+### WARNING-1304 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-07-31 | Hegelmann Litauen 2 - FK Minija
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1389`
 
-### WARNING-1248 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-07-31 | BE1 NFA - Jonava
+### WARNING-1305 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-07-31 | BE1 NFA - Jonava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1398`
 
-### WARNING-1249 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | Ekranas - FK Minija
+### WARNING-1306 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | Ekranas - FK Minija
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2546`
 
-### WARNING-1250 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | BE1 NFA - Hegelmann Litauen 2
+### WARNING-1307 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | BE1 NFA - Hegelmann Litauen 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2554`
 
-### WARNING-1251 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | Siauliai 2 - Zalgiris 2
+### WARNING-1308 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | Siauliai 2 - Zalgiris 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2570`
 
-### WARNING-1252 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | Transinvest 2 - Atmosfera
+### WARNING-1309 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | Transinvest 2 - Atmosfera
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2572`
 
-### WARNING-1253 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | Kauno Zalgiris 2 - Jonava
+### WARNING-1310 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-14 | Kauno Zalgiris 2 - Jonava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2604`
 
-### WARNING-1254 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-15 | Dainava Alytus - BFA Vilnius
+### WARNING-1311 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-15 | Dainava Alytus - BFA Vilnius
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3277`
 
-### WARNING-1255 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-15 | Garliava - Tauras
+### WARNING-1312 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-15 | Garliava - Tauras
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3327`
 
-### WARNING-1256 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-15 | Neptunas - Babrungas
+### WARNING-1313 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-15 | Neptunas - Babrungas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3383`
 
-### WARNING-1257 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-21 | Hegelmann Litauen 2 - Ekranas
+### WARNING-1314 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-21 | Hegelmann Litauen 2 - Ekranas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4458`
 
-### WARNING-1258 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-21 | Jonava - Siauliai 2
+### WARNING-1315 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-21 | Jonava - Siauliai 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4502`
 
-### WARNING-1259 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-21 | BE1 NFA - Garliava
+### WARNING-1316 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-21 | BE1 NFA - Garliava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4523`
 
-### WARNING-1260 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-21 | Babrungas - Tauras
+### WARNING-1317 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-08-21 | Babrungas - Tauras
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4547`
 
-### WARNING-1261 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-11 | Transinvest 2 - Hegelmann Litauen 2
+### WARNING-1318 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-11 | Transinvest 2 - Hegelmann Litauen 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8071`
 
-### WARNING-1262 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-11 | Neptunas - Jonava
+### WARNING-1319 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-11 | Neptunas - Jonava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8130`
 
-### WARNING-1263 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-11 | Babrungas - Atmosfera
+### WARNING-1320 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-11 | Babrungas - Atmosfera
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8131`
 
-### WARNING-1264 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-14 | Siauliai 2 - BE1 NFA
+### WARNING-1321 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-14 | Siauliai 2 - BE1 NFA
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9565`
 
-### WARNING-1265 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-19 | Atmosfera - BFA Vilnius
+### WARNING-1322 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-19 | Atmosfera - BFA Vilnius
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10714`
 
-### WARNING-1266 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-19 | Ekranas - Siauliai 2
+### WARNING-1323 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-19 | Ekranas - Siauliai 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '6', 'OK'), attuali=('2', '6', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10747`
 
-### WARNING-1267 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-19 | FK Minija - Neptunas
+### WARNING-1324 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-19 | FK Minija - Neptunas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10771`
 
-### WARNING-1268 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-19 | Kauno Zalgiris 2 - Garliava
+### WARNING-1325 · LAB_DUP_MATCH · Lithuania_ILyga | 2026-09-19 | Kauno Zalgiris 2 - Garliava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10835`
 
-### WARNING-1269 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-08-09 | FA Siauliai - Dziugas Telsiai
+### WARNING-1326 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-08-09 | FA Siauliai - Dziugas Telsiai
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2168`
 
-### WARNING-1270 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-08-09 | Banga - Suduva
+### WARNING-1327 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-08-09 | Banga - Suduva
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2175`
 
-### WARNING-1271 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-08-16 | Kauno Zalgiris - Transinvest
+### WARNING-1328 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-08-16 | Kauno Zalgiris - Transinvest
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3801`
 
-### WARNING-1272 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-08-16 | Zalgiris - Banga
+### WARNING-1329 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-08-16 | Zalgiris - Banga
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3871`
 
-### WARNING-1273 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-09-15 | Banga - Transinvest
+### WARNING-1330 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-09-15 | Banga - Transinvest
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9474`
 
-### WARNING-1274 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-09-14 | Banga - Transinvest
+### WARNING-1331 · LAB_DUP_MATCH · Lithuania_Toplyga | 2026-09-14 | Banga - Transinvest
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9568`
 
-### WARNING-1275 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-14 | Alebrijes Oaxaca - Tepatitlan de Morelos
+### WARNING-1332 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-14 | Alebrijes Oaxaca - Tepatitlan de Morelos
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2620`
 
-### WARNING-1276 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-15 | Zacatecas Mineros - Venados
+### WARNING-1333 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-15 | Zacatecas Mineros - Venados
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3120`
 
-### WARNING-1277 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-15 | Correcaminos - Tapatio
+### WARNING-1334 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-15 | Correcaminos - Tapatio
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3140`
 
-### WARNING-1278 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-15 | Atletico La Paz - Piratas
+### WARNING-1335 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-15 | Atletico La Paz - Piratas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3377`
 
-### WARNING-1279 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-15 | Cruz Azul Hidalgo - Atl. Morelia
+### WARNING-1336 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-15 | Cruz Azul Hidalgo - Atl. Morelia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3385`
 
-### WARNING-1280 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-16 | Dorados - Tlaxcala
+### WARNING-1337 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-16 | Dorados - Tlaxcala
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3734`
 
-### WARNING-1281 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-16 | Leones Negros - Jaiba Brava
+### WARNING-1338 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-16 | Leones Negros - Jaiba Brava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3870`
 
-### WARNING-1282 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-16 | Cancun - Alacranes
+### WARNING-1339 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-16 | Cancun - Alacranes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3902`
 
-### WARNING-1283 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-21 | Atl. Morelia - Correcaminos
+### WARNING-1340 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-21 | Atl. Morelia - Correcaminos
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4370`
 
-### WARNING-1284 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-21 | Venados - Dorados
+### WARNING-1341 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-21 | Venados - Dorados
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4426`
 
-### WARNING-1285 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-21 | Tepatitlan de Morelos - Tlaxcala
+### WARNING-1342 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-08-21 | Tepatitlan de Morelos - Tlaxcala
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4489`
 
-### WARNING-1286 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-09-11 | Cruz Azul Hidalgo - Piratas
+### WARNING-1343 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-09-11 | Cruz Azul Hidalgo - Piratas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8164`
 
-### WARNING-1287 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-09-11 | Alebrijes Oaxaca - Alacranes
+### WARNING-1344 · LAB_DUP_MATCH · Mexico_LigaExpansionMX_Apertura | 2026-09-11 | Alebrijes Oaxaca - Alacranes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8191`
 
-### WARNING-1288 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-08-16 | U.N.A.M. - Queretaro
+### WARNING-1345 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-08-16 | U.N.A.M. - Queretaro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3695`
 
-### WARNING-1289 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-08-16 | Atlas - Tigres
+### WARNING-1346 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-08-16 | Atlas - Tigres
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3773`
 
-### WARNING-1290 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-08-16 | Monterrey - Juarez
+### WARNING-1347 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-08-16 | Monterrey - Juarez
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '1', 'OK'), attuali=('6', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3824`
 
-### WARNING-1291 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-08-16 | Atlante - Toluca
+### WARNING-1348 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-08-16 | Atlante - Toluca
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3826`
 
-### WARNING-1292 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-09-11 | U.N.A.M. - Leon
+### WARNING-1349 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-09-11 | U.N.A.M. - Leon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8171`
 
-### WARNING-1293 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-09-15 | Leon - Atl. San Luis
+### WARNING-1350 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-09-15 | Leon - Atl. San Luis
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9469`
 
-### WARNING-1294 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-09-14 | Guadalajara - U.N.A.M.
+### WARNING-1351 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-09-14 | Guadalajara - U.N.A.M.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9569`
 
-### WARNING-1295 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-09-14 | Santos Laguna - Juarez
+### WARNING-1352 · LAB_DUP_MATCH · Mexico_LigaMX_Apertura | 2026-09-14 | Santos Laguna - Juarez
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9581`
 
-### WARNING-1296 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-14 | Zimbru 2 - Iskra Ribnita
+### WARNING-1353 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-14 | Zimbru 2 - Iskra Ribnita
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2523`
 
-### WARNING-1297 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-14 | Vulturii Cutezatori - Sparta Selemet
+### WARNING-1354 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-14 | Vulturii Cutezatori - Sparta Selemet
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '2', 'OK'), attuali=('6', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2528`
 
-### WARNING-1298 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-15 | FCM Ungheni - Univer Comrat
+### WARNING-1355 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-15 | FCM Ungheni - Univer Comrat
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '2', 'OK'), attuali=('6', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3251`
 
-### WARNING-1299 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-21 | Univer Comrat - Vulturii Cutezatori
+### WARNING-1356 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-21 | Univer Comrat - Vulturii Cutezatori
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4375`
 
-### WARNING-1300 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-21 | Zimbru 2 - FCM Ungheni
+### WARNING-1357 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-21 | Zimbru 2 - FCM Ungheni
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4382`
 
-### WARNING-1301 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-21 | Iskra Ribnita - Sparta Selemet
+### WARNING-1358 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-08-21 | Iskra Ribnita - Sparta Selemet
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('10', '0', 'OK'), attuali=('10', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4394`
 
-### WARNING-1302 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-09-11 | Zimbru 2 - Univer Comrat
+### WARNING-1359 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-09-11 | Zimbru 2 - Univer Comrat
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7980`
 
-### WARNING-1303 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-09-11 | Vulturii Cutezatori - Iskra Ribnita
+### WARNING-1360 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-09-11 | Vulturii Cutezatori - Iskra Ribnita
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7987`
 
-### WARNING-1304 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-09-19 | Sparta Selemet - Vulturii Cutezatori
+### WARNING-1361 · LAB_DUP_MATCH · Moldova_Liga1_GroupA | 2026-09-19 | Sparta Selemet - Vulturii Cutezatori
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10577`
 
-### WARNING-1305 · LAB_DUP_MATCH · Moldova_Liga1_GroupB | 2026-09-11 | Oguzsport - National Ialoveni
+### WARNING-1362 · LAB_DUP_MATCH · Moldova_Liga1_GroupB | 2026-09-11 | Oguzsport - National Ialoveni
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8192`
 
-### WARNING-1306 · LAB_DUP_MATCH · Moldova_Liga1_GroupB | 2026-09-19 | Falesti - Oguzsport
+### WARNING-1363 · LAB_DUP_MATCH · Moldova_Liga1_GroupB | 2026-09-19 | Falesti - Oguzsport
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10865`
 
-### WARNING-1307 · LAB_DUP_MATCH · Moldova_SuperLiga | 2026-08-15 | Dacia Buiucani - Petrocub
+### WARNING-1364 · LAB_DUP_MATCH · Moldova_SuperLiga | 2026-08-15 | Dacia Buiucani - Petrocub
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3211`
 
-### WARNING-1308 · LAB_DUP_MATCH · Moldova_SuperLiga | 2026-08-15 | Politehnica UTM - Balti
+### WARNING-1365 · LAB_DUP_MATCH · Moldova_SuperLiga | 2026-08-15 | Politehnica UTM - Balti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3307`
 
-### WARNING-1309 · LAB_DUP_MATCH · Moldova_SuperLiga | 2026-08-16 | Real Sireti - S. Tiraspol
+### WARNING-1366 · LAB_DUP_MATCH · Moldova_SuperLiga | 2026-08-16 | Real Sireti - S. Tiraspol
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3815`
 
-### WARNING-1310 · LAB_DUP_MATCH · Moldova_SuperLiga | 2026-08-16 | Zimbru - Milsami
+### WARNING-1367 · LAB_DUP_MATCH · Moldova_SuperLiga | 2026-08-16 | Zimbru - Milsami
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3867`
 
-### WARNING-1311 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-15 | Sutjeska - Otrant
+### WARNING-1368 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-15 | Sutjeska - Otrant
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3416`
 
-### WARNING-1312 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-16 | Mladost DG - Mornar
+### WARNING-1369 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-16 | Mladost DG - Mornar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3906`
 
-### WARNING-1313 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-16 | Arsenal Tivat - Buducnost
+### WARNING-1370 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-16 | Arsenal Tivat - Buducnost
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3908`
 
-### WARNING-1314 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-16 | Petrovac - Jezero
+### WARNING-1371 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-16 | Petrovac - Jezero
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3909`
 
-### WARNING-1315 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-21 | Mornar - Buducnost
+### WARNING-1372 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-21 | Mornar - Buducnost
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4582`
 
-### WARNING-1316 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-30 | Buducnost - Bokelj
+### WARNING-1373 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-08-30 | Buducnost - Bokelj
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6273`
 
-### WARNING-1317 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-15 | Jezero - Bokelj
+### WARNING-1374 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-15 | Jezero - Bokelj
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9512`
 
-### WARNING-1318 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-14 | Mornar - Otrant
+### WARNING-1375 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-14 | Mornar - Otrant
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9586`
 
-### WARNING-1319 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-14 | Mladost DG - Buducnost
+### WARNING-1376 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-14 | Mladost DG - Buducnost
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9594`
 
-### WARNING-1320 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-14 | Petrovac - Arsenal Tivat
+### WARNING-1377 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-14 | Petrovac - Arsenal Tivat
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9595`
 
-### WARNING-1321 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-19 | Arsenal Tivat - Sutjeska
+### WARNING-1378 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-09-19 | Arsenal Tivat - Sutjeska
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10864`
 
-### WARNING-1322 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Maastricht - FC Volendam
+### WARNING-1379 · LAB_DUP_MATCH · Montenegro_PrvaCrnogorskaLiga | 2026-10-27 | Buducnost - Mornar
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17382`
+
+### WARNING-1380 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Maastricht - FC Volendam
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4368`
 
-### WARNING-1323 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | FC Emmen - Jong AZ
+### WARNING-1381 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | FC Emmen - Jong AZ
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4450`
 
-### WARNING-1324 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Dordrecht - Roda
+### WARNING-1382 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Dordrecht - Roda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4471`
 
-### WARNING-1325 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Vitesse - Almere City
+### WARNING-1383 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Vitesse - Almere City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4521`
 
-### WARNING-1326 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Den Bosch - Eindhoven
+### WARNING-1384 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Den Bosch - Eindhoven
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4530`
 
-### WARNING-1327 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Helmond - Waalwijk
+### WARNING-1385 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-21 | Helmond - Waalwijk
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4542`
 
-### WARNING-1328 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-30 | Eindhoven - Heracles
+### WARNING-1386 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-30 | Eindhoven - Heracles
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6241`
 
-### WARNING-1329 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-30 | Venlo - FC Emmen
+### WARNING-1387 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-08-30 | Venlo - FC Emmen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6243`
 
-### WARNING-1330 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Heracles - Jong AZ
+### WARNING-1388 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Heracles - Jong AZ
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7978`
 
-### WARNING-1331 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | FC Emmen - De Graafschap
+### WARNING-1389 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | FC Emmen - De Graafschap
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7991`
 
-### WARNING-1332 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Breda - Jong Utrecht
+### WARNING-1390 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Breda - Jong Utrecht
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8001`
 
-### WARNING-1333 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Eindhoven - Dordrecht
+### WARNING-1391 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Eindhoven - Dordrecht
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8002`
 
-### WARNING-1334 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Venlo - Oss
+### WARNING-1392 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Venlo - Oss
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8009`
 
-### WARNING-1335 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Helmond - Jong PSV
+### WARNING-1393 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Helmond - Jong PSV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8015`
 
-### WARNING-1336 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Jong Ajax - Waalwijk
+### WARNING-1394 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Jong Ajax - Waalwijk
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8028`
 
-### WARNING-1337 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Maastricht - Almere City
+### WARNING-1395 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-11 | Maastricht - Almere City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8106`
 
-### WARNING-1338 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-15 | Jong PSV - Jong AZ
+### WARNING-1396 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-15 | Jong PSV - Jong AZ
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9416`
 
-### WARNING-1339 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-15 | Jong Utrecht - Jong Ajax
+### WARNING-1397 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-15 | Jong Utrecht - Jong Ajax
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9426`
 
-### WARNING-1340 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-14 | Jong Utrecht - Jong Ajax
+### WARNING-1398 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-14 | Jong Utrecht - Jong Ajax
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '1', 'OK'), attuali=('6', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9536`
 
-### WARNING-1341 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-14 | Jong PSV - Jong AZ
+### WARNING-1399 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-14 | Jong PSV - Jong AZ
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9539`
 
-### WARNING-1342 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-19 | Vitesse - Jong PSV
+### WARNING-1400 · LAB_DUP_MATCH · Netherlands_EersteDivisie | 2026-09-19 | Vitesse - Jong PSV
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10681`
 
-### WARNING-1343 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-11 | Alkmaar - Willem 2
+### WARNING-1401 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-11 | Alkmaar - Willem 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8000`
 
-### WARNING-1344 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-15 | Ajax - Willem 2
+### WARNING-1402 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-15 | Ajax - Willem 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9421`
 
-### WARNING-1345 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-19 | Willem 2 - Sittard
+### WARNING-1403 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-19 | Willem 2 - Sittard
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10587`
 
-### WARNING-1346 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-19 | Ajax - Excelsior
+### WARNING-1404 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-19 | Ajax - Excelsior
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10598`
 
-### WARNING-1347 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-19 | Den Haag - Cambuur
+### WARNING-1405 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-19 | Den Haag - Cambuur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10622`
 
-### WARNING-1348 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-19 | Sparta Rotterdam - Heerenveen
+### WARNING-1406 · LAB_DUP_MATCH · Netherlands_Eredivisie | 2026-09-19 | Sparta Rotterdam - Heerenveen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10689`
 
-### WARNING-1349 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-08-21 | Bregalnica - Bashkimi
+### WARNING-1407 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-08-21 | Bregalnica - Bashkimi
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4486`
 
-### WARNING-1350 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-08-21 | FK Skopje - Tikves
+### WARNING-1408 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-08-21 | FK Skopje - Tikves
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4540`
 
-### WARNING-1351 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-08-30 | Bashkimi - Shkendija Haracine
+### WARNING-1409 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-08-30 | Bashkimi - Shkendija Haracine
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6270`
 
-### WARNING-1352 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-11 | Tikves - Struga
+### WARNING-1410 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-11 | Tikves - Struga
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8173`
 
-### WARNING-1353 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-11 | Arsimi - Shkendija
+### WARNING-1411 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-11 | Arsimi - Shkendija
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8184`
 
-### WARNING-1354 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-15 | Shkendija Haracine - FK Skopje
+### WARNING-1412 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-15 | Shkendija Haracine - FK Skopje
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9505`
 
-### WARNING-1355 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-14 | Shkendija Haracine - FK Skopje
+### WARNING-1413 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-14 | Shkendija Haracine - FK Skopje
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9596`
 
-### WARNING-1356 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-19 | Vardar - Shkendija Haracine
+### WARNING-1414 · LAB_DUP_MATCH · NorthMacedonia_1MFL | 2026-09-19 | Vardar - Shkendija Haracine
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10854`
 
-### WARNING-1357 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Dundela - Annagh
+### WARNING-1415 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Dundela - Annagh
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3032`
 
-### WARNING-1358 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Glenavon - Strabane Athletic
+### WARNING-1416 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Glenavon - Strabane Athletic
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3103`
 
-### WARNING-1359 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Institute - Loughgall
+### WARNING-1417 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Institute - Loughgall
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3129`
 
-### WARNING-1360 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Moyola - Ballinamallard
+### WARNING-1418 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Moyola - Ballinamallard
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3149`
 
-### WARNING-1361 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Newington - Queens Univ.
+### WARNING-1419 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Newington - Queens Univ.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3194`
 
-### WARNING-1362 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Rathfriland - Newry City
+### WARNING-1420 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Rathfriland - Newry City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3226`
 
-### WARNING-1363 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Warrenpoint - Ards
+### WARNING-1421 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | Warrenpoint - Ards
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3250`
 
-### WARNING-1364 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | H&W Welders - Armagh
+### WARNING-1422 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-15 | H&W Welders - Armagh
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3342`
 
-### WARNING-1365 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-21 | Newry City - Warrenpoint
+### WARNING-1423 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-08-21 | Newry City - Warrenpoint
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4422`
 
-### WARNING-1366 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-11 | Strabane Athletic - Newry City
+### WARNING-1424 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-11 | Strabane Athletic - Newry City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8024`
 
-### WARNING-1367 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Glenavon - Newington
+### WARNING-1425 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Glenavon - Newington
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10590`
 
-### WARNING-1368 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Institute - Warrenpoint
+### WARNING-1426 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Institute - Warrenpoint
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10671`
 
-### WARNING-1369 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Moyola - Ards
+### WARNING-1427 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Moyola - Ards
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10680`
 
-### WARNING-1370 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Rathfriland - Queens Univ.
+### WARNING-1428 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Rathfriland - Queens Univ.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10707`
 
-### WARNING-1371 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Loughgall - Armagh
+### WARNING-1429 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | Loughgall - Armagh
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10727`
 
-### WARNING-1372 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | H&W Welders - Ballinamallard
+### WARNING-1430 · LAB_DUP_MATCH · NorthernIreland_NIFLChampionship | 2026-09-19 | H&W Welders - Ballinamallard
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10735`
 
-### WARNING-1373 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-08-21 | Linfield - Cliftonville
+### WARNING-1431 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-08-21 | Linfield - Cliftonville
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4388`
 
-### WARNING-1374 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-08-21 | Ballymena - Glentoran
+### WARNING-1432 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-08-21 | Ballymena - Glentoran
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4487`
 
-### WARNING-1375 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-11 | Coleraine - Ballymena
+### WARNING-1433 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-11 | Coleraine - Ballymena
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8057`
 
-### WARNING-1376 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Ballymena - C. Rangers
+### WARNING-1434 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Ballymena - C. Rangers
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9457`
 
-### WARNING-1377 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Glentoran - Coleraine
+### WARNING-1435 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Glentoran - Coleraine
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9466`
 
-### WARNING-1378 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Crusaders - Dungannon
+### WARNING-1436 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Crusaders - Dungannon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9475`
 
-### WARNING-1379 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Larne - Cliftonville
+### WARNING-1437 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Larne - Cliftonville
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9489`
 
-### WARNING-1380 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Portadown - Linfield
+### WARNING-1438 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Portadown - Linfield
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9498`
 
-### WARNING-1381 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Limavady - Bangor FC
+### WARNING-1439 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-09-15 | Limavady - Bangor FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9501`
 
-### WARNING-1382 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-09 | Eik-Tonsberg - Traeff
+### WARNING-1440 · LAB_DUP_MATCH · NorthernIreland_NIFLPremiership | 2026-10-27 | Larne - Limavady
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17371`
+
+### WARNING-1441 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-09 | Eik-Tonsberg - Traeff
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2145`
 
-### WARNING-1383 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-09 | Brattvag - Lysekloster
+### WARNING-1442 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-09 | Brattvag - Lysekloster
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2152`
 
-### WARNING-1384 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-15 | Mjoendalen - Eik-Tonsberg
+### WARNING-1443 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-15 | Mjoendalen - Eik-Tonsberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3241`
 
-### WARNING-1385 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-15 | Lysekloster - Halden
+### WARNING-1444 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-15 | Lysekloster - Halden
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3247`
 
-### WARNING-1386 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-15 | Vidar - Arendal
+### WARNING-1445 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-15 | Vidar - Arendal
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3283`
 
-### WARNING-1387 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-15 | Notodden - Brattvag
+### WARNING-1446 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-15 | Notodden - Brattvag
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3390`
 
-### WARNING-1388 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-16 | Sandviken - Jerv
+### WARNING-1447 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-16 | Sandviken - Jerv
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3706`
 
-### WARNING-1389 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-16 | Sotra - Traeff
+### WARNING-1448 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-16 | Sotra - Traeff
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3758`
 
-### WARNING-1390 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-16 | Pors - Bjarg
+### WARNING-1449 · LAB_DUP_MATCH · Norway_2ndDivision_Group1 | 2026-08-16 | Pors - Bjarg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3830`
 
-### WARNING-1391 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-09 | Rana FK - Skeid
+### WARNING-1450 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-09 | Rana FK - Skeid
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2144`
 
-### WARNING-1392 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-09 | Tromsdalen - Lørenskog
+### WARNING-1451 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-09 | Tromsdalen - Lørenskog
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2154`
 
-### WARNING-1393 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-15 | Lørenskog - Eidsvold
+### WARNING-1452 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-15 | Lørenskog - Eidsvold
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '7', 'OK'), attuali=('1', '7', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3234`
 
-### WARNING-1394 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Ull/Kisa - Trygg/Lade
+### WARNING-1453 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Ull/Kisa - Trygg/Lade
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3694`
 
-### WARNING-1395 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Stjordals Blink - Honefoss
+### WARNING-1454 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Stjordals Blink - Honefoss
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3703`
 
-### WARNING-1396 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Kjelsaas - Junkeren
+### WARNING-1455 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Kjelsaas - Junkeren
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3715`
 
-### WARNING-1397 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Follo - Rana FK
+### WARNING-1456 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Follo - Rana FK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3737`
 
-### WARNING-1398 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Skeid - Levanger
+### WARNING-1457 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Skeid - Levanger
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3751`
 
-### WARNING-1399 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Grorud - Tromsdalen
+### WARNING-1458 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-08-16 | Grorud - Tromsdalen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3781`
 
-### WARNING-1400 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-09-11 | Eidsvold - Ull/Kisa
+### WARNING-1459 · LAB_DUP_MATCH · Norway_2ndDivision_Group2 | 2026-09-11 | Eidsvold - Ull/Kisa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7990`
 
-### WARNING-1401 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-07-31 | Gamle Oslo - Union Carl Berner
+### WARNING-1460 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-07-31 | Gamle Oslo - Union Carl Berner
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1354`
 
-### WARNING-1402 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Gamle Oslo - Konnerud
+### WARNING-1461 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Gamle Oslo - Konnerud
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('7', '1', 'OK'), attuali=('7', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3047`
 
-### WARNING-1403 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Grei - Baerum
+### WARNING-1462 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Grei - Baerum
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '7', 'OK'), attuali=('1', '7', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3050`
 
-### WARNING-1404 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Frigg - Lokomotiv Oslo
+### WARNING-1463 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Frigg - Lokomotiv Oslo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3058`
 
-### WARNING-1405 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Ullern - Union Carl Berner
+### WARNING-1464 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Ullern - Union Carl Berner
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3094`
 
-### WARNING-1406 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Heming - Asker
+### WARNING-1465 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-15 | Heming - Asker
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '5', 'OK'), attuali=('2', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3150`
 
-### WARNING-1407 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-16 | Vaalerenga IF 2 - Ready
+### WARNING-1466 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-08-16 | Vaalerenga IF 2 - Ready
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3690`
 
-### WARNING-1408 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-09-01 | Nordstrand - Grei
+### WARNING-1467 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-09-01 | Nordstrand - Grei
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '5', 'OK'), attuali=('3', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6425`
 
-### WARNING-1409 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-09-15 | Asker - K. Oslo 2
+### WARNING-1468 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-09-15 | Asker - K. Oslo 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9404`
 
-### WARNING-1410 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-09-14 | Asker - K. Oslo 2
+### WARNING-1469 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-09-14 | Asker - K. Oslo 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('7', '2', 'OK'), attuali=('7', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9525`
 
-### WARNING-1411 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-10-13 | Heming - K. Oslo 2
+### WARNING-1470 · LAB_DUP_MATCH · Norway_3rdDivision_Group1 | 2026-10-13 | Heming - K. Oslo 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14400`
 
-### WARNING-1412 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-07-31 | Herd - Volda TI
+### WARNING-1471 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-07-31 | Herd - Volda TI
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1364`
 
-### WARNING-1413 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-09 | Molde 2 - FK Kvik
+### WARNING-1472 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-09 | Molde 2 - FK Kvik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '3', 'OK'), attuali=('6', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2133`
 
-### WARNING-1414 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Orkla - Spjelkavik
+### WARNING-1473 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Orkla - Spjelkavik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '5', 'OK'), attuali=('2', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3077`
 
-### WARNING-1415 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Herd - Ranheim 2
+### WARNING-1474 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Herd - Ranheim 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('9', '0', 'OK'), attuali=('9', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3079`
 
-### WARNING-1416 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Strindheim - Ntnui
+### WARNING-1475 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Strindheim - Ntnui
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3099`
 
-### WARNING-1417 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Nardo - Melhus
+### WARNING-1476 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Nardo - Melhus
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3137`
 
-### WARNING-1418 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Byåsen - Volda TI
+### WARNING-1477 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-08-15 | Byåsen - Volda TI
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3146`
 
-### WARNING-1419 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-09-15 | Aalesund 2 - Spjelkavik
+### WARNING-1478 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-09-15 | Aalesund 2 - Spjelkavik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9406`
 
-### WARNING-1420 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-09-14 | Aalesund 2 - Spjelkavik
+### WARNING-1479 · LAB_DUP_MATCH · Norway_3rdDivision_Group2 | 2026-09-14 | Aalesund 2 - Spjelkavik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9526`
 
-### WARNING-1421 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Gneist - Forde
+### WARNING-1480 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Gneist - Forde
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3072`
 
-### WARNING-1422 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Sogndal 2 - Fana
+### WARNING-1481 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Sogndal 2 - Fana
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3078`
 
-### WARNING-1423 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Austevoll - V. Haugesund
+### WARNING-1482 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Austevoll - V. Haugesund
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3113`
 
-### WARNING-1424 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Djerv 1919 - Fyllingsdalen
+### WARNING-1483 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Djerv 1919 - Fyllingsdalen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3183`
 
-### WARNING-1425 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Varegg - Askoy
+### WARNING-1484 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-08-15 | Varegg - Askoy
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3281`
 
-### WARNING-1426 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-09-15 | Åsane 2 - Brann 2
+### WARNING-1485 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-09-15 | Åsane 2 - Brann 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9407`
 
-### WARNING-1427 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-09-14 | Åsane 2 - Brann 2
+### WARNING-1486 · LAB_DUP_MATCH · Norway_3rdDivision_Group3 | 2026-09-14 | Åsane 2 - Brann 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9527`
 
-### WARNING-1428 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-07-31 | Varhaug - Hinna
+### WARNING-1487 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-07-31 | Varhaug - Hinna
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '5', 'OK'), attuali=('3', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1370`
 
-### WARNING-1429 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-08-15 | Flekkeroy - Brodd
+### WARNING-1488 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-08-15 | Flekkeroy - Brodd
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3041`
 
-### WARNING-1430 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-08-15 | Vindbjart - Akra
+### WARNING-1489 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-08-15 | Vindbjart - Akra
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3102`
 
-### WARNING-1431 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-08-15 | Vag - Mandalskameratene
+### WARNING-1490 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-08-15 | Vag - Mandalskameratene
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3124`
 
-### WARNING-1432 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-08-16 | Odd 2 - Hinna
+### WARNING-1491 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-08-16 | Odd 2 - Hinna
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3685`
 
-### WARNING-1433 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-09-15 | Akra - Odd 2
+### WARNING-1492 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-09-15 | Akra - Odd 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9410`
 
-### WARNING-1434 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-09-15 | Viking 2 - Varhaug
+### WARNING-1493 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-09-15 | Viking 2 - Varhaug
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9424`
 
-### WARNING-1435 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-09-14 | Akra - Odd 2
+### WARNING-1494 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-09-14 | Akra - Odd 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9529`
 
-### WARNING-1436 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-09-14 | Viking 2 - Varhaug
+### WARNING-1495 · LAB_DUP_MATCH · Norway_3rdDivision_Group4 | 2026-09-14 | Viking 2 - Varhaug
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9541`
 
-### WARNING-1437 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-15 | Skjervoy - Floeya
+### WARNING-1496 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-15 | Skjervoy - Floeya
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3054`
 
-### WARNING-1438 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-15 | Ulfstind - Skjetten
+### WARNING-1497 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-15 | Ulfstind - Skjetten
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3065`
 
-### WARNING-1439 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-16 | Lillestrom 2 - Harstad
+### WARNING-1498 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-16 | Lillestrom 2 - Harstad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3669`
 
-### WARNING-1440 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-16 | Fauske Sprint - Finnsnes
+### WARNING-1499 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-16 | Fauske Sprint - Finnsnes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3676`
 
-### WARNING-1441 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-16 | Alta - Kongsvinger 2
+### WARNING-1500 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-16 | Alta - Kongsvinger 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3677`
 
-### WARNING-1442 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-16 | Strømsgodset 2 - Skedsmo
+### WARNING-1501 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-08-16 | Strømsgodset 2 - Skedsmo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3688`
 
-### WARNING-1443 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-15 | Fauske Sprint - Strømsgodset 2
+### WARNING-1502 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-15 | Fauske Sprint - Strømsgodset 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9401`
 
-### WARNING-1444 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-15 | Skjetten - Tromsø 2
+### WARNING-1503 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-15 | Skjetten - Tromsø 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9412`
 
-### WARNING-1445 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-15 | Skedsmo - Lillestrom 2
+### WARNING-1504 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-15 | Skedsmo - Lillestrom 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9419`
 
-### WARNING-1446 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-14 | Fauske Sprint - Strømsgodset 2
+### WARNING-1505 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-14 | Fauske Sprint - Strømsgodset 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '3', 'OK'), attuali=('5', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9522`
 
-### WARNING-1447 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-14 | Skjetten - Tromsø 2
+### WARNING-1506 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-14 | Skjetten - Tromsø 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9528`
 
-### WARNING-1448 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-14 | Skedsmo - Lillestrom 2
+### WARNING-1507 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-14 | Skedsmo - Lillestrom 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9531`
 
-### WARNING-1449 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-22 | Skjetten - Skjervoy
+### WARNING-1508 · LAB_DUP_MATCH · Norway_3rdDivision_Group5 | 2026-09-22 | Skjetten - Skjervoy
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '1', 'OK'), attuali=('6', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11326`
 
-### WARNING-1450 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-09 | Raelingen - Rade
+### WARNING-1509 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-09 | Raelingen - Rade
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2124`
 
-### WARNING-1451 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-09 | Sarpsborg 08 2 - Brumunddal
+### WARNING-1510 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-09 | Sarpsborg 08 2 - Brumunddal
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('11', '0', 'OK'), attuali=('11', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2139`
 
-### WARNING-1452 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Brumunddal - Raelingen
+### WARNING-1511 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Brumunddal - Raelingen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3067`
 
-### WARNING-1453 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Sandefjord 2 - Bjorkelangen
+### WARNING-1512 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Sandefjord 2 - Bjorkelangen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3091`
 
-### WARNING-1454 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Rade - Drobak-Frogn
+### WARNING-1513 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Rade - Drobak-Frogn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3162`
 
-### WARNING-1455 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Oppsal - Elverum
+### WARNING-1514 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Oppsal - Elverum
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3179`
 
-### WARNING-1456 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Orn - SK Gjovik-Lyn
+### WARNING-1515 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-08-15 | Orn - SK Gjovik-Lyn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3328`
 
-### WARNING-1457 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-09-01 | SK Gjovik-Lyn - Brumunddal
+### WARNING-1516 · LAB_DUP_MATCH · Norway_3rdDivision_Group6 | 2026-09-01 | SK Gjovik-Lyn - Brumunddal
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6441`
 
-### WARNING-1458 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-07-31 | Vålerenga - HamKam
+### WARNING-1517 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-07-31 | Vålerenga - HamKam
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1380`
 
-### WARNING-1459 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-07-31 | Bodo/Glimt - Lilleström
+### WARNING-1518 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-07-31 | Bodo/Glimt - Lilleström
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1400`
 
-### WARNING-1460 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-09 | Lilleström - Rosenborg
+### WARNING-1519 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-09 | Lilleström - Rosenborg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2160`
 
-### WARNING-1461 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-14 | Rosenborg - Viking
+### WARNING-1520 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-14 | Rosenborg - Viking
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2544`
 
-### WARNING-1462 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-15 | KFUM Oslo - Lilleström
+### WARNING-1521 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-15 | KFUM Oslo - Lilleström
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3361`
 
-### WARNING-1463 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Brann - HamKam
+### WARNING-1522 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Brann - HamKam
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3707`
 
-### WARNING-1464 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Aalesund - Vålerenga
+### WARNING-1523 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Aalesund - Vålerenga
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '5', 'OK'), attuali=('5', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3755`
 
-### WARNING-1465 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Molde - Tromsø
+### WARNING-1524 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Molde - Tromsø
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3783`
 
-### WARNING-1466 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Fredrikstad - Kristiansund
+### WARNING-1525 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Fredrikstad - Kristiansund
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3841`
 
-### WARNING-1467 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Sarpsborg 08 - Sandefjord
+### WARNING-1526 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-08-16 | Sarpsborg 08 - Sandefjord
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3866`
 
-### WARNING-1468 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-09-15 | Bodo/Glimt - Sandefjord
+### WARNING-1527 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-09-15 | Bodo/Glimt - Sandefjord
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9458`
 
-### WARNING-1469 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-09-14 | Bodo/Glimt - Sandefjord
+### WARNING-1528 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-09-14 | Bodo/Glimt - Sandefjord
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9555`
 
-### WARNING-1470 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-09-19 | Molde - Aalesund
+### WARNING-1529 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-09-19 | Molde - Aalesund
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10619`
 
-### WARNING-1471 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-09-19 | Kristiansund - Rosenborg
+### WARNING-1530 · LAB_DUP_MATCH · Norway_Eliteserien | 2026-09-19 | Kristiansund - Rosenborg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10726`
 
-### WARNING-1472 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Haugesund - Raufoss
+### WARNING-1531 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Haugesund - Raufoss
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('7', '2', 'OK'), attuali=('7', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2129`
 
-### WARNING-1473 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Åsane - Kongsvinger
+### WARNING-1532 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Åsane - Kongsvinger
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2130`
 
-### WARNING-1474 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Strømmen - Ranheim
+### WARNING-1533 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Strømmen - Ranheim
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2131`
 
-### WARNING-1475 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Strömsgodset - Egersund
+### WARNING-1534 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Strömsgodset - Egersund
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2137`
 
-### WARNING-1476 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Sogndal - Bryne
+### WARNING-1535 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Sogndal - Bryne
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2148`
 
-### WARNING-1477 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Sandnes - Hodd
+### WARNING-1536 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-09 | Sandnes - Hodd
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2156`
 
-### WARNING-1478 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-15 | Ranheim - Strömsgodset
+### WARNING-1537 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-15 | Ranheim - Strömsgodset
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3082`
 
-### WARNING-1479 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-15 | Lyn - Odd
+### WARNING-1538 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-15 | Lyn - Odd
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3138`
 
-### WARNING-1480 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-15 | Bryne - Moss
+### WARNING-1539 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-15 | Bryne - Moss
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3218`
 
-### WARNING-1481 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Kongsvinger - Haugesund
+### WARNING-1540 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Kongsvinger - Haugesund
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3670`
 
-### WARNING-1482 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Hodd - Strømmen
+### WARNING-1541 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Hodd - Strømmen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3743`
 
-### WARNING-1483 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Sogndal - Sandnes
+### WARNING-1542 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Sogndal - Sandnes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3762`
 
-### WARNING-1484 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Raufoss - Åsane
+### WARNING-1543 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Raufoss - Åsane
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3764`
 
-### WARNING-1485 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Egersund - Stabaek
+### WARNING-1544 · LAB_DUP_MATCH · Norway_OBOSLigaen | 2026-08-16 | Egersund - Stabaek
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3765`
 
-### WARNING-1486 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-08-21 | Dep. Capiata - Guairena
+### WARNING-1545 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-08-21 | Dep. Capiata - Guairena
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4550`
 
-### WARNING-1487 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-08-21 | Sol De America - Resistencia
+### WARNING-1546 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-08-21 | Sol De America - Resistencia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4567`
 
-### WARNING-1488 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-11 | 12 de Junio - Atl. Tembetary
+### WARNING-1547 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-11 | 12 de Junio - Atl. Tembetary
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8043`
 
-### WARNING-1489 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-15 | Atl. Tembetary - Sp. Carapegua
+### WARNING-1548 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-15 | Atl. Tembetary - Sp. Carapegua
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9481`
 
-### WARNING-1490 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-15 | Independiente F.B.C. - Encarnacion FC
+### WARNING-1549 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-15 | Independiente F.B.C. - Encarnacion FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9495`
 
-### WARNING-1491 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-14 | Benjamin Aceval - Paraguari AC
+### WARNING-1550 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-14 | Benjamin Aceval - Paraguari AC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9542`
 
-### WARNING-1492 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-22 | Encarnacion FC - Dep. Capiata
+### WARNING-1551 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-09-22 | Encarnacion FC - Dep. Capiata
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11351`
 
-### WARNING-1493 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-10-13 | Dep. Capiata - Benjamin Aceval
+### WARNING-1552 · LAB_DUP_MATCH · Paraguay_DivisionIntermedia | 2026-10-13 | Dep. Capiata - Benjamin Aceval
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14453`
 
-### WARNING-1494 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-14 | Grau - Comerciantes Unidos
+### WARNING-1553 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-14 | Grau - Comerciantes Unidos
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2539`
 
-### WARNING-1495 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-15 | Cusco - Juan Pablo 2
+### WARNING-1554 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-15 | Cusco - Juan Pablo 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3206`
 
-### WARNING-1496 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-15 | Los Chankas - Melgar
+### WARNING-1555 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-15 | Los Chankas - Melgar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3294`
 
-### WARNING-1497 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-15 | AD Tarma - Alianza Atl.
+### WARNING-1556 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-15 | AD Tarma - Alianza Atl.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3313`
 
-### WARNING-1498 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-16 | A. Lima - Cajamarca
+### WARNING-1557 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-16 | A. Lima - Cajamarca
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3692`
 
-### WARNING-1499 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-16 | FC Cajamarca - U. de Deportes
+### WARNING-1558 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-16 | FC Cajamarca - U. de Deportes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3821`
 
-### WARNING-1500 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-16 | Sporting Cristal - Huancayo
+### WARNING-1559 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-16 | Sporting Cristal - Huancayo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3900`
 
-### WARNING-1501 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-16 | Moquegua - Sport Boys
+### WARNING-1560 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-16 | Moquegua - Sport Boys
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3907`
 
-### WARNING-1502 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-21 | FC Cajamarca - Grau
+### WARNING-1561 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-21 | FC Cajamarca - Grau
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4529`
 
-### WARNING-1503 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-21 | Alianza Atl. - Sporting Cristal
+### WARNING-1562 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-08-21 | Alianza Atl. - Sporting Cristal
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4553`
 
-### WARNING-1504 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-01 | Grau - Melgar
+### WARNING-1563 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-01 | Grau - Melgar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6462`
 
-### WARNING-1505 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-11 | Cajamarca - Juan Pablo 2
+### WARNING-1564 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-11 | Cajamarca - Juan Pablo 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8075`
 
-### WARNING-1506 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-19 | FC Cajamarca - Cusco
+### WARNING-1565 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-19 | FC Cajamarca - Cusco
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10595`
 
-### WARNING-1507 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-19 | A. Lima - AD Tarma
+### WARNING-1566 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-19 | A. Lima - AD Tarma
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10778`
 
-### WARNING-1508 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-19 | Sporting Cristal - Grau
+### WARNING-1567 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-09-19 | Sporting Cristal - Grau
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10825`
 
-### WARNING-1509 · LAB_DUP_MATCH · Peru_Liga2 | 2026-08-21 | Sport Huancayo 2 - Estudiantil CNI
+### WARNING-1568 · LAB_DUP_MATCH · Peru_Liga1_Clausura | 2026-10-27 | Juan Pablo 2 - Huancayo
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17361`
+
+### WARNING-1569 · LAB_DUP_MATCH · Peru_Liga2 | 2026-08-21 | Sport Huancayo 2 - Estudiantil CNI
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4578`
 
-### WARNING-1510 · LAB_DUP_MATCH · Peru_Liga2 | 2026-10-13 | Carlos Mannucci - Alianza Huanuco
+### WARNING-1570 · LAB_DUP_MATCH · Peru_Liga2 | 2026-10-13 | Carlos Mannucci - Alianza Huanuco
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14464`
 
-### WARNING-1511 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-14 | Grodzisk M. - S. Rzeszow
+### WARNING-1571 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-14 | Grodzisk M. - S. Rzeszow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2608`
 
-### WARNING-1512 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-14 | Ruch - Lechia
+### WARNING-1572 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-14 | Ruch - Lechia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2618`
 
-### WARNING-1513 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-15 | Chrobry Glogow - Podbeskidzie
+### WARNING-1573 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-15 | Chrobry Glogow - Podbeskidzie
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3213`
 
-### WARNING-1514 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-15 | Odra Opole - Warta Poznan
+### WARNING-1574 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-15 | Odra Opole - Warta Poznan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3280`
 
-### WARNING-1515 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-15 | Pogon Siedlce - Polonia W.
+### WARNING-1575 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-15 | Pogon Siedlce - Polonia W.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3336`
 
-### WARNING-1516 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-16 | Stal Mielec - Polonia B.
+### WARNING-1576 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-16 | Stal Mielec - Polonia B.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3675`
 
-### WARNING-1517 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-16 | LKS Lodz - Termalica B-B.
+### WARNING-1577 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-16 | LKS Lodz - Termalica B-B.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3724`
 
-### WARNING-1518 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-16 | Skierniewice - Legnica
+### WARNING-1578 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-16 | Skierniewice - Legnica
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3891`
 
-### WARNING-1519 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-21 | Chrobry Glogow - Warta Poznan
+### WARNING-1579 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-21 | Chrobry Glogow - Warta Poznan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4417`
 
-### WARNING-1520 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-21 | Lechia - Pogon Siedlce
+### WARNING-1580 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-21 | Lechia - Pogon Siedlce
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4460`
 
-### WARNING-1521 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-30 | Arka - Polonia B.
+### WARNING-1581 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-30 | Arka - Polonia B.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6245`
 
-### WARNING-1522 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-30 | Legnica - Warta Poznan
+### WARNING-1582 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-30 | Legnica - Warta Poznan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6259`
 
-### WARNING-1523 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-30 | Chrobry Glogow - Ruch
+### WARNING-1583 · LAB_DUP_MATCH · Poland_Division1 | 2026-08-30 | Chrobry Glogow - Ruch
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6272`
 
-### WARNING-1524 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-11 | Polonia W. - Polonia B.
+### WARNING-1584 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-11 | Polonia W. - Polonia B.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8029`
 
-### WARNING-1525 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-11 | Puszcza - LKS Lodz
+### WARNING-1585 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-11 | Puszcza - LKS Lodz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8177`
 
-### WARNING-1526 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-14 | Stal Mielec - Termalica B-B.
+### WARNING-1586 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-14 | Stal Mielec - Termalica B-B.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9534`
 
-### WARNING-1527 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Lechia - Stal Mielec
+### WARNING-1587 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Lechia - Stal Mielec
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('7', '1', 'OK'), attuali=('7', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10693`
 
-### WARNING-1528 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Polonia W. - Chrobry Glogow
+### WARNING-1588 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Polonia W. - Chrobry Glogow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10786`
 
-### WARNING-1529 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Termalica B-B. - Odra Opole
+### WARNING-1589 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Termalica B-B. - Odra Opole
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10787`
 
-### WARNING-1530 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Grodzisk M. - LKS Lodz
+### WARNING-1590 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Grodzisk M. - LKS Lodz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10842`
 
-### WARNING-1531 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Legnica - S. Rzeszow
+### WARNING-1591 · LAB_DUP_MATCH · Poland_Division1 | 2026-09-19 | Legnica - S. Rzeszow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10851`
 
-### WARNING-1532 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-14 | Leczna - Podhale Nowy Targ
+### WARNING-1592 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-14 | Leczna - Podhale Nowy Targ
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2611`
 
-### WARNING-1533 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-15 | Swit Szczecin - Sandecja
+### WARNING-1593 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-15 | Swit Szczecin - Sandecja
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3258`
 
-### WARNING-1534 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-15 | Slask 2 - Chojniczanka
+### WARNING-1594 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-15 | Slask 2 - Chojniczanka
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3273`
 
-### WARNING-1535 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-15 | R. Rzeszow - Tychy
+### WARNING-1595 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-15 | R. Rzeszow - Tychy
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3362`
 
-### WARNING-1536 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-15 | Kleczew - Bielsko-Biala
+### WARNING-1596 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-15 | Kleczew - Bielsko-Biala
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3372`
 
-### WARNING-1537 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-16 | Hutnik Krakow - Legia 2
+### WARNING-1597 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-16 | Hutnik Krakow - Legia 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3720`
 
-### WARNING-1538 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-16 | Pruszkow - Ol. Grudziadz
+### WARNING-1598 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-16 | Pruszkow - Ol. Grudziadz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3725`
 
-### WARNING-1539 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-16 | S. Wola - Avia Swidnik
+### WARNING-1599 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-16 | S. Wola - Avia Swidnik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3794`
 
-### WARNING-1540 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-16 | Zawisza - Z. Gora
+### WARNING-1600 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-16 | Zawisza - Z. Gora
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3877`
 
-### WARNING-1541 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-21 | Chojniczanka - S. Wola
+### WARNING-1601 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-21 | Chojniczanka - S. Wola
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4470`
 
-### WARNING-1542 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-21 | Sandecja - Leczna
+### WARNING-1602 · LAB_DUP_MATCH · Poland_Division2 | 2026-08-21 | Sandecja - Leczna
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4528`
 
-### WARNING-1543 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-11 | R. Rzeszow - Z. Gora
+### WARNING-1603 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-11 | R. Rzeszow - Z. Gora
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7997`
 
-### WARNING-1544 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-11 | Kleczew - Ol. Grudziadz
+### WARNING-1604 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-11 | Kleczew - Ol. Grudziadz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8123`
 
-### WARNING-1545 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-11 | Pruszkow - Tychy
+### WARNING-1605 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-11 | Pruszkow - Tychy
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8143`
 
-### WARNING-1546 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-19 | Legia 2 - Podhale Nowy Targ
+### WARNING-1606 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-19 | Legia 2 - Podhale Nowy Targ
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10616`
 
-### WARNING-1547 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-19 | Z. Gora - Pruszkow
+### WARNING-1607 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-19 | Z. Gora - Pruszkow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10665`
 
-### WARNING-1548 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-19 | Chojniczanka - Ol. Grudziadz
+### WARNING-1608 · LAB_DUP_MATCH · Poland_Division2 | 2026-09-19 | Chojniczanka - Ol. Grudziadz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10768`
 
-### WARNING-1549 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-14 | Legia - Radomiak Radom
+### WARNING-1609 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-14 | Legia - Radomiak Radom
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2491`
 
-### WARNING-1550 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-15 | Piast - Wieczysta Krakow
+### WARNING-1610 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-15 | Piast - Wieczysta Krakow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3107`
 
-### WARNING-1551 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-15 | Zaglebie - Slask
+### WARNING-1611 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-15 | Zaglebie - Slask
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3347`
 
-### WARNING-1552 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-15 | Widzew Lodz - Korona
+### WARNING-1612 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-15 | Widzew Lodz - Korona
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3405`
 
-### WARNING-1553 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-16 | Gornik Zabrze - Wisla
+### WARNING-1613 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-16 | Gornik Zabrze - Wisla
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3667`
 
-### WARNING-1554 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-16 | Motor Lublin - Katowice
+### WARNING-1614 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-16 | Motor Lublin - Katowice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3671`
 
-### WARNING-1555 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-16 | Cracovia - Rakow
+### WARNING-1615 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-16 | Cracovia - Rakow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3885`
 
-### WARNING-1556 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-21 | Cracovia - Wieczysta Krakow
+### WARNING-1616 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-21 | Cracovia - Wieczysta Krakow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4463`
 
-### WARNING-1557 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-30 | Gornik Zabrze - Katowice
+### WARNING-1617 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-30 | Gornik Zabrze - Katowice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6246`
 
-### WARNING-1558 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-30 | Rakow - Jagiellonia
+### WARNING-1618 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-08-30 | Rakow - Jagiellonia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '5', 'OK'), attuali=('2', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6250`
 
-### WARNING-1559 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-11 | Wisla - Jagiellonia
+### WARNING-1619 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-11 | Wisla - Jagiellonia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8021`
 
-### WARNING-1560 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-11 | Rakow - Motor Lublin
+### WARNING-1620 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-11 | Rakow - Motor Lublin
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8045`
 
-### WARNING-1561 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-15 | Rakow - Zaglebie
+### WARNING-1621 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-15 | Rakow - Zaglebie
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9460`
 
-### WARNING-1562 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-15 | Korona - Gornik Zabrze
+### WARNING-1622 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-15 | Korona - Gornik Zabrze
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9479`
 
-### WARNING-1563 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-14 | Radomiak Radom - Piast
+### WARNING-1623 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-14 | Radomiak Radom - Piast
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9572`
 
-### WARNING-1564 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-19 | Motor Lublin - Gornik Zabrze
+### WARNING-1624 · LAB_DUP_MATCH · Poland_Ekstraklasa | 2026-09-19 | Motor Lublin - Gornik Zabrze
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10708`
 
-### WARNING-1565 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-14 | Mazovia Minsk Mazowiecki - Zabki
+### WARNING-1625 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-14 | Mazovia Minsk Mazowiecki - Zabki
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2494`
 
-### WARNING-1566 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-14 | T. Mazowiecki - LKS Lomza
+### WARNING-1626 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-14 | T. Mazowiecki - LKS Lomza
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2557`
 
-### WARNING-1567 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-14 | Suwalki - Troszyn
+### WARNING-1627 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-14 | Suwalki - Troszyn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2566`
 
-### WARNING-1568 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-14 | Weszlo - Mlawa
+### WARNING-1628 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-14 | Weszlo - Mlawa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2569`
 
-### WARNING-1569 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Lidzbark Warminski - Plock 2
+### WARNING-1629 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Lidzbark Warminski - Plock 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3039`
 
-### WARNING-1570 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Zambrow - Elblag
+### WARNING-1630 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Zambrow - Elblag
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3093`
 
-### WARNING-1571 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Widzew Lodz 2 - Swit
+### WARNING-1631 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Widzew Lodz 2 - Swit
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3130`
 
-### WARNING-1572 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Warta Sieradz - Jagiellonia 2
+### WARNING-1632 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Warta Sieradz - Jagiellonia 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3205`
 
-### WARNING-1573 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Pelikan - LKS Lodz 2
+### WARNING-1633 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-08-15 | Pelikan - LKS Lodz 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3388`
 
-### WARNING-1574 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-11 | Widzew Lodz 2 - Mazovia Minsk Mazowiecki
+### WARNING-1634 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-11 | Widzew Lodz 2 - Mazovia Minsk Mazowiecki
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8014`
 
-### WARNING-1575 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-11 | Zabki - T. Mazowiecki
+### WARNING-1635 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-11 | Zabki - T. Mazowiecki
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8056`
 
-### WARNING-1576 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Warta Sieradz - Zambrow
+### WARNING-1636 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Warta Sieradz - Zambrow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10582`
 
-### WARNING-1577 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Mazovia Minsk Mazowiecki - Plock 2
+### WARNING-1637 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Mazovia Minsk Mazowiecki - Plock 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10602`
 
-### WARNING-1578 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Pelikan - Lidzbark Warminski
+### WARNING-1638 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Pelikan - Lidzbark Warminski
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10623`
 
-### WARNING-1579 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Weszlo - Elblag
+### WARNING-1639 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Weszlo - Elblag
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10643`
 
-### WARNING-1580 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Jagiellonia 2 - LKS Lodz 2
+### WARNING-1640 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Jagiellonia 2 - LKS Lodz 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10669`
 
-### WARNING-1581 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Mlawa - Troszyn
+### WARNING-1641 · LAB_DUP_MATCH · Poland_IIILiga_Group1 | 2026-09-19 | Mlawa - Troszyn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10761`
 
-### WARNING-1582 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-14 | Wrzesnia - Luzino
+### WARNING-1642 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-14 | Wrzesnia - Luzino
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2490`
 
-### WARNING-1583 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-14 | Chemik Bydgoszcz - Sroda
+### WARNING-1643 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-14 | Chemik Bydgoszcz - Sroda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2524`
 
-### WARNING-1584 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-14 | Unia Swarzedz - Notec Czarnkow
+### WARNING-1644 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-14 | Unia Swarzedz - Notec Czarnkow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2563`
 
-### WARNING-1585 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Lipno Steszew - Kluczevia Stargard
+### WARNING-1645 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Lipno Steszew - Kluczevia Stargard
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3142`
 
-### WARNING-1586 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Gedania Gdansk - Wda Swiecie
+### WARNING-1646 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Gedania Gdansk - Wda Swiecie
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3164`
 
-### WARNING-1587 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Blekitni Stargard - Lech 2
+### WARNING-1647 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Blekitni Stargard - Lech 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3239`
 
-### WARNING-1588 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Grom Nowy Staw - Elana Torun
+### WARNING-1648 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Grom Nowy Staw - Elana Torun
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3272`
 
-### WARNING-1589 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Kotwica Kornik - KKS Kalisz
+### WARNING-1649 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Kotwica Kornik - KKS Kalisz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3393`
 
-### WARNING-1590 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Koszalin - Swinoujscie
+### WARNING-1650 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-08-15 | Koszalin - Swinoujscie
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3404`
 
-### WARNING-1591 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-09-11 | Luzino - Grom Nowy Staw
+### WARNING-1651 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-09-11 | Luzino - Grom Nowy Staw
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7984`
 
-### WARNING-1592 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-09-11 | Sroda - Unia Swarzedz
+### WARNING-1652 · LAB_DUP_MATCH · Poland_IIILiga_Group2 | 2026-09-11 | Sroda - Unia Swarzedz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8052`
 
-### WARNING-1593 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-14 | Polkowice - Legnica 2
+### WARNING-1653 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-14 | Polkowice - Legnica 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2462`
 
-### WARNING-1594 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-14 | Brzeg - BKS Sparta Katowice
+### WARNING-1654 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-14 | Brzeg - BKS Sparta Katowice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2587`
 
-### WARNING-1595 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-14 | Carina Gubin - Jelenia Gora
+### WARNING-1655 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-14 | Carina Gubin - Jelenia Gora
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2624`
 
-### WARNING-1596 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-15 | Stilon Gorzow - Nysa
+### WARNING-1656 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-15 | Stilon Gorzow - Nysa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3055`
 
-### WARNING-1597 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-15 | Sulow - Warta Gorzow
+### WARNING-1657 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-15 | Sulow - Warta Gorzow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3175`
 
-### WARNING-1598 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-15 | Goczalkowice Zdroj - Sleza Wroclaw
+### WARNING-1658 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-15 | Goczalkowice Zdroj - Sleza Wroclaw
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3343`
 
-### WARNING-1599 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-15 | Bytom Odrzanski - Kluczbork
+### WARNING-1659 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-15 | Bytom Odrzanski - Kluczbork
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3358`
 
-### WARNING-1600 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-16 | Zaglebie 2 - Rakow 2
+### WARNING-1660 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-16 | Zaglebie 2 - Rakow 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3785`
 
-### WARNING-1601 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-16 | ROW Rybnik - Sosnowiec
+### WARNING-1661 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-08-16 | ROW Rybnik - Sosnowiec
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3890`
 
-### WARNING-1602 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-11 | Carina Gubin - Bytom Odrzanski
+### WARNING-1662 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-11 | Carina Gubin - Bytom Odrzanski
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8172`
 
-### WARNING-1603 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | Sleza Wroclaw - Legnica 2
+### WARNING-1663 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | Sleza Wroclaw - Legnica 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '5', 'OK'), attuali=('3', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10586`
 
-### WARNING-1604 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | Stilon Gorzow - ROW Rybnik
+### WARNING-1664 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | Stilon Gorzow - ROW Rybnik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10656`
 
-### WARNING-1605 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | Brzeg - Jelenia Gora
+### WARNING-1665 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | Brzeg - Jelenia Gora
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10809`
 
-### WARNING-1606 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | BKS Sparta Katowice - Kluczbork
+### WARNING-1666 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | BKS Sparta Katowice - Kluczbork
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10814`
 
-### WARNING-1607 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | Goczalkowice Zdroj - Warta Gorzow
+### WARNING-1667 · LAB_DUP_MATCH · Poland_IIILiga_Group3 | 2026-09-19 | Goczalkowice Zdroj - Warta Gorzow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10839`
 
-### WARNING-1608 · LAB_DUP_MATCH · Poland_IIILiga_Group4 | 2026-09-11 | Biala Podlaska - Wieczysta Krakow 2
+### WARNING-1668 · LAB_DUP_MATCH · Poland_IIILiga_Group4 | 2026-09-11 | Biala Podlaska - Wieczysta Krakow 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8180`
 
-### WARNING-1609 · LAB_DUP_MATCH · Portugal_Liga3_SerieA | 2026-08-21 | Fafe - Guimaraes B
+### WARNING-1669 · LAB_DUP_MATCH · Portugal_Liga3_SerieA | 2026-08-21 | Fafe - Guimaraes B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4509`
 
-### WARNING-1610 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-15 | Moreirense - Maritimo
+### WARNING-1670 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-15 | Moreirense - Maritimo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9428`
 
-### WARNING-1611 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-15 | Rio Ave - Estrela
+### WARNING-1671 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-15 | Rio Ave - Estrela
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9436`
 
-### WARNING-1612 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-15 | Braga - Estoril
+### WARNING-1672 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-15 | Braga - Estoril
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9496`
 
-### WARNING-1613 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-14 | Rio Ave - Estrela
+### WARNING-1673 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-14 | Rio Ave - Estrela
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9535`
 
-### WARNING-1614 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-14 | Moreirense - Maritimo
+### WARNING-1674 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-14 | Moreirense - Maritimo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9540`
 
-### WARNING-1615 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-14 | Braga - Estoril
+### WARNING-1675 · LAB_DUP_MATCH · Portugal_LigaPortugal | 2026-09-14 | Braga - Estoril
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9590`
 
-### WARNING-1616 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-21 | Tondela - Academica
+### WARNING-1676 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-21 | Tondela - Academica
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4480`
 
-### WARNING-1617 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-21 | Benfica B - Portimonense
+### WARNING-1677 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-21 | Benfica B - Portimonense
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4583`
 
-### WARNING-1618 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-30 | FC Porto B - Penafiel
+### WARNING-1678 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-30 | FC Porto B - Penafiel
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6261`
 
-### WARNING-1619 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-30 | Sporting B - Farense
+### WARNING-1679 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-30 | Sporting B - Farense
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6265`
 
-### WARNING-1620 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-30 | Amarante - Benfica B
+### WARNING-1680 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-08-30 | Amarante - Benfica B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6266`
 
-### WARNING-1621 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-11 | Torreense - Leixoes
+### WARNING-1681 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-11 | Torreense - Leixoes
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8122`
 
-### WARNING-1622 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-11 | Academica - Benfica B
+### WARNING-1682 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-11 | Academica - Benfica B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8187`
 
-### WARNING-1623 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-15 | FC Porto B - Vizela
+### WARNING-1683 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-15 | FC Porto B - Vizela
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9497`
 
-### WARNING-1624 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-15 | Sporting B - Lusitania FC
+### WARNING-1684 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-15 | Sporting B - Lusitania FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9509`
 
-### WARNING-1625 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-14 | FC Porto B - Vizela
+### WARNING-1685 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-14 | FC Porto B - Vizela
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9574`
 
-### WARNING-1626 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-14 | Sporting B - Lusitania FC
+### WARNING-1686 · LAB_DUP_MATCH · Portugal_LigaPortugal2 | 2026-09-14 | Sporting B - Lusitania FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9578`
 
-### WARNING-1627 · LAB_DUP_MATCH · Romania_Liga2 | 2026-08-21 | Chindia Targoviste - CS Din. Bucuresti
+### WARNING-1687 · LAB_DUP_MATCH · Romania_Liga2 | 2026-08-21 | Chindia Targoviste - CS Din. Bucuresti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4439`
 
-### WARNING-1628 · LAB_DUP_MATCH · Romania_Liga2 | 2026-09-15 | CSM Resita - FC Bacau
+### WARNING-1688 · LAB_DUP_MATCH · Romania_Liga2 | 2026-09-15 | CSM Resita - FC Bacau
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9432`
 
-### WARNING-1629 · LAB_DUP_MATCH · Romania_Liga2 | 2026-09-22 | FC ASA Tg. Mures - CS Din. Bucuresti
+### WARNING-1689 · LAB_DUP_MATCH · Romania_Liga2 | 2026-09-22 | FC ASA Tg. Mures - CS Din. Bucuresti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11337`
 
-### WARNING-1630 · LAB_DUP_MATCH · Romania_Liga2 | 2026-09-22 | CSC Dumbravita - CSM Resita
+### WARNING-1690 · LAB_DUP_MATCH · Romania_Liga2 | 2026-09-22 | CSC Dumbravita - CSM Resita
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11347`
 
-### WARNING-1631 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-14 | FC Arges - Farul Constanta
+### WARNING-1691 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-14 | FC Arges - Farul Constanta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2613`
 
-### WARNING-1632 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-14 | FC Voluntari - Petrolul
+### WARNING-1692 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-14 | FC Voluntari - Petrolul
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2626`
 
-### WARNING-1633 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-15 | Rapid Bucarest - Din. Bucuresti
+### WARNING-1693 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-15 | Rapid Bucarest - Din. Bucuresti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3411`
 
-### WARNING-1634 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-15 | Csikszereda M. Ciuc - Sepsi Sf. Gheorghe
+### WARNING-1694 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-15 | Csikszereda M. Ciuc - Sepsi Sf. Gheorghe
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3418`
 
-### WARNING-1635 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-16 | Corvinul - CFR Cluj
+### WARNING-1695 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-16 | Corvinul - CFR Cluj
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3808`
 
-### WARNING-1636 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-16 | Otelul - Univ. Craiova
+### WARNING-1696 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-16 | Otelul - Univ. Craiova
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3840`
 
-### WARNING-1637 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-21 | Petrolul - Rapid Bucarest
+### WARNING-1697 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-21 | Petrolul - Rapid Bucarest
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4579`
 
-### WARNING-1638 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-30 | Farul Constanta - Botosani
+### WARNING-1698 · LAB_DUP_MATCH · Romania_Superliga | 2026-08-30 | Farul Constanta - Botosani
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6253`
 
-### WARNING-1639 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-11 | Farul Constanta - UTA Arad
+### WARNING-1699 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-11 | Farul Constanta - UTA Arad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8153`
 
-### WARNING-1640 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-11 | Csikszereda M. Ciuc - Din. Bucuresti
+### WARNING-1700 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-11 | Csikszereda M. Ciuc - Din. Bucuresti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8160`
 
-### WARNING-1641 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-14 | U. Cluj - Otelul
+### WARNING-1701 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-14 | U. Cluj - Otelul
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9559`
 
-### WARNING-1642 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-14 | FCSB - Petrolul
+### WARNING-1702 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-14 | FCSB - Petrolul
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9571`
 
-### WARNING-1643 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-19 | Univ. Craiova - FCSB
+### WARNING-1703 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-19 | Univ. Craiova - FCSB
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10775`
 
-### WARNING-1644 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-19 | CFR Cluj - Botosani
+### WARNING-1704 · LAB_DUP_MATCH · Romania_Superliga | 2026-09-19 | CFR Cluj - Botosani
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10793`
 
-### WARNING-1645 · LAB_DUP_MATCH · Russia_FNL | 2026-08-14 | R. Volgograd - Ural
+### WARNING-1705 · LAB_DUP_MATCH · Russia_FNL | 2026-08-14 | R. Volgograd - Ural
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2619`
 
-### WARNING-1646 · LAB_DUP_MATCH · Russia_FNL | 2026-08-14 | Neftekhimik - Yaroslavl
+### WARNING-1706 · LAB_DUP_MATCH · Russia_FNL | 2026-08-14 | Neftekhimik - Yaroslavl
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2627`
 
-### WARNING-1647 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Sochi - Ulyanovsk
+### WARNING-1707 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Sochi - Ulyanovsk
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3204`
 
-### WARNING-1648 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Tekstilshtik - Pari NN
+### WARNING-1708 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Tekstilshtik - Pari NN
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3244`
 
-### WARNING-1649 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Yenisey - Kamaz
+### WARNING-1709 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Yenisey - Kamaz
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3262`
 
-### WARNING-1650 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | SKA Khabarovsk - Veles Moscow
+### WARNING-1710 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | SKA Khabarovsk - Veles Moscow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3279`
 
-### WARNING-1651 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Leningradets - Arsenal Tula
+### WARNING-1711 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Leningradets - Arsenal Tula
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3322`
 
-### WARNING-1652 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Chelyabinsk - Torpedo Moscow
+### WARNING-1712 · LAB_DUP_MATCH · Russia_FNL | 2026-08-15 | Chelyabinsk - Torpedo Moscow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3354`
 
-### WARNING-1653 · LAB_DUP_MATCH · Russia_FNL | 2026-08-16 | Sochi - Ulyanovsk
+### WARNING-1713 · LAB_DUP_MATCH · Russia_FNL | 2026-08-16 | Sochi - Ulyanovsk
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3766`
 
-### WARNING-1654 · LAB_DUP_MATCH · Russia_FNL | 2026-08-21 | Torpedo Moscow - S. Kostroma
+### WARNING-1714 · LAB_DUP_MATCH · Russia_FNL | 2026-08-21 | Torpedo Moscow - S. Kostroma
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4517`
 
-### WARNING-1655 · LAB_DUP_MATCH · Russia_FNL | 2026-08-30 | SKA Khabarovsk - Torpedo Moscow
+### WARNING-1715 · LAB_DUP_MATCH · Russia_FNL | 2026-08-30 | SKA Khabarovsk - Torpedo Moscow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6256`
 
-### WARNING-1656 · LAB_DUP_MATCH · Russia_FNL | 2026-09-14 | Veles Moscow - Sochi
+### WARNING-1716 · LAB_DUP_MATCH · Russia_FNL | 2026-09-14 | Veles Moscow - Sochi
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9561`
 
-### WARNING-1657 · LAB_DUP_MATCH · Russia_FNL | 2026-09-14 | Kamaz - Chelyabinsk
+### WARNING-1717 · LAB_DUP_MATCH · Russia_FNL | 2026-09-14 | Kamaz - Chelyabinsk
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9579`
 
-### WARNING-1658 · LAB_DUP_MATCH · Russia_FNL | 2026-09-14 | Yaroslavl - Ural
+### WARNING-1718 · LAB_DUP_MATCH · Russia_FNL | 2026-09-14 | Yaroslavl - Ural
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9580`
 
-### WARNING-1659 · LAB_DUP_MATCH · Russia_FNL | 2026-09-14 | S. Kostroma - Neftekhimik
+### WARNING-1719 · LAB_DUP_MATCH · Russia_FNL | 2026-09-14 | S. Kostroma - Neftekhimik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9593`
 
-### WARNING-1660 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-14 | Orenburg - Lok. Mosca
+### WARNING-1720 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-14 | Orenburg - Lok. Mosca
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2571`
 
-### WARNING-1661 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-15 | FK Rostov - Kazan
+### WARNING-1721 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-15 | FK Rostov - Kazan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3265`
 
-### WARNING-1662 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-15 | Krasnodar - Akhmat Grozny
+### WARNING-1722 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-15 | Krasnodar - Akhmat Grozny
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3267`
 
-### WARNING-1663 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-15 | Rodina Moscow - Akron Togliatti
+### WARNING-1723 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-15 | Rodina Moscow - Akron Togliatti
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3271`
 
-### WARNING-1664 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-15 | CSKA Mosca - F. Voronezh
+### WARNING-1724 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-15 | CSKA Mosca - F. Voronezh
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3330`
 
-### WARNING-1665 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-16 | Baltika - Sp. Mosca
+### WARNING-1725 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-16 | Baltika - Sp. Mosca
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3711`
 
-### WARNING-1666 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-16 | Zenit - Din. Mosca
+### WARNING-1726 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-16 | Zenit - Din. Mosca
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3717`
 
-### WARNING-1667 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-16 | Samara - Dynamo Makhachkala
+### WARNING-1727 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-08-16 | Samara - Dynamo Makhachkala
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3853`
 
-### WARNING-1668 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-09-11 | Samara - Rodina Moscow
+### WARNING-1728 · LAB_DUP_MATCH · Russia_PremierLeague | 2026-09-11 | Samara - Rodina Moscow
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8062`
 
-### WARNING-1669 · LAB_DUP_MATCH · SaudiArabia_ProfessionalLeague | 2026-09-01 | Al-Hilal - Al Ahli SC
+### WARNING-1729 · LAB_DUP_MATCH · SaudiArabia_ProfessionalLeague | 2026-09-01 | Al-Hilal - Al Ahli SC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6438`
 
-### WARNING-1670 · LAB_DUP_MATCH · SaudiArabia_ProfessionalLeague | 2026-09-11 | Al Ahli SC - Al Hazem
+### WARNING-1730 · LAB_DUP_MATCH · SaudiArabia_ProfessionalLeague | 2026-09-11 | Al Ahli SC - Al Hazem
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8086`
 
-### WARNING-1671 · LAB_DUP_MATCH · SaudiArabia_ProfessionalLeague | 2026-09-11 | Al Qadsiah - Al-Ettifaq
+### WARNING-1731 · LAB_DUP_MATCH · SaudiArabia_ProfessionalLeague | 2026-09-11 | Al Qadsiah - Al-Ettifaq
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8105`
 
-### WARNING-1672 · LAB_DUP_MATCH · SaudiArabia_ProfessionalLeague | 2026-09-11 | Al-Faysaly - Al-Ittihad FC
+### WARNING-1732 · LAB_DUP_MATCH · SaudiArabia_ProfessionalLeague | 2026-09-11 | Al-Faysaly - Al-Ittihad FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8174`
 
-### WARNING-1673 · LAB_DUP_MATCH · Scotland_Premiership | 2026-09-15 | Hibernian - Kilmarnock
+### WARNING-1733 · LAB_DUP_MATCH · SaudiArabia_ProfessionalLeague | 2026-10-27 | Abha - Al-Faysaly
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17367`
+
+### WARNING-1734 · LAB_DUP_MATCH · Scotland_Premiership | 2026-09-15 | Hibernian - Kilmarnock
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9429`
 
-### WARNING-1674 · LAB_DUP_MATCH · Scotland_Premiership | 2026-09-15 | Falkirk - Hearts
+### WARNING-1735 · LAB_DUP_MATCH · Scotland_Premiership | 2026-09-15 | Falkirk - Hearts
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9442`
 
-### WARNING-1675 · LAB_DUP_MATCH · Scotland_Premiership | 2026-09-15 | Motherwell - Aberdeen
+### WARNING-1736 · LAB_DUP_MATCH · Scotland_Premiership | 2026-09-15 | Motherwell - Aberdeen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9493`
 
-### WARNING-1676 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-14 | Sp. Subotica - Teleoptik
+### WARNING-1737 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-14 | Sp. Subotica - Teleoptik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2493`
 
-### WARNING-1677 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-14 | Loznica - Borac 1926
+### WARNING-1738 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-14 | Loznica - Borac 1926
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2639`
 
-### WARNING-1678 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-14 | Napredak - Metalac
+### WARNING-1739 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-14 | Napredak - Metalac
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2641`
 
-### WARNING-1679 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-14 | Vozdovac - Graficar Beograd
+### WARNING-1740 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-14 | Vozdovac - Graficar Beograd
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2648`
 
-### WARNING-1680 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-15 | Smederevo - Bor 1919
+### WARNING-1741 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-15 | Smederevo - Bor 1919
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3148`
 
-### WARNING-1681 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-15 | Javor - Vrsac
+### WARNING-1742 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-15 | Javor - Vrsac
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3389`
 
-### WARNING-1682 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-15 | Jedinstvo U. - TSC
+### WARNING-1743 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-15 | Jedinstvo U. - TSC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3421`
 
-### WARNING-1683 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-15 | Proleter 023 - Dubocica
+### WARNING-1744 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-08-15 | Proleter 023 - Dubocica
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3422`
 
-### WARNING-1684 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-09-01 | Teleoptik - Vozdovac
+### WARNING-1745 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-09-01 | Teleoptik - Vozdovac
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6466`
 
-### WARNING-1685 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-09-11 | Sp. Subotica - Napredak
+### WARNING-1746 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-09-11 | Sp. Subotica - Napredak
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8099`
 
-### WARNING-1686 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-09-11 | Metalac - Dubocica
+### WARNING-1747 · LAB_DUP_MATCH · Serbia_PrvaLiga | 2026-09-11 | Metalac - Dubocica
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8138`
 
-### WARNING-1687 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-15 | Cukaricki - OFK Belgrado
+### WARNING-1748 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-15 | Cukaricki - OFK Belgrado
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3278`
 
-### WARNING-1688 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-15 | Radnik - Macva
+### WARNING-1749 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-15 | Radnik - Macva
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3402`
 
-### WARNING-1689 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-16 | Partizan - Radnicki 1923
+### WARNING-1750 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-16 | Partizan - Radnicki 1923
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3754`
 
-### WARNING-1690 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-16 | IMT Novi Beograd - Radnicki Nis
+### WARNING-1751 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-16 | IMT Novi Beograd - Radnicki Nis
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3869`
 
-### WARNING-1691 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-16 | Zemun - Mladost
+### WARNING-1752 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-08-16 | Zemun - Mladost
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3895`
 
-### WARNING-1692 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-09-11 | Zeleznicar Pancevo - Macva
+### WARNING-1753 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-09-11 | Zeleznicar Pancevo - Macva
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8167`
 
-### WARNING-1693 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-09-14 | Zemun - Radnik
+### WARNING-1754 · LAB_DUP_MATCH · Serbia_SuperLiga | 2026-09-14 | Zemun - Radnik
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9584`
 
-### WARNING-1694 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-14 | Pohronie - MFK Bytca
+### WARNING-1755 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-14 | Pohronie - MFK Bytca
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2482`
 
-### WARNING-1695 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-14 | L. Mikulas - Zvolen
+### WARNING-1756 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-14 | L. Mikulas - Zvolen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2644`
 
-### WARNING-1696 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-15 | Samorin - Lehota p. V.
+### WARNING-1757 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-15 | Samorin - Lehota p. V.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3110`
 
-### WARNING-1697 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-15 | Z. Moravce-Vrable - Zilina B
+### WARNING-1758 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-15 | Z. Moravce-Vrable - Zilina B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3368`
 
-### WARNING-1698 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-15 | Inter Bratislava - Galanta
+### WARNING-1759 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-15 | Inter Bratislava - Galanta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3403`
 
-### WARNING-1699 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-16 | Malzenice - Povazska Bystrica
+### WARNING-1760 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-16 | Malzenice - Povazska Bystrica
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3704`
 
-### WARNING-1700 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-16 | Petrzalka - Presov
+### WARNING-1761 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-08-16 | Petrzalka - Presov
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3848`
 
-### WARNING-1701 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-11 | Pohronie - L. Mikulas
+### WARNING-1762 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-11 | Pohronie - L. Mikulas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8047`
 
-### WARNING-1702 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-14 | Z. Moravce-Vrable - Zvolen
+### WARNING-1763 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-14 | Z. Moravce-Vrable - Zvolen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9585`
 
-### WARNING-1703 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-19 | MFK Bytca - Lehota p. V.
+### WARNING-1764 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-19 | MFK Bytca - Lehota p. V.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10703`
 
-### WARNING-1704 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-19 | Presov - Samorin
+### WARNING-1765 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-19 | Presov - Samorin
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10719`
 
-### WARNING-1705 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-19 | FK Humenne - Inter Bratislava
+### WARNING-1766 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-19 | FK Humenne - Inter Bratislava
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10765`
 
-### WARNING-1706 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-19 | Zvolen - Malzenice
+### WARNING-1767 · LAB_DUP_MATCH · Slovakia_2Liga | 2026-09-19 | Zvolen - Malzenice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10840`
 
-### WARNING-1707 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-08-21 | MSK Senec - Dun. Streda B
+### WARNING-1768 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-08-21 | MSK Senec - Dun. Streda B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4360`
 
-### WARNING-1708 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-11 | Myjava - Trencin B
+### WARNING-1769 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-11 | Myjava - Trencin B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8032`
 
-### WARNING-1709 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-19 | Banik Prievidza - Raca
+### WARNING-1770 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-19 | Banik Prievidza - Raca
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10637`
 
-### WARNING-1710 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-19 | Castkovce - Komarno B
+### WARNING-1771 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-19 | Castkovce - Komarno B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10701`
 
-### WARNING-1711 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-19 | FKM Nove Zamky - Nitra
+### WARNING-1772 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-19 | FKM Nove Zamky - Nitra
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '5', 'OK'), attuali=('1', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10798`
 
-### WARNING-1712 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-19 | Gabcikovo - Puchov
+### WARNING-1773 · LAB_DUP_MATCH · Slovakia_3Liga_West | 2026-09-19 | Gabcikovo - Puchov
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10856`
 
-### WARNING-1713 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-15 | Skalica - Kosice
+### WARNING-1774 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-15 | Skalica - Kosice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3044`
 
-### WARNING-1714 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-15 | Slovan Bratislava - Ruzomberok
+### WARNING-1775 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-15 | Slovan Bratislava - Ruzomberok
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3125`
 
-### WARNING-1715 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-15 | Podbrezova - Trencin
+### WARNING-1776 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-15 | Podbrezova - Trencin
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3207`
 
-### WARNING-1716 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-15 | Banska Bystrica - Zilina
+### WARNING-1777 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-15 | Banska Bystrica - Zilina
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3298`
 
-### WARNING-1717 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-16 | Komarno - Dun. Streda
+### WARNING-1778 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-16 | Komarno - Dun. Streda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3887`
 
-### WARNING-1718 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-16 | Trnava - Michalovce
+### WARNING-1779 · LAB_DUP_MATCH · Slovakia_NikeLiga | 2026-08-16 | Trnava - Michalovce
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3888`
 
-### WARNING-1719 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-08-21 | NK Krka - Slovan Ljubljana
+### WARNING-1780 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-08-21 | NK Krka - Slovan Ljubljana
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4525`
 
-### WARNING-1720 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-08-21 | Jadran Dekani - NK Jesenice
+### WARNING-1781 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-08-21 | Jadran Dekani - NK Jesenice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4545`
 
-### WARNING-1721 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-08-21 | Triglav - Brezice
+### WARNING-1782 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-08-21 | Triglav - Brezice
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4548`
 
-### WARNING-1722 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-09-11 | Primorje - Bilje
+### WARNING-1783 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-09-11 | Primorje - Bilje
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8019`
 
-### WARNING-1723 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-09-11 | Tabor Sezana - Dravinja
+### WARNING-1784 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-09-11 | Tabor Sezana - Dravinja
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8178`
 
-### WARNING-1724 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-15 | Nafta - Celje
+### WARNING-1785 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-10-27 | Ilirija - Bilje
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17347`
+
+### WARNING-1786 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-10-27 | NK Krka - Vrhnika
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17379`
+
+### WARNING-1787 · LAB_DUP_MATCH · Slovenia_2SNL | 2026-10-27 | Jadran Dekani - Brezice
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17384`
+
+### WARNING-1788 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-15 | Nafta - Celje
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3351`
 
-### WARNING-1725 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-15 | O. Ljubljana - Maribor
+### WARNING-1789 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-15 | O. Ljubljana - Maribor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3419`
 
-### WARNING-1726 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-16 | Grosuplje - Mura
+### WARNING-1790 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-16 | Grosuplje - Mura
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3825`
 
-### WARNING-1727 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-16 | Koper - Bravo
+### WARNING-1791 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-16 | Koper - Bravo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3855`
 
-### WARNING-1728 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-16 | Radomlje - Aluminij
+### WARNING-1792 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-16 | Radomlje - Aluminij
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3884`
 
-### WARNING-1729 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-21 | O. Ljubljana - Nafta
+### WARNING-1793 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-21 | O. Ljubljana - Nafta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4560`
 
-### WARNING-1730 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-21 | Aluminij - Grosuplje
+### WARNING-1794 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-21 | Aluminij - Grosuplje
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4561`
 
-### WARNING-1731 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-30 | Grosuplje - Celje
+### WARNING-1795 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-30 | Grosuplje - Celje
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6249`
 
-### WARNING-1732 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-30 | Nafta - Maribor
+### WARNING-1796 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-08-30 | Nafta - Maribor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6263`
 
-### WARNING-1733 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-09-11 | Grosuplje - Nafta
+### WARNING-1797 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-09-11 | Grosuplje - Nafta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8082`
 
-### WARNING-1734 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-07-12 | Raadsan - Heegan
+### WARNING-1798 · LAB_DUP_MATCH · Slovenia_PrvaLiga | 2026-10-27 | Koper - Maribor
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17386`
+
+### WARNING-1799 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-07-12 | Raadsan - Heegan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:334`
 
-### WARNING-1735 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-08-09 | Gaadiidka - Mogadishu City
+### WARNING-1800 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-08-09 | Gaadiidka - Mogadishu City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2166`
 
-### WARNING-1736 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-08-12 | Jubba - Gantaalaha Afgooye
+### WARNING-1801 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-08-12 | Jubba - Gantaalaha Afgooye
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '5', 'OK'), attuali=('1', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2241`
 
-### WARNING-1737 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-08-12 | Jeenyo - Jazeera
+### WARNING-1802 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-08-12 | Jeenyo - Jazeera
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2243`
 
-### WARNING-1738 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-08-14 | Gaadiidka - Dekedaha
+### WARNING-1803 · LAB_DUP_MATCH · Somalia_NationalLeague | 2026-08-14 | Gaadiidka - Dekedaha
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2537`
 
-### WARNING-1739 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-15 | Jeju SK - Anyang
+### WARNING-1804 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-15 | Jeju SK - Anyang
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3329`
 
-### WARNING-1740 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-15 | Seoul - Daejeon
+### WARNING-1805 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-15 | Seoul - Daejeon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3350`
 
-### WARNING-1741 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-15 | Gwangju - Pohang
+### WARNING-1806 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-15 | Gwangju - Pohang
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3394`
 
-### WARNING-1742 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-16 | Ulsan HD - Gangwon
+### WARNING-1807 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-16 | Ulsan HD - Gangwon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3860`
 
-### WARNING-1743 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-16 | Incheon - Gimcheon Sangmu
+### WARNING-1808 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-16 | Incheon - Gimcheon Sangmu
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3880`
 
-### WARNING-1744 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-16 | Bucheon - Jeonbuk
+### WARNING-1809 · LAB_DUP_MATCH · SouthKorea_KLeague1 | 2026-08-16 | Bucheon - Jeonbuk
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3893`
 
-### WARNING-1745 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-15 | Busan - Hwaseong
+### WARNING-1810 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-15 | Busan - Hwaseong
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3266`
 
-### WARNING-1746 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-15 | Cheongju Jikji - Jeonnam
+### WARNING-1811 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-15 | Cheongju Jikji - Jeonnam
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3317`
 
-### WARNING-1747 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-15 | Suwon Bluewings - Suwon FC
+### WARNING-1812 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-15 | Suwon Bluewings - Suwon FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3332`
 
-### WARNING-1748 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-15 | Gimhae - Gyeongnam
+### WARNING-1813 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-15 | Gimhae - Gyeongnam
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3344`
 
-### WARNING-1749 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-16 | Seoul E-Land - Ansan Greeners
+### WARNING-1814 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-16 | Seoul E-Land - Ansan Greeners
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3749`
 
-### WARNING-1750 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-16 | Daegu - Asan
+### WARNING-1815 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-16 | Daegu - Asan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3812`
 
-### WARNING-1751 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-16 | Gimpo FC - Cheonan City
+### WARNING-1816 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-16 | Gimpo FC - Cheonan City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3843`
 
-### WARNING-1752 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-16 | Paju Frontier - Seongnam
+### WARNING-1817 · LAB_DUP_MATCH · SouthKorea_KLeague2 | 2026-08-16 | Paju Frontier - Seongnam
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3892`
 
-### WARNING-1753 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-11 | Siviglia - Valencia
+### WARNING-1818 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-11 | Siviglia - Valencia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8049`
 
-### WARNING-1754 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-15 | Elche - Real Madrid
+### WARNING-1819 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-15 | Elche - Real Madrid
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9441`
 
-### WARNING-1755 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-15 | Vallecano - Espanyol
+### WARNING-1820 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-15 | Vallecano - Espanyol
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9448`
 
-### WARNING-1756 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-15 | Alaves - Valencia
+### WARNING-1821 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-15 | Alaves - Valencia
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9463`
 
-### WARNING-1757 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-14 | Villarreal - Betis
+### WARNING-1822 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-14 | Villarreal - Betis
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9543`
 
-### WARNING-1758 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-19 | Siviglia - Barcellona
+### WARNING-1823 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-19 | Siviglia - Barcellona
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10729`
 
-### WARNING-1759 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-19 | Celta Vigo - Racing Santander
+### WARNING-1824 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-19 | Celta Vigo - Racing Santander
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10763`
 
-### WARNING-1760 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-19 | Osasuna - Rayo Vallecano
+### WARNING-1825 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-19 | Osasuna - Rayo Vallecano
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10808`
 
-### WARNING-1761 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-19 | Ath. Bilbao - Alaves
+### WARNING-1826 · LAB_DUP_MATCH · Spain_LaLiga | 2026-09-19 | Ath. Bilbao - Alaves
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10830`
 
-### WARNING-1762 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-11 | Burgos CF - Ceuta
+### WARNING-1827 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-11 | Burgos CF - Ceuta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8096`
 
-### WARNING-1763 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-14 | Celta Vigo B - Eibar
+### WARNING-1828 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-14 | Celta Vigo B - Eibar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9564`
 
-### WARNING-1764 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Cadice - Girona
+### WARNING-1829 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Cadice - Girona
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10844`
 
-### WARNING-1765 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Real Sociedad B - Maiorca
+### WARNING-1830 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Real Sociedad B - Maiorca
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10845`
 
-### WARNING-1766 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Castellon - Tenerife
+### WARNING-1831 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Castellon - Tenerife
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10859`
 
-### WARNING-1767 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Andorra - Gijon
+### WARNING-1832 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Andorra - Gijon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10860`
 
-### WARNING-1768 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Eldense - Eibar
+### WARNING-1833 · LAB_DUP_MATCH · Spain_LaLiga2 | 2026-09-19 | Eldense - Eibar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10861`
 
-### WARNING-1769 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-08-14 | Blue Eagles - Colombo
+### WARNING-1834 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-08-14 | Blue Eagles - Colombo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2646`
 
-### WARNING-1770 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-08-15 | Renown - Red Star
+### WARNING-1835 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-08-15 | Renown - Red Star
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3293`
 
-### WARNING-1771 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-08-16 | Ratnam - UP Country Lions
+### WARNING-1836 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-08-16 | Ratnam - UP Country Lions
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '5', 'OK'), attuali=('1', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3859`
 
-### WARNING-1772 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-08-21 | Defenders FC - Ratnam
+### WARNING-1837 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-08-21 | Defenders FC - Ratnam
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4558`
 
-### WARNING-1773 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-09-01 | New Young's SC - Ratnam
+### WARNING-1838 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-09-01 | New Young's SC - Ratnam
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6451`
 
-### WARNING-1774 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-09-11 | Defenders FC - New Young's SC
+### WARNING-1839 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-09-11 | Defenders FC - New Young's SC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8084`
 
-### WARNING-1775 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-09-15 | Blue Eagles - Sea Hawks
+### WARNING-1840 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-09-15 | Blue Eagles - Sea Hawks
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9511`
 
-### WARNING-1776 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-09-14 | Ratnam - Blue Star
+### WARNING-1841 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-09-14 | Ratnam - Blue Star
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9545`
 
-### WARNING-1777 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-10-13 | Blue Eagles - Ratnam
+### WARNING-1842 · LAB_DUP_MATCH · SriLanka_SuperLeague | 2026-10-13 | Blue Eagles - Ratnam
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14471`
 
-### WARNING-1778 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-09 | Malmo FF - Degerfors
+### WARNING-1843 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-09 | Malmo FF - Degerfors
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2149`
 
-### WARNING-1779 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-09 | Hammarby - Hacken
+### WARNING-1844 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-09 | Hammarby - Hacken
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2155`
 
-### WARNING-1780 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-09 | Göteborg - Kalmar
+### WARNING-1845 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-09 | Göteborg - Kalmar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2164`
 
-### WARNING-1781 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-09 | Halmstad - GAIS
+### WARNING-1846 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-09 | Halmstad - GAIS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2172`
 
-### WARNING-1782 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-14 | Elfsborg - Västerås SK
+### WARNING-1847 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-14 | Elfsborg - Västerås SK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2586`
 
-### WARNING-1783 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-15 | Mjallby - Sirius
+### WARNING-1848 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-15 | Mjallby - Sirius
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3233`
 
-### WARNING-1784 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | Djurgarden - AIK Stockholm
+### WARNING-1849 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | Djurgarden - AIK Stockholm
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3768`
 
-### WARNING-1785 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | Brommapojkarna - Orgryte
+### WARNING-1850 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | Brommapojkarna - Orgryte
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3792`
 
-### WARNING-1786 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | Kalmar - Hammarby
+### WARNING-1851 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | Kalmar - Hammarby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3800`
 
-### WARNING-1787 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | Degerfors - Göteborg
+### WARNING-1852 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | Degerfors - Göteborg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3813`
 
-### WARNING-1788 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | GAIS - Malmo FF
+### WARNING-1853 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-16 | GAIS - Malmo FF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3839`
 
-### WARNING-1789 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-21 | Sirius - Hacken
+### WARNING-1854 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-08-21 | Sirius - Hacken
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4446`
 
-### WARNING-1790 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-09-11 | Hacken - Mjallby
+### WARNING-1855 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-09-11 | Hacken - Mjallby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8083`
 
-### WARNING-1791 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-09-14 | Sirius - Degerfors
+### WARNING-1856 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-09-14 | Sirius - Degerfors
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9570`
 
-### WARNING-1792 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-09-14 | Djurgarden - GAIS
+### WARNING-1857 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-09-14 | Djurgarden - GAIS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9582`
 
-### WARNING-1793 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-09 | Arlanda - Pitea
+### WARNING-1858 · LAB_DUP_MATCH · Sweden_Allsvenskan | 2026-10-27 | AIK Stockholm - Elfsborg
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17352`
+
+### WARNING-1859 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-09 | Arlanda - Pitea
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2162`
 
-### WARNING-1794 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-14 | AFC Eskilstuna - Hammarby TFF
+### WARNING-1860 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-14 | AFC Eskilstuna - Hammarby TFF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2555`
 
-### WARNING-1795 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-15 | Karlbergs - Stocksund
+### WARNING-1861 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-15 | Karlbergs - Stocksund
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3167`
 
-### WARNING-1796 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-15 | Gefle - Umeå
+### WARNING-1862 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-15 | Gefle - Umeå
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3295`
 
-### WARNING-1797 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-15 | Sollentuna - Jarfalla
+### WARNING-1863 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-15 | Sollentuna - Jarfalla
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3303`
 
-### WARNING-1798 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-15 | Karlstad - Assyriska FF
+### WARNING-1864 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-15 | Karlstad - Assyriska FF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3310`
 
-### WARNING-1799 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-16 | Pitea - Vasalund
+### WARNING-1865 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-16 | Pitea - Vasalund
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3759`
 
-### WARNING-1800 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-16 | FBK Karlstad - Enkoping SK
+### WARNING-1866 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-16 | FBK Karlstad - Enkoping SK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3818`
 
-### WARNING-1801 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-16 | Stockholm Internazionale - Arlanda
+### WARNING-1867 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-16 | Stockholm Internazionale - Arlanda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3849`
 
-### WARNING-1802 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-21 | Stockholm Internazionale - Jarfalla
+### WARNING-1868 · LAB_DUP_MATCH · Sweden_Division1_Norra | 2026-08-21 | Stockholm Internazionale - Jarfalla
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4412`
 
-### WARNING-1803 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-09 | Jonkoping - Olympic
+### WARNING-1869 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-09 | Jonkoping - Olympic
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2153`
 
-### WARNING-1804 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-14 | Lunds - Hassleholms IF
+### WARNING-1870 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-14 | Lunds - Hassleholms IF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2527`
 
-### WARNING-1805 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-15 | Olympic - AFC Malmo
+### WARNING-1871 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-15 | Olympic - AFC Malmo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3174`
 
-### WARNING-1806 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-15 | Laholms - Jonkoping
+### WARNING-1872 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-15 | Laholms - Jonkoping
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3282`
 
-### WARNING-1807 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-15 | Angelholm - Trollhättan
+### WARNING-1873 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-15 | Angelholm - Trollhättan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3316`
 
-### WARNING-1808 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-15 | Kristianstad - Tvaaker
+### WARNING-1874 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-15 | Kristianstad - Tvaaker
 - Area: `laboratory`
-- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3339`
 
-### WARNING-1809 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-16 | Rosengard - Utsikten
+### WARNING-1875 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-16 | Rosengard - Utsikten
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3719`
 
-### WARNING-1810 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-16 | Trelleborg - Eskilsminne
+### WARNING-1876 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-16 | Trelleborg - Eskilsminne
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3729`
 
-### WARNING-1811 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-16 | Atvidaberg - Skövde
+### WARNING-1877 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-08-16 | Atvidaberg - Skövde
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3746`
 
-### WARNING-1812 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-09-11 | Lunds - Rosengard
+### WARNING-1878 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-09-11 | Lunds - Rosengard
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8080`
 
-### WARNING-1813 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-09-11 | Trollhättan - Utsikten
+### WARNING-1879 · LAB_DUP_MATCH · Sweden_Division1_Sodra | 2026-09-11 | Trollhättan - Utsikten
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8113`
 
-### WARNING-1814 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | IFK Skovde - Ahlafors IF
+### WARNING-1880 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | IFK Skovde - Ahlafors IF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1365`
 
-### WARNING-1815 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | Vanersborgs FK - Herrestads AIF
+### WARNING-1881 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | Vanersborgs FK - Herrestads AIF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1376`
 
-### WARNING-1816 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | Karlstad 2 - Grebbestad
+### WARNING-1882 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | Karlstad 2 - Grebbestad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1378`
 
-### WARNING-1817 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | Stenungsunds - Skara
+### WARNING-1883 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | Stenungsunds - Skara
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1388`
 
-### WARNING-1818 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | Tord - Kumla
+### WARNING-1884 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-07-31 | Tord - Kumla
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1394`
 
-### WARNING-1819 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-09 | Motala - Husqvarna
+### WARNING-1885 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-09 | Motala - Husqvarna
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2157`
 
-### WARNING-1820 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-09 | Herrestads AIF - Tord
+### WARNING-1886 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-09 | Herrestads AIF - Tord
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2159`
 
-### WARNING-1821 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-14 | Ahlafors IF - Grebbestad
+### WARNING-1887 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-14 | Ahlafors IF - Grebbestad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2535`
 
-### WARNING-1822 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-14 | Husqvarna - Skara
+### WARNING-1888 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-14 | Husqvarna - Skara
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2548`
 
-### WARNING-1823 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-15 | IFK Skovde - Herrestads AIF
+### WARNING-1889 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-15 | IFK Skovde - Herrestads AIF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3249`
 
-### WARNING-1824 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-15 | Tord - Motala
+### WARNING-1890 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-15 | Tord - Motala
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3335`
 
-### WARNING-1825 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-15 | Stenungsunds - Kumla
+### WARNING-1891 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-15 | Stenungsunds - Kumla
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3340`
 
-### WARNING-1826 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-16 | Karlstad 2 - Lidkoping
+### WARNING-1892 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-16 | Karlstad 2 - Lidkoping
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3799`
 
-### WARNING-1827 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-21 | Vanersborgs FK - IFK Skovde
+### WARNING-1893 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-21 | Vanersborgs FK - IFK Skovde
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4424`
 
-### WARNING-1828 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-21 | Herrestads AIF - Vanersborgs IF
+### WARNING-1894 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-21 | Herrestads AIF - Vanersborgs IF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4431`
 
-### WARNING-1829 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-21 | Lidkoping - Ahlafors IF
+### WARNING-1895 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-21 | Lidkoping - Ahlafors IF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4444`
 
-### WARNING-1830 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-21 | Kumla - Husqvarna
+### WARNING-1896 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-08-21 | Kumla - Husqvarna
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '6', 'OK'), attuali=('2', '6', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4506`
 
-### WARNING-1831 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-11 | Vanersborgs IF - Grebbestad
+### WARNING-1897 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-11 | Vanersborgs IF - Grebbestad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8059`
 
-### WARNING-1832 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-11 | Stenungsunds - Vanersborgs FK
+### WARNING-1898 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-11 | Stenungsunds - Vanersborgs FK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8120`
 
-### WARNING-1833 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-11 | Kumla - Motala
+### WARNING-1899 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-11 | Kumla - Motala
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8151`
 
-### WARNING-1834 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-19 | Motala - Grebbestad
+### WARNING-1900 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-19 | Motala - Grebbestad
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10732`
 
-### WARNING-1835 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-19 | Skara - Ahlafors IF
+### WARNING-1901 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-19 | Skara - Ahlafors IF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10739`
 
-### WARNING-1836 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-19 | Vanersborgs FK - Tord
+### WARNING-1902 · LAB_DUP_MATCH · Sweden_Division2_NorraGotaland | 2026-09-19 | Vanersborgs FK - Tord
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10774`
 
-### WARNING-1837 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-15 | Gute - Bollstanas
+### WARNING-1903 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-15 | Gute - Bollstanas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3256`
 
-### WARNING-1838 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-15 | Falu - IK Franke
+### WARNING-1904 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-15 | Falu - IK Franke
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3274`
 
-### WARNING-1839 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-15 | Angby - Kungsangen
+### WARNING-1905 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-15 | Angby - Kungsangen
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3296`
 
-### WARNING-1840 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-15 | Lidingo IFK - Viggbyholms
+### WARNING-1906 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-15 | Lidingo IFK - Viggbyholms
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3359`
 
-### WARNING-1841 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-16 | Skiljebo - Helges
+### WARNING-1907 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-16 | Skiljebo - Helges
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3712`
 
-### WARNING-1842 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-16 | Sunnersta AIF - Taby
+### WARNING-1908 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-16 | Sunnersta AIF - Taby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3771`
 
-### WARNING-1843 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-16 | Enskede - Korsnas
+### WARNING-1909 · LAB_DUP_MATCH · Sweden_Division2_NorraSvealand | 2026-08-16 | Enskede - Korsnas
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3778`
 
-### WARNING-1844 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-09 | IFK Umea - Fransta
+### WARNING-1910 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-09 | IFK Umea - Fransta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2138`
 
-### WARNING-1845 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Umea FF - Umea FC Akademi
+### WARNING-1911 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Umea FF - Umea FC Akademi
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3111`
 
-### WARNING-1846 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Kubikenborgs IF - Taftea IK
+### WARNING-1912 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Kubikenborgs IF - Taftea IK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3147`
 
-### WARNING-1847 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | IFK Umea - Storfors
+### WARNING-1913 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | IFK Umea - Storfors
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3159`
 
-### WARNING-1848 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Fransta - Friska Viljor
+### WARNING-1914 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Fransta - Friska Viljor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3170`
 
-### WARNING-1849 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Skelleftea - IFK Lulea
+### WARNING-1915 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Skelleftea - IFK Lulea
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3230`
 
-### WARNING-1850 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Boden - Gottne
+### WARNING-1916 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-15 | Boden - Gottne
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3231`
 
-### WARNING-1851 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-16 | IFK Ostersund - Lucksta
+### WARNING-1917 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-16 | IFK Ostersund - Lucksta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3699`
 
-### WARNING-1852 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-21 | Umea FF - IFK Umea
+### WARNING-1918 · LAB_DUP_MATCH · Sweden_Division2_Norrland | 2026-08-21 | Umea FF - IFK Umea
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4402`
 
-### WARNING-1853 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-07-31 | IFK Karlshamn - Rappe GOIF
+### WARNING-1919 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-07-31 | IFK Karlshamn - Rappe GOIF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1395`
 
-### WARNING-1854 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-09 | IFK Trelleborg - Vaxjo Norra
+### WARNING-1920 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-09 | IFK Trelleborg - Vaxjo Norra
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2165`
 
-### WARNING-1855 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-14 | Solvesborgs - Nosaby
+### WARNING-1921 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-14 | Solvesborgs - Nosaby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2519`
 
-### WARNING-1856 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-15 | Torns - IFK Berga
+### WARNING-1922 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-15 | Torns - IFK Berga
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '4', 'OK'), attuali=('3', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3114`
 
-### WARNING-1857 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-15 | Lilla Torg - Karlskrona
+### WARNING-1923 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-15 | Lilla Torg - Karlskrona
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3237`
 
-### WARNING-1858 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-15 | IFK Karlshamn - IFK Trelleborg
+### WARNING-1924 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-15 | IFK Karlshamn - IFK Trelleborg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '5', 'OK'), attuali=('1', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3290`
 
-### WARNING-1859 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-16 | Linero IF - Rappe GOIF
+### WARNING-1925 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-16 | Linero IF - Rappe GOIF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '1', 'OK'), attuali=('5', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3761`
 
-### WARNING-1860 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-16 | Osterlen - Oskarshamn
+### WARNING-1926 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-16 | Osterlen - Oskarshamn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3763`
 
-### WARNING-1861 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-16 | Vaxjo Norra - Staffanstorp United
+### WARNING-1927 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-16 | Vaxjo Norra - Staffanstorp United
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3796`
 
-### WARNING-1862 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-21 | Solvesborgs - IFK Karlshamn
+### WARNING-1928 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-08-21 | Solvesborgs - IFK Karlshamn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4433`
 
-### WARNING-1863 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-09-19 | IFK Berga - IFK Karlshamn
+### WARNING-1929 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-09-19 | IFK Berga - IFK Karlshamn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10583`
 
-### WARNING-1864 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-09-19 | Torns - Rappe GOIF
+### WARNING-1930 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-09-19 | Torns - Rappe GOIF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10666`
 
-### WARNING-1865 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-09-19 | Karlskrona - Oskarshamn
+### WARNING-1931 · LAB_DUP_MATCH · Sweden_Division2_SodraGotaland | 2026-09-19 | Karlskrona - Oskarshamn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10695`
 
-### WARNING-1866 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-07-31 | Farsta - Ragsved
+### WARNING-1932 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-07-31 | Farsta - Ragsved
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1361`
 
-### WARNING-1867 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-09 | Eker Orebro - Nacka FC
+### WARNING-1933 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-09 | Eker Orebro - Nacka FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2143`
 
-### WARNING-1868 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-09 | Nykopings - Sleipner
+### WARNING-1934 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-09 | Nykopings - Sleipner
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2147`
 
-### WARNING-1869 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-09 | Lindo FF - Fittja
+### WARNING-1935 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-09 | Lindo FF - Fittja
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2151`
 
-### WARNING-1870 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-14 | Farsta - Nykopings
+### WARNING-1936 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-14 | Farsta - Nykopings
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2576`
 
-### WARNING-1871 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-15 | Karlslund - Haninge
+### WARNING-1937 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-15 | Karlslund - Haninge
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3176`
 
-### WARNING-1872 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-15 | Smedby - Eker Orebro
+### WARNING-1938 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-15 | Smedby - Eker Orebro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3248`
 
-### WARNING-1873 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-16 | Forward - Syrianska
+### WARNING-1939 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-16 | Forward - Syrianska
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3710`
 
-### WARNING-1874 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-16 | Fittja - Ragsved
+### WARNING-1940 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-16 | Fittja - Ragsved
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3718`
 
-### WARNING-1875 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-16 | Nacka FC - Orebro Syr.
+### WARNING-1941 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-08-16 | Nacka FC - Orebro Syr.
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3856`
 
-### WARNING-1876 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-09-14 | Haninge - Syrianska
+### WARNING-1942 · LAB_DUP_MATCH · Sweden_Division2_SodraSvealand | 2026-09-14 | Haninge - Syrianska
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9533`
 
-### WARNING-1877 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-07-31 | Lindome - Jonsereds
+### WARNING-1943 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-07-31 | Lindome - Jonsereds
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1379`
 
-### WARNING-1878 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-07-31 | Boljan - Frölunda
+### WARNING-1944 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-07-31 | Boljan - Frölunda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1382`
 
-### WARNING-1879 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-07-31 | Kongahalla - Onsala
+### WARNING-1945 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-07-31 | Kongahalla - Onsala
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1385`
 
-### WARNING-1880 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-09 | Astrio - Torslanda
+### WARNING-1946 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-09 | Astrio - Torslanda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '6', 'OK'), attuali=('0', '6', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2158`
 
-### WARNING-1881 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-09 | Jonsereds - Landvetter
+### WARNING-1947 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-09 | Jonsereds - Landvetter
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2167`
 
-### WARNING-1882 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Hestrafors - Qviding
+### WARNING-1948 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Hestrafors - Qviding
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2466`
 
-### WARNING-1883 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Lindome - Astrio
+### WARNING-1949 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Lindome - Astrio
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2518`
 
-### WARNING-1884 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Kongahalla - Frölunda
+### WARNING-1950 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Kongahalla - Frölunda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2529`
 
-### WARNING-1885 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Boljan - Astorps
+### WARNING-1951 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Boljan - Astorps
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2540`
 
-### WARNING-1886 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Landvetter - Galtabacks BK
+### WARNING-1952 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-14 | Landvetter - Galtabacks BK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2561`
 
-### WARNING-1887 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-15 | Jonsereds - Onsala
+### WARNING-1953 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-15 | Jonsereds - Onsala
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3210`
 
-### WARNING-1888 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-15 | Torslanda - Dalstorps IF
+### WARNING-1954 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-08-15 | Torslanda - Dalstorps IF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3227`
 
-### WARNING-1889 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-11 | Boljan - Hestrafors
+### WARNING-1955 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-11 | Boljan - Hestrafors
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8023`
 
-### WARNING-1890 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-11 | Dalstorps IF - Frölunda
+### WARNING-1956 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-11 | Dalstorps IF - Frölunda
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8025`
 
-### WARNING-1891 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-11 | Lindome - Landvetter
+### WARNING-1957 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-11 | Lindome - Landvetter
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8121`
 
-### WARNING-1892 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-19 | Hestrafors - Kongahalla
+### WARNING-1958 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-19 | Hestrafors - Kongahalla
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10617`
 
-### WARNING-1893 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-19 | Qviding - Dalstorps IF
+### WARNING-1959 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-19 | Qviding - Dalstorps IF
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10630`
 
-### WARNING-1894 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-19 | Astrio - Onsala
+### WARNING-1960 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-19 | Astrio - Onsala
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10742`
 
-### WARNING-1895 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-24 | Kongahalla - Lindome
+### WARNING-1961 · LAB_DUP_MATCH · Sweden_Division2_VastraGotaland | 2026-09-24 | Kongahalla - Lindome
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11357`
 
-### WARNING-1896 · LAB_DUP_MATCH · Sweden_Superettan | 2026-07-31 | Oddevold - Norrby
+### WARNING-1962 · LAB_DUP_MATCH · Sweden_Superettan | 2026-07-31 | Oddevold - Norrby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:1392`
 
-### WARNING-1897 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-09 | Varberg - Sandviken
+### WARNING-1963 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-09 | Varberg - Sandviken
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2140`
 
-### WARNING-1898 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-14 | Brage - Örebro
+### WARNING-1964 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-14 | Brage - Örebro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '3', 'OK'), attuali=('3', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2547`
 
-### WARNING-1899 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-14 | Landskrona - Oddevold
+### WARNING-1965 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-14 | Landskrona - Oddevold
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2588`
 
-### WARNING-1900 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Sundsvall - Helsingborg
+### WARNING-1966 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Sundsvall - Helsingborg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3228`
 
-### WARNING-1901 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Falkenberg - Norrby
+### WARNING-1967 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Falkenberg - Norrby
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3263`
 
-### WARNING-1902 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Nordic United - Varberg
+### WARNING-1968 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Nordic United - Varberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3269`
 
-### WARNING-1903 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Ljungskile - Öster
+### WARNING-1969 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Ljungskile - Öster
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3284`
 
-### WARNING-1904 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Sandviken - Norrkoping
+### WARNING-1970 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-15 | Sandviken - Norrkoping
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3338`
 
-### WARNING-1905 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-16 | Värnamo - Östersund
+### WARNING-1971 · LAB_DUP_MATCH · Sweden_Superettan | 2026-08-16 | Värnamo - Östersund
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3838`
 
-### WARNING-1906 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-01 | Helsingborg - Örebro
+### WARNING-1972 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-01 | Helsingborg - Örebro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6450`
 
-### WARNING-1907 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-15 | Brage - Sandviken
+### WARNING-1973 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-15 | Brage - Sandviken
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9445`
 
-### WARNING-1908 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-15 | Värnamo - Öster
+### WARNING-1974 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-15 | Värnamo - Öster
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9476`
 
-### WARNING-1909 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-15 | Landskrona - Sundsvall
+### WARNING-1975 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-15 | Landskrona - Sundsvall
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9490`
 
-### WARNING-1910 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-14 | Norrby - Varberg
+### WARNING-1976 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-14 | Norrby - Varberg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9558`
 
-### WARNING-1911 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-14 | Örebro - Nordic United
+### WARNING-1977 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-14 | Örebro - Nordic United
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9575`
 
-### WARNING-1912 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-14 | Östersund - Helsingborg
+### WARNING-1978 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-14 | Östersund - Helsingborg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9577`
 
-### WARNING-1913 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Varberg - Brage
+### WARNING-1979 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Varberg - Brage
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10705`
 
-### WARNING-1914 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Oddevold - Värnamo
+### WARNING-1980 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Oddevold - Värnamo
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10749`
 
-### WARNING-1915 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Öster - Norrkoping
+### WARNING-1981 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Öster - Norrkoping
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10773`
 
-### WARNING-1916 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Nordic United - Landskrona
+### WARNING-1982 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Nordic United - Landskrona
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10788`
 
-### WARNING-1917 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Sandviken - Örebro
+### WARNING-1983 · LAB_DUP_MATCH · Sweden_Superettan | 2026-09-19 | Sandviken - Örebro
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '2', 'OK'), attuali=('4', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10800`
 
-### WARNING-1918 · LAB_DUP_MATCH · Sweden_Superettan | 2026-10-13 | Norrkoping - Sundsvall
+### WARNING-1984 · LAB_DUP_MATCH · Sweden_Superettan | 2026-10-13 | Norrkoping - Sundsvall
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14456`
 
-### WARNING-1919 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-08-21 | Rapperswil-Jona - Winterthur
+### WARNING-1985 · LAB_DUP_MATCH · Sweden_Superettan | 2026-10-27 | Landskrona - Varberg
+- Area: `laboratory`
+- Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
+- Sorgente: `analysis\laboratory\data\01_matches.csv:17365`
+
+### WARNING-1986 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-08-21 | Rapperswil-Jona - Winterthur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4429`
 
-### WARNING-1920 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-08-21 | Nyonnais - Etoile-Carouge
+### WARNING-1987 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-08-21 | Nyonnais - Etoile-Carouge
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4538`
 
-### WARNING-1921 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-08-21 | Xamax - Lausanne Ouchy
+### WARNING-1988 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-08-21 | Xamax - Lausanne Ouchy
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4543`
 
-### WARNING-1922 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-01 | Rapperswil-Jona - Kriens
+### WARNING-1989 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-01 | Rapperswil-Jona - Kriens
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6434`
 
-### WARNING-1923 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-01 | Xamax - Yverdon
+### WARNING-1990 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-01 | Xamax - Yverdon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6440`
 
-### WARNING-1924 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-01 | Nyonnais - Winterthur
+### WARNING-1991 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-01 | Nyonnais - Winterthur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6454`
 
-### WARNING-1925 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-01 | Lausanne Ouchy - Etoile-Carouge
+### WARNING-1992 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-01 | Lausanne Ouchy - Etoile-Carouge
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6472`
 
-### WARNING-1926 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-11 | Nyonnais - Xamax
+### WARNING-1993 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-11 | Nyonnais - Xamax
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8063`
 
-### WARNING-1927 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-11 | Rapperswil-Jona - Yverdon
+### WARNING-1994 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-11 | Rapperswil-Jona - Yverdon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8064`
 
-### WARNING-1928 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-11 | Lausanne Ouchy - Wil
+### WARNING-1995 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-11 | Lausanne Ouchy - Wil
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8129`
 
-### WARNING-1929 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-11 | Etoile-Carouge - Winterthur
+### WARNING-1996 · LAB_DUP_MATCH · Switzerland_ChallengeLeague | 2026-09-11 | Etoile-Carouge - Winterthur
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8159`
 
-### WARNING-1930 · LAB_DUP_MATCH · Switzerland_PromotionLeague | 2026-08-15 | Paradiso - Breitenrain
+### WARNING-1997 · LAB_DUP_MATCH · Switzerland_PromotionLeague | 2026-08-15 | Paradiso - Breitenrain
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3121`
 
-### WARNING-1931 · LAB_DUP_MATCH · Switzerland_PromotionLeague | 2026-08-15 | Lugano 2 - Luzerna 2
+### WARNING-1998 · LAB_DUP_MATCH · Switzerland_PromotionLeague | 2026-08-15 | Lugano 2 - Luzerna 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '3', 'OK'), attuali=('4', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3156`
 
-### WARNING-1932 · LAB_DUP_MATCH · Switzerland_SuperLeague | 2026-09-01 | Zurigo - Young Boys
+### WARNING-1999 · LAB_DUP_MATCH · Switzerland_SuperLeague | 2026-09-01 | Zurigo - Young Boys
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '4', 'OK'), attuali=('2', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6420`
 
-### WARNING-1933 · LAB_DUP_MATCH · Switzerland_SuperLeague | 2026-09-15 | Grasshoppers - Sion
+### WARNING-2000 · LAB_DUP_MATCH · Switzerland_SuperLeague | 2026-09-15 | Grasshoppers - Sion
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '5', 'OK'), attuali=('2', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9418`
 
-### WARNING-1934 · LAB_DUP_MATCH · Turkey_1Lig | 2026-08-21 | Karagumruk - Bursaspor
+### WARNING-2001 · LAB_DUP_MATCH · Turkey_1Lig | 2026-08-21 | Karagumruk - Bursaspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4565`
 
-### WARNING-1935 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-01 | Sariyer - Pendikspor
+### WARNING-2002 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-01 | Sariyer - Pendikspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6432`
 
-### WARNING-1936 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-01 | Boluspor - Keciorengucu
+### WARNING-2003 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-01 | Boluspor - Keciorengucu
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6436`
 
-### WARNING-1937 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-01 | Bandirmaspor - Antalyaspor
+### WARNING-2004 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-01 | Bandirmaspor - Antalyaspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6457`
 
-### WARNING-1938 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-01 | Umraniyespor - Muglaspor
+### WARNING-2005 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-01 | Umraniyespor - Muglaspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6471`
 
-### WARNING-1939 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-11 | Sariyer - Bandirmaspor
+### WARNING-2006 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-11 | Sariyer - Bandirmaspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8181`
 
-### WARNING-1940 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-15 | Kayserispor - Istanbulspor
+### WARNING-2007 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-15 | Kayserispor - Istanbulspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9454`
 
-### WARNING-1941 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-14 | Kayserispor - Istanbulspor
+### WARNING-2008 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-14 | Kayserispor - Istanbulspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9552`
 
-### WARNING-1942 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-19 | Keciorengucu - Sivasspor
+### WARNING-2009 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-19 | Keciorengucu - Sivasspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10685`
 
-### WARNING-1943 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-19 | Batman Petrolspor - Bursaspor
+### WARNING-2010 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-19 | Batman Petrolspor - Bursaspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10740`
 
-### WARNING-1944 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-19 | Sariyer - Boluspor
+### WARNING-2011 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-19 | Sariyer - Boluspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10836`
 
-### WARNING-1945 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-19 | Erokspor - Karagumruk
+### WARNING-2012 · LAB_DUP_MATCH · Turkey_1Lig | 2026-09-19 | Erokspor - Karagumruk
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10838`
 
-### WARNING-1946 · LAB_DUP_MATCH · Turkey_1Lig | 2026-10-13 | Pendikspor - Vanspor FK
+### WARNING-2013 · LAB_DUP_MATCH · Turkey_1Lig | 2026-10-13 | Pendikspor - Vanspor FK
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14458`
 
-### WARNING-1947 · LAB_DUP_MATCH · Turkey_1Lig | 2026-10-13 | Bandirmaspor - Sivasspor
+### WARNING-2014 · LAB_DUP_MATCH · Turkey_1Lig | 2026-10-13 | Bandirmaspor - Sivasspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14472`
 
-### WARNING-1948 · LAB_DUP_MATCH · Turkey_1Lig | 2026-10-13 | Sariyer - Bodrumspor
+### WARNING-2015 · LAB_DUP_MATCH · Turkey_1Lig | 2026-10-13 | Sariyer - Bodrumspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '4', 'OK'), attuali=('1', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:14478`
 
-### WARNING-1949 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-11 | Besiktas - Erzurumspor
+### WARNING-2016 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-11 | Besiktas - Erzurumspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8156`
 
-### WARNING-1950 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-15 | Gaziantep - Fenerbahce
+### WARNING-2017 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-15 | Gaziantep - Fenerbahce
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9465`
 
-### WARNING-1951 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-14 | Gaziantep - Fenerbahce
+### WARNING-2018 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-14 | Gaziantep - Fenerbahce
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9587`
 
-### WARNING-1952 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-19 | Trabzonspor - Galatasaray
+### WARNING-2019 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-19 | Trabzonspor - Galatasaray
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10629`
 
-### WARNING-1953 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-19 | Corum - Alanyaspor
+### WARNING-2020 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-19 | Corum - Alanyaspor
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10699`
 
-### WARNING-1954 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-19 | Basaksehir - Genclerbirligi
+### WARNING-2021 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-19 | Basaksehir - Genclerbirligi
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10779`
 
-### WARNING-1955 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-19 | Kocaelispor - Gaziantep
+### WARNING-2022 · LAB_DUP_MATCH · Turkey_SuperLig | 2026-09-19 | Kocaelispor - Gaziantep
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10863`
 
-### WARNING-1956 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Orlando City - Cincinnati
+### WARNING-2023 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Orlando City - Cincinnati
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3691`
 
-### WARNING-1957 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Atlanta Utd - New York Red Bulls
+### WARNING-2024 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Atlanta Utd - New York Red Bulls
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3732`
 
-### WARNING-1958 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Nashville SC - Inter Miami
+### WARNING-2025 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Nashville SC - Inter Miami
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3744`
 
-### WARNING-1959 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Charlotte - Columbus Crew
+### WARNING-2026 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Charlotte - Columbus Crew
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3753`
 
-### WARNING-1960 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Colorado Rapids - Sporting Kansas City
+### WARNING-2027 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Colorado Rapids - Sporting Kansas City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3779`
 
-### WARNING-1961 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Toronto FC - New England Revolution
+### WARNING-2028 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Toronto FC - New England Revolution
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3787`
 
-### WARNING-1962 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Real Salt Lake - Minnesota
+### WARNING-2029 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Real Salt Lake - Minnesota
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3789`
 
-### WARNING-1963 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Los Angeles FC - San Diego FC
+### WARNING-2030 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Los Angeles FC - San Diego FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3798`
 
-### WARNING-1964 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | San Jose Earthquakes - St. Louis City
+### WARNING-2031 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | San Jose Earthquakes - St. Louis City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3817`
 
-### WARNING-1965 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | CF Montreal - DC United
+### WARNING-2032 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | CF Montreal - DC United
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3832`
 
-### WARNING-1966 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Houston Dynamo - Los Angeles Galaxy
+### WARNING-2033 · LAB_DUP_MATCH · USA_MLS | 2026-08-16 | Houston Dynamo - Los Angeles Galaxy
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3842`
 
-### WARNING-1967 · LAB_DUP_MATCH · USA_MLS | 2026-09-15 | San Diego FC - Philadelphia Union
+### WARNING-2034 · LAB_DUP_MATCH · USA_MLS | 2026-09-15 | San Diego FC - Philadelphia Union
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9440`
 
-### WARNING-1968 · LAB_DUP_MATCH · USA_MLS | 2026-09-14 | Vancouver Whitecaps - Austin FC
+### WARNING-2035 · LAB_DUP_MATCH · USA_MLS | 2026-09-14 | Vancouver Whitecaps - Austin FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9546`
 
-### WARNING-1969 · LAB_DUP_MATCH · USA_MLS | 2026-09-14 | San Diego FC - Philadelphia Union
+### WARNING-2036 · LAB_DUP_MATCH · USA_MLS | 2026-09-14 | San Diego FC - Philadelphia Union
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9550`
 
-### WARNING-1970 · LAB_DUP_MATCH · USA_MLS | 2026-09-24 | Seattle Sounders - Real Salt Lake
+### WARNING-2037 · LAB_DUP_MATCH · USA_MLS | 2026-09-24 | Seattle Sounders - Real Salt Lake
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:11361`
 
-### WARNING-1971 · LAB_DUP_MATCH · USA_MLSNextPro_EasternConference_NortheastDivision | 2026-08-15 | Toronto FC 2 - Chattanooga
+### WARNING-2038 · LAB_DUP_MATCH · USA_MLSNextPro_EasternConference_NortheastDivision | 2026-08-15 | Toronto FC 2 - Chattanooga
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3131`
 
-### WARNING-1972 · LAB_DUP_MATCH · USA_MLSNextPro_EasternConference_NortheastDivision | 2026-08-16 | Columbus Crew 2 - New York City 2
+### WARNING-2039 · LAB_DUP_MATCH · USA_MLSNextPro_EasternConference_NortheastDivision | 2026-08-16 | Columbus Crew 2 - New York City 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3769`
 
-### WARNING-1973 · LAB_DUP_MATCH · USA_MLSNextPro_EasternConference_SoutheastDivision | 2026-08-14 | Atlanta United 2 - New York Red Bulls 2
+### WARNING-2040 · LAB_DUP_MATCH · USA_MLSNextPro_EasternConference_SoutheastDivision | 2026-08-14 | Atlanta United 2 - New York Red Bulls 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2536`
 
-### WARNING-1974 · LAB_DUP_MATCH · USA_MLSNextPro_EasternConference_SoutheastDivision | 2026-08-15 | Chicago Fire 2 - Orlando City B
+### WARNING-2041 · LAB_DUP_MATCH · USA_MLSNextPro_EasternConference_SoutheastDivision | 2026-08-15 | Chicago Fire 2 - Orlando City B
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3070`
 
-### WARNING-1975 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_CentralDivision | 2026-08-15 | Houston Dynamo 2 - Ventura County
+### WARNING-2042 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_CentralDivision | 2026-08-15 | Houston Dynamo 2 - Ventura County
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3153`
 
-### WARNING-1976 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_CentralDivision | 2026-08-16 | Sporting Kansas City 2 - Colorado Rapids 2
+### WARNING-2043 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_CentralDivision | 2026-08-16 | Sporting Kansas City 2 - Colorado Rapids 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3820`
 
-### WARNING-1977 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-14 | Real Monarchs - Minnesota 2
+### WARNING-2044 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-14 | Real Monarchs - Minnesota 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2553`
 
-### WARNING-1978 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-16 | Austin FC 2 - Vancouver 2
+### WARNING-2045 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-16 | Austin FC 2 - Vancouver 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3851`
 
-### WARNING-1979 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-16 | North Texas - Portland Timbers 2
+### WARNING-2046 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-16 | North Texas - Portland Timbers 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3873`
 
-### WARNING-1980 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-21 | Los Angeles FC 2 - Sporting Kansas City 2
+### WARNING-2047 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-21 | Los Angeles FC 2 - Sporting Kansas City 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4418`
 
-### WARNING-1981 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-30 | Real Monarchs - Tacoma Defiance
+### WARNING-2048 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-30 | Real Monarchs - Tacoma Defiance
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6247`
 
-### WARNING-1982 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-30 | Portland Timbers 2 - Austin FC 2
+### WARNING-2049 · LAB_DUP_MATCH · USA_MLSNextPro_WesternConference_PacificDivision | 2026-08-30 | Portland Timbers 2 - Austin FC 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:6258`
 
-### WARNING-1983 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Sporting Jax - Indy Eleven
+### WARNING-2050 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Sporting Jax - Indy Eleven
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3804`
 
-### WARNING-1984 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Orange County SC - Louisville City
+### WARNING-2051 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Orange County SC - Louisville City
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3805`
 
-### WARNING-1985 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Tampa Bay - Rhode Island
+### WARNING-2052 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Tampa Bay - Rhode Island
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3807`
 
-### WARNING-1986 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Las Vegas Lights - Brooklyn
+### WARNING-2053 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Las Vegas Lights - Brooklyn
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3823`
 
-### WARNING-1987 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Colorado Springs - Birmingham Legion
+### WARNING-2054 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Colorado Springs - Birmingham Legion
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3850`
 
-### WARNING-1988 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | San Antonio - El Paso
+### WARNING-2055 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | San Antonio - El Paso
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3858`
 
-### WARNING-1989 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Oakland Roots - Monterey Bay
+### WARNING-2056 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Oakland Roots - Monterey Bay
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3862`
 
-### WARNING-1990 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Sacramento Republic - Lexington
+### WARNING-2057 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Sacramento Republic - Lexington
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3863`
 
-### WARNING-1991 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Detroit - Loudoun
+### WARNING-2058 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Detroit - Loudoun
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3864`
 
-### WARNING-1992 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Pittsburgh - Charleston
+### WARNING-2059 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Pittsburgh - Charleston
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3874`
 
-### WARNING-1993 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | New Mexico - FC Tulsa
+### WARNING-2060 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | New Mexico - FC Tulsa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3886`
 
-### WARNING-1994 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Hartford Athletic - Miami FC
+### WARNING-2061 · LAB_DUP_MATCH · USA_USLChampionship | 2026-08-16 | Hartford Athletic - Miami FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3897`
 
-### WARNING-1995 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Greenville - One Knoxville
+### WARNING-2062 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Greenville - One Knoxville
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3767`
 
-### WARNING-1996 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Charlotte Independ. - Sarasota Paradise
+### WARNING-2063 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Charlotte Independ. - Sarasota Paradise
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3775`
 
-### WARNING-1997 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | New York Cosmos - AV Alta
+### WARNING-2064 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | New York Cosmos - AV Alta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3777`
 
-### WARNING-1998 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Fort Wayne - Chattanooga Red Wolves
+### WARNING-2065 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Fort Wayne - Chattanooga Red Wolves
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3814`
 
-### WARNING-1999 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Spokane Velocity - Corpus Christi FC
+### WARNING-2066 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Spokane Velocity - Corpus Christi FC
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3846`
 
-### WARNING-2000 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Westchester SC - FC Naples
+### WARNING-2067 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-08-16 | Westchester SC - FC Naples
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3847`
 
-### WARNING-2001 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-09-15 | Portland Hearts of Pine - AV Alta
+### WARNING-2068 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-09-15 | Portland Hearts of Pine - AV Alta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9444`
 
-### WARNING-2002 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-09-14 | Portland Hearts of Pine - AV Alta
+### WARNING-2069 · LAB_DUP_MATCH · USA_USLLeagueOne | 2026-09-14 | Portland Hearts of Pine - AV Alta
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9562`
 
-### WARNING-2003 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-14 | Prykarpattya - Probiy Horodenka
+### WARNING-2070 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-14 | Prykarpattya - Probiy Horodenka
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2515`
 
-### WARNING-2004 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-14 | Ahrobiznes Volochysk - Lokomotyv Kyiv
+### WARNING-2071 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-14 | Ahrobiznes Volochysk - Lokomotyv Kyiv
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2575`
 
-### WARNING-2005 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-15 | Metalist Kharkiv - Oleksandriya
+### WARNING-2072 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-15 | Metalist Kharkiv - Oleksandriya
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3128`
 
-### WARNING-2006 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-15 | SC Poltava - UCSA
+### WARNING-2073 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-15 | SC Poltava - UCSA
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3229`
 
-### WARNING-2007 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-15 | FC Chernihiv - Zhytomyr 2
+### WARNING-2074 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-15 | FC Chernihiv - Zhytomyr 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3364`
 
-### WARNING-2008 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-15 | Viktoria - Kulikiv
+### WARNING-2075 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-15 | Viktoria - Kulikiv
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3410`
 
-### WARNING-2009 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-16 | Inhulets - Nyva Ternopil
+### WARNING-2076 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-16 | Inhulets - Nyva Ternopil
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '2', 'OK'), attuali=('1', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3865`
 
-### WARNING-2010 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-16 | Fenix Mariupol - Kolos Kovalivka 2
+### WARNING-2077 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-08-16 | Fenix Mariupol - Kolos Kovalivka 2
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3903`
 
-### WARNING-2011 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-11 | UCSA - FC Chernihiv
+### WARNING-2078 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-11 | UCSA - FC Chernihiv
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8169`
 
-### WARNING-2012 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-15 | Zhytomyr 2 - Ahrobiznes Volochysk
+### WARNING-2079 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-15 | Zhytomyr 2 - Ahrobiznes Volochysk
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9433`
 
-### WARNING-2013 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-15 | Oleksandriya - Viktoria
+### WARNING-2080 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-15 | Oleksandriya - Viktoria
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9500`
 
-### WARNING-2014 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-14 | Zhytomyr 2 - Ahrobiznes Volochysk
+### WARNING-2081 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-14 | Zhytomyr 2 - Ahrobiznes Volochysk
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9538`
 
-### WARNING-2015 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-14 | Oleksandriya - Viktoria
+### WARNING-2082 · LAB_DUP_MATCH · Ukraine_PershaLiga | 2026-09-14 | Oleksandriya - Viktoria
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9597`
 
-### WARNING-2016 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-08-14 | Epitsentr - Veres-Rivne
+### WARNING-2083 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-08-14 | Epitsentr - Veres-Rivne
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2621`
 
-### WARNING-2017 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-08-15 | Karpaty Lviv - Bukovyna
+### WARNING-2084 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-08-15 | Karpaty Lviv - Bukovyna
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3398`
 
-### WARNING-2018 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-08-15 | Kudrivka - Obolon
+### WARNING-2085 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-08-15 | Kudrivka - Obolon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '0', 'KO'), attuali=('0', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3407`
 
-### WARNING-2019 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-08-16 | FC Kharkiv - Shakhtar
+### WARNING-2086 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-08-16 | FC Kharkiv - Shakhtar
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3882`
 
-### WARNING-2020 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-11 | Kolos Kovalivka - Karpaty Lviv
+### WARNING-2087 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-11 | Kolos Kovalivka - Karpaty Lviv
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8140`
 
-### WARNING-2021 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-15 | Dyn. Kyiv - Epitsentr
+### WARNING-2088 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-15 | Dyn. Kyiv - Epitsentr
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9484`
 
-### WARNING-2022 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-15 | Shakhtar - Ch. Odesa
+### WARNING-2089 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-15 | Shakhtar - Ch. Odesa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9503`
 
-### WARNING-2023 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-14 | Dyn. Kyiv - Epitsentr
+### WARNING-2090 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-14 | Dyn. Kyiv - Epitsentr
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9576`
 
-### WARNING-2024 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-14 | Shakhtar - Ch. Odesa
+### WARNING-2091 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-14 | Shakhtar - Ch. Odesa
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9592`
 
-### WARNING-2025 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-19 | Zorya - Dyn. Kyiv
+### WARNING-2092 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-19 | Zorya - Dyn. Kyiv
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10743`
 
-### WARNING-2026 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-19 | FC Kharkiv - Bukovyna
+### WARNING-2093 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-19 | FC Kharkiv - Bukovyna
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10850`
 
-### WARNING-2027 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-19 | Epitsentr - Livyi Bereg
+### WARNING-2094 · LAB_DUP_MATCH · Ukraine_PremierLeague | 2026-09-19 | Epitsentr - Livyi Bereg
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10870`
 
-### WARNING-2028 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-08-21 | Holyhead - Bangor 1876
+### WARNING-2095 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-08-21 | Holyhead - Bangor 1876
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4428`
 
-### WARNING-2029 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-08-21 | Mold Alexandra - Buckley
+### WARNING-2096 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-08-21 | Mold Alexandra - Buckley
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4498`
 
-### WARNING-2030 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-08-21 | Denbigh - Porthmadog
+### WARNING-2097 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-08-21 | Denbigh - Porthmadog
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '3', 'OK'), attuali=('2', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4511`
 
-### WARNING-2031 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-09-11 | Denbigh - Bala Town
+### WARNING-2098 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-09-11 | Denbigh - Bala Town
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '2', 'OK'), attuali=('5', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7988`
 
-### WARNING-2032 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-09-15 | Penrhyncoch - Bala Town
+### WARNING-2099 · LAB_DUP_MATCH · Wales_CymruNorth | 2026-09-15 | Penrhyncoch - Bala Town
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9414`
 
-### WARNING-2033 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Llandudno - Holywell
+### WARNING-2100 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Llandudno - Holywell
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2465`
 
-### WARNING-2034 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Cambrian United - Flint
+### WARNING-2101 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Cambrian United - Flint
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2522`
 
-### WARNING-2035 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Connah's Q. - Trefelin
+### WARNING-2102 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Connah's Q. - Trefelin
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('6', '0', 'OK'), attuali=('6', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2560`
 
-### WARNING-2036 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Airbus - Ammanford
+### WARNING-2103 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Airbus - Ammanford
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '0', 'KO'), attuali=('2', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2601`
 
-### WARNING-2037 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Haverfordwest - Penybont
+### WARNING-2104 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | Haverfordwest - Penybont
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2640`
 
-### WARNING-2038 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | TNS - Briton Ferry
+### WARNING-2105 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-14 | TNS - Briton Ferry
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:2645`
 
-### WARNING-2039 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-15 | Caernarfon - Colwyn Bay
+### WARNING-2106 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-15 | Caernarfon - Colwyn Bay
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3119`
 
-### WARNING-2040 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-15 | Barry - Cardiff Metropolitan
+### WARNING-2107 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-15 | Barry - Cardiff Metropolitan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:3306`
 
-### WARNING-2041 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Holywell - Barry
+### WARNING-2108 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Holywell - Barry
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '3', 'OK'), attuali=('1', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4378`
 
-### WARNING-2042 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Trefelin - Caernarfon
+### WARNING-2109 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Trefelin - Caernarfon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4434`
 
-### WARNING-2043 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Penybont - Llandudno
+### WARNING-2110 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Penybont - Llandudno
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4476`
 
-### WARNING-2044 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Flint - Briton Ferry
+### WARNING-2111 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Flint - Briton Ferry
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4513`
 
-### WARNING-2045 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Haverfordwest - Cambrian United
+### WARNING-2112 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Haverfordwest - Cambrian United
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '3', 'OK'), attuali=('0', '3', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4556`
 
-### WARNING-2046 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Cardiff Metropolitan - TNS
+### WARNING-2113 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Cardiff Metropolitan - TNS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4573`
 
-### WARNING-2047 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Colwyn Bay - Airbus
+### WARNING-2114 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-08-21 | Colwyn Bay - Airbus
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4576`
 
-### WARNING-2048 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Cambrian United - Holywell
+### WARNING-2115 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Cambrian United - Holywell
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8020`
 
-### WARNING-2049 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Ammanford - Caernarfon
+### WARNING-2116 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Ammanford - Caernarfon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8053`
 
-### WARNING-2050 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Barry - Llandudno
+### WARNING-2117 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Barry - Llandudno
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '1', 'OK'), attuali=('4', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8055`
 
-### WARNING-2051 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Flint - Cardiff Metropolitan
+### WARNING-2118 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Flint - Cardiff Metropolitan
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8101`
 
-### WARNING-2052 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Trefelin - Penybont
+### WARNING-2119 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Trefelin - Penybont
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8115`
 
-### WARNING-2053 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Airbus - TNS
+### WARNING-2120 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Airbus - TNS
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '2', 'KO'), attuali=('0', '2', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8155`
 
-### WARNING-2054 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Haverfordwest - Briton Ferry
+### WARNING-2121 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-11 | Haverfordwest - Briton Ferry
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '1', 'OK'), attuali=('3', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8175`
 
-### WARNING-2055 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Holywell - Colwyn Bay
+### WARNING-2122 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Holywell - Colwyn Bay
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '5', 'OK'), attuali=('0', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9435`
 
-### WARNING-2056 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Llandudno - Caernarfon
+### WARNING-2123 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Llandudno - Caernarfon
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '1', 'KO'), attuali=('1', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9437`
 
-### WARNING-2057 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Barry - Ammanford
+### WARNING-2124 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Barry - Ammanford
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '2', 'OK'), attuali=('2', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9439`
 
-### WARNING-2058 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Trefelin - Cambrian United
+### WARNING-2125 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Trefelin - Cambrian United
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '4', 'OK'), attuali=('0', '4', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9464`
 
-### WARNING-2059 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Connah's Q. - Airbus
+### WARNING-2126 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Connah's Q. - Airbus
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9473`
 
-### WARNING-2060 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | TNS - Flint
+### WARNING-2127 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | TNS - Flint
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('5', '0', 'OK'), attuali=('5', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9480`
 
-### WARNING-2061 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Penybont - Briton Ferry
+### WARNING-2128 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-15 | Penybont - Briton Ferry
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '2', 'OK'), attuali=('3', '2', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:9485`
 
-### WARNING-2062 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-19 | TNS - Llandudno
+### WARNING-2129 · LAB_DUP_MATCH · Wales_CymruPremier | 2026-09-19 | TNS - Llandudno
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:10758`
 
-### WARNING-2063 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-08-21 | Afan Lido - Pontardawe
+### WARNING-2130 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-08-21 | Afan Lido - Pontardawe
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '0', 'KO'), attuali=('1', '0', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4373`
 
-### WARNING-2064 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-08-21 | Pontypridd - Trethomas Bluebirds
+### WARNING-2131 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-08-21 | Pontypridd - Trethomas Bluebirds
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('2', '1', 'OK'), attuali=('2', '1', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4387`
 
-### WARNING-2065 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-08-21 | Caerau Ely - Pure Swansea
+### WARNING-2132 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-08-21 | Caerau Ely - Pure Swansea
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('1', '5', 'OK'), attuali=('1', '5', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4461`
 
-### WARNING-2066 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-08-21 | Newport City - Baglan Dragons
+### WARNING-2133 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-08-21 | Newport City - Baglan Dragons
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:4505`
 
-### WARNING-2067 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-09-11 | Pontypridd - Afan Lido
+### WARNING-2134 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-09-11 | Pontypridd - Afan Lido
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('0', '1', 'KO'), attuali=('0', '1', 'KO').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7983`
 
-### WARNING-2068 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-09-11 | Caerau Ely - Llanelli
+### WARNING-2135 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-09-11 | Caerau Ely - Llanelli
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('3', '0', 'OK'), attuali=('3', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:7998`
 
-### WARNING-2069 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-09-11 | Newport City - Trethomas Bluebirds
+### WARNING-2136 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-09-11 | Newport City - Trethomas Bluebirds
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('', '', ''), attuali=('', '', '').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8046`
 
-### WARNING-2070 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-09-11 | Pure Swansea - Pontardawe
+### WARNING-2137 · LAB_DUP_MATCH · Wales_CymruSouth | 2026-09-11 | Pure Swansea - Pontardawe
 - Area: `laboratory`
 - Dettaglio: Duplicato per engine 2.5.0; valori precedenti=('4', '0', 'OK'), attuali=('4', '0', 'OK').
 - Sorgente: `analysis\laboratory\data\01_matches.csv:8048`
 
-### WARNING-2071 · ST_PLAYED_SPREAD · England_IsthmianLeaguePremierDivision
+### WARNING-2138 · ST_PLAYED_SPREAD · Austria_Salzburg
 - Area: `standings`
-- Dettaglio: Played min=9, max=14, delta=5; min: St. Albans, Cray Wanderers; max: Carshalton.
+- Dettaglio: Played min=11, max=15, delta=4; min: Seekirchen U21; max: Strasswalchen, Thalgau.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Austria_Salzburg.csv`
+
+### WARNING-2139 · ST_PLAYED_SPREAD · Azerbaijan_PremierLeague
+- Area: `standings`
+- Dettaglio: Played min=2, max=10, delta=8; min: Sabah FC; max: Turan, Araz.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Azerbaijan_PremierLeague.csv`
+
+### WARNING-2140 · ST_PLAYED_SPREAD · England_IsthmianLeaguePremierDivision
+- Area: `standings`
+- Dettaglio: Played min=10, max=17, delta=7; min: Cray Wanderers; max: Maldon & Tiptree.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_IsthmianLeaguePremierDivision.csv`
 
-### WARNING-2072 · ST_PLAYED_SPREAD · England_NPLPremierDivision
+### WARNING-2141 · ST_PLAYED_SPREAD · England_NPLPremierDivision
 - Area: `standings`
-- Dettaglio: Played min=11, max=15, delta=4; min: Bury; max: Redcar Athletic, Workington, Alfreton, Lancaster, Hyde, Emley, Bamber Bridge, Stockton, Ilkeston.
+- Dettaglio: Played min=13, max=17, delta=4; min: Bury; max: Lancaster, Emley.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_NPLPremierDivision.csv`
 
-### WARNING-2073 · ST_PLAYED_SPREAD · England_ProfessionalDevelopmentLeague
+### WARNING-2142 · ST_PLAYED_SPREAD · England_ProfessionalDevelopmentLeague
 - Area: `standings`
-- Dettaglio: Played min=4, max=8, delta=4; min: Millwall U21; max: Wigan U21, QPR U21.
+- Dettaglio: Played min=5, max=9, delta=4; min: Millwall U21; max: QPR U21.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_ProfessionalDevelopmentLeague.csv`
 
-### WARNING-2074 · ST_PLAYED_SPREAD · Estonia_Esiliiga
+### WARNING-2143 · ST_PLAYED_SPREAD · Estonia_Esiliiga
 - Area: `standings`
-- Dettaglio: Played min=28, max=33, delta=5; min: Maardu; max: Tartu Welco.
+- Dettaglio: Played min=28, max=35, delta=7; min: Maardu; max: Tartu Welco.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Estonia_Esiliiga.csv`
 
-### WARNING-2075 · ST_PLAYED_SPREAD · NorthernIreland_NIFLPremiership
+### WARNING-2144 · ST_PLAYED_SPREAD · Finland_Veikkausliiga
 - Area: `standings`
-- Dettaglio: Played min=8, max=12, delta=4; min: Larne; max: Coleraine, Glentoran, C. Rangers, Crusaders, Cliftonville, Portadown.
+- Dettaglio: Played min=2, max=27, delta=25; min: PK-35; max: HJK, Inter Turku, KuPS, Oulu, Gnistan, VPS.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
-- Sorgente: `data\storico\classifiche_calcolate\NorthernIreland_NIFLPremiership.csv`
+- Sorgente: `data\storico\classifiche_calcolate\Finland_Veikkausliiga.csv`
 
-## INFO (16)
+### WARNING-2145 · ST_PLAYED_SPREAD · Norway_3rdDivision_Group3
+- Area: `standings`
+- Dettaglio: Played min=2, max=27, delta=25; min: OS; max: Stord.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Norway_3rdDivision_Group3.csv`
+
+### WARNING-2146 · ST_PLAYED_SPREAD · SaudiArabia_ProfessionalLeague
+- Area: `standings`
+- Dettaglio: Played min=3, max=12, delta=9; min: Al Hilal, Al Ettifaq; max: Al Qadsiah, Neom SC, Al Diriyah, Al Khaleej, Al Fayha, Al Hazem, Al-Faysaly, Al Fateh, Al-Taawon.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\SaudiArabia_ProfessionalLeague.csv`
+
+### WARNING-2147 · ST_PLAYED_SPREAD · Sweden_Division2_SodraGotaland
+- Area: `standings`
+- Dettaglio: Played min=2, max=28, delta=26; min: Croatia Malmo; max: Torns.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Sweden_Division2_SodraGotaland.csv`
+
+## INFO (33)
 
 ### INFO-001 · LAB_UNMATCHED
 - Area: `laboratory`
-- Dettaglio: 06_unmatched_matches.csv contiene 2814 righe da esaminare.
+- Dettaglio: 06_unmatched_matches.csv contiene 3191 righe da esaminare.
 - Verifica suggerita: Analizzare soprattutto LeagueId/team ricorrenti: possono indicare alias o ranking non agganciati.
 - Sorgente: `analysis\laboratory\data\06_unmatched_matches.csv`
 
@@ -10419,86 +10797,188 @@ Analizzare prima i CRITICAL. Prima di bonificare verificare sempre il formato re
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Austria_Regionalliga_North.csv`
 
-### INFO-003 · ST_PLAYED_SPREAD · Belarus_PershayaLiga
+### INFO-003 · ST_PLAYED_SPREAD · Austria_Wien
 - Area: `standings`
-- Dettaglio: Played min=26, max=29, delta=3; min: Din. Minsk 2; max: Slutsk, Niva Dolbizno, Lida, SKA-1938, FC Slonim, Soligorsk, BumProm Gomel, Smorgon, Ostrovets, Volna Pinsk, Minsk 2, Orsha, Osipovichi, Gomel 2.
+- Dettaglio: Played min=8, max=11, delta=3; min: WAF Brigittenau; max: Floridsdorfer AC (Am), Kagran.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Austria_Wien.csv`
+
+### INFO-004 · ST_ODD_TEAMS · Azerbaijan_PremierLeague
+- Area: `standings`
+- Dettaglio: Numero squadre dispari: 13.
+- Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
+- Sorgente: `data\storico\classifiche_calcolate\Azerbaijan_PremierLeague.csv`
+
+### INFO-005 · ST_PLAYED_SPREAD · Belarus_PershayaLiga
+- Area: `standings`
+- Dettaglio: Played min=28, max=31, delta=3; min: Din. Minsk 2; max: Lida, Niva Dolbizno, SKA-1938, FC Slonim, BumProm Gomel, Orsha.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Belarus_PershayaLiga.csv`
 
-### INFO-004 · ST_ODD_TEAMS · Belgium_ChallengerProLeague
+### INFO-006 · ST_ODD_TEAMS · Belgium_ChallengerProLeague
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 15.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Belgium_ChallengerProLeague.csv`
 
-### INFO-005 · ST_ODD_TEAMS · CzechRepublic_4Liga_GroupA
+### INFO-007 · ST_ODD_TEAMS · CzechRepublic_4Liga_GroupA
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 15.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\CzechRepublic_4Liga_GroupA.csv`
 
-### INFO-006 · ST_PLAYED_SPREAD · England_LeagueOne
+### INFO-008 · ST_PLAYED_SPREAD · CzechRepublic_4Liga_GroupA
 - Area: `standings`
-- Dettaglio: Played min=8, max=11, delta=3; min: Oxford Utd; max: Plymouth, Burton.
+- Dettaglio: Played min=10, max=13, delta=3; min: Domazlice B; max: Krimice, Petrin Plzen.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\CzechRepublic_4Liga_GroupA.csv`
+
+### INFO-009 · ST_PLAYED_SPREAD · England_LeagueOne
+- Area: `standings`
+- Dettaglio: Played min=11, max=14, delta=3; min: Blackpool; max: Stockport, Plymouth, Cambridge Utd, Burton.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_LeagueOne.csv`
 
-### INFO-007 · ST_ODD_TEAMS · England_ProfessionalDevelopmentLeague
+### INFO-010 · ST_ODD_TEAMS · England_ProfessionalDevelopmentLeague
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 17.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\England_ProfessionalDevelopmentLeague.csv`
 
-### INFO-008 · ST_PLAYED_SPREAD · England_SouthernLeaguePremierCentral
+### INFO-011 · ST_PLAYED_SPREAD · England_SouthernLeaguePremierCentral
 - Area: `standings`
-- Dettaglio: Played min=10, max=13, delta=3; min: Halesowen, Leiston; max: Rushall, Peterborough Sports.
+- Dettaglio: Played min=13, max=16, delta=3; min: Anstey Nomads, Halesowen, Redditch, Leiston, Worcester; max: Rushall.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_SouthernLeaguePremierCentral.csv`
 
-### INFO-009 · ST_PLAYED_SPREAD · England_SouthernLeaguePremierSouth
+### INFO-012 · ST_PLAYED_SPREAD · England_SouthernLeaguePremierSouth
 - Area: `standings`
-- Dettaglio: Played min=10, max=13, delta=3; min: Uxbridge, Wimborne, Sholing, Gloucester; max: Frome.
+- Dettaglio: Played min=12, max=15, delta=3; min: Gloucester; max: Hanworth, Chichester, Gosport, Basingstoke, Bracknell, Havant & W.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\England_SouthernLeaguePremierSouth.csv`
 
-### INFO-010 · ST_ODD_TEAMS · Germany_Regionalliga_Bayern
+### INFO-013 · ST_PLAYED_SPREAD · Estonia_EsiliigaB
+- Area: `standings`
+- Dettaglio: Played min=32, max=35, delta=3; min: Tammeka U21; max: Levadia U19, Johvi Phoenix.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Estonia_EsiliigaB.csv`
+
+### INFO-014 · ST_ODD_TEAMS · Finland_Veikkausliiga
+- Area: `standings`
+- Dettaglio: Numero squadre dispari: 13.
+- Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
+- Sorgente: `data\storico\classifiche_calcolate\Finland_Veikkausliiga.csv`
+
+### INFO-015 · ST_PLAYED_SPREAD · Germany_Oberliga_Niedersachsen
+- Area: `standings`
+- Dettaglio: Played min=10, max=13, delta=3; min: Egestorf-Langreder; max: Heeslinger, Braunschweig U23, Meppen 2.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Germany_Oberliga_Niedersachsen.csv`
+
+### INFO-016 · ST_ODD_TEAMS · Germany_Regionalliga_Bayern
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 19.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Germany_Regionalliga_Bayern.csv`
 
-### INFO-011 · ST_ODD_TEAMS · Lithuania_Toplyga
+### INFO-017 · ST_PLAYED_SPREAD · Germany_Regionalliga_Nord
+- Area: `standings`
+- Dettaglio: Played min=13, max=16, delta=3; min: Norderstedt; max: SC Weiche-08, Emden, Brema 2.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Germany_Regionalliga_Nord.csv`
+
+### INFO-018 · ST_PLAYED_SPREAD · Hungary_NBII
+- Area: `standings`
+- Dettaglio: Played min=9, max=12, delta=3; min: Szeged; max: Tiszakecske, Ajka, Gyirmot, Csakvari.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Hungary_NBII.csv`
+
+### INFO-019 · ST_PLAYED_SPREAD · Iceland_BestaDeildKvenna
+- Area: `standings`
+- Dettaglio: Played min=20, max=23, delta=3; min: Fram D, Thor/KA D, Vikingur Reykjavik D, Valur D; max: Breidablik D, Hafnarfjordur D, IBV Vestmannaeyjar D, Throttur D, Grindavik/Njardvik D, Stjarnan D.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Iceland_BestaDeildKvenna.csv`
+
+### INFO-020 · ST_ODD_TEAMS · India_ISL
+- Area: `standings`
+- Dettaglio: Numero squadre dispari: 13.
+- Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
+- Sorgente: `data\storico\classifiche_calcolate\India_ISL.csv`
+
+### INFO-021 · ST_ODD_TEAMS · Lithuania_Toplyga
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 9.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Lithuania_Toplyga.csv`
 
-### INFO-012 · ST_ODD_TEAMS · Moldova_Liga1_GroupB
+### INFO-022 · ST_ODD_TEAMS · Moldova_Liga1_GroupB
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 5.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\Moldova_Liga1_GroupB.csv`
 
-### INFO-013 · ST_ODD_TEAMS · SouthKorea_KLeague2
+### INFO-023 · ST_ODD_TEAMS · Norway_3rdDivision_Group3
+- Area: `standings`
+- Dettaglio: Numero squadre dispari: 15.
+- Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
+- Sorgente: `data\storico\classifiche_calcolate\Norway_3rdDivision_Group3.csv`
+
+### INFO-024 · ST_PLAYED_SPREAD · Portugal_Liga3_SerieB
+- Area: `standings`
+- Dettaglio: Played min=5, max=8, delta=3; min: Covilha, Lusitano GC; max: Oliveirense, Louletano.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Portugal_Liga3_SerieB.csv`
+
+### INFO-025 · ST_ODD_TEAMS · SouthKorea_KLeague2
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 17.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\SouthKorea_KLeague2.csv`
 
-### INFO-014 · ST_ODD_TEAMS · USA_USLChampionship
+### INFO-026 · ST_ODD_TEAMS · Sweden_Division2_SodraGotaland
+- Area: `standings`
+- Dettaglio: Numero squadre dispari: 15.
+- Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
+- Sorgente: `data\storico\classifiche_calcolate\Sweden_Division2_SodraGotaland.csv`
+
+### INFO-027 · ST_PLAYED_SPREAD · USA_MLS
+- Area: `standings`
+- Dettaglio: Played min=31, max=34, delta=3; min: Nashville SC, Los Angeles FC; max: Charlotte, New York City, CF Montreal.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\USA_MLS.csv`
+
+### INFO-028 · ST_ODD_TEAMS · USA_MLSNextPro_WesternConference_PacificDivision
+- Area: `standings`
+- Dettaglio: Numero squadre dispari: 3.
+- Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
+- Sorgente: `data\storico\classifiche_calcolate\USA_MLSNextPro_WesternConference_PacificDivision.csv`
+
+### INFO-029 · ST_ODD_TEAMS · USA_USLChampionship
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 25.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\USA_USLChampionship.csv`
 
-### INFO-015 · ST_ODD_TEAMS · USA_USLLeagueOne
+### INFO-030 · ST_ODD_TEAMS · USA_USLLeagueOne
 - Area: `standings`
 - Dettaglio: Numero squadre dispari: 17.
 - Verifica suggerita: Verificare solo se il formato reale del campionato prevede un numero pari.
 - Sorgente: `data\storico\classifiche_calcolate\USA_USLLeagueOne.csv`
 
-### INFO-016 · ST_PLAYED_SPREAD · Wales_CymruSouth
+### INFO-031 · ST_PLAYED_SPREAD · Ukraine_PershaLiga
 - Area: `standings`
-- Dettaglio: Played min=8, max=11, delta=3; min: Cardiff Draconians, Newport City; max: Baglan Dragons, Afan Lido, Llanelli.
+- Dettaglio: Played min=11, max=14, delta=3; min: FC Chernihiv; max: Lokomotyv Kyiv, Prykarpattya.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Ukraine_PershaLiga.csv`
+
+### INFO-032 · ST_PLAYED_SPREAD · Wales_CymruNorth
+- Area: `standings`
+- Dettaglio: Played min=9, max=12, delta=3; min: Gresford; max: Porthmadog, Guilsfield, Buckley, Llanuwchllyn, Rhyl.
+- Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
+- Sorgente: `data\storico\classifiche_calcolate\Wales_CymruNorth.csv`
+
+### INFO-033 · ST_PLAYED_SPREAD · Wales_CymruSouth
+- Area: `standings`
+- Dettaglio: Played min=10, max=13, delta=3; min: Aberystwyth, Pure Swansea, Ynyshir Albions, Pontardawe, Newport City, Cardiff Draconians; max: Afan Lido, Llanelli.
 - Verifica suggerita: Spread euristico: controllare risultati mancanti, alias, rinvii, fasi a gruppi o formato sbilanciato. Da solo non prova corruzione del dato.
 - Sorgente: `data\storico\classifiche_calcolate\Wales_CymruSouth.csv`
