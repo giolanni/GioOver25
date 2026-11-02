@@ -17,7 +17,8 @@ from pathlib import Path
 from tools.backfill_league_daily import slug
 from tools.flashscore_history import fetch_embedded_results
 from tools.prepare_input import ROOT
-from analysis.audit_diretta_standings import search_tournaments
+from tools.bonifica_storici_diretta import RESULTS_FEED, parse_results_feed
+from analysis.audit_diretta_standings import search_tournaments, _request_text
 
 DIRETTA_BASE = "https://www.diretta.it"
 
@@ -64,6 +65,62 @@ def _fallback_urls(source_league: str, tournament_ids: set[str], stage_ids: set[
             urls.append(value)
     return list(dict.fromkeys(urls))
 
+def _direct_feed_results(source_league: str, tournament_ids: set[str], stage_ids: set[str], timeout: int = 20):
+    """Recupera risultati dal feed stagionale usando gli ID della discovery."""
+    attempts = []
+    try:
+        rows = search_tournaments(source_league, timeout)
+    except Exception as exc:
+        return [], "", [f"{source_league}: ID search {type(exc).__name__}: {exc}"]
+
+    for raw in rows:
+        tournament = raw.get("defaultTournament") or {}
+        tid = str(tournament.get("id", "")).strip()
+        if tournament_ids and tid not in tournament_ids:
+            continue
+
+        raw_stage_ids = {
+            str(v).strip()
+            for v in _walk_values(raw, "stage")
+            if isinstance(v, (str, int)) and str(v).strip()
+        }
+        if stage_ids and raw_stage_ids and not (stage_ids & raw_stage_ids):
+            continue
+
+        season_ids = []
+        for value in _walk_values(raw, "season"):
+            if isinstance(value, dict):
+                for key in ("id", "seasonId", "season_id"):
+                    sid = str(value.get(key, "")).strip()
+                    if sid:
+                        season_ids.append(sid)
+            elif isinstance(value, (str, int)):
+                sid = str(value).strip()
+                if len(sid) >= 6:
+                    season_ids.append(sid)
+        # Alcune risposte espongono seasonId come chiave diretta.
+        for fragment in ("seasonid", "season_id"):
+            for value in _walk_values(raw, fragment):
+                if isinstance(value, (str, int)) and str(value).strip():
+                    season_ids.append(str(value).strip())
+
+        for season in dict.fromkeys(season_ids):
+            url = RESULTS_FEED.format(tournament=tid, season=season)
+            try:
+                payload = _request_text(url, timeout, None)
+                matches = parse_results_feed(payload)
+            except Exception as exc:
+                attempts.append(f"{source_league}: direct feed {tid}/{season} {type(exc).__name__}: {exc}")
+                continue
+            if matches:
+                return matches, f"feed:{tid}/{season}", attempts
+            attempts.append(f"{source_league}: direct feed {tid}/{season} vuoto")
+
+    if not attempts:
+        attempts.append(f"{source_league}: nessun seasonId compatibile con TournamentId/StageId")
+    return [], "", attempts
+
+
 def _fetch_source(source_league: str, country: str, tournament_ids: set[str], stage_ids: set[str]):
     """Prima URL leggibile; poi fallback ID-driven per fasi con slug non pubblico."""
     primary = f"{DIRETTA_BASE}/calcio/{slug(country)}/{slug(source_league)}/risultati/"
@@ -76,6 +133,14 @@ def _fetch_source(source_league: str, country: str, tournament_ids: set[str], st
         errors.append(f"{source_league}: primary senza risultati")
     except Exception as exc:
         errors.append(f"{source_league}: primary {type(exc).__name__}: {exc}")
+
+    # Prima del fallback URL, usa direttamente tournament/season feed.
+    matches, resolved, direct_errors = _direct_feed_results(
+        source_league, tournament_ids, stage_ids
+    )
+    errors.extend(direct_errors)
+    if matches:
+        return matches, resolved, errors
 
     for url in _fallback_urls(source_league, tournament_ids, stage_ids):
         if url in attempts:
