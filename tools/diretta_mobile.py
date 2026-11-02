@@ -42,6 +42,7 @@ class RawMatch:
     match_id: str = ""
     tournament_id: str = ""
     tournament_stage_id: str = ""
+    tournament_current_id: str = ""
 
     @property
     def borderline(self) -> bool:
@@ -154,7 +155,7 @@ def fetch_feed(day_offset: int, timeout: int = 20) -> str:
 
 def parse_feed(payload: str) -> list[RawMatch]:
     out, country, league = [], "", ""
-    tournament_id, tournament_stage_id = "", ""
+    tournament_id, tournament_stage_id, tournament_current_id = "", "", ""
     for record in payload.split("~"):
         fields = {}
         for item in record.split("¬"):
@@ -166,8 +167,7 @@ def parse_feed(payload: str) -> list[RawMatch]:
             country, league = (hm.group(1).strip(), hm.group(2).strip()) if hm else ("", fields["ZA"].strip())
             # ZEE/ZB appartengono normalmente all'intestazione ZA della
             # competizione e non vengono ripetuti nei record partita.
-            tournament_id = fields.get("ZEE", "") or fields.get("ZE", "")
-            tournament_stage_id = fields.get("ZB", "") or fields.get("ZC", "")
+            # ZEE = tournament template id; ZE = current tournament id;\n            # ZC = Livesport stage id. ZB puo essere un indice numerico di fase\n            # e NON va confuso con lo stage id alfanumerico.\n            tournament_id = fields.get("ZEE", "") or fields.get("ZE", "")\n            tournament_current_id = fields.get("ZE", "")\n            tournament_stage_id = fields.get("ZC", "") or fields.get("ZB", "")
             continue
         if not all(k in fields for k in ("AA", "AE", "AF")):
             continue
@@ -202,9 +202,7 @@ def parse_feed(payload: str) -> list[RawMatch]:
         out.append(RawMatch(
             country, league, tm, fields["AE"], fields["AF"], score, status, match_date,
             match_id=fields.get("AA", ""),
-            tournament_id=fields.get("ZEE", "") or fields.get("ZE", "") or tournament_id,
-            tournament_stage_id=fields.get("ZB", "") or fields.get("ZC", "") or tournament_stage_id,
-        ))
+            tournament_id=fields.get("ZEE", "") or fields.get("ZE", "") or tournament_id,\n            tournament_stage_id=fields.get("ZC", "") or fields.get("ZB", "") or tournament_stage_id,\n            tournament_current_id=fields.get("ZE", "") or tournament_current_id,\n        ))
     return out
 
 
