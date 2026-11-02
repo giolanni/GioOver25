@@ -48,6 +48,7 @@ def main() -> None:
         source_leagues = " | ".join(sorted({r["League"] for r in group}))
         tournament_ids = " | ".join(sorted({r["TournamentId"] for r in group if r.get("TournamentId")}))
         stage_ids = " | ".join(sorted({r["TournamentStageId"] for r in group if r.get("TournamentStageId")}))
+        sample_match_ids = " | ".join(sorted({r["SampleMatchId"] for r in group if r.get("SampleMatchId")}))
         action = "MERGE_EXISTING" if existing else "CREATE"
         plan.append({
             "Action": action,
@@ -58,12 +59,13 @@ def main() -> None:
             "SourceLeagues": source_leagues,
             "TournamentIds": tournament_ids,
             "TournamentStageIds": stage_ids,
+            "SampleMatchIds": sample_match_ids,
             "SourceRows": str(len(group)),
         })
 
     out = ROOT / "data" / "debug" / f"league_onboarding_plan_{datetime.now():%Y%m%d-%H%M%S}.csv"
     fields = ["Action","Tier","LeagueId","Country","League","SourceLeagues",
-              "TournamentIds","TournamentStageIds","SourceRows"]
+              "TournamentIds","TournamentStageIds","SampleMatchIds","SourceRows"]
     with out.open("w", encoding="utf-8-sig", newline="") as h:
         w = csv.DictWriter(h, fieldnames=fields, delimiter=";")
         w.writeheader()
@@ -74,7 +76,8 @@ def main() -> None:
     multi = sum(int(r["SourceRows"]) > 1 for r in plan)
     print(f"[INPUT] {source}")
     with_ids = sum(bool(r["TournamentIds"] or r["TournamentStageIds"]) for r in plan)
-    print(f"[PLAN] competitions={len(plan)} | CREATE={create} | MERGE_EXISTING={merge} | MULTI_SOURCE={multi} | WITH_IDS={with_ids} | WITHOUT_IDS={len(plan)-with_ids}")
+    with_match_ids = sum(bool(r["SampleMatchIds"]) for r in plan)
+    print(f"[PLAN] competitions={len(plan)} | CREATE={create} | MERGE_EXISTING={merge} | MULTI_SOURCE={multi} | WITH_IDS={with_ids} | WITHOUT_IDS={len(plan)-with_ids} | WITH_MATCH_IDS={with_match_ids} | WITHOUT_MATCH_IDS={len(plan)-with_match_ids}")
     print(f"[OUTPUT] {out}")
     print("[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
