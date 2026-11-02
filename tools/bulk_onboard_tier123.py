@@ -144,7 +144,21 @@ def main():
     for i, row in enumerate(plan, 1):
         league_id = row["LeagueId"]
         country = row["Country"]
+        action = row["Action"]
         source_leagues = [x.strip() for x in row["SourceLeagues"].split("|") if x.strip()]
+
+        # Le righe MERGE_EXISTING sono solo diagnostiche: non fare rete e non
+        # fondere automaticamente fasi/playoff negli storici gia' esistenti.
+        if action == "MERGE_EXISTING":
+            status = "SKIP_PHASE_MERGE"
+            print(f"[{i}/{len(plan)}] {league_id} | {action} | matches=0 | {status}")
+            summary.append({
+                "LeagueId": league_id, "Action": action, "Status": status,
+                "Matches": 0, "Sources": " | ".join(source_leagues),
+                "Errors": "", "ResolvedSources": "",
+            })
+            continue
+
         all_matches = {}
         errors = []
         resolved_sources = []
@@ -159,16 +173,11 @@ def main():
                 all_matches[(m.date, m.home.casefold(), m.away.casefold())] = m
 
         matches = list(all_matches.values())
-        action = row["Action"]
         status = "READY"
         if action == "CREATE" and league_id.casefold() in existing_ids:
             status = "SKIP_EXISTS"
         elif action == "CREATE" and not matches:
             status = "NO_RESULTS"
-        elif action == "MERGE_EXISTING":
-            # Non fondere automaticamente fasi/playoff in uno storico regolare.
-            # Caso attuale: Peru_Liga2, già gestita separatamente dopo il reset playoff.
-            status = "SKIP_PHASE_MERGE"
         elif errors:
             status = "READY_PARTIAL"
 
