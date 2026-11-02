@@ -202,7 +202,10 @@ def parse_feed(payload: str) -> list[RawMatch]:
         out.append(RawMatch(
             country, league, tm, fields["AE"], fields["AF"], score, status, match_date,
             match_id=fields.get("AA", ""),
-            tournament_id=fields.get("ZEE", "") or fields.get("ZE", "") or tournament_id,\n            tournament_stage_id=fields.get("ZC", "") or fields.get("ZB", "") or tournament_stage_id,\n            tournament_current_id=fields.get("ZE", "") or tournament_current_id,\n        ))
+            tournament_id=fields.get("ZEE", "") or fields.get("ZE", "") or tournament_id,
+            tournament_stage_id=fields.get("ZC", "") or fields.get("ZB", "") or tournament_stage_id,
+            tournament_current_id=fields.get("ZE", "") or tournament_current_id,
+        ))
     return out
 
 
