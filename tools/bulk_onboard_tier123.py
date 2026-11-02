@@ -312,7 +312,7 @@ def main():
 
         print(f"[{i}/{len(plan)}] {league_id} | {action} | matches={len(matches)} | {status}")
 
-        if action == "CREATE" and status in {"READY", "READY_PARTIAL"}:
+        if action == "CREATE" and status == "READY":
             hist = ROOT / "data" / "storico" / "risultati" / f"{league_id}.csv"
             if hist.exists():
                 status = "SKIP_HISTORY_EXISTS"
@@ -361,7 +361,7 @@ def main():
             raise
         print(f"[APPLY] CREATE={len(pending_registry)}")
     else:
-        print(f"[DRY-RUN] CREATE_READY={len(pending_registry)} | nessuna modifica")
+        print(f"[DRY-RUN] CREATE_VERIFIED={len(pending_registry)} | nessuna modifica")
 
     counts = {}
     for r in summary:
