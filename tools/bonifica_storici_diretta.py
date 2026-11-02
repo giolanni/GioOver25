@@ -384,6 +384,39 @@ def write_history(path: Path, remote: list[Result], local: list[Result], backup_
             w.writerow([country, league, r.round, r.date, r.home, r.away, r.hg, r.ag, ""])
 
 
+
+def append_missing_history(path: Path, missing: list[Result], backup_dir: Path):
+    """Aggiunge soltanto risultati remoti mancanti, senza eliminare righe locali."""
+    if not missing:
+        return
+    backup_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(path, backup_dir / path.name)
+    with path.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f, delimiter=";"))
+        fieldnames = list(rows[0].keys()) if rows else [
+            "Country", "League", "Round", "MatchDate", "Home", "Away", "HG", "AG", "Notes"
+        ]
+    country = next((x.get("Country", "") for x in rows if x.get("Country")), "")
+    league = next((x.get("League", "") for x in rows if x.get("League")), "")
+    for r in missing:
+        row = {name: "" for name in fieldnames}
+        row.update({
+            "Country": country, "League": league, "Round": r.round,
+            "MatchDate": r.date, "Home": r.home, "Away": r.away,
+            "HG": str(r.hg), "AG": str(r.ag), "Notes": "",
+        })
+        rows.append(row)
+    rows.sort(key=lambda x: (
+        str(x.get("MatchDate", "")),
+        int(x.get("Round", "")) if str(x.get("Round", "")).isdigit() else 9999,
+        str(x.get("Home", "")), str(x.get("Away", "")),
+    ))
+    with path.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fieldnames, delimiter=";", lineterminator="\n")
+        w.writeheader()
+        w.writerows(rows)
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description="Confronta/bonifica gli storici con i risultati Diretta.")
     p.add_argument("--league-id", action="append", help="Limita a una o più LeagueId.")
@@ -468,12 +501,15 @@ def main() -> int:
                 detail += [f"{a.date};{a.home};{a.away};LOCAL={a.hg}-{a.ag};DIRETTA={b.hg}-{b.ag}" for a,b in score_diff]
             log_file(detail_dir, lid, "\n".join(detail))
 
-            if args.apply and status == "DIFFERENCES" and safe:
-                write_history(path, remote, local, backup_dir)
+            # Modalita conservativa: non cancellare mai EXTRA_LOCAL e non
+            # riscrivere l'intero storico. Se gli score comuni coincidono e
+            # il mapping e sicuro, aggiunge esclusivamente MISSING_LOCAL.
+            if args.apply and status in {"SAFE_MISSING", "DIFFERENCES"} and safe and not score_diff and missing:
+                append_missing_history(path, missing, backup_dir)
                 outcome.applied = True
-            elif args.apply and status == "DIFFERENCES" and not safe:
+            elif args.apply and status == "DIFFERENCES" and (not safe or score_diff):
                 outcome.status = "AMBIGUOUS"
-                outcome.message = f"team_overlap={overlap_ratio:.3f}; equal={equal}"
+                outcome.message = f"team_overlap={overlap_ratio:.3f}; equal={equal}; score_diff={len(score_diff)}"
                 log_file(error_dir, lid, "\n".join(detail + ["", "NOT_APPLIED: mapping/confronto non abbastanza sicuro"]))
 
             outcomes.append(outcome)
