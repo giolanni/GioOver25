@@ -73,7 +73,8 @@ def main() -> None:
     merge = sum(r["Action"] == "MERGE_EXISTING" for r in plan)
     multi = sum(int(r["SourceRows"]) > 1 for r in plan)
     print(f"[INPUT] {source}")
-    print(f"[PLAN] competitions={len(plan)} | CREATE={create} | MERGE_EXISTING={merge} | MULTI_SOURCE={multi}")
+    with_ids = sum(bool(r["TournamentIds"] or r["TournamentStageIds"]) for r in plan)
+    print(f"[PLAN] competitions={len(plan)} | CREATE={create} | MERGE_EXISTING={merge} | MULTI_SOURCE={multi} | WITH_IDS={with_ids} | WITHOUT_IDS={len(plan)-with_ids}")
     print(f"[OUTPUT] {out}")
     print("[DRY-RUN] Nessuna modifica a league_registry.csv o agli storici.")
 
