@@ -31,7 +31,7 @@ def _walk_values(obj, fragment: str):
         for value in obj:
             yield from _walk_values(value, fragment)
 
-def _fallback_urls(source_league: str, tournament_ids: set[str], timeout: int = 20):
+def _fallback_urls(source_league: str, tournament_ids: set[str], stage_ids: set[str], timeout: int = 20):
     """Trova URL pubbliche usando gli ID Flashscore del discovery, non il nome/slug."""
     urls = []
     try:
@@ -42,6 +42,14 @@ def _fallback_urls(source_league: str, tournament_ids: set[str], timeout: int = 
         tournament = raw.get("defaultTournament") or {}
         tid = str(tournament.get("id", "")).strip()
         if tournament_ids and tid not in tournament_ids:
+            continue
+        # Lo stage e' decisivo per Apertura/Clausura e gruppi interni.
+        raw_stage_ids = {
+            str(v).strip()
+            for v in _walk_values(raw, "stage")
+            if isinstance(v, (str, int)) and str(v).strip()
+        }
+        if stage_ids and raw_stage_ids and not (stage_ids & raw_stage_ids):
             continue
         for value in list(_walk_values(raw, "url")) + list(_walk_values(raw, "path")):
             if not isinstance(value, str) or not value.strip():
@@ -56,7 +64,7 @@ def _fallback_urls(source_league: str, tournament_ids: set[str], timeout: int = 
             urls.append(value)
     return list(dict.fromkeys(urls))
 
-def _fetch_source(source_league: str, country: str, tournament_ids: set[str]):
+def _fetch_source(source_league: str, country: str, tournament_ids: set[str], stage_ids: set[str]):
     """Prima URL leggibile; poi fallback ID-driven per fasi con slug non pubblico."""
     primary = f"{DIRETTA_BASE}/calcio/{slug(country)}/{slug(source_league)}/risultati/"
     attempts = [primary]
@@ -69,7 +77,7 @@ def _fetch_source(source_league: str, country: str, tournament_ids: set[str]):
     except Exception as exc:
         errors.append(f"{source_league}: primary {type(exc).__name__}: {exc}")
 
-    for url in _fallback_urls(source_league, tournament_ids):
+    for url in _fallback_urls(source_league, tournament_ids, stage_ids):
         if url in attempts:
             continue
         attempts.append(url)
@@ -141,8 +149,9 @@ def main():
         errors = []
         resolved_sources = []
         tournament_ids = {x.strip() for x in row.get("TournamentIds", "").split("|") if x.strip()}
+        stage_ids = {x.strip() for x in row.get("TournamentStageIds", "").split("|") if x.strip()}
         for source_league in source_leagues:
-            matches, resolved_url, source_errors = _fetch_source(source_league, country, tournament_ids)
+            matches, resolved_url, source_errors = _fetch_source(source_league, country, tournament_ids, stage_ids)
             errors.extend(source_errors)
             if resolved_url:
                 resolved_sources.append(f"{source_league} => {resolved_url}")
