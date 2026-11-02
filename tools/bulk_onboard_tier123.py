@@ -17,6 +17,69 @@ from pathlib import Path
 from tools.backfill_league_daily import slug
 from tools.flashscore_history import fetch_embedded_results
 from tools.prepare_input import ROOT
+from analysis.audit_diretta_standings import search_tournaments
+
+DIRETTA_BASE = "https://www.diretta.it"
+
+def _walk_values(obj, fragment: str):
+    if isinstance(obj, dict):
+        for key, value in obj.items():
+            if fragment in str(key).casefold():
+                yield value
+            yield from _walk_values(value, fragment)
+    elif isinstance(obj, list):
+        for value in obj:
+            yield from _walk_values(value, fragment)
+
+def _fallback_urls(source_league: str, tournament_ids: set[str], timeout: int = 20):
+    """Trova URL pubbliche usando gli ID Flashscore del discovery, non il nome/slug."""
+    urls = []
+    try:
+        rows = search_tournaments(source_league, timeout)
+    except Exception:
+        return urls
+    for raw in rows:
+        tournament = raw.get("defaultTournament") or {}
+        tid = str(tournament.get("id", "")).strip()
+        if tournament_ids and tid not in tournament_ids:
+            continue
+        for value in list(_walk_values(raw, "url")) + list(_walk_values(raw, "path")):
+            if not isinstance(value, str) or not value.strip():
+                continue
+            value = value.strip()
+            if value.startswith("/"):
+                value = DIRETTA_BASE + value
+            elif not value.startswith("http"):
+                continue
+            if "/results" not in value.rstrip("/"):
+                value = value.rstrip("/") + "/results/"
+            urls.append(value)
+    return list(dict.fromkeys(urls))
+
+def _fetch_source(source_league: str, country: str, tournament_ids: set[str]):
+    """Prima URL leggibile; poi fallback ID-driven per fasi con slug non pubblico."""
+    primary = f"{DIRETTA_BASE}/calcio/{slug(country)}/{slug(source_league)}/risultati/"
+    attempts = [primary]
+    errors = []
+    try:
+        ids, matches, payload = fetch_embedded_results(primary)
+        if matches:
+            return matches, primary, errors
+        errors.append(f"{source_league}: primary senza risultati")
+    except Exception as exc:
+        errors.append(f"{source_league}: primary {type(exc).__name__}: {exc}")
+
+    for url in _fallback_urls(source_league, tournament_ids):
+        if url in attempts:
+            continue
+        attempts.append(url)
+        try:
+            _, matches, _ = fetch_embedded_results(url)
+            if matches:
+                return matches, url, errors
+        except Exception as exc:
+            errors.append(f"{source_league}: fallback {type(exc).__name__}: {exc}")
+    return [], "", errors
 
 
 def latest_plan() -> Path:
@@ -76,14 +139,15 @@ def main():
         source_leagues = [x.strip() for x in row["SourceLeagues"].split("|") if x.strip()]
         all_matches = {}
         errors = []
+        resolved_sources = []
+        tournament_ids = {x.strip() for x in row.get("TournamentIds", "").split("|") if x.strip()}
         for source_league in source_leagues:
-            url = f"https://www.diretta.it/calcio/{slug(country)}/{slug(source_league)}/risultati/"
-            try:
-                _, matches, _ = fetch_embedded_results(url)
-                for m in matches:
-                    all_matches[(m.date, m.home.casefold(), m.away.casefold())] = m
-            except Exception as exc:
-                errors.append(f"{source_league}: {type(exc).__name__}: {exc}")
+            matches, resolved_url, source_errors = _fetch_source(source_league, country, tournament_ids)
+            errors.extend(source_errors)
+            if resolved_url:
+                resolved_sources.append(f"{source_league} => {resolved_url}")
+            for m in matches:
+                all_matches[(m.date, m.home.casefold(), m.away.casefold())] = m
 
         matches = list(all_matches.values())
         action = row["Action"]
@@ -93,7 +157,9 @@ def main():
         elif action == "CREATE" and not matches:
             status = "NO_RESULTS"
         elif action == "MERGE_EXISTING":
-            status = "MERGE_PENDING"
+            # Non fondere automaticamente fasi/playoff in uno storico regolare.
+            # Caso attuale: Peru_Liga2, già gestita separatamente dopo il reset playoff.
+            status = "SKIP_PHASE_MERGE"
         elif errors:
             status = "READY_PARTIAL"
 
@@ -123,11 +189,12 @@ def main():
             "LeagueId": league_id, "Action": action, "Status": status,
             "Matches": len(matches), "Sources": " | ".join(source_leagues),
             "Errors": " | ".join(errors),
+            "ResolvedSources": " | ".join(resolved_sources),
         })
 
     out = ROOT / "data" / "debug" / f"tier123_bulk_onboarding_{datetime.now():%Y%m%d-%H%M%S}.csv"
     with out.open("w", encoding="utf-8-sig", newline="") as h:
-        w = csv.DictWriter(h, fieldnames=["LeagueId","Action","Status","Matches","Sources","Errors"], delimiter=";")
+        w = csv.DictWriter(h, fieldnames=["LeagueId","Action","Status","Matches","Sources","Errors","ResolvedSources"], delimiter=";")
         w.writeheader()
         w.writerows(summary)
 
