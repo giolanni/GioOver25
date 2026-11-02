@@ -17,7 +17,7 @@ from pathlib import Path
 from tools.backfill_league_daily import slug
 from tools.flashscore_history import fetch_embedded_results
 from tools.prepare_input import ROOT
-from tools.bonifica_storici_diretta import RESULTS_FEED, parse_results_feed
+from tools.bonifica_storici_diretta import RESULTS_FEED, parse_results_feed, _extract_season_ids, _fetch_page
 from analysis.audit_diretta_standings import search_tournaments, _request_text
 
 DIRETTA_BASE = "https://www.diretta.it"
@@ -65,13 +65,35 @@ def _fallback_urls(source_league: str, tournament_ids: set[str], stage_ids: set[
             urls.append(value)
     return list(dict.fromkeys(urls))
 
-def _direct_feed_results(source_league: str, tournament_ids: set[str], stage_ids: set[str], timeout: int = 20):
+def _season_ids_from_matches(match_ids: set[str], timeout: int = 20):
+    """Ricava eventuali seasonId dal bootstrap della pagina di una partita."""
+    season_ids = []
+    errors = []
+    for mid in match_ids:
+        # La route /match/football/<id>/ e' indipendente dagli slug delle squadre.
+        url = f"https://www.flashscore.com/match/football/{mid}/"
+        try:
+            html = _fetch_page(url, timeout)
+        except Exception as exc:
+            errors.append(f"match {mid}: {type(exc).__name__}: {exc}")
+            continue
+        found = _extract_season_ids(html)
+        season_ids.extend(found)
+        if not found:
+            errors.append(f"match {mid}: seasonId non esposto")
+    return list(dict.fromkeys(season_ids)), errors
+
+
+def _direct_feed_results(source_league: str, tournament_ids: set[str], stage_ids: set[str], match_ids: set[str], timeout: int = 20):
     """Recupera risultati dal feed stagionale usando gli ID della discovery."""
     attempts = []
     try:
         rows = search_tournaments(source_league, timeout)
     except Exception as exc:
         return [], "", [f"{source_league}: ID search {type(exc).__name__}: {exc}"]
+
+    match_season_ids, match_errors = _season_ids_from_matches(match_ids, timeout)
+    attempts.extend(match_errors)
 
     for raw in rows:
         tournament = raw.get("defaultTournament") or {}
@@ -104,6 +126,7 @@ def _direct_feed_results(source_league: str, tournament_ids: set[str], stage_ids
                 if isinstance(value, (str, int)) and str(value).strip():
                     season_ids.append(str(value).strip())
 
+        season_ids.extend(match_season_ids)
         for season in dict.fromkeys(season_ids):
             url = RESULTS_FEED.format(tournament=tid, season=season)
             try:
@@ -121,7 +144,7 @@ def _direct_feed_results(source_league: str, tournament_ids: set[str], stage_ids
     return [], "", attempts
 
 
-def _fetch_source(source_league: str, country: str, tournament_ids: set[str], stage_ids: set[str]):
+def _fetch_source(source_league: str, country: str, tournament_ids: set[str], stage_ids: set[str], match_ids: set[str]):
     """Prima URL leggibile; poi fallback ID-driven per fasi con slug non pubblico."""
     primary = f"{DIRETTA_BASE}/calcio/{slug(country)}/{slug(source_league)}/risultati/"
     attempts = [primary]
@@ -136,7 +159,7 @@ def _fetch_source(source_league: str, country: str, tournament_ids: set[str], st
 
     # Prima del fallback URL, usa direttamente tournament/season feed.
     matches, resolved, direct_errors = _direct_feed_results(
-        source_league, tournament_ids, stage_ids
+        source_league, tournament_ids, stage_ids, match_ids
     )
     errors.extend(direct_errors)
     if matches:
@@ -229,8 +252,9 @@ def main():
         resolved_sources = []
         tournament_ids = {x.strip() for x in row.get("TournamentIds", "").split("|") if x.strip()}
         stage_ids = {x.strip() for x in row.get("TournamentStageIds", "").split("|") if x.strip()}
+        match_ids = {x.strip() for x in row.get("SampleMatchIds", "").split("|") if x.strip()}
         for source_league in source_leagues:
-            matches, resolved_url, source_errors = _fetch_source(source_league, country, tournament_ids, stage_ids)
+            matches, resolved_url, source_errors = _fetch_source(source_league, country, tournament_ids, stage_ids, match_ids)
             errors.extend(source_errors)
             if resolved_url:
                 resolved_sources.append(f"{source_league} => {resolved_url}")
