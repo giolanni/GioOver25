@@ -28,7 +28,7 @@ def main() -> None:
     print("LeagueId | NAME | +TID | +STAGE | FINISHED | RANGE")
     for row in rows:
         country = row["Country"]
-        sources = [x.strip() for x in row["Sources"].split("|") if x.strip()]
+        sources = [x.strip() for x in (row.get("SourceLeagues") or row.get("Sources") or row.get("League") or "").split("|") if x.strip()]
         tids = split_ids(row.get("TournamentIds", ""))
         stages = split_ids(row.get("TournamentStageIds", ""))
 
