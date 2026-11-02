@@ -21,9 +21,10 @@ def main():
     preferred=["Argentina_LigaProfesionalClausura","Colombia_PrimeraAClausura","Uruguay_LigaAUFUruguayaClausura"]
     chosen=[next(r for r in rows if r["LeagueId"]==lid) for lid in preferred]
     for r in chosen:
-        tids=split(r.get("TournamentIds"))
+        template_ids=split(r.get("TournamentIds"))
+        tids=split(r.get("TournamentCurrentIds"))
         stages=split(r.get("TournamentStageIds"))
-        print(f"\n[{r['LeagueId']}] tids={tids} stages={stages}")
+        print(f"\n[{r['LeagueId']}] template={template_ids} current={tids} stages={stages}")
         for tid in tids[:1]:
             for stage in stages:
                 for pattern in PATTERNS:
