@@ -154,6 +154,7 @@ def fetch_feed(day_offset: int, timeout: int = 20) -> str:
 
 def parse_feed(payload: str) -> list[RawMatch]:
     out, country, league = [], "", ""
+    tournament_id, tournament_stage_id = "", ""
     for record in payload.split("~"):
         fields = {}
         for item in record.split("¬"):
@@ -163,6 +164,10 @@ def parse_feed(payload: str) -> list[RawMatch]:
         if "ZA" in fields:
             hm = HEAD_RE.match(fields["ZA"].strip())
             country, league = (hm.group(1).strip(), hm.group(2).strip()) if hm else ("", fields["ZA"].strip())
+            # ZEE/ZB appartengono normalmente all'intestazione ZA della
+            # competizione e non vengono ripetuti nei record partita.
+            tournament_id = fields.get("ZEE", "") or fields.get("ZE", "")
+            tournament_stage_id = fields.get("ZB", "") or fields.get("ZC", "")
             continue
         if not all(k in fields for k in ("AA", "AE", "AF")):
             continue
@@ -197,8 +202,8 @@ def parse_feed(payload: str) -> list[RawMatch]:
         out.append(RawMatch(
             country, league, tm, fields["AE"], fields["AF"], score, status, match_date,
             match_id=fields.get("AA", ""),
-            tournament_id=fields.get("ZEE", ""),
-            tournament_stage_id=fields.get("ZB", ""),
+            tournament_id=fields.get("ZEE", "") or fields.get("ZE", "") or tournament_id,
+            tournament_stage_id=fields.get("ZB", "") or fields.get("ZC", "") or tournament_stage_id,
         ))
     return out
 
