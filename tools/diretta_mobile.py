@@ -162,12 +162,27 @@ def parse_feed(payload: str) -> list[RawMatch]:
             if "÷" in item:
                 k, v = item.split("÷", 1)
                 fields[k] = v
+
+        # Gli identificativi della competizione possono essere distribuiti su
+        # record header consecutivi, non necessariamente nello stesso record ZA.
+        # Mantieni quindi il contesto aggiornato prima di leggere le partite.
+        if fields.get("ZEE"):
+            tournament_id = fields["ZEE"]
+        elif fields.get("ZE") and not tournament_id:
+            tournament_id = fields["ZE"]
+        if fields.get("ZE"):
+            tournament_current_id = fields["ZE"]
+        if fields.get("ZC"):
+            tournament_stage_id = fields["ZC"]
+        elif fields.get("ZB") and not tournament_stage_id:
+            tournament_stage_id = fields["ZB"]
+
         if "ZA" in fields:
             hm = HEAD_RE.match(fields["ZA"].strip())
             country, league = (hm.group(1).strip(), hm.group(2).strip()) if hm else ("", fields["ZA"].strip())
-            # ZEE/ZB appartengono normalmente all'intestazione ZA della
-            # competizione e non vengono ripetuti nei record partita.
-            # ZEE = tournament template id; ZE = current tournament id;\n            # ZC = Livesport stage id. ZB puo essere un indice numerico di fase\n            # e NON va confuso con lo stage id alfanumerico.\n            tournament_id = fields.get("ZEE", "") or fields.get("ZE", "")\n            tournament_current_id = fields.get("ZE", "")\n            tournament_stage_id = fields.get("ZC", "") or fields.get("ZB", "")
+            # Nuova competizione: gli ID eventualmente presenti sullo stesso
+            # record sono gia stati acquisiti sopra; quelli sui record header
+            # successivi aggiorneranno il contesto prima della prima partita.
             continue
         if not all(k in fields for k in ("AA", "AE", "AF")):
             continue
@@ -181,10 +196,6 @@ def parse_feed(payload: str) -> list[RawMatch]:
         hg, ag = fields.get("AG", ""), fields.get("AH", "")
         score = f"{hg}-{ag}" if hg.isdigit() and ag.isdigit() else "-"
         ab = fields.get("AB", "")
-        # Lo stato amministrativo non è sempre confinato in AM e il testo può
-        # arrivare localizzato. Cerca quindi gli indicatori di rinvio in tutti
-        # i campi del record, mantenendo il vincolo score == "-" per non
-        # confondere una partita conclusa con un rinvio.
         status_text = " ".join(str(value) for value in fields.values()).casefold()
         postponed_tokens = (
             "si disputer", "posticip", "rinvi", "sospes", "annull",
@@ -196,18 +207,14 @@ def parse_feed(payload: str) -> list[RawMatch]:
             status = "Posticipata"
         else:
             status = "" if ab in {"", "1", "3"} else ab
-        # Identificativi interni Flashscore/Diretta. Mantenerli nel RawMatch
-        # consente di collegare discovery e futuro backfill senza cambiare
-        # l'output CSV usato da getmatches/getresults.
         out.append(RawMatch(
             country, league, tm, fields["AE"], fields["AF"], score, status, match_date,
             match_id=fields.get("AA", ""),
-            tournament_id=fields.get("ZEE", "") or fields.get("ZE", "") or tournament_id,
-            tournament_stage_id=fields.get("ZC", "") or fields.get("ZB", "") or tournament_stage_id,
+            tournament_id=fields.get("ZEE", "") or tournament_id,
+            tournament_stage_id=fields.get("ZC", "") or tournament_stage_id,
             tournament_current_id=fields.get("ZE", "") or tournament_current_id,
         ))
     return out
-
 
 def fetch_html(day_offset: int, timeout: int = 20) -> str:
     url = BASE_URL if day_offset == 0 else f"{BASE_URL}?d={day_offset}"
