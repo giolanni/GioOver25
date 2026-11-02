@@ -11,13 +11,14 @@ from __future__ import annotations
 
 import argparse
 import csv
-from datetime import datetime
+from datetime import datetime, date
 from pathlib import Path
 
 from tools.backfill_league_daily import slug
-from tools.flashscore_history import fetch_embedded_results
-from tools.prepare_input import ROOT
+from tools.flashscore_history import fetch_embedded_results, FlashscoreMatch
+from tools.prepare_input import ROOT, norm
 from tools.bonifica_storici_diretta import RESULTS_FEED, parse_results_feed, _extract_season_ids, _fetch_page
+from tools.diretta_mobile import parse_feed
 from analysis.audit_diretta_standings import search_tournaments, _request_text
 
 DIRETTA_BASE = "https://www.diretta.it"
@@ -64,6 +65,40 @@ def _fallback_urls(source_league: str, tournament_ids: set[str], stage_ids: set[
                 value = value.rstrip("/") + "/results/"
             urls.append(value)
     return list(dict.fromkeys(urls))
+
+def _cached_daily_results(source_league: str, country: str, tournament_ids: set[str], stage_ids: set[str]):
+    """Risultati conclusi gia' presenti nei feed giornalieri della discovery."""
+    cache_dir = ROOT / "data" / "debug" / "discover_leagues_cache"
+    found = {}
+    for path in sorted(cache_dir.glob("*.feed")):
+        try:
+            matches = parse_feed(path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for m in matches:
+            if norm(m.country) != norm(country) or norm(m.league) != norm(source_league):
+                continue
+            if tournament_ids and m.tournament_id and m.tournament_id not in tournament_ids:
+                continue
+            if stage_ids and m.tournament_stage_id and m.tournament_stage_id not in stage_ids:
+                continue
+            if "-" not in m.score:
+                continue
+            hg, ag = m.score.split("-", 1)
+            if not (hg.isdigit() and ag.isdigit()) or not m.match_date:
+                continue
+            fm = FlashscoreMatch(
+                match_id=m.match_id,
+                date=m.match_date,
+                home=m.home,
+                away=m.away,
+                hg=int(hg),
+                ag=int(ag),
+                round="",
+            )
+            found[(fm.date, fm.home.casefold(), fm.away.casefold())] = fm
+    return list(found.values())
+
 
 def _season_ids_from_matches(match_ids: set[str], timeout: int = 20):
     """Ricava eventuali seasonId dal bootstrap della pagina di una partita."""
@@ -175,6 +210,10 @@ def _fetch_source(source_league: str, country: str, tournament_ids: set[str], st
                 return matches, url, errors
         except Exception as exc:
             errors.append(f"{source_league}: fallback {type(exc).__name__}: {exc}")
+    cached = _cached_daily_results(source_league, country, tournament_ids, stage_ids)
+    if cached:
+        return cached, "daily-cache", errors
+    errors.append(f"{source_league}: nessun risultato concluso nella cache giornaliera")
     return [], "", errors
 
 
