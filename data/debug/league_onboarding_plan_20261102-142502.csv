@@ -1,0 +1,54 @@
+﻿Action;Tier;LeagueId;Country;League;SourceLeagues;TournamentIds;TournamentStageIds;SourceRows
+CREATE;TIER1;Argentina_LigaProfesionalClausura;Argentina;Liga Profesional - Clausura;Liga Profesional - Clausura;naYhNOaA;22;1
+MERGE_EXISTING;TIER1;Brazil_SerieA;Brazil;Serie A;Serie A;Yq4hUnzQ;39;1
+MERGE_EXISTING;TIER2;Brazil_SerieB;Brazil;Serie B;Serie B;vRtLP6rs;39;1
+MERGE_EXISTING;TIER2;Chile_LigadeAscenso;Chile;Liga de Ascenso;Liga de Ascenso;d6kYgx8t;51;1
+MERGE_EXISTING;TIER1;Chile_LigadePrimera;Chile;Liga de Primera;Liga de Primera;0KangpCU;51;1
+CREATE;TIER3;Chile_SegundaDivision;Chile;Segunda Division;Segunda Division - Gruppo Promozione | Segunda Division - Gruppo Retrocessione;WncNHmtr;51;2
+MERGE_EXISTING;TIER2;China_LeagueOne;China;League One;League One;86AXRTst;52;1
+CREATE;TIER3;China_LeagueTwo;China;League Two;League Two - Gruppo Promozione | League Two - Gruppo Retrocessione;8ndxlCCh;52;2
+MERGE_EXISTING;TIER1;China_SuperLeague;China;Super League;Super League;nc9yRmcn;52;1
+CREATE;TIER1;Colombia_PrimeraAClausura;Colombia;Primera A - Clausura;Primera A - Clausura;t0fpnjs5;53;1
+CREATE;TIER2;Colombia_PrimeraBClausura;Colombia;Primera B - Clausura;Primera B - Clausura;4dzRa7y9;53;1
+CREATE;TIER2;Costarica_LigadeAscensoApertura;Costarica;Liga de Ascenso - Apertura;Liga de Ascenso - Apertura;riEiBZjN;57;1
+CREATE;TIER1;Costarica_PrimeraDivisionApertura;Costarica;Primera División - Apertura;Primera División - Apertura;tpC1pUBH;57;1
+CREATE;TIER1;Ecuador_LigaPro;Ecuador;Liga Pro;Liga Pro - Gruppo Retrocessione;WWZFEdUR;68;1
+CREATE;TIER2;Ecuador_SerieB;Ecuador;Serie B;Serie B - Gruppo Promozione | Serie B - Gruppo Retrocessione;GQXEtvRu;68;2
+MERGE_EXISTING;TIER2;Egypt_Division2A;Egypt;Division 2 A;Division 2 A;lt1UhcxR;69;1
+MERGE_EXISTING;TIER1;Egypt_PremierLeague;Egypt;Premier League;Premier League;xbpjAGxq;69;1
+CREATE;TIER1;ElSalvador_PrimeraDivisionApertura;El Salvador;Primera Division - Apertura;Primera Division - Apertura;xxxpBZl2;70;1
+CREATE;TIER1;Gabon_ChampionnatD1;Gabon;Championnat D1;Championnat D1;lbBRRQLr;78;1
+CREATE;TIER1;Georgia_CrystalbetErovnuliLiga;Georgia;Crystalbet Erovnuli Liga;Crystalbet Erovnuli Liga;ncI32KCk;80;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup1;Greece;Gamma Ethniki - Group 1;Gamma Ethniki - Group 1;Q960PraK;83;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup10;Greece;Gamma Ethniki - Group 10;Gamma Ethniki - Group 10;zcu2WeZC;83;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup2;Greece;Gamma Ethniki - Group 2;Gamma Ethniki - Group 2;MudRP2EQ;83;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup3;Greece;Gamma Ethniki - Group 3;Gamma Ethniki - Group 3;dnbIHvM6;83;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup4;Greece;Gamma Ethniki - Group 4;Gamma Ethniki - Group 4;t4iW5byD;83;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup5;Greece;Gamma Ethniki - Group 5;Gamma Ethniki - Group 5;OlrgLMMs;83;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup6;Greece;Gamma Ethniki - Group 6;Gamma Ethniki - Group 6;IBscKtxl;83;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup7;Greece;Gamma Ethniki - Group 7;Gamma Ethniki - Group 7;zX99J0if;83;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup8;Greece;Gamma Ethniki - Group 8;Gamma Ethniki - Group 8;IeaEIK60;83;1
+MERGE_EXISTING;TIER3;Greece_GammaEthnikiGroup9;Greece;Gamma Ethniki - Group 9;Gamma Ethniki - Group 9;hYkcXyK6;83;1
+MERGE_EXISTING;TIER1;Greece_SuperLeague;Greece;Super League;Super League;d2pwJFHI;83;1
+MERGE_EXISTING;TIER2;Greece_SuperLeague2;Greece;Super League 2;Super League 2;Kfjz5IjJ;83;1
+CREATE;TIER1;Guatemala_LigaNacionalApertura;Guatemala;Liga Nacional - Apertura;Liga Nacional - Apertura;zgqsIZWO;85;1
+CREATE;TIER1;Honduras_LigaNacionalApertura;Honduras;Liga Nacional - Apertura;Liga Nacional - Apertura;YeUwzehC;90;1
+MERGE_EXISTING;TIER1;Ireland_NationalLeague;Ireland;National League;National League;ClmZ2t8d;96;1
+MERGE_EXISTING;TIER1;Ireland_PremierDivision;Ireland;Premier Division;Premier Division;naHiWdnt;96;1
+CREATE;TIER2;Kenya_SuperLeague;Kenya;Super League;Super League;4nMDWeBq;103;1
+MERGE_EXISTING;TIER1;Malaysia_SuperLeague;Malaysia;Super League;Super League;Oh9HQv4e;121;1
+CREATE;TIER1;Malta_PremierLeague;Malta;Premier League;Premier League - Prima fase - Principale;ELVAW0WQ;124;1
+CREATE;TIER1;Mauritius_SuperLeague;Mauritius;Super League;Super League;2y0WiZfB;127;1
+MERGE_EXISTING;TIER2;Morocco_Botola2;Morocco;Botola 2;Botola 2;xvpyvF04;134;1
+MERGE_EXISTING;TIER1;Morocco_BotolaPro;Morocco;Botola Pro;Botola Pro;SWk4muv7;134;1
+CREATE;TIER1;Nicaragua_LigaPrimeraApertura;Nicaragua;Liga Primera - Apertura;Liga Primera - Apertura;6R9dHd1C;141;1
+CREATE;TIER1;Panama_LPFApertura;Panama;LPF - Apertura;LPF - Apertura;jHCVwi4L;149;1
+MERGE_EXISTING;TIER2;Peru_Liga2;Peru;Liga 2;Liga 2 - Gruppo Promozione | Liga 2 - Gruppo Retrocessione;4vsfFjhg;152;2
+CREATE;TIER1;RepubblicaDominicana_LDFApertura;Repubblica Dominicana;LDF - Apertura;LDF - Apertura;WOHJMDoA;66;1
+CREATE;TIER3;Russia_FNL2DivisionAGoldAutunno;Russia;FNL 2 - Division A Gold - Autunno;FNL 2 - Division A Gold - Autunno;UmfIhP4H;158;1
+MERGE_EXISTING;TIER1;SouthAfrica_BetwayPremiership;South Africa;Betway Premiership;Betway Premiership;WYFXQ1KH;175;1
+MERGE_EXISTING;TIER2;SouthAfrica_MotsepeFoundationChampionship;South Africa;Motsepe Foundation Championship;Motsepe Foundation Championship;2HPP8Pog;175;1
+MERGE_EXISTING;TIER1;Tajikistan_VysshayaLiga;Tajikistan;Vysshaya Liga;Vysshaya Liga;Gt7K9kvK;184;1
+MERGE_EXISTING;TIER1;Thailand_ThaiLeague1;Thailand;Thai League 1;Thai League 1;hOlyBdW0;186;1
+MERGE_EXISTING;TIER2;Thailand_ThaiLeague2;Thailand;Thai League 2;Thai League 2;zirne0n9;186;1
+CREATE;TIER1;Uruguay_LigaAUFUruguayaClausura;Uruguay;Liga AUF Uruguaya - Clausura;Liga AUF Uruguaya - Clausura;r9s6zO6P;201;1

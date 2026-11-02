@@ -1,0 +1,6 @@
+[31/31] Thailand_ThaiLeague2
+status=OK
+tournament=Thai League 2 country=Thailand tournament_id=SK2iU3cU stage=embedded
+source=https://www.diretta.it/calcio/thailand/thai-league-2/risultati/
+team_overlap=1.000
+local=81 remote=81 equal=81 missing_local=0 extra_local=0 score_diff=0

@@ -1,0 +1,15 @@
+[2/3] Tajikistan_VysshayaLiga
+status=DIFFERENCES
+tournament=Vysshaya Liga country=Tajikistan tournament_id=f54pHdn1 stage=embedded
+source=https://www.diretta.it/calcio/tajikistan/vysshaya-liga/risultati/
+team_overlap=1.000
+local=105 remote=104 equal=102 missing_local=2 extra_local=3 score_diff=0
+
+MISSING_LOCAL:
+2026-11-02;Istaravshan;Regar-TadAZ;1;1
+2026-11-02;CSKA Pomir Dushanbe;Istiqlol Dushanbe;0;1
+
+EXTRA_LOCAL:
+2026-04-05;Istiqlol Dushanbe;Ravshan;0;0
+2026-04-05;Khosilot Parkhar;Sardor Tursunzoda;3;2
+2026-04-05;Parvoz-Aeroport Khujand;Regar-TadAZ;0;1

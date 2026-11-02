@@ -1,0 +1,6 @@
+[3/31] Chile_LigadeAscenso
+status=OK
+tournament=Liga de Ascenso country=Chile tournament_id=r7IzAIum stage=embedded
+source=https://www.diretta.it/calcio/chile/liga-de-ascenso/risultati/
+team_overlap=1.000
+local=104 remote=104 equal=104 missing_local=0 extra_local=0 score_diff=0

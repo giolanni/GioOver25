@@ -1,0 +1,6 @@
+[2/31] Brazil_SerieB
+status=OK
+tournament=Serie B country=Brazil tournament_id=tYGti5dR stage=embedded
+source=https://www.diretta.it/calcio/brazil/serie-b/risultati/
+team_overlap=1.000
+local=107 remote=107 equal=107 missing_local=0 extra_local=0 score_diff=0

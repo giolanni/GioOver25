@@ -1,0 +1,9 @@
+[20/31] Greece_SuperLeague2
+status=SAFE_MISSING
+tournament=Super League 2 country=Greece tournament_id=MuLSo6JO stage=embedded
+source=https://www.diretta.it/calcio/greece/super-league-2/risultati/
+team_overlap=1.000
+local=71 remote=72 equal=71 missing_local=1 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-11-02;Marko;Kalamaria;2;0

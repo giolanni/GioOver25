@@ -1,0 +1,6 @@
+[4/31] Chile_LigadePrimera
+status=OK
+tournament=Liga de Primera country=Chile tournament_id=dtweQvIP stage=embedded
+source=https://www.diretta.it/calcio/chile/liga-de-primera/risultati/
+team_overlap=1.000
+local=107 remote=107 equal=107 missing_local=0 extra_local=0 score_diff=0

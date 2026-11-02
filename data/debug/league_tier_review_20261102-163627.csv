@@ -1,0 +1,179 @@
+﻿Country;League;Status;KindOrLeagueId;Matches;FirstDate;LastDate;TournamentId;TournamentStageId;TournamentCurrentId;SampleMatchId
+Argentina;Reserve League - Clausura;NEW;LEAGUE;35;2026-10-20;2026-10-29;QgGuh3dL;p6bNd8qp;SEz6FPlC;n5Z7ajm3
+Austria;Burgenland;KNOWN_ALIAS;Austria_Burgenland;16;2026-10-23;2026-10-31;lOHYv6Sj;QRha2Mc3;U3ZwHCRa;d6JfvN7U
+Austria;Karnten;KNOWN;Austria_Karnten;24;2026-10-23;2026-10-31;vkSbo8kN;Mgn800SF;QVSnFjdC;h68L5BFE
+Austria;Niederosterreich;KNOWN_ALIAS;Austria_Niederosterreich;16;2026-10-23;2026-10-31;t6Ig3TZ3;bP8ObvcS;bqRfDUQO;0CcZLGiD
+Austria;Oberosterreich;KNOWN_ALIAS;Austria_Oberosterreich;16;2026-10-23;2026-10-31;foKP3k5i;I9kegIKk;tSKDXXBt;23zdvUWF
+Austria;Salzburg;KNOWN_ALIAS;Austria_Salzburg;16;2026-10-23;2026-10-31;YyJT29Kc;AH72idk2;nPNLVBtg;djyn3gjo
+Austria;Steiermark;KNOWN_ALIAS;Austria_Steiermark;16;2026-10-23;2026-10-31;zLDUunDp;0UzVdiRs;KMwoSTuI;tEudowuh
+Austria;Tirol;KNOWN;Austria_Tirol;16;2026-10-23;2026-10-31;IuR2pS4T;0EhneVef;GlXgQ7AU;GEhYiKy1
+Austria;Vorarlberg;KNOWN_ALIAS;Austria_Vorarlberg;14;2026-10-24;2026-10-31;KdHc2mkA;OhNkFjmQ;zJVBpBen;OtLrLKbc
+Austria;Wien;KNOWN_ALIAS;Austria_Wien;16;2026-10-23;2026-11-01;2L62174G;8QbM9UAm;fLoDrkQb;2JOMnZ8d
+Belgium;Second Amateur Division Group ACFF;NEW;LEAGUE;18;2026-10-24;2026-11-01;INEz3JX1;C0CtN00K;trXUUCGD;StS9S7no
+Belgium;Second Amateur Division Group VFV A;NEW;LEAGUE;15;2026-10-24;2026-11-01;0dRn3lhG;8GFTFIhf;C6mPhG8K;t02Lnwph
+Belgium;Second Amateur Division Group VFV B;NEW;LEAGUE;17;2026-10-21;2026-11-01;r5la287M;hSy5Jian;WjUemfWs;OvOiOWQ9
+Brasile;Carioca B1;NEW;LEAGUE;18;2026-10-20;2026-10-31;z9RQtBrA;rRPKie2d;WORytiEa;vkiTljjB
+Brasile;Carioca B2;NEW;LEAGUE;12;2026-10-26;2026-11-01;Wp00u9SS;drsESyv9;tvB5qQKi;W2fL3AjU
+Brasile;Catarinense 3;NEW;LEAGUE;2;2026-10-24;2026-10-24;S0q4e8sM;nVY6MIU1;pS5l8tl3;tQue6PgJ
+Brasile;Gaucho 3;NEW;LEAGUE;5;2026-10-24;2026-10-24;KjrHhq4e;GM4Yfelg;vNQFjfyJ;0ICTwtLr
+Brasile;Goiano 3;NEW;LEAGUE;6;2026-10-24;2026-11-01;0SnCCms9;U79DE12t;pIWVNRBc;vilTwsn2
+Brasile;Mineiro 3 - Gruppo Finale;NEW;LEAGUE;5;2026-10-24;2026-10-31;O8ntGQQE;IRQlzX4E;hSiQjx3b;29m1MrH6
+Brasile;Pernambucano - Prima fase;NEW;LEAGUE;44;2026-10-20;2026-11-02;2P3AHVr9;KxhABdqd;UXbfvQAd;KIudgRiJ
+Brasile;Potiguar 2;NEW;LEAGUE;5;2026-10-21;2026-11-01;0Ai5sK3c;UwdXX4cJ;fypoKMun;UuyrrXCd
+Brasile;Sergipano 2;NEW;LEAGUE;12;2026-10-28;2026-11-01;pptQ07dF;4n9FEdVh;hKk4O4gl;lUexTXg5
+Canada;Canadian Premier League - Play Off;KNOWN_ALIAS;Canada_CanadianPremierLeague;2;2026-11-01;2026-11-01;Cj4NwA8p;GtaOgr8F;nXYZZwNN;nJv5Mm9t
+Canada;Championship;NEW;LEAGUE;1;2026-10-22;2026-10-22;pWTVy4q2;Cd2Bn00k;6HF6UHpo;MLpI1YW9
+Colombia;Primera B - Clausura - Quadrangolare;NEW;LEAGUE;6;2026-10-29;2026-11-02;4dzRa7y9;KYeFdatm;Cd9rBEMP;WItaQWl2
+Czech Republic;4. liga - Group A;KNOWN;CzechRepublic_4Liga_GroupA;14;2026-10-24;2026-11-01;GWJJY5V9;4SSirQsK;Aup3oMF7;pOaH00aB
+Czech Republic;4. liga - Group B;KNOWN;CzechRepublic_4Liga_GroupB;16;2026-10-23;2026-11-01;OYSN90J0;zBJNx45s;vy0c9P7E;d8neg41E
+Czech Republic;4. liga - Group C;KNOWN;CzechRepublic_4Liga_GroupC;16;2026-10-24;2026-11-01;Y5TaMKY6;0rWvyrzf;0jl673xR;vcReiLPj
+Czech Republic;4. liga - Group D;KNOWN;CzechRepublic_4Liga_GroupD;16;2026-10-24;2026-11-01;CdS3LvlD;naUnZL46;zi3p2s0l;OMzL7VD5
+Czech Republic;4. liga - Group E;KNOWN;CzechRepublic_4Liga_GroupE;16;2026-10-23;2026-11-01;nw32pOQD;rRNeXaZI;WIdg0LU0;WIt5q5OH
+Czech Republic;4. liga - Group F;KNOWN;CzechRepublic_4Liga_GroupF;16;2026-10-24;2026-11-01;OjHjDFrt;vwZke3RP;4Wf1baaD;WEp49BAb
+Czech Republic;Jihocesky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;lhrHDg25;dnuXeG2U;dp6vAxqJ;QP7RGg5C
+Czech Republic;Jihomoravsky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;CGxhsgHb;jTrkGJmn;jVubHgjn;QV4Ol6Nj
+Czech Republic;Karlovarsky KP;NEW;LEAGUE;15;2026-10-24;2026-11-01;riyQBXWH;pSybEcIb;ncZ6FXKb;v9JRz98r
+Czech Republic;Kralovehradecky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;biP8WfXu;McbECymB;bu1NDBkB;0zCNj5xq
+Czech Republic;Liberecky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;G4ZX9B1U;GbGnfTWq;KfkWBkKN;Ik76YwgC
+Czech Republic;Moravskoslezsky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;O8qZui1H;t4YdElOF;M7u5SA44;KjPSzk0k
+Czech Republic;Olomoucky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;fuSdtDW4;tljECShS;MicMQlZG;tn9CbdB5
+Czech Republic;Pardubicky KP;NEW;LEAGUE;17;2026-10-24;2026-11-01;xrOCVEnn;xKyp76Gk;EaFTOS3T;QaU88C2K
+Czech Republic;Plzensky KP;NEW;LEAGUE;16;2026-10-24;2026-11-01;WGXLCDHB;2somTmw9;Ue7fsAJc;SQDt3dLE
+Czech Republic;Prazsky prebor;NEW;LEAGUE;16;2026-10-24;2026-11-01;W6A70FXh;YoVh5po2;bXj0J6Rj;pfp5rYTN
+Czech Republic;Stredocesky KP;NEW;LEAGUE;17;2026-10-24;2026-11-01;vyAX0Zna;OdZeRR7L;QN03ullA;xvQn6wLP
+Czech Republic;Ustecky KP;NEW;LEAGUE;23;2026-10-24;2026-11-01;xEzUAinO;SxtiINU7;hvUjWqBd;Qkoa3SCt
+Czech Republic;Vysocina KP;NEW;LEAGUE;15;2026-10-24;2026-10-31;bDYmrZ1h;z1xRvRME;xhVofm33;pMtDnxwo
+Czech Republic;Zlinsky KP;NEW;LEAGUE;14;2026-10-24;2026-11-01;xlk9uXoB;rRuZx5iR;pIYghRXF;SxvsSXUN
+Denmark;3rd Division;KNOWN;Denmark_3rdDivision;12;2026-10-23;2026-10-31;hfyXOnyB;rTn1LG25;nibGZvD4;SSUVFaP6
+Denmark;A-Liga Women;KNOWN;Denmark_ALigaWomen;10;2026-10-20;2026-11-01;69z2Smeo;hp5ycAFM;pvUaNMpd;Ik30G5zn
+Ecuador;Liga Pro - Posti;NEW;LEAGUE;4;2026-10-25;2026-11-01;WWZFEdUR;QuraURDi;trd6vSd3;Kv7H6Lyo
+England;Baller League - UK;NEW;LEAGUE;12;2026-10-26;2026-11-02;Q7cwvk2U;Cdx16Z4K;CGhHvd9l;EJoaYWP7
+England;Isthmian League Premier Division;KNOWN;England_IsthmianLeaguePremierDivision;28;2026-10-20;2026-11-02;A5UEIPnl;vFMwmxAT;GSXwFia5;OjjTXjO6
+England;League Two;KNOWN;England_LeagueTwo;37;2026-10-20;2026-10-31;0MwU4NW6;OlRupkvq;p8PfB9bU;WSuyybTa
+England;National League;NEW;LEAGUE;35;2026-10-24;2026-10-31;4CWHXGM1;hUIdt7w8;Gl9hUCqn;dtjOiBYH
+England;National League Nord;NEW;LEAGUE;35;2026-10-24;2026-10-31;rsMtLd7e;KSbu1dtK;foik8MSq;2Z4V411T
+England;National League Sud;NEW;LEAGUE;38;2026-10-20;2026-11-02;QPXiMdx8;EF1SgEYg;zeac60cd;CC8fFqyp
+England;NPL Premier Division;KNOWN;England_NPLPremierDivision;20;2026-10-20;2026-10-31;vDxY3snD;I7bqjWXI;W6AiU3k3;U5Wkrao1
+England;Premier League 2;NEW;LEAGUE;14;2026-10-23;2026-10-26;CfcJv4MD;Cv3R6iIa;vHVGQLlS;KOILHaLM
+England;Professional Development League;KNOWN;England_ProfessionalDevelopmentLeague;12;2026-10-20;2026-10-27;8WehgikI;Kfq5a0Gj;UVBjssZ8;dYiJiUDt
+England;Southern League Premier Central;KNOWN;England_SouthernLeaguePremierCentral;33;2026-10-20;2026-10-31;I5paWyvs;zqqmKswA;2qAbuL3L;4vHx6jhL
+England;Southern League Premier South;KNOWN;England_SouthernLeaguePremierSouth;30;2026-10-20;2026-10-31;W8l3Vegm;d2BrcyjR;tWSVfXgJ;AHsODhVO
+England;WSL;NEW;LEAGUE;14;2026-10-24;2026-11-01;h83Rfggo;6qeME7fm;UmqUSoFq;GzdcbTS7
+England;WSL 2;NEW;LEAGUE;6;2026-10-25;2026-10-25;23rH3oco;vsBoBPgC;ljaVQPqd;6iFJiRs3
+Finland;Veikkausliiga - Play-Offs Championship;KNOWN_ALIAS;Finland_Veikkausliiga;9;2026-10-24;2026-11-02;lpTTNvTq;0WLVBvx2;jg5JgLZo;lMeiR6kn
+Finland;Veikkausliiga - Spareggio;KNOWN_ALIAS;Finland_Veikkausliiga;2;2026-10-21;2026-10-25;lpTTNvTq;8YtiJMqS;jg5JgLZo;GfIRCCSs
+Finland;Ykkosliiga - Spareggio;KNOWN_ALIAS;Finland_Ykkosliiga;2;2026-10-22;2026-10-25;4KmRAPPK;SIBqzuWh;x44DkH3N;WKJ5XJSE
+France;National 1 - Group A;NEW;LEAGUE;7;2026-10-31;2026-11-01;MV9g2nYD;Ywu7Wmzh;63VnAcHk;UVF7uJ7e
+France;National 1 - Group B;NEW;LEAGUE;8;2026-10-30;2026-10-31;0M8c16mK;fgTFUR44;2VOe8yn2;lQB6JRy1
+France;National 1 - Group C;NEW;LEAGUE;8;2026-10-30;2026-10-31;rob20Q2Q;6yeWS5ZG;WQvjWvv9;2TTGkNXp
+Germany;Oberliga Baden-Württemberg;KNOWN;Germany_Oberliga_BadenWurttemberg;17;2026-10-23;2026-10-31;djqrpSVo;vyndzNQN;27Eh43jU;GK1htEL5
+Germany;Oberliga Bayern Nord;KNOWN;Germany_Oberliga_Bayern_Nord;18;2026-10-23;2026-10-31;YcZH14S6;rq3pu5Rb;KOMy8oi5;MiXpQByf
+Germany;Oberliga Bayern Süd;KNOWN;Germany_Oberliga_Bayern_Sud;18;2026-10-23;2026-10-31;MNVD2pD0;ILcmxqdB;6uLq6PLH;dMRgbniT
+Germany;Oberliga Bremen;KNOWN;Germany_Oberliga_Bremen;16;2026-10-23;2026-11-01;dby2LYSl;6qDOVzqR;lhKuBat0;t8pmm0i3
+Germany;Oberliga Hamburg;KNOWN;Germany_Oberliga_Hamburg;19;2026-10-20;2026-11-01;4Gnjr60b;f3hKBFie;xAhPCLBm;6uZtPvGb
+Germany;Oberliga Hessen;KNOWN;Germany_Oberliga_Hessen;18;2026-10-24;2026-11-01;MmeMTHZB;pGVquELs;nR6CBTit;KEXWyAAE
+Germany;Oberliga Mittelrhein;KNOWN;Germany_Oberliga_Mittelrhein;9;2026-10-23;2026-10-28;O0XkDet4;AJxSU0lo;MyDAO6yn;dO6dNUel
+Germany;Oberliga Niederrhein;KNOWN;Germany_Oberliga_Niederrhein;9;2026-10-23;2026-10-25;xtZLDHBi;UqqNh4th;I36JMp6b;EP8mBpBs
+Germany;Oberliga Niedersachsen;KNOWN;Germany_Oberliga_Niedersachsen;19;2026-10-21;2026-11-01;2yxbMEDr;tpS2QE6l;U1Sm9wBC;n7hij1kI
+Germany;Oberliga NOFV- Sud;KNOWN;Germany_Oberliga_NOFV_Sud;16;2026-10-23;2026-11-01;SOCj7yOC;69pUdGx2;ncPd7QZ7;d6uzWDhm
+Germany;Oberliga NOFV-Nord;KNOWN;Germany_Oberliga_NOFV_Nord;16;2026-10-23;2026-11-01;0OqaJuLt;0CsMbx8k;Sf9e9n5e;xMExWoNj
+Germany;Oberliga Rheinland-Pfalz/Saar;KNOWN;Germany_Oberliga_RheinlandPfalzSaar;18;2026-10-23;2026-11-01;pAYoEyRc;d4t9yWK6;fiAK97Mh;SKKf8gse
+Germany;Oberliga Schleswig-Holstein;KNOWN;Germany_Oberliga_SchleswigHolstein;18;2026-10-20;2026-11-01;A1u6Khre;bmkXIcaL;ILuiVTRE;S4U6aEHD
+Germany;Oberliga Westfalen;KNOWN;Germany_Oberliga_Westfalen;9;2026-10-23;2026-10-25;YXXRPFeA;EXvEpzbK;2FQe7HuP;fBhlyoGr
+Germany;Regionalliga Bayern;KNOWN;Germany_Regionalliga_Bayern;19;2026-10-23;2026-10-31;trcecUvT;4dvZ5KFF;Wv68GUCL;dYB8DKSh
+Germany;Regionalliga Nord;KNOWN;Germany_Regionalliga_Nord;19;2026-10-24;2026-11-01;jV4OhMB1;bkODj8PH;EJHQ1VcS;OKVeErYh
+Germany;Regionalliga Nordost;KNOWN;Germany_Regionalliga_Nordost;18;2026-10-23;2026-11-01;lMiBiHst;KrJn7T9b;Y3bcd9Lk;E3iZQGIq
+Germany;Regionalliga Ovest;KNOWN_ALIAS;Germany_Regionalliga_West;19;2026-10-20;2026-11-01;nsGIGP38;QR2ymaOq;v115fmj2;6DYh2DPh
+Germany;Regionalliga Sudwest;KNOWN;Germany_Regionalliga_Sudwest;19;2026-10-23;2026-11-01;G6hmqKkJ;nsipowgd;OE20Ijr9;6XxVY8YQ
+Iceland;Besta deild karla - Gruppo Retrocessione;NEW;LEAGUE;3;2026-10-24;2026-10-24;GdxJccH5;n9JZeWXa;YZPIM59T;Qeva0EUj
+Iceland;Besta deild karla - Play-Offs Championship;KNOWN_ALIAS;Iceland_BestaDeildKarla;3;2026-10-24;2026-10-24;GdxJccH5;zRiJch3m;YZPIM59T;GrdZv72D
+India;I-League 3;NEW;LEAGUE;28;2026-10-22;2026-11-01;Aw2jAKsf;Iehb2yHL;UwS5Z4RH;QsidqXv9
+India;IFL;NEW;LEAGUE;5;2026-10-30;2026-11-01;OQyqbHWB;bR54TGAd;jq9Yv9ct;WzxvDZTH
+Italy;Serie A Femminile;KNOWN;Italy_SerieAWomen;12;2026-10-24;2026-11-02;dMXaGPOf;zPOvOZPF;ERi3oM7t;CCOV3TXF
+Italy;Serie D - Girone A;NEW;LEAGUE;19;2026-10-24;2026-11-01;lK4fBirm;nyAZFdF5;W6M0AFQ9;nwDBmWZ9
+Italy;Serie D - Girone B;NEW;LEAGUE;19;2026-10-24;2026-11-01;dl4KBBcg;MZH1WHan;8xqH8geM;lCCWYeO9
+Italy;Serie D - Girone C;NEW;LEAGUE;18;2026-10-25;2026-11-02;65x4OVCa;OQSp9Rrp;SMPm3XIq;ShMXax94
+Italy;Serie D - Girone D;NEW;LEAGUE;19;2026-10-21;2026-11-01;lUR8NkS5;CWQdTnzG;YJSe1Bmd;2R0yMiBD
+Italy;Serie D - Girone E;NEW;LEAGUE;18;2026-10-25;2026-11-01;2XVCM9sC;27zpSfG8;IXTjPEu3;b9KrbGg3
+Italy;Serie D - Girone F;NEW;LEAGUE;18;2026-10-25;2026-11-01;dfVGLTdI;0nzlHU77;QcXbNhAF;8CsrOj0J
+Italy;Serie D - Girone G;NEW;LEAGUE;18;2026-10-24;2026-11-01;zoUKKmCO;j1GNXkhl;QskGLWvS;Yi0tWmP7
+Italy;Serie D - Girone H;NEW;LEAGUE;18;2026-10-24;2026-11-01;rDMCqXlP;KKE4nk7s;MDznGA2k;h62HfvG7
+Italy;Serie D - Girone I;NEW;LEAGUE;18;2026-10-25;2026-11-01;pM8vuict;lpOxsoyJ;tGjmElX1;lKWZ0Qck
+Martinica;Trophee Gerard Janvion;NEW;LEAGUE;8;2026-10-24;2026-10-31;r5c4tOOE;2TNjcajR;tGzIF3pI;AFU5RgNG
+Mexico;Liga Premier Serie B;NEW;LEAGUE;4;2026-10-25;2026-11-01;CGFyKSpk;fTN1kBBr;bgn7m2on;SANEWhEN
+Netherlands;Derde Divisie;NEW;LEAGUE;19;2026-10-23;2026-10-31;Cz9FVnQe;jBeT8bJN;zNe3p6WP;zX0ihIgU
+Netherlands;Eredivisie - Women;KNOWN;Netherlands_EredivisieWomen;8;2026-10-25;2026-11-01;ADZjR3us;GYvikzXF;Ya0Rvy04;jiXmQbkU
+Norway;Division 3 - Group 1;KNOWN_ALIAS;Norway_3rdDivision_Group1;14;2026-10-24;2026-11-01;8tpKCrF1;8CgQpRod;Yo0hRArB;SAKdOSUO
+Norway;Division 3 - Group 2;KNOWN_ALIAS;Norway_3rdDivision_Group2;15;2026-10-21;2026-11-01;6R2NB2U7;Uam67Uw3;88lNQlDN;SIpOY4un
+Norway;Division 3 - Group 3;KNOWN_ALIAS;Norway_3rdDivision_Group3;14;2026-10-24;2026-11-01;Cl5Ezn78;QRtF588F;viugLSzo;MJ4SAyaf
+Norway;Division 3 - Group 4;KNOWN_ALIAS;Norway_3rdDivision_Group4;14;2026-10-23;2026-11-01;ju4IZ5ME;0WRfm0hl;O4tlqWSi;Czb9PaP7
+Norway;Division 3 - Group 5;KNOWN_ALIAS;Norway_3rdDivision_Group5;14;2026-10-24;2026-11-01;b93rzQyL;dbL3ovN0;lGZHrAc4;2qRLykO0
+Norway;Division 3 - Group 6;KNOWN_ALIAS;Norway_3rdDivision_Group6;14;2026-10-24;2026-11-01;x02nZqiR;2eOBqIiD;l0iZtlSG;Ug19HUVF
+Poland;III Liga - Group I;KNOWN;Poland_IIILiga_Group1;19;2026-10-21;2026-10-31;OWZW2KN5;lpQ6EPKM;M1O3iVVp;MuZEm6eJ
+Poland;III Liga - Group II;KNOWN;Poland_IIILiga_Group2;18;2026-10-24;2026-10-31;rs0FWPDe;Uoj4R24S;EuT6DCh4;pYCR3mHk
+Poland;III Liga - Group III;KNOWN;Poland_IIILiga_Group3;18;2026-10-23;2026-10-31;tSIIVqT1;QPJp7sDd;IDZcFYNi;vendmHeE
+Poland;III Liga - Group IV;KNOWN;Poland_IIILiga_Group4;18;2026-10-23;2026-10-31;nkL9fT52;C6gTLtSk;zTx9AjNG;xWVoRxto
+Portugal;Campeonato de Portugal - Group A;NEW;LEAGUE;14;2026-10-25;2026-11-01;f5NrxGlc;WhVATAJG;xbOlduo9;GYbzpcGG
+Portugal;Campeonato de Portugal - Group B;NEW;LEAGUE;14;2026-10-25;2026-11-01;0z15YHho;UV1oXqQ8;YPHcfJFL;CxOnCYBM
+Portugal;Campeonato de Portugal - Group C;NEW;LEAGUE;14;2026-10-25;2026-11-01;MXkGrAdo;AuAgVNfL;YDRykcwq;trgqFJX1
+Portugal;Campeonato de Portugal - Group D;NEW;LEAGUE;14;2026-10-24;2026-11-01;0OlKsUBi;ATJXP1Ir;UuLpmy8e;Qm4H7ctK
+Russia;FNL 2 - Division B - Group 1;NEW;LEAGUE;15;2026-10-24;2026-10-31;jmQikwTd;EcIW9o13;WYeVU9go;IN2N2zx1
+Russia;FNL 2 - Division B - Group 2;NEW;LEAGUE;14;2026-10-24;2026-11-01;UwPelcr3;OA0McLh2;rRxhx0s4;ppJSotPc
+Russia;FNL 2 - Division B - Group 3;NEW;LEAGUE;16;2026-10-23;2026-10-31;C2E0mHc9;Gl5PJ2FL;GOhHYHtT;lWWMoOMH
+Russia;FNL 2 - Division B - Group 4 - Gruppo Retrocessione;NEW;LEAGUE;6;2026-10-24;2026-11-01;AmX3nyDF;6sMFtvCL;U9a3hadc;GUQtVDS8
+Scotland;Highland League;NEW;LEAGUE;12;2026-10-24;2026-10-31;YmOaxiVF;6o4nIoE8;ttjQcNam;zLhdFxE6
+Scotland;League Two;NEW;LEAGUE;5;2026-10-31;2026-10-31;UsushcZr;67orI3b2;zsOhGVFE;A9ifL8be
+Scotland;Lowland League;NEW;LEAGUE;31;2026-10-20;2026-10-31;rLOykBpM;va2fGPrL;jVkTf1Ua;0xF84UWj
+Serbia;Srpska Liga - Belgrade;NEW;LEAGUE;14;2026-10-23;2026-10-31;nXGr5JMA;GIOMHo1s;UVs6IUzK;ULEwyddL
+Serbia;Srpska Liga - East;NEW;LEAGUE;16;2026-10-23;2026-11-01;Uuve4wxH;prYfCsVI;vkogBnTg;dUP3zGkR
+Serbia;Srpska Liga - Vojvodina;NEW;LEAGUE;16;2026-10-24;2026-11-01;QBTL4ciN;lGvnE306;v5TyD8bs;4OWTnAgL
+Serbia;Srpska Liga - West;NEW;LEAGUE;16;2026-10-24;2026-11-01;42SP3H6T;CCCEJbxn;C2q19Qc6;rNcDjar9
+Singapore;Premier League 2;NEW;LEAGUE;1;2026-10-20;2026-10-20;IJPbajO6;2VjpwyDL;n1yCbgSi;0dkr4mNN
+Slovakia;4. liga - Bratislava;NEW;LEAGUE;16;2026-10-24;2026-11-01;hKLBV0aT;IgoB202m;67mBlgHF;Q3IEdV3k
+Slovakia;4. liga - Central;NEW;LEAGUE;14;2026-10-24;2026-11-01;C86zJtpN;tYVEavXa;6i5SnXoS;ABQkrFff
+Slovakia;4. liga - East;NEW;LEAGUE;14;2026-10-24;2026-11-01;tx0584Qm;EoUMcI1C;z7ebsB9k;p0sar2Sj
+Slovakia;4. liga - West;NEW;LEAGUE;16;2026-10-24;2026-11-01;OpNH7Ouf;ADNVedWO;dMq7ukv2;vF2w2k64
+South Korea;K League 1 - Gruppo Retrocessione;NEW;LEAGUE;3;2026-10-31;2026-11-01;0IDCJLlH;bVeQF78D;v1KxQiuR;IPiu1ts3
+South Korea;K League 1 - Play-Offs Championship;KNOWN_ALIAS;SouthKorea_KLeague1;3;2026-10-31;2026-11-01;0IDCJLlH;vTuPHTw1;v1KxQiuR;Ey7EQa5j
+South Korea;K4 League;NEW;LEAGUE;7;2026-10-25;2026-11-01;vyT5uJOH;OhVGWUpK;xv2BlyaM;Kd2samrg
+Spain;Segunda RFEF - Group 1;NEW;LEAGUE;18;2026-10-24;2026-11-01;04200qZc;xhivftTj;vFK3v3wS;jD4OCsim
+Spain;Segunda RFEF - Group 2;NEW;LEAGUE;19;2026-10-21;2026-11-01;ve14a3l4;4OIxD1KM;OndzZt1k;0jWvclg2
+Spain;Segunda RFEF - Group 3;NEW;LEAGUE;18;2026-10-24;2026-11-01;dbCBmN3A;z7987urp;WCarXKV1;f302ZJ84
+Spain;Segunda RFEF - Group 4;NEW;LEAGUE;18;2026-10-24;2026-11-02;v7ZNnsJG;U52H5JCd;jw6weON8;pY6Ex89E
+Spain;Segunda RFEF - Group 5;NEW;LEAGUE;18;2026-10-24;2026-11-01;E5VZ3DwB;QHDBTM43;ATVImtGr;8nOAbdD5
+Spain;Tercera RFEF - Group 1;NEW;LEAGUE;18;2026-10-24;2026-11-01;Cnf2k8It;YedqxEfR;r5bgopY7;hheZgeas
+Spain;Tercera RFEF - Group 10;NEW;LEAGUE;18;2026-10-24;2026-11-01;MNpm45Hh;M7HFq47U;YwRnfFOb;tn79FXvn
+Spain;Tercera RFEF - Group 11;NEW;LEAGUE;19;2026-10-21;2026-11-01;0Eqi3PWb;MwlVsHyp;6ysCjXNN;0OyPH7so
+Spain;Tercera RFEF - Group 12;NEW;LEAGUE;27;2026-10-21;2026-11-01;fyqe2qn5;xKLOiYk2;2sso7h84;EPY226Y9
+Spain;Tercera RFEF - Group 13;NEW;LEAGUE;18;2026-10-24;2026-11-01;M1gg031B;ABA66X4e;YDLZnOMk;QDehzzFi
+Spain;Tercera RFEF - Group 14;NEW;LEAGUE;22;2026-10-21;2026-11-01;4QrbaNGH;dxIdLWJl;veQx95q9;zHGuIzvm
+Spain;Tercera RFEF - Group 15;NEW;LEAGUE;18;2026-10-23;2026-10-31;rHs2bsWN;8E01Gm5N;U1vOE0Ll;Ak99F4kB
+Spain;Tercera RFEF - Group 16;NEW;LEAGUE;18;2026-10-25;2026-11-01;josSb1oU;p6bWTnKG;ruDWAIKD;pjGFd3WA
+Spain;Tercera RFEF - Group 17;NEW;LEAGUE;18;2026-10-24;2026-11-01;hfTgfLgo;bsj1y4Rq;IomB2ISg;dEPVWIC5
+Spain;Tercera RFEF - Group 18;NEW;LEAGUE;18;2026-10-24;2026-11-01;0pIr3Dco;OWPSg3mS;nRvSbzSI;Q7AiuKi4
+Spain;Tercera RFEF - Group 2;NEW;LEAGUE;18;2026-10-24;2026-11-01;2ymFn62a;YROXlHHU;Wt7dMUCF;OWaRVz60
+Spain;Tercera RFEF - Group 3;NEW;LEAGUE;18;2026-10-24;2026-11-01;ppARoQH5;WfIgbffo;naQpDQZ1;QVWsCWTO
+Spain;Tercera RFEF - Group 4;NEW;LEAGUE;18;2026-10-24;2026-11-01;W44inpXB;hhioHNR9;jJHpDHuJ;YVtKvGOh
+Spain;Tercera RFEF - Group 5;NEW;LEAGUE;19;2026-10-21;2026-11-01;Ae3eo4nI;EV3yWMt3;WGJAVbem;jwWulug2
+Spain;Tercera RFEF - Group 6;NEW;LEAGUE;19;2026-10-20;2026-11-01;hKh0pO1O;xUzbaUlR;n5NE7VcM;8v2Gym2M
+Spain;Tercera RFEF - Group 7;NEW;LEAGUE;18;2026-10-24;2026-11-01;6Nd4qrHU;zVTMUDnK;0tTrQfPO;EVuztGl5
+Spain;Tercera RFEF - Group 8;NEW;LEAGUE;18;2026-10-24;2026-11-01;n1dI4Rnt;l6LixVgm;QinQtG95;jiXbPbW7
+Spain;Tercera RFEF - Group 9;NEW;LEAGUE;18;2026-10-24;2026-11-01;QieM3o2n;zmeziU8t;fXwswY8U;EsKhPnUg
+Sri Lanka;Super League - Gruppo Retrocessione;NEW;LEAGUE;3;2026-10-20;2026-10-30;UXM93mOS;lQRoOslf;8O2Noqwh;O0T0IW7s
+Sri Lanka;Super League - Play-Offs Championship;KNOWN_ALIAS;SriLanka_SuperLeague;6;2026-10-23;2026-11-01;UXM93mOS;EyHfLGTj;8O2Noqwh;lvsRPQef
+Sudafrica;Diski Challenge;NEW;LEAGUE;16;2026-10-24;2026-11-01;Cv72CrW9;f17xkoqA;AmQPKAyo;tnejHOk5
+Sweden;Division 2 - Norrland - Spareggio;KNOWN_ALIAS;Sweden_Division2_Norrland;2;2026-10-24;2026-10-31;YiHKRrY9;QLD4lHbk;hfBEBqON;CQHtu6Dd
+Sweden;Division 2 - Promotion Group;NEW;LEAGUE;4;2026-10-24;2026-11-01;CdrcXPs6;2FSQrMM9;tOi67Noo;MiTc2DYQ
+Sweden;Division 2 - Södra Götaland - Spareggio;KNOWN_ALIAS;Sweden_Division2_SodraGotaland;2;2026-10-24;2026-10-30;ANwyQM2M;Obpuhj5s;Y1d9T484;lWtrIoAE
+Switzerland;1.Liga Gruppo 1;NEW;LEAGUE;16;2026-10-24;2026-11-01;pO5ijKm0;tEHhkCJE;Msp5ufBk;fRnc5b9d
+Switzerland;1.Liga Gruppo 2;NEW;LEAGUE;16;2026-10-24;2026-11-01;OE4ekv36;nRngmjlR;I9wEwYu2;CdU5BA44
+Switzerland;1.Liga Gruppo 3;NEW;LEAGUE;16;2026-10-24;2026-11-01;Iy4albIC;MR1XsUBl;ELl81yY8;UyTnpTYH
+Turkey;3. Lig Group 1;NEW;LEAGUE;18;2026-10-24;2026-11-01;YT8o2dVC;0v8Prevh;2BSwTV4S;h2z74F1T
+Turkey;3. Lig Group 2;NEW;LEAGUE;18;2026-10-24;2026-11-01;CK7k1GpJ;ne6XtZ84;nq4AN9Sk;xz6LKSnJ
+Turkey;3. Lig Group 3;NEW;LEAGUE;18;2026-10-23;2026-11-01;ChwgcrNJ;nuOluDwH;KAHHLmc2;IajeKjrg
+Ukraine;Premier League 2;NEW;LEAGUE;14;2026-10-21;2026-11-02;Gzf0srBS;OdTheMOP;U9AeRBwB;jgW7M6GF
+USA;USL Championship - Play Off;KNOWN_ALIAS;USA_USLChampionship;7;2026-10-31;2026-11-02;OjCHtstG;tEZx9Gl3;QR7aRI3d;hQC2Z12K
+USA;USL League One - Play Off;KNOWN_ALIAS;USA_USLLeagueOne;4;2026-10-31;2026-11-02;KhaoVzyl;CpERln3l;On9GjMe3;lWAOi4Zo
+Venezuela;Liga FUTVE - Clausura - Quadrangolare;NEW;LEAGUE;12;2026-10-24;2026-11-02;bVfjs0E5;OSqPgDXF;QyHHDLce;4QuICTRb
+Venezuela;Liga FUTVE 2 - Partita Aggiuntiva;KNOWN_ALIAS;Venezuela_LigaFUTVE2;1;2026-10-28;2026-10-28;Ec90yuCn;02jnxhzA;M3AQBaS7;WAvqN5s1
+Venezuela;Liga FUTVE 2 - Play Off;KNOWN_ALIAS;Venezuela_LigaFUTVE2;4;2026-11-01;2026-11-01;Ec90yuCn;2Xe1GKSI;M3AQBaS7;zHv40liM

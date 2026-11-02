@@ -1,0 +1,6 @@
+[23/31] Malaysia_SuperLeague
+status=OK
+tournament=Super League country=Malaysia tournament_id=GYxHt10E stage=embedded
+source=https://www.diretta.it/calcio/malaysia/super-league/risultati/
+team_overlap=1.000
+local=35 remote=35 equal=35 missing_local=0 extra_local=0 score_diff=0

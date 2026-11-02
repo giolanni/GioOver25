@@ -1,0 +1,6 @@
+[4/4] Qatar_QSL
+status=OK
+tournament=QSL country=Qatar tournament_id=Cf1qn584 stage=embedded
+source=https://www.diretta.it/calcio/qatar/qsl/risultati/
+team_overlap=1.000
+local=48 remote=48 equal=48 missing_local=0 extra_local=0 score_diff=0

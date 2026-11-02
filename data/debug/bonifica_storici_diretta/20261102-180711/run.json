@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-11-02T18:07:30",
+  "apply": true,
+  "total": 3,
+  "status_counts": {
+    "SAFE_MISSING": 2,
+    "DIFFERENCES": 1
+  },
+  "summary": "C:\\mi\\AIOver25\\data\\debug\\bonifica_storici_diretta\\20261102-180711\\summary.csv"
+}

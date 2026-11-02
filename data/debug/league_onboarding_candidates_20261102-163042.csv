@@ -1,0 +1,57 @@
+﻿Tier;Country;CanonicalCountry;League;CanonicalLeague;ProposedLeagueId;CanonicalLeagueId;IsPhaseAlias;CanonicalExists;Matches;FirstDate;LastDate;TournamentId;TournamentStageId;SampleMatchId
+TIER1;Argentina;Argentina;Liga Profesional - Clausura;Liga Profesional - Clausura;Argentina_LigaProfesionalClausura;Argentina_LigaProfesionalClausura;NO;NO;23;2026-10-20;2026-11-02;;;EoHkyxR8
+TIER1;Brasile;Brazil;Serie A;Serie A;Brasile_SerieA;Brazil_SerieA;NO;YES;16;2026-10-20;2026-10-31;;;hdprTwcm
+TIER2;Brasile;Brazil;Serie B;Serie B;Brasile_SerieB;Brazil_SerieB;NO;YES;18;2026-10-20;2026-11-02;;;YqUt3KCk
+TIER2;Cile;Chile;Liga de Ascenso;Liga de Ascenso;Cile_LigadeAscenso;Chile_LigadeAscenso;NO;YES;17;2026-10-20;2026-11-01;;;MsVomjIc
+TIER1;Cile;Chile;Liga de Primera;Liga de Primera;Cile_LigadePrimera;Chile_LigadePrimera;NO;YES;14;2026-10-24;2026-11-02;;;EaGunGUO
+TIER3;Cile;Chile;Segunda Division - Gruppo Promozione;Segunda Division;Cile_SegundaDivisionGruppoPromozione;Chile_SegundaDivision;YES;NO;6;2026-10-24;2026-11-01;;;Y1HfIpRG
+TIER3;Cile;Chile;Segunda Division - Gruppo Retrocessione;Segunda Division;Cile_SegundaDivisionGruppoRetrocessione;Chile_SegundaDivision;YES;NO;6;2026-10-24;2026-11-01;;;SWQ91G2b
+TIER2;Cina;China;League One;League One;Cina_LeagueOne;China_LeagueOne;NO;YES;16;2026-10-24;2026-10-31;;;4pbaoD3N
+TIER3;Cina;China;League Two - Gruppo Promozione;League Two;Cina_LeagueTwoGruppoPromozione;China_LeagueTwo;YES;NO;8;2026-10-23;2026-11-01;;;QNGdSAJt
+TIER3;Cina;China;League Two - Gruppo Retrocessione;League Two;Cina_LeagueTwoGruppoRetrocessione;China_LeagueTwo;YES;NO;16;2026-10-24;2026-10-31;;;ERLKM6mI
+TIER1;Cina;China;Super League;Super League;Cina_SuperLeague;China_SuperLeague;NO;YES;8;2026-10-24;2026-10-24;;;MyLWq9zS
+TIER1;Colombia;Colombia;Primera A - Clausura;Primera A - Clausura;Colombia_PrimeraAClausura;Colombia_PrimeraAClausura;NO;NO;30;2026-10-20;2026-11-02;;;tSOlYWR7
+TIER2;Colombia;Colombia;Primera B - Clausura;Primera B - Clausura;Colombia_PrimeraBClausura;Colombia_PrimeraBClausura;NO;NO;13;2026-10-20;2026-10-24;;;xhkIkCQh
+TIER2;Costarica;Costarica;Liga de Ascenso - Apertura;Liga de Ascenso - Apertura;Costarica_LigadeAscensoApertura;Costarica_LigadeAscensoApertura;NO;NO;15;2026-10-20;2026-11-01;;;tjyXevw5
+TIER1;Costarica;Costarica;Primera División - Apertura;Primera División - Apertura;Costarica_PrimeraDivisionApertura;Costarica_PrimeraDivisionApertura;NO;NO;10;2026-10-20;2026-11-01;;;jusWh3J7
+TIER1;Ecuador;Ecuador;Liga Pro - Gruppo Retrocessione;Liga Pro;Ecuador_LigaProGruppoRetrocessione;Ecuador_LigaPro;YES;NO;5;2026-10-24;2026-11-02;;;ldGoCsEN
+TIER2;Ecuador;Ecuador;Serie B - Gruppo Promozione;Serie B;Ecuador_SerieBGruppoPromozione;Ecuador_SerieB;YES;NO;6;2026-10-22;2026-10-28;;;GAtYTGpn
+TIER2;Ecuador;Ecuador;Serie B - Gruppo Retrocessione;Serie B;Ecuador_SerieBGruppoRetrocessione;Ecuador_SerieB;YES;NO;6;2026-10-21;2026-10-28;;;QHRj6Ikf
+TIER2;Egitto;Egypt;Division 2 A;Division 2 A;Egitto_Division2A;Egypt_Division2A;NO;YES;20;2026-10-22;2026-10-30;;;S8SUhsAd
+TIER1;Egitto;Egypt;Premier League;Premier League;Egitto_PremierLeague;Egypt_PremierLeague;NO;YES;17;2026-10-20;2026-10-31;;;69z3zq3T
+TIER1;El Salvador;El Salvador;Primera Division - Apertura;Primera Division - Apertura;ElSalvador_PrimeraDivisionApertura;ElSalvador_PrimeraDivisionApertura;NO;NO;13;2026-10-22;2026-11-02;;;4r1AaSBE
+TIER1;Gabon;Gabon;Championnat D1;Championnat D1;Gabon_ChampionnatD1;Gabon_ChampionnatD1;NO;NO;7;2026-10-24;2026-10-31;;;plyDTPzg
+TIER1;Georgia;Georgia;Crystalbet Erovnuli Liga;Crystalbet Erovnuli Liga;Georgia_CrystalbetErovnuliLiga;Georgia_CrystalbetErovnuliLiga;NO;NO;10;2026-10-23;2026-11-02;;;lYCDYGo3
+TIER3;Grecia;Greece;Gamma Ethniki - Group 1;Gamma Ethniki - Group 1;Grecia_GammaEthnikiGroup1;Greece_GammaEthnikiGroup1;NO;YES;10;2026-10-25;2026-11-01;;;WGy5Ofkm
+TIER3;Grecia;Greece;Gamma Ethniki - Group 10;Gamma Ethniki - Group 10;Grecia_GammaEthnikiGroup10;Greece_GammaEthnikiGroup10;NO;YES;13;2026-10-21;2026-10-31;;;hdNpJxPb
+TIER3;Grecia;Greece;Gamma Ethniki - Group 2;Gamma Ethniki - Group 2;Grecia_GammaEthnikiGroup2;Greece_GammaEthnikiGroup2;NO;YES;10;2026-10-24;2026-11-01;;;d6idWm97
+TIER3;Grecia;Greece;Gamma Ethniki - Group 3;Gamma Ethniki - Group 3;Grecia_GammaEthnikiGroup3;Greece_GammaEthnikiGroup3;NO;YES;10;2026-10-25;2026-11-01;;;na2C3rkf
+TIER3;Grecia;Greece;Gamma Ethniki - Group 4;Gamma Ethniki - Group 4;Grecia_GammaEthnikiGroup4;Greece_GammaEthnikiGroup4;NO;YES;10;2026-10-24;2026-11-01;;;nsiZ3ew0
+TIER3;Grecia;Greece;Gamma Ethniki - Group 5;Gamma Ethniki - Group 5;Grecia_GammaEthnikiGroup5;Greece_GammaEthnikiGroup5;NO;YES;10;2026-10-25;2026-11-01;;;tj92EcW0
+TIER3;Grecia;Greece;Gamma Ethniki - Group 6;Gamma Ethniki - Group 6;Grecia_GammaEthnikiGroup6;Greece_GammaEthnikiGroup6;NO;YES;12;2026-10-25;2026-11-01;;;WSs20HaK
+TIER3;Grecia;Greece;Gamma Ethniki - Group 7;Gamma Ethniki - Group 7;Grecia_GammaEthnikiGroup7;Greece_GammaEthnikiGroup7;NO;YES;12;2026-10-24;2026-11-01;;;8p997143
+TIER3;Grecia;Greece;Gamma Ethniki - Group 8;Gamma Ethniki - Group 8;Grecia_GammaEthnikiGroup8;Greece_GammaEthnikiGroup8;NO;YES;12;2026-10-24;2026-11-01;;;hlVd2aEO
+TIER3;Grecia;Greece;Gamma Ethniki - Group 9;Gamma Ethniki - Group 9;Grecia_GammaEthnikiGroup9;Greece_GammaEthnikiGroup9;NO;YES;10;2026-10-25;2026-11-01;;;SpEAgp4l
+TIER1;Grecia;Greece;Super League;Super League;Grecia_SuperLeague;Greece_SuperLeague;NO;YES;14;2026-10-24;2026-11-02;;;rZaVjpr2
+TIER2;Grecia;Greece;Super League 2;Super League 2;Grecia_SuperLeague2;Greece_SuperLeague2;NO;YES;16;2026-10-24;2026-11-02;;;vwgPGgDj
+TIER1;Guatemala;Guatemala;Liga Nacional - Apertura;Liga Nacional - Apertura;Guatemala_LigaNacionalApertura;Guatemala_LigaNacionalApertura;NO;NO;19;2026-10-20;2026-11-02;;;ldO0Fe9M
+TIER1;Honduras;Honduras;Liga Nacional - Apertura;Liga Nacional - Apertura;Honduras_LigaNacionalApertura;Honduras_LigaNacionalApertura;NO;NO;12;2026-10-24;2026-11-02;;;8le2ZagL
+TIER1;Irlanda;Ireland;National League;National League;Irlanda_NationalLeague;Ireland_NationalLeague;NO;YES;9;2026-10-24;2026-10-31;;;fwTqy6Q8
+TIER1;Irlanda;Ireland;Premier Division;Premier Division;Irlanda_PremierDivision;Ireland_PremierDivision;NO;YES;10;2026-10-23;2026-10-30;;;IFX23D1S
+TIER2;Kenya;Kenya;Super League;Super League;Kenya_SuperLeague;Kenya_SuperLeague;NO;NO;10;2026-10-25;2026-10-26;;;boYoTDNp
+TIER1;Malesia;Malaysia;Super League;Super League;Malesia_SuperLeague;Malaysia_SuperLeague;NO;YES;4;2026-10-30;2026-11-01;;;WM8Hxo8r
+TIER1;Malta;Malta;Premier League - Prima fase - Principale;Premier League;Malta_PremierLeaguePrimafasePrincipale;Malta_PremierLeague;YES;NO;18;2026-10-21;2026-11-02;;;nyGA4RkD
+TIER2;Marocco;Morocco;Botola 2;Botola 2;Marocco_Botola2;Morocco_Botola2;NO;YES;16;2026-10-24;2026-11-01;;;fXB5NlgB
+TIER1;Marocco;Morocco;Botola Pro;Botola Pro;Marocco_BotolaPro;Morocco_BotolaPro;NO;YES;16;2026-10-24;2026-11-01;;;K4CPdliC
+TIER1;Nicaragua;Nicaragua;Liga Primera - Apertura;Liga Primera - Apertura;Nicaragua_LigaPrimeraApertura;Nicaragua_LigaPrimeraApertura;NO;NO;14;2026-10-21;2026-11-02;;;WOuclmFb
+TIER1;Panama;Panama;LPF - Apertura;LPF - Apertura;Panama_LPFApertura;Panama_LPFApertura;NO;NO;24;2026-10-20;2026-11-02;;;bkxNg944
+TIER2;Peru;Peru;Liga 2 - Gruppo Promozione;Liga 2;Peru_Liga2GruppoPromozione;Peru_Liga2;YES;YES;12;2026-10-24;2026-10-31;;;QFCxhlv2
+TIER2;Peru;Peru;Liga 2 - Gruppo Retrocessione;Liga 2;Peru_Liga2GruppoRetrocessione;Peru_Liga2;YES;YES;2;2026-10-23;2026-10-31;;;Ik9UgA9k
+TIER1;Repubblica Dominicana;Repubblica Dominicana;LDF - Apertura;LDF - Apertura;RepubblicaDominicana_LDFApertura;RepubblicaDominicana_LDFApertura;NO;NO;5;2026-10-23;2026-11-01;;;jwxoDnBM
+TIER3;Russia;Russia;FNL 2 - Division A Gold - Autunno;FNL 2 - Division A Gold - Autunno;Russia_FNL2DivisionAGoldAutunno;Russia_FNL2DivisionAGoldAutunno;NO;NO;10;2026-10-24;2026-10-31;;;riNCXCas
+TIER1;Sudafrica;South Africa;Betway Premiership;Betway Premiership;Sudafrica_BetwayPremiership;SouthAfrica_BetwayPremiership;NO;YES;8;2026-10-30;2026-10-31;;;jDG3X7Yr
+TIER2;Sudafrica;South Africa;Motsepe Foundation Championship;Motsepe Foundation Championship;Sudafrica_MotsepeFoundationChampionship;SouthAfrica_MotsepeFoundationChampionship;NO;YES;16;2026-10-23;2026-11-02;;;dl6UTOa3
+TIER1;Tagikistan;Tajikistan;Vysshaya Liga;Vysshaya Liga;Tagikistan_VysshayaLiga;Tajikistan_VysshayaLiga;NO;YES;13;2026-10-20;2026-11-02;;;tn5aeOdf
+TIER1;Thailandia;Thailand;Thai League 1;Thai League 1;Thailandia_ThaiLeague1;Thailand_ThaiLeague1;NO;YES;14;2026-10-24;2026-11-02;;;hpXLMOAL
+TIER2;Thailandia;Thailand;Thai League 2;Thai League 2;Thailandia_ThaiLeague2;Thailand_ThaiLeague2;NO;YES;18;2026-10-24;2026-11-01;;;nm2teyvG
+TIER1;Uruguay;Uruguay;Liga AUF Uruguaya - Clausura;Liga AUF Uruguaya - Clausura;Uruguay_LigaAUFUruguayaClausura;Uruguay_LigaAUFUruguayaClausura;NO;NO;15;2026-10-20;2026-11-02;;;vqn9S0D6

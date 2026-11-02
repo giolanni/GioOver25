@@ -1,0 +1,6 @@
+[5/31] China_LeagueOne
+status=OK
+tournament=League One country=China tournament_id=8YVTxMgl stage=embedded
+source=https://www.diretta.it/calcio/china/league-one/risultati/
+team_overlap=1.000
+local=107 remote=107 equal=107 missing_local=0 extra_local=0 score_diff=0

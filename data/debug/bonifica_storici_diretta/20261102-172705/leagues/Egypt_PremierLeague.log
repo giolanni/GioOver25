@@ -1,0 +1,6 @@
+[8/31] Egypt_PremierLeague
+status=OK
+tournament=Premier League country=Egypt tournament_id=EHOOhYkm stage=embedded
+source=https://www.diretta.it/calcio/egypt/premier-league/risultati/
+team_overlap=1.000
+local=80 remote=80 equal=80 missing_local=0 extra_local=0 score_diff=0

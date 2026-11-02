@@ -1,0 +1,6 @@
+[22/31] Ireland_PremierDivision
+status=OK
+tournament=Premier Division country=Ireland tournament_id=zXNjMd4m stage=embedded
+source=https://www.diretta.it/calcio/ireland/premier-division/risultati/
+team_overlap=1.000
+local=107 remote=107 equal=107 missing_local=0 extra_local=0 score_diff=0

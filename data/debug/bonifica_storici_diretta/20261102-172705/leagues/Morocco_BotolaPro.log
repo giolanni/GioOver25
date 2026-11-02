@@ -1,0 +1,6 @@
+[25/31] Morocco_BotolaPro
+status=OK
+tournament=Botola Pro country=Morocco tournament_id=CGClceUj stage=embedded
+source=https://www.diretta.it/calcio/morocco/botola-pro/risultati/
+team_overlap=1.000
+local=46 remote=46 equal=46 missing_local=0 extra_local=0 score_diff=0

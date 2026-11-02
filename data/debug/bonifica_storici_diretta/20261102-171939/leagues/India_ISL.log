@@ -1,0 +1,6 @@
+[3/4] India_ISL
+status=OK
+tournament=ISL country=India tournament_id=80FFK5CO stage=embedded
+source=https://www.diretta.it/calcio/india/isl/risultati/
+team_overlap=1.000
+local=23 remote=23 equal=23 missing_local=0 extra_local=0 score_diff=0

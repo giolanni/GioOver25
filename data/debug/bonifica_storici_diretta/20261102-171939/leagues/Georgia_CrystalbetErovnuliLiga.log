@@ -1,0 +1,6 @@
+[2/4] Georgia_CrystalbetErovnuliLiga
+status=OK
+tournament=Crystalbet Erovnuli Liga country=Georgia tournament_id=vo6umLPj stage=embedded
+source=https://www.diretta.it/calcio/georgia/crystalbet-erovnuli-liga/risultati/
+team_overlap=1.000
+local=107 remote=107 equal=107 missing_local=0 extra_local=0 score_diff=0

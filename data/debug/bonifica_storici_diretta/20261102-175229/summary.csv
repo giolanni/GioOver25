@@ -1,0 +1,4 @@
+﻿LeagueId;Status;Local;Diretta;Equal;MissingLocal;ExtraLocal;ScoreDiff;Applied;Message
+Greece_SuperLeague2;SAFE_MISSING;71;72;71;1;0;0;NO;
+Tajikistan_VysshayaLiga;DIFFERENCES;105;104;102;2;3;0;SI;
+Thailand_ThaiLeague1;SAFE_MISSING;53;54;53;1;0;0;NO;

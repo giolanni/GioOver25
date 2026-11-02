@@ -1,0 +1,6 @@
+[3/3] Thailand_ThaiLeague1
+status=OK
+tournament=Thai League 1 country=Thailand tournament_id=M169l7rn stage=embedded
+source=https://www.diretta.it/calcio/thailand/thai-league-1/risultati/
+team_overlap=1.000
+local=54 remote=54 equal=54 missing_local=0 extra_local=0 score_diff=0

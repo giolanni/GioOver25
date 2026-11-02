@@ -1,0 +1,9 @@
+[30/31] Thailand_ThaiLeague1
+status=SAFE_MISSING
+tournament=Thai League 1 country=Thailand tournament_id=M169l7rn stage=embedded
+source=https://www.diretta.it/calcio/thailand/thai-league-1/risultati/
+team_overlap=1.000
+local=53 remote=54 equal=53 missing_local=1 extra_local=0 score_diff=0
+
+MISSING_LOCAL:
+2026-11-02;Chonburi;Pathum United;1;0

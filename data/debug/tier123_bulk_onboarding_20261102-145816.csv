@@ -1,0 +1,54 @@
+﻿LeagueId;Action;Status;Matches;Sources;Errors;ResolvedSources
+Argentina_LigaProfesionalClausura;CREATE;READY_PARTIAL;28;Liga Profesional - Clausura;Liga Profesional - Clausura: primary HTTPError: HTTP Error 404: Not Found | match EoHkyxR8: seasonId non esposto;Liga Profesional - Clausura => daily-cache
+Brazil_SerieA;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Serie A;;
+Brazil_SerieB;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Serie B;;
+Chile_LigadeAscenso;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Liga de Ascenso;;
+Chile_LigadePrimera;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Liga de Primera;;
+Chile_SegundaDivision;CREATE;NO_RESULTS;0;Segunda Division - Gruppo Promozione | Segunda Division - Gruppo Retrocessione;Segunda Division - Gruppo Promozione: primary HTTPError: HTTP Error 404: Not Found | match Y1HfIpRG: seasonId non esposto | match SWQ91G2b: seasonId non esposto | Segunda Division - Gruppo Promozione: nessun risultato concluso nella cache giornaliera | Segunda Division - Gruppo Retrocessione: primary HTTPError: HTTP Error 404: Not Found | match Y1HfIpRG: seasonId non esposto | match SWQ91G2b: seasonId non esposto | Segunda Division - Gruppo Retrocessione: nessun risultato concluso nella cache giornaliera;
+China_LeagueOne;MERGE_EXISTING;SKIP_PHASE_MERGE;0;League One;;
+China_LeagueTwo;CREATE;NO_RESULTS;0;League Two - Gruppo Promozione | League Two - Gruppo Retrocessione;League Two - Gruppo Promozione: primary HTTPError: HTTP Error 404: Not Found | match ERLKM6mI: seasonId non esposto | match QNGdSAJt: seasonId non esposto | League Two - Gruppo Promozione: nessun risultato concluso nella cache giornaliera | League Two - Gruppo Retrocessione: primary HTTPError: HTTP Error 404: Not Found | match ERLKM6mI: seasonId non esposto | match QNGdSAJt: seasonId non esposto | League Two - Gruppo Retrocessione: nessun risultato concluso nella cache giornaliera;
+China_SuperLeague;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Super League;;
+Colombia_PrimeraAClausura;CREATE;READY_PARTIAL;28;Primera A - Clausura;Primera A - Clausura: primary HTTPError: HTTP Error 404: Not Found | match tSOlYWR7: seasonId non esposto;Primera A - Clausura => daily-cache
+Colombia_PrimeraBClausura;CREATE;READY_PARTIAL;14;Primera B - Clausura;Primera B - Clausura: primary HTTPError: HTTP Error 404: Not Found | match xhkIkCQh: seasonId non esposto;Primera B - Clausura => daily-cache
+Costarica_LigadeAscensoApertura;CREATE;READY_PARTIAL;15;Liga de Ascenso - Apertura;Liga de Ascenso - Apertura: primary HTTPError: HTTP Error 404: Not Found | match tjyXevw5: seasonId non esposto;Liga de Ascenso - Apertura => daily-cache
+Costarica_PrimeraDivisionApertura;CREATE;READY_PARTIAL;11;Primera División - Apertura;Primera División - Apertura: primary HTTPError: HTTP Error 404: Not Found | match jusWh3J7: seasonId non esposto;Primera División - Apertura => daily-cache
+Ecuador_LigaPro;CREATE;READY_PARTIAL;5;Liga Pro - Gruppo Retrocessione;Liga Pro - Gruppo Retrocessione: primary HTTPError: HTTP Error 404: Not Found | match ldGoCsEN: seasonId non esposto;Liga Pro - Gruppo Retrocessione => daily-cache
+Ecuador_SerieB;CREATE;READY_PARTIAL;12;Serie B - Gruppo Promozione | Serie B - Gruppo Retrocessione;Serie B - Gruppo Promozione: primary HTTPError: HTTP Error 404: Not Found | match QHRj6Ikf: seasonId non esposto | match GAtYTGpn: seasonId non esposto | Serie B - Gruppo Retrocessione: primary HTTPError: HTTP Error 404: Not Found | match QHRj6Ikf: seasonId non esposto | match GAtYTGpn: seasonId non esposto;Serie B - Gruppo Promozione => daily-cache | Serie B - Gruppo Retrocessione => daily-cache
+Egypt_Division2A;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Division 2 A;;
+Egypt_PremierLeague;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Premier League;;
+ElSalvador_PrimeraDivisionApertura;CREATE;READY_PARTIAL;12;Primera Division - Apertura;Primera Division - Apertura: primary HTTPError: HTTP Error 404: Not Found | match 4r1AaSBE: seasonId non esposto;Primera Division - Apertura => daily-cache
+Gabon_ChampionnatD1;CREATE;NO_RESULTS;0;Championnat D1;Championnat D1: primary senza risultati | match plyDTPzg: seasonId non esposto | Championnat D1: nessun risultato concluso nella cache giornaliera;
+Georgia_CrystalbetErovnuliLiga;CREATE;READY;107;Crystalbet Erovnuli Liga;;Crystalbet Erovnuli Liga => https://www.diretta.it/calcio/georgia/crystalbet-erovnuli-liga/risultati/
+Greece_GammaEthnikiGroup1;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 1;;
+Greece_GammaEthnikiGroup10;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 10;;
+Greece_GammaEthnikiGroup2;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 2;;
+Greece_GammaEthnikiGroup3;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 3;;
+Greece_GammaEthnikiGroup4;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 4;;
+Greece_GammaEthnikiGroup5;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 5;;
+Greece_GammaEthnikiGroup6;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 6;;
+Greece_GammaEthnikiGroup7;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 7;;
+Greece_GammaEthnikiGroup8;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 8;;
+Greece_GammaEthnikiGroup9;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Gamma Ethniki - Group 9;;
+Greece_SuperLeague;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Super League;;
+Greece_SuperLeague2;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Super League 2;;
+Guatemala_LigaNacionalApertura;CREATE;READY_PARTIAL;17;Liga Nacional - Apertura;Liga Nacional - Apertura: primary HTTPError: HTTP Error 404: Not Found | match ldO0Fe9M: seasonId non esposto;Liga Nacional - Apertura => daily-cache
+Honduras_LigaNacionalApertura;CREATE;READY_PARTIAL;10;Liga Nacional - Apertura;Liga Nacional - Apertura: primary HTTPError: HTTP Error 404: Not Found | match 8le2ZagL: seasonId non esposto;Liga Nacional - Apertura => daily-cache
+Ireland_NationalLeague;MERGE_EXISTING;SKIP_PHASE_MERGE;0;National League;;
+Ireland_PremierDivision;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Premier Division;;
+Kenya_SuperLeague;CREATE;NO_RESULTS;0;Super League;Super League: primary senza risultati | match boYoTDNp: seasonId non esposto | Super League: nessun risultato concluso nella cache giornaliera;
+Malaysia_SuperLeague;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Super League;;
+Malta_PremierLeague;CREATE;READY_PARTIAL;17;Premier League - Prima fase - Principale;Premier League - Prima fase - Principale: primary HTTPError: HTTP Error 404: Not Found | match nyGA4RkD: seasonId non esposto;Premier League - Prima fase - Principale => daily-cache
+Mauritius_SuperLeague;CREATE;NO_RESULTS;0;Super League;Super League: primary senza risultati | match 6oKkMAil: seasonId non esposto | Super League: nessun risultato concluso nella cache giornaliera;
+Morocco_Botola2;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Botola 2;;
+Morocco_BotolaPro;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Botola Pro;;
+Nicaragua_LigaPrimeraApertura;CREATE;READY_PARTIAL;12;Liga Primera - Apertura;Liga Primera - Apertura: primary HTTPError: HTTP Error 404: Not Found | match WOuclmFb: seasonId non esposto;Liga Primera - Apertura => daily-cache
+Panama_LPFApertura;CREATE;READY_PARTIAL;12;LPF - Apertura;LPF - Apertura: primary HTTPError: HTTP Error 404: Not Found | match bkxNg944: seasonId non esposto;LPF - Apertura => daily-cache
+Peru_Liga2;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Liga 2 - Gruppo Promozione | Liga 2 - Gruppo Retrocessione;;
+RepubblicaDominicana_LDFApertura;CREATE;READY_PARTIAL;7;LDF - Apertura;LDF - Apertura: primary HTTPError: HTTP Error 404: Not Found | match jwxoDnBM: seasonId non esposto;LDF - Apertura => daily-cache
+Russia_FNL2DivisionAGoldAutunno;CREATE;READY_PARTIAL;10;FNL 2 - Division A Gold - Autunno;FNL 2 - Division A Gold - Autunno: primary HTTPError: HTTP Error 404: Not Found | match riNCXCas: seasonId non esposto;FNL 2 - Division A Gold - Autunno => daily-cache
+SouthAfrica_BetwayPremiership;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Betway Premiership;;
+SouthAfrica_MotsepeFoundationChampionship;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Motsepe Foundation Championship;;
+Tajikistan_VysshayaLiga;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Vysshaya Liga;;
+Thailand_ThaiLeague1;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Thai League 1;;
+Thailand_ThaiLeague2;MERGE_EXISTING;SKIP_PHASE_MERGE;0;Thai League 2;;
+Uruguay_LigaAUFUruguayaClausura;CREATE;READY_PARTIAL;15;Liga AUF Uruguaya - Clausura;Liga AUF Uruguaya - Clausura: primary HTTPError: HTTP Error 404: Not Found | match vqn9S0D6: seasonId non esposto;Liga AUF Uruguaya - Clausura => daily-cache

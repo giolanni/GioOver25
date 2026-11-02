@@ -1,0 +1,6 @@
+[1/4] Australia_ALeague
+status=OK
+tournament=A-League country=Australia tournament_id=UkKUeAW9 stage=embedded
+source=https://www.diretta.it/calcio/australia/a-league/risultati/
+team_overlap=1.000
+local=17 remote=17 equal=17 missing_local=0 extra_local=0 score_diff=0

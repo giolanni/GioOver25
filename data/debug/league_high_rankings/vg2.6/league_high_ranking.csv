@@ -1,6 +1,8 @@
 ﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
-1;vg2.6;CzechRepublic_4Liga_GroupF;1;0;2026-10-17;2026-10-17;1;100.0
-2;vg2.6;Germany_Oberliga_Hamburg;1;0;2026-10-30;2026-10-30;1;100.0
-3;vg2.6;Germany_Oberliga_Niederrhein;1;0;2026-10-18;2026-10-18;1;100.0
-4;vg2.6;Norway_3rdDivision_Group3;1;0;2026-10-24;2026-10-24;1;100.0
-5;vg2.6;Estonia_MeistriliigaWomen;0;1;2026-10-16;2026-10-16;1;0.0
+1;vg2.6;Norway_3rdDivision_Group3;2;0;2026-01-11;2026-10-24;2;100.0
+2;vg2.6;CzechRepublic_3CFL_GroupA;1;0;2026-01-11;2026-01-11;1;100.0
+3;vg2.6;CzechRepublic_4Liga_GroupF;1;0;2026-10-17;2026-10-17;1;100.0
+4;vg2.6;Germany_Oberliga_Hamburg;1;0;2026-10-30;2026-10-30;1;100.0
+5;vg2.6;Germany_Oberliga_Niederrhein;1;0;2026-10-18;2026-10-18;1;100.0
+6;vg2.6;Norway_3rdDivision_Group5;1;0;2026-01-11;2026-01-11;1;100.0
+7;vg2.6;Estonia_MeistriliigaWomen;0;1;2026-10-16;2026-10-16;1;0.0

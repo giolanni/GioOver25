@@ -1,0 +1,6 @@
+[27/31] SouthAfrica_BetwayPremiership
+status=OK
+tournament=Betway Premiership country=South Africa tournament_id=KIooShqB stage=embedded
+source=https://www.diretta.it/calcio/south-africa/betway-premiership/risultati/
+team_overlap=1.000
+local=73 remote=73 equal=73 missing_local=0 extra_local=0 score_diff=0

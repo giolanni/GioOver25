@@ -1,0 +1,6 @@
+[6/31] China_SuperLeague
+status=OK
+tournament=Super League country=China tournament_id=p4AngrWQ stage=embedded
+source=https://www.diretta.it/calcio/china/super-league/risultati/
+team_overlap=1.000
+local=106 remote=106 equal=106 missing_local=0 extra_local=0 score_diff=0
