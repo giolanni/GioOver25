@@ -91,7 +91,9 @@ def discover(start: date, end: date) -> tuple[list[Competition], list[str]]:
                 item.tournament_id = match.tournament_id
             if not item.tournament_stage_id and match.tournament_stage_id:
                 item.tournament_stage_id = match.tournament_stage_id
-            if not item.tournament_current_id and match.tournament_current_id:\n                item.tournament_current_id = match.tournament_current_id\n            if not item.sample_match_id and match.match_id:
+            if not item.tournament_current_id and match.tournament_current_id:
+                item.tournament_current_id = match.tournament_current_id
+            if not item.sample_match_id and match.match_id:
                 item.sample_match_id = match.match_id
             actual = match.match_date or current.isoformat()
             if not item.first_date or actual < item.first_date:
