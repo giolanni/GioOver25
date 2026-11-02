@@ -145,7 +145,7 @@ def main() -> None:
 
     out = ROOT / "data" / "debug" / f"league_tier123_{datetime.now():%Y%m%d-%H%M%S}.csv"
     fields = ["Tier","RegistryStatus","Country","League","ProposedLeagueId","Matches","FirstDate","LastDate",
-              "TournamentId","TournamentStageId","SampleMatchId"]
+              "TournamentId","TournamentStageId","TournamentCurrentId","SampleMatchId"]
     with out.open("w", encoding="utf-8-sig", newline="") as h:
         w = csv.DictWriter(h, fieldnames=fields, delimiter=";", extrasaction="ignore")
         w.writeheader()
@@ -192,7 +192,7 @@ def main() -> None:
     ]
     review_out = ROOT / "data" / "debug" / f"league_tier_review_{datetime.now():%Y%m%d-%H%M%S}.csv"
     review_fields = ["Country","League","Status","KindOrLeagueId","Matches","FirstDate","LastDate",
-                     "TournamentId","TournamentStageId","SampleMatchId"]
+                     "TournamentId","TournamentStageId","TournamentCurrentId","SampleMatchId"]
     with review_out.open("w", encoding="utf-8-sig", newline="") as h:
         w = csv.DictWriter(h, fieldnames=review_fields, delimiter=";", extrasaction="ignore")
         w.writeheader()
@@ -229,9 +229,10 @@ def main() -> None:
             "Matches": r["Matches"],
             "FirstDate": r["FirstDate"],
             "LastDate": r["LastDate"],
-            "TournamentId": r["TournamentId"],
-            "TournamentStageId": r["TournamentStageId"],
-            "SampleMatchId": r["SampleMatchId"],
+            "TournamentId": r.get("TournamentId", ""),
+            "TournamentStageId": r.get("TournamentStageId", ""),
+            "TournamentCurrentId": r.get("TournamentCurrentId", ""),
+            "SampleMatchId": r.get("SampleMatchId", ""),
         })
 
     canonical_rows.sort(key=lambda r: (
@@ -241,7 +242,7 @@ def main() -> None:
     canonical_fields = [
         "Tier","Country","CanonicalCountry","League","CanonicalLeague","ProposedLeagueId",
         "CanonicalLeagueId","IsPhaseAlias","CanonicalExists","Matches","FirstDate","LastDate",
-        "TournamentId","TournamentStageId","SampleMatchId",
+        "TournamentId","TournamentStageId","TournamentCurrentId","SampleMatchId",
     ]
     with canonical_out.open("w", encoding="utf-8-sig", newline="") as h:
         w = csv.DictWriter(h, fieldnames=canonical_fields, delimiter=";", extrasaction="ignore")
