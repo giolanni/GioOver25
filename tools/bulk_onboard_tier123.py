@@ -33,7 +33,7 @@ def _walk_values(obj, fragment: str):
         for value in obj:
             yield from _walk_values(value, fragment)
 
-def _fallback_urls(source_league: str, tournament_ids: set[str], stage_ids: set[str], timeout: int = 20):
+def _fallback_urls(source_league: str, current_ids: set[str], stage_ids: set[str], timeout: int = 20):
     """Trova URL pubbliche usando gli ID Flashscore del discovery, non il nome/slug."""
     urls = []
     try:
@@ -43,7 +43,7 @@ def _fallback_urls(source_league: str, tournament_ids: set[str], stage_ids: set[
     for raw in rows:
         tournament = raw.get("defaultTournament") or {}
         tid = str(tournament.get("id", "")).strip()
-        if tournament_ids and tid not in tournament_ids:
+        if current_ids and tid not in current_ids:
             continue
         # Lo stage e' decisivo per Apertura/Clausura e gruppi interni.
         raw_stage_ids = {
@@ -119,7 +119,7 @@ def _season_ids_from_matches(match_ids: set[str], timeout: int = 20):
     return list(dict.fromkeys(season_ids)), errors
 
 
-def _direct_feed_results(source_league: str, tournament_ids: set[str], stage_ids: set[str], match_ids: set[str], timeout: int = 20):
+def _direct_feed_results(source_league: str, current_ids: set[str], stage_ids: set[str], match_ids: set[str], timeout: int = 20):
     """Recupera risultati dal feed stagionale usando gli ID della discovery."""
     attempts = []
     try:
@@ -133,7 +133,7 @@ def _direct_feed_results(source_league: str, tournament_ids: set[str], stage_ids
     for raw in rows:
         tournament = raw.get("defaultTournament") or {}
         tid = str(tournament.get("id", "")).strip()
-        if tournament_ids and tid not in tournament_ids:
+        if current_ids and tid not in current_ids:
             continue
 
         raw_stage_ids = {
@@ -179,7 +179,7 @@ def _direct_feed_results(source_league: str, tournament_ids: set[str], stage_ids
     return [], "", attempts
 
 
-def _fetch_source(source_league: str, country: str, tournament_ids: set[str], stage_ids: set[str], match_ids: set[str]):
+def _fetch_source(source_league: str, country: str, tournament_ids: set[str], current_ids: set[str], stage_ids: set[str], match_ids: set[str]):
     """Prima URL leggibile; poi fallback ID-driven per fasi con slug non pubblico."""
     primary = f"{DIRETTA_BASE}/calcio/{slug(country)}/{slug(source_league)}/risultati/"
     attempts = [primary]
@@ -194,13 +194,13 @@ def _fetch_source(source_league: str, country: str, tournament_ids: set[str], st
 
     # Prima del fallback URL, usa direttamente tournament/season feed.
     matches, resolved, direct_errors = _direct_feed_results(
-        source_league, tournament_ids, stage_ids, match_ids
+        source_league, current_ids, stage_ids, match_ids
     )
     errors.extend(direct_errors)
     if matches:
         return matches, resolved, errors
 
-    for url in _fallback_urls(source_league, tournament_ids, stage_ids):
+    for url in _fallback_urls(source_league, current_ids, stage_ids):
         if url in attempts:
             continue
         attempts.append(url)
@@ -282,7 +282,7 @@ def main():
             summary.append({
                 "LeagueId": league_id, "Action": action, "Status": status,
                 "Matches": 0, "Sources": " | ".join(source_leagues),
-                "Errors": "", "ResolvedSources": "",
+                "Errors": "", "ResolvedSources": "", "FirstMatchDate": "", "LastMatchDate": "",
             })
             continue
 
@@ -291,9 +291,10 @@ def main():
         resolved_sources = []
         tournament_ids = {x.strip() for x in row.get("TournamentIds", "").split("|") if x.strip()}
         stage_ids = {x.strip() for x in row.get("TournamentStageIds", "").split("|") if x.strip()}
+        current_ids = {x.strip() for x in row.get("TournamentCurrentIds", "").split("|") if x.strip()}
         match_ids = {x.strip() for x in row.get("SampleMatchIds", "").split("|") if x.strip()}
         for source_league in source_leagues:
-            matches, resolved_url, source_errors = _fetch_source(source_league, country, tournament_ids, stage_ids, match_ids)
+            matches, resolved_url, source_errors = _fetch_source(source_league, country, tournament_ids, current_ids, stage_ids, match_ids)
             errors.extend(source_errors)
             if resolved_url:
                 resolved_sources.append(f"{source_league} => {resolved_url}")
@@ -336,11 +337,13 @@ def main():
             "Matches": len(matches), "Sources": " | ".join(source_leagues),
             "Errors": " | ".join(errors),
             "ResolvedSources": " | ".join(resolved_sources),
+            "FirstMatchDate": min((m.date for m in matches), default=""),
+            "LastMatchDate": max((m.date for m in matches), default=""),
         })
 
     out = ROOT / "data" / "debug" / f"tier123_bulk_onboarding_{datetime.now():%Y%m%d-%H%M%S}.csv"
     with out.open("w", encoding="utf-8-sig", newline="") as h:
-        w = csv.DictWriter(h, fieldnames=["LeagueId","Action","Status","Matches","Sources","Errors","ResolvedSources"], delimiter=";")
+        w = csv.DictWriter(h, fieldnames=["LeagueId","Action","Status","Matches","FirstMatchDate","LastMatchDate","Sources","Errors","ResolvedSources"], delimiter=";")
         w.writeheader()
         w.writerows(summary)
 
