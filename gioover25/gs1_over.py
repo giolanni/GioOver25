@@ -164,3 +164,20 @@ def update_results(input_file):
     if changed:
         write_csv(HISTORY_FILE,rows)
     print(f"[GS1-OVER] storico aggiornato: {changed} variazioni")
+
+
+def main():
+    import argparse
+    from datetime import date
+    from .rank_matches_v2 import read_matches_to_rank, read_registry
+    parser=argparse.ArgumentParser(description="Genera GS1-OVER senza rigenerare ranking")
+    parser.add_argument("input_file",help="CSV delle partite da selezionare")
+    args=parser.parse_args()
+    input_path=Path(args.input_file)
+    rows=read_matches_to_rank(input_path)
+    base_name=input_path.stem.replace("partite","ranking")
+    generate(rows,read_registry(),date.today().isoformat(),base_name)
+
+
+if __name__=="__main__":
+    main()
