@@ -166,17 +166,61 @@ def update_results(input_file):
     print(f"[GS1-OVER] storico aggiornato: {changed} variazioni")
 
 
+
+def diagnose(rows,registry_rows):
+    from .rank_matches_v2 import get_competition_group,get_group_league_ids
+    cache={}
+    totals={"input":0,"australia_excluded":0,"invalid_date":0,"no_history":0,
+            "insufficient_history":0,"over_pass":0,"delta_pass":0,"both_pass":0}
+    near=[]
+    for row in rows:
+        totals["input"]+=1
+        league=row["LeagueId"].strip()
+        if league.startswith("Australia_"):
+            totals["australia_excluded"]+=1
+            continue
+        try: match_date=date.fromisoformat(row["MatchDate"].strip())
+        except ValueError:
+            totals["invalid_date"]+=1
+            continue
+        ids=tuple(get_group_league_ids(league,get_competition_group(league,registry_rows),registry_rows))
+        if ids not in cache:
+            cache[ids]={name:read_results_file(Path("data/storico/risultati")/f"{name}.csv")
+                        for name in ids if (Path("data/storico/risultati")/f"{name}.csv").exists()}
+        histories=cache[ids]
+        if not histories:
+            totals["no_history"]+=1
+            continue
+        home=_stats(row["Home"],league,histories,match_date)
+        away=_stats(row["Away"],league,histories,match_date)
+        if home is None or away is None:
+            totals["insufficient_history"]+=1
+            continue
+        over=min(home["OverRateFull"],away["OverRateFull"])
+        delta=min(home["GAL5"],away["GAL5"])-min(home["GAFull"],away["GAFull"])
+        if over+1e-10>=MIN_OVER: totals["over_pass"]+=1
+        if delta+1e-10>=MIN_DELTA_GA: totals["delta_pass"]+=1
+        if over+1e-10>=MIN_OVER and delta+1e-10>=MIN_DELTA_GA: totals["both_pass"]+=1
+        near.append((over,delta,league,row["Home"],row["Away"]))
+    print("[GS1-DIAG] "+", ".join(f"{k}={v}" for k,v in totals.items()))
+    print("[GS1-DIAG] Top 15 per MinOverRateFull (diagnostica, NON selezioni):")
+    for over,delta,league,home,away in sorted(near,key=lambda x:(x[0],x[1]),reverse=True)[:15]:
+        print(f"  Over={over:.3f} DeltaGA={delta:+.3f} | {league} | {home} - {away}")
+
 def main():
     import argparse
     from datetime import date
     from .rank_matches_v2 import read_matches_to_rank, read_registry
     parser=argparse.ArgumentParser(description="Genera GS1-OVER senza rigenerare ranking")
     parser.add_argument("input_file",help="CSV delle partite da selezionare")
+    parser.add_argument("--diagnose",action="store_true",help="Mostra i motivi di esclusione e le partite piu vicine alla soglia")
     args=parser.parse_args()
     input_path=Path(args.input_file)
     rows=read_matches_to_rank(input_path)
     base_name=input_path.stem.replace("partite","ranking")
-    generate(rows,read_registry(),date.today().isoformat(),base_name)
+    registry=read_registry()
+    if args.diagnose: diagnose(rows,registry)
+    generate(rows,registry,date.today().isoformat(),base_name)
 
 
 if __name__=="__main__":
