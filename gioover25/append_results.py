@@ -1263,6 +1263,9 @@ def append_results(
     from .reconcile_results import reconcile_unresolved_matches
     reconcile_unresolved_matches(ranking_history_engines, input_file)
 
+    from .gs1_over import update_results as update_gs1_over_results
+    update_gs1_over_results(input_file)
+
     rebuild_league_over_map()
 
     archive_file = archive_input_results(
