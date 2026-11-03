@@ -1144,6 +1144,8 @@ def main() -> None:
                 output_file = Path(args.output) if args.output else OUTPUT_DIR / args.engine / f"{base_name}_{args.engine}.csv"
                 rank_matches(args.input_file, output_file, args.engine)
                 completed_engines = 1
+            from .gs1_over import generate as generate_gs1_over
+            generate_gs1_over(input_rows, read_registry(), date.today().isoformat(), base_name)
             archive_input_file(input_path)
 
     print(f"[RANK] {len(input_rows)} partite | {len(engine_names)} engine")
