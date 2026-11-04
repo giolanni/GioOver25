@@ -1,0 +1,4 @@
+﻿MatchDate;LeagueId;Home;Away;Round;PredictionDate;Band;MinOverThreshold;DeltaGAThreshold;MinOverRateFull;DeltaGA;HomeOverRateFull;AwayOverRateFull;HomeGAFull;AwayGAFull;HomeGAL5;AwayGAL5;Status;HG;AG;Outcome;Strategy;TicketRank;RuleVersion
+2026-11-04;Indonesia_Championship_West;Persikad Depok;Persiku Kudus;;2026-11-04;OSSERVAZIONE;0.700000;0.220000;0.857143;0.375000;0.875000;0.857143;1.625000;3.285714;2.000000;3.200000;SCHEDULED;;;;MEDIA_FIRST;1;gs1-shadow-top1-v1
+2026-11-04;Indonesia_Championship_West;Persikad Depok;Persiku Kudus;;2026-11-04;OSSERVAZIONE;0.700000;0.220000;0.857143;0.375000;0.875000;0.857143;1.625000;3.285714;2.000000;3.200000;SCHEDULED;;;;OSSERVAZIONE_TOP1;1;gs1-shadow-top1-v1
+2026-11-04;Indonesia_Championship_West;Persikad Depok;Persiku Kudus;;2026-11-04;OSSERVAZIONE;0.700000;0.220000;0.857143;0.375000;0.875000;0.857143;1.625000;3.285714;2.000000;3.200000;SCHEDULED;;;;OSS_FIRST;1;gs1-shadow-top1-v1
