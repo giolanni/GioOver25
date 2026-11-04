@@ -1043,11 +1043,34 @@ def _rank_rows(
             ):
                 continue
 
-            if immature_sample and base_band == "ALTA":
-                contextual_band = f"IMM-ALTA-{total_played}"
+            # VG1 mantiene invariato lo scoring: l'etichetta IMM viene
+            # applicata solo a valle. Per score > 65 marca sia MEDIA sia ALTA
+            # quando almeno una delle due squadre ha meno di 5 gare pregresse.
+            # Gli altri engine conservano la precedente regola IMM sulla ALTA.
+            try:
+                numeric_score = float(score_value(score, "score") or 0)
+            except (TypeError, ValueError):
+                numeric_score = 0.0
+
+            vg1_immature_band = (
+                engine_name == "vg1"
+                and numeric_score > 65.0
+                and base_band in {"MEDIA", "ALTA"}
+            )
+            legacy_immature_band = (
+                engine_name != "vg1"
+                and base_band == "ALTA"
+            )
+
+            if (
+                immature_sample
+                and (vg1_immature_band or legacy_immature_band)
+            ):
+                contextual_band = f"IMM-{base_band}-{total_played}"
                 print(
                     f"[{engine_name}][IMM] {home} - {away}: "
-                    f"ALTA -> {contextual_band} | "
+                    f"{base_band} -> {contextual_band} | "
+                    f"Score={numeric_score:.2f} | "
                     f"GP={home_played}/{away_played} | totale={total_played}"
                 )
 
