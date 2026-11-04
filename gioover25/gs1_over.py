@@ -11,10 +11,11 @@ from .team_names import normalize_team_name
 OUTPUT_DIR = Path("data/output_gs1_over")
 HISTORY_FILE = Path("data/storico/gs1_over/storico_gs1_over.csv")
 FIELDS = ["MatchDate","LeagueId","Home","Away","Round","PredictionDate",
-          "MinOverRateFull","DeltaGA","HomeOverRateFull","AwayOverRateFull",
+          "Band","MinOverRateFull","DeltaGA","HomeOverRateFull","AwayOverRateFull",
           "HomeGAFull","AwayGAFull","HomeGAL5","AwayGAL5",
           "Status","HG","AG","Outcome"]
 MIN_OVER = 0.8
+MEDIA_MIN_OVER = 0.65
 MIN_DELTA_GA = 0.4
 
 
@@ -93,17 +94,20 @@ def select(rows,registry_rows,prediction_date):
         # Same definition as analysis.gs1_over_lab.features:
         # DeltaGA = min(GA_L5 home, GA_L5 away) - min(GA_full home, GA_full away).
         delta=min(home["GAL5"],away["GAL5"])-min(home["GAFull"],away["GAFull"])
-        if min_over+1e-10<MIN_OVER or delta+1e-10<MIN_DELTA_GA: continue
+        if min_over+1e-10<MEDIA_MIN_OVER or delta+1e-10<MIN_DELTA_GA: continue
         result.append({"MatchDate":row["MatchDate"],"LeagueId":league,
                        "Home":row["Home"],"Away":row["Away"],
                        "Round":row.get("Round",""),"PredictionDate":prediction_date,
+                       "Band":"ALTA" if min_over+1e-10>=MIN_OVER else "MEDIA",
                        "MinOverRateFull":f"{min_over:.6f}","DeltaGA":f"{delta:.6f}",
                        "HomeOverRateFull":f"{home['OverRateFull']:.6f}",
                        "AwayOverRateFull":f"{away['OverRateFull']:.6f}",
                        "HomeGAFull":f"{home['GAFull']:.6f}","AwayGAFull":f"{away['GAFull']:.6f}",
                        "HomeGAL5":f"{home['GAL5']:.6f}","AwayGAL5":f"{away['GAL5']:.6f}",
                        "Status":"SCHEDULED","HG":"","AG":"","Outcome":""})
-    return sorted(result,key=lambda x:(-float(x["DeltaGA"]),-float(x["MinOverRateFull"]),
+    high=[r for r in result if r["Band"]=="ALTA"]
+    chosen=high if high else [r for r in result if r["Band"]=="MEDIA"]
+    return sorted(chosen,key=lambda x:(-float(x["MinOverRateFull"]),-float(x["DeltaGA"]),
                                       x["MatchDate"],x["LeagueId"],x["Home"],x["Away"]))
 
 
@@ -121,7 +125,8 @@ def generate(rows,registry_rows,prediction_date,base_name):
             inserted+=1
     write_csv(HISTORY_FILE,sorted(by_key.values(),key=lambda r:(r["MatchDate"],-float(r.get("DeltaGA") or 0),
                                                             r["LeagueId"],r["Home"],r["Away"])))
-    print(f"[GS1-OVER] selezionate={len(selections)} nuove_storico={inserted} output={output}")
+    band=selections[0]["Band"] if selections else "NESSUNA"
+    print(f"[GS1-OVER] fascia={band} selezionate={len(selections)} nuove_storico={inserted} output={output}")
     return selections
 
 
