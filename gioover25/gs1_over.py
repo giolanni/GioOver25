@@ -106,8 +106,8 @@ def select(rows,registry_rows,prediction_date):
                        "HomeGAL5":f"{home['GAL5']:.6f}","AwayGAL5":f"{away['GAL5']:.6f}",
                        "Status":"SCHEDULED","HG":"","AG":"","Outcome":""})
     high=[r for r in result if r["Band"]=="ALTA"]
-    chosen=high if high else [r for r in result if r["Band"]=="MEDIA"]
-    return sorted(chosen,key=lambda x:(-float(x["MinOverRateFull"]),-float(x["DeltaGA"]),
+    chosen=result
+    return sorted(chosen,key=lambda x:(0 if x["Band"]=="ALTA" else 1,-float(x["MinOverRateFull"]),-float(x["DeltaGA"]),
                                       x["MatchDate"],x["LeagueId"],x["Home"],x["Away"]))
 
 
@@ -125,8 +125,9 @@ def generate(rows,registry_rows,prediction_date,base_name):
             inserted+=1
     write_csv(HISTORY_FILE,sorted(by_key.values(),key=lambda r:(r["MatchDate"],-float(r.get("DeltaGA") or 0),
                                                             r["LeagueId"],r["Home"],r["Away"])))
-    band=selections[0]["Band"] if selections else "NESSUNA"
-    print(f"[GS1-OVER] fascia={band} selezionate={len(selections)} nuove_storico={inserted} output={output}")
+    high_count=sum(r["Band"]=="ALTA" for r in selections)
+    media_count=len(selections)-high_count
+    print(f"[GS1-OVER] ALTA={high_count} MEDIA={media_count} selezionate={len(selections)} nuove_storico={inserted} output={output}")
     return selections
 
 
