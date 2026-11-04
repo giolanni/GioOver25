@@ -8,6 +8,7 @@ from collections import defaultdict
 from pathlib import Path
 from analysis.experiments.match_history_features import build_feature_rows, write_csv
 from analysis.gs1_over_lab import features
+from analysis.experiments.v30_v31_full_backtest import enrich
 
 def band(f, variant):
     over=f["MinOverRateFull"]
@@ -46,7 +47,7 @@ def main():
         if r["LeagueId"].startswith("Australia_"): continue
         d=r["MatchDate"]
         split="TRAIN" if d<=args.train_end else "VALIDATION" if d<=args.validation_end else "TEST"
-        f=features(r)
+        f=features(enrich(r))
         for variant in ("CURRENT","DYNAMIC"):
             b=band(f,variant)
             if not b: continue
