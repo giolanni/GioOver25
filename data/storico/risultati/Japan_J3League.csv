@@ -1,4 +1,5 @@
 ﻿Country;League;Round;MatchDate;Home;Away;HG;AG;Notes
+Japan;J3 League;1;2026-09-09;Ryukyu;Kitakyushu;3;0;
 Japan;J3 League;4;2026-08-30;Kanazawa;Ehime;0;1;
 Japan;J3 League;4;2026-08-30;Kitakyushu;Yamaga;1;1;
 Japan;J3 League;4;2026-08-30;Kochi United;Kumamoto;0;2;
@@ -15,7 +16,6 @@ Japan;J3 League;5;2026-09-05;Tochigi;Kochi United;2;0;
 Japan;J3 League;5;2026-09-05;Tottori;Renofa Yamaguchi;0;3;
 Japan;J3 League;5;2026-09-05;Yamaga;Osaka;0;0;
 Japan;J3 League;5;2026-09-06;Kumamoto;Nara Club;2;2;
-Japan;J3 League;1;2026-09-09;Ryukyu;Kitakyushu;3;0;
 Japan;J3 League;6;2026-09-12;Fukushima Utd;Kumamoto;1;2;
 Japan;J3 League;6;2026-09-12;Kitakyushu;Tottori;2;4;
 Japan;J3 League;6;2026-09-12;Nara Club;Gifu;2;1;
@@ -106,3 +106,12 @@ Japan;J3 League;14;2026-10-31;Nagano;Reilac Shiga;3;1;
 Japan;J3 League;14;2026-10-31;Renofa Yamaguchi;Kitakyushu;0;2;
 Japan;J3 League;14;2026-10-31;Ryukyu;Tottori;5;2;
 Japan;J3 League;14;2026-10-31;Tochigi;Ehime;2;0;
+Japan;J3 League;15;2026-11-03;Kamatamare;Yamaga;1;0;
+Japan;J3 League;15;2026-11-03;Kanazawa;Nagano;0;2;
+Japan;J3 League;15;2026-11-03;Kitakyushu;Reilac Shiga;0;1;
+Japan;J3 League;15;2026-11-03;Kochi United;Ehime;4;0;
+Japan;J3 League;15;2026-11-03;Nara Club;Kusatsu;3;0;
+Japan;J3 League;15;2026-11-03;Renofa Yamaguchi;Kagoshima Utd;1;1;
+Japan;J3 League;15;2026-11-03;Ryukyu;Gifu;2;3;
+Japan;J3 League;15;2026-11-03;Tochigi;Fukushima Utd;0;0;
+Japan;J3 League;15;2026-11-03;Tottori;Sagamihara;0;1;

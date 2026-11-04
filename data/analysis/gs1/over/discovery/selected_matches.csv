@@ -1,0 +1,1893 @@
+﻿Rule;Scope;Split;MaxPicks;MatchDate;LeagueId;Home;Away;Over25;HG;AG;MinOverL5;DeltaGFL5
+V30;ALL;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30;ALL;TRAIN;1;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30;ALL;TRAIN;1;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30;ALL;TRAIN;1;2026-05-03;Kyrgyzstan_PremierLiga;Alga;Asia Talas;1;2;2;0.8;0.242857
+V30;ALL;TRAIN;1;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V30;ALL;TRAIN;1;2026-05-12;Somalia_NationalLeague;Gaadiidka;Elman;0;1;0;1.0;0.242857
+V30;ALL;TRAIN;1;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V30;ALL;TRAIN;1;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30;ALL;TRAIN;1;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30;ALL;TRAIN;1;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V30;ALL;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30;ALL;TRAIN;1;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30;ALL;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30;ALL;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30;ALL;TRAIN;1;2026-05-27;Kazakhstan_FirstLeague;Tobol 2;Taraz;1;3;3;0.8;0.228571
+V30;ALL;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30;ALL;TRAIN;1;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30;ALL;TRAIN;1;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30;ALL;TRAIN;1;2026-06-01;Belarus_PershayaLiga;Volna Pinsk;Niva Dolbizno;0;1;0;0.8;0.4375
+V30;ALL;TRAIN;1;2026-06-06;Finland_Ykkonen;Jazz Pori;VJS;0;1;1;0.8;0.633333
+V30;ALL;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30;ALL;TRAIN;1;2026-06-12;Estonia_MeistriliigaWomen;Flora D;Harju JK Laagri D;1;2;2;0.8;0.314286
+V30;ALL;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30;ALL;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30;ALL;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30;ALL;TRAIN;1;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30;ALL;TRAIN;1;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30;ALL;TRAIN;1;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30;ALL;TRAIN;1;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30;ALL;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30;ALL;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30;ALL;TRAIN;2;2026-04-18;USA_MLS;CF Montreal;New York Red Bulls;1;4;1;0.8;0.242857
+V30;ALL;TRAIN;2;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30;ALL;TRAIN;2;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30;ALL;TRAIN;2;2026-05-03;Kyrgyzstan_PremierLiga;Alga;Asia Talas;1;2;2;0.8;0.242857
+V30;ALL;TRAIN;2;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V30;ALL;TRAIN;2;2026-05-12;Somalia_NationalLeague;Gaadiidka;Elman;0;1;0;1.0;0.242857
+V30;ALL;TRAIN;2;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V30;ALL;TRAIN;2;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30;ALL;TRAIN;2;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30;ALL;TRAIN;2;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30;ALL;TRAIN;2;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V30;ALL;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30;ALL;TRAIN;2;2026-05-23;Norway_3rdDivision_Group5;Bossekop;Floeya;1;2;5;0.8;0.285714
+V30;ALL;TRAIN;2;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30;ALL;TRAIN;2;2026-05-24;USA_USLLeagueOne;AV Alta;New York Cosmos;1;4;0;0.8;0.255357
+V30;ALL;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30;ALL;TRAIN;2;2026-05-25;Norway_2ndDivision_Group2;Eidsvold;Rana FK;1;4;1;0.8;0.457143
+V30;ALL;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30;ALL;TRAIN;2;2026-05-27;Kazakhstan_FirstLeague;Tobol 2;Taraz;1;3;3;0.8;0.228571
+V30;ALL;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30;ALL;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V30;ALL;TRAIN;2;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30;ALL;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V30;ALL;TRAIN;2;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30;ALL;TRAIN;2;2026-05-31;Belarus_PershayaLiga;Minsk 2;Soligorsk;1;2;3;0.8;0.5375
+V30;ALL;TRAIN;2;2026-06-01;Belarus_PershayaLiga;Volna Pinsk;Niva Dolbizno;0;1;0;0.8;0.4375
+V30;ALL;TRAIN;2;2026-06-06;Finland_Ykkonen;Jazz Pori;VJS;0;1;1;0.8;0.633333
+V30;ALL;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30;ALL;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30;ALL;TRAIN;2;2026-06-12;Estonia_MeistriliigaWomen;Flora D;Harju JK Laagri D;1;2;2;0.8;0.314286
+V30;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V30;ALL;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30;ALL;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30;ALL;TRAIN;2;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30;ALL;TRAIN;2;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30;ALL;TRAIN;2;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30;ALL;TRAIN;2;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30;ALL;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30;ALL;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30;ALL;TRAIN;3;2026-04-18;USA_MLS;CF Montreal;New York Red Bulls;1;4;1;0.8;0.242857
+V30;ALL;TRAIN;3;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30;ALL;TRAIN;3;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30;ALL;TRAIN;3;2026-05-03;Kyrgyzstan_PremierLiga;Alga;Asia Talas;1;2;2;0.8;0.242857
+V30;ALL;TRAIN;3;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V30;ALL;TRAIN;3;2026-05-12;Somalia_NationalLeague;Gaadiidka;Elman;0;1;0;1.0;0.242857
+V30;ALL;TRAIN;3;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V30;ALL;TRAIN;3;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30;ALL;TRAIN;3;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30;ALL;TRAIN;3;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30;ALL;TRAIN;3;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V30;ALL;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30;ALL;TRAIN;3;2026-05-23;Norway_3rdDivision_Group5;Bossekop;Floeya;1;2;5;0.8;0.285714
+V30;ALL;TRAIN;3;2026-05-23;Latvia_NakotnesLiga;Riga Mariners;Metta;1;2;2;0.8;0.275
+V30;ALL;TRAIN;3;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30;ALL;TRAIN;3;2026-05-24;USA_USLLeagueOne;AV Alta;New York Cosmos;1;4;0;0.8;0.255357
+V30;ALL;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30;ALL;TRAIN;3;2026-05-25;Norway_2ndDivision_Group2;Eidsvold;Rana FK;1;4;1;0.8;0.457143
+V30;ALL;TRAIN;3;2026-05-25;Norway_2ndDivision_Group2;Lørenskog;Levanger;0;1;0;0.8;0.271429
+V30;ALL;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30;ALL;TRAIN;3;2026-05-27;Kazakhstan_FirstLeague;Tobol 2;Taraz;1;3;3;0.8;0.228571
+V30;ALL;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30;ALL;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V30;ALL;TRAIN;3;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30;ALL;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V30;ALL;TRAIN;3;2026-05-30;Norway_3rdDivision_Group1;Nordstrand;K. Oslo 2;1;2;2;0.8;0.2625
+V30;ALL;TRAIN;3;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30;ALL;TRAIN;3;2026-05-31;Belarus_PershayaLiga;Minsk 2;Soligorsk;1;2;3;0.8;0.5375
+V30;ALL;TRAIN;3;2026-05-31;Norway_3rdDivision_Group6;Drobak-Frogn;Bjorkelangen;1;3;0;0.8;0.264286
+V30;ALL;TRAIN;3;2026-06-01;Belarus_PershayaLiga;Volna Pinsk;Niva Dolbizno;0;1;0;0.8;0.4375
+V30;ALL;TRAIN;3;2026-06-06;Finland_Ykkonen;Jazz Pori;VJS;0;1;1;0.8;0.633333
+V30;ALL;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30;ALL;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30;ALL;TRAIN;3;2026-06-12;Estonia_MeistriliigaWomen;Flora D;Harju JK Laagri D;1;2;2;0.8;0.314286
+V30;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V30;ALL;TRAIN;3;2026-06-14;USA_USLLeagueOne;Portland Hearts of Pine;Chattanooga Red Wolves;1;1;2;0.8;0.263636
+V30;ALL;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30;ALL;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30;ALL;TRAIN;3;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30;ALL;TRAIN;3;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30;ALL;TRAIN;3;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30;ALL;TRAIN;3;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30;ALL;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG;ALL;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG;ALL;TRAIN;1;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG;ALL;TRAIN;1;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG;ALL;TRAIN;1;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG;ALL;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG;ALL;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG;ALL;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG;ALL;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG;ALL;TRAIN;1;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG;ALL;TRAIN;1;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG;ALL;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG;ALL;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG;ALL;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG;ALL;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG;ALL;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG;ALL;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG;ALL;TRAIN;2;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG;ALL;TRAIN;2;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG;ALL;TRAIN;2;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG;ALL;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG;ALL;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG;ALL;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG;ALL;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG;ALL;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG;ALL;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG;ALL;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG;ALL;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG;ALL;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG;ALL;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG;ALL;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG;ALL;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG;ALL;TRAIN;3;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG;ALL;TRAIN;3;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG;ALL;TRAIN;3;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG;ALL;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG;ALL;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG;ALL;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG;ALL;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG;ALL;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG;ALL;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG;ALL;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG;ALL;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG;ALL;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG;ALL;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG;ALL;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_GA_12;ALL;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_GA_12;ALL;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_GA_12;ALL;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_OVER_80;ALL;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30_MIN_GA_12;ALL;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30_MIN_GA_12;ALL;TRAIN;1;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30_MIN_GA_12;ALL;TRAIN;1;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30_MIN_GA_12;ALL;TRAIN;1;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30_MIN_GA_12;ALL;TRAIN;1;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30_MIN_GA_12;ALL;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30_MIN_GA_12;ALL;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30_MIN_GA_12;ALL;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30_MIN_GA_12;ALL;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30_MIN_GA_12;ALL;TRAIN;1;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30_MIN_GA_12;ALL;TRAIN;1;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30_MIN_GA_12;ALL;TRAIN;1;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30_MIN_GA_12;ALL;TRAIN;1;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30_MIN_GA_12;ALL;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30_MIN_GA_12;ALL;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30_MIN_GA_12;ALL;TRAIN;2;2026-04-18;USA_MLS;CF Montreal;New York Red Bulls;1;4;1;0.8;0.242857
+V30_MIN_GA_12;ALL;TRAIN;2;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30_MIN_GA_12;ALL;TRAIN;2;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-23;Norway_3rdDivision_Group5;Bossekop;Floeya;1;2;5;0.8;0.285714
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-24;USA_USLLeagueOne;AV Alta;New York Cosmos;1;4;0;0.8;0.255357
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-25;Norway_2ndDivision_Group2;Lørenskog;Levanger;0;1;0;0.8;0.271429
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30_MIN_GA_12;ALL;TRAIN;2;2026-05-31;Norway_3rdDivision_Group6;Drobak-Frogn;Bjorkelangen;1;3;0;0.8;0.264286
+V30_MIN_GA_12;ALL;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30_MIN_GA_12;ALL;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30_MIN_GA_12;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30_MIN_GA_12;ALL;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V30_MIN_GA_12;ALL;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30_MIN_GA_12;ALL;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30_MIN_GA_12;ALL;TRAIN;2;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30_MIN_GA_12;ALL;TRAIN;2;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30_MIN_GA_12;ALL;TRAIN;2;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30_MIN_GA_12;ALL;TRAIN;2;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30_MIN_GA_12;ALL;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30_MIN_GA_12;ALL;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30_MIN_GA_12;ALL;TRAIN;3;2026-04-18;USA_MLS;CF Montreal;New York Red Bulls;1;4;1;0.8;0.242857
+V30_MIN_GA_12;ALL;TRAIN;3;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30_MIN_GA_12;ALL;TRAIN;3;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-23;Norway_3rdDivision_Group5;Bossekop;Floeya;1;2;5;0.8;0.285714
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-23;Latvia_NakotnesLiga;Rezekne;Riga FC 2;1;2;1;0.8;0.2375
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-24;USA_USLLeagueOne;AV Alta;New York Cosmos;1;4;0;0.8;0.255357
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-25;Norway_2ndDivision_Group2;Lørenskog;Levanger;0;1;0;0.8;0.271429
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-25;Norway_3rdDivision_Group6;Fram;Raelingen;1;5;1;0.8;0.242857
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-30;Norway_3rdDivision_Group1;Nordstrand;K. Oslo 2;1;2;2;0.8;0.2625
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30_MIN_GA_12;ALL;TRAIN;3;2026-05-31;Norway_3rdDivision_Group6;Drobak-Frogn;Bjorkelangen;1;3;0;0.8;0.264286
+V30_MIN_GA_12;ALL;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30_MIN_GA_12;ALL;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30_MIN_GA_12;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30_MIN_GA_12;ALL;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V30_MIN_GA_12;ALL;TRAIN;3;2026-06-14;USA_USLLeagueOne;Portland Hearts of Pine;Chattanooga Red Wolves;1;1;2;0.8;0.263636
+V30_MIN_GA_12;ALL;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30_MIN_GA_12;ALL;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30_MIN_GA_12;ALL;TRAIN;3;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30_MIN_GA_12;ALL;TRAIN;3;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30_MIN_GA_12;ALL;TRAIN;3;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30_MIN_GA_12;ALL;TRAIN;3;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30_MIN_GA_12;ALL;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30;NO_AUSTRALIA;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30;NO_AUSTRALIA;TRAIN;1;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30;NO_AUSTRALIA;TRAIN;1;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-03;Kyrgyzstan_PremierLiga;Alga;Asia Talas;1;2;2;0.8;0.242857
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-12;Somalia_NationalLeague;Gaadiidka;Elman;0;1;0;1.0;0.242857
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-27;Kazakhstan_FirstLeague;Tobol 2;Taraz;1;3;3;0.8;0.228571
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30;NO_AUSTRALIA;TRAIN;1;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30;NO_AUSTRALIA;TRAIN;1;2026-06-01;Belarus_PershayaLiga;Volna Pinsk;Niva Dolbizno;0;1;0;0.8;0.4375
+V30;NO_AUSTRALIA;TRAIN;1;2026-06-06;Finland_Ykkonen;Jazz Pori;VJS;0;1;1;0.8;0.633333
+V30;NO_AUSTRALIA;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30;NO_AUSTRALIA;TRAIN;1;2026-06-12;Estonia_MeistriliigaWomen;Flora D;Harju JK Laagri D;1;2;2;0.8;0.314286
+V30;NO_AUSTRALIA;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30;NO_AUSTRALIA;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30;NO_AUSTRALIA;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30;NO_AUSTRALIA;TRAIN;1;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30;NO_AUSTRALIA;TRAIN;1;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30;NO_AUSTRALIA;TRAIN;1;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30;NO_AUSTRALIA;TRAIN;1;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30;NO_AUSTRALIA;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30;NO_AUSTRALIA;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30;NO_AUSTRALIA;TRAIN;2;2026-04-18;USA_MLS;CF Montreal;New York Red Bulls;1;4;1;0.8;0.242857
+V30;NO_AUSTRALIA;TRAIN;2;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30;NO_AUSTRALIA;TRAIN;2;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-03;Kyrgyzstan_PremierLiga;Alga;Asia Talas;1;2;2;0.8;0.242857
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-12;Somalia_NationalLeague;Gaadiidka;Elman;0;1;0;1.0;0.242857
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-23;Norway_3rdDivision_Group5;Bossekop;Floeya;1;2;5;0.8;0.285714
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-24;USA_USLLeagueOne;AV Alta;New York Cosmos;1;4;0;0.8;0.255357
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-25;Norway_2ndDivision_Group2;Eidsvold;Rana FK;1;4;1;0.8;0.457143
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-27;Kazakhstan_FirstLeague;Tobol 2;Taraz;1;3;3;0.8;0.228571
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30;NO_AUSTRALIA;TRAIN;2;2026-05-31;Belarus_PershayaLiga;Minsk 2;Soligorsk;1;2;3;0.8;0.5375
+V30;NO_AUSTRALIA;TRAIN;2;2026-06-01;Belarus_PershayaLiga;Volna Pinsk;Niva Dolbizno;0;1;0;0.8;0.4375
+V30;NO_AUSTRALIA;TRAIN;2;2026-06-06;Finland_Ykkonen;Jazz Pori;VJS;0;1;1;0.8;0.633333
+V30;NO_AUSTRALIA;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30;NO_AUSTRALIA;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30;NO_AUSTRALIA;TRAIN;2;2026-06-12;Estonia_MeistriliigaWomen;Flora D;Harju JK Laagri D;1;2;2;0.8;0.314286
+V30;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V30;NO_AUSTRALIA;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30;NO_AUSTRALIA;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30;NO_AUSTRALIA;TRAIN;2;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30;NO_AUSTRALIA;TRAIN;2;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30;NO_AUSTRALIA;TRAIN;2;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30;NO_AUSTRALIA;TRAIN;2;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30;NO_AUSTRALIA;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30;NO_AUSTRALIA;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30;NO_AUSTRALIA;TRAIN;3;2026-04-18;USA_MLS;CF Montreal;New York Red Bulls;1;4;1;0.8;0.242857
+V30;NO_AUSTRALIA;TRAIN;3;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30;NO_AUSTRALIA;TRAIN;3;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-03;Kyrgyzstan_PremierLiga;Alga;Asia Talas;1;2;2;0.8;0.242857
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-12;Somalia_NationalLeague;Gaadiidka;Elman;0;1;0;1.0;0.242857
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-23;Norway_3rdDivision_Group5;Bossekop;Floeya;1;2;5;0.8;0.285714
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-23;Latvia_NakotnesLiga;Riga Mariners;Metta;1;2;2;0.8;0.275
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-24;USA_USLLeagueOne;AV Alta;New York Cosmos;1;4;0;0.8;0.255357
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-25;Norway_2ndDivision_Group2;Eidsvold;Rana FK;1;4;1;0.8;0.457143
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-25;Norway_2ndDivision_Group2;Lørenskog;Levanger;0;1;0;0.8;0.271429
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-27;Kazakhstan_FirstLeague;Tobol 2;Taraz;1;3;3;0.8;0.228571
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-30;Norway_3rdDivision_Group1;Nordstrand;K. Oslo 2;1;2;2;0.8;0.2625
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-31;Belarus_PershayaLiga;Minsk 2;Soligorsk;1;2;3;0.8;0.5375
+V30;NO_AUSTRALIA;TRAIN;3;2026-05-31;Norway_3rdDivision_Group6;Drobak-Frogn;Bjorkelangen;1;3;0;0.8;0.264286
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-01;Belarus_PershayaLiga;Volna Pinsk;Niva Dolbizno;0;1;0;0.8;0.4375
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-06;Finland_Ykkonen;Jazz Pori;VJS;0;1;1;0.8;0.633333
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-12;Estonia_MeistriliigaWomen;Flora D;Harju JK Laagri D;1;2;2;0.8;0.314286
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-14;USA_USLLeagueOne;Portland Hearts of Pine;Chattanooga Red Wolves;1;1;2;0.8;0.263636
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30;NO_AUSTRALIA;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30;NO_AUSTRALIA;TRAIN;3;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30;NO_AUSTRALIA;TRAIN;3;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30;NO_AUSTRALIA;TRAIN;3;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30;NO_AUSTRALIA;TRAIN;3;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30;NO_AUSTRALIA;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG;NO_AUSTRALIA;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG;NO_AUSTRALIA;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG;NO_AUSTRALIA;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-05-06;Estonia_EsiliigaB;Tabasalu;Narva U21;0;1;0;0.8;0.325
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-05-17;Somalia_NationalLeague;Elman;Heegan;0;0;2;0.8;0.525
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-05-22;Iceland_BestaDeildKarla;Vikingur Reykjavik;Hafnarfjordur;1;5;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;1;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-04-18;USA_MLS;CF Montreal;New York Red Bulls;1;4;1;0.8;0.242857
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-23;Norway_3rdDivision_Group5;Bossekop;Floeya;1;2;5;0.8;0.285714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-24;USA_USLLeagueOne;AV Alta;New York Cosmos;1;4;0;0.8;0.255357
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-25;Norway_2ndDivision_Group2;Lørenskog;Levanger;0;1;0;0.8;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-05-31;Norway_3rdDivision_Group6;Drobak-Frogn;Bjorkelangen;1;3;0;0.8;0.264286
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;2;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-04-18;USA_MLS;Colorado Rapids;Inter Miami;1;2;3;0.8;0.342857
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-04-18;USA_MLS;CF Montreal;New York Red Bulls;1;4;1;0.8;0.242857
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-04-23;USA_MLS;Real Salt Lake;Inter Miami;0;0;2;0.8;0.257143
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-04-27;Estonia_Esiliiga;FC Tallinn;Levadia U21;1;4;2;0.8;0.285714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-17;Lithuania_ILyga;Siauliai 2;Ekranas;1;2;2;0.8;0.325
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-19;Somalia_NationalLeague;Gaadiidka;Jazeera;1;3;0;0.8;0.225
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-20;Norway_OBOSLigaen;Sogndal;Stabaek;1;2;2;0.8;0.3
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-23;Norway_3rdDivision_Group3;Forde;Os;1;2;1;0.8;0.614286
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-23;Norway_3rdDivision_Group5;Bossekop;Floeya;1;2;5;0.8;0.285714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-23;Latvia_NakotnesLiga;Rezekne;Riga FC 2;1;2;1;0.8;0.2375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-24;Sweden_Division1_Sodra;Atvidaberg;Laholms;1;3;1;0.8;0.3875
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-24;USA_USLLeagueOne;AV Alta;New York Cosmos;1;4;0;0.8;0.255357
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-25;Norway_3rdDivision_Group2;Strindheim;Nardo;1;4;1;1.0;0.585714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-25;Norway_2ndDivision_Group2;Lørenskog;Levanger;0;1;0;0.8;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-25;Norway_3rdDivision_Group6;Fram;Raelingen;1;5;1;0.8;0.242857
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-26;Norway_3rdDivision_Group5;Strømsgodset 2;Lillestrom 2;1;1;3;1.0;0.571429
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-29;Norway_3rdDivision_Group3;Os;Austevoll;1;4;2;1.0;0.6625
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-29;Iceland_BestaDeildKarla;Fram;Breidablik;1;4;3;0.8;0.7
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-30;Norway_3rdDivision_Group2;Nardo;Rosenborg 2;0;1;1;1.0;0.2
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-30;Norway_3rdDivision_Group3;Fana;Forde;1;1;2;0.8;0.4625
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-30;Norway_3rdDivision_Group1;Nordstrand;K. Oslo 2;1;2;2;0.8;0.2625
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-31;Norway_3rdDivision_Group5;Skjetten;Fauske Sprint;1;2;3;1.0;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-05-31;Norway_3rdDivision_Group6;Drobak-Frogn;Bjorkelangen;1;3;0;0.8;0.264286
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-06;Finland_Kakkonen_GroupC;GBK Kokkola;Vaajakoski;0;0;1;0.8;0.385714
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-11;Finland_Kakkonen_GroupA;PPJ;Atlantis;1;3;3;0.8;0.6875
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Narpes Kraft;Huima / Urho;1;1;3;0.8;0.5625
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-14;Finland_Kakkonen_GroupC;Vaajakoski;TP-47;1;3;2;0.8;0.4
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-14;USA_USLLeagueOne;Portland Hearts of Pine;Chattanooga Red Wolves;1;1;2;0.8;0.263636
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-18;Estonia_MeistriliigaWomen;Flora D;Viimsi JK D;1;1;2;0.8;0.35
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-06-20;Iceland_Division_2;KFA;Kormakur/Hvot;1;2;2;0.8;0.6375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-07-02;Iceland_1DeildWomen;ÍA Akranes;Grótta;1;1;2;0.8;0.2375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-07-06;Finland_Kakkonen_GroupB;Ilves 2;EPS;1;4;2;0.8;0.25
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-07-16;Bolivia_DivisionProfesional;Academia del Balompie;Independiente;1;3;1;0.8;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-07-18;Estonia_MeistriliigaWomen;Harju JK Laagri D;Elva D;1;6;2;1.0;0.3375
+V30_MIN_GA_12;NO_AUSTRALIA;TRAIN;3;2026-07-23;Estonia_MeistriliigaWomen;Saku Sporting D;Harju JK Laagri D;1;2;1;1.0;0.322222
+V30;ALL;VALIDATION;1;2026-08-22;China_SuperLeague;Beijing Guoan;Yunnan Yukun;1;3;3;0.8;0.2
+V30;ALL;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30;ALL;VALIDATION;1;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30;ALL;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30;ALL;VALIDATION;1;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30;ALL;VALIDATION;1;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30;ALL;VALIDATION;1;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30;ALL;VALIDATION;1;2026-09-13;Serbia_PrvaLiga;Bor 1919;Borac 1926;0;0;1;0.8;0.3
+V30;ALL;VALIDATION;1;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V30;ALL;VALIDATION;2;2026-08-22;China_SuperLeague;Beijing Guoan;Yunnan Yukun;1;3;3;0.8;0.2
+V30;ALL;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30;ALL;VALIDATION;2;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30;ALL;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30;ALL;VALIDATION;2;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30;ALL;VALIDATION;2;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30;ALL;VALIDATION;2;2026-09-11;CzechRepublic_ChNL;Trinec;Karvina;1;3;2;0.8;0.4
+V30;ALL;VALIDATION;2;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30;ALL;VALIDATION;2;2026-09-12;Serbia_PrvaLiga;Vrsac;Graficar Beograd;1;4;1;0.8;0.257143
+V30;ALL;VALIDATION;2;2026-09-13;Serbia_PrvaLiga;Bor 1919;Borac 1926;0;0;1;0.8;0.3
+V30;ALL;VALIDATION;2;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V30;ALL;VALIDATION;3;2026-08-22;China_SuperLeague;Beijing Guoan;Yunnan Yukun;1;3;3;0.8;0.2
+V30;ALL;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30;ALL;VALIDATION;3;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30;ALL;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30;ALL;VALIDATION;3;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30;ALL;VALIDATION;3;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30;ALL;VALIDATION;3;2026-09-11;CzechRepublic_ChNL;Trinec;Karvina;1;3;2;0.8;0.4
+V30;ALL;VALIDATION;3;2026-09-11;Bulgaria_ParvaLiga;Cherno More;Lok. Sofia;1;2;2;0.8;0.3
+V30;ALL;VALIDATION;3;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30;ALL;VALIDATION;3;2026-09-12;Serbia_PrvaLiga;Vrsac;Graficar Beograd;1;4;1;0.8;0.257143
+V30;ALL;VALIDATION;3;2026-09-12;England_NPLPremierDivision;Lancaster;Curzon Ashton;0;0;2;0.8;0.2375
+V30;ALL;VALIDATION;3;2026-09-13;Serbia_PrvaLiga;Bor 1919;Borac 1926;0;0;1;0.8;0.3
+V30;ALL;VALIDATION;3;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG;ALL;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG;ALL;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG;ALL;VALIDATION;1;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG;ALL;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG;ALL;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG;ALL;VALIDATION;2;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG;ALL;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG;ALL;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG;ALL;VALIDATION;3;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG_MIN_GA_12;ALL;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_GA_12;ALL;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_GA_12;ALL;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_GA_12;ALL;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_GA_12;ALL;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_GA_12;ALL;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_OVER_80;ALL;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_OVER_80;ALL;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_OVER_80;ALL;VALIDATION;1;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG_MIN_OVER_80;ALL;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_OVER_80;ALL;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_OVER_80;ALL;VALIDATION;2;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG_MIN_OVER_80;ALL;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_OVER_80;ALL;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_OVER_80;ALL;VALIDATION;3;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V30_MIN_GA_12;ALL;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30_MIN_GA_12;ALL;VALIDATION;1;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30_MIN_GA_12;ALL;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30_MIN_GA_12;ALL;VALIDATION;1;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30_MIN_GA_12;ALL;VALIDATION;1;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30_MIN_GA_12;ALL;VALIDATION;1;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30_MIN_GA_12;ALL;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30_MIN_GA_12;ALL;VALIDATION;2;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30_MIN_GA_12;ALL;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30_MIN_GA_12;ALL;VALIDATION;2;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30_MIN_GA_12;ALL;VALIDATION;2;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30_MIN_GA_12;ALL;VALIDATION;2;2026-09-11;Bulgaria_ParvaLiga;Cherno More;Lok. Sofia;1;2;2;0.8;0.3
+V30_MIN_GA_12;ALL;VALIDATION;2;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30_MIN_GA_12;ALL;VALIDATION;2;2026-09-12;Serbia_PrvaLiga;Vrsac;Graficar Beograd;1;4;1;0.8;0.257143
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-09-11;Bulgaria_ParvaLiga;Cherno More;Lok. Sofia;1;2;2;0.8;0.3
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-09-11;Russia_PremierLeague;Samara;Rodina Moscow;1;2;1;0.8;0.214286
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-09-12;Serbia_PrvaLiga;Vrsac;Graficar Beograd;1;4;1;0.8;0.257143
+V30_MIN_GA_12;ALL;VALIDATION;3;2026-09-12;Poland_IIILiga_Group1;Lidzbark Warminski;Warta Sieradz;1;1;2;0.8;0.214286
+V30;NO_AUSTRALIA;VALIDATION;1;2026-08-22;China_SuperLeague;Beijing Guoan;Yunnan Yukun;1;3;3;0.8;0.2
+V30;NO_AUSTRALIA;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30;NO_AUSTRALIA;VALIDATION;1;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30;NO_AUSTRALIA;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30;NO_AUSTRALIA;VALIDATION;1;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30;NO_AUSTRALIA;VALIDATION;1;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30;NO_AUSTRALIA;VALIDATION;1;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30;NO_AUSTRALIA;VALIDATION;1;2026-09-13;Serbia_PrvaLiga;Bor 1919;Borac 1926;0;0;1;0.8;0.3
+V30;NO_AUSTRALIA;VALIDATION;1;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V30;NO_AUSTRALIA;VALIDATION;2;2026-08-22;China_SuperLeague;Beijing Guoan;Yunnan Yukun;1;3;3;0.8;0.2
+V30;NO_AUSTRALIA;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30;NO_AUSTRALIA;VALIDATION;2;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30;NO_AUSTRALIA;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30;NO_AUSTRALIA;VALIDATION;2;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30;NO_AUSTRALIA;VALIDATION;2;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30;NO_AUSTRALIA;VALIDATION;2;2026-09-11;CzechRepublic_ChNL;Trinec;Karvina;1;3;2;0.8;0.4
+V30;NO_AUSTRALIA;VALIDATION;2;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30;NO_AUSTRALIA;VALIDATION;2;2026-09-12;Serbia_PrvaLiga;Vrsac;Graficar Beograd;1;4;1;0.8;0.257143
+V30;NO_AUSTRALIA;VALIDATION;2;2026-09-13;Serbia_PrvaLiga;Bor 1919;Borac 1926;0;0;1;0.8;0.3
+V30;NO_AUSTRALIA;VALIDATION;2;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V30;NO_AUSTRALIA;VALIDATION;3;2026-08-22;China_SuperLeague;Beijing Guoan;Yunnan Yukun;1;3;3;0.8;0.2
+V30;NO_AUSTRALIA;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30;NO_AUSTRALIA;VALIDATION;3;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-11;CzechRepublic_ChNL;Trinec;Karvina;1;3;2;0.8;0.4
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-11;Bulgaria_ParvaLiga;Cherno More;Lok. Sofia;1;2;2;0.8;0.3
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-12;Serbia_PrvaLiga;Vrsac;Graficar Beograd;1;4;1;0.8;0.257143
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-12;England_NPLPremierDivision;Lancaster;Curzon Ashton;0;0;2;0.8;0.2375
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-13;Serbia_PrvaLiga;Bor 1919;Borac 1926;0;0;1;0.8;0.3
+V30;NO_AUSTRALIA;VALIDATION;3;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG;NO_AUSTRALIA;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG;NO_AUSTRALIA;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG;NO_AUSTRALIA;VALIDATION;1;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG;NO_AUSTRALIA;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG;NO_AUSTRALIA;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG;NO_AUSTRALIA;VALIDATION;2;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG;NO_AUSTRALIA;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG;NO_AUSTRALIA;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG;NO_AUSTRALIA;VALIDATION;3;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;VALIDATION;1;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;VALIDATION;2;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;VALIDATION;3;2026-09-15;Germany_Regionalliga_Nord;Drochtersen/Assel;Emden;1;8;2;0.8;0.3125
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;1;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;1;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;1;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;1;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;1;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;1;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-09-11;Bulgaria_ParvaLiga;Cherno More;Lok. Sofia;1;2;2;0.8;0.3
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;2;2026-09-12;Serbia_PrvaLiga;Vrsac;Graficar Beograd;1;4;1;0.8;0.257143
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-08-29;Germany_Oberliga_Bayern_Sud;Pfaffenhofen;Schwabmunchen;1;0;3;0.8;0.442857
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-08-31;England_NPLPremierDivision;Lancaster;Workington;1;0;3;0.8;0.371429
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-09-04;Germany_Oberliga_Bayern_Nord;Weiden;Fortuna Regensburg;1;1;2;0.8;0.6875
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-09-06;Germany_Oberliga_Bayern_Nord;Neumarkt;Regensburg 2;0;0;2;0.8;0.371429
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-09-11;SriLanka_SuperLeague;Defenders FC;New Young's SC;1;4;0;0.8;0.425
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-09-11;Bulgaria_ParvaLiga;Cherno More;Lok. Sofia;1;2;2;0.8;0.3
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-09-11;Russia_PremierLeague;Samara;Rodina Moscow;1;2;1;0.8;0.214286
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-09-12;England_NPLPremierDivision;Bamber Bridge;Alfreton;0;1;0;0.8;0.275
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-09-12;Serbia_PrvaLiga;Vrsac;Graficar Beograd;1;4;1;0.8;0.257143
+V30_MIN_GA_12;NO_AUSTRALIA;VALIDATION;3;2026-09-12;Poland_IIILiga_Group1;Lidzbark Warminski;Warta Sieradz;1;1;2;0.8;0.214286
+V30;ALL;TEST;1;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V30;ALL;TEST;1;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30;ALL;TEST;1;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;ALL;TEST;1;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30;ALL;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30;ALL;TEST;1;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30;ALL;TEST;1;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V30;ALL;TEST;1;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V30;ALL;TEST;1;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30;ALL;TEST;1;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30;ALL;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30;ALL;TEST;1;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30;ALL;TEST;1;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30;ALL;TEST;1;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30;ALL;TEST;1;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30;ALL;TEST;1;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30;ALL;TEST;1;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30;ALL;TEST;1;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30;ALL;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30;ALL;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30;ALL;TEST;1;2026-10-12;NorthMacedonia_1MFL;Bashkimi;Struga;1;2;1;0.8;0.475
+V30;ALL;TEST;1;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V30;ALL;TEST;1;2026-10-16;Austria_Steiermark;Leoben;Lebring;1;2;8;0.8;0.341667
+V30;ALL;TEST;1;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V30;ALL;TEST;1;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30;ALL;TEST;1;2026-10-19;Armenia_FirstLeague;Ararat-Armenia 2;Ararat 2;1;3;3;0.8;0.571429
+V30;ALL;TEST;1;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30;ALL;TEST;1;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30;ALL;TEST;1;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30;ALL;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30;ALL;TEST;1;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30;ALL;TEST;1;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30;ALL;TEST;1;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30;ALL;TEST;1;2026-11-02;Israele_LigathaAl;H. Tel Aviv;M. Haifa;1;2;1;0.8;0.225
+V30;ALL;TEST;2;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V30;ALL;TEST;2;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30;ALL;TEST;2;2026-09-18;Germany_Regionalliga_West;Siegen;Wattenscheid;1;2;1;0.8;0.4
+V30;ALL;TEST;2;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;ALL;TEST;2;2026-09-19;Moldova_Liga1_GroupA;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;ALL;TEST;2;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30;ALL;TEST;2;2026-09-20;CzechRepublic_1Liga;Sigma Olomouc;Sparta Praga;1;0;3;0.8;0.2625
+V30;ALL;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30;ALL;TEST;2;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30;ALL;TEST;2;2026-09-22;England_SouthernLeaguePremierCentral;Leiston;Peterborough Sports;0;0;2;0.8;0.242857
+V30;ALL;TEST;2;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V30;ALL;TEST;2;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V30;ALL;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30;ALL;TEST;2;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30;ALL;TEST;2;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V30;ALL;TEST;2;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30;ALL;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V30;ALL;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30;ALL;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V30;ALL;TEST;2;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30;ALL;TEST;2;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30;ALL;TEST;2;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30;ALL;TEST;2;2026-10-02;Austria_Regionalliga_South;Deutschlandsberger;Weiz;0;0;0;0.8;0.2375
+V30;ALL;TEST;2;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30;ALL;TEST;2;2026-10-03;Austria_Niederosterreich;Ardagger;Amstetten (Am);0;1;1;0.8;0.575
+V30;ALL;TEST;2;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30;ALL;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupC;Police nad Metuji;Letohrad;1;4;0;1.0;0.325
+V30;ALL;TEST;2;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30;ALL;TEST;2;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30;ALL;TEST;2;2026-10-09;Poland_Ekstraklasa;Rakow;Katowice;1;1;4;0.8;0.233333
+V30;ALL;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30;ALL;TEST;2;2026-10-10;Netherlands_TweedeDivisie;GVVV;Rijnsburgse Boys;1;4;1;1.0;0.2625
+V30;ALL;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30;ALL;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V30;ALL;TEST;2;2026-10-12;NorthMacedonia_1MFL;Bashkimi;Struga;1;2;1;0.8;0.475
+V30;ALL;TEST;2;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V30;ALL;TEST;2;2026-10-16;Austria_Steiermark;Leoben;Lebring;1;2;8;0.8;0.341667
+V30;ALL;TEST;2;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30;ALL;TEST;2;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V30;ALL;TEST;2;2026-10-17;Argentina_PrimeraB;San Martin Burzaco;Excursionistas;0;1;1;0.8;0.457143
+V30;ALL;TEST;2;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30;ALL;TEST;2;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V30;ALL;TEST;2;2026-10-19;Armenia_FirstLeague;Ararat-Armenia 2;Ararat 2;1;3;3;0.8;0.571429
+V30;ALL;TEST;2;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V30;ALL;TEST;2;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30;ALL;TEST;2;2026-10-20;Romania_Liga2;FC ASA Tg. Mures;Chindia Targoviste;1;2;4;0.8;0.401389
+V30;ALL;TEST;2;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30;ALL;TEST;2;2026-10-23;Azerbaijan_PremierLeague;Araz;Gabala;1;1;2;0.8;0.310714
+V30;ALL;TEST;2;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30;ALL;TEST;2;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V30;ALL;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30;ALL;TEST;2;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V30;ALL;TEST;2;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30;ALL;TEST;2;2026-10-29;Indonesia_Championship;RANS Nusantara;Tornado Pekanbaru;0;0;0;0.8;0.271429
+V30;ALL;TEST;2;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30;ALL;TEST;2;2026-10-31;Portugal_Liga3;Atletico;Santarem;1;3;1;0.8;0.328571
+V30;ALL;TEST;2;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30;ALL;TEST;2;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V30;ALL;TEST;2;2026-11-02;Israele_LigathaAl;H. Tel Aviv;M. Haifa;1;2;1;0.8;0.225
+V30;ALL;TEST;3;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V30;ALL;TEST;3;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30;ALL;TEST;3;2026-09-18;Germany_Regionalliga_West;Siegen;Wattenscheid;1;2;1;0.8;0.4
+V30;ALL;TEST;3;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V30;ALL;TEST;3;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;ALL;TEST;3;2026-09-19;Moldova_Liga1_GroupA;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;ALL;TEST;3;2026-09-19;Switzerland_SuperLeague;Sion;Zurigo;0;1;1;1.0;0.2125
+V30;ALL;TEST;3;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30;ALL;TEST;3;2026-09-20;CzechRepublic_1Liga;Sigma Olomouc;Sparta Praga;1;0;3;0.8;0.2625
+V30;ALL;TEST;3;2026-09-20;Austria_Regionalliga_West;Tirol (Am);Fugen;1;6;0;0.8;0.242857
+V30;ALL;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30;ALL;TEST;3;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30;ALL;TEST;3;2026-09-22;England_SouthernLeaguePremierCentral;Leiston;Peterborough Sports;0;0;2;0.8;0.242857
+V30;ALL;TEST;3;2026-09-22;England_IsthmianLeaguePremierDivision;Brentwood;Maldon & Tiptree;1;5;1;0.8;0.242857
+V30;ALL;TEST;3;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V30;ALL;TEST;3;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V30;ALL;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30;ALL;TEST;3;2026-09-25;Austria_Oberosterreich;Gmunden;Garsten;1;3;2;0.8;0.3375
+V30;ALL;TEST;3;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30;ALL;TEST;3;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V30;ALL;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupB;Psary;Tempo Prague;1;3;2;1.0;0.257143
+V30;ALL;TEST;3;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30;ALL;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V30;ALL;TEST;3;2026-09-27;Hungary_NBIIINorthwest;Puskas Academy II;Balatonalmadi SE;0;1;1;0.8;0.342857
+V30;ALL;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30;ALL;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V30;ALL;TEST;3;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30;ALL;TEST;3;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30;ALL;TEST;3;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30;ALL;TEST;3;2026-10-02;Austria_Regionalliga_South;Deutschlandsberger;Weiz;0;0;0;0.8;0.2375
+V30;ALL;TEST;3;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30;ALL;TEST;3;2026-10-03;Austria_Niederosterreich;Ardagger;Amstetten (Am);0;1;1;0.8;0.575
+V30;ALL;TEST;3;2026-10-03;Wales_CymruSouth;Pure Swansea;Caerphilly;1;3;1;0.8;0.328571
+V30;ALL;TEST;3;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30;ALL;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupC;Police nad Metuji;Letohrad;1;4;0;1.0;0.325
+V30;ALL;TEST;3;2026-10-04;Germany_Oberliga_Hamburg;Paloma;ETSV Hamburg;1;1;4;1.0;0.2
+V30;ALL;TEST;3;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30;ALL;TEST;3;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30;ALL;TEST;3;2026-10-09;Poland_Ekstraklasa;Rakow;Katowice;1;1;4;0.8;0.233333
+V30;ALL;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30;ALL;TEST;3;2026-10-10;Netherlands_TweedeDivisie;GVVV;Rijnsburgse Boys;1;4;1;1.0;0.2625
+V30;ALL;TEST;3;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V30;ALL;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30;ALL;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V30;ALL;TEST;3;2026-10-11;Netherlands_Eredivisie;Zwolle;Cambuur;0;0;1;0.8;0.257143
+V30;ALL;TEST;3;2026-10-12;NorthMacedonia_1MFL;Bashkimi;Struga;1;2;1;0.8;0.475
+V30;ALL;TEST;3;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V30;ALL;TEST;3;2026-10-16;Austria_Steiermark;Leoben;Lebring;1;2;8;0.8;0.341667
+V30;ALL;TEST;3;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30;ALL;TEST;3;2026-10-16;Germany_Oberliga_Niederrhein;Dingden;Dusseldorf 2;0;0;2;0.8;0.275
+V30;ALL;TEST;3;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V30;ALL;TEST;3;2026-10-17;Argentina_PrimeraB;San Martin Burzaco;Excursionistas;0;1;1;0.8;0.457143
+V30;ALL;TEST;3;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V30;ALL;TEST;3;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30;ALL;TEST;3;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V30;ALL;TEST;3;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V30;ALL;TEST;3;2026-10-19;Armenia_FirstLeague;Ararat-Armenia 2;Ararat 2;1;3;3;0.8;0.571429
+V30;ALL;TEST;3;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V30;ALL;TEST;3;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30;ALL;TEST;3;2026-10-20;Romania_Liga2;FC ASA Tg. Mures;Chindia Targoviste;1;2;4;0.8;0.401389
+V30;ALL;TEST;3;2026-10-20;Brazil_SerieA;Corinthians;Vitoria;0;1;1;0.8;0.257143
+V30;ALL;TEST;3;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30;ALL;TEST;3;2026-10-23;Azerbaijan_PremierLeague;Araz;Gabala;1;1;2;0.8;0.310714
+V30;ALL;TEST;3;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30;ALL;TEST;3;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V30;ALL;TEST;3;2026-10-24;Italy_SerieA;Lazio;Parma;1;2;1;0.8;0.314286
+V30;ALL;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30;ALL;TEST;3;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V30;ALL;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V30;ALL;TEST;3;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30;ALL;TEST;3;2026-10-29;Indonesia_Championship;RANS Nusantara;Tornado Pekanbaru;0;0;0;0.8;0.271429
+V30;ALL;TEST;3;2026-10-29;Indonesia_Championship_East;RANS Nusantara;Tornado Pekanbaru;0;0;0;0.8;0.271429
+V30;ALL;TEST;3;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30;ALL;TEST;3;2026-10-31;Portugal_Liga3;Atletico;Santarem;1;3;1;0.8;0.328571
+V30;ALL;TEST;3;2026-10-31;Mexico_LigaPremierSerieA;Guerreros del Pacifico;Heroes de Zaci;1;5;0;0.8;0.279167
+V30;ALL;TEST;3;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30;ALL;TEST;3;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V30;ALL;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V30;ALL;TEST;3;2026-11-02;Israele_LigathaAl;H. Tel Aviv;M. Haifa;1;2;1;0.8;0.225
+V31_STRONG;ALL;TEST;1;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG;ALL;TEST;1;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG;ALL;TEST;1;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG;ALL;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG;ALL;TEST;1;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG;ALL;TEST;1;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG;ALL;TEST;1;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG;ALL;TEST;1;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG;ALL;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG;ALL;TEST;1;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG;ALL;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG;ALL;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG;ALL;TEST;1;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG;ALL;TEST;1;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG;ALL;TEST;1;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG;ALL;TEST;1;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG;ALL;TEST;1;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG;ALL;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG;ALL;TEST;1;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG;ALL;TEST;2;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG;ALL;TEST;2;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG;ALL;TEST;2;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG;ALL;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG;ALL;TEST;2;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG;ALL;TEST;2;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG;ALL;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG;ALL;TEST;2;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG;ALL;TEST;2;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG;ALL;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG;ALL;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG;ALL;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG;ALL;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG;ALL;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG;ALL;TEST;2;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V31_STRONG;ALL;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG;ALL;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG;ALL;TEST;2;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG;ALL;TEST;2;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG;ALL;TEST;2;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V31_STRONG;ALL;TEST;2;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG;ALL;TEST;2;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V31_STRONG;ALL;TEST;2;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG;ALL;TEST;2;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG;ALL;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG;ALL;TEST;2;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V31_STRONG;ALL;TEST;2;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG;ALL;TEST;2;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG;ALL;TEST;3;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG;ALL;TEST;3;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG;ALL;TEST;3;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG;ALL;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG;ALL;TEST;3;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG;ALL;TEST;3;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG;ALL;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG;ALL;TEST;3;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG;ALL;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG;ALL;TEST;3;2026-09-26;Denmark_ALigaWomen;Fortuna Hjorring D;Nordsjaelland D;0;1;1;0.8;0.4
+V31_STRONG;ALL;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG;ALL;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG;ALL;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG;ALL;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG;ALL;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG;ALL;TEST;3;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V31_STRONG;ALL;TEST;3;2026-10-10;Bulgaria_ThirdLeagueSouthEast;Yambol 1915;Sekirovo Rakovski;1;3;3;0.8;0.4875
+V31_STRONG;ALL;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG;ALL;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG;ALL;TEST;3;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG;ALL;TEST;3;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG;ALL;TEST;3;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V31_STRONG;ALL;TEST;3;2026-10-17;Romania_Liga2;Popesti Leordeni;Afumati;0;2;0;0.8;0.3125
+V31_STRONG;ALL;TEST;3;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG;ALL;TEST;3;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V31_STRONG;ALL;TEST;3;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG;ALL;TEST;3;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG;ALL;TEST;3;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG;ALL;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG;ALL;TEST;3;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V31_STRONG;ALL;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V31_STRONG;ALL;TEST;3;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG;ALL;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_GA_12;ALL;TEST;1;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-09-26;Denmark_ALigaWomen;Fortuna Hjorring D;Nordsjaelland D;0;1;1;0.8;0.4
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-10-10;Slovenia_3SNLWest;NK Adria;Fama Vipava;1;7;1;0.8;0.4375
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-10-18;Netherlands_EredivisieWomen;Ajax D;PSV D;1;1;4;0.8;0.557143
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V31_STRONG_MIN_GA_12;ALL;TEST;2;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-09-26;Denmark_ALigaWomen;Fortuna Hjorring D;Nordsjaelland D;0;1;1;0.8;0.4
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-10;Slovenia_3SNLWest;NK Adria;Fama Vipava;1;7;1;0.8;0.4375
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-10;Romania_Liga3Seria1;Targu Secuiesc;Aerostar;1;3;0;0.8;0.328571
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-18;Netherlands_EredivisieWomen;Ajax D;PSV D;1;1;4;0.8;0.557143
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V31_STRONG_MIN_GA_12;ALL;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_OVER_80;ALL;TEST;1;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG_MIN_OVER_80;ALL;TEST;2;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-26;Denmark_ALigaWomen;Fortuna Hjorring D;Nordsjaelland D;0;1;1;0.8;0.4
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-10;Bulgaria_ThirdLeagueSouthEast;Yambol 1915;Sekirovo Rakovski;1;3;3;0.8;0.4875
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-17;Romania_Liga2;Popesti Leordeni;Afumati;0;2;0;0.8;0.3125
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG_MIN_OVER_80;ALL;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V30_MIN_GA_12;ALL;TEST;1;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30_MIN_GA_12;ALL;TEST;1;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;ALL;TEST;1;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30_MIN_GA_12;ALL;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30_MIN_GA_12;ALL;TEST;1;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30_MIN_GA_12;ALL;TEST;1;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30_MIN_GA_12;ALL;TEST;1;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30_MIN_GA_12;ALL;TEST;1;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30_MIN_GA_12;ALL;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30_MIN_GA_12;ALL;TEST;1;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30_MIN_GA_12;ALL;TEST;1;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30_MIN_GA_12;ALL;TEST;1;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30_MIN_GA_12;ALL;TEST;1;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30_MIN_GA_12;ALL;TEST;1;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30_MIN_GA_12;ALL;TEST;1;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30_MIN_GA_12;ALL;TEST;1;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30_MIN_GA_12;ALL;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30_MIN_GA_12;ALL;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30_MIN_GA_12;ALL;TEST;1;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30_MIN_GA_12;ALL;TEST;1;2026-10-17;Mexico_LigaPremierSerieA;Ciervos;Canoneros;1;3;1;0.8;0.228571
+V30_MIN_GA_12;ALL;TEST;1;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30_MIN_GA_12;ALL;TEST;1;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30_MIN_GA_12;ALL;TEST;1;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30_MIN_GA_12;ALL;TEST;1;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30_MIN_GA_12;ALL;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30_MIN_GA_12;ALL;TEST;1;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30_MIN_GA_12;ALL;TEST;1;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30_MIN_GA_12;ALL;TEST;1;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30_MIN_GA_12;ALL;TEST;2;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30_MIN_GA_12;ALL;TEST;2;2026-09-18;Germany_Regionalliga_West;Siegen;Wattenscheid;1;2;1;0.8;0.4
+V30_MIN_GA_12;ALL;TEST;2;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;ALL;TEST;2;2026-09-19;Moldova_Liga1_GroupA;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;ALL;TEST;2;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30_MIN_GA_12;ALL;TEST;2;2026-09-20;Austria_Regionalliga_West;Tirol (Am);Fugen;1;6;0;0.8;0.242857
+V30_MIN_GA_12;ALL;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30_MIN_GA_12;ALL;TEST;2;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30_MIN_GA_12;ALL;TEST;2;2026-09-22;England_SouthernLeaguePremierCentral;Leiston;Peterborough Sports;0;0;2;0.8;0.242857
+V30_MIN_GA_12;ALL;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30_MIN_GA_12;ALL;TEST;2;2026-09-25;Austria_Oberosterreich;Gmunden;Garsten;1;3;2;0.8;0.3375
+V30_MIN_GA_12;ALL;TEST;2;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30_MIN_GA_12;ALL;TEST;2;2026-09-26;CzechRepublic_4Liga_GroupB;Psary;Tempo Prague;1;3;2;1.0;0.257143
+V30_MIN_GA_12;ALL;TEST;2;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30_MIN_GA_12;ALL;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V30_MIN_GA_12;ALL;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30_MIN_GA_12;ALL;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V30_MIN_GA_12;ALL;TEST;2;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30_MIN_GA_12;ALL;TEST;2;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30_MIN_GA_12;ALL;TEST;2;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30_MIN_GA_12;ALL;TEST;2;2026-10-02;Austria_Regionalliga_South;Deutschlandsberger;Weiz;0;0;0;0.8;0.2375
+V30_MIN_GA_12;ALL;TEST;2;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30_MIN_GA_12;ALL;TEST;2;2026-10-03;CzechRepublic_4Liga_GroupD;Sparta Brno;Zdirec n. D.;1;3;1;0.8;0.3
+V30_MIN_GA_12;ALL;TEST;2;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30_MIN_GA_12;ALL;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupC;Police nad Metuji;Letohrad;1;4;0;1.0;0.325
+V30_MIN_GA_12;ALL;TEST;2;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30_MIN_GA_12;ALL;TEST;2;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30_MIN_GA_12;ALL;TEST;2;2026-10-09;Poland_Ekstraklasa;Rakow;Katowice;1;1;4;0.8;0.233333
+V30_MIN_GA_12;ALL;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30_MIN_GA_12;ALL;TEST;2;2026-10-10;Netherlands_TweedeDivisie;GVVV;Rijnsburgse Boys;1;4;1;1.0;0.2625
+V30_MIN_GA_12;ALL;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30_MIN_GA_12;ALL;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V30_MIN_GA_12;ALL;TEST;2;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30_MIN_GA_12;ALL;TEST;2;2026-10-16;Germany_Oberliga_Niederrhein;Dingden;Dusseldorf 2;0;0;2;0.8;0.275
+V30_MIN_GA_12;ALL;TEST;2;2026-10-17;Mexico_LigaPremierSerieA;Ciervos;Canoneros;1;3;1;0.8;0.228571
+V30_MIN_GA_12;ALL;TEST;2;2026-10-17;CzechRepublic_4Liga_GroupA;Domazlice B;SK Strakonice 1908;1;6;0;0.8;0.2
+V30_MIN_GA_12;ALL;TEST;2;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30_MIN_GA_12;ALL;TEST;2;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V30_MIN_GA_12;ALL;TEST;2;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30_MIN_GA_12;ALL;TEST;2;2026-10-20;Romania_Liga2;FC ASA Tg. Mures;Chindia Targoviste;1;2;4;0.8;0.401389
+V30_MIN_GA_12;ALL;TEST;2;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30_MIN_GA_12;ALL;TEST;2;2026-10-23;Azerbaijan_PremierLeague;Araz;Gabala;1;1;2;0.8;0.310714
+V30_MIN_GA_12;ALL;TEST;2;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30_MIN_GA_12;ALL;TEST;2;2026-10-24;Germany_Oberliga_NOFV_Sud;Eilenburg;Krieschow;0;0;1;0.8;0.3125
+V30_MIN_GA_12;ALL;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30_MIN_GA_12;ALL;TEST;2;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V30_MIN_GA_12;ALL;TEST;2;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30_MIN_GA_12;ALL;TEST;2;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30_MIN_GA_12;ALL;TEST;2;2026-10-31;Mexico_LigaPremierSerieA;Guerreros del Pacifico;Heroes de Zaci;1;5;0;0.8;0.279167
+V30_MIN_GA_12;ALL;TEST;2;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30_MIN_GA_12;ALL;TEST;2;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V30_MIN_GA_12;ALL;TEST;3;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30_MIN_GA_12;ALL;TEST;3;2026-09-18;Germany_Regionalliga_West;Siegen;Wattenscheid;1;2;1;0.8;0.4
+V30_MIN_GA_12;ALL;TEST;3;2026-09-18;Austria_Regionalliga_North;Seekirchen;Wals-Grunau;0;0;0;0.8;0.275
+V30_MIN_GA_12;ALL;TEST;3;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;ALL;TEST;3;2026-09-19;Moldova_Liga1_GroupA;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;ALL;TEST;3;2026-09-19;Switzerland_SuperLeague;Sion;Zurigo;0;1;1;1.0;0.2125
+V30_MIN_GA_12;ALL;TEST;3;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30_MIN_GA_12;ALL;TEST;3;2026-09-20;Austria_Regionalliga_West;Tirol (Am);Fugen;1;6;0;0.8;0.242857
+V30_MIN_GA_12;ALL;TEST;3;2026-09-20;Germany_Oberliga_Hamburg;Tesla Hamburg;Wandsbeker Concordia;1;2;2;0.8;0.228571
+V30_MIN_GA_12;ALL;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30_MIN_GA_12;ALL;TEST;3;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30_MIN_GA_12;ALL;TEST;3;2026-09-22;England_SouthernLeaguePremierCentral;Leiston;Peterborough Sports;0;0;2;0.8;0.242857
+V30_MIN_GA_12;ALL;TEST;3;2026-09-22;England_IsthmianLeaguePremierDivision;Brentwood;Maldon & Tiptree;1;5;1;0.8;0.242857
+V30_MIN_GA_12;ALL;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30_MIN_GA_12;ALL;TEST;3;2026-09-25;Austria_Oberosterreich;Gmunden;Garsten;1;3;2;0.8;0.3375
+V30_MIN_GA_12;ALL;TEST;3;2026-09-25;Austria_Oberosterreich;Vocklamarkt;Edelweiss;1;0;3;0.8;0.2875
+V30_MIN_GA_12;ALL;TEST;3;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30_MIN_GA_12;ALL;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupB;Psary;Tempo Prague;1;3;2;1.0;0.257143
+V30_MIN_GA_12;ALL;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V30_MIN_GA_12;ALL;TEST;3;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30_MIN_GA_12;ALL;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V30_MIN_GA_12;ALL;TEST;3;2026-09-27;Hungary_NBIIINorthwest;Puskas Academy II;Balatonalmadi SE;0;1;1;0.8;0.342857
+V30_MIN_GA_12;ALL;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30_MIN_GA_12;ALL;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V30_MIN_GA_12;ALL;TEST;3;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30_MIN_GA_12;ALL;TEST;3;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30_MIN_GA_12;ALL;TEST;3;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30_MIN_GA_12;ALL;TEST;3;2026-10-02;Austria_Regionalliga_South;Deutschlandsberger;Weiz;0;0;0;0.8;0.2375
+V30_MIN_GA_12;ALL;TEST;3;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30_MIN_GA_12;ALL;TEST;3;2026-10-03;CzechRepublic_4Liga_GroupD;Sparta Brno;Zdirec n. D.;1;3;1;0.8;0.3
+V30_MIN_GA_12;ALL;TEST;3;2026-10-03;Hungary_NBIIINortheast;Ozd-Sajovolgye;Hajdunanas;1;9;0;0.8;0.2875
+V30_MIN_GA_12;ALL;TEST;3;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30_MIN_GA_12;ALL;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupC;Police nad Metuji;Letohrad;1;4;0;1.0;0.325
+V30_MIN_GA_12;ALL;TEST;3;2026-10-04;Germany_Oberliga_Hamburg;Paloma;ETSV Hamburg;1;1;4;1.0;0.2
+V30_MIN_GA_12;ALL;TEST;3;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30_MIN_GA_12;ALL;TEST;3;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30_MIN_GA_12;ALL;TEST;3;2026-10-09;Poland_Ekstraklasa;Rakow;Katowice;1;1;4;0.8;0.233333
+V30_MIN_GA_12;ALL;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30_MIN_GA_12;ALL;TEST;3;2026-10-10;Netherlands_TweedeDivisie;GVVV;Rijnsburgse Boys;1;4;1;1.0;0.2625
+V30_MIN_GA_12;ALL;TEST;3;2026-10-10;Slovenia_3SNLWest;NK Adria;Fama Vipava;1;7;1;0.8;0.4375
+V30_MIN_GA_12;ALL;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30_MIN_GA_12;ALL;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V30_MIN_GA_12;ALL;TEST;3;2026-10-11;Netherlands_Eredivisie;Zwolle;Cambuur;0;0;1;0.8;0.257143
+V30_MIN_GA_12;ALL;TEST;3;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30_MIN_GA_12;ALL;TEST;3;2026-10-16;Germany_Oberliga_Niederrhein;Dingden;Dusseldorf 2;0;0;2;0.8;0.275
+V30_MIN_GA_12;ALL;TEST;3;2026-10-17;Mexico_LigaPremierSerieA;Ciervos;Canoneros;1;3;1;0.8;0.228571
+V30_MIN_GA_12;ALL;TEST;3;2026-10-17;CzechRepublic_4Liga_GroupA;Domazlice B;SK Strakonice 1908;1;6;0;0.8;0.2
+V30_MIN_GA_12;ALL;TEST;3;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30_MIN_GA_12;ALL;TEST;3;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V30_MIN_GA_12;ALL;TEST;3;2026-10-18;Netherlands_EredivisieWomen;Ajax D;PSV D;1;1;4;0.8;0.557143
+V30_MIN_GA_12;ALL;TEST;3;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30_MIN_GA_12;ALL;TEST;3;2026-10-20;Romania_Liga2;FC ASA Tg. Mures;Chindia Targoviste;1;2;4;0.8;0.401389
+V30_MIN_GA_12;ALL;TEST;3;2026-10-20;Brazil_SerieA;Corinthians;Vitoria;0;1;1;0.8;0.257143
+V30_MIN_GA_12;ALL;TEST;3;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30_MIN_GA_12;ALL;TEST;3;2026-10-23;Azerbaijan_PremierLeague;Araz;Gabala;1;1;2;0.8;0.310714
+V30_MIN_GA_12;ALL;TEST;3;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30_MIN_GA_12;ALL;TEST;3;2026-10-24;Germany_Oberliga_NOFV_Sud;Eilenburg;Krieschow;0;0;1;0.8;0.3125
+V30_MIN_GA_12;ALL;TEST;3;2026-10-24;Germany_Oberliga_NOFV_Sud;1.FC Frankfurt;Halle;1;1;2;0.8;0.3125
+V30_MIN_GA_12;ALL;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30_MIN_GA_12;ALL;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V30_MIN_GA_12;ALL;TEST;3;2026-10-25;Italy_SerieA;Inter;Fiorentina;1;2;1;0.8;0.328571
+V30_MIN_GA_12;ALL;TEST;3;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30_MIN_GA_12;ALL;TEST;3;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30_MIN_GA_12;ALL;TEST;3;2026-10-31;Mexico_LigaPremierSerieA;Guerreros del Pacifico;Heroes de Zaci;1;5;0;0.8;0.279167
+V30_MIN_GA_12;ALL;TEST;3;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30_MIN_GA_12;ALL;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V30;NO_AUSTRALIA;TEST;1;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V30;NO_AUSTRALIA;TEST;1;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30;NO_AUSTRALIA;TEST;1;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;NO_AUSTRALIA;TEST;1;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30;NO_AUSTRALIA;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30;NO_AUSTRALIA;TEST;1;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30;NO_AUSTRALIA;TEST;1;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V30;NO_AUSTRALIA;TEST;1;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V30;NO_AUSTRALIA;TEST;1;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30;NO_AUSTRALIA;TEST;1;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30;NO_AUSTRALIA;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30;NO_AUSTRALIA;TEST;1;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30;NO_AUSTRALIA;TEST;1;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30;NO_AUSTRALIA;TEST;1;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30;NO_AUSTRALIA;TEST;1;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30;NO_AUSTRALIA;TEST;1;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30;NO_AUSTRALIA;TEST;1;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30;NO_AUSTRALIA;TEST;1;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30;NO_AUSTRALIA;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30;NO_AUSTRALIA;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30;NO_AUSTRALIA;TEST;1;2026-10-12;NorthMacedonia_1MFL;Bashkimi;Struga;1;2;1;0.8;0.475
+V30;NO_AUSTRALIA;TEST;1;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V30;NO_AUSTRALIA;TEST;1;2026-10-16;Austria_Steiermark;Leoben;Lebring;1;2;8;0.8;0.341667
+V30;NO_AUSTRALIA;TEST;1;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V30;NO_AUSTRALIA;TEST;1;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30;NO_AUSTRALIA;TEST;1;2026-10-19;Armenia_FirstLeague;Ararat-Armenia 2;Ararat 2;1;3;3;0.8;0.571429
+V30;NO_AUSTRALIA;TEST;1;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30;NO_AUSTRALIA;TEST;1;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30;NO_AUSTRALIA;TEST;1;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30;NO_AUSTRALIA;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30;NO_AUSTRALIA;TEST;1;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30;NO_AUSTRALIA;TEST;1;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30;NO_AUSTRALIA;TEST;1;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30;NO_AUSTRALIA;TEST;1;2026-11-02;Israele_LigathaAl;H. Tel Aviv;M. Haifa;1;2;1;0.8;0.225
+V30;NO_AUSTRALIA;TEST;2;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V30;NO_AUSTRALIA;TEST;2;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30;NO_AUSTRALIA;TEST;2;2026-09-18;Germany_Regionalliga_West;Siegen;Wattenscheid;1;2;1;0.8;0.4
+V30;NO_AUSTRALIA;TEST;2;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;NO_AUSTRALIA;TEST;2;2026-09-19;Moldova_Liga1_GroupA;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;NO_AUSTRALIA;TEST;2;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30;NO_AUSTRALIA;TEST;2;2026-09-20;CzechRepublic_1Liga;Sigma Olomouc;Sparta Praga;1;0;3;0.8;0.2625
+V30;NO_AUSTRALIA;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30;NO_AUSTRALIA;TEST;2;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30;NO_AUSTRALIA;TEST;2;2026-09-22;England_SouthernLeaguePremierCentral;Leiston;Peterborough Sports;0;0;2;0.8;0.242857
+V30;NO_AUSTRALIA;TEST;2;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V30;NO_AUSTRALIA;TEST;2;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V30;NO_AUSTRALIA;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30;NO_AUSTRALIA;TEST;2;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30;NO_AUSTRALIA;TEST;2;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V30;NO_AUSTRALIA;TEST;2;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30;NO_AUSTRALIA;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V30;NO_AUSTRALIA;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30;NO_AUSTRALIA;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V30;NO_AUSTRALIA;TEST;2;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30;NO_AUSTRALIA;TEST;2;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30;NO_AUSTRALIA;TEST;2;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30;NO_AUSTRALIA;TEST;2;2026-10-02;Austria_Regionalliga_South;Deutschlandsberger;Weiz;0;0;0;0.8;0.2375
+V30;NO_AUSTRALIA;TEST;2;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30;NO_AUSTRALIA;TEST;2;2026-10-03;Austria_Niederosterreich;Ardagger;Amstetten (Am);0;1;1;0.8;0.575
+V30;NO_AUSTRALIA;TEST;2;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30;NO_AUSTRALIA;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupC;Police nad Metuji;Letohrad;1;4;0;1.0;0.325
+V30;NO_AUSTRALIA;TEST;2;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30;NO_AUSTRALIA;TEST;2;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30;NO_AUSTRALIA;TEST;2;2026-10-09;Poland_Ekstraklasa;Rakow;Katowice;1;1;4;0.8;0.233333
+V30;NO_AUSTRALIA;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30;NO_AUSTRALIA;TEST;2;2026-10-10;Netherlands_TweedeDivisie;GVVV;Rijnsburgse Boys;1;4;1;1.0;0.2625
+V30;NO_AUSTRALIA;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30;NO_AUSTRALIA;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V30;NO_AUSTRALIA;TEST;2;2026-10-12;NorthMacedonia_1MFL;Bashkimi;Struga;1;2;1;0.8;0.475
+V30;NO_AUSTRALIA;TEST;2;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V30;NO_AUSTRALIA;TEST;2;2026-10-16;Austria_Steiermark;Leoben;Lebring;1;2;8;0.8;0.341667
+V30;NO_AUSTRALIA;TEST;2;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30;NO_AUSTRALIA;TEST;2;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V30;NO_AUSTRALIA;TEST;2;2026-10-17;Argentina_PrimeraB;San Martin Burzaco;Excursionistas;0;1;1;0.8;0.457143
+V30;NO_AUSTRALIA;TEST;2;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30;NO_AUSTRALIA;TEST;2;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V30;NO_AUSTRALIA;TEST;2;2026-10-19;Armenia_FirstLeague;Ararat-Armenia 2;Ararat 2;1;3;3;0.8;0.571429
+V30;NO_AUSTRALIA;TEST;2;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V30;NO_AUSTRALIA;TEST;2;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30;NO_AUSTRALIA;TEST;2;2026-10-20;Romania_Liga2;FC ASA Tg. Mures;Chindia Targoviste;1;2;4;0.8;0.401389
+V30;NO_AUSTRALIA;TEST;2;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30;NO_AUSTRALIA;TEST;2;2026-10-23;Azerbaijan_PremierLeague;Araz;Gabala;1;1;2;0.8;0.310714
+V30;NO_AUSTRALIA;TEST;2;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30;NO_AUSTRALIA;TEST;2;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V30;NO_AUSTRALIA;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30;NO_AUSTRALIA;TEST;2;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V30;NO_AUSTRALIA;TEST;2;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30;NO_AUSTRALIA;TEST;2;2026-10-29;Indonesia_Championship;RANS Nusantara;Tornado Pekanbaru;0;0;0;0.8;0.271429
+V30;NO_AUSTRALIA;TEST;2;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30;NO_AUSTRALIA;TEST;2;2026-10-31;Portugal_Liga3;Atletico;Santarem;1;3;1;0.8;0.328571
+V30;NO_AUSTRALIA;TEST;2;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30;NO_AUSTRALIA;TEST;2;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V30;NO_AUSTRALIA;TEST;2;2026-11-02;Israele_LigathaAl;H. Tel Aviv;M. Haifa;1;2;1;0.8;0.225
+V30;NO_AUSTRALIA;TEST;3;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V30;NO_AUSTRALIA;TEST;3;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30;NO_AUSTRALIA;TEST;3;2026-09-18;Germany_Regionalliga_West;Siegen;Wattenscheid;1;2;1;0.8;0.4
+V30;NO_AUSTRALIA;TEST;3;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V30;NO_AUSTRALIA;TEST;3;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;NO_AUSTRALIA;TEST;3;2026-09-19;Moldova_Liga1_GroupA;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30;NO_AUSTRALIA;TEST;3;2026-09-19;Switzerland_SuperLeague;Sion;Zurigo;0;1;1;1.0;0.2125
+V30;NO_AUSTRALIA;TEST;3;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30;NO_AUSTRALIA;TEST;3;2026-09-20;CzechRepublic_1Liga;Sigma Olomouc;Sparta Praga;1;0;3;0.8;0.2625
+V30;NO_AUSTRALIA;TEST;3;2026-09-20;Austria_Regionalliga_West;Tirol (Am);Fugen;1;6;0;0.8;0.242857
+V30;NO_AUSTRALIA;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30;NO_AUSTRALIA;TEST;3;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30;NO_AUSTRALIA;TEST;3;2026-09-22;England_SouthernLeaguePremierCentral;Leiston;Peterborough Sports;0;0;2;0.8;0.242857
+V30;NO_AUSTRALIA;TEST;3;2026-09-22;England_IsthmianLeaguePremierDivision;Brentwood;Maldon & Tiptree;1;5;1;0.8;0.242857
+V30;NO_AUSTRALIA;TEST;3;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V30;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V30;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Oberosterreich;Gmunden;Garsten;1;3;2;0.8;0.3375
+V30;NO_AUSTRALIA;TEST;3;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30;NO_AUSTRALIA;TEST;3;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V30;NO_AUSTRALIA;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupB;Psary;Tempo Prague;1;3;2;1.0;0.257143
+V30;NO_AUSTRALIA;TEST;3;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30;NO_AUSTRALIA;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V30;NO_AUSTRALIA;TEST;3;2026-09-27;Hungary_NBIIINorthwest;Puskas Academy II;Balatonalmadi SE;0;1;1;0.8;0.342857
+V30;NO_AUSTRALIA;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30;NO_AUSTRALIA;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V30;NO_AUSTRALIA;TEST;3;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30;NO_AUSTRALIA;TEST;3;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30;NO_AUSTRALIA;TEST;3;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30;NO_AUSTRALIA;TEST;3;2026-10-02;Austria_Regionalliga_South;Deutschlandsberger;Weiz;0;0;0;0.8;0.2375
+V30;NO_AUSTRALIA;TEST;3;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30;NO_AUSTRALIA;TEST;3;2026-10-03;Austria_Niederosterreich;Ardagger;Amstetten (Am);0;1;1;0.8;0.575
+V30;NO_AUSTRALIA;TEST;3;2026-10-03;Wales_CymruSouth;Pure Swansea;Caerphilly;1;3;1;0.8;0.328571
+V30;NO_AUSTRALIA;TEST;3;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30;NO_AUSTRALIA;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupC;Police nad Metuji;Letohrad;1;4;0;1.0;0.325
+V30;NO_AUSTRALIA;TEST;3;2026-10-04;Germany_Oberliga_Hamburg;Paloma;ETSV Hamburg;1;1;4;1.0;0.2
+V30;NO_AUSTRALIA;TEST;3;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30;NO_AUSTRALIA;TEST;3;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30;NO_AUSTRALIA;TEST;3;2026-10-09;Poland_Ekstraklasa;Rakow;Katowice;1;1;4;0.8;0.233333
+V30;NO_AUSTRALIA;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30;NO_AUSTRALIA;TEST;3;2026-10-10;Netherlands_TweedeDivisie;GVVV;Rijnsburgse Boys;1;4;1;1.0;0.2625
+V30;NO_AUSTRALIA;TEST;3;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V30;NO_AUSTRALIA;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30;NO_AUSTRALIA;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V30;NO_AUSTRALIA;TEST;3;2026-10-11;Netherlands_Eredivisie;Zwolle;Cambuur;0;0;1;0.8;0.257143
+V30;NO_AUSTRALIA;TEST;3;2026-10-12;NorthMacedonia_1MFL;Bashkimi;Struga;1;2;1;0.8;0.475
+V30;NO_AUSTRALIA;TEST;3;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V30;NO_AUSTRALIA;TEST;3;2026-10-16;Austria_Steiermark;Leoben;Lebring;1;2;8;0.8;0.341667
+V30;NO_AUSTRALIA;TEST;3;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30;NO_AUSTRALIA;TEST;3;2026-10-16;Germany_Oberliga_Niederrhein;Dingden;Dusseldorf 2;0;0;2;0.8;0.275
+V30;NO_AUSTRALIA;TEST;3;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V30;NO_AUSTRALIA;TEST;3;2026-10-17;Argentina_PrimeraB;San Martin Burzaco;Excursionistas;0;1;1;0.8;0.457143
+V30;NO_AUSTRALIA;TEST;3;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V30;NO_AUSTRALIA;TEST;3;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30;NO_AUSTRALIA;TEST;3;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V30;NO_AUSTRALIA;TEST;3;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V30;NO_AUSTRALIA;TEST;3;2026-10-19;Armenia_FirstLeague;Ararat-Armenia 2;Ararat 2;1;3;3;0.8;0.571429
+V30;NO_AUSTRALIA;TEST;3;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V30;NO_AUSTRALIA;TEST;3;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30;NO_AUSTRALIA;TEST;3;2026-10-20;Romania_Liga2;FC ASA Tg. Mures;Chindia Targoviste;1;2;4;0.8;0.401389
+V30;NO_AUSTRALIA;TEST;3;2026-10-20;Brazil_SerieA;Corinthians;Vitoria;0;1;1;0.8;0.257143
+V30;NO_AUSTRALIA;TEST;3;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30;NO_AUSTRALIA;TEST;3;2026-10-23;Azerbaijan_PremierLeague;Araz;Gabala;1;1;2;0.8;0.310714
+V30;NO_AUSTRALIA;TEST;3;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30;NO_AUSTRALIA;TEST;3;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V30;NO_AUSTRALIA;TEST;3;2026-10-24;Italy_SerieA;Lazio;Parma;1;2;1;0.8;0.314286
+V30;NO_AUSTRALIA;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30;NO_AUSTRALIA;TEST;3;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V30;NO_AUSTRALIA;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V30;NO_AUSTRALIA;TEST;3;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30;NO_AUSTRALIA;TEST;3;2026-10-29;Indonesia_Championship;RANS Nusantara;Tornado Pekanbaru;0;0;0;0.8;0.271429
+V30;NO_AUSTRALIA;TEST;3;2026-10-29;Indonesia_Championship_East;RANS Nusantara;Tornado Pekanbaru;0;0;0;0.8;0.271429
+V30;NO_AUSTRALIA;TEST;3;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30;NO_AUSTRALIA;TEST;3;2026-10-31;Portugal_Liga3;Atletico;Santarem;1;3;1;0.8;0.328571
+V30;NO_AUSTRALIA;TEST;3;2026-10-31;Mexico_LigaPremierSerieA;Guerreros del Pacifico;Heroes de Zaci;1;5;0;0.8;0.279167
+V30;NO_AUSTRALIA;TEST;3;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30;NO_AUSTRALIA;TEST;3;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V30;NO_AUSTRALIA;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V30;NO_AUSTRALIA;TEST;3;2026-11-02;Israele_LigathaAl;H. Tel Aviv;M. Haifa;1;2;1;0.8;0.225
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG;NO_AUSTRALIA;TEST;1;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG;NO_AUSTRALIA;TEST;2;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-26;Denmark_ALigaWomen;Fortuna Hjorring D;Nordsjaelland D;0;1;1;0.8;0.4
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-10;Bulgaria_ThirdLeagueSouthEast;Yambol 1915;Sekirovo Rakovski;1;3;3;0.8;0.4875
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-17;Romania_Liga2;Popesti Leordeni;Afumati;0;2;0;0.8;0.3125
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG;NO_AUSTRALIA;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-26;Denmark_ALigaWomen;Fortuna Hjorring D;Nordsjaelland D;0;1;1;0.8;0.4
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-10;Slovenia_3SNLWest;NK Adria;Fama Vipava;1;7;1;0.8;0.4375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-18;Netherlands_EredivisieWomen;Ajax D;PSV D;1;1;4;0.8;0.557143
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-26;Denmark_ALigaWomen;Fortuna Hjorring D;Nordsjaelland D;0;1;1;0.8;0.4
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-10;Slovenia_3SNLWest;NK Adria;Fama Vipava;1;7;1;0.8;0.4375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-10;Romania_Liga3Seria1;Targu Secuiesc;Aerostar;1;3;0;0.8;0.328571
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-18;Netherlands_EredivisieWomen;Ajax D;PSV D;1;1;4;0.8;0.557143
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V31_STRONG_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;1;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;2;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;Gonsenheim;Schott Mainz;0;0;0;0.8;0.483929
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-18;Austria_Regionalliga_West;Dornbirn;Lauterach;0;1;0;0.8;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-19;Austria_Regionalliga_North;LASK (Am);Schallerbach;1;3;0;0.8;0.728571
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-24;Slovakia_3LigaCentral;Podkonice;Ruzomberok B;1;4;4;0.8;0.371429
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Salzburg;Puch;Strasswalchen;0;1;0;0.8;0.633333
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-26;Germany_Oberliga_Bremen;Aumund-Vegesack;Hemelingen;0;1;1;1.0;0.357143
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-26;Denmark_ALigaWomen;Fortuna Hjorring D;Nordsjaelland D;0;1;1;0.8;0.4
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupE;Strani;Sternberk;1;1;3;0.8;0.8375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-10;Scotland_LeagueOne;Montrose;Ross County;1;0;5;0.8;0.552778
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-10;Bulgaria_ThirdLeagueSouthEast;Yambol 1915;Sekirovo Rakovski;1;3;3;0.8;0.4875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-13;Austria_Steiermark;Ilzer SV;Weindorf St. Anna;1;4;1;0.8;0.328571
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-17;Romania_Liga3Seria7;Santana;Blaj;0;0;0;0.8;0.475
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-17;Italy_SerieC_GironeC;Potenza;Catania;1;2;1;0.8;0.405556
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-17;Romania_Liga2;Popesti Leordeni;Afumati;0;2;0;0.8;0.3125
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-18;Germany_Oberliga_Niederrhein;Solingen-Wald;SSVg Velbert;1;2;3;1.0;0.531944
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-18;Mongolia_PremierLeague;FC Ulaanbaatar;Central Stallions;0;2;0;1.0;0.485714
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-19;Turkey_SuperLig;Trabzonspor;Besiktas;0;2;0;0.8;0.514286
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-24;Israele_LigathaAl;Hapoel Jerusalem;H. Tel Aviv;1;0;3;0.8;0.328571
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-25;Turkey_SuperLig;Goztepe;Corum;0;2;0;1.0;0.4125
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-11-01;Gibilterra_NationalLeague;Europa Point;Glacis United;1;0;3;0.8;0.619643
+V31_STRONG_MIN_OVER_80;NO_AUSTRALIA;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-17;Mexico_LigaPremierSerieA;Ciervos;Canoneros;1;3;1;0.8;0.228571
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;1;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-18;Germany_Regionalliga_West;Siegen;Wattenscheid;1;2;1;0.8;0.4
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-19;Moldova_Liga1_GroupA;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-20;Austria_Regionalliga_West;Tirol (Am);Fugen;1;6;0;0.8;0.242857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-22;England_SouthernLeaguePremierCentral;Leiston;Peterborough Sports;0;0;2;0.8;0.242857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-25;Austria_Oberosterreich;Gmunden;Garsten;1;3;2;0.8;0.3375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-26;CzechRepublic_4Liga_GroupB;Psary;Tempo Prague;1;3;2;1.0;0.257143
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-02;Austria_Regionalliga_South;Deutschlandsberger;Weiz;0;0;0;0.8;0.2375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-03;CzechRepublic_4Liga_GroupD;Sparta Brno;Zdirec n. D.;1;3;1;0.8;0.3
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-04;CzechRepublic_4Liga_GroupC;Police nad Metuji;Letohrad;1;4;0;1.0;0.325
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-09;Poland_Ekstraklasa;Rakow;Katowice;1;1;4;0.8;0.233333
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-10;Netherlands_TweedeDivisie;GVVV;Rijnsburgse Boys;1;4;1;1.0;0.2625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-16;Germany_Oberliga_Niederrhein;Dingden;Dusseldorf 2;0;0;2;0.8;0.275
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-17;Mexico_LigaPremierSerieA;Ciervos;Canoneros;1;3;1;0.8;0.228571
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-17;CzechRepublic_4Liga_GroupA;Domazlice B;SK Strakonice 1908;1;6;0;0.8;0.2
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-20;Romania_Liga2;FC ASA Tg. Mures;Chindia Targoviste;1;2;4;0.8;0.401389
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-23;Azerbaijan_PremierLeague;Araz;Gabala;1;1;2;0.8;0.310714
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-24;Germany_Oberliga_NOFV_Sud;Eilenburg;Krieschow;0;0;1;0.8;0.3125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-10-31;Mexico_LigaPremierSerieA;Guerreros del Pacifico;Heroes de Zaci;1;5;0;0.8;0.279167
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;2;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-18;CzechRepublic_ChNL;Karvina;Kromeriz;1;3;2;0.8;0.525
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-18;Germany_Regionalliga_West;Siegen;Wattenscheid;1;2;1;0.8;0.4
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-18;Austria_Regionalliga_North;Seekirchen;Wals-Grunau;0;0;0;0.8;0.275
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-19;Moldova_Liga1;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-19;Moldova_Liga1_GroupA;Sparta Selemet;Vulturii Cutezatori;1;1;2;1.0;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-19;Switzerland_SuperLeague;Sion;Zurigo;0;1;1;1.0;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-20;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Neckarsulm;1;2;1;0.8;0.371429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-20;Austria_Regionalliga_West;Tirol (Am);Fugen;1;6;0;0.8;0.242857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-20;Germany_Oberliga_Hamburg;Tesla Hamburg;Wandsbeker Concordia;1;2;2;0.8;0.228571
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-21;Mexico_LigaExpansionMX_Apertura;Tapatio;Tlaxcala;1;4;0;0.8;0.4125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-22;Denmark_ALigaWomen;Aarhus D;Nordsjaelland D;0;0;2;0.8;0.742857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-22;England_SouthernLeaguePremierCentral;Leiston;Peterborough Sports;0;0;2;0.8;0.242857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-22;England_IsthmianLeaguePremierDivision;Brentwood;Maldon & Tiptree;1;5;1;0.8;0.242857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Karnten;Lendorf;SGA Sirnitz;1;3;1;0.8;0.5375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Oberosterreich;Gmunden;Garsten;1;3;2;0.8;0.3375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-25;Austria_Oberosterreich;Vocklamarkt;Edelweiss;1;0;3;0.8;0.2875
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;Eisbachtal;TSV 1881 Gau-Odernheim;0;0;2;1.0;0.383333
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupB;Psary;Tempo Prague;1;3;2;1.0;0.257143
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-26;CzechRepublic_4Liga_GroupE;Sternberk;Bzenec-Vracov;0;1;0;0.8;0.442857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-27;Germany_Oberliga_BadenWurttemberg;Ravensburg;1. FC Muhlhausen;1;3;1;0.8;0.4625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-27;Germany_Oberliga_Hamburg;Wandsbeker Concordia;Paloma;1;2;3;0.8;0.425
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-27;Hungary_NBIIINorthwest;Puskas Academy II;Balatonalmadi SE;0;1;1;0.8;0.342857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-29;England_SouthernLeaguePremierSouth;Hanworth;Chichester;1;2;1;0.8;0.55
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-29;England_IsthmianLeaguePremierDivision;Maldon & Tiptree;Cray Wanderers;1;1;5;0.8;0.521429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-09-30;England_IsthmianLeaguePremierDivision;Whyteleafe;Brentwood;1;1;2;0.8;0.2625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-01;Israele_LeumitLeague;Maccabi Bnei Raina;Hapoel Kfar Shalem;1;1;2;0.8;0.271429
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-02;CzechRepublic_4Liga_GroupF;Hlucin;Novy Jicin;0;1;1;0.8;0.25
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-02;Austria_Regionalliga_South;Deutschlandsberger;Weiz;0;0;0;0.8;0.2375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-03;CzechRepublic_4Liga_GroupF;Valasske Mezirici;Opava B;1;3;0;1.0;0.25
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-03;CzechRepublic_4Liga_GroupD;Sparta Brno;Zdirec n. D.;1;3;1;0.8;0.3
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-03;Hungary_NBIIINortheast;Ozd-Sajovolgye;Hajdunanas;1;9;0;0.8;0.2875
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-04;Austria_Burgenland;Pama;Rust;0;1;0;1.0;0.35
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-04;CzechRepublic_4Liga_GroupC;Police nad Metuji;Letohrad;1;4;0;1.0;0.325
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-04;Germany_Oberliga_Hamburg;Paloma;ETSV Hamburg;1;1;4;1.0;0.2
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-08;Romania_Liga2;Politehnica Timisoara;Steaua Bucuresti;0;1;1;0.8;0.503571
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-09;Germany_Oberliga_Niedersachsen;Bersenbruck;Nordhorn;1;5;0;1.0;0.490278
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-09;Poland_Ekstraklasa;Rakow;Katowice;1;1;4;0.8;0.233333
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-10;Slovenia_3SNLEast;Fuzinar;Smartno;1;5;1;1.0;0.5375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-10;Netherlands_TweedeDivisie;GVVV;Rijnsburgse Boys;1;4;1;1.0;0.2625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-10;Slovenia_3SNLWest;NK Adria;Fama Vipava;1;7;1;0.8;0.4375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-11;Austria_Bundesliga;LASK;SK Rapid;0;0;2;1.0;0.342857
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-11;Lussemburgo_BGLLigue;Kaerjeng;Jeunesse Esch;1;4;1;0.8;0.6875
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-11;Netherlands_Eredivisie;Zwolle;Cambuur;0;0;1;0.8;0.257143
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-16;Austria_Bundesliga;SK Rapid;Hartberg;1;3;1;0.8;0.2875
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-16;Germany_Oberliga_Niederrhein;Dingden;Dusseldorf 2;0;0;2;0.8;0.275
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-17;Mexico_LigaPremierSerieA;Ciervos;Canoneros;1;3;1;0.8;0.228571
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-17;CzechRepublic_4Liga_GroupA;Domazlice B;SK Strakonice 1908;1;6;0;0.8;0.2
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-18;Mongolia_PremierLeague;Hunters;Khaan Khuns-Erchim;1;5;1;1.0;0.7
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-18;Austria_Steiermark;Furstenfeld;UFC Fehring;1;5;2;0.8;0.5875
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-18;Netherlands_EredivisieWomen;Ajax D;PSV D;1;1;4;0.8;0.557143
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-20;Armenia_FirstLeague;Lernayin Artsakh;Shirak 2;1;5;0;1.0;0.375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-20;Romania_Liga2;FC ASA Tg. Mures;Chindia Targoviste;1;2;4;0.8;0.401389
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-20;Brazil_SerieA;Corinthians;Vitoria;0;1;1;0.8;0.257143
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-23;Wales_CymruSouth;Trethomas Bluebirds;Cardiff Draconians;1;3;1;0.8;0.4125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-23;Azerbaijan_PremierLeague;Araz;Gabala;1;1;2;0.8;0.310714
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-24;Mongolia_PremierLeague;Khovd Western;Amtat;1;1;3;1.0;0.2125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-24;Germany_Oberliga_NOFV_Sud;Eilenburg;Krieschow;0;0;1;0.8;0.3125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-24;Germany_Oberliga_NOFV_Sud;1.FC Frankfurt;Halle;1;1;2;0.8;0.3125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-25;Mongolia_PremierLeague;Deren;Hunters;0;2;0;1.0;1.0375
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-25;Italy_SerieB;Verona;Pisa;0;1;1;1.0;0.4
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-25;Italy_SerieA;Inter;Fiorentina;1;2;1;0.8;0.328571
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-29;Italy_SerieA;Fiorentina;Atalanta;1;2;2;0.8;0.3625
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-31;Croatia_HNL;Rudes;Din. Zagabria;0;1;0;0.8;0.385714
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-10-31;Mexico_LigaPremierSerieA;Guerreros del Pacifico;Heroes de Zaci;1;5;0;0.8;0.279167
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-11-01;Mongolia_PremierLeague;Ulaangom City;Amtat;0;1;1;1.0;0.6125
+V30_MIN_GA_12;NO_AUSTRALIA;TEST;3;2026-11-01;Turkey_2LigRedGroup;Beyoglu Yeni Carsi;Ankara Demirspor;0;1;1;0.8;0.566071
