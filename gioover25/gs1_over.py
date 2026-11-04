@@ -11,7 +11,7 @@ from .team_names import normalize_team_name
 OUTPUT_DIR = Path("data/output_gs1_over")
 HISTORY_FILE = Path("data/storico/gs1_over/storico_gs1_over.csv")
 FIELDS = ["MatchDate","LeagueId","Home","Away","Round","PredictionDate",
-          "Band","MinOverRateFull","DeltaGA","HomeOverRateFull","AwayOverRateFull",
+          "Band","MinOverThreshold","DeltaGAThreshold","MinOverRateFull","DeltaGA","HomeOverRateFull","AwayOverRateFull",
           "HomeGAFull","AwayGAFull","HomeGAL5","AwayGAL5",
           "Status","HG","AG","Outcome"]
 MIN_OVER = 0.8
@@ -99,13 +99,14 @@ def select(rows,registry_rows,prediction_date):
                        "Home":row["Home"],"Away":row["Away"],
                        "Round":row.get("Round",""),"PredictionDate":prediction_date,
                        "Band":"ALTA" if min_over+1e-10>=MIN_OVER else "MEDIA",
+                       "MinOverThreshold":f"{MIN_OVER if min_over+1e-10>=MIN_OVER else MEDIA_MIN_OVER:.6f}",
+                       "DeltaGAThreshold":f"{MIN_DELTA_GA:.6f}",
                        "MinOverRateFull":f"{min_over:.6f}","DeltaGA":f"{delta:.6f}",
                        "HomeOverRateFull":f"{home['OverRateFull']:.6f}",
                        "AwayOverRateFull":f"{away['OverRateFull']:.6f}",
                        "HomeGAFull":f"{home['GAFull']:.6f}","AwayGAFull":f"{away['GAFull']:.6f}",
                        "HomeGAL5":f"{home['GAL5']:.6f}","AwayGAL5":f"{away['GAL5']:.6f}",
                        "Status":"SCHEDULED","HG":"","AG":"","Outcome":""})
-    high=[r for r in result if r["Band"]=="ALTA"]
     chosen=result
     return sorted(chosen,key=lambda x:(0 if x["Band"]=="ALTA" else 1,-float(x["MinOverRateFull"]),-float(x["DeltaGA"]),
                                       x["MatchDate"],x["LeagueId"],x["Home"],x["Away"]))
@@ -116,6 +117,8 @@ def generate(rows,registry_rows,prediction_date,base_name):
     output=OUTPUT_DIR/f"{base_name}_gs1_over.csv"
     write_csv(output,selections)
     previous=read_csv(HISTORY_FILE)
+    # Preserve old prediction snapshots; mark missing historical thresholds
+    # as unknown instead of retroactively assigning today's rules.
     by_key={key(r):r for r in previous}
     inserted=0
     for row in selections:
