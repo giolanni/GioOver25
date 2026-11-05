@@ -65,6 +65,10 @@ def _weekly_stats(engine: str, report_date: date) -> dict:
         d = _parse_date(row.get("MatchDate"))
         if d is None or not (start <= d < report_date):
             continue
+        # Confrontiamo gli engine sulla stessa popolazione che puo'
+        # comparire nel report: pronostici Over con score > 70.
+        if _num(row.get("Score")) <= 70:
+            continue
         outcome = str(row.get("Over25", "") or "").strip().upper()
         if outcome == "OK":
             ok += 1
