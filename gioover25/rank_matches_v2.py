@@ -1157,7 +1157,7 @@ def main() -> None:
                         / f"{base_name}_{engine_name}.csv"
                     )
 
-                _rank_rows(
+                all_results = _rank_rows(
                     rows=input_rows,
                     engine_names=engine_names,
                     registry_rows=read_registry(),
@@ -1169,9 +1169,22 @@ def main() -> None:
                 archived_total = archive_output_rankings(args.engine)
                 output_file = Path(args.output) if args.output else OUTPUT_DIR / args.engine / f"{base_name}_{args.engine}.csv"
                 rank_matches(args.input_file, output_file, args.engine)
+                all_results = None
                 completed_engines = 1
             from .gs1_over import generate as generate_gs1_over
-            generate_gs1_over(input_rows, read_registry(), date.today().isoformat(), base_name)
+            gs1_selections = generate_gs1_over(
+                input_rows,
+                read_registry(),
+                date.today().isoformat(),
+                base_name,
+            )
+            if all_results is not None:
+                from .daily_report import generate_daily_report
+                generate_daily_report(
+                    results_by_engine=all_results,
+                    gs1_rows=gs1_selections,
+                    report_date=date.today(),
+                )
             archive_input_file(input_path)
 
     print(f"[RANK] {len(input_rows)} partite | {len(engine_names)} engine")
