@@ -1005,6 +1005,9 @@ def _rank_rows(
             if getattr(engine, "REQUIRES_DEFENSE_LAST5", False):
                 engine_kwargs.update(shared_last5)
 
+            if getattr(engine, "REQUIRES_EXPECTED_GOALS", False):
+                engine_kwargs["expected_goals"] = expected_goals
+
             score = engine.calculate_score(
                 match_stats,
                 league_info,
