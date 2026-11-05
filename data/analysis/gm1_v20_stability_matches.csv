@@ -1,0 +1,488 @@
+﻿LeagueId;MatchDate;Home;Away;Split;Profile;Result;LeagueIdGroup;HomePlayed;AwayPlayed;MinPlayed;Maturity;AwayDefenseWeaknessScore;AwayLast10OverScore
+Finland_Kakkonen_GroupC;2026-07-11;Huima / Urho;Hercules;TRAIN;YES;KO;Finland;11.0;11.0;11.0;10-19;25.0;15.0
+Finland_Ykkonen;2026-07-11;JJK Jyvaskyla;KuPS Akatemia;TRAIN;NO;OK;Finland;14.0;13.0;13.0;10-19;23.08;12.0
+Estonia_EsiliigaB;2026-07-12;Tartu Kalev;Legion;TRAIN;YES;OK;Estonia;18.0;17.0;17.0;10-19;25.0;15.0
+Iceland_BestaDeildKarla;2026-07-12;Fram;Thor Akureyri;TRAIN;NO;OK;Iceland;13.0;13.0;13.0;10-19;25.0;10.5
+Estonia_Meistriliiga;2026-07-16;Flora;Nomme Utd;TRAIN;NO;OK;Estonia;17.0;19.0;17.0;10-19;23.68;15.0
+Estonia_Esiliiga;2026-07-18;Flora U21;Maardu;TRAIN;NO;OK;Estonia;18.0;19.0;18.0;10-19;24.21;10.5
+Estonia_Esiliiga;2026-07-18;Tartu Welco;FC Tallinn;TRAIN;NO;KO;Estonia;19.0;19.0;19.0;10-19;25.0;9.0
+Iceland_BestaDeildKarla;2026-07-18;KR Reykjavik;Stjarnan;TRAIN;NO;OK;Iceland;15.0;14.0;14.0;10-19;22.14;12.0
+Latvia_Virsliga;2026-07-18;Riga FC;Tukums 2000;TRAIN;NO;OK;Latvia;22.0;22.0;22.0;20+;21.11;12.0
+Estonia_EsiliigaB;2026-07-20;Tammeka U21;Tallinna Kalev U21;TRAIN;NO;OK;Estonia;19.0;19.0;19.0;10-19;22.78;12.0
+Kazakhstan_FirstLeague;2026-07-23;Turan;Tobol 2;TRAIN;YES;OK;Kazakhstan;14.0;14.0;14.0;10-19;25.0;13.5
+Estonia_EsiliigaB;2026-07-25;Tulevik;Johvi Phoenix;TRAIN;NO;KO;Estonia;19.0;19.0;19.0;10-19;25.0;12.0
+Mexico_LigaMX_Apertura;2026-07-25;Tijuana;Leon;TRAIN;YES;KO;Mexico;1.0;1.0;1.0;0-4;25.0;15.0
+Norway_2ndDivision_Group2;2026-07-25;Levanger;Ull/Kisa;TRAIN;YES;OK;Norway;12.0;12.0;12.0;10-19;25.0;15.0
+Norway_3rdDivision_Group1;2026-07-25;Baerum;Vaalerenga IF 2;TRAIN;YES;OK;Norway;12.0;12.0;12.0;10-19;25.0;13.5
+Norway_3rdDivision_Group5;2026-07-25;Floeya;Lillestrom 2;TRAIN;NO;OK;Norway;12.0;12.0;12.0;10-19;20.83;15.0
+Norway_3rdDivision_Group5;2026-07-25;Harstad;Fauske Sprint;TRAIN;YES;OK;Norway;12.0;12.0;12.0;10-19;25.0;15.0
+Finland_Kakkonen_GroupC;2026-07-26;Narpes Kraft;Vaajakoski;TRAIN;NO;OK;Finland;13.0;13.0;13.0;10-19;23.85;12.0
+Latvia_NakotnesLiga;2026-07-26;Metta;Tukums 2000 2;TRAIN;NO;OK;Latvia;13.0;13.0;13.0;10-19;23.85;9.0
+Sweden_Allsvenskan;2026-07-26;Sirius;Göteborg;TRAIN;NO;OK;Sweden;13.0;13.0;13.0;10-19;22.31;10.5
+USA_USLLeagueOne;2026-07-26;Charlotte Independ.;Richmond Kickers;TRAIN;NO;OK;USA;16.0;16.0;16.0;10-19;18.75;9.0
+Germany_Oberliga_Bayern_Sud;2026-07-27;FC Schwaig;TSV 1880 Wasserburg;TRAIN;YES;OK;Germany;1.0;1.0;1.0;0-4;25.0;15.0
+Iceland_Division_2;2026-07-28;Haukar;KFG Gardabaer;TRAIN;NO;OK;Iceland;14.0;14.0;14.0;10-19;25.0;10.5
+Germany_Oberliga_Bayern_Sud;2026-07-30;Monaco 1860 2;Schalding;TRAIN;NO;KO;Germany;2.0;2.0;2.0;0-4;20.0;15.0
+Switzerland_ChallengeLeague;2026-07-30;Wil;Xamax;TRAIN;NO;OK;Switzerland;1.0;1.0;1.0;0-4;20.0;15.0
+Estonia_EsiliigaB;2026-08-01;Narva U21;Tallinna Kalev U21;TRAIN;NO;OK;Estonia;19.0;20.0;19.0;10-19;24.21;12.0
+FaroeIslands_1Deild;2026-08-01;Vikingur 2;Hoyvik;TRAIN;YES;KO;FaroeIslands;16.0;16.0;16.0;10-19;25.0;13.5
+Finland_Kakkonen_GroupC;2026-08-01;Narpes Kraft;Hercules;TRAIN;NO;OK;Finland;14.0;14.0;14.0;10-19;23.57;12.0
+Norway_3rdDivision_Group1;2026-08-01;Frigg;Ullern;TRAIN;YES;OK;Norway;13.0;13.0;13.0;10-19;25.0;13.5
+Norway_3rdDivision_Group1;2026-08-01;Vaalerenga IF 2;Lokomotiv Oslo;TRAIN;NO;OK;Norway;13.0;13.0;13.0;10-19;25.0;12.0
+Norway_3rdDivision_Group4;2026-08-01;Flekkeroy;Haugesund 2;TRAIN;YES;OK;Norway;13.0;13.0;13.0;10-19;25.0;15.0
+Norway_3rdDivision_Group6;2026-08-01;Rade;Bjorkelangen;TRAIN;NO;OK;Norway;13.0;13.0;13.0;10-19;25.0;12.0
+Finland_Kakkonen_GroupC;2026-08-03;VPS 2;Jaro 2;TRAIN;NO;OK;Finland;14.0;14.0;14.0;10-19;25.0;12.0
+Norway_3rdDivision_Group2;2026-08-03;Strindheim;Aalesund 2;TRAIN;NO;KO;Norway;13.0;13.0;13.0;10-19;25.0;12.0
+Norway_3rdDivision_Group4;2026-08-03;Brodd;Stabaek 2;TRAIN;YES;OK;Norway;13.0;13.0;13.0;10-19;25.0;13.5
+Norway_3rdDivision_Group5;2026-08-03;Lillestrom 2;Kongsvinger 2;TRAIN;NO;OK;Norway;13.0;13.0;13.0;10-19;22.31;10.5
+Finland_Kakkonen_GroupB;2026-08-04;Ilves 2;MuSa;TRAIN;NO;OK;Finland;13.0;14.0;13.0;10-19;25.0;10.5
+Norway_3rdDivision_Group5;2026-08-06;Floeya;Ulfstind;TRAIN;NO;OK;Norway;14.0;14.0;14.0;10-19;25.0;12.0
+Finland_Kakkonen_GroupB;2026-08-08;Honka;NJS;TRAIN;NO;OK;Finland;15.0;15.0;15.0;10-19;25.0;9.0
+Iceland_Division_2;2026-08-08;Fjolnir;KFG Gardabaer;TRAIN;NO;OK;Iceland;15.0;15.0;15.0;10-19;25.0;10.5
+Latvia_NakotnesLiga;2026-08-08;Metta;RFS 2;TRAIN;NO;OK;Latvia;15.0;15.0;15.0;10-19;22.0;10.5
+Norway_2ndDivision_Group1;2026-08-08;Jerv;Vidar;TRAIN;NO;OK;Norway;14.0;14.0;14.0;10-19;25.0;10.5
+Norway_2ndDivision_Group2;2026-08-08;Honefoss;Ull/Kisa;TRAIN;YES;OK;Norway;14.0;14.0;14.0;10-19;25.0;15.0
+Norway_3rdDivision_Group1;2026-08-08;Asker;Vaalerenga IF 2;TRAIN;YES;OK;Norway;14.0;14.0;14.0;10-19;25.0;13.5
+Norway_3rdDivision_Group2;2026-08-08;Volda TI;Nardo;TRAIN;NO;KO;Norway;14.0;14.0;14.0;10-19;23.57;12.0
+Norway_3rdDivision_Group3;2026-08-08;Fana;Gneist;TRAIN;NO;OK;Norway;14.0;14.0;14.0;10-19;25.0;12.0
+Norway_3rdDivision_Group3;2026-08-08;OS;Stord;TRAIN;NO;OK;Norway;14.0;14.0;14.0;10-19;22.86;9.0
+Norway_3rdDivision_Group5;2026-08-08;Harstad;Skjervoy;TRAIN;NO;OK;Norway;14.0;14.0;14.0;10-19;24.29;12.0
+Estonia_Meistriliiga;2026-08-09;Levadia;Nomme Utd;TRAIN;NO;OK;Estonia;18.0;21.0;18.0;10-19;22.86;15.0
+Iceland_BestaDeildKarla;2026-08-09;Vikingur Reykjavik;Vestmannaeyjar;TRAIN;NO;OK;Iceland;17.0;17.0;17.0;10-19;21.18;10.5
+Latvia_Virsliga;2026-08-09;Riga FC;Ogre United;TRAIN;NO;OK;Latvia;24.0;24.0;24.0;20+;25.0;12.0
+Norway_OBOSLigaen;2026-08-09;Haugesund;Raufoss;TRAIN;NO;OK;Norway;16.0;16.0;16.0;10-19;21.25;12.0
+Somalia_NationalLeague;2026-08-09;Dekedaha;Gantaalaha Afgooye;TRAIN;NO;OK;Somalia;20.0;19.0;19.0;10-19;25.0;12.0
+USA_USLLeagueOne;2026-08-09;Charlotte Independ.;Greenville;TRAIN;NO;KO;USA;18.0;17.0;17.0;10-19;17.65;9.0
+Estonia_Esiliiga;2026-08-10;Flora U21;Nomme Kalju U21;TRAIN;YES;OK;Estonia;21.0;21.0;21.0;20+;25.0;13.5
+Estonia_EsiliigaB;2026-08-10;Tammeka U21;Parnu JK Vaprus U21;TRAIN;NO;OK;Estonia;21.0;21.0;21.0;20+;22.0;15.0
+Norway_3rdDivision_Group1;2026-08-10;Baerum;K. Oslo 2;TRAIN;YES;OK;Norway;14.0;14.0;14.0;10-19;25.0;13.5
+Finland_Ykkonen;2026-08-11;RoPS;KuPS Akatemia;TRAIN;NO;OK;Finland;18.0;18.0;18.0;10-19;23.33;13.5
+Estonia_EsiliigaB;2026-08-15;Tartu Kalev;Parnu JK Vaprus U21;TRAIN;NO;KO;Estonia;22.0;22.0;22.0;20+;21.9;15.0
+FaroeIslands_1Deild;2026-08-15;FC Suduroy;Streymur 2;TRAIN;NO;OK;FaroeIslands;18.0;18.0;18.0;10-19;25.0;12.0
+Finland_Kakkonen_GroupB;2026-08-15;Ilves 2;NJS;TRAIN;NO;OK;Finland;15.0;16.0;15.0;10-19;25.0;9.0
+Finland_Kakkonen_GroupC;2026-08-15;VPS 2;Hercules;TRAIN;NO;OK;Finland;16.0;16.0;16.0;10-19;23.75;12.0
+Norway_3rdDivision_Group1;2026-08-15;Frigg;Lokomotiv Oslo;TRAIN;NO;OK;Norway;15.0;15.0;15.0;10-19;25.0;10.5
+Norway_3rdDivision_Group1;2026-08-15;Gamle Oslo;Konnerud;TRAIN;NO;OK;Norway;15.0;15.0;15.0;10-19;25.0;10.5
+Norway_3rdDivision_Group4;2026-08-15;Flekkeroy;Brodd;TRAIN;NO;KO;Norway;15.0;15.0;15.0;10-19;20.67;15.0
+Norway_3rdDivision_Group4;2026-08-15;Vindbjart;Akra;TRAIN;NO;OK;Norway;15.0;15.0;15.0;10-19;25.0;12.0
+Norway_3rdDivision_Group6;2026-08-15;Sandefjord 2;Bjorkelangen;TRAIN;NO;OK;Norway;15.0;15.0;15.0;10-19;25.0;10.5
+Finland_Kakkonen_GroupC;2026-08-16;Narpes Kraft;SJK Akatemia 2;TRAIN;NO;OK;Finland;16.0;16.0;16.0;10-19;23.75;13.5
+Sweden_Division2_NorraSvealand;2026-08-16;Skiljebo;Helges;TRAIN;YES;OK;Sweden;16.0;16.0;16.0;10-19;25.0;13.5
+Iceland_BestaDeildKarla;2026-08-17;Fram;Stjarnan;TRAIN;NO;OK;Iceland;18.0;18.0;18.0;10-19;23.89;13.5
+Finland_Kakkonen_GroupC;2026-08-22;Huima / Urho;Narpes Kraft;TRAIN;NO;OK;Finland;17.0;17.0;17.0;10-19;24.71;15.0
+SriLanka_SuperLeague;2026-08-22;UP Country Lions;New Young's SC;TRAIN;NO;OK;SriLanka;5.0;5.0;5.0;5-9;25.0;12.0
+Iceland_BestaDeildKarla;2026-08-23;Vikingur Reykjavik;Valur;TRAIN;NO;KO;Iceland;19.0;19.0;19.0;10-19;21.05;9.0
+Estonia_EsiliigaB;2026-08-24;Levadia U19;Legion;TRAIN;NO;KO;Estonia;24.0;23.0;23.0;20+;25.0;12.0
+Estonia_EsiliigaB;2026-08-25;Tartu Kalev;Tallinna Kalev U21;TRAIN;NO;KO;Estonia;24.0;24.0;24.0;20+;24.09;13.5
+Norway_OBOSLigaen;2026-08-26;Stabaek;Ranheim;TRAIN;YES;OK;Norway;18.0;18.0;18.0;10-19;25.0;15.0
+Kazakhstan_FirstLeague;2026-08-27;Kairat Almaty 2;Arys;TRAIN;NO;KO;Kazakhstan;19.0;19.0;19.0;10-19;20.53;10.5
+Finland_Ykkonen;2026-08-29;JJK Jyvaskyla;KPV;TRAIN;NO;OK;Finland;21.0;21.0;21.0;20+;25.0;12.0
+Belarus_PershayaLiga;2026-08-30;Niva Dolbizno;Osipovichi;TRAIN;NO;OK;Belarus;21.0;21.0;21.0;20+;24.29;7.5
+Germany_Oberliga_SchleswigHolstein;2026-08-30;VfR Neumunster;Eckernforder SV;TRAIN;YES;OK;Germany;5.0;5.0;5.0;5-9;25.0;15.0
+Iceland_BestaDeildKarla;2026-08-30;Fram;Akureyri;TRAIN;NO;OK;Iceland;20.0;20.0;20.0;20+;22.5;12.0
+Norway_2ndDivision_Group2;2026-08-30;Honefoss;Follo;TRAIN;NO;OK;Norway;16.0;16.0;16.0;10-19;21.88;9.0
+Norway_Eliteserien;2026-08-30;Viking;Aalesund;TRAIN;NO;OK;Norway;17.0;17.0;17.0;10-19;24.12;10.5
+Norway_OBOSLigaen;2026-08-30;Kongsvinger;Lyn;TRAIN;NO;OK;Norway;19.0;19.0;19.0;10-19;20.53;13.5
+Norway_3rdDivision_Group4;2026-08-31;Madla IL;Odd 2;TRAIN;NO;OK;Norway;16.0;16.0;16.0;10-19;24.38;13.5
+CzechRepublic_3MSFL;2026-09-02;Artis Brno B;Havirov;TRAIN;NO;KO;CzechRepublic;5.0;5.0;5.0;5-9;25.0;9.0
+CzechRepublic_3MSFL;2026-09-02;Brno B;Vsetin;TRAIN;NO;OK;CzechRepublic;5.0;5.0;5.0;5-9;25.0;12.0
+Finland_Kakkonen_GroupC;2026-09-02;Narpes Kraft;Jaro 2;TRAIN;NO;OK;Finland;18.0;18.0;18.0;10-19;25.0;12.0
+USA_USLLeagueOne;2026-09-03;Charlotte Independ.;Portland Hearts of Pine;TRAIN;NO;OK;USA;22.0;24.0;22.0;20+;18.75;10.5
+Austria_Karnten;2026-09-04;TSV Grafenstein;Nussdorf;TRAIN;YES;OK;Austria;5.0;5.0;5.0;5-9;25.0;15.0
+Austria_Regionalliga_North;2026-09-04;Leonfelden;Dietach;TRAIN;NO;OK;Austria;5.0;5.0;5.0;5-9;25.0;12.0
+Austria_Regionalliga_South;2026-09-04;Volkermarkt;Wolfsberger (Am);TRAIN;NO;KO;Austria;5.0;5.0;5.0;5-9;24.0;12.0
+Austria_Tirol;2026-09-04;Haiming;SV Oberperfuss;TRAIN;NO;OK;Austria;5.0;5.0;5.0;5-9;24.0;12.0
+Austria_Tirol;2026-09-04;SC Kundl;Ebbs;TRAIN;NO;KO;Austria;5.0;5.0;5.0;5-9;18.0;15.0
+FaroeIslands_1Deild;2026-09-04;Fuglafjordur;Hoyvik;TRAIN;NO;OK;FaroeIslands;21.0;21.0;21.0;20+;25.0;10.5
+Wales_CymruPremier;2026-09-04;Caernarfon;Flint;TRAIN;NO;OK;Wales;6.0;6.0;6.0;5-9;18.33;7.5
+Wales_CymruPremier;2026-09-04;Connah's Q.;Haverfordwest;TRAIN;NO;KO;Wales;6.0;6.0;6.0;5-9;20.0;7.5
+Wales_CymruPremier;2026-09-04;Holywell;Trefelin;TRAIN;NO;KO;Wales;6.0;6.0;6.0;5-9;25.0;10.0
+Wales_CymruPremier;2026-09-04;Llandudno;Ammanford;TRAIN;NO;KO;Wales;6.0;6.0;6.0;5-9;25.0;10.0
+Austria_Tirol;2026-09-05;Absam;Telfs;TRAIN;NO;KO;Austria;5.0;5.0;5.0;5-9;14.0;9.0
+Austria_Tirol;2026-09-05;SC Mils 05;Stubai;TRAIN;YES;OK;Austria;5.0;5.0;5.0;5-9;25.0;15.0
+Lithuania_ILyga;2026-09-05;FK Minija;Transinvest 2;TRAIN;NO;OK;Lithuania;21.0;22.0;21.0;20+;23.64;10.5
+Norway_OBOSLigaen;2026-09-05;Haugesund;Sogndal;TRAIN;NO;KO;Norway;20.0;20.0;20.0;20+;24.0;12.0
+Norway_OBOSLigaen;2026-09-05;Kongsvinger;Raufoss;TRAIN;NO;OK;Norway;20.0;20.0;20.0;20+;24.5;12.0
+Norway_OBOSLigaen;2026-09-05;Stabaek;Moss;TRAIN;NO;OK;Norway;20.0;20.0;20.0;20+;22.5;15.0
+Poland_IIILiga_Group1;2026-09-05;Mazovia Minsk Mazowiecki;Zambrow;TRAIN;YES;OK;Poland;6.0;6.0;6.0;5-9;25.0;15.0
+Poland_IIILiga_Group1;2026-09-05;T. Mazowiecki;Troszyn;TRAIN;NO;KO;Poland;6.0;6.0;6.0;5-9;25.0;10.0
+Poland_IIILiga_Group1;2026-09-05;Weszlo;Zabki;TRAIN;NO;KO;Poland;6.0;6.0;6.0;5-9;16.67;10.0
+Poland_IIILiga_Group2;2026-09-05;Blekitni Stargard;Kotwica Kornik;TRAIN;NO;OK;Poland;6.0;6.0;6.0;5-9;21.67;7.5
+Poland_IIILiga_Group2;2026-09-05;Gedania Gdansk;Luzino;TRAIN;NO;OK;Poland;6.0;6.0;6.0;5-9;13.33;12.5
+Poland_IIILiga_Group2;2026-09-05;Grom Nowy Staw;Sroda;TRAIN;NO;OK;Poland;6.0;6.0;6.0;5-9;11.67;12.5
+Poland_IIILiga_Group3;2026-09-05;Brzeg;Legnica 2;TRAIN;NO;OK;Poland;6.0;6.0;6.0;5-9;21.67;12.5
+Poland_IIILiga_Group3;2026-09-05;Sleza Wroclaw;Rakow 2;TRAIN;NO;OK;Poland;6.0;6.0;6.0;5-9;25.0;10.0
+Switzerland_PromotionLeague;2026-09-05;Schaffhausen;YF Juventus;TRAIN;NO;OK;Switzerland;5.0;5.0;5.0;5-9;25.0;12.0
+Estonia_EsiliigaB;2026-09-06;Parnu JK Vaprus U21;Tallinna Kalev U21;TRAIN;NO;OK;Estonia;26.0;26.0;26.0;20+;23.2;12.0
+Finland_Kakkonen_GroupC;2026-09-06;Huima / Urho;Narpes Kraft;TRAIN;NO;OK;Finland;20.0;19.0;19.0;10-19;24.21;15.0
+Norway_3rdDivision_Group5;2026-09-06;Lillestrom 2;Bossekop;TRAIN;NO;OK;Norway;17.0;17.0;17.0;10-19;25.0;12.0
+Poland_IIILiga_Group3;2026-09-06;Polkowice;Carina Gubin;TRAIN;NO;OK;Poland;6.0;6.0;6.0;5-9;21.67;10.0
+Slovakia_NikeLiga;2026-09-06;Kosice;Banska Bystrica;TRAIN;NO;OK;Slovakia;5.0;6.0;5.0;5-9;25.0;10.0
+Switzerland_PromotionLeague;2026-09-06;Biel;Young Boys 2;TRAIN;YES;OK;Switzerland;5.0;5.0;5.0;5-9;25.0;15.0
+Norway_3rdDivision_Group2;2026-09-07;Molde 2;Aalesund 2;TRAIN;NO;OK;Norway;17.0;17.0;17.0;10-19;25.0;10.5
+Austria_Regionalliga_North;2026-09-08;Wallern/St Marienkirchen;Wals-Grunau;TRAIN;NO;OK;Austria;6.0;6.0;6.0;5-9;15.0;12.5
+Germany_Oberliga_Hessen;2026-09-09;Unter-Flockenbach;Hummetroth;TRAIN;NO;OK;Germany;7.0;7.0;7.0;5-9;25.0;10.71
+Switzerland_PromotionLeague;2026-09-10;Bulle;Amical Saint-Prex;TRAIN;NO;OK;Switzerland;6.0;6.0;6.0;5-9;21.67;10.0
+Austria_Karnten;2026-09-11;Lendorf;Kottmannsdorf;TRAIN;NO;OK;Austria;6.0;6.0;6.0;5-9;25.0;12.5
+Austria_Karnten;2026-09-11;SAK Klagenfurt;Dellach/Gail;TRAIN;NO;KO;Austria;6.0;6.0;6.0;5-9;25.0;12.5
+Austria_Karnten;2026-09-11;SC St. Veit;SGA Sirnitz;TRAIN;NO;OK;Austria;6.0;6.0;6.0;5-9;25.0;12.5
+Austria_Regionalliga_North;2026-09-11;Union Gurten;Saalfelden;TRAIN;NO;OK;Austria;7.0;7.0;7.0;5-9;24.29;12.86
+Austria_Regionalliga_South;2026-09-11;A. Klagenfurt;ATSV Wolfsberger;TRAIN;NO;KO;Austria;6.0;6.0;6.0;5-9;25.0;10.0
+Austria_Regionalliga_South;2026-09-11;Kalsdorf;Hartberg (Am);TRAIN;NO;OK;Austria;5.0;5.0;5.0;5-9;25.0;12.0
+Austria_Regionalliga_South;2026-09-11;Lafnitz;Deutschlandsberger;TRAIN;NO;OK;Austria;5.0;5.0;5.0;5-9;18.0;12.0
+Austria_Regionalliga_South;2026-09-11;Treibach;Donau Klagenfurt;TRAIN;NO;KO;Austria;6.0;6.0;6.0;5-9;20.0;7.5
+Netherlands_EersteDivisie;2026-09-11;FC Emmen;De Graafschap;TRAIN;NO;OK;Netherlands;5.0;5.0;5.0;5-9;25.0;12.0
+Norway_2ndDivision_Group2;2026-09-11;Eidsvold;Ull/Kisa;TRAIN;YES;OK;Norway;19.0;18.0;18.0;10-19;25.0;13.5
+Poland_IIILiga_Group2;2026-09-11;Luzino;Grom Nowy Staw;TRAIN;NO;OK;Poland;7.0;7.0;7.0;5-9;25.0;12.86
+Poland_IIILiga_Group2;2026-09-11;Sroda;Unia Swarzedz;TRAIN;NO;OK;Poland;7.0;7.0;7.0;5-9;17.14;6.43
+Wales_CymruPremier;2026-09-11;Cambrian United;Holywell;TRAIN;NO;OK;Wales;7.0;7.0;7.0;5-9;25.0;12.86
+Austria_Regionalliga_North;2026-09-12;Wals-Grunau;TSV St. Johann;TRAIN;NO;OK;Austria;7.0;7.0;7.0;5-9;17.14;8.57
+Austria_Tirol;2026-09-12;SC Mils 05;SV Worgl;TRAIN;NO;KO;Austria;6.0;6.0;6.0;5-9;25.0;12.5
+CzechRepublic_4Liga_GroupB;2026-09-12;Psary;Karlovy Vary;TRAIN;YES;OK;CzechRepublic;;;;UNKNOWN;25.0;15.0
+Germany_Oberliga_SchleswigHolstein;2026-09-12;Kiel 2;Oldenburger;TRAIN;NO;OK;Germany;7.0;7.0;7.0;5-9;24.29;15.0
+Moldova_Liga1_GroupA;2026-09-12;FCM Ungheni;Sparta Selemet;TRAIN;NO;OK;Moldova;;;;UNKNOWN;25.0;12.5
+Netherlands_Eredivisie;2026-09-12;G.A. Eagles;Groningen;TRAIN;NO;KO;Netherlands;5.0;5.0;5.0;5-9;24.0;15.0
+Norway_2ndDivision_Group2;2026-09-12;Levanger;Follo;TRAIN;NO;OK;Norway;18.0;18.0;18.0;10-19;20.56;10.5
+Norway_3rdDivision_Group1;2026-09-12;Ready;Ullern;TRAIN;YES;OK;Norway;19.0;19.0;19.0;10-19;25.0;15.0
+Norway_3rdDivision_Group2;2026-09-12;Herd;Orkla;TRAIN;NO;OK;Norway;18.0;18.0;18.0;10-19;25.0;12.0
+Norway_3rdDivision_Group2;2026-09-12;Strindheim;FK Kvik;TRAIN;NO;KO;Norway;19.0;18.0;18.0;10-19;25.0;9.0
+Norway_3rdDivision_Group5;2026-09-12;Harstad;Ulfstind;TRAIN;NO;OK;Norway;19.0;18.0;18.0;10-19;25.0;12.0
+Poland_IIILiga_Group1;2026-09-12;Jagiellonia 2;Mlawa;TRAIN;NO;OK;Poland;7.0;7.0;7.0;5-9;24.29;8.57
+Poland_IIILiga_Group2;2026-09-12;Kluczevia Stargard;Elana Torun;TRAIN;NO;OK;Poland;7.0;7.0;7.0;5-9;24.29;12.86
+Poland_IIILiga_Group2;2026-09-12;Swinoujscie;Gedania Gdansk;TRAIN;NO;KO;Poland;7.0;7.0;7.0;5-9;25.0;12.86
+Poland_IIILiga_Group3;2026-09-12;Sulow;Polkowice;TRAIN;NO;OK;Poland;7.0;7.0;7.0;5-9;17.14;12.86
+Sweden_Division2_SodraSvealand;2026-09-12;Sleipner;Nacka FC;TRAIN;NO;KO;Sweden;20.0;20.0;20.0;20+;25.0;9.0
+Austria_Karnten;2026-09-13;Launsdorf;Matrei;TRAIN;NO;KO;Austria;5.0;6.0;5.0;5-9;16.67;10.0
+Austria_Salzburg;2026-09-13;USK Anif;Eugendorf;TRAIN;NO;OK;Austria;6.0;6.0;6.0;5-9;25.0;12.5
+Austria_Tirol;2026-09-13;Ebbs;Munster;TRAIN;NO;OK;Austria;6.0;6.0;6.0;5-9;25.0;10.0
+Bhutan_PremierLeague;2026-09-13;Thimphu City;Ugyen Academy;TRAIN;NO;OK;Bhutan;14.0;14.0;14.0;10-19;25.0;7.5
+Germany_Oberliga_SchleswigHolstein;2026-09-13;Flensburg;Eckernforder SV;TRAIN;YES;OK;Germany;7.0;6.0;6.0;5-9;25.0;15.0
+Mexico_LigaExpansionMX_Apertura;2026-09-13;Venados;Tepatitlan de Morelos;TRAIN;NO;OK;Mexico;7.0;7.0;7.0;5-9;25.0;10.71
+Netherlands_Eredivisie;2026-09-13;Excelsior;Utrecht;TRAIN;YES;OK;Netherlands;5.0;5.0;5.0;5-9;25.0;15.0
+Norway_OBOSLigaen;2026-09-13;Ranheim;Åsane;TRAIN;NO;OK;Norway;21.0;21.0;21.0;20+;21.9;13.5
+Sweden_Division2_NorraSvealand;2026-09-13;Skiljebo;Korsnas;TRAIN;NO;OK;Sweden;20.0;20.0;20.0;20+;23.5;12.0
+Switzerland_PromotionLeague;2026-09-13;Lugano 2;Basilea 2;TRAIN;NO;OK;Switzerland;6.0;6.0;6.0;5-9;20.0;15.0
+Estonia_Esiliiga;2026-09-14;Tartu Welco;Nomme Kalju U21;TRAIN;NO;OK;Estonia;28.0;28.0;28.0;20+;25.0;9.0
+Estonia_EsiliigaB;2026-09-14;Johvi Phoenix;Tallinna Kalev U21;TRAIN;NO;OK;Estonia;28.0;28.0;28.0;20+;24.44;12.0
+Norway_3rdDivision_Group1;2026-09-14;Asker;K. Oslo 2;TRAIN;YES;OK;Norway;17.0;17.0;17.0;10-19;25.0;13.5
+Sweden_Division2_SodraSvealand;2026-09-14;Haninge;Syrianska;TRAIN;NO;KO;Sweden;20.0;20.0;20.0;20+;24.0;12.0
+Germany_Regionalliga_Nord;2026-09-15;Drochtersen/Assel;Emden;TRAIN;NO;OK;Germany;8.0;8.0;8.0;5-9;25.0;13.12
+Netherlands_Eredivisie;2026-09-15;Ajax;Willem 2;TRAIN;NO;OK;Netherlands;5.0;5.0;5.0;5-9;25.0;12.0
+Scotland_Premiership;2026-09-15;Hibernian;Kilmarnock;TRAIN;NO;KO;Scotland;5.0;5.0;5.0;5-9;25.0;9.0
+Wales_CymruPremier;2026-09-15;Barry;Ammanford;TRAIN;NO;OK;Wales;8.0;8.0;8.0;5-9;25.0;9.38
+Sweden_Division1_Norra;2026-09-17;Stockholm Internazionale;Stocksund;TRAIN;NO;OK;Sweden;21.0;21.0;21.0;20+;23.81;10.5
+Austria_Karnten;2026-09-18;Dellach/Gail;Nussdorf;TRAIN;YES;OK;Austria;7.0;7.0;7.0;5-9;25.0;15.0
+Austria_Regionalliga_North;2026-09-18;Kuchl;UFC Hallein;TRAIN;NO;OK;Austria;7.0;7.0;7.0;5-9;24.29;12.86
+Austria_Regionalliga_South;2026-09-18;Allerheiligen;Lafnitz;TRAIN;YES;OK;Austria;6.0;6.0;6.0;5-9;25.0;15.0
+Austria_Tirol;2026-09-18;SV Worgl;Stubai;TRAIN;NO;KO;Austria;7.0;7.0;7.0;5-9;25.0;12.86
+Denmark_3rdDivision;2026-09-18;Holbaek;Ringsted;TRAIN;NO;OK;Denmark;7.0;7.0;7.0;5-9;25.0;8.57
+Estonia_EsiliigaB;2026-09-18;Parnu JK Vaprus U21;Legion;TRAIN;NO;OK;Estonia;29.0;28.0;28.0;20+;25.0;9.0
+FaroeIslands_1Deild;2026-09-18;Sandur;Streymur 2;TRAIN;YES;OK;FaroeIslands;23.0;23.0;23.0;20+;25.0;13.5
+Kyrgyzstan_PremierLiga;2026-09-18;Bars;Aldier;TRAIN;NO;OK;Kyrgyzstan;22.0;23.0;22.0;20+;17.83;12.0
+Moldova_Liga1_GroupA;2026-09-18;Iskra Ribnita;Zimbru 2;TRAIN;NO;KO;Moldova;;;;UNKNOWN;25.0;12.86
+Poland_IIILiga_Group3;2026-09-18;Zaglebie 2;Carina Gubin;TRAIN;NO;OK;Poland;8.0;8.0;8.0;5-9;20.0;9.38
+Ukraine_PremierLeague;2026-09-18;Polissya Zhytomyr;Kryvbas;TRAIN;NO;KO;Ukraine;6.0;5.0;5.0;5-9;18.0;9.0
+Austria_Tirol;2026-09-19;Absam;Ebbs;TRAIN;NO;OK;Austria;7.0;7.0;7.0;5-9;14.29;12.86
+Austria_Tirol;2026-09-19;Haiming;SC Mils 05;TRAIN;NO;KO;Austria;7.0;7.0;7.0;5-9;18.57;10.71
+Austria_Tirol;2026-09-19;Kematen;SV Oberperfuss;TRAIN;NO;OK;Austria;7.0;7.0;7.0;5-9;22.86;10.71
+CzechRepublic_3MSFL;2026-09-19;Hlubina;Polanka nad Odrou;TRAIN;NO;KO;CzechRepublic;8.0;8.0;8.0;5-9;16.25;7.5
+CzechRepublic_4Liga_GroupB;2026-09-19;Steti;Usti n. L. B;TRAIN;NO;OK;CzechRepublic;;;;UNKNOWN;25.0;12.5
+CzechRepublic_4Liga_GroupC;2026-09-19;Kosmonosy;Chrudim B;TRAIN;YES;OK;CzechRepublic;;;;UNKNOWN;25.0;15.0
+Germany_Oberliga_RheinlandPfalzSaar;2026-09-19;RW Wittlich;Eisbachtal;TRAIN;NO;OK;Germany;7.0;8.0;7.0;5-9;25.0;13.12
+Germany_Oberliga_SchleswigHolstein;2026-09-19;Flensburg;Lubeck 2;TRAIN;NO;KO;Germany;8.0;8.0;8.0;5-9;25.0;13.12
+Norway_3rdDivision_Group1;2026-09-19;Frigg;Konnerud;TRAIN;NO;KO;Norway;18.0;20.0;18.0;10-19;25.0;10.5
+Norway_3rdDivision_Group1;2026-09-19;Ullern;Vaalerenga IF 2;TRAIN;YES;OK;Norway;20.0;20.0;20.0;20+;25.0;15.0
+Norway_3rdDivision_Group6;2026-09-19;Elverum;Raelingen;TRAIN;NO;OK;Norway;20.0;20.0;20.0;20+;23.68;10.5
+Norway_3rdDivision_Group6;2026-09-19;Lillehammer;Bjorkelangen;TRAIN;NO;OK;Norway;20.0;19.0;19.0;10-19;25.0;10.5
+Poland_IIILiga_Group1;2026-09-19;Jagiellonia 2;LKS Lodz 2;TRAIN;NO;OK;Poland;8.0;8.0;8.0;5-9;20.0;7.5
+Poland_IIILiga_Group1;2026-09-19;Mazovia Minsk Mazowiecki;Plock 2;TRAIN;NO;OK;Poland;8.0;8.0;8.0;5-9;16.25;9.38
+Poland_IIILiga_Group1;2026-09-19;Pelikan;Lidzbark Warminski;TRAIN;NO;KO;Poland;8.0;8.0;8.0;5-9;23.75;13.12
+Poland_IIILiga_Group1;2026-09-19;Warta Sieradz;Zambrow;TRAIN;NO;OK;Poland;8.0;8.0;8.0;5-9;25.0;13.12
+Poland_IIILiga_Group1;2026-09-19;Weszlo;Elblag;TRAIN;NO;OK;Poland;8.0;8.0;8.0;5-9;20.0;11.25
+Poland_IIILiga_Group2;2026-09-19;Blekitni Stargard;Wrzesnia;TRAIN;NO;KO;Poland;8.0;8.0;8.0;5-9;25.0;9.38
+Poland_IIILiga_Group2;2026-09-19;Notec Czarnkow;Sroda;TRAIN;NO;KO;Poland;8.0;8.0;8.0;5-9;17.5;13.12
+Poland_IIILiga_Group3;2026-09-19;Stilon Gorzow;ROW Rybnik;TRAIN;NO;KO;Poland;8.0;8.0;8.0;5-9;25.0;13.12
+Slovakia_NikeLiga;2026-09-19;Zilina;Trencin;TRAIN;NO;OK;Slovakia;8.0;7.0;7.0;5-9;25.0;12.86
+Sweden_Division2_SodraGotaland;2026-09-19;IFK Berga;IFK Karlshamn;TRAIN;NO;OK;Sweden;21.0;21.0;21.0;20+;24.09;15.0
+Switzerland_PromotionLeague;2026-09-19;Basilea 2;Bulle;TRAIN;NO;OK;Switzerland;7.0;7.0;7.0;5-9;14.29;12.86
+Switzerland_PromotionLeague;2026-09-19;Paradiso;YF Juventus;TRAIN;NO;KO;Switzerland;7.0;7.0;7.0;5-9;18.57;10.71
+Switzerland_PromotionLeague;2026-09-19;Schaffhausen;Lugano 2;TRAIN;NO;OK;Switzerland;7.0;7.0;7.0;5-9;25.0;12.86
+Switzerland_SuperLeague;2026-09-19;Sion;Zurigo;TRAIN;NO;KO;Switzerland;8.0;8.0;8.0;5-9;23.75;15.0
+CzechRepublic_3CFL_GroupB;2026-09-20;Mlada Boleslav B;Liberec B;TRAIN;NO;OK;CzechRepublic;;;;UNKNOWN;22.0;12.0
+CzechRepublic_3MSFL;2026-09-20;Brno B;Hodonin;TRAIN;NO;KO;CzechRepublic;8.0;8.0;8.0;5-9;15.0;3.75
+CzechRepublic_4Liga_GroupE;2026-09-20;FK Kozlovice;Brumov;TRAIN;NO;OK;CzechRepublic;;;;UNKNOWN;25.0;12.5
+CzechRepublic_4Liga_GroupF;2026-09-20;Kravare;Bridlicna;TRAIN;NO;OK;CzechRepublic;;;;UNKNOWN;25.0;10.0
+Germany_Oberliga_RheinlandPfalzSaar;2026-09-20;TSV 1881 Gau-Odernheim;Diefflen;TRAIN;NO;OK;Germany;7.0;8.0;7.0;5-9;25.0;13.12
+Moldova_SuperLiga;2026-09-20;S. Tiraspol;Balti;TRAIN;NO;OK;Moldova;12.0;12.0;12.0;10-19;25.0;12.0
+Netherlands_Eredivisie;2026-09-20;Feyenoord;Utrecht;TRAIN;YES;OK;Netherlands;6.0;6.0;6.0;5-9;25.0;15.0
+Norway_3rdDivision_Group5;2026-09-20;Lillestrom 2;Fauske Sprint;TRAIN;YES;OK;Norway;19.0;19.0;19.0;10-19;25.0;15.0
+Norway_3rdDivision_Group3;2026-09-21;Brann 2;Fyllingsdalen;VALID;NO;OK;Norway;19.0;20.0;19.0;10-19;25.0;7.5
+Norway_3rdDivision_Group4;2026-09-21;Madla IL;Haugesund 2;VALID;YES;KO;Norway;19.0;19.0;19.0;10-19;25.0;15.0
+CzechRepublic_4Liga_GroupC;2026-09-23;Vykan;Slavia HK;VALID;NO;OK;CzechRepublic;;;;UNKNOWN;25.0;12.5
+Austria_Karnten;2026-09-25;KAC 1909;SV Spittal;VALID;NO;OK;Austria;8.0;8.0;8.0;5-9;16.25;9.38
+Austria_Karnten;2026-09-25;Lendorf;SGA Sirnitz;VALID;NO;OK;Austria;8.0;8.0;8.0;5-9;25.0;13.12
+Austria_Karnten;2026-09-25;SC St. Veit;Matrei;VALID;NO;OK;Austria;8.0;8.0;8.0;5-9;15.0;9.38
+Austria_Regionalliga_North;2026-09-25;UFC Hallein;Saalfelden;VALID;NO;KO;Austria;8.0;8.0;8.0;5-9;25.0;13.12
+Austria_Regionalliga_North;2026-09-25;Wals-Grunau;Dietach;VALID;NO;OK;Austria;9.0;8.0;8.0;5-9;25.0;11.25
+Austria_Regionalliga_South;2026-09-25;Weiz;Lafnitz;VALID;NO;OK;Austria;7.0;7.0;7.0;5-9;24.29;15.0
+Germany_Oberliga_Bremen;2026-09-25;OSC Bremerhaven;Woltmershausen;VALID;NO;OK;Germany;7.0;7.0;7.0;5-9;25.0;12.86
+Poland_IIILiga_Group1;2026-09-25;Zabki;Mlawa;VALID;NO;OK;Poland;9.0;9.0;9.0;5-9;25.0;10.0
+Austria_Karnten;2026-09-26;Saint Michael Lavanttal;Dellach/Gail;VALID;NO;KO;Austria;8.0;8.0;8.0;5-9;23.75;11.25
+Austria_Karnten;2026-09-26;Seeboden;SC Landskron;VALID;NO;OK;Austria;8.0;8.0;8.0;5-9;18.75;9.38
+Austria_Regionalliga_South;2026-09-26;Kalsdorf;Tillmitsch;VALID;NO;OK;Austria;7.0;7.0;7.0;5-9;25.0;12.86
+Austria_Salzburg;2026-09-26;Burmoos;Schwarzach;VALID;NO;OK;Austria;8.0;8.0;8.0;5-9;25.0;13.12
+CzechRepublic_4Liga_GroupB;2026-09-26;Sokolov;Ostrov;VALID;YES;OK;CzechRepublic;;;;UNKNOWN;25.0;15.0
+CzechRepublic_4Liga_GroupF;2026-09-26;Opava B;Frydek-Mistek B;VALID;NO;OK;CzechRepublic;;;;UNKNOWN;24.29;12.86
+Germany_Oberliga_Bremen;2026-09-26;Blumenthaler;Oberneuland;VALID;NO;KO;Germany;7.0;7.0;7.0;5-9;25.0;12.86
+Germany_Oberliga_SchleswigHolstein;2026-09-26;Kilia Kiel;Phonix Lubeck B;VALID;YES;OK;Germany;9.0;9.0;9.0;5-9;25.0;15.0
+Norway_3rdDivision_Group1;2026-09-26;Asker;Nordstrand;VALID;NO;KO;Norway;19.0;21.0;19.0;10-19;22.86;12.0
+Norway_3rdDivision_Group1;2026-09-26;Heming;Ullern;VALID;YES;OK;Norway;21.0;21.0;21.0;20+;25.0;15.0
+Norway_3rdDivision_Group1;2026-09-26;Ready;Grei;VALID;NO;OK;Norway;21.0;21.0;21.0;20+;25.0;12.0
+Norway_3rdDivision_Group2;2026-09-26;Byåsen;Orkla;VALID;YES;OK;Norway;20.0;20.0;20.0;20+;25.0;13.5
+Norway_3rdDivision_Group3;2026-09-26;V. Haugesund;Fana;VALID;NO;OK;Norway;21.0;20.0;20.0;20+;20.0;15.0
+Norway_3rdDivision_Group5;2026-09-26;Skedsmo;Ulfstind;VALID;YES;OK;Norway;20.0;20.0;20.0;20+;25.0;13.5
+Poland_IIILiga_Group2;2026-09-26;Kotwica Kornik;Grom Nowy Staw;VALID;NO;OK;Poland;9.0;9.0;9.0;5-9;25.0;13.33
+Poland_IIILiga_Group2;2026-09-26;Luzino;Notec Czarnkow;VALID;NO;KO;Poland;9.0;9.0;9.0;5-9;14.44;10.0
+Poland_IIILiga_Group2;2026-09-26;Sroda;Elana Torun;VALID;NO;OK;Poland;9.0;9.0;9.0;5-9;21.11;11.67
+Switzerland_PromotionLeague;2026-09-26;Young Boys 2;Basilea 2;VALID;NO;KO;Switzerland;8.0;8.0;8.0;5-9;21.25;15.0
+CzechRepublic_4Liga_GroupA;2026-09-27;SK Strakonice 1908;Cesky Krumlov;VALID;YES;OK;CzechRepublic;;;;UNKNOWN;25.0;15.0
+Germany_Oberliga_Hamburg;2026-09-27;TSV Buchholz 08;Norderstedt 2;VALID;YES;KO;Germany;7.0;7.0;7.0;5-9;25.0;15.0
+Norway_2ndDivision_Group2;2026-09-27;Eidsvold;Trygg/Lade;VALID;NO;OK;Norway;21.0;21.0;21.0;20+;23.33;9.0
+Norway_3rdDivision_Group5;2026-09-27;Fauske Sprint;Tromsø 2;VALID;NO;OK;Norway;20.0;20.0;20.0;20+;20.5;12.0
+Austria_Tirol;2026-10-01;SC Kundl;Kolsass Weer;VALID;NO;OK;Austria;9.0;9.0;9.0;5-9;25.0;10.0
+Austria_Karnten;2026-10-02;Atus Ferlach;Nussdorf;VALID;YES;OK;Austria;8.0;9.0;8.0;5-9;25.0;15.0
+Austria_Regionalliga_South;2026-10-02;Lafnitz;Hartberg (Am);VALID;NO;OK;Austria;8.0;8.0;8.0;5-9;22.5;13.12
+Austria_Tirol;2026-10-02;Haiming;Stubai;VALID;NO;OK;Austria;9.0;9.0;9.0;5-9;21.11;10.0
+Poland_IIILiga_Group3;2026-10-02;Zaglebie 2;Polkowice;VALID;NO;KO;Poland;10.0;10.0;10.0;10-19;17.0;12.0
+Austria_Karnten;2026-10-03;Launsdorf;Seeboden;VALID;NO;OK;Austria;8.0;9.0;8.0;5-9;25.0;13.33
+Austria_Karnten;2026-10-03;TSV Grafenstein;Dellach/Gail;VALID;NO;OK;Austria;9.0;9.0;9.0;5-9;22.22;10.0
+Austria_Regionalliga_North;2026-10-03;Kuchl;Leonfelden;VALID;NO;OK;Austria;9.0;9.0;9.0;5-9;22.22;10.0
+Austria_Regionalliga_North;2026-10-03;Wallern/St Marienkirchen;UFC Hallein;VALID;NO;OK;Austria;9.0;9.0;9.0;5-9;23.33;11.67
+Austria_Regionalliga_North;2026-10-03;Wals-Grunau;Ried (Am);VALID;NO;OK;Austria;10.0;10.0;10.0;10-19;24.0;10.5
+Bhutan_PremierLeague;2026-10-03;Paro;BFF Academy U19;VALID;NO;OK;Bhutan;15.0;17.0;15.0;10-19;22.94;10.5
+CzechRepublic_4Liga_GroupB;2026-10-03;Hvezda Cheb;Steti;VALID;YES;KO;CzechRepublic;;;;UNKNOWN;25.0;15.0
+Estonia_EsiliigaB;2026-10-03;Tulevik;Tallinna Kalev U21;VALID;NO;OK;Estonia;30.0;30.0;30.0;20+;24.83;12.0
+Germany_Oberliga_SchleswigHolstein;2026-10-03;Kiel 2;Hohenwestedt;VALID;NO;OK;Germany;10.0;10.0;10.0;10-19;24.0;10.5
+Germany_Regionalliga_Nord;2026-10-03;Emden;Todesfelde;VALID;NO;OK;Germany;11.0;11.0;11.0;10-19;25.0;10.5
+Norway_3rdDivision_Group2;2026-10-03;Volda TI;Orkla;VALID;YES;OK;Norway;21.0;21.0;21.0;20+;25.0;15.0
+Norway_3rdDivision_Group3;2026-10-03;Brann 2;Varegg;VALID;NO;OK;Norway;21.0;21.0;21.0;20+;20.0;13.5
+Norway_3rdDivision_Group5;2026-10-03;Floeya;Bossekop;VALID;NO;OK;Norway;22.0;21.0;21.0;20+;25.0;12.0
+Norway_3rdDivision_Group6;2026-10-03;Elverum;Bjorkelangen;VALID;NO;OK;Norway;22.0;21.0;21.0;20+;25.0;10.5
+Norway_OBOSLigaen;2026-10-03;Strömsgodset;Åsane;VALID;NO;KO;Norway;23.0;23.0;23.0;20+;22.61;15.0
+Poland_IIILiga_Group1;2026-10-03;T. Mazowiecki;Lidzbark Warminski;VALID;NO;OK;Poland;10.0;10.0;10.0;10-19;21.0;10.5
+Poland_IIILiga_Group1;2026-10-03;Warta Sieradz;Mazovia Minsk Mazowiecki;VALID;NO;KO;Poland;9.0;10.0;9.0;5-9;17.0;13.5
+Poland_IIILiga_Group1;2026-10-03;Weszlo;Zambrow;VALID;YES;OK;Poland;10.0;10.0;10.0;10-19;25.0;13.5
+Poland_IIILiga_Group2;2026-10-03;Gedania Gdansk;Wrzesnia;VALID;NO;KO;Poland;10.0;10.0;10.0;10-19;23.0;7.5
+Sweden_Division2_NorraGotaland;2026-10-03;Husqvarna;Vanersborgs IF;VALID;NO;OK;Sweden;23.0;23.0;23.0;20+;25.0;10.5
+Switzerland_PromotionLeague;2026-10-03;Paradiso;Lugano 2;VALID;NO;KO;Switzerland;9.0;9.0;9.0;5-9;23.33;11.67
+Switzerland_PromotionLeague;2026-10-03;Schaffhausen;Young Boys 2;VALID;NO;OK;Switzerland;9.0;9.0;9.0;5-9;23.33;13.33
+Wales_CymruPremier;2026-10-03;Caernarfon;Barry;VALID;NO;KO;Wales;11.0;11.0;11.0;10-19;18.18;12.0
+Wales_CymruPremier;2026-10-03;TNS;Cambrian United;VALID;NO;OK;Wales;11.0;11.0;11.0;10-19;14.55;12.0
+Austria_Salzburg;2026-10-04;TSU Bramberg;ATSV Salzburg;VALID;NO;OK;Austria;9.0;9.0;9.0;5-9;25.0;11.67
+CzechRepublic_3MSFL;2026-10-04;Brno B;Blansko;VALID;NO;KO;CzechRepublic;10.0;10.0;10.0;10-19;25.0;12.0
+CzechRepublic_4Liga_GroupB;2026-10-04;Hostoun;Psary;VALID;YES;KO;CzechRepublic;;;;UNKNOWN;25.0;15.0
+CzechRepublic_4Liga_GroupC;2026-10-04;Turnov;Chrudim B;VALID;YES;OK;CzechRepublic;;;;UNKNOWN;25.0;15.0
+Germany_Oberliga_Hamburg;2026-10-04;Paloma;ETSV Hamburg;VALID;NO;OK;Germany;9.0;7.0;7.0;5-9;20.0;12.86
+Germany_Oberliga_SchleswigHolstein;2026-10-04;Oldenburger;Heider SV;VALID;NO;OK;Germany;10.0;10.0;10.0;10-19;25.0;12.0
+Sweden_Division2_NorraSvealand;2026-10-04;Angby;Helges;VALID;NO;OK;Sweden;23.0;23.0;23.0;20+;24.78;12.0
+Sweden_Division2_SodraGotaland;2026-10-04;IFK Trelleborg;Rappe GOIF;VALID;NO;KO;Sweden;23.0;23.0;23.0;20+;22.17;12.0
+Norway_3rdDivision_Group3;2026-10-05;Fana;Åsane 2;VALID;NO;OK;Norway;21.0;21.0;21.0;20+;22.38;13.5
+Norway_3rdDivision_Group5;2026-10-06;Skjetten;Kongsvinger 2;VALID;YES;OK;Norway;22.0;21.0;21.0;20+;25.0;13.5
+Austria_Karnten;2026-10-09;Dellach/Gail;Kottmannsdorf;VALID;YES;OK;Austria;10.0;10.0;10.0;10-19;25.0;13.5
+Austria_Karnten;2026-10-09;SC St. Veit;Launsdorf;VALID;NO;OK;Austria;10.0;9.0;9.0;5-9;14.44;13.33
+Austria_Regionalliga_South;2026-10-09;Tillmitsch;Lafnitz;VALID;YES;OK;Austria;9.0;9.0;9.0;5-9;25.0;15.0
+Austria_Salzburg;2026-10-09;Strasswalchen;USV 1960 Berndorf;VALID;YES;OK;Austria;11.0;10.0;10.0;10-19;25.0;13.5
+England_ProfessionalDevelopmentLeague;2026-10-09;Barnsley U21;Hull U21;VALID;NO;KO;England;5.0;5.0;5.0;5-9;25.0;12.0
+Moldova_Liga1_GroupA;2026-10-09;FCM Ungheni;Zimbru 2;VALID;NO;OK;Moldova;;;;UNKNOWN;25.0;11.25
+Moldova_Liga1_GroupA;2026-10-09;Vulturii Cutezatori;Univer Comrat;VALID;NO;KO;Moldova;;;;UNKNOWN;21.25;7.5
+Poland_IIILiga_Group2;2026-10-09;Sroda;Kluczevia Stargard;VALID;NO;KO;Poland;11.0;10.0;10.0;10-19;16.0;12.0
+Wales_CymruPremier;2026-10-09;Cambrian United;Ammanford;VALID;NO;KO;Wales;12.0;12.0;12.0;10-19;25.0;10.5
+Wales_CymruPremier;2026-10-09;Cardiff Metropolitan;Trefelin;VALID;NO;OK;Wales;12.0;12.0;12.0;10-19;25.0;9.0
+Austria_Karnten;2026-10-10;Nussdorf;SGA Sirnitz;VALID;YES;KO;Austria;10.0;10.0;10.0;10-19;25.0;13.5
+Austria_Regionalliga_North;2026-10-10;Leonfelden;Saalfelden;VALID;NO;OK;Austria;10.0;10.0;10.0;10-19;24.0;12.0
+Belarus_PershayaLiga;2026-10-10;Niva Dolbizno;Gomel 2;VALID;NO;OK;Belarus;27.0;27.0;27.0;20+;20.37;13.5
+CzechRepublic_4Liga_GroupB;2026-10-10;Psary;Brandys n. Labem;VALID;NO;OK;CzechRepublic;;;;UNKNOWN;23.33;13.33
+France_Ligue2;2026-10-10;St. Etienne;Rodez;VALID;NO;KO;France;7.0;7.0;7.0;5-9;23.33;10.0
+Germany_Oberliga_SchleswigHolstein;2026-10-10;Kilia Kiel;Lubeck 2;VALID;NO;OK;Germany;11.0;11.0;11.0;10-19;25.0;12.0
+Germany_Regionalliga_West;2026-10-10;Oberhausen;Bocholt;VALID;NO;OK;Germany;11.0;11.0;11.0;10-19;23.64;13.5
+Norway_3rdDivision_Group1;2026-10-10;Gamle Oslo;Nordstrand;VALID;NO;KO;Norway;23.0;23.0;23.0;20+;22.61;10.5
+Norway_3rdDivision_Group3;2026-10-10;Sogndal 2;Gneist;VALID;NO;OK;Norway;22.0;23.0;22.0;20+;25.0;10.5
+Norway_3rdDivision_Group5;2026-10-10;Alta;Skjervoy;VALID;NO;OK;Norway;22.0;23.0;22.0;20+;24.78;10.5
+Norway_Eliteserien;2026-10-10;Bodo/Glimt;Kristiansund;VALID;NO;OK;Norway;21.0;21.0;21.0;20+;19.05;10.5
+Poland_IIILiga_Group1;2026-10-10;Plock 2;Troszyn;VALID;NO;OK;Poland;11.0;10.0;10.0;10-19;24.0;7.5
+Poland_IIILiga_Group2;2026-10-10;Blekitni Stargard;Lipno Steszew;VALID;NO;OK;Poland;11.0;11.0;11.0;10-19;20.91;10.5
+Poland_IIILiga_Group3;2026-10-10;Legnica 2;Rakow 2;VALID;NO;OK;Poland;11.0;9.0;9.0;5-9;18.89;8.33
+Poland_IIILiga_Group3;2026-10-10;ROW Rybnik;Sleza Wroclaw;VALID;NO;OK;Poland;11.0;11.0;11.0;10-19;23.64;10.5
+Sweden_Division2_SodraSvealand;2026-10-10;Haninge;Nacka FC;VALID;NO;OK;Sweden;24.0;24.0;24.0;20+;25.0;7.5
+CzechRepublic_4Liga_GroupF;2026-10-11;Bohumin;Frydek-Mistek B;VALID;NO;OK;CzechRepublic;;;;UNKNOWN;22.22;13.33
+Iceland_BestaDeildKarla;2026-10-11;Vikingur Reykjavik;Akranes;VALID;NO;OK;Iceland;24.0;24.0;24.0;20+;19.58;12.0
+Norway_3rdDivision_Group5;2026-10-11;Kongsvinger 2;Bossekop;VALID;YES;OK;Norway;22.0;22.0;22.0;20+;25.0;13.5
+Norway_OBOSLigaen;2026-10-11;Kongsvinger;Ranheim;VALID;NO;OK;Norway;24.0;24.0;24.0;20+;24.17;13.5
+Poland_IIILiga_Group1;2026-10-11;Zambrow;T. Mazowiecki;VALID;NO;OK;Poland;11.0;11.0;11.0;10-19;20.91;12.0
+Sweden_Division2_NorraSvealand;2026-10-11;Angby;Viggbyholms;VALID;NO;KO;Sweden;24.0;24.0;24.0;20+;20.42;9.0
+Sweden_Division2_NorraSvealand;2026-10-11;Sunnersta AIF;Korsnas;VALID;NO;OK;Sweden;24.0;24.0;24.0;20+;23.75;12.0
+Switzerland_PromotionLeague;2026-10-11;Biel;Basilea 2;VALID;NO;OK;Switzerland;10.0;10.0;10.0;10-19;19.0;13.5
+Norway_3rdDivision_Group2;2026-10-12;Melhus;Aalesund 2;VALID;YES;KO;Norway;23.0;22.0;22.0;20+;25.0;13.5
+Norway_3rdDivision_Group2;2026-10-12;Ranheim 2;Molde 2;VALID;NO;OK;Norway;22.0;22.0;22.0;20+;25.0;12.0
+Norway_3rdDivision_Group3;2026-10-12;Djerv 1919;Brann 2;VALID;NO;KO;Norway;22.0;22.0;22.0;20+;19.09;13.5
+Norway_3rdDivision_Group6;2026-10-12;Elverum;Lyn 2;VALID;NO;OK;Norway;23.0;22.0;22.0;20+;21.36;10.5
+Norway_3rdDivision_Group1;2026-10-13;Heming;K. Oslo 2;VALID;NO;OK;Norway;23.0;22.0;22.0;20+;25.0;10.5
+Estonia_EsiliigaB;2026-10-14;Parnu JK Vaprus U21;Tabasalu;TEST;NO;OK;Estonia;31.0;31.0;31.0;20+;25.0;12.0
+Norway_3rdDivision_Group1;2026-10-14;Asker;Frigg;TEST;NO;OK;Norway;22.0;22.0;22.0;20+;19.38;13.5
+Poland_IIILiga_Group1;2026-10-14;Jagiellonia 2;Troszyn;TEST;NO;KO;Poland;11.0;11.0;11.0;10-19;23.64;7.5
+Austria_Regionalliga_North;2026-10-16;Wallern/St Marienkirchen;Leonfelden;TEST;NO;OK;Austria;11.0;11.0;11.0;10-19;21.82;12.0
+Austria_Regionalliga_South;2026-10-16;Allerheiligen;Hartberg (Am);TEST;NO;OK;Austria;10.0;10.0;10.0;10-19;22.0;12.0
+Austria_Regionalliga_South;2026-10-16;Deutschlandsberger;Tillmitsch;TEST;NO;OK;Austria;10.0;10.0;10.0;10-19;23.0;12.0
+Austria_Regionalliga_South;2026-10-16;Lafnitz;Gleisdorf;TEST;NO;OK;Austria;10.0;10.0;10.0;10-19;19.0;10.5
+Austria_Tirol;2026-10-16;SC Kundl;SV Worgl;TEST;NO;OK;Austria;11.0;11.0;11.0;10-19;19.09;7.5
+Germany_Oberliga_SchleswigHolstein;2026-10-16;Oldenburger;Phonix Lubeck B;TEST;YES;OK;Germany;11.0;12.0;11.0;10-19;25.0;13.5
+Kazakhstan_FirstLeague;2026-10-16;Kairat Almaty 2;FC Batyr;TEST;NO;KO;Kazakhstan;24.0;24.0;24.0;20+;22.5;12.0
+Austria_Karnten;2026-10-17;SV Spittal;Nussdorf;TEST;YES;OK;Austria;11.0;11.0;11.0;10-19;25.0;13.5
+Austria_Karnten;2026-10-17;Seeboden;SC St. Veit;TEST;NO;OK;Austria;11.0;11.0;11.0;10-19;12.73;15.0
+Austria_Karnten;2026-10-17;TSV Grafenstein;Kottmannsdorf;TEST;YES;OK;Austria;11.0;11.0;11.0;10-19;25.0;15.0
+Austria_Regionalliga_North;2026-10-17;LASK (Am);Dietach;TEST;NO;KO;Austria;11.0;11.0;11.0;10-19;25.0;12.0
+Austria_Vorarlberg;2026-10-17;Admira Dornbirn;Ludesch;TEST;NO;OK;Austria;;;;UNKNOWN;23.33;11.67
+CzechRepublic_3MSFL;2026-10-17;Hlubina;Blansko;TEST;NO;KO;CzechRepublic;12.0;12.0;12.0;10-19;23.33;9.0
+CzechRepublic_4Liga_GroupA;2026-10-17;Sobeslav;Nyrsko;TEST;NO;OK;CzechRepublic;;;;UNKNOWN;25.0;13.33
+CzechRepublic_4Liga_GroupE;2026-10-17;Strani;Prostejov B;TEST;NO;KO;CzechRepublic;;;;UNKNOWN;20.0;13.5
+Denmark_3rdDivision;2026-10-17;Holbaek;Holstebro;TEST;NO;OK;Denmark;11.0;11.0;11.0;10-19;23.64;13.5
+Denmark_ALigaWomen;2026-10-17;Fortuna Hjorring D;KoldingQ D;TEST;YES;KO;Denmark;10.0;10.0;10.0;10-19;25.0;15.0
+FaroeIslands_1Deild;2026-10-17;FC Suduroy;TB Tvoroyri;TEST;NO;KO;FaroeIslands;25.0;25.0;25.0;20+;20.8;13.5
+FaroeIslands_1Deild;2026-10-17;Vikingur 2;B36 Torshavn 2;TEST;YES;OK;FaroeIslands;25.0;25.0;25.0;20+;25.0;15.0
+Germany_Oberliga_Bremen;2026-10-17;Blumenthaler;Woltmershausen;TEST;NO;OK;Germany;9.0;9.0;9.0;5-9;25.0;13.33
+Germany_Oberliga_Hessen;2026-10-17;Stadtallendorf;Giessen;TEST;NO;OK;Germany;13.0;13.0;13.0;10-19;22.31;15.0
+Germany_Oberliga_RheinlandPfalzSaar;2026-10-17;Mechtersheim;Diefflen;TEST;NO;OK;Germany;12.0;12.0;12.0;10-19;25.0;10.5
+Germany_Oberliga_RheinlandPfalzSaar;2026-10-17;Worms;Eisbachtal;TEST;NO;OK;Germany;12.0;12.0;12.0;10-19;25.0;12.0
+Norway_3rdDivision_Group1;2026-10-17;Baerum;Ullern;TEST;YES;OK;Norway;24.0;24.0;24.0;20+;25.0;13.5
+Norway_3rdDivision_Group2;2026-10-17;Strindheim;Orkla;TEST;YES;OK;Norway;24.0;23.0;23.0;20+;25.0;13.5
+Norway_3rdDivision_Group3;2026-10-17;Fana;Fyllingsdalen;TEST;NO;OK;Norway;23.0;24.0;23.0;20+;25.0;10.5
+Norway_3rdDivision_Group4;2026-10-17;Madla IL;Staal Jorpeland;TEST;YES;OK;Norway;23.0;23.0;23.0;20+;25.0;13.5
+Norway_3rdDivision_Group5;2026-10-17;Kongsvinger 2;Fauske Sprint;TEST;YES;OK;Norway;23.0;23.0;23.0;20+;25.0;15.0
+Norway_3rdDivision_Group6;2026-10-17;Rade;Brumunddal;TEST;YES;OK;Norway;23.0;23.0;23.0;20+;25.0;13.5
+Poland_IIILiga_Group1;2026-10-17;Mlawa;Lidzbark Warminski;TEST;NO;OK;Poland;12.0;12.0;12.0;10-19;20.0;10.5
+Poland_IIILiga_Group2;2026-10-17;Elana Torun;Kotwica Kornik;TEST;NO;OK;Poland;12.0;12.0;12.0;10-19;25.0;10.5
+Poland_IIILiga_Group2;2026-10-17;Gedania Gdansk;Blekitni Stargard;TEST;NO;OK;Poland;12.0;12.0;12.0;10-19;19.17;12.0
+Poland_IIILiga_Group2;2026-10-17;Grom Nowy Staw;Chemik Bydgoszcz;TEST;NO;KO;Poland;12.0;12.0;12.0;10-19;22.5;10.5
+Switzerland_PromotionLeague;2026-10-17;Paradiso;Young Boys 2;TEST;YES;OK;Switzerland;11.0;11.0;11.0;10-19;25.0;13.5
+Austria_Karnten;2026-10-18;SC Landskron;Lendorf;TEST;NO;OK;Austria;11.0;11.0;11.0;10-19;19.09;12.0
+Austria_Salzburg;2026-10-18;Puch;ATSV Salzburg;TEST;NO;OK;Austria;11.0;11.0;11.0;10-19;25.0;10.5
+Austria_Tirol;2026-10-18;Absam;Kolsass Weer;TEST;NO;OK;Austria;11.0;11.0;11.0;10-19;25.0;10.5
+Austria_Tirol;2026-10-18;Telfs;SV Oberperfuss;TEST;NO;OK;Austria;11.0;11.0;11.0;10-19;22.73;12.0
+CzechRepublic_4Liga_GroupE;2026-10-18;Vsechovice;Brumov;TEST;NO;OK;CzechRepublic;;;;UNKNOWN;25.0;12.0
+Germany_Oberliga_SchleswigHolstein;2026-10-18;VfR Neumunster;Hohenwestedt;TEST;NO;OK;Germany;11.0;12.0;11.0;10-19;25.0;12.0
+Latvia_NakotnesLiga;2026-10-18;Valmiera;Tukums 2000 2;TEST;NO;OK;Latvia;22.0;21.0;21.0;20+;25.0;9.0
+Norway_3rdDivision_Group5;2026-10-18;Floeya;Tromsø 2;TEST;NO;OK;Norway;24.0;23.0;23.0;20+;18.26;9.0
+Sweden_Division2_SodraGotaland;2026-10-18;Karlskrona;Rappe GOIF;TEST;NO;OK;Sweden;25.0;25.0;25.0;20+;22.0;10.5
+Norway_3rdDivision_Group2;2026-10-19;Melhus;Ranheim 2;TEST;YES;OK;Norway;24.0;23.0;23.0;20+;25.0;15.0
+Norway_3rdDivision_Group6;2026-10-19;Sarpsborg 08 2;Bjorkelangen;TEST;YES;OK;Norway;23.0;23.0;23.0;20+;25.0;13.5
+Austria_Regionalliga_South;2026-10-21;Kalsdorf;Lafnitz;TEST;NO;KO;Austria;11.0;11.0;11.0;10-19;24.55;15.0
+Kyrgyzstan_PremierLiga;2026-10-21;Bars;Abdysh-Ata;TEST;NO;KO;Kyrgyzstan;26.0;25.0;25.0;20+;20.4;7.5
+Austria_Karnten;2026-10-23;Dellach/Gail;SGA Sirnitz;TEST;NO;OK;Austria;12.0;12.0;12.0;10-19;25.0;12.0
+Austria_Karnten;2026-10-23;Lendorf;Launsdorf;TEST;NO;OK;Austria;12.0;11.0;11.0;10-19;16.36;13.5
+Austria_Karnten;2026-10-23;SC St. Veit;TSV Grafenstein;TEST;NO;KO;Austria;12.0;12.0;12.0;10-19;12.5;12.0
+Austria_Regionalliga_South;2026-10-23;Tillmitsch;Allerheiligen;TEST;NO;OK;Austria;11.0;11.0;11.0;10-19;19.09;10.5
+Austria_Regionalliga_West;2026-10-23;Kitzbuhel;Wolfurt;TEST;YES;OK;Austria;12.0;12.0;12.0;10-19;25.0;13.5
+Austria_Steiermark;2026-10-23;Ilzer SV;Leoben;TEST;YES;OK;Austria;;;;UNKNOWN;25.0;15.0
+Austria_Tirol;2026-10-23;Haiming;SC Kundl;TEST;NO;OK;Austria;12.0;12.0;12.0;10-19;15.83;13.5
+Germany_Oberliga_Bremen;2026-10-23;Brinkumer;Grohn;TEST;NO;OK;Germany;10.0;10.0;10.0;10-19;25.0;12.0
+Wales_CymruPremier;2026-10-23;TNS;Ammanford;TEST;NO;OK;Wales;13.0;13.0;13.0;10-19;25.0;10.5
+Austria_Karnten;2026-10-24;KAC 1909;Seeboden;TEST;YES;OK;Austria;12.0;12.0;12.0;10-19;25.0;13.5
+Austria_Regionalliga_North;2026-10-24;Grodig;Saalfelden;TEST;NO;OK;Austria;12.0;12.0;12.0;10-19;24.17;10.5
+Austria_Regionalliga_North;2026-10-24;LASK (Am);Kuchl;TEST;NO;OK;Austria;12.0;12.0;12.0;10-19;15.83;10.5
+Austria_Salzburg;2026-10-24;Burmoos;UFC Siezenheim;TEST;NO;OK;Austria;12.0;12.0;12.0;10-19;24.17;12.0
+CzechRepublic_4Liga_GroupA;2026-10-24;Spartak Pribram;Sobeslav;TEST;NO;OK;CzechRepublic;;;;UNKNOWN;24.0;15.0
+Estonia_MeistriliigaWomen;2026-10-24;Paide Linnameeskond D;Elva D;TEST;YES;OK;Estonia;22.0;22.0;22.0;20+;25.0;13.5
+Germany_Bundesliga;2026-10-24;Augusta;Union Berlino;TEST;NO;KO;Germany;6.0;6.0;6.0;5-9;25.0;10.0
+Germany_Oberliga_Hessen;2026-10-24;Unter-Flockenbach;Hanauer SC;TEST;NO;OK;Germany;14.0;13.0;13.0;10-19;24.62;9.0
+Germany_Oberliga_NOFV_Sud;2026-10-24;Eilenburg;Krieschow;TEST;NO;KO;Germany;8.0;8.0;8.0;5-9;25.0;11.25
+Germany_Oberliga_SchleswigHolstein;2026-10-24;Kilia Kiel;Rapid Lubeck;TEST;NO;OK;Germany;13.0;13.0;13.0;10-19;25.0;12.0
+Germany_Oberliga_SchleswigHolstein;2026-10-24;Oldenburger;Hohenwestedt;TEST;NO;OK;Germany;12.0;13.0;12.0;10-19;25.0;12.0
+Germany_Regionalliga_Nord;2026-10-24;Drochtersen/Assel;Todesfelde;TEST;NO;OK;Germany;14.0;14.0;14.0;10-19;25.0;10.5
+Iceland_BestaDeildKarla;2026-10-24;Vikingur Reykjavik;Fram;TEST;NO;OK;Iceland;26.0;26.0;26.0;20+;20.38;15.0
+Latvia_NakotnesLiga;2026-10-24;Valmiera;JFK Ventspils;TEST;NO;OK;Latvia;23.0;23.0;23.0;20+;19.57;6.0
+Norway_3rdDivision_Group1;2026-10-24;Heming;Lokomotiv Oslo;TEST;YES;OK;Norway;25.0;25.0;25.0;20+;25.0;15.0
+Norway_3rdDivision_Group1;2026-10-24;Ready;Konnerud;TEST;NO;OK;Norway;25.0;25.0;25.0;20+;25.0;9.0
+Norway_3rdDivision_Group2;2026-10-24;Volda TI;Spjelkavik;TEST;NO;OK;Norway;24.0;24.0;24.0;20+;21.67;13.5
+Norway_3rdDivision_Group3;2026-10-24;Djerv 1919;Fana;TEST;NO;OK;Norway;24.0;24.0;24.0;20+;19.17;15.0
+Norway_3rdDivision_Group4;2026-10-24;Brodd;Akra;TEST;YES;OK;Norway;24.0;24.0;24.0;20+;25.0;13.5
+Norway_3rdDivision_Group5;2026-10-24;Skedsmo;Kongsvinger 2;TEST;YES;OK;Norway;24.0;24.0;24.0;20+;25.0;15.0
+Norway_3rdDivision_Group5;2026-10-24;Strømsgodset 2;Ulfstind;TEST;YES;OK;Norway;24.0;24.0;24.0;20+;25.0;13.5
+Norway_Eliteserien;2026-10-24;Bodo/Glimt;Vålerenga;TEST;NO;KO;Norway;23.0;23.0;23.0;20+;20.0;12.0
+Poland_IIILiga_Group1;2026-10-24;Mazovia Minsk Mazowiecki;T. Mazowiecki;TEST;NO;OK;Poland;13.0;13.0;13.0;10-19;20.77;10.5
+Poland_IIILiga_Group1;2026-10-24;Zambrow;Mlawa;TEST;NO;KO;Poland;13.0;13.0;13.0;10-19;25.0;12.0
+Poland_IIILiga_Group2;2026-10-24;Blekitni Stargard;Grom Nowy Staw;TEST;NO;OK;Poland;13.0;13.0;13.0;10-19;22.31;12.0
+Poland_IIILiga_Group2;2026-10-24;Luzino;Lech 2;TEST;NO;OK;Poland;13.0;12.0;12.0;10-19;20.0;10.5
+Poland_IIILiga_Group3;2026-10-24;ROW Rybnik;Nysa;TEST;NO;OK;Poland;13.0;13.0;13.0;10-19;20.0;10.5
+Poland_IIILiga_Group3;2026-10-24;Sulow;Sleza Wroclaw;TEST;NO;OK;Poland;13.0;13.0;13.0;10-19;23.85;12.0
+Austria_Salzburg;2026-10-25;Eugendorf;Union Henndorf;TEST;NO;OK;Austria;12.0;12.0;12.0;10-19;25.0;12.0
+Austria_Salzburg;2026-10-25;USK Anif;USV 1960 Berndorf;TEST;YES;OK;Austria;11.0;12.0;11.0;10-19;25.0;13.5
+Estonia_MeistriliigaWomen;2026-10-25;Saku Sporting D;Harju JK Laagri D;TEST;NO;OK;Estonia;22.0;22.0;22.0;20+;25.0;12.0
+Germany_Oberliga_Niederrhein;2026-10-25;SSVg Velbert;Holzheim;TEST;YES;OK;Germany;9.0;10.0;9.0;5-9;25.0;13.5
+Italy_SerieA;2026-10-25;Inter;Fiorentina;TEST;NO;OK;Italy;7.0;7.0;7.0;5-9;24.29;12.86
+Moldova_SuperLiga;2026-10-25;Zimbru;Balti;TEST;YES;OK;Moldova;15.0;15.0;15.0;10-19;25.0;13.5
+Norway_2ndDivision_Group2;2026-10-25;Kjelsaas;Trygg/Lade;TEST;NO;OK;Norway;25.0;25.0;25.0;20+;24.8;10.5
+Norway_3rdDivision_Group5;2026-10-25;Fauske Sprint;Bossekop;TEST;YES;OK;Norway;24.0;24.0;24.0;20+;25.0;13.5
+Sweden_Division1_Norra;2026-10-25;AFC Eskilstuna;Stocksund;TEST;NO;KO;Sweden;27.0;27.0;27.0;20+;24.81;13.5
+Austria_Karnten;2026-10-26;SC Landskron;Nussdorf;TEST;YES;OK;Austria;13.0;13.0;13.0;10-19;25.0;13.5
+Austria_Karnten;2026-10-26;SGA Sirnitz;Kottmannsdorf;TEST;YES;OK;Austria;13.0;13.0;13.0;10-19;25.0;15.0
+Austria_Karnten;2026-10-26;Seeboden;Lendorf;TEST;NO;OK;Austria;13.0;13.0;13.0;10-19;20.77;13.5
+Norway_3rdDivision_Group1;2026-10-26;Vaalerenga IF 2;K. Oslo 2;TEST;NO;OK;Norway;25.0;24.0;24.0;20+;25.0;12.0
+Norway_3rdDivision_Group2;2026-10-26;Ranheim 2;Aalesund 2;TEST;YES;KO;Norway;24.0;25.0;24.0;20+;25.0;13.5
+Denmark_ALigaWomen;2026-10-27;Nordsjaelland D;Aarhus D;TEST;NO;OK;Denmark;11.0;11.0;11.0;10-19;24.55;10.5
+England_ProfessionalDevelopmentLeague;2026-10-27;Bolton U21;Huddersfield U21;TEST;NO;OK;England;7.0;5.0;5.0;5-9;18.0;12.0
+England_ProfessionalDevelopmentLeague;2026-10-27;Colchester U21;QPR U21;TEST;NO;OK;England;7.0;8.0;7.0;5-9;25.0;11.25
+Switzerland_PromotionLeague;2026-10-28;Cham;Luzerna 2;TEST;NO;OK;Switzerland;12.0;12.0;12.0;10-19;24.17;10.5
+Austria_Regionalliga_North;2026-10-30;Kuchl;Dietach;TEST;NO;OK;Austria;13.0;13.0;13.0;10-19;25.0;10.5
+Austria_Regionalliga_North;2026-10-30;Wallern/St Marienkirchen;Grodig;TEST;NO;KO;Austria;13.0;13.0;13.0;10-19;16.15;10.5
+Austria_Regionalliga_South;2026-10-30;Allerheiligen;Gleisdorf;TEST;NO;KO;Austria;12.0;12.0;12.0;10-19;21.67;12.0
+Austria_Regionalliga_South;2026-10-30;Deutschlandsberger;Lafnitz;TEST;NO;OK;Austria;12.0;12.0;12.0;10-19;23.33;13.5
+Germany_Oberliga_Hamburg;2026-10-30;Victoria Hamburg;ETSV Hamburg;TEST;YES;OK;Germany;13.0;12.0;12.0;10-19;25.0;15.0
+Wales_CymruPremier;2026-10-30;Barry;Trefelin;TEST;NO;OK;Wales;14.0;14.0;14.0;10-19;23.57;9.0
+Wales_CymruSouth;2026-10-30;Pontypridd;Llanelli;TEST;NO;OK;Wales;;;;UNKNOWN;25.0;12.0
+Austria_Karnten;2026-10-31;Atus Ferlach;SGA Sirnitz;TEST;NO;OK;Austria;13.0;14.0;13.0;10-19;25.0;12.0
+Austria_Karnten;2026-10-31;Lendorf;SC St. Veit;TEST;NO;OK;Austria;14.0;14.0;14.0;10-19;12.86;12.0
+Austria_Karnten;2026-10-31;SAK Klagenfurt;Seeboden;TEST;YES;OK;Austria;14.0;14.0;14.0;10-19;25.0;13.5
+Austria_Karnten;2026-10-31;TSV Grafenstein;KAC 1909;TEST;NO;KO;Austria;14.0;14.0;14.0;10-19;12.14;12.0
+Austria_Salzburg;2026-10-31;Golling;Union Henndorf;TEST;NO;OK;Austria;13.0;13.0;13.0;10-19;25.0;12.0
+Austria_Tirol;2026-10-31;Absam;SV Worgl;TEST;NO;OK;Austria;13.0;13.0;13.0;10-19;18.46;7.5
+Austria_Tirol;2026-10-31;Ebbs;SV Oberperfuss;TEST;NO;KO;Austria;13.0;13.0;13.0;10-19;21.54;12.0
+Austria_Tirol;2026-10-31;FC Natters;Kolsass Weer;TEST;YES;KO;Austria;13.0;13.0;13.0;10-19;25.0;13.5
+Austria_Tirol;2026-10-31;Kematen;Stubai;TEST;NO;OK;Austria;13.0;13.0;13.0;10-19;20.77;10.5
+CzechRepublic_4Liga_GroupA;2026-10-31;Petrin Plzen;Cesky Krumlov;TEST;NO;OK;CzechRepublic;;;;UNKNOWN;23.64;15.0
+CzechRepublic_4Liga_GroupA;2026-10-31;Sobeslav;SK Strakonice 1908;TEST;YES;OK;CzechRepublic;;;;UNKNOWN;25.0;15.0
+CzechRepublic_4Liga_GroupB;2026-10-31;Vysehrad;Psary;TEST;YES;OK;CzechRepublic;;;;UNKNOWN;25.0;13.5
+CzechRepublic_4Liga_GroupE;2026-10-31;Sternberk;Batov;TEST;YES;KO;CzechRepublic;;;;UNKNOWN;25.0;13.5
+Estonia_EsiliigaB;2026-10-31;Narva U21;Legion;TEST;NO;OK;Estonia;32.0;33.0;32.0;20+;25.0;12.0
+Germany_Oberliga_BadenWurttemberg;2026-10-31;Backnang;Neckarsulm;TEST;YES;OK;Germany;13.0;13.0;13.0;10-19;25.0;13.5
+Germany_Regionalliga_Nord;2026-10-31;SC Weiche-08;Emden;TEST;NO;KO;Germany;15.0;15.0;15.0;10-19;25.0;12.0
+Netherlands_Eredivisie;2026-10-31;PSV;Willem 2;TEST;NO;OK;Netherlands;10.0;10.0;10.0;10-19;25.0;12.0
+Norway_2ndDivision_Group1;2026-10-31;Jerv;Eik-Tonsberg;TEST;NO;OK;Norway;26.0;25.0;25.0;20+;22.4;10.5
+Poland_IIILiga_Group2;2026-10-31;Grom Nowy Staw;Lipno Steszew;TEST;NO;OK;Poland;14.0;14.0;14.0;10-19;20.0;10.5
+Poland_IIILiga_Group2;2026-10-31;Kluczevia Stargard;Kotwica Kornik;TEST;NO;KO;Poland;13.0;14.0;13.0;10-19;25.0;10.5
+Poland_IIILiga_Group2;2026-10-31;Sroda;Luzino;TEST;NO;OK;Poland;14.0;14.0;14.0;10-19;14.29;13.5
+Switzerland_PromotionLeague;2026-10-31;Grand-Saconnex;Young Boys 2;TEST;YES;OK;Switzerland;13.0;13.0;13.0;10-19;25.0;13.5
+Switzerland_PromotionLeague;2026-10-31;Schaffhausen;Amical Saint-Prex;TEST;NO;KO;Switzerland;11.0;13.0;11.0;10-19;19.23;10.5
+Switzerland_PromotionLeague;2026-10-31;Zurigo 2;Lugano 2;TEST;NO;OK;Switzerland;13.0;13.0;13.0;10-19;20.77;9.0
+CzechRepublic_3MSFL;2026-11-01;Unicov;Blansko;TEST;NO;OK;CzechRepublic;14.0;14.0;14.0;10-19;22.86;7.5
+CzechRepublic_4Liga_GroupB;2026-11-01;Hostoun;Steti;TEST;NO;OK;CzechRepublic;;;;UNKNOWN;25.0;12.0
+CzechRepublic_4Liga_GroupE;2026-11-01;Strani;Brumov;TEST;YES;OK;CzechRepublic;;;;UNKNOWN;25.0;13.5
+Germany_Oberliga_Hamburg;2026-11-01;Paloma;Norderstedt 2;TEST;YES;OK;Germany;13.0;13.0;13.0;10-19;25.0;13.5
+Mexico_LigaExpansionMX_Apertura;2026-11-01;Leones Negros;Tepatitlan de Morelos;TEST;NO;OK;Mexico;14.0;14.0;14.0;10-19;25.0;12.0
+Netherlands_Eredivisie;2026-11-01;Groningen;Sparta Rotterdam;TEST;NO;OK;Netherlands;10.0;10.0;10.0;10-19;24.0;13.5
+Norway_3rdDivision_Group1;2026-11-01;Grei;Vaalerenga IF 2;TEST;YES;KO;Norway;26.0;26.0;26.0;20+;25.0;13.5
+Norway_3rdDivision_Group2;2026-11-01;Molde 2;Orkla;TEST;YES;OK;Norway;25.0;25.0;25.0;20+;25.0;13.5
+Norway_3rdDivision_Group2;2026-11-01;Rosenborg 2;Herd;TEST;NO;OK;Norway;25.0;25.0;25.0;20+;24.0;13.5
+Norway_3rdDivision_Group2;2026-11-01;Strindheim;Ranheim 2;TEST;YES;OK;Norway;26.0;25.0;25.0;20+;25.0;13.5
+Norway_3rdDivision_Group3;2026-11-01;Brann 2;Gneist;TEST;NO;OK;Norway;25.0;26.0;25.0;20+;25.0;10.5
+Norway_3rdDivision_Group3;2026-11-01;V. Haugesund;Varegg;TEST;NO;OK;Norway;26.0;25.0;25.0;20+;20.8;13.5
+Norway_3rdDivision_Group5;2026-11-01;Floeya;Fauske Sprint;TEST;YES;OK;Norway;26.0;25.0;25.0;20+;25.0;15.0
+Norway_3rdDivision_Group5;2026-11-01;Harstad;Strømsgodset 2;TEST;NO;OK;Norway;26.0;25.0;25.0;20+;22.0;12.0
+Norway_3rdDivision_Group6;2026-11-01;Lillehammer;Brumunddal;TEST;YES;OK;Norway;26.0;25.0;25.0;20+;25.0;13.5
+Norway_3rdDivision_Group6;2026-11-01;Lyn 2;Bjorkelangen;TEST;YES;OK;Norway;25.0;25.0;25.0;20+;25.0;15.0
+Norway_3rdDivision_Group6;2026-11-01;Sarpsborg 08 2;Elverum;TEST;NO;OK;Norway;25.0;26.0;25.0;20+;15.38;13.5
+Norway_OBOSLigaen;2026-11-01;Strömsgodset;Moss;TEST;NO;OK;Norway;28.0;28.0;28.0;20+;21.07;10.5
+Peru_Liga1_Clausura;2026-11-02;Sporting Cristal;FC Cajamarca;TEST;NO;OK;Peru;13.0;13.0;13.0;10-19;23.08;12.0
+Ukraine_PremierLeague;2026-11-02;Karpaty Lviv;Kudrivka;TEST;NO;OK;Ukraine;10.0;10.0;10.0;10-19;24.0;12.0
+Mexico_LigaPremierSerieA;2026-11-03;Halcones Negros;Apodaca;TEST;NO;KO;Mexico;9.0;9.0;9.0;5-9;21.11;10.0
+Uzbekistan_ProLiga;2026-11-03;Kattaqurgon;TerDU;TEST;YES;OK;Uzbekistan;14.0;14.0;14.0;10-19;25.0;13.5
+Uzbekistan_ProLiga;2026-11-03;Olimpik-Mobiuz;Pakhtakor 2;TEST;NO;OK;Uzbekistan;15.0;14.0;14.0;10-19;22.14;9.0
