@@ -1,121 +1,205 @@
-"""Seleziona per ogni lega gli engine Over 2.5 migliori usando solo esiti precedenti alla data di calcolo.
+"""League Best Engine: confronto storico, affidabilita e backtest walk-forward.
 
-Esecuzione: python -m analysis.metrics.league_best_engine [--as-of YYYY-MM-DD] [--min-sample 20]
-Non modifica ranking o pronostici esistenti. VG/BTTS esclusi: mercato distinto.
+python -m analysis.metrics.league_best_engine [--as-of YYYY-MM-DD] [--min-sample 20]
+python -m analysis.metrics.league_best_engine --backtest [--backtest-start YYYY-MM-DD]
+
+Non cambia gli engine; usa solo partite ALTA Over2.5 con MatchDate valida.
 """
 from __future__ import annotations
 
 import argparse
 import csv
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
+from collections import defaultdict
 
 import pandas as pd
 
-from .build_engine_league_high_rankings import (
-    detect_delimiter, find_engine_histories, load_history_columns,
-)
+from .build_engine_league_high_rankings import detect_delimiter, find_engine_histories
 
 REGISTRY = Path("data/league_registry.csv")
-ANALYSIS_OUT = Path("data/analysis/league_best_engine.csv")
-DAILY_OUT = Path("data/output_ranking/daily_league_engine_selection.csv")
-DETAIL_OUT = Path("data/analysis/league_engine_comparison.csv")
+ROOT = Path("data/analysis")
+DAILY = Path("data/output_ranking/daily_league_engine_selection.csv")
+KEY = ["LeagueId", "MatchDate", "Home", "Away"]
+COLUMNS = KEY + ["Engine", "Over25"]
+DETAIL_COLUMNS = ["LeagueId", "Engine", "OK", "KO", "Total", "HitRate", "Eligible", "Reliability", "Rank"]
+SUMMARY_COLUMNS = ["LeagueId", "AsOf", "Status", "BestEngine", "HitRate", "OK", "KO", "Total",
+                   "Reliability"] + [f"Top{i}{suffix}" for i in range(1, 4) for suffix in ("Engine", "HitRate", "Total")]
 
 
-def read_registry() -> list[str]:
-    with REGISTRY.open(encoding="utf-8-sig", newline="") as handle:
-        return sorted({row["LeagueId"].strip() for row in csv.DictReader(handle, delimiter=";")
-                       if row.get("LeagueId", "").strip()})
+def registry() -> list[str]:
+    with REGISTRY.open(encoding="utf-8-sig", newline="") as stream:
+        return sorted({r["LeagueId"].strip() for r in csv.DictReader(stream, delimiter=";")
+                       if r.get("LeagueId", "").strip()})
 
 
-def engine_stats(engine: str, path: Path, cutoff: pd.Timestamp) -> pd.DataFrame:
-    # I file aggregati league_high_ranking non conservano le date di ciascun esito:
-    # ricalcoliamo dagli stessi storici per garantire il taglio temporale.
-    history, missing = load_history_columns(path, detect_delimiter(path))
-    if missing or history.empty or "MatchDate" not in history.columns:
-        print(f"[SKIP] {engine}: storico senza MatchDate o colonne richieste")
-        return pd.DataFrame()
-    for col in ("LeagueId", "Band", "Over25"):
-        history[col] = history[col].fillna("").astype(str).str.strip()
-    history["Band"] = history["Band"].str.upper()
-    history["Over25"] = history["Over25"].str.upper()
-    history["MatchDate"] = pd.to_datetime(history["MatchDate"], errors="coerce", format="mixed", dayfirst=True)
-    history = history.loc[
-        (history["MatchDate"] < cutoff)
-        & (history["LeagueId"] != "")
-        & (history["Band"] == "ALTA")
-        & history["Over25"].isin(["OK", "KO"])
-    ].copy()
-    if history.empty:
-        return pd.DataFrame()
-    # Evita duplicati identici; una stessa partita con righe divergenti resta
-    # esclusa dalla selezione solo se non è possibile identificarla qui.
-    history = history.drop_duplicates()
-    grouped = history.groupby("LeagueId")["Over25"].agg(
-        OK=lambda x: int((x == "OK").sum()),
-        KO=lambda x: int((x == "KO").sum()),
-    ).reset_index()
-    grouped["Total"] = grouped["OK"] + grouped["KO"]
-    grouped["HitRate"] = (100 * grouped["OK"] / grouped["Total"]).round(2)
-    grouped["Engine"] = engine
-    return grouped
-
-
-def build(as_of: date, min_sample: int) -> tuple[pd.DataFrame, pd.DataFrame]:
-    cutoff = pd.Timestamp(as_of)
-    frames = []
+def load_matches() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Deduplica su chiave partita + engine; esclude chiavi incomplete e conflitti OK/KO."""
+    records = []
+    rejected = []
     for engine, path in find_engine_histories():
         if engine.lower().startswith("vg"):
-            continue  # VG1 e varianti sono BTTS, non confrontabili con Over 2.5
-        frame = engine_stats(engine, path, cutoff)
-        if not frame.empty:
-            frames.append(frame)
-    details = (pd.concat(frames, ignore_index=True) if frames else
-               pd.DataFrame(columns=["LeagueId", "OK", "KO", "Total", "HitRate", "Engine"]))
-    details["Eligible"] = details["Total"] >= min_sample
-    details = details.sort_values(
-        ["LeagueId", "Eligible", "HitRate", "Total", "Engine"],
-        ascending=[True, False, False, False, True],
-    ).reset_index(drop=True)
-    details["Rank"] = details.groupby("LeagueId").cumcount() + 1
+            continue  # BTTS separato
+        with path.open(encoding="utf-8-sig", errors="replace", newline="") as stream:
+            reader = csv.reader(stream, delimiter=detect_delimiter(path))
+            first = next(reader, None)
+            if not first:
+                continue
+            header = [v.strip() for v in first]
+            if set(KEY + ["Band", "Over25"]).issubset(header):
+                idx = {name: header.index(name) for name in KEY + ["Band", "Over25"]}
+                rows = reader
+            elif len(first) >= 14:
+                # Layout legacy ufficiale: PredictionDate, MatchDate, LeagueId,
+                # Round, Home, Away, ..., Band(7), ..., Over25(12)
+                idx = {"MatchDate": 1, "LeagueId": 2, "Home": 4,
+                       "Away": 5, "Band": 7, "Over25": 12}
+                from itertools import chain
+                rows = chain([first], reader)
+            else:
+                print(f"[SKIP] {engine}: intestazione non riconosciuta")
+                continue
+            for row in rows:
+                if len(row) <= max(idx.values()):
+                    continue
+                d = {col: row[pos].strip() for col, pos in idx.items()}
+                if d["Band"].upper() != "ALTA" or d["Over25"].upper() not in ("OK", "KO"):
+                    continue
+                dt = pd.to_datetime(d["MatchDate"], errors="coerce", dayfirst=True, format="mixed")
+                if pd.isna(dt) or not all(d.get(k) for k in ("LeagueId", "Home", "Away")):
+                    rejected.append({"Engine": engine, "Reason": "INVALID_KEY", **d})
+                    continue
+                records.append({"Engine": engine, "LeagueId": d["LeagueId"],
+                                "MatchDate": dt.normalize(), "Home": d["Home"],
+                                "Away": d["Away"], "Over25": d["Over25"].upper()})
+    if not records:
+        return pd.DataFrame(columns=COLUMNS), pd.DataFrame(rejected)
+    raw = pd.DataFrame(records)
+    # Non scegliere arbitrariamente un esito in caso di righe contraddittorie.
+    group_key = ["Engine"] + KEY
+    conflicts = raw.groupby(group_key)["Over25"].transform("nunique") > 1
+    for d in raw.loc[conflicts].to_dict("records"):
+        rejected.append({"Engine": d["Engine"], "Reason": "CONFLICTING_OUTCOME", **d})
+    clean = raw.loc[~conflicts].drop_duplicates(subset=group_key).reset_index(drop=True)
+    print(f"[DEDUP] raw={len(raw)} clean={len(clean)} rejected={int(conflicts.sum())} duplicates={len(raw)-int(conflicts.sum())-len(clean)}")
+    return clean, pd.DataFrame(rejected)
 
-    output = []
-    for league in read_registry():
-        subset = details.loc[(details["LeagueId"] == league) & details["Eligible"]].head(3)
-        record = {"LeagueId": league, "AsOf": as_of.isoformat(),
-                  "Status": "READY" if not subset.empty else "INSUFFICIENT_DATA",
-                  "BestEngine": "", "HitRate": "", "OK": "", "KO": "", "Total": ""}
-        for rank, (_, item) in enumerate(subset.iterrows(), 1):
-            record[f"Top{rank}Engine"] = item["Engine"]
-            record[f"Top{rank}HitRate"] = item["HitRate"]
-            record[f"Top{rank}Total"] = int(item["Total"])
-            if rank == 1:
-                record.update(BestEngine=item["Engine"], HitRate=item["HitRate"],
-                              OK=int(item["OK"]), KO=int(item["KO"]), Total=int(item["Total"]))
-        output.append(record)
-    summary = pd.DataFrame(output)
-    for rank in range(1, 4):
-        for suffix in ("Engine", "HitRate", "Total"):
-            col = f"Top{rank}{suffix}"
-            if col not in summary:
-                summary[col] = ""
-    return summary, details
+
+def reliability(total: int, rate: float, min_sample: int) -> str:
+    if total < min_sample:
+        return "INSUFFICIENT"
+    if total >= 30 and rate >= 80:
+        return "HIGH"
+    if rate >= 75:
+        return "PROMISING"
+    return "OBSERVATION"
+
+
+def comparison(matches: pd.DataFrame, cutoff: pd.Timestamp, min_sample: int) -> pd.DataFrame:
+    past = matches.loc[matches["MatchDate"] < cutoff]
+    if past.empty:
+        return pd.DataFrame(columns=DETAIL_COLUMNS)
+    counts = past.groupby(["LeagueId", "Engine", "Over25"]).size().unstack(fill_value=0)
+    for name in ("OK", "KO"):
+        if name not in counts:
+            counts[name] = 0
+    result = counts.reset_index()[["LeagueId", "Engine", "OK", "KO"]]
+    result["Total"] = result["OK"] + result["KO"]
+    result["HitRate"] = (100 * result["OK"] / result["Total"]).round(2)
+    result["Eligible"] = result["Total"] >= min_sample
+    result["Reliability"] = [reliability(int(t), float(h), min_sample)
+                             for t, h in zip(result["Total"], result["HitRate"])]
+    result = result.sort_values(["LeagueId", "Eligible", "HitRate", "Total", "Engine"],
+                                ascending=[True, False, False, False, True]).reset_index(drop=True)
+    result["Rank"] = result.groupby("LeagueId").cumcount() + 1
+    return result[DETAIL_COLUMNS]
+
+
+def summary_for_leagues(details: pd.DataFrame, leagues: list[str], as_of: date) -> pd.DataFrame:
+    by_league = {league: frame.loc[frame["Eligible"]].head(3)
+                 for league, frame in details.groupby("LeagueId")}
+    records = []
+    for league in leagues:
+        eligible = by_league.get(league)
+        record = dict.fromkeys(SUMMARY_COLUMNS, "")
+        record.update(LeagueId=league, AsOf=as_of.isoformat(), Status="INSUFFICIENT_DATA")
+        if eligible is not None and not eligible.empty:
+            record["Status"] = "READY"
+            for n, (_, item) in enumerate(eligible.iterrows(), 1):
+                record.update({f"Top{n}Engine": item["Engine"], f"Top{n}HitRate": item["HitRate"],
+                               f"Top{n}Total": int(item["Total"])})
+                if n == 1:
+                    record.update(BestEngine=item["Engine"], HitRate=item["HitRate"],
+                                  OK=int(item["OK"]), KO=int(item["KO"]), Total=int(item["Total"]),
+                                  Reliability=item["Reliability"])
+        records.append(record)
+    return pd.DataFrame(records, columns=SUMMARY_COLUMNS)
+
+
+def backtest(matches: pd.DataFrame, min_sample: int, start: date | None) -> pd.DataFrame:
+    """Per ogni giornata sceglie l'engine sui soli giorni precedenti.
+    Valuta solo incontri effettivamente pronosticati ALTA dall'engine selezionato.
+    """
+    results = []
+    if matches.empty:
+        return pd.DataFrame(columns=["MatchDate", "LeagueId", "Engine", "Home", "Away", "Over25",
+                                     "PriorTotal", "PriorHitRate"])
+    dates = sorted(matches["MatchDate"].unique())
+    for day in dates:
+        current_date = pd.Timestamp(day)
+        if start and current_date < pd.Timestamp(start):
+            continue
+        today = matches.loc[matches["MatchDate"] == current_date]
+        historical = comparison(matches, current_date, min_sample)
+        if historical.empty:
+            continue
+        winners = historical.loc[historical["Eligible"]].drop_duplicates("LeagueId").set_index("LeagueId")
+        for league, frame in today.groupby("LeagueId"):
+            if league not in winners.index:
+                continue
+            chosen = winners.loc[league]
+            selected = frame.loc[frame["Engine"] == chosen["Engine"]]
+            for _, match in selected.iterrows():
+                results.append({"MatchDate": current_date.date().isoformat(), "LeagueId": league,
+                                "Engine": chosen["Engine"], "Home": match["Home"], "Away": match["Away"],
+                                "Over25": match["Over25"], "PriorTotal": int(chosen["Total"]),
+                                "PriorHitRate": float(chosen["HitRate"])})
+    return pd.DataFrame(results, columns=["MatchDate", "LeagueId", "Engine", "Home", "Away",
+                                          "Over25", "PriorTotal", "PriorHitRate"])
+
+
+def write(path: Path, frame: pd.DataFrame) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    frame.to_csv(path, sep=";", index=False, encoding="utf-8-sig")
+    print(f"[WRITE] {path}: {len(frame)} righe")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--as-of", type=date.fromisoformat, default=date.today(),
-                        help="Data del pronostico: usa esclusivamente MatchDate precedenti")
+    parser.add_argument("--as-of", type=date.fromisoformat, default=date.today())
     parser.add_argument("--min-sample", type=int, default=20)
+    parser.add_argument("--backtest", action="store_true")
+    parser.add_argument("--backtest-start", type=date.fromisoformat)
     args = parser.parse_args()
     if args.min_sample < 1:
         parser.error("--min-sample deve essere >= 1")
-    summary, details = build(args.as_of, args.min_sample)
-    for path, frame in ((ANALYSIS_OUT, summary), (DAILY_OUT, summary), (DETAIL_OUT, details)):
-        path.parent.mkdir(parents=True, exist_ok=True)
-        frame.to_csv(path, sep=";", index=False, encoding="utf-8-sig")
-        print(f"[WRITE] {path}: {len(frame)} righe")
-    print(f"[READY] {int((summary['Status'] == 'READY').sum())}/{len(summary)} leghe")
+    matches, rejected = load_matches()
+    write(ROOT / "league_engine_rejected_rows.csv", rejected if not rejected.empty else
+          pd.DataFrame(columns=["Engine", "Reason"] + KEY + ["Over25"]))
+    details = comparison(matches, pd.Timestamp(args.as_of), args.min_sample)
+    write(ROOT / "league_engine_comparison.csv", details)
+    summary = summary_for_leagues(details, registry(), args.as_of)
+    write(ROOT / "league_best_engine.csv", summary)
+    # Il file daily contiene solo le leghe con incontri previsti oggi negli storici
+    # (anche senza esito). Per il calendario reale usare --daily-input.
+    write(DAILY, summary)
+    print(f"[READY] {(summary['Status'] == 'READY').sum()}/{len(summary)} leghe")
+    if args.backtest:
+        bt = backtest(matches.loc[matches["MatchDate"] < pd.Timestamp(args.as_of)],
+                      args.min_sample, args.backtest_start)
+        write(ROOT / "league_best_engine_backtest.csv", bt)
+        ok = int((bt["Over25"] == "OK").sum())
+        print(f"[BACKTEST] OK={ok} KO={len(bt)-ok} Total={len(bt)} HitRate={100*ok/len(bt):.2f}%" if len(bt) else "[BACKTEST] Nessuna selezione valutabile")
 
 
 if __name__ == "__main__":
