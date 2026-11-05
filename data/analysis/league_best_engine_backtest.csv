@@ -1,0 +1,2631 @@
+﻿MatchDate;LeagueId;Engine;Home;Away;Over25;PriorTotal;PriorHitRate
+2026-07-26;Finland_Kakkonen_GroupC;v21;Narpes Kraft;Vaajakoski;OK;21;61.9
+2026-07-26;Iceland_BestaDeildKarla;v21;Akranes;Stjarnan;OK;20;70.0
+2026-07-26;Iceland_BestaDeildKarla;v21;Akureyri;Thor Akureyri;KO;20;70.0
+2026-07-26;Iceland_BestaDeildKarla;v21;Breidablik;Vestmannaeyjar;KO;20;70.0
+2026-07-26;Iceland_BestaDeildKarla;v21;Fram;Hafnarfjordur;KO;20;70.0
+2026-07-28;Iceland_Division_2;v21;Haukar;KFG Gardabaer;OK;20;80.0
+2026-07-28;Iceland_Division_2;v21;Kari;Kormakur/Hvot;KO;20;80.0
+2026-07-28;Iceland_Division_2;v21;Magni;KFA;OK;20;80.0
+2026-07-28;Iceland_Division_2;v21;Olafsvik;Fjolnir;OK;20;80.0
+2026-07-28;Iceland_Division_2;v21;Selfoss;Dalvik/Reynir;OK;20;80.0
+2026-07-28;Iceland_Division_2;v21;Throttur Vogar;Hviti;OK;20;80.0
+2026-08-01;Finland_Kakkonen_GroupC;v22;Huima / Urho;TP-47;OK;20;65.0
+2026-08-01;Finland_Kakkonen_GroupC;v22;JBK;Vaajakoski;OK;20;65.0
+2026-08-01;Finland_Kakkonen_GroupC;v22;Narpes Kraft;Hercules;OK;20;65.0
+2026-08-01;Finland_Kakkonen_GroupC;v22;SJK Akatemia 2;GBK Kokkola;OK;20;65.0
+2026-08-01;Iceland_BestaDeildKarla;v21;Vestmannaeyjar;Fram;OK;24;62.5
+2026-08-02;Belarus_PershayaLiga;v24;BATE 2;Minsk 2;KO;21;61.9
+2026-08-02;Belarus_PershayaLiga;v24;Gomel 2;Volna Pinsk;OK;21;61.9
+2026-08-02;Iceland_BestaDeildKarla;v21;Akranes;Vikingur Reykjavik;OK;25;64.0
+2026-08-02;USA_MLS;v24;Chicago Fire;Charlotte;OK;20;55.0
+2026-08-02;USA_MLS;v24;Cincinnati;San Jose Earthquakes;OK;20;55.0
+2026-08-02;USA_MLS;v24;Colorado Rapids;Austin FC;KO;20;55.0
+2026-08-02;USA_MLS;v24;Inter Miami;Columbus Crew;OK;20;55.0
+2026-08-02;USA_MLS;v24;Los Angeles Galaxy;FC Dallas;KO;20;55.0
+2026-08-02;USA_MLS;v24;New York Red Bulls;Orlando City;OK;20;55.0
+2026-08-02;USA_MLS;v24;Sporting Kansas City;Houston Dynamo;KO;20;55.0
+2026-08-02;USA_MLS;v24;St. Louis City;Real Salt Lake;KO;20;55.0
+2026-08-03;Bolivia_DivisionProfesional;v24;Oriente Petrolero;Nacional Potosi;KO;22;77.27
+2026-08-03;Finland_Kakkonen_GroupC;v22;VPS 2;Jaro 2;OK;24;70.83
+2026-08-03;Iceland_BestaDeildKarla;v22;Valur;Stjarnan;OK;20;75.0
+2026-08-04;Bolivia_DivisionProfesional;v24;Academia del Balompie;Real Oruro;OK;23;73.91
+2026-08-04;Iceland_BestaDeildKarla;v22;Thor Akureyri;Breidablik;KO;21;76.19
+2026-08-05;Belarus_PershayaLiga;v24;Din. Minsk 2;Lida;OK;23;60.87
+2026-08-05;Belarus_PershayaLiga;v24;Niva Dolbizno;Slutsk;OK;23;60.87
+2026-08-05;Belarus_PershayaLiga;v24;Soligorsk;SKA-1938;KO;23;60.87
+2026-08-05;Bolivia_DivisionProfesional;v24;GV San Jose;SA Bulo Bulo;KO;24;75.0
+2026-08-05;Bolivia_DivisionProfesional;v24;Guabira;Tomayapo;OK;24;75.0
+2026-08-05;Bolivia_DivisionProfesional;v24;Independiente;Aurora;KO;24;75.0
+2026-08-05;Iceland_BestaDeildKarla;v22;Hafnarfjordur;KR Reykjavik;KO;22;72.73
+2026-08-05;Iceland_BestaDeildKarla;v22;Keflavik;Akureyri;OK;22;72.73
+2026-08-06;Belarus_PershayaLiga;v24;BATE 2;BumProm Gomel;OK;26;61.54
+2026-08-06;Belarus_PershayaLiga;v24;Molodechno;Volna Pinsk;OK;26;61.54
+2026-08-06;Belarus_PershayaLiga;v24;Orsha;Gomel 2;OK;26;61.54
+2026-08-06;Bolivia_DivisionProfesional;v24;Bolivar;Oriente Petrolero;OK;27;70.37
+2026-08-06;Bolivia_DivisionProfesional;v24;Universitario de Vinto;Real Potosi;KO;27;70.37
+2026-08-07;Bolivia_DivisionProfesional;v24;Academia del Balompie;Guabira;KO;29;68.97
+2026-08-07;Finland_Kakkonen_GroupC;v22;Jaro 2;JBK;OK;25;72.0
+2026-08-07;Finland_Ykkonen;v24;KuPS Akatemia;Inter Turku 2;KO;23;69.57
+2026-08-08;Bolivia_DivisionProfesional;v24;Academia del Balompie;Guabira;KO;30;66.67
+2026-08-08;Bolivia_DivisionProfesional;v24;SA Bulo Bulo;Nacional Potosi;OK;30;66.67
+2026-08-08;Bolivia_DivisionProfesional;v24;The Strongest;Independiente;OK;30;66.67
+2026-08-08;Bolivia_DivisionProfesional;v24;Tomayapo;Real Oruro;OK;30;66.67
+2026-08-08;Estonia_Esiliiga;v21;Elva;Tartu Welco;OK;20;80.0
+2026-08-08;Estonia_Esiliiga;v21;Nomme Utd U21;Levadia U21;OK;20;80.0
+2026-08-08;Estonia_Esiliiga;v21;Tallinna Kalev;FC Tallinn;KO;20;80.0
+2026-08-08;Finland_Kakkonen_GroupC;v22;GBK Kokkola;Huima / Urho;OK;26;73.08
+2026-08-08;Finland_Kakkonen_GroupC;v22;TP-47;Narpes Kraft;OK;26;73.08
+2026-08-08;Finland_Kakkonen_GroupC;v22;Vaajakoski;VPS 2;OK;26;73.08
+2026-08-08;Iceland_Division_2;v21;Dalvik/Reynir;Kari;KO;26;80.77
+2026-08-08;Iceland_Division_2;v21;Fjolnir;KFG Gardabaer;OK;26;80.77
+2026-08-08;Iceland_Division_2;v21;Hviti;Magni;KO;26;80.77
+2026-08-08;Iceland_Division_2;v21;KFA;Haukar;OK;26;80.77
+2026-08-09;Belarus_PershayaLiga;v24;Lida;Slutsk;OK;29;65.52
+2026-08-09;Belarus_PershayaLiga;v24;Niva Dolbizno;SKA-1938;OK;29;65.52
+2026-08-09;Belarus_PershayaLiga;v24;Osipovichi;Din. Minsk 2;OK;29;65.52
+2026-08-09;Bolivia_DivisionProfesional;v24;Aurora;Bolivar;OK;34;67.65
+2026-08-09;Finland_Kakkonen_GroupC;v22;Hercules;SJK Akatemia 2;OK;29;75.86
+2026-08-09;Finland_Ykkonen;v24;Jazz Pori;OLS Oulu;KO;24;66.67
+2026-08-09;Finland_Ykkonen;v24;KPV;VJS;OK;24;66.67
+2026-08-09;Iceland_BestaDeildKarla;v22;Stjarnan;Keflavik;KO;24;70.83
+2026-08-09;Iceland_BestaDeildKarla;v22;Vikingur Reykjavik;Vestmannaeyjar;OK;24;70.83
+2026-08-09;Iceland_Division_2;v23;Kormakur/Hvot;Throttur Vogar;KO;23;78.26
+2026-08-10;Belarus_PershayaLiga;v24;FC Slonim;BumProm Gomel;OK;32;68.75
+2026-08-10;Belarus_PershayaLiga;v24;Gomel 2;Soligorsk;OK;32;68.75
+2026-08-10;Belarus_PershayaLiga;v24;Orsha;Molodechno;OK;32;68.75
+2026-08-10;Belarus_PershayaLiga;v24;Volna Pinsk;Uni X Labs;KO;32;68.75
+2026-08-10;Bolivia_DivisionProfesional;v24;Oriente Petrolero;Universitario de Vinto;OK;35;68.57
+2026-08-10;Estonia_Esiliiga;v21;Flora U21;Nomme Kalju U21;OK;23;78.26
+2026-08-10;Estonia_EsiliigaB;v21;Tammeka U21;Parnu JK Vaprus U21;OK;22;77.27
+2026-08-10;Iceland_BestaDeildKarla;v22;Fram;KR Reykjavik;OK;26;69.23
+2026-08-10;Iceland_Division_2;v23;Olafsvik;Selfoss;KO;24;75.0
+2026-08-10;Norway_3rdDivision_Group4;v21;Haugesund 2;Viking 2;OK;20;85.0
+2026-08-10;Sweden_Allsvenskan;v24;Sirius;Brommapojkarna;OK;20;55.0
+2026-08-11;Finland_Ykkonen;v24;JJK Jyvaskyla;Tampere Utd;KO;26;65.38
+2026-08-11;Finland_Ykkonen;v24;Keski-Uusimaa;Inter Turku 2;KO;26;65.38
+2026-08-11;Finland_Ykkonen;v24;RoPS;KuPS Akatemia;OK;26;65.38
+2026-08-11;Finland_Ykkonen;v24;TPV;SalPa;KO;26;65.38
+2026-08-14;Bolivia_DivisionProfesional;v24;Universitario de Vinto;Tomayapo;KO;36;69.44
+2026-08-14;Iceland_Division_2;v23;Haukar;Hviti;OK;25;72.0
+2026-08-15;Belarus_PershayaLiga;v24;Molodechno;Gomel 2;OK;36;69.44
+2026-08-15;Belarus_PershayaLiga;v24;SKA-1938;Lida;OK;36;69.44
+2026-08-15;Belarus_PershayaLiga;v24;Slutsk;Osipovichi;KO;36;69.44
+2026-08-15;Belarus_PershayaLiga;v24;Soligorsk;Niva Dolbizno;OK;36;69.44
+2026-08-15;Bolivia_DivisionProfesional;v24;Bolivar;SA Bulo Bulo;OK;37;67.57
+2026-08-15;Bolivia_DivisionProfesional;v24;Guabira;The Strongest;OK;37;67.57
+2026-08-15;Bolivia_DivisionProfesional;v24;Real Oruro;Oriente Petrolero;OK;37;67.57
+2026-08-15;Estonia_Esiliiga;v21;Maardu;FC Tallinn;KO;24;79.17
+2026-08-15;Estonia_Esiliiga;v21;Tallinna Kalev;Elva;KO;24;79.17
+2026-08-15;Estonia_Esiliiga;v21;Tartu Welco;Flora U21;OK;24;79.17
+2026-08-15;Estonia_Esiliiga;v21;Viimsi JK;Levadia U21;OK;24;79.17
+2026-08-15;Estonia_EsiliigaB;v21;Legion;Tammeka U21;OK;23;78.26
+2026-08-15;Estonia_EsiliigaB;v21;Narva U21;Johvi Phoenix;KO;23;78.26
+2026-08-15;Estonia_EsiliigaB;v21;Tartu Kalev;Parnu JK Vaprus U21;KO;23;78.26
+2026-08-15;Finland_Kakkonen_GroupA;v24;HIFK;Atlantis;OK;20;65.0
+2026-08-15;Finland_Kakkonen_GroupA;v24;HPS;Union Plaani;OK;20;65.0
+2026-08-15;Finland_Kakkonen_GroupA;v24;PuiU;Kiffen;OK;20;65.0
+2026-08-15;Finland_Kakkonen_GroupB;v24;Abo;EPS;OK;22;68.18
+2026-08-15;Finland_Kakkonen_GroupB;v24;Ilves 2;NJS;OK;22;68.18
+2026-08-15;Finland_Kakkonen_GroupB;v24;MuSa;EBK;OK;22;68.18
+2026-08-15;Finland_Kakkonen_GroupC;v22;Jaro 2;Huima / Urho;OK;30;76.67
+2026-08-15;Finland_Kakkonen_GroupC;v22;VPS 2;Hercules;OK;30;76.67
+2026-08-15;Finland_Kakkonen_GroupC;v22;Vaajakoski;GBK Kokkola;KO;30;76.67
+2026-08-15;Finland_Ykkonen;v24;OLS Oulu;RoPS;OK;30;60.0
+2026-08-15;Finland_Ykkonen;v24;SalPa;Jazz Pori;KO;30;60.0
+2026-08-15;Finland_Ykkonen;v24;Tampere Utd;TPV;KO;30;60.0
+2026-08-15;Iceland_Division_2;v23;KFG Gardabaer;KFA;OK;26;73.08
+2026-08-15;Iceland_Division_2;v23;Selfoss;Fjolnir;OK;26;73.08
+2026-08-15;Iceland_Division_2;v23;Throttur Vogar;Dalvik/Reynir;KO;26;73.08
+2026-08-15;Latvia_NakotnesLiga;v24;Marupe;Super Nova 2;OK;20;70.0
+2026-08-15;Norway_3rdDivision_Group1;v21;Frigg;Lokomotiv Oslo;OK;20;85.0
+2026-08-15;Norway_3rdDivision_Group1;v21;Gamle Oslo;Konnerud;OK;20;85.0
+2026-08-15;Norway_3rdDivision_Group1;v21;Grei;Baerum;OK;20;85.0
+2026-08-15;Norway_3rdDivision_Group1;v21;Heming;Asker;OK;20;85.0
+2026-08-15;Norway_3rdDivision_Group1;v21;Ullern;Union Carl Berner;OK;20;85.0
+2026-08-15;Norway_3rdDivision_Group2;v21;Byåsen;Volda TI;KO;20;65.0
+2026-08-15;Norway_3rdDivision_Group2;v21;Herd;Ranheim 2;OK;20;65.0
+2026-08-15;Norway_3rdDivision_Group2;v21;Nardo;Melhus;OK;20;65.0
+2026-08-15;Norway_3rdDivision_Group2;v21;Orkla;Spjelkavik;OK;20;65.0
+2026-08-15;Norway_3rdDivision_Group2;v21;Strindheim;Ntnui;OK;20;65.0
+2026-08-15;Norway_3rdDivision_Group3;v21;Austevoll;V. Haugesund;OK;20;70.0
+2026-08-15;Norway_3rdDivision_Group3;v21;Djerv 1919;Fyllingsdalen;OK;20;70.0
+2026-08-15;Norway_3rdDivision_Group3;v21;Gneist;Forde;OK;20;70.0
+2026-08-15;Norway_3rdDivision_Group3;v21;Sogndal 2;Fana;OK;20;70.0
+2026-08-15;Norway_3rdDivision_Group4;v21;Flekkeroy;Brodd;KO;21;85.71
+2026-08-15;Norway_3rdDivision_Group4;v21;Vag;Mandalskameratene;OK;21;85.71
+2026-08-15;Norway_3rdDivision_Group4;v21;Vindbjart;Akra;OK;21;85.71
+2026-08-15;Sweden_Allsvenskan;v24;Mjallby;Sirius;OK;21;57.14
+2026-08-16;Belarus_PershayaLiga;v24;BATE 2;Volna Pinsk;OK;40;70.0
+2026-08-16;Belarus_PershayaLiga;v24;Din. Minsk 2;Minsk 2;OK;40;70.0
+2026-08-16;Belarus_PershayaLiga;v24;Ostrovets;BumProm Gomel;OK;40;70.0
+2026-08-16;Bolivia_DivisionProfesional;v24;Nacional Potosi;Academia del Balompie;KO;40;70.0
+2026-08-16;Estonia_EsiliigaB;v21;Tabasalu;Tallinna Kalev U21;KO;26;73.08
+2026-08-16;Estonia_EsiliigaB;v21;Tulevik;Levadia U19;OK;26;73.08
+2026-08-16;Finland_Kakkonen_GroupA;v24;Lahden Reipas;PEPO;OK;23;69.57
+2026-08-16;Finland_Kakkonen_GroupC;v22;Narpes Kraft;SJK Akatemia 2;OK;33;75.76
+2026-08-16;Finland_Ykkonen;v24;Inter Turku 2;KPV;OK;33;57.58
+2026-08-16;Finland_Ykkonen;v24;KuPS Akatemia;Keski-Uusimaa;OK;33;57.58
+2026-08-16;Finland_Ykkonen;v24;VJS;JJK Jyvaskyla;OK;33;57.58
+2026-08-16;Iceland_BestaDeildKarla;v22;KR Reykjavik;Breidablik;OK;27;70.37
+2026-08-16;Iceland_BestaDeildKarla;v22;Vestmannaeyjar;Akranes;OK;27;70.37
+2026-08-16;Norway_3rdDivision_Group1;v21;Vaalerenga IF 2;Ready;OK;25;88.0
+2026-08-16;Norway_3rdDivision_Group4;v21;Odd 2;Hinna;OK;24;83.33
+2026-08-16;Norway_3rdDivision_Group5;v21;Alta;Kongsvinger 2;OK;21;100.0
+2026-08-16;Norway_3rdDivision_Group5;v21;Fauske Sprint;Finnsnes;OK;21;100.0
+2026-08-16;Norway_3rdDivision_Group5;v21;Lillestrom 2;Harstad;OK;21;100.0
+2026-08-16;Norway_3rdDivision_Group5;v21;Strømsgodset 2;Skedsmo;KO;21;100.0
+2026-08-16;Norway_OBOSLigaen;v21;Hodd;Strømmen;OK;20;80.0
+2026-08-16;Norway_OBOSLigaen;v21;Kongsvinger;Haugesund;OK;20;80.0
+2026-08-16;Sweden_Allsvenskan;v24;Brommapojkarna;Orgryte;OK;22;59.09
+2026-08-16;Sweden_Allsvenskan;v24;Degerfors;Göteborg;OK;22;59.09
+2026-08-16;USA_MLS;v24;Atlanta Utd;New York Red Bulls;OK;28;53.57
+2026-08-16;USA_MLS;v24;Charlotte;Columbus Crew;OK;28;53.57
+2026-08-16;USA_MLS;v24;Houston Dynamo;Los Angeles Galaxy;KO;28;53.57
+2026-08-16;USA_MLS;v24;Nashville SC;Inter Miami;OK;28;53.57
+2026-08-16;USA_MLS;v24;Orlando City;Cincinnati;KO;28;53.57
+2026-08-16;USA_MLS;v24;Real Salt Lake;Minnesota;KO;28;53.57
+2026-08-16;USA_MLS;v24;San Jose Earthquakes;St. Louis City;OK;28;53.57
+2026-08-16;USA_MLS;v24;Toronto FC;New England Revolution;OK;28;53.57
+2026-08-17;Estonia_Esiliiga;v21;Nomme Utd U21;Nomme Kalju U21;KO;28;75.0
+2026-08-17;Iceland_BestaDeildKarla;v22;Fram;Stjarnan;OK;29;72.41
+2026-08-17;Iceland_BestaDeildKarla;v22;Valur;Akureyri;OK;29;72.41
+2026-08-17;Norway_3rdDivision_Group1;v21;K. Oslo 2;Nordstrand;OK;26;88.46
+2026-08-17;Norway_3rdDivision_Group2;v21;FK Kvik;Aalesund 2;OK;25;68.0
+2026-08-17;Norway_3rdDivision_Group2;v21;Molde 2;Rosenborg 2;OK;25;68.0
+2026-08-17;Norway_3rdDivision_Group3;v24;Brann 2;OS;OK;23;82.61
+2026-08-17;Norway_3rdDivision_Group3;v24;Stord;Åsane 2;OK;23;82.61
+2026-08-17;Norway_3rdDivision_Group4;v21;Staal Jorpeland;Haugesund 2;OK;25;84.0
+2026-08-17;Norway_3rdDivision_Group4;v21;Varhaug;Stabaek 2;KO;25;84.0
+2026-08-17;Norway_3rdDivision_Group4;v21;Viking 2;Madla IL;KO;25;84.0
+2026-08-17;Norway_3rdDivision_Group5;v21;Bossekop;Tromsø 2;OK;25;96.0
+2026-08-17;Norway_3rdDivision_Group6;v21;Fram;Sarpsborg 08 2;OK;21;76.19
+2026-08-17;Norway_3rdDivision_Group6;v21;Lillehammer;Lyn 2;OK;21;76.19
+2026-08-18;Norway_3rdDivision_Group3;v22;Sogndal 2;Varegg;OK;20;85.0
+2026-08-19;Estonia_EsiliigaB;v21;Levadia U19;Narva U21;KO;28;71.43
+2026-08-19;Iceland_Division_2;v23;Fjolnir;KFA;OK;29;72.41
+2026-08-19;Iceland_Division_2;v23;Kormakur/Hvot;Haukar;OK;29;72.41
+2026-08-19;Iceland_Division_2;v23;Selfoss;Kari;OK;29;72.41
+2026-08-20;Estonia_Esiliiga;v21;Elva;Maardu;KO;29;72.41
+2026-08-20;Estonia_Esiliiga;v21;FC Tallinn;Nomme Utd U21;KO;29;72.41
+2026-08-20;Estonia_Esiliiga;v21;Nomme Kalju U21;Tallinna Kalev;OK;29;72.41
+2026-08-20;Estonia_Esiliiga;v21;Tartu Welco;Levadia U21;OK;29;72.41
+2026-08-20;Estonia_EsiliigaB;v21;Parnu JK Vaprus U21;Tulevik;OK;29;68.97
+2026-08-20;Estonia_EsiliigaB;v21;Tabasalu;Johvi Phoenix;OK;29;68.97
+2026-08-20;Estonia_EsiliigaB;v21;Tartu Kalev;Tammeka U21;OK;29;68.97
+2026-08-20;USA_MLS;v21;Cincinnati;New York City;OK;20;60.0
+2026-08-20;USA_MLS;v21;Orlando City;Chicago Fire;OK;20;60.0
+2026-08-20;USA_MLS;v21;Philadelphia Union;Inter Miami;OK;20;60.0
+2026-08-21;Belarus_PershayaLiga;v24;Molodechno;Soligorsk;OK;43;72.09
+2026-08-21;Belarus_PershayaLiga;v24;Orsha;BATE 2;OK;43;72.09
+2026-08-21;Estonia_Esiliiga;v21;Flora U21;Viimsi JK;OK;33;69.7
+2026-08-21;Estonia_EsiliigaB;v21;Tallinna Kalev U21;Legion;OK;32;71.88
+2026-08-21;Finland_Ykkonen;v24;KPV;KuPS Akatemia;OK;36;61.11
+2026-08-21;Finland_Ykkonen;v24;Keski-Uusimaa;JJK Jyvaskyla;OK;36;61.11
+2026-08-21;Sweden_Allsvenskan;v24;Sirius;Hacken;OK;24;62.5
+2026-08-22;Belarus_PershayaLiga;v24;BumProm Gomel;Din. Minsk 2;OK;45;73.33
+2026-08-22;Belarus_PershayaLiga;v24;FC Slonim;Volna Pinsk;OK;45;73.33
+2026-08-22;Belarus_PershayaLiga;v24;Minsk 2;Slutsk;KO;45;73.33
+2026-08-22;Belarus_PershayaLiga;v24;Osipovichi;SKA-1938;KO;45;73.33
+2026-08-22;Finland_Kakkonen_GroupA;v24;Atlantis;PPJ;OK;24;70.83
+2026-08-22;Finland_Kakkonen_GroupA;v24;Kiffen;HPS;OK;24;70.83
+2026-08-22;Finland_Kakkonen_GroupA;v24;MyPa;PuiU;OK;24;70.83
+2026-08-22;Finland_Kakkonen_GroupA;v24;PEPO;HIFK;OK;24;70.83
+2026-08-22;Finland_Kakkonen_GroupA;v24;Union Plaani;Lahden Reipas;KO;24;70.83
+2026-08-22;Finland_Kakkonen_GroupB;v24;EBK;Honka;KO;25;72.0
+2026-08-22;Finland_Kakkonen_GroupB;v24;EPS;HJS;KO;25;72.0
+2026-08-22;Finland_Kakkonen_GroupB;v24;GrIFK;Ilves 2;OK;25;72.0
+2026-08-22;Finland_Kakkonen_GroupB;v24;P-Iirot Rauma;Abo;OK;25;72.0
+2026-08-22;Finland_Kakkonen_GroupC;v22;GBK Kokkola;VPS 2;OK;34;76.47
+2026-08-22;Finland_Kakkonen_GroupC;v22;Hercules;Jaro 2;OK;34;76.47
+2026-08-22;Finland_Kakkonen_GroupC;v22;Huima / Urho;Narpes Kraft;OK;34;76.47
+2026-08-22;Finland_Kakkonen_GroupC;v22;SJK Akatemia 2;JBK;KO;34;76.47
+2026-08-22;Finland_Kakkonen_GroupC;v22;TP-47;Vaajakoski;OK;34;76.47
+2026-08-22;Finland_Ykkonen;v24;Inter Turku 2;TPV;KO;38;63.16
+2026-08-22;Finland_Ykkonen;v24;SalPa;OLS Oulu;OK;38;63.16
+2026-08-22;Iceland_Division_2;v23;KFG Gardabaer;Kormakur/Hvot;OK;32;75.0
+2026-08-22;Latvia_NakotnesLiga;v24;RFS 2;Alberts JDFS;OK;21;71.43
+2026-08-22;Latvia_NakotnesLiga;v24;Valmiera;Marupe;OK;21;71.43
+2026-08-23;Belarus_PershayaLiga;v24;Lida;Niva Dolbizno;OK;49;71.43
+2026-08-23;Bolivia_DivisionProfesional;v21;Real Oruro;Bolivar;OK;20;70.0
+2026-08-23;Estonia_Esiliiga;v21;Levadia U21;FC Tallinn;OK;34;70.59
+2026-08-23;Estonia_Esiliiga;v21;Nomme Kalju U21;Tartu Welco;OK;34;70.59
+2026-08-23;Estonia_EsiliigaB;v21;Tammeka U21;Johvi Phoenix;OK;33;72.73
+2026-08-23;Estonia_EsiliigaB;v21;Tulevik;Narva U21;OK;33;72.73
+2026-08-23;Finland_Ykkonen;v24;VJS;Jazz Pori;KO;40;62.5
+2026-08-23;Iceland_BestaDeildKarla;v22;Akureyri;KR Reykjavik;OK;31;74.19
+2026-08-23;Iceland_BestaDeildKarla;v22;Vikingur Reykjavik;Valur;KO;31;74.19
+2026-08-23;Iceland_Division_2;v23;Haukar;Dalvik/Reynir;OK;33;75.76
+2026-08-23;Iceland_Division_2;v23;KFA;Hviti;OK;33;75.76
+2026-08-23;Iceland_Division_2;v23;Kari;Fjolnir;KO;33;75.76
+2026-08-23;Iceland_Division_2;v23;Throttur Vogar;Selfoss;OK;33;75.76
+2026-08-23;Latvia_NakotnesLiga;v24;Leevon PPK;FK Smiltene;OK;23;73.91
+2026-08-23;Latvia_NakotnesLiga;v24;Rezekne;Metta;KO;23;73.91
+2026-08-23;Latvia_NakotnesLiga;v24;Super Nova 2;Skanste;KO;23;73.91
+2026-08-23;Sweden_Allsvenskan;v24;Göteborg;Elfsborg;KO;25;64.0
+2026-08-23;USA_MLS;v21;Inter Miami;Toronto FC;OK;23;65.22
+2026-08-23;USA_MLS;v21;Nashville SC;Columbus Crew;OK;23;65.22
+2026-08-23;USA_MLS;v21;New York Red Bulls;Chicago Fire;KO;23;65.22
+2026-08-23;USA_MLS;v21;Orlando City;Real Salt Lake;OK;23;65.22
+2026-08-23;USA_USLLeagueOne;v24;Forward Madison;Charlotte Independ.;KO;20;55.0
+2026-08-23;USA_USLLeagueOne;v24;One Knoxville;Boise;OK;20;55.0
+2026-08-23;USA_USLLeagueOne;v24;Richmond Kickers;Portland Hearts of Pine;KO;20;55.0
+2026-08-24;Estonia_Esiliiga;v21;Elva;Flora U21;KO;36;72.22
+2026-08-24;Estonia_Esiliiga;v21;Tallinna Kalev;Maardu;OK;36;72.22
+2026-08-24;Estonia_Esiliiga;v21;Viimsi JK;Nomme Utd U21;OK;36;72.22
+2026-08-24;Estonia_EsiliigaB;v21;Levadia U19;Legion;KO;35;74.29
+2026-08-24;Estonia_EsiliigaB;v21;Parnu JK Vaprus U21;Tabasalu;OK;35;74.29
+2026-08-24;Latvia_NakotnesLiga;v24;Riga FC 2;Riga Mariners;OK;26;69.23
+2026-08-24;Sweden_Allsvenskan;v24;Malmo FF;Djurgarden;OK;26;61.54
+2026-08-24;USA_MLS;v21;Atlanta Utd;Sporting Kansas City;OK;27;66.67
+2026-08-25;Estonia_EsiliigaB;v21;Tartu Kalev;Tallinna Kalev U21;KO;37;72.97
+2026-08-25;Sweden_Division2_SodraGotaland;v24;Vaxjo Norra;Solvesborgs;OK;21;76.19
+2026-08-25;Sweden_Superettan;v24;Örebro;Varberg;OK;22;45.45
+2026-08-26;Belarus_PershayaLiga;v24;Orsha;Din. Minsk 2;OK;50;72.0
+2026-08-26;Norway_2ndDivision_Group2;v24;Rana FK;Follo;OK;20;60.0
+2026-08-26;Norway_OBOSLigaen;v21;Haugesund;Egersund;OK;22;81.82
+2026-08-26;Norway_OBOSLigaen;v21;Moss;Sogndal;OK;22;81.82
+2026-08-26;Norway_OBOSLigaen;v21;Odd;Kongsvinger;KO;22;81.82
+2026-08-26;Norway_OBOSLigaen;v21;Stabaek;Ranheim;OK;22;81.82
+2026-08-26;Norway_OBOSLigaen;v21;Strömsgodset;Hodd;OK;22;81.82
+2026-08-26;Norway_OBOSLigaen;v21;Strømmen;Raufoss;OK;22;81.82
+2026-08-26;Norway_OBOSLigaen;v21;Åsane;Lyn;OK;22;81.82
+2026-08-27;Iceland_Division_2;v23;Hviti;Fjolnir;OK;37;75.68
+2026-08-28;Belarus_PershayaLiga;v24;SKA-1938;Minsk 2;OK;51;72.55
+2026-08-28;Bolivia_DivisionProfesional;v21;Bolivar;Academia del Balompie;OK;21;71.43
+2026-08-28;Bolivia_DivisionProfesional;v21;Independiente;Guabira;OK;21;71.43
+2026-08-28;Iceland_Division_2;v13;Kari;Throttur Vogar;KO;20;90.0
+2026-08-28;Sweden_Division1_Sodra;v24;Lunds;Olympic;OK;20;60.0
+2026-08-28;Sweden_Division2_SodraGotaland;v24;Linero IF;Solvesborgs;KO;22;77.27
+2026-08-28;Sweden_Division2_SodraGotaland;v24;Torns;IFK Trelleborg;OK;22;77.27
+2026-08-28;Sweden_Division2_VastraGotaland;v24;Boljan;Qviding;OK;21;71.43
+2026-08-28;Sweden_Division2_VastraGotaland;v24;Kongahalla;Galtabacks BK;OK;21;71.43
+2026-08-28;Sweden_Division2_VastraGotaland;v24;Lindome;Frölunda;OK;21;71.43
+2026-08-29;Finland_Ykkonen;v21;JJK Jyvaskyla;KPV;OK;24;62.5
+2026-08-29;Finland_Ykkonen;v21;KuPS Akatemia;SalPa;OK;24;62.5
+2026-08-29;Norway_2ndDivision_Group2;v24;Rana FK;Ull/Kisa;OK;21;61.9
+2026-08-29;Norway_2ndDivision_Group2;v24;Trygg/Lade;Skeid;OK;21;61.9
+2026-08-29;Norway_3rdDivision_Group1;v21;Nordstrand;Grei;OK;27;88.89
+2026-08-29;Norway_3rdDivision_Group2;v21dev;Aalesund 2;Nardo;OK;20;75.0
+2026-08-29;Norway_3rdDivision_Group2;v21dev;Melhus;Strindheim;OK;20;75.0
+2026-08-29;Norway_3rdDivision_Group4;v21;Haugesund 2;Vindbjart;OK;28;78.57
+2026-08-29;Norway_3rdDivision_Group4;v21;Mandalskameratene;Varhaug;KO;28;78.57
+2026-08-29;Norway_3rdDivision_Group5;v21;Kongsvinger 2;Ulfstind;OK;26;96.15
+2026-08-29;USA_MLS;v21;New York Red Bulls;Philadelphia Union;OK;28;67.86
+2026-08-30;Belarus_PershayaLiga;v24;FC Slonim;Orsha;OK;52;73.08
+2026-08-30;Belarus_PershayaLiga;v24;Niva Dolbizno;Osipovichi;OK;52;73.08
+2026-08-30;Estonia_Esiliiga;v21;Nomme Utd U21;Elva;KO;39;71.79
+2026-08-30;Estonia_EsiliigaB;v21;Legion;Parnu JK Vaprus U21;OK;38;71.05
+2026-08-30;Estonia_EsiliigaB;v21;Tallinna Kalev U21;Tulevik;OK;38;71.05
+2026-08-30;Finland_Kakkonen_GroupA;v21;Kiffen;HPS;OK;22;77.27
+2026-08-30;Iceland_BestaDeildKarla;v22;Fram;Akureyri;OK;33;72.73
+2026-08-30;Iceland_BestaDeildKarla;v22;Valur;Akranes;OK;33;72.73
+2026-08-30;Latvia_NakotnesLiga;v24;Rezekne;Valmiera;OK;27;70.37
+2026-08-30;Latvia_NakotnesLiga;v24;Skanste;Tukums 2000 2;OK;27;70.37
+2026-08-30;Norway_2ndDivision_Group2;v24;Eidsvold;Grorud;KO;23;65.22
+2026-08-30;Norway_2ndDivision_Group2;v24;Honefoss;Follo;OK;23;65.22
+2026-08-30;Norway_2ndDivision_Group2;v24;Junkeren;Stjordals Blink;OK;23;65.22
+2026-08-30;Norway_2ndDivision_Group2;v24;Levanger;Lørenskog;OK;23;65.22
+2026-08-30;Norway_2ndDivision_Group2;v24;Rana FK;Ull/Kisa;OK;23;65.22
+2026-08-30;Norway_2ndDivision_Group2;v24;Tromsdalen;Kjelsaas;OK;23;65.22
+2026-08-30;Norway_2ndDivision_Group2;v24;Trygg/Lade;Skeid;KO;23;65.22
+2026-08-30;Norway_3rdDivision_Group1;v21dev;Heming;Vaalerenga IF 2;OK;20;90.0
+2026-08-30;Norway_3rdDivision_Group1;v21dev;Konnerud;Baerum;KO;20;90.0
+2026-08-30;Norway_3rdDivision_Group1;v21dev;Lokomotiv Oslo;Ullern;OK;20;90.0
+2026-08-30;Norway_3rdDivision_Group1;v21dev;Ready;Gamle Oslo;OK;20;90.0
+2026-08-30;Norway_3rdDivision_Group2;v21dev;Melhus;Strindheim;KO;22;77.27
+2026-08-30;Norway_3rdDivision_Group2;v21dev;Ntnui;Herd;OK;22;77.27
+2026-08-30;Norway_3rdDivision_Group2;v21dev;Volda TI;FK Kvik;OK;22;77.27
+2026-08-30;Norway_3rdDivision_Group3;v22;Forde;Stord;KO;21;85.71
+2026-08-30;Norway_3rdDivision_Group3;v22;Fyllingsdalen;Austevoll;KO;21;85.71
+2026-08-30;Norway_3rdDivision_Group3;v22;V. Haugesund;OS;OK;21;85.71
+2026-08-30;Norway_3rdDivision_Group4;v21;Akra;Flekkeroy;OK;30;76.67
+2026-08-30;Norway_3rdDivision_Group4;v21;Brodd;Viking 2;OK;30;76.67
+2026-08-30;Norway_3rdDivision_Group4;v21;Haugesund 2;Vindbjart;OK;30;76.67
+2026-08-30;Norway_3rdDivision_Group4;v21;Hinna;Vag;OK;30;76.67
+2026-08-30;Norway_3rdDivision_Group4;v21;Mandalskameratene;Varhaug;KO;30;76.67
+2026-08-30;Norway_3rdDivision_Group4;v21;Stabaek 2;Staal Jorpeland;OK;30;76.67
+2026-08-30;Norway_3rdDivision_Group5;v21;Fauske Sprint;Alta;OK;27;96.3
+2026-08-30;Norway_3rdDivision_Group5;v21;Finnsnes;Lillestrom 2;KO;27;96.3
+2026-08-30;Norway_3rdDivision_Group5;v21;Harstad;Floeya;OK;27;96.3
+2026-08-30;Norway_3rdDivision_Group5;v21;Kongsvinger 2;Ulfstind;OK;27;96.3
+2026-08-30;Norway_3rdDivision_Group5;v21;Skedsmo;Tromsø 2;OK;27;96.3
+2026-08-30;Norway_3rdDivision_Group6;v21;Raelingen;Oppsal;KO;23;78.26
+2026-08-30;Norway_3rdDivision_Group6;v21;Drobak-Frogn;Fram;OK;23;78.26
+2026-08-30;Norway_3rdDivision_Group6;v21;Elverum;Lillehammer;OK;23;78.26
+2026-08-30;Norway_OBOSLigaen;v21;Bryne;Haugesund;KO;29;82.76
+2026-08-30;Norway_OBOSLigaen;v21;Egersund;Åsane;OK;29;82.76
+2026-08-30;Norway_OBOSLigaen;v21;Hodd;Stabaek;OK;29;82.76
+2026-08-30;Norway_OBOSLigaen;v21;Kongsvinger;Lyn;OK;29;82.76
+2026-08-30;Norway_OBOSLigaen;v21;Moss;Strømmen;OK;29;82.76
+2026-08-30;Norway_OBOSLigaen;v21;Ranheim;Odd;OK;29;82.76
+2026-08-30;Norway_OBOSLigaen;v21;Sogndal;Strömsgodset;OK;29;82.76
+2026-08-30;Sweden_Division1_Sodra;v24;Laholms;AFC Malmo;OK;21;61.9
+2026-08-30;Sweden_Division1_Sodra;v24;Trelleborg;Utsikten;OK;21;61.9
+2026-08-30;Sweden_Division2_SodraGotaland;v24;Karlskrona;IFK Berga;OK;24;75.0
+2026-08-30;Sweden_Division2_SodraGotaland;v24;Vaxjo Norra;Osterlen;OK;24;75.0
+2026-08-30;Sweden_Superettan;v24;Sandviken;Öster;KO;23;47.83
+2026-08-30;Sweden_Superettan;v24;Varberg;Oddevold;OK;23;47.83
+2026-08-30;USA_MLS;v21;Atlanta Utd;Charlotte;KO;29;68.97
+2026-08-30;USA_MLS;v21;Inter Miami;CF Montreal;OK;29;68.97
+2026-08-30;USA_MLS;v21;Nashville SC;Cincinnati;OK;29;68.97
+2026-08-30;USA_MLS;v21;Portland Timbers;Austin FC;OK;29;68.97
+2026-08-30;USA_USLChampionship;v24;Las Vegas Lights;Charleston;KO;20;25.0
+2026-08-30;USA_USLChampionship;v24;Oakland Roots;Orange County SC;KO;20;25.0
+2026-08-30;USA_USLLeagueOne;v24;Chattanooga Red Wolves;Boise;OK;23;52.17
+2026-08-30;USA_USLLeagueOne;v24;Portland Hearts of Pine;Fort Wayne;OK;23;52.17
+2026-08-31;Estonia_EsiliigaB;v21;Tammeka U21;Levadia U19;OK;40;72.5
+2026-08-31;Iceland_BestaDeildKarla;v22;Breidablik;Stjarnan;KO;35;74.29
+2026-08-31;Norway_3rdDivision_Group2;v21dev;Ranheim 2;Orkla;OK;25;76.0
+2026-08-31;Norway_3rdDivision_Group2;v21dev;Rosenborg 2;Byåsen;OK;25;76.0
+2026-08-31;Norway_3rdDivision_Group2;v21dev;Spjelkavik;Molde 2;OK;25;76.0
+2026-08-31;Norway_3rdDivision_Group3;v22;Fana;Brann 2;OK;24;79.17
+2026-08-31;Norway_3rdDivision_Group3;v22;Åsane 2;Sogndal 2;OK;24;79.17
+2026-08-31;Norway_3rdDivision_Group4;v21;Madla IL;Odd 2;OK;36;77.78
+2026-08-31;Norway_3rdDivision_Group5;v21;Bossekop;Strømsgodset 2;OK;32;93.75
+2026-08-31;Norway_3rdDivision_Group6;v22;Lyn 2;Sandefjord 2;OK;20;80.0
+2026-08-31;Norway_3rdDivision_Group6;v22;Sarpsborg 08 2;Rade;OK;20;80.0
+2026-08-31;Sweden_Allsvenskan;v24;Sirius;Malmo FF;KO;27;62.96
+2026-09-01;Iceland_BestaDeildKarla;v22;KR Reykjavik;Vikingur Reykjavik;KO;36;72.22
+2026-09-01;Norway_3rdDivision_Group1;v21;Nordstrand;Grei;OK;32;87.5
+2026-09-02;Finland_Kakkonen_GroupB;v24;EPS;Honka;KO;29;68.97
+2026-09-02;Finland_Kakkonen_GroupB;v24;HJS;Ilves 2;OK;29;68.97
+2026-09-02;Finland_Kakkonen_GroupB;v24;P-Iirot Rauma;Abo;OK;29;68.97
+2026-09-02;Finland_Kakkonen_GroupC;v251;JBK;Huima / Urho;KO;22;86.36
+2026-09-02;Finland_Kakkonen_GroupC;v251;Narpes Kraft;Jaro 2;OK;22;86.36
+2026-09-02;Finland_Kakkonen_GroupC;v251;VPS 2;GBK Kokkola;OK;22;86.36
+2026-09-03;Estonia_Esiliiga;v21;Viimsi JK;FC Tallinn;OK;40;70.0
+2026-09-03;Kazakhstan_FirstLeague;v24;Akademiya Ontustik;Aktobe 2;OK;21;71.43
+2026-09-03;Kazakhstan_FirstLeague;v24;Arys;FC Batyr;OK;21;71.43
+2026-09-03;Kazakhstan_FirstLeague;v24;Tobol 2;Kairat Almaty 2;KO;21;71.43
+2026-09-03;USA_USLLeagueOne;v24;Charlotte Independ.;Portland Hearts of Pine;OK;25;56.0
+2026-09-03;USA_USLLeagueOne;v24;Forward Madison;One Knoxville;KO;25;56.0
+2026-09-03;USA_USLLeagueOne;v24;Westchester SC;Chattanooga Red Wolves;KO;25;56.0
+2026-09-04;Belarus_PershayaLiga;v24;Minsk 2;Niva Dolbizno;OK;54;74.07
+2026-09-04;Belarus_PershayaLiga;v24;Molodechno;BATE 2;OK;54;74.07
+2026-09-04;Belarus_PershayaLiga;v24;Volna Pinsk;Din. Minsk 2;OK;54;74.07
+2026-09-04;Bolivia_DivisionProfesional;v21;Academia del Balompie;Universitario de Vinto;KO;23;73.91
+2026-09-04;Bolivia_DivisionProfesional;v21;Real Oruro;SA Bulo Bulo;KO;23;73.91
+2026-09-04;Estonia_Esiliiga;v21;Levadia U21;Flora U21;OK;41;70.73
+2026-09-04;Finland_Kakkonen_GroupA;v21;Atlantis;PEPO;KO;23;78.26
+2026-09-04;Finland_Kakkonen_GroupA;v21;HIFK;HPS;KO;23;78.26
+2026-09-04;Norway_3rdDivision_Group1;v21dev;Gamle Oslo;Heming;OK;25;88.0
+2026-09-04;Norway_Eliteserien;v24;Aalesund;Start;KO;20;75.0
+2026-09-04;Sweden_Division1_Sodra;v24;Rosengard;Laholms;OK;23;65.22
+2026-09-04;Sweden_Division2_SodraSvealand;v24;Ragsved;Haninge;OK;21;66.67
+2026-09-05;Belarus_PershayaLiga;v21dev;Osipovichi;Lida;OK;22;77.27
+2026-09-05;Estonia_Esiliiga;v13;Tallinna Kalev;Tartu Welco;KO;20;85.0
+2026-09-05;Estonia_EsiliigaB;v21;Tabasalu;Tammeka U21;OK;41;73.17
+2026-09-05;Estonia_EsiliigaB;v21;Tulevik;Legion;OK;41;73.17
+2026-09-05;Germany_Oberliga_Bayern_Sud;v24;Geretsried;Landshut;KO;21;57.14
+2026-09-05;Germany_Oberliga_Bayern_Sud;v24;Kottern-St. Mang;Kirchanschoring;OK;21;57.14
+2026-09-05;Germany_Oberliga_Bayern_Sud;v24;Pipinsried;TSV 1880 Wasserburg;OK;21;57.14
+2026-09-05;Germany_Oberliga_Bayern_Sud;v24;Schalding;Pfaffenhofen;OK;21;57.14
+2026-09-05;Germany_Oberliga_Bayern_Sud;v24;Schwabmunchen;Hankofen-Hailing;OK;21;57.14
+2026-09-05;Kyrgyzstan_PremierLiga;v24;Bars;Alay Osh;OK;20;75.0
+2026-09-05;Norway_2ndDivision_Group2;v24;Follo;Tromsdalen;KO;30;66.67
+2026-09-05;Norway_2ndDivision_Group2;v24;Skeid;Kjelsaas;OK;30;66.67
+2026-09-05;Norway_2ndDivision_Group2;v24;Stjordals Blink;Eidsvold;OK;30;66.67
+2026-09-05;Norway_Eliteserien;v24;Brann;Lilleström;OK;21;71.43
+2026-09-05;Norway_Eliteserien;v24;Rosenborg;HamKam;OK;21;71.43
+2026-09-05;Norway_OBOSLigaen;v21dev;Haugesund;Sogndal;KO;25;88.0
+2026-09-05;Norway_OBOSLigaen;v21dev;Kongsvinger;Raufoss;OK;25;88.0
+2026-09-05;Norway_OBOSLigaen;v21dev;Odd;Strömsgodset;KO;25;88.0
+2026-09-05;Norway_OBOSLigaen;v21dev;Sandnes;Ranheim;KO;25;88.0
+2026-09-05;Norway_OBOSLigaen;v21dev;Stabaek;Moss;OK;25;88.0
+2026-09-05;Norway_OBOSLigaen;v21dev;Åsane;Hodd;OK;25;88.0
+2026-09-05;Sweden_Allsvenskan;v24;Västerås SK;Sirius;KO;28;60.71
+2026-09-05;Sweden_Division1_Norra;v24;Jarfalla;FBK Karlstad;OK;20;45.0
+2026-09-05;Sweden_Division1_Sodra;v24;AFC Malmo;Atvidaberg;OK;24;66.67
+2026-09-05;Sweden_Division1_Sodra;v24;Hassleholms IF;Kristianstad;OK;24;66.67
+2026-09-05;Sweden_Division1_Sodra;v24;Olympic;Angelholm;OK;24;66.67
+2026-09-05;Sweden_Division1_Sodra;v24;Trollhättan;Eskilsminne;OK;24;66.67
+2026-09-05;Sweden_Division1_Sodra;v24;Utsikten;Lunds;KO;24;66.67
+2026-09-05;Sweden_Superettan;v24;Helsingborg;Sandviken;KO;25;48.0
+2026-09-05;Sweden_Superettan;v24;Oddevold;Falkenberg;OK;25;48.0
+2026-09-05;Sweden_Superettan;v24;Värnamo;Varberg;KO;25;48.0
+2026-09-06;Estonia_EsiliigaB;v21;Levadia U19;Johvi Phoenix;OK;43;74.42
+2026-09-06;Estonia_EsiliigaB;v21;Parnu JK Vaprus U21;Tallinna Kalev U21;OK;43;74.42
+2026-09-06;Estonia_EsiliigaB;v21;Tartu Kalev;Narva U21;KO;43;74.42
+2026-09-06;Finland_Kakkonen_GroupC;v21dev;Huima / Urho;Narpes Kraft;OK;22;86.36
+2026-09-06;Finland_Kakkonen_GroupC;v21dev;Jaro 2;VPS 2;OK;22;86.36
+2026-09-06;Iceland_BestaDeildKarla;v22;Akranes;KR Reykjavik;OK;37;70.27
+2026-09-06;Iceland_BestaDeildKarla;v22;Akureyri;Breidablik;OK;37;70.27
+2026-09-06;Iceland_BestaDeildKarla;v22;Stjarnan;Vestmannaeyjar;OK;37;70.27
+2026-09-06;Iceland_BestaDeildKarla;v22;Vikingur Reykjavik;Fram;OK;37;70.27
+2026-09-06;Norway_2ndDivision_Group2;v21dev;Trygg/Lade;Honefoss;OK;20;70.0
+2026-09-06;Norway_2ndDivision_Group2;v21dev;Ull/Kisa;Levanger;OK;20;70.0
+2026-09-06;Norway_3rdDivision_Group2;v21dev;Volda TI;Rosenborg 2;OK;28;78.57
+2026-09-06;Norway_3rdDivision_Group3;v22;Brann 2;V. Haugesund;OK;26;80.77
+2026-09-06;Norway_3rdDivision_Group4;v21;Odd 2;Haugesund 2;OK;37;78.38
+2026-09-06;Norway_3rdDivision_Group4;v21;Viking 2;Stabaek 2;OK;37;78.38
+2026-09-06;Norway_3rdDivision_Group5;v21;Alta;Skedsmo;KO;33;93.94
+2026-09-06;Norway_3rdDivision_Group5;v21;Lillestrom 2;Bossekop;OK;33;93.94
+2026-09-06;Norway_3rdDivision_Group5;v21;Skjervoy;Kongsvinger 2;OK;33;93.94
+2026-09-06;Norway_3rdDivision_Group5;v21;Strømsgodset 2;Finnsnes;OK;33;93.94
+2026-09-06;Norway_3rdDivision_Group5;v21;Tromsø 2;Harstad;KO;33;93.94
+2026-09-06;Norway_Eliteserien;v24;Molde;KFUM Oslo;KO;23;73.91
+2026-09-06;Norway_Eliteserien;v24;Sarpsborg 08;Vålerenga;OK;23;73.91
+2026-09-06;Sweden_Allsvenskan;v24;Brommapojkarna;Elfsborg;OK;29;58.62
+2026-09-06;Sweden_Division1_Norra;v24;Pitea;Karlbergs;OK;21;47.62
+2026-09-06;Sweden_Division1_Norra;v24;Vasalund;Enkoping SK;OK;21;47.62
+2026-09-06;Sweden_Division1_Sodra;v24;Skövde;Trelleborg;OK;29;68.97
+2026-09-06;Sweden_Division2_SodraGotaland;v24;IFK Berga;Lilla Torg;OK;26;76.92
+2026-09-06;Sweden_Division2_SodraGotaland;v24;IFK Trelleborg;Linero IF;OK;26;76.92
+2026-09-06;Sweden_Division2_SodraGotaland;v24;Staffanstorp United;Karlskrona;KO;26;76.92
+2026-09-06;Sweden_Division2_SodraSvealand;v24;Forward;Farsta;OK;22;68.18
+2026-09-06;Sweden_Division2_SodraSvealand;v24;Syrianska;Fittja;KO;22;68.18
+2026-09-06;Sweden_Division2_VastraGotaland;v24;Hestrafors;Lindome;KO;24;75.0
+2026-09-06;Sweden_Division2_VastraGotaland;v24;Qviding;Jonsereds;KO;24;75.0
+2026-09-06;USA_MLS;v21;FC Dallas;Sporting Kansas City;OK;33;69.7
+2026-09-06;USA_MLS;v21;Inter Miami;Atlanta Utd;OK;33;69.7
+2026-09-06;USA_MLS;v21;Toronto FC;Chicago Fire;OK;33;69.7
+2026-09-06;USA_USLLeagueOne;v24;AV Alta;One Knoxville;OK;28;53.57
+2026-09-06;USA_USLLeagueOne;v24;FC Naples;Boise;KO;28;53.57
+2026-09-06;USA_USLLeagueOne;v24;Sarasota Paradise;Spokane Velocity;KO;28;53.57
+2026-09-06;USA_USLLeagueOne;v24;Union Omaha;Charlotte Independ.;KO;28;53.57
+2026-09-07;Kyrgyzstan_PremierLiga;v24;Asia Talas;Alga;OK;21;76.19
+2026-09-07;Kyrgyzstan_PremierLiga;v24;Dordoi Bishkek;Aldier;OK;21;76.19
+2026-09-07;Latvia_NakotnesLiga;v24;Riga FC 2;Skanste;OK;29;72.41
+2026-09-07;Norway_3rdDivision_Group1;v21dev;K. Oslo 2;Lokomotiv Oslo;OK;26;88.46
+2026-09-07;Norway_3rdDivision_Group2;v21dev;FK Kvik;Ranheim 2;OK;29;79.31
+2026-09-07;Norway_3rdDivision_Group2;v21dev;Molde 2;Aalesund 2;OK;29;79.31
+2026-09-07;Norway_3rdDivision_Group3;v22;Gneist;Åsane 2;OK;27;81.48
+2026-09-07;Norway_3rdDivision_Group6;v22;Drobak-Frogn;Lyn 2;OK;22;81.82
+2026-09-07;Norway_3rdDivision_Group6;v22;Orn;Sarpsborg 08 2;OK;22;81.82
+2026-09-07;Sweden_Allsvenskan;v24;Malmo FF;AIK Stockholm;KO;30;60.0
+2026-09-07;USA_USLLeagueOne;v24;Portland Hearts of Pine;Westchester SC;OK;32;50.0
+2026-09-09;FaroeIslands_1Deild;v22;TB Tvoroyri;Vikingur 2;OK;21;90.48
+2026-09-09;Sweden_Superettan;v24;Sandviken;Oddevold;KO;28;46.43
+2026-09-10;Estonia_Esiliiga;v13;Nomme Kalju U21;Flora U21;OK;21;80.95
+2026-09-10;Estonia_Esiliiga;v13;Levadia U21;Tartu Welco;KO;21;80.95
+2026-09-10;Estonia_EsiliigaB;v21;Tammeka U21;Tulevik;OK;46;73.91
+2026-09-10;Estonia_EsiliigaB;v21;Parnu JK Vaprus U21;Johvi Phoenix;OK;46;73.91
+2026-09-10;Estonia_EsiliigaB;v21;Legion;Tartu Kalev;OK;46;73.91
+2026-09-10;Kazakhstan_FirstLeague;v24;Yelimay Semey 2;Akademiya Ontustik;KO;24;70.83
+2026-09-10;Kazakhstan_FirstLeague;v24;Aktobe 2;Turan;OK;24;70.83
+2026-09-10;Sweden_Superettan;v24;Falkenberg;Öster;OK;29;44.83
+2026-09-10;Sweden_Superettan;v24;Östersund;Brage;KO;29;44.83
+2026-09-11;Belarus_PershayaLiga;v21dev;Din. Minsk 2;Orsha;KO;23;78.26
+2026-09-11;Estonia_EsiliigaB;v21;Tallinna Kalev U21;Tabasalu;OK;49;75.51
+2026-09-11;Estonia_EsiliigaB;v21;Narva U21;Levadia U19;KO;49;75.51
+2026-09-11;Germany_Oberliga_Bayern_Sud;v24;TSV 1880 Wasserburg;Heimstetten;OK;26;61.54
+2026-09-11;Germany_Oberliga_Bayern_Sud;v24;Hankofen-Hailing;Schalding;KO;26;61.54
+2026-09-11;Kazakhstan_FirstLeague;v24;FC Batyr;Tobol 2;OK;26;69.23
+2026-09-11;Latvia_NakotnesLiga;v24;Rezekne;Super Nova 2;OK;30;73.33
+2026-09-11;Norway_2ndDivision_Group2;v22;Eidsvold;Ull/Kisa;OK;20;75.0
+2026-09-11;Sweden_Allsvenskan;v24;Hacken;Mjallby;KO;31;58.06
+2026-09-11;Sweden_Division1_Sodra;v24;Lunds;Rosengard;KO;30;70.0
+2026-09-11;Sweden_Division2_NorraGotaland;v24;Vanersborgs IF;Grebbestad;OK;20;45.0
+2026-09-11;Sweden_Division2_NorraGotaland;v24;Stenungsunds;Vanersborgs FK;KO;20;45.0
+2026-09-11;Sweden_Division2_VastraGotaland;v24;Boljan;Hestrafors;OK;26;69.23
+2026-09-11;Sweden_Division2_VastraGotaland;v24;Dalstorps IF;Frölunda;OK;26;69.23
+2026-09-12;Belarus_PershayaLiga;v24;Slutsk;Volna Pinsk;KO;61;75.41
+2026-09-12;Belarus_PershayaLiga;v24;Ostrovets;Gomel 2;OK;61;75.41
+2026-09-12;Belarus_PershayaLiga;v24;FC Slonim;Molodechno;KO;61;75.41
+2026-09-12;Bolivia_DivisionProfesional;v22;The Strongest;Real Oruro;OK;21;71.43
+2026-09-12;FaroeIslands_1Deild;v22;Streymur 2;Vikingur 2;OK;22;90.91
+2026-09-12;FaroeIslands_1Deild;v22;Runavik 2;Fuglafjordur;OK;22;90.91
+2026-09-12;FaroeIslands_1Deild;v22;Hoyvik;B36 Torshavn 2;OK;22;90.91
+2026-09-12;Germany_Oberliga_Bayern_Sud;v24;Kirchanschoring;Monaco 1860 2;KO;28;60.71
+2026-09-12;Germany_Oberliga_Bayern_Sud;v24;Landshut;Schwabmunchen;OK;28;60.71
+2026-09-12;Germany_Oberliga_Bayern_Sud;v24;Gundelfingen;Pipinsried;OK;28;60.71
+2026-09-12;Germany_Oberliga_Bayern_Sud;v24;Pfaffenhofen;FC Schwaig;OK;28;60.71
+2026-09-12;Kyrgyzstan_PremierLiga;v24;Kyrgyzaltyn;Asia Talas;OK;23;78.26
+2026-09-12;Latvia_NakotnesLiga;v24;Marupe;Tukums 2000 2;OK;31;74.19
+2026-09-12;Latvia_NakotnesLiga;v24;Alberts JDFS;Valmiera;OK;31;74.19
+2026-09-12;Latvia_NakotnesLiga;v24;FK Smiltene;Riga Mariners;OK;31;74.19
+2026-09-12;Latvia_NakotnesLiga;v24;Metta;JFK Ventspils;OK;31;74.19
+2026-09-12;Norway_2ndDivision_Group2;v22;Levanger;Follo;OK;21;76.19
+2026-09-12;Norway_3rdDivision_Group1;v21dev;Vaalerenga IF 2;Gamle Oslo;OK;27;88.89
+2026-09-12;Norway_3rdDivision_Group1;v21dev;Ready;Ullern;OK;27;88.89
+2026-09-12;Norway_3rdDivision_Group1;v21dev;Heming;Frigg;OK;27;88.89
+2026-09-12;Norway_3rdDivision_Group1;v21dev;Union Carl Berner;Nordstrand;KO;27;88.89
+2026-09-12;Norway_3rdDivision_Group1;v21dev;Konnerud;Grei;OK;27;88.89
+2026-09-12;Norway_3rdDivision_Group2;v21dev;Herd;Orkla;OK;31;80.65
+2026-09-12;Norway_3rdDivision_Group2;v21dev;Ntnui;Molde 2;OK;31;80.65
+2026-09-12;Norway_3rdDivision_Group2;v21dev;Strindheim;FK Kvik;KO;31;80.65
+2026-09-12;Norway_3rdDivision_Group3;v22;Fana;OS;OK;28;82.14
+2026-09-12;Norway_3rdDivision_Group3;v22;V. Haugesund;Forde;OK;28;82.14
+2026-09-12;Norway_3rdDivision_Group3;v22;Varegg;Sogndal 2;KO;28;82.14
+2026-09-12;Norway_3rdDivision_Group3;v22;Djerv 1919;Austevoll;OK;28;82.14
+2026-09-12;Norway_3rdDivision_Group4;v21;Brodd;Staal Jorpeland;OK;39;79.49
+2026-09-12;Norway_3rdDivision_Group4;v21;Hinna;Madla IL;OK;39;79.49
+2026-09-12;Norway_3rdDivision_Group4;v21;Haugesund 2;Vag;OK;39;79.49
+2026-09-12;Norway_3rdDivision_Group4;v21;Mandalskameratene;Flekkeroy;OK;39;79.49
+2026-09-12;Norway_3rdDivision_Group5;v21;Harstad;Ulfstind;OK;38;89.47
+2026-09-12;Norway_3rdDivision_Group5;v21;Finnsnes;Alta;OK;38;89.47
+2026-09-12;Norway_3rdDivision_Group6;v22;Sarpsborg 08 2;Lillehammer;OK;24;83.33
+2026-09-12;Norway_3rdDivision_Group6;v22;Sandefjord 2;Orn;KO;24;83.33
+2026-09-12;Norway_3rdDivision_Group6;v22;Rade;Elverum;OK;24;83.33
+2026-09-12;Norway_Eliteserien;v24;Lilleström;Vålerenga;KO;25;72.0
+2026-09-12;Sweden_Division1_Norra;v24;FBK Karlstad;Vasalund;OK;23;52.17
+2026-09-12;Sweden_Division1_Norra;v24;Stocksund;Karlstad;OK;23;52.17
+2026-09-12;Sweden_Division1_Norra;v24;Karlbergs;Arlanda;KO;23;52.17
+2026-09-12;Sweden_Division1_Sodra;v24;Atvidaberg;Olympic;OK;31;67.74
+2026-09-12;Sweden_Division1_Sodra;v24;Tvaaker;AFC Malmo;KO;31;67.74
+2026-09-12;Sweden_Division1_Sodra;v24;Laholms;Eskilsminne;KO;31;67.74
+2026-09-12;Sweden_Division1_Sodra;v24;Trelleborg;Hassleholms IF;OK;31;67.74
+2026-09-12;Sweden_Division2_NorraGotaland;v24;Karlstad 2;Skara;OK;22;45.45
+2026-09-12;Sweden_Division2_SodraGotaland;v24;Nosaby;IFK Berga;OK;29;75.86
+2026-09-12;Sweden_Division2_SodraGotaland;v24;Solvesborgs;Karlskrona;KO;29;75.86
+2026-09-12;Sweden_Division2_SodraGotaland;v24;Linero IF;Staffanstorp United;KO;29;75.86
+2026-09-12;Sweden_Division2_SodraGotaland;v24;Osterlen;IFK Trelleborg;OK;29;75.86
+2026-09-12;Sweden_Division2_SodraGotaland;v24;Oskarshamn;Rappe GOIF;OK;29;75.86
+2026-09-12;Sweden_Division2_SodraSvealand;v24;Sleipner;Nacka FC;KO;24;66.67
+2026-09-12;Sweden_Division2_SodraSvealand;v24;Lindo FF;Ragsved;OK;24;66.67
+2026-09-12;Sweden_Division2_SodraSvealand;v24;Farsta;Smedby;OK;24;66.67
+2026-09-12;Sweden_Division2_VastraGotaland;v24;Jonsereds;Torslanda;OK;28;71.43
+2026-09-12;Sweden_Division2_VastraGotaland;v24;Onsala;Galtabacks BK;KO;28;71.43
+2026-09-12;USA_USLLeagueOne;v24;Boise;New York Cosmos;OK;33;51.52
+2026-09-13;Belarus_PershayaLiga;v24;Lida;Minsk 2;OK;64;73.44
+2026-09-13;Belarus_PershayaLiga;v24;Niva Dolbizno;BumProm Gomel;OK;64;73.44
+2026-09-13;Belarus_PershayaLiga;v24;Soligorsk;Osipovichi;OK;64;73.44
+2026-09-13;Estonia_Esiliiga;v13;Nomme Utd U21;Viimsi JK;KO;23;78.26
+2026-09-13;Estonia_EsiliigaB;v21;Parnu JK Vaprus U21;Tartu Kalev;OK;51;74.51
+2026-09-13;FaroeIslands_1Deild;v22;FC Suduroy;Sandur;OK;25;92.0
+2026-09-13;FaroeIslands_1Deild;v22;HB Torshavn 2;TB Tvoroyri;OK;25;92.0
+2026-09-13;Iceland_BestaDeildKarla;v22;KR Reykjavik;Akranes;OK;41;73.17
+2026-09-13;Iceland_BestaDeildKarla;v22;Stjarnan;Vestmannaeyjar;KO;41;73.17
+2026-09-13;Norway_2ndDivision_Group2;v251;Kjelsaas;Stjordals Blink;OK;20;80.0
+2026-09-13;Norway_3rdDivision_Group1;v21;Lokomotiv Oslo;Baerum;OK;40;87.5
+2026-09-13;Norway_3rdDivision_Group2;v21dev;Ranheim 2;Byåsen;OK;34;79.41
+2026-09-13;Norway_3rdDivision_Group2;v21dev;Rosenborg 2;Nardo;OK;34;79.41
+2026-09-13;Norway_3rdDivision_Group4;v13;Stabaek 2;Vindbjart;OK;20;90.0
+2026-09-13;Norway_3rdDivision_Group5;v21;Kongsvinger 2;Floeya;OK;40;90.0
+2026-09-13;Norway_3rdDivision_Group5;v21;Bossekop;Skjervoy;KO;40;90.0
+2026-09-13;Norway_Eliteserien;v24;HamKam;Molde;OK;26;69.23
+2026-09-13;Norway_Eliteserien;v24;Start;Brann;KO;26;69.23
+2026-09-13;Norway_Eliteserien;v24;Viking;Kristiansund;OK;26;69.23
+2026-09-13;Norway_Eliteserien;v24;KFUM Oslo;Aalesund;OK;26;69.23
+2026-09-13;Norway_OBOSLigaen;v13;Moss;Haugesund;OK;21;85.71
+2026-09-13;Norway_OBOSLigaen;v13;Egersund;Kongsvinger;KO;21;85.71
+2026-09-13;Norway_OBOSLigaen;v13;Raufoss;Odd;OK;21;85.71
+2026-09-13;Norway_OBOSLigaen;v13;Ranheim;Åsane;OK;21;85.71
+2026-09-13;Norway_OBOSLigaen;v13;Strömsgodset;Sandnes;OK;21;85.71
+2026-09-13;Sweden_Allsvenskan;v24;Hammarby;Brommapojkarna;OK;32;56.25
+2026-09-13;Sweden_Division1_Norra;v24;AFC Eskilstuna;Pitea;KO;26;53.85
+2026-09-13;Sweden_Division1_Norra;v24;Umeå;Stockholm Internazionale;OK;26;53.85
+2026-09-13;Sweden_Division2_NorraGotaland;v24;Lidkoping;Herrestads AIF;OK;23;47.83
+2026-09-13;Sweden_Division2_NorraGotaland;v24;Ahlafors IF;Husqvarna;KO;23;47.83
+2026-09-13;Sweden_Division2_SodraGotaland;v24;IFK Karlshamn;Torns;OK;34;73.53
+2026-09-13;Sweden_Division2_SodraSvealand;v24;Fittja;Forward;OK;27;66.67
+2026-09-13;Sweden_Division2_VastraGotaland;v24;Astorps;Qviding;OK;30;70.0
+2026-09-13;Sweden_Superettan;v24;Ljungskile;Falkenberg;KO;31;45.16
+2026-09-13;USA_MLS;v21dev;FC Dallas;Portland Timbers;OK;22;81.82
+2026-09-13;USA_MLS;v21dev;Cincinnati;Charlotte;OK;22;81.82
+2026-09-13;USA_MLS;v21dev;Orlando City;Toronto FC;OK;22;81.82
+2026-09-13;USA_USLChampionship;v24;Louisville City;El Paso;OK;22;22.73
+2026-09-13;USA_USLChampionship;v24;Birmingham Legion;Charleston;OK;22;22.73
+2026-09-13;USA_USLChampionship;v24;Sporting Jax;Rhode Island;OK;22;22.73
+2026-09-13;USA_USLLeagueOne;v24;Charlotte Independ.;Westchester SC;OK;34;52.94
+2026-09-13;USA_USLLeagueOne;v24;Richmond Kickers;Chattanooga Red Wolves;KO;34;52.94
+2026-09-14;Estonia_Esiliiga;v13;Tartu Welco;Nomme Kalju U21;OK;24;75.0
+2026-09-14;Estonia_EsiliigaB;v21;Johvi Phoenix;Tallinna Kalev U21;OK;52;75.0
+2026-09-14;Estonia_EsiliigaB;v21;Tabasalu;Legion;KO;52;75.0
+2026-09-14;Iceland_BestaDeildKarla;v13;Vikingur Reykjavik;Keflavik;OK;29;72.41
+2026-09-14;Latvia_NakotnesLiga;v21;RFS 2;Skanste;OK;22;81.82
+2026-09-14;Norway_3rdDivision_Group1;v21dev;Asker;K. Oslo 2;OK;33;87.88
+2026-09-14;Norway_3rdDivision_Group2;v21dev;Aalesund 2;Spjelkavik;OK;36;80.56
+2026-09-14;Norway_3rdDivision_Group3;v22;Åsane 2;Brann 2;OK;32;81.25
+2026-09-14;Norway_3rdDivision_Group5;v21;Fauske Sprint;Strømsgodset 2;OK;42;88.1
+2026-09-14;Norway_3rdDivision_Group5;v21;Skjetten;Tromsø 2;OK;42;88.1
+2026-09-14;Norway_3rdDivision_Group5;v21;Skedsmo;Lillestrom 2;OK;42;88.1
+2026-09-14;Sweden_Division2_SodraSvealand;v24;Haninge;Syrianska;KO;28;67.86
+2026-09-14;Sweden_Superettan;v24;Norrby;Varberg;OK;32;43.75
+2026-09-14;Sweden_Superettan;v24;Örebro;Nordic United;KO;32;43.75
+2026-09-14;USA_MLS;v21dev;Vancouver Whitecaps;Austin FC;OK;25;84.0
+2026-09-14;USA_USLLeagueOne;v24;Portland Hearts of Pine;AV Alta;KO;36;52.78
+2026-09-15;Estonia_EsiliigaB;v22;Narva U21;Tammeka U21;KO;53;75.47
+2026-09-15;Estonia_EsiliigaB;v22;Levadia U19;Tulevik;OK;53;75.47
+2026-09-15;Sweden_Superettan;v24;Brage;Sandviken;KO;34;44.12
+2026-09-16;Estonia_Meistriliiga;v24;Paide;Parnu JK Vaprus;KO;20;75.0
+2026-09-16;Sweden_Allsvenskan;v24;AIK Stockholm;Mjallby;KO;33;57.58
+2026-09-16;Sweden_Division1_Sodra;v24;Hassleholms IF;AFC Malmo;KO;35;65.71
+2026-09-16;Sweden_Division1_Sodra;v24;Utsikten;Laholms;KO;35;65.71
+2026-09-17;Germany_Oberliga_RheinlandPfalzSaar;v24;Gonsenheim;Schott Mainz;KO;21;71.43
+2026-09-17;Kazakhstan_FirstLeague;v24;Arys;Aktobe 2;OK;27;70.37
+2026-09-17;Norway_3rdDivision_Group3;v22;Stord;Djerv 1919;OK;33;81.82
+2026-09-17;Sweden_Division1_Norra;v24;Stockholm Internazionale;Stocksund;OK;28;53.57
+2026-09-17;Sweden_Division1_Norra;v24;Assyriska FF;AFC Eskilstuna;OK;28;53.57
+2026-09-17;Sweden_Division1_Norra;v24;Vasalund;Hammarby TFF;KO;28;53.57
+2026-09-17;Sweden_Division1_Sodra;v24;Kristianstad;Olympic;KO;37;62.16
+2026-09-17;Sweden_Division1_Sodra;v24;Rosengard;Trelleborg;OK;37;62.16
+2026-09-17;Sweden_Division1_Sodra;v24;Skövde;Trollhättan;OK;37;62.16
+2026-09-17;Sweden_Division1_Sodra;v24;Eskilsminne;Tvaaker;OK;37;62.16
+2026-09-17;USA_USLChampionship;v24;Birmingham Legion;New Mexico;OK;25;32.0
+2026-09-17;USA_USLLeagueOne;v24;Boise;Charlotte Independ.;KO;37;51.35
+2026-09-17;USA_USLLeagueOne;v24;Chattanooga Red Wolves;Forward Madison;KO;37;51.35
+2026-09-18;Belarus_PershayaLiga;v21dev;Gomel 2;Din. Minsk 2;KO;28;75.0
+2026-09-18;Bolivia_DivisionProfesional;v22;Bolivar;GV San Jose;OK;22;72.73
+2026-09-18;Estonia_EsiliigaB;v26;Parnu JK Vaprus U21;Legion;OK;20;75.0
+2026-09-18;FaroeIslands_1Deild;v22;Sandur;Streymur 2;OK;27;92.59
+2026-09-18;FaroeIslands_1Deild;v22;Fuglafjordur;HB Torshavn 2;KO;27;92.59
+2026-09-18;Germany_Oberliga_Bayern_Sud;v24;Heimstetten;Gundelfingen;OK;32;62.5
+2026-09-18;Germany_Oberliga_Bayern_Sud;v24;FC Schwaig;Rosenheim;KO;32;62.5
+2026-09-18;Germany_Oberliga_Hessen;v24;Hanauer SC;RW Walldorf;OK;20;70.0
+2026-09-18;Germany_Oberliga_RheinlandPfalzSaar;v24;Ahrweiler;RW Koblenz;OK;22;68.18
+2026-09-18;Kazakhstan_FirstLeague;v24;FC Astana 2;FC Batyr;OK;28;71.43
+2026-09-18;Kyrgyzstan_PremierLiga;v24;Bars;Aldier;OK;24;79.17
+2026-09-18;Sweden_Division2_NorraGotaland;v24;Herrestads AIF;Kumla;OK;25;48.0
+2026-09-18;Sweden_Division2_SodraGotaland;v24;Lilla Torg;Linero IF;OK;35;74.29
+2026-09-18;Sweden_Division2_SodraGotaland;v24;Staffanstorp United;Osterlen;OK;35;74.29
+2026-09-18;Sweden_Division2_VastraGotaland;v24;Torslanda;Lindome;OK;31;70.97
+2026-09-19;Belarus_PershayaLiga;v22;BumProm Gomel;Lida;OK;20;80.0
+2026-09-19;Estonia_EsiliigaB;v22def;Johvi Phoenix;Tabasalu;OK;20;80.0
+2026-09-19;Estonia_Meistriliiga;v24;Nomme Utd;Paide;OK;21;71.43
+2026-09-19;FaroeIslands_1Deild;v22;TB Tvoroyri;Hoyvik;KO;29;89.66
+2026-09-19;FaroeIslands_1Deild;v22;B36 Torshavn 2;Runavik 2;OK;29;89.66
+2026-09-19;FaroeIslands_1Deild;v22;Vikingur 2;FC Suduroy;OK;29;89.66
+2026-09-19;Germany_Oberliga_Bayern_Sud;v24;Pipinsried;Kirchanschoring;OK;34;61.76
+2026-09-19;Germany_Oberliga_Bayern_Sud;v24;Geretsried;TSV 1880 Wasserburg;OK;34;61.76
+2026-09-19;Germany_Oberliga_Bayern_Sud;v24;Schalding;Landshut;OK;34;61.76
+2026-09-19;Germany_Oberliga_Bayern_Sud;v24;Schwabmunchen;Deisenhofen;OK;34;61.76
+2026-09-19;Germany_Oberliga_Bayern_Sud;v24;Pfaffenhofen;Hankofen-Hailing;OK;34;61.76
+2026-09-19;Germany_Oberliga_Hessen;v24;Fernwald;Eddersheim;KO;21;71.43
+2026-09-19;Germany_Oberliga_Hessen;v24;Stadtallendorf;Darmstadt U21;KO;21;71.43
+2026-09-19;Germany_Oberliga_Hessen;v24;VfB Marburg;Hummetroth;OK;21;71.43
+2026-09-19;Germany_Oberliga_Hessen;v24;Friedberg;Giessen;OK;21;71.43
+2026-09-19;Germany_Oberliga_Hessen;v24;Hunfelder;Hadamar;KO;21;71.43
+2026-09-19;Germany_Oberliga_RheinlandPfalzSaar;v24;Pirmasens;Cosmos Koblenz;OK;23;69.57
+2026-09-19;Germany_Oberliga_RheinlandPfalzSaar;v24;Auersmacher;Emmelshausen-Karbach;OK;23;69.57
+2026-09-19;Germany_Oberliga_RheinlandPfalzSaar;v24;Koblenz;Mechtersheim;OK;23;69.57
+2026-09-19;Germany_Oberliga_RheinlandPfalzSaar;v24;Elversberg 2;Engers;KO;23;69.57
+2026-09-19;Germany_Oberliga_RheinlandPfalzSaar;v24;RW Wittlich;Eisbachtal;OK;23;69.57
+2026-09-19;Germany_Regionalliga_West;v24;Bocholt;Wiedenbruck;OK;20;70.0
+2026-09-19;Germany_Regionalliga_West;v24;Bonner;Bergisch Gladbach;OK;20;70.0
+2026-09-19;Germany_Regionalliga_West;v24;Westfalia Rhynern;Colonia 2;OK;20;70.0
+2026-09-19;Germany_Regionalliga_West;v24;Oberhausen;Monchengladbach 2;OK;20;70.0
+2026-09-19;Germany_Regionalliga_West;v24;Schalke 2;Lotte;KO;20;70.0
+2026-09-19;Iceland_BestaDeildKarla;v22;KR Reykjavik;Vikingur Reykjavik;OK;45;73.33
+2026-09-19;Kazakhstan_FirstLeague;v24;Tobol 2;Kaspij Aktau 2;OK;29;72.41
+2026-09-19;Kyrgyzstan_PremierLiga;v24;Asia Talas;Neftchi Kochkor-Ata;OK;25;80.0
+2026-09-19;Latvia_NakotnesLiga;v21;Valmiera;Riga Mariners;OK;23;82.61
+2026-09-19;Latvia_NakotnesLiga;v21;Leevon PPK;RFS 2;OK;23;82.61
+2026-09-19;Latvia_NakotnesLiga;v21;Alberts JDFS;Metta;OK;23;82.61
+2026-09-19;Norway_2ndDivision_Group1;v24;Sandviken;Vidar;KO;22;72.73
+2026-09-19;Norway_2ndDivision_Group2;v13;Follo;Eidsvold;KO;20;85.0
+2026-09-19;Norway_2ndDivision_Group2;v13;Rana FK;Honefoss;KO;20;85.0
+2026-09-19;Norway_3rdDivision_Group1;v21dev;Ullern;Vaalerenga IF 2;OK;34;88.24
+2026-09-19;Norway_3rdDivision_Group1;v21dev;Frigg;Konnerud;KO;34;88.24
+2026-09-19;Norway_3rdDivision_Group1;v21dev;Grei;Heming;OK;34;88.24
+2026-09-19;Norway_3rdDivision_Group1;v21dev;Nordstrand;Lokomotiv Oslo;OK;34;88.24
+2026-09-19;Norway_3rdDivision_Group1;v21dev;Baerum;Union Carl Berner;OK;34;88.24
+2026-09-19;Norway_3rdDivision_Group2;v21dev;Byåsen;Herd;OK;37;81.08
+2026-09-19;Norway_3rdDivision_Group2;v21dev;FK Kvik;Ntnui;KO;37;81.08
+2026-09-19;Norway_3rdDivision_Group2;v21dev;Volda TI;Strindheim;OK;37;81.08
+2026-09-19;Norway_3rdDivision_Group3;v22;Forde;Fana;OK;34;82.35
+2026-09-19;Norway_3rdDivision_Group3;v22;Sogndal 2;V. Haugesund;OK;34;82.35
+2026-09-19;Norway_3rdDivision_Group3;v22;Gneist;Varegg;OK;34;82.35
+2026-09-19;Norway_3rdDivision_Group5;v21;Harstad;Skjetten;OK;45;88.89
+2026-09-19;Norway_3rdDivision_Group5;v21;Ulfstind;Bossekop;OK;45;88.89
+2026-09-19;Norway_3rdDivision_Group5;v21;Skjervoy;Skedsmo;OK;45;88.89
+2026-09-19;Norway_3rdDivision_Group6;v22;Elverum;Raelingen;OK;27;81.48
+2026-09-19;Norway_3rdDivision_Group6;v22;Lillehammer;Bjorkelangen;OK;27;81.48
+2026-09-19;Norway_3rdDivision_Group6;v22;Fram;Rade;KO;27;81.48
+2026-09-19;Norway_Eliteserien;v24;Molde;Aalesund;OK;30;70.0
+2026-09-19;Norway_Eliteserien;v24;Kristiansund;Rosenborg;OK;30;70.0
+2026-09-19;SouthKorea_KLeague2;v24;Jeonnam;Suwon FC;OK;20;35.0
+2026-09-19;SouthKorea_KLeague2;v24;Seoul E-Land;Daegu;OK;20;35.0
+2026-09-19;Sweden_Allsvenskan;v24;Brommapojkarna;Göteborg;KO;34;55.88
+2026-09-19;Sweden_Allsvenskan;v24;Orgryte;Sirius;OK;34;55.88
+2026-09-19;Sweden_Division1_Sodra;v24;Atvidaberg;Lunds;KO;41;63.41
+2026-09-19;Sweden_Division1_Sodra;v24;AFC Malmo;Utsikten;OK;41;63.41
+2026-09-19;Sweden_Division2_NorraGotaland;v24;Motala;Grebbestad;OK;26;50.0
+2026-09-19;Sweden_Division2_NorraGotaland;v24;Skara;Ahlafors IF;KO;26;50.0
+2026-09-19;Sweden_Division2_SodraGotaland;v24;IFK Berga;IFK Karlshamn;OK;37;75.68
+2026-09-19;Sweden_Division2_SodraGotaland;v24;Torns;Rappe GOIF;OK;37;75.68
+2026-09-19;Sweden_Division2_SodraGotaland;v24;Karlskrona;Oskarshamn;KO;37;75.68
+2026-09-19;Sweden_Division2_SodraSvealand;v21;Forward;Lindo FF;KO;20;70.0
+2026-09-19;Sweden_Division2_SodraSvealand;v21;Farsta;Karlslund;OK;20;70.0
+2026-09-19;Sweden_Division2_SodraSvealand;v21;Nacka FC;Ragsved;KO;20;70.0
+2026-09-19;Sweden_Division2_VastraGotaland;v21;Hestrafors;Kongahalla;OK;20;75.0
+2026-09-19;Sweden_Division2_VastraGotaland;v21;Qviding;Dalstorps IF;OK;20;75.0
+2026-09-19;Sweden_Superettan;v24;Varberg;Brage;OK;35;42.86
+2026-09-19;Sweden_Superettan;v24;Oddevold;Värnamo;OK;35;42.86
+2026-09-20;Belarus_PershayaLiga;v22;BATE 2;Soligorsk;OK;21;80.95
+2026-09-20;Estonia_Meistriliiga;v24;Flora;Parnu JK Vaprus;OK;22;72.73
+2026-09-20;Estonia_Meistriliiga;v24;Narva;Levadia;KO;22;72.73
+2026-09-20;Germany_Oberliga_Bayern_Nord;v24;Ammerthal;Nordlingen;OK;20;70.0
+2026-09-20;Germany_Oberliga_Hessen;v24;Pohlheim;Unter-Flockenbach;OK;26;65.38
+2026-09-20;Germany_Oberliga_RheinlandPfalzSaar;v22;TSV 1881 Gau-Odernheim;Diefflen;OK;22;72.73
+2026-09-20;Germany_Oberliga_RheinlandPfalzSaar;v22;Hertha Wiesbach;Worms;OK;22;72.73
+2026-09-20;Germany_Oberliga_SchleswigHolstein;v21;Kiel 2;Kaltenkirchen;OK;22;81.82
+2026-09-20;Germany_Regionalliga_Nord;v24;Delmenhorst;Eimsbutteler;KO;24;83.33
+2026-09-20;Germany_Regionalliga_Nord;v24;Hannoverscher SC;Amburgo 2;OK;24;83.33
+2026-09-20;Germany_Regionalliga_Nord;v24;Norderstedt;Brema 2;OK;24;83.33
+2026-09-20;Germany_Regionalliga_Nordost;v24;Jena;Lokomotive Leipzig;OK;22;72.73
+2026-09-20;Germany_Regionalliga_Nordost;v24;Greifswald;Luckenwalde;OK;22;72.73
+2026-09-20;Germany_Regionalliga_Nordost;v24;BFC Dynamo;Magdeburg 2;OK;22;72.73
+2026-09-20;Iceland_BestaDeildKarla;v22;Keflavik;Fram;OK;46;73.91
+2026-09-20;Iceland_BestaDeildKarla;v22;Akranes;Breidablik;OK;46;73.91
+2026-09-20;Iceland_BestaDeildKarla;v22;Vestmannaeyjar;Valur;KO;46;73.91
+2026-09-20;Netherlands_EersteDivisie;v24;De Graafschap;Breda;OK;20;75.0
+2026-09-20;Norway_2ndDivision_Group1;v24;Bjarg;Traeff;OK;23;69.57
+2026-09-20;Norway_2ndDivision_Group2;v13;Trygg/Lade;Levanger;KO;22;77.27
+2026-09-20;Norway_3rdDivision_Group1;v26;Gamle Oslo;Asker;OK;21;90.48
+2026-09-20;Norway_3rdDivision_Group2;v21dev;Orkla;Aalesund 2;OK;40;80.0
+2026-09-20;Norway_3rdDivision_Group2;v21dev;Molde 2;Melhus;KO;40;80.0
+2026-09-20;Norway_3rdDivision_Group5;v21;Lillestrom 2;Fauske Sprint;OK;48;89.58
+2026-09-20;Norway_3rdDivision_Group5;v21;Floeya;Finnsnes;OK;48;89.58
+2026-09-20;Norway_Eliteserien;v24;Brann;Bodo/Glimt;OK;32;71.88
+2026-09-20;Norway_Eliteserien;v24;Tromsø;HamKam;OK;32;71.88
+2026-09-20;Norway_Eliteserien;v24;Vålerenga;Fredrikstad;KO;32;71.88
+2026-09-20;Norway_OBOSLigaen;v13;Raufoss;Strömsgodset;KO;26;84.62
+2026-09-20;Norway_OBOSLigaen;v13;Haugesund;Strømmen;OK;26;84.62
+2026-09-20;Norway_OBOSLigaen;v13;Stabaek;Sogndal;OK;26;84.62
+2026-09-20;Norway_OBOSLigaen;v13;Kongsvinger;Hodd;OK;26;84.62
+2026-09-20;Sweden_Division1_Norra;v24;Stocksund;Umeå;OK;31;54.84
+2026-09-20;Sweden_Division1_Norra;v24;Pitea;Jarfalla;OK;31;54.84
+2026-09-20;Sweden_Division1_Sodra;v24;Olympic;Rosengard;KO;43;62.79
+2026-09-20;Sweden_Division1_Sodra;v24;Hassleholms IF;Trollhättan;KO;43;62.79
+2026-09-20;Sweden_Division1_Sodra;v24;Tvaaker;Trelleborg;KO;43;62.79
+2026-09-20;Sweden_Division2_NorraSvealand;v24;IK Franke;Sunnersta AIF;OK;21;80.95
+2026-09-20;Sweden_Division2_SodraGotaland;v24;Vaxjo Norra;Nosaby;KO;40;75.0
+2026-09-20;Sweden_Division2_SodraGotaland;v24;IFK Trelleborg;Solvesborgs;OK;40;75.0
+2026-09-20;Sweden_Division2_SodraSvealand;v21dev;Syrianska;Sleipner;OK;21;66.67
+2026-09-20;Sweden_Division2_SodraSvealand;v21dev;Eker Orebro;Haninge;OK;21;66.67
+2026-09-21;Estonia_EsiliigaB;v22def;Levadia U19;Tammeka U21;KO;21;80.95
+2026-09-21;Germany_Regionalliga_West;v24;Paderborn 2;Dortmund 2;KO;25;72.0
+2026-09-21;Norway_3rdDivision_Group1;v26;K. Oslo 2;Ready;OK;22;90.91
+2026-09-21;Norway_3rdDivision_Group2;v21dev;Nardo;Ranheim 2;OK;42;78.57
+2026-09-21;Norway_3rdDivision_Group2;v21dev;Spjelkavik;Rosenborg 2;OK;42;78.57
+2026-09-21;Norway_3rdDivision_Group3;v22;Brann 2;Fyllingsdalen;OK;37;83.78
+2026-09-21;Norway_3rdDivision_Group4;v13;Madla IL;Haugesund 2;KO;21;90.48
+2026-09-21;Norway_3rdDivision_Group4;v13;Staal Jorpeland;Viking 2;OK;21;90.48
+2026-09-21;Norway_3rdDivision_Group5;v21;Alta;Strømsgodset 2;KO;50;90.0
+2026-09-21;Norway_3rdDivision_Group5;v21;Tromsø 2;Kongsvinger 2;OK;50;90.0
+2026-09-21;Norway_3rdDivision_Group6;v13;Brumunddal;Sandefjord 2;OK;20;85.0
+2026-09-21;Norway_3rdDivision_Group6;v13;Lyn 2;Sarpsborg 08 2;OK;20;85.0
+2026-09-21;Sweden_Division1_Norra;v24;Vasalund;Assyriska FF;OK;33;57.58
+2026-09-21;USA_MLS;v21dev;Inter Miami;San Diego FC;OK;26;84.62
+2026-09-21;USA_USLLeagueOne;v24;Spokane Velocity;Boise;OK;39;48.72
+2026-09-22;Norway_3rdDivision_Group5;v21;Skjetten;Skjervoy;OK;52;88.46
+2026-09-24;Sweden_Division2_VastraGotaland;v21;Kongahalla;Lindome;OK;22;77.27
+2026-09-25;Germany_Oberliga_Bayern_Nord;v24;Aschaffenburg;Bayern Hof;OK;21;71.43
+2026-09-25;Germany_Oberliga_Bayern_Nord;v24;Gebenbach;Fortuna Regensburg;KO;21;71.43
+2026-09-25;Germany_Oberliga_Bayern_Nord;v24;Ingolstadt 2;Ammerthal;KO;21;71.43
+2026-09-25;Germany_Oberliga_Bayern_Sud;v24;Hankofen-Hailing;FC Schwaig;OK;39;66.67
+2026-09-25;Germany_Oberliga_Hessen;v24;Unter-Flockenbach;Stadtallendorf;OK;27;66.67
+2026-09-25;Germany_Oberliga_RheinlandPfalzSaar;v22;Engers;Auersmacher;OK;24;75.0
+2026-09-25;Germany_Oberliga_SchleswigHolstein;v21;Hohenwestedt;Rapid Lubeck;OK;23;82.61
+2026-09-25;Germany_Regionalliga_Nord;v24;Schoningen;Drochtersen/Assel;OK;27;81.48
+2026-09-25;Germany_Regionalliga_Nord;v24;VfB Lubeck;Todesfelde;OK;27;81.48
+2026-09-25;Germany_Regionalliga_Nordost;v24;Magdeburg 2;Altglienicke;KO;25;76.0
+2026-09-25;Germany_Regionalliga_Nordost;v24;BFC Dynamo;Greifswald;KO;25;76.0
+2026-09-25;Germany_Regionalliga_West;v24;FC Gutersloh;Paderborn 2;OK;26;69.23
+2026-09-25;Netherlands_EersteDivisie;v24;Dordrecht;Almere City;OK;21;76.19
+2026-09-25;Norway_3rdDivision_Group2;v21dev;Aalesund 2;Rosenborg 2;OK;44;79.55
+2026-09-25;Poland_IIILiga_Group1;v24;Plock 2;Jagiellonia 2;OK;24;66.67
+2026-09-25;Poland_IIILiga_Group1;v24;Zabki;Mlawa;OK;24;66.67
+2026-09-25;Sweden_Division1_Norra;v24;Hammarby TFF;Stocksund;OK;34;58.82
+2026-09-25;Sweden_Division2_SodraGotaland;v24;Rappe GOIF;Vaxjo Norra;KO;42;73.81
+2026-09-25;Sweden_Division2_VastraGotaland;v21;Landvetter;Torslanda;OK;23;78.26
+2026-09-26;Austria_Salzburg;v24;USK Anif;TSU Bramberg;OK;22;81.82
+2026-09-26;Austria_Salzburg;v24;UFC Siezenheim;Seekirchen U21;OK;22;81.82
+2026-09-26;Belarus_PershayaLiga;v22;Niva Dolbizno;Volna Pinsk;OK;22;81.82
+2026-09-26;Belarus_PershayaLiga;v22;Soligorsk;Minsk 2;KO;22;81.82
+2026-09-26;Germany_Oberliga_Bayern_Nord;v24;Regensburg 2;Weiden;OK;24;66.67
+2026-09-26;Germany_Oberliga_Bayern_Sud;v24;TSV 1880 Wasserburg;Schwabmunchen;KO;40;67.5
+2026-09-26;Germany_Oberliga_Bayern_Sud;v24;Kirchanschoring;Heimstetten;OK;40;67.5
+2026-09-26;Germany_Oberliga_Bayern_Sud;v24;Landshut;Pfaffenhofen;KO;40;67.5
+2026-09-26;Germany_Oberliga_Bayern_Sud;v24;Ismaning;Monaco 1860 2;OK;40;67.5
+2026-09-26;Germany_Oberliga_Hamburg;v24;Altona;Harksheide;KO;21;66.67
+2026-09-26;Germany_Oberliga_Hamburg;v24;Teutonia Ottensen;Niendorfer TSV;KO;21;66.67
+2026-09-26;Germany_Oberliga_Hamburg;v24;Suderelbe;Victoria Hamburg;KO;21;66.67
+2026-09-26;Germany_Oberliga_Hamburg;v24;Dassendorf;HT 16;OK;21;66.67
+2026-09-26;Germany_Oberliga_Hessen;v24;Friedberg;Pohlheim;KO;28;67.86
+2026-09-26;Germany_Oberliga_Hessen;v24;Giessen;Eddersheim;OK;28;67.86
+2026-09-26;Germany_Oberliga_Hessen;v24;Hummetroth;Fernwald;OK;28;67.86
+2026-09-26;Germany_Oberliga_Hessen;v24;Hunfelder;Baunatal;OK;28;67.86
+2026-09-26;Germany_Oberliga_Hessen;v24;Darmstadt U21;Alzenau;OK;28;67.86
+2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;v22;Schott Mainz;RW Wittlich;OK;25;76.0
+2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;v22;Mechtersheim;Hertha Wiesbach;OK;25;76.0
+2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;v22;RW Koblenz;Pirmasens;KO;25;76.0
+2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;v22;Eisbachtal;TSV 1881 Gau-Odernheim;KO;25;76.0
+2026-09-26;Germany_Oberliga_RheinlandPfalzSaar;v22;Emmelshausen-Karbach;Gonsenheim;KO;25;76.0
+2026-09-26;Germany_Oberliga_SchleswigHolstein;v21;Kilia Kiel;Phonix Lubeck B;OK;24;83.33
+2026-09-26;Germany_Oberliga_SchleswigHolstein;v21;PSV Neumunster;Eckernforder SV;OK;24;83.33
+2026-09-26;Germany_Oberliga_SchleswigHolstein;v21;Rotenhof;Lubeck 2;OK;24;83.33
+2026-09-26;Germany_Oberliga_SchleswigHolstein;v21;Eichede;Heider SV;OK;24;83.33
+2026-09-26;Germany_Regionalliga_Nord;v24;St. Pauli 2;Emden;KO;29;82.76
+2026-09-26;Germany_Regionalliga_Nord;v24;Eimsbutteler;Hannoverscher SC;OK;29;82.76
+2026-09-26;Germany_Regionalliga_Nord;v24;Jeddeloh;Norderstedt;OK;29;82.76
+2026-09-26;Germany_Regionalliga_Nord;v24;Amburgo 2;Delmenhorst;OK;29;82.76
+2026-09-26;Germany_Regionalliga_Nordost;v24;Lokomotive Leipzig;Erfurt;OK;27;70.37
+2026-09-26;Germany_Regionalliga_Nordost;v24;RSV Eintracht;Chemnitzer;OK;27;70.37
+2026-09-26;Germany_Regionalliga_West;v24;Bochum 2;Schalke 2;KO;27;70.37
+2026-09-26;Germany_Regionalliga_West;v24;Bergisch Gladbach;Westfalia Rhynern;OK;27;70.37
+2026-09-26;Germany_Regionalliga_West;v24;Dortmund 2;Bocholt;OK;27;70.37
+2026-09-26;Netherlands_EersteDivisie;v21;FC Volendam;Venlo;OK;20;80.0
+2026-09-26;Netherlands_EersteDivisie;v21;FC Emmen;Oss;KO;20;80.0
+2026-09-26;Netherlands_EersteDivisie;v21;Maastricht;Helmond;KO;20;80.0
+2026-09-26;Netherlands_EersteDivisie;v21;Heracles;Vitesse;KO;20;80.0
+2026-09-26;Netherlands_EersteDivisie;v21;Breda;Eindhoven;OK;20;80.0
+2026-09-26;Norway_2ndDivision_Group1;v24;Vidar;Mjoendalen;OK;24;70.83
+2026-09-26;Norway_2ndDivision_Group1;v24;Lysekloster;Sandviken;OK;24;70.83
+2026-09-26;Norway_2ndDivision_Group2;v13;Kjelsaas;Follo;OK;23;73.91
+2026-09-26;Norway_3rdDivision_Group1;v26;Heming;Ullern;OK;23;91.3
+2026-09-26;Norway_3rdDivision_Group1;v26;Lokomotiv Oslo;Gamle Oslo;OK;23;91.3
+2026-09-26;Norway_3rdDivision_Group1;v26;Asker;Nordstrand;KO;23;91.3
+2026-09-26;Norway_3rdDivision_Group1;v26;Ready;Grei;OK;23;91.3
+2026-09-26;Norway_3rdDivision_Group2;v21dev;Byåsen;Orkla;OK;45;80.0
+2026-09-26;Norway_3rdDivision_Group2;v21dev;Strindheim;Molde 2;KO;45;80.0
+2026-09-26;Norway_3rdDivision_Group2;v21dev;Ranheim 2;Volda TI;OK;45;80.0
+2026-09-26;Norway_3rdDivision_Group2;v21dev;Melhus;Spjelkavik;KO;45;80.0
+2026-09-26;Norway_3rdDivision_Group2;v21dev;Herd;FK Kvik;KO;45;80.0
+2026-09-26;Norway_3rdDivision_Group2;v21dev;Ntnui;Nardo;OK;45;80.0
+2026-09-26;Norway_3rdDivision_Group3;v22;V. Haugesund;Fana;OK;38;84.21
+2026-09-26;Norway_3rdDivision_Group3;v22;Djerv 1919;Sogndal 2;OK;38;84.21
+2026-09-26;Norway_3rdDivision_Group3;v22;Austevoll;Gneist;KO;38;84.21
+2026-09-26;Norway_3rdDivision_Group3;v22;Åsane 2;Forde;OK;38;84.21
+2026-09-26;Norway_3rdDivision_Group3;v22;Varegg;OS;OK;38;84.21
+2026-09-26;Norway_3rdDivision_Group4;v13;Akra;Madla IL;OK;23;86.96
+2026-09-26;Norway_3rdDivision_Group4;v13;Mandalskameratene;Odd 2;OK;23;86.96
+2026-09-26;Norway_3rdDivision_Group5;v21;Skedsmo;Ulfstind;OK;53;88.68
+2026-09-26;Norway_3rdDivision_Group5;v21;Finnsnes;Skjervoy;KO;53;88.68
+2026-09-26;Norway_3rdDivision_Group6;v13;Bjorkelangen;Drobak-Frogn;OK;22;86.36
+2026-09-26;Norway_3rdDivision_Group6;v13;Sandefjord 2;Elverum;OK;22;86.36
+2026-09-26;Norway_3rdDivision_Group6;v13;Oppsal;Brumunddal;OK;22;86.36
+2026-09-26;Poland_IIILiga_Group1;v24;Elblag;T. Mazowiecki;OK;26;69.23
+2026-09-26;Poland_IIILiga_Group1;v24;Zambrow;Pelikan;OK;26;69.23
+2026-09-26;Poland_IIILiga_Group1;v24;Troszyn;LKS Lodz 2;KO;26;69.23
+2026-09-26;Poland_IIILiga_Group1;v24;Lidzbark Warminski;Weszlo;KO;26;69.23
+2026-09-26;Poland_IIILiga_Group1;v24;Mazovia Minsk Mazowiecki;Suwalki;KO;26;69.23
+2026-09-26;Poland_IIILiga_Group2;v21;Sroda;Elana Torun;OK;21;71.43
+2026-09-26;Poland_IIILiga_Group2;v21;Kotwica Kornik;Grom Nowy Staw;OK;21;71.43
+2026-09-26;Poland_IIILiga_Group2;v21;Chemik Bydgoszcz;Blekitni Stargard;OK;21;71.43
+2026-09-26;Poland_IIILiga_Group2;v21;Luzino;Notec Czarnkow;KO;21;71.43
+2026-09-26;Sweden_Division1_Norra;v24;Jarfalla;AFC Eskilstuna;OK;35;60.0
+2026-09-26;Sweden_Division2_NorraGotaland;v24;Vanersborgs FK;Husqvarna;OK;28;50.0
+2026-09-26;Sweden_Division2_NorraGotaland;v24;Kumla;Lidkoping;KO;28;50.0
+2026-09-26;Sweden_Division2_NorraGotaland;v24;Grebbestad;Skara;OK;28;50.0
+2026-09-26;Sweden_Division2_NorraSvealand;v24;Skiljebo;Taby;KO;22;81.82
+2026-09-26;Sweden_Division2_SodraGotaland;v24;IFK Karlshamn;Karlskrona;OK;43;72.09
+2026-09-26;Sweden_Division2_SodraGotaland;v24;Nosaby;Staffanstorp United;OK;43;72.09
+2026-09-26;Sweden_Division2_SodraGotaland;v24;Oskarshamn;IFK Trelleborg;OK;43;72.09
+2026-09-26;Sweden_Division2_SodraSvealand;v21dev;Nykopings;Syrianska;KO;23;69.57
+2026-09-26;Sweden_Division2_VastraGotaland;v21;Jonsereds;Hestrafors;KO;24;79.17
+2026-09-26;Switzerland_PromotionLeague;v24;Young Boys 2;Basilea 2;KO;20;65.0
+2026-09-26;Switzerland_PromotionLeague;v24;Zurigo 2;Grand-Saconnex;OK;20;65.0
+2026-09-26;Switzerland_PromotionLeague;v24;Bulle;Schaffhausen;KO;20;65.0
+2026-09-26;Switzerland_PromotionLeague;v24;Lugano 2;Cham;KO;20;65.0
+2026-09-26;USA_USLLeagueOne;v24;Charlotte Independ.;Fort Wayne;KO;40;50.0
+2026-09-27;Austria_Regionalliga_West;v24;Rothis;Tirol (Am);OK;23;82.61
+2026-09-27;Austria_Regionalliga_West;v24;Hohenems;Kufstein;OK;23;82.61
+2026-09-27;Austria_Salzburg;v24;ATSV Salzburg;Union Henndorf;OK;24;83.33
+2026-09-27;CzechRepublic_4Liga_GroupC;v24;Kolin;Turnov;OK;20;70.0
+2026-09-27;CzechRepublic_4Liga_GroupC;v24;Svitavy;Trutnov;OK;20;70.0
+2026-09-27;CzechRepublic_4Liga_GroupC;v24;Dvur Kralove;Prepere;KO;20;70.0
+2026-09-27;Germany_Oberliga_Hamburg;v24;ETSV Hamburg;Tesla Hamburg;OK;25;60.0
+2026-09-27;Germany_Oberliga_Hamburg;v24;Wandsbeker Concordia;Paloma;OK;25;60.0
+2026-09-27;Germany_Oberliga_Hamburg;v24;TSV Buchholz 08;Norderstedt 2;KO;25;60.0
+2026-09-27;Germany_Oberliga_Hamburg;v24;HEBC Hamburg;Pinneberg;KO;25;60.0
+2026-09-27;Germany_Oberliga_Hamburg;v24;Sasel;Vorwarts-Wacker;KO;25;60.0
+2026-09-27;Germany_Oberliga_Hessen;v21;CSC 03 Kassel;Hanauer SC;KO;22;81.82
+2026-09-27;Germany_Oberliga_SchleswigHolstein;v21;Kaltenkirchen;Oldenburger;OK;28;85.71
+2026-09-27;Germany_Oberliga_SchleswigHolstein;v21;Flensburg;Nordmark Satrup;OK;28;85.71
+2026-09-27;Germany_Oberliga_SchleswigHolstein;v21;VfR Neumunster;Kiel 2;OK;28;85.71
+2026-09-27;Germany_Regionalliga_Nord;v24;Bremer;SC Weiche-08;OK;33;81.82
+2026-09-27;Germany_Regionalliga_West;v24;Wattenscheid;Bonner;KO;30;70.0
+2026-09-27;Germany_Regionalliga_West;v24;Oberhausen;Rodinghausen;OK;30;70.0
+2026-09-27;Netherlands_EersteDivisie;v21;De Graafschap;Den Bosch;KO;25;72.0
+2026-09-27;Norway_2ndDivision_Group1;v24;Arendal;Brattvag;OK;26;73.08
+2026-09-27;Norway_2ndDivision_Group1;v24;Eik-Tonsberg;Bjarg;KO;26;73.08
+2026-09-27;Norway_3rdDivision_Group5;v21;Fauske Sprint;Tromsø 2;OK;55;87.27
+2026-09-27;Norway_3rdDivision_Group5;v21;Kongsvinger 2;Harstad;OK;55;87.27
+2026-09-27;Norway_3rdDivision_Group5;v21;Strømsgodset 2;Floeya;OK;55;87.27
+2026-09-27;Norway_3rdDivision_Group5;v21;Bossekop;Skjetten;OK;55;87.27
+2026-09-27;Norway_3rdDivision_Group5;v21;Alta;Lillestrom 2;OK;55;87.27
+2026-09-27;Sweden_Division1_Norra;v24;Gefle;Vasalund;KO;36;61.11
+2026-09-27;Sweden_Division1_Norra;v24;Arlanda;Enkoping SK;KO;36;61.11
+2026-09-27;Sweden_Division1_Norra;v24;Assyriska FF;Pitea;OK;36;61.11
+2026-09-27;Sweden_Division1_Sodra;v24;Eskilsminne;AFC Malmo;OK;50;62.0
+2026-09-27;Sweden_Division1_Sodra;v24;Trelleborg;Angelholm;OK;50;62.0
+2026-09-27;Sweden_Division2_NorraGotaland;v24;Motala;Herrestads AIF;OK;31;51.61
+2026-09-27;Sweden_Division2_NorraSvealand;v24;Falu;Angby;OK;23;78.26
+2026-09-27;Sweden_Division2_NorraSvealand;v24;Bollstanas;Enskede;OK;23;78.26
+2026-09-27;Sweden_Division2_SodraGotaland;v24;Linero IF;Torns;OK;46;73.91
+2026-09-27;Sweden_Division2_SodraGotaland;v24;Solvesborgs;IFK Berga;OK;46;73.91
+2026-09-27;Sweden_Division2_SodraGotaland;v24;Osterlen;Lilla Torg;OK;46;73.91
+2026-09-27;Sweden_Division2_SodraSvealand;v21dev;Karlslund;Forward;OK;24;66.67
+2026-09-27;Sweden_Division2_VastraGotaland;v21;Onsala;Qviding;OK;25;76.0
+2026-09-28;USA_MLS;v21dev;Columbus Crew;Inter Miami;OK;27;85.19
+2026-09-28;USA_USLLeagueOne;v24;One Knoxville;Westchester SC;KO;41;48.78
+2026-09-29;Germany_Oberliga_Hamburg;v23;Teutonia Ottensen;TSV Buchholz 08;OK;20;60.0
+2026-09-29;Germany_Oberliga_SchleswigHolstein;v21;Hohenwestedt;Eckernforder SV;OK;31;87.1
+2026-09-29;Norway_3rdDivision_Group1;v26;Union Carl Berner;K. Oslo 2;KO;27;88.89
+2026-09-30;Germany_Oberliga_Westfalen;v24;Verl 2;Gievenbeck;OK;20;65.0
+2026-09-30;Germany_Regionalliga_West;v24;Wiedenbruck;Siegen;OK;32;68.75
+2026-10-01;Austria_Tirol;v24;SC Kundl;Kolsass Weer;OK;22;45.45
+2026-10-01;USA_USLLeagueOne;v24;Chattanooga Red Wolves;Spokane Velocity;KO;42;47.62
+2026-10-02;Austria_Karnten;v24;SGA Sirnitz;SAK Klagenfurt;OK;22;90.91
+2026-10-02;Austria_Regionalliga_North;v24;Saalfelden;Schallerbach;OK;20;60.0
+2026-10-02;Austria_Salzburg;v24;Union Henndorf;Neumarkt;OK;25;84.0
+2026-10-02;Austria_Salzburg;v24;USV 1960 Berndorf;UFC Siezenheim;OK;25;84.0
+2026-10-02;Austria_Salzburg;v24;Eugendorf;SAK 1914;OK;25;84.0
+2026-10-02;Austria_Salzburg;v24;Puch;Burmoos;OK;25;84.0
+2026-10-02;Austria_Tirol;v24;Haiming;Stubai;OK;23;47.83
+2026-10-02;Belarus_PershayaLiga;v251;Volna Pinsk;Lida;KO;21;80.95
+2026-10-02;CzechRepublic_4Liga_GroupF;v24;Hlucin;Novy Jicin;KO;20;85.0
+2026-10-02;Germany_Oberliga_BadenWurttemberg;v24;1. FC Muhlhausen;Pforzheim;KO;21;61.9
+2026-10-02;Germany_Oberliga_Bayern_Nord;v24;Weiden;Aschaffenburg;KO;25;68.0
+2026-10-02;Germany_Oberliga_Hamburg;v23;Norderstedt 2;Altona;OK;21;61.9
+2026-10-02;Germany_Oberliga_Hamburg;v23;Niendorfer TSV;Wandsbeker Concordia;OK;21;61.9
+2026-10-02;Germany_Oberliga_RheinlandPfalzSaar;v22def;Hertha Wiesbach;Diefflen;KO;22;77.27
+2026-10-02;Germany_Regionalliga_Bayern;v24;Buchbach;Eltersdorf;KO;20;65.0
+2026-10-02;Germany_Regionalliga_Nord;v24;VfB Lubeck;Eimsbutteler;KO;34;82.35
+2026-10-02;Germany_Regionalliga_Sudwest;v24;Kickers Stoccarda;Offenbach;KO;20;75.0
+2026-10-02;Germany_Regionalliga_Sudwest;v24;Sandhausen;Kaiserslautern 2;KO;20;75.0
+2026-10-02;Germany_Regionalliga_West;v24;Bonner;Westfalia Rhynern;OK;33;69.7
+2026-10-02;Norway_3rdDivision_Group2;v22def;Molde 2;Herd;OK;24;83.33
+2026-10-02;Sweden_Division1_Sodra;v24;Kristianstad;AFC Malmo;KO;52;63.46
+2026-10-02;Sweden_Division2_NorraSvealand;v24;Kungsangen;Sunnersta AIF;OK;25;80.0
+2026-10-02;Sweden_Division2_SodraGotaland;v24;Lilla Torg;Nosaby;OK;49;75.51
+2026-10-02;Sweden_Division2_SodraGotaland;v24;Staffanstorp United;Solvesborgs;OK;49;75.51
+2026-10-02;Sweden_Division2_VastraGotaland;v21;Torslanda;Kongahalla;KO;26;76.92
+2026-10-02;Sweden_Division2_VastraGotaland;v21;Qviding;Landvetter;KO;26;76.92
+2026-10-02;Sweden_Division2_VastraGotaland;v21;Hestrafors;Onsala;KO;26;76.92
+2026-10-02;Sweden_Division2_VastraGotaland;v21;Lindome;Galtabacks BK;OK;26;76.92
+2026-10-03;Austria_Karnten;v24;Launsdorf;Seeboden;OK;23;91.3
+2026-10-03;Austria_Karnten;v24;SC Landskron;SC St. Veit;OK;23;91.3
+2026-10-03;Austria_Karnten;v24;TSV Grafenstein;Dellach/Gail;OK;23;91.3
+2026-10-03;Austria_Karnten;v24;Matrei;KAC 1909;OK;23;91.3
+2026-10-03;Austria_Regionalliga_North;v21;Wallern/St Marienkirchen;UFC Hallein;OK;20;65.0
+2026-10-03;Austria_Regionalliga_North;v21;Wals-Grunau;Ried (Am);OK;20;65.0
+2026-10-03;Austria_Regionalliga_North;v21;Kuchl;Leonfelden;OK;20;65.0
+2026-10-03;Austria_Regionalliga_West;v24;Wolfurt;Rothis;OK;25;84.0
+2026-10-03;Austria_Regionalliga_West;v24;Altach U21;Hohenems;OK;25;84.0
+2026-10-03;Austria_Regionalliga_West;v24;Reichenau;Schwaz;OK;25;84.0
+2026-10-03;Austria_Regionalliga_West;v24;Lochau;FC Lustenau;KO;25;84.0
+2026-10-03;Austria_Regionalliga_West;v24;Dornbirn;Kitzbuhel;KO;25;84.0
+2026-10-03;Austria_Regionalliga_West;v24;SK St. Johann;Fugen;OK;25;84.0
+2026-10-03;Austria_Tirol;v24;FC Natters;Ebbs;OK;24;50.0
+2026-10-03;Austria_Tirol;v24;Kematen;SC Mils 05;OK;24;50.0
+2026-10-03;Austria_Tirol;v24;Munster;SV Oberperfuss;OK;24;50.0
+2026-10-03;Belarus_PershayaLiga;v251;Orsha;Niva Dolbizno;KO;22;77.27
+2026-10-03;Belarus_PershayaLiga;v251;Gomel 2;SKA-1938;OK;22;77.27
+2026-10-03;CzechRepublic_4Liga_GroupB;v21;Hvezda Cheb;Steti;KO;20;65.0
+2026-10-03;CzechRepublic_4Liga_GroupB;v21;Ostrov;Chomutov;OK;20;65.0
+2026-10-03;CzechRepublic_4Liga_GroupB;v21;Slany;Usti n. L. B;KO;20;65.0
+2026-10-03;CzechRepublic_4Liga_GroupB;v21;Karlovy Vary;Meteor Prague;OK;20;65.0
+2026-10-03;CzechRepublic_4Liga_GroupB;v21;Tempo Prague;Sokolov;OK;20;65.0
+2026-10-03;CzechRepublic_4Liga_GroupC;v21;Kosmonosy;Slavia HK;OK;20;70.0
+2026-10-03;CzechRepublic_4Liga_GroupC;v21;Trutnov;Vykan;OK;20;70.0
+2026-10-03;CzechRepublic_4Liga_GroupC;v21;Vysoke Myto;Dvur Kralove;KO;20;70.0
+2026-10-03;CzechRepublic_4Liga_GroupE;v24;Nove Sady;Brumov;OK;20;60.0
+2026-10-03;CzechRepublic_4Liga_GroupE;v24;Slavicin;Batov;OK;20;60.0
+2026-10-03;CzechRepublic_4Liga_GroupE;v24;SK Krumvir;Hluk;KO;20;60.0
+2026-10-03;CzechRepublic_4Liga_GroupE;v24;Bzenec-Vracov;Kromeriz B;KO;20;60.0
+2026-10-03;CzechRepublic_4Liga_GroupF;v24;Rymarov;Bohumin;OK;21;80.95
+2026-10-03;CzechRepublic_4Liga_GroupF;v24;Valasske Mezirici;Opava B;OK;21;80.95
+2026-10-03;CzechRepublic_4Liga_GroupF;v24;Stonava;Frydlant n. O.;OK;21;80.95
+2026-10-03;Estonia_EsiliigaB;v26;Tulevik;Tallinna Kalev U21;OK;23;78.26
+2026-10-03;Estonia_EsiliigaB;v26;Legion;Levadia U19;OK;23;78.26
+2026-10-03;Finland_Kakkonen_GroupA;v21;Lahden Reipas;Union Plaani;OK;25;72.0
+2026-10-03;Finland_Kakkonen_GroupB;v21;NJS;EBK;OK;21;71.43
+2026-10-03;Finland_Kakkonen_GroupC;v21dev;SJK Akatemia 2;Hercules;OK;24;87.5
+2026-10-03;Germany_Oberliga_BadenWurttemberg;v24;Reutlingen;Young Boys Reutlingen;KO;22;59.09
+2026-10-03;Germany_Oberliga_BadenWurttemberg;v24;Teningen;Ravensburg;OK;22;59.09
+2026-10-03;Germany_Oberliga_BadenWurttemberg;v24;Backnang;Bahlinger;OK;22;59.09
+2026-10-03;Germany_Oberliga_BadenWurttemberg;v24;Villingen;Essingen;KO;22;59.09
+2026-10-03;Germany_Oberliga_BadenWurttemberg;v24;Oberachern;FC Holzhausen;OK;22;59.09
+2026-10-03;Germany_Oberliga_Bayern_Nord;v24;Fortuna Regensburg;Regensburg 2;OK;26;65.38
+2026-10-03;Germany_Oberliga_Bayern_Nord;v24;Bayern Hof;Wurzburger FV;OK;26;65.38
+2026-10-03;Germany_Oberliga_Bayern_Nord;v24;Ammerthal;Neudrossenfeld;OK;26;65.38
+2026-10-03;Germany_Oberliga_Bayern_Sud;v21dev;Schalding;TSV 1880 Wasserburg;OK;22;68.18
+2026-10-03;Germany_Oberliga_Bayern_Sud;v21dev;Pipinsried;Ismaning;OK;22;68.18
+2026-10-03;Germany_Oberliga_Bayern_Sud;v21dev;Schwabmunchen;Gundelfingen;OK;22;68.18
+2026-10-03;Germany_Oberliga_Hamburg;v22def;HT 16;Teutonia Ottensen;OK;20;70.0
+2026-10-03;Germany_Oberliga_Hessen;v21;Alzenau;Unter-Flockenbach;OK;23;78.26
+2026-10-03;Germany_Oberliga_Hessen;v21;Hunfelder;Darmstadt U21;OK;23;78.26
+2026-10-03;Germany_Oberliga_RheinlandPfalzSaar;v22def;Auersmacher;Cosmos Koblenz;OK;23;73.91
+2026-10-03;Germany_Oberliga_RheinlandPfalzSaar;v22def;RW Wittlich;Emmelshausen-Karbach;KO;23;73.91
+2026-10-03;Germany_Oberliga_RheinlandPfalzSaar;v22def;Worms;Mechtersheim;OK;23;73.91
+2026-10-03;Germany_Oberliga_SchleswigHolstein;v21;Kiel 2;Hohenwestedt;OK;32;87.5
+2026-10-03;Germany_Oberliga_SchleswigHolstein;v21;Eckernforder SV;Kilia Kiel;OK;32;87.5
+2026-10-03;Germany_Oberliga_SchleswigHolstein;v21;Kaltenkirchen;VfR Neumunster;OK;32;87.5
+2026-10-03;Germany_Oberliga_SchleswigHolstein;v21;Lubeck 2;PSV Neumunster;OK;32;87.5
+2026-10-03;Germany_Oberliga_SchleswigHolstein;v21;Nordmark Satrup;Rotenhof;KO;32;87.5
+2026-10-03;Germany_Oberliga_SchleswigHolstein;v21;Rapid Lubeck;Flensburg;OK;32;87.5
+2026-10-03;Germany_Oberliga_SchleswigHolstein;v21;Phonix Lubeck B;Eichede;OK;32;87.5
+2026-10-03;Germany_Oberliga_Westfalen;v24;Munster 2;Clarholz;OK;21;66.67
+2026-10-03;Germany_Oberliga_Westfalen;v24;Lippstadt;SpVgg Herne Horsthausen;OK;21;66.67
+2026-10-03;Germany_Regionalliga_Bayern;v24;Norinberga 2;Augsburg 2;OK;21;61.9
+2026-10-03;Germany_Regionalliga_Bayern;v24;Schwaben Augsburg;Vilzing;OK;21;61.9
+2026-10-03;Germany_Regionalliga_Bayern;v24;Eichstatt;Burghausen;KO;21;61.9
+2026-10-03;Germany_Regionalliga_Bayern;v24;Monaco 1860;Ansbach;OK;21;61.9
+2026-10-03;Germany_Regionalliga_Nord;v24;Emden;Todesfelde;OK;35;80.0
+2026-10-03;Germany_Regionalliga_Nord;v24;SC Weiche-08;VfB Oldenburg;OK;35;80.0
+2026-10-03;Germany_Regionalliga_Nord;v24;Drochtersen/Assel;Jeddeloh;OK;35;80.0
+2026-10-03;Germany_Regionalliga_Nord;v24;Hannover 2;Phonix Lubeck;OK;35;80.0
+2026-10-03;Germany_Regionalliga_Sudwest;v24;Homburg;Fulda-Lehnerz;KO;22;68.18
+2026-10-03;Germany_Regionalliga_Sudwest;v24;Mainz 2;Freiburg 2;KO;22;68.18
+2026-10-03;Germany_Regionalliga_Sudwest;v24;Kassel;Ulm;OK;22;68.18
+2026-10-03;Germany_Regionalliga_Sudwest;v24;Freiberg;Steinbach Haiger;OK;22;68.18
+2026-10-03;Germany_Regionalliga_West;v24;Bocholt;FC Gutersloh;OK;34;70.59
+2026-10-03;Germany_Regionalliga_West;v24;Wattenscheid;Wiedenbruck;OK;34;70.59
+2026-10-03;Germany_Regionalliga_West;v24;Hilden;Bergisch Gladbach;OK;34;70.59
+2026-10-03;Netherlands_EersteDivisie;v21;Waalwijk;FC Emmen;KO;27;70.37
+2026-10-03;Netherlands_EersteDivisie;v21;Eindhoven;De Graafschap;OK;27;70.37
+2026-10-03;Netherlands_EersteDivisie;v21;Vitesse;Breda;OK;27;70.37
+2026-10-03;Netherlands_EersteDivisie;v21;Den Bosch;Dordrecht;KO;27;70.37
+2026-10-03;Netherlands_EersteDivisie;v21;Oss;Maastricht;OK;27;70.37
+2026-10-03;Netherlands_EersteDivisie;v21;Almere City;FC Volendam;KO;27;70.37
+2026-10-03;NorthernIreland_NIFLChampionship;v24;Loughgall;Newry City;OK;21;42.86
+2026-10-03;NorthernIreland_NIFLChampionship;v24;Moyola;Glenavon;OK;21;42.86
+2026-10-03;NorthernIreland_NIFLChampionship;v24;Warrenpoint;Annagh;KO;21;42.86
+2026-10-03;NorthernIreland_NIFLChampionship;v24;Dundela;Queens Univ.;KO;21;42.86
+2026-10-03;NorthernIreland_NIFLChampionship;v24;Ballinamallard;Ards;KO;21;42.86
+2026-10-03;NorthernIreland_NIFLChampionship;v24;Institute;Newington;OK;21;42.86
+2026-10-03;Norway_2ndDivision_Group2;v26;Ull/Kisa;Kjelsaas;OK;21;76.19
+2026-10-03;Norway_2ndDivision_Group2;v26;Skeid;Honefoss;OK;21;76.19
+2026-10-03;Norway_2ndDivision_Group2;v26;Follo;Stjordals Blink;KO;21;76.19
+2026-10-03;Norway_3rdDivision_Group1;v26;Frigg;Gamle Oslo;KO;28;85.71
+2026-10-03;Norway_3rdDivision_Group1;v26;Nordstrand;Vaalerenga IF 2;OK;28;85.71
+2026-10-03;Norway_3rdDivision_Group1;v26;Grei;Asker;OK;28;85.71
+2026-10-03;Norway_3rdDivision_Group1;v26;Konnerud;Heming;OK;28;85.71
+2026-10-03;Norway_3rdDivision_Group1;v26;Union Carl Berner;Lokomotiv Oslo;OK;28;85.71
+2026-10-03;Norway_3rdDivision_Group2;v22def;Volda TI;Orkla;OK;25;84.0
+2026-10-03;Norway_3rdDivision_Group2;v22def;Aalesund 2;Ntnui;OK;25;84.0
+2026-10-03;Norway_3rdDivision_Group3;v22;Brann 2;Varegg;OK;43;83.72
+2026-10-03;Norway_3rdDivision_Group3;v22;Stord;V. Haugesund;OK;43;83.72
+2026-10-03;Norway_3rdDivision_Group3;v22;Gneist;Djerv 1919;OK;43;83.72
+2026-10-03;Norway_3rdDivision_Group3;v22;Sogndal 2;Austevoll;OK;43;83.72
+2026-10-03;Norway_3rdDivision_Group4;v13;Akra;Mandalskameratene;OK;25;88.0
+2026-10-03;Norway_3rdDivision_Group5;v21;Floeya;Bossekop;OK;60;88.33
+2026-10-03;Norway_3rdDivision_Group5;v21;Ulfstind;Alta;KO;60;88.33
+2026-10-03;Norway_3rdDivision_Group5;v21;Tromsø 2;Finnsnes;KO;60;88.33
+2026-10-03;Norway_3rdDivision_Group6;v13;Elverum;Bjorkelangen;OK;25;88.0
+2026-10-03;Norway_3rdDivision_Group6;v13;Fram;Sandefjord 2;KO;25;88.0
+2026-10-03;Norway_3rdDivision_Group6;v13;Brumunddal;Orn;OK;25;88.0
+2026-10-03;Norway_OBOSLigaen;v13;Strömsgodset;Åsane;KO;30;83.33
+2026-10-03;Poland_IIILiga_Group1;v21;Warta Sieradz;Mazovia Minsk Mazowiecki;KO;21;66.67
+2026-10-03;Poland_IIILiga_Group1;v21;Weszlo;Zambrow;OK;21;66.67
+2026-10-03;Poland_IIILiga_Group1;v21;T. Mazowiecki;Lidzbark Warminski;OK;21;66.67
+2026-10-03;Poland_IIILiga_Group1;v21;Mlawa;Swit;OK;21;66.67
+2026-10-03;Poland_IIILiga_Group2;v21;Elana Torun;Luzino;OK;25;72.0
+2026-10-03;Poland_IIILiga_Group2;v21;Lipno Steszew;Chemik Bydgoszcz;KO;25;72.0
+2026-10-03;Poland_IIILiga_Group2;v21;Gedania Gdansk;Wrzesnia;KO;25;72.0
+2026-10-03;Poland_IIILiga_Group2;v21;Wda Swiecie;Sroda;OK;25;72.0
+2026-10-03;Poland_IIILiga_Group2;v21;Grom Nowy Staw;Koszalin;OK;25;72.0
+2026-10-03;Sweden_Division1_Norra;v24;Stocksund;Jarfalla;KO;39;58.97
+2026-10-03;Sweden_Division2_NorraGotaland;v24;Lidkoping;Vanersborgs FK;KO;32;53.12
+2026-10-03;Sweden_Division2_NorraGotaland;v24;Husqvarna;Vanersborgs IF;OK;32;53.12
+2026-10-03;Sweden_Division2_NorraSvealand;v24;Lidingo IFK;Bollstanas;OK;26;80.77
+2026-10-03;Sweden_Division2_NorraSvealand;v24;Gute;Skiljebo;OK;26;80.77
+2026-10-03;Sweden_Division2_SodraGotaland;v24;Torns;Oskarshamn;KO;51;76.47
+2026-10-03;Sweden_Division2_SodraGotaland;v24;Vaxjo Norra;IFK Karlshamn;KO;51;76.47
+2026-10-03;Sweden_Division2_SodraSvealand;v21dev;Forward;Sleipner;KO;25;68.0
+2026-10-03;Sweden_Division2_SodraSvealand;v21dev;Eker Orebro;Ragsved;OK;25;68.0
+2026-10-03;Switzerland_PromotionLeague;v24;Schaffhausen;Young Boys 2;OK;24;58.33
+2026-10-03;Switzerland_PromotionLeague;v24;Paradiso;Lugano 2;KO;24;58.33
+2026-10-03;Switzerland_PromotionLeague;v24;Basilea 2;Luzerna 2;OK;24;58.33
+2026-10-03;Switzerland_PromotionLeague;v24;Cham;Bulle;OK;24;58.33
+2026-10-03;Switzerland_PromotionLeague;v24;Grand-Saconnex;YF Juventus;KO;24;58.33
+2026-10-04;Austria_Burgenland;v24;Pama;Rust;KO;20;75.0
+2026-10-04;Austria_Karnten;v24;Kottmannsdorf;Saint Michael Lavanttal;OK;27;92.59
+2026-10-04;Austria_Karnten;v24;SV Spittal;Lendorf;OK;27;92.59
+2026-10-04;Austria_Regionalliga_South;v24;Wolfsberger (Am);A. Klagenfurt;KO;21;61.9
+2026-10-04;Austria_Regionalliga_West;v24;Tirol (Am);Lauterach;OK;31;80.65
+2026-10-04;Austria_Salzburg;v24;Schwarzach;USK Anif;OK;29;86.21
+2026-10-04;Austria_Salzburg;v24;TSU Bramberg;ATSV Salzburg;OK;29;86.21
+2026-10-04;Austria_Salzburg;v24;Golling;Thalgau;OK;29;86.21
+2026-10-04;Belarus_PershayaLiga;v251;BumProm Gomel;Minsk 2;OK;24;75.0
+2026-10-04;CzechRepublic_4Liga_GroupB;v21;Hostoun;Psary;KO;25;64.0
+2026-10-04;CzechRepublic_4Liga_GroupC;v22;Turnov;Chrudim B;OK;20;70.0
+2026-10-04;CzechRepublic_4Liga_GroupC;v22;Police nad Metuji;Letohrad;OK;20;70.0
+2026-10-04;CzechRepublic_4Liga_GroupC;v22;Usti nad Orlici;Kolin;OK;20;70.0
+2026-10-04;CzechRepublic_4Liga_GroupE;v24;Strani;Sternberk;OK;24;58.33
+2026-10-04;CzechRepublic_4Liga_GroupE;v24;Vsechovice;Prostejov B;OK;24;58.33
+2026-10-04;CzechRepublic_4Liga_GroupE;v24;Lanzhot;Holesov;KO;24;58.33
+2026-10-04;CzechRepublic_4Liga_GroupF;v24;Kravare;Pusta Polom;OK;24;83.33
+2026-10-04;CzechRepublic_4Liga_GroupF;v24;Frydek-Mistek B;Zabreh;OK;24;83.33
+2026-10-04;CzechRepublic_4Liga_GroupF;v24;Sumperk;Bilovec;KO;24;83.33
+2026-10-04;Finland_Kakkonen_GroupC;v21dev;TP-47;Vaajakoski;OK;25;88.0
+2026-10-04;Germany_Oberliga_BadenWurttemberg;v24;Karlsruher 2;Balingen;OK;27;59.26
+2026-10-04;Germany_Oberliga_Hamburg;v22def;Paloma;ETSV Hamburg;OK;21;71.43
+2026-10-04;Germany_Oberliga_Hamburg;v22def;Tesla Hamburg;TSV Buchholz 08;OK;21;71.43
+2026-10-04;Germany_Oberliga_Hessen;v21;Eddersheim;Hummetroth;OK;25;80.0
+2026-10-04;Germany_Oberliga_Hessen;v21;Pohlheim;Giessen;OK;25;80.0
+2026-10-04;Germany_Oberliga_RheinlandPfalzSaar;v22def;Ahrweiler;Pirmasens;KO;26;73.08
+2026-10-04;Germany_Oberliga_SchleswigHolstein;v21;Oldenburger;Heider SV;OK;39;87.18
+2026-10-04;Germany_Oberliga_Westfalen;v24;Schermbeck 2020;Sprockhovel;OK;23;69.57
+2026-10-04;Germany_Oberliga_Westfalen;v24;Ennepetal;ASC 09 Dortmund;OK;23;69.57
+2026-10-04;Germany_Oberliga_Westfalen;v24;TuS Hordel;Vreden;OK;23;69.57
+2026-10-04;Germany_Oberliga_Westfalen;v24;Maaslingen;Eintracht Rheine;OK;23;69.57
+2026-10-04;Germany_Oberliga_Westfalen;v24;Erkenschwick;Verl 2;OK;23;69.57
+2026-10-04;Germany_Oberliga_Westfalen;v24;Westfalia Kinderhaus;Bielefeld 2;KO;23;69.57
+2026-10-04;Germany_Regionalliga_Nord;v24;Hannoverscher SC;Schoningen;KO;39;82.05
+2026-10-04;Germany_Regionalliga_West;v24;Oberhausen;Paderborn 2;OK;37;72.97
+2026-10-04;Germany_Regionalliga_West;v24;Siegen;Dortmund 2;OK;37;72.97
+2026-10-04;Norway_2ndDivision_Group1;v24;Mjoendalen;Traeff;OK;28;71.43
+2026-10-04;Norway_2ndDivision_Group1;v24;Brattvag;Sotra;OK;28;71.43
+2026-10-04;Norway_2ndDivision_Group1;v24;Lysekloster;Jerv;OK;28;71.43
+2026-10-04;Norway_2ndDivision_Group1;v24;Sandviken;Arendal;KO;28;71.43
+2026-10-04;Norway_2ndDivision_Group2;v13;Rana FK;Eidsvold;OK;27;77.78
+2026-10-04;Norway_3rdDivision_Group2;v22def;Spjelkavik;Ranheim 2;OK;27;85.19
+2026-10-04;Norway_3rdDivision_Group4;v13;Madla IL;Brodd;KO;26;88.46
+2026-10-04;Norway_3rdDivision_Group5;v21;Lillestrom 2;Strømsgodset 2;OK;63;85.71
+2026-10-04;Norway_3rdDivision_Group5;v21;Skjervoy;Fauske Sprint;OK;63;85.71
+2026-10-04;Norway_3rdDivision_Group5;v21;Harstad;Skedsmo;OK;63;85.71
+2026-10-04;Sweden_Division1_Norra;v24;Vasalund;Arlanda;OK;40;57.5
+2026-10-04;Sweden_Division1_Sodra;v24;Olympic;Trelleborg;KO;56;62.5
+2026-10-04;Sweden_Division2_NorraSvealand;v24;Korsnas;IK Franke;OK;28;82.14
+2026-10-04;Sweden_Division2_SodraGotaland;v24;IFK Berga;Osterlen;OK;53;73.58
+2026-10-04;Sweden_Division2_SodraGotaland;v24;Karlskrona;Linero IF;OK;53;73.58
+2026-10-04;Sweden_Division2_SodraGotaland;v24;IFK Trelleborg;Rappe GOIF;KO;53;73.58
+2026-10-04;Switzerland_PromotionLeague;v24;Bellinzona;Zurigo 2;OK;29;58.62
+2026-10-04;USA_USLChampionship;v24;Lexington;El Paso;OK;26;34.62
+2026-10-04;USA_USLLeagueOne;v24;Spokane Velocity;Portland Hearts of Pine;OK;43;46.51
+2026-10-04;USA_USLLeagueOne;v24;Sarasota Paradise;Charlotte Independ.;OK;43;46.51
+2026-10-04;USA_USLLeagueOne;v24;Richmond Kickers;One Knoxville;OK;43;46.51
+2026-10-05;Norway_3rdDivision_Group3;v22def;Fana;Åsane 2;OK;22;90.91
+2026-10-05;Norway_3rdDivision_Group4;v13;Odd 2;Viking 2;OK;27;85.19
+2026-10-05;Norway_3rdDivision_Group6;v13;Lyn 2;Rade;KO;28;85.71
+2026-10-05;Norway_OBOSLigaen;v13;Moss;Kongsvinger;KO;31;80.65
+2026-10-05;Sweden_Division2_NorraGotaland;v24;Herrestads AIF;Grebbestad;OK;34;52.94
+2026-10-06;Germany_Regionalliga_Nord;v24;Brema 2;Hannover 2;KO;40;80.0
+2026-10-06;Norway_3rdDivision_Group5;v21;Skjetten;Kongsvinger 2;OK;66;86.36
+2026-10-07;Finland_Ykkonen;v22;KuPS Akatemia;Inter Turku 2;OK;21;66.67
+2026-10-07;Germany_Oberliga_BadenWurttemberg;v24;Pforzheim;Young Boys Reutlingen;OK;28;60.71
+2026-10-08;Kazakhstan_FirstLeague;v24;Aktobe 2;Tobol 2;OK;30;73.33
+2026-10-08;Kazakhstan_FirstLeague;v24;Kaspij Aktau 2;FC Astana 2;OK;30;73.33
+2026-10-08;Kyrgyzstan_PremierLiga;v24;Ilbirs;Bars;OK;26;80.77
+2026-10-08;Kyrgyzstan_PremierLiga;v24;Ozgon;Dordoi Bishkek;OK;26;80.77
+2026-10-08;USA_USLLeagueOne;v24;One Knoxville;Chattanooga Red Wolves;OK;46;50.0
+2026-10-09;Austria_Burgenland;v24;Leithaprodersdorf;Neudorf/Parndorf;OK;21;71.43
+2026-10-09;Austria_Burgenland;v24;Edelserpentin;Neusiedl;OK;21;71.43
+2026-10-09;Austria_Karnten;v22;SC St. Veit;Launsdorf;OK;20;95.0
+2026-10-09;Austria_Karnten;v22;Dellach/Gail;Kottmannsdorf;OK;20;95.0
+2026-10-09;Austria_Regionalliga_North;v22;Schallerbach;Wallern/St Marienkirchen;KO;21;71.43
+2026-10-09;Austria_Regionalliga_South;v24;Tillmitsch;Lafnitz;OK;22;59.09
+2026-10-09;Austria_Regionalliga_South;v24;Weiz;Allerheiligen;KO;22;59.09
+2026-10-09;Austria_Regionalliga_South;v24;Kalsdorf;Gleisdorf;OK;22;59.09
+2026-10-09;Austria_Salzburg;v13;Strasswalchen;USV 1960 Berndorf;OK;21;90.48
+2026-10-09;Austria_Tirol;v24;SV Worgl;Kematen;KO;27;55.56
+2026-10-09;Germany_Oberliga_BadenWurttemberg;v24;Balingen;FC Holzhausen;OK;29;62.07
+2026-10-09;Germany_Oberliga_Bayern_Sud;v21dev;Rosenheim;Pipinsried;OK;25;72.0
+2026-10-09;Germany_Oberliga_Bayern_Sud;v21dev;TSV 1880 Wasserburg;Pfaffenhofen;OK;25;72.0
+2026-10-09;Germany_Oberliga_Niedersachsen;v24;Heeslinger;Drochtersen/Assel 2;OK;20;70.0
+2026-10-09;Germany_Oberliga_Niedersachsen;v24;Bersenbruck;Nordhorn;OK;20;70.0
+2026-10-09;Germany_Regionalliga_Bayern;v24;Schweinfurt;Eltersdorf;KO;25;64.0
+2026-10-09;Germany_Regionalliga_Nordost;v21dev;Zwickau;Tasmania Berlin;KO;20;75.0
+2026-10-09;Germany_Regionalliga_Sudwest;v24;Offenbach;Homburg;OK;26;65.38
+2026-10-09;Kyrgyzstan_PremierLiga;v24;Asia Talas;Toktogul;KO;28;82.14
+2026-10-09;Netherlands_EersteDivisie;v21;Breda;Maastricht;KO;33;66.67
+2026-10-09;Netherlands_EersteDivisie;v21;Dordrecht;FC Emmen;OK;33;66.67
+2026-10-09;Netherlands_EersteDivisie;v21;De Graafschap;Jong Utrecht;OK;33;66.67
+2026-10-09;Netherlands_EersteDivisie;v21;Jong AZ;Den Bosch;KO;33;66.67
+2026-10-09;Netherlands_EersteDivisie;v21;Jong Ajax;Venlo;OK;33;66.67
+2026-10-09;Netherlands_EersteDivisie;v21;Oss;Helmond;OK;33;66.67
+2026-10-09;Netherlands_EersteDivisie;v21;FC Volendam;Vitesse;KO;33;66.67
+2026-10-09;NorthernIreland_NIFLChampionship;v24;Newry City;Dundela;OK;27;44.44
+2026-10-09;NorthernIreland_NIFLChampionship;v24;Newington;Ards;KO;27;44.44
+2026-10-09;Norway_3rdDivision_Group2;v22def;Herd;Spjelkavik;OK;28;85.71
+2026-10-09;Norway_3rdDivision_Group4;v13;Flekkeroy;Odd 2;KO;28;85.71
+2026-10-09;Norway_3rdDivision_Group5;v21;Finnsnes;Ulfstind;OK;67;86.57
+2026-10-09;Norway_Eliteserien;v24;Brann;Viking;KO;35;71.43
+2026-10-09;Poland_IIILiga_Group2;v22;Sroda;Kluczevia Stargard;KO;21;71.43
+2026-10-09;SouthKorea_KLeague2;v24;Suwon FC;Hwaseong;KO;22;40.91
+2026-10-09;Sweden_Division1_Norra;v24;Sollentuna;Stocksund;OK;41;58.54
+2026-10-09;Wales_CymruPremier;v24;Penybont;Barry;OK;20;65.0
+2026-10-09;Wales_CymruPremier;v24;Cambrian United;Ammanford;KO;20;65.0
+2026-10-09;Wales_CymruPremier;v24;Holywell;TNS;OK;20;65.0
+2026-10-10;Austria_Burgenland;v24;Bad Sauerbrunn;Kohfidisch;OK;23;73.91
+2026-10-10;Austria_Burgenland;v24;Klingenbach;Oberpullendorf;OK;23;73.91
+2026-10-10;Austria_Karnten;v22;Seeboden;TSV Grafenstein;OK;22;95.45
+2026-10-10;Austria_Karnten;v22;Nussdorf;SGA Sirnitz;KO;22;95.45
+2026-10-10;Austria_Karnten;v22;Lendorf;Matrei;OK;22;95.45
+2026-10-10;Austria_Karnten;v22;SC Landskron;KAC 1909;OK;22;95.45
+2026-10-10;Austria_Oberosterreich;v24;Ostermiething;Friedburg;KO;22;77.27
+2026-10-10;Austria_Oberosterreich;v24;Union Unis Gschwandt;Bad Ischl;OK;22;77.27
+2026-10-10;Austria_Regionalliga_North;v22;Leonfelden;Saalfelden;OK;22;68.18
+2026-10-10;Austria_Regionalliga_South;v21;Hartberg (Am);Deutschlandsberger;KO;22;63.64
+2026-10-10;Austria_Regionalliga_West;v24;Fugen;Lochau;OK;32;81.25
+2026-10-10;Austria_Regionalliga_West;v24;Schwaz;Tirol (Am);OK;32;81.25
+2026-10-10;Austria_Regionalliga_West;v24;Kufstein;Altach U21;OK;32;81.25
+2026-10-10;Austria_Regionalliga_West;v24;Lauterach;Wolfurt;OK;32;81.25
+2026-10-10;Austria_Regionalliga_West;v24;Hohenems;Dornbirn;OK;32;81.25
+2026-10-10;Austria_Salzburg;v13;Neumarkt;TSU Bramberg;OK;22;90.91
+2026-10-10;Austria_Salzburg;v13;Thalgau;Eugendorf;OK;22;90.91
+2026-10-10;Austria_Tirol;v24;SC Mils 05;SC Kundl;OK;28;53.57
+2026-10-10;Austria_Tirol;v24;Stubai;Ebbs;OK;28;53.57
+2026-10-10;Austria_Tirol;v24;Kolsass Weer;Munster;KO;28;53.57
+2026-10-10;Belarus_PershayaLiga;v251;Niva Dolbizno;Gomel 2;OK;25;76.0
+2026-10-10;Belarus_PershayaLiga;v251;Soligorsk;BumProm Gomel;OK;25;76.0
+2026-10-10;CzechRepublic_4Liga_GroupB;v21;Psary;Brandys n. Labem;OK;26;61.54
+2026-10-10;CzechRepublic_4Liga_GroupB;v21;Steti;Karlovy Vary;OK;26;61.54
+2026-10-10;CzechRepublic_4Liga_GroupB;v21;Slany;Hvezda Cheb;OK;26;61.54
+2026-10-10;CzechRepublic_4Liga_GroupB;v21;Chomutov;Tempo Prague;OK;26;61.54
+2026-10-10;CzechRepublic_4Liga_GroupC;v23;Letohrad;Turnov;OK;21;76.19
+2026-10-10;CzechRepublic_4Liga_GroupC;v23;Hlinsko;Kosmonosy;OK;21;76.19
+2026-10-10;CzechRepublic_4Liga_GroupC;v23;Vykan;Prepere;OK;21;76.19
+2026-10-10;CzechRepublic_4Liga_GroupE;v23;Hluk;FK Kozlovice;OK;21;61.9
+2026-10-10;CzechRepublic_4Liga_GroupE;v23;Batov;Vsechovice;OK;21;61.9
+2026-10-10;CzechRepublic_4Liga_GroupE;v23;Holesov;Nove Sady;OK;21;61.9
+2026-10-10;CzechRepublic_4Liga_GroupF;v22;Novy Jicin;Kravare;OK;21;90.48
+2026-10-10;CzechRepublic_4Liga_GroupF;v22;Frydlant n. O.;Hlucin;OK;21;90.48
+2026-10-10;Denmark_3rdDivision;v24;BK Frem;Næsby;KO;21;66.67
+2026-10-10;Denmark_3rdDivision;v24;Ringsted;Horsholm-Usserod;OK;21;66.67
+2026-10-10;Denmark_3rdDivision;v24;Vanløse;Holbaek;KO;21;66.67
+2026-10-10;Denmark_3rdDivision;v24;Holstebro;Bronshoj;OK;21;66.67
+2026-10-10;Denmark_3rdDivision;v24;Helsingor;ASA Aarhus;OK;21;66.67
+2026-10-10;Estonia_Esiliiga;v13;Flora U21;FC Tallinn;OK;25;76.0
+2026-10-10;Estonia_EsiliigaB;v26;Legion;Tulevik;OK;25;80.0
+2026-10-10;Estonia_EsiliigaB;v26;Tartu Kalev;Levadia U19;KO;25;80.0
+2026-10-10;Estonia_Meistriliiga;v24;Tammeka;Nomme Utd;OK;24;70.83
+2026-10-10;FaroeIslands_1Deild;v22;Fuglafjordur;TB Tvoroyri;OK;32;87.5
+2026-10-10;FaroeIslands_1Deild;v22;Streymur 2;B36 Torshavn 2;OK;32;87.5
+2026-10-10;FaroeIslands_1Deild;v22;Hoyvik;Vikingur 2;OK;32;87.5
+2026-10-10;FaroeIslands_1Deild;v22;Runavik 2;Sandur;OK;32;87.5
+2026-10-10;FaroeIslands_1Deild;v22;FC Suduroy;HB Torshavn 2;OK;32;87.5
+2026-10-10;Finland_Kakkonen_GroupA;v21;PuiU;Lahden Reipas;KO;26;73.08
+2026-10-10;Finland_Kakkonen_GroupB;v21;EBK;MuSa;KO;22;72.73
+2026-10-10;Finland_Kakkonen_GroupC;v21dev;Vaajakoski;SJK Akatemia 2;OK;26;88.46
+2026-10-10;Finland_Kakkonen_GroupC;v21dev;Hercules;TP-47;OK;26;88.46
+2026-10-10;Finland_Ykkonen;v22;RoPS;JJK Jyvaskyla;OK;22;68.18
+2026-10-10;Finland_Ykkonen;v22;KuPS Akatemia;VJS;OK;22;68.18
+2026-10-10;Germany_Oberliga_BadenWurttemberg;v24;Pforzheim;Teningen;OK;30;63.33
+2026-10-10;Germany_Oberliga_BadenWurttemberg;v24;Essingen;Reutlingen;OK;30;63.33
+2026-10-10;Germany_Oberliga_BadenWurttemberg;v24;Ravensburg;Nottingen;OK;30;63.33
+2026-10-10;Germany_Oberliga_Bayern_Nord;v24;Wurzburger FV;Weiden;KO;29;68.97
+2026-10-10;Germany_Oberliga_Bayern_Nord;v24;Aschaffenburg;Fortuna Regensburg;KO;29;68.97
+2026-10-10;Germany_Oberliga_Bayern_Nord;v24;Nordlingen;Bayern Hof;OK;29;68.97
+2026-10-10;Germany_Oberliga_Bayern_Nord;v24;Regensburg 2;Stadeln;KO;29;68.97
+2026-10-10;Germany_Oberliga_Bayern_Sud;v21dev;Kirchanschoring;Schwabmunchen;OK;27;74.07
+2026-10-10;Germany_Oberliga_Bayern_Sud;v21dev;Ismaning;Heimstetten;OK;27;74.07
+2026-10-10;Germany_Oberliga_Bremen;v21;Woltmershausen;Vatan Bremen;OK;20;75.0
+2026-10-10;Germany_Oberliga_Bremen;v21;Brinkumer;Bremen III;OK;20;75.0
+2026-10-10;Germany_Oberliga_Bremen;v21;Union 60 Bremen;Blumenthaler;OK;20;75.0
+2026-10-10;Germany_Oberliga_Hamburg;v22def;Sasel;Pinneberg;KO;23;73.91
+2026-10-10;Germany_Oberliga_Hessen;v21;Unter-Flockenbach;Hunfelder;KO;27;81.48
+2026-10-10;Germany_Oberliga_Hessen;v21;Giessen;Hummetroth;OK;27;81.48
+2026-10-10;Germany_Oberliga_Hessen;v21;Friedberg;Alzenau;KO;27;81.48
+2026-10-10;Germany_Oberliga_Niedersachsen;v24;Braunschweig U23;Verden;OK;22;72.73
+2026-10-10;Germany_Oberliga_Niedersachsen;v24;BSV Rehden;Hemmingen;OK;22;72.73
+2026-10-10;Germany_Oberliga_RheinlandPfalzSaar;v22def;Diefflen;Worms;OK;27;70.37
+2026-10-10;Germany_Oberliga_RheinlandPfalzSaar;v22def;Engers;RW Wittlich;KO;27;70.37
+2026-10-10;Germany_Oberliga_RheinlandPfalzSaar;v22def;RW Koblenz;Auersmacher;OK;27;70.37
+2026-10-10;Germany_Oberliga_SchleswigHolstein;v21;Heider SV;Phonix Lubeck B;KO;40;87.5
+2026-10-10;Germany_Oberliga_SchleswigHolstein;v21;Kilia Kiel;Lubeck 2;OK;40;87.5
+2026-10-10;Germany_Oberliga_SchleswigHolstein;v21;Rotenhof;Rapid Lubeck;OK;40;87.5
+2026-10-10;Germany_Oberliga_SchleswigHolstein;v21;Hohenwestedt;Kaltenkirchen;OK;40;87.5
+2026-10-10;Germany_Oberliga_SchleswigHolstein;v21;PSV Neumunster;Nordmark Satrup;OK;40;87.5
+2026-10-10;Germany_Oberliga_Westfalen;v24;ASC 09 Dortmund;Gievenbeck;OK;29;72.41
+2026-10-10;Germany_Regionalliga_Bayern;v24;Burghausen;Furth 2;OK;26;61.54
+2026-10-10;Germany_Regionalliga_Bayern;v24;Ansbach;Norinberga 2;KO;26;61.54
+2026-10-10;Germany_Regionalliga_Bayern;v24;Schwaben Augsburg;Bayreuth;OK;26;61.54
+2026-10-10;Germany_Regionalliga_Bayern;v24;Vilzing;Buchbach;KO;26;61.54
+2026-10-10;Germany_Regionalliga_Nord;v24;Eimsbutteler;Hannover 2;KO;41;78.05
+2026-10-10;Germany_Regionalliga_Nord;v24;Schoningen;Amburgo 2;OK;41;78.05
+2026-10-10;Germany_Regionalliga_Nordost;v21dev;Jena;Magdeburg 2;OK;21;71.43
+2026-10-10;Germany_Regionalliga_Sudwest;v24;Ulm;Eint. Frankfurt 2;KO;27;66.67
+2026-10-10;Germany_Regionalliga_Sudwest;v24;FSV Francoforte;Sandhausen;OK;27;66.67
+2026-10-10;Germany_Regionalliga_Sudwest;v24;Fulda-Lehnerz;Aalen;KO;27;66.67
+2026-10-10;Germany_Regionalliga_Sudwest;v24;Walldorf;Mainz 2;KO;27;66.67
+2026-10-10;Germany_Regionalliga_Sudwest;v24;VfR Mannheim;Kickers Stoccarda;KO;27;66.67
+2026-10-10;Germany_Regionalliga_West;v24;Oberhausen;Bocholt;OK;39;74.36
+2026-10-10;Germany_Regionalliga_West;v24;Bergisch Gladbach;Schalke 2;OK;39;74.36
+2026-10-10;Germany_Regionalliga_West;v24;Westfalia Rhynern;Hilden;KO;39;74.36
+2026-10-10;Germany_Regionalliga_West;v24;FC Gutersloh;Siegen;OK;39;74.36
+2026-10-10;Germany_Regionalliga_West;v24;Dortmund 2;Wattenscheid;OK;39;74.36
+2026-10-10;Germany_Regionalliga_West;v24;Lotte;Paderborn 2;KO;39;74.36
+2026-10-10;Iceland_BestaDeildKarla;v26;Stjarnan;Akureyri;OK;20;75.0
+2026-10-10;Latvia_NakotnesLiga;v22;RFS 2;Marupe;OK;22;86.36
+2026-10-10;Latvia_NakotnesLiga;v22;Metta;Riga Mariners;OK;22;86.36
+2026-10-10;Latvia_NakotnesLiga;v22;Skanste;Alberts JDFS;KO;22;86.36
+2026-10-10;Latvia_NakotnesLiga;v22;Valmiera;Super Nova 2;KO;22;86.36
+2026-10-10;NorthernIreland_NIFLChampionship;v21;Annagh;Glenavon;KO;20;45.0
+2026-10-10;NorthernIreland_NIFLChampionship;v21;Institute;H&W Welders;KO;20;45.0
+2026-10-10;Norway_2ndDivision_Group1;v24;Jerv;Arendal;OK;32;71.88
+2026-10-10;Norway_2ndDivision_Group1;v24;Sotra;Halden;OK;32;71.88
+2026-10-10;Norway_2ndDivision_Group2;v13;Eidsvold;Skeid;OK;28;78.57
+2026-10-10;Norway_3rdDivision_Group1;v26;Ullern;Grei;KO;33;84.85
+2026-10-10;Norway_3rdDivision_Group1;v26;Gamle Oslo;Nordstrand;KO;33;84.85
+2026-10-10;Norway_3rdDivision_Group1;v26;Asker;Baerum;OK;33;84.85
+2026-10-10;Norway_3rdDivision_Group2;v22def;Orkla;FK Kvik;KO;29;86.21
+2026-10-10;Norway_3rdDivision_Group2;v22def;Byåsen;Nardo;OK;29;86.21
+2026-10-10;Norway_3rdDivision_Group3;v22def;Åsane 2;V. Haugesund;OK;23;91.3
+2026-10-10;Norway_3rdDivision_Group3;v22def;Sogndal 2;Gneist;OK;23;91.3
+2026-10-10;Norway_3rdDivision_Group3;v22def;Austevoll;Forde;OK;23;91.3
+2026-10-10;Norway_3rdDivision_Group3;v22def;Varegg;Stord;OK;23;91.3
+2026-10-10;Norway_3rdDivision_Group3;v22def;Askoy;Fana;OK;23;91.3
+2026-10-10;Norway_3rdDivision_Group5;v21;Skedsmo;Floeya;OK;68;86.76
+2026-10-10;Norway_3rdDivision_Group5;v21;Alta;Skjervoy;OK;68;86.76
+2026-10-10;Norway_3rdDivision_Group6;v13;Bjorkelangen;SK Gjovik-Lyn;OK;29;82.76
+2026-10-10;Poland_IIILiga_Group1;v22;Zabki;Jagiellonia 2;OK;20;70.0
+2026-10-10;Poland_IIILiga_Group1;v22;Elblag;Mlawa;OK;20;70.0
+2026-10-10;Poland_IIILiga_Group2;v26;Blekitni Stargard;Lipno Steszew;OK;20;70.0
+2026-10-10;Poland_IIILiga_Group2;v26;Wrzesnia;Grom Nowy Staw;KO;20;70.0
+2026-10-10;Poland_IIILiga_Group3;v24;ROW Rybnik;Sleza Wroclaw;OK;20;60.0
+2026-10-10;Poland_IIILiga_Group3;v24;Legnica 2;Rakow 2;OK;20;60.0
+2026-10-10;Poland_IIILiga_Group3;v24;Sulow;Brzeg;KO;20;60.0
+2026-10-10;Serbia_PrvaLiga;v24;Borac 1926;Jedinstvo U.;OK;20;55.0
+2026-10-10;Slovakia_3Liga_West;v24;Nitra;Raca;OK;20;60.0
+2026-10-10;Slovakia_3Liga_West;v24;Velke Ludince;MSK Senec;OK;20;60.0
+2026-10-10;Slovakia_3Liga_West;v24;FKM Nove Zamky;Gabcikovo;OK;20;60.0
+2026-10-10;Sweden_Allsvenskan;v24;AIK Stockholm;Brommapojkarna;OK;36;55.56
+2026-10-10;Sweden_Division1_Norra;v24;Karlbergs;Vasalund;OK;42;59.52
+2026-10-10;Sweden_Division1_Sodra;v24;Rosengard;Atvidaberg;KO;57;61.4
+2026-10-10;Sweden_Division1_Sodra;v24;Eskilsminne;Olympic;OK;57;61.4
+2026-10-10;Sweden_Division1_Sodra;v24;AFC Malmo;Skövde;OK;57;61.4
+2026-10-10;Sweden_Division1_Sodra;v24;Trelleborg;Kristianstad;KO;57;61.4
+2026-10-10;Sweden_Division2_NorraGotaland;v24;Tord;Grebbestad;KO;35;54.29
+2026-10-10;Sweden_Division2_NorraSvealand;v24;IK Franke;Helges;OK;29;82.76
+2026-10-10;Sweden_Division2_NorraSvealand;v24;Falu;Gute;OK;29;82.76
+2026-10-10;Sweden_Division2_NorraSvealand;v24;Enskede;Skiljebo;KO;29;82.76
+2026-10-10;Sweden_Division2_NorraSvealand;v24;Bollstanas;Kungsangen;OK;29;82.76
+2026-10-10;Sweden_Division2_SodraGotaland;v24;Rappe GOIF;Nosaby;OK;56;73.21
+2026-10-10;Sweden_Division2_SodraGotaland;v24;Solvesborgs;Lilla Torg;KO;56;73.21
+2026-10-10;Sweden_Division2_SodraGotaland;v24;Linero IF;Vaxjo Norra;OK;56;73.21
+2026-10-10;Sweden_Division2_SodraSvealand;v24;Haninge;Nacka FC;OK;45;66.67
+2026-10-10;Sweden_Division2_SodraSvealand;v24;Syrianska;Farsta;OK;45;66.67
+2026-10-10;Sweden_Division2_SodraSvealand;v24;Ragsved;Smedby;OK;45;66.67
+2026-10-10;Sweden_Division2_VastraGotaland;v22;Kongahalla;Qviding;OK;21;71.43
+2026-10-10;Sweden_Superettan;v24;Norrby;Öster;KO;37;45.95
+2026-10-10;Sweden_Superettan;v24;Oddevold;Nordic United;KO;37;45.95
+2026-10-10;Switzerland_PromotionLeague;v24;Young Boys 2;Cham;OK;30;60.0
+2026-10-10;Switzerland_PromotionLeague;v24;Zurigo 2;Breitenrain;OK;30;60.0
+2026-10-10;Switzerland_PromotionLeague;v24;Luzerna 2;Schaffhausen;OK;30;60.0
+2026-10-10;Switzerland_PromotionLeague;v24;Bulle;Paradiso;OK;30;60.0
+2026-10-10;Switzerland_SuperLeague;v24;Zurigo;Thun;OK;20;85.0
+2026-10-10;Switzerland_SuperLeague;v24;Lugano;Luzern;OK;20;85.0
+2026-10-10;Switzerland_SuperLeague;v24;Servette;Sion;OK;20;85.0
+2026-10-10;USA_USLLeagueOne;v24;Portland Hearts of Pine;Boise;OK;47;51.06
+2026-10-10;USA_USLLeagueOne;v24;Union Omaha;Fort Wayne;KO;47;51.06
+2026-10-11;Austria_Burgenland;v24;Rust;Pinkafeld;OK;25;76.0
+2026-10-11;Austria_Burgenland;v24;SV Eberau;Deutschkreutz;OK;25;76.0
+2026-10-11;Austria_Regionalliga_West;v24;Rothis;SK St. Johann;OK;37;83.78
+2026-10-11;Austria_Tirol;v22;SV Oberperfuss;Absam;OK;21;61.9
+2026-10-11;Belarus_PershayaLiga;v251;Lida;Orsha;KO;27;77.78
+2026-10-11;CzechRepublic_4Liga_GroupB;v21;Meteor Prague;Ostrov;OK;30;66.67
+2026-10-11;CzechRepublic_4Liga_GroupC;v23;Kolin;Chrudim B;OK;24;79.17
+2026-10-11;CzechRepublic_4Liga_GroupC;v23;Usti nad Orlici;Trutnov;OK;24;79.17
+2026-10-11;CzechRepublic_4Liga_GroupC;v23;Svitavy;Vysoke Myto;OK;24;79.17
+2026-10-11;CzechRepublic_4Liga_GroupE;v13;Brumov;Slavicin;OK;21;76.19
+2026-10-11;CzechRepublic_4Liga_GroupE;v13;Kromeriz B;Strani;OK;21;76.19
+2026-10-11;CzechRepublic_4Liga_GroupF;v22;Bohumin;Frydek-Mistek B;OK;23;91.3
+2026-10-11;Estonia_EsiliigaB;v22def;Tallinna Kalev U21;Parnu JK Vaprus U21;KO;25;80.0
+2026-10-11;Estonia_EsiliigaB;v22def;Tabasalu;Tammeka U21;OK;25;80.0
+2026-10-11;Estonia_Meistriliiga;v24;Kuressaare;Flora;KO;25;72.0
+2026-10-11;Estonia_Meistriliiga;v24;Levadia;Paide;KO;25;72.0
+2026-10-11;Germany_Oberliga_BadenWurttemberg;v24;Karlsruher 2;1. FC Muhlhausen;OK;33;66.67
+2026-10-11;Germany_Oberliga_BadenWurttemberg;v24;Singen;Backnang;KO;33;66.67
+2026-10-11;Germany_Oberliga_BadenWurttemberg;v24;Young Boys Reutlingen;Normannia Gmund;OK;33;66.67
+2026-10-11;Germany_Oberliga_BadenWurttemberg;v24;Neckarsulm;Villingen;OK;33;66.67
+2026-10-11;Germany_Oberliga_Bremen;v21;Schwachhausen;Grohn;OK;23;78.26
+2026-10-11;Germany_Oberliga_Hamburg;v23;TSV Buchholz 08;Paloma;OK;31;70.97
+2026-10-11;Germany_Oberliga_Hessen;v21;RW Walldorf;Eddersheim;OK;30;76.67
+2026-10-11;Germany_Oberliga_Hessen;v21;Pohlheim;Stadtallendorf;KO;30;76.67
+2026-10-11;Germany_Oberliga_Niedersachsen;v24;Egestorf-Langreder;Spelle-Venhaus;KO;24;75.0
+2026-10-11;Germany_Oberliga_Niedersachsen;v24;Meppen 2;Vorsfelde;KO;24;75.0
+2026-10-11;Germany_Oberliga_Niedersachsen;v24;Luneburger Hansa;Hildesheim;KO;24;75.0
+2026-10-11;Germany_Oberliga_Westfalen;v24;Clarholz;Maaslingen;KO;30;73.33
+2026-10-11;Germany_Oberliga_Westfalen;v24;Sprockhovel;Lippstadt;KO;30;73.33
+2026-10-11;Germany_Oberliga_Westfalen;v24;SpVgg Herne Horsthausen;TuS Hordel;KO;30;73.33
+2026-10-11;Germany_Oberliga_Westfalen;v24;Eintracht Rheine;Schermbeck 2020;OK;30;73.33
+2026-10-11;Germany_Oberliga_Westfalen;v24;Vreden;Ennepetal;OK;30;73.33
+2026-10-11;Germany_Oberliga_Westfalen;v24;Verl 2;Westfalia Kinderhaus;OK;30;73.33
+2026-10-11;Germany_Oberliga_Westfalen;v24;Bielefeld 2;Munster 2;OK;30;73.33
+2026-10-11;Germany_Regionalliga_Nord;v24;VfB Oldenburg;Emden;OK;43;76.74
+2026-10-11;Germany_Regionalliga_Nord;v24;Todesfelde;SC Weiche-08;OK;43;76.74
+2026-10-11;Germany_Regionalliga_Nord;v24;Bremer;Drochtersen/Assel;OK;43;76.74
+2026-10-11;Germany_Regionalliga_Nord;v24;Phonix Lubeck;Norderstedt;OK;43;76.74
+2026-10-11;Germany_Regionalliga_Nordost;v21dev;Greifswald;Aue;KO;22;72.73
+2026-10-11;Germany_Regionalliga_Nordost;v21dev;Babelsberg;Lokomotive Leipzig;KO;22;72.73
+2026-10-11;Germany_Regionalliga_Sudwest;v24;Freiburg 2;Freiberg;OK;32;59.38
+2026-10-11;Germany_Regionalliga_West;v251;Colonia 2;Monchengladbach 2;OK;24;75.0
+2026-10-11;Germany_Regionalliga_West;v251;Wiedenbruck;Bonner;OK;24;75.0
+2026-10-11;Iceland_BestaDeildKarla;v26;Vikingur Reykjavik;Akranes;OK;21;76.19
+2026-10-11;Mexico_LigaExpansionMX_Apertura;v24;Zacatecas Mineros;Cancun;OK;20;60.0
+2026-10-11;Netherlands_Eredivisie;v24;Excelsior;Groningen;OK;20;55.0
+2026-10-11;Netherlands_Eredivisie;v24;Utrecht;Willem 2;OK;20;55.0
+2026-10-11;Netherlands_Eredivisie;v24;Zwolle;Cambuur;KO;20;55.0
+2026-10-11;Norway_2ndDivision_Group1;v24;Vidar;Brattvag;OK;34;73.53
+2026-10-11;Norway_2ndDivision_Group1;v24;Traeff;Sandviken;KO;34;73.53
+2026-10-11;Norway_2ndDivision_Group2;v13;Kjelsaas;Rana FK;KO;29;79.31
+2026-10-11;Norway_3rdDivision_Group4;v13;Mandalskameratene;Stabaek 2;KO;29;82.76
+2026-10-11;Norway_3rdDivision_Group5;v21;Fauske Sprint;Harstad;OK;70;87.14
+2026-10-11;Norway_3rdDivision_Group5;v21;Kongsvinger 2;Bossekop;OK;70;87.14
+2026-10-11;Norway_3rdDivision_Group5;v21;Strømsgodset 2;Skjetten;OK;70;87.14
+2026-10-11;Norway_3rdDivision_Group5;v21;Tromsø 2;Lillestrom 2;KO;70;87.14
+2026-10-11;Norway_Eliteserien;v24;Lilleström;Molde;OK;36;69.44
+2026-10-11;Norway_Eliteserien;v24;Start;HamKam;OK;36;69.44
+2026-10-11;Norway_Eliteserien;v24;Aalesund;Sarpsborg 08;OK;36;69.44
+2026-10-11;Norway_OBOSLigaen;v13;Sandnes;Haugesund;KO;32;78.12
+2026-10-11;Norway_OBOSLigaen;v13;Kongsvinger;Ranheim;OK;32;78.12
+2026-10-11;Norway_OBOSLigaen;v13;Stabaek;Strømmen;OK;32;78.12
+2026-10-11;Norway_OBOSLigaen;v13;Lyn;Strömsgodset;OK;32;78.12
+2026-10-11;Poland_Division2;v24;Zawisza;Pruszkow;KO;20;60.0
+2026-10-11;Poland_Division2;v24;Kleczew;Hutnik Krakow;OK;20;60.0
+2026-10-11;Poland_IIILiga_Group1;v20plus;Zambrow;T. Mazowiecki;OK;20;75.0
+2026-10-11;Serbia_PrvaLiga;v24;Graficar Beograd;Javor;KO;21;57.14
+2026-10-11;Slovakia_3Liga_West;v24;Trencin B;Belusa;KO;23;65.22
+2026-10-11;Sweden_Division1_Norra;v24;Jarfalla;Umeå;OK;43;60.47
+2026-10-11;Sweden_Division1_Norra;v24;Assyriska FF;FBK Karlstad;KO;43;60.47
+2026-10-11;Sweden_Division2_NorraGotaland;v24;Husqvarna;Herrestads AIF;KO;36;52.78
+2026-10-11;Sweden_Division2_NorraGotaland;v24;Karlstad 2;Vanersborgs IF;OK;36;52.78
+2026-10-11;Sweden_Division2_NorraSvealand;v24;Sunnersta AIF;Korsnas;OK;33;81.82
+2026-10-11;Sweden_Division2_SodraGotaland;v24;Osterlen;Torns;OK;59;72.88
+2026-10-11;Sweden_Division2_SodraGotaland;v24;IFK Trelleborg;Karlskrona;OK;59;72.88
+2026-10-11;Sweden_Division2_SodraGotaland;v24;IFK Karlshamn;Staffanstorp United;KO;59;72.88
+2026-10-11;Sweden_Division2_SodraSvealand;v21dev;Eker Orebro;Forward;OK;29;68.97
+2026-10-11;Sweden_Division2_VastraGotaland;v22;Frölunda;Torslanda;KO;22;72.73
+2026-10-11;Sweden_Division2_VastraGotaland;v22;Galtabacks BK;Hestrafors;OK;22;72.73
+2026-10-11;Sweden_Superettan;v24;Värnamo;Falkenberg;OK;39;43.59
+2026-10-11;Sweden_Superettan;v24;Brage;Helsingborg;KO;39;43.59
+2026-10-11;Sweden_Superettan;v24;Örebro;Ljungskile;KO;39;43.59
+2026-10-11;Switzerland_PromotionLeague;v24;Biel;Basilea 2;OK;34;64.71
+2026-10-11;Switzerland_PromotionLeague;v24;Lugano 2;Kreuzlingen;OK;34;64.71
+2026-10-11;Switzerland_SuperLeague;v24;Grasshoppers;Young Boys;KO;23;86.96
+2026-10-11;Switzerland_SuperLeague;v24;Vaduz;Basilea;OK;23;86.96
+2026-10-11;USA_MLS;v21dev;Sporting Kansas City;Portland Timbers;OK;28;85.71
+2026-10-11;USA_USLChampionship;v24;El Paso;Orange County SC;OK;27;37.04
+2026-10-11;USA_USLLeagueOne;v24;One Knoxville;Spokane Velocity;KO;49;51.02
+2026-10-12;England_IsthmianLeaguePremierDivision;v24;Carshalton;Enfield Town;OK;20;80.0
+2026-10-12;Kyrgyzstan_PremierLiga;v24;Ozgon;Bars;OK;29;79.31
+2026-10-12;Norway_3rdDivision_Group2;v22def;Ranheim 2;Molde 2;OK;31;83.87
+2026-10-12;Norway_3rdDivision_Group2;v22def;Melhus;Aalesund 2;KO;31;83.87
+2026-10-12;Norway_3rdDivision_Group2;v22def;Strindheim;Rosenborg 2;OK;31;83.87
+2026-10-12;Norway_3rdDivision_Group3;v22def;Djerv 1919;Brann 2;KO;28;92.86
+2026-10-12;Norway_3rdDivision_Group6;v13;Elverum;Lyn 2;OK;30;83.33
+2026-10-12;Norway_Eliteserien;v24;KFUM Oslo;Vålerenga;OK;39;71.79
+2026-10-12;Poland_Ekstraklasa;v24;Katowice;Wieczysta Krakow;OK;20;50.0
+2026-10-12;Serbia_PrvaLiga;v24;Loznica;Smederevo;KO;22;54.55
+2026-10-12;Sweden_Division1_Sodra;v24;Laholms;Tvaaker;KO;61;60.66
+2026-10-12;Sweden_Division2_SodraGotaland;v24;Oskarshamn;IFK Berga;OK;62;72.58
+2026-10-13;England_IsthmianLeaguePremierDivision;v24;Wingate & Finchley;Ramsgate;KO;21;80.95
+2026-10-13;England_IsthmianLeaguePremierDivision;v24;Three Bridges;Lewes;OK;21;80.95
+2026-10-13;England_IsthmianLeaguePremierDivision;v24;Burgess Hill;Dulwich Hamlet;KO;21;80.95
+2026-10-13;Estonia_Meistriliiga;v24;Harju JK Laagri;Nomme Utd;KO;27;66.67
+2026-10-13;Germany_Oberliga_Hamburg;v22def;Norderstedt 2;ETSV Hamburg;OK;25;72.0
+2026-10-13;Germany_Regionalliga_Bayern;v24;Buchbach;Augsburg 2;OK;30;60.0
+2026-10-13;Germany_Regionalliga_Bayern;v24;Eltersdorf;Burghausen;OK;30;60.0
+2026-10-13;Germany_Regionalliga_Bayern;v24;Aubstadt;Illertissen;KO;30;60.0
+2026-10-13;Germany_Regionalliga_Bayern;v24;Monaco 1860;Bayreuth;OK;30;60.0
+2026-10-13;Norway_3rdDivision_Group1;v13;Heming;K. Oslo 2;OK;33;81.82
+2026-10-14;Estonia_Esiliiga;v13;Levadia U21;Nomme Kalju U21;KO;26;76.92
+2026-10-14;Estonia_EsiliigaB;v22def;Parnu JK Vaprus U21;Tabasalu;OK;27;77.78
+2026-10-14;Germany_3Liga;v24;Verl;Regensburg;OK;21;61.9
+2026-10-14;Germany_3Liga;v24;Viktoria Koln;Grossaspach;OK;21;61.9
+2026-10-14;Germany_Oberliga_Westfalen;v21;ASC 09 Dortmund;Schermbeck 2020;KO;21;71.43
+2026-10-14;Germany_Regionalliga_Sudwest;v24;Kaiserslautern 2;FSV Francoforte;OK;33;60.61
+2026-10-14;Norway_3rdDivision_Group1;v13;Asker;Frigg;OK;34;82.35
+2026-10-14;Norway_OBOSLigaen;v13;Haugesund;Lyn;OK;36;77.78
+2026-10-14;Norway_OBOSLigaen;v13;Sogndal;Odd;KO;36;77.78
+2026-10-14;Norway_OBOSLigaen;v13;Stabaek;Sandnes;OK;36;77.78
+2026-10-14;Poland_Division2;v24;Slask 2;Legia 2;OK;22;59.09
+2026-10-14;Poland_IIILiga_Group1;v20plus;Jagiellonia 2;Troszyn;KO;21;76.19
+2026-10-15;Estonia_Esiliiga;v13;FC Tallinn;Tartu Welco;OK;27;74.07
+2026-10-15;Estonia_EsiliigaB;v22def;Narva U21;Tartu Kalev;KO;28;78.57
+2026-10-15;Estonia_EsiliigaB;v22def;Johvi Phoenix;Tammeka U21;OK;28;78.57
+2026-10-15;Kazakhstan_FirstLeague;v24;Arys;Akademiya Ontustik;KO;32;75.0
+2026-10-15;Kazakhstan_FirstLeague;v24;Khan Tengri;Aktobe 2;OK;32;75.0
+2026-10-15;Kazakhstan_FirstLeague;v24;FC Astana 2;Yelimay Semey 2;OK;32;75.0
+2026-10-15;Kyrgyzstan_PremierLiga;v24;Bishkek City;Aldier;OK;30;80.0
+2026-10-15;Kyrgyzstan_PremierLiga;v24;Kyrgyzaltyn;Neftchi Kochkor-Ata;KO;30;80.0
+2026-10-15;USA_MLS;v21dev;Nashville SC;Sporting Kansas City;OK;29;86.21
+2026-10-15;USA_MLS;v21dev;Toronto FC;Orlando City;OK;29;86.21
+2026-10-15;USA_MLS;v21dev;Cincinnati;New England Revolution;OK;29;86.21
+2026-10-15;USA_MLS;v21dev;Chicago Fire;Philadelphia Union;OK;29;86.21
+2026-10-15;USA_MLS;v21dev;Inter Miami;New York City;KO;29;86.21
+2026-10-15;USA_MLS;v21dev;Los Angeles Galaxy;Portland Timbers;KO;29;86.21
+2026-10-15;USA_MLS;v21dev;Columbus Crew;Charlotte;OK;29;86.21
+2026-10-15;USA_MLS;v21dev;St. Louis City;Vancouver Whitecaps;KO;29;86.21
+2026-10-15;USA_USLChampionship;v24;Sporting Jax;Birmingham Legion;KO;28;39.29
+2026-10-16;Austria_Burgenland;v24;Deutschkreutz;Rust;KO;27;77.78
+2026-10-16;Austria_Burgenland;v24;Oberpullendorf;Edelserpentin;OK;27;77.78
+2026-10-16;Austria_Burgenland;v24;Neusiedl;Bad Sauerbrunn;OK;27;77.78
+2026-10-16;Austria_Oberosterreich;v24;Edelweiss;ASK St.Valentin;OK;24;75.0
+2026-10-16;Austria_Oberosterreich;v24;Weisskirchen;Garsten;OK;24;75.0
+2026-10-16;Austria_Oberosterreich;v24;Friedburg;Micheldorf;OK;24;75.0
+2026-10-16;Austria_Oberosterreich;v24;Pregarten;Gmunden;OK;24;75.0
+2026-10-16;Austria_Oberosterreich;v24;Perg;Ostermiething;KO;24;75.0
+2026-10-16;Austria_Regionalliga_East;v24;Warth;Kremser;OK;20;60.0
+2026-10-16;Austria_Regionalliga_East;v24;Gloggnitz;SV Oberwart;KO;20;60.0
+2026-10-16;Austria_Regionalliga_East;v24;Wiener;Marchfeld;KO;20;60.0
+2026-10-16;Austria_Regionalliga_North;v22;Wallern/St Marienkirchen;Leonfelden;OK;23;69.57
+2026-10-16;Austria_Regionalliga_North;v22;Kuchl;Grodig;KO;23;69.57
+2026-10-16;Austria_Regionalliga_South;v21;Lafnitz;Gleisdorf;OK;23;60.87
+2026-10-16;Austria_Regionalliga_South;v21;Allerheiligen;Hartberg (Am);OK;23;60.87
+2026-10-16;Austria_Regionalliga_South;v21;Deutschlandsberger;Tillmitsch;OK;23;60.87
+2026-10-16;Austria_Regionalliga_South;v21;ATSV Wolfsberger;Treibach;OK;23;60.87
+2026-10-16;Austria_Salzburg;v13;USV 1960 Berndorf;Burmoos;OK;24;91.67
+2026-10-16;Austria_Tirol;v22;SC Kundl;SV Worgl;OK;22;63.64
+2026-10-16;Belarus_PershayaLiga;v23;BATE 2;Slutsk;KO;28;75.0
+2026-10-16;CzechRepublic_4Liga_GroupA;v24;Hluboka nad Vltavou;Spartak Pribram;OK;20;75.0
+2026-10-16;CzechRepublic_4Liga_GroupF;v22;Hlucin;Kravare;KO;24;91.67
+2026-10-16;Germany_Oberliga_BadenWurttemberg;v24;Nottingen;Pforzheim;OK;37;67.57
+2026-10-16;Germany_Oberliga_BadenWurttemberg;v24;Villingen;Ravensburg;OK;37;67.57
+2026-10-16;Germany_Oberliga_Hamburg;v22def;Victoria Hamburg;Teutonia Ottensen;OK;26;73.08
+2026-10-16;Germany_Oberliga_Hamburg;v22def;Vorwarts-Wacker;Wandsbeker Concordia;OK;26;73.08
+2026-10-16;Germany_Oberliga_SchleswigHolstein;v13;Oldenburger;Phonix Lubeck B;OK;20;95.0
+2026-10-16;Germany_Oberliga_Westfalen;v24;Lippstadt;Eintracht Rheine;KO;38;68.42
+2026-10-16;Germany_Regionalliga_Nordost;v21dev;Erfurt;Zwickau;OK;24;66.67
+2026-10-16;Germany_Regionalliga_Sudwest;v24;Sandhausen;Offenbach;KO;34;61.76
+2026-10-16;Germany_Regionalliga_West;v251;Rodinghausen;Colonia 2;OK;26;76.92
+2026-10-16;Germany_Regionalliga_West;v251;Schalke 2;Westfalia Rhynern;KO;26;76.92
+2026-10-16;Germany_Regionalliga_West;v251;Wattenscheid;FC Gutersloh;OK;26;76.92
+2026-10-16;Iceland_BestaDeildKarla;v26;Breidablik;Vikingur Reykjavik;OK;22;77.27
+2026-10-16;Kyrgyzstan_PremierLiga;v24;Bars;Dordoi Bishkek;OK;32;78.12
+2026-10-16;Netherlands_EersteDivisie;v26def;Helmond;Breda;KO;30;66.67
+2026-10-16;Netherlands_Eredivisie;v24;Heerenveen;Excelsior;OK;23;56.52
+2026-10-16;NorthernIreland_NIFLChampionship;v24;Glenavon;H&W Welders;OK;31;41.94
+2026-10-16;NorthernIreland_NIFLChampionship;v24;Strabane Athletic;Loughgall;KO;31;41.94
+2026-10-16;NorthernIreland_NIFLChampionship;v24;Moyola;Newington;OK;31;41.94
+2026-10-16;Poland_Ekstraklasa;v24;Wieczysta Krakow;Rakow;OK;21;52.38
+2026-10-16;Poland_Ekstraklasa;v24;Widzew Lodz;Wisla;KO;21;52.38
+2026-10-16;Sweden_Division1_Norra;v24;Stocksund;Enkoping SK;OK;45;60.0
+2026-10-16;Sweden_Division1_Sodra;v24;Lunds;Trelleborg;OK;62;59.68
+2026-10-17;Austria_Burgenland;v24;Kohfidisch;Leithaprodersdorf;OK;30;76.67
+2026-10-17;Austria_Karnten;v22;Seeboden;SC St. Veit;OK;26;92.31
+2026-10-17;Austria_Karnten;v22;TSV Grafenstein;Kottmannsdorf;OK;26;92.31
+2026-10-17;Austria_Karnten;v22;SGA Sirnitz;Saint Michael Lavanttal;KO;26;92.31
+2026-10-17;Austria_Karnten;v22;Matrei;SAK Klagenfurt;KO;26;92.31
+2026-10-17;Austria_Oberosterreich;v24;Andorf;Union Unis Gschwandt;OK;29;75.86
+2026-10-17;Austria_Oberosterreich;v24;Bad Ischl;Vocklamarkt;OK;29;75.86
+2026-10-17;Austria_Oberosterreich;v24;St. Martin im Muhlreis;Mondsee;KO;29;75.86
+2026-10-17;Austria_Regionalliga_North;v26;LASK (Am);Dietach;KO;24;70.83
+2026-10-17;Austria_Regionalliga_West;v24;Lochau;Rothis;OK;38;84.21
+2026-10-17;Austria_Regionalliga_West;v24;FC Lustenau;Fugen;OK;38;84.21
+2026-10-17;Austria_Regionalliga_West;v24;Dornbirn;Kufstein;KO;38;84.21
+2026-10-17;Belarus_PershayaLiga;v26;Molodechno;Niva Dolbizno;OK;20;75.0
+2026-10-17;CzechRepublic_3CFL_GroupA;v24;Ceske Budejovice;Loko Praha;OK;20;75.0
+2026-10-17;CzechRepublic_4Liga_GroupA;v24;Sobeslav;Nyrsko;OK;21;76.19
+2026-10-17;CzechRepublic_4Liga_GroupA;v24;Taborsko akademie;Krimice;KO;21;76.19
+2026-10-17;CzechRepublic_4Liga_GroupA;v24;Domazlice B;SK Strakonice 1908;OK;21;76.19
+2026-10-17;CzechRepublic_4Liga_GroupA;v24;Petrin Plzen;Rokycany;OK;21;76.19
+2026-10-17;CzechRepublic_4Liga_GroupB;v26def;Brandys n. Labem;Sokolov;OK;22;68.18
+2026-10-17;CzechRepublic_4Liga_GroupB;v26def;Velvary;Vysehrad;OK;22;68.18
+2026-10-17;CzechRepublic_4Liga_GroupC;v22def;Chrudim B;Letohrad;KO;20;85.0
+2026-10-17;CzechRepublic_4Liga_GroupC;v22def;Vysoke Myto;Vykan;KO;20;85.0
+2026-10-17;CzechRepublic_4Liga_GroupD;v24;Sparta Brno;Velke Mezirici;OK;20;75.0
+2026-10-17;CzechRepublic_4Liga_GroupD;v24;Bystrc;Bedrichov;OK;20;75.0
+2026-10-17;CzechRepublic_4Liga_GroupD;v24;FS Trebic;Pelhrimov;OK;20;75.0
+2026-10-17;CzechRepublic_4Liga_GroupE;v13;Strani;Prostejov B;KO;23;78.26
+2026-10-17;CzechRepublic_4Liga_GroupE;v13;Sternberk;Kromeriz B;OK;23;78.26
+2026-10-17;CzechRepublic_4Liga_GroupE;v13;Nove Sady;Breclav;KO;23;78.26
+2026-10-17;CzechRepublic_4Liga_GroupF;v22;Valasske Mezirici;Bohumin;OK;25;88.0
+2026-10-17;CzechRepublic_4Liga_GroupF;v22;Frydlant n. O.;Opava B;OK;25;88.0
+2026-10-17;CzechRepublic_4Liga_GroupF;v22;Vratimov;Pusta Polom;OK;25;88.0
+2026-10-17;CzechRepublic_4Liga_GroupF;v22;Rymarov;Bilovec;OK;25;88.0
+2026-10-17;Denmark_3rdDivision;v24;Holbaek;Holstebro;OK;26;65.38
+2026-10-17;Denmark_3rdDivision;v24;Horsholm-Usserod;BK Frem;KO;26;65.38
+2026-10-17;Denmark_3rdDivision;v24;Bronshoj;Ringsted;OK;26;65.38
+2026-10-17;Denmark_3rdDivision;v24;Ishoj;Helsingor;KO;26;65.38
+2026-10-17;Denmark_3rdDivision;v24;ASA Aarhus;Sundby;OK;26;65.38
+2026-10-17;England_Championship;v24;Middlesbrough;Cardiff;OK;20;60.0
+2026-10-17;England_Championship;v24;Derby;Stoke;KO;20;60.0
+2026-10-17;England_Championship;v24;Southampton;Bolton;KO;20;60.0
+2026-10-17;England_Championship;v24;Wrexham;Preston;OK;20;60.0
+2026-10-17;England_Championship;v24;Birmingham;QPR;OK;20;60.0
+2026-10-17;England_Championship;v24;Bristol City;Sheffield Utd;KO;20;60.0
+2026-10-17;England_Championship;v24;Norwich;Portsmouth;KO;20;60.0
+2026-10-17;England_IsthmianLeaguePremierDivision;v24;Three Bridges;Enfield Town;OK;24;75.0
+2026-10-17;England_IsthmianLeaguePremierDivision;v24;Aveley;Chatham;KO;24;75.0
+2026-10-17;England_IsthmianLeaguePremierDivision;v24;Dulwich Hamlet;Carshalton;OK;24;75.0
+2026-10-17;England_IsthmianLeaguePremierDivision;v24;Whyteleafe;Dartford;OK;24;75.0
+2026-10-17;England_IsthmianLeaguePremierDivision;v24;Wingate & Finchley;Stanway;OK;24;75.0
+2026-10-17;England_NPLPremierDivision;v24;Lancaster;Leek;OK;23;65.22
+2026-10-17;England_NPLPremierDivision;v24;Bamber Bridge;Workington;OK;23;65.22
+2026-10-17;England_NPLPremierDivision;v24;Whitby;Curzon Ashton;KO;23;65.22
+2026-10-17;England_NPLPremierDivision;v24;Ilkeston;Avro;KO;23;65.22
+2026-10-17;England_SouthernLeaguePremierSouth;v24;Evesham;Taunton;OK;20;65.0
+2026-10-17;England_SouthernLeaguePremierSouth;v24;Malvern Town;Frome;KO;20;65.0
+2026-10-17;England_SouthernLeaguePremierSouth;v24;Bracknell;Chichester;KO;20;65.0
+2026-10-17;England_SouthernLeaguePremierSouth;v24;Gosport;Basingstoke;OK;20;65.0
+2026-10-17;England_SouthernLeaguePremierSouth;v24;Havant & W;Hanworth;OK;20;65.0
+2026-10-17;FaroeIslands_1Deild;v22;Vikingur 2;B36 Torshavn 2;OK;37;89.19
+2026-10-17;FaroeIslands_1Deild;v22;FC Suduroy;TB Tvoroyri;KO;37;89.19
+2026-10-17;FaroeIslands_1Deild;v22;Sandur;Fuglafjordur;OK;37;89.19
+2026-10-17;FaroeIslands_1Deild;v22;Hoyvik;Runavik 2;KO;37;89.19
+2026-10-17;FaroeIslands_1Deild;v22;HB Torshavn 2;Streymur 2;KO;37;89.19
+2026-10-17;Germany_3Liga;v24;Regensburg;Wehen;KO;23;65.22
+2026-10-17;Germany_3Liga;v24;Wurzburger Kickers;Mannheim;KO;23;65.22
+2026-10-17;Germany_3Liga;v24;Aachen;Rostock;KO;23;65.22
+2026-10-17;Germany_3Liga;v24;Grossaspach;Munster;OK;23;65.22
+2026-10-17;Germany_3Liga;v24;Ingolstadt;RW Essen;KO;23;65.22
+2026-10-17;Germany_3Liga;v24;Dusseldorf;Saarbrucken;OK;23;65.22
+2026-10-17;Germany_Oberliga_BadenWurttemberg;v24;Teningen;Karlsruher 2;OK;39;69.23
+2026-10-17;Germany_Oberliga_BadenWurttemberg;v24;Backnang;Young Boys Reutlingen;OK;39;69.23
+2026-10-17;Germany_Oberliga_BadenWurttemberg;v24;Reutlingen;Neckarsulm;OK;39;69.23
+2026-10-17;Germany_Oberliga_BadenWurttemberg;v24;FC Holzhausen;Bahlinger;OK;39;69.23
+2026-10-17;Germany_Oberliga_Bayern_Nord;v24;Bayern Hof;Ingolstadt 2;OK;33;63.64
+2026-10-17;Germany_Oberliga_Bayern_Nord;v24;Fortuna Regensburg;Wurzburger FV;OK;33;63.64
+2026-10-17;Germany_Oberliga_Bayern_Nord;v24;Gebenbach;Regensburg 2;OK;33;63.64
+2026-10-17;Germany_Oberliga_Bayern_Nord;v24;Weiden;Nordlingen;KO;33;63.64
+2026-10-17;Germany_Oberliga_Bayern_Sud;v21dev;Schalding;Kirchanschoring;KO;29;75.86
+2026-10-17;Germany_Oberliga_Bayern_Sud;v21dev;Hankofen-Hailing;TSV 1880 Wasserburg;KO;29;75.86
+2026-10-17;Germany_Oberliga_Bremen;v21;Blumenthaler;Woltmershausen;OK;24;79.17
+2026-10-17;Germany_Oberliga_Bremen;v21;Aumund-Vegesack;Schwachhausen;OK;24;79.17
+2026-10-17;Germany_Oberliga_Bremen;v21;BTS Neustadt;Brinkumer;OK;24;79.17
+2026-10-17;Germany_Oberliga_Bremen;v21;Vatan Bremen;Hemelingen;OK;24;79.17
+2026-10-17;Germany_Oberliga_Hamburg;v22def;Paloma;Altona;OK;28;75.0
+2026-10-17;Germany_Oberliga_Hamburg;v22def;HT 16;ETSV Hamburg;OK;28;75.0
+2026-10-17;Germany_Oberliga_Hessen;v22;Hummetroth;RW Walldorf;OK;21;76.19
+2026-10-17;Germany_Oberliga_Hessen;v22;Stadtallendorf;Giessen;OK;21;76.19
+2026-10-17;Germany_Oberliga_Niedersachsen;v24;Lohne;Luneburger Hansa;OK;27;66.67
+2026-10-17;Germany_Oberliga_RheinlandPfalzSaar;v22def;RW Wittlich;Cosmos Koblenz;OK;30;70.0
+2026-10-17;Germany_Oberliga_RheinlandPfalzSaar;v22def;Mechtersheim;Diefflen;OK;30;70.0
+2026-10-17;Germany_Oberliga_RheinlandPfalzSaar;v22def;Worms;Eisbachtal;OK;30;70.0
+2026-10-17;Germany_Oberliga_SchleswigHolstein;v13;Kaltenkirchen;Flensburg;OK;21;95.24
+2026-10-17;Germany_Oberliga_Westfalen;v21;Gievenbeck;Vreden;OK;22;68.18
+2026-10-17;Germany_Regionalliga_Nord;v13;Emden;Phonix Lubeck;OK;23;82.61
+2026-10-17;Germany_Regionalliga_Sudwest;v24;Freiberg;Fulda-Lehnerz;OK;35;60.0
+2026-10-17;Germany_Regionalliga_Sudwest;v24;Kickers Stoccarda;Steinbach Haiger;OK;35;60.0
+2026-10-17;Germany_Regionalliga_Sudwest;v24;Aalen;Walldorf;KO;35;60.0
+2026-10-17;Germany_Regionalliga_Sudwest;v24;Kassel;VfR Mannheim;OK;35;60.0
+2026-10-17;Germany_Regionalliga_Sudwest;v24;Mainz 2;Ulm;KO;35;60.0
+2026-10-17;Germany_Regionalliga_West;v251;Monchengladbach 2;Bergisch Gladbach;OK;29;75.86
+2026-10-17;Germany_Regionalliga_West;v251;Siegen;Oberhausen;OK;29;75.86
+2026-10-17;Germany_Regionalliga_West;v251;Bonner;Hilden;KO;29;75.86
+2026-10-17;Germany_Regionalliga_West;v251;Wiedenbruck;Dortmund 2;OK;29;75.86
+2026-10-17;Germany_Regionalliga_West;v251;Bocholt;Lotte;KO;29;75.86
+2026-10-17;Iceland_BestaDeildKarla;v26;Keflavik;KR Reykjavik;OK;23;78.26
+2026-10-17;Kyrgyzstan_PremierLiga;v24;Asiagoal Bishkek;Ozgon;OK;33;78.79
+2026-10-17;Kyrgyzstan_PremierLiga;v24;Asia Talas;Alay Osh;OK;33;78.79
+2026-10-17;Latvia_NakotnesLiga;v22;Riga Mariners;Skanste;OK;27;81.48
+2026-10-17;Mexico_LigaExpansionMX_Apertura;v24;Atletico La Paz;Tlaxcala;OK;21;61.9
+2026-10-17;Mexico_LigaExpansionMX_Apertura;v24;Correcaminos;Dorados;OK;21;61.9
+2026-10-17;Mexico_LigaExpansionMX_Apertura;v24;Cruz Azul Hidalgo;Zacatecas Mineros;OK;21;61.9
+2026-10-17;Netherlands_Eredivisie;v24;Den Haag;PSV;OK;24;58.33
+2026-10-17;Netherlands_Eredivisie;v24;Sparta Rotterdam;Willem 2;OK;24;58.33
+2026-10-17;Netherlands_Eredivisie;v24;Telstar;Feyenoord;OK;24;58.33
+2026-10-17;NorthernIreland_NIFLChampionship;v24;Armagh;Annagh;OK;34;44.12
+2026-10-17;NorthernIreland_NIFLChampionship;v24;Dundela;Rathfriland;KO;34;44.12
+2026-10-17;NorthernIreland_NIFLChampionship;v24;Queens Univ.;Newry City;KO;34;44.12
+2026-10-17;Norway_2ndDivision_Group2;v13;Grorud;Follo;OK;30;76.67
+2026-10-17;Norway_2ndDivision_Group2;v13;Trygg/Lade;Stjordals Blink;OK;30;76.67
+2026-10-17;Norway_3rdDivision_Group1;v13;Konnerud;Asker;OK;35;82.86
+2026-10-17;Norway_3rdDivision_Group1;v13;Grei;Gamle Oslo;OK;35;82.86
+2026-10-17;Norway_3rdDivision_Group1;v13;Nordstrand;Heming;KO;35;82.86
+2026-10-17;Norway_3rdDivision_Group1;v13;Baerum;Ullern;OK;35;82.86
+2026-10-17;Norway_3rdDivision_Group2;v22def;Strindheim;Orkla;OK;34;82.35
+2026-10-17;Norway_3rdDivision_Group2;v22def;Nardo;Herd;OK;34;82.35
+2026-10-17;Norway_3rdDivision_Group3;v22def;Fana;Fyllingsdalen;OK;29;89.66
+2026-10-17;Norway_3rdDivision_Group3;v22def;Stord;Gneist;OK;29;89.66
+2026-10-17;Norway_3rdDivision_Group3;v22def;V. Haugesund;Askoy;OK;29;89.66
+2026-10-17;Norway_3rdDivision_Group4;v13;Madla IL;Staal Jorpeland;OK;30;80.0
+2026-10-17;Norway_3rdDivision_Group4;v13;Haugesund 2;Mandalskameratene;OK;30;80.0
+2026-10-17;Norway_3rdDivision_Group4;v13;Hinna;Viking 2;OK;30;80.0
+2026-10-17;Norway_3rdDivision_Group5;v20plus;Kongsvinger 2;Fauske Sprint;OK;20;90.0
+2026-10-17;Norway_3rdDivision_Group6;v13;Rade;Brumunddal;OK;31;83.87
+2026-10-17;Norway_3rdDivision_Group6;v13;Lillehammer;Sandefjord 2;OK;31;83.87
+2026-10-17;Norway_Eliteserien;v24;Kristiansund;Aalesund;OK;40;72.5
+2026-10-17;Norway_Eliteserien;v24;HamKam;Bodo/Glimt;KO;40;72.5
+2026-10-17;Poland_Division2;v24;Hutnik Krakow;Chojniczanka;OK;23;60.87
+2026-10-17;Poland_Division2;v24;Leczna;S. Wola;OK;23;60.87
+2026-10-17;Poland_Division2;v24;Swit Szczecin;Ol. Grudziadz;KO;23;60.87
+2026-10-17;Poland_Ekstraklasa;v24;Motor Lublin;Slask;OK;23;52.17
+2026-10-17;Poland_IIILiga_Group1;v20plus;Mlawa;Lidzbark Warminski;OK;22;72.73
+2026-10-17;Poland_IIILiga_Group2;v26;Gedania Gdansk;Blekitni Stargard;OK;22;68.18
+2026-10-17;Poland_IIILiga_Group2;v26;Kluczevia Stargard;Luzino;OK;22;68.18
+2026-10-17;Poland_IIILiga_Group3;v24;Kluczbork;Legnica 2;KO;23;60.87
+2026-10-17;Poland_IIILiga_Group3;v24;Brzeg;Polkowice;KO;23;60.87
+2026-10-17;Poland_IIILiga_Group3;v24;BKS Sparta Katowice;ROW Rybnik;KO;23;60.87
+2026-10-17;Poland_IIILiga_Group3;v24;Sleza Wroclaw;Carina Gubin;OK;23;60.87
+2026-10-17;Serbia_PrvaLiga;v24;Jedinstvo U.;Graficar Beograd;OK;23;52.17
+2026-10-17;Serbia_PrvaLiga;v24;Javor;Bor 1919;OK;23;52.17
+2026-10-17;Slovakia_3Liga_West;v24;Castkovce;Velke Ludince;KO;24;62.5
+2026-10-17;Slovakia_3Liga_West;v24;Gabcikovo;Trencin B;OK;24;62.5
+2026-10-17;Slovakia_3Liga_West;v24;Banik Prievidza;Myjava;OK;24;62.5
+2026-10-17;SouthKorea_KLeague2;v24;Daegu;Cheongju Jikji;OK;23;39.13
+2026-10-17;SouthKorea_KLeague2;v24;Seongnam;Suwon FC;OK;23;39.13
+2026-10-17;Sweden_Allsvenskan;v24;AIK Stockholm;Göteborg;OK;37;56.76
+2026-10-17;Sweden_Division1_Norra;v24;Arlanda;Jarfalla;OK;46;60.87
+2026-10-17;Sweden_Division1_Sodra;v24;Skövde;Eskilsminne;OK;63;60.32
+2026-10-17;Sweden_Division1_Sodra;v24;Atvidaberg;Hassleholms IF;OK;63;60.32
+2026-10-17;Sweden_Superettan;v24;Ljungskile;Brage;KO;42;42.86
+2026-10-17;Sweden_Superettan;v24;Falkenberg;Landskrona;OK;42;42.86
+2026-10-17;Sweden_Superettan;v24;Öster;Oddevold;OK;42;42.86
+2026-10-17;Switzerland_PromotionLeague;v24;Paradiso;Young Boys 2;OK;36;66.67
+2026-10-17;Switzerland_PromotionLeague;v24;Breitenrain;Amical Saint-Prex;OK;36;66.67
+2026-10-17;Switzerland_PromotionLeague;v24;Grand-Saconnex;Lugano 2;OK;36;66.67
+2026-10-17;Switzerland_PromotionLeague;v24;Zurigo 2;YF Juventus;OK;36;66.67
+2026-10-17;USA_MLS;v251;Minnesota;St. Louis City;OK;28;85.71
+2026-10-17;USA_USLLeagueOne;v24;New York Cosmos;One Knoxville;OK;50;50.0
+2026-10-18;Austria_Karnten;v26def;SC Landskron;Lendorf;OK;21;90.48
+2026-10-18;Austria_Regionalliga_West;v22;Wolfurt;Schwaz;OK;20;85.0
+2026-10-18;Austria_Regionalliga_West;v22;Tirol (Am);Kitzbuhel;OK;20;85.0
+2026-10-18;Austria_Regionalliga_West;v22;SK St. Johann;Lauterach;OK;20;85.0
+2026-10-18;Austria_Salzburg;v13;Puch;ATSV Salzburg;OK;25;92.0
+2026-10-18;Austria_Salzburg;v13;UFC Siezenheim;Strasswalchen;OK;25;92.0
+2026-10-18;Austria_Steiermark;v24;Furstenfeld;UFC Fehring;OK;22;72.73
+2026-10-18;Austria_Tirol;v22;Ebbs;Vols;OK;23;65.22
+2026-10-18;Austria_Tirol;v22;Absam;Kolsass Weer;OK;23;65.22
+2026-10-18;Austria_Tirol;v22;Telfs;SV Oberperfuss;OK;23;65.22
+2026-10-18;Belarus_PershayaLiga;v26;Gomel 2;Lida;KO;21;76.19
+2026-10-18;CzechRepublic_3CFL_GroupA;v24;Bohemians 1905 B;Domazlice;OK;21;76.19
+2026-10-18;CzechRepublic_3CFL_GroupA;v24;Dukla Praga B;Pisek;OK;21;76.19
+2026-10-18;CzechRepublic_3CFL_GroupA;v24;Admira Prague;Povltavska FA;OK;21;76.19
+2026-10-18;CzechRepublic_3CFL_GroupA;v24;Plzen B;Aritma Prague;OK;21;76.19
+2026-10-18;CzechRepublic_4Liga_GroupA;v13;Milevsko;Doubravka;KO;21;76.19
+2026-10-18;CzechRepublic_4Liga_GroupC;v22def;Turnov;Slavia HK;OK;22;77.27
+2026-10-18;CzechRepublic_4Liga_GroupC;v22def;Police nad Metuji;Hlinsko;OK;22;77.27
+2026-10-18;CzechRepublic_4Liga_GroupD;v24;Zdar nad Sazavou;Zdirec n. D.;OK;23;78.26
+2026-10-18;CzechRepublic_4Liga_GroupD;v24;Znojmo;Tasovice;KO;23;78.26
+2026-10-18;CzechRepublic_4Liga_GroupD;v24;Velka Bites;Kurim;OK;23;78.26
+2026-10-18;CzechRepublic_4Liga_GroupE;v13;Vsechovice;Brumov;OK;26;73.08
+2026-10-18;CzechRepublic_4Liga_GroupE;v13;Lanzhot;Hluk;KO;26;73.08
+2026-10-18;CzechRepublic_4Liga_GroupF;v22;Frydek-Mistek B;Bridlicna;OK;29;89.66
+2026-10-18;CzechRepublic_4Liga_GroupF;v22;Sumperk;Novy Jicin;KO;29;89.66
+2026-10-18;Estonia_EsiliigaB;v22def;Tartu Kalev;Johvi Phoenix;OK;30;76.67
+2026-10-18;Finland_Ykkonen;v23;JJK Jyvaskyla;Keski-Uusimaa;OK;21;71.43
+2026-10-18;Germany_3Liga;v24;Duisburg;Viktoria Koln;KO;29;58.62
+2026-10-18;Germany_3Liga;v24;Hoffenheim 2;Verl;OK;29;58.62
+2026-10-18;Germany_3Liga;v24;Meppen;Havelse;KO;29;58.62
+2026-10-18;Germany_Oberliga_BadenWurttemberg;v24;1. FC Muhlhausen;Balingen;KO;43;72.09
+2026-10-18;Germany_Oberliga_Bayern_Nord;v24;Ammerthal;Cham;KO;37;64.86
+2026-10-18;Germany_Oberliga_Bremen;v21;Geestemunde;Union 60 Bremen;OK;28;82.14
+2026-10-18;Germany_Oberliga_Bremen;v21;Grohn;Leher;OK;28;82.14
+2026-10-18;Germany_Oberliga_Hamburg;v22def;Niendorfer TSV;TSV Buchholz 08;OK;30;76.67
+2026-10-18;Germany_Oberliga_Niederrhein;v24;Juchen-Garzweiler;Uerdingen;KO;22;77.27
+2026-10-18;Germany_Oberliga_Niederrhein;v24;SC St.Tonis;Holzheim;KO;22;77.27
+2026-10-18;Germany_Oberliga_Niederrhein;v24;Solingen-Wald;SSVg Velbert;OK;22;77.27
+2026-10-18;Germany_Oberliga_Niederrhein;v24;Schonnebeck;Scherpenberg;OK;22;77.27
+2026-10-18;Germany_Oberliga_Niedersachsen;v22;Verden;Meppen 2;OK;20;70.0
+2026-10-18;Germany_Oberliga_Niedersachsen;v22;Nordhorn;Egestorf-Langreder;OK;20;70.0
+2026-10-18;Germany_Oberliga_SchleswigHolstein;v13;VfR Neumunster;Hohenwestedt;OK;22;95.45
+2026-10-18;Germany_Oberliga_Westfalen;v21;TuS Hordel;Sprockhovel;KO;23;69.57
+2026-10-18;Germany_Oberliga_Westfalen;v21;Clarholz;Bielefeld 2;OK;23;69.57
+2026-10-18;Germany_Oberliga_Westfalen;v21;Ennepetal;SpVgg Herne Horsthausen;OK;23;69.57
+2026-10-18;Germany_Oberliga_Westfalen;v21;Maaslingen;Schermbeck 2020;OK;23;69.57
+2026-10-18;Germany_Oberliga_Westfalen;v21;Erkenschwick;ASC 09 Dortmund;KO;23;69.57
+2026-10-18;Germany_Oberliga_Westfalen;v21;Munster 2;Verl 2;KO;23;69.57
+2026-10-18;Germany_Regionalliga_Bayern;v24;Augsburg 2;Schweinfurt;OK;34;61.76
+2026-10-18;Germany_Regionalliga_Nord;v13;Amburgo 2;VfB Oldenburg;OK;24;83.33
+2026-10-18;Germany_Regionalliga_Nordost;v22;Magdeburg 2;Greifswald;OK;22;68.18
+2026-10-18;Germany_Regionalliga_Sudwest;v24;Homburg;Freiburg 2;OK;40;60.0
+2026-10-18;Latvia_NakotnesLiga;v13;Valmiera;Tukums 2000 2;OK;23;82.61
+2026-10-18;Mexico_LigaExpansionMX_Apertura;v24;Cancun;Venados;KO;24;66.67
+2026-10-18;Mexico_LigaExpansionMX_Apertura;v24;Leones Negros;Alebrijes Oaxaca;OK;24;66.67
+2026-10-18;Netherlands_Eredivisie;v21;Groningen;Ajax;OK;21;66.67
+2026-10-18;Netherlands_Eredivisie;v21;Twente;Utrecht;OK;21;66.67
+2026-10-18;Netherlands_Eredivisie;v21;Nijmegen;Sittard;OK;21;66.67
+2026-10-18;Netherlands_Eredivisie;v21;Zwolle;G.A. Eagles;OK;21;66.67
+2026-10-18;Norway_2ndDivision_Group1;v24;Lysekloster;Traeff;OK;36;72.22
+2026-10-18;Norway_2ndDivision_Group1;v24;Jerv;Sotra;OK;36;72.22
+2026-10-18;Norway_2ndDivision_Group1;v24;Brattvag;Bjarg;OK;36;72.22
+2026-10-18;Norway_3rdDivision_Group1;v13;Lokomotiv Oslo;Ready;OK;39;82.05
+2026-10-18;Norway_3rdDivision_Group2;v22def;Aalesund 2;Byåsen;OK;36;83.33
+2026-10-18;Norway_3rdDivision_Group5;v20plus;Floeya;Tromsø 2;OK;21;90.48
+2026-10-18;Norway_3rdDivision_Group5;v20plus;Ulfstind;Lillestrom 2;OK;21;90.48
+2026-10-18;Norway_Eliteserien;v24;Vålerenga;Brann;OK;42;71.43
+2026-10-18;Norway_Eliteserien;v24;Molde;Start;OK;42;71.43
+2026-10-18;Norway_OBOSLigaen;v13;Åsane;Stabaek;KO;39;76.92
+2026-10-18;Norway_OBOSLigaen;v13;Kongsvinger;Sandnes;OK;39;76.92
+2026-10-18;Norway_OBOSLigaen;v13;Odd;Strømmen;OK;39;76.92
+2026-10-18;Poland_Division2;v24;Podhale Nowy Targ;Z. Gora;KO;26;61.54
+2026-10-18;Poland_Division2;v24;Pruszkow;Bielsko-Biala;KO;26;61.54
+2026-10-18;Poland_Ekstraklasa;v24;Gornik Zabrze;Piast;KO;24;54.17
+2026-10-18;Poland_Ekstraklasa;v24;Zaglebie;Jagiellonia;KO;24;54.17
+2026-10-18;Poland_IIILiga_Group1;v20plus;Weszlo;Mazovia Minsk Mazowiecki;OK;23;73.91
+2026-10-18;Poland_IIILiga_Group1;v20plus;Jagiellonia 2;Swit;OK;23;73.91
+2026-10-18;Poland_IIILiga_Group2;v13;Lech 2;Sroda;OK;20;80.0
+2026-10-18;Poland_IIILiga_Group4;v24;Busko-Zdroj;Hetman Zamosc;OK;21;80.95
+2026-10-18;Slovakia_3Liga_West;v24;Belusa;Nitra;OK;27;62.96
+2026-10-18;Slovakia_3Liga_West;v24;Dun. Streda B;Puchov;KO;27;62.96
+2026-10-18;Slovakia_NikeLiga;v24;Zilina;Dun. Streda;OK;20;55.0
+2026-10-18;Slovakia_NikeLiga;v24;Banska Bystrica;Podbrezova;KO;20;55.0
+2026-10-18;Slovakia_NikeLiga;v24;Michalovce;Kosice;KO;20;55.0
+2026-10-18;Sweden_Allsvenskan;v24;Malmo FF;Hacken;KO;38;57.89
+2026-10-18;Sweden_Division1_Norra;v24;Vasalund;AFC Eskilstuna;OK;47;61.7
+2026-10-18;Sweden_Division1_Norra;v24;Umeå;Assyriska FF;OK;47;61.7
+2026-10-18;Sweden_Division1_Sodra;v24;Olympic;Utsikten;OK;65;61.54
+2026-10-18;Sweden_Division1_Sodra;v24;Kristianstad;Trollhättan;OK;65;61.54
+2026-10-18;Sweden_Division2_SodraGotaland;v22;IFK Berga;Linero IF;KO;26;73.08
+2026-10-18;Sweden_Division2_SodraGotaland;v22;Nosaby;Osterlen;KO;26;73.08
+2026-10-18;Sweden_Division2_SodraGotaland;v22;Karlskrona;Rappe GOIF;OK;26;73.08
+2026-10-18;USA_MLS;v251;Cincinnati;Columbus Crew;KO;29;86.21
+2026-10-18;USA_MLS;v251;Atlanta Utd;Inter Miami;OK;29;86.21
+2026-10-18;USA_USLChampionship;v24;Orange County SC;Phoenix Rising;OK;29;37.93
+2026-10-18;USA_USLChampionship;v24;Monterey Bay;Colorado Springs;KO;29;37.93
+2026-10-18;USA_USLLeagueOne;v24;Greenville;Charlotte Independ.;OK;51;50.98
+2026-10-18;USA_USLLeagueOne;v24;Westchester SC;Union Omaha;OK;51;50.98
+2026-10-18;USA_USLLeagueOne;v24;Boise;AV Alta;OK;51;50.98
+2026-10-18;USA_USLLeagueOne;v24;Forward Madison;Portland Hearts of Pine;KO;51;50.98
+2026-10-18;USA_USLLeagueOne;v24;Fort Wayne;Sarasota Paradise;OK;51;50.98
+2026-10-18;USA_USLLeagueOne;v24;Spokane Velocity;Chattanooga Red Wolves;KO;51;50.98
+2026-10-19;England_IsthmianLeaguePremierDivision;v24;Aveley;Maldon & Tiptree;OK;29;75.86
+2026-10-19;Iceland_BestaDeildKarla;v26;Fram;Akranes;OK;24;79.17
+2026-10-19;Norway_3rdDivision_Group1;v13;K. Oslo 2;Frigg;OK;40;82.5
+2026-10-19;Norway_3rdDivision_Group2;v22def;Melhus;Ranheim 2;OK;37;83.78
+2026-10-19;Norway_3rdDivision_Group2;v22def;Rosenborg 2;Ntnui;OK;37;83.78
+2026-10-19;Norway_3rdDivision_Group3;v22def;Brann 2;Austevoll;KO;32;90.62
+2026-10-19;Norway_3rdDivision_Group4;v13;Akra;Stabaek 2;OK;33;81.82
+2026-10-19;Norway_3rdDivision_Group6;v13;Sarpsborg 08 2;Bjorkelangen;OK;33;84.85
+2026-10-19;Serbia_PrvaLiga;v24;Sp. Subotica;Borac 1926;OK;25;56.0
+2026-10-19;Sweden_Superettan;v24;Varberg;Helsingborg;KO;45;44.44
+2026-10-20;England_Championship;v24;Wolves;Portsmouth;KO;27;55.56
+2026-10-20;England_IsthmianLeaguePremierDivision;v24;Three Bridges;Eastbourne Boro;KO;30;76.67
+2026-10-20;England_IsthmianLeaguePremierDivision;v24;Wingate & Finchley;Carshalton;OK;30;76.67
+2026-10-20;England_IsthmianLeaguePremierDivision;v24;Ramsgate;Stanway;KO;30;76.67
+2026-10-20;England_IsthmianLeaguePremierDivision;v24;Brentwood;Dartford;OK;30;76.67
+2026-10-20;England_IsthmianLeaguePremierDivision;v24;Dulwich Hamlet;Chatham;OK;30;76.67
+2026-10-20;England_LeagueOne;v24;Cambridge Utd;Wycombe;OK;21;42.86
+2026-10-20;England_LeagueOne;v24;Blackpool;Milton Keynes;KO;21;42.86
+2026-10-20;England_LeagueOne;v24;Notts County;Sheffield Wed;KO;21;42.86
+2026-10-20;England_LeagueOne;v24;Luton;Barnsley;OK;21;42.86
+2026-10-20;England_LeagueOne;v24;Bromley;Leicester;OK;21;42.86
+2026-10-20;England_SouthernLeaguePremierSouth;v24;Chertsey;Evesham;KO;25;64.0
+2026-10-20;England_SouthernLeaguePremierSouth;v24;Taunton;Bracknell;OK;25;64.0
+2026-10-20;England_SouthernLeaguePremierSouth;v24;Bath;Havant & W;KO;25;64.0
+2026-10-20;England_SouthernLeaguePremierSouth;v24;Hanworth;Chippenham;KO;25;64.0
+2026-10-20;England_SouthernLeaguePremierSouth;v24;Yate Town;Sholing;KO;25;64.0
+2026-10-20;England_SouthernLeaguePremierSouth;v24;Uxbridge;Malvern Town;OK;25;64.0
+2026-10-20;Germany_Oberliga_SchleswigHolstein;v13;Kilia Kiel;Nordmark Satrup;OK;23;95.65
+2026-10-20;Kyrgyzstan_PremierLiga;v24;Dordoi Bishkek;Muras United;KO;35;80.0
+2026-10-21;Austria_Regionalliga_South;v21;Kalsdorf;Lafnitz;KO;27;66.67
+2026-10-21;England_IsthmianLeaguePremierDivision;v24;Whyteleafe;Burgess Hill;OK;35;74.29
+2026-10-21;Kyrgyzstan_PremierLiga;v24;Bars;Abdysh-Ata;KO;36;77.78
+2026-10-21;Norway_3rdDivision_Group2;v22def;Aalesund 2;Nardo;OK;39;84.62
+2026-10-21;Switzerland_PromotionLeague;v24;Kreuzlingen;Bulle;OK;40;70.0
+2026-10-22;Kazakhstan_FirstLeague;v21;Aktobe 2;FC Astana 2;OK;20;80.0
+2026-10-22;Kazakhstan_FirstLeague;v21;Yelimay Semey 2;Tobol 2;OK;20;80.0
+2026-10-22;Kyrgyzstan_PremierLiga;v24;Ozgon;Asia Talas;KO;37;75.68
+2026-10-22;Kyrgyzstan_PremierLiga;v24;Aldier;Asiagoal Bishkek;OK;37;75.68
+2026-10-22;Mexico_LigaMX_Apertura;v24;Pachuca;Cruz Azul;OK;20;40.0
+2026-10-22;Mexico_LigaMX_Apertura;v24;Toluca;Tijuana;OK;20;40.0
+2026-10-22;Mexico_LigaMX_Apertura;v24;Atlas;Club America;OK;20;40.0
+2026-10-22;USA_USLChampionship;v24;Sporting Jax;Louisville City;KO;31;38.71
+2026-10-22;USA_USLLeagueOne;v24;New York Cosmos;Spokane Velocity;OK;57;52.63
+2026-10-23;Austria_Burgenland;v24;Bad Sauerbrunn;Oberpullendorf;KO;31;77.42
+2026-10-23;Austria_Burgenland;v24;SV Eberau;Kohfidisch;KO;31;77.42
+2026-10-23;Austria_Burgenland;v24;Pama;Pinkafeld;OK;31;77.42
+2026-10-23;Austria_Burgenland;v24;Leithaprodersdorf;Neusiedl;OK;31;77.42
+2026-10-23;Austria_Karnten;v26def;Lendorf;Launsdorf;OK;22;90.91
+2026-10-23;Austria_Niederosterreich;v24;Langenrohr;Ebreichsdorf;KO;20;65.0
+2026-10-23;Austria_Niederosterreich;v24;SCU Kilb;Admira (Am);OK;20;65.0
+2026-10-23;Austria_Oberosterreich;v21;Vocklamarkt;Andorf;OK;22;77.27
+2026-10-23;Austria_Oberosterreich;v21;Garsten;Pregarten;KO;22;77.27
+2026-10-23;Austria_Oberosterreich;v21;Gmunden;Bad Ischl;KO;22;77.27
+2026-10-23;Austria_Regionalliga_East;v24;Parndorf;Warth;OK;23;56.52
+2026-10-23;Austria_Regionalliga_South;v22;Tillmitsch;Allerheiligen;OK;20;70.0
+2026-10-23;Austria_Regionalliga_West;v22;Kitzbuhel;Wolfurt;OK;23;86.96
+2026-10-23;Austria_Regionalliga_West;v22;SC Imst;Fugen;OK;23;86.96
+2026-10-23;Austria_Regionalliga_West;v22;Schwaz;SK St. Johann;OK;23;86.96
+2026-10-23;Austria_Salzburg;v13;Strasswalchen;Golling;OK;27;92.59
+2026-10-23;Austria_Steiermark;v24;Ilzer SV;Leoben;OK;23;73.91
+2026-10-23;Austria_Steiermark;v24;Kindberg Murzhofen;Hohenhaus Schladming;OK;23;73.91
+2026-10-23;Austria_Steiermark;v24;Lebring;SV Wildon;OK;23;73.91
+2026-10-23;Austria_Steiermark;v24;UFC Fehring;Weindorf St. Anna;KO;23;73.91
+2026-10-23;Austria_Steiermark;v24;Pachern;SV Schermann Rorhrbach;OK;23;73.91
+2026-10-23;Austria_Steiermark;v24;TUS Bad Waltersdorf;SV Union Gnas;KO;23;73.91
+2026-10-23;Austria_Tirol;v22;Haiming;SC Kundl;OK;26;69.23
+2026-10-23;Austria_Tirol;v22;SV Oberperfuss;FC Natters;KO;26;69.23
+2026-10-23;CzechRepublic_4Liga_GroupB;v24;Hvezda Cheb;Karlovy Vary;OK;38;71.05
+2026-10-23;CzechRepublic_4Liga_GroupE;v13;Batov;Strani;OK;28;71.43
+2026-10-23;CzechRepublic_ChNL;v24;Opava;Ostrava B;KO;23;60.87
+2026-10-23;CzechRepublic_ChNL;v24;Dukla Praga;Kladno;KO;23;60.87
+2026-10-23;CzechRepublic_ChNL;v24;Jihlava;Vlasim;KO;23;60.87
+2026-10-23;Denmark_2ndDivision;v24;Roskilde;F. Amager;OK;20;45.0
+2026-10-23;Denmark_3rdDivision;v24;BK Frem;Helsingor;KO;31;64.52
+2026-10-23;Denmark_3rdDivision;v24;Sundby;Bronshoj;OK;31;64.52
+2026-10-23;England_Championship;v24;Bolton;Middlesbrough;OK;28;53.57
+2026-10-23;Estonia_Esiliiga;v13;Tartu Welco;Tallinna Kalev;OK;28;75.0
+2026-10-23;Estonia_Meistriliiga;v21;Nomme Utd;Parnu JK Vaprus;OK;20;75.0
+2026-10-23;FaroeIslands_1Deild;v26;Runavik 2;Vikingur 2;KO;27;85.19
+2026-10-23;FaroeIslands_1Deild;v26;Streymur 2;Hoyvik;KO;27;85.19
+2026-10-23;Germany_2Bundesliga;v24;Darmstadt;St. Pauli;KO;20;35.0
+2026-10-23;Germany_3Liga;v24;RW Essen;Regensburg;KO;32;56.25
+2026-10-23;Germany_Oberliga_BadenWurttemberg;v24;Singen;FC Holzhausen;OK;44;70.45
+2026-10-23;Germany_Oberliga_Bayern_Nord;v24;Neudrossenfeld;Bayern Hof;OK;38;63.16
+2026-10-23;Germany_Oberliga_Bayern_Nord;v24;Aschaffenburg;Gebenbach;KO;38;63.16
+2026-10-23;Germany_Oberliga_Bayern_Nord;v24;DJK Bamberg;Ammerthal;OK;38;63.16
+2026-10-23;Germany_Oberliga_Bayern_Sud;v13;Monaco 1860 2;Pipinsried;KO;23;73.91
+2026-10-23;Germany_Oberliga_Bremen;v21;Oberneuland;BTS Neustadt;KO;30;83.33
+2026-10-23;Germany_Oberliga_Bremen;v21;Brinkumer;Grohn;OK;30;83.33
+2026-10-23;Germany_Oberliga_Hamburg;v22def;Harksheide;Paloma;KO;31;77.42
+2026-10-23;Germany_Oberliga_Hamburg;v22def;Norderstedt 2;Tesla Hamburg;OK;31;77.42
+2026-10-23;Germany_Oberliga_Hamburg;v22def;ETSV Hamburg;Vorwarts-Wacker;OK;31;77.42
+2026-10-23;Germany_Oberliga_Niederrhein;v24;Dusseldorf 2;SC St.Tonis;KO;26;73.08
+2026-10-23;Germany_Oberliga_Niedersachsen;v23;Spelle-Venhaus;Nordhorn;OK;20;75.0
+2026-10-23;Germany_Oberliga_RheinlandPfalzSaar;v22def;Elversberg 2;Auersmacher;OK;33;72.73
+2026-10-23;Germany_Regionalliga_Bayern;v24;Buchbach;Burghausen;OK;35;62.86
+2026-10-23;Germany_Regionalliga_Sudwest;v24;Kaiserslautern 2;Freiburg 2;OK;41;60.98
+2026-10-23;Germany_Regionalliga_Sudwest;v24;Offenbach;Freiberg;KO;41;60.98
+2026-10-23;Germany_Regionalliga_West;v23;FC Gutersloh;Wiedenbruck;OK;35;74.29
+2026-10-23;Germany_Regionalliga_West;v23;Dortmund 2;Bonner;KO;35;74.29
+2026-10-23;Netherlands_EersteDivisie;v22def;FC Volendam;Jong Utrecht;OK;25;68.0
+2026-10-23;Netherlands_EersteDivisie;v22def;Jong AZ;Helmond;OK;25;68.0
+2026-10-23;Netherlands_Eredivisie;v21;G.A. Eagles;Telstar;OK;25;72.0
+2026-10-23;NorthernIreland_NIFLChampionship;v21;Newry City;Newington;KO;23;43.48
+2026-10-23;Norway_3rdDivision_Group4;v13;Varhaug;Haugesund 2;OK;34;82.35
+2026-10-23;Poland_Division2;v24;Kleczew;Slask 2;OK;28;57.14
+2026-10-23;Poland_Ekstraklasa;v24;Widzew Lodz;Gornik Zabrze;KO;26;50.0
+2026-10-23;Serbia_PrvaLiga;v24;Teleoptik;TSC;OK;26;57.69
+2026-10-23;Slovakia_3Liga_West;v24;Myjava;Dun. Streda B;KO;29;62.07
+2026-10-23;Sweden_Division1_Norra;v24;Jarfalla;Hammarby TFF;OK;49;63.27
+2026-10-23;Wales_CymruPremier;v24;Cambrian United;Airbus;OK;23;65.22
+2026-10-23;Wales_CymruPremier;v24;Caernarfon;Briton Ferry;OK;23;65.22
+2026-10-24;Austria_Burgenland;v24;Rust;Neudorf/Parndorf;KO;35;74.29
+2026-10-24;Austria_Burgenland;v24;Lackenbach;Deutschkreutz;OK;35;74.29
+2026-10-24;Austria_Karnten;v26def;KAC 1909;Seeboden;OK;23;91.3
+2026-10-24;Austria_Niederosterreich;v24;Amstetten (Am);Retz;KO;22;63.64
+2026-10-24;Austria_Niederosterreich;v24;St. Peter in der Au;Wiener Neustadt;OK;22;63.64
+2026-10-24;Austria_Oberosterreich;v24;ASK St.Valentin;Ostermiething;OK;36;72.22
+2026-10-24;Austria_Oberosterreich;v24;Union Unis Gschwandt;St. Martin im Muhlreis;OK;36;72.22
+2026-10-24;Austria_Regionalliga_West;v22;Hohenems;Tirol (Am);OK;26;88.46
+2026-10-24;Austria_Regionalliga_West;v22;Lauterach;Lochau;KO;26;88.46
+2026-10-24;Austria_Regionalliga_West;v22;Rothis;FC Lustenau;OK;26;88.46
+2026-10-24;Austria_Salzburg;v13;Burmoos;UFC Siezenheim;OK;28;92.86
+2026-10-24;Austria_Salzburg;v13;Thalgau;TSU Bramberg;OK;28;92.86
+2026-10-24;Austria_Steiermark;v21;Stadtwerke Bruck/Mur;Furstenfeld;OK;20;80.0
+2026-10-24;Austria_Tirol;v20plus;SC Mils 05;Absam;OK;20;70.0
+2026-10-24;CzechRepublic_3CFL_GroupA;v24;Kraluv Dvur;Ceske Budejovice;OK;25;80.0
+2026-10-24;CzechRepublic_3CFL_GroupA;v24;Loko Praha;Admira Prague;OK;25;80.0
+2026-10-24;CzechRepublic_3CFL_GroupA;v24;Domazlice;Plzen B;OK;25;80.0
+2026-10-24;CzechRepublic_3CFL_GroupA;v24;Benesov;Bohemians 1905 B;OK;25;80.0
+2026-10-24;CzechRepublic_3CFL_GroupA;v24;Povltavska FA;Pribram B;KO;25;80.0
+2026-10-24;CzechRepublic_4Liga_GroupA;v24;Spartak Pribram;Sobeslav;OK;26;73.08
+2026-10-24;CzechRepublic_4Liga_GroupA;v24;Nyrsko;Taborsko akademie;OK;26;73.08
+2026-10-24;CzechRepublic_4Liga_GroupA;v24;Cesky Krumlov;Horovice;OK;26;73.08
+2026-10-24;CzechRepublic_4Liga_GroupA;v24;Rokycany;Domazlice B;OK;26;73.08
+2026-10-24;CzechRepublic_4Liga_GroupA;v24;Krimice;Milevsko;OK;26;73.08
+2026-10-24;CzechRepublic_4Liga_GroupB;v26def;Psary;Velvary;OK;25;72.0
+2026-10-24;CzechRepublic_4Liga_GroupB;v26def;Usti n. L. B;Vysehrad;OK;25;72.0
+2026-10-24;CzechRepublic_4Liga_GroupC;v22def;Slavia HK;Chrudim B;OK;24;79.17
+2026-10-24;CzechRepublic_4Liga_GroupD;v24;Kurim;Bystrc;OK;26;76.92
+2026-10-24;CzechRepublic_4Liga_GroupD;v24;Bedrichov;Sparta Brno;OK;26;76.92
+2026-10-24;CzechRepublic_4Liga_GroupE;v13;Holesov;Vsechovice;OK;29;72.41
+2026-10-24;CzechRepublic_4Liga_GroupE;v13;Breclav;Slavicin;KO;29;72.41
+2026-10-24;CzechRepublic_4Liga_GroupF;v22;Novy Jicin;Vratimov;KO;31;87.1
+2026-10-24;CzechRepublic_4Liga_GroupF;v22;Opava B;Hlucin;OK;31;87.1
+2026-10-24;CzechRepublic_4Liga_GroupF;v22;Bridlicna;Valasske Mezirici;KO;31;87.1
+2026-10-24;CzechRepublic_ChNL;v24;Ceska Lipa;Pribram;OK;26;53.85
+2026-10-24;Denmark_3rdDivision;v24;Holstebro;Horsholm-Usserod;OK;33;63.64
+2026-10-24;Denmark_3rdDivision;v24;Næsby;Holbaek;OK;33;63.64
+2026-10-24;England_Championship;v24;Blackburn;Wrexham;KO;29;55.17
+2026-10-24;England_Championship;v24;Cardiff;Birmingham;KO;29;55.17
+2026-10-24;England_Championship;v24;Lincoln;Burnley;OK;29;55.17
+2026-10-24;England_Championship;v24;West Ham;Southampton;OK;29;55.17
+2026-10-24;England_Championship;v24;Stoke;Bristol City;KO;29;55.17
+2026-10-24;England_Championship;v24;Preston;West Brom;KO;29;55.17
+2026-10-24;England_IsthmianLeaguePremierDivision;v24;Maldon & Tiptree;Dulwich Hamlet;KO;36;75.0
+2026-10-24;England_IsthmianLeaguePremierDivision;v24;Chatham;Welling;OK;36;75.0
+2026-10-24;England_LeagueOne;v24;Blackpool;Mansfield;OK;26;46.15
+2026-10-24;England_LeagueOne;v24;Luton;Leicester;OK;26;46.15
+2026-10-24;England_LeagueOne;v24;Cambridge Utd;Plymouth;OK;26;46.15
+2026-10-24;England_NPLPremierDivision;v24;Warrington;Gainsborough;OK;27;62.96
+2026-10-24;England_NPLPremierDivision;v24;Emley;Lancaster;KO;27;62.96
+2026-10-24;England_NPLPremierDivision;v24;FC United;Whitby;OK;27;62.96
+2026-10-24;England_SouthernLeaguePremierCentral;v24;Bishop's Stortford;Real Bedford;OK;21;61.9
+2026-10-24;England_SouthernLeaguePremierSouth;v24;Basingstoke;Plymouth Parkway;KO;31;58.06
+2026-10-24;Estonia_EsiliigaB;v22def;Legion;Johvi Phoenix;OK;31;77.42
+2026-10-24;Estonia_EsiliigaB;v22def;Tabasalu;Tartu Kalev;OK;31;77.42
+2026-10-24;FaroeIslands_1Deild;v22;Fuglafjordur;FC Suduroy;OK;45;80.0
+2026-10-24;FaroeIslands_1Deild;v22;TB Tvoroyri;Sandur;OK;45;80.0
+2026-10-24;Germany_2Bundesliga;v24;Heidenheim;Cottbus;KO;21;33.33
+2026-10-24;Germany_2Bundesliga;v24;Hertha;Bielefeld;KO;21;33.33
+2026-10-24;Germany_3Liga;v24;Viktoria Koln;Verl;OK;33;54.55
+2026-10-24;Germany_3Liga;v24;Ingolstadt;Duisburg;OK;33;54.55
+2026-10-24;Germany_3Liga;v24;Stoccarda 2;Aachen;OK;33;54.55
+2026-10-24;Germany_Oberliga_BadenWurttemberg;v24;Pforzheim;Villingen;KO;45;71.11
+2026-10-24;Germany_Oberliga_BadenWurttemberg;v24;Essingen;Backnang;OK;45;71.11
+2026-10-24;Germany_Oberliga_BadenWurttemberg;v24;Balingen;Bahlinger;KO;45;71.11
+2026-10-24;Germany_Oberliga_BadenWurttemberg;v24;Ravensburg;Reutlingen;KO;45;71.11
+2026-10-24;Germany_Oberliga_BadenWurttemberg;v24;Young Boys Reutlingen;Oberachern;OK;45;71.11
+2026-10-24;Germany_Oberliga_Bayern_Nord;v24;Weiden;Ingolstadt 2;OK;41;63.41
+2026-10-24;Germany_Oberliga_Bayern_Nord;v24;Nordlingen;Fortuna Regensburg;OK;41;63.41
+2026-10-24;Germany_Oberliga_Bayern_Nord;v24;Grossbardorf;Regensburg 2;OK;41;63.41
+2026-10-24;Germany_Oberliga_Bayern_Nord;v24;Wurzburger FV;Stadeln;OK;41;63.41
+2026-10-24;Germany_Oberliga_Bayern_Sud;v13;Kirchanschoring;Pfaffenhofen;KO;24;70.83
+2026-10-24;Germany_Oberliga_Bremen;v21;Woltmershausen;Geestemunde;OK;32;81.25
+2026-10-24;Germany_Oberliga_Bremen;v21;Union 60 Bremen;Bremen III;OK;32;81.25
+2026-10-24;Germany_Oberliga_Bremen;v21;Aumund-Vegesack;OSC Bremerhaven;OK;32;81.25
+2026-10-24;Germany_Oberliga_Hamburg;v23;Altona;Niendorfer TSV;OK;43;76.74
+2026-10-24;Germany_Oberliga_Hessen;v251;Unter-Flockenbach;Hanauer SC;OK;21;80.95
+2026-10-24;Germany_Oberliga_Hessen;v251;Giessen;RW Walldorf;OK;21;80.95
+2026-10-24;Germany_Oberliga_Niederrhein;v24;Uerdingen;FC Monheim;KO;27;70.37
+2026-10-24;Germany_Oberliga_Niederrhein;v24;SW Essen;Schonnebeck;OK;27;70.37
+2026-10-24;Germany_Oberliga_RheinlandPfalzSaar;v22def;Schott Mainz;Worms;OK;34;73.53
+2026-10-24;Germany_Oberliga_SchleswigHolstein;v13;Rotenhof;Kaltenkirchen;OK;24;95.83
+2026-10-24;Germany_Oberliga_SchleswigHolstein;v13;Oldenburger;Hohenwestedt;OK;24;95.83
+2026-10-24;Germany_Oberliga_SchleswigHolstein;v13;Kilia Kiel;Rapid Lubeck;OK;24;95.83
+2026-10-24;Germany_Oberliga_SchleswigHolstein;v13;Heider SV;Lubeck 2;OK;24;95.83
+2026-10-24;Germany_Regionalliga_Bayern;v24;Augsburg 2;Illertissen;OK;36;63.89
+2026-10-24;Germany_Regionalliga_Bayern;v24;Norinberga 2;Aubstadt;KO;36;63.89
+2026-10-24;Germany_Regionalliga_Nord;v13;Drochtersen/Assel;Todesfelde;OK;25;84.0
+2026-10-24;Germany_Regionalliga_Nord;v13;Hannover 2;Norderstedt;OK;25;84.0
+2026-10-24;Germany_Regionalliga_Nord;v13;VfB Oldenburg;Hannoverscher SC;OK;25;84.0
+2026-10-24;Germany_Regionalliga_Nordost;v26;Greifswald;Erfurt;OK;20;80.0
+2026-10-24;Germany_Regionalliga_Nordost;v26;Chemnitzer;Magdeburg 2;OK;20;80.0
+2026-10-24;Germany_Regionalliga_Sudwest;v24;Walldorf;Kassel;OK;43;60.47
+2026-10-24;Germany_Regionalliga_Sudwest;v24;Fulda-Lehnerz;Mainz 2;OK;43;60.47
+2026-10-24;Germany_Regionalliga_Sudwest;v24;Sandhausen;Aalen;KO;43;60.47
+2026-10-24;Germany_Regionalliga_West;v13;Lotte;Siegen;OK;20;80.0
+2026-10-24;Iceland_BestaDeildKarla;v26;KR Reykjavik;Breidablik;OK;25;80.0
+2026-10-24;Iceland_BestaDeildKarla;v26;Vikingur Reykjavik;Fram;OK;25;80.0
+2026-10-24;Iceland_BestaDeildKarla;v26;Akranes;Keflavik;OK;25;80.0
+2026-10-24;Japan_J1League;v24;Kashima;Kashiwa;OK;20;60.0
+2026-10-24;Latvia_NakotnesLiga;v13;Valmiera;JFK Ventspils;OK;24;83.33
+2026-10-24;Mexico_LigaMX_Apertura;v24;Atlante;Atl. San Luis;KO;23;47.83
+2026-10-24;Netherlands_EersteDivisie;v13;Dordrecht;Venlo;OK;20;80.0
+2026-10-24;Netherlands_Eredivisie;v21;Utrecht;Zwolle;KO;26;73.08
+2026-10-24;Netherlands_Eredivisie;v21;Willem 2;Cambuur;OK;26;73.08
+2026-10-24;Norway_2ndDivision_Group1;v24;Vidar;Lysekloster;KO;39;74.36
+2026-10-24;Norway_2ndDivision_Group1;v24;Mjoendalen;Brattvag;OK;39;74.36
+2026-10-24;Norway_2ndDivision_Group1;v24;Sotra;Notodden;OK;39;74.36
+2026-10-24;Norway_3rdDivision_Group1;v13;Heming;Lokomotiv Oslo;OK;41;82.93
+2026-10-24;Norway_3rdDivision_Group1;v13;Ready;Konnerud;OK;41;82.93
+2026-10-24;Norway_3rdDivision_Group1;v13;Asker;Union Carl Berner;OK;41;82.93
+2026-10-24;Norway_3rdDivision_Group1;v13;Frigg;Grei;OK;41;82.93
+2026-10-24;Norway_3rdDivision_Group2;v22def;Volda TI;Spjelkavik;OK;40;85.0
+2026-10-24;Norway_3rdDivision_Group2;v22def;Orkla;Nardo;OK;40;85.0
+2026-10-24;Norway_3rdDivision_Group3;v22def;Austevoll;Stord;OK;33;87.88
+2026-10-24;Norway_3rdDivision_Group3;v22def;Varegg;Forde;OK;33;87.88
+2026-10-24;Norway_3rdDivision_Group4;v13;Brodd;Akra;OK;35;82.86
+2026-10-24;Norway_3rdDivision_Group4;v13;Staal Jorpeland;Vindbjart;OK;35;82.86
+2026-10-24;Norway_3rdDivision_Group5;v20plus;Skedsmo;Kongsvinger 2;OK;23;91.3
+2026-10-24;Norway_3rdDivision_Group5;v20plus;Strømsgodset 2;Ulfstind;OK;23;91.3
+2026-10-24;Norway_3rdDivision_Group5;v20plus;Lillestrom 2;Floeya;KO;23;91.3
+2026-10-24;Norway_3rdDivision_Group6;v13;Fram;Lillehammer;OK;34;85.29
+2026-10-24;Norway_3rdDivision_Group6;v13;Brumunddal;Drobak-Frogn;OK;34;85.29
+2026-10-24;Norway_3rdDivision_Group6;v13;Bjorkelangen;Raelingen;OK;34;85.29
+2026-10-24;Norway_Eliteserien;v24;Bodo/Glimt;Vålerenga;KO;44;72.73
+2026-10-24;Norway_Eliteserien;v24;HamKam;Rosenborg;OK;44;72.73
+2026-10-24;Norway_OBOSLigaen;v13;Raufoss;Ranheim;OK;42;76.19
+2026-10-24;Peru_Liga1_Clausura;v24;Huancayo;Alianza Atl.;OK;20;75.0
+2026-10-24;Peru_Liga1_Clausura;v24;Cusco;Sporting Cristal;OK;20;75.0
+2026-10-24;Poland_Division2;v24;Chojniczanka;Legia 2;OK;29;58.62
+2026-10-24;Poland_Division2;v24;Z. Gora;Leczna;OK;29;58.62
+2026-10-24;Poland_Division2;v24;S. Wola;Sandecja;KO;29;58.62
+2026-10-24;Poland_Ekstraklasa;v24;Wisla;Rakow;OK;27;48.15
+2026-10-24;Poland_Ekstraklasa;v24;Korona;Katowice;KO;27;48.15
+2026-10-24;Poland_IIILiga_Group1;v22def;Zambrow;Mlawa;KO;20;80.0
+2026-10-24;Poland_IIILiga_Group1;v22def;Mazovia Minsk Mazowiecki;T. Mazowiecki;OK;20;80.0
+2026-10-24;Poland_IIILiga_Group1;v22def;Elblag;Jagiellonia 2;KO;20;80.0
+2026-10-24;Poland_IIILiga_Group1;v22def;Lidzbark Warminski;LKS Lodz 2;OK;20;80.0
+2026-10-24;Poland_IIILiga_Group2;v13;Kotwica Kornik;Wda Swiecie;KO;21;80.95
+2026-10-24;Poland_IIILiga_Group2;v13;KKS Kalisz;Sroda;KO;21;80.95
+2026-10-24;Poland_IIILiga_Group2;v13;Luzino;Lech 2;OK;21;80.95
+2026-10-24;Poland_IIILiga_Group2;v13;Blekitni Stargard;Grom Nowy Staw;OK;21;80.95
+2026-10-24;Poland_IIILiga_Group3;v24;Sulow;Sleza Wroclaw;OK;27;55.56
+2026-10-24;Poland_IIILiga_Group3;v24;ROW Rybnik;Nysa;OK;27;55.56
+2026-10-24;Poland_IIILiga_Group4;v24;Czarni Polaniec;Busko-Zdroj;OK;22;81.82
+2026-10-24;Poland_IIILiga_Group4;v24;Chelmianka Chelm;Korona 2;KO;22;81.82
+2026-10-24;Serbia_PrvaLiga;v24;Graficar Beograd;Sp. Subotica;KO;27;59.26
+2026-10-24;Slovakia_2Liga;v24;MFK Bytca;Presov;OK;21;71.43
+2026-10-24;Slovakia_2Liga;v24;Povazska Bystrica;L. Mikulas;OK;21;71.43
+2026-10-24;Slovakia_2Liga;v24;Samorin;Pohronie;OK;21;71.43
+2026-10-24;Slovakia_3Liga_West;v24;FKM Nove Zamky;Castkovce;KO;30;60.0
+2026-10-24;Slovakia_3Liga_West;v24;Nitra;Komarno B;OK;30;60.0
+2026-10-24;Slovakia_NikeLiga;v24;Skalica;Trnava;KO;23;52.17
+2026-10-24;SouthKorea_KLeague2;v24;Jeonnam;Daegu;OK;25;44.0
+2026-10-24;Sweden_Allsvenskan;v24;Sirius;AIK Stockholm;OK;39;56.41
+2026-10-24;Sweden_Allsvenskan;v24;Kalmar;Brommapojkarna;OK;39;56.41
+2026-10-24;Sweden_Division1_Norra;v24;Sollentuna;Vasalund;KO;50;64.0
+2026-10-24;Sweden_Division1_Sodra;v24;Laholms;Olympic;OK;67;62.69
+2026-10-24;Sweden_Division1_Sodra;v24;Eskilsminne;Lunds;OK;67;62.69
+2026-10-24;Sweden_Division1_Sodra;v24;Hassleholms IF;Skövde;KO;67;62.69
+2026-10-24;Sweden_Division1_Sodra;v24;AFC Malmo;Angelholm;OK;67;62.69
+2026-10-24;Sweden_Superettan;v24;Brage;Öster;OK;46;43.48
+2026-10-24;Switzerland_PromotionLeague;v24;Amical Saint-Prex;Basilea 2;KO;41;70.73
+2026-10-24;Switzerland_PromotionLeague;v24;Bruhl SG;Zurigo 2;OK;41;70.73
+2026-10-24;Switzerland_PromotionLeague;v24;Luzerna 2;Paradiso;OK;41;70.73
+2026-10-24;Switzerland_SuperLeague;v21;Zurigo;Luzern;OK;20;85.0
+2026-10-24;Switzerland_SuperLeague;v21;Young Boys;St. Gallen;KO;20;85.0
+2026-10-24;Switzerland_SuperLeague;v21;Servette;Vaduz;OK;20;85.0
+2026-10-24;USA_USLLeagueOne;v24;Portland Hearts of Pine;Charlotte Independ.;OK;58;53.45
+2026-10-24;USA_USLLeagueOne;v24;New York Cosmos;Chattanooga Red Wolves;KO;58;53.45
+2026-10-24;Wales_CymruPremier;v24;Connah's Q.;Llandudno;KO;25;68.0
+2026-10-25;Austria_Salzburg;v13;USK Anif;USV 1960 Berndorf;OK;30;93.33
+2026-10-25;Austria_Salzburg;v13;Neumarkt;Puch;OK;30;93.33
+2026-10-25;Austria_Salzburg;v13;Eugendorf;Union Henndorf;OK;30;93.33
+2026-10-25;Belarus_PershayaLiga;v26;SKA-1938;BATE 2;OK;22;72.73
+2026-10-25;CzechRepublic_3CFL_GroupA;v21;Sparta Praga B;Pisek;KO;23;86.96
+2026-10-25;CzechRepublic_4Liga_GroupA;v24;SK Strakonice 1908;Hluboka nad Vltavou;OK;31;77.42
+2026-10-25;CzechRepublic_4Liga_GroupB;v26def;Meteor Prague;Hostoun;OK;27;74.07
+2026-10-25;CzechRepublic_4Liga_GroupC;v22def;Kolin;Letohrad;OK;25;80.0
+2026-10-25;CzechRepublic_4Liga_GroupD;v24;Pelhrimov;Zdar nad Sazavou;OK;28;78.57
+2026-10-25;CzechRepublic_4Liga_GroupD;v24;Velke Mezirici;FS Trebic;KO;28;78.57
+2026-10-25;CzechRepublic_4Liga_GroupD;v24;Zdirec n. D.;Chotebor;KO;28;78.57
+2026-10-25;CzechRepublic_4Liga_GroupE;v22def;Brumov;Bzenec-Vracov;OK;21;71.43
+2026-10-25;CzechRepublic_4Liga_GroupF;v22;Pusta Polom;Rymarov;KO;34;82.35
+2026-10-25;CzechRepublic_4Liga_GroupF;v22;Bohumin;Stonava;OK;34;82.35
+2026-10-25;CzechRepublic_4Liga_GroupF;v22;Bilovec;Frydek-Mistek B;OK;34;82.35
+2026-10-25;CzechRepublic_ChNL;v24;Slavia Praga B;Prostejov;OK;27;55.56
+2026-10-25;Denmark_2ndDivision;v24;Nykobing;Thisted;OK;21;47.62
+2026-10-25;Germany_2Bundesliga;v24;Osnabruck;Furth;OK;23;30.43
+2026-10-25;Germany_3Liga;v22;Havelse;Saarbrucken;OK;20;60.0
+2026-10-25;Germany_Oberliga_BadenWurttemberg;v24;1. FC Muhlhausen;Teningen;OK;50;68.0
+2026-10-25;Germany_Oberliga_BadenWurttemberg;v24;Neckarsulm;Normannia Gmund;OK;50;68.0
+2026-10-25;Germany_Oberliga_Bremen;v22def;Schwachhausen;Leher;OK;20;85.0
+2026-10-25;Germany_Oberliga_Hamburg;v23;TSV Buchholz 08;HT 16;OK;44;77.27
+2026-10-25;Germany_Oberliga_NOFV_Sud;v24;Dresden 2;Sandersdorf;OK;24;66.67
+2026-10-25;Germany_Oberliga_Niederrhein;v24;Solingen-Wald;Juchen-Garzweiler;OK;29;68.97
+2026-10-25;Germany_Oberliga_Niederrhein;v24;SSVg Velbert;Holzheim;OK;29;68.97
+2026-10-25;Germany_Oberliga_Niederrhein;v24;Meerbusch;Germania Ratingen;OK;29;68.97
+2026-10-25;Germany_Oberliga_Niederrhein;v24;Scherpenberg;Buderich;OK;29;68.97
+2026-10-25;Germany_Oberliga_Niederrhein;v24;Baumberg;Dingden;OK;29;68.97
+2026-10-25;Germany_Oberliga_Niedersachsen;v23;Meppen 2;Drochtersen/Assel 2;OK;21;76.19
+2026-10-25;Germany_Oberliga_Niedersachsen;v23;Heeslinger;Lohne;KO;21;76.19
+2026-10-25;Germany_Oberliga_Westfalen;v23;Verl 2;Clarholz;OK;21;66.67
+2026-10-25;Germany_Oberliga_Westfalen;v23;SpVgg Herne Horsthausen;Gievenbeck;OK;21;66.67
+2026-10-25;Germany_Oberliga_Westfalen;v23;Sprockhovel;Ennepetal;KO;21;66.67
+2026-10-25;Germany_Regionalliga_Bayern;v24;Eichstatt;Monaco 1860;KO;38;63.16
+2026-10-25;Germany_Regionalliga_Nord;v13;St. Pauli 2;SC Weiche-08;OK;28;85.71
+2026-10-25;Germany_Regionalliga_Sudwest;v24;Ulm;Homburg;KO;46;60.87
+2026-10-25;Germany_Regionalliga_West;v13;Oberhausen;Wattenscheid;OK;21;80.95
+2026-10-25;Hungary_NBI;v24;Vasas;Paks;KO;20;50.0
+2026-10-25;Hungary_NBI;v24;Ferencvaros;MTK Budapest;OK;20;50.0
+2026-10-25;Japan_J1League;v24;Kawasaki;Okayama;OK;21;61.9
+2026-10-25;Japan_J1League;v24;Urawa;V-Varen Nagasaki;KO;21;61.9
+2026-10-25;Latvia_NakotnesLiga;v13;Alberts JDFS;Rezekne;OK;25;84.0
+2026-10-25;Mexico_LigaExpansionMX_Apertura;v24;Tlaxcala;Correcaminos;KO;26;65.38
+2026-10-25;Mexico_LigaExpansionMX_Apertura;v24;Zacatecas Mineros;Leones Negros;KO;26;65.38
+2026-10-25;Mexico_LigaExpansionMX_Apertura;v24;Jaiba Brava;Atletico La Paz;OK;26;65.38
+2026-10-25;Mexico_LigaExpansionMX_Apertura;v24;Dorados;Piratas;OK;26;65.38
+2026-10-25;Mexico_LigaMX_Apertura;v24;Leon;Toluca;KO;24;45.83
+2026-10-25;Netherlands_Eredivisie;v21;Nijmegen;Groningen;OK;28;71.43
+2026-10-25;Netherlands_Eredivisie;v21;Sparta Rotterdam;Ajax;OK;28;71.43
+2026-10-25;Netherlands_Eredivisie;v21;Sittard;Excelsior;KO;28;71.43
+2026-10-25;Netherlands_Eredivisie;v21;PSV;Feyenoord;KO;28;71.43
+2026-10-25;Norway_2ndDivision_Group1;v24;Traeff;Arendal;KO;42;73.81
+2026-10-25;Norway_2ndDivision_Group1;v24;Bjarg;Jerv;OK;42;73.81
+2026-10-25;Norway_2ndDivision_Group2;v13;Kjelsaas;Trygg/Lade;OK;32;78.12
+2026-10-25;Norway_3rdDivision_Group2;v22def;Byåsen;Molde 2;OK;42;85.71
+2026-10-25;Norway_3rdDivision_Group5;v20;Fauske Sprint;Bossekop;OK;20;95.0
+2026-10-25;Norway_Eliteserien;v24;Sarpsborg 08;Aalesund;OK;46;71.74
+2026-10-25;Norway_Eliteserien;v24;Molde;Fredrikstad;OK;46;71.74
+2026-10-25;Norway_Eliteserien;v24;Kristiansund;KFUM Oslo;OK;46;71.74
+2026-10-25;Norway_Eliteserien;v24;Lilleström;Brann;OK;46;71.74
+2026-10-25;Norway_Eliteserien;v24;Viking;Tromsø;OK;46;71.74
+2026-10-25;Norway_OBOSLigaen;v13;Sogndal;Kongsvinger;OK;43;76.74
+2026-10-25;Norway_OBOSLigaen;v13;Strømmen;Strömsgodset;KO;43;76.74
+2026-10-25;Norway_OBOSLigaen;v13;Haugesund;Hodd;OK;43;76.74
+2026-10-25;Peru_Liga1_Clausura;v24;U. de Deportes;Juan Pablo 2;OK;22;77.27
+2026-10-25;Peru_Liga1_Clausura;v24;Comerciantes Unidos;Cienciano;OK;22;77.27
+2026-10-25;Poland_Division2;v24;Avia Swidnik;Pruszkow;KO;32;59.38
+2026-10-25;Poland_Ekstraklasa;v24;Slask;Wieczysta Krakow;KO;29;48.28
+2026-10-25;Poland_Ekstraklasa;v24;Legia;Lech;OK;29;48.28
+2026-10-25;Poland_IIILiga_Group3;v24;Zaglebie 2;Stilon Gorzow;OK;29;58.62
+2026-10-25;Poland_IIILiga_Group4;v24;Hetman Zamosc;Jaroslaw;KO;24;79.17
+2026-10-25;Slovakia_2Liga;v24;S. Bratislava B;Inter Bratislava;OK;24;75.0
+2026-10-25;Slovakia_3Liga_West;v24;Velke Ludince;Banik Prievidza;OK;32;59.38
+2026-10-25;Slovakia_3Liga_West;v24;Belusa;Gabcikovo;OK;32;59.38
+2026-10-25;Slovakia_3Liga_West;v24;Trencin B;MSK Senec;KO;32;59.38
+2026-10-25;Slovakia_NikeLiga;v24;Kosice;Zilina;OK;24;50.0
+2026-10-25;Slovakia_NikeLiga;v24;Komarno;Trencin;KO;24;50.0
+2026-10-25;Sweden_Division1_Norra;v24;AFC Eskilstuna;Stocksund;KO;51;62.75
+2026-10-25;Sweden_Division1_Norra;v24;Assyriska FF;Arlanda;OK;51;62.75
+2026-10-25;Sweden_Division1_Norra;v24;Enkoping SK;Pitea;OK;51;62.75
+2026-10-25;Sweden_Division1_Norra;v24;Karlbergs;Umeå;KO;51;62.75
+2026-10-25;Sweden_Division1_Sodra;v24;Trelleborg;Atvidaberg;OK;71;63.38
+2026-10-25;Switzerland_PromotionLeague;v24;Young Boys 2;Kreuzlingen;OK;44;70.45
+2026-10-25;Switzerland_PromotionLeague;v24;Bulle;Grand-Saconnex;OK;44;70.45
+2026-10-25;Switzerland_PromotionLeague;v24;Biel;Cham;OK;44;70.45
+2026-10-25;Switzerland_SuperLeague;v21;Thun;Lugano;OK;23;82.61
+2026-10-25;Switzerland_SuperLeague;v21;Basilea;Grasshoppers;KO;23;82.61
+2026-10-25;USA_USLChampionship;v24;Phoenix Rising;Lexington;OK;32;37.5
+2026-10-25;USA_USLChampionship;v24;Monterey Bay;Las Vegas Lights;OK;32;37.5
+2026-10-25;USA_USLLeagueOne;v24;Sarasota Paradise;Westchester SC;OK;60;53.33
+2026-10-25;USA_USLLeagueOne;v24;Fort Wayne;Boise;KO;60;53.33
+2026-10-26;Austria_Karnten;v26def;SC Landskron;Nussdorf;OK;24;91.67
+2026-10-26;Austria_Karnten;v26def;SGA Sirnitz;Kottmannsdorf;OK;24;91.67
+2026-10-26;Estonia_EsiliigaB;v22def;Levadia U19;Parnu JK Vaprus U21;OK;33;78.79
+2026-10-26;Kyrgyzstan_PremierLiga;v24;Alga;Ozgon;KO;39;74.36
+2026-10-26;Mexico_LigaExpansionMX_Apertura;v24;Tapatio;Atl. Morelia;OK;30;63.33
+2026-10-26;Mexico_LigaMX_Apertura;v24;Club America;Pachuca;OK;25;44.0
+2026-10-26;Mexico_LigaMX_Apertura;v24;Queretaro;Cruz Azul;OK;25;44.0
+2026-10-26;Norway_3rdDivision_Group1;v20;Vaalerenga IF 2;K. Oslo 2;OK;20;85.0
+2026-10-26;Norway_3rdDivision_Group2;v22def;Ranheim 2;Aalesund 2;KO;43;86.05
+2026-10-26;Norway_3rdDivision_Group2;v22def;FK Kvik;Rosenborg 2;OK;43;86.05
+2026-10-26;Norway_3rdDivision_Group3;v22def;Askoy;Åsane 2;OK;35;88.57
+2026-10-26;Norway_3rdDivision_Group3;v22def;Sogndal 2;Brann 2;OK;35;88.57
+2026-10-26;Paraguay_DivisionIntermedia;v24;Resistencia;Benjamin Aceval;OK;20;60.0
+2026-10-26;Sweden_Superettan;v24;Örebro;Falkenberg;KO;47;44.68
+2026-10-27;Bolivia_DivisionProfesional;v22;Bolivar;Universitario de Vinto;OK;23;73.91
+2026-10-27;England_IsthmianLeaguePremierDivision;v24;Enfield Town;Chatham;OK;38;73.68
+2026-10-27;England_IsthmianLeaguePremierDivision;v24;St. Albans;Burgess Hill;OK;38;73.68
+2026-10-27;England_IsthmianLeaguePremierDivision;v24;Welling;Leatherhead;KO;38;73.68
+2026-10-27;England_IsthmianLeaguePremierDivision;v24;Maldon & Tiptree;Eastbourne Boro;OK;38;73.68
+2026-10-27;England_LeagueOne;v24;Sheffield Wed;Cambridge Utd;KO;29;51.72
+2026-10-27;England_LeagueOne;v24;Oxford Utd;Stockport;KO;29;51.72
+2026-10-27;England_NPLPremierDivision;v21;Bury;Leek;OK;21;66.67
+2026-10-27;England_NPLPremierDivision;v21;FC United;Quorn;KO;21;66.67
+2026-10-27;England_SouthernLeaguePremierCentral;v24;Peterborough Sports;Leiston;OK;22;63.64
+2026-10-27;England_SouthernLeaguePremierCentral;v24;Racing Club Warwick;Redditch;OK;22;63.64
+2026-10-27;England_SouthernLeaguePremierCentral;v24;Needham Market;Leighton Town;KO;22;63.64
+2026-10-27;England_SouthernLeaguePremierCentral;v24;Halesowen;Leamington;OK;22;63.64
+2026-10-27;England_SouthernLeaguePremierCentral;v24;Real Bedford;Stourbridge;KO;22;63.64
+2026-10-27;England_SouthernLeaguePremierCentral;v24;Kettering;Rushall;OK;22;63.64
+2026-10-27;England_SouthernLeaguePremierSouth;v24;Chichester;Hanworth;OK;32;56.25
+2026-10-27;England_SouthernLeaguePremierSouth;v24;Plymouth Parkway;Gloucester;KO;32;56.25
+2026-10-27;England_SouthernLeaguePremierSouth;v24;Poole;Chertsey;OK;32;56.25
+2026-10-27;England_SouthernLeaguePremierSouth;v24;Bracknell;Gosport;OK;32;56.25
+2026-10-27;Germany_Oberliga_SchleswigHolstein;v13;Oldenburger;VfR Neumunster;OK;28;96.43
+2026-10-27;Germany_Regionalliga_Sudwest;v24;Freiburg 2;Eint. Frankfurt 2;OK;47;59.57
+2026-10-27;Kyrgyzstan_PremierLiga;v24;Asia Talas;Aldier;KO;40;72.5
+2026-10-27;Kyrgyzstan_PremierLiga;v24;Bars;Toktogul;OK;40;72.5
+2026-10-27;Kyrgyzstan_PremierLiga;v24;Bishkek City;Dordoi Bishkek;KO;40;72.5
+2026-10-27;Sweden_Allsvenskan;v24;AIK Stockholm;Elfsborg;OK;41;58.54
+2026-10-28;CzechRepublic_3CFL_GroupA;v21;Kraluv Dvur;Sparta Praga B;KO;24;83.33
+2026-10-28;CzechRepublic_3CFL_GroupB;v24;Liberec B;Caslav;KO;21;57.14
+2026-10-28;CzechRepublic_4Liga_GroupE;v22def;Hluk;Nove Sady;KO;22;72.73
+2026-10-28;Germany_Oberliga_Niedersachsen;v23;Spelle-Venhaus;Bersenbruck;OK;23;73.91
+2026-10-28;Peru_Liga1_Clausura;v24;FC Cajamarca;Cajamarca;OK;24;79.17
+2026-10-28;Peru_Liga1_Clausura;v24;Alianza Atl.;Deportivo Garcilaso;OK;24;79.17
+2026-10-28;Slovakia_NikeLiga;v24;Kosice;Dun. Streda;KO;26;50.0
+2026-10-28;Slovakia_NikeLiga;v24;Trencin;Slovan Bratislava;KO;26;50.0
+2026-10-28;Sweden_Allsvenskan;v24;Brommapojkarna;Hacken;KO;42;59.52
+2026-10-28;Switzerland_PromotionLeague;v24;Cham;Luzerna 2;OK;47;72.34
+2026-10-29;Mexico_LigaMX_Apertura;v24;Club America;Tijuana;KO;27;48.15
+2026-10-29;Peru_Liga1_Clausura;v24;Los Chankas;Cusco;KO;26;80.77
+2026-10-29;Poland_IIILiga_Group4;v24;Korona 2;Wislanie Skawina;OK;25;76.0
+2026-10-29;USA_MLS;v26;Inter Miami;Cincinnati;OK;21;85.71
+2026-10-29;USA_MLS;v26;Nashville SC;Philadelphia Union;KO;21;85.71
+2026-10-29;USA_MLS;v26;St. Louis City;Portland Timbers;OK;21;85.71
+2026-10-29;USA_MLS;v26;Minnesota;Sporting Kansas City;OK;21;85.71
+2026-10-29;USA_MLS;v26;Vancouver Whitecaps;San Diego FC;OK;21;85.71
+2026-10-29;USA_MLS;v26;FC Dallas;Columbus Crew;KO;21;85.71
+2026-10-30;Austria_Burgenland;v24;Oberpullendorf;Leithaprodersdorf;KO;37;72.97
+2026-10-30;Austria_Burgenland;v24;Neusiedl;SV Eberau;OK;37;72.97
+2026-10-30;Austria_Burgenland;v24;Klingenbach;Edelserpentin;OK;37;72.97
+2026-10-30;Austria_Burgenland;v24;Deutschkreutz;Pama;OK;37;72.97
+2026-10-30;Austria_Burgenland;v24;Margarethen;Bad Sauerbrunn;KO;37;72.97
+2026-10-30;Austria_Karnten;v26def;Dellach/Gail;Matrei;OK;26;92.31
+2026-10-30;Austria_Niederosterreich;v24;Ebreichsdorf;Ardagger;OK;24;62.5
+2026-10-30;Austria_Oberosterreich;v24;Pregarten;Edelweiss;OK;38;73.68
+2026-10-30;Austria_Oberosterreich;v24;Ostermiething;Micheldorf;OK;38;73.68
+2026-10-30;Austria_Oberosterreich;v24;Friedburg;Union Unis Gschwandt;OK;38;73.68
+2026-10-30;Austria_Oberosterreich;v24;ASK St.Valentin;Weisskirchen;OK;38;73.68
+2026-10-30;Austria_Regionalliga_East;v24;Wiener;Traiskirchen;OK;24;58.33
+2026-10-30;Austria_Regionalliga_North;v26;Kuchl;Dietach;OK;25;68.0
+2026-10-30;Austria_Regionalliga_North;v26;Wallern/St Marienkirchen;Grodig;KO;25;68.0
+2026-10-30;Austria_Regionalliga_South;v22;Deutschlandsberger;Lafnitz;OK;21;71.43
+2026-10-30;Austria_Regionalliga_South;v22;Allerheiligen;Gleisdorf;KO;21;71.43
+2026-10-30;Austria_Steiermark;v21;Leoben;Kindberg Murzhofen;OK;21;80.95
+2026-10-30;Austria_Steiermark;v21;Hohenhaus Schladming;UFC Fehring;OK;21;80.95
+2026-10-30;Austria_Steiermark;v21;SV Schermann Rorhrbach;Lebring;OK;21;80.95
+2026-10-30;Austria_Steiermark;v21;Stadtwerke Bruck/Mur;Grossklein;OK;21;80.95
+2026-10-30;CzechRepublic_4Liga_GroupA;v26def;Hluboka nad Vltavou;Rokycany;KO;20;90.0
+2026-10-30;CzechRepublic_ChNL;v24;Karvina;Slavia Praga B;OK;28;57.14
+2026-10-30;CzechRepublic_ChNL;v24;Vlasim;Usti n. L.;OK;28;57.14
+2026-10-30;Denmark_2ndDivision;v24;Hellerup;Nykobing;OK;22;50.0
+2026-10-30;Denmark_3rdDivision;v24;Helsingor;Ringsted;KO;35;65.71
+2026-10-30;Germany_2Bundesliga;v24;Bielefeld;Braunschweig;OK;24;33.33
+2026-10-30;Germany_Oberliga_BadenWurttemberg;v24;Nottingen;1. FC Muhlhausen;OK;52;69.23
+2026-10-30;Germany_Oberliga_Bayern_Nord;v24;Weiden;Neudrossenfeld;OK;45;66.67
+2026-10-30;Germany_Oberliga_Bremen;v22def;OSC Bremerhaven;Schwachhausen;OK;21;85.71
+2026-10-30;Germany_Oberliga_Hamburg;v23;Victoria Hamburg;ETSV Hamburg;OK;45;77.78
+2026-10-30;Germany_Oberliga_Hamburg;v23;Vorwarts-Wacker;TSV Buchholz 08;OK;45;77.78
+2026-10-30;Germany_Oberliga_Hamburg;v23;Suderelbe;Teutonia Ottensen;OK;45;77.78
+2026-10-30;Germany_Oberliga_Niedersachsen;v23;Lohne;Braunschweig U23;OK;24;75.0
+2026-10-30;Germany_Regionalliga_Bayern;v24;Monaco 1860;Buchbach;OK;39;61.54
+2026-10-30;Germany_Regionalliga_Bayern;v24;Burghausen;Unterhaching;KO;39;61.54
+2026-10-30;Germany_Regionalliga_Nordost;v26;Lokomotive Leipzig;Altglienicke;OK;22;81.82
+2026-10-30;Germany_Regionalliga_Sudwest;v24;Steinbach Haiger;FSV Francoforte;OK;48;60.42
+2026-10-30;Germany_Regionalliga_Sudwest;v24;Mainz 2;Sandhausen;OK;48;60.42
+2026-10-30;Mexico_LigaExpansionMX_Apertura;v24;Alebrijes Oaxaca;Zacatecas Mineros;KO;31;64.52
+2026-10-30;Netherlands_EersteDivisie;v13;FC Volendam;De Graafschap;OK;21;80.95
+2026-10-30;Norway_Eliteserien;v24;Bodo/Glimt;Viking;OK;51;74.51
+2026-10-30;Peru_Liga1_Clausura;v24;Melgar;Comerciantes Unidos;KO;27;77.78
+2026-10-30;Poland_Division2;v24;Sandecja;Ol. Grudziadz;OK;33;57.58
+2026-10-30;Poland_Ekstraklasa;v24;Cracovia;Motor Lublin;OK;31;48.39
+2026-10-30;Poland_IIILiga_Group3;v24;Sleza Wroclaw;Polkowice;OK;30;60.0
+2026-10-30;Poland_IIILiga_Group3;v24;Rakow 2;ROW Rybnik;OK;30;60.0
+2026-10-30;Sweden_Division1_Sodra;v24;Olympic;Hassleholms IF;KO;72;63.89
+2026-10-30;Sweden_Superettan;v24;Oddevold;Brage;OK;48;43.75
+2026-10-30;Wales_CymruPremier;v24;Airbus;Caernarfon;OK;26;65.38
+2026-10-30;Wales_CymruPremier;v24;Barry;Trefelin;OK;26;65.38
+2026-10-30;Wales_CymruPremier;v24;Colwyn Bay;Cambrian United;KO;26;65.38
+2026-10-30;Wales_CymruPremier;v24;Briton Ferry;Llandudno;OK;26;65.38
+2026-10-31;Austria_2Liga;v24;SK Rapid 2;Liefering;OK;20;65.0
+2026-10-31;Austria_2Liga;v24;Sturm Graz 2;Voitsberg;KO;20;65.0
+2026-10-31;Austria_Burgenland;v24;Kohfidisch;Rust;OK;42;71.43
+2026-10-31;Austria_Burgenland;v24;Pinkafeld;Halbturn;OK;42;71.43
+2026-10-31;Austria_Karnten;v26def;Lendorf;SC St. Veit;OK;27;92.59
+2026-10-31;Austria_Karnten;v26def;Nussdorf;Launsdorf;OK;27;92.59
+2026-10-31;Austria_Karnten;v26def;Kottmannsdorf;SV Spittal;OK;27;92.59
+2026-10-31;Austria_Niederosterreich;v24;Retz;St. Peter in der Au;KO;25;64.0
+2026-10-31;Austria_Oberosterreich;v24;Andorf;Gmunden;KO;42;76.19
+2026-10-31;Austria_Oberosterreich;v24;Bad Ischl;Garsten;OK;42;76.19
+2026-10-31;Austria_Oberosterreich;v24;St. Martin im Muhlreis;Vocklamarkt;OK;42;76.19
+2026-10-31;Austria_Regionalliga_East;v24;Warth;Marchfeld;KO;25;60.0
+2026-10-31;Austria_Regionalliga_East;v24;Wienerberger;Kremser;OK;25;60.0
+2026-10-31;Austria_Regionalliga_West;v26;Lochau;Schwaz;OK;25;88.0
+2026-10-31;Austria_Regionalliga_West;v26;Fugen;Rothis;OK;25;88.0
+2026-10-31;Austria_Regionalliga_West;v26;Wolfurt;Hohenems;OK;25;88.0
+2026-10-31;Austria_Regionalliga_West;v26;Tirol (Am);Kufstein;KO;25;88.0
+2026-10-31;Austria_Regionalliga_West;v26;SK St. Johann;Kitzbuhel;KO;25;88.0
+2026-10-31;Austria_Regionalliga_West;v26;FC Lustenau;Lauterach;KO;25;88.0
+2026-10-31;Austria_Salzburg;v13;UFC Siezenheim;USK Anif;OK;33;93.94
+2026-10-31;Austria_Salzburg;v13;Golling;Union Henndorf;OK;33;93.94
+2026-10-31;Austria_Salzburg;v13;TSU Bramberg;Eugendorf;OK;33;93.94
+2026-10-31;Austria_Steiermark;v21;SV Wildon;Ilzer SV;OK;25;84.0
+2026-10-31;Austria_Steiermark;v21;Koflach;TUS Bad Waltersdorf;KO;25;84.0
+2026-10-31;Austria_Tirol;v20plus;Ebbs;SV Oberperfuss;KO;21;71.43
+2026-10-31;Austria_Tirol;v20plus;Kematen;Stubai;OK;21;71.43
+2026-10-31;Austria_Tirol;v20plus;Absam;SV Worgl;OK;21;71.43
+2026-10-31;Austria_Tirol;v20plus;FC Natters;Kolsass Weer;KO;21;71.43
+2026-10-31;Belarus_PershayaLiga;v26;BATE 2;Niva Dolbizno;OK;23;73.91
+2026-10-31;CzechRepublic_3CFL_GroupA;v21;Dukla Praga B;Domazlice;OK;25;80.0
+2026-10-31;CzechRepublic_3CFL_GroupA;v21;Ceske Budejovice;Motorlet Prague;KO;25;80.0
+2026-10-31;CzechRepublic_3CFL_GroupB;v24;Chrudim;Velke Hamry;KO;22;54.55
+2026-10-31;CzechRepublic_3CFL_GroupB;v24;Horni Redice;Neratovice;KO;22;54.55
+2026-10-31;CzechRepublic_4Liga_GroupA;v26def;Sobeslav;SK Strakonice 1908;OK;21;85.71
+2026-10-31;CzechRepublic_4Liga_GroupA;v26def;Petrin Plzen;Cesky Krumlov;OK;21;85.71
+2026-10-31;CzechRepublic_4Liga_GroupB;v26def;Vysehrad;Psary;OK;28;75.0
+2026-10-31;CzechRepublic_4Liga_GroupB;v26def;Karlovy Vary;Usti n. L. B;OK;28;75.0
+2026-10-31;CzechRepublic_4Liga_GroupB;v26def;Velvary;Sokolov;OK;28;75.0
+2026-10-31;CzechRepublic_4Liga_GroupC;v26def;Letohrad;Slavia HK;OK;27;81.48
+2026-10-31;CzechRepublic_4Liga_GroupC;v26def;Chrudim B;Hlinsko;KO;27;81.48
+2026-10-31;CzechRepublic_4Liga_GroupC;v26def;Kosmonosy;Vykan;OK;27;81.48
+2026-10-31;CzechRepublic_4Liga_GroupD;v21;Sparta Brno;Kurim;OK;21;85.71
+2026-10-31;CzechRepublic_4Liga_GroupD;v21;FS Trebic;Bedrichov;KO;21;85.71
+2026-10-31;CzechRepublic_4Liga_GroupE;v13;Sternberk;Batov;KO;33;69.7
+2026-10-31;CzechRepublic_4Liga_GroupE;v13;Nove Sady;FK Kozlovice;OK;33;69.7
+2026-10-31;CzechRepublic_4Liga_GroupE;v13;Vsechovice;Breclav;OK;33;69.7
+2026-10-31;CzechRepublic_4Liga_GroupE;v13;Bzenec-Vracov;Holesov;OK;33;69.7
+2026-10-31;CzechRepublic_4Liga_GroupF;v22;Frydlant n. O.;Bohumin;OK;37;81.08
+2026-10-31;CzechRepublic_4Liga_GroupF;v22;Stonava;Bridlicna;OK;37;81.08
+2026-10-31;CzechRepublic_4Liga_GroupF;v22;Valasske Mezirici;Bilovec;OK;37;81.08
+2026-10-31;CzechRepublic_4Liga_GroupF;v22;Vratimov;Kravare;OK;37;81.08
+2026-10-31;CzechRepublic_4Liga_GroupF;v22;Rymarov;Novy Jicin;OK;37;81.08
+2026-10-31;CzechRepublic_ChNL;v24;Pribram;Taborsko;OK;30;60.0
+2026-10-31;CzechRepublic_ChNL;v24;Trinec;Ceska Lipa;OK;30;60.0
+2026-10-31;Denmark_2ndDivision;v24;F. Amager;Middelfart;OK;23;52.17
+2026-10-31;Denmark_3rdDivision;v24;Bronshoj;Næsby;OK;36;63.89
+2026-10-31;Denmark_3rdDivision;v24;Horsholm-Usserod;Sundby;OK;36;63.89
+2026-10-31;Denmark_3rdDivision;v24;ASA Aarhus;BK Frem;OK;36;63.89
+2026-10-31;Denmark_3rdDivision;v24;Holbaek;Vanløse;KO;36;63.89
+2026-10-31;Denmark_3rdDivision;v24;Ishoj;Holstebro;OK;36;63.89
+2026-10-31;England_Championship;v24;Wolves;Cardiff;OK;35;51.43
+2026-10-31;England_Championship;v24;Burnley;Portsmouth;KO;35;51.43
+2026-10-31;England_Championship;v24;Middlesbrough;Charlton;OK;35;51.43
+2026-10-31;England_Championship;v24;Stoke;Preston;KO;35;51.43
+2026-10-31;England_Championship;v24;Southampton;QPR;OK;35;51.43
+2026-10-31;England_Championship;v24;West Ham;West Brom;OK;35;51.43
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Brentwood;Cray Wanderers;OK;42;73.81
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Burgess Hill;Enfield Town;OK;42;73.81
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Maldon & Tiptree;Three Bridges;OK;42;73.81
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Whitehawk;St. Albans;OK;42;73.81
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Lewes;Wingate & Finchley;OK;42;73.81
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Aveley;Dartford;OK;42;73.81
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Leatherhead;Stanway;OK;42;73.81
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Whyteleafe;Dulwich Hamlet;OK;42;73.81
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Eastbourne Boro;Ramsgate;KO;42;73.81
+2026-10-31;England_IsthmianLeaguePremierDivision;v24;Cheshunt;Chatham;OK;42;73.81
+2026-10-31;England_LeagueOne;v24;Peterborough;Luton;KO;31;48.39
+2026-10-31;England_LeagueOne;v24;Wycombe;Burton;KO;31;48.39
+2026-10-31;England_LeagueOne;v24;Barnsley;Oxford Utd;KO;31;48.39
+2026-10-31;England_NPLPremierDivision;v21;Curzon Ashton;Leek;OK;23;65.22
+2026-10-31;England_NPLPremierDivision;v21;Quorn;Warrington;OK;23;65.22
+2026-10-31;England_NPLPremierDivision;v21;Gainsborough;Bamber Bridge;KO;23;65.22
+2026-10-31;England_NPLPremierDivision;v21;Bury;Workington;OK;23;65.22
+2026-10-31;England_SouthernLeaguePremierCentral;v24;Redditch;Needham Market;OK;28;64.29
+2026-10-31;England_SouthernLeaguePremierCentral;v24;Rushall;Racing Club Warwick;KO;28;64.29
+2026-10-31;England_SouthernLeaguePremierCentral;v24;Anstey Nomads;Bishop's Stortford;OK;28;64.29
+2026-10-31;England_SouthernLeaguePremierCentral;v24;Leamington;Peterborough Sports;OK;28;64.29
+2026-10-31;England_SouthernLeaguePremierCentral;v24;Leighton Town;Bromsgrove;OK;28;64.29
+2026-10-31;England_SouthernLeaguePremierCentral;v24;Worcester;Real Bedford;OK;28;64.29
+2026-10-31;England_SouthernLeaguePremierCentral;v24;Leiston;Alvechurch;OK;28;64.29
+2026-10-31;England_SouthernLeaguePremierSouth;v24;Havant & W;Taunton;KO;36;58.33
+2026-10-31;England_SouthernLeaguePremierSouth;v24;Chertsey;Basingstoke;OK;36;58.33
+2026-10-31;England_SouthernLeaguePremierSouth;v24;Sholing;Malvern Town;OK;36;58.33
+2026-10-31;England_SouthernLeaguePremierSouth;v24;Hanworth;Plymouth Parkway;OK;36;58.33
+2026-10-31;England_SouthernLeaguePremierSouth;v24;Gosport;Hanwell Town;OK;36;58.33
+2026-10-31;Estonia_EsiliigaB;v22def;Johvi Phoenix;Tulevik;OK;34;79.41
+2026-10-31;Estonia_Meistriliiga;v21;Nomme Utd;Levadia;OK;21;76.19
+2026-10-31;Germany_2Bundesliga;v24;Wolfsburg;Osnabruck;KO;25;36.0
+2026-10-31;Germany_2Bundesliga;v24;Karlsruher;Heidenheim;OK;25;36.0
+2026-10-31;Germany_2Bundesliga;v24;Darmstadt;Magdeburg;KO;25;36.0
+2026-10-31;Germany_3Liga;v22;Duisburg;Stoccarda 2;OK;21;61.9
+2026-10-31;Germany_3Liga;v22;Hoffenheim 2;Viktoria Koln;KO;21;61.9
+2026-10-31;Germany_Oberliga_BadenWurttemberg;v24;Teningen;Balingen;KO;53;69.81
+2026-10-31;Germany_Oberliga_BadenWurttemberg;v24;FC Holzhausen;Young Boys Reutlingen;OK;53;69.81
+2026-10-31;Germany_Oberliga_BadenWurttemberg;v24;Villingen;Karlsruher 2;KO;53;69.81
+2026-10-31;Germany_Oberliga_BadenWurttemberg;v24;Backnang;Neckarsulm;OK;53;69.81
+2026-10-31;Germany_Oberliga_BadenWurttemberg;v24;Oberachern;Essingen;KO;53;69.81
+2026-10-31;Germany_Oberliga_BadenWurttemberg;v24;Reutlingen;Pforzheim;KO;53;69.81
+2026-10-31;Germany_Oberliga_BadenWurttemberg;v24;Normannia Gmund;Ravensburg;OK;53;69.81
+2026-10-31;Germany_Oberliga_BadenWurttemberg;v24;Bahlinger;Singen;OK;53;69.81
+2026-10-31;Germany_Oberliga_Bayern_Nord;v24;Ingolstadt 2;Fortuna Regensburg;OK;46;67.39
+2026-10-31;Germany_Oberliga_Bayern_Nord;v24;Regensburg 2;Aschaffenburg;OK;46;67.39
+2026-10-31;Germany_Oberliga_Bayern_Nord;v24;Ammerthal;Grossbardorf;OK;46;67.39
+2026-10-31;Germany_Oberliga_Bayern_Nord;v24;Bayern Hof;Bamberg;OK;46;67.39
+2026-10-31;Germany_Oberliga_Bayern_Nord;v24;Gebenbach;Wurzburger FV;OK;46;67.39
+2026-10-31;Germany_Oberliga_Bayern_Sud;v26;Pipinsried;FC Schwaig;KO;21;71.43
+2026-10-31;Germany_Oberliga_Bayern_Sud;v26;Deisenhofen;TSV 1880 Wasserburg;KO;21;71.43
+2026-10-31;Germany_Oberliga_Bayern_Sud;v26;Schalding;Ismaning;KO;21;71.43
+2026-10-31;Germany_Oberliga_Bremen;v22def;BTS Neustadt;Union 60 Bremen;OK;22;86.36
+2026-10-31;Germany_Oberliga_Hamburg;v23;HT 16;Altona;OK;48;79.17
+2026-10-31;Germany_Oberliga_Hessen;v13;Hummetroth;Hadamar;OK;20;90.0
+2026-10-31;Germany_Oberliga_NOFV_Sud;v24;Sandersdorf;Freital;KO;25;68.0
+2026-10-31;Germany_Oberliga_NOFV_Sud;v24;Halle;Plauen;KO;25;68.0
+2026-10-31;Germany_Oberliga_NOFV_Sud;v24;Weissenfels;Eilenburg;OK;25;68.0
+2026-10-31;Germany_Oberliga_NOFV_Sud;v24;Einheit Wernigerode;1.FC Frankfurt;OK;25;68.0
+2026-10-31;Germany_Oberliga_RheinlandPfalzSaar;v22def;Koblenz;Cosmos Koblenz;KO;35;74.29
+2026-10-31;Germany_Oberliga_RheinlandPfalzSaar;v22def;Gonsenheim;Elversberg 2;OK;35;74.29
+2026-10-31;Germany_Oberliga_SchleswigHolstein;v13;Kaltenkirchen;PSV Neumunster;KO;29;96.55
+2026-10-31;Germany_Oberliga_SchleswigHolstein;v13;Hohenwestedt;Flensburg;KO;29;96.55
+2026-10-31;Germany_Oberliga_SchleswigHolstein;v13;Eckernforder SV;Oldenburger;KO;29;96.55
+2026-10-31;Germany_Oberliga_SchleswigHolstein;v13;Nordmark Satrup;Heider SV;KO;29;96.55
+2026-10-31;Germany_Regionalliga_Bayern;v24;Bayreuth;Norinberga 2;OK;41;60.98
+2026-10-31;Germany_Regionalliga_Bayern;v24;Ansbach;Augsburg 2;KO;41;60.98
+2026-10-31;Germany_Regionalliga_Nord;v13;SC Weiche-08;Emden;KO;29;86.21
+2026-10-31;Germany_Regionalliga_Sudwest;v24;Kassel;Fulda-Lehnerz;KO;50;62.0
+2026-10-31;Germany_Regionalliga_Sudwest;v24;Freiberg;Walldorf;KO;50;62.0
+2026-10-31;Germany_Regionalliga_Sudwest;v24;Freiburg 2;Ulm;KO;50;62.0
+2026-10-31;Germany_Regionalliga_West;v13;Wiedenbruck;Oberhausen;KO;22;81.82
+2026-10-31;Germany_Regionalliga_West;v13;Siegen;Bochum 2;OK;22;81.82
+2026-10-31;Germany_Regionalliga_West;v13;Rodinghausen;Westfalia Rhynern;OK;22;81.82
+2026-10-31;Hungary_NBI;v24;Zalaegerszeg;MTK Budapest;OK;22;50.0
+2026-10-31;Japan_J1League;v24;Kashiwa;Urawa;OK;23;60.87
+2026-10-31;Latvia_NakotnesLiga;v13;Skanste;Metta;OK;26;84.62
+2026-10-31;Mexico_LigaExpansionMX_Apertura;v24;Atletico La Paz;Dorados;OK;32;62.5
+2026-10-31;Mexico_LigaExpansionMX_Apertura;v24;Correcaminos;Venados;KO;32;62.5
+2026-10-31;Mexico_LigaMX_Apertura;v24;Atl. San Luis;Atlas;KO;28;46.43
+2026-10-31;Netherlands_EersteDivisie;v13;Maastricht;Venlo;OK;22;81.82
+2026-10-31;Netherlands_Eredivisie;v21;Cambuur;G.A. Eagles;OK;32;68.75
+2026-10-31;Netherlands_Eredivisie;v21;PSV;Willem 2;OK;32;68.75
+2026-10-31;Netherlands_Eredivisie;v21;Feyenoord;Sittard;KO;32;68.75
+2026-10-31;NorthernIreland_NIFLChampionship;v22;Loughgall;Annagh;OK;20;45.0
+2026-10-31;Norway_2ndDivision_Group1;v24;Lysekloster;Sotra;OK;44;72.73
+2026-10-31;Norway_2ndDivision_Group1;v24;Brattvag;Traeff;OK;44;72.73
+2026-10-31;Norway_2ndDivision_Group1;v24;Arendal;Mjoendalen;OK;44;72.73
+2026-10-31;Norway_2ndDivision_Group2;v13;Grorud;Ull/Kisa;OK;33;78.79
+2026-10-31;Norway_3rdDivision_Group3;v22def;Stord;Sogndal 2;OK;37;89.19
+2026-10-31;Peru_Liga1_Clausura;v24;Alianza Atl.;Juan Pablo 2;KO;28;75.0
+2026-10-31;Poland_Division2;v24;Slask 2;Zawisza;KO;34;58.82
+2026-10-31;Poland_Division2;v24;S. Wola;Kleczew;OK;34;58.82
+2026-10-31;Poland_Division2;v24;Podhale Nowy Targ;Swit Szczecin;OK;34;58.82
+2026-10-31;Poland_Ekstraklasa;v24;Lech;Wisla;OK;32;50.0
+2026-10-31;Poland_Ekstraklasa;v24;Wieczysta Krakow;Jagiellonia;OK;32;50.0
+2026-10-31;Poland_Ekstraklasa;v24;Katowice;Widzew Lodz;OK;32;50.0
+2026-10-31;Poland_IIILiga_Group1;v20plus;Weszlo;Warta Sieradz;KO;28;75.0
+2026-10-31;Poland_IIILiga_Group1;v20plus;LKS Lodz 2;Zambrow;OK;28;75.0
+2026-10-31;Poland_IIILiga_Group2;v13;Kluczevia Stargard;Kotwica Kornik;KO;25;76.0
+2026-10-31;Poland_IIILiga_Group3;v24;Brzeg;Zaglebie 2;OK;32;62.5
+2026-10-31;Poland_IIILiga_Group4;v24;Jaroslaw;Czarni Polaniec;OK;26;76.92
+2026-10-31;Poland_IIILiga_Group4;v24;Siarka Tarnobrzeg;Naprzod Jedrzejow;KO;26;76.92
+2026-10-31;Poland_IIILiga_Group4;v24;Busko-Zdroj;Chelmianka Chelm;OK;26;76.92
+2026-10-31;Slovakia_2Liga;v24;Inter Bratislava;Lehota p. V.;OK;25;76.0
+2026-10-31;Slovakia_2Liga;v24;Presov;Galanta;OK;25;76.0
+2026-10-31;Slovakia_3Liga_West;v24;Castkovce;Trencin B;KO;35;60.0
+2026-10-31;Slovakia_NikeLiga;v24;Trencin;Kosice;OK;28;46.43
+2026-10-31;Slovakia_NikeLiga;v24;Zilina;Michalovce;OK;28;46.43
+2026-10-31;Spain_LaLiga;v24;Levante;Atl. Madrid;KO;20;65.0
+2026-10-31;Spain_LaLiga;v24;Barcellona;Alaves;OK;20;65.0
+2026-10-31;Sweden_Division1_Sodra;v24;Skövde;Rosengard;OK;73;63.01
+2026-10-31;Sweden_Division1_Sodra;v24;Angelholm;Tvaaker;KO;73;63.01
+2026-10-31;Sweden_Division1_Sodra;v24;Kristianstad;Eskilsminne;OK;73;63.01
+2026-10-31;Sweden_Superettan;v24;Falkenberg;Sandviken;OK;49;44.9
+2026-10-31;Switzerland_PromotionLeague;v24;Grand-Saconnex;Young Boys 2;OK;48;72.92
+2026-10-31;Switzerland_PromotionLeague;v24;Zurigo 2;Lugano 2;OK;48;72.92
+2026-10-31;Switzerland_PromotionLeague;v24;Breitenrain;Basilea 2;KO;48;72.92
+2026-10-31;Switzerland_PromotionLeague;v24;Kreuzlingen;Luzerna 2;OK;48;72.92
+2026-10-31;Switzerland_PromotionLeague;v24;Schaffhausen;Amical Saint-Prex;KO;48;72.92
+2026-10-31;Switzerland_SuperLeague;v251;Luzern;Sion;KO;21;80.95
+2026-10-31;Switzerland_SuperLeague;v251;Grasshoppers;Vaduz;OK;21;80.95
+2026-10-31;USA_MLS;v26;St. Louis City;San Diego FC;KO;27;81.48
+2026-10-31;USA_MLS;v26;Sporting Kansas City;FC Dallas;KO;27;81.48
+2026-10-31;Wales_CymruSouth;v24;Pontardawe;Carmarthen;OK;21;71.43
+2026-10-31;Wales_CymruSouth;v24;Aberystwyth;Trethomas Bluebirds;OK;21;71.43
+2026-10-31;Wales_CymruSouth;v24;Cardiff Draconians;Afan Lido;KO;21;71.43
+2026-10-31;Wales_CymruSouth;v24;Ynyshir Albions;Pure Swansea;OK;21;71.43
+2026-11-01;Bolivia_DivisionProfesional;v22;The Strongest;GV San Jose;OK;24;75.0
+2026-11-01;Bolivia_DivisionProfesional;v22;Guabira;Bolivar;OK;24;75.0
+2026-11-01;CzechRepublic_3CFL_GroupA;v21;Admira Prague;Kraluv Dvur;OK;27;77.78
+2026-11-01;CzechRepublic_3CFL_GroupA;v21;Bohemians 1905 B;Povltavska FA;KO;27;77.78
+2026-11-01;CzechRepublic_3CFL_GroupA;v21;Plzen B;Benesov;OK;27;77.78
+2026-11-01;CzechRepublic_3CFL_GroupA;v21;Pribram B;Loko Praha;KO;27;77.78
+2026-11-01;CzechRepublic_3CFL_GroupB;v24;Teplice B;Mlada Boleslav B;OK;24;50.0
+2026-11-01;CzechRepublic_3CFL_GroupB;v24;Caslav;Varnsdorf;OK;24;50.0
+2026-11-01;CzechRepublic_3MSFL;v24;Brno B;Karvina B;OK;21;61.9
+2026-11-01;CzechRepublic_3MSFL;v24;Unicov;Blansko;OK;21;61.9
+2026-11-01;CzechRepublic_4Liga_GroupA;v26def;Taborsko akademie;Spartak Pribram;KO;23;86.96
+2026-11-01;CzechRepublic_4Liga_GroupB;v26def;Hostoun;Steti;OK;31;77.42
+2026-11-01;CzechRepublic_4Liga_GroupE;v13;Strani;Brumov;OK;37;70.27
+2026-11-01;CzechRepublic_4Liga_GroupE;v13;Kromeriz B;Prostejov B;KO;37;70.27
+2026-11-01;CzechRepublic_4Liga_GroupE;v13;Slavicin;Hluk;OK;37;70.27
+2026-11-01;CzechRepublic_4Liga_GroupF;v22;Frydek-Mistek B;Pusta Polom;KO;42;83.33
+2026-11-01;CzechRepublic_4Liga_GroupF;v22;Opava B;Zabreh;OK;42;83.33
+2026-11-01;CzechRepublic_ChNL;v24;Zizkov;Dukla Praga;KO;32;62.5
+2026-11-01;CzechRepublic_ChNL;v24;Prostejov;Opava;KO;32;62.5
+2026-11-01;Denmark_2ndDivision;v24;Thisted;B.93;OK;24;54.17
+2026-11-01;Estonia_EsiliigaB;v22def;Parnu JK Vaprus U21;Tammeka U21;KO;35;80.0
+2026-11-01;Estonia_Meistriliiga;v21;Flora;Narva;KO;22;77.27
+2026-11-01;Germany_3Liga;v22;Saarbrucken;Mannheim;OK;23;60.87
+2026-11-01;Germany_Oberliga_Bremen;v22def;Vatan Bremen;Aumund-Vegesack;OK;23;86.96
+2026-11-01;Germany_Oberliga_Bremen;v22def;Bremen III;Woltmershausen;OK;23;86.96
+2026-11-01;Germany_Oberliga_Hamburg;v23;Paloma;Norderstedt 2;OK;49;79.59
+2026-11-01;Germany_Oberliga_Hamburg;v23;Pinneberg;Wandsbeker Concordia;OK;49;79.59
+2026-11-01;Germany_Oberliga_Hamburg;v23;Niendorfer TSV;Harksheide;OK;49;79.59
+2026-11-01;Germany_Oberliga_Hamburg;v23;Sasel;Dassendorf;OK;49;79.59
+2026-11-01;Germany_Oberliga_Hessen;v13;Hanauer SC;Friedberg;OK;21;90.48
+2026-11-01;Germany_Oberliga_Hessen;v13;Eddersheim;Baunatal;KO;21;90.48
+2026-11-01;Germany_Oberliga_NOFV_Sud;v24;Halberstadt;Bautzen;OK;29;65.52
+2026-11-01;Germany_Oberliga_NOFV_Sud;v24;Glauchau;Auerbach;KO;29;65.52
+2026-11-01;Germany_Oberliga_NOFV_Sud;v24;Meuselwitz;Dresden 2;OK;29;65.52
+2026-11-01;Germany_Oberliga_Niedersachsen;v23;Hemmingen;Nordhorn;KO;25;76.0
+2026-11-01;Germany_Oberliga_Niedersachsen;v23;Verden;Egestorf-Langreder;OK;25;76.0
+2026-11-01;Germany_Oberliga_SchleswigHolstein;v20plus;Phonix Lubeck B;Lubeck 2;OK;21;90.48
+2026-11-01;Germany_Oberliga_SchleswigHolstein;v20plus;VfR Neumunster;Rotenhof;OK;21;90.48
+2026-11-01;Germany_Regionalliga_Nord;v13;Amburgo 2;Hannover 2;OK;30;83.33
+2026-11-01;Germany_Regionalliga_Nord;v13;Hannoverscher SC;Drochtersen/Assel;KO;30;83.33
+2026-11-01;Germany_Regionalliga_Sudwest;v24;Eint. Frankfurt 2;Offenbach;OK;53;58.49
+2026-11-01;Hungary_NBI;v24;Ujpest;Nyiregyhaza;OK;23;52.17
+2026-11-01;Hungary_NBI;v24;Ferencvaros;Paks;KO;23;52.17
+2026-11-01;Kyrgyzstan_PremierLiga;v21;Aldier;Alga;OK;20;70.0
+2026-11-01;Mexico_LigaExpansionMX_Apertura;v24;Leones Negros;Tepatitlan de Morelos;OK;34;61.76
+2026-11-01;Mexico_LigaExpansionMX_Apertura;v24;Piratas;Tapatio;KO;34;61.76
+2026-11-01;Mexico_LigaMX_Apertura;v24;Club America;Toluca;OK;29;44.83
+2026-11-01;Mexico_LigaMX_Apertura;v24;Monterrey;Tijuana;OK;29;44.83
+2026-11-01;Netherlands_Eredivisie;v21;Groningen;Sparta Rotterdam;OK;35;68.57
+2026-11-01;Netherlands_Eredivisie;v21;Telstar;Utrecht;OK;35;68.57
+2026-11-01;Netherlands_Eredivisie;v21;Excelsior;Twente;OK;35;68.57
+2026-11-01;Norway_3rdDivision_Group1;v20;Grei;Vaalerenga IF 2;KO;21;85.71
+2026-11-01;Norway_3rdDivision_Group2;v22def;Molde 2;Orkla;OK;45;84.44
+2026-11-01;Norway_3rdDivision_Group2;v22def;Rosenborg 2;Herd;OK;45;84.44
+2026-11-01;Norway_3rdDivision_Group2;v22def;Strindheim;Ranheim 2;OK;45;84.44
+2026-11-01;Norway_3rdDivision_Group2;v22def;Melhus;Byåsen;OK;45;84.44
+2026-11-01;Norway_3rdDivision_Group2;v22def;Spjelkavik;Ntnui;KO;45;84.44
+2026-11-01;Norway_3rdDivision_Group3;v22def;V. Haugesund;Varegg;OK;38;89.47
+2026-11-01;Norway_3rdDivision_Group3;v22def;Fana;Austevoll;OK;38;89.47
+2026-11-01;Norway_3rdDivision_Group3;v22def;Brann 2;Gneist;OK;38;89.47
+2026-11-01;Norway_3rdDivision_Group3;v22def;OS;Djerv 1919;OK;38;89.47
+2026-11-01;Norway_3rdDivision_Group3;v22def;Åsane 2;Fyllingsdalen;OK;38;89.47
+2026-11-01;Norway_3rdDivision_Group3;v22def;Forde;Askoy;OK;38;89.47
+2026-11-01;Norway_3rdDivision_Group4;v13;Hinna;Mandalskameratene;KO;37;83.78
+2026-11-01;Norway_3rdDivision_Group4;v13;Akra;Viking 2;OK;37;83.78
+2026-11-01;Norway_3rdDivision_Group4;v13;Madla IL;Stabaek 2;KO;37;83.78
+2026-11-01;Norway_3rdDivision_Group4;v13;Haugesund 2;Brodd;OK;37;83.78
+2026-11-01;Norway_3rdDivision_Group4;v13;Odd 2;Varhaug;KO;37;83.78
+2026-11-01;Norway_3rdDivision_Group5;v20;Floeya;Fauske Sprint;OK;21;95.24
+2026-11-01;Norway_3rdDivision_Group5;v20;Harstad;Strømsgodset 2;OK;21;95.24
+2026-11-01;Norway_3rdDivision_Group6;v13;Lillehammer;Brumunddal;OK;37;86.49
+2026-11-01;Norway_3rdDivision_Group6;v13;Sarpsborg 08 2;Elverum;OK;37;86.49
+2026-11-01;Norway_3rdDivision_Group6;v13;Lyn 2;Bjorkelangen;OK;37;86.49
+2026-11-01;Norway_Eliteserien;v24;Brann;Molde;OK;52;75.0
+2026-11-01;Norway_Eliteserien;v24;KFUM Oslo;HamKam;OK;52;75.0
+2026-11-01;Norway_Eliteserien;v24;Sarpsborg 08;Kristiansund;OK;52;75.0
+2026-11-01;Norway_Eliteserien;v24;Vålerenga;Tromsø;OK;52;75.0
+2026-11-01;Peru_Liga1_Clausura;v24;Grau;U. de Deportes;OK;29;72.41
+2026-11-01;Serbia_PrvaLiga;v24;Borac 1926;Smederevo;KO;28;57.14
+2026-11-01;Slovakia_2Liga;v24;Petrzalka;Povazska Bystrica;KO;27;77.78
+2026-11-01;Slovakia_3Liga_West;v24;Dun. Streda B;Velke Ludince;KO;36;58.33
+2026-11-01;Spain_LaLiga;v24;Racing Santander;Real Madrid;OK;22;63.64
+2026-11-01;Sweden_Allsvenskan;v24;Elfsborg;Orgryte;OK;43;58.14
+2026-11-01;Sweden_Division1_Norra;v21;Enkoping SK;Jarfalla;KO;20;65.0
+2026-11-01;Sweden_Division1_Sodra;v24;AFC Malmo;Trollhättan;OK;76;63.16
+2026-11-01;Sweden_Division1_Sodra;v24;Trelleborg;Laholms;OK;76;63.16
+2026-11-01;Sweden_Division1_Sodra;v24;Atvidaberg;Utsikten;OK;76;63.16
+2026-11-01;Sweden_Superettan;v24;Varberg;Ljungskile;OK;50;46.0
+2026-11-01;Switzerland_PromotionLeague;v24;Bellinzona;Bulle;KO;53;71.7
+2026-11-01;Switzerland_SuperLeague;v24;Young Boys;Zurigo;OK;33;78.79
+2026-11-01;Switzerland_SuperLeague;v24;Lugano;Basilea;OK;33;78.79
+2026-11-01;Switzerland_SuperLeague;v24;Lausanne;Thun;OK;33;78.79
+2026-11-02;CzechRepublic_ChNL;v24;Ostrava B;Jihlava;OK;34;58.82
+2026-11-02;England_IsthmianLeaguePremierDivision;v24;Aveley;St. Albans;KO;52;76.92
+2026-11-02;Estonia_EsiliigaB;v22def;Tallinna Kalev U21;Tartu Kalev;OK;36;77.78
+2026-11-02;Mexico_LigaMX_Apertura;v24;Cruz Azul;Leon;OK;31;48.39
+2026-11-02;Netherlands_EersteDivisie;v13;Heracles;Oss;KO;23;82.61
+2026-11-02;Peru_Liga1_Clausura;v24;Sporting Cristal;FC Cajamarca;OK;30;73.33
+2026-11-02;Peru_Liga1_Clausura;v24;Cajamarca;Deportivo Garcilaso;OK;30;73.33
+2026-11-02;Peru_Liga1_Clausura;v24;Huancayo;Melgar;KO;30;73.33
+2026-11-02;Poland_Division2;v24;Chojniczanka;Avia Swidnik;KO;37;59.46
+2026-11-02;Poland_Ekstraklasa;v24;Radomiak Radom;Slask;OK;35;54.29
+2026-11-02;Poland_Ekstraklasa;v24;Rakow;Pogon Szczecin;OK;35;54.29
+2026-11-02;Serbia_PrvaLiga;v24;Teleoptik;Javor;OK;29;55.17
+2026-11-02;Sweden_Superettan;v24;Öster;Helsingborg;OK;51;47.06
+2026-11-02;USA_USLChampionship;v24;New Mexico;Phoenix Rising;KO;34;41.18
+2026-11-02;USA_USLLeagueOne;v24;Boise;One Knoxville;KO;62;53.23
+2026-11-02;USA_USLLeagueOne;v24;Charlotte Independ.;FC Naples;OK;62;53.23
+2026-11-03;England_Championship;v24;QPR;Burnley;KO;41;53.66
+2026-11-03;England_Championship;v24;Blackburn;Stoke;OK;41;53.66
+2026-11-03;England_Championship;v24;Derby;Norwich;OK;41;53.66
+2026-11-03;England_Championship;v24;Birmingham;Millwall;OK;41;53.66
+2026-11-03;England_IsthmianLeaguePremierDivision;v24;Brentwood;Leatherhead;OK;53;75.47
+2026-11-03;England_IsthmianLeaguePremierDivision;v24;Wingate & Finchley;Burgess Hill;KO;53;75.47
+2026-11-03;England_LeagueOne;v24;Huddersfield;Luton;KO;34;44.12
+2026-11-03;England_NPLPremierDivision;v21;Guiseley;Leek;OK;27;66.67
+2026-11-03;England_NPLPremierDivision;v21;Bury;Avro;OK;27;66.67
+2026-11-03;England_SouthernLeaguePremierCentral;v24;Anstey Nomads;Real Bedford;OK;35;68.57
+2026-11-03;England_SouthernLeaguePremierSouth;v24;Bracknell;Chertsey;OK;41;60.98
+2026-11-03;Germany_Oberliga_BadenWurttemberg;v24;Karlsruher 2;Nottingen;OK;61;67.21
+2026-11-04;England_Championship;v24;Cardiff;West Ham;OK;45;55.56
+2026-11-04;England_Championship;v24;Wrexham;Middlesbrough;KO;45;55.56
+2026-11-04;Germany_Oberliga_RheinlandPfalzSaar;v22def;RW Wittlich;TSV 1881 Gau-Odernheim;KO;37;72.97

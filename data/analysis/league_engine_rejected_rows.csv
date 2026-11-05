@@ -1,0 +1,302 @@
+﻿Engine;Reason;LeagueId;MatchDate;Home;Away;Band;Over25
+v21dev;INVALID_KEY;Finland_Ykkonen;;OLS Oulu;KuPS Akatemia;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Hafnarfjordur;Vestmannaeyjar;ALTA;KO
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Keflavik;KR Reykjavik;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Stjarnan;Akureyri;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Thor Akureyri;Valur;ALTA;OK
+v21dev;INVALID_KEY;Norway_2ndDivision_Group1;;Sotra;Jerv;ALTA;OK
+v21dev;INVALID_KEY;Norway_2ndDivision_Group2;;Skeid;Trygg/Lade;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group1;;K. Oslo 2;Heming;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Brodd;Haugesund 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Varhaug;Odd 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Vindbjart;Stabaek 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group5;;Lillestrom 2;Tromsø 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group6;;Rade;Lyn 2;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Division2_SodraGotaland;;Linero IF;IFK Karlshamn;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Division2_SodraSvealand;;Karlslund;Fittja;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Division2_SodraSvealand;;Ragsved;Forward;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Superettan;;Sandviken;Helsingborg;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupA;;PPJ;Kiffen;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Thor Akureyri;KR Reykjavik;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Vikingur Reykjavik;Akureyri;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Tallinna Kalev;Maardu;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Meistriliiga;;Nomme Utd;Kalju;ALTA;OK
+v21dev;INVALID_KEY;FaroeIslands_1Deild;;B36 Torshavn 2;Hoyvik;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Hafnarfjordur;Stjarnan;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;KFG Gardabaer;Selfoss;ALTA;OK
+v21dev;INVALID_KEY;Kyrgyzstan_PremierLiga;;Abdysh-Ata;Alga;ALTA;KO
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Kongsvinger;Sogndal;ALTA;OK
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Ranheim;Stabaek;ALTA;OK
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Raufoss;Strømmen;ALTA;KO
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;BumProm Gomel;Orsha;ALTA;OK
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;Niva Dolbizno;BATE 2;ALTA;OK
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;Soligorsk;Din. Minsk 2;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;FC Tallinn;Nomme Utd U21;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Meistriliiga;;Narva;Levadia;ALTA;OK
+v21dev;INVALID_KEY;FaroeIslands_1Deild;;Fuglafjordur;Vikingur 2;ALTA;OK
+v21dev;INVALID_KEY;FaroeIslands_1Deild;;TB Tvoroyri;Streymur 2;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupB;;Honka;MuSa;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Hercules;Vaajakoski;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Narpes Kraft;Jaro 2;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;TP-47;GBK Kokkola;ALTA;OK
+v21dev;INVALID_KEY;Finland_Ykkonen;;OLS Oulu;Inter Turku 2;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Akranes;Breidablik;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Vestmannaeyjar;Valur;ALTA;KO
+v21dev;INVALID_KEY;Iceland_Division_2;;Fjolnir;Kormakur/Hvot;ALTA;KO
+v21dev;INVALID_KEY;Iceland_Division_2;;KFA;Olafsvik;ALTA;OK
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Egersund;Moss;ALTA;OK
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;Lida;Uni X Labs;ALTA;KO
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;Osipovichi;Molodechno;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Flora U21;Levadia U21;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Nomme Kalju U21;Elva;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Legion;Tallinna Kalev U21;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Narva U21;Tulevik;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Tabasalu;Parnu JK Vaprus U21;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupB;;Ilves 2;EPS;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;VPS 2;Huima / Urho;ALTA;OK
+v21dev;INVALID_KEY;Finland_Ykkonen;;TPV;JJK Jyvaskyla;ALTA;KO
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Odd;Haugesund;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Keflavik;Fram;ALTA;KO
+v21dev;INVALID_KEY;Sweden_Allsvenskan;;Hacken;Djurgarden;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;JBK;Narpes Kraft;ALTA;OK
+v21dev;INVALID_KEY;Kyrgyzstan_PremierLiga;;Asia Talas;Abdysh-Ata;ALTA;OK
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Real Oruro;Universitario de Vinto;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Jaro 2;SJK Akatemia 2;ALTA;OK
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Real Oruro;Universitario de Vinto;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Maardu;Flora U21;ALTA;OK
+v21dev;INVALID_KEY;Kazakhstan_FirstLeague;;Aktobe 2;Khan Tengri;ALTA;OK
+v21dev;INVALID_KEY;Somalia_NationalLeague;;Jeenyo;Gantaalaha Afgooye;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupB;;Abo;Ilves 2;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;GBK Kokkola;JBK;ALTA;KO
+v21dev;INVALID_KEY;Finland_Ykkonen;;Inter Turku 2;RoPS;ALTA;KO
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;BATE 2;Lida;ALTA;OK
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;Din. Minsk 2;Slutsk;ALTA;KO
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Real Oruro;GV San Jose;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Levadia U21;Tallinna Kalev;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Tabasalu;Tulevik;ALTA;KO
+v21dev;INVALID_KEY;Estonia_Meistriliiga;;Nomme Utd;Kuressaare;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupB;;EPS;P-Iirot Rauma;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Huima / Urho;Hercules;ALTA;KO
+v21dev;INVALID_KEY;Finland_Ykkonen;;JJK Jyvaskyla;KuPS Akatemia;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Selfoss;Hviti;ALTA;OK
+v21dev;INVALID_KEY;Somalia_NationalLeague;;Raadsan;Heegan;ALTA;OK
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;Volna Pinsk;Soligorsk;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Maardu;Tartu Welco;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Nomme Utd U21;Flora U21;ALTA;KO
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Johvi Phoenix;Parnu JK Vaprus U21;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Levadia U19;Tallinna Kalev U21;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Tammeka U21;Narva U21;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Tartu Kalev;Legion;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupA;;Lahden Reipas;HIFK;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Narpes Kraft;VPS 2;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;SJK Akatemia 2;TP-47;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Vaajakoski;Jaro 2;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Breidablik;Keflavik;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Fram;Thor Akureyri;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Hafnarfjordur;Valur;ALTA;KO
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;KR Reykjavik;Vestmannaeyjar;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Dalvik/Reynir;Fjolnir;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Kari;KFA;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Kormakur/Hvot;Olafsvik;ALTA;KO
+v21dev;INVALID_KEY;Iceland_Division_2;;Magni;Haukar;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Throttur Vogar;KFG Gardabaer;ALTA;OK
+v21dev;INVALID_KEY;Norway_Eliteserien;;Brann;Start;ALTA;OK
+v21dev;INVALID_KEY;Somalia_NationalLeague;;Raadsan;Heegan;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Allsvenskan;;Brommapojkarna;Sirius;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Allsvenskan;;Malmo FF;Göteborg;ALTA;OK
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Blooming;GV San Jose;ALTA;KO
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Real Oruro;Always Ready;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;GBK Kokkola;Narpes Kraft;ALTA;OK
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Academia del Balompie;Independiente;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupA;;HIFK;PPJ;ALTA;OK
+v21dev;INVALID_KEY;Kazakhstan_FirstLeague;;Taraz;Aktobe 2;ALTA;KO
+v21dev;INVALID_KEY;Somalia_NationalLeague;;Raadsan;Jubba;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Meistriliiga;;Flora;Nomme Utd;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Vaajakoski;Huima / Urho;ALTA;KO
+v21dev;INVALID_KEY;Iceland_Division_2;;Haukar;Throttur Vogar;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;KFG Gardabaer;Kari;ALTA;OK
+v21dev;INVALID_KEY;Kazakhstan_FirstLeague;;Tobol 2;Akademiya Ontustik;ALTA;OK
+v21dev;INVALID_KEY;Somalia_NationalLeague;;Badbaado;Dekedaha;ALTA;OK
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Bolivar;Guabira;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Flora U21;Maardu;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Nomme Kalju U21;Levadia U21;ALTA;KO
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Tallinna Kalev;Nomme Utd U21;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Tartu Welco;FC Tallinn;ALTA;KO
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Legion;Tabasalu;ALTA;KO
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Levadia U19;Tartu Kalev;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Narva U21;Parnu JK Vaprus U21;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupA;;Kiffen;PEPO;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupA;;PuiU;Lahden Reipas;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupA;;Union Plaani;Atlantis;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupB;;EPS;NJS;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupB;;Ilves 2;Honka;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Hercules;JBK;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Jaro 2;TP-47;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;VPS 2;SJK Akatemia 2;ALTA;OK
+v21dev;INVALID_KEY;Finland_Ykkonen;;Inter Turku 2;SalPa;ALTA;OK
+v21dev;INVALID_KEY;Finland_Ykkonen;;Keski-Uusimaa;OLS Oulu;ALTA;KO
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;KR Reykjavik;Stjarnan;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Thor Akureyri;Vikingur Reykjavik;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Valur;Fram;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Vestmannaeyjar;Akureyri;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;KFA;Selfoss;ALTA;KO
+v21dev;INVALID_KEY;Iceland_Division_2;;Kormakur/Hvot;Dalvik/Reynir;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Magni;Fjolnir;ALTA;OK
+v21dev;INVALID_KEY;Latvia_Virsliga;;Riga FC;Tukums 2000;ALTA;OK
+v21dev;INVALID_KEY;Somalia_NationalLeague;;Jazeera;Gantaalaha Afgooye;ALTA;OK
+v21dev;INVALID_KEY;USA_USLLeagueOne;;Charlotte Independ.;Chattanooga Red Wolves;ALTA;OK
+v21dev;INVALID_KEY;USA_USLLeagueOne;;New York Cosmos;Corpus Christi FC;ALTA;KO
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;SA Bulo Bulo;Academia del Balompie;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Tammeka U21;Tallinna Kalev U21;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Hafnarfjordur;Breidablik;ALTA;KO
+v21dev;INVALID_KEY;Somalia_NationalLeague;;Jeenyo;Raadsan;ALTA;KO
+v21dev;INVALID_KEY;Somalia_NationalLeague;;Jubba;Badbaado;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Allsvenskan;;Orgryte;Djurgarden;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Jaro 2;GBK Kokkola;ALTA;KO
+v21dev;INVALID_KEY;Sweden_Superettan;;Falkenberg;Helsingborg;ALTA;OK
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;SKA-1938;Din. Minsk 2;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupA;;PPJ;Union Plaani;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupB;;P-Iirot Rauma;Ilves 2;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;TP-47;Hercules;ALTA;KO
+v21dev;INVALID_KEY;Finland_Ykkonen;;Tampere Utd;Inter Turku 2;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Vikingur Reykjavik;Keflavik;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Fjolnir;Haukar;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Hviti;Kari;ALTA;OK
+v21dev;INVALID_KEY;Kazakhstan_FirstLeague;;Aktobe 2;Kairat Almaty 2;ALTA;OK
+v21dev;INVALID_KEY;Kazakhstan_FirstLeague;;Turan;Tobol 2;ALTA;OK
+v21dev;INVALID_KEY;Kyrgyzstan_PremierLiga;;Bars;Asiagoal Bishkek;ALTA;OK
+v21dev;INVALID_KEY;USA_MLS;;Cincinnati;Vancouver Whitecaps;ALTA;OK
+v21dev;INVALID_KEY;USA_MLS;;Inter Miami;Chicago Fire;ALTA;OK
+v21dev;INVALID_KEY;USA_MLS;;Nashville SC;CF Montreal;ALTA;KO
+v21dev;INVALID_KEY;USA_MLS;;New England Revolution;Toronto FC;ALTA;KO
+v21dev;INVALID_KEY;USA_MLS;;Philadelphia Union;New York Red Bulls;ALTA;OK
+v21dev;INVALID_KEY;USA_MLS;;Portland Timbers;FC Dallas;ALTA;OK
+v21dev;INVALID_KEY;USA_MLS;;San Jose Earthquakes;Orlando City;ALTA;OK
+v21dev;INVALID_KEY;Belarus_PershayaLiga;;Volna Pinsk;Orsha;ALTA;OK
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Aurora;Academia del Balompie;ALTA;OK
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Guabira;Real Oruro;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Nomme Kalju U21;Flora U21;ALTA;OK
+v21dev;INVALID_KEY;Estonia_EsiliigaB;;Tulevik;Johvi Phoenix;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupA;;Atlantis;HPS;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupA;;Lahden Reipas;MyPa;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupB;;Honka;GrIFK;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupB;;MuSa;EPS;ALTA;KO
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Huima / Urho;SJK Akatemia 2;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;JBK;VPS 2;ALTA;KO
+v21dev;INVALID_KEY;Finland_Ykkonen;;SalPa;Keski-Uusimaa;ALTA;KO
+v21dev;INVALID_KEY;Germany_Oberliga_Bayern_Sud;;Geretsried;Pipinsried;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;KFA;Throttur Vogar;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Kormakur/Hvot;Selfoss;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Magni;KFG Gardabaer;ALTA;KO
+v21dev;INVALID_KEY;Latvia_NakotnesLiga;;Leevon PPK;Skanste;ALTA;OK
+v21dev;INVALID_KEY;Mexico_LigaMX_Apertura;;Tijuana;Leon;ALTA;KO
+v21dev;INVALID_KEY;Norway_2ndDivision_Group2;;Levanger;Ull/Kisa;ALTA;OK
+v21dev;INVALID_KEY;Norway_2ndDivision_Group2;;Tromsdalen;Follo;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group1;;Baerum;Vaalerenga IF 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group1;;Grei;Konnerud;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group1;;Nordstrand;Gamle Oslo;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group1;;Ullern;Heming;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group2;;Aalesund 2;Orkla;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group2;;Melhus;Herd;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group2;;Molde 2;Byåsen;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group2;;Spjelkavik;Nardo;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group3;;Fana;Djerv 1919;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group3;;Forde;Austevoll;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group3;;Stord;Askoy;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Madla IL;Flekkeroy;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Mandalskameratene;Staal Jorpeland;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Stabaek 2;Viking 2;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group5;;Finnsnes;Strømsgodset 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group5;;Floeya;Lillestrom 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group5;;Harstad;Fauske Sprint;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group5;;Skjervoy;Alta;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group5;;Tromsø 2;Ulfstind;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group6;;Bjorkelangen;Fram;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group6;;Drobak-Frogn;Brumunddal;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group6;;Elverum;Sandefjord 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group6;;Raelingen;Lillehammer;ALTA;OK
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Haugesund;Bryne;ALTA;OK
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Strömsgodset;Lyn;ALTA;KO
+v21dev;INVALID_KEY;SouthKorea_KLeague2;;Daegu;Suwon FC;ALTA;OK
+v21dev;INVALID_KEY;Estonia_Esiliiga;;Nomme Utd U21;Viimsi JK;ALTA;OK
+v21dev;INVALID_KEY;Finland_Kakkonen_GroupC;;Narpes Kraft;Vaajakoski;ALTA;OK
+v21dev;INVALID_KEY;Finland_Ykkonen;;KuPS Akatemia;VJS;ALTA;OK
+v21dev;INVALID_KEY;Finland_Ykkonen;;OLS Oulu;KPV;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Akranes;Stjarnan;ALTA;OK
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Akureyri;Thor Akureyri;ALTA;KO
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Breidablik;Vestmannaeyjar;ALTA;KO
+v21dev;INVALID_KEY;Iceland_BestaDeildKarla;;Fram;Hafnarfjordur;ALTA;KO
+v21dev;INVALID_KEY;Kyrgyzstan_PremierLiga;;Abdysh-Ata;Asia Talas;ALTA;KO
+v21dev;INVALID_KEY;Latvia_NakotnesLiga;;Metta;Tukums 2000 2;ALTA;OK
+v21dev;INVALID_KEY;Latvia_NakotnesLiga;;Valmiera;Riga FC 2;ALTA;OK
+v21dev;INVALID_KEY;Latvia_Virsliga;;Tukums 2000;RFS;ALTA;KO
+v21dev;INVALID_KEY;Mexico_LigaMX_Apertura;;Necaxa;Monterrey;ALTA;OK
+v21dev;INVALID_KEY;Mexico_LigaMX_Apertura;;Santos Laguna;Atlas;ALTA;KO
+v21dev;INVALID_KEY;Mexico_LigaMX_Apertura;;Tigres;Atl. San Luis;ALTA;OK
+v21dev;INVALID_KEY;Norway_2ndDivision_Group1;;Jerv;Lysekloster;ALTA;OK
+v21dev;INVALID_KEY;Norway_2ndDivision_Group2;;Rana FK;Kjelsaas;ALTA;OK
+v21dev;INVALID_KEY;Norway_2ndDivision_Group2;;Trygg/Lade;Eidsvold;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group1;;Lokomotiv Oslo;K. Oslo 2;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group1;;Ready;Frigg;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group2;;Rosenborg 2;Strindheim;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group2;;Volda TI;Ranheim 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group3;;Fyllingsdalen;Åsane 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group3;;Gneist;Brann 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group3;;OS;Varegg;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group3;;V. Haugesund;Sogndal 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Akra;Brodd;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Haugesund 2;Varhaug;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Odd 2;Vag;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group5;;Kongsvinger 2;Skedsmo;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group5;;Skjetten;Bossekop;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group6;;Lyn 2;Oppsal;ALTA;OK
+v21dev;INVALID_KEY;Norway_Eliteserien;;Aalesund;Viking;ALTA;KO
+v21dev;INVALID_KEY;Norway_Eliteserien;;Brann;Vålerenga;ALTA;OK
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Moss;Raufoss;ALTA;OK
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Sogndal;Ranheim;ALTA;OK
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Strømmen;Odd;ALTA;KO
+v21dev;INVALID_KEY;Norway_OBOSLigaen;;Åsane;Egersund;ALTA;OK
+v21dev;INVALID_KEY;Serbia_SuperLiga;;Macva;Partizan;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Allsvenskan;;Sirius;Göteborg;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Superettan;;Sundsvall;Falkenberg;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Superettan;;Öster;Varberg;ALTA;OK
+v21dev;INVALID_KEY;USA_MLS;;CF Montreal;Inter Miami;ALTA;KO
+v21dev;INVALID_KEY;USA_MLS;;Columbus Crew;Cincinnati;ALTA;OK
+v21dev;INVALID_KEY;USA_MLS;;Los Angeles FC;Sporting Kansas City;ALTA;OK
+v21dev;INVALID_KEY;USA_MLS;;New York Red Bulls;Charlotte;ALTA;KO
+v21dev;INVALID_KEY;USA_MLS;;Portland Timbers;Real Salt Lake;ALTA;OK
+v21dev;INVALID_KEY;USA_MLS;;San Diego FC;FC Dallas;ALTA;KO
+v21dev;INVALID_KEY;USA_MLS;;San Jose Earthquakes;Los Angeles Galaxy;ALTA;KO
+v21dev;INVALID_KEY;USA_USLChampionship;;El Paso;Sporting Jax;ALTA;KO
+v21dev;INVALID_KEY;USA_USLLeagueOne;;Charlotte Independ.;Richmond Kickers;ALTA;OK
+v21dev;INVALID_KEY;Germany_Oberliga_Bayern_Sud;;FC Schwaig;TSV 1880 Wasserburg;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Haukar;KFG Gardabaer;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Kari;Kormakur/Hvot;ALTA;KO
+v21dev;INVALID_KEY;Iceland_Division_2;;Magni;KFA;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Olafsvik;Fjolnir;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Selfoss;Dalvik/Reynir;ALTA;OK
+v21dev;INVALID_KEY;Iceland_Division_2;;Throttur Vogar;Hviti;ALTA;OK
+v21dev;INVALID_KEY;Finland_Ykkonen;;Jazz Pori;KuPS Akatemia;ALTA;OK
+v21dev;INVALID_KEY;Kazakhstan_FirstLeague;;Kaspij Aktau 2;Aktobe 2;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group5;;Ulfstind;Skjervoy;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Division2_SodraGotaland;;Karlskrona;Nosaby;ALTA;OK
+v21dev;INVALID_KEY;Bolivia_DivisionProfesional;;Universitario de Vinto;Guabira;ALTA;KO
+v21dev;INVALID_KEY;CzechRepublic_ChNL;;Kladno;Ostrava B;ALTA;KO
+v21dev;INVALID_KEY;Estonia_Meistriliiga;;Nomme Utd;Narva;ALTA;OK
+v21dev;INVALID_KEY;Finland_Ykkonen;;Inter Turku 2;VJS;ALTA;KO
+v21dev;INVALID_KEY;Germany_Oberliga_Bayern_Sud;;FC Schwaig;Gundelfingen;ALTA;KO
+v21dev;INVALID_KEY;Germany_Oberliga_Bayern_Sud;;Heimstetten;Geretsried;ALTA;KO
+v21dev;INVALID_KEY;Germany_Oberliga_Bayern_Sud;;Monaco 1860 2;Schalding;ALTA;KO
+v21dev;INVALID_KEY;Germany_Oberliga_Hamburg;;Norderstedt 2;Pinneberg;ALTA;OK
+v21dev;INVALID_KEY;Germany_Regionalliga_Nordost;;Tasmania Berlin;Aue;ALTA;KO
+v21dev;INVALID_KEY;Kazakhstan_FirstLeague;;FC Astana 2;Arys;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group1;;Gamle Oslo;Union Carl Berner;ALTA;OK
+v21dev;INVALID_KEY;Norway_3rdDivision_Group2;;Herd;Volda TI;ALTA;KO
+v21dev;INVALID_KEY;Norway_3rdDivision_Group4;;Varhaug;Hinna;ALTA;OK
+v21dev;INVALID_KEY;Poland_Division1;;Lechia;Warta Poznan;ALTA;OK
+v21dev;INVALID_KEY;Poland_Ekstraklasa;;Plock;Widzew Lodz;ALTA;KO
+v21dev;INVALID_KEY;Slovakia_2Liga;;Pohronie;Povazska Bystrica;ALTA;OK
+v21dev;INVALID_KEY;Sweden_Division2_NorraGotaland;;IFK Skovde;Ahlafors IF;ALTA;KO
+v21dev;INVALID_KEY;Sweden_Division2_SodraSvealand;;Farsta;Ragsved;ALTA;KO
+v21dev;INVALID_KEY;Switzerland_ChallengeLeague;;Kriens;Winterthur;ALTA;KO
+v21dev;INVALID_KEY;Switzerland_ChallengeLeague;;Wil;Xamax;ALTA;OK
