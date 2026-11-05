@@ -81,16 +81,25 @@ def _weekly_stats(engine: str, report_date: date) -> dict:
     }
 
 
-def _best_engine(candidates: list[str], report_date: date, fallback: str | None = None) -> dict:
+def _rank_engines(candidates: list[str], report_date: date) -> list[dict]:
     available = [e for e in candidates if e in get_available_engines()]
     stats = [_weekly_stats(e, report_date) for e in available]
     eligible = [s for s in stats if s["total"] >= MIN_WEEK_SAMPLE]
-    if eligible:
-        return max(eligible, key=lambda s: (s["pct"], s["total"], s["ok"]))
+    pool = eligible if eligible else stats
+    return sorted(
+        pool,
+        key=lambda s: (s["pct"], s["total"], s["ok"]),
+        reverse=True,
+    )
+
+
+def _best_engine(candidates: list[str], report_date: date, fallback: str | None = None) -> dict:
+    ranked = _rank_engines(candidates, report_date)
+    if ranked:
+        return ranked[0]
+    available = [e for e in candidates if e in get_available_engines()]
     if fallback and fallback in available:
         return _weekly_stats(fallback, report_date)
-    if stats:
-        return max(stats, key=lambda s: (s["total"], s["pct"], s["ok"]))
     return {"engine": "", "ok": 0, "ko": 0, "total": 0, "pct": 0.0}
 
 
@@ -237,7 +246,17 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
     styles = _styles()
 
     cautious = _best_engine(V20_FAMILY, report_date, fallback="v20plus")
-    permissive = _best_engine(_permissive_candidates(), report_date)
+    permissive_ranked = _rank_engines(_permissive_candidates(), report_date)
+    permissive = (
+        permissive_ranked[0]
+        if permissive_ranked
+        else {"engine": "", "ok": 0, "ko": 0, "total": 0, "pct": 0.0}
+    )
+    permissive_second = (
+        permissive_ranked[1]
+        if permissive.get("engine") == "v31" and len(permissive_ranked) > 1
+        else None
+    )
 
     doc = SimpleDocTemplate(
         str(output), pagesize=A4, rightMargin=10*mm, leftMargin=10*mm,
@@ -266,6 +285,28 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
     p_rows = _over_rows(results_by_engine.get(permissive["engine"], []))
     section("ALGORITMO PERMISSIVO", _table(p_rows, styles),
             _engine_meta(permissive, styles, "Selezionato"))
+    if permissive_second is not None:
+        second_rows = _over_rows(
+            results_by_engine.get(permissive_second["engine"], [])
+        )
+        first_keys = {
+            (r.get("LeagueId"), r.get("MatchDate"), r.get("Home"), r.get("Away"))
+            for r in p_rows
+        }
+        second_rows = [
+            r for r in second_rows
+            if (r.get("LeagueId"), r.get("MatchDate"), r.get("Home"), r.get("Away"))
+            not in first_keys
+        ]
+        section(
+            "PERMISSIVO - SECONDA SCELTA",
+            _table(second_rows, styles),
+            _engine_meta(
+                permissive_second,
+                styles,
+                "Supporto a V31 per ampliare le selezioni",
+            ),
+        )
 
     goal_rows = _vg1_rows(results_by_engine.get("vg1", []))
     section("GOL - VG1", _table(goal_rows, styles, vg1=True),
