@@ -9,12 +9,12 @@ OUTPUT = Path("data/analysis/veg90_weekly.csv")
 
 def main():
     if not HISTORY.exists():
-        raise SystemExit("No VEG90 history yet. Run python -m analysis.veg90 first.")
+        raise SystemExit("No VEG90 history yet. Run the normal rank_matches_v2 command with --engine all first.")
     with HISTORY.open(encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f, delimiter=";"))
     grouped = defaultdict(list)
     for r in rows:
-        if r.get("Outcome") not in ("OK", "KO"):
+        if str(r.get("MatchStatus", "")).upper() != "FINAL" or not str(r.get("HG", "")).strip() or not str(r.get("AG", "")).strip():
             continue
         day = date.fromisoformat(r["MatchDate"])
         monday = day - timedelta(days=day.weekday())
@@ -25,7 +25,7 @@ def main():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     records = []
     for (week, group), items in grouped.items():
-        ok = sum(r["Outcome"] == "OK" for r in items)
+        ok = sum(int(r["HG"]) + int(r["AG"]) >= 3 for r in items)
         ko = len(items) - ok
         records.append((week, group, ok, ko, len(items), round(ok / len(items) * 100, 2)))
     records.sort(key=lambda x: (x[0], x[5]), reverse=True)
