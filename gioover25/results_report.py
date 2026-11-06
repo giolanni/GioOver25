@@ -84,12 +84,20 @@ def leaderboard(day,market,weekly=False):
         engine=folder.name
         if market=="BTTS" and not engine.startswith("vg"):continue
         if market=="Over25" and engine.startswith("vg"):continue
-        rows=dr._history(engine)
-        ok=ko=0
-        for r in rows:
+        unique={}
+        for r in dr._history(engine):
             d=dr._parse_date(r.get("MatchDate"))
             if d is None or not(start<=d<=day):continue
-            if str(r.get("Band","")).upper()!="ALTA":continue
+            if str(r.get("Band","")).strip().upper()!="ALTA":continue
+            k=matchkey(r)
+            if k in unique:
+                old=unique[k]
+                if (old.get(market),old.get("HG"),old.get("AG"))!=(r.get(market),r.get("HG"),r.get("AG")):
+                    raise ValueError(f"Storico {engine}: duplicato discordante {k}; classifica bloccata")
+                continue
+            unique[k]=r
+        ok=ko=0
+        for r in unique.values():
             outcome=str(r.get(market,"")).strip().upper()
             if outcome=="OK":ok+=1
             elif outcome=="KO":ko+=1
@@ -97,7 +105,7 @@ def leaderboard(day,market,weekly=False):
     return sorted(stats,key=lambda x:(-x[4],-x[3],x[0]))
 
 def _results_table(rows,market,styles,gs1=False):
-    headers=["Lega","Partita","Fascia","Ris.","Esito"]
+    headers=["Lega","Partita","Score","Fascia","Ris.","Esito"]
     data=[headers]
     for r in rows:
         outcome=str(r.get("Outcome" if gs1 else market,"")).upper()
@@ -105,10 +113,11 @@ def _results_table(rows,market,styles,gs1=False):
         score=f"{hg}-{ag}" if str(hg).strip() and str(ag).strip() else "-"
         data.append([dr._p(r.get("LeagueId",""),styles["cell"]),
                      dr._p(dr._match(r),styles["cell_bold"]),
-                     dr._p(r.get("Band",""),styles["cell"]),
+                     dr._p((f"{_num(r.get('MinOverRateFull')):.3f} / {_num(r.get('DeltaGA')):+.3f}" if gs1 else str(r.get("Score","") or "N/D")),styles["cell"]),
+                     dr._p(("OSSERVAZIONE" if gs1 and str(r.get("Band","")).startswith(("PROX-","NEAR")) else dr._display_band(r)),styles["cell"]),
                      score,outcome if outcome in ("OK","KO") else "ATTESA"])
     if len(data)==1:return dr._p("Nessuna selezione.",styles["empty"])
-    table=Table(data,colWidths=[37*mm,85*mm,23*mm,14*mm,16*mm],repeatRows=1)
+    table=Table(data,colWidths=[30*mm,65*mm,30*mm,23*mm,13*mm,14*mm],repeatRows=1)
     commands=[("BACKGROUND",(0,0),(-1,0),dr.INK),("TEXTCOLOR",(0,0),(-1,0),colors.white),
               ("FONTNAME",(0,0),(-1,0),"Helvetica-Bold"),("FONTSIZE",(0,0),(-1,-1),7),
               ("VALIGN",(0,0),(-1,-1),"MIDDLE"),("GRID",(0,0),(-1,-1),.25,dr.LINE)]
