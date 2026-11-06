@@ -1266,6 +1266,9 @@ def append_results(
     from .gs1_over import update_results as update_gs1_over_results
     update_gs1_over_results(input_file)
 
+    from .results_report import update_reports
+    update_reports(input_file)
+
     rebuild_league_over_map()
 
     archive_file = archive_input_results(
