@@ -1174,7 +1174,7 @@ def main() -> None:
                 rank_matches(args.input_file, output_file, args.engine)
                 all_results = None
                 completed_engines = 1
-            from .gs1_over import generate as generate_gs1_over
+            from .gs1_over import generate as generate_gs1_over, select_near as select_gs1_near
             gs1_selections = generate_gs1_over(
                 input_rows,
                 read_registry(),
@@ -1182,10 +1182,16 @@ def main() -> None:
                 base_name,
             )
             if all_results is not None:
+                gs1_near = select_gs1_near(
+                    input_rows,
+                    read_registry(),
+                    date.today().isoformat(),
+                )
                 from .daily_report import generate_daily_report
                 generate_daily_report(
                     results_by_engine=all_results,
                     gs1_rows=gs1_selections,
+                    gs1_near_rows=gs1_near,
                     report_date=date.today(),
                 )
             if not args.erase:
