@@ -266,19 +266,24 @@ def _gs1_performance(report_date: date) -> str:
     a = calc()
     weekly = f"7 gg: {w[0]}/{w[1]} ({w[2]:.1f}%)" if w[1] else "7 gg: n.d."
     overall = f"storico: {a[0]}/{a[1]} ({a[2]:.1f}%)" if a[1] else "storico: n.d."
+    if not w[1] and not a[1]:
+        return ""
     return f"{weekly} | {overall}"
 
 
 def _description(text: str, stats: str, styles):
-    # Testo controllato internamente: qui i tag ReportLab devono essere
-    # interpretati, non mostrati letteralmente. I valori provenienti dai CSV
-    # continuano invece a passare da _p(), che esegue l'escape.
-    safe_text = str(text or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    safe_stats = str(stats or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    return Paragraph(
-        f"{safe_text}<br/><b>Rendimento:</b> {safe_stats}",
-        styles["meta"],
-    )
+    # Nessun markup inline: evita che tag ReportLab possano comparire nel PDF.
+    rows = [[_p(text, styles["meta"])]]
+    if stats:
+        rows.append([_p(f"Rendimento: {stats}", styles["meta"])])
+    box = Table(rows, colWidths=[185*mm])
+    box.setStyle(TableStyle([
+        ("LEFTPADDING", (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+        ("TOPPADDING", (0, 0), (-1, -1), 0),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 1.2*mm),
+    ]))
+    return box
 
 
 def _engine_meta(stats: dict, styles, label: str):
@@ -402,8 +407,12 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
         "GS1 - OVER 2.5",
         _table(gs1_rows, styles, gs1=True),
         _description(
-            "Selettore Over 2.5 indipendente dagli engine di ranking. Combina la frequenza "
-            "Over storica minima delle due squadre con il peggioramento recente dei gol subiti (DeltaGA).",
+            "GS1 e' un selettore Over 2.5 indipendente dagli engine di ranking, progettato per "
+            "mettere a disposizione un gruppo ristretto di partite affidabili con cui costruire, "
+            "quando il programma giornaliero lo consente, una schedina da 3 Over 2.5. Combina la "
+            "frequenza Over storica minima delle due squadre con il peggioramento recente dei gol "
+            "subiti (DeltaGA). Le ALTA costituiscono il nucleo piu' forte; MEDIA e Near ampliano "
+            "il bacino quando servono alternative per completare il ticket.",
             _gs1_performance(report_date),
             styles,
         ),
@@ -413,8 +422,8 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
         _table(gs1_near_rows or [], styles, gs1=True),
         _p(
             "Zona di osservazione vicina alle soglie GS1: MinOverFull >=0.70 e DeltaGA >=0.22. "
-            "Non e' una selezione ufficiale GS1: evidenzia partite interessanti che non raggiungono "
-            "le condizioni ALTA/MEDIA.",
+            "Non e' una selezione ufficiale GS1: e' il bacino di supporto per individuare possibili "
+            "alternative quando ALTA e MEDIA non bastano a costruire il ticket da 3 partite.",
             styles["meta"],
         ),
     )
