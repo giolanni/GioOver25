@@ -1133,6 +1133,7 @@ def main() -> None:
     parser.add_argument("input_file", help="CSV partite da analizzare")
     parser.add_argument("--engine", default="v20", choices=get_available_engines() + ["all"], help="Motore di scoring da usare")
     parser.add_argument("--output", default=None, help="CSV output ranking")
+    parser.add_argument("--erase", action="store_true", help="Ricalcola gli output senza archiviare i CSV precedenti o ricopiare l input; non cancella gli storici")
     args = parser.parse_args()
 
     input_path = Path(args.input_file)
@@ -1150,7 +1151,8 @@ def main() -> None:
             if args.engine == "all":
                 output_files = {}
                 for engine_name in engine_names:
-                    archived_total += archive_output_rankings(engine_name)
+                    if not args.erase:
+                        archived_total += archive_output_rankings(engine_name)
                     output_files[engine_name] = (
                         OUTPUT_DIR
                         / engine_name
@@ -1166,7 +1168,8 @@ def main() -> None:
                 )
                 completed_engines = len(engine_names)
             else:
-                archived_total = archive_output_rankings(args.engine)
+                if not args.erase:
+                    archived_total = archive_output_rankings(args.engine)
                 output_file = Path(args.output) if args.output else OUTPUT_DIR / args.engine / f"{base_name}_{args.engine}.csv"
                 rank_matches(args.input_file, output_file, args.engine)
                 all_results = None
@@ -1185,7 +1188,8 @@ def main() -> None:
                     gs1_rows=gs1_selections,
                     report_date=date.today(),
                 )
-            archive_input_file(input_path)
+            if not args.erase:
+                archive_input_file(input_path)
 
     print(f"[RANK] {len(input_rows)} partite | {len(engine_names)} engine")
     print(f"[ARCHIVE] {archived_total} ranking archiviati")
@@ -1194,7 +1198,7 @@ def main() -> None:
         for warning in tee.console_warnings:
             print(warning)
     print(f"[RANK] completato: {completed_engines}/{len(engine_names)} engine")
-    print("[ARCHIVE] input salvato")
+    print("[ARCHIVE] input salvato" if not args.erase else "[ERASE] output sovrascritti; nessun archivio input/output creato")
     print(f"[LOG] {log_path}")
 
 
