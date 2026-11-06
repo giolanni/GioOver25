@@ -11,5 +11,5 @@ def calculate_score(match_stats, league_info):
     base = vg1.calculate_score(match_stats, league_info)
     selected = base.band != "ALTA" and (65.0 <= float(base.score) < 70.0)
     # Select only the additional score window, never the original VG1 ALTA.
-    band = "ALTA" if selected else base.band
+    band = "ALTA" if selected else ("MEDIA" if base.band == "ALTA" else base.band)
     return replace(base, band=band, reason="VG1.2 " + ("SELECTED" if selected else "EXCLUDED") + " | " + base.reason)
