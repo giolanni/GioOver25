@@ -237,7 +237,9 @@ def _performance(engine: str, report_date: date, *, market="Over25", min_score=N
                 continue
             if min_score is not None and _num(row.get("Score")) <= min_score:
                 continue
-            if selected_only and str(row.get("Band", "") or "").strip().upper() != "ALTA":\n                continue\n            outcome = str(row.get(market, "") or "").strip().upper()
+            if selected_only and str(row.get("Band", "") or "").strip().upper() != "ALTA":
+                continue
+            outcome = str(row.get(market, "") or "").strip().upper()
             if outcome == "OK": ok += 1
             elif outcome == "KO": ko += 1
         total = ok + ko
