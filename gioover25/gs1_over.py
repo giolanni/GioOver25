@@ -18,7 +18,7 @@ FIELDS = ["MatchDate","LeagueId","Home","Away","Round","PredictionDate",
 MIN_OVER = 0.8
 MEDIA_MIN_OVER = 0.65
 MIN_DELTA_GA = 0.4
-NEAR_MIN_OVER = 0.60
+NEAR_MIN_OVER = 0.70
 NEAR_MIN_DELTA_GA = 0.22
 
 
@@ -104,12 +104,8 @@ def select_both(rows,registry_rows,prediction_date):
         if official:
             band = "ALTA" if min_over+1e-10>=MIN_OVER else "MEDIA"
             over_threshold = MIN_OVER if band=="ALTA" else MEDIA_MIN_OVER
-        elif min_over+1e-10>=MIN_OVER:
-            band,over_threshold = "PROX-ALTA",MIN_OVER
-        elif min_over+1e-10>=0.70:
-            band,over_threshold = "PROX-MEDIA-DELTA",0.70
         else:
-            band,over_threshold = "PROX-MEDIA-OVER",MEDIA_MIN_OVER
+            band,over_threshold = "OSSERVAZIONE",NEAR_MIN_OVER
         record = {"MatchDate":row["MatchDate"],"LeagueId":league,
                        "Home":row["Home"],"Away":row["Away"],
                        "Round":row.get("Round",""),"PredictionDate":prediction_date,
@@ -123,7 +119,7 @@ def select_both(rows,registry_rows,prediction_date):
                        "HomeGAL5":f"{home['GAL5']:.6f}","AwayGAL5":f"{away['GAL5']:.6f}",
                        "Status":"SCHEDULED","HG":"","AG":"","Outcome":""}
         (result if official else near).append(record)
-    order={"ALTA":0,"MEDIA":1,"PROX-ALTA":0,"PROX-MEDIA-DELTA":1,"PROX-MEDIA-OVER":2}
+    order={"ALTA":0,"MEDIA":1,"OSSERVAZIONE":2}
     sorter=lambda x:(x["MatchDate"],order[x["Band"]],-float(x["MinOverRateFull"]),
                      -float(x["DeltaGA"]),x["LeagueId"],x["Home"],x["Away"])
     return sorted(result,key=sorter),sorted(near,key=sorter)
@@ -223,8 +219,7 @@ def generate(rows,registry_rows,prediction_date,base_name):
     high_count=sum(r["Band"]=="ALTA" for r in selections)
     print(f"[GS1-OVER] ALTA={high_count} MEDIA={len(selections)-high_count} "
           f"nuove_storico={inserted} output={output}")
-    counts={b:sum(r["Band"]==b for r in near) for b in
-            ("PROX-ALTA","PROX-MEDIA-DELTA","PROX-MEDIA-OVER")}
+    counts={"OSSERVAZIONE":len(near)}
     print(f"[GS1-NEAR] {counts} nuove_storico={near_inserted} output={near_output}")
     return selections
 
