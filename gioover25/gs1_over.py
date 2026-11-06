@@ -148,6 +148,70 @@ def _append_history(path,selections):
     return inserted
 
 
+def select_near(rows, registry_rows, prediction_date):
+    """GS1 Near/OSSERVAZIONE: vicino alle soglie ufficiali, non selezione GS1."""
+    from .rank_matches_v2 import get_competition_group, get_group_league_ids
+    result = []
+    cache = {}
+    for row in rows:
+        league = row["LeagueId"].strip()
+        if league.startswith("Australia_"):
+            continue
+        try:
+            match_date = date.fromisoformat(row["MatchDate"].strip())
+        except ValueError:
+            continue
+        ids = tuple(get_group_league_ids(
+            league, get_competition_group(league, registry_rows), registry_rows
+        ))
+        if ids not in cache:
+            cache[ids] = {
+                name: read_results_file(Path("data/storico/risultati") / f"{name}.csv")
+                for name in ids
+                if (Path("data/storico/risultati") / f"{name}.csv").exists()
+            }
+        histories = cache[ids]
+        if not histories:
+            continue
+        home = _stats(row["Home"], league, histories, match_date)
+        away = _stats(row["Away"], league, histories, match_date)
+        if home is None or away is None:
+            continue
+        min_over = min(home["OverRateFull"], away["OverRateFull"])
+        delta = min(home["GAL5"], away["GAL5"]) - min(home["GAFull"], away["GAFull"])
+
+        # Regola OSSERVAZIONE congelata dal GS1 shadow:
+        # MinOver >= .70 e DeltaGA >= .22. Escludiamo le partite che
+        # soddisfano gia' ALTA o MEDIA ufficiali.
+        official = (
+            min_over + 1e-10 >= MEDIA_MIN_OVER
+            and delta + 1e-10 >= MIN_DELTA_GA
+        )
+        near = min_over + 1e-10 >= 0.70 and delta + 1e-10 >= 0.22
+        if not near or official:
+            continue
+
+        result.append({
+            "MatchDate": row["MatchDate"], "LeagueId": league,
+            "Home": row["Home"], "Away": row["Away"],
+            "Round": row.get("Round", ""), "PredictionDate": prediction_date,
+            "Band": "NEAR",
+            "MinOverThreshold": "0.700000",
+            "DeltaGAThreshold": "0.220000",
+            "MinOverRateFull": f"{min_over:.6f}", "DeltaGA": f"{delta:.6f}",
+            "HomeOverRateFull": f"{home['OverRateFull']:.6f}",
+            "AwayOverRateFull": f"{away['OverRateFull']:.6f}",
+            "HomeGAFull": f"{home['GAFull']:.6f}", "AwayGAFull": f"{away['GAFull']:.6f}",
+            "HomeGAL5": f"{home['GAL5']:.6f}", "AwayGAL5": f"{away['GAL5']:.6f}",
+            "Status": "SCHEDULED", "HG": "", "AG": "", "Outcome": "",
+        })
+    return sorted(
+        result,
+        key=lambda x: (-float(x["MinOverRateFull"]), -float(x["DeltaGA"]),
+                       x["MatchDate"], x["LeagueId"], x["Home"], x["Away"]),
+    )
+
+
 def generate(rows,registry_rows,prediction_date,base_name):
     selections,near=select_both(rows,registry_rows,prediction_date)
     output=OUTPUT_DIR/f"{base_name}_gs1_over.csv"
