@@ -1227,6 +1227,8 @@ def main() -> None:
                     gs1_near_rows=gs1_near,
                     report_date=date.today(),
                 )
+            from .results_report import freeze_tickets
+            freeze_tickets()
             if not args.erase:
                 archive_input_file(input_path)
 
