@@ -227,7 +227,7 @@ def _table(rows: list[dict], styles, *, show_score=True, gs1=False, vg1=False):
     return table
 
 
-def _performance(engine: str, report_date: date, *, market="Over25", min_score=None) -> str:
+def _performance(engine: str, report_date: date, *, market="Over25", min_score=None, selected_only=False) -> str:
     rows = _history(engine)
     def calc(start=None):
         ok = ko = 0
@@ -237,7 +237,7 @@ def _performance(engine: str, report_date: date, *, market="Over25", min_score=N
                 continue
             if min_score is not None and _num(row.get("Score")) <= min_score:
                 continue
-            outcome = str(row.get(market, "") or "").strip().upper()
+            if selected_only and str(row.get("Band", "") or "").strip().upper() != "ALTA":\n                continue\n            outcome = str(row.get(market, "") or "").strip().upper()
             if outcome == "OK": ok += 1
             elif outcome == "KO": ko += 1
         total = ok + ko
@@ -390,7 +390,7 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
         market = "BTTS" if engine.startswith("vg") else "Over25"
         meta = _description(
             special_descriptions[engine],
-            _performance(engine, report_date, market=market),
+            _performance(engine, report_date, market=market, selected_only=engine in {"vg2.2", "vg2.6"}),
             styles,
         )
         if engine in {"v27", "v30"}:
