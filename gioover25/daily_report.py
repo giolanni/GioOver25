@@ -432,7 +432,8 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
 
     story += [
         Spacer(1, 3*mm),
-        _p("<b>Legenda.</b> ALTA = confidenza elevata. MEDIA-ALTA = fascia MEDIA con score >70. "
+        _p("LEGENDA", styles["section"]),
+        _p("ALTA = confidenza elevata. MEDIA-ALTA = fascia MEDIA con score >70. "
            "IMM = almeno una squadra ha meno di 5 partite pregresse; il numero finale e' il totale "
            "delle gare pregresse delle due squadre. GOL = entrambe le squadre segnano. "
            "OVER 2.5 = almeno 3 gol complessivi.", styles["legend"]),
