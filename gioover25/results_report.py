@@ -10,6 +10,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,Table,TableStyle,PageBreak
 from . import daily_report as dr
+from .engine_descriptions import description as engine_description
 from .team_names import normalize_team_name
 
 TICKETS=Path("data/storico/gs1_over/schedine_gs1.csv")
@@ -226,6 +227,7 @@ def generate_results_report(day:date):
               and r.get("PredictionDate","")<=day.isoformat()
               and (minimum is None or _num(r.get("Score"))>minimum)]
         section(f"{title} - {engine}",_results_table(rows,market,styles))
+        story.extend([dr._p(engine_description(engine),styles["meta"]),Spacer(1,2*mm)])
     engine_section("ALGORITMO CAUTO",cautious["engine"],minimum=70)
     engine_section("ALGORITMO PERMISSIVO",permissive["engine"],minimum=70)
     for engine in dr.SPECIAL_ENGINES:
