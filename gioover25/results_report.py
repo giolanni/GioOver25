@@ -154,6 +154,26 @@ def _perfect_days_table(rows,styles):
     return t
 
 
+def _engine_legend(market,styles):
+    """Compact legend for the rankings; maximum two short lines per entry."""
+    if market=="BTTS":
+        lines=[
+            "VG1: modello BTTS originale; selezioni secondo le fasce native.",
+            "VG1.2: score 65-<70; solo selezioni aggiuntive rispetto alle ALTA VG1.",
+            "VG1.3: score 68-<72; solo selezioni aggiuntive rispetto alle ALTA VG1.",
+            "VG1.4: score 65-<72; solo selezioni aggiuntive rispetto alle ALTA VG1.",
+            "VG2.2 / VG2.6: varianti VG1 con MinGFL5 rispettivamente >=2.2 / >=2.6.",
+        ]
+    else:
+        lines=[
+            "V20: engine originale; famiglia V20 plus/select = promozioni o sottoinsiemi.",
+            "Suffisso def: variante con penalizzazione delle difese forti.",
+            "V30 / V31: engine dedicati a campioni con storico giovane.",
+            "Altri V*: versioni autonome del ranking Over 2.5.",
+        ]
+    return dr._p("Legenda engine - "+" | ".join(lines),styles["meta"])
+
+
 def _results_table(rows,market,styles,gs1=False):
     headers=["Lega","Partita","Score","Fascia","Ris.","Esito"]
     data=[headers]
@@ -227,6 +247,7 @@ def generate_results_report(day:date):
         f"Puntata EUR {STAKE:.2f} | Quota schedina {ODDS:.2f} | "
         f"Utile EUR {summary['profit']:+.2f} | Saldo EUR {summary['balance']:.2f}. "
         "Quote ipotetiche, non quote bookmaker.",styles["meta"]))
+    story.extend([_engine_legend("Over25",styles),Spacer(1,2*mm)])
     section("CLASSIFICA OVER 2.5 - GIORNATA",_ranking_table(leaderboard(day,"Over25"),styles))
     section("CLASSIFICA OVER 2.5 - 7 GIORNI",_ranking_table(leaderboard(day,"Over25",weekly=True),styles))
     section("OVER 2.5 - GIORNATE ALTA 100% OK (STORICO)",_perfect_days_table(perfect_days_leaderboard(day,"Over25"),styles))
@@ -238,6 +259,7 @@ def generate_results_report(day:date):
     for engine in dr.SPECIAL_ENGINES:
         if engine.startswith("vg"):
             engine_section(engine.upper(),engine,"BTTS")
+    story.extend([_engine_legend("BTTS",styles),Spacer(1,2*mm)])
     section("CLASSIFICA BTTS - GIORNATA",_ranking_table(leaderboard(day,"BTTS"),styles))
     section("CLASSIFICA BTTS - 7 GIORNI",_ranking_table(leaderboard(day,"BTTS",weekly=True),styles))
     section("BTTS - GIORNATE ALTA 100% OK (STORICO)",_perfect_days_table(perfect_days_leaderboard(day,"BTTS"),styles))
