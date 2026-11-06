@@ -227,6 +227,52 @@ def _table(rows: list[dict], styles, *, show_score=True, gs1=False, vg1=False):
     return table
 
 
+def _performance(engine: str, report_date: date, *, market="Over25", min_score=None) -> str:
+    rows = _history(engine)
+    def calc(start=None):
+        ok = ko = 0
+        for row in rows:
+            d = _parse_date(row.get("MatchDate"))
+            if d is None or d >= report_date or (start is not None and d < start):
+                continue
+            if min_score is not None and _num(row.get("Score")) <= min_score:
+                continue
+            outcome = str(row.get(market, "") or "").strip().upper()
+            if outcome == "OK": ok += 1
+            elif outcome == "KO": ko += 1
+        total = ok + ko
+        return ok, total, (ok / total * 100.0 if total else 0.0)
+    w = calc(report_date - timedelta(days=7))
+    a = calc()
+    weekly = f"7 gg: {w[0]}/{w[1]} ({w[2]:.1f}%)" if w[1] else "7 gg: n.d."
+    overall = f"storico: {a[0]}/{a[1]} ({a[2]:.1f}%)" if a[1] else "storico: n.d."
+    return f"{weekly} | {overall}"
+
+
+def _gs1_performance(report_date: date) -> str:
+    rows = _read_csv(Path("data/storico/gs1_over/storico_gs1_over.csv"))
+    def calc(start=None):
+        ok = total = 0
+        for row in rows:
+            d = _parse_date(row.get("MatchDate"))
+            if d is None or d >= report_date or (start is not None and d < start):
+                continue
+            outcome = str(row.get("Outcome", "") or "").strip().upper()
+            if outcome in {"OK", "KO"}:
+                total += 1
+                if outcome == "OK": ok += 1
+        return ok, total, (ok / total * 100.0 if total else 0.0)
+    w = calc(report_date - timedelta(days=7))
+    a = calc()
+    weekly = f"7 gg: {w[0]}/{w[1]} ({w[2]:.1f}%)" if w[1] else "7 gg: n.d."
+    overall = f"storico: {a[0]}/{a[1]} ({a[2]:.1f}%)" if a[1] else "storico: n.d."
+    return f"{weekly} | {overall}"
+
+
+def _description(text: str, stats: str, styles):
+    return _p(f"{text}<br/><b>Rendimento:</b> {stats}", styles["meta"])
+
+
 def _engine_meta(stats: dict, styles, label: str):
     if not stats.get("engine"):
         return _p(f"{label}: nessun engine disponibile.", styles["meta"])
@@ -239,6 +285,7 @@ def _engine_meta(stats: dict, styles, label: str):
 
 
 def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows: list[dict],
+                          gs1_near_rows: list[dict] | None = None,
                           report_date: date | None = None) -> Path:
     report_date = report_date or date.today()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -280,11 +327,13 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
 
     c_rows = _over_rows(results_by_engine.get(cautious["engine"], []))
     section("ALGORITMO CAUTO", _table(c_rows, styles),
-            _engine_meta(cautious, styles, "Selezionato"))
+            _description(f"Selezione prudente della famiglia V20. Oggi usa {cautious['engine']}: privilegia continuita' e affidabilita' rispetto al numero di pronostici.",
+                         _performance(cautious["engine"], report_date, min_score=70), styles))
 
     p_rows = _over_rows(results_by_engine.get(permissive["engine"], []))
     section("ALGORITMO PERMISSIVO", _table(p_rows, styles),
-            _engine_meta(permissive, styles, "Selezionato"))
+            _description(f"Selezione piu' ampia fuori dalla famiglia V20. Oggi usa {permissive['engine']}, scelto sul rendimento recente tra gli engine ammessi.",
+                         _performance(permissive["engine"], report_date, min_score=70), styles))
     if permissive_second is not None:
         second_rows = _over_rows(
             results_by_engine.get(permissive_second["engine"], [])
@@ -301,16 +350,14 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
         section(
             "PERMISSIVO - SECONDA SCELTA",
             _table(second_rows, styles),
-            _engine_meta(
-                permissive_second,
-                styles,
-                "Supporto a V31 per ampliare le selezioni",
-            ),
+            _description(f"{permissive_second['engine']} affianca V31 per aumentare il numero di opportunita'; sono escluse le partite gia' indicate da V31.",
+                         _performance(permissive_second["engine"], report_date, min_score=70), styles),
         )
 
     goal_rows = _vg1_rows(results_by_engine.get("vg1", []))
     section("GOL - VG1", _table(goal_rows, styles, vg1=True),
-            _p("Score >65 | giallo 65-67.9 | arancio 68-71.9 | verde >=72", styles["meta"]))
+            _description("Engine dedicato al mercato GOL/BTTS. Nel report compaiono score >65: giallo 65-67.9, arancio 68-71.9, verde >=72.",
+                         _performance("vg1", report_date, market="BTTS", min_score=65), styles))
 
     for engine in SPECIAL_ENGINES:
         rows = results_by_engine.get(engine, [])
