@@ -270,7 +270,15 @@ def _gs1_performance(report_date: date) -> str:
 
 
 def _description(text: str, stats: str, styles):
-    return _p(f"{text}<br/><b>Rendimento:</b> {stats}", styles["meta"])
+    # Testo controllato internamente: qui i tag ReportLab devono essere
+    # interpretati, non mostrati letteralmente. I valori provenienti dai CSV
+    # continuano invece a passare da _p(), che esegue l'escape.
+    safe_text = str(text or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    safe_stats = str(stats or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return Paragraph(
+        f"{safe_text}<br/><b>Rendimento:</b> {safe_stats}",
+        styles["meta"],
+    )
 
 
 def _engine_meta(stats: dict, styles, label: str):
