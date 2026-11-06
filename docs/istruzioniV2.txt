@@ -77,6 +77,9 @@ python -m gioover25.rank_matches_v2 data/input_partite/partite.csv --engine v13
 Ranking ogni engines:
 python -m gioover25.rank_matches_v2 data/input_partite/partite.csv --engine all
 
+cancella i ranking già calcolati e li ricalcola
+python -m gioover25.rank_matches_v2 data/input_partite/partite.csv --erase --engine all
+
 Aggiorna esiti ranking per tutti gli engines:
 python -m gioover25.update_ranking_results
 
