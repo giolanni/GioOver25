@@ -400,10 +400,7 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
             _performance(engine, report_date, market=market, selected_only=engine in {"vg2.2", "vg2.6"}),
             styles,
         )
-        if engine in {"v27", "v30"}:
-            section(engine.upper(), _table(rows, styles, show_score=False), meta)
-        else:
-            section(engine.upper(), _table(rows, styles), meta)
+        section(engine.upper(), _table(rows, styles, show_score=True), meta)
 
     section(
         "GS1 - OVER 2.5",
