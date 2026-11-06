@@ -104,6 +104,56 @@ def leaderboard(day,market,weekly=False):
         if ok+ko:stats.append((engine,ok,ko,ok+ko,100*ok/(ok+ko)))
     return sorted(stats,key=lambda x:(-x[4],-x[3],x[0]))
 
+def perfect_days_leaderboard(day,market):
+    """Cumulative 100%-OK ALTA days, excluding incomplete days and duplicates."""
+    stats=[]
+    for folder in sorted(dr.HISTORY_DIR.glob("*")):
+        if not folder.is_dir():continue
+        engine=folder.name
+        if market=="BTTS" and not engine.startswith("vg"):continue
+        if market=="Over25" and engine.startswith("vg"):continue
+        unique={}
+        for r in dr._history(engine):
+            d=dr._parse_date(r.get("MatchDate"))
+            if d is None or d>day:continue
+            if str(r.get("Band","")).strip().upper()!="ALTA":continue
+            k=matchkey(r)
+            if k in unique:
+                old=unique[k]
+                if (str(old.get(market,"")).strip().upper(),old.get("HG"),old.get("AG")) != (
+                    str(r.get(market,"")).strip().upper(),r.get("HG"),r.get("AG")):
+                    raise ValueError(f"Storico {engine}: duplicato discordante {k}; classifica giornate bloccata")
+                continue
+            unique[k]=r
+        by_day={}
+        for r in unique.values():
+            by_day.setdefault(r["MatchDate"],[]).append(str(r.get(market,"")).strip().upper())
+        completed=[outcomes for outcomes in by_day.values()
+                   if outcomes and all(o in ("OK","KO") for o in outcomes)]
+        total=len(completed)
+        perfect=sum(all(o=="OK" for o in outcomes) for outcomes in completed)
+        if total:
+            stats.append((engine,perfect,total,100*perfect/total))
+    return sorted(stats,key=lambda x:(-x[3],-x[2],x[0]))
+
+
+def _perfect_days_table(rows,styles):
+    if not rows:
+        return dr._p("Nessuna giornata ALTA completamente risolta.",styles["empty"])
+    data=[["Engine","Giorni 100% OK / Totale","% giorni 100% OK"]]
+    for engine,perfect,total,pct in rows:
+        data.append([engine,f"{perfect}/{total}",f"{pct:.2f}%"])
+    t=Table(data,colWidths=[60*mm,60*mm,55*mm],repeatRows=1)
+    t.setStyle(TableStyle([
+        ("BACKGROUND",(0,0),(-1,0),dr.INK),
+        ("TEXTCOLOR",(0,0),(-1,0),colors.white),
+        ("GRID",(0,0),(-1,-1),.25,dr.LINE),
+        ("FONTSIZE",(0,0),(-1,-1),8),
+        ("ROWBACKGROUNDS",(0,1),(-1,-1),[colors.white,dr.LIGHT]),
+    ]))
+    return t
+
+
 def _results_table(rows,market,styles,gs1=False):
     headers=["Lega","Partita","Score","Fascia","Ris.","Esito"]
     data=[headers]
@@ -176,6 +226,7 @@ def generate_results_report(day:date):
         "Quote ipotetiche, non quote bookmaker.",styles["meta"]))
     section("CLASSIFICA OVER 2.5 - GIORNATA",_ranking_table(leaderboard(day,"Over25"),styles))
     section("CLASSIFICA OVER 2.5 - 7 GIORNI",_ranking_table(leaderboard(day,"Over25",weekly=True),styles))
+    section("OVER 2.5 - GIORNATE ALTA 100% OK (STORICO)",_perfect_days_table(perfect_days_leaderboard(day,"Over25"),styles))
     story.append(PageBreak())
     story.append(dr._p("GOL / BTTS",styles["section"]))
     engine_section("GOL - VG1","vg1","BTTS",minimum=65)
@@ -186,6 +237,7 @@ def generate_results_report(day:date):
             engine_section(engine.upper(),engine,"BTTS")
     section("CLASSIFICA BTTS - GIORNATA",_ranking_table(leaderboard(day,"BTTS"),styles))
     section("CLASSIFICA BTTS - 7 GIORNI",_ranking_table(leaderboard(day,"BTTS",weekly=True),styles))
+    section("BTTS - GIORNATE ALTA 100% OK (STORICO)",_perfect_days_table(perfect_days_leaderboard(day,"BTTS"),styles))
     doc=SimpleDocTemplate(str(path),pagesize=A4,rightMargin=10*mm,leftMargin=10*mm,
                           topMargin=10*mm,bottomMargin=11*mm)
     doc.build(story)
