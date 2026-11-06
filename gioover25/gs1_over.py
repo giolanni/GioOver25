@@ -10,6 +10,7 @@ from .team_names import normalize_team_name
 
 OUTPUT_DIR = Path("data/output_gs1_over")
 HISTORY_FILE = Path("data/storico/gs1_over/storico_gs1_over.csv")
+NEAR_HISTORY_FILE = Path("data/storico/gs1_over/storico_gs1_over_near.csv")
 FIELDS = ["MatchDate","LeagueId","Home","Away","Round","PredictionDate",
           "Band","MinOverThreshold","DeltaGAThreshold","MinOverRateFull","DeltaGA","HomeOverRateFull","AwayOverRateFull",
           "HomeGAFull","AwayGAFull","HomeGAL5","AwayGAL5",
@@ -17,6 +18,8 @@ FIELDS = ["MatchDate","LeagueId","Home","Away","Round","PredictionDate",
 MIN_OVER = 0.8
 MEDIA_MIN_OVER = 0.65
 MIN_DELTA_GA = 0.4
+NEAR_MIN_OVER = 0.60
+NEAR_MIN_DELTA_GA = 0.22
 
 
 def key(row):
@@ -71,9 +74,10 @@ def _stats(team,league,histories,match_date):
             "GAL5":sum(ga for _,_,ga in observations[-5:])/5}
 
 
-def select(rows,registry_rows,prediction_date):
+def select_both(rows,registry_rows,prediction_date):
     from .rank_matches_v2 import get_competition_group,get_group_league_ids
     result=[]
+    near=[]
     cache={}
     for row in rows:
         league=row["LeagueId"].strip()
@@ -94,31 +98,45 @@ def select(rows,registry_rows,prediction_date):
         # Same definition as analysis.gs1_over_lab.features:
         # DeltaGA = min(GA_L5 home, GA_L5 away) - min(GA_full home, GA_full away).
         delta=min(home["GAL5"],away["GAL5"])-min(home["GAFull"],away["GAFull"])
-        if min_over+1e-10<MEDIA_MIN_OVER or delta+1e-10<MIN_DELTA_GA: continue
-        result.append({"MatchDate":row["MatchDate"],"LeagueId":league,
+        official = min_over+1e-10>=MEDIA_MIN_OVER and delta+1e-10>=MIN_DELTA_GA
+        if not official and (min_over+1e-10<NEAR_MIN_OVER or delta+1e-10<NEAR_MIN_DELTA_GA):
+            continue
+        if official:
+            band = "ALTA" if min_over+1e-10>=MIN_OVER else "MEDIA"
+            over_threshold = MIN_OVER if band=="ALTA" else MEDIA_MIN_OVER
+        elif min_over+1e-10>=MIN_OVER:
+            band,over_threshold = "PROX-ALTA",MIN_OVER
+        elif min_over+1e-10>=0.70:
+            band,over_threshold = "PROX-MEDIA-DELTA",0.70
+        else:
+            band,over_threshold = "PROX-MEDIA-OVER",MEDIA_MIN_OVER
+        record = {"MatchDate":row["MatchDate"],"LeagueId":league,
                        "Home":row["Home"],"Away":row["Away"],
                        "Round":row.get("Round",""),"PredictionDate":prediction_date,
-                       "Band":"ALTA" if min_over+1e-10>=MIN_OVER else "MEDIA",
-                       "MinOverThreshold":f"{MIN_OVER if min_over+1e-10>=MIN_OVER else MEDIA_MIN_OVER:.6f}",
+                       "Band":band,
+                       "MinOverThreshold":f"{over_threshold:.6f}",
                        "DeltaGAThreshold":f"{MIN_DELTA_GA:.6f}",
                        "MinOverRateFull":f"{min_over:.6f}","DeltaGA":f"{delta:.6f}",
                        "HomeOverRateFull":f"{home['OverRateFull']:.6f}",
                        "AwayOverRateFull":f"{away['OverRateFull']:.6f}",
                        "HomeGAFull":f"{home['GAFull']:.6f}","AwayGAFull":f"{away['GAFull']:.6f}",
                        "HomeGAL5":f"{home['GAL5']:.6f}","AwayGAL5":f"{away['GAL5']:.6f}",
-                       "Status":"SCHEDULED","HG":"","AG":"","Outcome":""})
-    chosen=result
-    return sorted(chosen,key=lambda x:(0 if x["Band"]=="ALTA" else 1,-float(x["MinOverRateFull"]),-float(x["DeltaGA"]),
-                                      x["MatchDate"],x["LeagueId"],x["Home"],x["Away"]))
+                       "Status":"SCHEDULED","HG":"","AG":"","Outcome":""}
+        (result if official else near).append(record)
+    order={"ALTA":0,"MEDIA":1,"PROX-ALTA":0,"PROX-MEDIA-DELTA":1,"PROX-MEDIA-OVER":2}
+    sorter=lambda x:(x["MatchDate"],order[x["Band"]],-float(x["MinOverRateFull"]),
+                     -float(x["DeltaGA"]),x["LeagueId"],x["Home"],x["Away"])
+    return sorted(result,key=sorter),sorted(near,key=sorter)
 
 
-def generate(rows,registry_rows,prediction_date,base_name):
-    selections=select(rows,registry_rows,prediction_date)
-    output=OUTPUT_DIR/f"{base_name}_gs1_over.csv"
-    write_csv(output,selections)
-    previous=read_csv(HISTORY_FILE)
-    # Preserve old prediction snapshots; mark missing historical thresholds
-    # as unknown instead of retroactively assigning today's rules.
+def select(rows,registry_rows,prediction_date):
+    """Compatibility API: official GS1 selections only."""
+    official,_=select_both(rows,registry_rows,prediction_date)
+    return official
+
+
+def _append_history(path,selections):
+    previous=read_csv(path)
     by_key={key(r):r for r in previous}
     inserted=0
     for row in selections:
@@ -126,16 +144,29 @@ def generate(rows,registry_rows,prediction_date,base_name):
         if k not in by_key:
             by_key[k]=row
             inserted+=1
-    write_csv(HISTORY_FILE,sorted(by_key.values(),key=lambda r:(r["MatchDate"],-float(r.get("DeltaGA") or 0),
-                                                            r["LeagueId"],r["Home"],r["Away"])))
+    write_csv(path,sorted(by_key.values(),key=lambda r:(r["MatchDate"],r["LeagueId"],r["Home"],r["Away"])))
+    return inserted
+
+
+def generate(rows,registry_rows,prediction_date,base_name):
+    selections,near=select_both(rows,registry_rows,prediction_date)
+    output=OUTPUT_DIR/f"{base_name}_gs1_over.csv"
+    near_output=OUTPUT_DIR/f"{base_name}_gs1_over_near.csv"
+    write_csv(output,selections)
+    write_csv(near_output,near)
+    inserted=_append_history(HISTORY_FILE,selections)
+    near_inserted=_append_history(NEAR_HISTORY_FILE,near)
     high_count=sum(r["Band"]=="ALTA" for r in selections)
-    media_count=len(selections)-high_count
-    print(f"[GS1-OVER] ALTA={high_count} MEDIA={media_count} selezionate={len(selections)} nuove_storico={inserted} output={output}")
+    print(f"[GS1-OVER] ALTA={high_count} MEDIA={len(selections)-high_count} "
+          f"nuove_storico={inserted} output={output}")
+    counts={b:sum(r["Band"]==b for r in near) for b in
+            ("PROX-ALTA","PROX-MEDIA-DELTA","PROX-MEDIA-OVER")}
+    print(f"[GS1-NEAR] {counts} nuove_storico={near_inserted} output={near_output}")
     return selections
 
 
-def update_results(input_file):
-    rows=read_csv(HISTORY_FILE)
+def _update_history(input_file,history_file):
+    rows=read_csv(history_file)
     if not rows: return
     by_key={key(r):r for r in rows}
     by_teams={}
@@ -171,8 +202,14 @@ def update_results(input_file):
                     target.update(Status="FINALE",HG=hg,AG=ag,Outcome=outcome)
                     changed+=1
     if changed:
-        write_csv(HISTORY_FILE,rows)
-    print(f"[GS1-OVER] storico aggiornato: {changed} variazioni")
+        write_csv(history_file,rows)
+    print(f"[GS1] {history_file.name}: {changed} variazioni")
+
+
+
+def update_results(input_file):
+    _update_history(input_file,HISTORY_FILE)
+    _update_history(input_file,NEAR_HISTORY_FILE)
 
 
 
