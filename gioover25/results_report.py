@@ -217,8 +217,11 @@ def generate_results_report(day:date):
         section(label,_results_table(rows,"Outcome",styles,gs1=True))
     tickets,summary=ticket_summary()
     state,rows=tickets.get(day.isoformat(),("NON FORMATA",[]))
-    section("GS1 - SCHEDINA",dr._p(f"Esito: {state}. Prime 3 gare congelate prima dei risultati.",styles["meta"]))
-    if rows:story.extend([_results_table(rows,"Outcome",styles,gs1=True),Spacer(1,3*mm)])
+    section("GS1 - SCHEDINA",dr._p(
+        f"Esito: {state}. "
+        f"{'Tre selezioni congelate prima dei risultati.' if rows else 'Nessuna schedina completa registrata.'} "
+        "Le partite sono già elencate nella sezione GS1 - OVER 2.5 o GS1 - NEAR; "
+        "qui viene mostrato soltanto il consuntivo della schedina.",styles["meta"]))
     section("GS1 - BILANCIO VIRTUALE",dr._p(
         f"Vinte {summary['wins']} | Perse {summary['losses']} | In attesa {summary['pending']} | "
         f"Puntata EUR {STAKE:.2f} | Quota schedina {ODDS:.2f} | "
