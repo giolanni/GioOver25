@@ -359,17 +359,57 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
             _description("Engine dedicato al mercato GOL/BTTS. Nel report compaiono score >65: giallo 65-67.9, arancio 68-71.9, verde >=72.",
                          _performance("vg1", report_date, market="BTTS", min_score=65), styles))
 
+    special_descriptions = {
+        "v27": (
+            "Over 2.5 molto selettivo: richiede forte attacco della squadra di casa "
+            "(HomeAttack >=12.428) e almeno 2.20 gol subiti di media dall'ospite nelle ultime 5."
+        ),
+        "v30": (
+            "Over 2.5 specializzato negli storici giovani: lavora con maturita' 7-8 gare, "
+            "forte tendenza Over recente e crescita dei gol fatti rispetto allo storico."
+        ),
+        "vg2.2": (
+            "Filtro GOL selettivo derivato da VG1: mantiene segnali VG1 ALTA con "
+            "MinGF nelle ultime 5 superiore a 2.2."
+        ),
+        "vg2.6": (
+            "Filtro GOL ancora piu' restrittivo: segnale VG1 ALTA e MinGF nelle "
+            "ultime 5 superiore a 2.6. E' pensato per produrre poche selezioni molto mirate."
+        ),
+    }
     for engine in SPECIAL_ENGINES:
         rows = results_by_engine.get(engine, [])
+        market = "BTTS" if engine.startswith("vg") else "Over25"
+        meta = _description(
+            special_descriptions[engine],
+            _performance(engine, report_date, market=market),
+            styles,
+        )
         if engine in {"v27", "v30"}:
-            section(engine.upper(), _table(rows, styles, show_score=False),
-                    _p("Tutte le selezioni prodotte dall'algoritmo.", styles["meta"]))
+            section(engine.upper(), _table(rows, styles, show_score=False), meta)
         else:
-            section(engine.upper(), _table(rows, styles),
-                    _p("Sezione GOAL dedicata.", styles["meta"]))
+            section(engine.upper(), _table(rows, styles), meta)
 
-    section("GS1 - OVER 2.5", _table(gs1_rows, styles, gs1=True),
-            _p("Selezione indipendente: ALTA e MEDIA.", styles["meta"]))
+    section(
+        "GS1 - OVER 2.5",
+        _table(gs1_rows, styles, gs1=True),
+        _description(
+            "Selettore Over 2.5 indipendente dagli engine di ranking. Combina la frequenza "
+            "Over storica minima delle due squadre con il peggioramento recente dei gol subiti (DeltaGA).",
+            _gs1_performance(report_date),
+            styles,
+        ),
+    )
+    section(
+        "GS1 OVER - NEAR",
+        _table(gs1_near_rows or [], styles, gs1=True),
+        _p(
+            "Zona di osservazione vicina alle soglie GS1: MinOverFull >=0.70 e DeltaGA >=0.22. "
+            "Non e' una selezione ufficiale GS1: evidenzia partite interessanti che non raggiungono "
+            "le condizioni ALTA/MEDIA.",
+            styles["meta"],
+        ),
+    )
 
     story += [
         Spacer(1, 3*mm),
