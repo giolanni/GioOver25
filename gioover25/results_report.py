@@ -158,9 +158,9 @@ def generate_results_report(day:date):
         section(f"{title} - {engine}",_results_table(rows,market,styles))
     engine_section("ALGORITMO CAUTO",cautious["engine"],minimum=70)
     engine_section("ALGORITMO PERMISSIVO",permissive["engine"],minimum=70)
-    engine_section("GOL - VG1","vg1","BTTS",minimum=65)
     for engine in dr.SPECIAL_ENGINES:
-        engine_section(engine.upper(),engine,"BTTS" if engine.startswith("vg") else "Over25")
+        if not engine.startswith("vg"):
+            engine_section(engine.upper(),engine,"Over25")
     for label,file in [("GS1 - OVER 2.5",Path("data/storico/gs1_over/storico_gs1_over.csv")),
                        ("GS1 - NEAR",Path("data/storico/gs1_over/storico_gs1_over_near.csv"))]:
         rows=[r for r in dr._read_csv(file) if r.get("MatchDate")==day.isoformat()]
@@ -174,9 +174,18 @@ def generate_results_report(day:date):
         f"Puntata EUR {STAKE:.2f} | Quota schedina {ODDS:.2f} | "
         f"Utile EUR {summary['profit']:+.2f} | Saldo EUR {summary['balance']:.2f}. "
         "Quote ipotetiche, non quote bookmaker.",styles["meta"]))
-    for market,title in [("Over25","OVER 2.5"),("BTTS","BTTS")]:
-        section(f"CLASSIFICA {title} - GIORNATA",_ranking_table(leaderboard(day,market),styles))
-        section(f"CLASSIFICA {title} - 7 GIORNI",_ranking_table(leaderboard(day,market,weekly=True),styles))
+    section("CLASSIFICA OVER 2.5 - GIORNATA",_ranking_table(leaderboard(day,"Over25"),styles))
+    section("CLASSIFICA OVER 2.5 - 7 GIORNI",_ranking_table(leaderboard(day,"Over25",weekly=True),styles))
+    story.append(PageBreak())
+    story.append(dr._p("GOL / BTTS",styles["section"]))
+    engine_section("GOL - VG1","vg1","BTTS",minimum=65)
+    for variant in ("vg1.2","vg1.3","vg1.4"):
+        engine_section(variant.upper()+" - FASCIA AGGIUNTIVA",variant,"BTTS")
+    for engine in dr.SPECIAL_ENGINES:
+        if engine.startswith("vg"):
+            engine_section(engine.upper(),engine,"BTTS")
+    section("CLASSIFICA BTTS - GIORNATA",_ranking_table(leaderboard(day,"BTTS"),styles))
+    section("CLASSIFICA BTTS - 7 GIORNI",_ranking_table(leaderboard(day,"BTTS",weekly=True),styles))
     doc=SimpleDocTemplate(str(path),pagesize=A4,rightMargin=10*mm,leftMargin=10*mm,
                           topMargin=10*mm,bottomMargin=11*mm)
     doc.build(story)
