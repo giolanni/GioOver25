@@ -1128,6 +1128,28 @@ def _rank_rows(
     return results_by_engine
 
 
+def _verify_erase_scope(paths, input_rows):
+    """Never overwrite a CSV containing fixtures outside the requested MatchDate set."""
+    requested = {str(r.get("MatchDate", "")).strip() for r in input_rows}
+    if not requested or "" in requested:
+        raise ValueError("--erase richiede MatchDate valide per tutte le partite")
+    for path in paths:
+        if not path.exists():
+            continue
+        with path.open("r", newline="", encoding="utf-8-sig") as handle:
+            reader = csv.DictReader(handle, delimiter=";")
+            if not reader.fieldnames or "MatchDate" not in reader.fieldnames:
+                raise ValueError(f"--erase: file senza MatchDate, sovrascrittura bloccata: {path}")
+            existing_dates = {str(row.get("MatchDate", "")).strip() for row in reader}
+        foreign_dates = existing_dates - requested
+        if foreign_dates:
+            raise ValueError(
+                f"--erase: {path} contiene ranking di altre date "
+                f"({', '.join(sorted(foreign_dates))}); nessun file modificato. "
+                "Usare un output dedicato per la data da ricalcolare."
+            )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Genera ranking partite GioOver2.5 v2.0")
     parser.add_argument("input_file", help="CSV partite da analizzare")
@@ -1140,6 +1162,17 @@ def main() -> None:
     base_name = input_path.stem.replace("partite", "ranking")
     input_rows = read_matches_to_rank(input_path)
     engine_names = get_available_engines() if args.engine == "all" else [args.engine]
+    if args.erase:
+        # Validate all destinations before any engine writes output.
+        targets = [
+            (Path(args.output) if args.output else OUTPUT_DIR / engine / f"{base_name}_{engine}.csv")
+            for engine in engine_names
+        ]
+        targets += [
+            Path("data/output_gs1_over") / f"{base_name}_gs1_over.csv",
+            Path("data/output_gs1_over") / f"{base_name}_gs1_over_near.csv",
+        ]
+        _verify_erase_scope(targets, input_rows)
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     log_path = LOG_DIR / ("rank_matches_" + datetime.now().strftime("%Y%m%d_%H%M%S") + ".log")
     archived_total = 0
