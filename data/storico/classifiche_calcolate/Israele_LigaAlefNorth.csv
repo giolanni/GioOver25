@@ -1,19 +1,19 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-10;1;Ironi Nesher;9;7;1;1;30;7;23;22;2.444
-10;2;MS Tira;9;6;3;0;15;5;10;21;2.333
-10;3;Nahariya;10;6;1;3;15;10;5;19;1.9
-10;4;H. Migdal HaEmek;9;5;3;1;19;12;7;18;2.0
-10;5;Nof Hagalil;8;5;2;1;17;10;7;17;2.125
-10;6;Hapoel Karmiel;9;4;5;0;15;8;7;17;1.889
+10;1;Ironi Nesher;10;8;1;1;33;8;25;25;2.5
+10;2;MS Tira;10;6;4;0;16;6;10;22;2.2
+10;3;Hapoel Karmiel;10;5;5;0;22;10;12;20;2.0
+10;4;Nahariya;10;6;1;3;15;10;5;19;1.9
+10;5;H. Migdal HaEmek;9;5;3;1;19;12;7;18;2.0
+10;6;Nof Hagalil;9;5;3;1;18;11;7;18;2.0
 10;7;Beit Shean;9;3;4;2;11;6;5;13;1.444
-10;8;Maccabi Neve Shaanan Eldad;9;3;3;3;15;12;3;12;1.333
+10;8;Maccabi Neve Shaanan Eldad;10;3;3;4;16;14;2;12;1.2
 10;9;Hapoel Umm al-Fahm;8;3;3;2;12;10;2;12;1.5
 10;10;M. Kiryat Ata-Bialik;10;3;2;5;16;17;-1;11;1.1
-10;11;Hapoel Ihud Bnei Jatt;9;2;3;4;12;17;-5;9;1.0
-10;12;Ironi Baka;8;2;2;4;12;13;-1;8;1.0
-10;13;Maccabi Nujeidat Ahmad;9;2;1;6;10;17;-7;7;0.778
-10;14;Hapoel Tirat Karmel;9;2;1;6;6;16;-10;7;0.778
-10;15;Hapoel Bnei Musmus;9;1;3;5;7;16;-9;6;0.667
+10;11;Maccabi Nujeidat Ahmad;10;3;1;6;14;17;-3;10;1.0
+10;12;Hapoel Ihud Bnei Jatt;10;2;3;5;13;20;-7;9;0.9
+10;13;Hapoel Bnei Musmus;10;2;3;5;9;17;-8;9;0.9
+10;14;Ironi Baka;9;2;2;5;14;20;-6;8;0.889
+10;15;Hapoel Tirat Karmel;10;2;1;7;6;20;-14;7;0.7
 10;16;Tzeirey Tamra;9;2;0;7;9;21;-12;6;0.667
 10;17;Araba;9;1;2;6;5;25;-20;5;0.556
 10;18;Tzeirey Um El Fahem;4;0;3;1;2;6;-4;3;0.75

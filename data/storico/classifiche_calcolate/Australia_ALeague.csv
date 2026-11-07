@@ -1,13 +1,13 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Wellington Phoenix;3;3;0;0;7;1;6;9;3.0
-1;2;WS Wanderers;3;1;2;0;5;2;3;5;1.667
-1;3;Macarthur FC;3;1;2;0;3;2;1;5;1.667
-1;4;Brisbane Roar;2;1;1;0;3;2;1;4;2.0
-1;5;Sydney FC;3;1;1;1;3;3;0;4;1.333
-1;6;Auckland FC;3;1;1;1;6;7;-1;4;1.333
-1;7;Melbourne City;3;1;1;1;4;5;-1;4;1.333
-1;8;Perth Glory;3;1;0;2;6;4;2;3;1.0
-1;9;Melbourne Victory;3;0;2;1;3;4;-1;2;0.667
-1;10;Central Coast Mariners;3;0;2;1;3;5;-2;2;0.667
-1;11;Newcastle Jets;3;0;2;1;3;6;-3;2;0.667
-1;12;Adelaide United;2;0;0;2;1;6;-5;0;0.0
+2;1;Wellington Phoenix;3;3;0;0;7;1;6;9;3.0
+2;2;Sydney FC;4;2;1;1;7;4;3;7;1.75
+2;3;WS Wanderers;3;1;2;0;5;2;3;5;1.667
+2;4;Macarthur FC;3;1;2;0;3;2;1;5;1.667
+2;5;Brisbane Roar;2;1;1;0;3;2;1;4;2.0
+2;6;Auckland FC;3;1;1;1;6;7;-1;4;1.333
+2;7;Melbourne City;3;1;1;1;4;5;-1;4;1.333
+2;8;Perth Glory;3;1;0;2;6;4;2;3;1.0
+2;9;Melbourne Victory;3;0;2;1;3;4;-1;2;0.667
+2;10;Newcastle Jets;3;0;2;1;3;6;-3;2;0.667
+2;11;Central Coast Mariners;4;0;2;2;4;9;-5;2;0.5
+2;12;Adelaide United;2;0;0;2;1;6;-5;0;0.0
