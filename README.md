@@ -26,7 +26,16 @@ Output:
 data/output/classifica_over25.csv
 ```
 
+## GUI e monitor LIVE
+
+```bash
+python gioover25_gui.py
+```
+
+La sezione **LIVE** segue Over 2.5 e BTTS dai feed Diretta/Flashscore senza
+importare automaticamente i risultati negli storici ufficiali. Configurazione,
+stati e collaudo sono descritti in [docs/live_gui.md](docs/live_gui.md).
+
 ## Formato CSV input
 
 Vedi `data/input/partite_esempio.csv`.
-
