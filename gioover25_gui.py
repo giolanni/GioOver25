@@ -8,7 +8,8 @@ import tkinter as tk
 from datetime import date, timedelta, datetime
 from pathlib import Path
 from tkinter import ttk, messagebox
-from gioover25_live_gui import LiveWindow
+from gioover25.live_monitor import snapshot_index, evaluate, FINAL
+from datetime import timezone
 
 ROOT = Path(__file__).resolve().parent
 INPUT = ROOT / "data/input_partite/partite.csv"
@@ -58,8 +59,10 @@ class Dashboard(tk.Tk):
         self.engine = tk.StringVar(value="v20")
         self.only_best = tk.BooleanVar(value=False)
         self.status = tk.StringVar(value="Pronto")
+        self.view = "rankings"
         self.build()
         self.refresh()
+        self.after(60000, self.live_timer)
 
     def build(self):
         sidebar = tk.Frame(self, bg=NAVY, width=215)
@@ -68,7 +71,7 @@ class Dashboard(tk.Tk):
         tk.Label(sidebar, text="⚽ GioOver2.5", bg=NAVY, fg=WHITE,
                  font=("Segoe UI", 19, "bold")).pack(pady=(25, 30))
         for label, action in [("Home", self.refresh), ("Ranking giornalieri", self.show_rankings),
-                              ("Analisi fasce Score", self.show_bands), ("Monitor LIVE", lambda: LiveWindow(self, self.engine)), ("Aggiorna repository", self.update_repo),
+                              ("Analisi fasce Score", self.show_bands), ("Monitor LIVE", self.show_live), ("Aggiorna repository", self.update_repo),
                               ("Genera ranking", self.run_ranking), ("Aggiorna fasce", self.run_bands)]:
             tk.Button(sidebar, text=label, command=action, bg=NAVY, fg=WHITE,
                       activebackground=BLUE, activeforeground=WHITE,
@@ -85,7 +88,7 @@ class Dashboard(tk.Tk):
         tk.Label(self.controls, text="Engine:", bg=BG).pack(side="left")
         self.engine_box = ttk.Combobox(self.controls, textvariable=self.engine, width=20, state="readonly")
         self.engine_box.pack(side="left", padx=8)
-        self.engine_box.bind("<<ComboboxSelected>>", lambda _: self.show_rankings())
+        self.engine_box.bind("<<ComboboxSelected>>", lambda _: self.show_live() if self.view == "live" else self.show_rankings())
         ttk.Checkbutton(self.controls, text="Solo fascia migliore", variable=self.only_best,
                         command=self.show_rankings).pack(side="left", padx=10)
         ttk.Button(self.controls, text="Ricarica", command=self.refresh).pack(side="right")
@@ -97,6 +100,8 @@ class Dashboard(tk.Tk):
             self.table.heading(col, text=title)
             self.table.column(col, width=width, anchor="center" if col in ("score", "best") else "w")
         self.table.tag_configure("best", background="#dcf6df")
+        for name, color in (("ok", "#c9f2d1"), ("ko", "#ffd5d5"), ("pending", "#fff2b8"), ("unknown", "#e7ebf0")):
+            self.table.tag_configure(name, background=color)
         self.table.pack(fill="both", expand=True, padx=20, pady=8)
         tk.Label(main, textvariable=self.status, bg=BG, fg=NAVY,
                  anchor="w").pack(fill="x", padx=20)
@@ -147,7 +152,10 @@ class Dashboard(tk.Tk):
         if engines and self.engine.get() not in engines:
             self.engine.set(engines[0])
         self.status.set("Controlli locali completati. La presenza dei dati non certifica la completezza del download.")
-        self.show_rankings()
+        if self.view == "live":
+            self.show_live()
+        else:
+            self.show_rankings()
         self.check_git()
 
     def check_git(self):
@@ -160,7 +168,68 @@ class Dashboard(tk.Tk):
             self.after(0, lambda: self.write_log(msg))
         threading.Thread(target=work, daemon=True).start()
 
+    def live_timer(self):
+        if self.view == "live":
+            self.show_live()
+        self.after(60000, self.live_timer)
+
+    def show_live(self):
+        self.view = "live"
+        for col, label in zip(self.columns,
+                              ("Data", "Campionato", "Partita", "Minuto", "Risultato", "Esito LIVE")):
+            self.table.heading(col, text=label)
+        self.table.delete(*self.table.get_children())
+        try:
+            live = snapshot_index(ROOT / "data/live/partite_live.csv")
+        except (OSError, ValueError) as exc:
+            self.status.set("LIVE: errore lettura dati: " + str(exc))
+            return
+        engine = self.engine.get()
+        today = date.today().isoformat()
+        history = HISTORY / engine / ("storico_ranking_" + engine + ".csv")
+        rows = [r for r in csv_rows(history) if r.get("MatchDate", "").strip() == today]
+        counts = {"OK": 0, "KO": 0, "PENDING": 0, "UNKNOWN": 0}
+        finals = {"OK": 0, "KO": 0}
+        market = "BTTS" if engine.lower().startswith("vg") else "Over25"
+        for r in rows:
+            key = tuple(r.get(k, "").strip().casefold() for k in
+                        ("LeagueId", "MatchDate", "Home", "Away"))
+            item = live.get(key)
+            outcome, minute, score = "UNKNOWN", "-", "-"
+            if item:
+                minute = item["Minute"] or item["Status"]
+                if item["HG"] and item["AG"]:
+                    score = item["HG"] + "-" + item["AG"]
+                try:
+                    ts = datetime.fromisoformat(item["LastUpdate"].replace("Z", "+00:00"))
+                    fresh = ts.tzinfo is not None and 0 <= (
+                        datetime.now(timezone.utc) - ts).total_seconds() <= 300
+                except ValueError:
+                    fresh = False
+                if fresh:
+                    outcome = evaluate(item["Status"], item["HG"], item["AG"], market)
+                    if item["Status"] in FINAL and outcome in finals:
+                        finals[outcome] += 1
+                else:
+                    minute += " (non aggiornato)"
+            counts[outcome] += 1
+            self.table.insert("", "end",
+                values=(today, r.get("LeagueId", ""),
+                        r.get("Home", "") + " – " + r.get("Away", ""),
+                        minute, score, outcome),
+                tags=(outcome.lower(),))
+        total = sum(finals.values())
+        rate = f"{100 * finals['OK'] / total:.1f}%" if total else "n.d."
+        self.status.set(
+            f"LIVE {engine}: OK {counts['OK']} | KO {counts['KO']} | "
+            f"In attesa {counts['PENDING']} | Senza dati {counts['UNKNOWN']} | "
+            f"Finali {finals['OK']}/{total} ({rate}). "
+            "Fonte: CSV locale; acquisizione automatica non ancora disponibile.")
+
     def show_rankings(self):
+        self.view = "rankings"
+        for col, label in zip(self.columns, ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
+            self.table.heading(col, text=label)
         for item in self.table.get_children():
             self.table.delete(item)
         engine = self.engine.get()
@@ -184,6 +253,7 @@ class Dashboard(tk.Tk):
         self.status.set(f"{engine}: {len(rows)} pronostici odierni nello storico; fascia migliore: {best[2] if best else 'non disponibile'}")
 
     def show_bands(self):
+        self.view = "bands"
         for item in self.table.get_children():
             self.table.delete(item)
         engine = self.engine.get()
