@@ -1,0 +1,252 @@
+"""GioOver2.5 desktop dashboard. Launch: python -m gioover25_gui"""
+from __future__ import annotations
+import csv
+import subprocess
+import sys
+import threading
+import tkinter as tk
+from datetime import date, timedelta, datetime
+from pathlib import Path
+from tkinter import ttk, messagebox
+
+ROOT = Path(__file__).resolve().parent
+INPUT = ROOT / "data/input_partite/partite.csv"
+HISTORY = ROOT / "data/storico/ranking"
+OUTPUT = ROOT / "data/output_ranking"
+BANDS = ROOT / "data/analysis/score_bands/score_band_best.csv"
+NAVY, BLUE, BG, WHITE = "#122c4a", "#1769d2", "#eef3fa", "#ffffff"
+
+
+def csv_rows(path):
+    if not path.is_file():
+        return []
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        return list(csv.DictReader(stream, delimiter=";"))
+
+
+def git(*args):
+    p = subprocess.run(["git", *args], cwd=ROOT, text=True,
+                       capture_output=True, encoding="utf-8", errors="replace",
+                       timeout=45, check=False)
+    return p.returncode, (p.stdout + "\n" + p.stderr).strip()
+
+
+def best_bands():
+    out = {}
+    for r in csv_rows(BANDS):
+        if (r.get("Scope"), r.get("Period"), r.get("Type")) != ("ALL", "HISTORY", "INTERVAL"):
+            continue
+        band = r.get("ScoreRange", "")
+        try:
+            left, right = band.strip("[]()").split(",")
+            low, high = float(left), float(right)
+            out[r["Engine"].lower()] = (low, high, band, r.get("HitRate", ""), r.get("Total", ""))
+        except (ValueError, KeyError):
+            continue
+    return out
+
+
+class Dashboard(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        self.title("GioOver2.5 | Centro di controllo")
+        self.geometry("1320x820")
+        self.minsize(1050, 650)
+        self.configure(bg=BG)
+        self.busy = False
+        self.engine = tk.StringVar(value="v20")
+        self.only_best = tk.BooleanVar(value=False)
+        self.status = tk.StringVar(value="Pronto")
+        self.build()
+        self.refresh()
+
+    def build(self):
+        sidebar = tk.Frame(self, bg=NAVY, width=215)
+        sidebar.pack(side="left", fill="y")
+        sidebar.pack_propagate(False)
+        tk.Label(sidebar, text="⚽ GioOver2.5", bg=NAVY, fg=WHITE,
+                 font=("Segoe UI", 19, "bold")).pack(pady=(25, 30))
+        for label, action in [("Home", self.refresh), ("Ranking giornalieri", self.show_rankings),
+                              ("Analisi fasce Score", self.show_bands), ("Aggiorna repository", self.update_repo),
+                              ("Genera ranking", self.run_ranking), ("Aggiorna fasce", self.run_bands)]:
+            tk.Button(sidebar, text=label, command=action, bg=NAVY, fg=WHITE,
+                      activebackground=BLUE, activeforeground=WHITE,
+                      relief="flat", anchor="w", padx=18, pady=12,
+                      font=("Segoe UI", 11)).pack(fill="x", padx=8, pady=2)
+        main = tk.Frame(self, bg=BG)
+        main.pack(side="left", fill="both", expand=True)
+        tk.Label(main, text="Centro di controllo", bg=BG, fg=NAVY,
+                 font=("Segoe UI", 23, "bold")).pack(anchor="w", padx=22, pady=(18, 12))
+        self.summary = tk.Frame(main, bg=BG)
+        self.summary.pack(fill="x", padx=20)
+        self.controls = tk.Frame(main, bg=BG)
+        self.controls.pack(fill="x", padx=20, pady=(12, 5))
+        tk.Label(self.controls, text="Engine:", bg=BG).pack(side="left")
+        self.engine_box = ttk.Combobox(self.controls, textvariable=self.engine, width=20, state="readonly")
+        self.engine_box.pack(side="left", padx=8)
+        self.engine_box.bind("<<ComboboxSelected>>", lambda _: self.show_rankings())
+        ttk.Checkbutton(self.controls, text="Solo fascia migliore", variable=self.only_best,
+                        command=self.show_rankings).pack(side="left", padx=10)
+        ttk.Button(self.controls, text="Ricarica", command=self.refresh).pack(side="right")
+        self.columns = ("date", "league", "match", "score", "band", "best")
+        self.table = ttk.Treeview(main, columns=self.columns, show="headings", height=16)
+        for col, title, width in zip(self.columns,
+                                     ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore"),
+                                     (105, 220, 300, 75, 120, 160)):
+            self.table.heading(col, text=title)
+            self.table.column(col, width=width, anchor="center" if col in ("score", "best") else "w")
+        self.table.tag_configure("best", background="#dcf6df")
+        self.table.pack(fill="both", expand=True, padx=20, pady=8)
+        tk.Label(main, textvariable=self.status, bg=BG, fg=NAVY,
+                 anchor="w").pack(fill="x", padx=20)
+        self.log = tk.Text(main, height=7, bg="#142b46", fg="#e7f1ff",
+                           font=("Consolas", 9), state="disabled")
+        self.log.pack(fill="x", padx=20, pady=(6, 15))
+
+    def write_log(self, text):
+        self.log.configure(state="normal")
+        self.log.insert("end", f"[{datetime.now():%H:%M:%S}] {text}\n")
+        self.log.see("end")
+        self.log.configure(state="disabled")
+
+    def card(self, title, value, note=""):
+        frame = tk.Frame(self.summary, bg=WHITE, highlightbackground="#c9d7e7", highlightthickness=1)
+        frame.pack(side="left", fill="both", expand=True, padx=4)
+        tk.Label(frame, text=title, bg=WHITE, fg=NAVY, font=("Segoe UI", 10, "bold")).pack(anchor="w", padx=12, pady=(10, 2))
+        tk.Label(frame, text=value, bg=WHITE, fg=BLUE, font=("Segoe UI", 13, "bold"),
+                 wraplength=220, justify="left").pack(anchor="w", padx=12)
+        tk.Label(frame, text=note, bg=WHITE, fg="#57677b", font=("Segoe UI", 9),
+                 wraplength=220, justify="left").pack(anchor="w", padx=12, pady=(2, 10))
+
+    def refresh(self):
+        for child in self.summary.winfo_children():
+            child.destroy()
+        today = date.today().isoformat()
+        yesterday = (date.today() - timedelta(days=1)).isoformat()
+        fixtures = csv_rows(INPUT)
+        today_rows = [r for r in fixtures if r.get("MatchDate", "").strip() == today]
+        self.card("Partite di oggi", f"{len(today_rows)} presenti" if today_rows else "Da verificare",
+                  "Input odierno presente" if today_rows else "Nessuna partita con MatchDate odierna")
+        unresolved, resolved = 0, 0
+        engines = sorted(p.parent.name for p in HISTORY.glob("*/storico_ranking_*.csv"))
+        for path in HISTORY.glob("*/storico_ranking_*.csv"):
+            for r in csv_rows(path):
+                if r.get("MatchDate", "").strip() != yesterday:
+                    continue
+                if r.get("Over25", "").upper() in ("OK", "KO") or r.get("BTTS", "").upper() in ("OK", "KO"):
+                    resolved += 1
+                else:
+                    unresolved += 1
+        self.card("Esiti di ieri", f"{resolved} risolti", f"{unresolved} righe non risolte negli storici engine")
+        self.card("Ranking / engine", str(len(engines)) + " storici",
+                  "Controllo generazione disponibile nella tabella")
+        self.card("Fasce Score", "Disponibili" if BANDS.exists() else "Da generare",
+                  f"CSV: {BANDS.name}")
+        self.engine_box["values"] = engines
+        if engines and self.engine.get() not in engines:
+            self.engine.set(engines[0])
+        self.status.set("Controlli locali completati. La presenza dei dati non certifica la completezza del download.")
+        self.show_rankings()
+        self.check_git()
+
+    def check_git(self):
+        def work():
+            rc, status = git("status", "--porcelain")
+            rc2, branch = git("branch", "--show-current")
+            msg = f"Repository: {branch.strip()} | " + ("modifiche locali presenti" if status else "working tree pulito")
+            if rc or rc2:
+                msg = "Git non disponibile o repository non accessibile"
+            self.after(0, lambda: self.write_log(msg))
+        threading.Thread(target=work, daemon=True).start()
+
+    def show_rankings(self):
+        for item in self.table.get_children():
+            self.table.delete(item)
+        engine = self.engine.get()
+        path = HISTORY / engine / f"storico_ranking_{engine}.csv"
+        bands = best_bands()
+        best = bands.get(engine.lower())
+        today = date.today().isoformat()
+        rows = [r for r in csv_rows(path) if r.get("MatchDate", "").strip() == today]
+        for r in rows:
+            try:
+                score = float(r.get("Score", "").replace(",", "."))
+            except ValueError:
+                continue
+            marked = bool(best and best[0] <= score <= best[1] and (score < best[1] or best[1] == 100))
+            if self.only_best.get() and not marked:
+                continue
+            self.table.insert("", "end", values=(today, r.get("LeagueId", ""),
+                r.get("Home", "") + " – " + r.get("Away", ""), f"{score:g}",
+                r.get("Band", ""), "★ Fascia migliore" if marked else ""),
+                tags=("best",) if marked else ())
+        self.status.set(f"{engine}: {len(rows)} pronostici odierni nello storico; fascia migliore: {best[2] if best else 'non disponibile'}")
+
+    def show_bands(self):
+        for item in self.table.get_children():
+            self.table.delete(item)
+        engine = self.engine.get()
+        rows = [r for r in csv_rows(ROOT / "data/analysis/score_bands/score_band_details.csv")
+                if r.get("Engine") == engine and r.get("Scope") == "ALL" and
+                r.get("Period") == "HISTORY" and r.get("Type") == "INTERVAL"]
+        for r in rows:
+            self.table.insert("", "end", values=("", r.get("ScoreRange", ""),
+                f"OK {r.get('OK')} / KO {r.get('KO')}", r.get("HitRate", "") + "%",
+                r.get("Total", ""), "Campione sufficiente" if r.get("SufficientSample") == "YES" else "Campione ridotto"))
+        self.status.set(f"Fasce Score di {engine}, ordinate per percentuale decrescente")
+
+    def task(self, command, on_done=None):
+        if self.busy:
+            messagebox.showwarning("Operazione in corso", "Attendere la conclusione dell'operazione precedente.")
+            return
+        self.busy = True
+        self.status.set("Operazione in corso...")
+        def work():
+            try:
+                p = subprocess.Popen(command, cwd=ROOT, stdout=subprocess.PIPE,
+                                     stderr=subprocess.STDOUT, text=True,
+                                     encoding="utf-8", errors="replace", bufsize=1)
+                for line in p.stdout:
+                    self.after(0, self.write_log, line.rstrip())
+                rc = p.wait()
+                def done():
+                    self.busy = False
+                    self.status.set(f"Comando terminato (codice {rc})")
+                    if rc == 0 and on_done:
+                        on_done()
+                    elif rc:
+                        messagebox.showerror("Errore", f"Comando terminato con codice {rc}. Consultare il log.")
+                self.after(0, done)
+            except Exception as exc:
+                def failed():
+                    self.busy = False
+                    self.write_log(str(exc))
+                    messagebox.showerror("Errore", str(exc))
+                self.after(0, failed)
+        threading.Thread(target=work, daemon=True).start()
+
+    def update_repo(self):
+        if self.busy:
+            return
+        rc, changes = git("status", "--porcelain")
+        if rc:
+            messagebox.showerror("Git", changes)
+            return
+        if changes:
+            messagebox.showwarning("Modifiche locali", "Aggiornamento bloccato: sono presenti modifiche locali. Nessun file sarà sovrascritto.")
+            return
+        if not messagebox.askyesno("Aggiorna repository", "Eseguire git pull --ff-only sul branch corrente?"):
+            return
+        self.task(["git", "pull", "--ff-only"], self.refresh)
+
+    def run_ranking(self):
+        if messagebox.askyesno("Genera ranking", "Eseguire il ranking per tutti gli engine senza --erase?"):
+            self.task([sys.executable, "-m", "gioover25.rank_matches_v2",
+                       "data/input_partite/partite.csv", "--engine", "all"], self.refresh)
+
+    def run_bands(self):
+        self.task([sys.executable, "-m", "analysis.metrics.score_band_analysis"], self.refresh)
+
+
+if __name__ == "__main__":
+    Dashboard().mainloop()
