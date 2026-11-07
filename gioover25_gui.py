@@ -8,6 +8,7 @@ import tkinter as tk
 from datetime import date, timedelta, datetime
 from pathlib import Path
 from tkinter import ttk, messagebox
+from gioover25_live_gui import LiveWindow
 
 ROOT = Path(__file__).resolve().parent
 INPUT = ROOT / "data/input_partite/partite.csv"
@@ -67,7 +68,7 @@ class Dashboard(tk.Tk):
         tk.Label(sidebar, text="⚽ GioOver2.5", bg=NAVY, fg=WHITE,
                  font=("Segoe UI", 19, "bold")).pack(pady=(25, 30))
         for label, action in [("Home", self.refresh), ("Ranking giornalieri", self.show_rankings),
-                              ("Analisi fasce Score", self.show_bands), ("Aggiorna repository", self.update_repo),
+                              ("Analisi fasce Score", self.show_bands), ("Monitor LIVE", lambda: LiveWindow(self, self.engine)), ("Aggiorna repository", self.update_repo),
                               ("Genera ranking", self.run_ranking), ("Aggiorna fasce", self.run_bands)]:
             tk.Button(sidebar, text=label, command=action, bg=NAVY, fg=WHITE,
                       activebackground=BLUE, activeforeground=WHITE,
