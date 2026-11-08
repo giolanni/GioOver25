@@ -7,7 +7,7 @@ import threading
 import tkinter as tk
 from datetime import date, timedelta, datetime
 from pathlib import Path
-from tkinter import ttk, messagebox
+from tkinter import ttk, messagebox, simpledialog
 from gioover25.live_monitor import snapshot_index, evaluate, FINAL
 from datetime import timezone
 
@@ -319,19 +319,86 @@ class Dashboard(tk.Tk):
                 self.after(0, failed)
         threading.Thread(target=work, daemon=True).start()
 
+    def git_sequence(self, commands):
+        """Run Git commands sequentially; stop on first failure."""
+        if self.busy:
+            return
+        self.busy = True
+        self.status.set("Sincronizzazione repository in corso...")
+        def work():
+            for args in commands:
+                self.after(0, self.write_log, "$ git " + " ".join(args))
+                try:
+                    p = subprocess.run(["git", *args], cwd=ROOT, capture_output=True,
+                                       text=True, encoding="utf-8", errors="replace",
+                                       timeout=180, check=False)
+                    detail = (p.stdout + "\n" + p.stderr).strip()
+                    if detail:
+                        self.after(0, self.write_log, detail)
+                    if p.returncode:
+                        def fail(args=args, rc=p.returncode):
+                            self.busy = False
+                            self.status.set("Git interrotto: " + " ".join(args))
+                            messagebox.showerror("Git", "Comando fallito: git " +
+                                " ".join(args) + f" (codice {rc}). Verificare il log. "
+                                "I comandi successivi non sono stati eseguiti.")
+                        self.after(0, fail)
+                        return
+                except Exception as exc:
+                    def fail_exception(error=str(exc)):
+                        self.busy = False
+                        self.status.set("Errore Git")
+                        messagebox.showerror("Git", error)
+                    self.after(0, fail_exception)
+                    return
+            def done():
+                self.busy = False
+                self.refresh()
+                self.status.set("Sincronizzazione Git completata")
+            self.after(0, done)
+        threading.Thread(target=work, daemon=True).start()
+
     def update_repo(self):
         if self.busy:
             return
+        rc, branch = git("branch", "--show-current")
+        if rc or not branch.strip():
+            messagebox.showerror("Git", "Impossibile identificare il branch corrente.")
+            return
+        branch = branch.strip()
         rc, changes = git("status", "--porcelain")
         if rc:
             messagebox.showerror("Git", changes)
             return
         if changes:
-            messagebox.showwarning("Modifiche locali", "Aggiornamento bloccato: sono presenti modifiche locali. Nessun file sarà sovrascritto.")
-            return
-        if not messagebox.askyesno("Aggiorna repository", "Eseguire git pull --ff-only sul branch corrente?"):
-            return
-        self.task(["git", "pull", "--ff-only"], self.refresh)
+            preview = changes[:1800]
+            if not messagebox.askyesno("Modifiche locali",
+                "Branch: " + branch + "\n\nModifiche rilevate:\n" + preview +
+                "\n\nVuoi includere TUTTI i file modificati e non tracciati "
+                "(git add -A), creare un commit, sincronizzare e fare push? "
+                "Controlla che non ci siano dati riservati o file da escludere."):
+                return
+            message = simpledialog.askstring("Messaggio commit",
+                "Inserisci il messaggio del commit:", parent=self)
+            if not message or not message.strip():
+                return
+            commands = [
+                ["add", "-A"],
+                ["commit", "-m", message.strip()],
+                ["pull", "--rebase", "origin", branch],
+                ["push", "origin", branch],
+            ]
+        else:
+            if not messagebox.askyesno("Aggiorna repository",
+                "Nessuna modifica locale. Eseguire git pull --ff-only sul branch " +
+                branch + "?"):
+                return
+            commands = [["pull", "--ff-only", "origin", branch]]
+            if messagebox.askyesno("Push opzionale",
+                "Vuoi anche pubblicare eventuali commit locali già presenti sul branch " +
+                branch + "?"):
+                commands.append(["push", "origin", branch])
+        self.git_sequence(commands)
 
     def run_ranking(self):
         if messagebox.askyesno("Genera ranking", "Eseguire il ranking per tutti gli engine senza --erase?"):
