@@ -63,7 +63,6 @@ class Dashboard(tk.Tk):
         self.live_poll_busy = False
         self.build()
         self.refresh()
-        self.after(60000, self.live_timer)
 
     def build(self):
         sidebar = tk.Frame(self, bg=NAVY, width=215)
@@ -92,6 +91,7 @@ class Dashboard(tk.Tk):
         self.engine_box.bind("<<ComboboxSelected>>", lambda _: self.show_live() if self.view == "live" else self.show_rankings())
         ttk.Checkbutton(self.controls, text="Solo fascia migliore", variable=self.only_best,
                         command=self.show_rankings).pack(side="left", padx=10)
+        ttk.Button(self.controls, text="Aggiorna LIVE", command=self.refresh_live).pack(side="right", padx=5)
         ttk.Button(self.controls, text="Ricarica", command=self.refresh).pack(side="right")
         self.columns = ("date", "league", "match", "score", "band", "best")
         self.table = ttk.Treeview(main, columns=self.columns, show="headings", height=16)
@@ -169,13 +169,12 @@ class Dashboard(tk.Tk):
             self.after(0, lambda: self.write_log(msg))
         threading.Thread(target=work, daemon=True).start()
 
-    def live_timer(self):
-        if self.view == "live":
-            self.poll_live()
-        self.after(60000, self.live_timer)
-
     def open_live(self):
         self.show_live()
+
+    def refresh_live(self):
+        if self.view != "live":
+            self.open_live()
         self.poll_live()
 
     def poll_live(self):
