@@ -1,4 +1,6 @@
 ﻿Rank;Engine;LeagueId;OK;KO;FirstMatchDate;LastMatchDate;Total;HitRate
-1;veg90;Austria_Steiermark;1;0;2026-11-06;2026-11-06;1;100.0
-2;veg90;Germany_Oberliga_Hamburg;1;0;2026-11-06;2026-11-06;1;100.0
-3;veg90;Mongolia_PremierLeague;1;1;2026-11-05;2026-11-05;2;50.0
+1;veg90;Germany_Oberliga_Hamburg;2;0;2026-11-06;2026-11-07;2;100.0
+2;veg90;Austria_Steiermark;1;0;2026-11-06;2026-11-06;1;100.0
+3;veg90;Germany_Oberliga_SchleswigHolstein;1;0;2026-11-07;2026-11-07;1;100.0
+4;veg90;Mexico_LigaPremierSerieA;1;0;2026-11-07;2026-11-07;1;100.0
+5;veg90;Mongolia_PremierLeague;1;1;2026-11-05;2026-11-05;2;50.0
