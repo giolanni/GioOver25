@@ -94,13 +94,14 @@ class Dashboard(tk.Tk):
                         command=self.show_rankings).pack(side="left", padx=10)
         ttk.Button(self.controls, text="Aggiorna LIVE", command=self.refresh_live).pack(side="right", padx=5)
         ttk.Button(self.controls, text="Ricarica", command=self.refresh).pack(side="right")
-        self.columns = ("date", "league", "match", "score", "band", "best")
+        self.columns = ("date", "league", "match", "score", "band", "best", "live_result", "live_outcome")
         self.table = ttk.Treeview(main, columns=self.columns, show="headings", height=16)
         for col, title, width in zip(self.columns,
-                                     ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore"),
-                                     (105, 220, 300, 75, 120, 160)):
+                                     ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore", "Risultato", "Esito LIVE"),
+                                     (105, 220, 300, 75, 120, 160, 85, 110)):
             self.table.heading(col, text=title)
             self.table.column(col, width=width, anchor="center" if col in ("score", "best") else "w")
+        self.table["displaycolumns"] = self.columns[:6]
         self.table.tag_configure("best", background="#dcf6df")
         for name, color in (("ok", "#c9f2d1"), ("ko", "#ffd5d5"), ("pending", "#fff2b8"), ("unknown", "#e7ebf0")):
             self.table.tag_configure(name, background=color)
@@ -199,9 +200,12 @@ class Dashboard(tk.Tk):
         threading.Thread(target=work, daemon=True).start()
     def show_live(self):
         self.view = "live"
-        for col, label in zip(self.columns,
-                              ("Data", "Campionato", "Partita", "Minuto", "Risultato", "Esito LIVE")):
+        self.table["displaycolumns"] = self.columns
+        for col, label, width in zip(self.columns,
+                              ("Data", "Campionato", "Partita", "Score", "Fascia", "Minuto", "Risultato", "Esito LIVE"),
+                              (105, 220, 300, 75, 125, 100, 85, 110)):
             self.table.heading(col, text=label)
+            self.table.column(col, width=width, anchor="center" if col in ("score", "band", "best", "live_result", "live_outcome") else "w")
         self.table.delete(*self.table.get_children())
         try:
             live = snapshot_index(ROOT / "data/live/partite_live.csv")
@@ -245,7 +249,7 @@ class Dashboard(tk.Tk):
             self.table.insert("", "end",
                 values=(today, r.get("LeagueId", ""),
                         r.get("Home", "") + " – " + r.get("Away", ""),
-                        minute, score, outcome),
+                        r.get("Score", ""), r.get("Band", ""), minute, score, outcome),
                 tags=(outcome.lower(),))
         total = sum(finals.values())
         rate = f"{100 * finals['OK'] / total:.1f}%" if total else "n.d."
@@ -257,6 +261,7 @@ class Dashboard(tk.Tk):
 
     def show_rankings(self):
         self.view = "rankings"
+        self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
             self.table.heading(col, text=label)
         for item in self.table.get_children():
@@ -283,6 +288,7 @@ class Dashboard(tk.Tk):
 
     def show_bands(self):
         self.view = "bands"
+        self.table["displaycolumns"] = self.columns[:6]
         for item in self.table.get_children():
             self.table.delete(item)
         engine = self.engine.get()
