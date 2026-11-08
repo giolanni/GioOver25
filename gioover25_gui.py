@@ -60,6 +60,7 @@ class Dashboard(tk.Tk):
         self.only_best = tk.BooleanVar(value=False)
         self.status = tk.StringVar(value="Pronto")
         self.view = "rankings"
+        self.live_poll_busy = False
         self.build()
         self.refresh()
         self.after(60000, self.live_timer)
@@ -71,7 +72,7 @@ class Dashboard(tk.Tk):
         tk.Label(sidebar, text="⚽ GioOver2.5", bg=NAVY, fg=WHITE,
                  font=("Segoe UI", 19, "bold")).pack(pady=(25, 30))
         for label, action in [("Home", self.refresh), ("Ranking giornalieri", self.show_rankings),
-                              ("Analisi fasce Score", self.show_bands), ("Monitor LIVE", self.show_live), ("Aggiorna repository", self.update_repo),
+                              ("Analisi fasce Score", self.show_bands), ("Monitor LIVE", self.open_live), ("Aggiorna repository", self.update_repo),
                               ("Genera ranking", self.run_ranking), ("Aggiorna fasce", self.run_bands)]:
             tk.Button(sidebar, text=label, command=action, bg=NAVY, fg=WHITE,
                       activebackground=BLUE, activeforeground=WHITE,
@@ -170,9 +171,32 @@ class Dashboard(tk.Tk):
 
     def live_timer(self):
         if self.view == "live":
-            self.show_live()
+            self.poll_live()
         self.after(60000, self.live_timer)
 
+    def open_live(self):
+        self.show_live()
+        self.poll_live()
+
+    def poll_live(self):
+        if self.live_poll_busy:
+            return
+        self.live_poll_busy = True
+        def work():
+            try:
+                result = subprocess.run([sys.executable, "-m", "tools.live_flashscore"],
+                    cwd=ROOT, capture_output=True, text=True, timeout=100,
+                    encoding="utf-8", errors="replace")
+                msg = (result.stdout + " " + result.stderr).strip()
+            except Exception as exc:
+                msg = str(exc)
+            def done():
+                self.live_poll_busy = False
+                self.write_log(msg[:1500])
+                if self.view == "live":
+                    self.show_live()
+            self.after(0, done)
+        threading.Thread(target=work, daemon=True).start()
     def show_live(self):
         self.view = "live"
         for col, label in zip(self.columns,
