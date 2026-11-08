@@ -9,6 +9,7 @@ from datetime import date, timedelta, datetime
 from pathlib import Path
 from tkinter import ttk, messagebox, simpledialog
 from gioover25.live_monitor import snapshot_index, evaluate, FINAL
+from tools.prepare_input import norm, canonical_team
 from datetime import timezone
 
 ROOT = Path(__file__).resolve().parent
@@ -214,10 +215,15 @@ class Dashboard(tk.Tk):
         counts = {"OK": 0, "KO": 0, "PENDING": 0, "UNKNOWN": 0}
         finals = {"OK": 0, "KO": 0}
         market = "BTTS" if engine.lower().startswith("vg") else "Over25"
+        normalized_live = {
+            (lid, day, norm(canonical_team(home)), norm(canonical_team(away))): item
+            for (lid, day, home, away), item in live.items()
+        }
         for r in rows:
-            key = tuple(r.get(k, "").strip().casefold() for k in
-                        ("LeagueId", "MatchDate", "Home", "Away"))
-            item = live.get(key)
+            key = (r.get("LeagueId", "").strip().casefold(), today,
+                   norm(canonical_team(r.get("Home", ""))),
+                   norm(canonical_team(r.get("Away", ""))))
+            item = normalized_live.get(key)
             outcome, minute, score = "UNKNOWN", "-", "-"
             if item:
                 minute = item["Minute"] or item["Status"]
@@ -247,7 +253,7 @@ class Dashboard(tk.Tk):
             f"LIVE {engine}: OK {counts['OK']} | KO {counts['KO']} | "
             f"In attesa {counts['PENDING']} | Senza dati {counts['UNKNOWN']} | "
             f"Finali {finals['OK']}/{total} ({rate}). "
-            "Fonte: CSV locale; acquisizione automatica non ancora disponibile.")
+            "Fonte: Diretta, aggiornamento manuale.")
 
     def show_rankings(self):
         self.view = "rankings"
