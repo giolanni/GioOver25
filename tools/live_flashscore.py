@@ -20,7 +20,7 @@ from tools.prepare_input import ROOT, canonical_team, load_registry, norm, resol
 HISTORY = ROOT / "data" / "storico" / "ranking"
 OUTPUT = ROOT / "data" / "live" / "partite_live.csv"
 REGISTRY = ROOT / "data" / "league_registry.csv"
-SCORE = re.compile(r"^(\\d+)-(\\d+)$")
+SCORE = re.compile(r"^(\d+)-(\d+)$")
 
 
 def key(league, day, home, away):
