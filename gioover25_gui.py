@@ -107,9 +107,13 @@ class Dashboard(tk.Tk):
         self.table.tag_configure("best", background="#dcf6df")
         for name, color in (("ok", "#c9f2d1"), ("ko", "#ffd5d5"), ("pending", "#fff2b8"), ("unknown", "#e7ebf0")):
             self.table.tag_configure(name, background=color)
-        self.table.pack(side="left", fill="both", expand=True)
-        table_scroll = ttk.Scrollbar(table_frame, orient="vertical", command=self.table.yview)
+        # Reserve the right edge for the scrollbar before packing the wide Treeview.
+        # Otherwise the table can consume the full available width and hide it.
+        table_scroll = tk.Scrollbar(table_frame, orient="vertical", width=18,
+                                    command=self.table.yview, relief="raised",
+                                    bg="#b4c4d8", activebackground="#7799bc")
         table_scroll.pack(side="right", fill="y")
+        self.table.pack(side="left", fill="both", expand=True)
         self.table.configure(yscrollcommand=table_scroll.set)
         tk.Label(main, textvariable=self.status, bg=BG, fg=NAVY,
                  anchor="w").pack(fill="x", padx=20)
