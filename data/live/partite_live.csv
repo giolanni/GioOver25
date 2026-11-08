@@ -1,0 +1,643 @@
+﻿MatchDate;LeagueId;Home;Away;MatchId;Minute;HG;AG;Status;LastUpdate
+2026-11-08;Albania_AbissnetSuperiore;Dinamo City;Skenderbeu;bVwrOP9b;;0;2;FINAL;2026-11-08T17:52:00.925281+00:00
+2026-11-08;Albania_AbissnetSuperiore;Egnatia;Vora;QHuzQoun;;0;0;LIVE;2026-11-08T17:52:00.932038+00:00
+2026-11-08;Albania_KategoriaePare;Korabi Peshkopi;Flamurtari;Ymf3f7Jr;;0;0;FINAL;2026-11-08T17:52:00.938840+00:00
+2026-11-08;Algeria_Ligue1;Biskra;Chlef;SOEDcf0E;;0;0;FINAL;2026-11-08T17:52:00.945356+00:00
+2026-11-08;Algeria_Ligue1;El Biar;MC Alger;ABbijChl;;1;0;FINAL;2026-11-08T17:52:00.951990+00:00
+2026-11-08;Algeria_Ligue1;Khenchela;Temouchent;0xDLeYUQ;;1;1;FINAL;2026-11-08T17:52:00.958609+00:00
+2026-11-08;Algeria_Ligue1;Ben Aknoun;Belouizdad;YLcO4B7s;;0;0;LIVE;2026-11-08T17:52:00.965233+00:00
+2026-11-08;Algeria_Ligue1;Saoura;Constantine;IehgAXqK;;0;0;LIVE;2026-11-08T17:52:00.971825+00:00
+2026-11-08;Andorra_PrimeraDivisio;Penya;FC Rangers;GtLKvWk5;;1;0;FINAL;2026-11-08T17:52:00.979485+00:00
+2026-11-08;Andorra_PrimeraDivisio;FC Santa Coloma;Ordino;2cJSxAKH;;4;0;FINAL;2026-11-08T17:52:00.986333+00:00
+2026-11-08;Andorra_PrimeraDivisio;Carroi;Atletic Escaldes;8do0K14j;;0;2;LIVE;2026-11-08T17:52:00.992998+00:00
+2026-11-08;Andorra_PrimeraDivisio;Sporting Escaldes;Inter Escaldes;0jYor5dc;;;;SCHEDULED;2026-11-08T17:52:00.999743+00:00
+2026-11-08;Angola_GirabolaLeague;CD Lunda Sul;Wiliete;0UG8NdZo;;1;2;FINAL;2026-11-08T17:52:01.006410+00:00
+2026-11-08;Angola_GirabolaLeague;Libolo;Primeiro de Agosto;OnOTAJkt;;2;0;FINAL;2026-11-08T17:52:01.013040+00:00
+2026-11-08;Angola_GirabolaLeague;Caala;Academica;OUhE8T8C;;1;2;FINAL;2026-11-08T17:52:01.019623+00:00
+2026-11-08;Angola_GirabolaLeague;Desportivo Huila;Kabuscorp;A5ya3glU;;1;0;FINAL;2026-11-08T17:52:01.026825+00:00
+2026-11-08;Angola_GirabolaLeague;FC Luanda;Sao Salvador;URZr7yk5;;1;0;FINAL;2026-11-08T17:52:01.033423+00:00
+2026-11-08;Angola_GirabolaLeague;Petro;Primeiro de Maio;WfdM67wP;;0;0;LIVE;2026-11-08T17:52:01.039917+00:00
+2026-11-08;SaudiArabia_Division1;Damac;Al Anwar;6ZLcCFNs;;1;1;FINAL;2026-11-08T17:52:01.053594+00:00
+2026-11-08;SaudiArabia_Division1;Al Taee;Al-Raed;v1Z4Aghf;;0;3;FINAL;2026-11-08T17:52:01.060562+00:00
+2026-11-08;SaudiArabia_Division1;Al Okhdood;Al Jabalain;nRxD8XM6;;0;1;FINAL;2026-11-08T17:52:01.067418+00:00
+2026-11-08;SaudiArabia_Division1;Al Wehda;Al Jeel;KvyL6BiJ;;2;0;LIVE;2026-11-08T17:52:01.074309+00:00
+2026-11-08;SaudiArabia_Division2;Al Hada;Al Sharq;0U6IfW3j;;2;4;FINAL;2026-11-08T17:52:01.081135+00:00
+2026-11-08;SaudiArabia_Division2;Al Rawdah;Al Shoalah;Sza4IZec;;0;1;FINAL;2026-11-08T17:52:01.087895+00:00
+2026-11-08;SaudiArabia_Division2;Al Washm;Al Loa;0lcCGDQ9;;5;1;FINAL;2026-11-08T17:52:01.094801+00:00
+2026-11-08;SaudiArabia_Division2;Al Arabi;Al Jubail;YFAJEieM;;1;1;FINAL;2026-11-08T17:52:01.101598+00:00
+2026-11-08;SaudiArabia_Division2;Jubbah;Al Kawkab;xCac79md;;1;3;FINAL;2026-11-08T17:52:01.108597+00:00
+2026-11-08;SaudiArabia_Division2;Jerash;Al Entesar;4IiqVCu3;;2;1;FINAL;2026-11-08T17:52:01.115334+00:00
+2026-11-08;SaudiArabia_Division2;Qilwah;Al Qous;AFfiTjAF;;1;1;FINAL;2026-11-08T17:52:01.122101+00:00
+2026-11-08;SaudiArabia_Division2;Baish;Arar;fVvoDvKH;;0;1;FINAL;2026-11-08T17:52:01.128904+00:00
+2026-11-08;Armenia_PremierLeague;Syunik;FC Gandzasar;thzzLHn9;;2;1;FINAL;2026-11-08T17:52:01.157767+00:00
+2026-11-08;Armenia_PremierLeague;Urartu;Ararat-Armenia;EorlcEf2;;;;SCHEDULED;2026-11-08T17:52:01.164206+00:00
+2026-11-08;Armenia_FirstLeague;BKMA 2;Noah 2;QgH8EY66;;0;0;FINAL;2026-11-08T17:52:01.170725+00:00
+2026-11-08;Armenia_FirstLeague;Lernayin Artsakh;Olympia Yerevan;b7FGCCyJ;;1;4;FINAL;2026-11-08T17:52:01.177195+00:00
+2026-11-08;Armenia_FirstLeague;Sardarapat 2;Andranik;GQflRBjC;;1;0;FINAL;2026-11-08T17:52:01.183739+00:00
+2026-11-08;Armenia_FirstLeague;Urartu 2;Ararat 2;ddbYUgim;;1;0;FINAL;2026-11-08T17:52:01.190297+00:00
+2026-11-08;Aruba_DivisiondiHonor;La Fama;Dakota;EmPbZeLa;;1;5;FINAL;2026-11-08T17:52:01.196777+00:00
+2026-11-08;Aruba_DivisiondiHonor;Caiquetio;Estrella;n1N6XZkC;;5;3;FINAL;2026-11-08T17:52:01.203283+00:00
+2026-11-08;Australia_ALeague;Macarthur FC;Brisbane Roar;GIbPPvqm;;1;2;FINAL;2026-11-08T17:52:01.319421+00:00
+2026-11-08;Australia_ALeague;Adelaide United;Melbourne Victory;Or2XNIDa;;2;2;FINAL;2026-11-08T17:52:01.325989+00:00
+2026-11-08;Australia_AustralianChampionship;Avondale FC;Adelaide City;vVKK3aUp;;2;1;FINAL;2026-11-08T17:52:01.332688+00:00
+2026-11-08;Australia_AustralianChampionship;South Hobart;Queensland Lions;6yD6R2Mi;;2;4;FINAL;2026-11-08T17:52:01.339215+00:00
+2026-11-08;Austria_Bundesliga;Hartberg;Altach;8tNEiuAO;;3;0;FINAL;2026-11-08T17:52:01.345712+00:00
+2026-11-08;Austria_Bundesliga;Tirol;Austria Vienna;WI0W9MPh;;1;1;FINAL;2026-11-08T17:52:01.352374+00:00
+2026-11-08;Austria_Bundesliga;Sturm Graz;Salzburg;b52OBret;;3;4;LIVE;2026-11-08T17:52:01.358808+00:00
+2026-11-08;Austria_2Liga;Voitsberg;Kapfenberg;bTzf4ZZj;;4;0;FINAL;2026-11-08T17:52:01.365311+00:00
+2026-11-08;Austria_Regionalliga_West;Rothis;SC Imst;nBtkLdtA;;0;3;FINAL;2026-11-08T17:52:01.380287+00:00
+2026-11-08;Austria_Regionalliga_North;Ried (Am);Schallerbach;lWUhnlUQ;;;;SCHEDULED;2026-11-08T17:52:01.386754+00:00
+2026-11-08;Austria_Burgenland;Rust;Neusiedl;OdJqKJxK;;3;0;FINAL;2026-11-08T17:52:01.394403+00:00
+2026-11-08;Austria_Burgenland;SV Eberau;Oberpullendorf;zgrpGkKl;;1;1;FINAL;2026-11-08T17:52:01.401971+00:00
+2026-11-08;Austria_Salzburg;ATSV Salzburg;UFC Siezenheim;tz13Uj6s;;2;2;FINAL;2026-11-08T17:52:01.409730+00:00
+2026-11-08;Austria_Salzburg;Eugendorf;Schwarzach;nFCIQ856;;1;1;FINAL;2026-11-08T17:52:01.417599+00:00
+2026-11-08;Austria_Salzburg;Neumarkt;USV 1960 Berndorf;AiAXZCrK;;2;3;FINAL;2026-11-08T17:52:01.425348+00:00
+2026-11-08;Austria_Salzburg;Thalgau;Puch;EmaBSUzf;;2;4;FINAL;2026-11-08T17:52:01.432907+00:00
+2026-11-08;Austria_Salzburg;USK Anif;Strasswalchen;nZ2CnjSP;;3;0;FINAL;2026-11-08T17:52:01.441480+00:00
+2026-11-08;Austria_Salzburg;Union Henndorf;TSU Bramberg;roIoC9jD;;2;1;FINAL;2026-11-08T17:52:01.449089+00:00
+2026-11-08;Austria_Tirol;Innsbrucker AC;Munster;hYr6B5Yj;;6;0;FINAL;2026-11-08T17:52:01.455589+00:00
+2026-11-08;Austria_Tirol;SC Mils 05;FC Natters;r5MoOrId;;0;1;FINAL;2026-11-08T17:52:01.462025+00:00
+2026-11-08;Austria_Vorarlberg;A. Lustenau (Am);Andelsbuch;r7olg5At;;0;2;FINAL;2026-11-08T17:52:01.469624+00:00
+2026-11-08;Austria_Wien;WAF Brigittenau;Post Wien;Qm0VFhft;;1;4;FINAL;2026-11-08T17:52:01.477217+00:00
+2026-11-08;Azerbaijan_PremierLeague;Imisli FK;Sumqayit;ILiIwcYs;;0;0;FINAL;2026-11-08T17:52:01.483732+00:00
+2026-11-08;Azerbaijan_PremierLeague;Sabah FC;Shamakhi;C2gYZEX6;;2;2;FINAL;2026-11-08T17:52:01.490246+00:00
+2026-11-08;Belgium_JupilerProLeague;Club Brugge;Anderlecht;SChcBv6c;;1;1;FINAL;2026-11-08T17:52:01.497652+00:00
+2026-11-08;Belgium_JupilerProLeague;Gent;Kortrijk;8jfD7d5M;;1;0;FINAL;2026-11-08T17:52:01.505014+00:00
+2026-11-08;Belgium_JupilerProLeague;Royale Union SG;Genk;U5OOEDCk;;0;0;LIVE;2026-11-08T17:52:01.512401+00:00
+2026-11-08;Belgium_JupilerProLeague;St. Truiden;Waregem;IqWxOHk3;;;;SCHEDULED;2026-11-08T17:52:01.519764+00:00
+2026-11-08;Belgium_ChallengerProLeague;K. Lierse S.K.;Eupen;2wNnawMH;;2;3;FINAL;2026-11-08T17:52:01.526264+00:00
+2026-11-08;Belgium_ChallengerProLeague;Sporting Lokeren;Dender;x0yI0VuP;;;;SCHEDULED;2026-11-08T17:52:01.533016+00:00
+2026-11-08;Belgium_NationalDivision1ACFF;Habay La Neuve;Royal Union SG 2;C0OVhmj2;;2;1;FINAL;2026-11-08T17:52:01.540226+00:00
+2026-11-08;Belgium_NationalDivision1ACFF;Onhaye;Flenu;CKEPEUCL;;1;0;FINAL;2026-11-08T17:52:01.547804+00:00
+2026-11-08;Belgium_NationalDivision1ACFF;Charleroi B;Union Rochefortoise;v7GHGjr9;;1;1;FINAL;2026-11-08T17:52:01.555059+00:00
+2026-11-08;Belgium_NationalDivision1VV;KRC Harelbeke;Zelzate;0U24nHx3;;1;4;FINAL;2026-11-08T17:52:01.565181+00:00
+2026-11-08;Belgium_NationalDivision1VV;Tienen;Hoogstraten;8zGIODpd;;3;1;FINAL;2026-11-08T17:52:01.574877+00:00
+2026-11-08;Benin_Ligue1;AS Sobemap;Dragons;pbO39PKl;;2;1;FINAL;2026-11-08T17:52:01.677380+00:00
+2026-11-08;Benin_Ligue1;Damissa;Dynamo Abomey;hORB73k1;;0;1;FINAL;2026-11-08T17:52:01.683671+00:00
+2026-11-08;Benin_Ligue1;Hodio;ASVO;KCE2DgwK;;;;SCHEDULED;2026-11-08T17:52:01.690005+00:00
+2026-11-08;Benin_Ligue1;Krake;Coton FC;QyQJ5sKD;;0;3;FINAL;2026-11-08T17:52:01.696275+00:00
+2026-11-08;Belarus_VysshayaLiga;Slavia Mozyr;Baranovici;YeWmh7Lt;;2;0;FINAL;2026-11-08T17:52:01.702601+00:00
+2026-11-08;Belarus_VysshayaLiga;Neman;Dnepr Mogilev;E7gJpsKU;;2;1;FINAL;2026-11-08T17:52:01.708912+00:00
+2026-11-08;Belarus_VysshayaLiga;FC Minsk;Dynamo Brest;bHn3lPK5;;2;2;FINAL;2026-11-08T17:52:01.715196+00:00
+2026-11-08;Belarus_PershayaLiga;Osipovichi;Uni X Labs;WGRNWpI0;;2;2;FINAL;2026-11-08T17:52:01.721877+00:00
+2026-11-08;Belarus_PershayaLiga;Niva Dolbizno;FC Slonim;jVyHhSvK;;2;0;FINAL;2026-11-08T17:52:01.728243+00:00
+2026-11-08;Bolivia_DivisionProfesional;Guabira;SA Bulo Bulo;4OYW3FJt;;5;1;FINAL;2026-11-08T17:52:01.734622+00:00
+2026-11-08;Bolivia_DivisionProfesional;Nacional Potosi;Real Potosi;Clxu2glg;;;;SCHEDULED;2026-11-08T17:52:01.740928+00:00
+2026-11-08;Bolivia_DivisionProfesional;Bolivar;The Strongest;p2zm0XI5;;;;SCHEDULED;2026-11-08T17:52:01.747311+00:00
+2026-11-08;Bosnia_WWINLigaBiH;Sloga Meridian;BSK Banja Luka;pvUBsm55;;1;3;FINAL;2026-11-08T17:52:01.769234+00:00
+2026-11-08;Bosnia_WWINLigaBiH;Borac Banja Luka;Radnik Bijeljina;tlCpvEbD;;4;1;FINAL;2026-11-08T17:52:01.776118+00:00
+2026-11-08;Bosnia_WWINLigaBiH;Zrinjski;Sarajevo;WGNeoV5t;;0;0;LIVE;2026-11-08T17:52:01.783236+00:00
+2026-11-08;Bosnia_PrvaLiga_FBiH;Banovici;Posusje;baLNBThf;;2;1;FINAL;2026-11-08T17:52:01.790107+00:00
+2026-11-08;Bosnia_PrvaLiga_FBiH;Gradacac;NK Vitez;jZHFDkOs;;2;2;FINAL;2026-11-08T17:52:01.797089+00:00
+2026-11-08;Bosnia_PrvaLiga_FBiH;TOSK Tesanj;Tomislav;f3WqJB0K;;2;1;FINAL;2026-11-08T17:52:01.804039+00:00
+2026-11-08;Bosnia_PrvaLiga_FBiH;GOSK Gabela;Capljina;zkMjcUw1;;3;0;FINAL;2026-11-08T17:52:01.811047+00:00
+2026-11-08;Bulgaria_ParvaLiga;Spartak Varna;Arda;OKsHwbvg;;3;2;FINAL;2026-11-08T17:52:02.017149+00:00
+2026-11-08;Bulgaria_ParvaLiga;Levski;CSKA Sofia;WpoPyx95;;0;3;FINAL;2026-11-08T17:52:02.023479+00:00
+2026-11-08;Bulgaria_VtoraLiga;Spartak Pleven;Dobrudzha;nB2FIEPh;;1;1;FINAL;2026-11-08T17:52:02.029660+00:00
+2026-11-08;Bulgaria_VtoraLiga;Vihren;Lok. Gorna;K4E4BcIP;;3;1;FINAL;2026-11-08T17:52:02.036140+00:00
+2026-11-08;Bulgaria_VtoraLiga;Beroe;Pirin Blagoevgrad;QsuL3oaJ;;3;3;FINAL;2026-11-08T17:52:02.042504+00:00
+2026-11-08;Bulgaria_VtoraLiga;Hebar;Marek;reNs4FAa;;3;1;FINAL;2026-11-08T17:52:02.048853+00:00
+2026-11-08;Bulgaria_ThirdLeagueSouthWest;Botev Ihtiman;Slavia Sofia 2;WAOBUSRs;;0;0;FINAL;2026-11-08T17:52:02.067873+00:00
+2026-11-08;Bulgaria_ThirdLeagueNorthWest;Mezdra;OFK Levski;0G143ZnQ;;3;0;FINAL;2026-11-08T17:52:02.080523+00:00
+2026-11-08;BurkinaFaso_PremierLeague;AS Douanes;Majestic;xQhF5qy2;;1;0;FINAL;2026-11-08T17:52:02.087095+00:00
+2026-11-08;BurkinaFaso_PremierLeague;Maya;Sonabel Ouagadougou;Kn7RfSMq;;0;0;FINAL;2026-11-08T17:52:02.093645+00:00
+2026-11-08;Burundi_PrimusLeague;Inter Star;Flambeau du Centre;IJOJ0SOE;;1;0;FINAL;2026-11-08T17:52:02.100046+00:00
+2026-11-08;Burundi_PrimusLeague;Kayanza;Le Messager Ngozi;MFDcgpHl;;1;1;FINAL;2026-11-08T17:52:02.106438+00:00
+2026-11-08;Burundi_PrimusLeague;Ngozi City;Panthere Noir;SCG5iOo1;;1;3;FINAL;2026-11-08T17:52:02.112852+00:00
+2026-11-08;Burundi_PrimusLeague;Young Star;Olympic S.;jXMRb6gR;;0;0;FINAL;2026-11-08T17:52:02.119148+00:00
+2026-11-08;Burundi_PrimusLeague;Vital O;Musongati;00qnnT9L;;0;2;FINAL;2026-11-08T17:52:02.125439+00:00
+2026-11-08;Cambogia_CPL;Angkor Tiger;Visakha;KzNmUZJr;;3;1;FINAL;2026-11-08T17:52:02.131987+00:00
+2026-11-08;Cambogia_CPL;Phnom Penh Crown;Boeung Ket;lhWHZedL;;1;2;FINAL;2026-11-08T17:52:02.138413+00:00
+2026-11-08;Cambogia_CPL;Svay Rieng;NagaWorld;S0QeSDle;;3;1;FINAL;2026-11-08T17:52:02.144685+00:00
+2026-11-08;Camerun_EliteOne;Bamenda;APEJES Academy;faGjCwZR;;2;0;FINAL;2026-11-08T17:52:02.150876+00:00
+2026-11-08;Camerun_EliteOne;Stade Renard;Colombe;Qs7M6Hdk;;1;1;FINAL;2026-11-08T17:52:02.157028+00:00
+2026-11-08;Camerun_EliteOne;Canon Yaounde;Aigle Royal;nZCrEa4F;;0;0;FINAL;2026-11-08T17:52:02.163238+00:00
+2026-11-08;Camerun_EliteTwo;Les Astres;Elecsport;ppN4rus1;;2;1;FINAL;2026-11-08T17:52:02.169491+00:00
+2026-11-08;Camerun_EliteTwo;Atlantic;Mintack;Gn4Ub0Rs;;;;SCHEDULED;2026-11-08T17:52:02.175613+00:00
+2026-11-08;Camerun_EliteTwo;Avion Academy;Bamboutos FC;l02xcvdf;;;;SCHEDULED;2026-11-08T17:52:02.181743+00:00
+2026-11-08;Camerun_EliteTwo;Kumba;Tonnerre;zH0peIQ6;;2;1;FINAL;2026-11-08T17:52:02.187842+00:00
+2026-11-08;Cipro_CyprusLeague;Anorthosis;Omonia;ANtirQkg;;0;2;FINAL;2026-11-08T17:52:02.346819+00:00
+2026-11-08;Cipro_CyprusLeague;APOEL;Aris;Impat4K5;;2;1;LIVE;2026-11-08T17:52:02.352895+00:00
+2026-11-08;Cipro_CyprusLeague;Pafos;Omonia 29th May;dboFxMJU;;3;0;LIVE;2026-11-08T17:52:02.359261+00:00
+2026-11-08;Cipro_Division2;Apea Akrotiriou;Polemidion;GAreagTi;;0;1;FINAL;2026-11-08T17:52:02.365381+00:00
+2026-11-08;Cipro_Division2;Iraklis Yerolakkou;Digenis Akritas;SClOpfEb;;1;0;FINAL;2026-11-08T17:52:02.371566+00:00
+2026-11-08;CongoDr_Ligue1;FC Renaissance;Ufalya Simba;OUKlzNX1;;0;1;FINAL;2026-11-08T17:52:02.413241+00:00
+2026-11-08;CongoDr_Ligue1;Aigles du Congo;Celeste;xCc11aW0;;0;2;FINAL;2026-11-08T17:52:02.419574+00:00
+2026-11-08;CostaDAvorio_Ligue1;Academie de FAD;ISCA;lhOSuRng;;;;SCHEDULED;2026-11-08T17:52:02.426175+00:00
+2026-11-08;CostaDAvorio_Ligue1;Korhogo;ASEC Mimosas;QFpBNqXO;;;;SCHEDULED;2026-11-08T17:52:02.432833+00:00
+2026-11-08;CostaDAvorio_Ligue1;SO Armee;Adiake;tSKKsmIt;;;;SCHEDULED;2026-11-08T17:52:02.439720+00:00
+2026-11-08;CostaDAvorio_Ligue1;Stade d'Abidjan;Bouake;Iks3P52C;;;;SCHEDULED;2026-11-08T17:52:02.446418+00:00
+2026-11-08;CostaDAvorio_Ligue1;Stella Adjame;San Pedro;fkRzv5H5;;;;SCHEDULED;2026-11-08T17:52:02.453024+00:00
+2026-11-08;Croatia_HNL;Osijek;Hajduk Split;tEqoqfD5;;0;1;FINAL;2026-11-08T17:52:02.494980+00:00
+2026-11-08;Croatia_HNL;Varazdin;Din. Zagabria;CGQAaFcn;;1;1;LIVE;2026-11-08T17:52:02.501403+00:00
+2026-11-08;Croatia_PrvaNL;Dugopolje;Dubrava;CvRPLZQk;;0;0;FINAL;2026-11-08T17:52:02.507741+00:00
+2026-11-08;Denmark_Superliga;FC Copenhagen;Brondby;Ue5C5NmQ;;1;0;FINAL;2026-11-08T17:52:02.543780+00:00
+2026-11-08;Denmark_Superliga;Aarhus;Horsens;K8hbdJAC;;2;0;FINAL;2026-11-08T17:52:02.550051+00:00
+2026-11-08;Denmark_Superliga;Randers;Nordsjaelland;QRjr01Bm;;1;6;FINAL;2026-11-08T17:52:02.556662+00:00
+2026-11-08;Denmark_Superliga;Midtjylland;Sonderjyske;Crkjbut0;;1;1;LIVE;2026-11-08T17:52:02.563006+00:00
+2026-11-08;Denmark_2ndDivision;Nykobing;Brabrand;MH8ualpT;;0;2;FINAL;2026-11-08T17:52:02.569329+00:00
+2026-11-08;Denmark_ALigaWomen;Nordsjaelland D;ASA Aarhus D;M3gdUn1D;;3;0;FINAL;2026-11-08T17:52:02.576324+00:00
+2026-11-08;EmiratiArabi_UAELeague;Al-Jazira;Al Wasl;6R5jShbl;;2;1;FINAL;2026-11-08T17:52:02.653228+00:00
+2026-11-08;EmiratiArabi_UAELeague;Al Nasr;United FC;bZNcQWS0;;4;1;FINAL;2026-11-08T17:52:02.659808+00:00
+2026-11-08;EmiratiArabi_UAELeague;Ajman;Bani Yas;WnM5OAcD;;1;1;FINAL;2026-11-08T17:52:02.666366+00:00
+2026-11-08;EmiratiArabi_UAELeague;Al-Wahda;Al-Ain;bgEinEkK;;0;0;FINAL;2026-11-08T17:52:02.672811+00:00
+2026-11-08;EmiratiArabi_Division1;Al Bataeh;Al Fujairah;YHFaZcpd;;1;2;FINAL;2026-11-08T17:52:02.679524+00:00
+2026-11-08;EmiratiArabi_Division1;Al Urooba;Palm City;0j2hyKFq;;2;0;FINAL;2026-11-08T17:52:02.686018+00:00
+2026-11-08;Estonia_Esiliiga;Elva;Nomme Utd U21;E3m5tgbf;;2;1;FINAL;2026-11-08T17:52:02.714372+00:00
+2026-11-08;Estonia_Esiliiga;FC Tallinn;Tallinna Kalev;lIw4pNGP;;1;0;FINAL;2026-11-08T17:52:02.720583+00:00
+2026-11-08;Estonia_Esiliiga;Flora U21;Levadia U21;nV0CvXS6;;0;2;FINAL;2026-11-08T17:52:02.726734+00:00
+2026-11-08;Estonia_Esiliiga;Tartu Welco;Maardu;tjkcrFTs;;;;SCHEDULED;2026-11-08T17:52:02.733010+00:00
+2026-11-08;Estonia_Esiliiga;Viimsi JK;Nomme Kalju U21;fe4KxBcJ;;10;0;FINAL;2026-11-08T17:52:02.739181+00:00
+2026-11-08;Estonia_EsiliigaB;Johvi Phoenix;Levadia U19;6em4HsVq;;4;1;FINAL;2026-11-08T17:52:02.745558+00:00
+2026-11-08;Estonia_EsiliigaB;Legion;Tallinna Kalev U21;v9oCFLad;;3;0;FINAL;2026-11-08T17:52:02.751796+00:00
+2026-11-08;Estonia_EsiliigaB;Parnu JK Vaprus U21;Narva U21;vsi5y3MF;;1;4;FINAL;2026-11-08T17:52:02.758102+00:00
+2026-11-08;Estonia_EsiliigaB;Tabasalu;Tulevik;WGmcwPi3;;1;2;FINAL;2026-11-08T17:52:02.764392+00:00
+2026-11-08;Estonia_EsiliigaB;Tammeka U21;Tartu Kalev;zDdYM37M;;4;1;FINAL;2026-11-08T17:52:02.770717+00:00
+2026-11-08;Estonia_MeistriliigaWomen;Flora D;Elva D;86bYexwI;;8;1;FINAL;2026-11-08T17:52:02.778210+00:00
+2026-11-08;Estonia_MeistriliigaWomen;Paide Linnameeskond D;Harju JK Laagri D;WrxjEJhn;;3;1;FINAL;2026-11-08T17:52:02.785575+00:00
+2026-11-08;Estonia_MeistriliigaWomen;Viimsi JK D;Saku Sporting D;GW1tfG7U;;3;2;FINAL;2026-11-08T17:52:02.792845+00:00
+2026-11-08;Filippine_PFL;Stallion;Mendiola FC 1991;j1YmHdqL;;2;3;FINAL;2026-11-08T17:52:02.820979+00:00
+2026-11-08;Filippine_PFL;Davao Aguilas;Philippine Army;MqPJBz7r;;10;0;FINAL;2026-11-08T17:52:02.827386+00:00
+2026-11-08;Filippine_PFL;Maharlika;Manila Digger;StSR9Eye;;0;3;FINAL;2026-11-08T17:52:02.833711+00:00
+2026-11-08;Finland_Veikkausliiga;Gnistan;VPS;W0BLyF9L;;5;1;FINAL;2026-11-08T17:52:02.841265+00:00
+2026-11-08;Finland_Veikkausliiga;HJK;Oulu;Oz8Dwyu9;;3;3;FINAL;2026-11-08T17:52:02.848772+00:00
+2026-11-08;Finland_Veikkausliiga;KuPS;Inter Turku;SWdiWhXr;;0;2;FINAL;2026-11-08T17:52:02.856234+00:00
+2026-11-08;France_Ligue1;Rennes;Lilla;Mm1sxqvh;;1;2;FINAL;2026-11-08T17:52:02.862514+00:00
+2026-11-08;France_Ligue1;Angers;Nizza;0v4rKAI6;;0;1;LIVE;2026-11-08T17:52:02.868776+00:00
+2026-11-08;France_Ligue1;Brest;Lione;E1fxthuQ;;1;0;LIVE;2026-11-08T17:52:02.875066+00:00
+2026-11-08;France_Ligue1;Le Havre;Lorient;AXu8zW2m;;0;1;LIVE;2026-11-08T17:52:02.881336+00:00
+2026-11-08;France_Ligue1;Le Mans;Monaco;IcqGY9Xa;;0;1;LIVE;2026-11-08T17:52:02.887605+00:00
+2026-11-08;France_Ligue1;Lens;Marsiglia;OfnOWm2C;;;;SCHEDULED;2026-11-08T17:52:02.893926+00:00
+2026-11-08;Georgia_CrystalbetErovnuliLiga;Dila Gori;Din. Tbilisi;GMq3uPbm;;0;2;FINAL;2026-11-08T17:52:02.943044+00:00
+2026-11-08;Germany_Bundesliga;Colonia;Leverkusen;IZzmtYqB;;1;2;FINAL;2026-11-08T17:52:02.949242+00:00
+2026-11-08;Germany_Bundesliga;Friburgo;Union Berlino;nXgNPCaU;;1;0;LIVE;2026-11-08T17:52:02.955425+00:00
+2026-11-08;Germany_Bundesliga;Hoffenheim;Schalke;EJeFRYUH;;;;SCHEDULED;2026-11-08T17:52:02.961567+00:00
+2026-11-08;Germany_2Bundesliga;Bochum;Karlsruher;QB656HpA;;3;2;FINAL;2026-11-08T17:52:02.967737+00:00
+2026-11-08;Germany_2Bundesliga;Heidenheim;Hannover;fivu3rvI;;2;2;FINAL;2026-11-08T17:52:02.975401+00:00
+2026-11-08;Germany_2Bundesliga;Magdeburg;St. Pauli;z5bicD7d;;4;1;FINAL;2026-11-08T17:52:02.981608+00:00
+2026-11-08;Germany_3Liga;Meppen;Regensburg;t4IDmiAU;;2;1;FINAL;2026-11-08T17:52:02.988176+00:00
+2026-11-08;Germany_Regionalliga_Nord;Hannoverscher SC;Jeddeloh;rJHGroq1;;1;5;FINAL;2026-11-08T17:52:03.006717+00:00
+2026-11-08;Germany_Regionalliga_Nord;Norderstedt;Drochtersen/Assel;UwKKw3eR;;2;2;FINAL;2026-11-08T17:52:03.012877+00:00
+2026-11-08;Germany_Regionalliga_Nordost;RSV Eintracht;Aue;IH7R4W0l;;1;2;FINAL;2026-11-08T17:52:03.031425+00:00
+2026-11-08;Germany_Regionalliga_Nordost;Zwickau;Lokomotive Leipzig;8OV1lBG7;;1;2;FINAL;2026-11-08T17:52:03.037631+00:00
+2026-11-08;Germany_Regionalliga_Bayern;Eltersdorf;Monaco 1860;hMbdTNO7;;0;1;FINAL;2026-11-08T17:52:03.064584+00:00
+2026-11-08;Germany_Oberliga_NOFV_Nord;Berliner AK 07;TB Berlin;0GZU915e;;4;1;FINAL;2026-11-08T17:52:03.070770+00:00
+2026-11-08;Germany_Oberliga_NOFV_Nord;Klosterfelde;Hertha Zehlendorf;jNsqJ5r9;;1;1;FINAL;2026-11-08T17:52:03.077393+00:00
+2026-11-08;Germany_Oberliga_NOFV_Nord;Neustrelitz;Stendal;dKpiHqDL;;2;0;FINAL;2026-11-08T17:52:03.083887+00:00
+2026-11-08;Germany_Oberliga_NOFV_Nord;Sparta Lichtenberg;Wismar;8tww8uz8;;4;0;FINAL;2026-11-08T17:52:03.090087+00:00
+2026-11-08;Germany_Oberliga_NOFV_Sud;Bautzen;Halle;tbcr6ozH;;1;3;FINAL;2026-11-08T17:52:03.096623+00:00
+2026-11-08;Germany_Oberliga_NOFV_Sud;Einheit Rudolstadt;Weissenfels;drg7M6Kc;;4;3;FINAL;2026-11-08T17:52:03.109041+00:00
+2026-11-08;Germany_Oberliga_NOFV_Sud;Einheit Wernigerode;Glauchau;lO0j4P4T;;4;0;FINAL;2026-11-08T17:52:03.115373+00:00
+2026-11-08;Germany_Oberliga_SchleswigHolstein;VfR Neumunster;PSV Neumunster;GnjOVcF6;;1;0;FINAL;2026-11-08T17:52:03.127822+00:00
+2026-11-08;Germany_Oberliga_Hamburg;HEBC Hamburg;Dassendorf;46TrReMP;;1;3;FINAL;2026-11-08T17:52:03.134031+00:00
+2026-11-08;Germany_Oberliga_Hamburg;ETSV Hamburg;Pinneberg;O8yZ8d0s;;4;2;FINAL;2026-11-08T17:52:03.140251+00:00
+2026-11-08;Germany_Oberliga_Hamburg;TSV Buchholz 08;Victoria Hamburg;EuFELZqm;;0;4;FINAL;2026-11-08T17:52:03.146644+00:00
+2026-11-08;Germany_Oberliga_Hamburg;Tesla Hamburg;Paloma;M5IMJDEa;;1;3;FINAL;2026-11-08T17:52:03.152860+00:00
+2026-11-08;Germany_Oberliga_Bremen;Schwachhausen;Brinkumer;b5AhLp3n;;0;2;FINAL;2026-11-08T17:52:03.159058+00:00
+2026-11-08;Germany_Oberliga_Bremen;Eiche Horn;Geestemunde;EeH8H22B;;2;3;FINAL;2026-11-08T17:52:03.165264+00:00
+2026-11-08;Germany_Oberliga_Bremen;Hemelingen;Bremen III;6VD0JOXb;;5;1;FINAL;2026-11-08T17:52:03.171494+00:00
+2026-11-08;Germany_Oberliga_Niedersachsen;Bersenbruck;Hildesheim;EFFJ09Pb;;0;2;FINAL;2026-11-08T17:52:03.177812+00:00
+2026-11-08;Germany_Oberliga_Niedersachsen;Braunschweig U23;BSV Rehden;hSuatuvp;;4;0;FINAL;2026-11-08T17:52:03.183991+00:00
+2026-11-08;Germany_Oberliga_Niedersachsen;Heeslinger;Wilhelmshaven;0hq7vJ8d;;1;2;FINAL;2026-11-08T17:52:03.196415+00:00
+2026-11-08;Germany_Oberliga_Niedersachsen;Nordhorn;Vorsfelde;4MwfpluI;;3;1;FINAL;2026-11-08T17:52:03.209000+00:00
+2026-11-08;Germany_Oberliga_Niedersachsen;Spelle-Venhaus;Verden;Cns2rS9U;;2;0;FINAL;2026-11-08T17:52:03.215257+00:00
+2026-11-08;Germany_Oberliga_Niedersachsen;Hemmingen;Luneburger Hansa;QVzg2M03;;1;5;FINAL;2026-11-08T17:52:03.221495+00:00
+2026-11-08;Germany_Oberliga_Westfalen;Clarholz;Hiltrup;EkY801qf;;0;2;FINAL;2026-11-08T17:52:03.228148+00:00
+2026-11-08;Germany_Oberliga_Westfalen;Erkenschwick;SpVgg Herne Horsthausen;K8jz4zjn;;2;2;FINAL;2026-11-08T17:52:03.234344+00:00
+2026-11-08;Germany_Oberliga_Westfalen;Gievenbeck;Sprockhovel;hMlr2EKb;;1;0;FINAL;2026-11-08T17:52:03.240724+00:00
+2026-11-08;Germany_Oberliga_Westfalen;Westfalia Kinderhaus;Vreden;fTZOdJrJ;;1;0;FINAL;2026-11-08T17:52:03.247133+00:00
+2026-11-08;Germany_Oberliga_Westfalen;Munster 2;ASC 09 Dortmund;n3WGbuE6;;2;1;FINAL;2026-11-08T17:52:03.253522+00:00
+2026-11-08;Germany_Oberliga_Westfalen;Ennepetal;Eintracht Rheine;YD5cbWJN;;0;3;FINAL;2026-11-08T17:52:03.259876+00:00
+2026-11-08;Germany_Oberliga_Westfalen;TuS Hordel;Schermbeck 2020;Qm2k0hkB;;0;3;FINAL;2026-11-08T17:52:03.266090+00:00
+2026-11-08;Germany_Oberliga_Hessen;CSC 03 Kassel;Giessen;Ma3VbUDd;;3;3;FINAL;2026-11-08T17:52:03.272379+00:00
+2026-11-08;Germany_Oberliga_Hessen;Pohlheim;Hanauer SC;ln5N0jqp;;0;2;FINAL;2026-11-08T17:52:03.278570+00:00
+2026-11-08;Germany_Oberliga_RheinlandPfalzSaar;Pirmasens;TSV 1881 Gau-Odernheim;QVGlZMoB;;2;1;FINAL;2026-11-08T17:52:03.284824+00:00
+2026-11-08;Germany_Oberliga_RheinlandPfalzSaar;Engers;Worms;rkdMmM04;;2;1;FINAL;2026-11-08T17:52:03.297272+00:00
+2026-11-08;Germany_Oberliga_RheinlandPfalzSaar;RW Koblenz;Koblenz;YeKdX0GN;;1;0;FINAL;2026-11-08T17:52:03.303499+00:00
+2026-11-08;Germany_Oberliga_BadenWurttemberg;Neckarsulm;Oberachern;CQJeb7bl;;2;4;FINAL;2026-11-08T17:52:03.315882+00:00
+2026-11-08;Germany_Oberliga_BadenWurttemberg;1. FC Muhlhausen;Villingen;pvI3doT0;;0;2;FINAL;2026-11-08T17:52:03.322196+00:00
+2026-11-08;Germany_Oberliga_BadenWurttemberg;Young Boys Reutlingen;Bahlinger;b18cISkK;;0;2;FINAL;2026-11-08T17:52:03.328344+00:00
+2026-11-08;Germany_Oberliga_Mittelrhein;Merten;Duren;pMKAyLGb;;1;0;FINAL;2026-11-08T17:52:03.335258+00:00
+2026-11-08;Germany_Oberliga_Mittelrhein;Neunkirchen-Seelscheid;Konigsdorf;fZ2jlb04;;3;1;FINAL;2026-11-08T17:52:03.347553+00:00
+2026-11-08;Germany_Oberliga_Mittelrhein;Siegburger;Eintracht Hohkeppel;drDdSGwo;;2;2;FINAL;2026-11-08T17:52:03.353769+00:00
+2026-11-08;Germany_Oberliga_Mittelrhein;VfL Vichttal;Hurth;2a6bnxVG;;4;2;FINAL;2026-11-08T17:52:03.359924+00:00
+2026-11-08;Germany_Oberliga_Niederrhein;Buderich;SW Essen;hE6cYVEM;;0;3;FINAL;2026-11-08T17:52:03.366121+00:00
+2026-11-08;Germany_Oberliga_Niederrhein;Dingden;Scherpenberg;pUCeEANj;;1;3;FINAL;2026-11-08T17:52:03.372352+00:00
+2026-11-08;Germany_Oberliga_Niederrhein;FC Monheim;Solingen-Wald;dj9ILhVG;;2;2;FINAL;2026-11-08T17:52:03.378517+00:00
+2026-11-08;Germany_Oberliga_Niederrhein;Germania Ratingen;Uerdingen;lQ5ANE04;;3;0;FINAL;2026-11-08T17:52:03.385285+00:00
+2026-11-08;Germany_Oberliga_Niederrhein;Juchen-Garzweiler;SSVg Velbert;lbRPJWaT;;2;2;FINAL;2026-11-08T17:52:03.391444+00:00
+2026-11-08;Germany_Oberliga_Niederrhein;Schonnebeck;Sonsbeck;Cz5sxEFc;;5;1;FINAL;2026-11-08T17:52:03.397659+00:00
+2026-11-08;Germany_Oberliga_Niederrhein;SC St.Tonis;Baumberg;K08kzhpA;;1;0;FINAL;2026-11-08T17:52:03.403830+00:00
+2026-11-08;Ghana_PremierLeague;Ashanti Gold;Young Apostles;UNTc9REC;;0;0;FINAL;2026-11-08T17:52:03.478627+00:00
+2026-11-08;Ghana_PremierLeague;Bechem United;Samartex;xO3KCu47;;2;1;FINAL;2026-11-08T17:52:03.484726+00:00
+2026-11-08;Ghana_PremierLeague;Berekum Chelsea;Asante Kotoko;vBtCIViQ;;2;1;FINAL;2026-11-08T17:52:03.490799+00:00
+2026-11-08;Ghana_PremierLeague;Bibiani Gold Stars;Aduana;f3p9GrMu;;0;0;FINAL;2026-11-08T17:52:03.497016+00:00
+2026-11-08;Ghana_PremierLeague;Dreams;Debibi;SGrHEMjh;;1;1;FINAL;2026-11-08T17:52:03.503203+00:00
+2026-11-08;Ghana_PremierLeague;Hearts Of Oak;Heart Of Lions;lpSsD9Fm;;3;0;FINAL;2026-11-08T17:52:03.509382+00:00
+2026-11-08;Ghana_PremierLeague;Medeama;Swedru All Blacks;KO0OC0L4;;1;0;FINAL;2026-11-08T17:52:03.515658+00:00
+2026-11-08;Ghana_PremierLeague;Port City;Holy Stars;McQkBmp0;;1;0;FINAL;2026-11-08T17:52:03.521902+00:00
+2026-11-08;Ghana_DivisionOneLeague;Accra Lions;7th Wave;YiCzAbpo;;0;1;FINAL;2026-11-08T17:52:03.528214+00:00
+2026-11-08;Ghana_DivisionOneLeague;Berekum City;Tamale City;baJ7YBUg;;;;SCHEDULED;2026-11-08T17:52:03.534533+00:00
+2026-11-08;Ghana_DivisionOneLeague;Ebiemo FC;Ebony FC;GWH7mX33;;;;SCHEDULED;2026-11-08T17:52:03.540965+00:00
+2026-11-08;Ghana_DivisionOneLeague;Elmina Sharks;New Edubiase;ncyrXBJM;;2;0;FINAL;2026-11-08T17:52:03.547290+00:00
+2026-11-08;Ghana_DivisionOneLeague;KAC Soccer;Dormaa;hYvFDaU0;;2;1;FINAL;2026-11-08T17:52:03.553557+00:00
+2026-11-08;Ghana_DivisionOneLeague;Mighty Royals;VC Warriors;0brNBwaD;;2;1;FINAL;2026-11-08T17:52:03.560007+00:00
+2026-11-08;Ghana_DivisionOneLeague;Nukunu;Inter Allies;0b4MX1xh;;1;0;FINAL;2026-11-08T17:52:03.566266+00:00
+2026-11-08;Ghana_DivisionOneLeague;Okwawu;Home Stars;nZ8pSc6T;;;;SCHEDULED;2026-11-08T17:52:03.572564+00:00
+2026-11-08;Ghana_DivisionOneLeague;Pac Academy;Future Stars;GCRDRksp;;;;SCHEDULED;2026-11-08T17:52:03.578919+00:00
+2026-11-08;Ghana_DivisionOneLeague;Sefwi All Stars;Rospak;vDstDjSj;;;;SCHEDULED;2026-11-08T17:52:03.585250+00:00
+2026-11-08;Ghana_DivisionOneLeague;Soccer Intellectuals;Ebusua Dwarfs;fNK8VbrI;;0;1;FINAL;2026-11-08T17:52:03.591675+00:00
+2026-11-08;Ghana_DivisionOneLeague;Tamale;Wa Power;0SuoYsJD;;1;0;FINAL;2026-11-08T17:52:03.597947+00:00
+2026-11-08;Ghana_DivisionOneLeague;Techiman Liberty;Bectero Sasana;hhV8ZtiK;;;;SCHEDULED;2026-11-08T17:52:03.604330+00:00
+2026-11-08;Ghana_DivisionOneLeague;Yapei;Eleven Wonders;6Ht7FLal;;5;3;FINAL;2026-11-08T17:52:03.610679+00:00
+2026-11-08;Giamaica_PremierLeague;Humble Lions;Cavalier;by9pWaCb;;;;SCHEDULED;2026-11-08T17:52:03.617671+00:00
+2026-11-08;Giamaica_PremierLeague;Montego Bay;Molynes;KCphLr3t;;;;SCHEDULED;2026-11-08T17:52:03.624701+00:00
+2026-11-08;Giamaica_PremierLeague;Mount Pleasant;Tivoli;8GkGFvXH;;;;SCHEDULED;2026-11-08T17:52:03.631289+00:00
+2026-11-08;Giamaica_PremierLeague;Portmore;Tru-Juice;djHBTLh4;;;;SCHEDULED;2026-11-08T17:52:03.638375+00:00
+2026-11-08;Giamaica_PremierLeague;Treasure Beach;Dunbeholden;vyItJDwA;;;;SCHEDULED;2026-11-08T17:52:03.644888+00:00
+2026-11-08;Japan_J1League;Kobe;Urawa;QJEQk716;;2;2;FINAL;2026-11-08T17:52:03.651396+00:00
+2026-11-08;Japan_J1League;Machida;Hiroshima;dO2CIdyA;;0;0;FINAL;2026-11-08T17:52:03.657794+00:00
+2026-11-08;Japan_J1League;G-Osaka;C-Osaka;SOzJY8R7;;2;3;FINAL;2026-11-08T17:52:03.664237+00:00
+2026-11-08;Japan_J1League;Chiba;Mito;8Qlb46Ga;;1;0;FINAL;2026-11-08T17:52:03.670900+00:00
+2026-11-08;Japan_J2League;Vanraure;Sapporo;44E564wn;;0;1;FINAL;2026-11-08T17:52:03.677436+00:00
+2026-11-08;Japan_J2League;Iwata;Shonan;Whk22DrS;;1;1;FINAL;2026-11-08T17:52:03.683977+00:00
+2026-11-08;Japan_J2League;Tochigi City;Omiya Ardija;O8e0rhid;;0;3;FINAL;2026-11-08T17:52:03.690817+00:00
+2026-11-08;Japan_J2League;Vegalta Sendai;Kofu;CUHD4r8b;;5;1;FINAL;2026-11-08T17:52:03.697272+00:00
+2026-11-08;Japan_J3League;Kumamoto;Renofa Yamaguchi;lKWm0NXi;;1;2;FINAL;2026-11-08T17:52:03.703772+00:00
+2026-11-08;Japan_J3League;Nagano;Kamatamare;Cxv9mpln;;0;1;FINAL;2026-11-08T17:52:03.710190+00:00
+2026-11-08;Japan_J3League;Sagamihara;Kagoshima Utd;GGeiV2YH;;1;0;FINAL;2026-11-08T17:52:03.716677+00:00
+2026-11-08;Japan_J3League;Tottori;Tochigi;0tqXstIN;;0;1;FINAL;2026-11-08T17:52:03.723063+00:00
+2026-11-08;Gibilterra_NationalLeague;Lincoln;College 1975 FC;8GNyMmeU;;;;SCHEDULED;2026-11-08T17:52:03.751543+00:00
+2026-11-08;Gibilterra_NationalLeague;Lynx;Lions Gibraltar;QZ29zmAN;;;;SCHEDULED;2026-11-08T17:52:03.758085+00:00
+2026-11-08;Giordania_PremierLeague;Al Faisaly Amman;Shabab Al Ordon;dYwq58at;;0;0;FINAL;2026-11-08T17:52:03.764616+00:00
+2026-11-08;HongKong_PremierLeague;North District;Kowloon City;txMVXXjM;;2;1;FINAL;2026-11-08T17:52:04.269008+00:00
+2026-11-08;HongKong_PremierLeague;Hong Kong FC;Eastern AA;x871SBEq;;2;1;FINAL;2026-11-08T17:52:04.275570+00:00
+2026-11-08;HongKong_PremierLeague;Eastern District;Tai Po;OO59Qkqd;;1;3;FINAL;2026-11-08T17:52:04.282197+00:00
+2026-11-08;Indonesia_SuperLeague;Bali United;Persik Kediri;SKSyIQUQ;;3;0;FINAL;2026-11-08T17:52:04.288460+00:00
+2026-11-08;Indonesia_SuperLeague;PSS Sleman;FC Bhayangkara;zDAUJn0E;;1;1;FINAL;2026-11-08T17:52:04.294746+00:00
+2026-11-08;Indonesia_SuperLeague;Java United;Persib;OjE7C4hl;;2;1;FINAL;2026-11-08T17:52:04.301170+00:00
+2026-11-08;Indonesia_Championship_East;Barito Putera;RANS Nusantara;OEG0yddM;;1;1;FINAL;2026-11-08T17:52:04.304458+00:00
+2026-11-08;Indonesia_Championship_West;Persikad Depok;Persiku Kudus;Y7hQiHt3;;4;0;FINAL;2026-11-08T17:52:04.320547+00:00
+2026-11-08;Indonesia_Championship_West;PSPS Riau;PSGC Ciamis;tE5vUDld;;2;1;FINAL;2026-11-08T17:52:04.323810+00:00
+2026-11-08;England_PremierLeague;Brighton;Brentford;M109CYgU;;2;0;FINAL;2026-11-08T17:52:04.330826+00:00
+2026-11-08;England_PremierLeague;Crystal Palace;Liverpool;xEzJWyun;;1;3;FINAL;2026-11-08T17:52:04.337675+00:00
+2026-11-08;England_PremierLeague;Ipswich;Bournemouth;2sa6AoOq;;1;2;FINAL;2026-11-08T17:52:04.344191+00:00
+2026-11-08;England_PremierLeague;Sunderland;Chelsea;2ZAFSppS;;1;0;FINAL;2026-11-08T17:52:04.350703+00:00
+2026-11-08;England_PremierLeague;Manchester Utd;Aston Villa;Me9aWSp3;;2;4;LIVE;2026-11-08T17:52:04.357226+00:00
+2026-11-08;Iran_ProLeagueGolfoPersico;Gol Gohar;Zob Ahan;Otiek8bd;;0;0;FINAL;2026-11-08T17:52:04.584071+00:00
+2026-11-08;Iran_AzadeganLeague;Fard;Besat Kermanshah;YyfAzbG8;;4;1;FINAL;2026-11-08T17:52:04.590452+00:00
+2026-11-08;Iran_AzadeganLeague;Mes Kerman;Naft M.I.S;b5CIU7Sk;;2;1;FINAL;2026-11-08T17:52:04.596934+00:00
+2026-11-08;Iran_AzadeganLeague;Niroye Zamini;Shahin Bandar Ameri;6VFQSoc2;;1;2;FINAL;2026-11-08T17:52:04.603411+00:00
+2026-11-08;Iran_AzadeganLeague;Shenavarsazi Qeshm;Mes Rafsanjan;6khIYyoL;;1;0;FINAL;2026-11-08T17:52:04.609923+00:00
+2026-11-08;Iraq_StarsLeague;Al Shorta;Al Naft;GIWbwSec;;2;1;FINAL;2026-11-08T17:52:04.616346+00:00
+2026-11-08;Iraq_StarsLeague;Erbil;Al Gharraf;zmTEZqeM;;1;1;FINAL;2026-11-08T17:52:04.622741+00:00
+2026-11-08;Israele_LigathaAl;H. Beer Sheva;H. Tel Aviv;tQ13m50C;;;;SCHEDULED;2026-11-08T17:52:04.636481+00:00
+2026-11-08;Israele_LigaAlefNorth;Araba;Hapoel Umm al-Fahm;61Kvi78D;;1;8;FINAL;2026-11-08T17:52:04.643013+00:00
+2026-11-08;Italy_SerieA;Napoli;Lazio;SY7oSelg;;1;1;FINAL;2026-11-08T17:52:04.649446+00:00
+2026-11-08;Italy_SerieA;Genoa;Milan;MFkKOMs1;;1;2;FINAL;2026-11-08T17:52:04.655923+00:00
+2026-11-08;Italy_SerieA;Monza;Atalanta;fL9wUHJt;;0;1;FINAL;2026-11-08T17:52:04.662426+00:00
+2026-11-08;Italy_SerieA;Inter;Como;UugSM0CD;;2;0;LIVE;2026-11-08T17:52:04.668919+00:00
+2026-11-08;Italy_SerieA;Fiorentina;Juventus;l2iCQrDl;;;;SCHEDULED;2026-11-08T17:52:04.675456+00:00
+2026-11-08;Italy_SerieB;Entella;Modena;rwU7PdCr;;0;2;FINAL;2026-11-08T17:52:04.681934+00:00
+2026-11-08;Italy_SerieB;Carrarese;Sampdoria;6wpzBcck;;0;1;LIVE;2026-11-08T17:52:04.688527+00:00
+2026-11-08;Italy_SerieB;L.R. Vicenza;Cremonese;2sedIu5F;;;;SCHEDULED;2026-11-08T17:52:04.695030+00:00
+2026-11-08;Italy_SerieC_GironeA;Giana Erminio;Cittadella;ruHoldI6;;0;0;FINAL;2026-11-08T17:52:04.701529+00:00
+2026-11-08;Italy_SerieC_GironeA;Lecco;Juventus U23;j5KgnzmJ;;4;0;FINAL;2026-11-08T17:52:04.708019+00:00
+2026-11-08;Italy_SerieC_GironeA;Desenzano;Ospitaletto;OAKVivJs;;0;0;LIVE;2026-11-08T17:52:04.714425+00:00
+2026-11-08;Italy_SerieC_GironeA;Folgore Caratese;Carpi;dOIwjImf;;0;0;LIVE;2026-11-08T17:52:04.720870+00:00
+2026-11-08;Italy_SerieC_GironeA;Treviso;Novara;nTHYbDWO;;2;0;LIVE;2026-11-08T17:52:04.727320+00:00
+2026-11-08;Italy_SerieC_GironeB;Grosseto;Pescara;j7NDc6Na;;1;3;FINAL;2026-11-08T17:52:04.733750+00:00
+2026-11-08;Italy_SerieC_GironeB;Torres;Latina;tv1gAq75;;2;0;FINAL;2026-11-08T17:52:04.740281+00:00
+2026-11-08;Italy_SerieC_GironeB;Campobasso;Livorno;ERTZ4lVP;;1;1;FINAL;2026-11-08T17:52:04.746666+00:00
+2026-11-08;Italy_SerieC_GironeB;Pianese;Perugia;WpPTgOMO;;2;1;LIVE;2026-11-08T17:52:04.753676+00:00
+2026-11-08;Italy_SerieC_GironeB;Sambenedettese;Guidonia;fN2oC5xg;;1;1;LIVE;2026-11-08T17:52:04.760138+00:00
+2026-11-08;Italy_SerieC_GironeC;Catania;Sorrento;fZfQt5dc;;2;0;FINAL;2026-11-08T17:52:04.766664+00:00
+2026-11-08;Italy_SerieC_GironeC;Monopoli;Cosenza;vN0JVvld;;0;0;FINAL;2026-11-08T17:52:04.773143+00:00
+2026-11-08;Italy_SerieC_GironeC;Savoia;Potenza;vsiDiMAF;;1;3;FINAL;2026-11-08T17:52:04.779617+00:00
+2026-11-08;Italy_SerieAWomen;Parma;Como Women;MPbh7pfE;;1;0;FINAL;2026-11-08T17:52:05.392415+00:00
+2026-11-08;Italy_SerieAWomen;Ternana;Fiorentina;S2Bl9O9e;;0;4;FINAL;2026-11-08T17:52:05.409691+00:00
+2026-11-08;Italy_SerieAWomen;Lazio;Napoli;zkUXnG8a;;0;0;LIVE;2026-11-08T17:52:05.422822+00:00
+2026-11-08;Kenya_PremierLeague;Bandari;Tusker;QJhVTE1E;;1;0;FINAL;2026-11-08T17:52:05.478293+00:00
+2026-11-08;Kenya_PremierLeague;Kakamega Homeboyz;Police FC;bD0q6B97;;2;2;FINAL;2026-11-08T17:52:05.484527+00:00
+2026-11-08;Kenya_PremierLeague;Mathare Utd.;Posta Rangers;IZbT9gAr;;1;2;FINAL;2026-11-08T17:52:05.490747+00:00
+2026-11-08;Kenya_PremierLeague;Muranga;Ulinzi Stars;2k34gYP1;;2;2;FINAL;2026-11-08T17:52:05.496961+00:00
+2026-11-08;Kenya_PremierLeague;Gor Mahia;Nairobi United;jmcy8Xve;;1;1;FINAL;2026-11-08T17:52:05.503281+00:00
+2026-11-08;Kosovo_Superliga;Drenica;Drita;pYdm3oBl;;1;1;FINAL;2026-11-08T17:52:05.509535+00:00
+2026-11-08;Kosovo_Superliga;Vushtrria;Prishtina;Ioee1Pu1;;1;2;FINAL;2026-11-08T17:52:05.515871+00:00
+2026-11-08;Kosovo_LigaePare;2 Korriku;Dinamo Ferizaj;tIoOAYNF;;0;1;FINAL;2026-11-08T17:52:05.522367+00:00
+2026-11-08;Kosovo_LigaePare;Istogu;Kika;bL63j4x1;;1;0;FINAL;2026-11-08T17:52:05.528810+00:00
+2026-11-08;Kosovo_LigaePare;Liria;Besa Peja;buccCoaK;;2;0;FINAL;2026-11-08T17:52:05.535469+00:00
+2026-11-08;Kosovo_LigaePare;Prishtina e Re;Rilindja;6oABlr7D;;4;1;FINAL;2026-11-08T17:52:05.541889+00:00
+2026-11-08;Kosovo_LigaePare;Ramiz Sadiku;Mitrovica;C48ehQ7l;;1;0;FINAL;2026-11-08T17:52:05.548348+00:00
+2026-11-08;Kosovo_LigaePare;Trepca 89;Tefik Canga;UNmT6PMs;;0;2;FINAL;2026-11-08T17:52:05.554693+00:00
+2026-11-08;Kosovo_LigaePare;Vellaznimi;Trepca Mitrovice;zLjy53if;;2;2;FINAL;2026-11-08T17:52:05.561114+00:00
+2026-11-08;Kosovo_LigaePare;Vjosa;KF Lepenci Kacanik;8Ylq3sM6;;1;1;FINAL;2026-11-08T17:52:05.567488+00:00
+2026-11-08;Kuwait_PremierLeague;Al Salmiya;Kazma SC;xCi0hBL7;;3;2;FINAL;2026-11-08T17:52:05.573946+00:00
+2026-11-08;Kuwait_PremierLeague;Al Sahel;Al Kuwait;W2pBslSq;;0;1;LIVE;2026-11-08T17:52:05.580452+00:00
+2026-11-08;Kyrgyzstan_PremierLiga;Bars;Bishkek City;8zIjSMzp;;2;1;FINAL;2026-11-08T17:52:05.587031+00:00
+2026-11-08;Kyrgyzstan_PremierLiga;Dordoi Bishkek;Asia Talas;8STapMdS;;2;5;FINAL;2026-11-08T17:52:05.593699+00:00
+2026-11-08;Kyrgyzstan_PremierLiga;Ozgon;Neftchi Kochkor-Ata;vVAP0ss9;;3;1;FINAL;2026-11-08T17:52:05.600253+00:00
+2026-11-08;Kyrgyzstan_PremierLiga;Talant;Alga;4bFVv0Kk;;2;1;FINAL;2026-11-08T17:52:05.606733+00:00
+2026-11-08;Kyrgyzstan_PremierLiga;Toktogul;Muras United;COIwwvk2;;2;1;FINAL;2026-11-08T17:52:05.613307+00:00
+2026-11-08;Latvia_Virsliga;Grobina;FK Liepaja;WCRwnLBC;;1;2;FINAL;2026-11-08T17:52:05.619718+00:00
+2026-11-08;Latvia_Virsliga;Jelgava;Ogre United;WUdglBht;;4;0;FINAL;2026-11-08T17:52:05.626418+00:00
+2026-11-08;Latvia_Virsliga;Riga FC;RFS;vwVopatP;;;;SCHEDULED;2026-11-08T17:52:05.633022+00:00
+2026-11-08;Latvia_Virsliga;Super Nova;BFC Daugavpils;baTVmss0;;1;1;FINAL;2026-11-08T17:52:05.639736+00:00
+2026-11-08;Latvia_Virsliga;Tukums 2000;Auda;4re1nkNh;;1;2;FINAL;2026-11-08T17:52:05.646698+00:00
+2026-11-08;Libano_PremierLeague;Tadamon;Al Ansar;jiilFCog;;3;4;FINAL;2026-11-08T17:52:05.653360+00:00
+2026-11-08;Libano_PremierLeague;Al Ahed;Nejmeh SC;ra9eDjG5;;0;2;FINAL;2026-11-08T17:52:05.660002+00:00
+2026-11-08;Liberia_LFAFirstDivision;Golden Dream;Black Man Warrior;dj75cAcS;;0;2;FINAL;2026-11-08T17:52:05.666544+00:00
+2026-11-08;Liberia_LFAFirstDivision;Wologizi;Shaita;SYcyhlLk;;2;1;FINAL;2026-11-08T17:52:05.672750+00:00
+2026-11-08;Liberia_LFAFirstDivision;Discoveries;BEA Mountain;YV0qjSk2;;;;SCHEDULED;2026-11-08T17:52:05.679074+00:00
+2026-11-08;Liberia_LFAFirstDivision;Heaven Eleven;District 17;vkJAg1df;;;;SCHEDULED;2026-11-08T17:52:05.685427+00:00
+2026-11-08;Liberia_LFAFirstDivision;LISCR FC;Fassell;C2HIiuR6;;;;SCHEDULED;2026-11-08T17:52:05.691947+00:00
+2026-11-08;Liberia_LFAFirstDivision;LPRC Oiler;Gardnersville;WOF2eNRs;;;;SCHEDULED;2026-11-08T17:52:05.698257+00:00
+2026-11-08;Liberia_LFAFirstDivision;NPA Anchors;Downtown;pUUPkJeJ;;;;SCHEDULED;2026-11-08T17:52:05.704612+00:00
+2026-11-08;Liberia_LFAFirstDivision;Paynesville;Watanga;QPmVDVs9;;;;SCHEDULED;2026-11-08T17:52:05.710988+00:00
+2026-11-08;Lithuania_Toplyga;Banga;Zalgiris;IZpehQal;;1;2;FINAL;2026-11-08T17:52:05.717346+00:00
+2026-11-08;Lithuania_Toplyga;FK Panevezys;FA Siauliai;bDnBlraD;;1;2;FINAL;2026-11-08T17:52:05.723972+00:00
+2026-11-08;Lithuania_Toplyga;Suduva;Dziugas Telsiai;jmq3j4U0;;2;1;FINAL;2026-11-08T17:52:05.730248+00:00
+2026-11-08;Lithuania_Toplyga;Transinvest;Kauno Zalgiris;0zdHa87E;;4;1;FINAL;2026-11-08T17:52:05.736756+00:00
+2026-11-08;NorthMacedonia_1MFL;Bashkimi;Bregalnica;OduijNIF;;1;1;FINAL;2026-11-08T17:52:05.847698+00:00
+2026-11-08;NorthMacedonia_1MFL;Arsimi;Shkendija Haracine;WMral1mS;;0;2;FINAL;2026-11-08T17:52:05.855011+00:00
+2026-11-08;Malta_ChallengeLeague;Attard;Fgura;S4xsh7so;;0;1;FINAL;2026-11-08T17:52:05.934405+00:00
+2026-11-08;Malta_ChallengeLeague;Sirens;Vittoriosa;IBpe1BKb;;3;2;FINAL;2026-11-08T17:52:05.940750+00:00
+2026-11-08;Malta_ChallengeLeague;Mgarr;Naxxar;Qyl3akkB;;0;1;FINAL;2026-11-08T17:52:05.946975+00:00
+2026-11-08;Malta_ChallengeLeague;Santa Lucia;Tarxien;WYjBcTJN;;3;3;FINAL;2026-11-08T17:52:05.953449+00:00
+2026-11-08;Mauritania_Ligue1;Kaedi;SNIM;f9eNLRjJ;;;;SCHEDULED;2026-11-08T17:52:06.011334+00:00
+2026-11-08;Mauritania_Ligue1;Nouakchott King's;Nouadhibou;n3r9qVrQ;;1;0;LIVE;2026-11-08T17:52:06.017736+00:00
+2026-11-08;Mauritania_Ligue1;Chemal;Douane;dxUvv96m;;;;SCHEDULED;2026-11-08T17:52:06.024310+00:00
+2026-11-08;Mexico_LigaMX_Apertura;Atlas;Pachuca;v7K3KKy9;;1;4;FINAL;2026-11-08T17:52:06.030530+00:00
+2026-11-08;Mexico_LigaMX_Apertura;U.N.A.M.;Club America;AR2jbUK6;;2;2;FINAL;2026-11-08T17:52:06.049875+00:00
+2026-11-08;Mexico_LigaExpansionMX_Apertura;Atletico La Paz;Tlaxcala;pbGzN5k1;;3;3;FINAL;2026-11-08T17:52:06.065131+00:00
+2026-11-08;Mexico_LigaExpansionMX_Apertura;Leones Negros;Alacranes;G0HcUmcR;;;;SCHEDULED;2026-11-08T17:52:06.073104+00:00
+2026-11-08;Mexico_PrimeraPremier;Deportiva Venados;Tritones Vallarta;06Kk1eSH;;1;1;FINAL;2026-11-08T17:52:06.079672+00:00
+2026-11-08;Mexico_PrimeraPremier;Inter Playa Del Carmen;Lobos ULMX;be37Jxrn;;1;2;FINAL;2026-11-08T17:52:06.087150+00:00
+2026-11-08;Mexico_PrimeraPremier;Montaneses;Los Cabos;IPaNFfsB;;;;SCHEDULED;2026-11-08T17:52:06.107295+00:00
+2026-11-08;Moldova_SuperLiga;Milsami;Balti;YNI9MWd3;;6;1;FINAL;2026-11-08T17:52:06.143341+00:00
+2026-11-08;Moldova_SuperLiga;Dacia Buiucani;Politehnica UTM;6yHHKARF;;2;0;FINAL;2026-11-08T17:52:06.149837+00:00
+2026-11-08;Montenegro_PrvaCrnogorskaLiga;Sutjeska;Petrovac;rLSwWnqe;;0;3;FINAL;2026-11-08T17:52:06.156317+00:00
+2026-11-08;Montenegro_PrvaCrnogorskaLiga;Decic;Mladost DG;WbzhuiM8;;2;0;LIVE;2026-11-08T17:52:06.162869+00:00
+2026-11-08;Montenegro_DrugaLiga;Berane;Grbalj;dh025BBm;;3;3;FINAL;2026-11-08T17:52:06.169385+00:00
+2026-11-08;Montenegro_DrugaLiga;FK Podgorica;Mogren;zqNpmUeJ;;3;0;FINAL;2026-11-08T17:52:06.177055+00:00
+2026-11-08;Montenegro_DrugaLiga;Jedinstvo;Zeta;4I3A3kt0;;1;0;FINAL;2026-11-08T17:52:06.183553+00:00
+2026-11-08;Montenegro_DrugaLiga;Kom Podgorica;Rudar;0MEWAXmQ;;2;1;FINAL;2026-11-08T17:52:06.190210+00:00
+2026-11-08;Montenegro_DrugaLiga;Lovcen;Iskra;Cr7I1TAC;;1;0;FINAL;2026-11-08T17:52:06.196746+00:00
+2026-11-08;Mozambico_Mocambola;Baia de Pemba;Black Bulls;6uT4u7Z1;;0;1;FINAL;2026-11-08T17:52:06.203215+00:00
+2026-11-08;Niger_SuperLigue;US Gendarmerie;Liberte;zHx47yy9;;;;SCHEDULED;2026-11-08T17:52:06.209618+00:00
+2026-11-08;Nigeria_NPFL;Abia Warriors;Doma United;MuTgbOGL;;2;2;FINAL;2026-11-08T17:52:06.216026+00:00
+2026-11-08;Nigeria_NPFL;Barau;Shooting Stars;lSUo0pn9;;1;0;FINAL;2026-11-08T17:52:06.222572+00:00
+2026-11-08;Nigeria_NPFL;Bendel;Niger;MLx0xsf2;;2;1;FINAL;2026-11-08T17:52:06.230368+00:00
+2026-11-08;Nigeria_NPFL;Nasarawa;Plateau;SxAOdWdE;;3;1;FINAL;2026-11-08T17:52:06.241783+00:00
+2026-11-08;Nigeria_NPFL;Ranchers Bees;Enyimba;QkXWjt9e;;1;0;FINAL;2026-11-08T17:52:06.251184+00:00
+2026-11-08;Nigeria_NPFL;Rangers Int'l;Kwara;EeZiv3Pk;;1;0;FINAL;2026-11-08T17:52:06.258796+00:00
+2026-11-08;Nigeria_NPFL;Warri Wolves;Katsina Utd;YZCWfARQ;;1;1;FINAL;2026-11-08T17:52:06.266081+00:00
+2026-11-08;Norway_Eliteserien;Tromsø;Bodo/Glimt;rP7Q7XV1;;0;2;FINAL;2026-11-08T17:52:06.285206+00:00
+2026-11-08;Norway_Eliteserien;HamKam;Sarpsborg 08;d8qqefnd;;3;0;LIVE;2026-11-08T17:52:06.291456+00:00
+2026-11-08;Norway_Eliteserien;Lilleström;Aalesund;pUPwHy9F;;3;2;LIVE;2026-11-08T17:52:06.297699+00:00
+2026-11-08;Norway_Eliteserien;Sandefjord;Molde;za4I9g1k;;5;5;LIVE;2026-11-08T17:52:06.304014+00:00
+2026-11-08;Norway_Eliteserien;Viking;KFUM Oslo;bXkDVzO8;;4;1;LIVE;2026-11-08T17:52:06.310280+00:00
+2026-11-08;Norway_Eliteserien;Fredrikstad;Brann;0tjzcGHq;;;;SCHEDULED;2026-11-08T17:52:06.316505+00:00
+2026-11-08;Norway_OBOSLigaen;Bryne;Kongsvinger;xK4WwiuA;;3;1;FINAL;2026-11-08T17:52:06.323590+00:00
+2026-11-08;Norway_OBOSLigaen;Haugesund;Odd;rH7vxV9M;;2;3;FINAL;2026-11-08T17:52:06.329836+00:00
+2026-11-08;Norway_OBOSLigaen;Moss;Ranheim;SlqBW8Xq;;3;1;FINAL;2026-11-08T17:52:06.336271+00:00
+2026-11-08;Norway_OBOSLigaen;Raufoss;Egersund;zFnJUn2d;;0;2;FINAL;2026-11-08T17:52:06.342542+00:00
+2026-11-08;Norway_OBOSLigaen;Sandnes;Åsane;jNU5hjf3;;3;1;FINAL;2026-11-08T17:52:06.348806+00:00
+2026-11-08;Norway_OBOSLigaen;Sogndal;Hodd;OzTDjUOF;;0;0;FINAL;2026-11-08T17:52:06.355165+00:00
+2026-11-08;Norway_OBOSLigaen;Stabaek;Strömsgodset;UmbEl8gS;;2;3;FINAL;2026-11-08T17:52:06.361403+00:00
+2026-11-08;Norway_OBOSLigaen;Strømmen;Lyn;0WlpqnHk;;2;0;FINAL;2026-11-08T17:52:06.367724+00:00
+2026-11-08;Netherlands_Eredivisie;Heerenveen;Feyenoord;ENcy7qjT;;5;3;FINAL;2026-11-08T17:52:06.404067+00:00
+2026-11-08;Netherlands_Eredivisie;Twente;Ajax;p6l71NDj;;2;2;FINAL;2026-11-08T17:52:06.410380+00:00
+2026-11-08;Netherlands_Eredivisie;Alkmaar;Groningen;OGZ0N4zA;;4;3;FINAL;2026-11-08T17:52:06.416707+00:00
+2026-11-08;Netherlands_Eredivisie;Cambuur;PSV;YqdLARj4;;2;5;FINAL;2026-11-08T17:52:06.423009+00:00
+2026-11-08;Netherlands_Eredivisie;Utrecht;Nijmegen;x0ygPQ5c;;;;SCHEDULED;2026-11-08T17:52:06.429390+00:00
+2026-11-08;Netherlands_EersteDivisie;Vitesse;De Graafschap;ELn1Fyn2;;;;SCHEDULED;2026-11-08T17:52:06.435680+00:00
+2026-11-08;Netherlands_EersteDivisie;FC Emmen;Maastricht;tSvmwuv9;;0;2;FINAL;2026-11-08T17:52:06.441889+00:00
+2026-11-08;Peru_Liga1_Clausura;Los Chankas;A. Lima;jR3ytP1s;;;;SCHEDULED;2026-11-08T17:52:06.502396+00:00
+2026-11-08;Peru_Liga1_Clausura;Sport Boys;Cajamarca;hYlIzUP1;;;;SCHEDULED;2026-11-08T17:52:06.508427+00:00
+2026-11-08;Poland_Ekstraklasa;Jagiellonia;Katowice;CQJQbq2d;;1;0;FINAL;2026-11-08T17:52:06.577165+00:00
+2026-11-08;Poland_Ekstraklasa;Legia;Rakow;04Rv8muA;;1;1;LIVE;2026-11-08T17:52:06.583248+00:00
+2026-11-08;Poland_Ekstraklasa;Lech;Zaglebie;AH9KKQOF;;;;SCHEDULED;2026-11-08T17:52:06.589298+00:00
+2026-11-08;Poland_Division1;Polonia B.;Lechia;lQZ1RN8K;;1;0;FINAL;2026-11-08T17:52:06.595395+00:00
+2026-11-08;Poland_Division1;LKS Lodz;S. Rzeszow;K8QXL1Ws;;1;0;FINAL;2026-11-08T17:52:06.601477+00:00
+2026-11-08;Poland_Division1;Pogon Siedlce;Grodzisk M.;6qVeGc0J;;2;1;LIVE;2026-11-08T17:52:06.607541+00:00
+2026-11-08;Poland_Division1;Stal Mielec;Ruch;hMOuKu1f;;;;SCHEDULED;2026-11-08T17:52:06.614000+00:00
+2026-11-08;Poland_Division2;Bielsko-Biala;Chojniczanka;UD6lNqhT;;1;2;FINAL;2026-11-08T17:52:06.620077+00:00
+2026-11-08;Poland_Division2;Avia Swidnik;Hutnik Krakow;nXoMyq7M;;2;1;FINAL;2026-11-08T17:52:06.632282+00:00
+2026-11-08;Poland_Division2;Zawisza;Tychy;vmhKHNFj;;;;SCHEDULED;2026-11-08T17:52:06.638483+00:00
+2026-11-08;Poland_IIILiga_Group3;Sosnowiec;Warta Gorzow;zqZq3KiT;;3;0;FINAL;2026-11-08T17:52:06.650868+00:00
+2026-11-08;Poland_IIILiga_Group4;Busko-Zdroj;Jaroslaw;8fCVrNOp;;2;1;FINAL;2026-11-08T17:52:06.657064+00:00
+2026-11-08;Poland_IIILiga_Group4;Hetman Zamosc;Wisloka Debica;WAnj3iAa;;4;2;FINAL;2026-11-08T17:52:06.663145+00:00
+2026-11-08;Portugal_LigaPortugal;Estoril;Maritimo;t0KKRtCs;;;;SCHEDULED;2026-11-08T17:52:06.719043+00:00
+2026-11-08;Portugal_LigaPortugal;Nacional;Academico Viseu;zsMzObB6;;1;0;FINAL;2026-11-08T17:52:06.725265+00:00
+2026-11-08;Portugal_LigaPortugal;Santa Clara;Gil Vicente;z1CUqtYP;;1;2;FINAL;2026-11-08T17:52:06.731639+00:00
+2026-11-08;Portugal_LigaPortugal;Guimaraes;FC Porto;xU08xbQa;;;;SCHEDULED;2026-11-08T17:52:06.737908+00:00
+2026-11-08;Portugal_LigaPortugal;Estrela;Benfica;ADcmpkS8;;;;SCHEDULED;2026-11-08T17:52:06.744255+00:00
+2026-11-08;Portugal_LigaPortugal;Rio Ave;Braga;8fKrMxtJ;;;;SCHEDULED;2026-11-08T17:52:06.750627+00:00
+2026-11-08;Portugal_LigaPortugal2;FC Porto B;Portimonense;IFbXD7Za;;0;1;FINAL;2026-11-08T17:52:06.756871+00:00
+2026-11-08;Portugal_LigaPortugal2;Feirense;Lusitania FC;zTEgLksQ;;1;0;FINAL;2026-11-08T17:52:06.763170+00:00
+2026-11-08;Portugal_LigaPortugal2;Farense;Benfica B;8MM7cnkJ;;2;3;FINAL;2026-11-08T17:52:06.769401+00:00
+2026-11-08;Portugal_LigaPortugal2;Sporting B;Tondela;Qu2uCo4C;;;;SCHEDULED;2026-11-08T17:52:06.775742+00:00
+2026-11-08;Portugal_Liga3_SerieB;Louletano;Covilha;42iFXpdR;;2;0;FINAL;2026-11-08T17:52:06.778860+00:00
+2026-11-08;Portugal_Liga3_SerieA;Varzim;Fafe;tGzc1ndk;;2;0;FINAL;2026-11-08T17:52:06.781903+00:00
+2026-11-08;Portugal_Liga3_SerieB;Vitoria Sernache;Atletico;Iog7Z6RE;;0;1;FINAL;2026-11-08T17:52:06.785087+00:00
+2026-11-08;Portugal_Liga3_SerieA;Ferreira;Trofense;ltv5aQQ1;;;;SCHEDULED;2026-11-08T17:52:06.788189+00:00
+2026-11-08;Qatar_QSL;Lusail;Qatar SC;IeEwYIak;;3;2;FINAL;2026-11-08T17:52:07.014624+00:00
+2026-11-08;Qatar_QSL;Al Sadd;Al-Rayyan;foF6JJpd;;2;4;LIVE;2026-11-08T17:52:07.021160+00:00
+2026-11-08;CzechRepublic_1Liga;Teplice;Pardubice;f3EkXEMH;;1;4;FINAL;2026-11-08T17:52:07.027796+00:00
+2026-11-08;CzechRepublic_1Liga;Jablonec;Mlada Boleslav;Q5eFmz7b;;0;0;FINAL;2026-11-08T17:52:07.034460+00:00
+2026-11-08;CzechRepublic_1Liga;Slavia Praga;Artis Brno;pfCtrVbJ;;4;1;FINAL;2026-11-08T17:52:07.041112+00:00
+2026-11-08;CzechRepublic_1Liga;Plzen;Sparta Praga;tbaSxJht;;1;1;LIVE;2026-11-08T17:52:07.047833+00:00
+2026-11-08;CzechRepublic_ChNL;Slavia Praga B;Kladno;C4SzmplT;;1;3;FINAL;2026-11-08T17:52:07.054439+00:00
+2026-11-08;CzechRepublic_ChNL;Ostrava B;Prostejov;WhLRUpSp;;1;2;FINAL;2026-11-08T17:52:07.061065+00:00
+2026-11-08;CzechRepublic_3CFL_GroupA;Sparta Praga B;Aritma Prague;E7s0MQoT;;1;1;FINAL;2026-11-08T17:52:07.067806+00:00
+2026-11-08;CzechRepublic_3CFL_GroupA;Povltavska FA;Plzen B;rsOPxnW9;;2;5;FINAL;2026-11-08T17:52:07.074396+00:00
+2026-11-08;CzechRepublic_3CFL_GroupB;Hradec Kralove B;Caslav;GGLh1p3S;;4;2;FINAL;2026-11-08T17:52:07.080972+00:00
+2026-11-08;CzechRepublic_3CFL_GroupB;Jablonec B;Benatky;IqAWg2e2;;2;3;FINAL;2026-11-08T17:52:07.087674+00:00
+2026-11-08;CzechRepublic_3CFL_GroupB;Varnsdorf;Teplice B;jFwffW6r;;2;1;FINAL;2026-11-08T17:52:07.094269+00:00
+2026-11-08;CzechRepublic_3CFL_GroupB;Zapy;Chrudim;fqhOahqL;;3;0;FINAL;2026-11-08T17:52:07.100866+00:00
+2026-11-08;CzechRepublic_3MSFL;Karvina B;Vsetin;0ESlEL0d;;3;0;FINAL;2026-11-08T17:52:07.107497+00:00
+2026-11-08;CzechRepublic_3MSFL;Slovacko B;Havirov;rFwBL38M;;1;1;FINAL;2026-11-08T17:52:07.114076+00:00
+2026-11-08;CzechRepublic_3MSFL;Zlin B;FK Frydek-Mistek;6VLjYthS;;1;3;FINAL;2026-11-08T17:52:07.120655+00:00
+2026-11-08;CzechRepublic_4Liga_GroupA;SK Strakonice 1908;Taborsko akademie;2L3aQpv3;;2;2;FINAL;2026-11-08T17:52:07.127288+00:00
+2026-11-08;CzechRepublic_4Liga_GroupB;Karlovy Vary;Ostrov;zwzE3oLj;;1;1;FINAL;2026-11-08T17:52:07.133868+00:00
+2026-11-08;CzechRepublic_4Liga_GroupB;Meteor Prague;Ujezd Prague;MDOFN6CM;;1;3;FINAL;2026-11-08T17:52:07.140446+00:00
+2026-11-08;CzechRepublic_4Liga_GroupC;Dvur Kralove;Chrudim B;phqhVePh;;4;0;FINAL;2026-11-08T17:52:07.147001+00:00
+2026-11-08;CzechRepublic_4Liga_GroupC;Kolin;Slavia HK;GI2SEzuC;;3;0;FINAL;2026-11-08T17:52:07.153604+00:00
+2026-11-08;CzechRepublic_4Liga_GroupC;Svitavy;Turnov;hIn0TZg5;;1;1;FINAL;2026-11-08T17:52:07.160213+00:00
+2026-11-08;CzechRepublic_4Liga_GroupD;Velke Mezirici;Chotebor;z35rDo7r;;2;3;FINAL;2026-11-08T17:52:07.166777+00:00
+2026-11-08;CzechRepublic_4Liga_GroupD;Bystrc;Sparta Brno;SANkBPye;;1;4;FINAL;2026-11-08T17:52:07.173347+00:00
+2026-11-08;CzechRepublic_4Liga_GroupD;Pelhrimov;Znojmo;zeHiVpTQ;;0;0;FINAL;2026-11-08T17:52:07.179958+00:00
+2026-11-08;CzechRepublic_4Liga_GroupD;Bedrichov;Zdar nad Sazavou;2XyLCHe2;;0;3;FINAL;2026-11-08T17:52:07.193149+00:00
+2026-11-08;CzechRepublic_4Liga_GroupE;Brumov;Sternberk;EZasR27c;;0;0;FINAL;2026-11-08T17:52:07.199750+00:00
+2026-11-08;CzechRepublic_4Liga_GroupE;FK Kozlovice;Slavicin;nmbkPtxA;;3;2;FINAL;2026-11-08T17:52:07.206319+00:00
+2026-11-08;CzechRepublic_4Liga_GroupE;Lanzhot;Nove Sady;bsdUyKLF;;4;2;FINAL;2026-11-08T17:52:07.212913+00:00
+2026-11-08;CzechRepublic_4Liga_GroupF;Bilovec;Stonava;xjp6YIqR;;3;1;FINAL;2026-11-08T17:52:07.219577+00:00
+2026-11-08;CzechRepublic_4Liga_GroupF;Bohumin;Opava B;fkZqRzx1;;3;0;FINAL;2026-11-08T17:52:07.226178+00:00
+2026-11-08;CzechRepublic_4Liga_GroupF;Kravare;Rymarov;U5j4Eche;;2;1;FINAL;2026-11-08T17:52:07.232753+00:00
+2026-11-08;CzechRepublic_4Liga_GroupF;Sumperk;Vratimov;f9PwmIbK;;1;2;FINAL;2026-11-08T17:52:07.239324+00:00
+2026-11-08;CzechRepublic_4Liga_GroupF;Zabreh;Hlucin;xWgCCyN7;;0;4;FINAL;2026-11-08T17:52:07.245781+00:00
+2026-11-08;Romania_Superliga;Sepsi Sf. Gheorghe;FC Voluntari;6s6AYTbf;;2;1;FINAL;2026-11-08T17:52:07.458549+00:00
+2026-11-08;Romania_Superliga;CFR Cluj;Univ. Craiova;6FRPUobJ;;0;0;LIVE;2026-11-08T17:52:07.465537+00:00
+2026-11-08;Ruanda_PremierLeague;Al-Merreikh;Etoile de L'Est;hE2FSZ0E;;3;0;FINAL;2026-11-08T17:52:07.495825+00:00
+2026-11-08;Russia_PremierLeague;Samara;Orenburg;M7k0JwyB;;2;0;FINAL;2026-11-08T17:52:07.517945+00:00
+2026-11-08;Russia_PremierLeague;Sp. Mosca;Akron Togliatti;EsnhLa6b;;2;1;FINAL;2026-11-08T17:52:07.524731+00:00
+2026-11-08;Russia_PremierLeague;Zenit;FK Rostov;CvTuWGKG;;2;2;FINAL;2026-11-08T17:52:07.531720+00:00
+2026-11-08;Russia_PremierLeague;Baltika;Dynamo Makhachkala;UXh8HH5N;;0;1;LIVE;2026-11-08T17:52:07.538171+00:00
+2026-11-08;Russia_FNL;Yenisey;Sochi;OnjbLH0s;;3;0;FINAL;2026-11-08T17:52:07.544670+00:00
+2026-11-08;Russia_FNL;SKA Khabarovsk;Tekstilshtik;4pr8wHMP;;3;0;FINAL;2026-11-08T17:52:07.551144+00:00
+2026-11-08;Russia_FNL;Ural;Ulyanovsk;0UrwYfpm;;2;0;FINAL;2026-11-08T17:52:07.557721+00:00
+2026-11-08;Russia_FNL;R. Volgograd;Leningradets;4QiEHZa6;;1;1;FINAL;2026-11-08T17:52:07.564244+00:00
+2026-11-08;Russia_FNL;S. Kostroma;Pari NN;CjeMFDUI;;0;3;LIVE;2026-11-08T17:52:07.570765+00:00
+2026-11-08;SanMarino_CampionatoSammarinese;Cailungo;Tre Fiori;2eIRc0Cd;;2;2;FINAL;2026-11-08T17:52:07.607930+00:00
+2026-11-08;SanMarino_CampionatoSammarinese;Fiorentino;Libertas;f3KCL343;;1;1;FINAL;2026-11-08T17:52:07.614801+00:00
+2026-11-08;SanMarino_CampionatoSammarinese;San Marino Academy U22;San Giovanni;YFph1ZIl;;0;0;FINAL;2026-11-08T17:52:07.621638+00:00
+2026-11-08;SanMarino_CampionatoSammarinese;Tre Penne;Murata;2TNKJsZF;;3;0;FINAL;2026-11-08T17:52:07.628354+00:00
+2026-11-08;Scotland_Premiership;Hearts;Falkirk;vqGWCQGc;;2;5;FINAL;2026-11-08T17:52:07.634897+00:00
+2026-11-08;Scotland_Premiership;Celtic;Kilmarnock;GYGabR14;;1;0;FINAL;2026-11-08T17:52:07.641357+00:00
+2026-11-08;Senegal_Ligue1;Casa;Diambars;nBjSzUoT;;;;SCHEDULED;2026-11-08T17:52:07.684536+00:00
+2026-11-08;Senegal_Ligue1;Mbour;Jaraaf;AmUqgB1c;;0;0;LIVE;2026-11-08T17:52:07.691000+00:00
+2026-11-08;Senegal_Ligue1;Ouakam;Generation F.;GpXiikW9;;1;0;LIVE;2026-11-08T17:52:07.697509+00:00
+2026-11-08;Senegal_Ligue1;Teungueth;ASC HLM;rsxbV79j;;0;2;LIVE;2026-11-08T17:52:07.704023+00:00
+2026-11-08;Senegal_Ligue1;Guediawaye;Linguere;lbVakT0M;;1;0;LIVE;2026-11-08T17:52:07.710483+00:00
+2026-11-08;Serbia_SuperLiga;Novi Pazar;Mladost;8IOrxpup;;2;0;FINAL;2026-11-08T17:52:07.716960+00:00
+2026-11-08;Serbia_SuperLiga;Radnik;OFK Belgrado;6F5nvXAU;;2;1;FINAL;2026-11-08T17:52:07.723400+00:00
+2026-11-08;Serbia_SuperLiga;Partizan;Macva;44l4dEQb;;1;2;LIVE;2026-11-08T17:52:07.729850+00:00
+2026-11-08;Serbia_SuperLiga;Vojvodina;Stella Rossa;dvodbzdn;;;;SCHEDULED;2026-11-08T17:52:07.736390+00:00
+2026-11-08;Serbia_PrvaLiga;Vozdovac;Borac 1926;z1zS33Fd;;0;1;FINAL;2026-11-08T17:52:07.742795+00:00
+2026-11-08;Serbia_PrvaLiga;Jedinstvo U.;Teleoptik;fm2c2Bek;;1;1;FINAL;2026-11-08T17:52:07.749239+00:00
+2026-11-08;Serbia_PrvaLiga;Sp. Subotica;Metalac;pEGR7XXR;;1;1;FINAL;2026-11-08T17:52:07.755636+00:00
+2026-11-08;SierraLeone_PremierLeague;Bo Rangers;Wusum Stars;MNiP7zCG;;1;1;LIVE;2026-11-08T17:52:07.828293+00:00
+2026-11-08;SierraLeone_PremierLeague;Bullom Stars;Bhantal;SMJdkSek;;0;1;LIVE;2026-11-08T17:52:07.835314+00:00
+2026-11-08;SierraLeone_PremierLeague;Kamboi Eagles;Waterloo;0zI4m6Q1;;0;2;LIVE;2026-11-08T17:52:07.842334+00:00
+2026-11-08;SierraLeone_PremierLeague;Old Edwardians;Ports Authority;EclH9ds4;;0;0;LIVE;2026-11-08T17:52:07.849144+00:00
+2026-11-08;Slovakia_NikeLiga;Podbrezova;Ruzomberok;Yu8E3kwQ;;4;1;FINAL;2026-11-08T17:52:07.855757+00:00
+2026-11-08;Slovakia_NikeLiga;Komarno;Michalovce;OSPYjCgK;;2;0;LIVE;2026-11-08T17:52:07.862252+00:00
+2026-11-08;Slovakia_2Liga;Petrzalka;Zilina B;GfzUXwcd;;2;1;FINAL;2026-11-08T17:52:07.868780+00:00
+2026-11-08;Slovakia_3Liga_West;Trencin B;Banik Prievidza;bqktSj4N;;2;1;FINAL;2026-11-08T17:52:07.875307+00:00
+2026-11-08;Slovakia_3Liga_West;Belusa;Castkovce;URuCMURp;;3;2;FINAL;2026-11-08T17:52:07.881839+00:00
+2026-11-08;Slovakia_3Liga_West;Velke Ludince;Sala;I5mQVY4b;;4;0;FINAL;2026-11-08T17:52:07.888422+00:00
+2026-11-08;Slovenia_PrvaLiga;Grosuplje;Aluminij;GpkiSA7D;;1;0;FINAL;2026-11-08T17:52:07.979112+00:00
+2026-11-08;Slovenia_PrvaLiga;Radomlje;Celje;8vxwjEaK;;1;2;LIVE;2026-11-08T17:52:07.986371+00:00
+2026-11-08;Slovenia_2SNL;Beltinci;Dravinja;4QZbWgB7;;3;1;FINAL;2026-11-08T17:52:07.992916+00:00
+2026-11-08;Slovenia_2SNL;NK Jesenice;Slovan Ljubljana;8MSDublL;;0;0;FINAL;2026-11-08T17:52:08.000387+00:00
+2026-11-08;Slovenia_3SNLEast;Odranci;NK Carda Martjanci;lKz7fol4;;4;1;FINAL;2026-11-08T17:52:08.019885+00:00
+2026-11-08;Slovenia_3SNLWest;Fama Vipava;Tolmin;0SPMoVe3;;0;1;FINAL;2026-11-08T17:52:08.031558+00:00
+2026-11-08;Spain_LaLiga;Elche;Betis;S88X9hRp;;0;2;FINAL;2026-11-08T17:52:08.077657+00:00
+2026-11-08;Spain_LaLiga;Real Sociedad;Rayo Vallecano;6w0sSimT;;1;0;FINAL;2026-11-08T17:52:08.083903+00:00
+2026-11-08;Spain_LaLiga;Celta Vigo;Levante;dQH1FE3N;;0;0;LIVE;2026-11-08T17:52:08.090098+00:00
+2026-11-08;Spain_LaLiga;Villarreal;Getafe;xts7rDX9;;0;0;LIVE;2026-11-08T17:52:08.096265+00:00
+2026-11-08;Spain_LaLiga;Atl. Madrid;Barcellona;A9JgHzZA;;;;SCHEDULED;2026-11-08T17:52:08.102481+00:00
+2026-11-08;Spain_LaLiga2;Andorra;Maiorca;MkMmS5eR;;;;SCHEDULED;2026-11-08T17:52:08.108648+00:00
+2026-11-08;Spain_LaLiga2;Girona;Almeria;pCkI9jbS;;0;1;FINAL;2026-11-08T17:52:08.114844+00:00
+2026-11-08;Spain_LaLiga2;Gijon;Valladolid;8UdN5scf;;0;1;LIVE;2026-11-08T17:52:08.121023+00:00
+2026-11-08;Spain_LaLiga2;Las Palmas;Eldense;GEWsQBr9;;;;SCHEDULED;2026-11-08T17:52:08.127223+00:00
+2026-11-08;Spain_PrimeraRFEFGroup1;Arenas Getxo;Dep. Fabril;lIouZ744;;2;1;FINAL;2026-11-08T17:52:08.133397+00:00
+2026-11-08;Spain_PrimeraRFEFGroup1;AD Merida;Ath. Bilbao B;E50MYbAL;;1;0;LIVE;2026-11-08T17:52:08.139549+00:00
+2026-11-08;Spain_PrimeraRFEFGroup1;Cultural Leonesa;Ponferradina;zeFSCHm2;;0;0;LIVE;2026-11-08T17:52:08.145583+00:00
+2026-11-08;Spain_PrimeraRFEFGroup1;Mirandes;CD Coria;plihTxYr;;0;0;LIVE;2026-11-08T17:52:08.151587+00:00
+2026-11-08;Spain_PrimeraRFEFGroup2;Aguilas FC;Gimnastic;UXED0JuQ;;1;1;FINAL;2026-11-08T17:52:08.157612+00:00
+2026-11-08;Spain_PrimeraRFEFGroup2;CE Europa;Atl. Madrid B;Kp2aiF2C;;3;2;FINAL;2026-11-08T17:52:08.163711+00:00
+2026-11-08;Spain_PrimeraRFEFGroup2;Teruel;UD Ibiza;jmqP7zmg;;1;1;FINAL;2026-11-08T17:52:08.169728+00:00
+2026-11-08;Spain_PrimeraRFEFGroup2;Villarreal B;Torremolinos;re1W5EH5;;1;1;FINAL;2026-11-08T17:52:08.176489+00:00
+2026-11-08;Spain_PrimeraRFEFGroup2;Real Madrid B;Hercules;rNuH9dIt;;2;2;FINAL;2026-11-08T17:52:08.182556+00:00
+2026-11-08;Spain_PrimeraRFEFGroup2;Murcia;Algeciras;SA57kgXO;;;;SCHEDULED;2026-11-08T17:52:08.188577+00:00
+2026-11-08;SouthKorea_KLeague1;Daejeon;Incheon;tra0l3cc;;2;0;FINAL;2026-11-08T17:52:09.412955+00:00
+2026-11-08;SouthKorea_KLeague1;Seoul;Ulsan HD;CrkkwIXb;;1;2;FINAL;2026-11-08T17:52:09.420360+00:00
+2026-11-08;SouthKorea_KLeague1;Gangwon;Jeonbuk;ML0GpLdM;;3;2;FINAL;2026-11-08T17:52:09.427675+00:00
+2026-11-08;SouthKorea_KLeague2;Cheonan City;Busan;vZ5KnaN8;;1;0;FINAL;2026-11-08T17:52:09.433979+00:00
+2026-11-08;SouthKorea_KLeague2;Suwon Bluewings;Yongin;OQNXOeV1;;2;0;FINAL;2026-11-08T17:52:09.440221+00:00
+2026-11-08;SouthKorea_KLeague2;Paju Frontier;Asan;Cn4SpwhL;;1;1;FINAL;2026-11-08T17:52:09.446535+00:00
+2026-11-08;Suriname_SML;Voorwaarts;Coronie Boys;bDd5dNsg;;3;1;FINAL;2026-11-08T17:52:09.497952+00:00
+2026-11-08;Suriname_SML;SV Transvaal;Broki;WQfDf1C5;;;;SCHEDULED;2026-11-08T17:52:09.504251+00:00
+2026-11-08;Sweden_Allsvenskan;Göteborg;Malmo FF;dbfpFKaT;;0;0;FINAL;2026-11-08T17:52:09.510750+00:00
+2026-11-08;Sweden_Allsvenskan;Halmstad;Djurgarden;6mYsOcxp;;2;1;FINAL;2026-11-08T17:52:09.516987+00:00
+2026-11-08;Sweden_Allsvenskan;AIK Stockholm;Hacken;rylUI204;;3;2;FINAL;2026-11-08T17:52:09.523088+00:00
+2026-11-08;Sweden_Allsvenskan;Brommapojkarna;Mjallby;rkT2X1Fc;;0;0;FINAL;2026-11-08T17:52:09.529084+00:00
+2026-11-08;Sweden_Allsvenskan;Kalmar;Sirius;z5sCTJEM;;1;0;FINAL;2026-11-08T17:52:09.535263+00:00
+2026-11-08;Sweden_Division1_Norra;AFC Eskilstuna;Enkoping SK;YuVaZJmI;;0;1;FINAL;2026-11-08T17:52:09.541395+00:00
+2026-11-08;Sweden_Division1_Norra;Assyriska FF;Hammarby TFF;0SWiytJ5;;1;2;FINAL;2026-11-08T17:52:09.547434+00:00
+2026-11-08;Sweden_Division1_Norra;Gefle;Karlbergs;I33Ii13n;;7;0;FINAL;2026-11-08T17:52:09.553600+00:00
+2026-11-08;Sweden_Division1_Norra;Jarfalla;Vasalund;U7O8XcIU;;2;3;FINAL;2026-11-08T17:52:09.559661+00:00
+2026-11-08;Sweden_Division1_Norra;Karlstad;Umeå;vJiRkuYb;;2;2;FINAL;2026-11-08T17:52:09.565799+00:00
+2026-11-08;Sweden_Division1_Norra;Sollentuna;Arlanda;rBlrncXN;;2;1;FINAL;2026-11-08T17:52:09.571890+00:00
+2026-11-08;Sweden_Division1_Norra;Stockholm Internazionale;Pitea;vszEtyeo;;3;0;FINAL;2026-11-08T17:52:09.577967+00:00
+2026-11-08;Sweden_Division1_Norra;Stocksund;FBK Karlstad;nqeZmJ2B;;3;2;FINAL;2026-11-08T17:52:09.584192+00:00
+2026-11-08;Switzerland_SuperLeague;St. Gallen;Lugano;2Z4xMLR0;;5;0;FINAL;2026-11-08T17:52:09.633571+00:00
+2026-11-08;Switzerland_SuperLeague;Servette;Zurigo;dx2UNscl;;0;0;FINAL;2026-11-08T17:52:09.639985+00:00
+2026-11-08;Switzerland_SuperLeague;Thun;Basilea;zm3pKadD;;3;3;FINAL;2026-11-08T17:52:09.646252+00:00
+2026-11-08;Switzerland_ChallengeLeague;Yverdon;Xamax;CxIgw5Cs;;0;0;FINAL;2026-11-08T17:52:09.652924+00:00
+2026-11-08;Switzerland_PromotionLeague;Biel;Kreuzlingen;d2cejEtf;;3;1;FINAL;2026-11-08T17:52:09.665600+00:00
+2026-11-08;Tunisia_LigueProfessionnelle1;Metlaoui;Zarzis;hps82DWg;;2;1;FINAL;2026-11-08T17:52:09.798953+00:00
+2026-11-08;Tunisia_Ligue2;Ariana;Olympique Kef;vskGutMO;;2;1;FINAL;2026-11-08T17:52:09.805224+00:00
+2026-11-08;Tunisia_Ligue2;Jendouba Sport;Korba;2JSXcNyg;;1;1;FINAL;2026-11-08T17:52:09.811509+00:00
+2026-11-08;Tunisia_Ligue2;Kairouanaise;CO Medenine;fgPPaq7t;;2;2;FINAL;2026-11-08T17:52:09.818205+00:00
+2026-11-08;Tunisia_Ligue2;Moknine;Gafsa;WGo8s2iC;;1;1;FINAL;2026-11-08T17:52:09.824716+00:00
+2026-11-08;Tunisia_Ligue2;OC Kerkennah;Sfax Railways;Ec6zT2xJ;;1;1;FINAL;2026-11-08T17:52:09.831159+00:00
+2026-11-08;Tunisia_Ligue2;Sporting Ben Arous;Chebba;zm5KWpwf;;0;1;FINAL;2026-11-08T17:52:09.837587+00:00
+2026-11-08;Tunisia_Ligue2;Stade Gabesien;Kalaa;fRpud165;;1;1;FINAL;2026-11-08T17:52:09.844183+00:00
+2026-11-08;Tunisia_Ligue2;Stade Soussien;AS Gabes;tp8SUO76;;1;0;FINAL;2026-11-08T17:52:09.850631+00:00
+2026-11-08;Turkey_SuperLig;Rizespor;Erzurumspor;d6kHu0Lt;;2;1;FINAL;2026-11-08T17:52:09.856977+00:00
+2026-11-08;Turkey_SuperLig;Corum;Fenerbahce;CddXyIK5;;0;5;FINAL;2026-11-08T17:52:09.863352+00:00
+2026-11-08;Turkey_SuperLig;Alanyaspor;Trabzonspor;6wv6YrED;;0;2;FINAL;2026-11-08T17:52:09.869746+00:00
+2026-11-08;Turkey_SuperLig;Besiktas;Genclerbirligi;Iy8nYZJU;;;;SCHEDULED;2026-11-08T17:52:09.876023+00:00
+2026-11-08;Turkey_1Lig;Bandirmaspor;Karagumruk;GCgzzmxf;;0;4;FINAL;2026-11-08T17:52:09.882355+00:00
+2026-11-08;Turkey_1Lig;Boluspor;Bodrumspor;nXL0wMrn;;1;2;FINAL;2026-11-08T17:52:09.888779+00:00
+2026-11-08;Turkey_1Lig;Umraniyespor;Kayserispor;Mi5kW4yJ;;2;1;FINAL;2026-11-08T17:52:09.895160+00:00
+2026-11-08;Turkey_1Lig;Mardin 1969;Batman Petrolspor;SANGZwrB;;1;1;LIVE;2026-11-08T17:52:09.901585+00:00
+2026-11-08;Turkey_2LigWhiteGroup;Adana Demirspor;Ankaraspor;6Ry5VwKG;;2;3;FINAL;2026-11-08T17:52:09.908275+00:00
+2026-11-08;Turkey_2LigWhiteGroup;Hatayspor;Soma Spor;tvNNVnEa;;0;1;FINAL;2026-11-08T17:52:09.914659+00:00
+2026-11-08;Turkey_2LigWhiteGroup;Sebat Spor Kulubu;Kastamonuspor;KAwcXak4;;6;0;FINAL;2026-11-08T17:52:09.921172+00:00
+2026-11-08;Turkey_2LigWhiteGroup;Arnavutkoy Bl.;Menemenspor;EiLVTQrC;;1;1;FINAL;2026-11-08T17:52:09.927529+00:00
+2026-11-08;Turkey_2LigWhiteGroup;Corluspor;Aksaray Bld.;EiuDTHlT;;2;1;FINAL;2026-11-08T17:52:09.933989+00:00
+2026-11-08;Turkey_2LigWhiteGroup;Guzide Gebzespor;Inegol Kafkas;Kjm3BISp;;4;3;FINAL;2026-11-08T17:52:09.940318+00:00
+2026-11-08;Turkey_2LigWhiteGroup;Elazigspor;Sanliurfaspor;zsKFX8qm;;1;0;FINAL;2026-11-08T17:52:09.946556+00:00
+2026-11-08;Turkey_2LigWhiteGroup;Isparta 32 Spor;Erbaaspor;ncukZLKi;;0;1;FINAL;2026-11-08T17:52:09.952945+00:00
+2026-11-08;Turkey_2LigRedGroup;12 Bingol;Beyoglu Yeni Carsi;Ot1i2Az3;;0;2;FINAL;2026-11-08T17:52:09.959087+00:00
+2026-11-08;Turkey_2LigRedGroup;Ankara Demirspor;24 Erzincanspor;f7M7fbHd;;1;3;FINAL;2026-11-08T17:52:09.965614+00:00
+2026-11-08;Turkey_2LigRedGroup;Fethiyespor;Adana;MJioipS1;;2;1;FINAL;2026-11-08T17:52:09.973687+00:00
+2026-11-08;Turkey_2LigRedGroup;Inegolspor;Kutahyaspor;MgOadKnp;;1;2;FINAL;2026-11-08T17:52:09.982871+00:00
+2026-11-08;Turkey_2LigRedGroup;Karacabey Bld.;Kirklarelispor;6TIU1tPM;;1;1;FINAL;2026-11-08T17:52:09.990931+00:00
+2026-11-08;Turkey_2LigRedGroup;52 Orduspor;Sakaryaspor;W64a0l5F;;2;1;FINAL;2026-11-08T17:52:09.998822+00:00
+2026-11-08;Turkmenistan_YokaryLiga;Arkadag;Nebitci;tAL84DaN;;;;SCHEDULED;2026-11-08T17:52:10.087339+00:00
+2026-11-08;Ukraine_PremierLeague;Bukovyna;Kolos Kovalivka;t84mxaJj;;1;1;FINAL;2026-11-08T17:52:10.093824+00:00
+2026-11-08;Ukraine_PremierLeague;Zorya;LNZ Cherkasy;jyR7PLZp;;1;2;FINAL;2026-11-08T17:52:10.100293+00:00
+2026-11-08;Ukraine_PremierLeague;Shakhtar;Dyn. Kyiv;UoC1o3d4;;0;0;LIVE;2026-11-08T17:52:10.106741+00:00
+2026-11-08;Ukraine_PershaLiga;UCSA;Probiy Horodenka;0248dle4;;1;1;FINAL;2026-11-08T17:52:10.113119+00:00
+2026-11-08;Ukraine_PershaLiga;Oleksandriya;SC Poltava;COdfmpIj;;1;0;FINAL;2026-11-08T17:52:10.120035+00:00
+2026-11-08;Ukraine_DruhaLiga;Lozova;Karbon Cherkasy;z3m6sZWG;;;;SCHEDULED;2026-11-08T17:52:10.126460+00:00
+2026-11-08;Ukraine_DruhaLiga;FC Vilkhivtsi;Dinaz Vyshgorod;UFc7THW1;;4;1;FINAL;2026-11-08T17:52:10.132971+00:00
+2026-11-08;Ukraine_DruhaLiga;Nyva Ternopil 2;Nyva Vinnytsya;MkfaVw2k;;3;0;FINAL;2026-11-08T17:52:10.139729+00:00
+2026-11-08;Ukraine_DruhaLiga;Rukh Lviv;Skala 1911;fyb0kagL;;3;3;FINAL;2026-11-08T17:52:10.146434+00:00
+2026-11-08;Uganda_BigLeague;Kaaro Karungi;Buwambo;r5r4ix9T;;1;1;FINAL;2026-11-08T17:52:10.191950+00:00
+2026-11-08;Uganda_BigLeague;Kiyinda Boys;Amus College;EmZZoGWj;;1;0;FINAL;2026-11-08T17:52:10.198383+00:00
+2026-11-08;Uganda_BigLeague;Onduparaka;Young Elephant Academy;tfRL9JOc;;2;0;FINAL;2026-11-08T17:52:10.204983+00:00
+2026-11-08;Uganda_BigLeague;Paidha Black Angels;Volcanoes;E7PT7cgA;;2;1;FINAL;2026-11-08T17:52:10.211374+00:00
+2026-11-08;Uganda_BigLeague;Pakwach Young Stars;Rwenzori Lions;0ONy6yOM;;;;SCHEDULED;2026-11-08T17:52:10.218005+00:00
+2026-11-08;Hungary_NBI;Nyiregyhaza;Győr;GUUUFl9e;;1;1;FINAL;2026-11-08T17:52:10.224572+00:00
+2026-11-08;Hungary_NBI;Debrecen;Ujpest;63Xk3BPk;;3;1;FINAL;2026-11-08T17:52:10.231045+00:00
+2026-11-08;Hungary_NBI;Vasas;Ferencvaros;OMCNHAvq;;;;SCHEDULED;2026-11-08T17:52:10.237967+00:00
+2026-11-08;Hungary_NBII;Csakvari;Karcagi;EZep2jE8;;4;2;FINAL;2026-11-08T17:52:10.244424+00:00
+2026-11-08;Hungary_NBIIINorthwest;Balatonalmadi SE;Papai Perutz;OYQYEFSI;;2;1;FINAL;2026-11-08T17:52:10.271105+00:00
+2026-11-08;Hungary_NBIIISoutheast;Elore;Szolnoki;CYw7xFcU;;2;2;FINAL;2026-11-08T17:52:10.284612+00:00
+2026-11-08;Hungary_NBIIISoutheast;ESMTK Budapest;III. Keruleti TVE;j3Lypuat;;2;0;FINAL;2026-11-08T17:52:10.291547+00:00
+2026-11-08;Hungary_NBIIISouthwest;Siofok;Ivancsa;lSdmOasn;;0;2;FINAL;2026-11-08T17:52:10.304666+00:00
+2026-11-08;USA_USLChampionship;New Mexico;Colorado Springs;xjlzR8K0;;4;0;FINAL;2026-11-08T17:52:10.389337+00:00
+2026-11-08;USA_USLChampionship;Sacramento Republic;El Paso;YgadYjSQ;;2;1;FINAL;2026-11-08T17:52:10.397245+00:00
+2026-11-08;USA_USLLeagueOne;Boise;Chattanooga Red Wolves;nqQasU4s;;1;0;FINAL;2026-11-08T17:52:10.405444+00:00
+2026-11-08;Uzbekistan_SuperLeague;Buxoro;Nasaf Qarshi;jFNCWPRF;;0;1;FINAL;2026-11-08T17:52:10.431011+00:00
+2026-11-08;Uzbekistan_SuperLeague;Neftchi Fargona;OKMK;rkK4Yoc3;;2;1;FINAL;2026-11-08T17:52:10.437632+00:00
+2026-11-08;Uzbekistan_SuperLeague;Pakhtakor;Kokand 1912;YeruIQCM;;3;1;FINAL;2026-11-08T17:52:10.444064+00:00
+2026-11-08;Venezuela_LigaFUTVE2;Aragua;Yaracuyanos;QmIqDRzS;;;;SCHEDULED;2026-11-08T17:52:10.482148+00:00
+2026-11-08;Venezuela_LigaFUTVE2;Monagas B;Urena;pAGTG9y3;;;;SCHEDULED;2026-11-08T17:52:10.489756+00:00
+2026-11-08;Vietnam_VLeague1;Viettel;Thanh Hoa;SjTaUffd;;1;1;FINAL;2026-11-08T17:52:10.496547+00:00
+2026-11-08;Vietnam_VLeague2;Ho Chi Minh City;Xuan Thien Phu Tho;KEasEDwQ;;3;0;FINAL;2026-11-08T17:52:10.503685+00:00
+2026-11-08;Vietnam_VLeague2;Hung Yen;Quy Nhon United;jBmCdWk2;;0;0;FINAL;2026-11-08T17:52:10.510907+00:00
+2026-11-08;Vietnam_VLeague2;Thep Can Tho;Thai Nguyen;Ick4bhLk;;0;4;FINAL;2026-11-08T17:52:10.517455+00:00
+2026-11-08;Zambia_SuperLeague;NAPSA Stars;Nkana;QmbY3C5k;;0;1;FINAL;2026-11-08T17:52:10.523859+00:00
+2026-11-08;Zimbabwe_PremierSoccerLeague;Dynamos;Manica;Amp0Zbml;;1;0;FINAL;2026-11-08T17:52:10.533096+00:00
+2026-11-08;Zimbabwe_PremierSoccerLeague;Highlanders;TelOne;G4w2gKvK;;2;2;FINAL;2026-11-08T17:52:10.553758+00:00
+2026-11-08;Mexico_LigaPremierSerieA;Apodaca;Dragones de Oaxaca;8OBoJOW1;;;;SCHEDULED;2026-11-08T17:52:10.605933+00:00
+2026-11-08;Mexico_LigaPremierSerieA;Guerreros de Autlan;Guerreros del Pacifico;0b8wLp2k;;;;SCHEDULED;2026-11-08T17:52:10.612159+00:00
+2026-11-08;Suriname_SML;Inter Wanica;Leo Victor;vibLhusI;;;;SCHEDULED;2026-11-08T17:52:10.625541+00:00
+2026-11-08;Venezuela_LigaFUTVE2;Lara;Zamora 2;bVNyZJy1;;;;SCHEDULED;2026-11-08T17:52:10.641025+00:00
