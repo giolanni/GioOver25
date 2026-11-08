@@ -1,32 +1,28 @@
-# Monitor LIVE: associazione esplicita degli ID Flashscore
+# Monitor LIVE Diretta
 
-Il modulo `python -m tools.live_flashscore` legge
-`data/live/flashscore_match_ids.csv` con intestazione:
+Il pulsante **Aggiorna LIVE** esegue `python -m tools.live_flashscore`
+su richiesta (nessun polling automatico). Il modulo riutilizza
+`tools.diretta_mobile.fetch_feed`, `parse_feed` e
+`tools.prepare_input.resolve_match` / `canonical_team`.
 
-```csv
-MatchDate;LeagueId;Home;Away;MatchId
-```
+Prende le partite con MatchDate odierna dagli storici ranking,
+interroga il feed giornaliero Diretta e i due offset adiacenti,
+associa soltanto le corrispondenze univoche per campionato, data,
+squadra di casa e trasferta e scrive esclusivamente
+`data/live/partite_live.csv`.
 
-Ogni riga deve contenere i nomi **esatti** usati nel ranking e l'ID
-Flashscore verificato per quella partita. Non vengono effettuate
-associazioni fuzzy per evitare falsi OK/KO.
+Non è più richiesto `flashscore_match_ids.csv`.
+Se non trova corrispondenze conserva il CSV precedente.
 
-Aprendo **Monitor LIVE** nella GUI viene lanciata una lettura in
-background; il tentativo si ripete ogni 60 secondi finché la sezione
-è aperta. La finestra mostra eventuali errori nel log.
+Gli stati sono conservativi: codice feed AB=3 interpretato come FINAL,
+AB=2 come LIVE, altri codici non sono trasformati in esiti finali.
+**Da verificare sul feed reale** che i codici di stato siano corretti;
+in particolare evitare falsi KO. Le partite prive di uno stato
+riconosciuto non vengono mostrate come esiti verificati.
 
-ATTENZIONE: la struttura dei feed Flashscore non è documentata e
-può cambiare. Il parser accetta soltanto punteggi e stati riconosciuti;
-se non riesce a verificarli, non modifica il CSV precedente.
-Non è ancora disponibile la scoperta automatica degli ID delle partite.
-I feed devono essere verificati su un evento reale prima di considerare
-operativa l'acquisizione.
-
-Per diagnosticare un ID:
-
+Diagnostica:
 ```powershell
-python -m tools.probe_flashscore_match --match-id ID
 python -m tools.live_flashscore
 ```
 
-Gli storici ranking e risultati ufficiali non vengono modificati.
+Nessuna modifica a engine, storici ufficiali o file risultati.
