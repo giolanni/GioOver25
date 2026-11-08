@@ -302,9 +302,28 @@ def _engine_meta(stats: dict, styles, label: str):
 def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows: list[dict],
                           gs1_near_rows: list[dict] | None = None,
                           report_date: date | None = None) -> Path:
-    report_date = report_date or date.today()
+    # The PDF identifies the fixtures it actually contains, not its creation day.
+    # Multiple MatchDates are represented by an inclusive date range.
+    match_dates = set()
+    for engine_rows in results_by_engine.values():
+        for row in engine_rows:
+            parsed = _parse_date(row.get("MatchDate"))
+            if parsed is not None:
+                match_dates.add(parsed)
+    for row in list(gs1_rows) + list(gs1_near_rows or []):
+        parsed = _parse_date(row.get("MatchDate"))
+        if parsed is not None:
+            match_dates.add(parsed)
+    if not match_dates:
+        raise ValueError("PDF pronostici: nessuna MatchDate valida negli output")
+    first_day, last_day = min(match_dates), max(match_dates)
+    report_date = last_day  # Historical statistics must not use a later generation date.
+    date_label = (first_day.isoformat() if first_day == last_day
+                  else f"{first_day.isoformat()}_{last_day.isoformat()}")
+    display_date = (first_day.strftime("%d/%m/%Y") if first_day == last_day
+                    else f"{first_day.strftime('%d/%m/%Y')} - {last_day.strftime('%d/%m/%Y')}")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    output = OUTPUT_DIR / f"GioOver_{report_date.isoformat()}.pdf"
+    output = OUTPUT_DIR / f"GioOver_{date_label}.pdf"
     styles = _styles()
 
     cautious = _best_engine(V20_FAMILY, report_date, fallback="v20plus")
@@ -323,12 +342,12 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
     doc = SimpleDocTemplate(
         str(output), pagesize=A4, rightMargin=10*mm, leftMargin=10*mm,
         topMargin=10*mm, bottomMargin=11*mm,
-        title=f"GioOver - Pronostici {report_date.isoformat()}",
+        title=f"GioOver - Pronostici {date_label}",
         author="GioOver",
     )
     story = [
         _p("GioOver - Pronostici giornalieri", styles["title"]),
-        _p(report_date.strftime("%d/%m/%Y"), styles["subtitle"]),
+        _p(display_date, styles["subtitle"]),
         Spacer(1, 4*mm),
     ]
 
@@ -440,7 +459,7 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
         canvas.saveState()
         canvas.setFont("Helvetica", 7)
         canvas.setFillColor(MUTED)
-        canvas.drawString(10*mm, 6*mm, f"GioOver | {report_date.strftime('%d/%m/%Y')}")
+        canvas.drawString(10*mm, 6*mm, f"GioOver | {display_date}")
         canvas.drawRightString(A4[0]-10*mm, 6*mm, f"Pagina {doc.page}")
         canvas.restoreState()
 
