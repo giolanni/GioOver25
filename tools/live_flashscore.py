@@ -66,7 +66,9 @@ def fetch(match_id, timeout=12):
 
 def collect(mapping=MAPPING, output=OUTPUT):
     if not mapping.exists():
-        raise FileNotFoundError(f"Missing fixture-to-provider ID mapping: {mapping}")
+        print("[LIVE] Mappatura Flashscore non disponibile: " + str(mapping), file=sys.stderr)
+        print("[LIVE] Non sono stati scaricati risultati. Nessun file modificato.", file=sys.stderr)
+        return 0
     with mapping.open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle, delimiter=";")
         if not set(FIELDS_ID).issubset(reader.fieldnames or ()):
@@ -112,7 +114,7 @@ def main():
     parser.add_argument("--output", type=Path, default=OUTPUT)
     args = parser.parse_args()
     if collect(args.mapping, args.output) == 0:
-        sys.exit("No verified live scores; previous CSV preserved")
+        print("[LIVE] Nessun risultato verificato; CSV precedente conservato.", file=sys.stderr)
 
 
 if __name__ == "__main__":
