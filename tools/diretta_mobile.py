@@ -43,6 +43,7 @@ class RawMatch:
     tournament_id: str = ""
     tournament_stage_id: str = ""
     tournament_current_id: str = ""
+    state_code: str = ""
 
     @property
     def borderline(self) -> bool:
@@ -213,6 +214,7 @@ def parse_feed(payload: str) -> list[RawMatch]:
             tournament_id=fields.get("ZEE", "") or tournament_id,
             tournament_stage_id=fields.get("ZC", "") or tournament_stage_id,
             tournament_current_id=fields.get("ZE", "") or tournament_current_id,
+            state_code=ab,
         ))
     return out
 
