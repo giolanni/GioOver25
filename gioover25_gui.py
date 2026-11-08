@@ -105,7 +105,12 @@ class Dashboard(tk.Tk):
         self.table.tag_configure("best", background="#dcf6df")
         for name, color in (("ok", "#c9f2d1"), ("ko", "#ffd5d5"), ("pending", "#fff2b8"), ("unknown", "#e7ebf0")):
             self.table.tag_configure(name, background=color)
-        self.table.pack(fill="both", expand=True, padx=20, pady=8)
+        table_frame = ttk.Frame(main)
+        table_frame.pack(fill="both", expand=True, padx=20, pady=8)
+        self.table.pack(in_=table_frame, side="left", fill="both", expand=True)
+        table_scroll = ttk.Scrollbar(table_frame, orient="vertical", command=self.table.yview)
+        table_scroll.pack(side="right", fill="y")
+        self.table.configure(yscrollcommand=table_scroll.set)
         tk.Label(main, textvariable=self.status, bg=BG, fg=NAVY,
                  anchor="w").pack(fill="x", padx=20)
         self.log = tk.Text(main, height=7, bg="#142b46", fg="#e7f1ff",
@@ -198,6 +203,15 @@ class Dashboard(tk.Tk):
                     self.show_live()
             self.after(0, done)
         threading.Thread(target=work, daemon=True).start()
+    @staticmethod
+    def ranking_score(row):
+        """Numeric descending score; invalid or missing scores go last."""
+        try:
+            value = float(str(row.get("Score", "")).strip().replace(",", "."))
+            return value if value == value else float("-inf")
+        except (ValueError, TypeError):
+            return float("-inf")
+
     def show_live(self):
         self.view = "live"
         self.table["displaycolumns"] = self.columns
@@ -215,7 +229,8 @@ class Dashboard(tk.Tk):
         engine = self.engine.get()
         today = date.today().isoformat()
         history = HISTORY / engine / ("storico_ranking_" + engine + ".csv")
-        rows = [r for r in csv_rows(history) if r.get("MatchDate", "").strip() == today]
+        rows = sorted((r for r in csv_rows(history) if r.get("MatchDate", "").strip() == today),
+                      key=self.ranking_score, reverse=True)
         counts = {"OK": 0, "KO": 0, "PENDING": 0, "UNKNOWN": 0}
         finals = {"OK": 0, "KO": 0}
         market = "BTTS" if engine.lower().startswith("vg") else "Over25"
@@ -271,7 +286,8 @@ class Dashboard(tk.Tk):
         bands = best_bands()
         best = bands.get(engine.lower())
         today = date.today().isoformat()
-        rows = [r for r in csv_rows(path) if r.get("MatchDate", "").strip() == today]
+        rows = sorted((r for r in csv_rows(path) if r.get("MatchDate", "").strip() == today),
+                      key=self.ranking_score, reverse=True)
         for r in rows:
             try:
                 score = float(r.get("Score", "").replace(",", "."))
