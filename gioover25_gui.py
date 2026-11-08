@@ -95,7 +95,9 @@ class Dashboard(tk.Tk):
         ttk.Button(self.controls, text="Aggiorna LIVE", command=self.refresh_live).pack(side="right", padx=5)
         ttk.Button(self.controls, text="Ricarica", command=self.refresh).pack(side="right")
         self.columns = ("date", "league", "match", "score", "band", "best", "live_result", "live_outcome")
-        self.table = ttk.Treeview(main, columns=self.columns, show="headings", height=16)
+        table_frame = ttk.Frame(main)
+        table_frame.pack(fill="both", expand=True, padx=20, pady=8)
+        self.table = ttk.Treeview(table_frame, columns=self.columns, show="headings", height=16)
         for col, title, width in zip(self.columns,
                                      ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore", "Risultato", "Esito LIVE"),
                                      (105, 220, 300, 75, 120, 160, 85, 110)):
@@ -105,9 +107,7 @@ class Dashboard(tk.Tk):
         self.table.tag_configure("best", background="#dcf6df")
         for name, color in (("ok", "#c9f2d1"), ("ko", "#ffd5d5"), ("pending", "#fff2b8"), ("unknown", "#e7ebf0")):
             self.table.tag_configure(name, background=color)
-        table_frame = ttk.Frame(main)
-        table_frame.pack(fill="both", expand=True, padx=20, pady=8)
-        self.table.pack(in_=table_frame, side="left", fill="both", expand=True)
+        self.table.pack(side="left", fill="both", expand=True)
         table_scroll = ttk.Scrollbar(table_frame, orient="vertical", command=self.table.yview)
         table_scroll.pack(side="right", fill="y")
         self.table.configure(yscrollcommand=table_scroll.set)
