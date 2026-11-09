@@ -178,15 +178,17 @@ def _styles():
         "section": ParagraphStyle("section", parent=base["Heading2"], fontName="Helvetica-Bold",
                                   fontSize=14, leading=17, textColor=INK, spaceBefore=4*mm, spaceAfter=2*mm),
         "meta": ParagraphStyle("meta", parent=base["Normal"], fontName="Helvetica",
-                               fontSize=8.5, leading=11, textColor=MUTED),
+                               fontSize=10, leading=14, textColor=INK, spaceAfter=1*mm),
+        "meta_stats": ParagraphStyle("meta_stats", parent=base["Normal"], fontName="Helvetica-Bold",
+                                      fontSize=9.5, leading=13, textColor=INK),
         "cell": ParagraphStyle("cell", parent=base["Normal"], fontName="Helvetica",
                                fontSize=7.5, leading=9, textColor=INK),
         "cell_bold": ParagraphStyle("cell_bold", parent=base["Normal"], fontName="Helvetica-Bold",
                                     fontSize=7.5, leading=9, textColor=INK),
         "empty": ParagraphStyle("empty", parent=base["Normal"], fontName="Helvetica-Oblique",
-                                fontSize=8.5, leading=11, textColor=MUTED),
+                                fontSize=9.5, leading=13, textColor=INK),
         "legend": ParagraphStyle("legend", parent=base["Normal"], fontName="Helvetica",
-                                 fontSize=7.5, leading=10, textColor=MUTED),
+                                 fontSize=9.5, leading=13, textColor=INK),
     }
 
 
@@ -301,13 +303,13 @@ def _description(text: str, stats: str, styles):
     # Nessun markup inline: evita che tag ReportLab possano comparire nel PDF.
     rows = [[_p(text, styles["meta"])]]
     if stats:
-        rows.append([_p(f"Rendimento: {stats}", styles["meta"])])
+        rows.append([_p(f"Rendimento: {stats}", styles["meta_stats"])]
     box = Table(rows, colWidths=[185*mm])
     box.setStyle(TableStyle([
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
         ("RIGHTPADDING", (0, 0), (-1, -1), 0),
         ("TOPPADDING", (0, 0), (-1, -1), 0),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 1.2*mm),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 2*mm),
     ]))
     return box
 
