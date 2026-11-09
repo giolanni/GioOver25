@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import ast
 import csv
-import importlib.util
 from collections import Counter
 from pathlib import Path
 
@@ -29,13 +28,27 @@ METRIC_TOKENS = ("RankingGapScore", "HomeAttackScore", "AwayAttackScore",
                  "away_played", "home_ppg", "away_ppg",
                  "HomePlayed", "AwayPlayed", "HomeGALast5",
                  "AwayGALast5")
+METRIC_ALIASES = {
+    "RankingGapScore": ("ranking_gap_score",),
+    "HomeAttackScore": ("home_attack_score",),
+    "AwayAttackScore": ("away_attack_score",),
+    "HomeDefenseWeaknessScore": ("home_defense_weakness_score",),
+    "AwayDefenseWeaknessScore": ("away_defense_weakness_score",),
+    "HomeLast10OverScore": ("home_last10_over_score",),
+    "AwayLast10OverScore": ("away_last10_over_score",),
+    "HomeVenueOverScore": ("home_venue_over_score",),
+    "AwayVenueOverScore": ("away_venue_over_score",),
+    "BTTSProfileScore": ("btts_profile_score",),
+    "HomePPG": ("home_ppg",),
+    "AwayPPG": ("away_ppg",),
+}
 RULE_TOKENS = ("apply_contextual_band", "apply_defense_penalty",
                "SELECTION_ONLY", "REQUIRES_DEFENSE_LAST5",
                "PROX_", "MIN_", "THRESHOLD", "PROMOTION",
                "selected", "promoted")
 
 
-def imports_from_source(source):
+def imports_from_source(source, module_name):
     tree = ast.parse(source)
     modules = set()
     for node in ast.walk(tree):
@@ -46,7 +59,8 @@ def imports_from_source(source):
                 if node.level == 1 and not base:
                     modules.update("gioover25.engines." + a.name for a in node.names)
                 elif node.level == 1:
-                    modules.add("gioover25.engines." + base)
+                    package = "gioover25.engines" if module_name.startswith("gioover25.engines.") else "gioover25"
+                    modules.add(package + "." + base)
             elif base.startswith("gioover25."):
                 modules.add(base)
         elif isinstance(node, ast.Import):
@@ -77,7 +91,7 @@ def trace(engine):
             continue
         src = path.read_text(encoding="utf-8-sig")
         texts[module] = src
-        for dep in imports_from_source(src):
+        for dep in imports_from_source(src, module):
             if dep.startswith(("gioover25.engines.", "gioover25.scoring_")):
                 queue.append(dep)
     return texts
@@ -91,7 +105,8 @@ def run():
         module = get_engine(engine)
         sources = trace(module.__name__.split(".")[-1])
         text = "\n".join(sources.values())
-        metrics = {token for token in METRIC_TOKENS if token in text}
+        metrics = {token for token, aliases in METRIC_ALIASES.items()
+                   if any(alias in text for alias in aliases) or token in text}
         drivers = set(driver_sets[engine])
         # These are string/token observations, not proof of runtime influence.
         missing = sorted(metrics.intersection({
