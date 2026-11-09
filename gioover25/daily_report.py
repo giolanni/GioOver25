@@ -303,7 +303,7 @@ def _description(text: str, stats: str, styles):
     # Nessun markup inline: evita che tag ReportLab possano comparire nel PDF.
     rows = [[_p(text, styles["meta"])]]
     if stats:
-        rows.append([_p(f"Rendimento: {stats}", styles["meta_stats"])]
+        rows.append([_p(f"Rendimento: {stats}", styles["meta_stats"])])
     box = Table(rows, colWidths=[185*mm])
     box.setStyle(TableStyle([
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
