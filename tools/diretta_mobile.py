@@ -258,6 +258,10 @@ def convert(raw: list[RawMatch], day_offset: int, mode: str, registry):
             continue
 
         if mode == "rank":
+            # Il ranking deve poter ricostruire tutta la giornata anche quando
+            # l'acquisizione avviene dopo il calcio d'inizio o a gara conclusa.
+            # Gli stati valorizzati dal feed rappresentano eventi rinviati,
+            # posticipati o sospesi e restano esclusi.
             if r.status:
                 skipped_status += 1
                 continue
