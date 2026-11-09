@@ -383,6 +383,19 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
         else None
     )
 
+    # Freeze the exact engine choices used in the morning report.
+    # Never overwrite a previously saved selection for the same MatchDate.
+    if first_day == last_day:
+        selection_path = Path("data/storico/report_selections") / f"{report_date.isoformat()}.csv"
+        if not selection_path.exists():
+            selection_path.parent.mkdir(parents=True, exist_ok=True)
+            with selection_path.open("w", newline="", encoding="utf-8-sig") as fh:
+                writer = csv.DictWriter(fh, fieldnames=["Role", "Engine"], delimiter=";")
+                writer.writeheader()
+                writer.writerow({"Role": "cautious", "Engine": cautious["engine"]})
+                writer.writerow({"Role": "permissive", "Engine": permissive["engine"]})
+                writer.writerow({"Role": "permissive_second", "Engine": permissive_second["engine"] if permissive_second else ""})
+
     doc = SimpleDocTemplate(
         str(output), pagesize=A4, rightMargin=10*mm, leftMargin=10*mm,
         topMargin=10*mm, bottomMargin=11*mm,
