@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import re
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -38,6 +39,29 @@ RED = colors.HexColor("#B42318")
 VG_LOW = colors.HexColor("#FFF3CD")
 VG_MID = colors.HexColor("#FFE0B2")
 VG_HIGH = colors.HexColor("#D1FADF")
+
+
+_REPORT_FILE_RE = re.compile(
+    r"^GioOver_(\\d{4}-\\d{2}-\\d{2})(?:_(\\d{4}-\\d{2}-\\d{2}))?\\.pdf$",
+    re.IGNORECASE,
+)
+
+
+def _cleanup_old_reports(reference_date: date) -> list[Path]:
+    """Delete GioOver PDFs whose filename date is older than seven days."""
+    if not OUTPUT_DIR.exists():
+        return []
+    cutoff = reference_date - timedelta(days=7)
+    removed = []
+    for path in OUTPUT_DIR.glob("*.pdf"):
+        match = _REPORT_FILE_RE.match(path.name)
+        if not match:
+            continue
+        file_date = _parse_date(match.group(2) or match.group(1))
+        if file_date is not None and file_date < cutoff:
+            path.unlink()
+            removed.append(path)
+    return removed
 
 
 def _read_csv(path: Path) -> list[dict]:
@@ -323,6 +347,7 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
     display_date = (first_day.strftime("%d/%m/%Y") if first_day == last_day
                     else f"{first_day.strftime('%d/%m/%Y')} - {last_day.strftime('%d/%m/%Y')}")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    _cleanup_old_reports(report_date)
     output = OUTPUT_DIR / f"GioOver_{date_label}.pdf"
     styles = _styles()
 
