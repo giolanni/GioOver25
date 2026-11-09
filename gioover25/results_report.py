@@ -219,17 +219,39 @@ def generate_results_report(day:date):
     def section(title,content):
         story.extend([dr._p(title,styles["section"]),content,Spacer(1,3*mm)])
     # Reuse the morning report's sections, filtering by the original PredictionDate.
-    cautious=dr._best_engine(dr.V20_FAMILY,day)
-    permissive=dr._best_engine(dr._permissive_candidates(),day)
-    def engine_section(title,engine,market="Over25",minimum=None):
+    # Mirror the morning report's fallback and second permissive choice.
+    # Prefer a frozen selection manifest when available, to avoid look-ahead.
+    selection_file=Path("data/storico/report_selections") / f"{day.isoformat()}.csv"
+    frozen={r.get("Role"):r.get("Engine") for r in dr._read_csv(selection_file)}
+    def day_rows(engine,minimum=70):
+        return [r for r in dr._history(engine) if r.get("MatchDate")==day.isoformat()
+                and r.get("PredictionDate","")<=day.isoformat()
+                and _num(r.get("Score"))>minimum]
+    cautious_ranked=dr._rank_engines(dr.V20_FAMILY,day)
+    cautious_best=cautious_ranked[0]["engine"] if cautious_ranked else ""
+    cautious=frozen.get("cautious") or next(
+        (c["engine"] for c in cautious_ranked if any(
+            str(r.get("Band","")).upper()=="ALTA" or
+            str(r.get("Band","")).upper().startswith("IMM-ALTA-")
+            for r in day_rows(c["engine"]))),cautious_best)
+    permissive_ranked=dr._rank_engines(dr._permissive_candidates(),day)
+    permissive=frozen.get("permissive") or (permissive_ranked[0]["engine"] if permissive_ranked else "")
+    second=frozen.get("permissive_second") or (
+        permissive_ranked[1]["engine"] if permissive=="v31" and len(permissive_ranked)>1 else "")
+    def engine_section(title,engine,market="Over25",minimum=None,exclude=None):
         if not engine:return
         rows=[r for r in dr._history(engine) if r.get("MatchDate")==day.isoformat()
               and r.get("PredictionDate","")<=day.isoformat()
               and (minimum is None or _num(r.get("Score"))>minimum)]
+        if exclude:
+            rows=[r for r in rows if matchkey(r) not in exclude]
         section(f"{title} - {engine}",_results_table(rows,market,styles))
         story.extend([dr._p(engine_description(engine),styles["meta"]),Spacer(1,2*mm)])
-    engine_section("ALGORITMO CAUTO",cautious["engine"],minimum=70)
-    engine_section("ALGORITMO PERMISSIVO",permissive["engine"],minimum=70)
+    engine_section("ALGORITMO CAUTO",cautious,minimum=70)
+    engine_section("ALGORITMO PERMISSIVO",permissive,minimum=70)
+    if second:
+        engine_section("PERMISSIVO - SECONDA SCELTA",second,minimum=70,
+                       exclude={matchkey(r) for r in day_rows(permissive)})
     for engine in dr.SPECIAL_ENGINES:
         if not engine.startswith("vg"):
             engine_section(engine.upper(),engine,"Over25")
