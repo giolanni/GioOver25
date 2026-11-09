@@ -326,7 +326,24 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
     output = OUTPUT_DIR / f"GioOver_{date_label}.pdf"
     styles = _styles()
 
-    cautious = _best_engine(V20_FAMILY, report_date, fallback="v20plus")
+    cautious_ranked = _rank_engines(V20_FAMILY, report_date)
+    if cautious_ranked:
+        cautious_best = cautious_ranked[0]
+    else:
+        cautious_best = _best_engine(V20_FAMILY, report_date, fallback="v20plus")
+
+    def has_high_today(engine_name: str) -> bool:
+        for row in results_by_engine.get(engine_name, []):
+            band = str(row.get("Band", "") or "").strip().upper()
+            if band == "ALTA" or band.startswith("IMM-ALTA-"):
+                return True
+        return False
+
+    cautious = cautious_best
+    for candidate in cautious_ranked:
+        if has_high_today(candidate["engine"]):
+            cautious = candidate
+            break
     permissive_ranked = _rank_engines(_permissive_candidates(), report_date)
     permissive = (
         permissive_ranked[0]
@@ -360,8 +377,25 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
         story.extend(block[2:] if len(block) >= 2 else [])
 
     c_rows = _over_rows(results_by_engine.get(cautious["engine"], []))
+    if cautious["engine"] != cautious_best["engine"]:
+        cautious_text = (
+            f"Il migliore della settimana e' {cautious_best['engine']}, ma oggi non produce "
+            f"selezioni ALTA. Per la selezione odierna usiamo quindi {cautious['engine']}, "
+            "primo engine successivo della famiglia V20 con almeno una ALTA."
+        )
+    elif has_high_today(cautious["engine"]):
+        cautious_text = (
+            f"Selezione prudente della famiglia V20. {cautious['engine']} e' il migliore "
+            "della settimana e oggi produce almeno una selezione ALTA."
+        )
+    else:
+        cautious_text = (
+            f"Il migliore della settimana e' {cautious_best['engine']}. Nessun engine della "
+            "famiglia V20 disponibile oggi produce selezioni ALTA; viene mantenuto il migliore "
+            "settimanale come riferimento."
+        )
     section("ALGORITMO CAUTO", _table(c_rows, styles),
-            _description(f"Selezione prudente della famiglia V20. Oggi usa {cautious['engine']}: privilegia continuita' e affidabilita' rispetto al numero di pronostici.",
+            _description(cautious_text,
                          _performance(cautious["engine"], report_date, min_score=70), styles))
 
     p_rows = _over_rows(results_by_engine.get(permissive["engine"], []))
