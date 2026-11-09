@@ -157,7 +157,14 @@ def sofascore_matches(target: date, mode: str):
         away = canonical_team(away_raw)
         state = event.get("status", {}).get("type", "")
         if mode == "rank":
-            if state not in ("notstarted", "scheduled"):
+            # Per il ranking conserviamo l'intera giornata per poter valutare
+            # gli engine anche se getmatches viene eseguito a partite iniziate
+            # o concluse. Escludiamo soltanto eventi amministrativamente non
+            # giocabili gia' noti al momento dell'acquisizione.
+            excluded_states = {
+                "canceled", "cancelled", "postponed", "suspended",
+            }
+            if state in excluded_states:
                 continue
             out.append(Match(lid, target.isoformat(), home, away))
         else:
