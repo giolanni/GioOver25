@@ -273,14 +273,29 @@ def check_laboratory(items: list[Anomaly], known_leagues: set[str]) -> int:
             if (truthy or falsy) and truthy != expected:
                 add(items, "WARNING", "laboratory", "LAB_BTTS", league_id=league, match_date=md, home=home, away=away,
                     detail=f"BTTS={text(r,'BTTS')} incompatibile con {hg}-{ag}.", source=source)
-        key = (league, md, normalize_team_name(league, home), normalize_team_name(league, away), engine)
+        # Il Laboratory conserva intenzionalmente piu snapshot della stessa
+        # fixture: una nuova PredictionDate o un ricalcolo con Round/Score/Band
+        # diversi rappresentano una previsione distinta. La chiave del quality
+        # check deve quindi coincidere con PREDICTION_IDENTITY_FIELDS usata dal
+        # builder, altrimenti ogni reranking viene segnalato come duplicato.
+        key = (
+            text(r, "PredictionDate"),
+            md,
+            league,
+            text(r, "Round"),
+            normalize_team_name(league, home),
+            normalize_team_name(league, away),
+            text(r, "Score"),
+            text(r, "Band"),
+            engine,
+        )
         signature = (text(r, "HG"), text(r, "AG"), text(r, "Outcome"))
-        if all(key):
+        if league and md and home and away and engine:
             if key in seen:
                 previous = seen[key]
                 severity = "CRITICAL" if previous != signature else "WARNING"
                 add(items, severity, "laboratory", "LAB_DUP_MATCH", league_id=league, match_date=md, home=home, away=away,
-                    detail=f"Duplicato per engine {engine}; valori precedenti={previous}, attuali={signature}.", source=source)
+                    detail=f"Duplicato della stessa previsione per engine {engine}; valori precedenti={previous}, attuali={signature}.", source=source)
             else:
                 seen[key] = signature
     if LAB_UNMATCHED.exists():

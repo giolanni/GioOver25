@@ -3,8 +3,8 @@
 2;vg1.3;Germany_Regionalliga_West;3;0;2026-10-17;2026-11-06;3;100.0
 3;vg1.3;Germany_Oberliga_SchleswigHolstein;2;0;2026-10-17;2026-10-27;2;100.0
 4;vg1.3;Norway_3rdDivision_Group4;2;0;2026-10-17;2026-10-24;2;100.0
-5;vg1.3;Norway_OBOSLigaen;2;0;2026-10-18;2026-11-01;2;100.0
-6;vg1.3;USA_MLS;2;0;2026-10-17;2026-10-31;2;100.0
+5;vg1.3;USA_MLS;2;0;2026-10-17;2026-10-31;2;100.0
+6;vg1.3;Norway_OBOSLigaen;2;1;2026-10-18;2026-11-08;3;66.67
 7;vg1.3;Armenia_FirstLeague;1;0;2026-10-20;2026-10-20;1;100.0
 8;vg1.3;Austria_Regionalliga_West;1;0;2026-10-31;2026-10-31;1;100.0
 9;vg1.3;Austria_Salzburg;1;0;2026-10-31;2026-10-31;1;100.0
@@ -30,6 +30,8 @@
 29;vg1.3;England_NPLPremierDivision;0;1;2026-10-27;2026-10-27;1;0.0
 30;vg1.3;FaroeIslands_1Deild;0;1;2026-10-17;2026-10-17;1;0.0
 31;vg1.3;Germany_Oberliga_NOFV_Sud;0;1;2026-10-31;2026-10-31;1;0.0
-32;vg1.3;Latvia_NakotnesLiga;0;1;2026-10-31;2026-10-31;1;0.0
-33;vg1.3;Sweden_Division2_SodraGotaland;0;1;2026-10-18;2026-10-18;1;0.0
-34;vg1.3;Turkey_2LigWhiteGroup;0;1;2026-11-07;2026-11-07;1;0.0
+32;vg1.3;Germany_Oberliga_Niedersachsen;0;1;2026-11-08;2026-11-08;1;0.0
+33;vg1.3;Latvia_NakotnesLiga;0;1;2026-10-31;2026-10-31;1;0.0
+34;vg1.3;Poland_Division1;0;1;2026-11-08;2026-11-08;1;0.0
+35;vg1.3;Sweden_Division2_SodraGotaland;0;1;2026-10-18;2026-10-18;1;0.0
+36;vg1.3;Turkey_2LigWhiteGroup;0;1;2026-11-07;2026-11-07;1;0.0

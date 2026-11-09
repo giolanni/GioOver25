@@ -1,5 +1,4 @@
 ﻿LeagueId;Round;MatchDate;PredictionDate;Home;Away;Band;HistoricalStatus;Postponed;SourceFile
-Germany_Oberliga_RheinlandPfalzSaar;4;2026-08-15;2026-08-14;RW Wittlich;TSV 1881 Gau-Odernheim;BASSA;POSTPONED;SI;data\storico\ranking\v26\storico_ranking_v26.csv
 Wales_CymruNorth;3;2026-08-22;2026-08-21;Caersws;Newtown;BASSA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Wales_CymruSouth;3;2026-08-28;2026-08-21;Treowen;Cardiff Draconians;MEDIA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
 Wales_CymruSouth;5;2026-08-31;2026-08-31;Cardiff Draconians;Pontardawe;MEDIA;POSTPONED;SI;data\storico\ranking\v26def\storico_ranking_v26def.csv
@@ -10,7 +9,6 @@ Ukraine_PremierLeague;7;2026-09-12;2026-09-12;Kryvbas;FC Kharkiv;MEDIA;POSTPONED
 Wales_CymruSouth;8;2026-09-16;2026-09-16;Newport City;Trethomas Bluebirds;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Bulgaria_VtoraLiga;11;2026-09-27;2026-09-27;Ludogorets 2;Etar;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Germany_Oberliga_Niedersachsen;10;2026-10-02;2026-10-01;Lohne;BSV Rehden;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
-Belarus_PershayaLiga;29;2026-10-03;2026-10-03;Uni X Labs;Din. Minsk 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Germany_Regionalliga_Nord;13;2026-10-03;2026-10-03;Delmenhorst;St. Pauli 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Germany_Regionalliga_Nord;13;2026-10-03;2026-10-03;Norderstedt;Bremer;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
 Germany_Oberliga_Niedersachsen;10;2026-10-04;2026-10-03;Hemmingen;Egestorf-Langreder;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
@@ -33,42 +31,82 @@ England_NPLPremierDivision;16;2026-10-20;2026-10-19;Quorn;Bury;BASSA;POSTPONED;S
 England_SouthernLeaguePremierCentral;14;2026-10-20;2026-10-19;Alvechurch;Bromsgrove;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
 England_SouthernLeaguePremierCentral;14;2026-10-20;2026-10-19;Stourbridge;Anstey Nomads;BASSA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
 Germany_Oberliga_Hamburg;14;2026-10-20;2026-10-19;Altona;ETSV Hamburg;MEDIA;POSTPONED;SI;data\storico\ranking\vg2.6\storico_ranking_vg2.6.csv
-Belgium_ChallengerProLeague;8;2026-10-23;2026-10-22;Francs Borains;Dender;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Belgium_JupilerProLeague;12;2026-10-23;2026-10-22;Kortrijk;KV Mechelen;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Oberliga_RheinlandPfalzSaar;17;2026-10-23;2026-10-22;Engers;Koblenz;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Ukraine_PershaLiga;13;2026-10-23;2026-10-22;FC Chernihiv;Ahrobiznes Volochysk;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Wales_CymruNorth;12;2026-10-23;2026-10-22;Denbigh;Gresford;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Wales_CymruPremier;15;2026-10-23;2026-10-22;Holywell;Penybont;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-England_SouthernLeaguePremierCentral;15;2026-10-24;2026-10-24;Leighton Town;Racing Club Warwick;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Oberliga_Bayern_Nord;21;2026-10-24;2026-10-24;Bamberg;Kornburg;MEDIA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Oberliga_Niedersachsen;14;2026-10-24;2026-10-24;Luneburger Hansa;BSV Rehden;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Oberliga_SchleswigHolstein;15;2026-10-24;2026-10-24;PSV Neumunster;Kiel 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Regionalliga_Bayern;19;2026-10-24;2026-10-24;Bayern 2;Vilzing;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-NorthernIreland_NIFLChampionship;14;2026-10-24;2026-10-24;Rathfriland;Moyola;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-NorthernIreland_NIFLChampionship;14;2026-10-24;2026-10-24;Warrenpoint;Glenavon;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-NorthernIreland_NIFLPremiership;17;2026-10-24;2026-10-24;Glentoran;Ballymena;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Switzerland_PromotionLeague;15;2026-10-24;2026-10-24;Bavois;Schaffhausen;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Wales_CymruNorth;12;2026-10-24;2026-10-24;Bangor 1876;Ruthin;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Wales_CymruNorth;12;2026-10-24;2026-10-24;Penrhyncoch;Mold Alexandra;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Wales_CymruSouth;13;2026-10-24;2026-10-24;Baglan Dragons;Aberystwyth;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Wales_CymruSouth;13;2026-10-24;2026-10-24;Pontardawe;Ynyshir Albions;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Wales_CymruSouth;13;2026-10-24;2026-10-24;Pure Swansea;Treowen;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Oberliga_Niedersachsen;14;2026-10-25;2026-10-24;Egestorf-Langreder;Vorsfelde;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Oberliga_SchleswigHolstein;15;2026-10-25;2026-10-24;Eichede;Nordmark Satrup;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Oberliga_Westfalen;14;2026-10-25;2026-10-24;ASC 09 Dortmund;Westfalia Kinderhaus;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Regionalliga_Nord;16;2026-10-25;2026-10-24;Schoningen;VfB Lubeck;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-SriLanka_SuperLeague;13;2026-10-25;2026-10-24;Renown;Blue Star;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-England_IsthmianLeaguePremierDivision;27;2026-10-27;2026-10-26;Stanway;Cray Wanderers;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-England_SouthernLeaguePremierSouth;19;2026-10-27;2026-10-26;Taunton;Frome;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Germany_Oberliga_Niedersachsen;13;2026-10-28;2026-10-28;Hemmingen;Egestorf-Langreder;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-NorthernIreland_NIFLChampionship;14;2026-10-30;2026-10-30;Newington;H&W Welders;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Mexico_LigaExpansionMX_Apertura;15;2026-10-31;2026-10-31;Cruz Azul Hidalgo;Tlaxcala;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-NorthernIreland_NIFLChampionship;14;2026-10-31;2026-10-31;Dundela;Warrenpoint;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-SriLanka_SuperLeague;13;2026-11-01;2026-11-01;Colombo;Blue Star;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Ukraine_PremierLeague;13;2026-11-01;2026-11-01;Kolos Kovalivka;Polissya Zhytomyr;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Ukraine_PremierLeague;13;2026-11-01;2026-11-01;LNZ Cherkasy;FC Kharkiv;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Bulgaria_VtoraLiga;15;2026-11-02;2026-11-01;Dobrudzha;Fratria;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Georgia_ErovnuliLiga;16;2026-11-02;2026-11-01;Torpedo Kutaisi;Dila Gori;MEDIA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Serbia_SuperLiga;17;2026-11-02;2026-11-01;Radnicki Nis;Zeleznicar Pancevo;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-Armenia_FirstLeague;15;2026-11-03;2026-11-03;Shirak 2;Ararat-Armenia 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
-England_SouthernLeaguePremierCentral;18;2026-11-03;2026-11-03;Worcester;Bishop's Stortford;BASSA;POSTPONED;SI;data\storico\ranking\vg1.4\storico_ranking_vg1.4.csv
+Germany_Oberliga_RheinlandPfalzSaar;17;2026-10-23;2026-10-22;Engers;Koblenz;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Ukraine_PershaLiga;13;2026-10-23;2026-10-22;FC Chernihiv;Ahrobiznes Volochysk;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruNorth;12;2026-10-23;2026-10-22;Denbigh;Gresford;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruPremier;15;2026-10-23;2026-10-22;Holywell;Penybont;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+England_SouthernLeaguePremierCentral;15;2026-10-24;2026-10-24;Leighton Town;Racing Club Warwick;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Bayern_Nord;21;2026-10-24;2026-10-24;Bamberg;Kornburg;MEDIA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Niedersachsen;14;2026-10-24;2026-10-24;Luneburger Hansa;BSV Rehden;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_SchleswigHolstein;15;2026-10-24;2026-10-24;PSV Neumunster;Kiel 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_Bayern;19;2026-10-24;2026-10-24;Bayern 2;Vilzing;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+NorthernIreland_NIFLChampionship;14;2026-10-24;2026-10-24;Rathfriland;Moyola;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+NorthernIreland_NIFLChampionship;14;2026-10-24;2026-10-24;Warrenpoint;Glenavon;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+NorthernIreland_NIFLPremiership;17;2026-10-24;2026-10-24;Glentoran;Ballymena;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Switzerland_PromotionLeague;15;2026-10-24;2026-10-24;Bavois;Schaffhausen;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruNorth;12;2026-10-24;2026-10-24;Bangor 1876;Ruthin;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruNorth;12;2026-10-24;2026-10-24;Penrhyncoch;Mold Alexandra;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruSouth;13;2026-10-24;2026-10-24;Baglan Dragons;Aberystwyth;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruSouth;13;2026-10-24;2026-10-24;Pontardawe;Ynyshir Albions;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Wales_CymruSouth;13;2026-10-24;2026-10-24;Pure Swansea;Treowen;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Niedersachsen;14;2026-10-25;2026-10-24;Egestorf-Langreder;Vorsfelde;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_SchleswigHolstein;15;2026-10-25;2026-10-24;Eichede;Nordmark Satrup;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Westfalen;14;2026-10-25;2026-10-24;ASC 09 Dortmund;Westfalia Kinderhaus;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Regionalliga_Nord;16;2026-10-25;2026-10-24;Schoningen;VfB Lubeck;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SriLanka_SuperLeague;13;2026-10-25;2026-10-24;Renown;Blue Star;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+England_IsthmianLeaguePremierDivision;27;2026-10-27;2026-10-26;Stanway;Cray Wanderers;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+England_SouthernLeaguePremierSouth;19;2026-10-27;2026-10-26;Taunton;Frome;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Germany_Oberliga_Niedersachsen;13;2026-10-28;2026-10-28;Hemmingen;Egestorf-Langreder;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+NorthernIreland_NIFLChampionship;14;2026-10-30;2026-10-30;Newington;H&W Welders;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Mexico_LigaExpansionMX_Apertura;15;2026-10-31;2026-10-31;Cruz Azul Hidalgo;Tlaxcala;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+NorthernIreland_NIFLChampionship;14;2026-10-31;2026-10-31;Dundela;Warrenpoint;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SriLanka_SuperLeague;13;2026-11-01;2026-11-01;Colombo;Blue Star;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Ukraine_PremierLeague;13;2026-11-01;2026-11-01;Kolos Kovalivka;Polissya Zhytomyr;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Ukraine_PremierLeague;13;2026-11-01;2026-11-01;LNZ Cherkasy;FC Kharkiv;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Bulgaria_VtoraLiga;15;2026-11-02;2026-11-01;Dobrudzha;Fratria;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Georgia_ErovnuliLiga;16;2026-11-02;2026-11-01;Torpedo Kutaisi;Dila Gori;MEDIA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Serbia_SuperLiga;17;2026-11-02;2026-11-01;Radnicki Nis;Zeleznicar Pancevo;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Armenia_FirstLeague;15;2026-11-03;2026-11-03;Shirak 2;Ararat-Armenia 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+England_SouthernLeaguePremierCentral;18;2026-11-03;2026-11-03;Worcester;Bishop's Stortford;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Azerbaijan_FirstLeague;7;2026-11-04;2026-11-04;Mingachevir;Sahdag Qusar;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CongoDr_Ligue1;5;2026-11-05;2026-11-05;Sanga Balende;Blessing;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SaudiArabia_ProfessionalLeague;14;2026-11-05;2026-11-05;Abha;Al Shabab;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SaudiArabia_ProfessionalLeague;14;2026-11-05;2026-11-05;Al Kholood;Al Khaleej;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SaudiArabia_ProfessionalLeague;14;2026-11-05;2026-11-05;Al Qadsiah;Al Fayha;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CostaDAvorio_Ligue1;7;2026-11-06;2026-11-06;Mouna;Tchologo;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Gibilterra_NationalLeague;10;2026-11-06;2026-11-06;Europa FC;Hound Dogs;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Mexico_LigaPremierSerieA;11;2026-11-06;2026-11-06;Heroes de Zaci;Club Calor;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SaudiArabia_ProfessionalLeague;14;2026-11-06;2026-11-06;Al Fateh;Al Riyadh;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SaudiArabia_ProfessionalLeague;14;2026-11-06;2026-11-06;Al Hazem;Al Nassr FC;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SaudiArabia_ProfessionalLeague;14;2026-11-06;2026-11-06;Al-Ittihad FC;Neom SC;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Spain_LaLiga2;13;2026-11-06;2026-11-06;Castellon;Eibar;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Algeria_Ligue1;10;2026-11-07;2026-11-06;Belouizdad;Constantine;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Algeria_Ligue1;10;2026-11-07;2026-11-06;USM Alger;MC Alger;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Algeria_Ligue2;9;2026-11-07;2026-11-06;JSM Tiaret;Mostaganem;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+AntiguaBarbuda_ABFAPremierLeague;3;2026-11-07;2026-11-06;Greenbay Hoppers;Garden Stars;MEDIA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Bulgaria_ThirdLeagueNorthWest;12;2026-11-07;2026-11-06;Juventus Malchika;Kom Berkovitsa;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Bulgaria_ThirdLeagueSouthEast;15;2026-11-07;2026-11-06;Spartak Plovdiv;Sekirovo Rakovski;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CostaDAvorio_Ligue1;7;2026-11-07;2026-11-06;SOL;Zoman;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CostaDAvorio_Ligue1;7;2026-11-07;2026-11-06;Yamoussoukro;Agboville;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CzechRepublic_ChNL;14;2026-11-07;2026-11-06;Kromeriz;Trinec;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+England_SouthernLeaguePremierSouth;22;2026-11-07;2026-11-06;Plymouth Parkway;Chertsey;MEDIA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Israele_LigaAlefNorth;11;2026-11-07;2026-11-06;H. Migdal HaEmek;Tzeirey Um El Fahem;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_IIILiga_Group3;18;2026-11-07;2026-11-06;Sulow;Nysa;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SaudiArabia_ProfessionalLeague;14;2026-11-07;2026-11-06;Al Ahli SC;Al-Taawon;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SaudiArabia_ProfessionalLeague;14;2026-11-07;2026-11-06;Al Ettifaq;Al Hilal;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+SaudiArabia_ProfessionalLeague;14;2026-11-07;2026-11-06;Al-Faysaly;Al Diriyah;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Tunisia_Ligue2;7;2026-11-07;2026-11-06;Redeyef;Ksour Essef;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Uganda_PremierLeague;11;2026-11-07;2026-11-06;Kitara;URA SC;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Ukraine_PershaLiga;15;2026-11-07;2026-11-06;FC Chernihiv;Kolos Kovalivka 2;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Armenia_PremierLeague;17;2026-11-08;2026-11-08;Urartu;Ararat-Armenia;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Austria_Regionalliga_North;18;2026-11-08;2026-11-08;Ried (Am);Schallerbach;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CostaDAvorio_Ligue1;7;2026-11-08;2026-11-08;Academie de FAD;ISCA;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CostaDAvorio_Ligue1;7;2026-11-08;2026-11-08;Korhogo;ASEC Mimosas;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CostaDAvorio_Ligue1;7;2026-11-08;2026-11-08;SO Armee;Adiake;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CostaDAvorio_Ligue1;7;2026-11-08;2026-11-08;Stade d'Abidjan;Bouake;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+CostaDAvorio_Ligue1;7;2026-11-08;2026-11-08;Stella Adjame;San Pedro;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Netherlands_EersteDivisie;17;2026-11-08;2026-11-08;Vitesse;De Graafschap;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Poland_Division2;17;2026-11-08;2026-11-08;Zawisza;Tychy;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Portugal_LigaPortugal;15;2026-11-08;2026-11-08;Estoril;Maritimo;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Spain_LaLiga2;14;2026-11-08;2026-11-08;Andorra;Maiorca;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv
+Spain_LaLiga2;14;2026-11-08;2026-11-08;Las Palmas;Eldense;BASSA;POSTPONED;SI;data\storico\ranking\vg1\storico_ranking_vg1.csv

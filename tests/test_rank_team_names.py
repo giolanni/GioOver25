@@ -3,6 +3,7 @@ from types import SimpleNamespace
 
 from gioover25.rank_matches_v2 import (
     build_output_row,
+    calculate_team_ppg_before_match,
     find_team_source_league,
     read_matches_to_rank,
 )
@@ -71,3 +72,47 @@ def test_machine_safe_team_ids_are_used_for_identity():
     assert normalize_team_name(southern, "PPS") == normalize_team_name(
         southern, "Pakkalan Palloseura"
     )
+
+
+def test_avshar_ararat_inherits_araks_history_before_match_date():
+    league_id = "Armenia_FirstLeague"
+    histories = {
+        league_id: [
+            *[
+                SimpleNamespace(
+                    date=f"2026-09-{day:02d}",
+                    home="Araks Ararat",
+                    away=f"Opponent {day}",
+                    home_goals=1,
+                    away_goals=0,
+                )
+                for day in range(1, 10)
+            ],
+            SimpleNamespace(
+                date="2026-11-02",
+                home="Avshar Ararat",
+                away="Urartu 2",
+                home_goals=4,
+                away_goals=1,
+            ),
+            SimpleNamespace(
+                date="2026-11-09",
+                home="Bentonit",
+                away="Avshar Ararat",
+                home_goals=0,
+                away_goals=0,
+            ),
+        ]
+    }
+
+    played, points, ppg = calculate_team_ppg_before_match(
+        team="Avshar Ararat",
+        source_league_id=league_id,
+        histories=histories,
+        match_date=date(2026, 11, 9),
+    )
+
+    assert normalize_team_name(league_id, "Avshar Ararat") == normalize_team_name(
+        league_id, "Araks Ararat"
+    )
+    assert (played, points, ppg) == (10, 30, 3.0)
