@@ -1,13 +1,13 @@
 @echo off
 setlocal
 chcp 65001 >nul
-set "PROJECT=C:\Users\GioAsus\repos\GioOver25"
+set "PROJECT=%~dp0"
 
 if not exist "%PROJECT%\gioover25_gui.py" (
     echo ERRORE: GUI non trovata in:
     echo %PROJECT%
     echo.
-    echo Modifica la variabile PROJECT nel file .bat con il percorso corretto.
+    echo Avvia questo file dalla cartella del repository completa.
     pause
     exit /b 1
 )
