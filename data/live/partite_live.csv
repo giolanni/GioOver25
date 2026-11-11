@@ -1,44 +1,54 @@
 ﻿MatchDate;LeagueId;Home;Away;MatchId;Minute;HG;AG;Status;LastUpdate
-2026-11-10;Algeria_Ligue2;Djijel;CR Beni Thour;zeR1vbel;;2;0;LIVE;2026-11-10T15:13:49.009550+00:00
-2026-11-10;Algeria_Ligue2;MO Bejaia;Nezla;n1a9VJ7U;;1;1;LIVE;2026-11-10T15:13:49.016135+00:00
-2026-11-10;Algeria_Ligue2;Paradou;Skikda;CnRrZi2U;;0;0;LIVE;2026-11-10T15:13:49.022884+00:00
-2026-11-10;Algeria_Ligue2;Tlemcen;Arba;UcSiizUj;;0;0;LIVE;2026-11-10T15:13:49.029351+00:00
-2026-11-10;Aruba_DivisiondiHonor;River Plate;Deportivo Nacional;pj6OkH5t;;4;3;FINAL;2026-11-10T15:13:49.073433+00:00
-2026-11-10;Bolivia_DivisionProfesional;Aurora;Universitario de Vinto;vqx3dkIU;;1;1;FINAL;2026-11-10T15:13:49.080042+00:00
-2026-11-10;CongoDr_Ligue1;Mazembe;Don Bosco;6yu5uwwK;;;;SCHEDULED;2026-11-10T15:13:49.208843+00:00
-2026-11-10;Denmark_ALigaWomen;Midtjylland D;Odense Q D;EwjlW8W0;;;;SCHEDULED;2026-11-10T15:13:49.222153+00:00
-2026-11-10;Giamaica_PremierLeague;Arnett Gardens;Waterhouse;QNAxYLsn;;1;0;FINAL;2026-11-10T15:13:49.299288+00:00
-2026-11-10;England_NPLPremierDivision;Bury;Cleethorpes;KWW1tbXA;;;;SCHEDULED;2026-11-10T15:13:49.342477+00:00
-2026-11-10;England_NPLPremierDivision;Curzon Ashton;Ilkeston;KGhN5E0M;;;;SCHEDULED;2026-11-10T15:13:49.348739+00:00
-2026-11-10;England_NPLPremierDivision;Quorn;Stockton;WAj2IipS;;;;SCHEDULED;2026-11-10T15:13:49.355036+00:00
-2026-11-10;England_NPLPremierDivision;Redcar Athletic;Bamber Bridge;StxYCV7k;;;;SCHEDULED;2026-11-10T15:13:49.361285+00:00
-2026-11-10;England_NPLPremierDivision;Warrington Rylands;Guiseley;ITDkiFoT;;;;SCHEDULED;2026-11-10T15:13:49.367609+00:00
-2026-11-10;England_NPLPremierDivision;Workington;Alfreton;0pXRYCU8;;;;SCHEDULED;2026-11-10T15:13:49.373877+00:00
-2026-11-10;England_SouthernLeaguePremierCentral;Anstey Nomads;Kettering;hdJ8jQAO;;;;SCHEDULED;2026-11-10T15:13:49.380106+00:00
-2026-11-10;England_SouthernLeaguePremierCentral;Bury Town;Bishop's Stortford;88gIATet;;;;SCHEDULED;2026-11-10T15:13:49.386655+00:00
-2026-11-10;England_SouthernLeaguePremierCentral;Leamington;Bromsgrove;tz7P87Qh;;;;SCHEDULED;2026-11-10T15:13:49.392904+00:00
-2026-11-10;England_SouthernLeaguePremierCentral;Leiston;Real Bedford;MD8u5PPH;;;;SCHEDULED;2026-11-10T15:13:49.399168+00:00
-2026-11-10;England_SouthernLeaguePremierCentral;Rushall;Halesowen;SCzDnH9j;;;;SCHEDULED;2026-11-10T15:13:49.405421+00:00
-2026-11-10;England_SouthernLeaguePremierCentral;Stamford;Needham Market;hjSbAK1c;;;;POSTPONED;2026-11-10T15:13:49.411667+00:00
-2026-11-10;England_SouthernLeaguePremierCentral;Stourbridge;Alvechurch;Q3Q68bW9;;;;SCHEDULED;2026-11-10T15:13:49.418039+00:00
-2026-11-10;England_SouthernLeaguePremierCentral;Stratford;Banbury;YTTE6x1M;;;;SCHEDULED;2026-11-10T15:13:49.424285+00:00
-2026-11-10;England_SouthernLeaguePremierCentral;Worcester;Racing Club Warwick;4CKp1GOq;;;;SCHEDULED;2026-11-10T15:13:49.430615+00:00
-2026-11-10;England_SouthernLeaguePremierSouth;Wimborne;Poole;EaZ2IVYq;;;;SCHEDULED;2026-11-10T15:13:49.436872+00:00
-2026-11-10;England_SouthernLeaguePremierSouth;Bath;Taunton;nDXAG93d;;;;SCHEDULED;2026-11-10T15:13:49.443094+00:00
-2026-11-10;England_SouthernLeaguePremierSouth;Chertsey;Chichester;nDihG09D;;;;SCHEDULED;2026-11-10T15:13:49.449389+00:00
-2026-11-10;England_SouthernLeaguePremierSouth;Evesham;Yate Town;EJPdvDe3;;;;SCHEDULED;2026-11-10T15:13:49.455631+00:00
-2026-11-10;England_SouthernLeaguePremierSouth;Gloucester;Malvern Town;MqT4xiQF;;;;SCHEDULED;2026-11-10T15:13:49.462340+00:00
-2026-11-10;England_SouthernLeaguePremierSouth;Sholing;Chippenham;v7vvv41K;;;;SCHEDULED;2026-11-10T15:13:49.468662+00:00
-2026-11-10;England_SouthernLeaguePremierSouth;Uxbridge;Hanwell Town;AkV9YsPs;;;;SCHEDULED;2026-11-10T15:13:49.474898+00:00
-2026-11-10;England_IsthmianLeaguePremierDivision;Chatham;Leatherhead;jBRexCEa;;;;SCHEDULED;2026-11-10T15:13:49.481199+00:00
-2026-11-10;England_IsthmianLeaguePremierDivision;Cray Wanderers;Three Bridges;rai5oezG;;;;SCHEDULED;2026-11-10T15:13:49.487433+00:00
-2026-11-10;England_IsthmianLeaguePremierDivision;Eastbourne Boro;Dulwich Hamlet;xx1tDV4U;;;;SCHEDULED;2026-11-10T15:13:49.494055+00:00
-2026-11-10;England_IsthmianLeaguePremierDivision;Enfield Town;Lewes;Y3Kjw7Hq;;;;SCHEDULED;2026-11-10T15:13:49.500335+00:00
-2026-11-10;England_IsthmianLeaguePremierDivision;Whitehawk;Welling;OzbWkp1k;;;;SCHEDULED;2026-11-10T15:13:49.506547+00:00
-2026-11-10;England_ProfessionalDevelopmentLeague;Hull U21;Fleetwood U21;pdya9guq;;3;0;FINAL;2026-11-10T15:13:49.635951+00:00
-2026-11-10;England_ProfessionalDevelopmentLeague;Colchester U21;Charlton U21;lCSA5gfE;;0;4;LIVE;2026-11-10T15:13:49.642217+00:00
-2026-11-10;Mexico_PrimeraPremier;Chapulineros;Cordobes FC;Qk3VDYBN;;1;1;FINAL;2026-11-10T15:13:49.655841+00:00
-2026-11-10;Mongolia_PremierLeague;Central Stallions;Hunters;Ct4v49h2;;3;2;FINAL;2026-11-10T15:13:49.718116+00:00
-2026-11-10;Mongolia_PremierLeague;Deren;FC Ulaanbaatar;vmdQRCp9;;4;1;FINAL;2026-11-10T15:13:49.724328+00:00
-2026-11-10;Romania_Liga2;Metalul Buzau;Steaua Bucuresti;A5ubydY5;;;;SCHEDULED;2026-11-10T15:13:49.738085+00:00
-2026-11-10;Uruguay_SegundaDivision;Huracan FC;River Plate;SzD8m63F;;;;SCHEDULED;2026-11-10T15:13:49.794029+00:00
+2026-11-09;AntiguaBarbuda_ABFAPremierLeague;All Saints Utd.;Old Road;ShbTJVv3;;;;SCHEDULED;2026-11-09T13:12:11.525188+00:00
+2026-11-09;SaudiArabia_Division2;Najran;Al Najoom;4b1k9VIq;;;;SCHEDULED;2026-11-09T13:12:11.534425+00:00
+2026-11-09;Armenia_FirstLeague;Bentonit;Avshar Ararat;U9dtTXLa;;;;SCHEDULED;2026-11-09T13:12:11.543006+00:00
+2026-11-09;Armenia_FirstLeague;Mika;Shirak 2;Yoa1Gfxf;;;;SCHEDULED;2026-11-09T13:12:11.552860+00:00
+2026-11-09;Aruba_DivisiondiHonor;Sporting;Bubali;fRQEVDKO;;2;0;FINAL;2026-11-09T13:12:11.561824+00:00
+2026-11-09;Bolivia_DivisionProfesional;Blooming;Oriente Petrolero;WIYfbBmI;;0;1;FINAL;2026-11-09T13:12:11.571364+00:00
+2026-11-09;Bulgaria_VtoraLiga;Chernomorets 1919;Yantra Gabrovo;G8Lk2guC;;0;3;LIVE;2026-11-09T13:12:11.722812+00:00
+2026-11-09;Bulgaria_VtoraLiga;Etar;Montana;YR0NGhf5;;;;SCHEDULED;2026-11-09T13:12:11.739953+00:00
+2026-11-09;Bulgaria_VtoraLiga;Fratria;Svoge;Ec47Kzet;;;;SCHEDULED;2026-11-09T13:12:11.748518+00:00
+2026-11-09;Denmark_1stDivision;Hvidovre IF;Aarhus Fremad;WQzz6bT6;;;;SCHEDULED;2026-11-09T13:12:11.839697+00:00
+2026-11-09;Georgia_CrystalbetErovnuliLiga;Iberia 1999;Gagra;8GMyP3E6;;;;SCHEDULED;2026-11-09T13:12:11.946797+00:00
+2026-11-09;Ghana_DivisionOneLeague;Northern City;Steadfast;jZFazYas;;;;SCHEDULED;2026-11-09T13:12:11.965850+00:00
+2026-11-09;England_SouthernLeaguePremierCentral;Redditch;Peterborough Sports;pWF0hntC;;;;SCHEDULED;2026-11-09T13:12:12.054623+00:00
+2026-11-09;England_ProfessionalDevelopmentLeague;Coventry U21;QPR U21;E9ERR1eA;;0;0;LIVE;2026-11-09T13:12:12.082606+00:00
+2026-11-09;Iran_AzadeganLeague;Kara Gostar;Naft Gachsaran;xYrlTF8r;;1;1;LIVE;2026-11-09T13:12:12.159698+00:00
+2026-11-09;Iran_AzadeganLeague;Saipa;Havadar SC;pbndRgwe;;0;0;LIVE;2026-11-09T13:12:12.168391+00:00
+2026-11-09;Iran_AzadeganLeague;Novin Ahvaz;Ario Eslamshahr;AJnkmy0E;;;;SCHEDULED;2026-11-09T13:12:12.177110+00:00
+2026-11-09;Iran_AzadeganLeague;Pars Janoobi Jam;Naft Bandar Abbas;IBp4PX77;;;;SCHEDULED;2026-11-09T13:12:12.185839+00:00
+2026-11-09;Israele_LeumitLeague;H. Kfar Saba;Maccabi Bnei Raina;StvQwshL;;;;SCHEDULED;2026-11-09T13:12:12.194350+00:00
+2026-11-09;Israele_LeumitLeague;Ironi Modiin;H. Akko;Wjr3Wbpe;;;;SCHEDULED;2026-11-09T13:12:12.203008+00:00
+2026-11-09;Israele_LeumitLeague;MS Kafr Qasim;Hapoel Afula;OQveYKFr;;;;SCHEDULED;2026-11-09T13:12:12.211653+00:00
+2026-11-09;Italy_SerieC_GironeB;Pineto;Vis Pesaro;M94wER7t;;;;SCHEDULED;2026-11-09T13:12:12.220497+00:00
+2026-11-09;Italy_SerieC_GironeC;Altamura;Cavese;WdH8ONtT;;;;SCHEDULED;2026-11-09T13:12:12.229140+00:00
+2026-11-09;Italy_SerieC_GironeC;Foggia;Barletta;zDdtwNeM;;;;SCHEDULED;2026-11-09T13:12:12.237923+00:00
+2026-11-09;Italy_SerieC_GironeC;Picerno;Bari;WGm5grt3;;;;SCHEDULED;2026-11-09T13:12:12.246519+00:00
+2026-11-09;Kosovo_LigaePare;Ferizaj;Suhareka;Gbhi1LjJ;;;;SCHEDULED;2026-11-09T13:12:12.311600+00:00
+2026-11-09;Mexico_LigaMX_Apertura;Queretaro;Puebla;ru1bd8kJ;;0;2;FINAL;2026-11-09T13:12:12.348979+00:00
+2026-11-09;Mexico_LigaMX_Apertura;Leon;Guadalajara;AogpKBsQ;;1;1;FINAL;2026-11-09T13:12:12.357661+00:00
+2026-11-09;Mexico_LigaExpansionMX_Apertura;Piratas;Cancun;d82JumQN;;1;1;FINAL;2026-11-09T13:12:12.367119+00:00
+2026-11-09;Mongolia_PremierLeague;Khaan Khuns-Erchim;Khovd Western;rq51Bi0S;;0;3;FINAL;2026-11-09T13:12:12.375916+00:00
+2026-11-09;Mongolia_PremierLeague;Ulaangom City;Khovd;vFjX5VNk;;6;3;FINAL;2026-11-09T13:12:12.384734+00:00
+2026-11-09;Nigeria_NPFL;Ikorodu City;Inter Lagos;IPTOh2vq;;;;SCHEDULED;2026-11-09T13:12:12.393375+00:00
+2026-11-09;Norway_Eliteserien;Kristiansund;Vålerenga;l2WUIcv3;;;;SCHEDULED;2026-11-09T13:12:12.402665+00:00
+2026-11-09;Peru_Liga1_Clausura;Deportivo Garcilaso;Comerciantes Unidos;jJFpbONP;;0;0;FINAL;2026-11-09T13:12:12.420473+00:00
+2026-11-09;Peru_Liga1_Clausura;U. de Deportes;Moquegua;p8oAxjek;;2;2;FINAL;2026-11-09T13:12:12.428833+00:00
+2026-11-09;Portugal_LigaPortugal2;Torreense;Leiria;bg0mAPYO;;;;SCHEDULED;2026-11-09T13:12:12.456482+00:00
+2026-11-09;Romania_Superliga;Botosani;Otelul;GASULjFl;;;;SCHEDULED;2026-11-09T13:12:12.465006+00:00
+2026-11-09;Romania_Liga2;Politehnica Timisoara;CSM Resita;2uxjwI3g;;0;0;LIVE;2026-11-09T13:12:12.473919+00:00
+2026-11-09;Romania_Liga2;CS Din. Bucuresti;Ramnicu Valcea;hn0QMdJC;;;;SCHEDULED;2026-11-09T13:12:12.482484+00:00
+2026-11-09;Russia_FNL;Veles Moscow;Kamaz;t8pgUCqC;;;;SCHEDULED;2026-11-09T13:12:12.491081+00:00
+2026-11-09;Serbia_PrvaLiga;Napredak;Bor 1919;C0IJ9g3F;;;;SCHEDULED;2026-11-09T13:12:12.509206+00:00
+2026-11-09;Serbia_PrvaLiga;Javor;TSC;2D550kQ1;;;;SCHEDULED;2026-11-09T13:12:12.517849+00:00
+2026-11-09;Slovakia_2Liga;L. Mikulas;MFK Bytca;KOUGw9TH;;;;SCHEDULED;2026-11-09T13:12:12.535967+00:00
+2026-11-09;Spain_LaLiga2;Las Palmas;Eldense;GEWsQBr9;;;;SCHEDULED;2026-11-09T13:12:12.544766+00:00
+2026-11-09;Spain_LaLiga2;Sabadell;Real Sociedad B;04gF73Ss;;;;SCHEDULED;2026-11-09T13:12:12.553240+00:00
+2026-11-09;Ukraine_PershaLiga;Viktoria;Ahrobiznes Volochysk;Sl60bAQi;;2;0;FINAL;2026-11-09T13:12:12.584918+00:00
+2026-11-09;USA_USLLeagueOne;Charlotte Independ.;Forward Madison;xAvUnjsK;;2;1;FINAL;2026-11-09T13:12:12.632520+00:00
+2026-11-09;Uzbekistan_ProLiga;Gazalkent;Respublika FA;OtwVQDpe;;0;3;FINAL;2026-11-09T13:12:12.641318+00:00
+2026-11-09;Uzbekistan_ProLiga;Jayxun;Olimpik-Mobiuz;bDYOne7E;;;;SCHEDULED;2026-11-09T13:12:12.649888+00:00
+2026-11-09;Uzbekistan_ProLiga;Metallurg Bekabad;Aral;MwKIyVbD;;;;SCHEDULED;2026-11-09T13:12:12.658651+00:00
+2026-11-09;Uzbekistan_ProLiga;Shortan Guzor;BuxDu;W6twPiF7;;3;0;FINAL;2026-11-09T13:12:12.676052+00:00
+2026-11-09;Uzbekistan_ProLiga;Yaypan;Lochin;lQLAwiU0;;1;0;FINAL;2026-11-09T13:12:12.684699+00:00
+2026-11-09;Giamaica_PremierLeague;Chapelton;Racing United;2Bnuynae;;;;SCHEDULED;2026-11-09T13:12:12.712706+00:00

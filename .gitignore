@@ -22,3 +22,5 @@ data/debug/backfill_*.csv
 data/debug/bookmaker_leagues_*.csv
 data/debug/bookmaker_http_cache/
 data/debug/flashscore_tournament_from_*/
+/data/analysis/gm1_engine_matrix_long.csv
+/data/analysis/gm1_disagreements_pairs.csv
