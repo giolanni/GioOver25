@@ -34,11 +34,7 @@ python getmatches.py --yesterday
 python getmatches.py --date 2026-10-03
 
 # Test senza scrivere il CSV
-python getmatches.py --dry-run
-python getmatches.py --today --dry-run
-python getmatches.py --tomorrow --dry-run
-python getmatches.py --yesterday --dry-run
-python getmatches.py --date 2026-10-03 --dry-run
+tutti i precedenti con --dry-run
 
 
 # =========================
@@ -52,11 +48,7 @@ python getresults.py --tomorrow
 python getresults.py --date 2026-09-28
 
 # Test senza scrivere il CSV
-python getresults.py --dry-run
-python getresults.py --today --dry-run
-python getresults.py --yesterday --dry-run
-python getresults.py --tomorrow --dry-run
-python getresults.py --date 2026-09-28 --dry-run
+tutti i precedenti con --dry-run
 
 Import risultati
 python -m gioover25.append_results data/input_risultati/risultati.csv
