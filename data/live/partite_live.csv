@@ -1,21 +1,21 @@
 ﻿MatchDate;LeagueId;Home;Away;MatchId;Minute;HG;AG;Status;LastUpdate
-2026-11-11;Belgium_NationalDivision1ACFF;Onhaye;Habay La Neuve;QPJNkNwg;;1;0;FINAL;2026-11-11T16:54:21.150996+00:00
-2026-11-11;Bosnia_PrvaLiga_RS;Sutjeska Foca;Leotar;IPXxPKGc;;0;2;FINAL;2026-11-11T16:54:21.201714+00:00
-2026-11-11;Bulgaria_ThirdLeagueSouthWest;Oborishte;Septemvri Sofia 2;4Kfbb4on;;;;SCHEDULED;2026-11-11T16:54:21.331040+00:00
-2026-11-11;Camerun_EliteOne;Colombe;Victoria United;8KwL5VCl;;;;SCHEDULED;2026-11-11T16:54:21.340339+00:00
-2026-11-11;CongoDr_Ligue1;Blessing;Saint-Luc;xI6eaXTh;;0;1;FINAL;2026-11-11T16:54:21.410808+00:00
-2026-11-11;CongoDr_Ligue1;New Jack;MK Etancheite;4bag3L1l;;0;1;FINAL;2026-11-11T16:54:21.421323+00:00
-2026-11-11;CongoDr_Ligue1;Dauphins Noirs;Novakin;lE3Un0H7;;;;SCHEDULED;2026-11-11T16:54:21.430627+00:00
-2026-11-11;CongoDr_Ligue1;Lubumbashi Sport;Malole;Ui3m1gat;;1;2;FINAL;2026-11-11T16:54:21.439994+00:00
-2026-11-11;CongoDr_Ligue1;Manika;Butras;tEFWrCqC;;2;1;FINAL;2026-11-11T16:54:21.450040+00:00
-2026-11-11;CongoDr_Ligue1;AS Vita Club;Aigles du Congo;fX1EjrIr;;;;SCHEDULED;2026-11-11T16:54:21.458977+00:00
-2026-11-11;England_NPLPremierDivision;Avro;Whitby;t6i79d1c;;;;SCHEDULED;2026-11-11T16:54:22.188527+00:00
-2026-11-11;Latvia_Virsliga;Tukums 2000;Valmiera;fw7Z24cl;;1;0;FINAL;2026-11-11T16:54:22.299443+00:00
-2026-11-11;Lithuania_ILyga;Babrungas;FK Minija;KK2tfrY7;;0;0;LIVE;2026-11-11T16:54:22.309439+00:00
-2026-11-11;Slovenia_3SNLEast;Sampion Celje;Smartno;84B1RnKH;;;;SCHEDULED;2026-11-11T16:54:22.518865+00:00
-2026-11-11;Turkmenistan_YokaryLiga;Merw;Ahal;n74HSsW6;;;;SCHEDULED;2026-11-11T16:54:22.880022+00:00
-2026-11-11;Ukraine_PershaLiga;FC Chernihiv;Inhulets;vuKJUPm4;;;;SCHEDULED;2026-11-11T16:54:22.889658+00:00
-2026-11-11;Uganda_BigLeague;Iganga United;Calvary;W6E70Fop;;1;0;FINAL;2026-11-11T16:54:22.909095+00:00
-2026-11-11;Uruguay_SegundaDivision;La Luz;Fenix;YZvtVcml;;;;SCHEDULED;2026-11-11T16:54:22.918240+00:00
-2026-11-11;Uruguay_SegundaDivision;Tacuarembo;Miramar;6mwlTyI0;;;;SCHEDULED;2026-11-11T16:54:22.926927+00:00
-2026-11-11;Venezuela_LigaFUTVE2;Zamora 2;Lara;QHPTzt7l;;;;SCHEDULED;2026-11-11T16:54:22.947644+00:00
+2026-11-11;Belgium_NationalDivision1ACFF;Onhaye;Habay La Neuve;QPJNkNwg;;1;0;FINAL;2026-11-11T18:19:10.750165+00:00
+2026-11-11;Bosnia_PrvaLiga_RS;Sutjeska Foca;Leotar;IPXxPKGc;;0;2;FINAL;2026-11-11T18:19:10.795957+00:00
+2026-11-11;Bulgaria_ThirdLeagueSouthWest;Oborishte;Septemvri Sofia 2;4Kfbb4on;;2;0;FINAL;2026-11-11T18:19:10.911339+00:00
+2026-11-11;Camerun_EliteOne;Colombe;Victoria United;8KwL5VCl;;1;1;LIVE;2026-11-11T18:19:10.919411+00:00
+2026-11-11;CongoDr_Ligue1;Blessing;Saint-Luc;xI6eaXTh;;0;1;FINAL;2026-11-11T18:19:10.981039+00:00
+2026-11-11;CongoDr_Ligue1;New Jack;MK Etancheite;4bag3L1l;;0;1;FINAL;2026-11-11T18:19:10.989298+00:00
+2026-11-11;CongoDr_Ligue1;Dauphins Noirs;Novakin;lE3Un0H7;;;;SCHEDULED;2026-11-11T18:19:10.997666+00:00
+2026-11-11;CongoDr_Ligue1;Lubumbashi Sport;Malole;Ui3m1gat;;1;2;FINAL;2026-11-11T18:19:11.005881+00:00
+2026-11-11;CongoDr_Ligue1;Manika;Butras;tEFWrCqC;;2;1;FINAL;2026-11-11T18:19:11.014100+00:00
+2026-11-11;CongoDr_Ligue1;AS Vita Club;Aigles du Congo;fX1EjrIr;;;;SCHEDULED;2026-11-11T18:19:11.022553+00:00
+2026-11-11;England_NPLPremierDivision;Avro;Whitby;t6i79d1c;;;;SCHEDULED;2026-11-11T18:19:11.668225+00:00
+2026-11-11;Latvia_Virsliga;Tukums 2000;Valmiera;fw7Z24cl;;1;0;FINAL;2026-11-11T18:19:11.767766+00:00
+2026-11-11;Lithuania_ILyga;Babrungas;FK Minija;KK2tfrY7;;0;0;LIVE;2026-11-11T18:19:11.776789+00:00
+2026-11-11;Slovenia_3SNLEast;Sampion Celje;Smartno;84B1RnKH;;1;1;LIVE;2026-11-11T18:19:11.963353+00:00
+2026-11-11;Turkmenistan_YokaryLiga;Merw;Ahal;n74HSsW6;;;;SCHEDULED;2026-11-11T18:19:12.293846+00:00
+2026-11-11;Ukraine_PershaLiga;FC Chernihiv;Inhulets;vuKJUPm4;;;;SCHEDULED;2026-11-11T18:19:12.301978+00:00
+2026-11-11;Uganda_BigLeague;Iganga United;Calvary;W6E70Fop;;1;0;FINAL;2026-11-11T18:19:12.319171+00:00
+2026-11-11;Uruguay_SegundaDivision;La Luz;Fenix;YZvtVcml;;;;SCHEDULED;2026-11-11T18:19:12.327337+00:00
+2026-11-11;Uruguay_SegundaDivision;Tacuarembo;Miramar;6mwlTyI0;;;;SCHEDULED;2026-11-11T18:19:12.335377+00:00
+2026-11-11;Venezuela_LigaFUTVE2;Zamora 2;Lara;QHPTzt7l;;;;SCHEDULED;2026-11-11T18:19:12.353352+00:00
