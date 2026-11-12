@@ -26,7 +26,7 @@ SCORE = re.compile(r"^(\d+)-(\d+)$")
 def _live_team_key(name):
     """Match reserve-team suffix II and 2 without altering stored team names."""
     canonical = canonical_team(name).strip()
-    canonical = re.sub(r"(?i)(?<=\\s)II$", "2", canonical)
+    canonical = re.sub(r"(?i)(?<=\s)II$", "2", canonical)
     return norm(canonical)
 
 
