@@ -9,6 +9,7 @@ from datetime import date, timedelta, datetime
 from pathlib import Path
 from tkinter import ttk, messagebox, simpledialog
 from gioover25.live_monitor import snapshot_index, evaluate, FINAL
+from gioover25 import missing_results as missing_audit
 from tools.prepare_input import norm, canonical_team
 from datetime import timezone
 
@@ -16,6 +17,7 @@ ROOT = Path(__file__).resolve().parent
 INPUT = ROOT / "data/input_partite/partite.csv"
 HISTORY = ROOT / "data/storico/ranking"
 OUTPUT = ROOT / "data/output_ranking"
+GROUP_REGISTRY = ROOT / 'docs/league_group_registry.csv'
 BANDS = ROOT / "data/analysis/score_bands/score_band_best.csv"
 NAVY, BLUE, BG, WHITE = "#122c4a", "#1769d2", "#eef3fa", "#ffffff"
 
@@ -62,6 +64,7 @@ class Dashboard(tk.Tk):
         self.status = tk.StringVar(value="Pronto")
         self.view = "rankings"
         self.live_poll_busy = False
+        self.alert_rows = []
         self.build()
         self.refresh()
 
@@ -71,7 +74,7 @@ class Dashboard(tk.Tk):
         sidebar.pack_propagate(False)
         tk.Label(sidebar, text="⚽ GioOver2.5", bg=NAVY, fg=WHITE,
                  font=("Segoe UI", 19, "bold")).pack(pady=(25, 30))
-        for label, action in [("Home", self.refresh), ("Ranking giornalieri", self.show_rankings),
+        for label, action in [("Home", self.refresh), ("Avvisi e anomalie", self.show_alerts), ("Ranking giornalieri", self.show_rankings),
                               ("Analisi fasce Score", self.show_bands), ("Monitor LIVE", self.open_live), ("Aggiorna repository", self.update_repo),
                               ("Genera ranking", self.run_ranking), ("Aggiorna fasce", self.run_bands)]:
             tk.Button(sidebar, text=label, command=action, bg=NAVY, fg=WHITE,
@@ -136,6 +139,58 @@ class Dashboard(tk.Tk):
         tk.Label(frame, text=note, bg=WHITE, fg="#57677b", font=("Segoe UI", 9),
                  wraplength=220, justify="left").pack(anchor="w", padx=12, pady=(2, 10))
 
+    def collect_alerts(self):
+        """Read-only: identify overdue unresolved fixtures and seasonal maps."""
+        alerts = []
+        if HISTORY.exists():
+            matches = []
+            for path in missing_audit.find_csv_files(HISTORY, "storico_ranking*.csv"):
+                matches.extend(missing_audit.read_missing_from_file(path))
+            matches = missing_audit.filter_matches(
+                missing_audit.deduplicate(matches), band=None, exclude_australia=False)
+            results = missing_audit.load_results_index(ROOT / "data/storico/risultati")
+            matches = missing_audit.annotate_postponed(
+                missing_audit.exclude_matches_already_in_results(matches, results), results)
+            for m in matches:
+                state = (m.historical_status or "").upper()
+                if m.postponed == "SI":
+                    category = "POSTPONED"
+                elif "SCHEDULED" in state or "NOT_FOUND" in state or not state:
+                    category = "SCHEDULED"
+                else:
+                    category = "SENZA ESITO"
+                alerts.append((m.match_date, m.league_id, m.home + " – " + m.away,
+                               category, (date.today() - date.fromisoformat(m.match_date)).days))
+        for r in csv_rows(GROUP_REGISTRY):
+            season = (r.get("Season") or "").strip()
+            if not season:
+                continue
+            # For split-year seasons, renewal is due when the next season begins.
+            start_year = int(season[:4]) if season[:4].isdigit() else None
+            if start_year is None:
+                continue
+            renewal_year = start_year + 1
+            # A warning without an official start date is deliberately conservative.
+            if date.today().year >= renewal_year and r.get("Structure", "").upper() in ("GROUPS", "CONFERENCES"):
+                alerts.append(("", r.get("LeagueId", ""), season,
+                               "MAPPA DA RINNOVARE", 0))
+            elif not r.get("MappingFile", "").strip() and r.get("Structure", "").upper() == "GROUPS":
+                alerts.append(("", r.get("LeagueId", ""), season,
+                               "MAPPA MANCANTE", 0))
+        return sorted(alerts, key=lambda x: (x[0] == "", x[0], x[1]))
+
+    def show_alerts(self):
+        self.view = "alerts"
+        self.table["displaycolumns"] = self.columns[:6]
+        for col, label in zip(self.columns, ("Data", "Campionato", "Partita / stagione", "Tipo", "Giorni", "Azione")):
+            self.table.heading(col, text=label)
+        self.table.delete(*self.table.get_children())
+        for day, league, match, kind, age in self.alert_rows:
+            self.table.insert("", "end", values=(day, league, match, kind,
+                              str(age) if day else "", "Verificare"),
+                              tags=("ko",) if kind == "SCHEDULED" else ("pending",))
+        self.status.set(f"Avvisi: {len(self.alert_rows)} | controllo di sola lettura; nessun risultato modificato")
+
     def refresh(self):
         for child in self.summary.winfo_children():
             child.destroy()
@@ -156,6 +211,17 @@ class Dashboard(tk.Tk):
                 else:
                     unresolved += 1
         self.card("Esiti di ieri", f"{resolved} risolti", f"{unresolved} righe non risolte negli storici engine")
+        try:
+            self.alert_rows = self.collect_alerts()
+            missing = sum(1 for r in self.alert_rows if r[3] == "SCHEDULED")
+            postponed = sum(1 for r in self.alert_rows if r[3] == "POSTPONED")
+            maps = sum(1 for r in self.alert_rows if r[3].startswith("MAPPA"))
+            self.card("Avvisi", f"{missing} da recuperare",
+                      f"{postponed} rinviate | {maps} mappe (clicca Avvisi e anomalie)")
+        except (OSError, ValueError, KeyError) as exc:
+            self.alert_rows = []
+            self.card("Avvisi", "Errore controllo", str(exc)[:100])
+            self.write_log("Controllo avvisi: " + str(exc))
         self.card("Ranking / engine", str(len(engines)) + " storici",
                   "Controllo generazione disponibile nella tabella")
         self.card("Fasce Score", "Disponibili" if BANDS.exists() else "Da generare",
@@ -166,6 +232,8 @@ class Dashboard(tk.Tk):
         self.status.set("Controlli locali completati. La presenza dei dati non certifica la completezza del download.")
         if self.view == "live":
             self.show_live()
+        elif self.view == "alerts":
+            self.show_alerts()
         else:
             self.show_rankings()
         self.check_git()
