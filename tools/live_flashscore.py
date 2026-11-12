@@ -98,19 +98,23 @@ def collect(output=OUTPUT, day=None):
     candidates = {}
     ambiguous = set()
     skipped = 0
+    diagnostics = []
     for match in raw:
         lid = resolve_match(registry, match.country, match.league,
                             match.home, match.away)
         if not lid:
             skipped += 1
+            diagnostics.append((match, 'LEAGUE_UNRESOLVED', ''))
             continue
         k = key(lid, day, match.home, match.away)
         fixture = fixtures.get(k)
         if fixture is None:
+            diagnostics.append((match, 'FIXTURE_NOT_MATCHED', lid))
             continue
         status, hg, ag = classify(match)
         if status == "UNKNOWN":
             skipped += 1
+            diagnostics.append((match, "STATE_UNKNOWN", lid))
             continue
         row = dict(zip(("LeagueId", "MatchDate", "Home", "Away"), fixture))
         row.update({"MatchId": match.match_id, "Minute": "",
@@ -122,6 +126,20 @@ def collect(output=OUTPUT, day=None):
             candidates[k] = row
     for k in ambiguous:
         candidates.pop(k, None)
+    # Always persist rejected provider fixtures so name/league/status mismatches
+    # can be diagnosed without guessing or changing prediction histories.
+    debug_path = ROOT / "data" / "debug" / f"live_unmatched_{day}.csv"
+    debug_path.parent.mkdir(parents=True, exist_ok=True)
+    with debug_path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.writer(handle, delimiter=";")
+        writer.writerow(("MatchDate", "Country", "League", "Home", "Away",
+                         "Score", "StateCode", "MatchId", "ResolvedLeagueId", "Reason"))
+        for match, reason, resolved in diagnostics:
+            writer.writerow((match.match_date, match.country, match.league,
+                             match.home, match.away, match.score, match.state_code,
+                             match.match_id, resolved, reason))
+    print(f"[LIVE] Diagnostica escluse: {len(diagnostics)} -> {debug_path}")
+
     if not candidates:
         print(f"[LIVE] Nessuna corrispondenza verificata per {day}; CSV precedente conservato.")
         return 0
