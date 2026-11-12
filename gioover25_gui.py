@@ -9,6 +9,7 @@ from datetime import date, timedelta, datetime
 from pathlib import Path
 from tkinter import ttk, messagebox, simpledialog
 from gioover25.live_monitor import snapshot_index, evaluate, FINAL
+from tools.live_flashscore import key as live_fixture_key
 from gioover25 import missing_results as missing_audit
 from tools.prepare_input import norm, canonical_team
 from datetime import timezone
@@ -323,13 +324,12 @@ class Dashboard(tk.Tk):
         finals = {"OK": 0, "KO": 0}
         market = "BTTS" if engine.lower().startswith("vg") else "Over25"
         normalized_live = {
-            (lid, day, norm(canonical_team(home)), norm(canonical_team(away))): item
+            live_fixture_key(lid, day, home, away): item
             for (lid, day, home, away), item in live.items()
         }
         for r in rows:
-            key = (r.get("LeagueId", "").strip().casefold(), today,
-                   norm(canonical_team(r.get("Home", ""))),
-                   norm(canonical_team(r.get("Away", ""))))
+            key = live_fixture_key(r.get("LeagueId", "").strip(), today,
+                                   r.get("Home", ""), r.get("Away", ""))
             item = normalized_live.get(key)
             outcome, minute, score = "UNKNOWN", "-", "-"
             if item:
