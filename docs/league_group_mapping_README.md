@@ -8,11 +8,12 @@ Registro principale: `docs/league_group_registry.csv`. Una riga per lega e stagi
 - `SECONDARY_SOURCE`: attendere ulteriore conferma prima dell'uso automatico.
 - `CONFLICTING_COUNTS`: numero di squadre discordante fra fonti; richiede controllo manuale.
 - `REVIEW_REQUIRED`: struttura non verificata per la stagione.
+- `GROUP_ASSIGNMENTS_INCOMPLETE`: struttura confermata ma elenco delle squadre incompleto.
 
 ## CSV di mapping
 Le colonne `Team;Group;SourceNameStatus;SourceURL` riportano il nome pubblicato e il girone. **Non sono ancora un mapping eseguibile per il codice**, perché il nome del provider in `data/storico/risultati` e `data/storico/classifiche_calcolate` potrebbe essere diverso. Non usare corrispondenze approssimative automaticamente: confrontare gli elenchi con i nomi effettivi e creare alias espliciti verificati.
 
-Per il 2026-27 sono state trascritte le assegnazioni pubblicate per Tunisia Ligue 2 e Saudi Arabia Division 2. Algeria, Congo, Libia, Argentina e Ghana necessitano ancora di assegnazioni verificabili/normalizzazione; **non inventare** le squadre mancanti.
+Per il 2026-27 sono state trascritte le assegnazioni pubblicate per Tunisia Ligue 2 e Saudi Arabia Division 2. **Attenzione Arabia Saudita:** il comunicato indica 16 squadre per girone, ma il testo disponibile elenca solo 15 nomi per il gruppo B; il mapping è incompleto e non deve essere usato finché la sedicesima squadra non sarà verificata. Algeria, Congo, Libia, Argentina e Ghana necessitano ancora di assegnazioni verificabili/normalizzazione; **non inventare** le squadre mancanti.
 
 ## Procedura di rinnovo
 1. Verificare formato e partecipanti da fonte ufficiale per la nuova stagione.
