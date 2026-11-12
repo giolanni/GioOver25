@@ -5,7 +5,7 @@ Season;LeagueId;Structure;Groups;ExpectedTeams;GroupSizes;Verification;MappingFi
 2026-27;England_Championship;SINGLE;1;24;24;KNOWN_FORMAT;;;Nessuna anomalia dimensionale
 2026-27;England_LeagueOne;SINGLE;1;24;24;KNOWN_FORMAT;;;Nessuna anomalia dimensionale
 2026-27;England_LeagueTwo;SINGLE;1;24;24;KNOWN_FORMAT;;;Nessuna anomalia dimensionale
-2026-27;Ghana_DivisionOneLeague;GROUPS;UNKNOWN;48;;REVIEW_REQUIRED;;;Verificare numero gironi e composizione corrente
+2026-27;Ghana_DivisionOneLeague;GROUPS;4;48;16|16|8|8;USER_STANDINGS_MAPPED;docs/Ghana_DivisionOneLeague_2026-27_team_mapping.csv;;Gruppi ufficiali 2 e 3 da 16 squadre; 1A e 1B da 8; LeagueId di gruppo non ancora attivi
 2026-27;Libia_PremierLeague;GROUPS;2;28;14|14;CONFIRMED;;https://libyaobserver.ly/sports/libyan-football-federation-approves-premier-league-format-new-season;Assegnazioni squadra da acquisire
 2026-27;SaudiArabia_Division2;GROUPS;2;32;16|16;GROUP_ASSIGNMENTS_INCOMPLETE;docs/SaudiArabia_Division2_2026-27_team_mapping.csv;https://saff.com.sa/news.php?id=4215;Fonte federale: 16 per girone ma elenco testuale del gruppo B include solo 15 nomi; verificare sedicesima squadra
 2026-27;Tunisia_Ligue2;GROUPS;2;28;14|14;CONFIRMED;docs/Tunisia_Ligue2_2026-27_team_mapping.csv;https://www.kawarji.com/actu-101500-ligue-2-composition-des-groupes-pour-la-saison-2026-2027.html;Gironi pubblicati dalla federazione
