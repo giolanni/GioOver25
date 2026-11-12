@@ -65,6 +65,7 @@ class Dashboard(tk.Tk):
         self.view = "rankings"
         self.live_poll_busy = False
         self.alert_rows = []
+        self.refresh_generation = 0
         self.build()
         self.refresh()
 
@@ -192,51 +193,66 @@ class Dashboard(tk.Tk):
         self.status.set(f"Avvisi: {len(self.alert_rows)} | controllo di sola lettura; nessun risultato modificato")
 
     def refresh(self):
-        for child in self.summary.winfo_children():
-            child.destroy()
-        today = date.today().isoformat()
-        yesterday = (date.today() - timedelta(days=1)).isoformat()
-        fixtures = csv_rows(INPUT)
-        today_rows = [r for r in fixtures if r.get("MatchDate", "").strip() == today]
-        self.card("Partite di oggi", f"{len(today_rows)} presenti" if today_rows else "Da verificare",
-                  "Input odierno presente" if today_rows else "Nessuna partita con MatchDate odierna")
-        unresolved, resolved = 0, 0
-        engines = sorted(p.parent.name for p in HISTORY.glob("*/storico_ranking_*.csv"))
-        for path in HISTORY.glob("*/storico_ranking_*.csv"):
-            for r in csv_rows(path):
-                if r.get("MatchDate", "").strip() != yesterday:
-                    continue
-                if r.get("Over25", "").upper() in ("OK", "KO") or r.get("BTTS", "").upper() in ("OK", "KO"):
-                    resolved += 1
-                else:
-                    unresolved += 1
-        self.card("Esiti di ieri", f"{resolved} risolti", f"{unresolved} righe non risolte negli storici engine")
-        try:
-            self.alert_rows = self.collect_alerts()
-            missing = sum(1 for r in self.alert_rows if r[3] == "SCHEDULED")
-            postponed = sum(1 for r in self.alert_rows if r[3] == "POSTPONED")
-            maps = sum(1 for r in self.alert_rows if r[3].startswith("MAPPA"))
-            self.card("Avvisi", f"{missing} da recuperare",
-                      f"{postponed} rinviate | {maps} mappe (clicca Avvisi e anomalie)")
-        except (OSError, ValueError, KeyError) as exc:
-            self.alert_rows = []
-            self.card("Avvisi", "Errore controllo", str(exc)[:100])
-            self.write_log("Controllo avvisi: " + str(exc))
-        self.card("Ranking / engine", str(len(engines)) + " storici",
-                  "Controllo generazione disponibile nella tabella")
-        self.card("Fasce Score", "Disponibili" if BANDS.exists() else "Da generare",
-                  f"CSV: {BANDS.name}")
-        self.engine_box["values"] = engines
-        if engines and self.engine.get() not in engines:
-            self.engine.set(engines[0])
-        self.status.set("Controlli locali completati. La presenza dei dati non certifica la completezza del download.")
-        if self.view == "live":
-            self.show_live()
-        elif self.view == "alerts":
-            self.show_alerts()
-        else:
-            self.show_rankings()
-        self.check_git()
+        """Load large CSV histories off the Tk main thread."""
+        self.refresh_generation += 1
+        generation = self.refresh_generation
+        self.status.set("Aggiornamento controlli in corso (puoi usare il menu)...")
+        def work():
+            try:
+                today = date.today().isoformat()
+                yesterday = (date.today() - timedelta(days=1)).isoformat()
+                fixtures = csv_rows(INPUT)
+                today_rows = sum(r.get("MatchDate", "").strip() == today for r in fixtures)
+                paths = list(HISTORY.glob("*/storico_ranking_*.csv"))
+                engines = sorted(p.parent.name for p in paths)
+                unresolved = resolved = 0
+                for path in paths:
+                    # Stream instead of loading each large history in memory.
+                    with path.open(encoding="utf-8-sig", newline="") as stream:
+                        for r in csv.DictReader(stream, delimiter=";"):
+                            if r.get("MatchDate", "").strip() != yesterday:
+                                continue
+                            if r.get("Over25", "").upper() in ("OK", "KO") or r.get("BTTS", "").upper() in ("OK", "KO"):
+                                resolved += 1
+                            else:
+                                unresolved += 1
+                alerts = self.collect_alerts()
+                error = None
+            except Exception as exc:
+                today_rows, resolved, unresolved, engines, alerts = 0, 0, 0, [], []
+                error = str(exc)
+            def done():
+                if generation != self.refresh_generation or not self.winfo_exists():
+                    return
+                self.alert_rows = alerts
+                for child in self.summary.winfo_children():
+                    child.destroy()
+                self.card("Partite di oggi", f"{today_rows} presenti" if today_rows else "Da verificare",
+                          "Input odierno presente" if today_rows else "Nessuna partita con MatchDate odierna")
+                self.card("Esiti di ieri", f"{resolved} risolti",
+                          f"{unresolved} righe non risolte negli storici engine")
+                missing = sum(r[3] == "SCHEDULED" for r in alerts)
+                postponed = sum(r[3] == "POSTPONED" for r in alerts)
+                maps = sum(r[3].startswith("MAPPA") for r in alerts)
+                self.card("Avvisi", f"{missing} da recuperare",
+                          f"{postponed} rinviate | {maps} mappe")
+                self.card("Ranking / engine", f"{len(engines)} storici",
+                          "Controllo generazione disponibile nella tabella")
+                self.card("Fasce Score", "Disponibili" if BANDS.exists() else "Da generare",
+                          f"CSV: {BANDS.name}")
+                self.engine_box["values"] = engines
+                if engines and self.engine.get() not in engines:
+                    self.engine.set(engines[0])
+                if error:
+                    self.write_log("Controllo dashboard: " + error)
+                # Do not reset the user's selected view when a background refresh finishes.
+                if self.view == "alerts":
+                    self.show_alerts()
+                elif self.view == "rankings":
+                    self.show_rankings()
+                self.check_git()
+            self.after(0, done)
+        threading.Thread(target=work, daemon=True).start()
 
     def check_git(self):
         def work():
