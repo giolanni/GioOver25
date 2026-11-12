@@ -28,3 +28,16 @@ FECOFA comunica 25 club (13+12), ma footrdc.com/linafoot/clubs elenca 26 club (1
 
 ## Avvertenza
 Una lega con più di 22 squadre può essere regolare; il problema reale è l'eventuale calcolo di una **classifica unica per gironi distinti**. Questo registro è documentazione e non modifica la logica del ranking.
+
+## Mappe storiche già censite
+
+Il registro comprende anche le mappe già presenti in `docs` per:
+- Indonesia Championship (West/East, 2026-27)
+- Portugal Liga 3 (Serie A/Serie B, 2026-27)
+- Finland Kolmonen (10 gruppi regionali, 2026)
+- Moldova Liga 1 (Group A/B; elenco in mappa incompleto da verificare, 2026)
+- Perù Liga 2 (Group A/B; controllare la fase playoff, 2026)
+- USA MLS Next Pro (4 divisioni, 2026)
+- USA USL League Two (20 divisioni del mapping, 2026; PlayIn/PlayOff non sono gironi)
+
+**Distinzione importante:** `data/league_registry.csv` è il catalogo operativo dei LeagueId usati dai processi e dalle classifiche. `docs/league_group_registry.csv` è il registro storico/stagionale della struttura a gironi. Non copiare automaticamente le righe dal secondo al primo. Il primo va modificato solo per LeagueId mancanti o proprietà operative dimostratamente errate, dopo aver verificato la logica di ingestione e l'assegnazione ai singoli gironi. Al momento i genitori e i sottogironi di Indonesia, Portogallo, Moldova e Perù risultano già presenti nel catalogo operativo; sono presenti anche i gruppi regionali finlandesi e le divisioni MLS Next Pro e USL League Two. Le mappe non sono di per sé prova che l'applicativo le carichi.
