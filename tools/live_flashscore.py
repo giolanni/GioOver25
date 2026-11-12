@@ -23,9 +23,16 @@ REGISTRY = ROOT / "data" / "league_registry.csv"
 SCORE = re.compile(r"^(\d+)-(\d+)$")
 
 
+def _live_team_key(name):
+    """Match reserve-team suffix II and 2 without altering stored team names."""
+    canonical = canonical_team(name).strip()
+    canonical = re.sub(r"(?i)(?<=\\s)II$", "2", canonical)
+    return norm(canonical)
+
+
 def key(league, day, home, away):
-    return (league.casefold(), day, norm(canonical_team(home)),
-            norm(canonical_team(away)))
+    return (league.casefold(), day, _live_team_key(home),
+            _live_team_key(away))
 
 
 def ranking_fixtures(day):
