@@ -1,6 +1,6 @@
 Season;LeagueId;Structure;Groups;ExpectedTeams;GroupSizes;Verification;MappingFile;SourceURL;Notes
-2026-27;Algeria_Ligue2;GROUPS;2;32;16|16;CONFIRMED;;https://en.wikipedia.org/wiki/2026%E2%80%9327_Algerian_League_2;Centro-est e Centro-ovest; assegnazioni squadra da acquisire
-2026;Argentina_PrimeraNacional;ZONES;2;36;18|18;SECONDARY_SOURCE;;https://ligasargentinas.com.ar/2026?club=colon;Verificare assegnazioni e stagione locale
+2026-27;Algeria_Ligue2;GROUPS;2;32;16|16;USER_STANDINGS_MAPPED;docs/Algeria_Ligue2_2026-27_team_mapping.csv;;Girone Est e Ovest da classifiche fornite; LeagueId di girone ancora da aggiungere al registry operativo
+2026;Argentina_PrimeraNacional;ZONES;2;36;18|18;PLAYOFF_PHASE;;;Stagione regolare con due zone da 18; ora playoff, non richiede bonifica della classifica regolare
 2026-27;CongoDr_Ligue1;GROUPS;2;25;13|12;CONFLICTING_COUNTS;;https://fecofa.cd/fr/actualites/linafoot-25-clubs-en-l1-championnat-direct-la-saison-prochaine;Fonte elenco club riporta 26; controllare discrepanza
 2026-27;England_Championship;SINGLE;1;24;24;KNOWN_FORMAT;;;Nessuna anomalia dimensionale
 2026-27;England_LeagueOne;SINGLE;1;24;24;KNOWN_FORMAT;;;Nessuna anomalia dimensionale
