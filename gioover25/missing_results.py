@@ -586,6 +586,21 @@ def main() -> int:
     print(f"  Engine coinvolti: {engines_count}")
     print(f"  Marcate POSTPONED: {postponed_count}")
 
+    # Dettaglio operativo richiesto: solo partite arretrate ancora SCHEDULED,
+    # non riconosciute come rinviate. La deduplicazione e il confronto con
+    # gli storici risultati sono gia' stati applicati sopra.
+    scheduled_pending = [
+        match for match in matches
+        if match.postponed == "NO"
+        and "SCHEDULED" in match.historical_status.upper()
+    ]
+    print("\\nPartite arretrate SCHEDULED con Postponed = NO")
+    print(f"Totale: {len(scheduled_pending)}")
+    if scheduled_pending:
+        print_table(scheduled_pending)
+    else:
+        print("Nessuna partita in questa condizione.")
+
     if args.csv_output:
         export_csv(matches, Path(args.csv_output))
     elif total:
