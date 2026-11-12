@@ -1,0 +1,13 @@
+Season;LeagueId;Structure;Groups;ExpectedTeams;GroupSizes;Verification;MappingFile;SourceURL;Notes
+2026-27;Algeria_Ligue2;GROUPS;2;32;16|16;CONFIRMED;;https://en.wikipedia.org/wiki/2026%E2%80%9327_Algerian_League_2;Centro-est e Centro-ovest; assegnazioni squadra da acquisire
+2026;Argentina_PrimeraNacional;ZONES;2;36;18|18;SECONDARY_SOURCE;;https://ligasargentinas.com.ar/2026?club=colon;Verificare assegnazioni e stagione locale
+2026-27;CongoDr_Ligue1;GROUPS;2;25;13|12;CONFLICTING_COUNTS;;https://fecofa.cd/fr/actualites/linafoot-25-clubs-en-l1-championnat-direct-la-saison-prochaine;Fonte elenco club riporta 26; controllare discrepanza
+2026-27;England_Championship;SINGLE;1;24;24;KNOWN_FORMAT;;;Nessuna anomalia dimensionale
+2026-27;England_LeagueOne;SINGLE;1;24;24;KNOWN_FORMAT;;;Nessuna anomalia dimensionale
+2026-27;England_LeagueTwo;SINGLE;1;24;24;KNOWN_FORMAT;;;Nessuna anomalia dimensionale
+2026-27;Ghana_DivisionOneLeague;GROUPS;UNKNOWN;48;;REVIEW_REQUIRED;;;Verificare numero gironi e composizione corrente
+2026-27;Libia_PremierLeague;GROUPS;2;28;14|14;CONFIRMED;;https://libyaobserver.ly/sports/libyan-football-federation-approves-premier-league-format-new-season;Assegnazioni squadra da acquisire
+2026-27;SaudiArabia_Division2;GROUPS;2;32;16|16;CONFIRMED;docs/SaudiArabia_Division2_2026-27_team_mapping.csv;https://saff.com.sa/news.php?id=4215;Gironi federali
+2026-27;Tunisia_Ligue2;GROUPS;2;28;14|14;CONFIRMED;docs/Tunisia_Ligue2_2026-27_team_mapping.csv;https://www.kawarji.com/actu-101500-ligue-2-composition-des-groupes-pour-la-saison-2026-2027.html;Gironi pubblicati dalla federazione
+2026;USA_MLS;CONFERENCES;2;30;;KNOWN_FORMAT;;;Conference Est/Ovest; non necessariamente classifiche di girone per tutti i driver
+2026;USA_USLChampionship;CONFERENCES;2;25;;REVIEW_REQUIRED;;;Verificare numero partecipanti e stagione corrente
