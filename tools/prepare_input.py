@@ -15,6 +15,33 @@ TEAM_MAPPING_FILES=[
  ROOT/"docs"/"mappa_teams_league_mslnextpro.txt",
  ROOT/"docs"/"mappa_teams_league_usl2division.txt",
 ]
+def check_mapping_renewal(match_date):
+ """Alert sulle mappe di gironi stagionali, senza modificare gli engine."""
+ day=datetime.strptime(match_date,"%Y-%m-%d").date()
+ registry=ROOT/"docs"/"league_group_registry.csv"
+ if not registry.exists():return ["[MAP ALERT] Registro stagionale mancante"]
+ with registry.open(encoding="utf-8-sig",newline="") as f:rows=list(csv.DictReader(f,delimiter=";"))
+ alerts=[]
+ for row in rows:
+  mapping=(row.get("MappingFile") or "").strip()
+  if not mapping:continue
+  league=row.get("LeagueId","");season=row.get("Season","")
+  m=re.fullmatch(r"(20\\d{2})(?:-(\\d{2}|20\\d{2}))?",season)
+  if not m:continue
+  start=int(m.group(1));end=int(m.group(2)) if m.group(2) else start
+  if end<100:end=start//100*100+end
+  active=(start<=day.year<=end and (not m.group(2) or (day.year!=start or day.month>=7) and (day.year!=end or day.month<7)))
+  if active:
+   p=ROOT/mapping
+   if not p.is_file():alerts.append(f"[MAP ALERT] {league} ({season}): file mancante {mapping}")
+   elif p not in TEAM_MAPPING_FILES:alerts.append(f"[MAP ALERT] {league} ({season}): file non caricato da prepare_input: {mapping}")
+  expired=(day.year>end or (m.group(2) and day.year==end and day.month>=7))
+  if expired:
+   target=str(day.year if day.month>=7 else day.year-1)
+   if not any(x.get("LeagueId")==league and (x.get("MappingFile") or "").strip() and x.get("Season","").startswith(target) for x in rows):
+    alerts.append(f"[MAP ALERT] {league}: mapping {season} da rinnovare per {match_date}")
+ return sorted(set(alerts))
+
 DATE_HEADER=re.compile(r"^(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?(?:\s+\S+)?$")
 DATED_TIME_RE=re.compile(r"^(\d{1,2})\.(\d{1,2})\.\s+(\d{1,2}:\d{2})$")
 ROUND_RE=re.compile(r"^Giornata\s+(\d+)$",re.I)
@@ -329,7 +356,7 @@ def main():
  if a.date:
   try:datetime.strptime(a.date,"%Y-%m-%d")
   except ValueError:p.error("--date deve essere YYYY-MM-DD")
- lines=clean_lines(a.input.read_text(encoding="utf-8-sig"));reg=load_registry(a.registry);standard,u1=parse_standard(lines,a.mode,reg,a.year,fallback);kol,u2=parse_kolmonen(lines,a.mode,reg,a.year);ms=unique(standard+kol);output=a.output or (ROOT/"data"/"input_risultati"/"risultati.csv" if a.mode=="results" else ROOT/"data"/"input_partite"/"partite.csv");write_csv(output,a.mode,ms);print(f"[OK] {len(ms)} partite scritte in {output}");unresolved=sorted(u1|u2)
+ [print(msg) for msg in check_mapping_renewal(fallback)];lines=clean_lines(a.input.read_text(encoding="utf-8-sig"));reg=load_registry(a.registry);standard,u1=parse_standard(lines,a.mode,reg,a.year,fallback);kol,u2=parse_kolmonen(lines,a.mode,reg,a.year);ms=unique(standard+kol);output=a.output or (ROOT/"data"/"input_risultati"/"risultati.csv" if a.mode=="results" else ROOT/"data"/"input_partite"/"partite.csv");write_csv(output,a.mode,ms);print(f"[OK] {len(ms)} partite scritte in {output}");unresolved=sorted(u1|u2)
  if unresolved:
   print(f"[WARN] {len(unresolved)} competizioni non riconosciute/escluse:");[print(f"  - {c}: {l}") for c,l in unresolved]
 if __name__=="__main__":main()
