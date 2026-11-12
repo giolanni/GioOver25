@@ -112,6 +112,16 @@ def check_standings(items: list[Anomaly]) -> tuple[int, int]:
 
         teams = [text(r, "Team") for r in rows]
 
+        # Una classifica con oltre 22 squadre distinte richiede una verifica:
+        # possibile contaminazione tra stagioni, gruppi o alias.
+        distinct_teams = {team.casefold().strip() for team in teams if team.strip()}
+        if len(distinct_teams) > 22:
+            add(items, "CRITICAL", "standings", "ST_TOO_MANY_TEAMS",
+                league_id=league,
+                detail=f"Classifica con {len(distinct_teams)} squadre distinte (limite 22; righe={len(rows)}).",
+                suggestion="Verificare stagioni, gironi, fasi e alias confluiti nella stessa classifica.",
+                source=str(path.relative_to(ROOT)))
+
         if is_male_competition(league):
             suspicious = [team for team in teams if female_suffix_team(team)]
             if suspicious:
@@ -384,6 +394,11 @@ def main() -> None:
     counts = Counter(x.severity for x in anomalies)
     print("[DATA QUALITY] completato")
     print(f"  mode={mode} | CRITICAL={counts['CRITICAL']} WARNING={counts['WARNING']} INFO={counts['INFO']}")
+    too_many = sorted((x for x in anomalies if x.code == "ST_TOO_MANY_TEAMS"),
+                      key=lambda x: x.league_id)
+    print(f"  classifiche con oltre 22 squadre: {len(too_many)}")
+    for anomaly in too_many:
+        print(f"    {anomaly.league_id}: {anomaly.detail}")
     print(f"  report: {REPORT_DIR / 'report_ai.md'}")
     print(f"  csv:    {REPORT_DIR / 'anomalies.csv'}")
 
