@@ -10,7 +10,7 @@ Season;LeagueId;Structure;Groups;ExpectedTeams;GroupSizes;Verification;MappingFi
 2026-27;SaudiArabia_Division2;GROUPS;2;32;16|16;GROUP_ASSIGNMENTS_INCOMPLETE;docs/SaudiArabia_Division2_2026-27_team_mapping.csv;https://saff.com.sa/news.php?id=4215;Fonte federale: 16 per girone ma elenco testuale del gruppo B include solo 15 nomi; verificare sedicesima squadra
 2026-27;Tunisia_Ligue2;GROUPS;2;28;14|14;CONFIRMED;docs/Tunisia_Ligue2_2026-27_team_mapping.csv;https://www.kawarji.com/actu-101500-ligue-2-composition-des-groupes-pour-la-saison-2026-2027.html;Gironi pubblicati dalla federazione
 2026;USA_MLS;CONFERENCES;2;30;;KNOWN_FORMAT;;;Conference Est/Ovest; non necessariamente classifiche di girone per tutti i driver
-2026;USA_USLChampionship;CONFERENCES;2;25;;REVIEW_REQUIRED;;;Verificare numero partecipanti e stagione corrente
+2026;USA_USLChampionship;CONFERENCES;2;25;13|12;USER_STANDINGS_MAPPED;docs/USA_USLChampionship_2026_team_conference_mapping.csv;;Eastern 13 Western 12; incontri interconference ammessi; mantenere LeagueId unico per partite e conference come attributo classifica
 2026-27;Indonesia_Championship;GROUPS;2;20;10|10;MAPPING_PRESENT;docs/Indonesia_Championship_2026-27_team_mapping.csv;;League registry includes Championship West and East
 2026-27;Portugal_Liga3;SERIES;2;20;10|10;MAPPING_PRESENT;docs/Portugal_Liga3_2026-27_team_mapping.csv;;Prima fase; Serie A e Serie B gia registrate nel league registry
 2026;Finland_Kolmonen;REGIONAL_GROUPS;10;;;MAPPING_PRESENT;docs/kolmonen_2026_team_league_map.csv;;10 LeagueId regionali; contiene alias e squadre canoniche, non sommare le righe come squadre
