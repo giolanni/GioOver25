@@ -30,3 +30,9 @@ data/output/classifica_over25.csv
 
 Vedi `data/input/partite_esempio.csv`.
 
+
+
+## Collegamento sul desktop (Windows)
+
+Fai doppio clic su `Crea_collegamento.bat` dopo aver scaricato il repository.
+Vedi [istruzioni](docs/collegamento_desktop.md).
