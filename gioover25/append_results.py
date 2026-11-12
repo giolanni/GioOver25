@@ -149,6 +149,9 @@ eliminato né corretto automaticamente.
 """
 
 import argparse
+import contextlib
+import io
+import re
 import csv
 import shutil
 from collections import defaultdict
@@ -1276,7 +1279,7 @@ def append_results(
     )
 
 
-def _run_post_update_tasks(full_analysis: bool = False) -> None:
+def _run_post_update_tasks(full_analysis: bool = False, verbose: bool = False) -> None:
     if full_analysis:
         commands = [
             (
@@ -1316,9 +1319,13 @@ def _run_post_update_tasks(full_analysis: bool = False) -> None:
         result = subprocess.run(
             command,
             check=False,
+            **({} if verbose else {"stdout": subprocess.PIPE, "stderr": subprocess.STDOUT,
+                                     "text": True, "encoding": "utf-8", "errors": "replace"}),
         )
 
         if result.returncode != 0:
+            if not verbose and result.stdout:
+                print(result.stdout.rstrip())
             print(
                 f"[WARN] {description} non completato "
                 f"(codice {result.returncode})."
@@ -1353,13 +1360,37 @@ def main() -> None:
         ),
     )
 
+    parser.add_argument(
+        "--verbose", action="store_true",
+        help="Mostra il dettaglio per ogni engine e tutti i log delle analisi.",
+    )
     args = parser.parse_args()
 
-    append_results(
-        args.input_file
-    )
+    if args.verbose:
+        append_results(args.input_file)
+    else:
+        captured = io.StringIO()
+        try:
+            with contextlib.redirect_stdout(captured):
+                append_results(args.input_file)
+        except Exception:
+            # Do not hide diagnostic output when the import fails.
+            print(captured.getvalue(), end="")
+            raise
+        lines = captured.getvalue().splitlines()
+        import_lines = [line for line in lines if line.startswith("[IMPORT]")]
+        ranking_lines = [line for line in lines if re.search(r"\\] ranking: aggiornati=", line)]
+        status_lines = [line for line in lines if "MatchStatus sincronizzati:" in line]
+        print("\\n".join(import_lines))
+        print(f"[RANKING] {len(ranking_lines)} engine elaborati")
+        print(f"[STATUS] {len(status_lines)} engine con MatchStatus sincronizzati")
+        # Preserve warnings, errors and unrecognized messages from downstream modules.
+        for line in lines:
+            if line.startswith("[IMPORT]") or line in ranking_lines or line in status_lines:
+                continue
+            print(line)
     _run_post_update_tasks(
-        full_analysis=args.full_analysis
+        full_analysis=args.full_analysis, verbose=args.verbose
     )
 
 if __name__ == "__main__":
