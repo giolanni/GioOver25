@@ -1,15 +1,15 @@
 ﻿MatchDate;Country;League;Home;Away;Score;StateCode;MatchId;ResolvedLeagueId;Reason
-2026-11-12;AFRICA;African Nations Cup - Qualificazione;Ghana;Somalia;-;1;EHpaKbEU;;LEAGUE_UNRESOLVED
-2026-11-12;AFRICA;African Nations Cup - Qualificazione;DR Congo;Sierra Leone;-;1;4pvShDyf;;LEAGUE_UNRESOLVED
+2026-11-12;AFRICA;African Nations Cup - Qualificazione;Ghana;Somalia;1-0;2;EHpaKbEU;;LEAGUE_UNRESOLVED
+2026-11-12;AFRICA;African Nations Cup - Qualificazione;DR Congo;Sierra Leone;1-0;2;4pvShDyf;;LEAGUE_UNRESOLVED
+2026-11-12;AFRICA;African Nations Cup - Qualificazione;Guinea Equatoriale;Zimbabwe;0-0;2;xCiZji66;;LEAGUE_UNRESOLVED
+2026-11-12;AFRICA;African Nations Cup - Qualificazione;Madagascar;Guinea-Bissau;0-0;2;dSn15avq;;LEAGUE_UNRESOLVED
 2026-11-12;AFRICA;African Nations Cup - Qualificazione;Guinea;Eritrea;-;1;YHRzZIpL;;LEAGUE_UNRESOLVED
-2026-11-12;AFRICA;African Nations Cup - Qualificazione;Guinea Equatoriale;Zimbabwe;-;1;xCiZji66;;LEAGUE_UNRESOLVED
-2026-11-12;AFRICA;African Nations Cup - Qualificazione;Madagascar;Guinea-Bissau;-;1;dSn15avq;;LEAGUE_UNRESOLVED
 2026-11-12;AFRICA;African Nations Cup - Qualificazione;Benin;Central African Rep.;-;1;A1XDL2Bc;;LEAGUE_UNRESOLVED
 2026-11-12;AFRICA;African Nations Cup - Qualificazione;Camerun;Namibia;-;1;0SZ5SAOs;;LEAGUE_UNRESOLVED
 2026-11-12;AFRICA;African Nations Cup - Qualificazione;Costa d'Avorio;Gambia;-;1;6isiMKqI;;LEAGUE_UNRESOLVED
 2026-11-12;AFRICA;African Nations Cup - Qualificazione;Senegal;Sudan;-;1;Q7OGKyqf;;LEAGUE_UNRESOLVED
-2026-11-12;AFRICA;Africa Cup of Nations U23 - Qualificazione - Qualificazione;Etiopia U23;Marocco U23;0-1;2;8SRxNBU6;;LEAGUE_UNRESOLVED
-2026-11-12;AFRICA;Africa Cup of Nations U23 - Qualificazione - Qualificazione;Angola U23;Congo U23;-;1;trZZsTRE;;LEAGUE_UNRESOLVED
+2026-11-12;AFRICA;Africa Cup of Nations U23 - Qualificazione - Qualificazione;Etiopia U23;Marocco U23;0-1;3;8SRxNBU6;;LEAGUE_UNRESOLVED
+2026-11-12;AFRICA;Africa Cup of Nations U23 - Qualificazione - Qualificazione;Angola U23;Congo U23;0-1;2;trZZsTRE;;LEAGUE_UNRESOLVED
 2026-11-12;AFRICA;Africa Cup of Nations U23 - Qualificazione - Qualificazione;Tunisia U23;Gabon U23;-;1;nurFivNa;;LEAGUE_UNRESOLVED
 2026-11-12;ARGENTINA;Torneo Federal - Play Off Promozione;Kimberley;Olimpo;-;1;lr5rgtMq;;LEAGUE_UNRESOLVED
 2026-11-12;ARGENTINA;Reserve League - Clausura;Barracas Central 2;Argentinos Jrs 2;-;1;hr4jB245;;LEAGUE_UNRESOLVED
@@ -17,7 +17,7 @@
 2026-11-12;ARGENTINA;Reserve League - Clausura;Godoy Cruz 2;Gimnasia L.P. 2;-;1;dK6BbPKa;;LEAGUE_UNRESOLVED
 2026-11-12;ARGENTINA;Reserve League - Clausura;Huracan 2;Estudiantes Rio Cuarto 2;-;1;6mTVonyf;;LEAGUE_UNRESOLVED
 2026-11-12;ARGENTINA;Reserve League - Clausura;Rosario Central 2;River Plate 2;-;1;KU5rDOZh;;LEAGUE_UNRESOLVED
-2026-11-12;ARGENTINA;Primera A Femminile - Clausura;Boca Juniors D;Social Atletico Television D;1-0;2;0bt5W71k;;LEAGUE_UNRESOLVED
+2026-11-12;ARGENTINA;Primera A Femminile - Clausura;Boca Juniors D;Social Atletico Television D;5-0;3;0bt5W71k;;LEAGUE_UNRESOLVED
 2026-11-12;ARGENTINA;Primera A Femminile - Clausura;Banfield D;River Plate D;-;1;v9RbhkO8;;LEAGUE_UNRESOLVED
 2026-11-12;ARGENTINA;Primera A Femminile - Clausura;Ferro D;Lanus D;-;1;nZU6jThL;;LEAGUE_UNRESOLVED
 2026-11-12;ARGENTINA;Primera A Femminile - Clausura;San Lorenzo D;Union Santa Fe D;-;1;YBvDUoW1;;LEAGUE_UNRESOLVED
@@ -39,11 +39,11 @@
 2026-11-12;BRASILE;Copa do Brasil Women;Flamengo D;Internacional D;1-3;3;ldxK5ffA;;LEAGUE_UNRESOLVED
 2026-11-12;COLOMBIA;Primera B - Clausura - Quadrangolare;Real Cundinamarca;Real Cartagena;2-2;3;tWOvwAY7;;LEAGUE_UNRESOLVED
 2026-11-12;COLOMBIA;Primera B - Clausura - Quadrangolare;Quindio;Tigres;1-0;3;YwRP0DQE;;LEAGUE_UNRESOLVED
-2026-11-12;CONGO DR;Ligue 1;Dauphins Noirs;Novakin;-;1;lE3Un0H7;CongoDr_Ligue1;FIXTURE_NOT_MATCHED
-2026-11-12;EGITTO;Division 2 A;Al Nasr;Pharco;1-0;2;QJA6CmOq;;LEAGUE_UNRESOLVED
-2026-11-12;EGITTO;Division 2 A;Dayrout;Proxy;0-0;2;faSJYwun;;LEAGUE_UNRESOLVED
+2026-11-12;CONGO DR;Ligue 1;Dauphins Noirs;Novakin;1-0;3;lE3Un0H7;CongoDr_Ligue1;FIXTURE_NOT_MATCHED
+2026-11-12;EGITTO;Division 2 A;Al Nasr;Pharco;1-0;3;QJA6CmOq;;LEAGUE_UNRESOLVED
+2026-11-12;EGITTO;Division 2 A;Dayrout;Proxy;0-1;3;faSJYwun;;LEAGUE_UNRESOLVED
 2026-11-12;EGITTO;Division 2 A;Delta United;Al Sekka;1-0;3;zwUZUevB;;LEAGUE_UNRESOLVED
-2026-11-12;EGITTO;Division 2 A;El Entag El Harby;Baladiyat El Mahalla;2-0;2;4zmAEzfU;;LEAGUE_UNRESOLVED
+2026-11-12;EGITTO;Division 2 A;El Entag El Harby;Baladiyat El Mahalla;2-0;3;4zmAEzfU;;LEAGUE_UNRESOLVED
 2026-11-12;EGITTO;Division 2 A;Masar;Tersana;0-0;3;SCQRWH9b;;LEAGUE_UNRESOLVED
 2026-11-12;EL SALVADOR;Primera Division - Apertura;FAS;Inter Santa Tecla;2-2;3;QgeYoOa5;;LEAGUE_UNRESOLVED
 2026-11-12;EL SALVADOR;Primera Division - Apertura;Aguila;Municipal Limeno;-;1;6XdlrtaU;;LEAGUE_UNRESOLVED
@@ -56,31 +56,32 @@
 2026-11-12;EUROPA;UEFA Nations League - League C;Albania;Finlandia;-;1;lfBbB5E4;;LEAGUE_UNRESOLVED
 2026-11-12;EUROPA;UEFA Nations League - League C;Montenegro;Lettonia;-;1;pYOIBire;;LEAGUE_UNRESOLVED
 2026-11-12;EUROPA;UEFA Nations League - League C;San Marino;Bielorussia;-;1;v7bp21yi;;LEAGUE_UNRESOLVED
-2026-11-12;EUROPA;Europei U21 - Qualificazione - Promozione;Islanda U21;Grecia U21;0-0;2;KlGlYZ3d;;LEAGUE_UNRESOLVED
-2026-11-12;EUROPA;Europei U19 - Qualificazione - Round 2 - Lega A;Germania U19;Svezia U19;0-1;2;YPNH3U8m;;LEAGUE_UNRESOLVED
-2026-11-12;EUROPA;Europei U19 - Qualificazione - Round 2 - Lega A;Portogallo U19;Lituania U19;-;1;lz1pMxPE;;LEAGUE_UNRESOLVED
-2026-11-12;EUROPA;Europei U17 - Qualificazione - Prima fase;Bulgaria U17;Serbia U17;-;1;f7H2U7J7;;LEAGUE_UNRESOLVED
-2026-11-12;EUROPA;Europei U17 - Qualificazione - Prima fase;Portogallo U17;Andorra U17;-;1;buOgWTle;;LEAGUE_UNRESOLVED
-2026-11-12;EUROPA;Elite League U20;Italia U20;Portogallo U20;-;1;2ed8o8Rb;;LEAGUE_UNRESOLVED
+2026-11-12;EUROPA;Europei U21 - Qualificazione - Promozione;Islanda U21;Grecia U21;1-1;3;KlGlYZ3d;;LEAGUE_UNRESOLVED
+2026-11-12;EUROPA;Europei U19 - Qualificazione - Round 2 - Lega A;Germania U19;Svezia U19;2-1;3;YPNH3U8m;;LEAGUE_UNRESOLVED
+2026-11-12;EUROPA;Europei U19 - Qualificazione - Round 2 - Lega A;Portogallo U19;Lituania U19;0-0;2;lz1pMxPE;;LEAGUE_UNRESOLVED
+2026-11-12;EUROPA;Europei U17 - Qualificazione - Prima fase;Bulgaria U17;Serbia U17;0-2;2;f7H2U7J7;;LEAGUE_UNRESOLVED
+2026-11-12;EUROPA;Europei U17 - Qualificazione - Prima fase;Portogallo U17;Andorra U17;2-0;2;buOgWTle;;LEAGUE_UNRESOLVED
+2026-11-12;EUROPA;Elite League U20;Italia U20;Portogallo U20;0-0;2;2ed8o8Rb;;LEAGUE_UNRESOLVED
 2026-11-12;EUROPA;Elite League U20;Inghilterra U20;Repubblica Ceca U20;-;1;Usb0mUdn;;LEAGUE_UNRESOLVED
 2026-11-12;EUROPA;UEFA Champions League Women - Prima fase;Barcellona D;Arsenal D;-;1;nyvAHotQ;;LEAGUE_UNRESOLVED
 2026-11-12;EUROPA;UEFA Champions League Women - Prima fase;Benfica D;Austria Vienna D;-;1;juRS4xX0;;LEAGUE_UNRESOLVED
 2026-11-12;EUROPA;UEFA Europa Cup Women;Torreense D;Sparta Praga D;-;1;W6GWIrR8;;LEAGUE_UNRESOLVED
 2026-11-12;FRANCIA;Coppa di Francia;Chambery;Grenoble;-;1;ITTAoLdt;;LEAGUE_UNRESOLVED
 2026-11-12;GIAMAICA;Premier League;Humble Lions;Cavalier;0-1;1;by9pWaCb;Giamaica_PremierLeague;FIXTURE_NOT_MATCHED
+2026-11-12;MESSICO;Primera Premier;Tritones Vallarta;Purepechas;0-0;2;UZR8sFfl;Mexico_PrimeraPremier;FIXTURE_NOT_MATCHED
 2026-11-12;MESSICO;Liga MX Femminile - Apertura - Play Offs;Club America D;Toluca D;3-0;3;t480mWYR;;LEAGUE_UNRESOLVED
 2026-11-12;MESSICO;Liga MX Femminile - Apertura - Play Offs;Pachuca D;Monterrey D;0-1;3;UsCwtlR1;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli Nazionali;Nuova Zelanda;India;5-0;3;SbPadwMq;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli Nazionali;Thailandia U23;Qatar U23;1-2;3;4nkVFOAt;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli Nazionali;Kazakistan U21;Bielorussia U21;0-1;3;WtgJzW0D;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli Nazionali;Singapore U23;Vietnam U23;0-1;3;CChwE2ug;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli Nazionali;Scozia U21;Ucraina U21;4-0;2;EoQMHIfo;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli Nazionali;Serbia U21;Macedonia del Nord U21;1-0;2;02xy1DdS;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli Nazionali;Egitto U20;Tanzania U20;-;1;bi7J4PxP;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli Nazionali;Scozia U21;Ucraina U21;4-0;3;EoQMHIfo;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli Nazionali;Serbia U21;Macedonia del Nord U21;2-0;3;02xy1DdS;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli Nazionali;Egitto U20;Tanzania U20;1-0;2;bi7J4PxP;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli Nazionali;Portogallo U18;Norvegia U18;-;1;WvzeUDbC;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli Nazionali;Qatar U17;Honduras U17;-;1;Cz7Ck5jt;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli Nazionali;Uzbekistan;Russia;-;1;pOaF3GmT;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli Nazionali;Francia U20;Danimarca U20;-;1;OfKzaJvA;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli Nazionali;Uzbekistan;Russia;2-0;2;pOaF3GmT;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli Nazionali;Francia U20;Danimarca U20;0-1;2;OfKzaJvA;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli Nazionali;Lituania;Suriname;-;1;l2ikXbMi;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli Nazionali;Malta;Eswatini;-;1;l04nSHPN;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli Nazionali;Colombia U19;Paraguay U20;-;1;4nFdu8R7;;LEAGUE_UNRESOLVED
@@ -88,29 +89,29 @@
 2026-11-12;MONDO;Amichevoli per Club;Gornik Zabrze (Pol);Polonia B. (Pol);6-0;3;ltI9FvFj;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli per Club;Iskra (Mne);Mladost DG (Mne);3-1;3;lb5qQk1T;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli per Club;RB Lipsia (Ger);Mlada Boleslav (Cze);4-5;3;ENoHHUkD;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;Genk (Bel);Eupen (Bel);-;1;reJgyIU0;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;Genk (Bel);Eupen (Bel);1-3;3;reJgyIU0;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli per Club;Hannover (Ger);Havelse (Ger);6-1;3;8x33U9dU;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli per Club;Bielefeld (Ger);Meppen (Ger);2-1;3;APu5TRMc;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli per Club;Karpaty Lviv (Ukr);Veres-Rivne (Ukr);1-1;3;EBkWpT9a;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli per Club;Pogon Szczecin (Pol);Warta Poznan (Pol);3-2;3;48ABmfBm;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;Furth (Ger);Wurzburger Kickers (Ger);3-0;2;8GFGmnFr;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;Ingolstadt (Ger);Innsbruck (Aut);-;1;QupT7L9C;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;Kiel (Ger);Odense (Den);-;1;nqzs5Qz3;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;Monchengladbach (Ger);St. Liege (Bel);1-0;2;UFs6yf6D;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;Sarpsborg 08 (Nor);Göteborg (Swe);2-0;2;lvycrTRF;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;SK Rapid (Aut);Dun. Streda (Svk);3-0;2;SMyc1rzS;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;St. Gallen (Sui);Wil (Sui);-;1;ARl1mJbf;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;Grasshoppers (Sui);A. Lustenau (Aut);-;1;48jHqybJ;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;Wolfsburg (Ger);Union Berlino (Ger);1-0;2;nREodWtJ;;LEAGUE_UNRESOLVED
-2026-11-12;MONDO;Amichevoli per Club;Young Boys (Sui);Lausanne Ouchy (Sui);0-0;2;bVP0imHP;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;Furth (Ger);Wurzburger Kickers (Ger);3-1;3;8GFGmnFr;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;Ingolstadt (Ger);Innsbruck (Aut);3-1;3;QupT7L9C;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;Kiel (Ger);Odense (Den);4-0;3;nqzs5Qz3;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;Monchengladbach (Ger);St. Liege (Bel);1-0;3;UFs6yf6D;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;Sarpsborg 08 (Nor);Göteborg (Swe);4-0;3;lvycrTRF;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;SK Rapid (Aut);Dun. Streda (Svk);3-0;3;SMyc1rzS;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;St. Gallen (Sui);Wil (Sui);3-3;3;ARl1mJbf;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;Grasshoppers (Sui);A. Lustenau (Aut);1-2;3;48jHqybJ;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;Wolfsburg (Ger);Union Berlino (Ger);2-0;3;nREodWtJ;;LEAGUE_UNRESOLVED
+2026-11-12;MONDO;Amichevoli per Club;Young Boys (Sui);Lausanne Ouchy (Sui);0-0;3;bVP0imHP;;LEAGUE_UNRESOLVED
 2026-11-12;MONDO;Amichevoli per Club;Hacken (Swe);Fredrikstad (Nor);-;3;ClhJYjKc;;LEAGUE_UNRESOLVED
 2026-11-12;NIGER;Super Ligue;Urana;AS ZAM;-;1;KxrZwThK;Niger_SuperLigue;FIXTURE_NOT_MATCHED
 2026-11-12;NORD E CENTRO AMERICA;CONCACAF Nations League - League B;Barbados;Guadeloupe;-;1;lGCR6B45;;LEAGUE_UNRESOLVED
 2026-11-12;NORD E CENTRO AMERICA;CONCACAF Nations League - League B;Isole Cayman;Guyana;-;1;4jPofYKa;;LEAGUE_UNRESOLVED
 2026-11-12;NORD E CENTRO AMERICA;CONCACAF Nations League - League B;Bonaire;Cuba;-;1;YsmWvdGl;;LEAGUE_UNRESOLVED
 2026-11-12;OMAN;FA Cup;Oman Club;Al Nasr;-;1;xGkDblvq;;LEAGUE_UNRESOLVED
-2026-11-12;OMAN;FA Cup;Sur Club;Dhofar;0-0;2;6Xbs4AGL;;LEAGUE_UNRESOLVED
-2026-11-12;OMAN;FA Cup;Al Samail;Bahla;1-1;2;ATmLdS8e;;LEAGUE_UNRESOLVED
+2026-11-12;OMAN;FA Cup;Sur Club;Dhofar;2-1;3;6Xbs4AGL;;LEAGUE_UNRESOLVED
+2026-11-12;OMAN;FA Cup;Al Samail;Bahla;1-2;3;ATmLdS8e;;LEAGUE_UNRESOLVED
 2026-11-12;SLOVENIA;1. SZNL Femminile;Olimpija D;ZNK Ljubljana D;-;1;MPjBcD6r;;LEAGUE_UNRESOLVED
 2026-11-12;SPAGNA;Copa del Rey;Puertollano C.F.;Albacete;-;1;A91hgO0l;;LEAGUE_UNRESOLVED
 2026-11-12;SPAGNA;Copa del Rey;Navalcarnero;Betis;-;1;QgHb9zin;;LEAGUE_UNRESOLVED

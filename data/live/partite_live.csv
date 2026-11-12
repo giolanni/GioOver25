@@ -1,18 +1,18 @@
 ﻿MatchDate;LeagueId;Home;Away;MatchId;Minute;HG;AG;Status;LastUpdate
-2026-11-12;Australia_AustralianChampionship;Wests APIA;Adelaide City;E1GEPti4;;3;0;FINAL;2026-11-12T14:37:52.667729+00:00
-2026-11-12;CongoDr_Ligue1;Tanganyika;AS New Soger;ERDvsjEO;;;;SCHEDULED;2026-11-12T14:37:53.121014+00:00
-2026-11-12;CongoDr_Ligue1;Celeste;Maniema;tl0MlMne;;;;SCHEDULED;2026-11-12T14:37:53.143122+00:00
-2026-11-12;CongoDr_Ligue1;Etoile de Kivu;FC Renaissance;lYgO8svR;;;;SCHEDULED;2026-11-12T14:37:53.189100+00:00
-2026-11-12;CongoDr_Ligue1;Ufalya Simba;Etoile du Congo;t8jGA39E;;;;SCHEDULED;2026-11-12T14:37:53.211193+00:00
-2026-11-12;Germany_Regionalliga_West;Paderborn 2;Bochum 2;YyOLUg5D;;2;1;LIVE;2026-11-12T14:37:53.938543+00:00
-2026-11-12;Giamaica_PremierLeague;Mount Pleasant;Portmore;SrFY8IjK;;;;SCHEDULED;2026-11-12T14:37:53.989465+00:00
-2026-11-12;Liberia_LFAFirstDivision;Black Man Warrior;Heaven Eleven;WpT6eiKk;;;;SCHEDULED;2026-11-12T14:37:54.016787+00:00
-2026-11-12;Liberia_LFAFirstDivision;District 17;Borough;xrWEgVl2;;;;SCHEDULED;2026-11-12T14:37:54.040583+00:00
-2026-11-12;Liberia_LFAFirstDivision;Fassell;Discoveries;UyJ0HYt9;;;;SCHEDULED;2026-11-12T14:37:54.075079+00:00
-2026-11-12;Mexico_LigaExpansionMX_Apertura;Piratas;Atletico La Paz;xYYj9mjt;;1;1;FINAL;2026-11-12T14:37:54.107188+00:00
-2026-11-12;Suriname_SML;Inter Wanica;SV Transvaal;nH1TjJBU;;0;1;FINAL;2026-11-12T14:37:55.677737+00:00
-2026-11-12;Turkmenistan_YokaryLiga;Arkadag;Altyn Asyr;Eg69U31f;;;;SCHEDULED;2026-11-12T14:37:55.718751+00:00
-2026-11-12;Uganda_PremierLeague;Kigezi HomeBoyz;Vipers;lIySxIhA;;1;3;LIVE;2026-11-12T14:37:55.752551+00:00
-2026-11-12;Uruguay_SegundaDivision;Atenas;Oriental;viYskJvK;;;;SCHEDULED;2026-11-12T14:37:55.785721+00:00
-2026-11-12;Uruguay_SegundaDivision;Cerrito;Colon;EDtdRFnD;;;;SCHEDULED;2026-11-12T14:37:55.819737+00:00
-2026-11-12;Uruguay_SegundaDivision;Plaza Colonia;Rentistas;zNJDqc2s;;;;SCHEDULED;2026-11-12T14:37:55.854293+00:00
+2026-11-12;Australia_AustralianChampionship;Wests APIA;Adelaide City;E1GEPti4;;3;0;FINAL;2026-11-12T16:12:45.310946+00:00
+2026-11-12;CongoDr_Ligue1;Tanganyika;AS New Soger;ERDvsjEO;;0;0;FINAL;2026-11-12T16:12:45.477008+00:00
+2026-11-12;CongoDr_Ligue1;Celeste;Maniema;tl0MlMne;;1;1;FINAL;2026-11-12T16:12:45.485869+00:00
+2026-11-12;CongoDr_Ligue1;Etoile de Kivu;FC Renaissance;lYgO8svR;;0;0;FINAL;2026-11-12T16:12:45.505056+00:00
+2026-11-12;CongoDr_Ligue1;Ufalya Simba;Etoile du Congo;t8jGA39E;;3;0;FINAL;2026-11-12T16:12:45.514433+00:00
+2026-11-12;Germany_Regionalliga_West;Paderborn 2;Bochum 2;YyOLUg5D;;2;1;FINAL;2026-11-12T16:12:45.791642+00:00
+2026-11-12;Giamaica_PremierLeague;Mount Pleasant;Portmore;SrFY8IjK;;;;SCHEDULED;2026-11-12T16:12:45.812106+00:00
+2026-11-12;Liberia_LFAFirstDivision;Black Man Warrior;Heaven Eleven;WpT6eiKk;;;;SCHEDULED;2026-11-12T16:12:45.820910+00:00
+2026-11-12;Liberia_LFAFirstDivision;District 17;Borough;xrWEgVl2;;;;SCHEDULED;2026-11-12T16:12:45.830099+00:00
+2026-11-12;Liberia_LFAFirstDivision;Fassell;Discoveries;UyJ0HYt9;;;;SCHEDULED;2026-11-12T16:12:45.838895+00:00
+2026-11-12;Mexico_LigaExpansionMX_Apertura;Piratas;Atletico La Paz;xYYj9mjt;;1;1;FINAL;2026-11-12T16:12:45.848931+00:00
+2026-11-12;Suriname_SML;Inter Wanica;SV Transvaal;nH1TjJBU;;0;1;FINAL;2026-11-12T16:12:46.361214+00:00
+2026-11-12;Turkmenistan_YokaryLiga;Arkadag;Altyn Asyr;Eg69U31f;;;;SCHEDULED;2026-11-12T16:12:46.369889+00:00
+2026-11-12;Uganda_PremierLeague;Kigezi HomeBoyz;Vipers;lIySxIhA;;1;4;FINAL;2026-11-12T16:12:46.378622+00:00
+2026-11-12;Uruguay_SegundaDivision;Atenas;Oriental;viYskJvK;;;;SCHEDULED;2026-11-12T16:12:46.387195+00:00
+2026-11-12;Uruguay_SegundaDivision;Cerrito;Colon;EDtdRFnD;;;;SCHEDULED;2026-11-12T16:12:46.395883+00:00
+2026-11-12;Uruguay_SegundaDivision;Plaza Colonia;Rentistas;zNJDqc2s;;;;SCHEDULED;2026-11-12T16:12:46.405114+00:00
