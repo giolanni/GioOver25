@@ -29,6 +29,7 @@ LAB_FILE = ROOT / "analysis" / "laboratory" / "data" / "01_matches.csv"
 LAB_UNMATCHED = ROOT / "analysis" / "laboratory" / "data" / "06_unmatched_matches.csv"
 REPORT_DIR = ROOT / "analysis" / "data_quality_report"
 VERIFIED_FILE = ROOT / "analysis" / "data_quality_verified.csv"
+GROUP_REGISTRY_FILE = ROOT / "docs" / "maps" / "league_group_registry.csv"
 
 SEVERITY_ORDER = {"CRITICAL": 0, "WARNING": 1, "INFO": 2}
 
@@ -98,9 +99,20 @@ def read_csv(path: Path) -> list[dict]:
         return list(csv.DictReader(handle, delimiter=delimiter))
 
 
+def league_structures() -> dict[str, dict]:
+    """Formato dichiarato nel registry; non certifica il corretto uso dei gironi."""
+    result = {}
+    for row in read_csv(GROUP_REGISTRY_FILE):
+        lid = text(row, "LeagueId")
+        if lid:
+            result[lid] = row
+    return result
+
+
 def check_standings(items: list[Anomaly]) -> tuple[int, int]:
     files = sorted(STANDINGS_DIR.glob("*.csv"))
     row_count = 0
+    structures = league_structures()
     for path in files:
         league = path.stem
         rows = read_csv(path)
@@ -112,14 +124,54 @@ def check_standings(items: list[Anomaly]) -> tuple[int, int]:
 
         teams = [text(r, "Team") for r in rows]
 
-        # Una classifica con oltre 22 squadre distinte richiede una verifica:
-        # possibile contaminazione tra stagioni, gruppi o alias.
+        # La soglia generica di 22 non e' valida per tutti i formati.
+        # I campionati a gironi possono avere un totale corretto ma una
+        # classifica aggregata inappropriata per i driver di ranking.
         distinct_teams = {team.casefold().strip() for team in teams if team.strip()}
-        if len(distinct_teams) > 22:
-            add(items, "CRITICAL", "standings", "ST_TOO_MANY_TEAMS",
+        count = len(distinct_teams)
+        structure = structures.get(league, {})
+        kind = text(structure, "Structure").upper()
+        expected_teams = integer(structure.get("ExpectedTeams"))
+        groups = integer(structure.get("Groups"))
+        group_sizes = [
+            integer(part) for part in text(structure, "GroupSizes").split("|")
+            if part.strip()
+        ]
+        group_sizes = [size for size in group_sizes if size is not None]
+        group_like = kind in {
+            "GROUPS", "SERIES", "ZONES", "REGIONAL_GROUPS",
+            "CONFERENCES", "CONFERENCES_DIVISIONS", "REGIONAL_DIVISIONS",
+        }
+        if expected_teams is not None and count != expected_teams:
+            add(items, "WARNING", "standings", "ST_FORMAT_TEAM_COUNT",
                 league_id=league,
-                detail=f"Classifica con {len(distinct_teams)} squadre distinte (limite 22; righe={len(rows)}).",
-                suggestion="Verificare stagioni, gironi, fasi e alias confluiti nella stessa classifica.",
+                detail=f"Squadre={count}, attese={expected_teams} per formato {kind}.",
+                suggestion="Verificare stagione, fasi, gironi e aggiornamento del registro formati.",
+                source=str(path.relative_to(ROOT)))
+        if kind == "SINGLE":
+            # Un campionato singolo noto da 24 squadre non e' un'anomalia.
+            if expected_teams is None and count > 22:
+                add(items, "WARNING", "standings", "ST_FORMAT_INCOMPLETE",
+                    league_id=league, detail=f"Formato SINGLE senza dimensione attesa; squadre={count}.",
+                    suggestion="Completare ExpectedTeams nel registro dei formati.",
+                    source=str(path.relative_to(ROOT)))
+        elif group_like:
+            # Non confondere dimensione aggregata legittima con uso corretto
+            # della classifica: senza evidenza di separazione non si puo'
+            # dichiarare che i driver di posizione/PPG siano per girone.
+            if groups and groups > 1 and count > max(group_sizes or [22]):
+                add(items, "WARNING", "standings", "ST_GROUP_AGGREGATED",
+                    league_id=league,
+                    detail=(f"Classifica unica con {count} squadre; formato {kind} "
+                            f"con {groups} gruppi (dimensioni: {text(structure, 'GroupSizes') or 'non dichiarate'})."),
+                    suggestion=("Verificare che ranking gap, posizione e PPG usino il girone "
+                                "corretto. Il numero totale di squadre puo' essere legittimo."),
+                    source=str(path.relative_to(ROOT)))
+        elif count > 22:
+            add(items, "WARNING", "standings", "ST_TOO_MANY_TEAMS_UNREGISTERED",
+                league_id=league,
+                detail=f"Classifica con {count} squadre; formato non censito (vecchio limite generico 22).",
+                suggestion="Censire il formato in docs/maps/league_group_registry.csv e verificare la classifica.",
                 source=str(path.relative_to(ROOT)))
 
         if is_male_competition(league):
@@ -396,9 +448,13 @@ def main() -> None:
     print(f"  mode={mode} | CRITICAL={counts['CRITICAL']} WARNING={counts['WARNING']} INFO={counts['INFO']}")
     too_many = sorted((x for x in anomalies if x.code == "ST_TOO_MANY_TEAMS"),
                       key=lambda x: x.league_id)
-    print(f"  classifiche con oltre 22 squadre: {len(too_many)}")
+    print(f"  classifiche con oltre 22 squadre (vecchia diagnostica): {len(too_many)}")
     for anomaly in too_many:
         print(f"    {anomaly.league_id}: {anomaly.detail}")
+    format_issues = sorted((x for x in anomalies if x.code in {"ST_GROUP_AGGREGATED", "ST_FORMAT_TEAM_COUNT", "ST_TOO_MANY_TEAMS_UNREGISTERED", "ST_FORMAT_INCOMPLETE"}), key=lambda x: (x.league_id, x.code))
+    print(f"  verifiche formato campionato: {len(format_issues)}")
+    for anomaly in format_issues:
+        print(f"    [{anomaly.severity}] {anomaly.league_id} ({anomaly.code}): {anomaly.detail}")
     print(f"  report: {REPORT_DIR / 'report_ai.md'}")
     print(f"  csv:    {REPORT_DIR / 'anomalies.csv'}")
 
