@@ -1,6 +1,6 @@
 # Gironi e mapping squadre — gestione annuale
 
-Registro principale: `docs/league_group_registry.csv`. Una riga per lega e stagione, con struttura, dimensioni, stato della verifica e fonte. Aggiornare ogni anno **prima** di utilizzare i mapping per calcolare classifiche o driver.
+Registro principale: `docs/maps/league_group_registry.csv`. Una riga per lega e stagione, con struttura, dimensioni, stato della verifica e fonte. Aggiornare ogni anno **prima** di utilizzare i mapping per calcolare classifiche o driver.
 
 ## Stati
 - `CONFIRMED`: struttura verificata, non necessariamente tutti gli alias del provider.
@@ -40,4 +40,4 @@ Il registro comprende anche le mappe già presenti in `docs` per:
 - USA MLS Next Pro (4 divisioni, 2026)
 - USA USL League Two (20 divisioni del mapping, 2026; PlayIn/PlayOff non sono gironi)
 
-**Distinzione importante:** `data/league_registry.csv` è il catalogo operativo dei LeagueId usati dai processi e dalle classifiche. `docs/league_group_registry.csv` è il registro storico/stagionale della struttura a gironi. Non copiare automaticamente le righe dal secondo al primo. Il primo va modificato solo per LeagueId mancanti o proprietà operative dimostratamente errate, dopo aver verificato la logica di ingestione e l'assegnazione ai singoli gironi. Al momento i genitori e i sottogironi di Indonesia, Portogallo, Moldova e Perù risultano già presenti nel catalogo operativo; sono presenti anche i gruppi regionali finlandesi e le divisioni MLS Next Pro e USL League Two. Le mappe non sono di per sé prova che l'applicativo le carichi.
+**Distinzione importante:** `data/league_registry.csv` è il catalogo operativo dei LeagueId usati dai processi e dalle classifiche. `docs/maps/league_group_registry.csv` è il registro storico/stagionale della struttura a gironi. Non copiare automaticamente le righe dal secondo al primo. Il primo va modificato solo per LeagueId mancanti o proprietà operative dimostratamente errate, dopo aver verificato la logica di ingestione e l'assegnazione ai singoli gironi. Al momento i genitori e i sottogironi di Indonesia, Portogallo, Moldova e Perù risultano già presenti nel catalogo operativo; sono presenti anche i gruppi regionali finlandesi e le divisioni MLS Next Pro e USL League Two. Le mappe non sono di per sé prova che l'applicativo le carichi.
