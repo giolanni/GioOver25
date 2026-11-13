@@ -22,8 +22,8 @@
 | **V2.1** (`v21`) | Nuovo scoring V21 | Introduce una composizione più ricca e normalizzata | `_attack_score`, `_defense_weakness_score`, `_last10_over_score`, `_venue_over_score`, `_btts_score`; L10 Over25 pesa 12 punti per squadra; non è un semplice incremento aritmetico di V20 |
 | **V2.2** (`v22`) | V21 | Rielabora il modello V21 | Mantiene driver attacco/difesa, Over25 L10, venue e BTTS, con logica di score/ragioni propria in `scoring_v22.py`. Non interpretare V22 come un bonus fisso a V21 |
 | **V2.3** (`v23`) | V22 | Introduce **penalità contestuali** | Sottrae penalità di **3–5 punti** per combinazioni sfavorevoli di metriche di gol/Over e profili delle squadre; riduce le valutazioni di incontri a rischio |
-| **V2.4** (`v24`) | V23 | Aggiunge **bonus di apertura della partita** | Bonus +5 per BTTS alto e +4 per ciascuno dei profili: ospite offensivo, entrambe concedono, partita aperta; score massimo 100 |
-| **V2.5** (`v25`) | V24 | Aggiunge penalità ulteriori | Penalità **−6, −3, −3** in base a condizioni contestuali: consultare `scoring_v25.py` per le combinazioni esatte; mantiene la famiglia di driver precedente |
+| **V2.4** (`v24`) | **V22** (ramo parallelo a V23) | Aggiunge **bonus di apertura della partita** | +5 se BTTS FULL medio ≥0,60; +4 se GF FULL ospite ≥1,30; +4 se entrambe GA FULL ≥1,20; +4 se GF ospite ≥1,20 e BTTS medio ≥0,55; score massimo 100 |
+| **V2.5** (`v25`) | **V22** (non V24) | Penalizza sfide equilibrate al vertice con difesa forte | Entrambe top 5, gap posizioni ≤2; gap punti ≤4 e PPG ≤0,30 se gare giocate simili, altrimenti gap PPG ≤0,25. Con GA FULL della migliore <1,00: −6; se <0,80: altri −3; se score base ≥85: altri −3 |
 | **V2.5.1** (`v251`) | V25 | Variante sperimentale di calibrazione | Valuta difese forti con GA recente (soglie **1,00** e **0,80**) e PPG L5 basso per entrambe (≤ **0,60**); correzione negativa massima **4 punti** |
 | **V2.6** (`v26`) | V25, **non V2.5.1** | Aggiunge la classificazione **PROX** | **Score identico a V25**; se entrambe hanno ≥10 gare e gap PPG ≤0,30, ALTA→PROX-ALTA e MEDIA→PROX-MEDIA. La novità è nella fascia, non nello score |
 | **V2.7** (`v27`) | V26 | Selettore sperimentale Over25 | Seleziona quando **HomeAttackScore ≥12,428** e **Away GA L5 ≥2,20**; non dipende dalla fascia originaria. V26 serve a preservare driver e output |
@@ -38,7 +38,7 @@
 
 **V2.0 → V2.1 → V2.2.** Evolvono i driver di contesto: forma Over25 L10, venue, BTTS, attacco e vulnerabilità difensiva. La differenza va letta nel codice dei rispettivi scorer, non soltanto nei valori numerici finali.
 
-**V2.2 → V2.3 → V2.4 → V2.5.** Si passa dalla sola valutazione del potenziale offensivo a correzioni di rischio: prima penalità, poi bonus per segnali di partita aperta, poi ulteriori penalità contestuali. Le correzioni possono cambiare la fascia anche con statistiche di partenza simili.
+**V2.2 → V2.3 / V2.4 / V2.5.** Attenzione alla genealogia: **V23, V24 e V25 ripartono tutti dallo scorer V22**, non applicano le modifiche in cascata. V23 sottrae penalità (GF FULL ospite <1,10: −4; BTTS FULL medio <0,50: −4; Over25 FULL medio <0,50: −3; ulteriori −4/−4 per score V22 ≥85 e −5 se score ≥90 con GF ospite <1,00 e BTTS <0,50). V24 applica bonus di apertura; V25 penalizza il rischio di sfide equilibrate al vertice. Sono tre esperimenti distinti sulla stessa base.
 
 **V2.5 → V2.5.1 / V2.6.** Sono **due rami diversi**: V2.5.1 modifica lo score con controlli difensivi; V2.6 conserva esattamente lo score V2.5 e segnala la prossimità di PPG con PROX.
 
