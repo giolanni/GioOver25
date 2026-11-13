@@ -16,15 +16,15 @@ Il caricatore `load_team_mappings()` (righe 57–74) riconosce CSV con `Team` e 
 
 ## Criticità concrete
 
-1. **Nuove mappe non operative**: `docs/Tunisia_Ligue2_2026-27_team_mapping.csv` e `docs/SaudiArabia_Division2_2026-27_team_mapping.csv` non sono nell'elenco statico e usano `Team;Group` anziché `Team;LeagueId`. Non basta aggiungerle all'elenco: servono LeagueId di girone effettivamente presenti nel catalogo operativo e alias squadra validati.
+1. **Nuove mappe non operative**: `docs/maps/Tunisia_Ligue2_2026-27_team_mapping.csv` e `docs/maps/SaudiArabia_Division2_2026-27_team_mapping.csv` non sono nell'elenco statico e usano `Team;Group` anziché `Team;LeagueId`. Non basta aggiungerle all'elenco: servono LeagueId di girone effettivamente presenti nel catalogo operativo e alias squadra validati.
 2. **Stagione ignorata**: il caricatore non filtra per stagione/MatchDate. Se una squadra cambia girone tra due stagioni, il set di destinazioni può diventare ambiguo. Un registro annuale documentale non è attualmente letto dal programma.
 3. **Ambiguità cross-league**: `load_team_mappings` indicizza le squadre solo con `norm(team)`, non con la competizione d'origine. `resolve_team_mapping` filtra per paese, ma non per competizione: due competizioni dello stesso paese possono condividere un nome squadra.
 4. **Mappe incomplete e alias**: `moldova_liga1_groups_2026.csv` contiene 11 righe, mentre il formato stagionale va confermato. `kolmonen_2026_team_league_map.csv` contiene nomi canonici e alias, ma il caricatore usa solo `SourceTeam` e non considera `CanonicalTeam` nella stessa riga. Alias presenti in gruppi diversi richiedono un controllo esplicito.
-5. **Nessuna validazione della stagione nel registry**: `data/league_registry.csv` contiene i LeagueId operativi; `docs/league_group_registry.csv` non è ancora collegato a `prepare_input`.
+5. **Nessuna validazione della stagione nel registry**: `data/league_registry.csv` contiene i LeagueId operativi; `docs/maps/league_group_registry.csv` non è ancora collegato a `prepare_input`.
 
 ## Raccomandazione
 
-Mantenere `data/league_registry.csv` come elenco di LeagueId operativi, con un LeagueId per girone quando il formato lo richiede. Non creare automaticamente nuove righe da `docs/league_group_registry.csv`.
+Mantenere `data/league_registry.csv` come elenco di LeagueId operativi, con un LeagueId per girone quando il formato lo richiede. Non creare automaticamente nuove righe da `docs/maps/league_group_registry.csv`.
 
 Prima di modificare il caricatore:
 1. Introdurre un formato unificato di mapping: `Season;ParentLeagueId;Team;GroupLeagueId;AliasStatus`.
