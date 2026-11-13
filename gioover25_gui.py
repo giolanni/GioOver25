@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parent
 INPUT = ROOT / "data/input_partite/partite.csv"
 HISTORY = ROOT / "data/storico/ranking"
 OUTPUT = ROOT / "data/output_ranking"
-GROUP_REGISTRY = ROOT / 'docs/league_group_registry.csv'
+GROUP_REGISTRY = ROOT / 'docs/maps/league_group_registry.csv'
 BANDS = ROOT / "data/analysis/score_bands/score_band_best.csv"
 NAVY, BLUE, BG, WHITE = "#122c4a", "#1769d2", "#eef3fa", "#ffffff"
 
