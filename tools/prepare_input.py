@@ -7,18 +7,18 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 DEFAULT_REGISTRY=ROOT/"data"/"league_registry.csv"
 TEAM_MAPPING_FILES=[
- ROOT/"docs"/"moldova_liga1_groups_2026.csv",
- ROOT/"docs"/"Portugal_Liga3_2026-27_team_mapping.csv",
- ROOT/"docs"/"Indonesia_Championship_2026-27_team_mapping.csv",
- ROOT/"docs"/"kolmonen_2026_team_league_map.csv",
- ROOT/"docs"/"mappa_teams_groups_peru_2liga..txt",
- ROOT/"docs"/"mappa_teams_league_mslnextpro.txt",
- ROOT/"docs"/"mappa_teams_league_usl2division.txt",
+ ROOT/"docs"/"maps"/"moldova_liga1_groups_2026.csv",
+ ROOT/"docs"/"maps"/"Portugal_Liga3_2026-27_team_mapping.csv",
+ ROOT/"docs"/"maps"/"Indonesia_Championship_2026-27_team_mapping.csv",
+ ROOT/"docs"/"maps"/"kolmonen_2026_team_league_map.csv",
+ ROOT/"docs"/"maps"/"mappa_teams_groups_peru_2liga..txt",
+ ROOT/"docs"/"maps"/"mappa_teams_league_mslnextpro.txt",
+ ROOT/"docs"/"maps"/"mappa_teams_league_usl2division.txt",
 ]
 def check_mapping_renewal(match_date):
  """Alert sulle mappe di gironi stagionali, senza modificare gli engine."""
  day=datetime.strptime(match_date,"%Y-%m-%d").date()
- registry=ROOT/"docs"/"league_group_registry.csv"
+ registry=ROOT/"docs"/"maps"/"league_group_registry.csv"
  if not registry.exists():return ["[MAP ALERT] Registro stagionale mancante"]
  with registry.open(encoding="utf-8-sig",newline="") as f:rows=list(csv.DictReader(f,delimiter=";"))
  alerts=[]
