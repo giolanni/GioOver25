@@ -34,7 +34,7 @@ def main():
         print(f"[INFO] {target} è una data futura: nessun risultato da acquisire.")
         return
     registry = load_registry(ROOT / "data" / "league_registry.csv")
-    d = diretta_matches(target, "results", registry)
+    d = diretta_matches(target, "results", registry, write_quarantine=not args.dry_run)
     s = sofascore_matches(target, "results")
     matches = merge_matches(d, s)
     output = ROOT / "data" / "input_risultati" / "risultati.csv"
