@@ -21,7 +21,7 @@ SERIE_D_GROUPS = {
         league_id=f"Italy_SerieD_Girone{letter}",
         group=letter,
         source_title=f"Serie D - Girone {letter}",
-        source_url=f"https://www.diretta.it/calcio/italia/serie-d-girone-{letter.lower()}/",
+        source_url=f"https://www.diretta.it/calcio/italia/serie-d-girone-{letter.lower()}/risultati/",
     )
     for letter in "ABCDEFGHI"
 }
