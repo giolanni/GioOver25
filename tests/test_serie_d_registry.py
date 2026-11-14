@@ -1,3 +1,4 @@
+from pathlib import Path
 """Sanity checks for the nine Serie D group names and registry rows."""
 from gioover25.serie_d_registry import SERIE_D_GROUPS, league_id_for_title, validate_registry
 
@@ -20,7 +21,7 @@ def test_registered():
 
 def test_fixture_and_result_resolver_uses_explicit_group():
     from tools.prepare_input import load_registry, resolve_match
-    registry = load_registry("data/league_registry.csv")
+    registry = load_registry(Path("data/league_registry.csv"))
     assert resolve_match(registry, "Italy", "Serie D - Girone A", "Squadra 1", "Squadra 2") == "Italy_SerieD_GironeA"
     assert resolve_match(registry, "Italy", "Serie D - Girone I", "Squadra 3", "Squadra 4") == "Italy_SerieD_GironeI"
     assert resolve_match(registry, "Italy", "Serie D", "Squadra 1", "Squadra 2") is None
