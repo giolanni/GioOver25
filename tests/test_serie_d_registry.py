@@ -16,3 +16,12 @@ def test_group_resolution():
 
 def test_registered():
     assert validate_registry("data/league_registry.csv") == []
+
+
+def test_fixture_and_result_resolver_uses_explicit_group():
+    from tools.prepare_input import load_registry, resolve_match
+    registry = load_registry("data/league_registry.csv")
+    assert resolve_match(registry, "Italy", "Serie D - Girone A", "Squadra 1", "Squadra 2") == "Italy_SerieD_GironeA"
+    assert resolve_match(registry, "Italy", "Serie D - Girone I", "Squadra 3", "Squadra 4") == "Italy_SerieD_GironeI"
+    assert resolve_match(registry, "Italy", "Serie D", "Squadra 1", "Squadra 2") is None
+    assert resolve_match(registry, "Italy", "Serie D - Girone X", "Squadra 1", "Squadra 2") is None
