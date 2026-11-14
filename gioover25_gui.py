@@ -967,24 +967,20 @@ class Dashboard(tk.Tk):
     def show_results_ops(self):
         self._operation_page(
             "results_ops", "Gestione risultati",
-            "Verifica per giornata: risultati presenti negli archivi e pronostici "
-            "aggiornati negli storici. Le gare rinviate sono separate. "
-            "Il controllo riguarda le partite presenti nei ranking, non l'intero calendario esterno.",
-            [("Aggiorna risultati (getresults)", self.run_getresults),
-             ("Registra risultati (append_results)", self.run_append_results),
-             ("Verifica copertura fino a ieri", self.verify_results_coverage)])
-        self.table.insert("", "end", values=self._operation_status_row(
-            "Ultimo getresults", "getresults"))
-        self.table.insert("", "end", values=self._operation_status_row(
-            "Ultimo append_results", "append_results"))
+            "Obiettivo: controllare se le giornate fino a ieri hanno risultati disponibili "
+            "e se gli engine li hanno recepiti. "
+            "I risultati mancanti richiedono verifica: non sempre sono da scaricare.",
+            [("1  Scarica risultati per data", self.run_getresults),
+             ("2  Registra risultati negli storici", self.run_append_results),
+             ("Ricontrolla giornate", self.verify_results_coverage)])
         self.table.insert("", "end", values=(
-            "Verifica", "Premi 'Verifica copertura fino a ieri'", "", ""))
+            "CONTROLLO", "Verifica delle giornate fino a ieri in corso...", "", ""))
         self.verify_results_coverage()
 
     def verify_results_coverage(self):
         if self.view != "results_ops":
             return
-        self.status.set("Verifica risultati e registrazione negli storici in corso...")
+        self.status.set("Controllo delle giornate fino a ieri...")
         def work():
             try:
                 report = results_coverage.inspect(ROOT)
@@ -997,26 +993,51 @@ class Dashboard(tk.Tk):
                 self.table.delete(*self.table.get_children())
                 if error:
                     self.table.insert("", "end", values=("ERRORE", error, "", ""))
-                    self.status.set("Errore durante la verifica della copertura")
+                    self.status.set("Verifica non riuscita")
                     return
-                total_missing = total_pending = 0
+                get = operations_audit.load().get("getresults", {})
+                app = operations_audit.load().get("append_results", {})
+                total_missing = sum(x["missing"] for x in report.values())
+                total_pending = sum(x["unregistered"] for x in report.values())
+                incomplete = sum(bool(x["missing"] or x["unregistered"]) for x in report.values())
+                complete = len(report) - incomplete
+                self.table.insert("", "end", values=(
+                    "SITUAZIONE GENERALE",
+                    f"{complete} giornate senza anomalie",
+                    f"{incomplete} giornate da verificare",
+                    "Controllo sui pronostici conosciuti, non su tutte le gare del provider"))
+                self.table.insert("", "end", values=(
+                    "RISULTATI DA VERIFICARE", f"{total_missing} gare senza risultato",
+                    f"{total_pending} gare con engine non aggiornati",
+                    "Rinvii esclusi dal conteggio dei risultati mancanti"))
+                self.table.insert("", "end", values=(
+                    "ULTIMO DOWNLOAD", get.get("day") or "Non registrato",
+                    get.get("state", "Non registrato"),
+                    (get.get("time") or "").replace("T", " ")[:19]))
+                self.table.insert("", "end", values=(
+                    "ULTIMA REGISTRAZIONE", app.get("day") or "Data input corrente",
+                    app.get("state", "Non registrata"),
+                    (app.get("time") or "").replace("T", " ")[:19]))
                 for day, info in report.items():
-                    total_missing += info["missing"]
-                    total_pending += info["unregistered"]
+                    if info["missing"]:
+                        action = "Verificare / scaricare risultati"
+                    elif info["unregistered"]:
+                        action = "Verificare registrazione negli engine"
+                    else:
+                        action = "Nessuna anomalia rilevata"
                     self.table.insert("", "end", values=(
                         day,
-                        f'Gare {info["total"]} | Esiti {info["available"]}',
-                        f'Mancanti {info["missing"]} | Rinviate {info["postponed"]}',
-                        f'Registrate {info["registered"]} | Da verificare {info["unregistered"]}'))
-                    for key, reason, engines in info["details"][:100]:
-                        self.table.insert("", "end", values=(
-                            "  PARTITA", key[0], key[2] + " - " + key[3],
-                            reason))
+                        f'{info["available"]}/{info["total"]} risultati disponibili',
+                        f'{info["registered"]} registrate | {info["unregistered"]} da verificare',
+                        action + f' | {info["postponed"]} rinviate'))
+                    if info["missing"] or info["unregistered"]:
+                        for key, reason, engines in info["details"][:30]:
+                            self.table.insert("", "end", values=(
+                                "  PARTITA", key[0], key[2] + " - " + key[3], reason))
                 self.status.set(
-                    f"Verifica fino a ieri: {len(report)} giornate | "
-                    f"{total_missing} gare senza risultato negli archivi | "
-                    f"{total_pending} gare con esito ranking da verificare. "
-                    "Non certifica la completezza del provider esterno.")
+                    f"Fino a ieri: {complete} giornate senza anomalie, "
+                    f"{incomplete} da verificare | {total_missing} gare senza risultato | "
+                    f"{total_pending} con esito engine da verificare.")
             self.after(0, done)
         threading.Thread(target=work, daemon=True).start()
 
