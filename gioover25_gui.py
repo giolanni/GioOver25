@@ -659,6 +659,7 @@ class Dashboard(tk.Tk):
         def work():
             try:
                 histories = history_stats.read_histories(HISTORY)
+                common_start = history_stats.common_start_dates(histories).get(market)
                 common_count = history_stats.common_size(histories, market)
                 result = ([(p, r) for p in history_stats.PERIODS
                            for r in history_stats.compute(histories, p)
@@ -668,7 +669,7 @@ class Dashboard(tk.Tk):
                            if r["market"] == market])
                 error = None
             except Exception as exc:
-                result, common_count, error = [], 0, str(exc)
+                result, common_count, common_start, error = [], 0, None, str(exc)
             def done():
                 if generation != self.history_generation or self.view != "history":
                     return
@@ -684,15 +685,15 @@ class Dashboard(tk.Tk):
                 if mode == "Singolo engine":
                     self.status.set(
                         f"Storico {engine} ({market}) | sei periodi; ALTA OK/KO; "
-                        "set comune calcolato separatamente per mercato.")
+                        "set comune = data iniziale condivisa per mercato.")
                 else:
                     total_ok = sum(r["ok"] for _, r in result)
                     total_ko = sum(r["ko"] for _, r in result)
                     rate = (f"{100 * total_ok / (total_ok + total_ko):.2f}%"
                             if total_ok + total_ko else "n.d.")
-                    common_note = (f" | Set comune: {common_count} partite" if period == "Set comune" else "")
+                    common_note = (f" | Dal {common_start or 'n.d.'} | {common_count} gare distinte" if period == "Set comune" else "")
                     if period == "Set comune" and common_count == 0:
-                        self.write_log(f"ATTENZIONE: set comune {market} vuoto. Nessuna partita presente in tutti gli storici del gruppo.")
+                        self.write_log(f"ATTENZIONE: nessuna gara dal periodo comune {market}; verificare le date iniziali degli storici.")
                     self.status.set(
                         f"Storico {period} | {market}{common_note} | "
                         f"ALTA aggregate: OK {total_ok}, KO {total_ko}, "
