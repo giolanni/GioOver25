@@ -38,7 +38,7 @@ def inspect(root: Path, *, until=None):
             day = (row.get("MatchDate") or "").strip()
             if not day or day >= until:
                 continue
-            league, home, away = (row.get(field) or "").strip() for field in ("LeagueId", "Home", "Away")
+            league, home, away = ((row.get(field) or "").strip() for field in ("LeagueId", "Home", "Away"))
             if not all((league, home, away)):
                 continue
             selected[_key(league, day, home, away)].append((engine, row))
@@ -82,8 +82,8 @@ def inspect(root: Path, *, until=None):
             continue
         item["available"] += 1
         pending = [engine for engine, row in predictions
-                   if (row.get("BTTS") if engine.lower().startswith("vg")
-                       else row.get("Over25") or "").strip().upper() not in ("OK", "KO")]
+                   if ((row.get("BTTS") if engine.lower().startswith("vg")
+                       else row.get("Over25")) or "").strip().upper() not in ("OK", "KO")]
         if pending:
             item["unregistered"] += 1
             item["details"].append((key, "Esito ranking da verificare: " + ", ".join(pending[:5]), len(predictions)))
