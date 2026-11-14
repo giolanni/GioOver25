@@ -914,6 +914,14 @@ class Dashboard(tk.Tk):
         self.table.insert("", "end", values=(
             "Registra risultati", "data/input_risultati/risultati.csv", "Storici e report",
             "Aggiorna gli esiti tramite append_results"))
+        missing_days = {}
+        for day, _league, _match, kind, _age in self.alert_rows:
+            if kind == "SCHEDULED" and day and day < date.today().isoformat():
+                missing_days[day] = missing_days.get(day, 0) + 1
+        for day, count in sorted(missing_days.items(), reverse=True)[:30]:
+            self.table.insert("", "end", values=(
+                "Giornata da verificare", day, f"{count} anomalie SCHEDULED",
+                "Conteggio di segnalazioni, non di partite uniche"))
 
     def run_getmatches(self):
         chosen = self._operation_date("Acquisisci partite", date.today().isoformat())
