@@ -9,7 +9,7 @@ from datetime import date, timedelta, datetime
 from pathlib import Path
 from tkinter import ttk, messagebox, simpledialog
 from gioover25.live_monitor import snapshot_index, evaluate, FINAL
-from gioover25 import history_stats, operations_audit
+from gioover25 import history_stats, operations_audit, results_coverage
 from tools.live_flashscore import key as live_fixture_key
 from gioover25 import missing_results as missing_audit
 from tools.prepare_input import norm, canonical_team
@@ -933,27 +933,58 @@ class Dashboard(tk.Tk):
     def show_results_ops(self):
         self._operation_page(
             "results_ops", "Gestione risultati",
-            "Stato delle ultime operazioni avviate dalla GUI. Le anomalie SCHEDULED "
-            "sono segnalazioni da verificare, non necessariamente risultati da scaricare.",
+            "Verifica per giornata: risultati presenti negli archivi e pronostici "
+            "aggiornati negli storici. Le gare rinviate sono separate. "
+            "Il controllo riguarda le partite presenti nei ranking, non l'intero calendario esterno.",
             [("Aggiorna risultati (getresults)", self.run_getresults),
-             ("Registra risultati (append_results)", self.run_append_results)])
-        for label, step in (("Acquisizione risultati", "getresults"),
-                            ("Registrazione risultati", "append_results")):
-            self.table.insert("", "end", values=self._operation_status_row(label, step))
-        if self._operation_pending("getresults", "append_results"):
-            self.table.insert("", "end", values=(
-                "DA FARE", "Registrare i risultati appena acquisiti", "", ""))
-        results_path = ROOT / "data/input_risultati/risultati.csv"
+             ("Registra risultati (append_results)", self.run_append_results),
+             ("Verifica copertura fino a ieri", self.verify_results_coverage)])
+        self.table.insert("", "end", values=self._operation_status_row(
+            "Ultimo getresults", "getresults"))
+        self.table.insert("", "end", values=self._operation_status_row(
+            "Ultimo append_results", "append_results"))
         self.table.insert("", "end", values=(
-            "Input attuale", str(len(csv_rows(results_path))) + " righe in risultati.csv", "", ""))
-        missing_days = {}
-        for day, _league, _match, kind, _age in self.alert_rows:
-            if kind == "SCHEDULED" and day and day < date.today().isoformat():
-                missing_days[day] = missing_days.get(day, 0) + 1
-        for day, count in sorted(missing_days.items(), reverse=True)[:30]:
-            self.table.insert("", "end", values=(
-                "Data da verificare", day, f"{count} segnalazioni SCHEDULED",
-                "Non significa che manchi il download"))
+            "Verifica", "Premi 'Verifica copertura fino a ieri'", "", ""))
+        self.verify_results_coverage()
+
+    def verify_results_coverage(self):
+        if self.view != "results_ops":
+            return
+        self.status.set("Verifica risultati e registrazione negli storici in corso...")
+        def work():
+            try:
+                report = results_coverage.inspect(ROOT)
+                error = None
+            except Exception as exc:
+                report, error = {}, str(exc)
+            def done():
+                if self.view != "results_ops":
+                    return
+                self.table.delete(*self.table.get_children())
+                if error:
+                    self.table.insert("", "end", values=("ERRORE", error, "", ""))
+                    self.status.set("Errore durante la verifica della copertura")
+                    return
+                total_missing = total_pending = 0
+                for day, info in report.items():
+                    total_missing += info["missing"]
+                    total_pending += info["unregistered"]
+                    self.table.insert("", "end", values=(
+                        day,
+                        f'Gare {info["total"]} | Esiti {info["available"]}',
+                        f'Mancanti {info["missing"]} | Rinviate {info["postponed"]}',
+                        f'Registrate {info["registered"]} | Da verificare {info["unregistered"]}'))
+                    for key, reason, engines in info["details"][:100]:
+                        self.table.insert("", "end", values=(
+                            "  PARTITA", key[0], key[2] + " - " + key[3],
+                            reason))
+                self.status.set(
+                    f"Verifica fino a ieri: {len(report)} giornate | "
+                    f"{total_missing} gare senza risultato negli archivi | "
+                    f"{total_pending} gare con esito ranking da verificare. "
+                    "Non certifica la completezza del provider esterno.")
+            self.after(0, done)
+        threading.Thread(target=work, daemon=True).start()
 
     def run_getmatches(self):
         chosen = self._operation_date("Acquisisci partite", date.today().isoformat())
