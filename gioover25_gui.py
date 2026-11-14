@@ -202,7 +202,7 @@ class Dashboard(tk.Tk):
         """Show a useful operational overview instead of a blank table."""
         self.view = "home"
         self.highlight_menu()
-        self.update_engine_visibility()
+        self.update_context_controls()
         self.history_controls.pack_forget()
         self.table["displaycolumns"] = self.columns[:6]
         for col, heading, width in zip(self.columns,
@@ -567,7 +567,8 @@ class Dashboard(tk.Tk):
         else:
             self.live_refresh_button.pack_forget()
         self.reload_button.configure(
-            text="Aggiorna avvisi" if self.view == "alerts" else "Ricarica")
+            text=("Aggiorna avvisi" if self.view == "alerts" else
+                  "Aggiorna riepilogo" if self.view == "home" else "Ricarica"))
         if not self.reload_button.winfo_manager():
             self.reload_button.pack(side="right")
 
