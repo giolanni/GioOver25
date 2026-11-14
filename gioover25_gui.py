@@ -901,41 +901,59 @@ class Dashboard(tk.Tk):
         self.table.delete(*self.table.get_children())
         self.status.set(description)
 
+    def _operation_status_row(self, label, step):
+        entry = operations_audit.load().get(step, {})
+        return (label, operations_audit.summary(step),
+                str(entry.get("count") if entry.get("count") is not None else "-"),
+                entry.get("detail", ""))
+
+    def _operation_pending(self, earlier, later):
+        data = operations_audit.load()
+        first, second = data.get(earlier, {}), data.get(later, {})
+        return (first.get("state") == "COMPLETATO" and
+                (second.get("state") != "COMPLETATO" or
+                 second.get("time", "") < first.get("time", "")))
+
     def show_matches_ops(self):
         self._operation_page(
             "matches_ops", "Gestione partite",
-            "Prima acquisisci le partite per la data scelta, poi genera i ranking. "
-            "La generazione usa il file partite.csv attualmente presente.",
+            "Stato delle ultime operazioni avviate dalla GUI. I conteggi CSV non certificano "
+            "che tutte le partite siano state acquisite.",
             [("Acquisisci partite (getmatches)", self.run_getmatches),
              ("Genera ranking (rank_matches)", self.run_ranking)])
+        for label, step in (("Acquisizione partite", "getmatches"),
+                            ("Generazione ranking", "rank_matches")):
+            self.table.insert("", "end", values=self._operation_status_row(label, step))
+        if self._operation_pending("getmatches", "rank_matches"):
+            self.table.insert("", "end", values=(
+                "DA FARE", "Generare ranking sui dati appena acquisiti", "", ""))
         self.table.insert("", "end", values=(
-            "Acquisisci partite", "Data selezionabile", "data/input_partite/partite.csv",
-            "Sovrascrive l'input se vengono trovate partite"))
-        self.table.insert("", "end", values=(
-            "Genera ranking", "data/input_partite/partite.csv", "Ranking engine",
-            "Non cancella lo storico"))
+            "Input attuale", str(len(csv_rows(INPUT))) + " righe in partite.csv", "", ""))
 
     def show_results_ops(self):
         self._operation_page(
             "results_ops", "Gestione risultati",
-            "Prima acquisisci i risultati per la data scelta, poi registrali negli storici. "
-            "ATTENZIONE: getresults sostituisce risultati.csv; se non trova risultati lo svuota.",
+            "Stato delle ultime operazioni avviate dalla GUI. Le anomalie SCHEDULED "
+            "sono segnalazioni da verificare, non necessariamente risultati da scaricare.",
             [("Aggiorna risultati (getresults)", self.run_getresults),
              ("Registra risultati (append_results)", self.run_append_results)])
+        for label, step in (("Acquisizione risultati", "getresults"),
+                            ("Registrazione risultati", "append_results")):
+            self.table.insert("", "end", values=self._operation_status_row(label, step))
+        if self._operation_pending("getresults", "append_results"):
+            self.table.insert("", "end", values=(
+                "DA FARE", "Registrare i risultati appena acquisiti", "", ""))
+        results_path = ROOT / "data/input_risultati/risultati.csv"
         self.table.insert("", "end", values=(
-            "Aggiorna risultati", "Data selezionabile", "data/input_risultati/risultati.csv",
-            "Sovrascrive il CSV, anche con zero risultati"))
-        self.table.insert("", "end", values=(
-            "Registra risultati", "data/input_risultati/risultati.csv", "Storici e report",
-            "Aggiorna gli esiti tramite append_results"))
+            "Input attuale", str(len(csv_rows(results_path))) + " righe in risultati.csv", "", ""))
         missing_days = {}
         for day, _league, _match, kind, _age in self.alert_rows:
             if kind == "SCHEDULED" and day and day < date.today().isoformat():
                 missing_days[day] = missing_days.get(day, 0) + 1
         for day, count in sorted(missing_days.items(), reverse=True)[:30]:
             self.table.insert("", "end", values=(
-                "Giornata da verificare", day, f"{count} anomalie SCHEDULED",
-                "Conteggio di segnalazioni, non di partite uniche"))
+                "Data da verificare", day, f"{count} segnalazioni SCHEDULED",
+                "Non significa che manchi il download"))
 
     def run_getmatches(self):
         chosen = self._operation_date("Acquisisci partite", date.today().isoformat())
