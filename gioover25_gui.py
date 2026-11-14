@@ -74,6 +74,7 @@ class Dashboard(tk.Tk):
         self.alert_rows = []
         self.refresh_generation = 0
         self.build()
+        self.show_home()
         self.refresh()
 
     def build(self):
@@ -187,7 +188,40 @@ class Dashboard(tk.Tk):
         self.view = "home"
         self.highlight_menu()
         self.update_engine_visibility()
+        self.show_home()
         self.refresh()
+
+    def show_home(self):
+        """Show a useful operational overview instead of a blank table."""
+        self.view = "home"
+        self.highlight_menu()
+        self.update_engine_visibility()
+        self.history_controls.pack_forget()
+        self.table["displaycolumns"] = self.columns[:6]
+        for col, heading, width in zip(self.columns,
+                ("Area", "Situazione", "Dettaglio", "Vai a", "", ""),
+                (195, 180, 425, 195, 30, 30)):
+            self.table.heading(col, text=heading)
+            self.table.column(col, width=width, anchor="w")
+        self.table.delete(*self.table.get_children())
+        today = date.today().isoformat()
+        fixtures = csv_rows(INPUT)
+        count = sum(r.get("MatchDate", "").strip() == today for r in fixtures)
+        paths = list(HISTORY.glob("*/storico_ranking_*.csv"))
+        missing = sum(r[3] == "SCHEDULED" for r in self.alert_rows)
+        postponed = sum(r[3] == "POSTPONED" for r in self.alert_rows)
+        entries = [
+            ("Partite di oggi", str(count), "Fixture presenti nell'input", "Ranking giornalieri"),
+            ("Esiti precedenti", "Statistiche OK/KO", "Sei periodi e confronti ALTA", "Storico engine"),
+            ("Avvisi", str(missing) + " da recuperare", str(postponed) + " rinviate", "Avvisi e anomalie"),
+            ("Storici engine", str(len(paths)), "Over 2.5 e BTTS separati", "Storico engine"),
+            ("Monitor LIVE", "Manuale", "Risultati e verifica dei pronostici", "Monitor LIVE"),
+            ("Fasce Score", "Disponibili" if BANDS.exists() else "Da generare",
+             "Analisi della fascia migliore", "Analisi fasce Score"),
+        ]
+        for area, state, detail, destination in entries:
+            self.table.insert("", "end", values=(area, state, detail, destination, "", ""))
+        self.status.set("Home: panoramica operativa. Seleziona una sezione dal menu laterale.")
 
     def write_log(self, text):
         self.log.configure(state="normal")
@@ -317,6 +351,8 @@ class Dashboard(tk.Tk):
                     self.show_alerts()
                 elif self.view == "rankings":
                     self.show_rankings()
+                elif self.view == "home":
+                    self.show_home()
                 self.check_git()
             self.after(0, done)
         threading.Thread(target=work, daemon=True).start()
