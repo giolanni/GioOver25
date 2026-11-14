@@ -77,8 +77,8 @@ def write_csv(path, rows, fields):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--existing", required=True, type=Path,
-                        help="CSV risultati ufficiale da confrontare (sola lettura)")
+    parser.add_argument("--existing", type=Path, default=ROOT / "data/storico/risultati",
+                        help="Cartella degli storici per lega o singolo CSV (sola lettura)")
     parser.add_argument("--proposal-dir", type=Path, default=ROOT / "data/debug/storico_serie_d")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "data/debug/verifica_serie_d")
     parser.add_argument("--write", action="store_true", help="Esporta report e sole nuove partite")
@@ -90,7 +90,13 @@ def main():
         parser.error(f"Attesi 9 CSV di proposta in {args.proposal_dir}; trovati {len(paths)}. "
                      "Eseguire prima import_storico_serie_d --write")
     proposals = [r for path in paths for r in read_csv(path)]
-    existing = read_csv(args.existing)
+    if args.existing.is_dir():
+        expected = {f"{r['LeagueId']}.csv" for r in proposals}
+        paths_existing = sorted(args.existing / name for name in expected)
+        existing = [row for path in paths_existing if path.is_file() for row in read_csv(path)]
+        print(f"[VERIFICA] Archivi per lega trovati: {sum(p.is_file() for p in paths_existing)}/{len(paths_existing)}")
+    else:
+        existing = read_csv(args.existing)
     required = {"LeagueId", "MatchDate", "Home", "Away", "HG", "AG"}
     if any(not required <= set(row) for row in proposals + existing):
         parser.error(f"Colonne richieste: {sorted(required)}")
