@@ -160,6 +160,12 @@ class Dashboard(tk.Tk):
         table_scroll.pack(side="right", fill="y")
         self.table.pack(side="left", fill="both", expand=True)
         self.table.configure(yscrollcommand=table_scroll.set)
+        self.table.bind("<Control-c>", self.copy_alert_rows)
+        self.table.bind("<Control-C>", self.copy_alert_rows)
+        self.table.bind("<Button-3>", self.alert_context_menu)
+        self.alert_menu = tk.Menu(self, tearoff=0)
+        self.alert_menu.add_command(label="Copia partita", command=self.copy_alert_match)
+        self.alert_menu.add_command(label="Copia righe selezionate", command=self.copy_alert_rows)
         tk.Label(main, textvariable=self.status, bg=BG, fg=NAVY,
                  anchor="w").pack(fill="x", padx=20)
         self.log = tk.Text(main, height=7, bg="#142b46", fg="#e7f1ff",
@@ -330,6 +336,46 @@ class Dashboard(tk.Tk):
                 alerts.append(("", r.get("LeagueId", ""), season,
                                "MAPPA MANCANTE", 0))
         return sorted(alerts, key=lambda x: (x[0] == "", x[0], x[1]))
+
+    def _selected_alert_values(self):
+        if self.view != "alerts":
+            return []
+        return [self.table.item(item, "values") for item in self.table.selection()]
+
+    def _copy_alert_text(self, value):
+        if not value:
+            return
+        self.clipboard_clear()
+        self.clipboard_append(value)
+        self.update_idletasks()
+        self.status.set("Avvisi: testo copiato negli appunti.")
+
+    def copy_alert_match(self):
+        rows = self._selected_alert_values()
+        if rows:
+            self._copy_alert_text("\n".join(str(row[2]) for row in rows))
+
+    def copy_alert_rows(self, _event=None):
+        rows = self._selected_alert_values()
+        if rows:
+            lines = ["Data\tCampionato\tPartita\tTipo\tGiorni"]
+            lines.extend("\t".join(str(value) for value in row[:5]) for row in rows)
+            self._copy_alert_text("\n".join(lines))
+        return "break" if self.view == "alerts" else None
+
+    def alert_context_menu(self, event):
+        if self.view != "alerts":
+            return
+        item = self.table.identify_row(event.y)
+        if not item:
+            return
+        if item not in self.table.selection():
+            self.table.selection_set(item)
+        self.table.focus(item)
+        try:
+            self.alert_menu.tk_popup(event.x_root, event.y_root)
+        finally:
+            self.alert_menu.grab_release()
 
     def show_alerts(self):
         self.history_controls.pack_forget()
