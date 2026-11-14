@@ -917,18 +917,52 @@ class Dashboard(tk.Tk):
     def show_matches_ops(self):
         self._operation_page(
             "matches_ops", "Gestione partite",
-            "Stato delle ultime operazioni avviate dalla GUI. I conteggi CSV non certificano "
-            "che tutte le partite siano state acquisite.",
-            [("Acquisisci partite (getmatches)", self.run_getmatches),
-             ("Genera ranking (rank_matches)", self.run_ranking)])
-        for label, step in (("Acquisizione partite", "getmatches"),
-                            ("Generazione ranking", "rank_matches")):
-            self.table.insert("", "end", values=self._operation_status_row(label, step))
-        if self._operation_pending("getmatches", "rank_matches"):
-            self.table.insert("", "end", values=(
-                "DA FARE", "Generare ranking sui dati appena acquisiti", "", ""))
+            "1. Scarica le partite.  2. Genera i pronostici. "
+            "Qui sotto trovi i dati effettivamente presenti, non soltanto il log dei pulsanti.",
+            [("1  Scarica partite", self.run_getmatches),
+             ("2  Genera pronostici", self.run_ranking)])
+        rows = csv_rows(INPUT)
+        dates = sorted({(r.get("MatchDate") or "").strip() for r in rows
+                        if (r.get("MatchDate") or "").strip()})
+        day = dates[-1] if dates else ""
+        today_rows = [r for r in rows if r.get("MatchDate", "").strip() == day]
         self.table.insert("", "end", values=(
-            "Input attuale", str(len(csv_rows(INPUT))) + " righe in partite.csv", "", ""))
+            "PARTITE DISPONIBILI", day or "Nessuna data",
+            f"{len(today_rows)} gare" if day else "0 gare",
+            f"{len(rows)} righe totali nel file di input"))
+        engines = sorted(HISTORY.glob("*/storico_ranking_*.csv"))
+        covered = []
+        for path in engines:
+            count = sum(1 for r in csv_rows(path)
+                        if (r.get("MatchDate") or "").strip() == day) if day else 0
+            if count:
+                covered.append((path.parent.name, count))
+        self.table.insert("", "end", values=(
+            "RANKING DISPONIBILI", day or "-",
+            f"{len(covered)} engine con pronostici",
+            f"{sum(n for _, n in covered)} pronostici complessivi"))
+        for engine, count in covered:
+            self.table.insert("", "end", values=(
+                "  ENGINE", engine, f"{count} pronostici", "Storico ranking presente"))
+        get = operations_audit.load().get("getmatches", {})
+        rank = operations_audit.load().get("rank_matches", {})
+        self.table.insert("", "end", values=(
+            "ULTIMA ACQUISIZIONE", get.get("day") or "Non registrata",
+            get.get("state", "Non registrata"),
+            (get.get("time") or "").replace("T", " ")[:19]))
+        self.table.insert("", "end", values=(
+            "ULTIMO RANKING", rank.get("day") or "Data input corrente",
+            rank.get("state", "Non registrato"),
+            (rank.get("time") or "").replace("T", " ")[:19]))
+        if not rows:
+            next_step = "Scarica le partite"
+        elif not covered:
+            next_step = "Genera i pronostici"
+        elif self._operation_pending("getmatches", "rank_matches"):
+            next_step = "Rigenera i pronostici dopo l'ultima acquisizione"
+        else:
+            next_step = "Pronostici presenti: controlla la data e gli engine"
+        self.table.insert("", "end", values=("PROSSIMA AZIONE", next_step, "", ""))
 
     def show_results_ops(self):
         self._operation_page(
