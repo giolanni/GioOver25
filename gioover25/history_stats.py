@@ -52,33 +52,50 @@ def in_period(day: str, period: str, today: date):
     return d <= today
 
 
+def common_start_dates(histories):
+    """First shared operating date per market (latest engine start date).
+
+    Each engine keeps its own selections. A shared fixture is NOT required.
+    """
+    starts = {}
+    for market in ("OVER25", "BTTS"):
+        first_dates = []
+        for engine, rows in histories.items():
+            if market_for(engine) != market:
+                continue
+            dates = [key[1] for key in rows if key[1] and
+                     len(key[1]) == 10 and key[1][4] == "-" and key[1][7] == "-"]
+            if dates:
+                first_dates.append(min(dates))
+        starts[market] = max(first_dates) if first_dates else None
+    return starts
+
+
 def common_size(histories, market):
-    """Count fixture identities present in every engine of the selected market."""
-    sets = [set(rows) for name, rows in histories.items()
-            if market_for(name) == market]
-    return len(set.intersection(*sets)) if sets else 0
+    """Number of unique fixtures on/after the common start (not an intersection)."""
+    start = common_start_dates(histories).get(market)
+    if not start:
+        return 0
+    return len({key for engine, rows in histories.items()
+                if market_for(engine) == market for key in rows if key[1] >= start})
 
 
 def compute(histories, period, today=None):
-    """Return one result per engine; only OK/KO outcomes count.
-
-    Set comune uses the intersection of fixture identities within each market,
-    independently for OVER25 and BTTS. All bands use the same denominator rules.
-    """
+    """Read-only ALTA OK/KO per engine; common set means a common start date."""
     today = today or date.today()
-    common = {}
-    for market in ("OVER25", "BTTS"):
-        sets = [set(rows) for name, rows in histories.items()
-                if market_for(name) == market]
-        common[market] = set.intersection(*sets) if sets else set()
+    starts = common_start_dates(histories)
     result = []
     for engine, rows in histories.items():
         market = market_for(engine)
-        eligible = common[market] if period == "Set comune" else rows.keys()
+        start = starts[market] if period == "Set comune" else None
         alta_ok = alta_ko = other_ok = other_ko = 0
-        for key in eligible:
-            row = rows.get(key)
-            if row is None or not in_period((row.get("MatchDate") or "").strip(), period, today):
+        for key, row in rows.items():
+            day = (row.get("MatchDate") or "").strip()
+            if start and day < start:
+                continue
+            if period == "Set comune" and start is None:
+                continue
+            if not in_period(day, period, today):
                 continue
             outcome = (row.get("BTTS" if market == "BTTS" else "Over25") or "").strip().upper()
             if outcome not in ("OK", "KO"):
