@@ -65,6 +65,7 @@ class Dashboard(tk.Tk):
         self.only_best = tk.BooleanVar(value=False)
         self.status = tk.StringVar(value="Pronto")
         self.view = "rankings"
+        self.menu_buttons = {}
         self.live_poll_busy = False
         self.history_generation = 0
         self.history_period = tk.StringVar(value="Ultimi 7 giorni")
@@ -81,13 +82,26 @@ class Dashboard(tk.Tk):
         sidebar.pack_propagate(False)
         tk.Label(sidebar, text="⚽ GioOver2.5", bg=NAVY, fg=WHITE,
                  font=("Segoe UI", 19, "bold")).pack(pady=(25, 30))
-        for label, action in [("Home", self.refresh), ("Avvisi e anomalie", self.show_alerts), ("Ranking giornalieri", self.show_rankings),
-                              ("Analisi fasce Score", self.show_bands), ("Storico engine", self.show_history), ("Monitor LIVE", self.open_live), ("Aggiorna repository", self.update_repo),
-                              ("Genera ranking", self.run_ranking), ("Aggiorna fasce", self.run_bands)]:
-            tk.Button(sidebar, text=label, command=action, bg=NAVY, fg=WHITE,
-                      activebackground=BLUE, activeforeground=WHITE,
-                      relief="flat", anchor="w", padx=18, pady=12,
-                      font=("Segoe UI", 11)).pack(fill="x", padx=8, pady=2)
+        menu = [
+            ("Home", "home", self.open_home),
+            ("Avvisi e anomalie", "alerts", self.show_alerts),
+            ("Ranking giornalieri", "rankings", self.show_rankings),
+            ("Analisi fasce Score", "bands", self.show_bands),
+            ("Storico engine", "history", self.show_history),
+            ("Monitor LIVE", "live", self.open_live),
+            ("Aggiorna repository", None, self.update_repo),
+            ("Genera ranking", None, self.run_ranking),
+            ("Aggiorna fasce", None, self.run_bands),
+        ]
+        for label, section, action in menu:
+            button = tk.Button(sidebar, text=label, command=action, bg=NAVY, fg=WHITE,
+                               activebackground=BLUE, activeforeground=WHITE,
+                               relief="flat", anchor="w", padx=18, pady=12,
+                               font=("Segoe UI", 11))
+            button.pack(fill="x", padx=8, pady=2)
+            if section:
+                self.menu_buttons[section] = button
+        self.highlight_menu()
         main = tk.Frame(self, bg=BG)
         main.pack(side="left", fill="both", expand=True)
         tk.Label(main, text="Centro di controllo", bg=BG, fg=NAVY,
@@ -142,6 +156,24 @@ class Dashboard(tk.Tk):
         self.log = tk.Text(main, height=7, bg="#142b46", fg="#e7f1ff",
                            font=("Consolas", 9), state="disabled")
         self.log.pack(fill="x", padx=20, pady=(6, 15))
+
+    def highlight_menu(self):
+        """Keep the selected navigation section visibly highlighted."""
+        for section, button in self.menu_buttons.items():
+            selected = section == self.view
+            button.configure(
+                bg=BLUE if selected else NAVY,
+                fg=WHITE,
+                activebackground="#0e4d9f" if selected else BLUE,
+                font=("Segoe UI", 11, "bold" if selected else "normal"),
+                relief="sunken" if selected else "flat",
+                bd=1 if selected else 0,
+            )
+
+    def open_home(self):
+        self.view = "home"
+        self.highlight_menu()
+        self.refresh()
 
     def write_log(self, text):
         self.log.configure(state="normal")
@@ -201,6 +233,7 @@ class Dashboard(tk.Tk):
     def show_alerts(self):
         self.history_controls.pack_forget()
         self.view = "alerts"
+        self.highlight_menu()
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita / stagione", "Tipo", "Giorni", "Azione")):
             self.table.heading(col, text=label)
@@ -322,6 +355,7 @@ class Dashboard(tk.Tk):
     def show_live(self):
         self.history_controls.pack_forget()
         self.view = "live"
+        self.highlight_menu()
         self.table["displaycolumns"] = self.columns
         for col, label, width in zip(self.columns,
                               ("Data", "Campionato", "Partita", "Score", "Fascia", "Minuto", "Risultato", "Esito LIVE"),
@@ -384,6 +418,7 @@ class Dashboard(tk.Tk):
     def show_rankings(self):
         self.history_controls.pack_forget()
         self.view = "rankings"
+        self.highlight_menu()
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
             self.table.heading(col, text=label)
@@ -413,6 +448,7 @@ class Dashboard(tk.Tk):
     def show_history(self):
         """Build historical statistics in a worker; never block Tk with CSV reads."""
         self.view = "history"
+        self.highlight_menu()
         if not self.history_controls.winfo_manager():
             self.history_controls.pack(fill="x", padx=20, before=self.table.master)
         self.history_generation += 1
@@ -477,6 +513,7 @@ class Dashboard(tk.Tk):
     def show_bands(self):
         self.history_controls.pack_forget()
         self.view = "bands"
+        self.highlight_menu()
         self.table["displaycolumns"] = self.columns[:6]
         for item in self.table.get_children():
             self.table.delete(item)
