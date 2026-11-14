@@ -126,6 +126,29 @@ def diretta_matches(target: date, mode: str, registry):
         f"[DIRETTA] {len(matches)} valide | {len(unmapped)} competizioni escluse | "
         f"{skipped} scartate | feed {','.join(map(str, feed_offsets))}"
     )
+    # Diagnostica dedicata Serie D: conta anche i gruppi presenti nel feed
+    # ma non risolti, senza modificare il comportamento di acquisizione.
+    from collections import Counter
+    from tools.prepare_input import resolve_match
+    serie_d = [r for r in raw if (
+        str(r.country).strip().casefold() in ("italia", "italy")
+        and "serie d" in str(r.league).casefold()
+    )]
+    if serie_d:
+        detected = Counter()
+        unknown = Counter()
+        for event in serie_d:
+            lid = resolve_match(registry, event.country, event.league, event.home, event.away)
+            (detected if lid and lid.startswith("Italy_SerieD_Girone") else unknown)[
+                lid if lid and lid.startswith("Italy_SerieD_Girone") else event.league
+            ] += 1
+        print(f"[SERIE D] feed={len(serie_d)} | mappate={sum(detected.values())} | non mappate={sum(unknown.values())}")
+        for name, count in sorted(detected.items()):
+            print(f"[SERIE D] {name}: {count}")
+        for name, count in sorted(unknown.items()):
+            print(f"[SERIE D][NON MAPPATA] {name}: {count}")
+    else:
+        print("[SERIE D] Nessuna partita identificata nel feed per la data richiesta")
     if errors:
         print(f"[DIRETTA] Warning feed parziali: {'; '.join(errors)}")
     return matches
