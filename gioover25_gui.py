@@ -95,7 +95,8 @@ class Dashboard(tk.Tk):
             ("Storico engine", "history", self.show_history),
             ("Monitor LIVE", "live", self.open_live),
             ("Aggiorna repository", None, self.update_repo),
-            ("Genera ranking", None, self.run_ranking),
+            ("Gestione partite", "matches_ops", self.show_matches_ops),
+            ("Gestione risultati", "results_ops", self.show_results_ops),
             ("Aggiorna fasce", None, self.run_bands),
         ]
         for label, section, action in menu:
@@ -139,6 +140,9 @@ class Dashboard(tk.Tk):
             combo.pack(side="left", padx=(0, 12))
             combo.bind("<<ComboboxSelected>>", lambda _: self.show_history())
         self.history_controls.pack_forget()
+        self.operations_panel = tk.Frame(main, bg=BG)
+        self.operations_panel.pack(fill="x", padx=20)
+        self.operations_panel.pack_forget()
         self.columns = ("date", "league", "match", "score", "band", "best", "live_result", "live_outcome")
         table_frame = ttk.Frame(main)
         table_frame.pack(fill="both", expand=True, padx=20, pady=8)
@@ -200,6 +204,7 @@ class Dashboard(tk.Tk):
     def open_home(self):
         self.view = "home"
         self.highlight_menu()
+        self.operations_panel.pack_forget()
         self.update_context_controls()
         self.show_home()
         self.refresh()
@@ -381,6 +386,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "alerts"
         self.highlight_menu()
+        self.operations_panel.pack_forget()
         self.update_context_controls()
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita / stagione", "Tipo", "Giorni", "Azione")):
@@ -508,6 +514,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "live"
         self.highlight_menu()
+        self.operations_panel.pack_forget()
         self.update_context_controls()
         self.table["displaycolumns"] = self.columns
         for col, label, width in zip(self.columns,
@@ -572,6 +579,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "rankings"
         self.highlight_menu()
+        self.operations_panel.pack_forget()
         self.update_context_controls()
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
@@ -612,14 +620,16 @@ class Dashboard(tk.Tk):
                 self.live_refresh_button.pack(side="right", padx=5)
         else:
             self.live_refresh_button.pack_forget()
+        if self.view in ("matches_ops", "results_ops"):
+            self.reload_button.pack_forget()
+        elif not self.reload_button.winfo_manager():
+            self.reload_button.pack(side="right")
         self.reload_button.configure(
             text=("Aggiorna avvisi" if self.view == "alerts" else
                   "Aggiorna riepilogo" if self.view == "home" else "Ricarica"))
-        if not self.reload_button.winfo_manager():
-            self.reload_button.pack(side="right")
 
     def update_engine_visibility(self):
-        visible = self.view not in ("history", "alerts", "home") or (self.view == "history" and self.history_mode.get() == "Singolo engine")
+        visible = self.view not in ("history", "alerts", "home", "matches_ops", "results_ops") or (self.view == "history" and self.history_mode.get() == "Singolo engine")
         if visible:
             # Pack the label first without referring to a hidden combobox.
             # Tk raises TclError if "before" references an unpacked widget.
@@ -635,6 +645,7 @@ class Dashboard(tk.Tk):
         """Build historical statistics in a worker; never block Tk with CSV reads."""
         self.view = "history"
         self.highlight_menu()
+        self.operations_panel.pack_forget()
         self.update_context_controls()
         if not self.history_controls.winfo_manager():
             self.history_controls.pack(fill="x", padx=20, before=self.table.master)
@@ -706,6 +717,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "bands"
         self.highlight_menu()
+        self.operations_panel.pack_forget()
         self.update_context_controls()
         self.table["displaycolumns"] = self.columns[:6]
         for item in self.table.get_children():
@@ -838,8 +850,114 @@ class Dashboard(tk.Tk):
                 commands.append(["push", "origin", branch])
         self.git_sequence(commands)
 
+    def _operation_date(self, title, default):
+        value = simpledialog.askstring(
+            title, "Data (AAAA-MM-GG):", initialvalue=default, parent=self)
+        if value is None:
+            return None
+        try:
+            chosen = date.fromisoformat(value.strip())
+            if chosen.isoformat() != value.strip():
+                raise ValueError("Formato data non valido")
+            return chosen
+        except ValueError:
+            messagebox.showerror("Data non valida", "Inserisci una data nel formato AAAA-MM-GG.")
+            return None
+
+    def _operation_page(self, section, heading, description, actions):
+        self.view = section
+        self.highlight_menu()
+        self.update_context_controls()
+        self.history_controls.pack_forget()
+        self.operations_panel.pack_forget()
+        for widget in self.operations_panel.winfo_children():
+            widget.destroy()
+        tk.Label(self.operations_panel, text=heading, bg=BG, fg=NAVY,
+                 font=("Segoe UI", 16, "bold")).pack(anchor="w", pady=(12, 8))
+        tk.Label(self.operations_panel, text=description, bg=BG, fg=NAVY,
+                 justify="left", wraplength=900).pack(anchor="w", pady=(0, 12))
+        buttons = tk.Frame(self.operations_panel, bg=BG)
+        buttons.pack(anchor="w", pady=(0, 10))
+        for label, action in actions:
+            ttk.Button(buttons, text=label, command=action).pack(side="left", padx=(0, 12))
+        self.operations_panel.pack(fill="x", padx=20, before=self.table.master)
+        self.table["displaycolumns"] = self.columns[:6]
+        for col, heading in zip(self.columns, ("Operazione", "Input", "Output", "Note", "", "")):
+            self.table.heading(col, text=heading)
+        self.table.delete(*self.table.get_children())
+        self.status.set(description)
+
+    def show_matches_ops(self):
+        self._operation_page(
+            "matches_ops", "Gestione partite",
+            "Prima acquisisci le partite per la data scelta, poi genera i ranking. "
+            "La generazione usa il file partite.csv attualmente presente.",
+            [("Acquisisci partite (getmatches)", self.run_getmatches),
+             ("Genera ranking (rank_matches)", self.run_ranking)])
+        self.table.insert("", "end", values=(
+            "Acquisisci partite", "Data selezionabile", "data/input_partite/partite.csv",
+            "Sovrascrive l'input se vengono trovate partite"))
+        self.table.insert("", "end", values=(
+            "Genera ranking", "data/input_partite/partite.csv", "Ranking engine",
+            "Non cancella lo storico"))
+
+    def show_results_ops(self):
+        self._operation_page(
+            "results_ops", "Gestione risultati",
+            "Prima acquisisci i risultati per la data scelta, poi registrali negli storici. "
+            "ATTENZIONE: getresults sostituisce risultati.csv; se non trova risultati lo svuota.",
+            [("Aggiorna risultati (getresults)", self.run_getresults),
+             ("Registra risultati (append_results)", self.run_append_results)])
+        self.table.insert("", "end", values=(
+            "Aggiorna risultati", "Data selezionabile", "data/input_risultati/risultati.csv",
+            "Sovrascrive il CSV, anche con zero risultati"))
+        self.table.insert("", "end", values=(
+            "Registra risultati", "data/input_risultati/risultati.csv", "Storici e report",
+            "Aggiorna gli esiti tramite append_results"))
+
+    def run_getmatches(self):
+        chosen = self._operation_date("Acquisisci partite", date.today().isoformat())
+        if chosen is not None:
+            self.task([sys.executable, "getmatches.py", "--date", chosen.isoformat()], self.refresh)
+
+    def run_getresults(self):
+        missing_days = sorted({
+            row[0] for row in self.alert_rows
+            if row[3] == "SCHEDULED" and row[0] and row[0] < date.today().isoformat()
+        }, reverse=True)
+        suggested = missing_days[0] if missing_days else (date.today() - timedelta(days=1)).isoformat()
+        chosen = self._operation_date("Aggiorna risultati", suggested)
+        if chosen is None:
+            return
+        if chosen > date.today():
+            messagebox.showwarning("Data futura", "Non è possibile acquisire risultati futuri.")
+            return
+        if messagebox.askyesno(
+                "Conferma acquisizione",
+                f"Scaricare i risultati del {chosen.isoformat()}?\\n"
+                "Il file risultati.csv verrà sostituito, anche se la ricerca restituisce zero righe."):
+            self.task([sys.executable, "getresults.py", "--date", chosen.isoformat()], self.refresh)
+
+    def run_append_results(self):
+        path = ROOT / "data/input_risultati/risultati.csv"
+        if not path.is_file():
+            messagebox.showwarning("Input mancante", "Prima acquisisci i risultati: risultati.csv non esiste.")
+            return
+        rows = csv_rows(path)
+        if not rows:
+            messagebox.showwarning("Nessun risultato", "risultati.csv è vuoto: niente da registrare.")
+            return
+        days = sorted({r.get("MatchDate", r.get("Date", "")).strip() for r in rows})
+        if messagebox.askyesno(
+                "Conferma registrazione",
+                f"Registrare {len(rows)} righe negli storici?\\n"
+                f"Date rilevate: {', '.join(d for d in days if d) or 'non identificabili'}\\n"
+                "Questa operazione aggiorna gli storici e i report."):
+            self.task([sys.executable, "-m", "gioover25.append_results",
+                       "data/input_risultati/risultati.csv"], self.refresh)
+
     def run_ranking(self):
-        if messagebox.askyesno("Genera ranking", "Eseguire il ranking per tutti gli engine senza --erase?"):
+        if messagebox.askyesno("Genera ranking", "Eseguire il ranking per tutti gli engine sul partite.csv corrente, senza --erase?"):
             self.task([sys.executable, "-m", "gioover25.rank_matches_v2",
                        "data/input_partite/partite.csv", "--engine", "all"], self.refresh)
 
