@@ -34,3 +34,9 @@ def test_import_excludes_missing_scores():
                              date(2026, 9, 1), date(2026, 11, 15))
     assert not rows
     assert rejected["NOT_CONFIRMED_FINAL"] == 1
+
+
+def test_extract_embedded_results_feed():
+    from tools.import_storico_diretta import embedded_results
+    html = '<script>cjs.initialFeeds[\'results\'] = { data: `SA÷1¬~ZA÷ITALIA: Serie D - Girone A¬~` };</script>'
+    assert "ZA÷ITALIA: Serie D - Girone A" in embedded_results(html)
