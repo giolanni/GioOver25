@@ -86,7 +86,6 @@ England_SouthernLeaguePremierCentral;;2026-10-20;Stourbridge;Anstey Nomads;POSTI
 England_IsthmianLeaguePremierDivision;;2026-10-20;Cheshunt;Cray Wanderers;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-10-21;Frome;Gloucester;POSTICIPATA;
 Wales_CymruPremier;;2026-10-23;Holywell;Penybont;POSTICIPATA;
-Wales_CymruNorth;;2026-10-23;Denbigh;Gresford;POSTICIPATA;
 Germany_Oberliga_RheinlandPfalzSaar;;2026-10-23;Engers;Koblenz;POSTICIPATA;
 SriLanka_SuperLeague;;2026-10-23;Sea Hawks;Red Star;POSTICIPATA;
 Ukraine_PershaLiga;;2026-10-23;FC Chernihiv;Ahrobiznes Volochysk;POSTICIPATA;
@@ -97,7 +96,6 @@ Germany_Oberliga_Westfalen;;2026-10-25;ASC 09 Dortmund;Westfalia Kinderhaus;POST
 SriLanka_SuperLeague;;2026-10-25;Renown;Blue Star;POSTICIPATA;
 Wales_CymruSouth;;2026-10-24;Baglan Dragons;Aberystwyth;POSTICIPATA;
 Wales_CymruSouth;;2026-10-24;Pontardawe;Ynyshir Albions;POSTICIPATA;
-Wales_CymruSouth;;2026-10-24;Pure Swansea;Treowen;POSTICIPATA;
 Wales_CymruNorth;;2026-10-24;Bangor 1876;Ruthin;POSTICIPATA;
 Wales_CymruNorth;;2026-10-24;Penrhyncoch;Mold Alexandra;POSTICIPATA;
 Germany_Regionalliga_Bayern;;2026-10-24;Bayern II;Vilzing;POSTICIPATA;
@@ -179,7 +177,6 @@ Poland_Division2;;2026-11-08;Zawisza;Tychy;POSTICIPATA;
 Portugal_LigaPortugal;;2026-11-08;Estoril;Maritimo;POSTICIPATA;
 Spain_LaLiga2;;2026-11-08;Andorra;Maiorca;POSTICIPATA;
 Turkmenistan_YokaryLiga;;2026-11-08;Arkadag;Nebitci;POSTICIPATA;
-Venezuela_LigaFUTVE2;;2026-11-08;Lara;Zamora 2;POSTICIPATA;
 CongoDr_Ligue1;;2026-11-10;Mazembe;Don Bosco;POSTICIPATA;
 England_SouthernLeaguePremierCentral;;2026-11-10;Stamford;Needham Market;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-11-10;Wimborne;Poole;POSTICIPATA;
@@ -187,3 +184,9 @@ CongoDr_Ligue1;;2026-11-11;AS Vita Club;Aigles du Congo;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-11-11;Frome;Plymouth Parkway;POSTICIPATA;
 AntiguaBarbuda_ABFAPremierLeague;4;2026-11-09;All Saints Utd.;Old Road;POSTICIPATA;Partita posticipata
 Giamaica_PremierLeague;;2026-11-12;Mount Pleasant;Portmore;POSTICIPATA;
+CongoDr_Ligue1;;2026-11-13;Simba;Mazembe;POSTICIPATA;
+Germany_Oberliga_Hamburg;;2026-11-13;Suderelbe;ETSV Hamburg;POSTICIPATA;
+SaudiArabia_Division2;7;2026-11-13;Hottain;Mudhar Club;NOT_FOUND;Rinvio presunto: assente dai risultati importati
+SaudiArabia_Division2;7;2026-11-13;Al Ain;Al Taraji;NOT_FOUND;Rinvio presunto: assente dai risultati importati
+Poland_Division2;17;2026-11-13;R. Rzeszow;Swit Szczecin;NOT_FOUND;Rinvio presunto: assente dai risultati importati
+CongoDr_Ligue1;6;2026-11-13;Don Bosco;St Eloi Lupopo;NOT_FOUND;Rinvio presunto: assente dai risultati importati

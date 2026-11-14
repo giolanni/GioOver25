@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-1;1;Wilberforce Strikers;5;3;2;0;9;3;6;11;2.2
-1;2;Waterloo;5;3;2;0;7;3;4;11;2.2
-1;3;Kamboi Eagles;5;2;2;1;5;2;3;8;1.6
-1;4;Old Edwardians;5;2;2;1;6;4;2;8;1.6
-1;5;Kallon;4;2;2;0;5;3;2;8;2.0
-1;6;Bhantal;5;2;2;1;4;2;2;8;1.6
-1;7;Bo Rangers;5;2;2;1;5;5;0;8;1.6
-1;8;Bai Bureh Warriors;5;1;4;0;2;1;1;7;1.4
-1;9;Ports Authority;5;1;3;1;2;2;0;6;1.2
-1;10;Western;5;1;2;2;4;5;-1;5;1.0
-1;11;Star Sport Academy;2;1;1;0;1;0;1;4;2.0
-1;12;East End Lions;4;0;4;0;4;4;0;4;1.0
-1;13;Diamond Stars;4;0;2;2;0;3;-3;2;0.5
-1;14;Wusum Stars;5;0;2;3;2;7;-5;2;0.4
-1;15;Mighty Blackpool;5;0;1;4;3;9;-6;1;0.2
-1;16;Bullom Stars;5;0;1;4;1;7;-6;1;0.2
+2;1;Wilberforce Strikers;5;3;2;0;9;3;6;11;2.2
+2;2;Waterloo;5;3;2;0;7;3;4;11;2.2
+2;3;Old Edwardians;6;2;3;1;6;4;2;9;1.5
+2;4;Kamboi Eagles;5;2;2;1;5;2;3;8;1.6
+2;5;Kallon;4;2;2;0;5;3;2;8;2.0
+2;6;Bhantal;5;2;2;1;4;2;2;8;1.6
+2;7;Bo Rangers;5;2;2;1;5;5;0;8;1.6
+2;8;Bai Bureh Warriors;5;1;4;0;2;1;1;7;1.4
+2;9;Ports Authority;5;1;3;1;2;2;0;6;1.2
+2;10;Star Sport Academy;3;1;2;0;1;0;1;5;1.667
+2;11;Western;5;1;2;2;4;5;-1;5;1.0
+2;12;East End Lions;4;0;4;0;4;4;0;4;1.0
+2;13;Diamond Stars;4;0;2;2;0;3;-3;2;0.5
+2;14;Wusum Stars;5;0;2;3;2;7;-5;2;0.4
+2;15;Mighty Blackpool;5;0;1;4;3;9;-6;1;0.2
+2;16;Bullom Stars;5;0;1;4;1;7;-6;1;0.2
