@@ -9,6 +9,7 @@ from datetime import date, timedelta, datetime
 from pathlib import Path
 from tkinter import ttk, messagebox, simpledialog
 from gioover25.live_monitor import snapshot_index, evaluate, FINAL
+from gioover25 import history_stats
 from tools.live_flashscore import key as live_fixture_key
 from gioover25 import missing_results as missing_audit
 from tools.prepare_input import norm, canonical_team
@@ -65,6 +66,10 @@ class Dashboard(tk.Tk):
         self.status = tk.StringVar(value="Pronto")
         self.view = "rankings"
         self.live_poll_busy = False
+        self.history_generation = 0
+        self.history_period = tk.StringVar(value="Ultimi 7 giorni")
+        self.history_mode = tk.StringVar(value="Confronto engine")
+        self.history_market = tk.StringVar(value="OVER25")
         self.alert_rows = []
         self.refresh_generation = 0
         self.build()
@@ -77,7 +82,7 @@ class Dashboard(tk.Tk):
         tk.Label(sidebar, text="⚽ GioOver2.5", bg=NAVY, fg=WHITE,
                  font=("Segoe UI", 19, "bold")).pack(pady=(25, 30))
         for label, action in [("Home", self.refresh), ("Avvisi e anomalie", self.show_alerts), ("Ranking giornalieri", self.show_rankings),
-                              ("Analisi fasce Score", self.show_bands), ("Monitor LIVE", self.open_live), ("Aggiorna repository", self.update_repo),
+                              ("Analisi fasce Score", self.show_bands), ("Storico engine", self.show_history), ("Monitor LIVE", self.open_live), ("Aggiorna repository", self.update_repo),
                               ("Genera ranking", self.run_ranking), ("Aggiorna fasce", self.run_bands)]:
             tk.Button(sidebar, text=label, command=action, bg=NAVY, fg=WHITE,
                       activebackground=BLUE, activeforeground=WHITE,
@@ -94,11 +99,23 @@ class Dashboard(tk.Tk):
         tk.Label(self.controls, text="Engine:", bg=BG).pack(side="left")
         self.engine_box = ttk.Combobox(self.controls, textvariable=self.engine, width=20, state="readonly")
         self.engine_box.pack(side="left", padx=8)
-        self.engine_box.bind("<<ComboboxSelected>>", lambda _: self.show_live() if self.view == "live" else self.show_rankings())
+        self.engine_box.bind("<<ComboboxSelected>>", lambda _: self.show_live() if self.view == "live" else (self.show_history() if self.view == "history" else self.show_rankings()))
         ttk.Checkbutton(self.controls, text="Solo fascia migliore", variable=self.only_best,
                         command=self.show_rankings).pack(side="left", padx=10)
         ttk.Button(self.controls, text="Aggiorna LIVE", command=self.refresh_live).pack(side="right", padx=5)
         ttk.Button(self.controls, text="Ricarica", command=self.refresh).pack(side="right")
+        self.history_controls = tk.Frame(main, bg=BG)
+        self.history_controls.pack(fill="x", padx=20)
+        for title, variable, choices in (
+            ("Periodo", self.history_period, history_stats.PERIODS),
+            ("Vista", self.history_mode, ("Confronto engine", "Singolo engine")),
+            ("Mercato", self.history_market, ("OVER25", "BTTS"))):
+            tk.Label(self.history_controls, text=title + ":", bg=BG).pack(side="left", padx=(8, 3))
+            combo = ttk.Combobox(self.history_controls, textvariable=variable,
+                                 values=choices, state="readonly", width=19)
+            combo.pack(side="left", padx=(0, 12))
+            combo.bind("<<ComboboxSelected>>", lambda _: self.show_history())
+        self.history_controls.pack_forget()
         self.columns = ("date", "league", "match", "score", "band", "best", "live_result", "live_outcome")
         table_frame = ttk.Frame(main)
         table_frame.pack(fill="both", expand=True, padx=20, pady=8)
@@ -182,6 +199,7 @@ class Dashboard(tk.Tk):
         return sorted(alerts, key=lambda x: (x[0] == "", x[0], x[1]))
 
     def show_alerts(self):
+        self.history_controls.pack_forget()
         self.view = "alerts"
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita / stagione", "Tipo", "Giorni", "Azione")):
@@ -302,6 +320,7 @@ class Dashboard(tk.Tk):
             return float("-inf")
 
     def show_live(self):
+        self.history_controls.pack_forget()
         self.view = "live"
         self.table["displaycolumns"] = self.columns
         for col, label, width in zip(self.columns,
@@ -363,6 +382,7 @@ class Dashboard(tk.Tk):
             "Fonte: Diretta, aggiornamento manuale.")
 
     def show_rankings(self):
+        self.history_controls.pack_forget()
         self.view = "rankings"
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
@@ -390,7 +410,61 @@ class Dashboard(tk.Tk):
                 tags=("best",) if marked else ())
         self.status.set(f"{engine}: {len(rows)} pronostici odierni nello storico; fascia migliore: {best[2] if best else 'non disponibile'}")
 
+    def show_history(self):
+        """Build historical statistics in a worker; never block Tk with CSV reads."""
+        self.view = "history"
+        if not self.history_controls.winfo_manager():
+            self.history_controls.pack(fill="x", padx=20, before=self.table.master)
+        self.history_generation += 1
+        generation = self.history_generation
+        period = self.history_period.get()
+        mode = self.history_mode.get()
+        engine = self.engine.get()
+        market = self.history_market.get()
+        if mode == "Singolo engine":
+            market = history_stats.market_for(engine)
+            self.history_market.set(market)
+        self.table["displaycolumns"] = self.columns[:6]
+        headers = ("Engine", "Mercato", "ALTA OK", "ALTA KO", "Totale ALTA", "% ALTA OK")
+        for col, label, width in zip(self.columns, headers, (185, 100, 105, 105, 115, 120)):
+            self.table.heading(col, text=label)
+            self.table.column(col, width=width, anchor="center")
+        self.table.delete(*self.table.get_children())
+        self.status.set("Storico: elaborazione in corso...")
+        def work():
+            try:
+                histories = history_stats.read_histories(HISTORY)
+                result = history_stats.compute(histories, period)
+                error = None
+            except Exception as exc:
+                result, error = [], str(exc)
+            def done():
+                if generation != self.history_generation or self.view != "history":
+                    return
+                if error:
+                    self.status.set("Errore storico: " + error)
+                    self.write_log("Storico: " + error)
+                    return
+                filtered = [r for r in result if
+                            (r["engine"] == engine if mode == "Singolo engine"
+                             else r["market"] == market)]
+                for r in filtered:
+                    self.table.insert("", "end", values=(
+                        r["engine"], r["market"], r["ok"], r["ko"],
+                        r["total"], history_stats.rate_text(r)))
+                total_ok = sum(r["ok"] for r in filtered)
+                total_ko = sum(r["ko"] for r in filtered)
+                rate = f"{100 * total_ok / (total_ok + total_ko):.2f}%" if total_ok + total_ko else "n.d."
+                self.status.set(
+                    f"Storico {period} | {mode} | {market} | "
+                    f"ALTA aggregate: OK {total_ok}, KO {total_ko}, "
+                    f"Totale {total_ok + total_ko}, {rate} | "
+                    "solo esiti OK/KO; set comune distinto per mercato.")
+            self.after(0, done)
+        threading.Thread(target=work, daemon=True).start()
+
     def show_bands(self):
+        self.history_controls.pack_forget()
         self.view = "bands"
         self.table["displaycolumns"] = self.columns[:6]
         for item in self.table.get_children():
