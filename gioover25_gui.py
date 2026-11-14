@@ -110,7 +110,8 @@ class Dashboard(tk.Tk):
         self.summary.pack(fill="x", padx=20)
         self.controls = tk.Frame(main, bg=BG)
         self.controls.pack(fill="x", padx=20, pady=(12, 5))
-        tk.Label(self.controls, text="Engine:", bg=BG).pack(side="left")
+        self.engine_label = tk.Label(self.controls, text="Engine:", bg=BG)
+        self.engine_label.pack(side="left")
         self.engine_box = ttk.Combobox(self.controls, textvariable=self.engine, width=20, state="readonly")
         self.engine_box.pack(side="left", padx=8)
         self.engine_box.bind("<<ComboboxSelected>>", self.on_engine_changed)
@@ -185,6 +186,7 @@ class Dashboard(tk.Tk):
     def open_home(self):
         self.view = "home"
         self.highlight_menu()
+        self.update_engine_visibility()
         self.refresh()
 
     def write_log(self, text):
@@ -246,6 +248,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "alerts"
         self.highlight_menu()
+        self.update_engine_visibility()
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita / stagione", "Tipo", "Giorni", "Azione")):
             self.table.heading(col, text=label)
@@ -368,6 +371,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "live"
         self.highlight_menu()
+        self.update_engine_visibility()
         self.table["displaycolumns"] = self.columns
         for col, label, width in zip(self.columns,
                               ("Data", "Campionato", "Partita", "Score", "Fascia", "Minuto", "Risultato", "Esito LIVE"),
@@ -431,6 +435,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "rankings"
         self.highlight_menu()
+        self.update_engine_visibility()
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
             self.table.heading(col, text=label)
@@ -457,10 +462,22 @@ class Dashboard(tk.Tk):
                 tags=("best",) if marked else ())
         self.status.set(f"{engine}: {len(rows)} pronostici odierni nello storico; fascia migliore: {best[2] if best else 'non disponibile'}")
 
+    def update_engine_visibility(self):
+        visible = self.view not in ("history", "alerts", "home") or (self.view == "history" and self.history_mode.get() == "Singolo engine")
+        if visible:
+            if not self.engine_label.winfo_manager():
+                self.engine_label.pack(side="left", before=self.engine_box)
+            if not self.engine_box.winfo_manager():
+                self.engine_box.pack(side="left", padx=8, after=self.engine_label)
+        else:
+            self.engine_label.pack_forget()
+            self.engine_box.pack_forget()
+
     def show_history(self):
         """Build historical statistics in a worker; never block Tk with CSV reads."""
         self.view = "history"
         self.highlight_menu()
+        self.update_engine_visibility()
         if not self.history_controls.winfo_manager():
             self.history_controls.pack(fill="x", padx=20, before=self.table.master)
         self.history_generation += 1
@@ -484,6 +501,7 @@ class Dashboard(tk.Tk):
         def work():
             try:
                 histories = history_stats.read_histories(HISTORY)
+                common_count = history_stats.common_size(histories, market)
                 result = ([(p, r) for p in history_stats.PERIODS
                            for r in history_stats.compute(histories, p)
                            if r["engine"] == engine]
@@ -492,7 +510,7 @@ class Dashboard(tk.Tk):
                            if r["market"] == market])
                 error = None
             except Exception as exc:
-                result, error = [], str(exc)
+                result, common_count, error = [], 0, str(exc)
             def done():
                 if generation != self.history_generation or self.view != "history":
                     return
@@ -514,8 +532,11 @@ class Dashboard(tk.Tk):
                     total_ko = sum(r["ko"] for _, r in result)
                     rate = (f"{100 * total_ok / (total_ok + total_ko):.2f}%"
                             if total_ok + total_ko else "n.d.")
+                    common_note = (f" | Set comune: {common_count} partite" if period == "Set comune" else "")
+                    if period == "Set comune" and common_count == 0:
+                        self.write_log(f"ATTENZIONE: set comune {market} vuoto. Nessuna partita presente in tutti gli storici del gruppo.")
                     self.status.set(
-                        f"Storico {period} | {market} | "
+                        f"Storico {period} | {market}{common_note} | "
                         f"ALTA aggregate: OK {total_ok}, KO {total_ko}, "
                         f"Totale {total_ok + total_ko}, {rate} | "
                         "classifica per % ALTA OK decrescente.")
@@ -526,6 +547,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "bands"
         self.highlight_menu()
+        self.update_engine_visibility()
         self.table["displaycolumns"] = self.columns[:6]
         for item in self.table.get_children():
             self.table.delete(item)
