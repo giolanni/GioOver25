@@ -574,8 +574,10 @@ class Dashboard(tk.Tk):
     def update_engine_visibility(self):
         visible = self.view not in ("history", "alerts", "home") or (self.view == "history" and self.history_mode.get() == "Singolo engine")
         if visible:
+            # Pack the label first without referring to a hidden combobox.
+            # Tk raises TclError if "before" references an unpacked widget.
             if not self.engine_label.winfo_manager():
-                self.engine_label.pack(side="left", before=self.engine_box)
+                self.engine_label.pack(side="left")
             if not self.engine_box.winfo_manager():
                 self.engine_box.pack(side="left", padx=8, after=self.engine_label)
         else:
