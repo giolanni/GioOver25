@@ -24,7 +24,7 @@ FIELDS = ["LeagueId", "Round", "MatchDate", "Home", "Away", "HG", "AG", "Status"
 
 def embedded_results(html: str) -> str:
     """Extract the server-rendered results feed from a Diretta competition page."""
-    pattern = r"""cjs\\.initialFeeds\\[\\s*['"]results['"]\\s*\\]\\s*=\\s*\\{\\s*data\\s*:\\s*`([^`]*)`"""
+    pattern = r"""cjs\.initialFeeds\[\s*[\'"]results[\'"]\s*\]\s*=\s*\{\s*data\s*:\s*`([^`]*)`"""
     match = re.search(pattern, html, flags=re.S)
     if not match:
         raise ValueError("Feed cjs.initialFeeds['results'] non trovato nella pagina")
