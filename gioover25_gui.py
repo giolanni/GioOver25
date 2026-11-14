@@ -61,6 +61,9 @@ class Dashboard(tk.Tk):
         self.minsize(1050, 650)
         self.configure(bg=BG)
         self.busy = False
+        self.loading_count = 0
+        self.loading_window = None
+        self.loading_bar = None
         self.engine = tk.StringVar(value="v20")
         self.only_best = tk.BooleanVar(value=False)
         self.status = tk.StringVar(value="Pronto")
@@ -223,6 +226,52 @@ class Dashboard(tk.Tk):
             self.table.insert("", "end", values=(area, state, detail, destination, "", ""))
         self.status.set("Home: panoramica operativa. Seleziona una sezione dal menu laterale.")
 
+    def start_loading(self, message="Operazione in corso..."):
+        """Modal progress overlay; the worker keeps Tk responsive."""
+        self.loading_count += 1
+        if self.loading_window is not None and self.loading_window.winfo_exists():
+            return
+        self.update_idletasks()
+        overlay = tk.Toplevel(self)
+        self.loading_window = overlay
+        overlay.overrideredirect(True)
+        overlay.configure(bg="#10253d")
+        overlay.attributes("-alpha", 0.88)
+        overlay.transient(self)
+        overlay.geometry(f"{self.winfo_width()}x{self.winfo_height()}+{self.winfo_rootx()}+{self.winfo_rooty()}")
+        panel = tk.Frame(overlay, bg="#10253d")
+        panel.place(relx=0.5, rely=0.5, anchor="center")
+        tk.Label(panel, text="Operazione in corso", bg="#10253d", fg="white",
+                 font=("Segoe UI", 20, "bold")).pack(pady=(0, 12))
+        tk.Label(panel, text=message, bg="#10253d", fg="#d7e5f6",
+                 font=("Segoe UI", 12)).pack(pady=(0, 18))
+        self.loading_bar = ttk.Progressbar(panel, mode="indeterminate", length=260)
+        self.loading_bar.pack()
+        self.loading_bar.start(12)
+        overlay.lift(self)
+        overlay.grab_set()
+        overlay.bind("<Escape>", lambda _event: "break")
+        self.bind("<Configure>", self._position_loading, add="+")
+
+    def _position_loading(self, _event=None):
+        overlay = self.loading_window
+        if overlay is not None and overlay.winfo_exists():
+            overlay.geometry(f"{self.winfo_width()}x{self.winfo_height()}+{self.winfo_rootx()}+{self.winfo_rooty()}")
+
+    def stop_loading(self):
+        if self.loading_count:
+            self.loading_count -= 1
+        if self.loading_count:
+            return
+        overlay = self.loading_window
+        self.loading_window = None
+        if overlay is not None and overlay.winfo_exists():
+            if self.loading_bar is not None:
+                self.loading_bar.stop()
+            overlay.grab_release()
+            overlay.destroy()
+        self.loading_bar = None
+
     def write_log(self, text):
         self.log.configure(state="normal")
         self.log.insert("end", f"[{datetime.now():%H:%M:%S}] {text}\n")
@@ -379,6 +428,7 @@ class Dashboard(tk.Tk):
         if self.live_poll_busy:
             return
         self.live_poll_busy = True
+        self.start_loading("Acquisizione risultati LIVE da Diretta...")
         def work():
             try:
                 result = subprocess.run([sys.executable, "-m", "tools.live_flashscore"],
@@ -389,6 +439,7 @@ class Dashboard(tk.Tk):
                 msg = str(exc)
             def done():
                 self.live_poll_busy = False
+                self.stop_loading()
                 self.write_log(msg[:1500])
                 if self.view == "live":
                     self.show_live()
@@ -602,6 +653,7 @@ class Dashboard(tk.Tk):
             messagebox.showwarning("Operazione in corso", "Attendere la conclusione dell'operazione precedente.")
             return
         self.busy = True
+        self.start_loading("Elaborazione in corso, attendere...")
         self.status.set("Operazione in corso...")
         def work():
             try:
@@ -613,6 +665,7 @@ class Dashboard(tk.Tk):
                 rc = p.wait()
                 def done():
                     self.busy = False
+                    self.stop_loading()
                     self.status.set(f"Comando terminato (codice {rc})")
                     if rc == 0 and on_done:
                         on_done()
@@ -622,6 +675,7 @@ class Dashboard(tk.Tk):
             except Exception as exc:
                 def failed():
                     self.busy = False
+                    self.stop_loading()
                     self.write_log(str(exc))
                     messagebox.showerror("Errore", str(exc))
                 self.after(0, failed)
@@ -632,6 +686,7 @@ class Dashboard(tk.Tk):
         if self.busy:
             return
         self.busy = True
+        self.start_loading("Sincronizzazione repository Git...")
         self.status.set("Sincronizzazione repository in corso...")
         def work():
             for args in commands:
@@ -646,6 +701,7 @@ class Dashboard(tk.Tk):
                     if p.returncode:
                         def fail(args=args, rc=p.returncode):
                             self.busy = False
+                            self.stop_loading()
                             self.status.set("Git interrotto: " + " ".join(args))
                             messagebox.showerror("Git", "Comando fallito: git " +
                                 " ".join(args) + f" (codice {rc}). Verificare il log. "
@@ -655,12 +711,14 @@ class Dashboard(tk.Tk):
                 except Exception as exc:
                     def fail_exception(error=str(exc)):
                         self.busy = False
+                        self.stop_loading()
                         self.status.set("Errore Git")
                         messagebox.showerror("Git", error)
                     self.after(0, fail_exception)
                     return
             def done():
                 self.busy = False
+                self.stop_loading()
                 self.refresh()
                 self.status.set("Sincronizzazione Git completata")
             self.after(0, done)
