@@ -113,7 +113,7 @@ class Dashboard(tk.Tk):
         tk.Label(self.controls, text="Engine:", bg=BG).pack(side="left")
         self.engine_box = ttk.Combobox(self.controls, textvariable=self.engine, width=20, state="readonly")
         self.engine_box.pack(side="left", padx=8)
-        self.engine_box.bind("<<ComboboxSelected>>", lambda _: self.show_live() if self.view == "live" else (self.show_history() if self.view == "history" else self.show_rankings()))
+        self.engine_box.bind("<<ComboboxSelected>>", self.on_engine_changed)
         ttk.Checkbutton(self.controls, text="Solo fascia migliore", variable=self.only_best,
                         command=self.show_rankings).pack(side="left", padx=10)
         ttk.Button(self.controls, text="Aggiorna LIVE", command=self.refresh_live).pack(side="right", padx=5)
@@ -156,6 +156,18 @@ class Dashboard(tk.Tk):
         self.log = tk.Text(main, height=7, bg="#142b46", fg="#e7f1ff",
                            font=("Consolas", 9), state="disabled")
         self.log.pack(fill="x", padx=20, pady=(6, 15))
+
+    def on_engine_changed(self, _event=None):
+        """Refresh only the current engine-dependent view; never navigate."""
+        handlers = {
+            "live": self.show_live,
+            "history": self.show_history,
+            "rankings": self.show_rankings,
+            "bands": self.show_bands,
+        }
+        handler = handlers.get(self.view)
+        if handler is not None:
+            handler()
 
     def highlight_menu(self):
         """Keep the selected navigation section visibly highlighted."""
