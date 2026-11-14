@@ -15,10 +15,23 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 
 from tools.diretta_mobile import parse_feed
+from gioover25.serie_d_registry import SERIE_D_GROUPS
 from tools.prepare_input import ROOT, load_registry, resolve_match
 
 
 FIELDS = ["LeagueId", "Round", "MatchDate", "Home", "Away", "HG", "AG", "Status", "Notes"]
+
+
+def embedded_results(html: str) -> str:
+    """Extract the server-rendered results feed from a Diretta competition page."""
+    pattern = r"""cjs\\.initialFeeds\\[\\s*['"]results['"]\\s*\\]\\s*=\\s*\\{\\s*data\\s*:\\s*`([^`]*)`"""
+    match = re.search(pattern, html, flags=re.S)
+    if not match:
+        raise ValueError("Feed cjs.initialFeeds['results'] non trovato nella pagina")
+    payload = match.group(1)
+    if "ZA÷" not in payload:
+        raise ValueError("Feed results non valido: intestazione ZA assente")
+    return payload
 
 
 def extract(payload: str, registry, allowed: set[str], start: date, end: date):
@@ -53,9 +66,10 @@ def extract(payload: str, registry, allowed: set[str], start: date, end: date):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument("--girone", choices=list(SERIE_D_GROUPS), help="Scarica la pagina risultati del girone Serie D")
     source.add_argument("--feed-file", type=Path, help="Feed della competizione salvato localmente")
     source.add_argument("--feed-url", help="URL completo del feed risultati della competizione, verificato manualmente")
-    parser.add_argument("--league-id", action="append", required=True, help="LeagueId consentito (ripetibile)")
+    parser.add_argument("--league-id", action="append", help="LeagueId consentito (ripetibile)")
     parser.add_argument("--from-date", required=True, type=date.fromisoformat)
     parser.add_argument("--to-date", required=True, type=date.fromisoformat)
     parser.add_argument("--output", type=Path, default=ROOT / "data" / "debug" / "storico_diretta_proposta.csv")
@@ -65,10 +79,20 @@ def main():
         parser.error("--from-date successiva a --to-date")
     registry = load_registry(ROOT / "data" / "league_registry.csv")
     known = {r.league_id for r in registry}
-    allowed = set(args.league_id)
+    allowed = {SERIE_D_GROUPS[args.girone].league_id} if args.girone else set(args.league_id or [])
+    if not allowed:
+        parser.error("Specificare --league-id oppure --girone")
     if not allowed <= known:
         parser.error(f"LeagueId sconosciuti: {sorted(allowed - known)}")
-    if args.feed_file:
+    if args.girone:
+        url = SERIE_D_GROUPS[args.girone].source_url
+        request = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept-Language": "it-IT,it;q=0.9"})
+        with urlopen(request, timeout=30) as response:
+            html = response.read().decode("utf-8", errors="replace")
+        payload = embedded_results(html)
+        print(f"[STORICO] Pagina {url} | feed incorporato {len(payload)} caratteri")
+        print("[STORICO][NOTA] Il feed incorporato potrebbe essere paginato: non garantisce ancora tutta la stagione")
+    elif args.feed_file:
         payload = args.feed_file.read_text(encoding="utf-8-sig")
     else:
         if not args.feed_url.startswith("https://"):
