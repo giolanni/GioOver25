@@ -77,6 +77,7 @@ class Dashboard(tk.Tk):
         self.alert_rows = []
         self.refresh_generation = 0
         self.build()
+        self.update_context_controls()
         self.show_home()
         self.refresh()
 
@@ -119,10 +120,13 @@ class Dashboard(tk.Tk):
         self.engine_box = ttk.Combobox(self.controls, textvariable=self.engine, width=20, state="readonly")
         self.engine_box.pack(side="left", padx=8)
         self.engine_box.bind("<<ComboboxSelected>>", self.on_engine_changed)
-        ttk.Checkbutton(self.controls, text="Solo fascia migliore", variable=self.only_best,
-                        command=self.show_rankings).pack(side="left", padx=10)
-        ttk.Button(self.controls, text="Aggiorna LIVE", command=self.refresh_live).pack(side="right", padx=5)
-        ttk.Button(self.controls, text="Ricarica", command=self.refresh).pack(side="right")
+        self.best_filter = ttk.Checkbutton(self.controls, text="Solo fascia migliore", variable=self.only_best,
+                                           command=self.show_rankings)
+        self.best_filter.pack(side="left", padx=10)
+        self.live_refresh_button = ttk.Button(self.controls, text="Aggiorna LIVE", command=self.refresh_live)
+        self.live_refresh_button.pack(side="right", padx=5)
+        self.reload_button = ttk.Button(self.controls, text="Ricarica", command=self.refresh)
+        self.reload_button.pack(side="right")
         self.history_controls = tk.Frame(main, bg=BG)
         self.history_controls.pack(fill="x", padx=20)
         for title, variable, choices in (
@@ -190,7 +194,7 @@ class Dashboard(tk.Tk):
     def open_home(self):
         self.view = "home"
         self.highlight_menu()
-        self.update_engine_visibility()
+        self.update_context_controls()
         self.show_home()
         self.refresh()
 
@@ -331,7 +335,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "alerts"
         self.highlight_menu()
-        self.update_engine_visibility()
+        self.update_context_controls()
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita / stagione", "Tipo", "Giorni", "Azione")):
             self.table.heading(col, text=label)
@@ -458,7 +462,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "live"
         self.highlight_menu()
-        self.update_engine_visibility()
+        self.update_context_controls()
         self.table["displaycolumns"] = self.columns
         for col, label, width in zip(self.columns,
                               ("Data", "Campionato", "Partita", "Score", "Fascia", "Minuto", "Risultato", "Esito LIVE"),
@@ -522,7 +526,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "rankings"
         self.highlight_menu()
-        self.update_engine_visibility()
+        self.update_context_controls()
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
             self.table.heading(col, text=label)
@@ -549,6 +553,24 @@ class Dashboard(tk.Tk):
                 tags=("best",) if marked else ())
         self.status.set(f"{engine}: {len(rows)} pronostici odierni nello storico; fascia migliore: {best[2] if best else 'non disponibile'}")
 
+    def update_context_controls(self):
+        """Display only actions relevant to the selected page."""
+        self.update_engine_visibility()
+        if self.view == "rankings":
+            if not self.best_filter.winfo_manager():
+                self.best_filter.pack(side="left", padx=10)
+        else:
+            self.best_filter.pack_forget()
+        if self.view == "live":
+            if not self.live_refresh_button.winfo_manager():
+                self.live_refresh_button.pack(side="right", padx=5)
+        else:
+            self.live_refresh_button.pack_forget()
+        self.reload_button.configure(
+            text="Aggiorna avvisi" if self.view == "alerts" else "Ricarica")
+        if not self.reload_button.winfo_manager():
+            self.reload_button.pack(side="right")
+
     def update_engine_visibility(self):
         visible = self.view not in ("history", "alerts", "home") or (self.view == "history" and self.history_mode.get() == "Singolo engine")
         if visible:
@@ -564,7 +586,7 @@ class Dashboard(tk.Tk):
         """Build historical statistics in a worker; never block Tk with CSV reads."""
         self.view = "history"
         self.highlight_menu()
-        self.update_engine_visibility()
+        self.update_context_controls()
         if not self.history_controls.winfo_manager():
             self.history_controls.pack(fill="x", padx=20, before=self.table.master)
         self.history_generation += 1
@@ -634,7 +656,7 @@ class Dashboard(tk.Tk):
         self.history_controls.pack_forget()
         self.view = "bands"
         self.highlight_menu()
-        self.update_engine_visibility()
+        self.update_context_controls()
         self.table["displaycolumns"] = self.columns[:6]
         for item in self.table.get_children():
             self.table.delete(item)
