@@ -111,7 +111,7 @@ def diretta_matches(target: date, mode: str, registry, *, write_quarantine: bool
         if quarantined:
             print(
                 f"[WARN][QUARANTINE] {quarantined} partite escluse dallo storico; "
-                (f"dettagli in {QUARANTINE_FILE.relative_to(ROOT)}" if write_quarantine else "dry-run: nessun file scritto")
+                + (f"dettagli in {QUARANTINE_FILE.relative_to(ROOT)}" if write_quarantine else "dry-run: nessun file scritto")
             )
         if skipped_states:
             print("[DIRETTA DEBUG] Stati/codici delle partite scartate: " +
