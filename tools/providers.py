@@ -36,7 +36,7 @@ def target_offset(target: date) -> int:
     return (target - date.today()).days
 
 
-def diretta_matches(target: date, mode: str, registry):
+def diretta_matches(target: date, mode: str, registry, *, write_quarantine: bool = True):
     offset = target_offset(target)
 
     # Diretta/Flashscore può cambiare il significato del feed relativo prima
@@ -105,15 +105,13 @@ def diretta_matches(target: date, mode: str, registry):
                     f"| status={r.status or '<vuoto>'}"
                 )
         matches = unique(matches)
-        quarantined = quarantine_rows(
-            [r for r in raw if not resolve_match(registry, r.country, r.league, r.home, r.away)],
-            target,
-            "UNMAPPED_OR_UNSAFE_LEAGUE",
-        )
+        excluded_rows = [r for r in raw if not resolve_match(registry, r.country, r.league, r.home, r.away)]
+        quarantined = (quarantine_rows(excluded_rows, target, "UNMAPPED_OR_UNSAFE_LEAGUE")
+                       if write_quarantine else len(excluded_rows))
         if quarantined:
             print(
                 f"[WARN][QUARANTINE] {quarantined} partite escluse dallo storico; "
-                f"dettagli in {QUARANTINE_FILE.relative_to(ROOT)}"
+                (f"dettagli in {QUARANTINE_FILE.relative_to(ROOT)}" if write_quarantine else "dry-run: nessun file scritto")
             )
         if skipped_states:
             print("[DIRETTA DEBUG] Stati/codici delle partite scartate: " +
