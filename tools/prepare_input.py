@@ -164,8 +164,21 @@ def _exact_league_match(reg,country,league):
  exact=[r for r in candidates if norm(r.league)==nl]
  return exact[0].league_id if len(exact)==1 else None
 
+def _resolve_serie_d_group(reg, country, league):
+ """Resolve Serie D only when its group is explicit; never infer from teams."""
+ from gioover25.serie_d_registry import league_id_for_title
+ c=COUNTRY_MAP.get(country.upper(),country.title())
+ if norm(c)!="italy":return None
+ lid=league_id_for_title(league)
+ if not lid:return None
+ return lid if any(r.league_id==lid for r in reg) else None
+
 def resolve_match(reg,country,league,home,away):
  c=COUNTRY_MAP.get(country.upper(),country.title())
+ # Serie D: solo il girone dichiarato dal provider e' attendibile.
+ # Non consentire al mapping squadre/fuzzy di aggirare questa regola.
+ if norm(c)=="italy" and norm(league).startswith("seried"):
+  return _resolve_serie_d_group(reg,c,league)
  mapped=resolve_team_mapping(reg,c,home,away)
  if mapped:return mapped
  # Se una competizione e' suddivisa in gruppi/serie documentati ma le due
