@@ -535,6 +535,8 @@ class Dashboard(tk.Tk):
                       key=self.ranking_score, reverse=True)
         counts = {"OK": 0, "KO": 0, "PENDING": 0, "UNKNOWN": 0}
         finals = {"OK": 0, "KO": 0}
+        alta_counts = {"OK": 0, "KO": 0, "PENDING": 0, "UNKNOWN": 0}
+        alta_finals = {"OK": 0, "KO": 0}
         market = "BTTS" if engine.lower().startswith("vg") else "Over25"
         normalized_live = {
             live_fixture_key(lid, day, home, away): item
@@ -562,18 +564,26 @@ class Dashboard(tk.Tk):
                 else:
                     minute += " (non aggiornato)"
             counts[outcome] += 1
+            if (r.get("Band") or "").strip().upper() == "ALTA":
+                alta_counts[outcome] += 1
+                if item and fresh and item["Status"] in FINAL and outcome in alta_finals:
+                    alta_finals[outcome] += 1
             self.table.insert("", "end",
                 values=(today, r.get("LeagueId", ""),
                         r.get("Home", "") + " – " + r.get("Away", ""),
                         r.get("Score", ""), r.get("Band", ""), minute, score, outcome),
                 tags=(outcome.lower(),))
-        total = sum(finals.values())
-        rate = f"{100 * finals['OK'] / total:.1f}%" if total else "n.d."
+        def summary(label, statuses, finished):
+            total = sum(finished.values())
+            percentage = f"{100 * finished['OK'] / total:.1f}%" if total else "n.d."
+            return (f"{label}: OK {statuses['OK']} | KO {statuses['KO']} | "
+                    f"In attesa {statuses['PENDING']} | Senza dati {statuses['UNKNOWN']} | "
+                    f"Finali {finished['OK']}/{total} ({percentage})")
         self.status.set(
-            f"LIVE {engine}: OK {counts['OK']} | KO {counts['KO']} | "
-            f"In attesa {counts['PENDING']} | Senza dati {counts['UNKNOWN']} | "
-            f"Finali {finals['OK']}/{total} ({rate}). "
-            "Fonte: Diretta, aggiornamento manuale.")
+            f"LIVE {engine} — Fonte: Diretta, aggiornamento manuale.  "
+            + summary("FASCIA ALTA", alta_counts, alta_finals)
+            + "     ||     "
+            + summary("TOTALE ENGINE", counts, finals))
 
     def show_rankings(self):
         self.history_controls.pack_forget()
