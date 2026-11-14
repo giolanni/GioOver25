@@ -425,7 +425,9 @@ class Dashboard(tk.Tk):
             market = history_stats.market_for(engine)
             self.history_market.set(market)
         self.table["displaycolumns"] = self.columns[:6]
-        headers = ("Engine", "Mercato", "ALTA OK", "ALTA KO", "Totale ALTA", "% ALTA OK")
+        headers = (("Periodo", "Mercato", "ALTA OK", "ALTA KO", "Totale ALTA", "% ALTA OK")
+                   if mode == "Singolo engine" else
+                   ("Engine", "Mercato", "ALTA OK", "ALTA KO", "Totale ALTA", "% ALTA OK"))
         for col, label, width in zip(self.columns, headers, (185, 100, 105, 105, 115, 120)):
             self.table.heading(col, text=label)
             self.table.column(col, width=width, anchor="center")
@@ -434,7 +436,12 @@ class Dashboard(tk.Tk):
         def work():
             try:
                 histories = history_stats.read_histories(HISTORY)
-                result = history_stats.compute(histories, period)
+                result = ([(p, r) for p in history_stats.PERIODS
+                           for r in history_stats.compute(histories, p)
+                           if r["engine"] == engine]
+                          if mode == "Singolo engine" else
+                          [(period, r) for r in history_stats.compute(histories, period)
+                           if r["market"] == market])
                 error = None
             except Exception as exc:
                 result, error = [], str(exc)
@@ -445,21 +452,25 @@ class Dashboard(tk.Tk):
                     self.status.set("Errore storico: " + error)
                     self.write_log("Storico: " + error)
                     return
-                filtered = [r for r in result if
-                            (r["engine"] == engine if mode == "Singolo engine"
-                             else r["market"] == market)]
-                for r in filtered:
+                for label, r in result:
                     self.table.insert("", "end", values=(
-                        r["engine"], r["market"], r["ok"], r["ko"],
+                        label if mode == "Singolo engine" else r["engine"],
+                        r["market"], r["ok"], r["ko"],
                         r["total"], history_stats.rate_text(r)))
-                total_ok = sum(r["ok"] for r in filtered)
-                total_ko = sum(r["ko"] for r in filtered)
-                rate = f"{100 * total_ok / (total_ok + total_ko):.2f}%" if total_ok + total_ko else "n.d."
-                self.status.set(
-                    f"Storico {period} | {mode} | {market} | "
-                    f"ALTA aggregate: OK {total_ok}, KO {total_ko}, "
-                    f"Totale {total_ok + total_ko}, {rate} | "
-                    "solo esiti OK/KO; set comune distinto per mercato.")
+                if mode == "Singolo engine":
+                    self.status.set(
+                        f"Storico {engine} ({market}) | sei periodi; ALTA OK/KO; "
+                        "set comune calcolato separatamente per mercato.")
+                else:
+                    total_ok = sum(r["ok"] for _, r in result)
+                    total_ko = sum(r["ko"] for _, r in result)
+                    rate = (f"{100 * total_ok / (total_ok + total_ko):.2f}%"
+                            if total_ok + total_ko else "n.d.")
+                    self.status.set(
+                        f"Storico {period} | {market} | "
+                        f"ALTA aggregate: OK {total_ok}, KO {total_ko}, "
+                        f"Totale {total_ok + total_ko}, {rate} | "
+                        "classifica per % ALTA OK decrescente.")
             self.after(0, done)
         threading.Thread(target=work, daemon=True).start()
 
