@@ -917,52 +917,70 @@ class Dashboard(tk.Tk):
     def show_matches_ops(self):
         self._operation_page(
             "matches_ops", "Gestione partite",
-            "1. Scarica le partite.  2. Genera i pronostici. "
-            "Qui sotto trovi i dati effettivamente presenti, non soltanto il log dei pulsanti.",
+            "CONTROLLO DELLA GIORNATA: cosa abbiamo acquisito, quali engine "
+            "hanno elaborato le gare e quale passaggio manca.",
             [("1  Scarica partite", self.run_getmatches),
              ("2  Genera pronostici", self.run_ranking)])
+        day = date.today().isoformat()
         rows = csv_rows(INPUT)
-        dates = sorted({(r.get("MatchDate") or "").strip() for r in rows
-                        if (r.get("MatchDate") or "").strip()})
-        day = dates[-1] if dates else ""
-        today_rows = [r for r in rows if r.get("MatchDate", "").strip() == day]
+        fixtures = [r for r in rows if (r.get("MatchDate") or "").strip() == day]
+        latest_dates = sorted({r.get("MatchDate", "").strip() for r in rows
+                               if r.get("MatchDate", "").strip()})
+        latest = latest_dates[-1] if latest_dates else None
+        audit = operations_audit.load()
+        get, rank = audit.get("getmatches", {}), audit.get("rank_matches", {})
         self.table.insert("", "end", values=(
-            "PARTITE DISPONIBILI", day or "Nessuna data",
-            f"{len(today_rows)} gare" if day else "0 gare",
-            f"{len(rows)} righe totali nel file di input"))
-        engines = sorted(HISTORY.glob("*/storico_ranking_*.csv"))
-        covered = []
-        for path in engines:
-            count = sum(1 for r in csv_rows(path)
-                        if (r.get("MatchDate") or "").strip() == day) if day else 0
-            if count:
-                covered.append((path.parent.name, count))
-        self.table.insert("", "end", values=(
-            "RANKING DISPONIBILI", day or "-",
-            f"{len(covered)} engine con pronostici",
-            f"{sum(n for _, n in covered)} pronostici complessivi"))
-        for engine, count in covered:
+            "GIORNATA DA CONTROLLARE", day,
+            f"{len(fixtures)} partite nel CSV",
+            "Oggi: non la data più recente presente nel file"))
+        if not fixtures:
             self.table.insert("", "end", values=(
-                "  ENGINE", engine, f"{count} pronostici", "Storico ranking presente"))
-        get = operations_audit.load().get("getmatches", {})
-        rank = operations_audit.load().get("rank_matches", {})
+                "ATTENZIONE", "Nessuna partita di oggi nell'input",
+                f"Ultima data nel CSV: {latest or 'nessuna'}",
+                "Scarica le partite di oggi prima di generare i ranking"))
+        # Restrict the engine check to the actual date requested by the user.
+        # A missing prediction is not necessarily a failure: selective engines may abstain.
+        engine_files = sorted(HISTORY.glob("*/storico_ranking_*.csv"))
+        engine_counts = []
+        for path in engine_files:
+            n = sum(1 for r in csv_rows(path)
+                    if (r.get("MatchDate") or "").strip() == day)
+            engine_counts.append((path.parent.name, n))
+        active = [(name, n) for name, n in engine_counts if n]
         self.table.insert("", "end", values=(
-            "ULTIMA ACQUISIZIONE", get.get("day") or "Non registrata",
-            get.get("state", "Non registrata"),
+            "PRONOSTICI DI OGGI", f"{len(active)}/{len(engine_files)} engine con selezioni",
+            f"{sum(n for _, n in active)} pronostici",
+            "Un engine selettivo può produrre zero gare senza errori"))
+        self.table.insert("", "end", values=(
+            "ULTIMO DOWNLOAD", get.get("day") or "Non registrato",
+            get.get("state", "Non registrato"),
             (get.get("time") or "").replace("T", " ")[:19]))
         self.table.insert("", "end", values=(
-            "ULTIMO RANKING", rank.get("day") or "Data input corrente",
-            rank.get("state", "Non registrato"),
+            "ULTIMA GENERAZIONE", rank.get("day") or "Input corrente",
+            rank.get("state", "Non registrata"),
             (rank.get("time") or "").replace("T", " ")[:19]))
-        if not rows:
-            next_step = "Scarica le partite"
-        elif not covered:
-            next_step = "Genera i pronostici"
-        elif self._operation_pending("getmatches", "rank_matches"):
-            next_step = "Rigenera i pronostici dopo l'ultima acquisizione"
+        acquired_today = (get.get("state") == "COMPLETATO" and get.get("day") == day)
+        rank_after_download = (rank.get("state") == "COMPLETATO" and acquired_today
+                               and rank.get("time", "") >= get.get("time", ""))
+        if not fixtures:
+            verdict = "SCARICA LE PARTITE DI OGGI"
+            reason = "Non risultano gare odierne nel file di input"
+        elif not acquired_today:
+            verdict = "ACQUISIZIONE ODIERNA NON CERTIFICATA"
+            reason = "Il file contiene gare, ma manca una acquisizione odierna completata dalla GUI"
+        elif not rank_after_download:
+            verdict = "GENERA I PRONOSTICI"
+            reason = "Non risulta una generazione completata dopo il download odierno"
         else:
-            next_step = "Pronostici presenti: controlla la data e gli engine"
-        self.table.insert("", "end", values=("PROSSIMA AZIONE", next_step, "", ""))
+            verdict = "FLUSSO COMPLETATO DALLA GUI"
+            reason = "Download e ranking completati in ordine; verificare eventuali errori nel log"
+        self.table.insert("", "end", values=("COSA FARE ORA", verdict, "", reason))
+        for name, count in sorted(engine_counts, key=lambda x: (-x[1], x[0])):
+            self.table.insert("", "end", values=(
+                "ENGINE", name, f"{count} pronostici oggi",
+                "Nessuna selezione" if count == 0 else "Pronostici presenti"))
+        self.status.set(f"Gestione partite {day}: {len(fixtures)} gare nell'input; "
+                        f"{len(active)} engine con pronostici. {verdict}.")
 
     def show_results_ops(self):
         self._operation_page(
