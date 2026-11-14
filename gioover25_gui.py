@@ -9,7 +9,7 @@ from datetime import date, timedelta, datetime
 from pathlib import Path
 from tkinter import ttk, messagebox, simpledialog
 from gioover25.live_monitor import snapshot_index, evaluate, FINAL
-from gioover25 import history_stats
+from gioover25 import history_stats, operations_audit
 from tools.live_flashscore import key as live_fixture_key
 from gioover25 import missing_results as missing_audit
 from tools.prepare_input import norm, canonical_team
@@ -732,11 +732,14 @@ class Dashboard(tk.Tk):
                 r.get("Total", ""), "Campione sufficiente" if r.get("SufficientSample") == "YES" else "Campione ridotto"))
         self.status.set(f"Fasce Score di {engine}, ordinate per percentuale decrescente")
 
-    def task(self, command, on_done=None):
+    def task(self, command, on_done=None, *, audit_step=None, audit_day=None, audit_csv=None):
         if self.busy:
             messagebox.showwarning("Operazione in corso", "Attendere la conclusione dell'operazione precedente.")
             return
         self.busy = True
+        if audit_step:
+            operations_audit.record(audit_step, "IN CORSO", day=audit_day)
+            self.write_log(f"[OPERAZIONE] Avviato {audit_step} | {audit_day or 'input corrente'}")
         self.start_loading("Elaborazione in corso, attendere...")
         self.status.set("Operazione in corso...")
         def work():
@@ -751,6 +754,15 @@ class Dashboard(tk.Tk):
                     self.busy = False
                     self.stop_loading()
                     self.status.set(f"Comando terminato (codice {rc})")
+                    if audit_step:
+                        count = len(csv_rows(audit_csv)) if rc == 0 and audit_csv else None
+                        operations_audit.record(audit_step, "COMPLETATO" if rc == 0 else "ERRORE",
+                                                day=audit_day, count=count, detail=f"exit={rc}")
+                        self.write_log(f"[OPERAZIONE] {audit_step}: codice={rc}, righe={count}")
+                        if self.view == "matches_ops":
+                            self.show_matches_ops()
+                        elif self.view == "results_ops":
+                            self.show_results_ops()
                     if rc == 0 and on_done:
                         on_done()
                     elif rc:
@@ -761,6 +773,8 @@ class Dashboard(tk.Tk):
                     self.busy = False
                     self.stop_loading()
                     self.write_log(str(exc))
+                    if audit_step:
+                        operations_audit.record(audit_step, "ERRORE", day=audit_day, detail=str(exc))
                     messagebox.showerror("Errore", str(exc))
                 self.after(0, failed)
         threading.Thread(target=work, daemon=True).start()
@@ -926,7 +940,7 @@ class Dashboard(tk.Tk):
     def run_getmatches(self):
         chosen = self._operation_date("Acquisisci partite", date.today().isoformat())
         if chosen is not None:
-            self.task([sys.executable, "getmatches.py", "--date", chosen.isoformat()], self.refresh)
+            self.task([sys.executable, "getmatches.py", "--date", chosen.isoformat()], self.refresh, audit_step="getmatches", audit_day=chosen.isoformat(), audit_csv=INPUT)
 
     def run_getresults(self):
         missing_days = sorted({
@@ -944,7 +958,7 @@ class Dashboard(tk.Tk):
                 "Conferma acquisizione",
                 f"Scaricare i risultati del {chosen.isoformat()}?\\n"
                 "Il file risultati.csv verrà sostituito, anche se la ricerca restituisce zero righe."):
-            self.task([sys.executable, "getresults.py", "--date", chosen.isoformat()], self.refresh)
+            self.task([sys.executable, "getresults.py", "--date", chosen.isoformat()], self.refresh, audit_step="getresults", audit_day=chosen.isoformat(), audit_csv=ROOT / "data/input_risultati/risultati.csv")
 
     def run_append_results(self):
         path = ROOT / "data/input_risultati/risultati.csv"
@@ -962,12 +976,12 @@ class Dashboard(tk.Tk):
                 f"Date rilevate: {', '.join(d for d in days if d) or 'non identificabili'}\\n"
                 "Questa operazione aggiorna gli storici e i report."):
             self.task([sys.executable, "-m", "gioover25.append_results",
-                       "data/input_risultati/risultati.csv"], self.refresh)
+                       "data/input_risultati/risultati.csv"], self.refresh, audit_step="append_results", audit_csv=path)
 
     def run_ranking(self):
         if messagebox.askyesno("Genera ranking", "Eseguire il ranking per tutti gli engine sul partite.csv corrente, senza --erase?"):
             self.task([sys.executable, "-m", "gioover25.rank_matches_v2",
-                       "data/input_partite/partite.csv", "--engine", "all"], self.refresh)
+                       "data/input_partite/partite.csv", "--engine", "all"], self.refresh, audit_step="rank_matches", audit_csv=INPUT)
 
     def run_bands(self):
         self.task([sys.executable, "-m", "analysis.metrics.score_band_analysis"], self.refresh)
