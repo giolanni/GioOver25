@@ -45,6 +45,11 @@ def main():
         print(f"[PROBE] {category}: {len(values)} indizi")
         for value in values:
             print(f"  {value}")
+    for candidate in sorted(set(found["tournament_id"] + found["stage_id"])):
+        for match in list(re.finditer(re.escape(candidate), page))[:5]:
+            context = page[max(0, match.start()-180):min(len(page), match.end()+180)]
+            context = re.sub(r"\\s+", " ", context)
+            print(f"[PROBE][CONTEXT] {candidate}: {context[:380]}")
     if not any(found.values()):
         print("[PROBE] Nessun ID nel documento HTML: occorre ispezionare le richieste XHR del browser.")
 
