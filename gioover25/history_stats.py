@@ -52,6 +52,13 @@ def in_period(day: str, period: str, today: date):
     return d <= today
 
 
+def common_size(histories, market):
+    """Count fixture identities present in every engine of the selected market."""
+    sets = [set(rows) for name, rows in histories.items()
+            if market_for(name) == market]
+    return len(set.intersection(*sets)) if sets else 0
+
+
 def compute(histories, period, today=None):
     """Return one result per engine; only OK/KO outcomes count.
 
