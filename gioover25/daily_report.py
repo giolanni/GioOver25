@@ -26,7 +26,7 @@ V20_FAMILY = [
     "v20", "v20def", "v20select", "v20defselect",
 ]
 PERMISSIVE_EXCLUDED = {"v27", "v30", "veg90"}
-SPECIAL_ENGINES = ("v27", "v30", "vg2.2", "vg2.6")
+SPECIAL_ENGINES = ("v27", "v30", "veg90", "vg2.2", "vg2.6")
 
 INK = colors.HexColor("#182230")
 MUTED = colors.HexColor("#667085")
@@ -199,7 +199,7 @@ def _p(text, style):
 
 def _table(rows: list[dict], styles, *, show_score=True, gs1=False, vg1=False):
     if not rows:
-        return _p("Nessuna selezione per oggi.", styles["empty"])
+        return _p("NESSUN PRONOSTICO OGGI", styles["empty"])
 
     if gs1:
         headers = ["Lega", "Partita", "Fascia", "MinOver", "DeltaGA"]
@@ -409,6 +409,8 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
     ]
 
     def section(title, body, meta=None):
+        if isinstance(body, Paragraph) and body.text == "NESSUN PRONOSTICO OGGI":
+            meta = None  # Evita descrizioni prolisse quando la tabella e vuota.
         block = [_p(title, styles["section"])]
         if meta is not None:
             block += [meta, Spacer(1, 1.5*mm)]
@@ -462,11 +464,6 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
                          _performance(permissive_second["engine"], report_date, min_score=70), styles),
         )
 
-    goal_rows = _vg1_rows(results_by_engine.get("vg1", []))
-    section("GOL - VG1", _table(goal_rows, styles, vg1=True),
-            _description("Engine dedicato al mercato GOL/BTTS. Nel report compaiono score >65: giallo 65-67.9, arancio 68-71.9, verde >=72.",
-                         _performance("vg1", report_date, market="BTTS", min_score=65), styles))
-
     special_descriptions = {
         "v27": (
             "Over 2.5 molto selettivo: richiede forte attacco della squadra di casa "
@@ -475,6 +472,10 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
         "v30": (
             "Over 2.5 specializzato negli storici giovani: lavora con maturita' 7-8 gare, "
             "forte tendenza Over recente e crescita dei gol fatti rispetto allo storico."
+        ),
+        "veg90": (
+            "Selettore sperimentale Over 2.5 ad alta affidabilita: mostra le selezioni "
+            "prodotte da VEG90, senza modificare i criteri degli altri engine."
         ),
         "vg2.2": (
             "Filtro GOL selettivo derivato da VG1: mantiene segnali VG1 ALTA con "
@@ -494,6 +495,12 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
             styles,
         )
         section(engine.upper(), _table(rows, styles, show_score=True), meta)
+
+    # Le sezioni BTTS vengono dopo tutti gli engine Over (V27, V30, VEG90).
+    goal_rows = _vg1_rows(results_by_engine.get("vg1", []))
+    section("GOL - VG1", _table(goal_rows, styles, vg1=True),
+            _description("Engine dedicato al mercato GOL/BTTS. Score >65: giallo 65-67.9, arancio 68-71.9, verde >=72.",
+                         _performance("vg1", report_date, market="BTTS", min_score=65), styles))
 
     section(
         "GS1 - OVER 2.5",
