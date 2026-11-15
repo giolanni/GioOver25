@@ -83,18 +83,22 @@ def main():
     parser.add_argument("--output-dir", type=Path, default=ROOT / "data/debug/verifica_serie_d")
     parser.add_argument("--write", action="store_true", help="Esporta report e sole nuove partite")
     args = parser.parse_args()
-    if not args.existing.is_file():
-        parser.error(f"CSV esistente non trovato: {args.existing}")
+    if args.existing.exists() and not (args.existing.is_file() or args.existing.is_dir()):
+        parser.error(f"Percorso esistente non valido: {args.existing}")
+    if not args.existing.exists() and args.existing != ROOT / "data/storico/risultati":
+        parser.error(f"Percorso specificato non trovato: {args.existing}")
     paths = sorted(args.proposal_dir.glob("proposta_serie_d_girone_?.csv"))
     if len(paths) != 9:
         parser.error(f"Attesi 9 CSV di proposta in {args.proposal_dir}; trovati {len(paths)}. "
                      "Eseguire prima import_storico_serie_d --write")
     proposals = [r for path in paths for r in read_csv(path)]
-    if args.existing.is_dir():
+    if args.existing.is_dir() or not args.existing.exists():
         expected = {f"{r['LeagueId']}.csv" for r in proposals}
         paths_existing = sorted(args.existing / name for name in expected)
         existing = [row for path in paths_existing if path.is_file() for row in read_csv(path)]
         print(f"[VERIFICA] Archivi per lega trovati: {sum(p.is_file() for p in paths_existing)}/{len(paths_existing)}")
+        if not args.existing.exists():
+            print("[VERIFICA][NOTA] Cartella storici non presente: nessun risultato preesistente in questa posizione")
     else:
         existing = read_csv(args.existing)
     required = {"LeagueId", "MatchDate", "Home", "Away", "HG", "AG"}
