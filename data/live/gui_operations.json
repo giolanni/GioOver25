@@ -1,0 +1,16 @@
+{
+  "getmatches": {
+    "state": "COMPLETATO",
+    "day": "2026-11-15",
+    "count": 330,
+    "detail": "exit=0",
+    "time": "2026-11-14T22:21:01+01:00"
+  },
+  "rank_matches": {
+    "state": "COMPLETATO",
+    "day": null,
+    "count": 330,
+    "detail": "exit=0",
+    "time": "2026-11-14T22:22:40+01:00"
+  }
+}
