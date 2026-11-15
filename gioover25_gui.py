@@ -66,6 +66,7 @@ class Dashboard(tk.Tk):
         self.loading_bar = None
         self.engine = tk.StringVar(value="v20")
         self.only_best = tk.BooleanVar(value=False)
+        self.ranking_date = tk.StringVar(value=date.today().isoformat())
         self.status = tk.StringVar(value="Pronto")
         self.view = "rankings"
         self.menu_buttons = {}
@@ -122,6 +123,14 @@ class Dashboard(tk.Tk):
         self.engine_box = ttk.Combobox(self.controls, textvariable=self.engine, width=20, state="readonly")
         self.engine_box.pack(side="left", padx=8)
         self.engine_box.bind("<<ComboboxSelected>>", self.on_engine_changed)
+        self.ranking_date_label = tk.Label(self.controls, text="Data partita:", bg=BG)
+        self.ranking_date_box = ttk.Combobox(self.controls, textvariable=self.ranking_date,
+                                               width=12, state="readonly")
+        self.ranking_date_box.bind("<<ComboboxSelected>>", lambda _: self.show_rankings())
+        self.ranking_prev = ttk.Button(self.controls, text="◀", width=3,
+                                        command=lambda: self.shift_ranking_date(-1))
+        self.ranking_next = ttk.Button(self.controls, text="▶", width=3,
+                                        command=lambda: self.shift_ranking_date(1))
         self.best_filter = ttk.Checkbutton(self.controls, text="Solo fascia migliore", variable=self.only_best,
                                            command=self.show_rankings)
         self.best_filter.pack(side="left", padx=10)
@@ -598,6 +607,32 @@ class Dashboard(tk.Tk):
             + "     ||     "
             + summary("TOTALE ENGINE", counts, finals))
 
+    def ranking_dates(self, engine):
+        """Last seven days plus any already generated future MatchDates."""
+        today = date.today()
+        dates = {(today - timedelta(days=n)).isoformat() for n in range(7)}
+        dates.add(today.isoformat())
+        # The output files contain newly generated forecasts, including future ones.
+        for path in (OUTPUT / engine).glob("*.csv"):
+            for row in csv_rows(path):
+                day = str(row.get("MatchDate", "")).strip()
+                try:
+                    parsed = date.fromisoformat(day)
+                except ValueError:
+                    continue
+                if parsed >= today:
+                    dates.add(day)
+        return sorted(dates)
+
+    def shift_ranking_date(self, offset):
+        dates = list(self.ranking_date_box["values"])
+        selected = self.ranking_date.get()
+        if selected in dates:
+            index = dates.index(selected) + offset
+            if 0 <= index < len(dates):
+                self.ranking_date.set(dates[index])
+                self.show_rankings()
+
     def show_rankings(self):
         self.history_controls.pack_forget()
         self.view = "rankings"
@@ -607,37 +642,60 @@ class Dashboard(tk.Tk):
         self.table["displaycolumns"] = self.columns[:6]
         for col, label in zip(self.columns, ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
             self.table.heading(col, text=label)
-        for item in self.table.get_children():
-            self.table.delete(item)
+        self.table.delete(*self.table.get_children())
         engine = self.engine.get()
-        path = HISTORY / engine / f"storico_ranking_{engine}.csv"
+        dates = self.ranking_dates(engine)
+        self.ranking_date_box["values"] = dates
+        selected = self.ranking_date.get()
+        if selected not in dates:
+            selected = date.today().isoformat()
+            self.ranking_date.set(selected)
+        index = dates.index(selected)
+        self.ranking_prev.configure(state="normal" if index > 0 else "disabled")
+        self.ranking_next.configure(state="normal" if index < len(dates)-1 else "disabled")
         bands = best_bands()
         best = bands.get(engine.lower())
-        today = date.today().isoformat()
-        rows = sorted((r for r in csv_rows(path) if r.get("MatchDate", "").strip() == today),
-                      key=self.ranking_score, reverse=True)
-        for r in rows:
-            try:
-                score = float(r.get("Score", "").replace(",", "."))
-            except ValueError:
+        # Prefer output ranking for future dates; historical rows are the fallback.
+        output_rows = []
+        for path in (OUTPUT / engine).glob("*.csv"):
+            output_rows.extend(r for r in csv_rows(path)
+                               if r.get("MatchDate", "").strip() == selected)
+        history_rows = [r for r in csv_rows(HISTORY / engine / f"storico_ranking_{engine}.csv")
+                        if r.get("MatchDate", "").strip() == selected]
+        combined = {}
+        for row in history_rows + output_rows:
+            key = (row.get("LeagueId"), row.get("MatchDate"), row.get("Home"), row.get("Away"))
+            combined[key] = row
+        rows = sorted(combined.values(), key=self.ranking_score, reverse=True)
+        visible = 0
+        for row in rows:
+            score = self.ranking_score(row)
+            if score == float("-inf"):
                 continue
             marked = bool(best and best[0] <= score <= best[1] and (score < best[1] or best[1] == 100))
             if self.only_best.get() and not marked:
                 continue
-            self.table.insert("", "end", values=(today, r.get("LeagueId", ""),
-                r.get("Home", "") + " – " + r.get("Away", ""), f"{score:g}",
-                r.get("Band", ""), "★ Fascia migliore" if marked else ""),
+            self.table.insert("", "end", values=(selected, row.get("LeagueId", ""),
+                row.get("Home", "") + " – " + row.get("Away", ""), f"{score:g}",
+                row.get("Band", ""), "★ Fascia migliore" if marked else ""),
                 tags=("best",) if marked else ())
-        self.status.set(f"{engine}: {len(rows)} pronostici odierni nello storico; fascia migliore: {best[2] if best else 'non disponibile'}")
+            visible += 1
+        source = "output + storico" if output_rows and history_rows else "output ranking" if output_rows else "storico ranking"
+        self.status.set(f"{engine} | {selected} | {visible} visualizzati / {len(rows)} pronostici | fonte: {source}")
 
     def update_context_controls(self):
         """Display only actions relevant to the selected page."""
         self.update_engine_visibility()
         if self.view == "rankings":
+            for widget in (self.ranking_date_label, self.ranking_prev, self.ranking_date_box, self.ranking_next):
+                if not widget.winfo_manager():
+                    widget.pack(side="left", padx=3)
             if not self.best_filter.winfo_manager():
                 self.best_filter.pack(side="left", padx=10)
         else:
             self.best_filter.pack_forget()
+            for widget in (self.ranking_date_label, self.ranking_prev, self.ranking_date_box, self.ranking_next):
+                widget.pack_forget()
         if self.view == "live":
             if not self.live_refresh_button.winfo_manager():
                 self.live_refresh_button.pack(side="right", padx=5)
