@@ -187,7 +187,7 @@ def _results_table(rows,market,styles,gs1=False):
                      dr._p((f"{_num(r.get('MinOverRateFull')):.3f} / {_num(r.get('DeltaGA')):+.3f}" if gs1 else str(r.get("Score","") or "N/D")),styles["cell"]),
                      dr._p(("OSSERVAZIONE" if gs1 and str(r.get("Band","")).startswith(("PROX-","NEAR")) else dr._display_band(r)),styles["cell"]),
                      score,outcome if outcome in ("OK","KO") else "ATTESA"])
-    if len(data)==1:return dr._p("Nessuna selezione.",styles["empty"])
+    if len(data)==1:return dr._p("NESSUN PRONOSTICO",styles["empty"])
     table=Table(data,colWidths=[30*mm,65*mm,30*mm,23*mm,13*mm,14*mm],repeatRows=1)
     commands=[("BACKGROUND",(0,0),(-1,0),dr.INK),("TEXTCOLOR",(0,0),(-1,0),colors.white),
               ("FONTNAME",(0,0),(-1,0),"Helvetica-Bold"),("FONTSIZE",(0,0),(-1,-1),7),
@@ -198,6 +198,25 @@ def _results_table(rows,market,styles,gs1=False):
         commands.append(("BACKGROUND",(0,i),(-1,i),shade))
     table.setStyle(TableStyle(commands))
     return table
+
+def _results_summary(rows, market, styles, gs1=False):
+    """Sintesi per fascia ALTA; esclude esiti non conclusi da OK e KO."""
+    high = [r for r in rows if str(r.get("Band", "")).strip().upper() == "ALTA"]
+    outcomes = [str(r.get("Outcome" if gs1 else market, "") or "").strip().upper() for r in high]
+    ok = outcomes.count("OK")
+    ko = outcomes.count("KO")
+    pending = len(high) - ok - ko
+    label = f"Totale ALTA {len(high)}  |  OK {ok}  |  KO {ko}"
+    if pending:
+        label += f"  |  In attesa {pending}"
+    return dr._p(label, styles["meta_stats"])
+
+def _results_with_summary(rows, market, styles, gs1=False):
+    if not rows:
+        return dr._p("NESSUN PRONOSTICO", styles["empty"])
+    return [_results_summary(rows, market, styles, gs1=gs1),
+            Spacer(1, 1.5*mm),
+            _results_table(rows, market, styles, gs1=gs1)]
 
 def _ranking_table(rows,styles):
     if not rows:return dr._p("Nessun esito ALTA definitivo.",styles["empty"])
@@ -217,7 +236,12 @@ def generate_results_report(day:date):
     story=[dr._p("GioOver - Consuntivo risultati",styles["title"]),
            dr._p(day.strftime("%d/%m/%Y"),styles["subtitle"]),Spacer(1,4*mm)]
     def section(title,content):
-        story.extend([dr._p(title,styles["section"]),content,Spacer(1,3*mm)])
+        story.append(dr._p(title,styles["section"]))
+        if isinstance(content, list):
+            story.extend(content)
+        else:
+            story.append(content)
+        story.append(Spacer(1,3*mm))
     # Reuse the morning report's sections, filtering by the original PredictionDate.
     # Mirror the morning report's fallback and second permissive choice.
     # Prefer a frozen selection manifest when available, to avoid look-ahead.
@@ -245,8 +269,9 @@ def generate_results_report(day:date):
               and (minimum is None or _num(r.get("Score"))>minimum)]
         if exclude:
             rows=[r for r in rows if matchkey(r) not in exclude]
-        section(f"{title} - {engine}",_results_table(rows,market,styles))
-        story.extend([dr._p(engine_description(engine),styles["meta"]),Spacer(1,2*mm)])
+        section(f"{title} - {engine}",_results_with_summary(rows,market,styles))
+        if rows:
+            story.extend([dr._p(engine_description(engine),styles["meta"]),Spacer(1,2*mm)])
     engine_section("ALGORITMO CAUTO",cautious,minimum=70)
     engine_section("ALGORITMO PERMISSIVO",permissive,minimum=70)
     if second:
@@ -258,7 +283,7 @@ def generate_results_report(day:date):
     for label,file in [("GS1 - OVER 2.5",Path("data/storico/gs1_over/storico_gs1_over.csv")),
                        ("GS1 - NEAR",Path("data/storico/gs1_over/storico_gs1_over_near.csv"))]:
         rows=[r for r in dr._read_csv(file) if r.get("MatchDate")==day.isoformat()]
-        section(label,_results_table(rows,"Outcome",styles,gs1=True))
+        section(label,_results_with_summary(rows,"Outcome",styles,gs1=True))
     tickets,summary=ticket_summary()
     state,rows=tickets.get(day.isoformat(),("NON FORMATA",[]))
     section("GS1 - SCHEDINA",dr._p(
