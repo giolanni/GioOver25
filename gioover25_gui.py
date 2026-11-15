@@ -70,6 +70,7 @@ class Dashboard(tk.Tk):
         self.view = "rankings"
         self.menu_buttons = {}
         self.live_poll_busy = False
+        self.live_initialized = False
         self.history_generation = 0
         self.history_period = tk.StringVar(value="Ultimi 7 giorni")
         self.history_mode = tk.StringVar(value="Confronto engine")
@@ -473,6 +474,18 @@ class Dashboard(tk.Tk):
         threading.Thread(target=work, daemon=True).start()
 
     def open_live(self):
+        if not self.live_initialized:
+            # La prima apertura della sezione in questa sessione riparte da zero.
+            # Nessun risultato o ranking ufficiale viene toccato.
+            live_path = ROOT / "data/live/partite_live.csv"
+            try:
+                live_path.unlink(missing_ok=True)
+            except OSError as exc:
+                self.status.set(f"LIVE: impossibile azzerare lo snapshot: {exc}")
+                self.write_log(f"LIVE: errore pulizia iniziale: {exc}")
+                return
+            self.live_initialized = True
+            self.write_log("LIVE: snapshot precedente eliminato alla prima apertura.")
         self.show_live()
 
     def refresh_live(self):
