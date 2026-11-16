@@ -572,7 +572,9 @@ class Dashboard(tk.Tk):
             if item:
                 minute = item["Minute"] or item["Status"]
                 if item["HG"] and item["AG"]:
-                    score = item["HG"] + "-" + item["AG"]
+                    score = item["HG"] + " - " + item["AG"]
+                    if item["Status"] == "LIVE" and item["Minute"]:
+                        score += " (" + item["Minute"] + ")"
                 try:
                     ts = datetime.fromisoformat(item["LastUpdate"].replace("Z", "+00:00"))
                     fresh = ts.tzinfo is not None and 0 <= (
