@@ -44,6 +44,7 @@ class RawMatch:
     tournament_stage_id: str = ""
     tournament_current_id: str = ""
     state_code: str = ""
+    live_minute: str = ""
 
     @property
     def borderline(self) -> bool:
@@ -208,6 +209,18 @@ def parse_feed(payload: str) -> list[RawMatch]:
             status = "Posticipata"
         else:
             status = "" if ab in {"", "1", "3"} else ab
+        # The mobile feed may expose an explicit live clock (e.g. "67'",
+        # "45+2'" or "90+3'"). Never derive a minute from kickoff time
+        # or interpret numeric state/period codes as minutes.
+        live_minute = ""
+        if ab == "2":
+            for clock_field in ("AO", "BX", "AC"):
+                value = fields.get(clock_field, "").strip()
+                found = re.fullmatch(r"(?:([1-9]\\d?|1[01]\\d)(?:\\s*\\+\\s*([1-9]\\d?))?)\\s*['’′]?", value)
+                if found and ("'" in value or "’" in value or "′" in value or clock_field == "AO"):
+                    live_minute = found.group(1) + (
+                        "+" + found.group(2) if found.group(2) else "") + "'"
+                    break
         out.append(RawMatch(
             country, league, tm, fields["AE"], fields["AF"], score, status, match_date,
             match_id=fields.get("AA", ""),
@@ -215,6 +228,7 @@ def parse_feed(payload: str) -> list[RawMatch]:
             tournament_stage_id=fields.get("ZC", "") or tournament_stage_id,
             tournament_current_id=fields.get("ZE", "") or tournament_current_id,
             state_code=ab,
+            live_minute=live_minute,
         ))
     return out
 
