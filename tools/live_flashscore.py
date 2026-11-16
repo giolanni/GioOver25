@@ -124,7 +124,7 @@ def collect(output=OUTPUT, day=None):
             diagnostics.append((match, "STATE_UNKNOWN", lid))
             continue
         row = dict(zip(("LeagueId", "MatchDate", "Home", "Away"), fixture))
-        row.update({"MatchId": match.match_id, "Minute": "",
+        row.update({"MatchId": match.match_id, "Minute": match.live_minute if status == "LIVE" else "",
                     "HG": hg, "AG": ag, "Status": status,
                     "LastUpdate": datetime.now(timezone.utc).isoformat()})
         if k in candidates and candidates[k] != row:
