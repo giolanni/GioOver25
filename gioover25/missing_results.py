@@ -520,6 +520,10 @@ def build_parser() -> argparse.ArgumentParser:
         help="Non elimina i duplicati della stessa partita tra più storici.",
     )
     parser.add_argument(
+        "--detail", action="store_true",
+        help="Mostra anche la tabella completa delle partite arretrate SCHEDULED non rinviate.",
+    )
+    parser.add_argument(
         "--csv",
         dest="csv_output",
         help="Esporta l'elenco in un file CSV separato da punto e virgola.",
@@ -597,7 +601,10 @@ def main() -> int:
     print("\\nPartite arretrate SCHEDULED con Postponed = NO")
     print(f"Totale: {len(scheduled_pending)}")
     if scheduled_pending:
-        print_table(scheduled_pending)
+        print(f"Leghe coinvolte: {len({m.league_id for m in scheduled_pending})}")
+        print("Dettaglio omesso dal log (usa --detail oppure --csv <file>).")
+        if args.detail:
+            print_table(scheduled_pending)
     else:
         print("Nessuna partita in questa condizione.")
 
