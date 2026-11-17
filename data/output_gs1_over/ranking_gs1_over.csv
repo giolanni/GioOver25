@@ -1,1 +1,2 @@
 ﻿MatchDate;LeagueId;Home;Away;Round;PredictionDate;Band;MinOverThreshold;DeltaGAThreshold;MinOverRateFull;DeltaGA;HomeOverRateFull;AwayOverRateFull;HomeGAFull;AwayGAFull;HomeGAL5;AwayGAL5;Status;HG;AG;Outcome
+2026-11-17;England_IsthmianLeaguePremierDivision;Dartford;Three Bridges;;2026-11-16;ALTA;0.800000;0.400000;0.812500;0.762500;0.812500;0.823529;1.437500;2.705882;2.200000;2.400000;SCHEDULED;;;
