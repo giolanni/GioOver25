@@ -31,11 +31,8 @@ Estonia_Esiliiga;;2026-09-13;Maardu;Tallinna Kalev;POSTICIPATA;
 Estonia_Esiliiga;;2026-09-19;Levadia U21;Maardu;POSTICIPATA;
 Bulgaria_ParvaLiga;;2026-09-20;Levski;Ludogorets;POSTICIPATA;
 Ukraine_PershaLiga;;2026-11-11;FC Chernihiv;Inhulets;POSTICIPATA;
-England_SouthernLeaguePremierCentral;;2026-10-06;Leamington;Halesowen;POSTICIPATA;
 England_SouthernLeaguePremierCentral;;2026-09-22;Leighton Town;Needham Market;POSTICIPATA;Rinviata per FA Cup.
-England_SouthernLeaguePremierSouth;;2026-09-22;Chippenham;Sholing;POSTICIPATA;Rinviata per FA Cup.
 England_SouthernLeaguePremierSouth;;2026-09-22;Hanwell Town;Uxbridge;POSTICIPATA;Rinviata per FA Cup.
-England_SouthernLeaguePremierSouth;;2026-09-22;Poole;Wimborne;POSTICIPATA;Rinviata per FA Cup.
 England_SouthernLeaguePremierSouth;;2026-09-22;Yate Town;Evesham;POSTICIPATA;Rinviata per FA Cup.
 Bulgaria_VtoraLiga;;2026-09-27;Ludogorets II;Etar;POSTICIPATA;
 Germany_Oberliga_Niedersachsen;;2026-10-02;Lohne;BSV Rehden;POSTICIPATA;Posticipata
@@ -67,7 +64,6 @@ England_SouthernLeaguePremierSouth;;2026-10-13;Gloucester;Taunton;POSTICIPATA;
 Estonia_Esiliiga;;2026-10-15;Viimsi JK;Maardu;POSTICIPATA;
 Germany_Oberliga_Niederrhein;;2026-10-16;Buderich;Baumberg;POSTICIPATA;
 England_SouthernLeaguePremierCentral;;2026-10-17;Anstey Nomads;Redditch;POSTICIPATA;
-England_SouthernLeaguePremierCentral;;2026-10-17;Leiston;Stratford;POSTICIPATA;
 England_SouthernLeaguePremierCentral;;2026-10-17;Peterborough Sports;Alvechurch;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-10-17;Berkhamsted;Basingstoke;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-10-17;Gloucester;Bath;POSTICIPATA;
@@ -80,7 +76,6 @@ Germany_Oberliga_Hamburg;;2026-10-18;Pinneberg;Dassendorf;POSTICIPATA;
 Germany_Oberliga_Hamburg;;2026-10-18;Tesla Hamburg;Harksheide;POSTICIPATA;
 Germany_Oberliga_SchleswigHolstein;14;2026-10-17;Nordmark Satrup;Kilia Kiel;POSTICIPATA;
 England_SouthernLeaguePremierCentral;;2026-10-19;Redditch;Worcester;POSTICIPATA;
-England_NPLPremierDivision;;2026-10-20;Quorn;Bury;POSTICIPATA;
 England_SouthernLeaguePremierCentral;;2026-10-20;Alvechurch;Bromsgrove;POSTICIPATA;
 England_SouthernLeaguePremierCentral;;2026-10-20;Stourbridge;Anstey Nomads;POSTICIPATA;
 England_IsthmianLeaguePremierDivision;;2026-10-20;Cheshunt;Cray Wanderers;POSTICIPATA;
@@ -105,8 +100,6 @@ Germany_Oberliga_Bayern_Nord;;2026-10-24;Bamberg;Kornburg;POSTICIPATA;
 England_SouthernLeaguePremierCentral;;2026-10-24;Leighton Town;Racing Club Warwick;POSTICIPATA;
 NorthernIreland_NIFLPremiership;;2026-10-24;Glentoran;Ballymena;POSTICIPATA;
 NorthernIreland_NIFLChampionship;;2026-10-24;Institute;Dundela;POSTICIPATA;
-NorthernIreland_NIFLChampionship;;2026-10-24;Rathfriland;Moyola;POSTICIPATA;
-NorthernIreland_NIFLChampionship;;2026-10-24;Warrenpoint;Glenavon;POSTICIPATA;
 CzechRepublic_1Liga;;2026-10-24;Liberec;Ostrava;POSTICIPATA;
 Switzerland_PromotionLeague;;2026-10-24;Bavois;Schaffhausen;POSTICIPATA;
 SriLanka_SuperLeague;;2026-10-26;Colombo;UP Country Lions;POSTICIPATA;
@@ -294,12 +287,9 @@ Kenya_PremierLeague;;2026-11-14;Nairobi United;Mara Sugar;POSTICIPATA;
 England_NPLPremierDivision;;2026-11-14;Curzon Ashton;Quorn;POSTICIPATA;
 Germany_Oberliga_Bayern_Sud;;2026-11-14;Gundelfingen;TSV 1880 Wasserburg;POSTICIPATA;
 England_LeagueOne;;2026-11-14;Stevenage;Mansfield;POSTICIPATA;
-Ukraine_PershaLiga;16;2026-11-14;SC Poltava;Ahrobiznes Volochysk;NOT_FOUND;Rinvio presunto: assente dai risultati importati
 Germany_Regionalliga_Sudwest;;2026-11-14;VfR Mannheim;Sandhausen;POSTICIPATA;
 England_LeagueOne;;2026-11-14;Doncaster;Leyton Orient;POSTICIPATA;
 Slovenia_2SNL;;2026-11-14;Brezice;Ilirija;POSTICIPATA;
-Benin_Ligue1;8;2026-11-14;ASVO;AS Sobemap;NOT_FOUND;Rinvio presunto: assente dai risultati importati
-Ghana_DivisionOneLeague;8;2026-11-14;Rospak;Pac Academy;NOT_FOUND;Rinvio presunto: assente dai risultati importati
 Bulgaria_ThirdLeagueNorthWest;;2026-11-14;Akademik Svishtov;Juventus Malchika;POSTICIPATA;
 Finland_Kolmonen_Western_Group1;22;2026-09-12;KaaPo;PiPS;NOT_FOUND;Rinvio presunto: assente dai risultati importati
 Finland_Kolmonen_Western_Group3;16;2026-09-12;SJK-j;Sundom IF;NOT_FOUND;Rinvio presunto: assente dai risultati importati
@@ -392,3 +382,11 @@ England_SouthernLeaguePremierSouth;;2026-11-14;Bracknell;Uxbridge;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-11-14;Chertsey;Wimborne;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-11-14;Malvern Town;Chichester;POSTICIPATA;
 CzechRepublic_4Liga_GroupA;;2026-11-14;Petrin Plzen;Ceske Budejovice B;POSTICIPATA;
+CongoDr_Ligue1;;2026-11-15;Celeste;AS Vita Club;POSTICIPATA;
+Kenya_PremierLeague;;2026-11-15;Tusker;Shabana;POSTICIPATA;
+Kenya_PremierLeague;;2026-11-15;3K FC;Gor Mahia;POSTICIPATA;
+Montenegro_DrugaLiga;18;2026-11-15;Rudar;Grbalj;NOT_FOUND;Rinvio presunto: assente dai risultati importati
+AntiguaBarbuda_ABFAPremierLeague;;2026-11-16;Pigotts Bullets;Freemansville;POSTICIPATA;
+Aruba_DivisiondiHonor;;2026-11-16;Estrella;Sporting;POSTICIPATA;
+Ukraine_PershaLiga;;2026-11-16;FC Chernihiv;Lokomotyv Kyiv;POSTICIPATA;
+Uganda_PremierLeague;;2026-11-17;Kitara;Blacks Power;POSTICIPATA;
