@@ -1,65 +1,47 @@
 ﻿LeagueId;MatchDate;Home;Away
-Algeria_Ligue1;2026-11-18;Constantine;Ben Aknoun
-Algeria_Ligue1;2026-11-18;Temouchent;El Biar
-SaudiArabia_Division1;2026-11-18;Al Adalah;Al Orubah
-Belarus_PershayaLiga;2026-11-18;Din. Minsk 2;BATE 2
-Bosnia_PrvaLiga_RS;2026-11-18;Romanija Pale;Kozara
-Bosnia_PrvaLiga_RS;2026-11-18;Slavija;Drina Zvornik
-Bulgaria_ThirdLeagueSouthWest;2026-11-18;Natsional Sofia;Kostinbrod
-Bulgaria_ThirdLeagueSouthWest;2026-11-18;Septemvri Simitli;Kyustendil
-Bulgaria_ThirdLeagueSouthWest;2026-11-18;Strumska Slava;Botev Ihtiman
-Bulgaria_ThirdLeagueNorthEast;2026-11-18;Benkovski;Septemvri Tervel
-Bulgaria_ThirdLeagueNorthEast;2026-11-18;Botev Novi Pazar;Aksakovo
-Bulgaria_ThirdLeagueNorthWest;2026-11-18;Sevlievo;Akademik Svishtov
-Camerun_EliteOne;2026-11-18;Gazelle;Aigle Moungo
-Camerun_EliteOne;2026-11-18;Cotonsport;Stade Renard
-CongoDr_Ligue1;2026-11-18;MK Etancheite;AC Rangers
-CongoDr_Ligue1;2026-11-18;Etoile du Congo;Etoile de Kivu
-CongoDr_Ligue1;2026-11-18;Malole;Blessing
-CongoDr_Ligue1;2026-11-18;Mazembe;Manika
-CongoDr_Ligue1;2026-11-18;St Eloi Lupopo;Simba
-CongoDr_Ligue1;2026-11-18;FC Renaissance;New Jack
-Germany_Regionalliga_Nord;2026-11-18;Jeddeloh;Phonix Lubeck
-Germany_Oberliga_Hessen;2026-11-18;Darmstadt U21;Eddersheim
-Germany_Oberliga_RheinlandPfalzSaar;2026-11-18;Engers;Koblenz
-England_SouthernLeaguePremierSouth;2026-11-18;Frome;Gloucester
-England_SouthernLeaguePremierSouth;2026-11-18;Gosport;Chertsey
-England_ProfessionalDevelopmentLeague;2026-11-18;Peterborough U21;Bolton U21
-NorthernIreland_NIFLChampionship;2026-11-18;Newington;H&W Welders
-Liberia_LFAFirstDivision;2026-11-18;Borough;Black Man Warrior
-Liberia_LFAFirstDivision;2026-11-18;Golden Dream;BEA Mountain
-Liberia_LFAFirstDivision;2026-11-18;LISCR FC;Gardnersville
-Liberia_LFAFirstDivision;2026-11-18;Paynesville;Fassell
-Niger_SuperLigue;2026-11-18;AS ZAM;Espoir
-Niger_SuperLigue;2026-11-18;Douanes Niamey;Niima
-Nigeria_NPFL;2026-11-18;Ranchers Bees;Doma United
-Peru_Liga1_Clausura;2026-11-18;Alianza Atl.;Melgar
-Poland_IIILiga_Group3;2026-11-18;Sulow;Nysa
-Qatar_QSL2;2026-11-18;Al-Rayyan 2;Al Mesaimeer
-SierraLeone_PremierLeague;2026-11-18;Diamond Stars;Star Sport Academy
-Tunisia_Ligue2;2026-11-18;Redeyef;Ksour Essef
-Turkey_2LigWhiteGroup;2026-11-18;Adana Demirspor;Kastamonuspor
-Turkey_2LigWhiteGroup;2026-11-18;Corluspor;Musspor
-Turkey_2LigWhiteGroup;2026-11-18;Elazigspor;Menemenspor
-Turkey_2LigWhiteGroup;2026-11-18;Guzide Gebzespor;Ankaraspor
-Turkey_2LigWhiteGroup;2026-11-18;Hatayspor;Inegol Kafkas
-Turkey_2LigWhiteGroup;2026-11-18;Isparta 32 Spor;Soma Spor
-Turkey_2LigWhiteGroup;2026-11-18;Arnavutkoy Bl.;Aksaray Bld.
-Turkey_2LigWhiteGroup;2026-11-18;Aliaga;Sebat Spor Kulubu
-Turkey_2LigWhiteGroup;2026-11-18;Sanliurfaspor;Erbaaspor
-Turkey_2LigRedGroup;2026-11-18;12 Bingol;Sakaryaspor
-Turkey_2LigRedGroup;2026-11-18;Ankara Demirspor;52 Orduspor
-Turkey_2LigRedGroup;2026-11-18;Serik Spor;24 Erzincanspor
-Turkey_2LigRedGroup;2026-11-18;Trabzon FK;K. İstiklalspor
-Turkey_2LigRedGroup;2026-11-18;Ankaragucu;Kirklarelispor
-Turkey_2LigRedGroup;2026-11-18;Inegolspor;Iskenderunspor
-Turkey_2LigRedGroup;2026-11-18;Fethiyespor;Kutahyaspor
-Turkey_2LigRedGroup;2026-11-18;Karacabey Bld.;Beyoglu Yeni Carsi
-Uganda_PremierLeague;2026-11-18;Mbarara City;Lugazi
-Uganda_PremierLeague;2026-11-18;Vipers;BUL
-Uruguay_SegundaDivision;2026-11-18;Atenas;Fenix
-Zambia_SuperLeague;2026-11-18;Green Eagles;Green Buffaloes
-Zambia_SuperLeague;2026-11-18;Kansanshi;Trident
-Zambia_SuperLeague;2026-11-18;Roan United;Chirundu Utd
-Mexico_LigaPremierSerieA;2026-11-18;Saltillo;Canoneros
-Uruguay_SegundaDivision;2026-11-18;Colon;Oriental
+Algeria_Ligue1;2026-11-19;MC Alger;Olympique Akbou
+Algeria_Ligue1;2026-11-19;Rouisset;Belouizdad
+Algeria_Ligue1;2026-11-19;JS Kabylie;USM Alger
+Armenia_FirstLeague;2026-11-19;Noah 2;Lernayin Artsakh
+Australia_AustralianChampionship;2026-11-19;Preston Lions;South Hobart
+Azerbaijan_FirstLeague;2026-11-19;Mingachevir;Baku Sporting
+Azerbaijan_FirstLeague;2026-11-19;Khankendi;Karvan
+Bosnia_PrvaLiga_RS;2026-11-19;Nevesinje;Prijedor
+Bulgaria_VtoraLiga;2026-11-19;Dobrudzha;Fratria
+Camerun_EliteOne;2026-11-19;Aigle Royal;Colombe
+CongoDr_Ligue1;2026-11-19;Dauphins Noirs;Aigles du Congo
+CongoDr_Ligue1;2026-11-19;Novakin;Ufalya Simba
+Denmark_1stDivision;2026-11-19;Fredericia;Hillerod
+EmiratiArabi_UAELeague;2026-11-19;Al Wasl;Hatta
+EmiratiArabi_UAELeague;2026-11-19;Al-Ain;Al Dhafra
+France_National;2026-11-19;Amiens;Caen
+Iran_ProLeagueGolfoPersico;2026-11-19;Kheybar Khorramabad;Esteghlal F.C.
+Iran_ProLeagueGolfoPersico;2026-11-19;Malavan;Gol Gohar
+Iran_ProLeagueGolfoPersico;2026-11-19;Mes Shahr Babak;Tractor
+Iraq_StarsLeague;2026-11-19;Diala;Al Kahraba
+Iraq_StarsLeague;2026-11-19;Al Gharraf;Al Quwa Al Jawiya
+Iraq_StarsLeague;2026-11-19;Ghaz Al Shamal;Al Karkh
+Kuwait_Division1;2026-11-19;Burgan;Sporty
+Kuwait_Division1;2026-11-19;Ittihad Al-Shorta;Al Jazira
+Kuwait_Division1;2026-11-19;Khaitan;Yarmouk
+Liberia_LFAFirstDivision;2026-11-19;Wologizi;District 17
+Liberia_LFAFirstDivision;2026-11-19;Discoveries;LPRC Oiler
+Liberia_LFAFirstDivision;2026-11-19;Downtown;Shaita
+Liberia_LFAFirstDivision;2026-11-19;Heaven Eleven;Watanga
+Liberia_LFAFirstDivision;2026-11-19;NPA Anchors;Freeport
+Lithuania_ILyga;2026-11-19;Sveikata;Hegelmann Litauen 2
+Mauritania_Ligue1;2026-11-19;Douane;Kaedi
+Qatar_QSL;2026-11-19;Al Ahli Doha;Shamal
+Senegal_Ligue1;2026-11-19;Linguere;Teungueth
+Seychelles_PremierLeague;2026-11-19;Saint Louis;Bel Air
+Siria_PremierLeague;2026-11-19;Al Shorta;Tishreen
+Suriname_SML;2026-11-19;Inter Moengotapoe;Inter Wanica
+Uganda_PremierLeague;2026-11-19;Entebbe UPPC;Kataka
+Uganda_PremierLeague;2026-11-19;Kigezi HomeBoyz;Express
+Uganda_PremierLeague;2026-11-19;Maroons;NEC FC
+Uzbekistan_SuperLeague;2026-11-19;Termez Surkhon;Andijan
+Zambia_SuperLeague;2026-11-19;Roan United;Chirundu Utd
+Zambia_SuperLeague;2026-11-19;Makeni All Stars;NAPSA Stars
+Zambia_SuperLeague;2026-11-19;Mufulira;Kabwe
+Zambia_SuperLeague;2026-11-19;Nkwazi;Mutondo Stars
+Zambia_SuperLeague;2026-11-19;Zesco Utd;Red Arrows
