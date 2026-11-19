@@ -200,21 +200,32 @@ def _results_table(rows,market,styles,gs1=False):
     return table
 
 def _results_summary(rows, market, styles, gs1=False):
-    """Sintesi per fascia ALTA; esclude esiti non conclusi da OK e KO."""
-    high = [r for r in rows if str(r.get("Band", "")).strip().upper() == "ALTA"]
-    outcomes = [str(r.get("Outcome" if gs1 else market, "") or "").strip().upper() for r in high]
-    ok = outcomes.count("OK")
-    ko = outcomes.count("KO")
-    pending = len(high) - ok - ko
-    label = f"Totale ALTA {len(high)}  |  OK {ok}  |  KO {ko}"
-    if pending:
-        label += f"  |  In attesa {pending}"
-    return dr._p(label, styles["meta_stats"])
+    """Report exact ALTA and immature ALTA separately; never merge them."""
+    def summary(label, group):
+        outcomes = [str(r.get("Outcome" if gs1 else market, "") or "").strip().upper()
+                    for r in group]
+        ok, ko = outcomes.count("OK"), outcomes.count("KO")
+        pending = len(group) - ok - ko
+        text = f"Totale {label} {len(group)}  |  OK {ok}  |  KO {ko}"
+        if pending:
+            text += f"  |  In attesa {pending}"
+        return text
+
+    def band(row):
+        return str(row.get("Band", "") or "").strip().upper()
+
+    high = [r for r in rows if band(r) == "ALTA"]
+    immature = [r for r in rows if band(r).startswith("IMM-ALTA-")]
+    labels = [summary("ALTA", high)]
+    if immature:
+        labels.append(summary("IMM-ALTA", immature))
+    return [dr._p(label, styles["meta_stats"]) for label in labels]
+
 
 def _results_with_summary(rows, market, styles, gs1=False):
     if not rows:
         return dr._p("NESSUN PRONOSTICO", styles["empty"])
-    return [_results_summary(rows, market, styles, gs1=gs1),
+    return [*_results_summary(rows, market, styles, gs1=gs1),
             Spacer(1, 1.5*mm),
             _results_table(rows, market, styles, gs1=gs1)]
 
