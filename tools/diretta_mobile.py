@@ -214,13 +214,34 @@ def parse_feed(payload: str) -> list[RawMatch]:
         # or interpret numeric state/period codes as minutes.
         live_minute = ""
         if ab == "2":
+            # A live clock can move between feed fields. Accept explicit minute
+            # markers anywhere, but never infer minutes from kickoff timestamps,
+            # period/state codes or unrelated plain numbers.
+            clock_re = re.compile(r"(?<![\\d:])([1-9]\\d?|1[01]\\d)(?:\\s*\\+\\s*([1-9]\\d?))?\\s*['’′](?!\\w)")
             for clock_field in ("AO", "BX", "AC"):
                 value = fields.get(clock_field, "").strip()
-                found = re.fullmatch(r"(?:([1-9]\\d?|1[01]\\d)(?:\\s*\\+\\s*([1-9]\\d?))?)\\s*['’′]?", value)
-                if found and ("'" in value or "’" in value or "′" in value or clock_field == "AO"):
+                found = clock_re.fullmatch(value)
+                if found:
                     live_minute = found.group(1) + (
                         "+" + found.group(2) if found.group(2) else "") + "'"
                     break
+            if not live_minute:
+                # Some feeds put the explicit clock in a different field or
+                # alongside a short textual period label.
+                for clock_field, value in fields.items():
+                    if clock_field in {"AE", "AF", "ZA", "AD", "AA"}:
+                        continue
+                    found = clock_re.search(value)
+                    if found and len(value) <= 32:
+                        live_minute = found.group(1) + (
+                            "+" + found.group(2) if found.group(2) else "") + "'"
+                        break
+            if not live_minute:
+                # AO is a documented clock candidate in this provider; only
+                # accept its bare numeric value, never other numeric fields.
+                value = fields.get("AO", "").strip()
+                if re.fullmatch(r"(?:[1-9]\\d?|1[01]\\d)", value):
+                    live_minute = value + "'"
         out.append(RawMatch(
             country, league, tm, fields["AE"], fields["AF"], score, status, match_date,
             match_id=fields.get("AA", ""),
