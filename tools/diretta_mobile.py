@@ -67,6 +67,7 @@ class MobileParser(HTMLParser):
         self.fixture_parts = []
         self.in_score = False
         self.score_parts = []
+        self.score_match_id = ""
         self.matches = []
 
     def handle_starttag(self, tag, attrs):
@@ -86,6 +87,8 @@ class MobileParser(HTMLParser):
         elif tag == "a" and ("fin" in attrs.get("class", "").split() or "/partita/" in attrs.get("href", "")):
             self.in_score = True
             self.score_parts = []
+            id_match = re.search(r"/partita/([^/?#]+)/?", attrs.get("href", ""))
+            self.score_match_id = id_match.group(1) if id_match else ""
 
     def handle_endtag(self, tag):
         if not self.in_score_data:
@@ -103,7 +106,8 @@ class MobileParser(HTMLParser):
             fixture = " ".join("".join(self.fixture_parts).split())
             if " - " in fixture and self.country and self.league:
                 home, away = fixture.split(" - ", 1)
-                self.matches.append(RawMatch(self.country, self.league, self.time, home.strip(), away.strip(), score, self.status))
+                minute = self.time if re.fullmatch(r"\d{1,3}(?:\+\d{1,2})?[\u0027’′]", self.time) else ("Intervallo" if self.time.casefold() in ("intervallo", "ht") else "")
+                self.matches.append(RawMatch(self.country, self.league, self.time, home.strip(), away.strip(), score, self.status, match_id=self.score_match_id, state_code="2" if minute else "", live_minute=minute))
             self.fixture_parts = []
             self.status = ""
         elif tag == "br":
@@ -129,7 +133,7 @@ class MobileParser(HTMLParser):
             return
         # Nella pagina mobile ora e stato possono arrivare nello stesso
         # nodo di testo della squadra (es. "14:00 BFF Academy U19").
-        tm = re.match(r"^(\d{1,2}:\d{2})(?:\s+|$)", value)
+        tm = re.match(r"^(\d{1,2}:\d{2}|\d{1,3}(?:\+\d{1,2})?[\u0027’′]|Intervallo|HT)(?=\s|[A-Za-zÀ-ÿ]|$)", value, re.I)
         if tm:
             self.time = tm.group(1)
             value = value[tm.end():].strip()
