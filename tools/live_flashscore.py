@@ -67,7 +67,9 @@ def fetch_day(day):
                 k = (match.country, match.league, match.match_date,
                      match.home, match.away)
                 # Prefer most informative state, but reject conflicting scores
-                if k not in raw or (raw[k].score == "-" and match.score != "-"):
+                if k not in raw or (raw[k].score == "-" and match.score != "-") or (
+                    raw[k].score == match.score and not raw[k].live_minute and match.live_minute
+                ):
                     raw[k] = match
         except Exception as exc:
             errors.append(f"offset={n}: {exc}")
