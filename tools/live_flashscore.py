@@ -14,7 +14,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 from gioover25.live_monitor import FIELDS, save_snapshot
-from tools.diretta_mobile import fetch_feed, parse_feed
+from tools.diretta_mobile import fetch_feed, parse_feed, fetch_html, parse_mobile
 from tools.prepare_input import ROOT, canonical_team, load_registry, norm, resolve_match
 
 HISTORY = ROOT / "data" / "storico" / "ranking"
@@ -73,6 +73,33 @@ def fetch_day(day):
                     raw[k] = match
         except Exception as exc:
             errors.append(f"offset={n}: {exc}")
+    # Use the official mobile scoreboard clock, not feed timestamp estimates.
+    try:
+        mobile = parse_mobile(fetch_html(offset))
+        by_id = {m.match_id: m for m in mobile if m.match_id and m.live_minute}
+        by_teams = {}
+        for m in mobile:
+            if m.live_minute:
+                mk = (_live_team_key(m.home), _live_team_key(m.away))
+                by_teams.setdefault(mk, []).append(m)
+        official = 0
+        for match in raw.values():
+            if match.state_code != "2":
+                continue
+            mobile_match = by_id.get(match.match_id)
+            if mobile_match is None:
+                matches = by_teams.get((_live_team_key(match.home), _live_team_key(match.away)), [])
+                if len(matches) == 1:
+                    mobile_match = matches[0]
+            match.live_minute = mobile_match.live_minute if mobile_match else ""
+            if mobile_match:
+                official += 1
+        print(f"[LIVE] Minuti ufficiali Diretta: {official} partite")
+    except Exception as exc:
+        for match in raw.values():
+            if match.state_code == "2":
+                match.live_minute = ""
+        errors.append(f"mobile clock: {exc}")
     if not raw and errors:
         raise RuntimeError("No Diretta fixtures retrieved: " + "; ".join(errors))
     return list(raw.values()), errors
