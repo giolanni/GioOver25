@@ -1,13 +1,13 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-13;1;Unirea Alba-Iulia;13;10;2;1;36;6;30;32;2.462
-13;2;Timisul Sag;13;8;3;2;19;8;11;27;2.077
-13;3;Viitorul Arad;13;7;3;3;23;18;5;24;1.846
-13;4;Ghiroda & Giarmata Vii;13;6;4;3;23;15;8;22;1.692
-13;5;CSM Deva;13;6;4;3;27;21;6;22;1.692
-13;6;Blaj;13;6;4;3;24;20;4;22;1.692
-13;7;Santana;13;6;2;5;17;12;5;20;1.538
-13;8;Progresul Pecica;13;4;2;7;21;29;-8;14;1.077
-13;9;Metalurgistul Cugir;13;3;4;6;14;21;-7;13;1.0
-13;10;Univ. Alba Iulia;13;2;4;7;12;23;-11;10;0.769
-13;11;Politehnica Timisoara 2;13;2;2;9;14;30;-16;8;0.615
-13;12;Nera Bogodinti;13;0;2;11;6;33;-27;2;0.154
+14;1;Unirea Alba-Iulia;14;10;3;1;37;7;30;33;2.357
+14;2;Timisul Sag;14;9;3;2;21;8;13;30;2.143
+14;3;CSM Deva;14;7;4;3;30;22;8;25;1.786
+14;4;Viitorul Arad;13;7;3;3;23;18;5;24;1.846
+14;5;Ghiroda & Giarmata Vii;14;6;5;3;24;16;8;23;1.643
+14;6;Blaj;13;6;4;3;24;20;4;22;1.692
+14;7;Santana;13;6;2;5;17;12;5;20;1.538
+14;8;Progresul Pecica;14;4;2;8;22;32;-10;14;1.0
+14;9;Metalurgistul Cugir;14;3;4;7;14;23;-9;13;0.929
+14;10;Univ. Alba Iulia;14;2;5;7;14;25;-11;11;0.786
+14;11;Politehnica Timisoara 2;14;2;3;9;16;32;-16;9;0.643
+14;12;Nera Bogodinti;13;0;2;11;6;33;-27;2;0.154
