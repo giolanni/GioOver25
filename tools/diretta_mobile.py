@@ -242,6 +242,24 @@ def parse_feed(payload: str) -> list[RawMatch]:
                 value = fields.get("AO", "").strip()
                 if re.fullmatch(r"(?:[1-9]\\d?|1[01]\\d)", value):
                     live_minute = value + "'"
+        if ab == "2" and not live_minute:
+            # Diretta sends AO as a Unix timestamp, not a minute counter.
+            # AD is scheduled kickoff; AC=12 is first half, AC=13 second half.
+            # In the second half remove the standard 15-minute interval.
+            # This is an estimate: delayed kickoffs/extended half-time can
+            # make it differ from the official match clock.
+            try:
+                kickoff = int(fields["AD"])
+                observed = int(fields["AO"])
+                elapsed = (observed - kickoff) // 60 + 1
+                period = fields.get("AC", "")
+                if period == "12" and 1 <= elapsed <= 60:
+                    live_minute = f"{min(elapsed, 45)}'"
+                elif period == "13" and 46 <= elapsed <= 125:
+                    minute = max(46, elapsed - 15)
+                    live_minute = f"{minute}'"
+            except (KeyError, ValueError, TypeError):
+                pass
         out.append(RawMatch(
             country, league, tm, fields["AE"], fields["AF"], score, status, match_date,
             match_id=fields.get("AA", ""),
