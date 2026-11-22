@@ -10,6 +10,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,Table,TableStyle,PageBreak
 from . import daily_report as dr
+from . import kickoff_times
 from .engine_descriptions import description as engine_description
 from .team_names import normalize_team_name
 
@@ -188,19 +189,20 @@ def _gs1_order(rows):
 
 def _results_table(rows,market,styles,gs1=False,ticket_keys=None):
     ticket_keys=ticket_keys or set()
-    headers=["Lega","Partita","Score","Fascia","Ris.","Esito"]
+    headers=["Ora","Lega","Partita","Score","Fascia","Ris.","Esito"]
+    times=kickoff_times.index()
     data=[headers]
     for r in rows:
         outcome=str(r.get("Outcome" if gs1 else market,"")).upper()
         hg,ag=r.get("HG",""),r.get("AG","")
         score=f"{hg}-{ag}" if str(hg).strip() and str(ag).strip() else "-"
-        data.append([dr._p(r.get("LeagueId",""),styles["cell"]),
+        data.append([kickoff_times.kickoff(r,times) or "-",dr._p(r.get("LeagueId",""),styles["cell"]),
                      dr._p(dr._match(r),styles["cell_bold"]),
                      dr._p((f"{_num(r.get('MinOverRateFull')):.3f} / {_num(r.get('DeltaGA')):+.3f}" if gs1 else str(r.get("Score","") or "N/D")),styles["cell"]),
                      dr._p(("OSSERVAZIONE" if gs1 and str(r.get("Band","")).startswith(("PROX-","NEAR")) else dr._display_band(r)),styles["cell"]),
                      score,outcome if outcome in ("OK","KO") else "ATTESA"])
     if len(data)==1:return dr._p("NESSUN PRONOSTICO",styles["empty"])
-    table=Table(data,colWidths=[30*mm,65*mm,30*mm,23*mm,13*mm,14*mm],repeatRows=1)
+    table=Table(data,colWidths=[13*mm,28*mm,57*mm,29*mm,23*mm,12*mm,13*mm],repeatRows=1)
     commands=[("BACKGROUND",(0,0),(-1,0),dr.INK),("TEXTCOLOR",(0,0),(-1,0),colors.white),
               ("FONTNAME",(0,0),(-1,0),"Helvetica-Bold"),("FONTSIZE",(0,0),(-1,-1),7),
               ("VALIGN",(0,0),(-1,-1),"MIDDLE"),("GRID",(0,0),(-1,-1),.25,dr.LINE)]
