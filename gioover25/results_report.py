@@ -193,7 +193,7 @@ def _results_table(rows,market,styles,gs1=False,ticket_keys=None):
     times=kickoff_times.index()
     data=[headers]
     for r in rows:
-        outcome=str(r.get("Outcome" if gs1 else market,"")).upper()
+        outcome=str(r.get("Outcome" if gs1 else market,"") or "").strip().upper()
         hg,ag=r.get("HG",""),r.get("AG","")
         score=f"{hg}-{ag}" if str(hg).strip() and str(ag).strip() else "-"
         data.append([kickoff_times.kickoff(r,times) or "-",dr._p(r.get("LeagueId",""),styles["cell"]),
@@ -210,8 +210,8 @@ def _results_table(rows,market,styles,gs1=False,ticket_keys=None):
         if gs1 and matchkey(r) in ticket_keys:
             commands.extend([("LINEBELOW",(0,i),(-1,i),1.8,colors.HexColor("#B7791F")),
                              ("LINEBEFORE",(0,i),(0,i),3,colors.HexColor("#B7791F"))])
-        outcome=str(r.get("Outcome" if gs1 else market,"")).upper()
-        shade=colors.HexColor("#D1FADF") if outcome=="OK" else colors.HexColor("#FEE4E2") if outcome=="KO" else dr.LIGHT
+        outcome=str(r.get("Outcome" if gs1 else market,"") or "").strip().upper()
+        shade=colors.HexColor("#B7EBC9") if outcome=="OK" else colors.HexColor("#FFC5C5") if outcome=="KO" else colors.HexColor("#F2F4F7")
         commands.append(("BACKGROUND",(0,i),(-1,i),shade))
     table.setStyle(TableStyle(commands))
     return table
