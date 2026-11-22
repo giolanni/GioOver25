@@ -217,6 +217,7 @@ def _table(rows: list[dict], styles, *, show_score=True, gs1=False, vg1=False):
     elif show_score:
         headers = ["Ora", "Lega", "Partita", "Score", "Fascia"]
         data = [[
+            kickoff_times.kickoff(r, times) or "-",
             _p(r.get("LeagueId"), styles["cell"]),
             _p(_match(r), styles["cell_bold"]),
             f"{_num(r.get('Score')):.1f}",
@@ -226,6 +227,7 @@ def _table(rows: list[dict], styles, *, show_score=True, gs1=False, vg1=False):
     else:
         headers = ["Ora", "Lega", "Partita", "Fascia"]
         data = [[
+            kickoff_times.kickoff(r, times) or "-",
             _p(r.get("LeagueId"), styles["cell"]),
             _p(_match(r), styles["cell_bold"]),
             _p(_display_band(r), styles["cell_bold"]),
