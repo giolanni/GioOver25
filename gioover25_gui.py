@@ -9,7 +9,7 @@ from datetime import date, timedelta, datetime
 from pathlib import Path
 from tkinter import ttk, messagebox, simpledialog
 from gioover25.live_monitor import snapshot_index, evaluate, FINAL
-from gioover25 import history_stats, operations_audit, results_coverage
+from gioover25 import history_stats, operations_audit, results_coverage, kickoff_times
 from tools.live_flashscore import key as live_fixture_key
 from gioover25 import missing_results as missing_audit
 from tools.prepare_input import norm, canonical_team
@@ -153,7 +153,7 @@ class Dashboard(tk.Tk):
         self.operations_panel = tk.Frame(main, bg=BG)
         self.operations_panel.pack(fill="x", padx=20)
         self.operations_panel.pack_forget()
-        self.columns = ("date", "league", "match", "score", "band", "best", "live_result", "live_outcome")
+        self.columns = ("date", "league", "match", "score", "band", "best", "live_result", "live_outcome", "kickoff")
         table_frame = ttk.Frame(main)
         table_frame.pack(fill="both", expand=True, padx=20, pady=8)
         self.table = ttk.Treeview(table_frame, columns=self.columns, show="headings", height=16)
@@ -538,10 +538,10 @@ class Dashboard(tk.Tk):
         self.highlight_menu()
         self.operations_panel.pack_forget()
         self.update_context_controls()
-        self.table["displaycolumns"] = self.columns
-        for col, label, width in zip(self.columns,
-                              ("Data", "Campionato", "Partita", "Score", "Fascia", "Minuto", "Risultato", "Esito LIVE"),
-                              (105, 220, 300, 75, 125, 100, 85, 110)):
+        self.table["displaycolumns"] = ("date", "kickoff", "league", "match", "score", "band", "best", "live_result", "live_outcome")
+        for col, label, width in zip(self.table["displaycolumns"],
+                              ("Data", "Ora", "Campionato", "Partita", "Score", "Fascia", "Minuto", "Risultato", "Esito LIVE"),
+                              (105, 60, 220, 300, 75, 125, 100, 85, 110)):
             self.table.heading(col, text=label)
             self.table.column(col, width=width, anchor="center" if col in ("score", "band", "best", "live_result", "live_outcome") else "w")
         self.table.delete(*self.table.get_children())
@@ -564,6 +564,7 @@ class Dashboard(tk.Tk):
             live_fixture_key(lid, day, home, away): item
             for (lid, day, home, away), item in live.items()
         }
+        kickoff_index = kickoff_times.index()
         for r in rows:
             key = live_fixture_key(r.get("LeagueId", "").strip(), today,
                                    r.get("Home", ""), r.get("Away", ""))
@@ -595,7 +596,8 @@ class Dashboard(tk.Tk):
             self.table.insert("", "end",
                 values=(today, r.get("LeagueId", ""),
                         r.get("Home", "") + " – " + r.get("Away", ""),
-                        r.get("Score", ""), r.get("Band", ""), minute, score, outcome),
+                        r.get("Score", ""), r.get("Band", ""), minute, score, outcome,
+                        kickoff_times.kickoff(r, kickoff_index) or "—"),
                 tags=(outcome.lower(),))
         def summary(label, statuses, finished):
             total = sum(finished.values())
@@ -641,8 +643,8 @@ class Dashboard(tk.Tk):
         self.highlight_menu()
         self.operations_panel.pack_forget()
         self.update_context_controls()
-        self.table["displaycolumns"] = self.columns[:6]
-        for col, label in zip(self.columns, ("Data", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
+        self.table["displaycolumns"] = ("date", "kickoff", "league", "match", "score", "band", "best")
+        for col, label in zip(self.table["displaycolumns"], ("Data", "Ora", "Campionato", "Partita", "Score", "Fascia", "Indicatore")):
             self.table.heading(col, text=label)
         self.table.delete(*self.table.get_children())
         engine = self.engine.get()
@@ -669,6 +671,7 @@ class Dashboard(tk.Tk):
             key = (row.get("LeagueId"), row.get("MatchDate"), row.get("Home"), row.get("Away"))
             combined[key] = row
         rows = sorted(combined.values(), key=self.ranking_score, reverse=True)
+        kickoff_index = kickoff_times.index()
         visible = 0
         for row in rows:
             score = self.ranking_score(row)
@@ -679,7 +682,8 @@ class Dashboard(tk.Tk):
                 continue
             self.table.insert("", "end", values=(selected, row.get("LeagueId", ""),
                 row.get("Home", "") + " – " + row.get("Away", ""), f"{score:g}",
-                row.get("Band", ""), "★ Fascia migliore" if marked else ""),
+                row.get("Band", ""), "★ Fascia migliore" if marked else "", "", "",
+                kickoff_times.kickoff(row, kickoff_index) or "—"),
                 tags=("best",) if marked else ())
             visible += 1
         source = "output + storico" if output_rows and history_rows else "output ranking" if output_rows else "storico ranking"
