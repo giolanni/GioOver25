@@ -175,7 +175,19 @@ def _engine_legend(market,styles):
     return dr._p("Legenda engine - "+" | ".join(lines),styles["meta"])
 
 
-def _results_table(rows,market,styles,gs1=False):
+def _gs1_order(rows):
+    """Same priority as freeze_tickets: ALTA, MEDIA, then NEAR."""
+    priority={"ALTA":0,"MEDIA":1,"PROX-ALTA":2,"PROX-MEDIA-DELTA":3,
+              "PROX-MEDIA-OVER":4,"NEAR":3,"OSSERVAZIONE":3}
+    return sorted(rows,key=lambda r:(
+        priority.get(str(r.get("Band","")).strip().upper(),9),
+        -_num(r.get("MinOverRateFull")),
+        -_num(r.get("DeltaGA")),
+        matchkey(r)))
+
+
+def _results_table(rows,market,styles,gs1=False,ticket_keys=None):
+    ticket_keys=ticket_keys or set()
     headers=["Lega","Partita","Score","Fascia","Ris.","Esito"]
     data=[headers]
     for r in rows:
@@ -193,6 +205,9 @@ def _results_table(rows,market,styles,gs1=False):
               ("FONTNAME",(0,0),(-1,0),"Helvetica-Bold"),("FONTSIZE",(0,0),(-1,-1),7),
               ("VALIGN",(0,0),(-1,-1),"MIDDLE"),("GRID",(0,0),(-1,-1),.25,dr.LINE)]
     for i,r in enumerate(rows,1):
+        if gs1 and matchkey(r) in ticket_keys:
+            commands.extend([("LINEBELOW",(0,i),(-1,i),1.8,colors.HexColor("#B7791F")),
+                             ("LINEBEFORE",(0,i),(0,i),3,colors.HexColor("#B7791F"))])
         outcome=str(r.get("Outcome" if gs1 else market,"")).upper()
         shade=colors.HexColor("#D1FADF") if outcome=="OK" else colors.HexColor("#FEE4E2") if outcome=="KO" else dr.LIGHT
         commands.append(("BACKGROUND",(0,i),(-1,i),shade))
@@ -222,12 +237,12 @@ def _results_summary(rows, market, styles, gs1=False):
     return [dr._p(label, styles["meta_stats"]) for label in labels]
 
 
-def _results_with_summary(rows, market, styles, gs1=False):
+def _results_with_summary(rows, market, styles, gs1=False, ticket_keys=None):
     if not rows:
         return dr._p("NESSUN PRONOSTICO", styles["empty"])
     return [*_results_summary(rows, market, styles, gs1=gs1),
             Spacer(1, 1.5*mm),
-            _results_table(rows, market, styles, gs1=gs1)]
+            _results_table(rows, market, styles, gs1=gs1, ticket_keys=ticket_keys)]
 
 def _ranking_table(rows,styles):
     if not rows:return dr._p("Nessun esito ALTA definitivo.",styles["empty"])
@@ -291,12 +306,15 @@ def generate_results_report(day:date):
     for engine in dr.SPECIAL_ENGINES:
         if not engine.startswith("vg"):
             engine_section(engine.upper(),engine,"Over25")
-    for label,file in [("GS1 - OVER 2.5",Path("data/storico/gs1_over/storico_gs1_over.csv")),
-                       ("GS1 - NEAR",Path("data/storico/gs1_over/storico_gs1_over_near.csv"))]:
-        rows=[r for r in dr._read_csv(file) if r.get("MatchDate")==day.isoformat()]
-        section(label,_results_with_summary(rows,"Outcome",styles,gs1=True))
     tickets,summary=ticket_summary()
     state,rows=tickets.get(day.isoformat(),("NON FORMATA",[]))
+    ticket_keys={matchkey(r) for r in rows}
+    for label,file in [("GS1 - OVER 2.5",Path("data/storico/gs1_over/storico_gs1_over.csv")),
+                       ("GS1 - NEAR",Path("data/storico/gs1_over/storico_gs1_over_near.csv"))]:
+        gs1_rows=_gs1_order([r for r in dr._read_csv(file) if r.get("MatchDate")==day.isoformat()])
+        section(label,_results_with_summary(gs1_rows,"Outcome",styles,gs1=True,ticket_keys=ticket_keys))
+    if rows:
+        story.append(dr._p("Le tre selezioni della schedina sono evidenziate con una linea color oro.",styles["meta"]))
     section("GS1 - SCHEDINA",dr._p(
         f"Esito: {state}. "
         f"{'Tre selezioni congelate prima dei risultati.' if rows else 'Nessuna schedina completa registrata.'} "
