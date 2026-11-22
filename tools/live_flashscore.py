@@ -61,7 +61,11 @@ def fetch_day(day):
     errors = []
     for n in dict.fromkeys((offset, offset - 1, offset + 1)):
         try:
-            for match in parse_feed(fetch_feed(n)):
+            payload = fetch_feed(n)
+            matches = parse_feed(payload)
+            from gioover25.kickoff_times import capture
+            capture(payload, matches)
+            for match in matches:
                 if match.match_date != day:
                     continue
                 k = (match.country, match.league, match.match_date,
