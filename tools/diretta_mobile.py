@@ -375,6 +375,8 @@ def main():
     try:
         page = fetch_feed(offset)
         raw = parse_feed(page)
+        from gioover25.kickoff_times import capture
+        print(f"[DIRETTA] Orari aggiornati: {capture(page, raw)}")
         print(f"[DIRETTA] Sorgente feed completo: {len(raw)} partite")
     except Exception as exc:
         print(f"[WARN] Feed non disponibile ({exc}); fallback pagina mobile.")
