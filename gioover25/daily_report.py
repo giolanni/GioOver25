@@ -16,6 +16,7 @@ from reportlab.platypus import (
 )
 
 from .engines.factory import get_available_engines
+from . import kickoff_times
 
 OUTPUT_DIR = Path("data/output_report")
 HISTORY_DIR = Path("data/storico/ranking")
@@ -201,33 +202,35 @@ def _table(rows: list[dict], styles, *, show_score=True, gs1=False, vg1=False):
     if not rows:
         return _p("NESSUN PRONOSTICO OGGI", styles["empty"])
 
+    times = kickoff_times.index()
     if gs1:
-        headers = ["Lega", "Partita", "Fascia", "MinOver", "DeltaGA"]
+        headers = ["Ora", "Lega", "Partita", "Fascia", "MinOver", "DeltaGA"]
         data = [[
+            kickoff_times.kickoff(r, times) or "-",
             _p(r.get("LeagueId"), styles["cell"]),
             _p(_match(r), styles["cell_bold"]),
             _p(r.get("Band"), styles["cell_bold"]),
             f"{_num(r.get('MinOverRateFull')):.2f}",
             f"{_num(r.get('DeltaGA')):+.2f}",
         ] for r in rows]
-        widths = [35*mm, 78*mm, 20*mm, 21*mm, 21*mm]
+        widths = [13*mm, 32*mm, 68*mm, 20*mm, 21*mm, 21*mm]
     elif show_score:
-        headers = ["Lega", "Partita", "Score", "Fascia"]
+        headers = ["Ora", "Lega", "Partita", "Score", "Fascia"]
         data = [[
             _p(r.get("LeagueId"), styles["cell"]),
             _p(_match(r), styles["cell_bold"]),
             f"{_num(r.get('Score')):.1f}",
             _p(_display_band(r), styles["cell_bold"]),
         ] for r in rows]
-        widths = [39*mm, 91*mm, 18*mm, 27*mm]
+        widths = [13*mm, 35*mm, 82*mm, 18*mm, 27*mm]
     else:
-        headers = ["Lega", "Partita", "Fascia"]
+        headers = ["Ora", "Lega", "Partita", "Fascia"]
         data = [[
             _p(r.get("LeagueId"), styles["cell"]),
             _p(_match(r), styles["cell_bold"]),
             _p(_display_band(r), styles["cell_bold"]),
         ] for r in rows]
-        widths = [43*mm, 105*mm, 27*mm]
+        widths = [13*mm, 37*mm, 98*mm, 27*mm]
 
     table = Table([headers] + data, colWidths=widths, repeatRows=1, hAlign="LEFT")
     commands = [
