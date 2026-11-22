@@ -1,23 +1,23 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-43;1;Arsenal Sarandi;11;7;2;2;18;8;10;23;2.091
-43;2;Excursionistas;11;7;1;3;22;9;13;22;2.0
-43;3;Deportivo Armenio;12;6;4;2;11;6;5;22;1.833
-43;4;Sportivo Italiano;11;6;2;3;12;9;3;20;1.818
-43;5;Real Pilar;11;5;3;3;11;11;0;18;1.636
-43;6;Flandria;10;5;2;3;14;11;3;17;1.7
-43;7;UAI Urquiza;10;5;2;3;13;10;3;17;1.7
-43;8;Comunicaciones;12;4;5;3;10;9;1;17;1.417
-43;9;Deportivo Camioneros;12;5;2;5;14;15;-1;17;1.417
-43;10;Liniers;11;4;4;3;15;12;3;16;1.455
-43;11;Defensores Unidos;10;3;5;2;7;5;2;14;1.4
-43;12;Brown Adrogue;10;3;5;2;6;4;2;14;1.4
-43;13;Laferrere;10;3;5;2;13;12;1;14;1.4
-43;14;Talleres (R.E);11;4;2;5;13;12;1;14;1.273
-43;15;Villa San Carlos;10;3;4;3;7;9;-2;13;1.3
-43;16;San Martin Burzaco;10;3;2;5;12;15;-3;11;1.1
-43;17;Deportivo Merlo;11;2;4;5;7;10;-3;10;0.909
-43;18;Argentino de Quilmes;10;2;4;4;5;8;-3;10;1.0
-43;19;Argentino de Merlo;11;3;1;7;9;15;-6;10;0.909
-43;20;Dock Sud;11;3;1;7;8;18;-10;10;0.909
-43;21;Villa Dalmine;11;2;3;6;5;13;-8;9;0.818
-43;22;Ituzaingo;10;0;3;7;9;20;-11;3;0.3
+44;1;Arsenal Sarandi;12;8;2;2;21;10;11;26;2.167
+44;2;Deportivo Armenio;13;6;5;2;11;6;5;23;1.769
+44;3;Excursionistas;11;7;1;3;22;9;13;22;2.0
+44;4;Sportivo Italiano;12;6;3;3;12;9;3;21;1.75
+44;5;Deportivo Camioneros;13;6;2;5;18;15;3;20;1.538
+44;6;Real Pilar;12;5;3;4;11;13;-2;18;1.5
+44;7;Talleres (R.E);12;5;2;5;15;12;3;17;1.417
+44;8;Flandria;10;5;2;3;14;11;3;17;1.7
+44;9;UAI Urquiza;10;5;2;3;13;10;3;17;1.7
+44;10;Comunicaciones;13;4;5;4;12;12;0;17;1.308
+44;11;Liniers;11;4;4;3;15;12;3;16;1.455
+44;12;Defensores Unidos;10;3;5;2;7;5;2;14;1.4
+44;13;Brown Adrogue;10;3;5;2;6;4;2;14;1.4
+44;14;Laferrere;10;3;5;2;13;12;1;14;1.4
+44;15;Villa San Carlos;10;3;4;3;7;9;-2;13;1.3
+44;16;San Martin Burzaco;10;3;2;5;12;15;-3;11;1.1
+44;17;Deportivo Merlo;11;2;4;5;7;10;-3;10;0.909
+44;18;Argentino de Quilmes;10;2;4;4;5;8;-3;10;1.0
+44;19;Argentino de Merlo;11;3;1;7;9;15;-6;10;0.909
+44;20;Dock Sud;11;3;1;7;8;18;-10;10;0.909
+44;21;Villa Dalmine;12;2;3;7;5;17;-12;9;0.75
+44;22;Ituzaingo;10;0;3;7;9;20;-11;3;0.3
