@@ -356,4 +356,23 @@ def update_reports(input_file):
     for r in dr._read_csv(Path(input_file)):
         d=dr._parse_date(r.get("MatchDate"))
         if d:dates.add(d)
-    for day in sorted(dates):generate_results_report(day)
+    if not dates:
+        # The results input may have been archived/emptied after a previous run.
+        # Regenerate yesterday's report from the persistent ranking histories.
+        dates.add(date.today()-timedelta(days=1))
+        print("[REPORT] Nessuna data nel CSV risultati: rigenero il consuntivo di ieri.")
+    for day in sorted(dates):
+        generate_results_report(day)
+
+
+def main():
+    import argparse
+    parser=argparse.ArgumentParser(description="Rigenera il PDF dei risultati senza reimportare risultati")
+    parser.add_argument("--date", help="Data del report YYYY-MM-DD; predefinita: ieri")
+    args=parser.parse_args()
+    day=date.fromisoformat(args.date) if args.date else date.today()-timedelta(days=1)
+    generate_results_report(day)
+
+
+if __name__=="__main__":
+    main()
