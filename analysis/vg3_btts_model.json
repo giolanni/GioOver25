@@ -1,0 +1,18 @@
+{
+  "features": [
+    "gol_incrociato",
+    "gol_incrociato_sede",
+    "btts_squadre",
+    "btts_recente",
+    "btts_lega"
+  ],
+  "weights": [
+    -0.3388107601681515,
+    0.9919104579128659,
+    0.7177364290597779,
+    0.8797800181677117,
+    1.3204366608385503
+  ],
+  "intercept": -1.644812882122588,
+  "alta": 0.66
+}

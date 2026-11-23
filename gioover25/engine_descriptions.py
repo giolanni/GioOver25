@@ -33,6 +33,8 @@ DESCRIPTIONS = {
     "vg1.4": "BTTS score 65-<72, escluse le ALTA gia' in VG1.",
     "vg2.2": "Variante BTTS VG1 con MinGFL5 >= 2.2.",
     "vg2.6": "Variante BTTS VG1 con MinGFL5 >= 2.6.",
+    "vg3": "BTTS su forma, sede e lega. ALTA da 66.",
+    "vg3strict": "BTTS solo se VG3 e il modello sui driver V25 concordano nelle TOP2 del giorno.",
     "veg90": "Selezione sperimentale Over 2.5 basata su expected goals.",
 }
 

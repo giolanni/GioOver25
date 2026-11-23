@@ -68,6 +68,8 @@ from . import (
     vg14,
     vg22,
     vg26,
+    vg3,
+    vg3strict,
     veg90,
 )
 
@@ -106,6 +108,8 @@ EXPERIMENTAL_ENGINES = {
     "vg1.4": vg14,
     "vg2.2": vg22,
     "vg2.6": vg26,
+    "vg3": vg3,
+    "vg3strict": vg3strict,
     "veg90": veg90,
 }
 

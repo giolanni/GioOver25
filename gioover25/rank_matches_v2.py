@@ -781,12 +781,16 @@ def _rank_rows(
 ) -> dict[str, list[dict]]:
     engines = {name: get_engine(name) for name in engine_names}
     results_by_engine = {name: [] for name in engine_names}
+    match_engines = {k: v for k, v in engines.items() if k not in {"vg3", "vg3strict"}}
+    if "vg3strict" in engines and "v25" not in match_engines:
+        match_engines["v25"] = get_engine("v25")
+        results_by_engine["v25"] = []
     needs_defense_last5 = any(
         getattr(engine, "REQUIRES_DEFENSE_LAST5", False)
         for engine in engines.values()
     )
 
-    for row in rows:
+    for row in (rows if match_engines else []):
         league_id = row["LeagueId"].strip()
         match_date_text = row["MatchDate"].strip()
         match_date_value = _parse_date(match_date_text)
@@ -992,7 +996,7 @@ def _rank_rows(
                 ),
             }
 
-        for engine_name, engine in engines.items():
+        for engine_name, engine in match_engines.items():
             algorithm_version = engine.ENGINE_VERSION
             engine_kwargs = {}
 
@@ -1094,6 +1098,15 @@ def _rank_rows(
                     band_override=contextual_band,
                 )
             )
+
+    if "vg3" in engines or "vg3strict" in engines:
+        base_rows = get_engine("vg3").rank_day_inputs(rows, prediction_date)
+        if "vg3strict" in engines:
+            results_by_engine["vg3strict"] = engines["vg3strict"].select(base_rows, results_by_engine["v25"])
+            if "v25" not in engines:
+                del results_by_engine["v25"]
+        if "vg3" in engines:
+            results_by_engine["vg3"] = base_rows
 
     for engine_name, engine in engines.items():
         results = results_by_engine[engine_name]

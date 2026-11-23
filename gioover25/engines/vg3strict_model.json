@@ -1,0 +1,18 @@
+{
+  "weights": {
+    "vg3": 3.96971664077929,
+    "HomeAttackScore": 0.013317437978590795,
+    "AwayAttackScore": 0.007802250210872488,
+    "HomeDefenseWeaknessScore": 0.0557793513030961,
+    "AwayDefenseWeaknessScore": 0.0077843486688699386,
+    "HomeLast10OverScore": -0.021346406461059154,
+    "AwayLast10OverScore": 0.04286741025887944,
+    "HomeVenueOverScore": 0.001984419452025271,
+    "AwayVenueOverScore": -0.0260149364513283,
+    "BTTSProfileScore": -0.06019038789878134,
+    "balanced_def": 0.016319915091557568,
+    "balanced_att": 0.013401134166760052,
+    "balanced_venue": -0.01249260986945094
+  },
+  "intercept": -2.2428445049110564
+}
