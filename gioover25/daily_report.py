@@ -15,6 +15,7 @@ from reportlab.platypus import (
     KeepTogether, PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 )
 
+from .report_retention import organize_reports
 from .engines.factory import get_available_engines
 from . import kickoff_times
 
@@ -354,7 +355,7 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
     display_date = (first_day.strftime("%d/%m/%Y") if first_day == last_day
                     else f"{first_day.strftime('%d/%m/%Y')} - {last_day.strftime('%d/%m/%Y')}")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    _cleanup_old_reports(report_date)
+    organize_reports()
     output = OUTPUT_DIR / f"GioOver_{date_label}.pdf"
     styles = _styles()
 
@@ -550,5 +551,7 @@ def generate_daily_report(*, results_by_engine: dict[str, list[dict]], gs1_rows:
         canvas.restoreState()
 
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
-    print(f"[REPORT] PDF giornaliero generato: {output}")
-    return output
+    organize_reports()
+    final_output = output if output.exists() else OUTPUT_DIR / "OLD" / output.name
+    print(f"[REPORT] PDF giornaliero generato: {final_output}")
+    return final_output
