@@ -1,8 +1,8 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
 14;1;Artesanos Metepec;13;8;4;1;23;8;15;28;2.154
-14;2;Dragones de Oaxaca;13;8;3;2;32;15;17;27;2.077
-14;3;Acambaro;12;8;1;3;38;16;22;25;2.083
-14;4;La Tribu de Cd. Juarez;12;8;0;4;38;13;25;24;2.0
+14;2;La Tribu de Cd. Juarez;13;9;0;4;42;14;28;27;2.077
+14;3;Dragones de Oaxaca;13;8;3;2;32;15;17;27;2.077
+14;4;Acambaro;13;8;1;4;39;18;21;25;1.923
 14;5;Santiago;13;7;3;3;29;9;20;24;1.846
 14;6;Correcaminos 2;13;7;3;3;24;15;9;24;1.846
 14;7;ACF Zapotlanejo;13;7;1;5;27;29;-2;22;1.692
@@ -10,11 +10,11 @@
 14;9;Delfines Coatzacoalcos;12;6;3;3;21;17;4;21;1.75
 14;10;Vaqueros Reynosa;12;6;2;4;20;18;2;20;1.667
 14;11;Halcones Negros;13;6;1;6;27;23;4;19;1.462
-14;12;Real Refineros;12;6;1;5;26;27;-1;19;1.583
+14;12;Real Refineros;13;6;1;6;27;31;-4;19;1.462
 14;13;Saltillo;13;6;0;7;26;31;-5;18;1.385
 14;14;Guerreros del Pacifico;13;5;2;6;27;23;4;17;1.308
-14;15;Guerreros de Autlan;11;4;2;5;19;21;-2;14;1.273
-14;16;Apodaca;12;4;1;7;19;20;-1;13;1.083
+14;15;Apodaca;13;5;1;7;21;21;0;16;1.231
+14;16;Guerreros de Autlan;11;4;2;5;19;21;-2;14;1.273
 14;17;Club Calor;11;3;1;7;19;32;-13;10;0.909
 14;18;Ciervos;12;2;0;10;14;47;-33;6;0.5
 14;19;Heroes de Zaci;10;0;1;9;4;34;-30;1;0.1

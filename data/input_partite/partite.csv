@@ -1,557 +1,86 @@
 ﻿LeagueId;MatchDate;Home;Away
-Albania_AbissnetSuperiore;2026-11-22;Vora;Tirana
-Albania_KategoriaePare;2026-11-22;Burreli;Pogradeci
-Albania_KategoriaePare;2026-11-22;Oriku;Kukesi
-Albania_KategoriaePare;2026-11-22;Sopoti Librazhd;Korabi Peshkopi
-Angola_GirabolaLeague;2026-11-22;CD Lunda Sul;Desportivo Huila
-Angola_GirabolaLeague;2026-11-22;Caala;Primeiro de Maio
-Angola_GirabolaLeague;2026-11-22;Kabuscorp;FC Luanda
-Angola_GirabolaLeague;2026-11-22;Wiliete;Sagrada
-AntiguaBarbuda_ABFAPremierLeague;2026-11-22;Garden Stars;Old Road
-AntiguaBarbuda_ABFAPremierLeague;2026-11-22;Greenbay Hoppers;Aston Villa
-SaudiArabia_Division2;2026-11-22;Hottain;Arar
-Argentina_PrimeraNacional;2026-11-22;Gimnasia Jujuy;Deportivo Madryn
-Armenia_PremierLeague;2026-11-22;Pyunik;Sardarapat
-Armenia_PremierLeague;2026-11-22;Alashkert;Noah
-Armenia_FirstLeague;2026-11-22;Shirak 2;Urartu 2
-Aruba_DivisiondiHonor;2026-11-22;Sporting;Dakota
-Australia_ALeague;2026-11-22;Wellington Phoenix;Macarthur FC
-Australia_AustralianChampionship;2026-11-22;Adelaide City;Broadmeadow
-Australia_AustralianChampionship;2026-11-22;Avondale FC;Wests APIA
-Austria_Bundesliga;2026-11-22;Altach;Sturm Graz
-Austria_Bundesliga;2026-11-22;Wolfsberger;Ried
-Austria_Bundesliga;2026-11-22;Austria Vienna;Salzburg
-Austria_Regionalliga_West;2026-11-22;Tirol (Am);Reichenau
-Austria_Wien;2026-11-22;WAF Brigittenau;Sportunion Mauer
-Azerbaijan_PremierLeague;2026-11-22;Araz;Neftci Baku
-Azerbaijan_PremierLeague;2026-11-22;Kapaz;Qarabag
-Belgium_JupilerProLeague;2026-11-22;Beveren;Gent
-Belgium_JupilerProLeague;2026-11-22;Kortrijk;Royale Union SG
-Belgium_JupilerProLeague;2026-11-22;Anderlecht;Leuven
-Belgium_JupilerProLeague;2026-11-22;Lommel SK;St. Liege
-Belgium_ChallengerProLeague;2026-11-22;Beerschot VA;Genk U23
-Belgium_ChallengerProLeague;2026-11-22;Gent U23;Francs Borains
-Belgium_NationalDivision1ACFF;2026-11-22;Habay La Neuve;Union Rochefortoise
-Belgium_NationalDivision1ACFF;2026-11-22;Onhaye;St. Liege U23
-Belgium_NationalDivision1VV;2026-11-22;Belisia Bilzen;Leuven B
-Belgium_NationalDivision1VV;2026-11-22;KRC Harelbeke;Cercle Brugge 2
-Belgium_NationalDivision1VV;2026-11-22;Merelbeke;Lyra-Lierse
-Belgium_NationalDivision1VV;2026-11-22;Tienen;Zelzate
-Benin_Ligue1;2026-11-22;Damissa;Buffles du Borgou
-Benin_Ligue1;2026-11-22;Dragons;FC Loto
-Benin_Ligue1;2026-11-22;Hodio;Bani Ganse
-Benin_Ligue1;2026-11-22;Krake;ASPAC
-Bermuda_PremierLeague;2026-11-22;PHC Zebras;Dandy Town Hornets
-Bermuda_PremierLeague;2026-11-22;Somerset;X-Roads Warriors
-Bermuda_PremierLeague;2026-11-22;YMSC;North Village Rams
-Belarus_VysshayaLiga;2026-11-22;Arsenal Dzerzhinsk;Neman
-Belarus_VysshayaLiga;2026-11-22;Din. Minsk;FC Minsk
-Belarus_VysshayaLiga;2026-11-22;Isloch;Zhodino
-Belarus_VysshayaLiga;2026-11-22;ML Vitebsk;Slavia Mozyr
-Belarus_PershayaLiga;2026-11-22;Minsk 2;BATE 2
-Belarus_PershayaLiga;2026-11-22;Volna Pinsk;Gomel 2
-Belarus_PershayaLiga;2026-11-22;Smorgon;Molodechno
-Belarus_PershayaLiga;2026-11-22;Soligorsk;Orsha
-Bolivia_DivisionProfesional;2026-11-22;Oriente Petrolero;Independiente
-Bolivia_DivisionProfesional;2026-11-22;Real Potosi;Bolivar
-Bolivia_DivisionProfesional;2026-11-22;The Strongest;Blooming
-Bosnia_WWINLigaBiH;2026-11-22;Celik Zenica;Sloga Meridian
-Bosnia_WWINLigaBiH;2026-11-22;Sarajevo;Siroki Brijeg
-Bosnia_PrvaLiga_FBiH;2026-11-22;Gradacac;Banovici
-Bosnia_PrvaLiga_FBiH;2026-11-22;Stupcanica;Bratstvo Gracanica
-Bosnia_PrvaLiga_FBiH;2026-11-22;TOSK Tesanj;Posusje
-Bosnia_PrvaLiga_FBiH;2026-11-22;GOSK Gabela;NK Vitez
-Bosnia_PrvaLiga_RS;2026-11-22;Sutjeska Foca;Laktasi
-Botswana_PremierLeague;2026-11-22;Centre Chiefs;Matebele
-Botswana_PremierLeague;2026-11-22;Police XI;Jwaneng Galaxy
-Bulgaria_ParvaLiga;2026-11-22;Botev Vratsa;CSKA 1948 Sofia
-Bulgaria_ParvaLiga;2026-11-22;Levski;Lok. Sofia
-Bulgaria_ParvaLiga;2026-11-22;Botev Plovdiv;CSKA Sofia
-Bulgaria_VtoraLiga;2026-11-22;Montana;Dobrudzha
-BurkinaFaso_PremierLeague;2026-11-22;Maya;Kadiogo
-BurkinaFaso_PremierLeague;2026-11-22;RDF;USFA
-Burundi_PrimusLeague;2026-11-22;Flambeau du Centre;Young Star
-Burundi_PrimusLeague;2026-11-22;Le Messager Ngozi;Aigle Noir
-Burundi_PrimusLeague;2026-11-22;Olympic S.;Vital O
-Burundi_PrimusLeague;2026-11-22;Musongati;Ngozi City
-Burundi_PrimusLeague;2026-11-22;Never Give Up Academy;Royal Vision
-Cambogia_CPL;2026-11-22;Svay Rieng;Angkor Tiger
-Cambogia_CPL;2026-11-22;Tiffy Army;Moi Kompong Dewa
-Camerun_EliteOne;2026-11-22;Bamenda;Union SA
-Camerun_EliteOne;2026-11-22;Canon Yaounde;Panthere
-Camerun_EliteOne;2026-11-22;Dynamo Douala;Unisport Bafang
-Camerun_EliteOne;2026-11-22;APEJES Academy;Colombe
-Camerun_EliteTwo;2026-11-22;Atlantic;Les Astres
-Camerun_EliteTwo;2026-11-22;Bamboutos FC;Mintack
-Camerun_EliteTwo;2026-11-22;Sable;AS Fap
-Cipro_CyprusLeague;2026-11-22;Ol. Nicosia;AEK Larnaca
-Cipro_CyprusLeague;2026-11-22;Karmiotissa;AEL Limassol
-Cipro_CyprusLeague;2026-11-22;Apollon;Omonia 29th May
-Cipro_Division2;2026-11-22;Chloraka;Doxa
-Cipro_Division2;2026-11-22;Polemidion;Anagennisi
-CongoDr_Ligue1;2026-11-22;Ufalya Simba;Maniema
-CostaDAvorio_Ligue1;2026-11-22;SO Armee;Adiake
-CostaDAvorio_Ligue1;2026-11-22;SOL;Zoman
-Croatia_HNL;2026-11-22;Din. Zagabria;Istra 1961
-Croatia_HNL;2026-11-22;Rijeka;Gorica
-Croatia_PrvaNL;2026-11-22;Croatia Zmijavci;Karlovac
-Croatia_PrvaNL;2026-11-22;Jadran LP;Cibalia
-Denmark_Superliga;2026-11-22;Horsens;Silkeborg
-Denmark_Superliga;2026-11-22;Viborg;Randers
-Denmark_Superliga;2026-11-22;Sonderjyske;Odense
-Denmark_Superliga;2026-11-22;Nordsjaelland;FC Copenhagen
-Denmark_ALigaWomen;2026-11-22;Midtjylland D;Koge D
-EmiratiArabi_Division1;2026-11-22;Al Fujairah;Al Urooba
-EmiratiArabi_Division1;2026-11-22;Emirates Club;Al Ittifaq
-Estonia_Meistriliiga;2026-11-22;Viimsi JK;Kuressaare
-Estonia_Esiliiga;2026-11-22;Tulevik;FC Tallinn
-Eswatini_SwaziMTNPremierLeague;2026-11-22;Ezulwini;Madlenya
-Eswatini_SwaziMTNPremierLeague;2026-11-22;Mbabane Highlanders;Red Rhinos
-Eswatini_SwaziMTNPremierLeague;2026-11-22;PPK Professionals;Young Buffaloes
-Eswatini_SwaziMTNPremierLeague;2026-11-22;Mbabane Swallows;Nsingizini Hotspurs
-Eswatini_SwaziMTNPremierLeague;2026-11-22;Moneni Pirates;Amawele
-Etiopia_PremierLeague;2026-11-22;Ethio Electric;Halaba Ketema
-Etiopia_PremierLeague;2026-11-22;Fasil Kenema;Ethiopia Nigd Bank
-Etiopia_PremierLeague;2026-11-22;Negele Arsi Ketema;Gamo Chencha
-Filippine_PFL;2026-11-22;Mendiola FC 1991;Kaya
-Filippine_PFL;2026-11-22;Philippine Army;Cebu FC
-Filippine_PFL;2026-11-22;Davao Aguilas;Stallion
-France_Ligue1;2026-11-22;Paris FC;Angers
-France_Ligue1;2026-11-22;Lorient;Rennes
-France_Ligue1;2026-11-22;Marsiglia;Le Mans
-Germany_Bundesliga;2026-11-22;Augusta;Magonza
-Germany_Bundesliga;2026-11-22;Brema;Amburgo
-Germany_2Bundesliga;2026-11-22;Cottbus;Hertha
-Germany_2Bundesliga;2026-11-22;Kaiserslautern;Dresda
-Germany_2Bundesliga;2026-11-22;Karlsruher;Osnabruck
-Germany_3Liga;2026-11-22;Stoccarda II;Ingolstadt
-Germany_3Liga;2026-11-22;Saarbrucken;Wehen
-Germany_3Liga;2026-11-22;Duisburg;Rostock
-Germany_Regionalliga_Nord;2026-11-22;Hannoverscher SC;VfB Lubeck
-Germany_Regionalliga_Nord;2026-11-22;Norderstedt;Schoningen
-Germany_Regionalliga_Nord;2026-11-22;Phonix Lubeck;St. Pauli II
-Germany_Regionalliga_Nord;2026-11-22;Todesfelde;Delmenhorst
-Germany_Regionalliga_Nord;2026-11-22;Amburgo II;Brema II
-Germany_Regionalliga_Nordost;2026-11-22;BFC Preussen;Chemie Leipzig
-Germany_Regionalliga_Nordost;2026-11-22;BFC Dynamo;Hallescher
-Germany_Regionalliga_West;2026-11-22;FC Gutersloh;Oberhausen
-Germany_Regionalliga_Sudwest;2026-11-22;Sandhausen;Kickers Stoccarda
-Germany_Regionalliga_Bayern;2026-11-22;Norinberga II;Vilzing
-Germany_Oberliga_NOFV_Nord;2026-11-22;Hertha Zehlendorf;Schwerin
-Germany_Oberliga_NOFV_Nord;2026-11-22;Makkabi Berlin;Neustrelitz
-Germany_Oberliga_NOFV_Nord;2026-11-22;TB Berlin;Mahlsdorf
-Germany_Oberliga_NOFV_Sud;2026-11-22;Glauchau;1.FC Frankfurt
-Germany_Oberliga_SchleswigHolstein;2026-11-22;Flensburg;PSV Neumunster
-Germany_Oberliga_SchleswigHolstein;2026-11-22;VfR Neumunster;Eichede
-Germany_Oberliga_Hamburg;2026-11-22;Paloma;Niendorfer TSV
-Germany_Oberliga_Hamburg;2026-11-22;TSV Buchholz 08;Suderelbe
-Germany_Oberliga_Hamburg;2026-11-22;Tesla Hamburg;HT 16
-Germany_Oberliga_Bremen;2026-11-22;Schwachhausen;Oberneuland
-Germany_Oberliga_Bremen;2026-11-22;Eiche Horn;BTS Neustadt
-Germany_Oberliga_Bremen;2026-11-22;Hemelingen;Grohn
-Germany_Oberliga_Niedersachsen;2026-11-22;Heeslinger;Hemmingen
-Germany_Oberliga_Niedersachsen;2026-11-22;Drochtersen/Assel II;Nordhorn
-Germany_Oberliga_Niedersachsen;2026-11-22;Hildesheim;Spelle-Venhaus
-Germany_Oberliga_Niedersachsen;2026-11-22;Wilhelmshaven;Meppen II
-Germany_Oberliga_Hessen;2026-11-22;CSC 03 Kassel;Unter-Flockenbach
-Germany_Oberliga_Hessen;2026-11-22;Hanauer SC;Kassel 2
-Germany_Oberliga_Hessen;2026-11-22;Eddersheim;Stadtallendorf
-Germany_Oberliga_Hessen;2026-11-22;RW Walldorf;Friedberg
-Germany_Oberliga_RheinlandPfalzSaar;2026-11-22;Koblenz;Elversberg II
-Germany_Oberliga_RheinlandPfalzSaar;2026-11-22;TSV 1881 Gau-Odernheim;Auersmacher
-Germany_Oberliga_Bayern_Sud;2026-11-22;Schalding;Monaco 1860 II
-Germany_Oberliga_BadenWurttemberg;2026-11-22;Neckarsulm;Bahlinger
-Germany_Oberliga_BadenWurttemberg;2026-11-22;1. FC Muhlhausen;Normannia Gmund
-Ghana_PremierLeague;2026-11-22;Bechem United;Asante Kotoko
-Ghana_PremierLeague;2026-11-22;Berekum Chelsea;Young Apostles
-Ghana_PremierLeague;2026-11-22;Bibiani Gold Stars;Swedru All Blacks
-Ghana_PremierLeague;2026-11-22;Dreams;Samartex
-Ghana_PremierLeague;2026-11-22;Hearts Of Oak;Aduana
-Ghana_PremierLeague;2026-11-22;Karela;Holy Stars
-Ghana_PremierLeague;2026-11-22;Medeama;Ashanti Gold
-Ghana_PremierLeague;2026-11-22;Port City;Heart Of Lions
-Ghana_DivisionOneLeague;2026-11-22;Berekum City;Northern City
-Ghana_DivisionOneLeague;2026-11-22;Dormaa;Bectero Sasana
-Ghana_DivisionOneLeague;2026-11-22;Ebiemo FC;Nsuopun Fidelity
-Ghana_DivisionOneLeague;2026-11-22;Eleven Wonders;VC Warriors
-Ghana_DivisionOneLeague;2026-11-22;Elmina Sharks;Skyy
-Ghana_DivisionOneLeague;2026-11-22;Future Stars;Fettehman United
-Ghana_DivisionOneLeague;2026-11-22;Golden Warriors;Inter Allies
-Ghana_DivisionOneLeague;2026-11-22;KAC Soccer;Techiman Liberty
-Ghana_DivisionOneLeague;2026-11-22;Nukunu;Hakla SC
-Ghana_DivisionOneLeague;2026-11-22;Okwawu;Kotoku Royals
-Ghana_DivisionOneLeague;2026-11-22;Pac Academy;New Edubiase
-Ghana_DivisionOneLeague;2026-11-22;Sefwi All Stars;Ebusua Dwarfs
-Ghana_DivisionOneLeague;2026-11-22;Semper;True Democracy
-Ghana_DivisionOneLeague;2026-11-22;Soccer Intellectuals;Ebony FC
-Giamaica_PremierLeague;2026-11-22;Chapelton;Cavalier
-Giamaica_PremierLeague;2026-11-22;Molynes;Tivoli
-Giamaica_PremierLeague;2026-11-22;Montego Bay;Waterhouse
-Giamaica_PremierLeague;2026-11-22;Mount Pleasant;Humble Lions
-Giamaica_PremierLeague;2026-11-22;Treasure Beach;Arnett Gardens
-Japan_J2League;2026-11-22;Tokushima;Shonan
-Japan_J3League;2026-11-22;Kumamoto;Kitakyushu
-Japan_J3League;2026-11-22;Renofa Yamaguchi;Reilac Shiga
-Japan_J3League;2026-11-22;Osaka;Kamatamare
-Gibilterra_NationalLeague;2026-11-22;Magpies;Lincoln
-Gibilterra_NationalLeague;2026-11-22;Hound Dogs;Lynx
-HongKong_PremierLeague;2026-11-22;Shatin;Eastern AA
-India_ISL;2026-11-22;Churchill Brothers;Mohun Bagan
-Indonesia_SuperLeague;2026-11-22;Isenmulang Kalteng;Borneo
-Indonesia_SuperLeague;2026-11-22;Persib;Bali United
-England_PremierLeague;2026-11-22;Hull;Brighton
-England_PremierLeague;2026-11-22;Liverpool;Manchester Utd
-England_Championship;2026-11-22;Burnley;Blackburn
-Italy_SerieA;2026-11-22;Juventus;Venezia
-Italy_SerieA;2026-11-22;Bologna;Udinese
-Italy_SerieA;2026-11-22;Sassuolo;Genoa
-Italy_SerieA;2026-11-22;Milan;Frosinone
-Italy_SerieA;2026-11-22;Atalanta;Inter
-Italy_SerieB;2026-11-22;Avellino;Mantova
-Italy_SerieB;2026-11-22;Arezzo;Padova
-Italy_SerieC_GironeA;2026-11-22;Brescia;Renate
-Italy_SerieC_GironeA;2026-11-22;Pro Vercelli;Novara
-Italy_SerieC_GironeA;2026-11-22;Alcione Milano;Ospitaletto
-Italy_SerieC_GironeA;2026-11-22;Desenzano;AlbinoLeffe
-Italy_SerieC_GironeA;2026-11-22;Dolomiti Bellunesi;Carpi
-Italy_SerieC_GironeB;2026-11-22;Livorno;Ravenna
-Italy_SerieC_GironeB;2026-11-22;Pianese;Gubbio
-Italy_SerieC_GironeB;2026-11-22;Torres;Spezia
-Italy_SerieC_GironeB;2026-11-22;Forlì;Reggiana
-Italy_SerieC_GironeB;2026-11-22;Sambenedettese;Perugia
-Italy_SerieC_GironeC;2026-11-22;Scafatese;Foggia
-Italy_SerieC_GironeC;2026-11-22;Altamura;Casarano
-Italy_SerieC_GironeC;2026-11-22;Catania;Bari
-Italy_SerieC_GironeC;2026-11-22;Picerno;Giugliano
-Italy_SerieD_GironeA;2026-11-22;Alessandria;Saluzzo
-Italy_SerieD_GironeA;2026-11-22;Asti;Ligorna
-Italy_SerieD_GironeA;2026-11-22;Lascaris;Celle Varazze
-Italy_SerieD_GironeA;2026-11-22;Millesimo;Chisola
-Italy_SerieD_GironeA;2026-11-22;Valenzana;Gozzano
-Italy_SerieD_GironeA;2026-11-22;Imperia;Bra
-Italy_SerieD_GironeA;2026-11-22;Sestri Levante;Derthona FbC
-Italy_SerieD_GironeA;2026-11-22;Fezzanese;Sanremese
-Italy_SerieD_GironeB;2026-11-22;Brusaporto;Rovato Vertovese
-Italy_SerieD_GironeB;2026-11-22;Caldiero Terme;Pavonese
-Italy_SerieD_GironeB;2026-11-22;Fiorenzuola;Ciserano-Bergamo
-Italy_SerieD_GironeB;2026-11-22;Milan U23;Tritium
-Italy_SerieD_GironeB;2026-11-22;Nibbiano & Valtidone;Leon
-Italy_SerieD_GironeB;2026-11-22;Piacenza;Villa Valle
-Italy_SerieD_GironeB;2026-11-22;Pro Palazzolo;Club Milano
-Italy_SerieD_GironeB;2026-11-22;Real Calepina;Virtus Verona
-Italy_SerieD_GironeC;2026-11-22;Bassano;Este
-Italy_SerieD_GironeC;2026-11-22;Campodarsego;Altavilla
-Italy_SerieD_GironeC;2026-11-22;Cjarlins Muzane;Luparense
-Italy_SerieD_GironeC;2026-11-22;Conegliano;Sandona
-Italy_SerieD_GironeC;2026-11-22;FC Obermais;Calvi Noale
-Italy_SerieD_GironeC;2026-11-22;Legnago Salus;Schio
-Italy_SerieD_GironeC;2026-11-22;LME;Union Clodiense
-Italy_SerieD_GironeC;2026-11-22;Mestre;Bolzano
-Italy_SerieD_GironeD;2026-11-22;Castellanzese;Pavia
-Italy_SerieD_GironeD;2026-11-22;Cittadella Vis Modena;Pro Patria
-Italy_SerieD_GironeD;2026-11-22;Crema;Solbiatese
-Italy_SerieD_GironeD;2026-11-22;Lentigione;Varesina
-Italy_SerieD_GironeD;2026-11-22;Oltrepo;Arconatese
-Italy_SerieD_GironeD;2026-11-22;Pontedera;Sant'Angelo
-Italy_SerieD_GironeD;2026-11-22;Pro Sesto;Pistoiese
-Italy_SerieD_GironeD;2026-11-22;Tropical Coriano;USD Casatese
-Italy_SerieD_GironeD;2026-11-22;Varese FC;Correggese
-Italy_SerieD_GironeE;2026-11-22;Lucchese;Flaminia
-Italy_SerieD_GironeE;2026-11-22;Montevarchi;Terranuova Traiana
-Italy_SerieD_GironeE;2026-11-22;Rondinella;Ghiviborgo
-Italy_SerieD_GironeE;2026-11-22;Scandicci;Prato
-Italy_SerieD_GironeE;2026-11-22;SCD Progresso;San Donato
-Italy_SerieD_GironeE;2026-11-22;Seravezza Pozzi;Mezzolara
-Italy_SerieD_GironeE;2026-11-22;Siena;Sasso Marconi
-Italy_SerieD_GironeE;2026-11-22;Tau;Follonica Gavorrano
-Italy_SerieD_GironeE;2026-11-22;Ternana;Grassina
-Italy_SerieD_GironeF;2026-11-22;Atletico Ascoli;Santegidiese
-Italy_SerieD_GironeF;2026-11-22;Fossombrone;Foligno
-Italy_SerieD_GironeF;2026-11-22;Giulianova;Notaresco Calcio
-Italy_SerieD_GironeF;2026-11-22;Lanciano FC;Angelana
-Italy_SerieD_GironeF;2026-11-22;L'Aquila;Maceratese
-Italy_SerieD_GironeF;2026-11-22;Teramo;Ancona
-Italy_SerieD_GironeF;2026-11-22;Termoli;Pietralunga
-Italy_SerieD_GironeF;2026-11-22;Trestina;Montecchio Gallo
-Italy_SerieD_GironeF;2026-11-22;Vigor Senigallia;Recanatese
-Italy_SerieD_GironeG;2026-11-22;Sarrabus Ogliastra;Citta di Anagni
-Italy_SerieD_GironeG;2026-11-22;Albalonga;Gelbison
-Italy_SerieD_GironeG;2026-11-22;Anzio Calcio 1924;Paganese
-Italy_SerieD_GironeG;2026-11-22;Atl. Lodigiani;Budoni
-Italy_SerieD_GironeG;2026-11-22;Certosa V. Campagnano;Sarnese
-Italy_SerieD_GironeG;2026-11-22;Latte Dolce;Afragolese
-Italy_SerieD_GironeG;2026-11-22;Unipomezia;Trastevere Calcio
-Italy_SerieD_GironeG;2026-11-22;Aranova;Ossese
-Italy_SerieD_GironeG;2026-11-22;Monastir;Venafro
-Italy_SerieD_GironeH;2026-11-22;A.C Nardò;Real Normanna
-Italy_SerieD_GironeH;2026-11-22;Bisceglie;Real Forio 2014
-Italy_SerieD_GironeH;2026-11-22;Ebolitana;Turris
-Italy_SerieD_GironeH;2026-11-22;Francavilla;Manfredonia
-Italy_SerieD_GironeH;2026-11-22;Ischia;Fidelis Andria
-Italy_SerieD_GironeH;2026-11-22;Melfi;Gladiator
-Italy_SerieD_GironeH;2026-11-22;Palmese 1914;Gravina
-Italy_SerieD_GironeH;2026-11-22;Nocerina;Virtus Francavilla
-Italy_SerieD_GironeH;2026-11-22;Martina Calcio;Brindisi
-Italy_SerieD_GironeI;2026-11-22;Athletic Palermo;Reggina
-Italy_SerieD_GironeI;2026-11-22;Digiesse PraiaTortora;Nissa
-Italy_SerieD_GironeI;2026-11-22;Enna;Castrumfavara
-Italy_SerieD_GironeI;2026-11-22;Licata;Vigor Lamezia
-Italy_SerieD_GironeI;2026-11-22;Milazzo;Trapani
-Italy_SerieD_GironeI;2026-11-22;Modica;Calcio Avola
-Italy_SerieD_GironeI;2026-11-22;Siracusa;USD Ragusa
-Italy_SerieD_GironeI;2026-11-22;Sambiase;Vibonese
-Italy_SerieD_GironeI;2026-11-22;Gela;Igea Virtus
-Italy_SerieAWomen;2026-11-22;Como Women;Roma
-Italy_SerieAWomen;2026-11-22;Ternana;Inter
-Italy_SerieAWomen;2026-11-22;Fiorentina;Como 1907
-Italy_SerieAWomen;2026-11-22;Lazio;Juventus
-Kenya_PremierLeague;2026-11-22;Shabana;Mara Sugar
-Kenya_PremierLeague;2026-11-22;KCB;3K FC
-Kenya_PremierLeague;2026-11-22;Posta Rangers;Gor Mahia
-Kosovo_Superliga;2026-11-22;FC Ballkani;Gjilani
-Kosovo_Superliga;2026-11-22;Drita;Feronikeli
-Kosovo_LigaePare;2026-11-22;Liria;Rilindja
-Laos_LaoLeague;2026-11-22;BIS;GB FC
-Laos_LaoLeague;2026-11-22;Luang Prabang United;Lao Army FC
-Laos_LaoLeague;2026-11-22;Oudomxay Entremets;Chanthabouly
-Libano_PremierLeague;2026-11-22;Tadamon;Jwayya
-Libano_PremierLeague;2026-11-22;Tripoli;Al Riyadi Abbasiyah
-Libia_PremierLeague;2026-11-22;Al Taawun;Al Ahly Benghazi
-Libia_PremierLeague;2026-11-22;Al Sharara;Al Tahaddi
-Libia_PremierLeague;2026-11-22;Al-Nasr;Al Hilal Benghazi
-Libia_PremierLeague;2026-11-22;Al Majd;Olympic Azzaweya
-Lithuania_ILyga;2026-11-22;Hegelmann Litauen 2;Sveikata
-Lussemburgo_BGLLigue;2026-11-22;Differdange;Niedercorn
-Lussemburgo_BGLLigue;2026-11-22;Dudelange;Walferdange
-Lussemburgo_BGLLigue;2026-11-22;Ettelbruck;UNA Strassen
-Lussemburgo_BGLLigue;2026-11-22;Hesperange;Bissen
-Lussemburgo_BGLLigue;2026-11-22;Hostert;Rumelange
-Lussemburgo_BGLLigue;2026-11-22;Kaerjeng;Mondorf
-Lussemburgo_BGLLigue;2026-11-22;Racing Luxembourg;Wiltz
-Lussemburgo_BGLLigue;2026-11-22;Victoria Rosport;Jeunesse Esch
-NorthMacedonia_1MFL;2026-11-22;Bregalnica;Struga
-NorthMacedonia_2MFL;2026-11-22;Kamjani;Gorno Lisice
-Malawi_SuperLeague;2026-11-22;Big Bullets;Mighty Wanderers
-Malawi_SuperLeague;2026-11-22;Karonga United;Kamuzu Barracks
-Malawi_SuperLeague;2026-11-22;Mitundu Baptist;Masters FC
-Mali_PremiereDivision;2026-11-22;Stade Malien;Binga
-Malta_ChallengeLeague;2026-11-22;Tarxien;Gudja
-Malta_ChallengeLeague;2026-11-22;Fgura;Pieta
-Malta_ChallengeLeague;2026-11-22;Melita;Santa Lucia
-Malta_ChallengeLeague;2026-11-22;St. Andrews;Sirens
-Mexico_LigaMX_Apertura;2026-11-22;Santos Laguna;Leon
-Mexico_LigaMX_Apertura;2026-11-22;U.N.A.M.;Monterrey
-Mexico_LigaMX_Apertura;2026-11-22;Tigres;Club America
-Mexico_LigaExpansionMX_Apertura;2026-11-22;Atl. Morelia;Atletico La Paz
-Mexico_PrimeraPremier;2026-11-22;Tapachula;Irapuato
-Mexico_PrimeraPremier;2026-11-22;Chiapas;Los Cabos
-Mexico_PrimeraPremier;2026-11-22;Inter Playa Del Carmen;Cordobes FC
-Mexico_PrimeraPremier;2026-11-22;Celaya;Zacatepec
-Mexico_PrimeraPremier;2026-11-22;Montaneses;Tigres de Alica
-Mexico_LigaPremierSerieA;2026-11-22;La Tribu de Cd. Juarez;Real Refineros
-Moldova_SuperLiga;2026-11-22;Real Sireti;Petrocub
-Moldova_SuperLiga;2026-11-22;Balti;Dacia Buiucani
-Montenegro_DrugaLiga;2026-11-22;Lovcen;Mogren
-Mozambico_Mocambola;2026-11-22;Maxaquene;Baia de Pemba
-Myanmar_MLeague;2026-11-22;Dagon;Yadanarbon
-Niger_SuperLigue;2026-11-22;Nigelec;ASGNN
-Nigeria_NPFL;2026-11-22;Abia Warriors;Enyimba
-Nigeria_NPFL;2026-11-22;Barau;Inter Lagos
-Nigeria_NPFL;2026-11-22;Kun Khalifa;Katsina Utd
-Nigeria_NPFL;2026-11-22;Nasarawa;Warri Wolves
-Nigeria_NPFL;2026-11-22;Rangers Int'l;Shooting Stars
-Nigeria_NPFL;2026-11-22;Rivers United;Niger
-Nigeria_NNL;2026-11-22;Akwa United;Beyond Limits FC
-Nigeria_NNL;2026-11-22;Bayelsa United;Ekiti United
-Nigeria_NNL;2026-11-22;Neurospark;Jigawa Golden Stars
-Nigeria_NNL;2026-11-22;Remo Stars;Crown
-Nigeria_NNL;2026-11-22;Stormers;Sunshine Stars
-Norway_Eliteserien;2026-11-22;Aalesund;Rosenborg
-Norway_Eliteserien;2026-11-22;KFUM Oslo;Brann
-Norway_Eliteserien;2026-11-22;Kristiansund;Sandefjord
-Norway_Eliteserien;2026-11-22;Sarpsborg 08;Lilleström
-Norway_OBOSLigaen;2026-11-22;Odd;Bryne
-Norway_OBOSLigaen;2026-11-22;Sogndal;Bjarg
-Netherlands_Eredivisie;2026-11-22;Twente;Willem II
-Netherlands_Eredivisie;2026-11-22;Ajax;Den Haag
-Netherlands_Eredivisie;2026-11-22;Sparta Rotterdam;Alkmaar
-Netherlands_Eredivisie;2026-11-22;G.A. Eagles;Sittard
-Netherlands_EredivisieWomen;2026-11-22;Heerenveen D;Den Haag D
-Netherlands_EredivisieWomen;2026-11-22;De Graafschap D;Ajax D
-Netherlands_EredivisieWomen;2026-11-22;Feyenoord D;Twente D
-Netherlands_EredivisieWomen;2026-11-22;PSV D;PEC Zwolle D
-Netherlands_EredivisieWomen;2026-11-22;Utrecht D;Alkmaar D
-Oman_ProfessionalLeague;2026-11-22;Sur Club;Sohar
-Oman_ProfessionalLeague;2026-11-22;Al Msnaa;Dhofar
-Peru_Liga1_Clausura;2026-11-22;Huancayo;U. de Deportes
-Peru_Liga1_Clausura;2026-11-22;Sporting Cristal;Cienciano
-Peru_Liga2_GroupA;2026-11-22;Union Comercio;U. San Martin
-Poland_Ekstraklasa;2026-11-22;Rakow;Widzew Lodz
-Poland_Ekstraklasa;2026-11-22;Katowice;Lech
-Poland_Ekstraklasa;2026-11-22;Plock;Legia
-Poland_Division1;2026-11-22;Skierniewice;Pogon Siedlce
-Poland_Division1;2026-11-22;Lechia;Odra Opole
-Poland_Division1;2026-11-22;S. Rzeszow;Polonia B.
-Poland_Division2;2026-11-22;Hutnik Krakow;R. Rzeszow
-Poland_Division2;2026-11-22;Ol. Grudziadz;Leczna
-Poland_Division2;2026-11-22;Zawisza;Podhale Nowy Targ
-Poland_IIILiga_Group1;2026-11-22;LKS Lodz II;Suwalki
-Poland_IIILiga_Group1;2026-11-22;T. Mazowiecki;Weszlo
-Poland_IIILiga_Group3;2026-11-22;Warta Gorzow;ROW Rybnik
-Portugal_LigaPortugal2;2026-11-22;Vizela;Feirense
-CzechRepublic_1Liga;2026-11-22;Pardubice;Brno
-CzechRepublic_1Liga;2026-11-22;Slovacko;Hradec Kralove
-CzechRepublic_1Liga;2026-11-22;Sparta Praga;Liberec
-CzechRepublic_ChNL;2026-11-22;Zizkov;Opava
-CzechRepublic_ChNL;2026-11-22;Kladno;Jihlava
-CzechRepublic_ChNL;2026-11-22;Vlasim;Prostejov
-Romania_Superliga;2026-11-22;UTA Arad;Univ. Craiova
-Romania_Superliga;2026-11-22;FC Arges;FCSB
-Romania_Liga2;2026-11-22;Ramnicu Valcea;Metalul Buzau
-Ruanda_PremierLeague;2026-11-22;Al-Merreikh;Gorilla
-Ruanda_PremierLeague;2026-11-22;Etincelles;Kigali FC
-Ruanda_PremierLeague;2026-11-22;Gicumbi;Musanze
-Ruanda_PremierLeague;2026-11-22;Mukura Victory Sports;Sunrise
-Russia_PremierLeague;2026-11-22;Din. Mosca;Krasnodar
-Russia_PremierLeague;2026-11-22;Dynamo Makhachkala;Sp. Mosca
-Russia_PremierLeague;2026-11-22;Rodina Moscow;Lok. Mosca
-Russia_FNL;2026-11-22;Ufa;Ural
-SanMarino_CampionatoSammarinese;2026-11-22;Libertas;San Marino Academy U22
-SanMarino_CampionatoSammarinese;2026-11-22;Murata;Cailungo
-SanMarino_CampionatoSammarinese;2026-11-22;Pennarossa;Tre Penne
-Senegal_Ligue1;2026-11-22;Casa;Essamaye
-Senegal_Ligue1;2026-11-22;Linguere;Pikine
-Senegal_Ligue1;2026-11-22;Mbour;AJEL
-Senegal_Ligue1;2026-11-22;Ouakam;ASC HLM
-Senegal_Ligue1;2026-11-22;Teungueth;Diambars
-Senegal_Ligue1;2026-11-22;Guediawaye;Jaraaf
-Serbia_SuperLiga;2026-11-22;Radnicki 1923;Cukaricki
-Serbia_SuperLiga;2026-11-22;IMT Novi Beograd;Partizan
-Serbia_SuperLiga;2026-11-22;Macva;Vojvodina
-Serbia_PrvaLiga;2026-11-22;Smederevo;Metalac
-Serbia_PrvaLiga;2026-11-22;Dubocica;Vrsac
-Serbia_PrvaLiga;2026-11-22;Jedinstvo U.;Javor
-Serbia_PrvaLiga;2026-11-22;Vozdovac;Bor 1919
-SierraLeone_PremierLeague;2026-11-22;Diamond Stars;Bo Rangers
-SierraLeone_PremierLeague;2026-11-22;Kallon;Bai Bureh Warriors
-SierraLeone_PremierLeague;2026-11-22;Old Edwardians;Waterloo
-SierraLeone_PremierLeague;2026-11-22;Ports Authority;Star Sport Academy
-Singapore_PremierLeague;2026-11-22;Hougang;Tampines
-Singapore_PremierLeague;2026-11-22;Lion City;Geylang
-Slovakia_NikeLiga;2026-11-22;Kosice;Skalica
-Slovakia_NikeLiga;2026-11-22;Dun. Streda;Komarno
-Slovenia_PrvaLiga;2026-11-22;Maribor;Nafta
-Slovenia_PrvaLiga;2026-11-22;Celje;Grosuplje
-Slovenia_2SNL;2026-11-22;Tabor Sezana;NK Jesenice
-Slovenia_2SNL;2026-11-22;Rudar;Beltinci
-Spain_LaLiga;2026-11-22;Barcellona;Villarreal
-Spain_LaLiga;2026-11-22;Racing Santander;Real Sociedad
-Spain_LaLiga;2026-11-22;Osasuna;Malaga
-Spain_LaLiga;2026-11-22;Getafe;Atl. Madrid
-Spain_LaLiga2;2026-11-22;Cordoba;Oviedo
-Spain_LaLiga2;2026-11-22;Gijon;Las Palmas
-Spain_LaLiga2;2026-11-22;Celta Vigo B;Valladolid
-Spain_LaLiga2;2026-11-22;Girona;Eibar
-Spain_LaLiga2;2026-11-22;Burgos CF;Albacete
-Spain_PrimeraRFEFGroup1;2026-11-22;Arenas Getxo;Real Aviles
-Spain_PrimeraRFEFGroup1;2026-11-22;UD Ourense;Racing Club Ferrol
-Spain_PrimeraRFEFGroup1;2026-11-22;Barakaldo;Unionistas
-Spain_PrimeraRFEFGroup1;2026-11-22;Dep. Fabril;CD Coria
-Spain_PrimeraRFEFGroup1;2026-11-22;AD Merida;R. Union
-Spain_PrimeraRFEFGroup1;2026-11-22;Cultural Leonesa;Zamora
-Spain_PrimeraRFEFGroup1;2026-11-22;Cacereno;UD Logrones
-Spain_PrimeraRFEFGroup2;2026-11-22;Alcorcon;Algeciras
-Spain_PrimeraRFEFGroup2;2026-11-22;Huesca;UD Ibiza
-Spain_PrimeraRFEFGroup2;2026-11-22;Cartagena;Jaen
-SriLanka_SuperLeague;2026-11-22;Renown;Blue Star
-SriLanka_SuperLeague;2026-11-22;Red Star;Blue Star
-SouthKorea_KLeague2;2026-11-22;Daegu;Gimhae
-SouthKorea_KLeague2;2026-11-22;Jeonnam;Ansan Greeners
-SouthKorea_KLeague2;2026-11-22;Paju Frontier;Cheonan City
-SouthKorea_KLeague2;2026-11-22;Seoul E-Land;Asan
-Suriname_SML;2026-11-22;SV Transvaal;Notch
-Suriname_SML;2026-11-22;Broki;Leo Victor
-Sweden_Allsvenskan;2026-11-22;Hacken;Elfsborg
-Sweden_Allsvenskan;2026-11-22;Sirius;Djurgarden
-Sweden_Allsvenskan;2026-11-22;Brommapojkarna;Halmstad
-Switzerland_SuperLeague;2026-11-22;Zurigo;St. Gallen
-Switzerland_SuperLeague;2026-11-22;Basilea;Luzern
-Switzerland_SuperLeague;2026-11-22;Lausanne;Vaduz
-Switzerland_PromotionLeague;2026-11-22;Biel;Bellinzona
-Switzerland_PromotionLeague;2026-11-22;Bulle;Bruhl SG
-Switzerland_PromotionLeague;2026-11-22;Schaffhausen;Cham
-Switzerland_PromotionLeague;2026-11-22;Young Boys II;YF Juventus
-Switzerland_PromotionLeague;2026-11-22;Lugano II;Breitenrain
-Taiwan_PremierLeague;2026-11-22;Taichung;Hang Yuen
-Taiwan_PremierLeague;2026-11-22;Taichung Rock;Tatung
-Taiwan_PremierLeague;2026-11-22;Taipower;Taiwan Steel
-Taiwan_PremierLeague;2026-11-22;Kaohsiung;AC Taipei
-Tanzania_LigiKuuBara;2026-11-22;Kagera Sugar;TRA United
-Tanzania_LigiKuuBara;2026-11-22;Geita Gold;Mashujaa
-Tunisia_LigueProfessionnelle1;2026-11-22;Club Africain;Esperance Tunis
-Tunisia_LigueProfessionnelle1;2026-11-22;Zarzis;Ben Guerdane
-Turkey_SuperLig;2026-11-22;Erzurumspor;Goztepe
-Turkey_SuperLig;2026-11-22;Kasimpasa;Alanyaspor
-Turkey_SuperLig;2026-11-22;Konyaspor;Besiktas
-Turkey_SuperLig;2026-11-22;Trabzonspor;Eyupspor
-Turkey_1Lig;2026-11-22;Batman Petrolspor;Muglaspor
-Turkey_1Lig;2026-11-22;Erokspor;Antalyaspor
-Turkey_1Lig;2026-11-22;Manisa FK;Pendikspor
-Turkey_1Lig;2026-11-22;Bursaspor;Sivasspor
-Turkey_2LigWhiteGroup;2026-11-22;Adana Demirspor;Aliaga
-Turkey_2LigWhiteGroup;2026-11-22;Aksaray Bld.;Isparta 32 Spor
-Turkey_2LigWhiteGroup;2026-11-22;Ankaraspor;Corluspor
-Turkey_2LigWhiteGroup;2026-11-22;Kastamonuspor;Erbaaspor
-Turkey_2LigWhiteGroup;2026-11-22;Musspor;Hatayspor
-Turkey_2LigWhiteGroup;2026-11-22;Sebat Spor Kulubu;Guzide Gebzespor
-Turkey_2LigWhiteGroup;2026-11-22;Soma Spor;Elazigspor
-Turkey_2LigWhiteGroup;2026-11-22;Menemenspor;Sanliurfaspor
-Turkey_2LigWhiteGroup;2026-11-22;Inegol Kafkas;Arnavutkoy Bl.
-Turkey_2LigRedGroup;2026-11-22;Kirklarelispor;Fethiyespor
-Turkey_2LigRedGroup;2026-11-22;K. İstiklalspor;Adana
-Turkey_2LigRedGroup;2026-11-22;Kutahyaspor;Trabzon FK
-Turkey_2LigRedGroup;2026-11-22;24 Erzincanspor;Karacabey Bld.
-Turkey_2LigRedGroup;2026-11-22;Iskenderunspor;Ankaragucu
-Turkey_2LigRedGroup;2026-11-22;Beyoglu Yeni Carsi;Inegolspor
-Turkey_2LigRedGroup;2026-11-22;52 Orduspor;12 Bingol
-Turkey_2LigRedGroup;2026-11-22;Sakaryaspor;Serik Spor
-Ukraine_PremierLeague;2026-11-22;Dyn. Kyiv;Obolon
-Ukraine_PremierLeague;2026-11-22;Veres-Rivne;Bukovyna
-Ukraine_PershaLiga;2026-11-22;Probiy Horodenka;Metalist Kharkiv
-Ukraine_PershaLiga;2026-11-22;Oleksandriya;UCSA
-Ukraine_PershaLiga;2026-11-22;Nyva Ternopil;SC Poltava
-Ukraine_DruhaLiga;2026-11-22;Lozova;SK Metalurh
-Ukraine_DruhaLiga;2026-11-22;FC Vilkhivtsi;Skala 1911
-Uganda_PremierLeague;2026-11-22;Express;Vipers
-Uganda_BigLeague;2026-11-22;Kaaro Karungi;Catda
-Uganda_BigLeague;2026-11-22;Kiyinda Boys;Calvary
-Uganda_BigLeague;2026-11-22;Onduparaka;Buwambo
-Uganda_BigLeague;2026-11-22;Paidha Black Angels;Amus College
-Uganda_BigLeague;2026-11-22;Pakwach Young Stars;Young Elephant Academy
-Uganda_BigLeague;2026-11-22;Rwenzori Lions;Volcanoes
-Hungary_NBI;2026-11-22;Zalaegerszeg;Vasas
-Hungary_NBI;2026-11-22;Nyiregyhaza;Debrecen
-Hungary_NBI;2026-11-22;Honved;Paks
-Hungary_NBII;2026-11-22;Szentlorinc;Kecskemeti
-Hungary_NBII;2026-11-22;Soroksar;Szeged
-Hungary_NBIIINortheast;2026-11-22;Kisvarda II;Hajdunanas
-Hungary_NBIIINortheast;2026-11-22;Nyiregyhaza II;Fuzesabony
-Hungary_NBIIISoutheast;2026-11-22;Honved II;Vasas II
-Hungary_NBIIISoutheast;2026-11-22;Ujpest II;Sandorfalvi
-Hungary_NBIIISoutheast;2026-11-22;ESMTK Budapest;Csepel
-Hungary_NBIIISoutheast;2026-11-22;FC Dabas;Monori
-Hungary_NBIIISouthwest;2026-11-22;PTE-PEAC;Budafoki
-USA_MLS;2026-11-22;Inter Miami;Columbus Crew
-USA_MLS;2026-11-22;Nashville SC;Cincinnati
-Uzbekistan_SuperLeague;2026-11-22;Din. Samarkand;Bunyodkor
-Vietnam_VLeague1;2026-11-22;Da Nang;Phu Dong Ninh Binh
-Vietnam_VLeague1;2026-11-22;Hong Linh Ha Tinh;Ho Chi Minh
-Vietnam_VLeague2;2026-11-22;Khanh Hoa;Hung Yen
-Vietnam_VLeague2;2026-11-22;Van Hien;Quy Nhon United
-Vietnam_VLeague2;2026-11-22;PVF-CAND;Thep Can Tho
-Zambia_SuperLeague;2026-11-22;Green Eagles;Red Arrows
-Zambia_SuperLeague;2026-11-22;Nchanga Rangers;Trident
-Zimbabwe_PremierSoccerLeague;2026-11-22;CAPS Utd;Chicken Inn
-Mexico_LigaPremierSerieA;2026-11-22;Apodaca;Acambaro
-Suriname_SML;2026-11-22;PVV;Coronie Boys
-Venezuela_LigaFUTVE2;2026-11-22;Lara;Aragua
+Albania_KategoriaePare;2026-11-23;Beselidhja Lezha;Iliria Fushe-Kruje
+Albania_KategoriaePare;2026-11-23;Kastrioti;Besa
+Albania_KategoriaePare;2026-11-23;Flamurtari;Bylis
+Algeria_Ligue1;2026-11-23;Belouizdad;Olympique Akbou
+Algeria_Ligue1;2026-11-23;Ben Aknoun;USM Alger
+Algeria_Ligue1;2026-11-23;JS Kabylie;MC Alger
+AntiguaBarbuda_ABFAPremierLeague;2026-11-23;Freemansville;All Saints Utd.
+SaudiArabia_Division1;2026-11-23;Al Jeel;Al Saqer
+SaudiArabia_Division1;2026-11-23;Jeddah;Damac
+Argentina_PrimeraNacional;2026-11-23;Gimnasia y Tiro;Tristan Suarez
+Armenia_FirstLeague;2026-11-23;Pyunik 2;BKMA 2
+Aruba_DivisiondiHonor;2026-11-23;River Plate;Britannia
+Bolivia_DivisionProfesional;2026-11-23;Real Oruro;Guabira
+Bolivia_DivisionProfesional;2026-11-23;Universitario de Vinto;GV San Jose
+Bulgaria_ParvaLiga;2026-11-23;Ludogorets;Dunav Ruse
+Bulgaria_VtoraLiga;2026-11-23;CSKA Sofia II;Beroe
+Bulgaria_ThirdLeagueNorthEast;2026-11-23;Cherno More II;Fratria II
+Bulgaria_ThirdLeagueNorthWest;2026-11-23;Mezdra;Etar II
+Cipro_CyprusLeague;2026-11-23;Krasava;Anorthosis
+CongoDr_Ligue1;2026-11-23;Simba;Don Bosco
+CongoDr_Ligue1;2026-11-23;Lubumbashi Sport;Butras
+CongoDr_Ligue1;2026-11-23;Manika;St Eloi Lupopo
+CongoDr_Ligue1;2026-11-23;Sanga Balende;Malole
+CongoDr_Ligue1;2026-11-23;Tanganyika;Mazembe
+Croatia_HNL;2026-11-23;Slaven Belupo;Osijek
+Denmark_Superliga;2026-11-23;Brondby;Midtjylland
+Eswatini_SwaziMTNPremierLeague;2026-11-23;Manzini Sea Birds;Green Mamba
+France_Ligue2;2026-11-23;Nantes;Grenoble
+France_Ligue2;2026-11-23;Sochaux;Dunkerque
+France_National;2026-11-23;Orleans;Thionville
+England_PremierLeague;2026-11-23;Brentford;Everton
+England_ProfessionalDevelopmentLeague;2026-11-23;Barnsley U21;Bolton U21
+Iran_AzadeganLeague;2026-11-23;Mes Kerman;Besat Kermanshah
+Iran_AzadeganLeague;2026-11-23;Kara Gostar;Ario Eslamshahr
+Iran_AzadeganLeague;2026-11-23;Saipa;Naft Bandar Abbas
+Iran_AzadeganLeague;2026-11-23;Novin Ahvaz;Mes Rafsanjan
+Iran_AzadeganLeague;2026-11-23;Shenavarsazi Qeshm;Naft Gachsaran
+Italy_SerieA;2026-11-23;Monza;Fiorentina
+Italy_SerieC_GironeA;2026-11-23;Lecco;Lumezzane
+Italy_SerieC_GironeB;2026-11-23;Grosseto;Guidonia
+Libia_PremierLeague;2026-11-23;Al Akhdar;Al Afreeki
+Libia_PremierLeague;2026-11-23;Al Ittihad Misurata;Asswehly
+Libia_PremierLeague;2026-11-23;Military Union;Khaleej Sirte
+Libia_PremierLeague;2026-11-23;Al Ittihad;Al Madina
+NorthMacedonia_1MFL;2026-11-23;Shkendija;Sileks
+Mexico_LigaMX_Apertura;2026-11-23;Queretaro;Necaxa
+Mozambico_Mocambola;2026-11-23;Ferroviario Lichinga;Sofala
+Myanmar_MLeague;2026-11-23;Yangon City;Hantharwady Utd
+Myanmar_MLeague;2026-11-23;Chinland;Ayeyawady
+Netherlands_EersteDivisie;2026-11-23;Jong Ajax;Jong AZ
+Netherlands_EersteDivisie;2026-11-23;Jong PSV;Jong Utrecht
+Netherlands_EersteDivisie;2026-11-23;Vitesse;De Graafschap
+Oman_ProfessionalLeague;2026-11-23;Saham;Oman Club
+Oman_ProfessionalLeague;2026-11-23;Bahla;Al Samail
+Peru_Liga2_GroupA;2026-11-23;Carlos Mannucci;ADA Jaen
+Poland_Ekstraklasa;2026-11-23;Wieczysta Krakow;Motor Lublin
+Poland_Division1;2026-11-23;Podbeskidzie;Termalica B-B.
+Romania_Superliga;2026-11-23;Sepsi Sf. Gheorghe;Rapid Bucarest
+Romania_Liga2;2026-11-23;Steaua Bucuresti;Chindia Targoviste
+Russia_FNL;2026-11-23;Chelyabinsk;Leningradets
+Slovenia_PrvaLiga;2026-11-23;Koper;Aluminij
+Slovenia_2SNL;2026-11-23;NK Bistrica;NK Krka
+Spain_LaLiga;2026-11-23;Levante;Elche
+Spain_LaLiga2;2026-11-23;Ceuta;Almeria
+SriLanka_SuperLeague;2026-11-23;Colombo;UP Country Lions
+SriLanka_SuperLeague;2026-11-23;UP Country Lions;Sea Hawks
+Sweden_Allsvenskan;2026-11-23;Hammarby;Göteborg
+Sweden_Allsvenskan;2026-11-23;Orgryte;Kalmar
+Tunisia_Ligue2;2026-11-23;AS Agareb;Sfax Railways
+Tunisia_Ligue2;2026-11-23;Bouchamma;Olympique Kef
+Tunisia_Ligue2;2026-11-23;BS Bouhajla;Msaken
+Tunisia_Ligue2;2026-11-23;EM Mahdia;Chebba
+Tunisia_Ligue2;2026-11-23;Moknine;CO Medenine
+Tunisia_Ligue2;2026-11-23;OC Kerkennah;AS Gabes
+Tunisia_Ligue2;2026-11-23;Sporting Ben Arous;ES Beni-Khalled
+Tunisia_Ligue2;2026-11-23;Stade Soussien;Soliman
+Tunisia_Ligue2;2026-11-23;US Tataouine;Megrine
+Turkey_SuperLig;2026-11-23;Basaksehir;Corum
+Turkey_1Lig;2026-11-23;Bodrumspor;Vanspor FK
+Ukraine_PremierLeague;2026-11-23;Ch. Odesa;Epitsentr
+Ukraine_PremierLeague;2026-11-23;LNZ Cherkasy;Polissya Zhytomyr
+Hungary_NBII;2026-11-23;DVTK;Karcagi
+USA_MLS;2026-11-23;Chicago Fire;Charlotte
+USA_MLS;2026-11-23;Vancouver Whitecaps;Real Salt Lake
+Giamaica_PremierLeague;2026-11-23;Tru-Juice;Dunbeholden

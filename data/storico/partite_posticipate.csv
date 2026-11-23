@@ -84,7 +84,6 @@ Germany_Regionalliga_Nord;;2026-10-25;Schoningen;VfB Lubeck;POSTICIPATA;
 Germany_Oberliga_SchleswigHolstein;;2026-10-25;Eichede;Nordmark Satrup;POSTICIPATA;
 Germany_Oberliga_Niedersachsen;;2026-10-25;Egestorf-Langreder;Vorsfelde;POSTICIPATA;
 Germany_Oberliga_Westfalen;;2026-10-25;ASC 09 Dortmund;Westfalia Kinderhaus;POSTICIPATA;
-SriLanka_SuperLeague;;2026-10-25;Renown;Blue Star;POSTICIPATA;
 Wales_CymruSouth;;2026-10-24;Baglan Dragons;Aberystwyth;POSTICIPATA;
 Wales_CymruSouth;;2026-10-24;Pontardawe;Ynyshir Albions;POSTICIPATA;
 Wales_CymruNorth;;2026-10-24;Bangor 1876;Ruthin;POSTICIPATA;
@@ -137,7 +136,6 @@ SaudiArabia_ProfessionalLeague;;2026-11-07;Al Faysaly;Al Diriyah;POSTICIPATA;
 SaudiArabia_ProfessionalLeague;;2026-11-07;Al Ettifaq;Al Hilal;POSTICIPATA;
 SaudiArabia_ProfessionalLeague;;2026-11-07;Al Ahli SC;Al-Taawon;POSTICIPATA;
 Bulgaria_ThirdLeagueNorthWest;;2026-11-07;Juventus Malchika;Kom Berkovitsa;POSTICIPATA;
-CostaDAvorio_Ligue1;;2026-11-07;SOL;Zoman;POSTICIPATA;
 CostaDAvorio_Ligue1;;2026-11-21;Yamoussoukro;Agboville;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-11-07;Berkhamsted;Wimborne;POSTICIPATA;
 England_SouthernLeaguePremierSouth;;2026-11-07;Plymouth Parkway;Chertsey;POSTICIPATA;
@@ -149,7 +147,6 @@ Uganda_PremierLeague;;2026-11-07;Kitara;URA SC;POSTICIPATA;
 Bulgaria_ThirdLeagueSouthEast;15;2026-11-07;Spartak Plovdiv;Sekirovo Rakovski;NOT_FOUND;Rinvio presunto: assente dai risultati importati
 Armenia_PremierLeague;;2026-11-08;Urartu;Ararat-Armenia;POSTICIPATA;
 Austria_Regionalliga_North;;2026-11-08;Ried (Am);Schallerbach;POSTICIPATA;
-CostaDAvorio_Ligue1;;2026-11-08;SO Armee;Adiake;POSTICIPATA;
 Estonia_Esiliiga;;2026-11-08;Tartu Welco;Maardu;POSTICIPATA;
 Latvia_Virsliga;;2026-11-08;Riga FC;RFS;POSTICIPATA;
 Netherlands_EersteDivisie;;2026-11-08;Vitesse;De Graafschap;POSTICIPATA;
@@ -410,3 +407,18 @@ Germany_Oberliga_Bayern_Nord;24;2026-11-21;Aschaffenburg;Nordlingen;NOT_FOUND;Ri
 Zimbabwe_PremierSoccerLeague;35;2026-11-21;Agama;Highlanders;NOT_FOUND;Rinvio presunto: assente dai risultati importati
 Niger_SuperLigue;13;2026-11-21;Liberte;AS UAM;NOT_FOUND;Rinvio presunto: assente dai risultati importati
 Zimbabwe_PremierSoccerLeague;35;2026-11-21;Herentals;ZPC Kariba;NOT_FOUND;Rinvio presunto: assente dai risultati importati
+Bermuda_PremierLeague;;2026-11-22;YMSC;North Village Rams;POSTICIPATA;
+Camerun_EliteOne;;2026-11-22;APEJES Academy;Colombe;POSTICIPATA;
+Germany_Oberliga_SchleswigHolstein;;2026-11-22;VfR Neumunster;Eichede;POSTICIPATA;
+Germany_Oberliga_Hamburg;;2026-11-22;TSV Buchholz 08;Suderelbe;POSTICIPATA;
+Germany_Oberliga_Niedersachsen;;2026-11-22;Heeslinger;Hemmingen;POSTICIPATA;
+Germany_Oberliga_Niedersachsen;;2026-11-22;Hildesheim;Spelle-Venhaus;POSTICIPATA;
+Germany_Oberliga_Bayern_Sud;;2026-11-22;Schalding;Monaco 1860 II;POSTICIPATA;
+Giamaica_PremierLeague;;2026-11-22;Chapelton;Cavalier;POSTICIPATA;
+Giamaica_PremierLeague;;2026-11-22;Montego Bay;Waterhouse;POSTICIPATA;
+Giamaica_PremierLeague;;2026-11-22;Mount Pleasant;Humble Lions;POSTICIPATA;
+Giamaica_PremierLeague;;2026-11-22;Treasure Beach;Arnett Gardens;POSTICIPATA;
+Italy_SerieD_GironeB;;2026-11-22;Pro Palazzolo;Club Milano;POSTICIPATA;
+SriLanka_SuperLeague;;2026-11-22;Red Star;Blue Star;POSTICIPATA;
+Switzerland_PromotionLeague;;2026-11-22;Bulle;Bruhl SG;POSTICIPATA;
+Giamaica_PremierLeague;;2026-11-22;Molynes;Tivoli;POSTICIPATA;

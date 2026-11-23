@@ -1,17 +1,17 @@
 ﻿Round;Position;Team;Played;Wins;Draws;Losses;GF;GA;GD;Points;PPG
-9;1;Ubombo Sugar;6;3;2;1;6;4;2;11;1.833
-9;2;Green Mamba;5;3;1;1;9;3;6;10;2.0
-9;3;Royal Leopards;6;3;1;2;15;10;5;10;1.667
-9;4;Moneni Pirates;5;3;1;1;7;4;3;10;2.0
-9;5;Young Buffaloes;5;3;1;1;8;6;2;10;2.0
-9;6;Amawele;5;3;0;2;4;7;-3;9;1.8
-9;7;Nsingizini Hotspurs;5;2;2;1;3;2;1;8;1.6
-9;8;Rangers FC;6;2;2;2;5;5;0;8;1.333
-9;9;Mbabane Highlanders;5;2;1;2;6;5;1;7;1.4
-9;10;Mbabane Swallows;5;1;3;1;4;4;0;6;1.2
-9;11;Ezulwini;5;1;2;2;4;4;0;5;1.0
-9;12;Tabankulu;6;1;2;3;4;9;-5;5;0.833
-9;13;Madlenya;5;0;4;1;3;4;-1;4;0.8
-9;14;PPK Professionals;5;1;1;3;5;7;-2;4;0.8
-9;15;Red Rhinos;5;1;1;3;6;12;-6;4;0.8
+9;1;Moneni Pirates;6;4;1;1;12;4;8;13;2.167
+9;2;Nsingizini Hotspurs;6;3;2;1;6;2;4;11;1.833
+9;3;Ubombo Sugar;6;3;2;1;6;4;2;11;1.833
+9;4;Green Mamba;5;3;1;1;9;3;6;10;2.0
+9;5;Royal Leopards;6;3;1;2;15;10;5;10;1.667
+9;6;Young Buffaloes;6;3;1;2;9;8;1;10;1.667
+9;7;Amawele;6;3;0;3;4;12;-8;9;1.5
+9;8;Ezulwini;6;2;2;2;7;5;2;8;1.333
+9;9;Mbabane Highlanders;6;2;2;2;7;6;1;8;1.333
+9;10;Rangers FC;6;2;2;2;5;5;0;8;1.333
+9;11;PPK Professionals;6;2;1;3;7;8;-1;7;1.167
+9;12;Mbabane Swallows;6;1;3;2;4;7;-3;6;1.0
+9;13;Tabankulu;6;1;2;3;4;9;-5;5;0.833
+9;14;Red Rhinos;6;1;2;3;7;13;-6;5;0.833
+9;15;Madlenya;6;0;4;2;4;7;-3;4;0.667
 9;16;Manzini Sea Birds;5;0;2;3;6;9;-3;2;0.4
