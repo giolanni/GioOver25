@@ -258,6 +258,7 @@ def _ranking_table(rows,styles):
     return t
 
 def generate_results_report(day:date):
+    dr.organize_reports()
     styles=dr._styles()
     path=dr.OUTPUT_DIR/f"GioOver_Risultati_{day.isoformat()}.pdf"
     path.parent.mkdir(parents=True,exist_ok=True)
@@ -346,8 +347,10 @@ def generate_results_report(day:date):
     doc=SimpleDocTemplate(str(path),pagesize=A4,rightMargin=10*mm,leftMargin=10*mm,
                           topMargin=10*mm,bottomMargin=11*mm)
     doc.build(story)
-    print(f"[REPORT] Consuntivo generato: {path}")
-    return path
+    dr.organize_reports()
+    final_path = path if path.exists() else dr.OUTPUT_DIR / "OLD" / path.name
+    print(f"[REPORT] Consuntivo generato: {final_path}")
+    return final_path
 
 def update_reports(input_file):
     # Snapshot only future/current fixtures; no retroactive ticket construction.
