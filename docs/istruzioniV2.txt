@@ -175,3 +175,11 @@ python -m analysis.laboratory.build_laboratory --incremental
 
 # Ricostruzione completa del laboratorio, compreso 02_drivers.csv (circa 57 MB)
 python -m analysis.laboratory.run_all
+
+
+############### V28 SPERIMENTALE ###############
+# Genera pronostici V28 senza modificare V27.
+python -m gioover25.rank_matches_v2 data/input_partite/partite.csv --engine v28
+# Regola congelata alla creazione: HomeAttackScore >= 12.428; AwayGALast5Avg >= 3.00.
+# La copertura storica sul Laboratory deduplicato del 23/11/2026 e 220/773 (28.46%) delle selezioni V27.
+# Verificare su partite future: le soglie sono state scelte con osservazione retrospettiva.
