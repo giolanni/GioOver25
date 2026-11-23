@@ -151,3 +151,27 @@ git status
 git add .
 git commit -m "messaggio commit"
 git push
+
+############### REPORT PDF - PRONOSTICI E RISULTATI ###############
+
+# Rigenera SOLO il PDF dei pronostici dalla data indicata (non ricalcola gli engine)
+python -m tools.rigenera_pdf --tipo pronostici --data 2026-11-23
+
+# Rigenera SOLO il PDF dei risultati dalla data indicata (non esegue append_results)
+python -m tools.rigenera_pdf --tipo risultati --data 2026-11-22
+
+# Alternativa: rigenera direttamente il consuntivo dei risultati (default: ieri)
+python -m gioover25.results_report
+python -m gioover25.results_report --date 2026-11-22
+
+# Riordina i PDF gia presenti: oggi/futuri e risultati di ieri in output_report;
+# report degli ultimi sette giorni in output_report/OLD; i piu vecchi vengono eliminati.
+python -m tools.organizza_report
+
+############### LABORATORY - DATASET DRIVER ###############
+
+# Aggiornamento incrementale di 01_matches.csv (NON riscrive 02_drivers.csv)
+python -m analysis.laboratory.build_laboratory --incremental
+
+# Ricostruzione completa del laboratorio, compreso 02_drivers.csv (circa 57 MB)
+python -m analysis.laboratory.run_all
