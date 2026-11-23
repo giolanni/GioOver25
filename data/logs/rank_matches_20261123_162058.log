@@ -1,0 +1,6 @@
+[ARCHIVE] v28: 0 ranking archiviati.
+[v28] Ranking generato: C:\Users\GioAsus\repos\GioOver25\data\output_ranking\v28\ranking_v28.csv
+[v28] Storico ranking aggiornato. Nuove previsioni: 0
+[GS1-OVER] ALTA=0 MEDIA=1 nuove_storico=0 output=data\output_gs1_over\ranking_gs1_over.csv
+[GS1-NEAR] {'OSSERVAZIONE': 1} nuove_storico=0 output=data\output_gs1_over\ranking_gs1_over_near.csv
+[ARCHIVE] Copia input: data\input_partite\partite.csv -> data\input_partite\oldmatches\partite_2026_11_23_162101.csv

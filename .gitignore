@@ -26,3 +26,5 @@ data/debug/flashscore_tournament_from_*/
 /data/analysis/gm1_disagreements_pairs.csv
 # Snapshot e stato operativo LIVE: temporanei, locali a ogni PC.
 /data/live/
+
+/analysis/laboratory/data/02_drivers.csv
