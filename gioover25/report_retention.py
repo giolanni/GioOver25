@@ -12,7 +12,7 @@ from pathlib import Path
 
 OUTPUT_DIR = Path("data/output_report")
 PDF_DATE = re.compile(
-    r"^GioOver_(?:Risultati_)?(\\d{4}-\\d{2}-\\d{2})(?:_(\\d{4}-\\d{2}-\\d{2}))?\\.pdf$",
+    r"^GioOver_(?:Risultati_)?(\d{4}-\d{2}-\d{2})(?:_(\d{4}-\d{2}-\d{2}))?\.pdf$",
     re.IGNORECASE,
 )
 
