@@ -160,7 +160,7 @@ def sofascore_matches(target: date, mode: str):
     unresolved = 0
     try:
         events = fetch_day(target.isoformat())
-    except Exception as exc:
+    except (Exception, SystemExit) as exc:
         print(
             f"[SOFASCORE WARN] Provider non disponibile: "
             f"{exc.__class__.__name__}: {exc}"
