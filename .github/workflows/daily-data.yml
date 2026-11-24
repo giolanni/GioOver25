@@ -22,6 +22,9 @@ on:
 permissions:
   contents: write
 
+env:
+  PYTHONUNBUFFERED: '1'
+
 concurrency:
   group: gioover-daily-data
   cancel-in-progress: false
