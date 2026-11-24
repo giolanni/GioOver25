@@ -37,7 +37,10 @@ function hydrateFilters() {
 
 function filteredMatches() {
   const date = $('dateFilter').value, engine = $('engineFilter').value, band = $('bandFilter').value;
-  return payload.matches.filter(x => (!date || x.match_date === date) && (!engine || x.engine === engine) && (!band || x.band === band));
+  return payload.matches.filter(x => {
+    const bandMatch = !band || (band === 'ALTA' ? (x.band || '').includes('ALTA') : x.band === band);
+    return (!date || x.match_date === date) && (!engine || x.engine === engine) && bandMatch;
+  });
 }
 
 function render() {
@@ -58,7 +61,8 @@ function renderMatch(m) {
   const bandClass = (m.band || 'BASSA').toLowerCase().replace(/[^a-z]/g,'');
   const result = m.result ? `<strong class="status-${m.result.toLowerCase()}">${escapeHtml(m.result)}</strong>` : '<span class="muted">Da giocare</span>';
   const finalScore = Number.isFinite(m.home_goals) && Number.isFinite(m.away_goals) ? `<span class="score">${m.home_goals}–${m.away_goals}</span>` : '';
-  return `<article class="match-card"><div class="card-top"><span class="league">${escapeHtml(m.league_id)}</span><span class="time">${escapeHtml(m.start_time || '—')}</span></div><div class="teams"><span>${escapeHtml(m.home)}</span><span class="versus">VS</span><span class="away">${escapeHtml(m.away)}</span></div><div class="card-bottom"><div><span class="pill ${bandClass}">${escapeHtml(m.band || '—')}</span> <span class="engine">${escapeHtml(m.engine || '')}</span></div><div>${finalScore} ${result}</div></div></article>`;
+  const prediction = Number.isFinite(m.score) ? `<span class="engine">Score ${Number(m.score).toFixed(1)}</span>` : '';
+  return `<article class="match-card"><div class="card-top"><span class="league">${escapeHtml(m.league_id)}</span><span class="time">${escapeHtml(m.start_time || '—')}</span></div><div class="teams"><span>${escapeHtml(m.home)}</span><span class="versus">VS</span><span class="away">${escapeHtml(m.away)}</span></div><div class="card-bottom"><div><span class="pill ${bandClass}">${escapeHtml(m.band || '—')}</span> <span class="engine">${escapeHtml(m.engine || '')}</span> ${prediction}</div><div>${finalScore} ${result}</div></div></article>`;
 }
 
 function renderEngines() {

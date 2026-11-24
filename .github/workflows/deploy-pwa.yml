@@ -3,7 +3,14 @@ name: Pubblica GioOver PWA
 on:
   push:
     branches: [v2-dev]
-    paths: ['pwa/**', '.github/workflows/deploy-pwa.yml']
+    paths:
+      - 'pwa/**'
+      - 'tools/build_pwa_data.py'
+      - 'data/output_ranking/**'
+      - 'data/output_gs1_over/**'
+      - 'data/storico/ranking/**'
+      - 'data/operational/kickoff_times.csv'
+      - '.github/workflows/deploy-pwa.yml'
   workflow_dispatch:
 
 permissions:
@@ -23,6 +30,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Genera dati PWA dagli output reali
+        run: python tools/build_pwa_data.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
