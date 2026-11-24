@@ -1,5 +1,6 @@
 const DATA_URL = './data/current.json';
 let deferredInstallPrompt;
+let waitingServiceWorker;
 let payload = { meta: {}, matches: [], engines: [] };
 let activeView = 'predictions';
 
@@ -75,5 +76,35 @@ document.querySelectorAll('.tabs button').forEach(button => button.addEventListe
 $('refreshButton').addEventListener('click', loadData);
 window.addEventListener('beforeinstallprompt', event => { event.preventDefault(); deferredInstallPrompt = event; $('installButton').hidden = false; });
 $('installButton').addEventListener('click', async () => { if (!deferredInstallPrompt) return; deferredInstallPrompt.prompt(); await deferredInstallPrompt.userChoice; deferredInstallPrompt = null; $('installButton').hidden = true; });
-if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+$('updateButton').addEventListener('click', () => {
+  if (!waitingServiceWorker) return;
+  $('updateButton').textContent = 'Aggiornamento…';
+  $('updateButton').disabled = true;
+  waitingServiceWorker.postMessage({ type: 'SKIP_WAITING' });
+});
+window.addEventListener('appinstalled', () => { $('installButton').hidden = true; });
+if ('serviceWorker' in navigator) {
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (refreshing) return;
+    refreshing = true;
+    window.location.reload();
+  });
+  window.addEventListener('load', async () => {
+    const registration = await navigator.serviceWorker.register('./sw.js');
+    const offerUpdate = worker => {
+      waitingServiceWorker = worker;
+      $('updateButton').hidden = false;
+    };
+    if (registration.waiting && navigator.serviceWorker.controller) offerUpdate(registration.waiting);
+    registration.addEventListener('updatefound', () => {
+      const worker = registration.installing;
+      if (!worker) return;
+      worker.addEventListener('statechange', () => {
+        if (worker.state === 'installed' && navigator.serviceWorker.controller) offerUpdate(worker);
+      });
+    });
+    registration.update().catch(() => {});
+  });
+}
 loadData();
