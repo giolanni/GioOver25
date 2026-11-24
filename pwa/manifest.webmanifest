@@ -1,0 +1,12 @@
+{
+  "name": "GioOver 2.5",
+  "short_name": "GioOver",
+  "description": "Pronostici e risultati degli engine GioOver 2.5",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#06131f",
+  "theme_color": "#081b2b",
+  "lang": "it",
+  "icons": [{"src":"icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
