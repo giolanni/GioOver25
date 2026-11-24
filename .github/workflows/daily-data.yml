@@ -1,0 +1,88 @@
+name: Aggiorna dati GioOver
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/daily-data.yml']
+  schedule:
+    # GitHub usa UTC: in Italia corrispondono circa a 06:15/07:15,
+    # 14:30/15:30 e 22:30/23:30 secondo ora solare/legale.
+    - cron: '15 5 * * *'
+    - cron: '30 13 * * *'
+    - cron: '30 21 * * *'
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Operazione da eseguire
+        required: true
+        default: smoke
+        type: choice
+        options: [smoke, morning, delta, results]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gioover-daily-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: v2-dev
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Installa dipendenze
+        run: pip install -r requirements.txt
+      - name: Determina operazione pianificata
+        id: operation
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            operation="smoke"
+          elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            operation="${{ inputs.operation }}"
+          elif [[ "${{ github.event.schedule }}" == "15 5 * * *" ]]; then
+            operation="morning"
+          elif [[ "${{ github.event.schedule }}" == "30 13 * * *" ]]; then
+            operation="delta"
+          else
+            operation="results"
+          fi
+          echo "operation=$operation" >> "$GITHUB_OUTPUT"
+          echo "Operazione: $operation"
+      - name: Esegue pipeline
+        run: python tools/run_scheduled_pipeline.py "${{ steps.operation.outputs.operation }}"
+      - name: Registra aggiornamenti su v2-dev
+        if: steps.operation.outputs.operation != 'smoke'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          paths=(
+            data/input_partite
+            data/input_risultati
+            data/output_ranking
+            data/output_gs1_over
+            data/storico/ranking
+            data/storico/risultati
+            data/operational/kickoff_times.csv
+            data/classifiche
+          )
+          for path in "${paths[@]}"; do
+            [[ -e "$path" ]] && git add -- "$path"
+          done
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica da pubblicare."
+            exit 0
+          fi
+          git commit -m "Dati automatici: ${{ steps.operation.outputs.operation }} $(date -u +%F)"
+          git pull --rebase origin v2-dev
+          git push origin HEAD:v2-dev
