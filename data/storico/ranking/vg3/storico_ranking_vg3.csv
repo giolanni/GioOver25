@@ -95,7 +95,7 @@
 2026-11-25;2026-11-25;Russia_FNL;;Kamaz;Yenisey;60.860307351090924;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Russia_FNL;Russia_FNL
 2026-11-25;2026-11-25;Italy_SerieB;;Padova;Sampdoria;60.50734874080509;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Italy_SerieB;Italy_SerieB
 2026-11-25;2026-11-25;SaudiArabia_Division1;;Al Ula;Al Adalah;60.32355620703519;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;SaudiArabia_Division1;SaudiArabia_Division1
-2026-11-25;2026-11-25;Bulgaria_VtoraLiga;;Ludogorets 2;Etar;60.22545367456901;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Bulgaria_VtoraLiga;Bulgaria_VtoraLiga
+2026-11-25;2026-11-25;Bulgaria_VtoraLiga;;Ludogorets 2;Etar;60.22545367456901;BASSA;POSTPONED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Bulgaria_VtoraLiga;Bulgaria_VtoraLiga
 2026-11-25;2026-11-25;Montenegro_DrugaLiga;;Iskra;Kom Podgorica;60.183994233026205;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Montenegro_DrugaLiga;Montenegro_DrugaLiga
 2026-11-25;2026-11-25;Japan_J2League;;Tochigi City;Blaublitz;60.013929685365184;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Japan_J2League;Japan_J2League
 2026-11-25;2026-11-25;Liberia_LFAFirstDivision;;Paynesville;LISCR FC;60.00848391953355;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Liberia_LFAFirstDivision;Liberia_LFAFirstDivision
@@ -112,7 +112,7 @@
 2026-11-25;2026-11-25;Japan_J1League;;Avispa Fukuoka;Yokohama M.;57.30043997465161;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Japan_J1League;Japan_J1League
 2026-11-25;2026-11-25;Japan_J2League;;Omiya Ardija;Tokushima;57.29963716743396;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Japan_J2League;Japan_J2League
 2026-11-25;2026-11-25;Liberia_LFAFirstDivision;;NPA Anchors;Black Man Warrior;57.201179374288216;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Liberia_LFAFirstDivision;Liberia_LFAFirstDivision
-2026-11-25;2026-11-25;Switzerland_PromotionLeague;;Bavois;Schaffhausen;57.16789454850445;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Switzerland_PromotionLeague;Switzerland_PromotionLeague
+2026-11-25;2026-11-25;Switzerland_PromotionLeague;;Bavois;Schaffhausen;57.16789454850445;BASSA;POSTPONED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Switzerland_PromotionLeague;Switzerland_PromotionLeague
 2026-11-25;2026-11-25;Japan_J2League;;Yokohama FC;Vegalta Sendai;57.11220437999746;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Japan_J2League;Japan_J2League
 2026-11-25;2026-11-25;Italy_SerieB;;Cremonese;Avellino;56.97580748406953;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Italy_SerieB;Italy_SerieB
 2026-11-25;2026-11-25;Japan_J2League;;Imabari;Tegevajaro Miyazaki;56.97348700237224;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Japan_J2League;Japan_J2League
@@ -145,12 +145,12 @@
 2026-11-25;2026-11-25;Qatar_QSL2;;Al Khor;Shamal 2;54.44465700599855;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Qatar_QSL2;Qatar_QSL2
 2026-11-25;2026-11-25;Uzbekistan_ProLiga;;Metallurg Bekabad;FarDU;54.19629522296196;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Uzbekistan_ProLiga;Uzbekistan_ProLiga
 2026-11-25;2026-11-25;Japan_J1League;;Okayama;Shimizu;54.17856209549943;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Japan_J1League;Japan_J1League
-2026-11-25;2026-11-25;Ukraine_PremierLeague;;Kryvbas;FC Kharkiv;54.06052408560663;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Ukraine_PremierLeague;Ukraine_PremierLeague
+2026-11-25;2026-11-25;Ukraine_PremierLeague;;Kryvbas;FC Kharkiv;54.06052408560663;BASSA;POSTPONED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Ukraine_PremierLeague;Ukraine_PremierLeague
 2026-11-25;2026-11-25;Japan_J1League;;Mito;Verdy;53.60943722553695;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Japan_J1League;Japan_J1League
 2026-11-25;2026-11-25;Kosovo_LigaePare;;Istogu;Suhareka;53.322388505080895;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Kosovo_LigaePare;Kosovo_LigaePare
 2026-11-25;2026-11-25;Zambia_SuperLeague;;Trident;MUZA;53.23488509062958;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Zambia_SuperLeague;Zambia_SuperLeague
 2026-11-25;2026-11-25;Uganda_PremierLeague;;NEC FC;Kataka;53.09751151299673;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Uganda_PremierLeague;Uganda_PremierLeague
-2026-11-25;2026-11-25;Serbia_SuperLiga;;Radnicki Nis;Zeleznicar Pancevo;52.48180428371977;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Serbia_SuperLiga;Serbia_SuperLiga
+2026-11-25;2026-11-25;Serbia_SuperLiga;;Radnicki Nis;Zeleznicar Pancevo;52.48180428371977;BASSA;POSTPONED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Serbia_SuperLiga;Serbia_SuperLiga
 2026-11-25;2026-11-25;Qatar_QSL2;;Al Bidda;Al Markhiya;51.83691668330182;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Qatar_QSL2;Qatar_QSL2
 2026-11-25;2026-11-25;Japan_J3League;;Sagamihara;Ehime;51.69481573362865;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Japan_J3League;Japan_J3League
 2026-11-25;2026-11-25;Uruguay_SegundaDivision;;Colon;Atenas;51.285615175785146;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Uruguay_SegundaDivision;Uruguay_SegundaDivision
@@ -177,7 +177,7 @@
 2026-11-25;2026-11-25;Ruanda_PremierLeague;;Al-Merreikh;Kigali FC;44.51071961676642;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Ruanda_PremierLeague;Ruanda_PremierLeague
 2026-11-25;2026-11-25;Japan_J1League;;Tokyo;Hiroshima;43.478872392615784;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Japan_J1League;Japan_J1League
 2026-11-25;2026-11-25;Angola_GirabolaLeague;;Petro;Cabinda;43.160466201452095;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Angola_GirabolaLeague;Angola_GirabolaLeague
-2026-11-25;2026-11-25;Montenegro_PrvaCrnogorskaLiga;;Bokelj;Petrovac;43.003366586055535;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Montenegro_PrvaCrnogorskaLiga;Montenegro_PrvaCrnogorskaLiga
+2026-11-25;2026-11-25;Montenegro_PrvaCrnogorskaLiga;;Bokelj;Petrovac;43.003366586055535;BASSA;POSTPONED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Montenegro_PrvaCrnogorskaLiga;Montenegro_PrvaCrnogorskaLiga
 2026-11-25;2026-11-25;Zimbabwe_PremierSoccerLeague;;Herentals;ZPC Kariba;39.71874341156987;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Zimbabwe_PremierSoccerLeague;Zimbabwe_PremierSoccerLeague
 2026-11-25;2026-11-25;Mozambico_Mocambola;;Maxaquene;AD Pemba;38.819468696453754;BASSA;SCHEDULED;;;;;;VG3 BTTS;;;;;;;;;;;3.0.0;Mozambico_Mocambola;Mozambico_Mocambola
 2026-11-25;2026-11-25;CongoDr_Ligue1;;AS Vita Club;Dauphins Noirs;;NESSUN-SEGNALE;SCHEDULED;;;;;;Meno di 5 gare per squadra nei 180 giorni precedenti;;;;;;;;;;;3.0.0;CongoDr_Ligue1;CongoDr_Ligue1
