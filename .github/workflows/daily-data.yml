@@ -78,6 +78,9 @@ jobs:
             data/input_partite
             data/output_ranking
             data/output_gs1_over
+            data/output_report
+            data/storico/gs1_over
+            data/storico/report_selections
             data/storico/ranking
             data/storico/risultati
             data/operational/kickoff_times.csv
