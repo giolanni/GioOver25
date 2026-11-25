@@ -6,7 +6,9 @@ import argparse
 import csv
 import subprocess
 import sys
+from datetime import datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -47,8 +49,8 @@ def has_result_rows() -> bool:
         return next(csv.DictReader(handle, delimiter=";"), None) is not None
 
 
-def acquire_results(day: str) -> None:
-    run("getresults.py", day)
+def acquire_results(*day_args: str) -> None:
+    run("getresults.py", *day_args)
     if has_result_rows():
         run("-m", "gioover25.append_results", str(RESULTS_FILE.relative_to(ROOT)))
     else:
@@ -99,7 +101,12 @@ def main() -> None:
     elif args.operation == "delta":
         delta_rank()
     elif args.operation == "results":
-        acquire_results("--today")
+        now_rome = datetime.now(ZoneInfo("Europe/Rome"))
+        # A scheduled GitHub job can be delayed for hours. If the evening job
+        # actually starts after midnight/morning, it must still process the
+        # day that has just ended rather than the new, empty calendar day.
+        target = now_rome.date() if now_rome.hour >= 12 else now_rome.date() - timedelta(days=1)
+        acquire_results("--date", target.isoformat())
     else:
         run("getresults.py", "--yesterday", "--dry-run")
         run("getmatches.py", "--today", "--dry-run")

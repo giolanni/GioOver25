@@ -49,7 +49,7 @@ jobs:
         shell: bash
         run: |
           if [[ "${{ github.event_name }}" == "push" ]]; then
-            operation="smoke"
+            operation="morning"
           elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             operation="${{ inputs.operation }}"
           elif [[ "${{ github.event.schedule }}" == "15 5 * * *" ]]; then
@@ -71,7 +71,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           paths=(
             data/input_partite
-            data/input_risultati
             data/output_ranking
             data/output_gs1_over
             data/storico/ranking
@@ -87,5 +86,5 @@ jobs:
             exit 0
           fi
           git commit -m "Dati automatici: ${{ steps.operation.outputs.operation }} $(date -u +%F)"
-          git pull --rebase origin v2-dev
+          git status --short
           git push origin HEAD:v2-dev
