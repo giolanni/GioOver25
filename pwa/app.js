@@ -47,7 +47,9 @@ function filteredMatches() {
 function render() {
   const rows = filteredMatches();
   const resultRows = rows.filter(x => ['OK','KO'].includes(x.result));
-  $('pageTitle').textContent = activeView === 'results' ? 'Risultati' : activeView === 'engines' ? 'Rendimento engine' : 'Partite di oggi';
+  $('pageTitle').textContent = activeView === 'results' ? 'Risultati' : activeView === 'engines' ? 'Rendimento engine · 30 giorni' : 'Partite di oggi';
+  $('kpiSection').hidden = activeView === 'engines';
+  $('filterSection').hidden = activeView === 'engines';
   $('lastUpdate').textContent = payload.meta.updated_at ? `Ultimo aggiornamento: ${payload.meta.updated_at}` : 'In attesa della prima generazione automatica';
   $('matchesKpi').textContent = new Set(rows.map(x => `${x.match_date}|${x.league_id}|${x.home}|${x.away}`)).size;
   $('highKpi').textContent = rows.filter(x => x.band === 'ALTA').length;
@@ -68,7 +70,8 @@ function renderMatch(m) {
 
 function renderEngines() {
   const engines = [...payload.engines].sort((a,b) => (b.hit_rate || 0) - (a.hit_rate || 0));
-  $('content').innerHTML = engines.length ? engines.map(e => `<article class="engine-card"><div><strong>${escapeHtml(e.name)}</strong><br><small>${e.ok || 0} OK · ${e.ko || 0} KO · ${e.total || 0} totali</small></div><strong class="${(e.hit_rate||0)>=80?'ok':''}">${Number(e.hit_rate||0).toFixed(1)}%</strong></article>`).join('') : '<div class="empty">Le statistiche degli engine compariranno dopo il primo aggiornamento.</div>';
+  const scope = `<div class="notice"><strong>Periodo:</strong> ultimi ${payload.meta.stats_days || 30} giorni · <strong>Fascia:</strong> ALTA esatta · solo risultati OK/KO.<br><small>Engine VG: esito BTTS · altri engine: esito Over 2.5.</small></div>`;
+  $('content').innerHTML = engines.length ? scope + engines.map(e => `<article class="engine-card"><div><strong>${escapeHtml(e.name)}</strong><br><small>${e.ok || 0} OK · ${e.ko || 0} KO · ${e.total || 0} totali</small></div><strong class="${(e.hit_rate||0)>=80?'ok':''}">${Number(e.hit_rate||0).toFixed(1)}%</strong></article>`).join('') : '<div class="empty">Le statistiche degli engine compariranno dopo il primo aggiornamento.</div>';
 }
 
 document.querySelectorAll('.tabs button').forEach(button => button.addEventListener('click', () => { document.querySelectorAll('.tabs button').forEach(x => x.classList.remove('active')); button.classList.add('active'); activeView = button.dataset.view; render(); }));
