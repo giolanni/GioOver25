@@ -40,7 +40,7 @@ def as_number(value: str | None, *, integer: bool = False):
 
 def resolved_result(engine: str, row: dict[str, str]) -> str:
     status = (row.get("MatchStatus") or row.get("Status") or "").upper()
-    if status and status != "FINAL":
+    if status and status not in {"FINAL", "FINALE"}:
         return ""
     field = "BTTS" if engine.lower().startswith("vg") else "Outcome"
     value = (row.get(field) or "").upper()
@@ -69,9 +69,13 @@ def main() -> None:
         for row in read_csv(path):
             current[(engine, match_key(row))] = row
 
-    gs1_path = ROOT / "data" / "output_gs1_over" / "ranking_gs1_over.csv"
-    for row in read_csv(gs1_path):
-        current[("gs1_over", match_key(row))] = row
+    gs1_outputs = (
+        ("gs1_over", ROOT / "data" / "output_gs1_over" / "ranking_gs1_over.csv"),
+        ("gs1_near", ROOT / "data" / "output_gs1_over" / "ranking_gs1_over_near.csv"),
+    )
+    for engine, path in gs1_outputs:
+        for row in read_csv(path):
+            current[(engine, match_key(row))] = row
 
     dates = [key[1][0] for key in current if key[1][0]]
     reference = date.fromisoformat(max(dates)) if dates else date.today()
@@ -84,6 +88,29 @@ def main() -> None:
 
     for path in sorted(history_root.glob("*/storico_ranking_*.csv")):
         engine = path.parent.name
+        engine_history = histories.setdefault(engine, {})
+        for row in read_csv(path):
+            key = match_key(row)
+            try:
+                match_date = date.fromisoformat(key[0])
+            except ValueError:
+                continue
+            if match_date >= stats_from and (row.get("Band") or "").strip().upper() == "ALTA":
+                result = resolved_result(engine, row)
+                if result:
+                    counts = stats.setdefault(engine, [0, 0])
+                    counts[0 if result == "OK" else 1] += 1
+            if match_date < history_from:
+                continue
+            if prefer(row, engine_history.get(key), engine):
+                engine_history[key] = row
+                all_rows[(engine, key)] = row
+
+    gs1_histories = (
+        ("gs1_over", ROOT / "data" / "storico" / "gs1_over" / "storico_gs1_over.csv"),
+        ("gs1_near", ROOT / "data" / "storico" / "gs1_over" / "storico_gs1_over_near.csv"),
+    )
+    for engine, path in gs1_histories:
         engine_history = histories.setdefault(engine, {})
         for row in read_csv(path):
             key = match_key(row)
@@ -119,7 +146,9 @@ def main() -> None:
         band = (row.get("Band") or "").strip()
         # The mobile page is for playable selections, not the thousands of
         # diagnostic BASSA/PROX rows produced by every engine.
-        if band != "MEDIA" and "ALTA" not in band:
+        playable_band = band == "MEDIA" or "ALTA" in band
+        gs1_near_band = engine == "gs1_near" and band.upper() in {"NEAR", "OSSERVAZIONE"}
+        if not playable_band and not gs1_near_band:
             continue
         matches.append(
             {
