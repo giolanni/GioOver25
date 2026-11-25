@@ -21,6 +21,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 env:
   PYTHONUNBUFFERED: '1'
@@ -33,6 +35,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      operation: ${{ steps.operation.outputs.operation }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -49,7 +53,7 @@ jobs:
         shell: bash
         run: |
           if [[ "${{ github.event_name }}" == "push" ]]; then
-            operation="morning"
+            operation="smoke"
           elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             operation="${{ inputs.operation }}"
           elif [[ "${{ github.event.schedule }}" == "15 5 * * *" ]]; then
@@ -88,3 +92,30 @@ jobs:
           git commit -m "Dati automatici: ${{ steps.operation.outputs.operation }} $(date -u +%F)"
           git status --short
           git push origin HEAD:v2-dev
+
+  build-site:
+    needs: update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: v2-dev
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Genera dati PWA aggiornati
+        run: python tools/build_pwa_data.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: pwa
+
+  deploy-site:
+    needs: build-site
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
