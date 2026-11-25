@@ -2,14 +2,14 @@ name: Aggiorna dati GioOver
 
 on:
   push:
-    branches: [main]
+    branches: [v2-dev]
     paths: ['.github/workflows/daily-data.yml']
   schedule:
-    # GitHub usa UTC: in Italia corrispondono circa a 06:15/07:15,
-    # 14:30/15:30 e 22:30/23:30 secondo ora solare/legale.
-    - cron: '15 5 * * *'
+    # GitHub usa UTC: 01:00 UTC corrisponde alle 02:00 in Italia d'inverno
+    # e alle 03:00 d'estate. Il ciclo completo parte quindi sempre non prima delle 02:00.
+    - cron: '0 1 * * *'
+    # Recupero delta pomeridiano (14:30/15:30 in Italia secondo ora solare/legale).
     - cron: '30 13 * * *'
-    - cron: '30 21 * * *'
   workflow_dispatch:
     inputs:
       operation:
@@ -56,12 +56,13 @@ jobs:
             operation="smoke"
           elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             operation="${{ inputs.operation }}"
-          elif [[ "${{ github.event.schedule }}" == "15 5 * * *" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "0 1 * * *" ]]; then
             operation="morning"
           elif [[ "${{ github.event.schedule }}" == "30 13 * * *" ]]; then
             operation="delta"
           else
-            operation="results"
+            echo "Pianificazione non riconosciuta: ${{ github.event.schedule }}" >&2
+            exit 1
           fi
           echo "operation=$operation" >> "$GITHUB_OUTPUT"
           echo "Operazione: $operation"
