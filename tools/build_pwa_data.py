@@ -76,7 +76,7 @@ def main() -> None:
     dates = [key[1][0] for key in current if key[1][0]]
     reference = date.fromisoformat(max(dates)) if dates else date.today()
     history_from = reference - timedelta(days=HISTORY_DAYS)
-    stats_from = reference - timedelta(days=STATS_DAYS)
+    stats_from = reference - timedelta(days=STATS_DAYS - 1)
 
     histories: dict[str, dict[tuple[str, str, str, str], dict[str, str]]] = {}
     stats: dict[str, list[int]] = {}
@@ -91,7 +91,7 @@ def main() -> None:
                 match_date = date.fromisoformat(key[0])
             except ValueError:
                 continue
-            if match_date >= stats_from and "ALTA" in (row.get("Band") or "").upper():
+            if match_date >= stats_from and (row.get("Band") or "").strip().upper() == "ALTA":
                 result = resolved_result(engine, row)
                 if result:
                     counts = stats.setdefault(engine, [0, 0])
