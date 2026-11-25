@@ -39,7 +39,7 @@ function hydrateFilters() {
 function filteredMatches() {
   const date = $('dateFilter').value, engine = $('engineFilter').value, band = $('bandFilter').value;
   return payload.matches.filter(x => {
-    const bandMatch = !band || (band === 'ALTA' ? (x.band || '').includes('ALTA') : x.band === band);
+    const bandMatch = !band || x.band === band;
     return (!date || x.match_date === date) && (!engine || x.engine === engine) && bandMatch;
   });
 }
