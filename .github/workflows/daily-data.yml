@@ -5,9 +5,9 @@ on:
     branches: [v2-dev]
     paths: ['.github/workflows/daily-data.yml']
   schedule:
-    # GitHub usa UTC: 01:00 UTC corrisponde alle 02:00 in Italia d'inverno
-    # e alle 03:00 d'estate. Il ciclo completo parte quindi sempre non prima delle 02:00.
-    - cron: '0 1 * * *'
+    # GitHub usa UTC: 05:17 UTC corrisponde alle 06:17 in Italia d'inverno
+    # e alle 07:17 d'estate. Il minuto 17 evita il picco di carico di inizio ora.
+    - cron: '17 5 * * *'
     # Recupero delta pomeridiano (14:30/15:30 in Italia secondo ora solare/legale).
     - cron: '30 13 * * *'
   workflow_dispatch:
@@ -56,7 +56,7 @@ jobs:
             operation="smoke"
           elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             operation="${{ inputs.operation }}"
-          elif [[ "${{ github.event.schedule }}" == "0 1 * * *" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "17 5 * * *" ]]; then
             operation="morning"
           elif [[ "${{ github.event.schedule }}" == "30 13 * * *" ]]; then
             operation="delta"
@@ -78,6 +78,9 @@ jobs:
             data/input_partite
             data/output_ranking
             data/output_gs1_over
+            data/output_report
+            data/storico/gs1_over
+            data/storico/report_selections
             data/storico/ranking
             data/storico/risultati
             data/operational/kickoff_times.csv
