@@ -38,10 +38,18 @@ function hydrateFilters() {
 
 function filteredMatches() {
   const date = $('dateFilter').value, engine = $('engineFilter').value, band = $('bandFilter').value;
-  return payload.matches.filter(x => {
+  const matches = payload.matches.filter(x => {
     const bandMatch = !band || x.band === band;
     return (!date || x.match_date === date) && (!engine || x.engine === engine) && bandMatch;
   });
+  if (band === 'ALTA') {
+    matches.sort((a, b) => {
+      const scoreA = Number.isFinite(Number(a.score)) ? Number(a.score) : -Infinity;
+      const scoreB = Number.isFinite(Number(b.score)) ? Number(b.score) : -Infinity;
+      return scoreB - scoreA || String(a.start_time || '99:99').localeCompare(String(b.start_time || '99:99'));
+    });
+  }
+  return matches;
 }
 
 function render() {
