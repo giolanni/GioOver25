@@ -168,7 +168,7 @@ def collect(output=OUTPUT, day=None):
         candidates.pop(k, None)
     # Always persist rejected provider fixtures so name/league/status mismatches
     # can be diagnosed without guessing or changing prediction histories.
-    debug_path = ROOT / "data" / "debug" / f"live_unmatched_{day}.csv"
+    debug_path = ROOT / "data" / "live" / f"live_unmatched_{day}.csv"
     debug_path.parent.mkdir(parents=True, exist_ok=True)
     with debug_path.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, delimiter=";")
