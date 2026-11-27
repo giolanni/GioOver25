@@ -83,7 +83,6 @@ jobs:
             data/storico/report_selections
             data/storico/ranking
             data/storico/risultati
-            data/operational/kickoff_times.csv
             data/classifiche
           )
           for path in "${paths[@]}"; do
