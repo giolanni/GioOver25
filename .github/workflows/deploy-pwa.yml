@@ -9,7 +9,6 @@ on:
       - 'data/output_ranking/**'
       - 'data/output_gs1_over/**'
       - 'data/storico/ranking/**'
-      - 'data/operational/kickoff_times.csv'
       - '.github/workflows/deploy-pwa.yml'
   workflow_dispatch:
 
