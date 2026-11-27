@@ -12,7 +12,7 @@ from zoneinfo import ZoneInfo
 from tools.prepare_input import ROOT, load_registry, resolve_match
 from gioover25.team_names import normalize_team_name
 
-PATH = ROOT / "data" / "operational" / "kickoff_times.csv"
+PATH = ROOT / "data" / "live" / "kickoff_times.csv"
 FIELDS = ("LeagueId", "MatchDate", "Home", "Away", "Kickoff", "MatchId")
 ROME = ZoneInfo("Europe/Rome")
 
