@@ -69,6 +69,26 @@ def delta_rank() -> None:
     previous_keys = {match_key(row) for row in previous}
     run("getmatches.py", "--today")
     fresh = read_matches(MATCHES_FILE)
+    if not fresh:
+        raise RuntimeError("getmatches non ha prodotto partite: delta interrotto")
+
+    previous_dates = {(row.get("MatchDate") or "").strip() for row in previous if row.get("MatchDate")}
+    fresh_dates = {(row.get("MatchDate") or "").strip() for row in fresh if row.get("MatchDate")}
+    if previous_dates != fresh_dates:
+        # Il delta e' arrivato dopo un cambio di giornata oppure il ciclo
+        # mattutino non e' partito. In questo caso gli output esistenti
+        # appartengono al giorno precedente: archiviarli e fare un ciclo pieno,
+        # senza usare --erase.
+        target_raw = max(fresh_dates)
+        target = datetime.fromisoformat(target_raw).date()
+        print(
+            f"[DELTA-RECOVERY] cambio giornata {sorted(previous_dates)} -> "
+            f"{sorted(fresh_dates)}: recupero risultati e ranking completo."
+        )
+        acquire_results("--date", (target - timedelta(days=1)).isoformat())
+        run("-m", "gioover25.rank_matches_v2", str(MATCHES_FILE.relative_to(ROOT)), "--engine", "all")
+        return
+
     new_rows = [row for row in fresh if match_key(row) not in previous_keys]
     if not new_rows:
         # getmatches writes a complete snapshot. Restore the prior snapshot so
@@ -90,14 +110,32 @@ def delta_rank() -> None:
     run("-m", "gioover25.rank_matches_v2", str(MATCHES_FILE.relative_to(ROOT)), "--engine", "all", "--erase")
 
 
+
+def morning_recovery() -> None:
+    today = datetime.now(ZoneInfo("Europe/Rome")).date().isoformat()
+    existing_dates = {
+        (row.get("MatchDate") or "").strip()
+        for row in read_matches(MATCHES_FILE)
+        if row.get("MatchDate")
+    }
+    if today in existing_dates:
+        print(f"[MORNING-RECOVERY] dati {today} gia' presenti: nessun doppione.")
+        return
+    print(f"[MORNING-RECOVERY] dati {today} mancanti: avvio ciclo completo.")
+    acquire_results("--yesterday")
+    acquire_and_rank()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("operation", choices=("morning", "delta", "results", "smoke"))
+    parser.add_argument("operation", choices=("morning", "morning_recovery", "delta", "results", "smoke"))
     args = parser.parse_args()
 
     if args.operation == "morning":
         acquire_results("--yesterday")
         acquire_and_rank()
+    elif args.operation == "morning_recovery":
+        morning_recovery()
     elif args.operation == "delta":
         delta_rank()
     elif args.operation == "results":
