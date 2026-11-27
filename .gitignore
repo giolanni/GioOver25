@@ -28,3 +28,7 @@ data/debug/flashscore_tournament_from_*/
 /data/live/
 
 /analysis/laboratory/data/02_drivers.csv
+
+# Legacy LIVE paths (do not accidentally recommit old local files).
+/data/debug/live_unmatched_*.csv
+/data/operational/kickoff_times.csv
