@@ -10,8 +10,6 @@ on:
     - cron: '17 5 * * *'
     # Secondo tentativo: non fa nulla se i dati del giorno sono gia presenti.
     - cron: '47 5 * * *'
-    # Recupero delta pomeridiano (14:30/15:30 in Italia secondo ora solare/legale).
-    - cron: '30 13 * * *'
   workflow_dispatch:
     inputs:
       operation:
@@ -19,7 +17,7 @@ on:
         required: true
         default: smoke
         type: choice
-        options: [smoke, morning, morning_recovery, delta, results]
+        options: [smoke, morning, morning_recovery, results]
 
 permissions:
   contents: write
@@ -62,8 +60,6 @@ jobs:
             operation="morning"
           elif [[ "${{ github.event.schedule }}" == "47 5 * * *" ]]; then
             operation="morning_recovery"
-          elif [[ "${{ github.event.schedule }}" == "30 13 * * *" ]]; then
-            operation="delta"
           else
             echo "Pianificazione non riconosciuta: ${{ github.event.schedule }}" >&2
             exit 1
