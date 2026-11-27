@@ -8,6 +8,8 @@ on:
     # GitHub usa UTC: 05:17 UTC corrisponde alle 06:17 in Italia d'inverno
     # e alle 07:17 d'estate. Il minuto 17 evita il picco di carico di inizio ora.
     - cron: '17 5 * * *'
+    # Secondo tentativo: non fa nulla se i dati del giorno sono gia presenti.
+    - cron: '47 5 * * *'
     # Recupero delta pomeridiano (14:30/15:30 in Italia secondo ora solare/legale).
     - cron: '30 13 * * *'
   workflow_dispatch:
@@ -17,7 +19,7 @@ on:
         required: true
         default: smoke
         type: choice
-        options: [smoke, morning, delta, results]
+        options: [smoke, morning, morning_recovery, delta, results]
 
 permissions:
   contents: write
@@ -58,6 +60,8 @@ jobs:
             operation="${{ inputs.operation }}"
           elif [[ "${{ github.event.schedule }}" == "17 5 * * *" ]]; then
             operation="morning"
+          elif [[ "${{ github.event.schedule }}" == "47 5 * * *" ]]; then
+            operation="morning_recovery"
           elif [[ "${{ github.event.schedule }}" == "30 13 * * *" ]]; then
             operation="delta"
           else
