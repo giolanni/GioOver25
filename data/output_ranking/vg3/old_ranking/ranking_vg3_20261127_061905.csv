@@ -1,0 +1,60 @@
+﻿MatchDate;LeagueId;Home;Away;Score;Band;ExpectedGoals;Round;PredictionDate;HomeSourceLeagueId;AwaySourceLeagueId;CompetitionGroup;Reason;RankingGapScore;HomeAttackScore;AwayAttackScore;HomeDefenseWeaknessScore;AwayDefenseWeaknessScore;HomeLast10OverScore;AwayLast10OverScore;HomeVenueOverScore;AwayVenueOverScore;BTTSProfileScore;AlgorithmVersion
+2026-11-26;Mexico_LigaMX_Apertura;Toluca;Atlas;64.11560541444298;BASSA;;;2026-11-26;Mexico_LigaMX_Apertura;Mexico_LigaMX_Apertura;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Mexico_LigaMX_Apertura;Monterrey;Club America;63.210094164536656;BASSA;;;2026-11-26;Mexico_LigaMX_Apertura;Mexico_LigaMX_Apertura;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Giamaica_PremierLeague;Cavalier;Portmore;62.97112785060895;BASSA;;;2026-11-26;Giamaica_PremierLeague;Giamaica_PremierLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Liberia_LFAFirstDivision;Discoveries;Gardnersville;62.89932380283795;BASSA;;;2026-11-26;Liberia_LFAFirstDivision;Liberia_LFAFirstDivision;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Germany_Oberliga_Bayern_Sud;Monaco 1860 2;Pfaffenhofen;62.666981827107435;BASSA;;;2026-11-26;Germany_Oberliga_Bayern_Sud;Germany_Oberliga_Bayern_Sud;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Armenia_FirstLeague;Andranik;Avshar Ararat;62.181231819795876;BASSA;;;2026-11-26;Armenia_FirstLeague;Armenia_FirstLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Armenia_FirstLeague;Olympia Yerevan;Mika;61.78282431521195;BASSA;;;2026-11-26;Armenia_FirstLeague;Armenia_FirstLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Armenia_FirstLeague;Bentonit;Shirak 2;61.17407598008726;BASSA;;;2026-11-26;Armenia_FirstLeague;Armenia_FirstLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Denmark_1stDivision;Aalborg;Esbjerg;59.622251790345274;BASSA;;;2026-11-26;Denmark_1stDivision;Denmark_1stDivision;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Qatar_QSL2;Al Mesaimeer;Qatar U23;59.18366843241881;BASSA;;;2026-11-26;Qatar_QSL2;Qatar_QSL2;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kenya_PremierLeague;Muranga;KCB;57.971237844782266;BASSA;;;2026-11-26;Kenya_PremierLeague;Kenya_PremierLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Qatar_QSL2;Umm-Salal;Al-Rayyan 2;57.95037693552578;BASSA;;;2026-11-26;Qatar_QSL2;Qatar_QSL2;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kosovo_LigaePare;Vjosa;Besa Peja;57.507422532030006;BASSA;;;2026-11-26;Kosovo_LigaePare;Kosovo_LigaePare;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Azerbaijan_FirstLeague;Gancabasar;Moik Baku;57.50686813117601;BASSA;;;2026-11-26;Azerbaijan_FirstLeague;Azerbaijan_FirstLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Azerbaijan_FirstLeague;Karvan;Mingachevir;57.35636457184125;BASSA;;;2026-11-26;Azerbaijan_FirstLeague;Azerbaijan_FirstLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;England_LeagueOne;Doncaster;Huddersfield;57.215584033768984;BASSA;;;2026-11-26;England_LeagueOne;England_LeagueOne;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kenya_PremierLeague;Gor Mahia;Mombasa United;57.14678113429844;BASSA;;;2026-11-26;Kenya_PremierLeague;Kenya_PremierLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Iran_ProLeagueGolfoPersico;Chadormalu;Mes Shahr Babak;57.05953909238444;BASSA;;;2026-11-26;Iran_ProLeagueGolfoPersico;Iran_ProLeagueGolfoPersico;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Liberia_LFAFirstDivision;Golden Dream;LPRC Oiler;56.907686966501814;BASSA;;;2026-11-26;Liberia_LFAFirstDivision;Liberia_LFAFirstDivision;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Uzbekistan_ProLiga;Shortan Guzor;Olimpik-Mobiuz;56.65107295847272;BASSA;;;2026-11-26;Uzbekistan_ProLiga;Uzbekistan_ProLiga;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kosovo_LigaePare;Rilindja;Dinamo Ferizaj;56.553044394067385;BASSA;;;2026-11-26;Kosovo_LigaePare;Kosovo_LigaePare;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kenya_PremierLeague;Mara Sugar;Police FC;56.45573296321498;BASSA;;;2026-11-26;Kenya_PremierLeague;Kenya_PremierLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Israele_LigaAlefSouth;Hapoel Mahane Yehuda;H. Marmorek;56.26208645343929;BASSA;;;2026-11-26;Israele_LigaAlefSouth;Israele_LigaAlefSouth;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Georgia_CrystalbetErovnuliLiga2;Telavi;Gori;56.12189893697912;BASSA;;;2026-11-26;Georgia_CrystalbetErovnuliLiga2;Georgia_CrystalbetErovnuliLiga2;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Israele_LigaAlefNorth;Nof Hagalil;M. Kiryat Ata-Bialik;55.880285285157825;BASSA;;;2026-11-26;Israele_LigaAlefNorth;Israele_LigaAlefNorth;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Georgia_Liga3;Gardabani;Din. Tbilisi 2;55.361951256540586;BASSA;;;2026-11-26;Georgia_Liga3;Georgia_Liga3;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kosovo_LigaePare;Vellaznimi;Tefik Canga;55.20069264747993;BASSA;;;2026-11-26;Kosovo_LigaePare;Kosovo_LigaePare;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;SaudiArabia_ProfessionalLeague;Abha;Al Shabab;54.96857084242654;BASSA;;;2026-11-26;SaudiArabia_ProfessionalLeague;SaudiArabia_ProfessionalLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Romania_Liga2;Gloria Bistrita;CSM Slatina;54.78634038860174;BASSA;;;2026-11-26;Romania_Liga2;Romania_Liga2;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;SaudiArabia_ProfessionalLeague;Al-Faysaly;Al Diriyah;54.71913775074725;BASSA;;;2026-11-26;SaudiArabia_ProfessionalLeague;SaudiArabia_ProfessionalLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Russia_FNL;Ural;Arsenal Tula;54.32884403958676;BASSA;;;2026-11-26;Russia_FNL;Russia_FNL;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kosovo_LigaePare;Trepca 89;Prishtina e Re;54.05629864152046;BASSA;;;2026-11-26;Kosovo_LigaePare;Kosovo_LigaePare;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Zambia_SuperLeague;Mutondo Stars;Green Eagles;53.97560798555303;BASSA;;;2026-11-26;Zambia_SuperLeague;Zambia_SuperLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Botswana_PremierLeague;Centre Chiefs;Orapa United;53.70910912689918;BASSA;;;2026-11-26;Botswana_PremierLeague;Botswana_PremierLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Russia_FNL;Pari NN;Tekstilshtik;53.498959142285955;BASSA;;;2026-11-26;Russia_FNL;Russia_FNL;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;SaudiArabia_ProfessionalLeague;Al Fateh;Al Riyadh;53.154473227530076;BASSA;;;2026-11-26;SaudiArabia_ProfessionalLeague;SaudiArabia_ProfessionalLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Georgia_CrystalbetErovnuliLiga2;Odishi 1919;Shturmi;53.13117417651137;BASSA;;;2026-11-26;Georgia_CrystalbetErovnuliLiga2;Georgia_CrystalbetErovnuliLiga2;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Georgia_CrystalbetErovnuliLiga2;Kolkheti 1913;Bolnisi;52.516982552478595;BASSA;;;2026-11-26;Georgia_CrystalbetErovnuliLiga2;Georgia_CrystalbetErovnuliLiga2;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Azerbaijan_FirstLeague;Baku Sporting;Sahdag Qusar;52.268508625145834;BASSA;;;2026-11-26;Azerbaijan_FirstLeague;Azerbaijan_FirstLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Qatar_QSL2;Muaither SC;Al Waab;52.125160661991835;BASSA;;;2026-11-26;Qatar_QSL2;Qatar_QSL2;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kosovo_LigaePare;Mitrovica;Trepca Mitrovice;51.87503279940891;BASSA;;;2026-11-26;Kosovo_LigaePare;Kosovo_LigaePare;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Georgia_CrystalbetErovnuliLiga2;FC Gareji Sagarejo;Samtredia;51.85841455155929;BASSA;;;2026-11-26;Georgia_CrystalbetErovnuliLiga2;Georgia_CrystalbetErovnuliLiga2;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Georgia_CrystalbetErovnuliLiga2;Dusheti;Merani Martvili;50.99873414656212;BASSA;;;2026-11-26;Georgia_CrystalbetErovnuliLiga2;Georgia_CrystalbetErovnuliLiga2;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;CongoDr_Ligue1;Malole;Saint-Luc;50.82325055616012;BASSA;;;2026-11-26;CongoDr_Ligue1;CongoDr_Ligue1;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kosovo_LigaePare;Ramiz Sadiku;Kika;50.818472108636335;BASSA;;;2026-11-26;Kosovo_LigaePare;Kosovo_LigaePare;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Zambia_SuperLeague;Makeni All Stars;Power Dynamos;50.3833346079628;BASSA;;;2026-11-26;Zambia_SuperLeague;Zambia_SuperLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Uganda_PremierLeague;Kampala City;BUL;48.933633361582544;BASSA;;;2026-11-26;Uganda_PremierLeague;Uganda_PremierLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Kosovo_LigaePare;Ferizaj;Liria;48.9114955447046;BASSA;;;2026-11-26;Kosovo_LigaePare;Kosovo_LigaePare;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Uganda_PremierLeague;URA SC;Kigezi HomeBoyz;47.97111412480518;BASSA;;;2026-11-26;Uganda_PremierLeague;Uganda_PremierLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Zambia_SuperLeague;Red Arrows;Green Buffaloes;47.72776623019044;BASSA;;;2026-11-26;Zambia_SuperLeague;Zambia_SuperLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;CongoDr_Ligue1;AC Rangers;FC Renaissance;45.99917279983304;BASSA;;;2026-11-26;CongoDr_Ligue1;CongoDr_Ligue1;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Giordania_PremierLeague;Al Buqaa;Al Jazeera Amman;44.588548351268344;BASSA;;;2026-11-26;Giordania_PremierLeague;Giordania_PremierLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Zambia_SuperLeague;Chirundu Utd;Zesco Utd;42.439444012694764;BASSA;;;2026-11-26;Zambia_SuperLeague;Zambia_SuperLeague;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Mozambico_Mocambola;Costa do Sol;Baia de Pemba;40.59042465553894;BASSA;;;2026-11-26;Mozambico_Mocambola;Mozambico_Mocambola;;VG3 BTTS;;;;;;;;;;;3.0.0
+2026-11-26;Australia_AustralianChampionship;South Melbourne;Oakleigh;;NESSUN-SEGNALE;;;2026-11-26;Australia_AustralianChampionship;Australia_AustralianChampionship;;Lega australiana esclusa;;;;;;;;;;;3.0.0
+2026-11-26;CongoDr_Ligue1;Aigles du Congo;Ufalya Simba;;NESSUN-SEGNALE;;;2026-11-26;CongoDr_Ligue1;CongoDr_Ligue1;;Meno di 5 gare per squadra nei 180 giorni precedenti;;;;;;;;;;;3.0.0
+2026-11-26;Libia_PremierLeague;Assabah;Al Ahly Tripoli;;NESSUN-SEGNALE;;;2026-11-26;Libia_PremierLeague;Libia_PremierLeague;;Meno di 5 gare per squadra nei 180 giorni precedenti;;;;;;;;;;;3.0.0
+2026-11-26;Seychelles_PremierLeague;Real Maldives;Foresters FC;;NESSUN-SEGNALE;;;2026-11-26;Seychelles_PremierLeague;Seychelles_PremierLeague;;Meno di 5 gare per squadra nei 180 giorni precedenti;;;;;;;;;;;3.0.0
+2026-11-26;Siria_PremierLeague;Tishreen;Homs Al Fidaa;;NESSUN-SEGNALE;;;2026-11-26;Siria_PremierLeague;Siria_PremierLeague;;Meno di 5 gare per squadra nei 180 giorni precedenti;;;;;;;;;;;3.0.0
