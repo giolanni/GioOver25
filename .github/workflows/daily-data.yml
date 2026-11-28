@@ -12,6 +12,8 @@ on:
     # Piu' tentativi riducono il rischio che GitHub salti una singola pianificazione.
     - cron: '32,47 5 * * *'
     - cron: '2,17 6 * * *'
+    # TEST TEMPORANEO 2026-11-28 ore 09:20 italiane
+    - cron: '20 8 * * *'
   workflow_dispatch:
     inputs:
       operation:
@@ -60,7 +62,7 @@ jobs:
             operation="${{ inputs.operation }}"
           elif [[ "${{ github.event.schedule }}" == "17 5 * * *" ]]; then
             operation="morning"
-          elif [[ "${{ github.event.schedule }}" == "32,47 5 * * *" || "${{ github.event.schedule }}" == "2,17 6 * * *" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "32,47 5 * * *" || "${{ github.event.schedule }}" == "2,17 6 * * *" || "${{ github.event.schedule }}" == "20 8 * * *" ]]; then
             operation="morning_recovery"
           else
             echo "Pianificazione non riconosciuta: ${{ github.event.schedule }}" >&2
