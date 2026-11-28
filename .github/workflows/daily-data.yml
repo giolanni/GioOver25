@@ -8,8 +8,10 @@ on:
     # GitHub usa UTC: 05:17 UTC corrisponde alle 06:17 in Italia d'inverno
     # e alle 07:17 d'estate. Il minuto 17 evita il picco di carico di inizio ora.
     - cron: '17 5 * * *'
-    # Secondo tentativo: non fa nulla se i dati del giorno sono gia presenti.
-    - cron: '47 5 * * *'
+    # Recuperi: sono innocui se i dati del giorno sono gia presenti.
+    # Piu' tentativi riducono il rischio che GitHub salti una singola pianificazione.
+    - cron: '32,47 5 * * *'
+    - cron: '2,17 6 * * *'
   workflow_dispatch:
     inputs:
       operation:
@@ -53,12 +55,12 @@ jobs:
         shell: bash
         run: |
           if [[ "${{ github.event_name }}" == "push" ]]; then
-            operation="smoke"
+            operation="morning_recovery"
           elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             operation="${{ inputs.operation }}"
           elif [[ "${{ github.event.schedule }}" == "17 5 * * *" ]]; then
             operation="morning"
-          elif [[ "${{ github.event.schedule }}" == "47 5 * * *" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "32,47 5 * * *" || "${{ github.event.schedule }}" == "2,17 6 * * *" ]]; then
             operation="morning_recovery"
           else
             echo "Pianificazione non riconosciuta: ${{ github.event.schedule }}" >&2
