@@ -52,20 +52,53 @@ function filteredMatches() {
   return matches;
 }
 
+function liveSummary(rows, onlyHigh = false) {
+  const selected = onlyHigh ? rows.filter(x => x.band === 'ALTA') : rows;
+  const counts = { OK: 0, KO: 0, PENDING: 0, UNKNOWN: 0 };
+  selected.forEach(x => counts[x.live_outcome] = (counts[x.live_outcome] || 0) + 1);
+  const finals = selected.filter(x => ['FINAL','FT','FINALE','FINISHED'].includes(x.live_status));
+  const ok = finals.filter(x => x.live_outcome === 'OK').length;
+  const ko = finals.filter(x => x.live_outcome === 'KO').length;
+  const total = ok + ko;
+  const rate = total ? `${(ok * 100 / total).toFixed(1)}%` : 'n.d.';
+  return `OK ${counts.OK} · KO ${counts.KO} · Attesa ${counts.PENDING} · Senza dati ${counts.UNKNOWN} · Finali ${ok}/${total} (${rate})`;
+}
+
 function render() {
   const rows = filteredMatches();
   const resultRows = rows.filter(x => ['OK','KO'].includes(x.result));
-  $('pageTitle').textContent = activeView === 'results' ? 'Risultati' : activeView === 'engines' ? 'Rendimento engine · 30 giorni' : 'Partite di oggi';
+  $('pageTitle').textContent = activeView === 'results' ? 'Risultati' : activeView === 'engines' ? 'Rendimento engine · 30 giorni' : activeView === 'live' ? 'Monitor LIVE' : 'Partite di oggi';
   $('kpiSection').hidden = activeView === 'engines';
   $('filterSection').hidden = activeView === 'engines';
-  $('lastUpdate').textContent = payload.meta.updated_at ? `Ultimo aggiornamento: ${payload.meta.updated_at}` : 'In attesa della prima generazione automatica';
+  $('liveSummary').hidden = activeView !== 'live';
+  $('lastUpdate').textContent = activeView === 'live'
+    ? (payload.meta.live_updated_at ? `Snapshot LIVE: ${payload.meta.live_updated_at} · aggiornamento automatico ogni 15 minuti` : 'Snapshot LIVE non ancora disponibile')
+    : (payload.meta.updated_at ? `Ultimo aggiornamento: ${payload.meta.updated_at}` : 'In attesa della prima generazione automatica');
   $('matchesKpi').textContent = new Set(rows.map(x => `${x.match_date}|${x.league_id}|${x.home}|${x.away}`)).size;
   $('highKpi').textContent = rows.filter(x => x.band === 'ALTA').length;
   $('okKpi').textContent = resultRows.filter(x => x.result === 'OK').length;
   $('koKpi').textContent = resultRows.filter(x => x.result === 'KO').length;
   if (activeView === 'engines') return renderEngines();
+  if (activeView === 'live') return renderLive(rows);
   const visible = activeView === 'results' ? resultRows : rows;
   $('content').innerHTML = visible.length ? visible.map(renderMatch).join('') : '<div class="empty">Nessun dato disponibile per i filtri selezionati.</div>';
+}
+
+function renderLive(rows) {
+  const ordered = [...rows].sort((a,b) => Number(b.score || -Infinity) - Number(a.score || -Infinity));
+  $('liveHigh').textContent = liveSummary(ordered, true);
+  $('liveTotal').textContent = liveSummary(ordered, false);
+  $('content').innerHTML = ordered.length ? ordered.map(renderLiveMatch).join('') : '<div class="empty">Nessun pronostico disponibile per i filtri selezionati.</div>';
+}
+
+function renderLiveMatch(m) {
+  const bandClass = (m.band || 'BASSA').toLowerCase().replace(/[^a-z]/g,'');
+  const hasScore = Number.isFinite(m.live_home_goals) && Number.isFinite(m.live_away_goals);
+  const liveScore = hasScore ? `${m.live_home_goals}–${m.live_away_goals}` : '—';
+  const minute = m.live_minute || ({FINAL:'Finale',SCHEDULED:'Da iniziare',POSTPONED:'Rinviata'}[m.live_status] || 'Senza dati');
+  const outcome = m.live_outcome || 'UNKNOWN';
+  const outcomeLabel = {OK:'OK',KO:'KO',PENDING:'IN ATTESA',UNKNOWN:'SENZA DATI'}[outcome] || outcome;
+  return `<article class="match-card live-card"><div class="card-top"><span class="league">${escapeHtml(m.league_id)}</span><span class="time">${escapeHtml(m.start_time || '—')}</span></div><div class="teams"><span>${escapeHtml(m.home)}</span><span class="live-score">${escapeHtml(liveScore)}<small>${escapeHtml(minute)}</small></span><span class="away">${escapeHtml(m.away)}</span></div><div class="card-bottom"><div><span class="pill ${bandClass}">${escapeHtml(m.band || '—')}</span> <span class="engine">${escapeHtml(m.engine || '')}</span> <span class="engine">Score ${Number(m.score || 0).toFixed(1)}</span></div><strong class="live-${outcome.toLowerCase()}">${outcomeLabel}</strong></div></article>`;
 }
 
 function renderMatch(m) {
@@ -82,7 +115,16 @@ function renderEngines() {
   $('content').innerHTML = engines.length ? scope + engines.map(e => `<article class="engine-card"><div><strong>${escapeHtml(e.name)}</strong><br><small>${e.ok || 0} OK · ${e.ko || 0} KO · ${e.total || 0} totali</small></div><strong class="${(e.hit_rate||0)>=80?'ok':''}">${Number(e.hit_rate||0).toFixed(1)}%</strong></article>`).join('') : '<div class="empty">Le statistiche degli engine compariranno dopo il primo aggiornamento.</div>';
 }
 
-document.querySelectorAll('.tabs button').forEach(button => button.addEventListener('click', () => { document.querySelectorAll('.tabs button').forEach(x => x.classList.remove('active')); button.classList.add('active'); activeView = button.dataset.view; render(); }));
+document.querySelectorAll('.tabs button').forEach(button => button.addEventListener('click', () => {
+  document.querySelectorAll('.tabs button').forEach(x => x.classList.remove('active'));
+  button.classList.add('active');
+  activeView = button.dataset.view;
+  if (activeView === 'live' && !$('engineFilter').value) {
+    const options = [...$('engineFilter').options].map(x => x.value);
+    $('engineFilter').value = options.includes('v20') ? 'v20' : (options.find(Boolean) || '');
+  }
+  render();
+}));
 ['dateFilter','engineFilter','bandFilter'].forEach(id => $(id).addEventListener('change', render));
 $('refreshButton').addEventListener('click', loadData);
 window.addEventListener('beforeinstallprompt', event => { event.preventDefault(); deferredInstallPrompt = event; $('installButton').hidden = false; });
@@ -119,3 +161,4 @@ if ('serviceWorker' in navigator) {
   });
 }
 loadData();
+setInterval(() => { if (activeView === 'live') loadData(); }, 60000);

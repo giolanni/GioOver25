@@ -50,9 +50,14 @@
       <button class="active" data-view="predictions">Pronostici</button>
       <button data-view="results">Risultati</button>
       <button data-view="engines">Engine</button>
+      <button data-view="live">Monitor LIVE</button>
     </nav>
 
     <section id="statusMessage" class="notice" hidden></section>
+    <section id="liveSummary" class="live-summary" hidden>
+      <article><span>FASCIA ALTA</span><strong id="liveHigh">—</strong></article>
+      <article><span>TOTALE ENGINE</span><strong id="liveTotal">—</strong></article>
+    </section>
     <section id="content" class="cards" aria-live="polite"></section>
   </main>
 
