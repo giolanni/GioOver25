@@ -2,7 +2,8 @@ const DATA_URL = './data/current.json';
 let deferredInstallPrompt;
 let waitingServiceWorker;
 let payload = { meta: {}, matches: [], engines: [] };
-let activeView = 'predictions';
+const allowedViews = new Set(['predictions','results','engines','live']);
+let activeView = allowedViews.has(location.hash.slice(1)) ? location.hash.slice(1) : 'predictions';
 
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
@@ -18,6 +19,11 @@ async function loadData() {
     payload.matches ??= [];
     payload.engines ??= [];
     hydrateFilters();
+    if (activeView === 'live' && !$('engineFilter').value) {
+      const options = Array.from($('engineFilter').options, x => x.value);
+      $('engineFilter').value = options.includes('v20') ? 'v20' : (options.find(Boolean) || '');
+    }
+    document.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('active', x.dataset.view === activeView));
     render();
   } catch (error) {
     $('statusMessage').textContent = `Dati non disponibili: ${error.message}. Riprova tra poco.`;
@@ -119,12 +125,19 @@ document.querySelectorAll('.tabs button').forEach(button => button.addEventListe
   document.querySelectorAll('.tabs button').forEach(x => x.classList.remove('active'));
   button.classList.add('active');
   activeView = button.dataset.view;
+  history.replaceState(null, '', `#${activeView}`);
   if (activeView === 'live' && !$('engineFilter').value) {
-    const options = [...$('engineFilter').options].map(x => x.value);
+    const options = Array.from($('engineFilter').options, x => x.value);
     $('engineFilter').value = options.includes('v20') ? 'v20' : (options.find(Boolean) || '');
   }
   render();
 }));
+window.addEventListener('hashchange', () => {
+  const requested = location.hash.slice(1);
+  if (!allowedViews.has(requested)) return;
+  activeView = requested;
+  loadData();
+});
 ['dateFilter','engineFilter','bandFilter'].forEach(id => $(id).addEventListener('change', render));
 $('refreshButton').addEventListener('click', loadData);
 window.addEventListener('beforeinstallprompt', event => { event.preventDefault(); deferredInstallPrompt = event; $('installButton').hidden = false; });
